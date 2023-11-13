@@ -1,6 +1,6 @@
 const script = require('../script')
 const sparkline1Points = {
-  chartTitle: '10.21',
+  chartTitle: 'Sparkline chart',
   lineChartData: [
     {
       legend: '19.64',
