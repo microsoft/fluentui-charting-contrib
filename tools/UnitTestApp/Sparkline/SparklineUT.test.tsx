@@ -1,3 +1,4 @@
+const script = require('../script')
 const sparkline1Points = {
   chartTitle: '10.21',
   lineChartData: [
