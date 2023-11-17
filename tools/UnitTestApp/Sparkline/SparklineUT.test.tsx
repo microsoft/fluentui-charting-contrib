@@ -1,4 +1,5 @@
-const script = require('../script')
+const testWithRewireWrapper = require('../TestUtility');
+
 const sparkline1Points = {
   chartTitle: 'Sparkline chart',
   lineChartData: [
@@ -43,21 +44,19 @@ const sparkline1Points = {
   ],
 };
 
-describe('Unit test _isChartEmpty function', () => {
-  test('Should return false when the chart is not empty', () => {
-    const rewire = require('rewire');
-    const SparklineBaseModule = rewire('./SparklineBase.js');
-    const SparklineBase = SparklineBaseModule.__get__('SparklineBase');
-    const instance = new SparklineBase({data: sparkline1Points, width: 100, height: 100, _valueTextWidth: 100});
-    const result = instance._isChartEmpty();
-    expect(result).toBe(false);
-  });
-  test('Should return true when the chart is empty', () => {
-    const rewire = require('rewire');
-    const SparklineBaseModule = rewire('./SparklineBase.js');
-    const SparklineBase = SparklineBaseModule.__get__('SparklineBase');
-    const instance = new SparklineBase({data: [], width: 100, height: 100, _valueTextWidth: 100});
-    const result = instance._isChartEmpty();
-    expect(result).toBe(true);
+const pathToBaseModule = 'D:/fluentui_contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/Sparkline/Sparkline.base.js';
+
+testWithRewireWrapper(pathToBaseModule, 'SparklineBase', (SparklineBase) => {
+  describe('Unit test _isChartEmpty function', () => {
+    test('Should return false when the chart is not empty', () => {
+      const instance = new SparklineBase({data: sparkline1Points, width: 100, height: 100, _valueTextWidth: 100});
+      const result = instance._isChartEmpty();
+      expect(result).toBe(false);
+    });
+    test('Should return true when the chart is empty', () => {
+      const instance = new SparklineBase({data: [], width: 100, height: 100, _valueTextWidth: 100});
+      const result = instance._isChartEmpty();
+      expect(result).toBe(true);
+    });
   });
 });
