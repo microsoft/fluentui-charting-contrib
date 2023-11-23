@@ -1,8 +1,8 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 const fs = require('fs');
-const readFilePath = '../node_modules/@fluentui/react-charting/lib-commonjs/components/Sparkline/Sparkline.base.js';
-const writeFilePath = '../Sparkline/SparklineBase.js';
+const readFilePath = 'tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/Sparkline/Sparkline.base.js';
+const writeFilePath = 'tools/UnitTestApp/Sparkline/SparklineBase.js';
 // Read the file
 const updatedFile = () => {
   fs.readFile(readFilePath, 'utf8', (err, data) => {
