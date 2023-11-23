@@ -1,7 +1,5 @@
 name: 'Setup test environment'
 description: 'Setup test environment'
-outputs:
-  description: 'The test environment setup is successful'
 runs:
   using: 'node20'
   main: 'dist/TestSetupAction/index.js'
