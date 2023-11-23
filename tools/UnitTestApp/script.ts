@@ -1,6 +1,6 @@
 const fs = require('fs');
-const readFilePath = './node_modules/@fluentui/react-charting/lib-commonjs/components/Sparkline/Sparkline.base.js';
-const writeFilePath = './Sparkline/SparklineBase.js';
+const readFilePath = '../node_modules/@fluentui/react-charting/lib-commonjs/components/Sparkline/Sparkline.base.js';
+const writeFilePath = '../Sparkline/SparklineBase.js';
 // Read the file
 const updatedFile = () => {
   fs.readFile(readFilePath, 'utf8', (err, data) => {
