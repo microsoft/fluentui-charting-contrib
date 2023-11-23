@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: tools/UnitTestApp/action.yml@v1.1
+        uses: fluentui-charting-contrib/action@main
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
