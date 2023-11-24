@@ -5,6 +5,13 @@ jobs:
   test_env_setup_job:
     runs-on: ubuntu-latest
     name: A job to setup test environment
+    outputs:
+      Error:
+        description: "Error writing file to disk"
+      "Modified chart js = ":
+        description: "Modified chart js"
+      "Modified index js = ":
+        description: "Modified index js"
 
     steps:
       - name: Checkout [master]
@@ -19,5 +26,6 @@ jobs:
 
       - name: Test Setup Complete
         run: echo "$(<./tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/index.js)"
-        # run: echo "$(<./tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js)"
+        # run: echo "$(<./tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js)"      
+      
         
