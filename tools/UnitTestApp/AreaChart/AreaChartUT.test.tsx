@@ -191,7 +191,7 @@ const chartDataDarkTheme = {
   lineChartData: chartPointsDarkTheme,
 };
 
-const pathToBaseModule = 'D:/fluentui_contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js';
+const pathToBaseModule = './node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js';
 
 testWithRewireWrapper(pathToBaseModule, 'AreaChartBase', (AreaChartBase) => {
   describe('Unit test Area Chart _getOpacity function', () => {

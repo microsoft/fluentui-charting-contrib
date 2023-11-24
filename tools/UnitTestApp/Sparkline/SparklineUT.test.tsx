@@ -44,7 +44,7 @@ const sparkline1Points = {
   ],
 };
 
-const pathToBaseModule = 'D:/fluentui_contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/Sparkline/Sparkline.base.js';
+const pathToBaseModule = './node_modules/@fluentui/react-charting/lib-commonjs/components/Sparkline/Sparkline.base.js';
 
 testWithRewireWrapper(pathToBaseModule, 'SparklineBase', (SparklineBase) => {
   describe('Unit test _isChartEmpty function', () => {
