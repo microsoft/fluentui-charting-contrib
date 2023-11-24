@@ -30358,8 +30358,8 @@ var __webpack_exports__ = {};
 const core = __nccwpck_require__(4769);
 const github = __nccwpck_require__(1433);
 const fs = __nccwpck_require__(7147);
-const readFilePath = '../node_modules/@fluentui/react-charting/lib-commonjs/components/Sparkline/Sparkline.base.js';
-const writeFilePath = '../Sparkline/SparklineBase.js';
+const readFilePath = 'tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/Sparkline/Sparkline.base.js';
+const writeFilePath = 'tools/UnitTestApp/Sparkline/SparklineBase.js';
 // Read the file
 const updatedFile = () => {
   fs.readFile(readFilePath, 'utf8', (err, data) => {
