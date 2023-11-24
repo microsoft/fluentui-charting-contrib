@@ -20,6 +20,9 @@ jobs:
         id: setup
         uses: ./tools/UnitTestApp/TestSetup
 
+      - name: Run tests
+        run: yarn test --cwd ./tools/UnitTestApp --verbose
+
       - name: Test Setup Complete        
         working-directory: ./tools/UnitTestApp
         run: echo "$(<./node_modules/@fluentui/react-charting/lib-commonjs/index.js)"
