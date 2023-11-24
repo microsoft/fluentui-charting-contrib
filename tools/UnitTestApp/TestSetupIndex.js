@@ -1,3 +1,5 @@
+const core = require('@actions/core');
+const github = require('@actions/github');
 const fs = require('fs');
 const path = require('path');
 
@@ -16,9 +18,10 @@ async function readDirectoryDeep(dirPath) {
   });
 }
 
-// Read the file
+// Read and update the file
 async function updatedFileDeep(filePath) {
   let data = await fs.readFileSync(filePath, 'utf8'); 
+  // Remove all occurances and expressions using d3 variables
   let matches = data.match(/.*=.*d3.*(\n.*?)*(?=var|$)/g);
   if (matches != null && matches.length > 0) {
     matches.forEach(match => {
@@ -73,7 +76,7 @@ function setupIndexFile(indexFilePath, fileName) {
             // Write the file back
             fs.writeFile(indexFilePath, result, 'utf8', err => {
                 if (err) {
-                    console.error(`Error writing file to disk: ${err}`);
+                    core.setOutput("Error",  `Error writing file to disk: ${err}`);
                 }
             });
         }
@@ -81,9 +84,9 @@ function setupIndexFile(indexFilePath, fileName) {
 }
 
 const testSetupRewire = () => {
-  readDirectory('D:/fluentui_contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/');
-  readDirectoryDeep('D:/fluentui_contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/');
-  const indexFilePath = 'D:/fluentui_contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/index.js';
+  readDirectory('/home/runner/work/fluentui-charting-contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/');
+  readDirectoryDeep('/home/runner/work/fluentui-charting-contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/');
+  const indexFilePath = '/home/runner/work/fluentui-charting-contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/index.js';
   setupIndexFile(indexFilePath, null);
 };
 
