@@ -1,5 +1,12 @@
 name: 'Setup test environment'
 description: 'Setup test environment'
+outputs:
+  Error:
+    description: "Error writing file to disk"
+  "Modified chart js = ":
+    description: "Modified chart js"
+  "Modified index js = ":
+    description: "Modified index js"
 runs:
   using: 'node20'
   main: '../dist/TestSetupAction/index.js'
