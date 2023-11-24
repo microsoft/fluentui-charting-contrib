@@ -42,6 +42,7 @@ async function updatedFileDeep(filePath) {
 };
 
 async function readDirectory(dirPath) {
+  core.setOutput('dirPath', dirpath);
   const items = await fs.readdirSync(dirPath);
 
   items.forEach(item => {
