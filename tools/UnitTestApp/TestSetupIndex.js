@@ -75,7 +75,7 @@ function setupIndexFile(indexFilePath, fileName) {
             // Write the file back
             fs.writeFile(indexFilePath, result, 'utf8', err => {
                 if (err) {
-                    console.error(`Error writing file to disk: ${err}`);
+                    core.setOutput(`Error writing file to disk: ${err}`);
                 }
             });
         }
@@ -86,11 +86,11 @@ const testSetupRewire = () => {
   readDirectory('tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/');
   readDirectoryDeep('tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/');
   const chart = require('tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js');
-  console.log("Modified chart js = ", chart.toString());
+  core.setOutput("Modified chart js = ", chart.toString());
   const indexFilePath = 'tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/index.js';
   setupIndexFile(indexFilePath, null);
   const indexFileContents = require(indexFilePath);
-  console.log("Modified index js = ", indexFileContents.toString());
+  core.setOutput("Modified index js = ", indexFileContents.toString());
 };
 
 testSetupRewire();
