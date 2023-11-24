@@ -1,8 +1,6 @@
 name: 'Setup test environment'
 description: 'Setup test environment'
-outputs:
-  dirPath:
-    description: "Directory path"
+
 runs:
   using: 'node20'
   main: '../dist/TestSetupAction/index.js'
