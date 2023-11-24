@@ -90,14 +90,14 @@ function setupIndexFile(indexFilePath, fileName) {
 }
 
 const testSetupRewire = () => {
-  readDirectory('/home/runner/work/fluentui-charting-contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/');
-  readDirectoryDeep('/home/runner/work/fluentui-charting-contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/');
-  // const chart = require('../../node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js');
-  // core.setOutput("ModifiedChart", chart.toString());
-  const indexFilePath = '/home/runner/work/fluentui-charting-contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/index.js';
+  readDirectory('~/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/');
+  readDirectoryDeep('~/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/');
+  const chart = require('~/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js');
+  core.setOutput("ModifiedChart", chart.toString());
+  const indexFilePath = '~/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/index.js';
   setupIndexFile(indexFilePath, null);
-  // const indexFileContents = require(indexFilePath);
-  // core.setOutput("ModifiedIndex", indexFileContents.toString());
+  const indexFileContents = require(indexFilePath);
+  core.setOutput("ModifiedIndex", indexFileContents.toString());
 };
 
 testSetupRewire();
