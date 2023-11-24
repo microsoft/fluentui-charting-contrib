@@ -18,5 +18,5 @@ jobs:
         uses: ./tools/UnitTestApp/TestSetup
 
       - name: Test Setup Complete
-        run: echo "$(<./tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js')"
+        run: echo "$(<./tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js)"
         
