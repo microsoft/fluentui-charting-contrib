@@ -17,5 +17,5 @@ jobs:
         uses: ./tools/UnitTestApp/TestSetup
 
       - name: Test Setup Complete
-        run: echo "The test Setup is complete. ${{ ./tools/UnitTestApp/SparklineBase.js }}"
+        run: echo "The test Setup is complete."
         
