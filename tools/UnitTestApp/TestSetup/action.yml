@@ -3,9 +3,9 @@ description: 'Setup test environment'
 outputs:
   Error:
     description: "Error writing file to disk"
-  "Modified chart js = ":
+  "ModifiedChart":
     description: "Modified chart js"
-  "Modified index js = ":
+  "ModifiedIndex":
     description: "Modified index js"
 runs:
   using: 'node20'
