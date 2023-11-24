@@ -8,12 +8,12 @@ jobs:
     name: A job to setup test environment
 
     steps:
-      - working-directory: ./tools/UnitTestApp
       - name: Checkout [master]
         uses: actions/checkout@v3
 
       - name: Install packages
         run: yarn --cwd ./tools/UnitTestApp --verbose
+        working-directory: ./tools/UnitTestApp
 
       - name: Test Environment Setup action step
         id: setup
