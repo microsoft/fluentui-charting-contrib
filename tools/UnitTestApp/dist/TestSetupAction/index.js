@@ -89,13 +89,13 @@ function setupIndexFile(indexFilePath, fileName) {
 }
 
 const testSetupRewire = () => {
-  readDirectory('./tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/');
-  readDirectoryDeep('./tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/');
-  const chart = __nccwpck_require__(773);
+  readDirectory('../node_modules/@fluentui/react-charting/lib-commonjs/');
+  readDirectoryDeep('../node_modules/@fluentui/react-charting/lib-commonjs/components/');
+  const chart = __nccwpck_require__(9338);
   core.setOutput("ModifiedChart", chart.toString());
-  const indexFilePath = './tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/index.js';
+  const indexFilePath = '../node_modules/@fluentui/react-charting/lib-commonjs/index.js';
   setupIndexFile(indexFilePath, null);
-  const indexFileContents = __nccwpck_require__(7921);
+  const indexFileContents = __nccwpck_require__(2088);
   core.setOutput("ModifiedIndex", indexFileContents.toString());
 };
 
@@ -28575,18 +28575,18 @@ function wrappy (fn, cb) {
 
 /***/ }),
 
-/***/ 773:
+/***/ 9338:
 /***/ ((module) => {
 
-module.exports = eval("require")("./tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js");
+module.exports = eval("require")("../node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js");
 
 
 /***/ }),
 
-/***/ 7921:
+/***/ 2088:
 /***/ ((module) => {
 
-module.exports = eval("require")("./tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/index.js");
+module.exports = eval("require")("../node_modules/@fluentui/react-charting/lib-commonjs/index.js");
 
 
 /***/ }),
