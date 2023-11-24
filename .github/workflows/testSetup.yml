@@ -1,7 +1,9 @@
 name: 'Setup test environment'
 on:
   workflow_dispatch:
-
+defaults:
+  run:
+    working-directory: ./tools/UnitTestApp
 jobs:
   test_env_setup_job:
     runs-on: ubuntu-latest
@@ -13,7 +15,6 @@ jobs:
 
       - name: Install packages
         run: yarn --cwd ./tools/UnitTestApp --verbose
-        working-directory: ./tools/UnitTestApp
 
       - name: Test Environment Setup action step
         id: setup
