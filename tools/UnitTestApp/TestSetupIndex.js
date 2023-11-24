@@ -2,6 +2,26 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 const fs = require('fs');
 const path = require('path');
+const { exec } = require('child_process');
+
+function getNpmRoot(callback) {
+  exec('npm root', (error, stdout, stderr) => {
+    if (error) {
+      console.error(`exec error: ${error}`);
+      return;
+    }
+    // Remove the trailing newline character
+    const npmRoot = stdout.trim();
+    // Call the callback function with the result
+    callback(npmRoot);
+  });
+}
+
+// Usage example
+getNpmRoot((npmRoot) => {
+  console.log(`The npm root directory is: ${npmRoot}`);
+  return npmRoot;
+});
 
 async function readDirectoryDeep(dirPath) {
   const items = await fs.readdirSync(dirPath);
@@ -84,11 +104,12 @@ function setupIndexFile(indexFilePath, fileName) {
 }
 
 const testSetupRewire = () => {
-  readDirectory('/home/runner/work/fluentui-charting-contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/');
-  readDirectoryDeep('/home/runner/work/fluentui-charting-contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/');
+  const npmRoot = getNpmRoot();
+  readDirectory(npmRoot+'/@fluentui/react-charting/lib-commonjs/');
+  readDirectoryDeep(npmRoot+'/@fluentui/react-charting/lib-commonjs/components/');
   // const chart = require('~/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js');
   // core.setOutput("ModifiedChart", chart.toString());
-  const indexFilePath = '/home/runner/work/fluentui-charting-contrib/fluentui-charting-contrib/tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/index.js';
+  const indexFilePath = npmRoot+'/@fluentui/react-charting/lib-commonjs/index.js';
   setupIndexFile(indexFilePath, null);
   // const indexFileContents = require(indexFilePath);
   // core.setOutput("ModifiedIndex", indexFileContents.toString());
