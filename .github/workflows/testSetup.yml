@@ -13,4 +13,9 @@ jobs:
         run: yarn --cwd ./tools/UnitTestApp --verbose
 
       - name: Test Environment Setup action step
+        id: setup
         uses: ./tools/UnitTestApp/TestSetup
+
+      - name: Test Setup Complete
+        run: echo "The test Setup is complete. ${{ ./tools/UnitTestApp/SparklineBase.js }}"
+        
