@@ -83,11 +83,11 @@ function setupIndexFile(indexFilePath, fileName) {
 }
 
 const testSetupRewire = () => {
-  readDirectory('./tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/');
-  readDirectoryDeep('./tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/');
-  const chart = require('./tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js');
+  readDirectory('../../node_modules/@fluentui/react-charting/lib-commonjs/');
+  readDirectoryDeep('../../node_modules/@fluentui/react-charting/lib-commonjs/components/');
+  const chart = require('../../node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js');
   core.setOutput("ModifiedChart", chart.toString());
-  const indexFilePath = './tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/index.js';
+  const indexFilePath = '../../node_modules/@fluentui/react-charting/lib-commonjs/index.js';
   setupIndexFile(indexFilePath, null);
   const indexFileContents = require(indexFilePath);
   core.setOutput("ModifiedIndex", indexFileContents.toString());
