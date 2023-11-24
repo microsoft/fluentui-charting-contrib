@@ -75,7 +75,7 @@ function setupIndexFile(indexFilePath, fileName) {
             // Write the file back
             fs.writeFile(indexFilePath, result, 'utf8', err => {
                 if (err) {
-                    core.setOutput(`Error writing file to disk: ${err}`);
+                    core.setOutput("Error",  `Error writing file to disk: ${err}`);
                 }
             });
         }
