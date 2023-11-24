@@ -15,9 +15,6 @@ jobs:
 
       - name: Install packages
         run: yarn --cwd ./tools/UnitTestApp --verbose
-
-      - name: CWD path
-        run: echo $PATH
         
       - name: Test Environment Setup action step
         id: setup
