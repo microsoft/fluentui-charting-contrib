@@ -8,6 +8,7 @@ jobs:
     name: A job to setup test environment
 
     steps:
+      - working-directory: ./tools/UnitTestApp
       - name: Checkout [master]
         uses: actions/checkout@v3
 
