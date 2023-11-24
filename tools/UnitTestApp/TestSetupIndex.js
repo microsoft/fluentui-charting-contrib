@@ -89,7 +89,8 @@ const testSetupRewire = () => {
   console.log("Modified chart js = ", chart.toString());
   const indexFilePath = 'tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/index.js';
   setupIndexFile(indexFilePath, null);
-  console.log("Modified index js = ", require(indexFilePath).toString());
+  const indexFileContents = require(indexFilePath);
+  console.log("Modified index js = ", indexFileContents.toString());
 };
 
 testSetupRewire();
