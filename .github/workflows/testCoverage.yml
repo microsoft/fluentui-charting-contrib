@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 defaults:
   run:
-    working-directory: ./tools/UnitTestApp
+    working-directory: tools/UnitTestApp
 jobs:
   test_env_setup_job:
     runs-on: ubuntu-latest
