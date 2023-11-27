@@ -17,7 +17,6 @@ jobs:
             packages/react-charting
           
       - name: Run coverage report
-        working-directory: ./git/microsoft/fluentui/packages/react-charting/src
         run: echo "$Path"
         # run: yarn jest --coverage --collectCoverageFrom='./src/*'
         
