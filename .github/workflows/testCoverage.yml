@@ -13,12 +13,15 @@ jobs:
           repository: "microsoft/fluentui"
         
       - name: Checkout [master]
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with: 
           path: repo2
       
-      - name: Install packages
+      - name: Install packages repo2
         run: yarn --cwd ./repo2/tools/UnitTestApp --verbose   
+
+      - name: Install packages repo1
+        run: yarn --verbose   
 
       - name: Test Environment Setup action step
         id: setup
