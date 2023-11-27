@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout [react-charting]
         uses: actions/checkout@v4
+        with: 
+          repository: "microsoft/fluentui"
           
       - name: Run coverage report
         run: ls
