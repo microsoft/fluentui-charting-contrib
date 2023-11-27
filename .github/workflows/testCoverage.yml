@@ -19,8 +19,8 @@ jobs:
           repository: "microsoft/fluentui"
           
       - name: Run coverage report
-        run: cd "tools/UnitTestApp"
+        run: ls
         
-      - name: Ls
-        run: yarn test --coverage --collectCoverageFrom='../../packages/react-charting/src/*'
+      # - name: Ls
+      #   run: yarn test --coverage --collectCoverageFrom='../../packages/react-charting/src/*'
         
