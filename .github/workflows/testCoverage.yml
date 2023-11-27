@@ -24,4 +24,4 @@ jobs:
         uses: ./tools/UnitTestApp/TestSetup
         
       - name: Run coverage report
-        run: cd ./tools/UnitTestApp && yarn test
+        run: cd ./tools/UnitTestApp && yarn test --coverage --collectCoverageFrom '../../packages/react-charting/src'
