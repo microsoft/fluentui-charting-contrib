@@ -17,6 +17,6 @@ jobs:
             packages/react-charting
           
       - name: Run coverage report
-        run: echo $PWD
+        run: ls
         # run: yarn jest --coverage --collectCoverageFrom='./src/*'
         
