@@ -1,9 +1,7 @@
 name: 'Test coverage'
 on:
   workflow_dispatch:
-defaults:
-  run:
-    working-directory: tools/UnitTestApp
+
 jobs:
   test_env_setup_job:
     runs-on: ubuntu-latest
@@ -21,6 +19,7 @@ jobs:
           repository: "microsoft/fluentui"
           
       - name: Run coverage report
+        working-directory: ./tools/UnitTestApp
         # run: yarn test --coverage --collectCoverageFrom='../../packages/react-charting/src/*'
         run: ls        
         
