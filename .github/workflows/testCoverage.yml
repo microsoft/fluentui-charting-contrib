@@ -20,6 +20,5 @@ jobs:
           
       - name: Run coverage report
         working-directory: ./tools/UnitTestApp
-        # run: yarn test --coverage --collectCoverageFrom='../../packages/react-charting/src/*'
-        run: ls        
+        run: yarn test --coverage --collectCoverageFrom='../../packages/react-charting/src/*'
         
