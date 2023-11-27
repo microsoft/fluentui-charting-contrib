@@ -13,6 +13,6 @@ jobs:
           repository: "microsoft/fluentui"
           
       - name: Run coverage report
-        run: ls
-        # run: yarn jest --coverage --collectCoverageFrom='./src/*'
+        run: yarn jest --coverage --collectCoverageFrom='./packages/react-charting/src/*'
+        # run: ls        
         
