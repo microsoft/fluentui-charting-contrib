@@ -16,15 +16,18 @@ jobs:
           repository: "microsoft/fluentui"
           path: repo2
 
+      - name: Move src files
+        run: mv ./repo2/packages/react-charting/src ./tools/UnitTestApp
+
+      - name: show dir
+        run: ls
+      
       - name: Install packages
         run: yarn --cwd ./tools/UnitTestApp --verbose   
 
       - name: Test Environment Setup action step
         id: setup
         uses: ./tools/UnitTestApp/TestSetup
-
-      - name: Move src files
-        run: mv ./repo2/packages/react-charting/src ./tools/UnitTestApp && ls
         
       - name: Run coverage report
         run: yarn test --coverage
