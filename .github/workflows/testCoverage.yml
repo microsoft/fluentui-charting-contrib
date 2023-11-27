@@ -9,12 +9,15 @@ jobs:
 
     steps:
       - name: Checkout [react-charting]
-        uses: actions/checkout@v3
+        id: 'step1'
+        uses: actions/checkout@v4
         with: 
-          repository: "microsoft/fluentui"
+          repository: "microsoft/fluentui/packages/react-charting"
+          sparse-checkout: |
+            src
           
       - name: Run coverage report
-        working-directory: microsoft/fluentui
-        run: echo "$(<./packages/react-charting/src/index.ts)"
+        working-directory: microsoft/fluentui/packages/react-charting/src
+        run: echo "$(<./index.ts)"
         # run: yarn jest --coverage --collectCoverageFrom='./src/*'
         
