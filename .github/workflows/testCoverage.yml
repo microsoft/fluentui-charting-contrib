@@ -26,6 +26,6 @@ jobs:
       - name: Checkout [react-charting]
         uses: actions/checkout@v3
         with: 
-          repository: "@fluentui/react-charting"
+          repository: "microsoft/fluentui"
       - name: Run coverage report
         run: jest --coverage --collectCoverageFrom='@fluentui/react-charting/src/*'
