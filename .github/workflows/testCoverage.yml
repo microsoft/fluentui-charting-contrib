@@ -19,6 +19,9 @@ jobs:
           repository: "microsoft/fluentui"
           
       - name: Run coverage report
+        run: cd "tools"
+
+      - name: ls
         run: ls
         
       # - name: Ls
