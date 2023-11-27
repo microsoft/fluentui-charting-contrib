@@ -1,9 +1,7 @@
 name: 'Test coverage'
 on:
   workflow_dispatch:
-defaults:
-  run:
-    working-directory: ./tools/UnitTestApp
+
 jobs:
   test_env_setup_job:
     runs-on: ubuntu-latest
@@ -20,5 +18,7 @@ jobs:
         uses: actions/checkout@v3
         with: 
           repository: "microsoft/fluentui"
+          path: "packages/react-charting"
+          
       - name: Run coverage report
-        run: jest --coverage --collectCoverageFrom='@fluentui/react-charting/src/*'
+        run: jest --coverage --collectCoverageFrom='src/*'
