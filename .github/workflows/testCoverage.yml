@@ -21,4 +21,4 @@ jobs:
           path: "packages/react-charting"
           
       - name: Run coverage report
-        run: jest --coverage --collectCoverageFrom='src/*'
+        run: yarn jest --coverage --collectCoverageFrom='src/*'
