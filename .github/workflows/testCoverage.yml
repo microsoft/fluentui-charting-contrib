@@ -17,13 +17,13 @@ jobs:
           path: repo2
 
       - name: Install packages
-        run: yarn --cwd ./repo1/tools/UnitTestApp --verbose   
+        run: yarn --cwd ./tools/UnitTestApp --verbose   
 
       - name: Test Environment Setup action step
         id: setup
-        uses: ./repo1/tools/UnitTestApp/TestSetup
+        uses: ./tools/UnitTestApp/TestSetup
         
       - name: Run coverage report
         run: yarn test --coverage --collectCoverageFrom='./repo2/packages/react-charting/src/*'
-        working-directory: ./repo1/tools/UnitTestApp
+        working-directory: ./tools/UnitTestApp
         
