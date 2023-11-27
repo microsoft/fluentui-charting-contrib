@@ -12,7 +12,7 @@ jobs:
         id: 'step1'
         uses: actions/checkout@v4
         with: 
-          repository: "microsoft/fluentui/packages/react-charting"
+          repository: "microsoft/fluentui"
           sparse-checkout: |
             src
           
