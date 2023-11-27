@@ -5,16 +5,10 @@ on:
 jobs:
   test_env_setup_job:
     runs-on: ubuntu-latest
-    name: A job to setup test environment
-
+    name: Test coverage
     steps:
       - name: Checkout [react-charting]
-        id: 'step1'
         uses: actions/checkout@v4
-        with: 
-          repository: "microsoft/fluentui"
-          sparse-checkout: |
-            packages/react-charting
           
       - name: Run coverage report
         run: ls
