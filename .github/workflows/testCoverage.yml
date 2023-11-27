@@ -15,15 +15,15 @@ jobs:
       - name: Checkout [master]
         uses: actions/checkout@v4
         with: 
-          sparse-checkout: |
-            tools/UnitTestApp
+          path:
+            repo2
       
       - name: Install packages repo2
-        run: yarn --cwd ./UnitTestApp --verbose   
+        run: yarn --cwd ./repo2/tools/UnitTestApp --verbose   
 
       - name: Test Environment Setup action step
         id: setup
-        uses: ./UnitTestApp/TestSetup
+        uses: ./repo2/tools/UnitTestApp/TestSetup
         
       - name: Run coverage report
-        run: yarn test --cwd ./UnitTestApp
+        run: yarn test --cwd ./repo2/tools/UnitTestApp
