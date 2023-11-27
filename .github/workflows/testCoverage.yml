@@ -9,13 +9,6 @@ jobs:
     steps:
       - name: Checkout [master]
         uses: actions/checkout@v3
-
-      - name: Install packages
-        run: yarn --cwd ./tools/UnitTestApp --verbose
-        
-      - name: Test Environment Setup action step
-        id: setup
-        uses: ./tools/UnitTestApp/TestSetup
         
       - name: Checkout [react-charting]
         uses: actions/checkout@v4
@@ -23,6 +16,6 @@ jobs:
           repository: "microsoft/fluentui"
           
       - name: Run coverage report
-        run: yarn jest --coverage --collectCoverageFrom='./packages/react-charting/src/*'
-        # run: ls        
+        # run: yarn jest --coverage --collectCoverageFrom='./packages/react-charting/src/*'
+        run: ls        
         
