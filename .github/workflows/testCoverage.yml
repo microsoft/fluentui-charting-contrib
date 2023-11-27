@@ -11,12 +11,10 @@ jobs:
         uses: actions/checkout@v4
         with: 
           repository: "microsoft/fluentui"
+          path: repo2
         
       - name: Checkout [master]
         uses: actions/checkout@v4
-        with: 
-          path:
-            repo2
       
       - name: Install packages repo2
         run: yarn --cwd ./repo2/tools/UnitTestApp --verbose   
