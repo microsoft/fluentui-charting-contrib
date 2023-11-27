@@ -24,4 +24,4 @@ jobs:
         uses: ./tools/UnitTestApp/TestSetup
         
       - name: Run coverage report
-        run: yarn test --cwd ./tools/UnitTestApp
+        run: cd ./tools/UnitTestApp && yarn test
