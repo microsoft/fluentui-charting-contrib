@@ -22,7 +22,7 @@ jobs:
         run: cd "tools"
 
       - name: ls
-        run: ls
+        run: ls /tools
         
       # - name: Ls
       #   run: yarn test --coverage --collectCoverageFrom='../../packages/react-charting/src/*'
