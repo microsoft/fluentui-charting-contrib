@@ -10,10 +10,7 @@ jobs:
       - name: Checkout [master]
         uses: actions/checkout@v3
         with:
-          path: repo1
-
-      - name: Install packages
-        run: yarn --cwd ./tools/UnitTestApp --verbose        
+          path: repo1     
         
       - name: Checkout [react-charting]
         uses: actions/checkout@v4
