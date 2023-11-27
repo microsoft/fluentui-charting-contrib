@@ -9,8 +9,6 @@ jobs:
     steps:
       - name: Checkout [master]
         uses: actions/checkout@v3
-        with:
-          path: repo1     
         
       - name: Checkout [react-charting]
         uses: actions/checkout@v4
