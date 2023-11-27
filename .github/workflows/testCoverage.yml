@@ -27,6 +27,6 @@ jobs:
         uses: ./tools/UnitTestApp/TestSetup
         
       - name: Run coverage report
-        run: yarn test --coverage
-        working-directory: ./tools/UnitTestApp
+        run: yarn test
+        working-directory: ./tools/UnitTestApp/Sparkline
         
