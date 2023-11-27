@@ -22,8 +22,11 @@ jobs:
       - name: Test Environment Setup action step
         id: setup
         uses: ./tools/UnitTestApp/TestSetup
+
+      - name: Move src files
+        run: mv ./repo2/packages/react-charting/src ./tools/UnitTestApp
         
       - name: Run coverage report
-        run: yarn test --coverage --collectCoverageFrom='../../repo2/packages/react-charting/src/**/*.tsx'
+        run: yarn test --coverage
         working-directory: ./tools/UnitTestApp
         
