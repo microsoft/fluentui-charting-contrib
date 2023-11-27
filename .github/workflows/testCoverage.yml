@@ -24,6 +24,6 @@ jobs:
         uses: ./tools/UnitTestApp/TestSetup
         
       - name: Run coverage report
-        run: yarn test --coverage --collectCoverageFrom='../../repo2/packages/react-charting/src/components/Sparkline'
+        run: yarn test --coverage --collectCoverageFrom='../../repo2/packages/react-charting/src/**/*.tsx'
         working-directory: ./tools/UnitTestApp
         
