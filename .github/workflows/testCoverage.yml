@@ -17,10 +17,7 @@ jobs:
           path: repo2
 
       - name: Move src files
-        run: mv ./repo2/packages/react-charting/src ./tools/UnitTestApp
-
-      - name: show dir
-        run: ls
+        run: mv ./repo2/packages/react-charting ./tools/UnitTestApp
       
       - name: Install packages
         run: yarn --cwd ./tools/UnitTestApp --verbose   
