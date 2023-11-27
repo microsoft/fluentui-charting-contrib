@@ -7,6 +7,16 @@ jobs:
     runs-on: ubuntu-latest
     name: Test coverage
     steps:
+      - name: Checkout [master]
+        uses: actions/checkout@v3
+
+      - name: Install packages
+        run: yarn --cwd ./tools/UnitTestApp --verbose
+        
+      - name: Test Environment Setup action step
+        id: setup
+        uses: ./tools/UnitTestApp/TestSetup
+        
       - name: Checkout [react-charting]
         uses: actions/checkout@v4
         with: 
