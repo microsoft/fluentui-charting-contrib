@@ -24,7 +24,7 @@ jobs:
         uses: ./tools/UnitTestApp/TestSetup
 
       - name: Move src files
-        run: mv ./repo2/packages/react-charting/src ./tools/UnitTestApp
+        run: mv ./repo2/packages/react-charting/src ./tools/UnitTestApp && ls
         
       - name: Run coverage report
         run: yarn test --coverage
