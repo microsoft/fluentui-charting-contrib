@@ -27,7 +27,7 @@ jobs:
         run: cp -r ./tools/UnitTestApp/node_modules/* ./repo1/packages/react-charting/node_modules
         
       - name: Build, Test
-        run:  yarn buildto @fluentui/react-charting && cd ./packages/react-charting && yarn test --coverage --verbose
+        run:  cd ./repo1 && yarn buildto @fluentui/react-charting && cd ./packages/react-charting && yarn test --coverage --verbose
 
       # - name: Save the coverage report
       #   run: ls ./repo2/packages/react-charting
