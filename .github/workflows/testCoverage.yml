@@ -21,13 +21,10 @@ jobs:
 
       - name: Test Environment Setup action step
         id: setup
-        uses: ./tools/UnitTestApp/TestSetup
-        
-      - name: Run ls
-        run: ls
+        uses: ./tools/UnitTestApp/TestSetup        
         
       - name: Run coverage report repo2
-        run: cd ./repo2/packages/react-charting/src && yarn test --coverage
+        run: cd ../../repo2/packages/react-charting/src && yarn test --coverage
         
       - name: Run coverage report
         run: cd ./tools/UnitTestApp && yarn test --coverage --collectCoverageFrom '../../packages/react-charting/src'
