@@ -20,7 +20,7 @@ jobs:
         run: yarn --cwd ./repo2 && yarn --cwd ./repo2/packages/react-charting
         
       - name: Run tests in repo2
-        run: cd ./repo2/packages/react-charting && echo $CWD && yarn --cwd ./repo2/packages/react-charting test
+        run: cd ./repo2/packages/react-charting && echo $PWD && yarn --cwd ./repo2/packages/react-charting test
         
       # - name: Install packages repo2 and run tests
       #   run: yarn --cwd ./repo2/packages/react-charting/src --verbose && yarn test --coverage
