@@ -6,38 +6,34 @@ jobs:
   test_env_setup_job:
     runs-on: ubuntu-latest
     name: Test coverage
-    steps:        
-      # - name: Checkout [master]
-      #   uses: actions/checkout@v4
-              
+    steps:                      
       - name: Checkout [react-charting]
         uses: actions/checkout@v4
         with: 
           repository: "microsoft/fluentui"
-          path: repo2
+          path: repo1
           
+      - name: Checkout [master]
+        uses: actions/checkout@v4
+        with:
+          path: repo1/packages/react-charting
+        
+      - name: Install packages repo1
+        run: yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
+
       - name: Install packages repo2
-        run: yarn --cwd ./repo2 && yarn --cwd ./repo2/packages/react-charting
+        run: yarn --cwd ./repo1/packages/react-charting/tools/UnitTestApp --verbose 
 
+      - name: Test Environment Setup action step
+        id: setup
+        uses: ./repo1/packages/react-charting/tools/UnitTestApp/TestSetup  
+        
       - name: Build, Test
-        run:  cd ./repo2 && yarn buildto @fluentui/react-charting && cd ./packages/react-charting && yarn test --coverage --coverageReporters="text"
+        run:  cd ./repo1 && yarn buildto @fluentui/react-charting && cd ./packages/react-charting && yarn test --coverage --verbose
 
-      - name: Save the coverage report
-        run: ls ./repo2/packages/react-charting
-        # run: wget -O coverage.html ./coverage/index.html
-        
-      # - name: Run tests in repo2
-      #   run: cd ./repo2/packages/react-charting && echo $PWD && yarn --cwd ./repo2/packages/react-charting test
-        
-      # - name: Install packages repo2 and run tests
-      #   run: yarn --cwd ./repo2/packages/react-charting/src --verbose && yarn test --coverage
-        
-      # - name: Install packages repo1
-      #   run: yarn --cwd ./tools/UnitTestApp --verbose 
-
-      # - name: Test Environment Setup action step
-      #   id: setup
-      #   uses: ./tools/UnitTestApp/TestSetup        
+      # - name: Save the coverage report
+      #   run: ls ./repo2/packages/react-charting
+        # run: wget -O coverage.html ./coverage/index.html                    
         
       # - name: Run coverage report
       #   run: cd ./tools/UnitTestApp && yarn test --coverage --collectCoverageFrom '../../packages/react-charting/src'
