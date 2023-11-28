@@ -16,8 +16,11 @@ jobs:
           repository: "microsoft/fluentui"
           path: repo2
           
-      - name: Run ls
-        run: ls
+      - name: Install packages repo2
+        run: yarn --cwd ./repo2/packages/react-charting/src
+
+      - name: Run tests in repo2
+        run: cd ./repo2/packages/react-charting/src && yarn test --coverage
         
       # - name: Install packages repo2 and run tests
       #   run: yarn --cwd ./repo2/packages/react-charting/src --verbose && yarn test --coverage
