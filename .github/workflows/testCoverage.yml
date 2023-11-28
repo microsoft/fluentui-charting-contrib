@@ -17,7 +17,7 @@ jobs:
           path: repo1
         
       - name: Install packages
-        run: yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 yarn --cwd ./repo1/packages/react-charting
+        run: yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
 
       - name: Test Environment Setup action step
         id: setup
