@@ -17,7 +17,7 @@ jobs:
           path: repo2
           
       - name: Install packages repo2
-        run: yarn && yarn --cwd ./repo2
+        run: yarn --cwd ./repo2 && yarn --cwd ./repo2/packages/react-charting
         
       - name: Run tests in repo2
         run: cd ./repo2/packages/react-charting && yarn --cwd ./repo2/packages/react-charting test
