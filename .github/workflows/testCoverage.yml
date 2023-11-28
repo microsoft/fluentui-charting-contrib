@@ -6,26 +6,25 @@ jobs:
   test_env_setup_job:
     runs-on: ubuntu-latest
     name: Test coverage
-    steps:                      
+    steps:                               
+      - name: Checkout [master]
+        uses: actions/checkout@v4
+
       - name: Checkout [react-charting]
         uses: actions/checkout@v4
         with: 
           repository: "microsoft/fluentui"
-          
-      - name: Checkout [master]
-        uses: actions/checkout@v4
-        with:
-          path: ./packages/react-charting
+          path: repo1
         
-      - name: Install packages repo1
-        run: yarn && yarn --cwd ./packages/react-charting
-
-      - name: Install packages repo2
-        run: yarn --cwd ./packages/react-charting/tools/UnitTestApp --verbose 
+      - name: Install packages
+        run: yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 yarn --cwd ./repo1/packages/react-charting
 
       - name: Test Environment Setup action step
         id: setup
-        uses: ./packages/react-charting/tools/UnitTestApp/TestSetup  
+        uses: ./tools/UnitTestApp/TestSetup  
+
+      - name: Move node_modules of repo1 to repo2
+        run: cp -r ./tools/UnitTestApp/node_modules/* ./repo1/packages/react-charting/node_modules
         
       - name: Build, Test
         run:  yarn buildto @fluentui/react-charting && cd ./packages/react-charting && yarn test --coverage --verbose
