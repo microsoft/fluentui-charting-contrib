@@ -15,16 +15,19 @@ jobs:
         with: 
           repository: "microsoft/fluentui"
           path: repo2
+          
+      - name: Run ls
+        run: ls
         
-      - name: Install packages repo2 and run tests
-        run: yarn --cwd ./repo2/packages/react-charting/src --verbose && yarn test --coverage
+      # - name: Install packages repo2 and run tests
+      #   run: yarn --cwd ./repo2/packages/react-charting/src --verbose && yarn test --coverage
         
-      - name: Install packages repo1
-        run: yarn --cwd ./tools/UnitTestApp --verbose 
+      # - name: Install packages repo1
+      #   run: yarn --cwd ./tools/UnitTestApp --verbose 
 
-      - name: Test Environment Setup action step
-        id: setup
-        uses: ./tools/UnitTestApp/TestSetup        
+      # - name: Test Environment Setup action step
+      #   id: setup
+      #   uses: ./tools/UnitTestApp/TestSetup        
         
-      - name: Run coverage report
-        run: cd ./tools/UnitTestApp && yarn test --coverage --collectCoverageFrom '../../packages/react-charting/src'
+      # - name: Run coverage report
+      #   run: cd ./tools/UnitTestApp && yarn test --coverage --collectCoverageFrom '../../packages/react-charting/src'
