@@ -11,25 +11,24 @@ jobs:
         uses: actions/checkout@v4
         with: 
           repository: "microsoft/fluentui"
-          path: repo1
           
       - name: Checkout [master]
         uses: actions/checkout@v4
         with:
-          path: repo1/packages/react-charting
+          path: ./packages/react-charting
         
       - name: Install packages repo1
-        run: yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
+        run: yarn && yarn --cwd ./packages/react-charting
 
       - name: Install packages repo2
-        run: yarn --cwd ./repo1/packages/react-charting/tools/UnitTestApp --verbose 
+        run: yarn --cwd ./packages/react-charting/tools/UnitTestApp --verbose 
 
       - name: Test Environment Setup action step
         id: setup
-        uses: ./repo1/packages/react-charting/tools/UnitTestApp/TestSetup  
+        uses: ./packages/react-charting/tools/UnitTestApp/TestSetup  
         
       - name: Build, Test
-        run:  cd ./repo1 && yarn buildto @fluentui/react-charting && cd ./packages/react-charting && yarn test --coverage --verbose
+        run:  yarn buildto @fluentui/react-charting && cd ./packages/react-charting && yarn test --coverage --verbose
 
       # - name: Save the coverage report
       #   run: ls ./repo2/packages/react-charting
