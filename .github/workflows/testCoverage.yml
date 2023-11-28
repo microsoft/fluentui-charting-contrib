@@ -20,7 +20,10 @@ jobs:
         run: yarn --cwd ./repo2 && yarn --cwd ./repo2/packages/react-charting
 
       - name: Build, Test
-        run:  cd ./repo2 && yarn buildto @fluentui/react-charting && cd ./packages/react-charting && yarn test --coverage
+        run:  cd ./repo2 && yarn buildto @fluentui/react-charting && cd ./packages/react-charting && yarn test --coverage --coverageReporters=html
+
+      - name: Save the coverage report
+        run: wget -O coverage.html ./coverage/index.html
         
       # - name: Run tests in repo2
       #   run: cd ./repo2/packages/react-charting && echo $PWD && yarn --cwd ./repo2/packages/react-charting test
