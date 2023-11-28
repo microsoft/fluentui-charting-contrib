@@ -20,7 +20,7 @@ jobs:
         run: yarn --cwd ./repo2 && yarn --cwd ./repo2/packages/react-charting
 
       - name: Build, Test
-        run:  cd ./repo2/packages/react-charting && yarn build && yarn test
+        run:  yarn buildto @fluentui/react-charting && cd ./repo2/packages/react-charting && yarn test
         
       # - name: Run tests in repo2
       #   run: cd ./repo2/packages/react-charting && echo $PWD && yarn --cwd ./repo2/packages/react-charting test
