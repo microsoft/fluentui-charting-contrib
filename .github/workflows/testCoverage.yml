@@ -14,12 +14,13 @@ jobs:
         uses: actions/checkout@v4
         with: 
           repository: "microsoft/fluentui"
+          path: repo2
           
       - name: Install packages repo2
-        run: yarn && yarn --cwd ./packages/react-charting && cp -r ./node_modules/@fluentui ./packages/react-charting/node_modules
+        run: yarn && yarn --cwd ./repo2
         
       - name: Run tests in repo2
-        run: cd ./packages/react-charting && yarn --cwd packages/react-charting test
+        run: cd ./repo2/packages/react-charting && yarn --cwd ./repo2/packages/react-charting test
         
       # - name: Install packages repo2 and run tests
       #   run: yarn --cwd ./repo2/packages/react-charting/src --verbose && yarn test --coverage
