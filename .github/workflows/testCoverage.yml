@@ -19,7 +19,7 @@ jobs:
         run: yarn && yarn --cwd ./packages/react-charting
 
       - name: Run tests in repo2
-        run: ls ./node_modules/@fluentui/react-charting && cd ./packages/react-charting && ls && yarn test --coverage
+        run: yarn test --coverage --cwd ./packages/react-charting
         
       # - name: Install packages repo2 and run tests
       #   run: yarn --cwd ./repo2/packages/react-charting/src --verbose && yarn test --coverage
