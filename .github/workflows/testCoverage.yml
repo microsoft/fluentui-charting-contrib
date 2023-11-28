@@ -23,7 +23,7 @@ jobs:
         run:  cd ./repo2 && yarn buildto @fluentui/react-charting && cd ./packages/react-charting && yarn test --coverage --coverageReporters="text"
 
       - name: Save the coverage report
-        run: ls
+        run: ls ./repo2/packages/react-charting
         # run: wget -O coverage.html ./coverage/index.html
         
       # - name: Run tests in repo2
