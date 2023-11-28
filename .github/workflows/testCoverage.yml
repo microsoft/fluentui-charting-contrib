@@ -16,7 +16,8 @@ jobs:
           repository: "microsoft/fluentui"
           
       - name: Install packages repo2
-        run: yarn && cp -r ./node_modules/@fluentui ./packages/react-charting && yarn --cwd ./packages/react-charting 
+        run: yarn && yarn --cwd ./packages/react-charting && cp -r ./node_modules/@fluentui ./packages/react-charting/node_modules
+        
       - name: Run tests in repo2
         run: cd ./packages/react-charting && yarn --cwd packages/react-charting test
         
