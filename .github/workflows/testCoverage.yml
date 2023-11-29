@@ -22,13 +22,17 @@ jobs:
       - name: Test Environment Setup action step
         id: setup
         uses: ./tools/UnitTestApp/TestSetup  
-
+        
+      - name: Build
+        run:  yarn --cwd ./repo1 buildto @fluentui/react-charting
+        
       - name: Move node_modules of repo1 to repo2
         run: cp -r ./tools/UnitTestApp/node_modules/* ./repo1/packages/react-charting/node_modules
-        
-      - name: Build, Test
-        run:  yarn --cwd ./repo1 buildto @fluentui/react-charting && cd ./repo1/packages/react-charting && yarn test --coverage --verbose
 
+      - name: Test
+        run: cd ./repo1/packages/react-charting && yarn test --coverage --verbose
+
+        
       # - name: Save the coverage report
       #   run: ls ./repo2/packages/react-charting
         # run: wget -O coverage.html ./coverage/index.html                    
