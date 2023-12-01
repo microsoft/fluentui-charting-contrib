@@ -1,5 +1,5 @@
 import { screen, fireEvent } from '@testing-library/react';
-import { AreaChart } from './index';
+import { AreaChart } from '../AreaChart/index';
 
 import { getById, testWithoutWait } from '../../utilities/TestUtility.test';
 import { DarkTheme } from '@fluentui/theme-samples';
