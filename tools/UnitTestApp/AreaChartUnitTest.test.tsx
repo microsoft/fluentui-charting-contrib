@@ -15,7 +15,7 @@ async function updatedFile(filePath: string) {
   }
 };
 
-updatedFile('./AreaChart.base.tsx');
+updatedFile(fs.realpathSync('./') + '/src/components/AreaChart/AreaChart.base.tsx');
 
 const chart1Points = [
   {
