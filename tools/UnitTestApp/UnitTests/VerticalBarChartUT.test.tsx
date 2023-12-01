@@ -1,4 +1,3 @@
-const basePath = fs.realpathSync('./') + '/src/components/VerticalBarChart';
 import { stringPoints } from '../VerticalBarChart/VerticalBarChartRTL.test';
 import { DarkTheme } from '@fluentui/theme-samples';
 import { chartPoints } from '../VerticalBarChart/VerticalBarChart.test';
