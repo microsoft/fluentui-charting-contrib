@@ -1,12 +1,12 @@
 const basePath = fs.realpathSync('./') + '/src/components/VerticalBarChart';
-import { stringPoints } from basePath + '/VerticalBarChartRTL.test';
+import { stringPoints } from '../VerticalBarChart/VerticalBarChartRTL.test';
 import { DarkTheme } from '@fluentui/theme-samples';
-import { chartPoints } from basePath + '/VerticalBarChart.test';
-import { testWithoutWait } from fs.realpathSync('./') + '/src/utilities/TestUtility.test';
+import { chartPoints } from '../VerticalBarChart/VerticalBarChart.test';
+import { testWithoutWait } from '../../utilities/TestUtility.test';
 import * as utils from '@fluentui/react/lib/Utilities';
 import { DefaultPalette } from '@fluentui/react';
-import { VerticalBarChartBase } from basePath + '/VerticalBarChart.base';
-import { VerticalBarChart } from basePath + '/VerticalBarChart';
+import { VerticalBarChartBase } from '../VerticalBarChart/VerticalBarChart.base';
+import { VerticalBarChart } from '../VerticalBarChart/VerticalBarChart';
 
 import * as fs from 'fs';
 
