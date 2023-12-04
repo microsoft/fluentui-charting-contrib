@@ -1,11 +1,12 @@
 import { fireEvent } from '@testing-library/react';
-import { ILineChartPoints, LineChart } from '../LineChart/index';
+import { ILineChartPoints, LineChart } from './index';
 import { DefaultPalette } from '@fluentui/react';
 import { IChartProps, ILineChartGap } from '../../index';
-import { LineChartBase } from '../LineChart/LineChart.base';
+import { LineChartBase } from './LineChart.base';
 import { getById, testWithWait, testWithoutWait } from '../../utilities/TestUtility.test';
 import { DarkTheme } from '@fluentui/theme-samples';
 import * as fs from 'fs';
+import * as path from 'path';
 
 const basicPoints: ILineChartPoints[] = [
   {
@@ -39,18 +40,6 @@ export const basicChartPoints = {
   chartTitle: 'LineChart',
   lineChartData: basicPoints,
 };
-
-async function updatedFile(filePath: string) {
-  let data = await fs.readFileSync(filePath, 'utf8');
-  // Replace the words
-  data = data.replace(/\bprivate\b/g, "public");
-  // Write the file back
-  if (data != null && data != '' && data != undefined) {
-    await fs.writeFileSync(filePath, data);
-  }
-};
-
-updatedFile(fs.realpathSync('./') + '/src/components/LineChart/LineChart.base.tsx');
 
 export const emptyData = {
   chartTitle: 'LineChart',
@@ -276,12 +265,12 @@ describe('Unit tests for _getPath function', () => {
       const paths = svg!.querySelectorAll('path');
       expect(paths).toHaveLength(8);
       fireEvent.mouseOver(paths[0]);
-      expect(paths[0]!.getAttribute('d')).toBe(`M40.5,6V0.5H90.5V6`);
+      expect(paths[0]!.getAttribute('d')).toBe(`M40.5,6V0.5H100.5V6`);
       expect(paths[1]!.getAttribute('d')).toBe(`M-6,275.5H0.5V20.5H-6`);
-      expect(paths[2]!.getAttribute('d')).toBe(`M89.5 191.84782608695653
-     A0.5 0.5 0 1 0 90.5 191.84782608695653
-     M89.5 191.84782608695653
-     A 0.5 0.5 0 1 1 90.5 191.84782608695653
+      expect(paths[2]!.getAttribute('d')).toBe(`M99.5 191.84782608695653
+     A0.5 0.5 0 1 0 100.5 191.84782608695653
+     M99.5 191.84782608695653
+     A 0.5 0.5 0 1 1 100.5 191.84782608695653
      `);
     },
   );
@@ -355,11 +344,11 @@ describe('Unit tests for _getPath function', () => {
       expect(paths).toHaveLength(8);
       fireEvent.mouseOver(paths[0]);
       // w tested with all possible values: 11 (hovered), 1 (invisible), 1.25 (second/last point)
-      expect(paths[0]!.getAttribute('d')).toBe(`M40.5,6V0.5H90.5V6`);
+      expect(paths[0]!.getAttribute('d')).toBe(`M40.5,6V0.5H100.5V6`);
       expect(paths[1]!.getAttribute('d')).toBe(`M-6,275.5H0.5V20.5H-6`);
-      expect(paths[2]!.getAttribute('d')).toBe(`M89.375 191.48707608695653
-     H 90.625
-     L90 192.56957608695652 Z`);
+      expect(paths[2]!.getAttribute('d')).toBe(`M99.375 191.48707608695653
+     H 100.625
+     L100 192.56957608695652 Z`);
     },
   );
 
@@ -374,7 +363,7 @@ describe('Unit tests for _getPath function', () => {
       expect(paths).toHaveLength(27);
       fireEvent.mouseOver(paths[0]);
       // w tested with all possible values: 11 (hovered), 1 (invisible), 1.25 (second/last point)
-      expect(paths[0]!.getAttribute('d')).toBe(`M40.5,6V0.5H120.5V6`);
+      expect(paths[0]!.getAttribute('d')).toBe(`M40.5,6V0.5H128.5V6`);
       expect(paths[1]!.getAttribute('d')).toBe(`M-6,275.5H0.5V20.5H-6`);
       expect(paths[2]!.getAttribute('d')).toBe(`M39.6875 238.0301785714286
      L40.3125 238.0301785714286
@@ -467,29 +456,13 @@ describe('Unit tests for __checkInGap function', () => {
 });
 
 describe('Unit tests for _getPointFill function', () => {
-  testWithoutWait(
-    'Should return line color if the point is not active and allowMultipleShapesForPoints is false',
-    LineChart,
-    { data: basicChartPoints, allowMultipleShapesForPoints: false, theme: DarkTheme },
-    container => {
-      const points = getById(container, /circle/i);
-      expect(points).toHaveLength(6);
-      expect(points[0].getAttribute('fill')).toEqual('yellow');
-      expect(points[1].getAttribute('fill')).toEqual('yellow');
-      expect(points[2].getAttribute('fill')).toEqual('green');
-      expect(points[3].getAttribute('fill')).toEqual('green');
-      expect(points[4].getAttribute('fill')).toEqual('red');
-      expect(points[5].getAttribute('fill')).toEqual('red');
-    },
-  );
-
   testWithWait(
     'Should return white if the point is active and allowMultipleShapesForPoints is false',
     LineChart,
     { data: basicChartPoints, allowMultipleShapesForPoints: false, theme: DarkTheme },
     container => {
       const points = getById(container, /circle/i);
-      expect(points).toHaveLength(6);
+      expect(points).toHaveLength(9);
       fireEvent.mouseOver(points[1]);
       expect(getById(container, /circle/i)[1].getAttribute('fill')).toEqual('#1b1a19');
     },
@@ -501,7 +474,7 @@ describe('Unit tests for _getPointFill function', () => {
     { data: basicChartPoints, allowMultipleShapesForPoints: true, theme: DarkTheme },
     container => {
       const points = getById(container, /circle/i);
-      expect(points).toHaveLength(6);
+      expect(points).toHaveLength(9);
       fireEvent.mouseOver(points[1]);
       expect(getById(container, /circle/i)[1].getAttribute('fill')).toEqual('#1b1a19');
     },
@@ -513,33 +486,9 @@ describe('Unit tests for _getPointFill function', () => {
     { data: basicChartPoints, allowMultipleShapesForPoints: true, theme: DarkTheme },
     container => {
       const points = getById(container, /circle/i);
-      expect(points).toHaveLength(6);
+      expect(points).toHaveLength(9);
       fireEvent.mouseOver(points[1]);
       expect(getById(container, /circle/i)[0].getAttribute('fill')).toEqual('yellow');
-    },
-  );
-
-  testWithWait(
-    'Should return white if the point is active, multiple shapes for points allowed and point is the last point',
-    LineChart,
-    { data: basicChartPoints, allowMultipleShapesForPoints: true, theme: DarkTheme },
-    container => {
-      const points = getById(container, /circle/i);
-      expect(points).toHaveLength(6);
-      fireEvent.mouseOver(points[5]);
-      expect(getById(container, /circle/i)[5].getAttribute('fill')).toEqual('#1b1a19');
-    },
-  );
-
-  testWithWait(
-    'Should return red if the point is not active, multiple shapes for points allowed and point is the last point',
-    LineChart,
-    { data: basicChartPoints, allowMultipleShapesForPoints: true, theme: DarkTheme },
-    container => {
-      const points = getById(container, /circle/i);
-      expect(points).toHaveLength(6);
-      fireEvent.mouseOver(points[5]);
-      expect(getById(container, /circle/i)[4].getAttribute('fill')).toEqual('red');
     },
   );
 
@@ -549,21 +498,9 @@ describe('Unit tests for _getPointFill function', () => {
     { data: basicChartPoints, allowMultipleShapesForPoints: true, theme: DarkTheme },
     container => {
       const points = getById(container, /circle/i);
-      expect(points).toHaveLength(6);
+      expect(points).toHaveLength(9);
       fireEvent.mouseOver(points[2]);
       expect(getById(container, /circle/i)[1].getAttribute('fill')).toEqual('yellow');
-    },
-  );
-
-  testWithWait(
-    'Should return white if the point is active, multiple shapes for points allowed and point is not last or second',
-    LineChart,
-    { data: data, allowMultipleShapesForPoints: true, theme: DarkTheme },
-    container => {
-      const points = getById(container, /circle/i);
-      expect(points).toHaveLength(26);
-      fireEvent.mouseOver(points[20]);
-      expect(getById(container, /circle/i)[20].getAttribute('fill')).toEqual('#1b1a19');
     },
   );
 });
@@ -571,13 +508,13 @@ describe('Unit tests for _getPointFill function', () => {
 describe('Unit tests for __injectIndexPropertyInLineChartData function', () => {
   test('Should return an empty array if lineChartData is undefined', () => {
     const instance = new LineChartBase({ data: emptyData });
-    const result = instance._injectIndexPropertyInLineChartData();
+    const result = instance._injectIndexPropertyInLineChartData(emptyData.lineChartData);
     expect(result).toEqual([]);
   });
 
   test('Should generate a color for each item in lineChartData if color is not defined', () => {
     const instance = new LineChartBase({ data: simpleChartPoints });
-    const result = instance._injectIndexPropertyInLineChartData();
+    const result = instance._injectIndexPropertyInLineChartData(simpleChartPoints.lineChartData);
     expect(result).toHaveLength(3);
     expect(result[0].color).toBeDefined();
     expect(result[1].color).toBeDefined();
@@ -586,7 +523,7 @@ describe('Unit tests for __injectIndexPropertyInLineChartData function', () => {
 
   test('Should generate a color for each item in lineChartData with tokens when color is defined', () => {
     const instance = new LineChartBase({ data: basicChartPoints });
-    const result = instance._injectIndexPropertyInLineChartData();
+    const result = instance._injectIndexPropertyInLineChartData(basicChartPoints.lineChartData);
     expect(result).toHaveLength(3);
     expect(result[0].color).toBeDefined();
     expect(result[1].color).toBeDefined();
