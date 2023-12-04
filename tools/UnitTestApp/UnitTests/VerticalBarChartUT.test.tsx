@@ -1,4 +1,3 @@
-import { stringPoints } from '../VerticalBarChart/VerticalBarChartRTL.test';
 import { DarkTheme } from '@fluentui/theme-samples';
 import { chartPoints } from '../VerticalBarChart/VerticalBarChart.test';
 import { testWithoutWait } from '../../utilities/TestUtility.test';
@@ -8,6 +7,19 @@ import { VerticalBarChartBase } from '../VerticalBarChart/VerticalBarChart.base'
 import { VerticalBarChart } from '../VerticalBarChart/VerticalBarChart';
 
 import * as fs from 'fs';
+
+const stringPoints = [
+  {
+    x: 'medium',
+    y: 3500,
+    color: '#627CEF',
+  },
+  {
+    x: 'long',
+    y: 2500,
+    color: '#C19C00',
+  },
+];
 
 async function updatedFile(filePath: string) {
   let data = await fs.readFileSync(filePath, 'utf8');
@@ -35,7 +47,7 @@ describe('VerticalBarChart unit tests', () => {
         },
       });
       expect(instance).toBeDefined();
-      const margins = instance.getDomainMargins();
+      const margins = instance._getDomainMargins();
       expect(margins).toBeDefined();
       expect(margins.left).toEqual(468);
       expect(margins.right).toEqual(468);
@@ -54,7 +66,7 @@ describe('VerticalBarChart unit tests', () => {
         },
       });
       expect(instance).toBeDefined();
-      const margins = instance.getDomainMargins();
+      const margins = instance._getDomainMargins();
       expect(margins).toBeDefined();
       expect(margins.left).toEqual(18);
       expect(margins.right).toEqual(18);
@@ -79,7 +91,7 @@ describe('VerticalBarChart unit tests', () => {
       const containerWidth = 800;
       const isNumericAxis = true;
 
-      const scales = instance.getScales(containerHeight, containerWidth, isNumericAxis);
+      const scales = instance._getScales(containerHeight, containerWidth, isNumericAxis);
 
       expect(scales.xBarScale).toBeDefined();
       expect(scales.yBarScale).toBeDefined();
@@ -106,7 +118,7 @@ describe('VerticalBarChart unit tests', () => {
       const containerHeight = 500;
       const containerWidth = 800;
       const isNumericAxis = false;
-      const scales = instance.getScales(containerHeight, containerWidth, isNumericAxis);
+      const scales = instance._getScales(containerHeight, containerWidth, isNumericAxis);
 
       expect(scales.xBarScale).toBeDefined();
       expect(scales.yBarScale).toBeDefined();
@@ -147,7 +159,7 @@ describe('VerticalBarChart unit tests', () => {
       const containerWidth = 800;
       const isNumericAxis = true;
 
-      const scales = instance.getScales(containerHeight, containerWidth, isNumericAxis);
+      const scales = instance._getScales(containerHeight, containerWidth, isNumericAxis);
 
       expect(scales.xBarScale).toBeDefined();
       expect(scales.yBarScale).toBeDefined();
@@ -169,7 +181,7 @@ describe('VerticalBarChart unit tests', () => {
         useSingleColor: true,
       });
       expect(instance).toBeDefined();
-      const result = instance.createColors();
+      const result = instance._createColors();
       expect(result).toBeDefined();
       expect(result(chartPoints[0].y)).toBe(DefaultPalette.green);
       expect(result(chartPoints[1].y)).toBe(DefaultPalette.green);
@@ -183,7 +195,7 @@ describe('VerticalBarChart unit tests', () => {
         useSingleColor: false,
       });
       expect(instance).toBeDefined();
-      const result = instance.createColors();
+      const result = instance._createColors();
       expect(result).toBeDefined();
       expect(result(chartPoints[0].y)).toBe('rgb(77, 86, 153)');
       expect(result(chartPoints[1].y)).toBe('rgb(37, 129, 0)');
@@ -195,11 +207,11 @@ describe('VerticalBarChart unit tests', () => {
     test('returns an array of aria labels for each data point', () => {
       const instance = new VerticalBarChartBase({ data: chartPoints });
       expect(instance).toBeDefined();
-      const result = instance.getAriaLabels();
+      const result = instance._getAriaLabel();
       expect(result).toEqual([['2020/04/30. First, 10%.', '2020/04/30. Second, 20%.', '2020/04/30. Third, 37%.']]);
     });
     test('returns empty string for empty data', () => {
-      const result = new VerticalBarChartBase({ data: [] }).getAriaLabels();
+      const result = new VerticalBarChartBase({ data: [] })._getAriaLabel();
       expect(result).toEqual('');
     });
   });
