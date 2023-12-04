@@ -5,8 +5,40 @@ import { IChartProps, ILineChartGap } from '../../index';
 import { LineChartBase } from '../LineChart/LineChart.base';
 import { getById, testWithWait, testWithoutWait } from '../../utilities/TestUtility.test';
 import { DarkTheme } from '@fluentui/theme-samples';
-import { basicChartPoints } from '../LineChart/LineChartRTL.test';
 import * as fs from 'fs';
+
+const basicPoints: ILineChartPoints[] = [
+  {
+    legend: 'metaData1',
+    data: [
+      { x: 20, y: 50 },
+      { x: 40, y: 80 },
+    ],
+    color: 'red',
+    onLegendClick: () => {},
+  },
+  {
+    legend: 'metaData2',
+    data: [
+      { x: 30, y: 60 },
+      { x: 50, y: 90 },
+    ],
+    color: 'green',
+  },
+  {
+    legend: 'metaData3',
+    data: [
+      { x: 70, y: 30 },
+      { x: 40, y: 80 },
+    ],
+    color: 'yellow',
+  },
+];
+
+export const basicChartPoints = {
+  chartTitle: 'LineChart',
+  lineChartData: basicPoints,
+};
 
 async function updatedFile(filePath: string) {
   let data = await fs.readFileSync(filePath, 'utf8');
@@ -355,14 +387,14 @@ describe('Unit tests for _getPath function', () => {
   );
 });
 
-describe('Unit tests for _checkInGap function', () => {
+describe('Unit tests for __checkInGap function', () => {
   test('Should return false if pointIndex is not in any gap', () => {
     const gaps: ILineChartGap[] = [
       { startIndex: 3, endIndex: 5 },
       { startIndex: 8, endIndex: 10 },
     ];
     const instance = new LineChartBase({ data: basicChartPoints });
-    const { isInGap } = instance.checkInGap(2, gaps, 0);
+    const { isInGap } = instance._checkInGap(2, gaps, 0);
     expect(isInGap).toBeFalsy();
   });
 
@@ -372,7 +404,7 @@ describe('Unit tests for _checkInGap function', () => {
       { startIndex: 8, endIndex: 10 },
     ];
     const instance = new LineChartBase({ data: basicChartPoints });
-    const { isInGap } = instance.checkInGap(4, gaps, 0);
+    const { isInGap } = instance._checkInGap(4, gaps, 0);
     expect(isInGap).toBeTruthy();
   });
 
@@ -382,7 +414,7 @@ describe('Unit tests for _checkInGap function', () => {
       { startIndex: 8, endIndex: 10 },
     ];
     const instance = new LineChartBase({ data: basicChartPoints });
-    const { isInGap } = instance.checkInGap(3, gaps, 0);
+    const { isInGap } = instance._checkInGap(3, gaps, 0);
     expect(isInGap).toBeFalsy();
   });
 
@@ -392,7 +424,7 @@ describe('Unit tests for _checkInGap function', () => {
       { startIndex: 8, endIndex: 10 },
     ];
     const instance = new LineChartBase({ data: basicChartPoints });
-    const { isInGap } = instance.checkInGap(5, gaps, 0);
+    const { isInGap } = instance._checkInGap(5, gaps, 0);
     expect(isInGap).toBeTruthy();
   });
 
@@ -402,7 +434,7 @@ describe('Unit tests for _checkInGap function', () => {
       { startIndex: 8, endIndex: 10 },
     ];
     const instance = new LineChartBase({ data: basicChartPoints });
-    const { isInGap } = instance.checkInGap(12, gaps, 1);
+    const { isInGap } = instance._checkInGap(12, gaps, 1);
     expect(isInGap).toBeFalsy();
   });
 
@@ -412,14 +444,14 @@ describe('Unit tests for _checkInGap function', () => {
       { startIndex: 8, endIndex: 10 },
     ];
     const instance = new LineChartBase({ data: basicChartPoints });
-    const { isInGap } = instance.checkInGap(2, gaps, 0);
+    const { isInGap } = instance._checkInGap(2, gaps, 0);
     expect(isInGap).toBeFalsy();
   });
 
   test('Should return false if gaps array is empty', () => {
     const gaps: ILineChartGap[] = [];
     const instance = new LineChartBase({ data: basicChartPoints });
-    const { isInGap } = instance.checkInGap(5, gaps, 0);
+    const { isInGap } = instance._checkInGap(5, gaps, 0);
     expect(isInGap).toBeFalsy();
   });
 
@@ -429,7 +461,7 @@ describe('Unit tests for _checkInGap function', () => {
       { startIndex: 8, endIndex: 10 },
     ];
     const instance = new LineChartBase({ data: basicChartPoints });
-    const { isInGap } = instance.checkInGap(5, gaps, 2);
+    const { isInGap } = instance._checkInGap(5, gaps, 2);
     expect(isInGap).toBeFalsy();
   });
 });
@@ -536,16 +568,16 @@ describe('Unit tests for _getPointFill function', () => {
   );
 });
 
-describe('Unit tests for _injectIndexPropertyInLineChartData function', () => {
+describe('Unit tests for __injectIndexPropertyInLineChartData function', () => {
   test('Should return an empty array if lineChartData is undefined', () => {
     const instance = new LineChartBase({ data: emptyData });
-    const result = instance.injectIndexPropertyInLineChartData();
+    const result = instance._injectIndexPropertyInLineChartData();
     expect(result).toEqual([]);
   });
 
   test('Should generate a color for each item in lineChartData if color is not defined', () => {
     const instance = new LineChartBase({ data: simpleChartPoints });
-    const result = instance.injectIndexPropertyInLineChartData();
+    const result = instance._injectIndexPropertyInLineChartData();
     expect(result).toHaveLength(3);
     expect(result[0].color).toBeDefined();
     expect(result[1].color).toBeDefined();
@@ -554,7 +586,7 @@ describe('Unit tests for _injectIndexPropertyInLineChartData function', () => {
 
   test('Should generate a color for each item in lineChartData with tokens when color is defined', () => {
     const instance = new LineChartBase({ data: basicChartPoints });
-    const result = instance.injectIndexPropertyInLineChartData();
+    const result = instance._injectIndexPropertyInLineChartData();
     expect(result).toHaveLength(3);
     expect(result[0].color).toBeDefined();
     expect(result[1].color).toBeDefined();
