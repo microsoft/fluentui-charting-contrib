@@ -5,8 +5,11 @@ import * as utils from '@fluentui/react/lib/Utilities';
 import { DefaultPalette } from '@fluentui/react';
 import { VerticalBarChartBase } from '../VerticalBarChart/VerticalBarChart.base';
 import { VerticalBarChart } from '../VerticalBarChart/VerticalBarChart';
+import { max as d3Max } from 'd3-array';
 
 import * as fs from 'fs';
+
+import { IVerticalBarChartDataPoint } from '../../index';
 
 const stringPoints = [
   {
@@ -21,33 +24,25 @@ const stringPoints = [
   },
 ];
 
-async function updatedFile(filePath: string) {
-  let data = await fs.readFileSync(filePath, 'utf8');
-  // Replace the words
-  data = data.replace(/\bprivate\b/g, "public");
-  // Write the file back
-  if (data != null && data != '' && data != undefined) {
-    await fs.writeFileSync(filePath, data);
-  }
-};
-
-updatedFile(fs.realpathSync('./') + '/src/components/VerticalBarChart/VerticalBarChart.base.tsx');
-
 describe('VerticalBarChart unit tests', () => {
   describe('Get domain margins', () => {
     test('Should return the correct margins when total width is greater than required width', () => {
+      const margin = {
+        left: 10,
+        right: 10,
+        top: 10,
+        bottom: 10,
+      };
+      const width = 1000;
       const instance = new VerticalBarChartBase({
         data: stringPoints,
-        width: 1000,
-        margins: {
-          left: 10,
-          right: 10,
-          top: 10,
-          bottom: 10,
-        },
+        width: width,
+        margins: margin,
       });
       expect(instance).toBeDefined();
-      const margins = instance._getDomainMargins();
+      instance._xAxisLabels = stringPoints!.map((point: IVerticalBarChartDataPoint) => point.x as string);
+      instance._getMargins(margin);
+      const margins = instance._getDomainMargins(1000);
       expect(margins).toBeDefined();
       expect(margins.left).toEqual(468);
       expect(margins.right).toEqual(468);
@@ -55,17 +50,21 @@ describe('VerticalBarChart unit tests', () => {
       expect(margins.bottom).toEqual(10);
     });
     test('Should return the correct margins when total width is less than required width', () => {
+      const margin = {
+        left: 10,
+        right: 10,
+        top: 10,
+        bottom: 10,
+      };
+      const width = 1000;
       const instance = new VerticalBarChartBase({
         data: stringPoints,
-        width: 50,
-        margins: {
-          left: 10,
-          right: 10,
-          top: 10,
-          bottom: 10,
-        },
+        width: width,
+        margins: margin,
       });
       expect(instance).toBeDefined();
+      instance._getMargins(margin);
+      instance._xAxisLabels = stringPoints!.map((point: IVerticalBarChartDataPoint) => point.x as string);
       const margins = instance._getDomainMargins();
       expect(margins).toBeDefined();
       expect(margins.left).toEqual(18);
@@ -76,17 +75,25 @@ describe('VerticalBarChart unit tests', () => {
   });
   describe('Get scales', () => {
     it('Should return scales for numeric axis', () => {
+      const margin = {
+        left: 10,
+        right: 10,
+        top: 10,
+        bottom: 10,
+      };
       const instance = new VerticalBarChartBase({
         data: chartPoints,
         theme: DarkTheme,
-        margins: {
-          left: 10,
-          right: 10,
-          top: 10,
-          bottom: 10,
-        },
+        margins: margin,
       });
       expect(instance).toBeDefined();
+      instance._adjustProps();
+      instance._yMax = Math.max(
+      d3Max(instance._points, (point: IVerticalBarChartDataPoint) => point.y)!,
+      instance.props.yMaxValue || 0,
+      );
+      instance._xAxisLabels = chartPoints!.map((point: IVerticalBarChartDataPoint) => point.x as string);
+      instance._getMargins(margin!);
       const containerHeight = 500;
       const containerWidth = 800;
       const isNumericAxis = true;
@@ -104,17 +111,25 @@ describe('VerticalBarChart unit tests', () => {
     });
 
     it('Should return scales for non-numeric axis', () => {
+      const margin = {
+        left: 10,
+        right: 10,
+        top: 10,
+        bottom: 10,
+      };
       const instance = new VerticalBarChartBase({
         data: stringPoints,
         theme: DarkTheme,
-        margins: {
-          left: 10,
-          right: 10,
-          top: 10,
-          bottom: 10,
-        },
+        margins: margin,
       });
       expect(instance).toBeDefined();
+      instance._adjustProps();
+      instance._yMax = Math.max(
+      d3Max(instance._points, (point: IVerticalBarChartDataPoint) => point.y)!,
+      instance.props.yMaxValue || 0,
+      );
+      instance._xAxisLabels = stringPoints!.map((point: IVerticalBarChartDataPoint) => point.x as string);
+      instance._getMargins(margin!);
       const containerHeight = 500;
       const containerWidth = 800;
       const isNumericAxis = false;
@@ -144,17 +159,25 @@ describe('VerticalBarChart unit tests', () => {
 
     it('Should return scales for numeric axis - RTL', () => {
       jest.spyOn(utils, 'getRTL').mockImplementation(() => true);
+      const margin = {
+        left: 10,
+        right: 10,
+        top: 10,
+        bottom: 10,
+      };
       const instance = new VerticalBarChartBase({
         data: chartPoints,
         theme: DarkTheme,
-        margins: {
-          left: 10,
-          right: 10,
-          top: 10,
-          bottom: 10,
-        },
+        margins: margin,
       });
       expect(instance).toBeDefined();
+      instance._adjustProps();
+      instance._yMax = Math.max(
+      d3Max(instance._points, (point: IVerticalBarChartDataPoint) => point.y)!,
+      instance.props.yMaxValue || 0,
+      );
+      instance._xAxisLabels = chartPoints!.map((point: IVerticalBarChartDataPoint) => point.x as string);
+      instance._getMargins(margin!);
       const containerHeight = 500;
       const containerWidth = 800;
       const isNumericAxis = true;
@@ -181,6 +204,8 @@ describe('VerticalBarChart unit tests', () => {
         useSingleColor: true,
       });
       expect(instance).toBeDefined();
+      instance._getAxisData({ yAxisDomainValues: chartPoints.map(item => item.y) });
+      instance._adjustProps();
       const result = instance._createColors();
       expect(result).toBeDefined();
       expect(result(chartPoints[0].y)).toBe(DefaultPalette.green);
@@ -195,6 +220,8 @@ describe('VerticalBarChart unit tests', () => {
         useSingleColor: false,
       });
       expect(instance).toBeDefined();
+      instance._getAxisData({ yAxisDomainValues: chartPoints.map(item => item.y) });
+      instance._adjustProps();
       const result = instance._createColors();
       expect(result).toBeDefined();
       expect(result(chartPoints[0].y)).toBe('rgb(77, 86, 153)');
@@ -207,12 +234,8 @@ describe('VerticalBarChart unit tests', () => {
     test('returns an array of aria labels for each data point', () => {
       const instance = new VerticalBarChartBase({ data: chartPoints });
       expect(instance).toBeDefined();
-      const result = instance._getAriaLabel();
-      expect(result).toEqual([['2020/04/30. First, 10%.', '2020/04/30. Second, 20%.', '2020/04/30. Third, 37%.']]);
-    });
-    test('returns empty string for empty data', () => {
-      const result = new VerticalBarChartBase({ data: [] })._getAriaLabel();
-      expect(result).toEqual('');
+      const result = instance._getAriaLabel(chartPoints[0]);
+      expect(result).toEqual('2020/04/30. First, 10%.');
     });
   });
 });
