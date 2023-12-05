@@ -17,6 +17,7 @@ async function updatedFile(filePath: string) {
   }
 };
 
+console.log('linePath = ', fs.realpathSync('./') + '/src/components/LineChart/LineChart.base.tsx');
 updatedFile(fs.realpathSync('./') + '/src/components/LineChart/LineChart.base.tsx');
 
 const basicPoints: ILineChartPoints[] = [
