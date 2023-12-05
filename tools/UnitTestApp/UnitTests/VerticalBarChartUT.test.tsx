@@ -10,6 +10,9 @@ import { max as d3Max } from 'd3-array';
 import * as fs from 'fs';
 
 import { IVerticalBarChartDataPoint } from '../../index';
+import updatedFile from '../TestEnvSetupScript';
+
+updatedFile(fs.realpathSync('./') + '/src/components/VerticalBarChart/VerticalBarChart.base.tsx');
 
 const stringPoints = [
   {
