@@ -6,10 +6,11 @@ import { DefaultPalette } from '@fluentui/react';
 import { VerticalBarChartBase } from '../VerticalBarChart/VerticalBarChart.base';
 import { VerticalBarChart } from '../VerticalBarChart/VerticalBarChart';
 import { max as d3Max } from 'd3-array';
-
 import * as fs from 'fs';
-
 import { IVerticalBarChartDataPoint } from '../../index';
+import { updatedFile } from './TestEnvSetupScript';
+
+updatedFile(fs.realpathSync('./') + '/src/components/VerticalBarChart/VerticalBarChart.base.tsx');
 
 const stringPoints = [
   {
