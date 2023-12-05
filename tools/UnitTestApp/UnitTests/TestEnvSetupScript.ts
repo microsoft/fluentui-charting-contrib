@@ -7,9 +7,3 @@ export async function updatedFile(filePath: string) {
     await fs.writeFileSync(filePath, data);
   }
 };
-
-updatedFile(fs.realpathSync('./') + '/src/components/LineChart/LineChart.base.tsx');
-
-updatedFile(fs.realpathSync('./') + '/src/components/AreaChart/AreaChart.base.tsx');
-
-updatedFile(fs.realpathSync('./') + '/src/components/VerticalBarChart/VerticalBarChart.base.tsx');
