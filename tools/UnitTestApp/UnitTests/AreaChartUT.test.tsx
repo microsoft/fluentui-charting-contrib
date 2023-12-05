@@ -4,16 +4,7 @@ import { AreaChart } from '../AreaChart/index';
 import { getById, testWithoutWait } from '../../utilities/TestUtility.test';
 import { DarkTheme } from '@fluentui/theme-samples';
 import * as fs from 'fs';
-
-async function updatedFile(filePath: string) {
-  let data = await fs.readFileSync(filePath, 'utf8');
-  // Replace the words
-  data = data.replace(/\bprivate\b/g, "public");
-  // Write the file back
-  if (data != null && data != '' && data != undefined) {
-    await fs.writeFileSync(filePath, data);
-  }
-};
+import updatedFile from '../TestEnvSetupScript';
 
 updatedFile(fs.realpathSync('./') + '/src/components/AreaChart/AreaChart.base.tsx');
 
