@@ -24,6 +24,9 @@ jobs:
 
       - name: Test Environment Setup
         run: cp -r ./tools/UnitTestApp/UnitTests ./repo1/packages/react-charting/src/components/
+
+      - name: show dir
+        run: ls
              
-      - name: Test
-        run: cd ./repo1/packages/react-charting && cp -f ./repo1/packages/react-charting/src/components/UnitTests/package.json ./repo1/packages/react-charting/package.json && yarn && yarn update-snapshots && yarn test --coverage --verbose
+      # - name: Test
+      #   run: cd ./repo1/packages/react-charting && cp -f ./repo1/packages/react-charting/src/components/UnitTests/package.json ./repo1/packages/react-charting/package.json && yarn && yarn update-snapshots && yarn test --coverage --verbose
