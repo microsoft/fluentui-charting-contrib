@@ -7,6 +7,9 @@ import { getById, testWithWait, testWithoutWait } from '../../utilities/TestUtil
 import { DarkTheme } from '@fluentui/theme-samples';
 import * as fs from 'fs';
 import * as path from 'path';
+import updatedFile from '../TestEnvSetupScript';
+
+updatedFile(fs.realpathSync('./') + '/src/components/LineChart/LineChart.base.tsx');
 
 const basicPoints: ILineChartPoints[] = [
   {
