@@ -6,6 +6,9 @@ import { LineChartBase } from '../LineChart/LineChart.base';
 import { getById, testWithWait, testWithoutWait } from '../../utilities/TestUtility.test';
 import { DarkTheme } from '@fluentui/theme-samples';
 import * as fs from 'fs';
+import { updatedFile } from './TestEnvSetupScript';
+
+updatedFile(fs.realpathSync('./') + '/src/components/LineChart/LineChart.base.tsx');
 
 const basicPoints: ILineChartPoints[] = [
   {
