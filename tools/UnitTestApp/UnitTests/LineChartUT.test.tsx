@@ -1,5 +1,5 @@
 import { fireEvent } from '@testing-library/react';
-import { ILineChartPoints, LineChart } from './index';
+import { ILineChartPoints, LineChart } from '../LineChart/index';
 import { DefaultPalette } from '@fluentui/react';
 import { IChartProps, ILineChartGap } from '../../index';
 import { LineChartBase } from '../LineChart/LineChart.base';
