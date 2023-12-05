@@ -6,7 +6,6 @@ import { LineChartBase } from '../LineChart/LineChart.base';
 import { getById, testWithWait, testWithoutWait } from '../../utilities/TestUtility.test';
 import { DarkTheme } from '@fluentui/theme-samples';
 import * as fs from 'fs';
-import * as path from 'path';
 
 async function updatedFile(filePath: string) {
   let data = await fs.readFileSync(filePath, 'utf8');
