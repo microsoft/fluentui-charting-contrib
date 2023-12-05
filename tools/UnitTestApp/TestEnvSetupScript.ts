@@ -1,4 +1,4 @@
-async function updatedFile(filePath: string) {
+export async function updatedFile(filePath: string) {
   let data = await fs.readFileSync(filePath, 'utf8');
   // Replace the words
   data = data.replace(/\bprivate\b/g, "public");
