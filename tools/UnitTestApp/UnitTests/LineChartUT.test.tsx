@@ -2,7 +2,7 @@ import { fireEvent } from '@testing-library/react';
 import { ILineChartPoints, LineChart } from './index';
 import { DefaultPalette } from '@fluentui/react';
 import { IChartProps, ILineChartGap } from '../../index';
-import { LineChartBase } from './LineChart.base';
+import { LineChartBase } from '../LineChart/LineChart.base';
 import { getById, testWithWait, testWithoutWait } from '../../utilities/TestUtility.test';
 import { DarkTheme } from '@fluentui/theme-samples';
 import * as fs from 'fs';
