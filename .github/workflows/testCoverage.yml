@@ -27,11 +27,3 @@ jobs:
              
       - name: Test
         run: cd ./repo1/packages/react-charting && yarn update-snapshots && yarn test --coverage --verbose
-
-        
-      # - name: Save the coverage report
-      #   run: ls ./repo2/packages/react-charting
-        # run: wget -O coverage.html ./coverage/index.html                    
-        
-      # - name: Run coverage report
-      #   run: cd ./tools/UnitTestApp && yarn test --coverage --collectCoverageFrom '../../packages/react-charting/src'
