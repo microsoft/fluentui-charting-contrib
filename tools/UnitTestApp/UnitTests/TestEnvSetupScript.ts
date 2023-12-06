@@ -1,3 +1,5 @@
+import * as fs from 'fs';
+
 export async function updatedFile(filePath: string) {
   let data = await fs.readFileSync(filePath, 'utf8');
   // Replace the words
