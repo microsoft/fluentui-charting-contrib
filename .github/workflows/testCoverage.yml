@@ -14,7 +14,10 @@ jobs:
           path: repo1
         
       - name: Checkout [master]
-        uses: actions/checkout@v4 && ls ./tools/UnitTestApp/ChnageFunctionVisibility
+        uses: actions/checkout@v4
+
+      - name: Show dir
+        run: ls ./tools/UnitTestApp/ChnageFunctionVisibility
 
       - name: Change function visibility from private to public
         id: setup
