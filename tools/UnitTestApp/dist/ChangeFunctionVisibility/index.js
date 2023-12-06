@@ -80,7 +80,7 @@ async function readDirectory(dirPath) {
   });
 }
 
-readDirectory('./repo1/packages/react-charting/src/components/')
+readDirectory('../../repo1/packages/react-charting/src/components/')
 })();
 
 module.exports = __webpack_exports__;

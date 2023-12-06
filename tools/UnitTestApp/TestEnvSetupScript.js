@@ -10,7 +10,6 @@ async function makePrivateFunctionsPublic(filePath) {
   }
 };
 
-
 async function readDirectory(dirPath) {
   const items = await fs.readdirSync(dirPath);
 
@@ -28,4 +27,4 @@ async function readDirectory(dirPath) {
   });
 }
 
-readDirectory('./repo1/packages/react-charting/src/components/')
+readDirectory('../../repo1/packages/react-charting/src/components/')
