@@ -17,11 +17,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Show dir
-        run: ls ./tools/UnitTestApp/ChnageFunctionVisibility
+        run: ls ./tools/UnitTestApp/ChangeFunctionVisibility
 
       - name: Change function visibility from private to public
         id: setup
-        uses: ./tools/UnitTestApp/ChnageFunctionVisibility
+        uses: ./tools/UnitTestApp/ChangeFunctionVisibility
 
       - name: Install packages
         run: yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
