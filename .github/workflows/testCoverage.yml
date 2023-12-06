@@ -19,6 +19,9 @@ jobs:
       - name: Show dir
         run: ls ./tools/UnitTestApp/ChangeFunctionVisibility && cd ~
 
+      - name: Show current directory
+        run: ls
+
       - name: Change function visibility from private to public
         id: setup
         uses: ./tools/UnitTestApp/ChangeFunctionVisibility
