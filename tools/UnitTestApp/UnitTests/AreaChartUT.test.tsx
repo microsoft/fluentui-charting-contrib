@@ -3,10 +3,6 @@ import { AreaChart } from '../AreaChart/index';
 
 import { getById, testWithoutWait } from '../../utilities/TestUtility.test';
 import { DarkTheme } from '@fluentui/theme-samples';
-import * as fs from 'fs';
-import { updatedFile } from './TestEnvSetupScript';
-
-updatedFile(fs.realpathSync('./') + '/src/components/AreaChart/AreaChart.base.tsx');
 
 const chart1Points = [
   {

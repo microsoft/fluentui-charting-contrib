@@ -1,0 +1,6 @@
+name: 'Change function visibility'
+description: 'Change function visibility from private to public'
+
+runs:
+  using: 'node20'
+  main: '../dist/ChangeFunctionVisibility/index.js'
