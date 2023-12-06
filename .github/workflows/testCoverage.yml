@@ -29,10 +29,10 @@ jobs:
       #   run: ls ./repo1/packages/react-charting/src/components/
              
       - name: Replace package.json
-        run: cp -f ./repo1/packages/react-charting/src/components/UnitTests/package.json ./repo1/packages/react-charting/package.json 
+        run: echo ./repo1/packages/react-charting/src/components/UnitTests/package.json > ./repo1/packages/react-charting/package.json 
 
-      - name: Echo package.json
-        run: cp ./repo1/packages/react-charting/package.json ./tools/UnitTestApp && echo "$(./tools/UnitTestApp/package.json)"
+      # - name: Echo package.json
+      #   run: cp ./repo1/packages/react-charting/package.json ./tools/UnitTestApp && echo "$(./tools/UnitTestApp/package.json)"
 
       - name: Install the new packages
         run: cd ./repo1/packages/react-charting && yarn && yarn update-snapshots && yarn test --coverage --verbose
