@@ -7,6 +7,14 @@
 "use strict";
 module.exports = require("fs");
 
+/***/ }),
+
+/***/ 17:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("path");
+
 /***/ })
 
 /******/ 	});
@@ -51,6 +59,7 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 const fs = __nccwpck_require__(147);
+const path = __nccwpck_require__(17);
 
 async function makePrivateFunctionsPublic(filePath) {
   let data = await fs.readFileSync(filePath, 'utf8');
@@ -61,7 +70,6 @@ async function makePrivateFunctionsPublic(filePath) {
     await fs.writeFileSync(filePath, data);
   }
 };
-
 
 async function readDirectory(dirPath) {
   const items = await fs.readdirSync(dirPath);

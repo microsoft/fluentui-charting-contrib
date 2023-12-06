@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 async function makePrivateFunctionsPublic(filePath) {
   let data = await fs.readFileSync(filePath, 'utf8');
@@ -27,4 +28,4 @@ async function readDirectory(dirPath) {
   });
 }
 
-readDirectory('../../repo1/packages/react-charting/src/components/')
+readDirectory('/home/runner/work/fluentui-charting-contrib/fluentui-charting-contrib/repo1/packages/react-charting/src/components/')
