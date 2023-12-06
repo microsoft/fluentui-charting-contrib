@@ -28,5 +28,11 @@ jobs:
       # - name: show dir
       #   run: ls ./repo1/packages/react-charting/src/components/
              
-      - name: Test
-        run: cp -f ./repo1/packages/react-charting/src/components/UnitTests/package.json ./repo1/packages/react-charting/package.json && cd ./repo1/packages/react-charting && yarn --cwd ./repo1/packages/react-charting && yarn update-snapshots && yarn test --coverage --verbose
+      - name: Replace package.json
+        run: cp -f ./repo1/packages/react-charting/src/components/UnitTests/package.json ./repo1/packages/react-charting/package.json 
+
+      - name: Echo package.json
+        run: echo "$(./repo1/packages/react-charting/package.json)"
+
+      - name: Install the new packages
+        run: cd ./repo1/packages/react-charting && yarn && yarn update-snapshots && yarn test --coverage --verbose
