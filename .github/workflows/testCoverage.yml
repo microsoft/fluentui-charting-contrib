@@ -29,4 +29,4 @@ jobs:
       #   run: ls ./repo1/packages/react-charting/src/components/
              
       - name: Test
-        run: cp -f ./repo1/packages/react-charting/src/components/UnitTests/package.json ./repo1/packages/react-charting/package.json && cd ./repo1/packages/react-charting && yarn && yarn update-snapshots && yarn test --coverage --verbose
+        run: cp -f ./repo1/packages/react-charting/src/components/UnitTests/package.json ./repo1/packages/react-charting/package.json && cd ./repo1/packages/react-charting && yarn --cwd ./repo1/packages/react-charting && yarn update-snapshots && yarn test --coverage --verbose
