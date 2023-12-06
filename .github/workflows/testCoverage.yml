@@ -6,25 +6,25 @@ jobs:
   test_env_setup_job:
     runs-on: ubuntu-latest
     name: Test coverage
-    steps:                               
-      - name: Checkout [master]
-        uses: actions/checkout@v4
-
+    steps:                                     
       - name: Checkout [react-charting]
         uses: actions/checkout@v4
         with: 
           repository: "microsoft/fluentui"
           path: repo1
         
+      - name: Checkout [master]
+        uses: actions/checkout@v4
+        
+      - name: Change function visibility from private to public
+        id: setup
+        uses: ls ./tools/UnitTestApp/ChnageFunctionVisibility && ./tools/UnitTestApp/ChnageFunctionVisibility
+
       - name: Install packages
         run: yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
       
       - name: Build
         run:  yarn --cwd ./repo1 buildto @fluentui/react-charting
-
-      - name: Change function visibility from private to public
-        id: setup
-        uses: ./tools/UnitTestApp/ChnageFunctionVisibility
 
       - name: Test Environment Setup
         run: cp -r ./tools/UnitTestApp/UnitTests ./repo1/packages/react-charting/src/components/
