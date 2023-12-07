@@ -118,6 +118,7 @@ const changeFunctionVisibility = async () => {
 }
 
 changeFunctionVisibility();
+
 })();
 
 module.exports = __webpack_exports__;
