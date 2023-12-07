@@ -61,6 +61,19 @@ var __webpack_exports__ = {};
 const fs = __nccwpck_require__(147);
 const path = __nccwpck_require__(17);
 
+function getPWD(callback) {
+  exec('echo $PWD', (error, stdout, stderr) => {
+    if (error) {
+      console.error(`exec error: ${error}`);
+      return;
+    }
+    // Remove the trailing newline character
+    const pwd = stdout.trim();
+    // Call the callback function with the result
+    callback(pwd);
+  });
+}
+
 async function makePrivateFunctionsPublic(filePath) {
   let data = await fs.readFileSync(filePath, 'utf8');
   // Replace the words
@@ -88,7 +101,8 @@ async function readDirectory(dirPath) {
   });
 }
 
-readDirectory('/home/runner/work/fluentui-charting-contrib/fluentui-charting-contrib/repo1/packages/react-charting/src/components/')
+pwd = getPWD();
+readDirectory(`${pwd}/repo1/packages/react-charting/src/components/`);
 })();
 
 module.exports = __webpack_exports__;

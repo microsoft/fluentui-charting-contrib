@@ -1,16 +1,16 @@
 const fs = require('fs');
 const path = require('path');
 
-function getHomeRoot(callback) {
-  exec('echo $HOME', (error, stdout, stderr) => {
+function getPWD(callback) {
+  exec('echo $PWD', (error, stdout, stderr) => {
     if (error) {
       console.error(`exec error: ${error}`);
       return;
     }
     // Remove the trailing newline character
-    const homeRoot = stdout.trim();
+    const pwd = stdout.trim();
     // Call the callback function with the result
-    callback(homeRoot);
+    callback(pwd);
   });
 }
 
@@ -41,5 +41,5 @@ async function readDirectory(dirPath) {
   });
 }
 
-homeRoot = getHomeRoot();
-readDirectory(`${homeRoot}/repo1/packages/react-charting/src/components/`);
+pwd = getPWD();
+readDirectory(`${pwd}/repo1/packages/react-charting/src/components/`);
