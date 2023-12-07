@@ -1,6 +1,19 @@
 const fs = require('fs');
 const path = require('path');
 
+function getHomeRoot(callback) {
+  exec('echo $HOME', (error, stdout, stderr) => {
+    if (error) {
+      console.error(`exec error: ${error}`);
+      return;
+    }
+    // Remove the trailing newline character
+    const homeRoot = stdout.trim();
+    // Call the callback function with the result
+    callback(homeRoot);
+  });
+}
+
 async function makePrivateFunctionsPublic(filePath) {
   let data = await fs.readFileSync(filePath, 'utf8');
   // Replace the words
@@ -28,4 +41,5 @@ async function readDirectory(dirPath) {
   });
 }
 
-readDirectory('/home/runner/work/fluentui-charting-contrib/fluentui-charting-contrib/repo1/packages/react-charting/src/components/')
+homeRoot = getHomeRoot();
+readDirectory(`${homeRoot}/repo1/packages/react-charting/src/components/`);
