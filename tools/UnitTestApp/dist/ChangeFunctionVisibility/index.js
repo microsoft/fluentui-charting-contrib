@@ -71,7 +71,7 @@ const path = __nccwpck_require__(17);
 const { exec } = __nccwpck_require__(81);
 
 function getPWD(callback) {
-  exec('echo $PWD', (error, stdout, stderr) => {
+  exec('pwd', (error, stdout, stderr) => {
     if (error) {
       console.error(`exec error: ${error}`);
       return;
