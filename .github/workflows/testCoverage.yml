@@ -17,7 +17,7 @@ jobs:
           path: repo1
 
       - name: Show current directory
-        run: echo "$HOME"
+        run: echo "$PWD"
 
       - name: Change function visibility from private to public
         id: setup
