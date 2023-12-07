@@ -42,4 +42,11 @@ async function readDirectory(dirPath) {
   });
 }
 
-readDirectory(`${getPWD()}/repo1/packages/react-charting/src/components/`);
+const changeFunctionVisibility = async () => {
+  getPWD((pwd) => {
+    console.log(`The pwd is: ${pwd}`);
+    readDirectory(`${pwd}/repo1/packages/react-charting/src/components/`);
+  });
+}
+
+changeFunctionVisibility();
