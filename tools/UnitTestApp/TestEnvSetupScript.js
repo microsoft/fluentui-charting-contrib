@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { exec } = require('child_process');
 
 function getPWD(callback) {
   exec('echo $PWD', (error, stdout, stderr) => {

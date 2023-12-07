@@ -1,6 +1,14 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 81:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("child_process");
+
+/***/ }),
+
 /***/ 147:
 /***/ ((module) => {
 
@@ -60,6 +68,7 @@ var __webpack_exports__ = {};
 (() => {
 const fs = __nccwpck_require__(147);
 const path = __nccwpck_require__(17);
+const { exec } = __nccwpck_require__(81);
 
 function getPWD(callback) {
   exec('echo $PWD', (error, stdout, stderr) => {
