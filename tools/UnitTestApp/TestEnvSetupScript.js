@@ -42,5 +42,4 @@ async function readDirectory(dirPath) {
   });
 }
 
-const pwd = getPWD();
-readDirectory(`${pwd}/repo1/packages/react-charting/src/components/`);
+readDirectory(`${getPWD()}/repo1/packages/react-charting/src/components/`);
