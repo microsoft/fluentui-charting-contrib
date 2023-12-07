@@ -68,10 +68,10 @@ var __webpack_exports__ = {};
 (() => {
 const fs = __nccwpck_require__(147);
 const path = __nccwpck_require__(17);
-const { execSync } = __nccwpck_require__(81);
+const { exec } = __nccwpck_require__(81);
 
 function getPWD(callback) {
-  execSync('echo $PWD', (error, stdout, stderr) => {
+  exec('$PWD', (error, stdout, stderr) => {
     if (error) {
       console.error(`exec error: ${error}`);
       return;

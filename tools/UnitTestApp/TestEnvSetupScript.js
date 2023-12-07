@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { exec } = require('child_process');
 
 function getPWD(callback) {
-  execSync('echo $PWD', (error, stdout, stderr) => {
+  exec('$PWD', (error, stdout, stderr) => {
     if (error) {
       console.error(`exec error: ${error}`);
       return;
