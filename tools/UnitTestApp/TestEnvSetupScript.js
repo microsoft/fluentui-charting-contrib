@@ -3,7 +3,7 @@ const path = require('path');
 const { exec } = require('child_process');
 
 function getPWD(callback) {
-  exec('$PWD', (error, stdout, stderr) => {
+  exec('echo $PWD', (error, stdout, stderr) => {
     if (error) {
       console.error(`exec error: ${error}`);
       return;
