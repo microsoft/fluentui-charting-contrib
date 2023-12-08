@@ -5,16 +5,32 @@ on:
 jobs:
   test_env_setup_job:
     runs-on: ubuntu-latest
-    name: A job to setup test environment
+    name: Test coverage
+    steps:                                                   
+      - name: Checkout [master]
+        uses: actions/checkout@v4
 
-    steps:
       - name: Checkout [react-charting]
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with: 
           repository: "microsoft/fluentui"
-          
-      - name: Run coverage report
-        working-directory: microsoft/fluentui
-        run: echo "$(<./packages/react-charting/src/index.ts)"
-        # run: yarn jest --coverage --collectCoverageFrom='./src/*'
-        
+          path: repo1
+
+      - name: Show current directory
+        run: echo "$PWD"
+
+      - name: Change function visibility from private to public
+        id: setup
+        uses: ./tools/UnitTestApp/ChangeFunctionVisibility
+
+      - name: Install packages
+        run: yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
+      
+      - name: Build
+        run:  yarn --cwd ./repo1 buildto @fluentui/react-charting
+
+      - name: Test Environment Setup
+        run: cp -r ./tools/UnitTestApp/UnitTests ./repo1/packages/react-charting/src/components/
+
+      - name: Run the tests
+        run: cd ./repo1/packages/react-charting && yarn update-snapshots && yarn test --coverage --verbose
