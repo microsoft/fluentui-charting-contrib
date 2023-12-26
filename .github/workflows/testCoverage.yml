@@ -34,10 +34,6 @@ jobs:
       - name: Run the tests      
         run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
 
-  save_coverage:
-    runs-on: ubuntu-latest
-    needs: test_env_setup_job
-    steps:
       - name: Generate coverage file name
         run: echo "COVERAGE_FILENAME=test_coverage_artifact_$(date +%H:%M:%S)" >> $GITHUB_ENV
 
