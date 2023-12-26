@@ -1,6 +1,8 @@
 name: 'Change function visibility'
 description: 'Change function visibility from private to public'
-
+osType:
+    description: 'Indicates on which os type the action is run'
+    required: true
 runs:
   using: 'node20'
   main: '../dist/ChangeFunctionVisibility/index.js'
