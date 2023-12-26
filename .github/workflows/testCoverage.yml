@@ -36,8 +36,13 @@ jobs:
       - name: Build
         run:  yarn --cwd ./repo1 buildto @fluentui/react-charting
 
-      - name: Run the tests      
+      - name: Run the tests in ubuntu
+        if: matrix.os == 'ubuntu-latest' 
         run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
+
+      - name: Run the tests in macos
+        if: matrix.os == 'macos-latest'
+        run: cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
 
       - name: Generate coverage file name
         run: echo "COVERAGE_FILENAME=test_coverage_artifact_$(date +%H_%M_%S)" >> $GITHUB_ENV
