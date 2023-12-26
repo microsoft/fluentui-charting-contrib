@@ -47,7 +47,7 @@ jobs:
         run: cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
 
       - name: Generate coverage file name
-        run: echo "COVERAGE_FILENAME=test_coverage_$(matrix.os)_$(date +%H_%M_%S)" >> $GITHUB_ENV
+        run: echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +%H_%M_%S)" >> $GITHUB_ENV
 
       - name: Save coverage file
         uses: actions/upload-artifact@v4
