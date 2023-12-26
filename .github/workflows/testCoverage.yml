@@ -1,8 +1,9 @@
 name: 'Test coverage'
 on:
+  workflow_dispatch:
   schedule:
     - cron: "15 15 * * *"
-
+  
 jobs:
   test_env_setup_job:
     runs-on: windows-latest
