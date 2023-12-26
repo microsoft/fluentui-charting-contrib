@@ -35,6 +35,6 @@ jobs:
         run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --verbose
 
       - name: Show output
-        run: ls ./coverage
+        run: echo "$PWD" && cd ./repo1/packages/react-charting/coverage && ls
 
         
