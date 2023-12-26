@@ -6,6 +6,8 @@ jobs:
   test_env_setup_job:
     runs-on: ubuntu-latest
     name: Test coverage
+    outputs:
+      test_coverage: ${{ steps.run_tests.outputs }}
     steps:                                                   
       - name: Checkout [master]
         uses: actions/checkout@v4
@@ -29,5 +31,7 @@ jobs:
       - name: Build
         run:  yarn --cwd ./repo1 buildto @fluentui/react-charting
 
-      - name: Run the tests
-        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --verbose
+      - name: Run the tests      
+        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --verbose > ./coverage.html && ls          
+
+        
