@@ -56,10 +56,10 @@ jobs:
 
       - name: Generate coverage file name
         if: matrix.os == 'windows-latest'
-        run: set COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_%DATE%_%TIME% & set GITHUB_ENV=%COVERAGE_FILENAME%
+        run: echo COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_%DATE%_%TIME% >> $env:GITHUB_ENV
 
       - name: Echo
-        run: echo %GITHUB_ENV%
+        run: echo $env:COVERAGE_FILENAME
 
       # - name: Save coverage file
       #   uses: actions/upload-artifact@v4
