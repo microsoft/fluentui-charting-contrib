@@ -79,18 +79,6 @@ const path = __nccwpck_require__(17);
 const { exec } = __nccwpck_require__(81);
 const core = __nccwpck_require__(768);
 
-async function run() {
-  try {
-    const myVariable = core.getInput('myVariable');
-    console.log(`The value of myVariable is: ${myVariable}`);
-
-    // Rest of your code here
-
-  } catch (error) {
-    core.setFailed(error.message);
-  }
-}
-
 function getPWD(callback) {
   try {
     const osType = core.getInput('osType');
