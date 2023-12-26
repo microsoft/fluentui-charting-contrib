@@ -34,10 +34,13 @@ jobs:
       - name: Run the tests      
         run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
      
+      - name: Save coverage file name
+        run: echo "COVERAGE_FILENAME=test_coverage_artifact_$(date +%H:%M:%S)" >> $GITHUB_ENV
+
       - name: Save coverage file
         uses: actions/upload-artifact@v4
         with:
-          name: test-coverage-artifact_${$(date +%H:%M:%S)}
+          name: $COVERAGE_FILENAME
           path: ./repo1/packages/react-charting/coverage
 
         
