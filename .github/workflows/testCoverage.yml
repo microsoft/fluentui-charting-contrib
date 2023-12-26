@@ -30,4 +30,4 @@ jobs:
         run:  yarn --cwd ./repo1 buildto @fluentui/react-charting
 
       - name: Run the tests
-        run: cd ./repo1/packages/react-charting && yarn test --coverage --verbose
+        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --verbose
