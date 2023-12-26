@@ -9,7 +9,7 @@ jobs:
     name: Test coverage
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [windows-latest]
     runs-on: ${{ matrix.os }}
     outputs:
       test_coverage: ${{ steps.run_tests.outputs }}
