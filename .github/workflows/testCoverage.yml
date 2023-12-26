@@ -32,9 +32,9 @@ jobs:
         run:  yarn --cwd ./repo1 buildto @fluentui/react-charting
 
       - name: Run the tests      
-        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --verbose
+        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
 
       - name: Show output
-        run: echo "$PWD" && cd ./repo1/packages/react-charting/coverage && ls
+        run: echo "$PWD" && cd ./repo1/packages/react-charting/coverage && ls && xdg-open ./index.html
 
         
