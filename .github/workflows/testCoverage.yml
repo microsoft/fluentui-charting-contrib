@@ -6,7 +6,7 @@ on:
   
 jobs:
   test_env_setup_job:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     name: Test coverage
     outputs:
       test_coverage: ${{ steps.run_tests.outputs }}
