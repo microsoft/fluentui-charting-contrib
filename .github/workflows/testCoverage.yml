@@ -33,8 +33,11 @@ jobs:
 
       - name: Run the tests      
         run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
-
-      - name: Show output
-        run: echo "$PWD" && cd ./repo1/packages/react-charting/coverage && ls && export BROWSER="google-chrome" && xdg-open ./index.html
+     
+      - name: Save coverage file
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-coverage-artifact
+          path: ./repo1/packages/react-charting/coverage/index.html
 
         
