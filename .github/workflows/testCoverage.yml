@@ -45,7 +45,7 @@ jobs:
       - name: Generate Date Time in windows
         if: matrix.os == 'windows-latest'
         run: |
-          $NOW=& Get-Date -format yyyy-MM-dd
+          $NOW=(Get-Date).ToString("yyyy-MM-dd HH:mm:ss").Replace(":", "_")
           echo "NOW=$NOW" >> $env:GITHUB_ENV
         
       - name: Generate coverage file name in windows
@@ -97,7 +97,7 @@ jobs:
 
       - name: Generate coverage file name in macos
         if: matrix.os != 'windows-latest'
-        run: echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +%H_%M_%S)" >> $GITHUB_ENV
+        run: echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
       - name: Save coverage file
         uses: actions/upload-artifact@v4
@@ -144,7 +144,7 @@ jobs:
 
       - name: Generate coverage file name in ubuntu
         if: matrix.os != 'windows-latest'
-        run: echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +%H_%M_%S)" >> $GITHUB_ENV
+        run: echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
       - name: Save coverage file
         uses: actions/upload-artifact@v4
