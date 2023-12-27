@@ -56,15 +56,15 @@ jobs:
         
       - name: Generate Date Time
         if: matrix.os == 'windows-latest'
-        run: echo DATE_TIME=%DATE%
+        run: echo "DATE_TIME=%DATE%"
 
       - name: Generate Date Time
         if: matrix.os == 'windows-latest'
-        run: echo DATE_TIME=%DATE% >> $env:GITHUB_ENV
+        run: echo "DATE_TIME=%DATE%" >> $env:GITHUB_ENV
         
       - name: Generate coverage file name
         if: matrix.os == 'windows-latest'
-        run: echo COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_${{ %DATE% }} >> $env:GITHUB_ENV
+        run: echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_${{ env.DATE_TIME }}" >> $env:GITHUB_ENV
 
       - name: Generate coverage file name
         if: matrix.os == 'windows-latest'
