@@ -1,8 +1,8 @@
 name: 'Test coverage'
 on:
-  workflow_dispatch:
   schedule:
     - cron: "0 18 * * *" 
+  workflow_dispatch:
   
 jobs:
   test_env_setup_job:
