@@ -56,11 +56,11 @@ jobs:
         
       - name: Generate Date Time
         if: matrix.os == 'windows-latest'
-        run: echo "DATE_TIME=%DATE%"
+        run: powershell -command "echo DATE_TIME=%DATE%"
 
       - name: Generate Date Time
         if: matrix.os == 'windows-latest'
-        run: echo "DATE_TIME=%DATE%" >> $env:GITHUB_ENV
+        run: powershell -command "echo DATE_TIME=%DATE%" >> $env:GITHUB_ENV
         
       - name: Generate coverage file name
         if: matrix.os == 'windows-latest'
