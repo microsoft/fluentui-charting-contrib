@@ -53,17 +53,24 @@ jobs:
       # - name: Generate coverage file name
       #   if: matrix.os != 'windows-latest'
       #   run: echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +%H_%M_%S)" >> $GITHUB_ENV
+      - name: Generate Date Time
+        if: matrix.os == 'windows-latest'
+        run: echo DATE_TIME=%DATE%_%TIME%
 
       - name: Generate Date Time
         if: matrix.os == 'windows-latest'
         run: echo DATE_TIME=%DATE%_%TIME% >> $GITHUB_ENV
+
+      - name: Generate coverage file name
+        if: matrix.os == 'windows-latest'
+        run: echo COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$env:DATE_TIME
         
       - name: Generate coverage file name
         if: matrix.os == 'windows-latest'
         run: echo COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$env:DATE_TIME >> $env:GITHUB_ENV
 
       - name: Echo
-        run: echo $env:COVERAGE_FILENAME & echo $env:DATE_TIME
+        run: echo $env.COVERAGE_FILENAME & echo $env.DATE_TIME
 
       # - name: Save coverage file
       #   uses: actions/upload-artifact@v4
