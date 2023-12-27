@@ -2,7 +2,7 @@ name: 'Test coverage'
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 15 * * *"
+    - cron: "0 18 * * *" 
   
 jobs:
   test_env_setup_job:
