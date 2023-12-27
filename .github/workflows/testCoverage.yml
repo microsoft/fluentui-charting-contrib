@@ -50,41 +50,25 @@ jobs:
       #   if: matrix.os == 'windows-latest'
       #   run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn test --coverage --coverageReporters=html --verbose
 
-      # - name: Generate coverage file name
-      #   if: matrix.os != 'windows-latest'
-      #   run: echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +%H_%M_%S)" >> $GITHUB_ENV
-      # - name: Generate Date Time
-      #   if: matrix.os == 'windows-latest'
-      #   run: echo DATE_TIME=%DATE%_%TIME%
-
-      # - name: Generate Date Time
-      #   if: matrix.os == 'windows-latest'
-      #   run: echo DATE_TIME=%DATE%_%TIME% >> $GITHUB_ENV
-
-      # - name: Generate coverage file name
-      #   if: matrix.os == 'windows-latest'
-      #   run: echo COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$env:DATE_TIME
+      - name: Generate coverage file name
+        if: matrix.os != 'windows-latest'
+        run: echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +%H_%M_%S)" >> $GITHUB_ENV
         
-      # - name: Generate coverage file name
-      #   if: matrix.os == 'windows-latest'
-      #   run: echo COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$env:DATE_TIME >> $env:GITHUB_ENV
+      - name: Generate Date Time
+        if: matrix.os == 'windows-latest'
+        run: echo DATE_TIME=%DATE%_%TIME%
 
+      - name: Generate Date Time
+        if: matrix.os == 'windows-latest'
+        run: echo DATE_TIME=%DATE%_%TIME% >> $GITHUB_ENV
+        
+      - name: Generate coverage file name
+        if: matrix.os == 'windows-latest'
+        run: echo COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$env:DATE_TIME >> $env:GITHUB_ENV
 
-
-      - name: Set Date and Time Environment Variables
-        run: |
-          for /f "usebackq tokens=1,2 delims==." %%a in (`wmic os get LocalDateTime /value`) do (
-            if "%%a"=="LocalDateTime" (
-              set "DATE=%%b"
-              set "TIME=%%b"
-            )
-          )
-          set "DATE=%DATE:~0,4%-%DATE:~4,2%-%DATE:~6,2%"
-          set "TIME=%TIME:~8,2%:%TIME:~10,2%:%TIME:~12,2%"
-          echo "DATE=%DATE%" >> $GITHUB_ENV
-          echo "TIME=%TIME%" >> $GITHUB_ENV
-      - name: Echo
-        run: echo $env.DATE & echo $env.TIME
+      - name: Generate coverage file name
+        if: matrix.os == 'windows-latest'
+        run: echo ${{ env.COVERAGE_FILENAME }}
       # - name: Save coverage file
       #   uses: actions/upload-artifact@v4
       #   with:
