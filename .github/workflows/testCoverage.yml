@@ -16,8 +16,7 @@ jobs:
     steps:
       - name: Run the tests
         run: |
-          if ${{ matrix.os }} == 'windows-latest'
-          then          
+          if: ${{ matrix.os }} == 'windows-latest'
             echo "First if"
           elif [ ${{ matrix.os }} == 'macos-latest' ]; then
             echo "First else if"
