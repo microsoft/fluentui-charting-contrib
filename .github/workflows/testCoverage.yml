@@ -59,7 +59,7 @@ jobs:
       - name: Generate coverage file name in windows
         if: matrix.os == 'windows-latest'          
         run: |
-            $NOW=& Get-Date -format yyyy-MM-dd_HH:mm:ss
+            $NOW=& Get-Date -format yyyy-MM-dd
             echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$NOW" >> $env:GITHUB_ENV
 
       - name: Generate coverage file name
