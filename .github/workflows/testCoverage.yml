@@ -46,15 +46,15 @@ jobs:
 
       - name: Run the tests in windows
         if: matrix.os == 'windows-latest'  
-        run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest --coverage --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
+        run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
         
       - name: Run the tests in macos
         if: matrix.os == 'macos-latest'
-        run: cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
+        run: cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
         
       - name: Run the tests in ubuntu
         if: matrix.os == 'ubuntu-latest'    
-        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt        
+        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt        
 
       - name: Generate coverage file name in windows
         if: matrix.os == 'windows-latest'          
@@ -70,7 +70,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{env.COVERAGE_FILENAME}}
-          path: ./repo1/packages/react-charting/coverage
+          path: ./repo1/packages/react-charting/coverage/${{matrix.os}}
 
       - name: Save coverage file
         uses: actions/upload-artifact@v4
@@ -103,14 +103,11 @@ jobs:
         with:
           # Upload entire repository
           path: './repo1/packages/react-charting/coverage'
+          artifact-name: ${{env.COVERAGE_FILENAME}}
           
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-      - name: Override page_url
-        id: change-page-url
-        run: echo "new_page_url=${{ steps.deployment.outputs.page_url }}_${{matrix.os}}/" >> $GITHUB_OUTPUT
 
       - name: Url after deployment
         run: echo "${{ steps.deployment.outputs.page_url }}"
