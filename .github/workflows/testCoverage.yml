@@ -48,14 +48,14 @@ jobs:
       #     fi
 
       - name: Generate coverage file name for windows
-        if: matrix.os == "windows-latest"
+        if: matrix.os == 'windows-latest'
         run: |
           $NOW=& Get-Date -format yyyy-MM-dd
           echo "NOW=$NOW" >> $env:GITHUB_ENV
           echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_${{ env.NOW }}" >> $env:GITHUB_ENV
 
       - name: Generate coverage file name
-        if: matrix.os != "windows-latest"
+        if: matrix.os != 'windows-latest'
         run: |
           echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
