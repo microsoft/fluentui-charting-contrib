@@ -107,8 +107,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact_name: ${{env.COVERAGE_FILENAME}}
+
+      - name: Override page_url
+        id: change-page-url
+        run: echo "new_page_url=${{ steps.deployment.outputs.page_url }}_${{matrix.os}}/" >> $GITHUB_OUTPUT
 
       - name: Url after deployment
         run: echo "${{ steps.deployment.outputs.page_url }}"
