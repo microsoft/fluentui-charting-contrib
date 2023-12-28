@@ -107,6 +107,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          branch: deployment-${{ matrix.os }}
 
       - name: Url after deployment
         run: echo "${{ steps.deployment.outputs.page_url }}"
