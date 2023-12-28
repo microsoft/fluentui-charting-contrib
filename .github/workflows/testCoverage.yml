@@ -45,7 +45,7 @@ jobs:
             cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn test --coverage
           elif ${{ matrix.os }} == 'macos-latest'
             cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
-          else
+          elif ${{ matrix.os }} == 'ubuntu-latest'
             cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
           fi
 
