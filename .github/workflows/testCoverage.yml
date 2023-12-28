@@ -42,15 +42,13 @@ jobs:
         if: matrix.os == 'windows-latest'  
         run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn test --coverage
         
-      - name: Run the tests
-        run: |
-          if ${{ matrix.os }} == 'macos-latest'
-          then
-            cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
-          elif ${{ matrix.os }} == 'ubuntu-latest'
-          then
-            cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
-          fi
+      - name: Run the tests in macos
+        if: matrix.os == 'macos-latest'
+        run: cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
+        
+      - name: Run the tests in macos
+        if: matrix.os == 'ubuntu-latest'    
+        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
 
       - name: Generate coverage file name in windows
         if: matrix.os == 'windows-latest'          
