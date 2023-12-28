@@ -73,8 +73,17 @@ jobs:
           path: ./repo1/packages/react-charting/coverageReport.txt
 
       - name: Extract the coverage summary table
+        if: matrix.os != 'windows-latest'
         run: |
             cd ./repo1/packages/react-charting
             file_contents=$(cat coverageReport.txt)
+            table=$(echo "$file_contents" | awk '/----/,/^$/' | sed '1d;$d')
+            echo "$table"
+
+      - name: Extract the coverage summary table in windows
+        if: matrix.os == 'windows-latest'
+        run: |
+            cd ./repo1/packages/react-charting
+            $fileContents = Get-Content -Raw -Path "coverageReport.txt"
             table=$(echo "$file_contents" | awk '/----/,/^$/' | sed '1d;$d')
             echo "$table"
