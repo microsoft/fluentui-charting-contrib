@@ -69,5 +69,5 @@ jobs:
       - name: Save coverage file
         uses: actions/upload-artifact@v4
         with:
-          name: ${{env.COVERAGE_FILENAME}} + "_report"
+          name: ${{env.COVERAGE_FILENAME}}_report
           path: ./repo1/packages/react-charting/coverageReport.txt
