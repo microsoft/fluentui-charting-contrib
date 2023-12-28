@@ -40,11 +40,11 @@ jobs:
 
       - name: Run the tests in windows
         if: matrix.os == 'windows-latest'  
-        run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn test --coverage
+        run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest --coverage --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
         
       - name: Run the tests in macos
         if: matrix.os == 'macos-latest'
-        run: cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
+        run: cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
         
       - name: Run the tests in macos
         if: matrix.os == 'ubuntu-latest'    
