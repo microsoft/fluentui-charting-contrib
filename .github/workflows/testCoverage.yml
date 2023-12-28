@@ -88,3 +88,19 @@ jobs:
             $tableRegex = "(?ms)----.*?^$"
             $table = [regex]::Match($fileContents, $tableRegex)
             echo "$table"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: './repo1/packages/react-charting/coverage'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Url after deployment
+        run: echo "${{ steps.deployment.outputs.page_url }}"
