@@ -48,21 +48,26 @@ jobs:
         
       - name: Run the tests in macos
         if: matrix.os == 'ubuntu-latest'    
-        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
+        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
 
       - name: Generate coverage file name in windows
         if: matrix.os == 'windows-latest'          
         run: |
             $NOW=& Get-Date -format yyyy-MM-dd
-            echo "NOW=$NOW" >> $env:GITHUB_ENV
-            echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_${{ env.NOW }}" >> $env:GITHUB_ENV
+            echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$NOW" >> $env:GITHUB_ENV
 
       - name: Generate coverage file name
         run: |          
             echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
-      - name: Save coverage file
+      - name: Save coverage folder
         uses: actions/upload-artifact@v4
         with:
           name: ${{env.COVERAGE_FILENAME}}
           path: ./repo1/packages/react-charting/coverage
+
+      - name: Save coverage file
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{env.COVERAGE_FILENAME}} + "_report"
+          path: ./repo1/packages/react-charting/coverageReport.txt
