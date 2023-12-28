@@ -73,7 +73,6 @@ jobs:
           path: ./repo1/packages/react-charting/coverageReport.txt
 
       - name: Extract the coverage summary table
-        if: matrix.os == 'ubuntu-latest'
         run: |
             cd ./repo1/packages/react-charting
             file_contents=$(cat coverageReport.txt)
