@@ -103,7 +103,7 @@ jobs:
         with:
           # Upload entire repository
           path: './repo1/packages/react-charting/coverage'
-          artifact-name: ${{env.COVERAGE_FILENAME}}
+          name: ${{env.COVERAGE_FILENAME}}_pages
           
       - name: Deploy to GitHub Pages
         id: deployment
