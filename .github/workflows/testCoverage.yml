@@ -40,7 +40,7 @@ jobs:
 
       - name: Run the tests
         run: |
-          if ${{ matrix.os }} == "windows-latest"
+          if ${{ matrix.os }} == 'windows-latest'
           then
             cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn test --coverage
           else
