@@ -14,64 +14,57 @@ jobs:
       test_coverage: ${{ steps.run_tests.outputs }}
 
     steps:   
+      - name: Checkout [master]
+        uses: actions/checkout@v4
+
+      - name: Checkout [react-charting]
+        uses: actions/checkout@v4
+        with: 
+          repository: "microsoft/fluentui"
+          path: repo1
+
+      - name: Show current directory
+        run: echo "$PWD" && ls
+
+      - name: Change function visibility from private to public
+        id: setup
+        uses: ./tools/UnitTestApp/ChangeFunctionVisibility
+        with:
+          osType: ${{ matrix.os }}
+
+      - name: Install packages
+        run:  yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
+
+      - name: Build
+        run:  yarn --cwd ./repo1 buildto @fluentui/react-charting
+
+      - name: Run the tests in windows
+        if: matrix.os == 'windows-latest'  
+        run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn test --coverage
+        
       - name: Run the tests
         run: |
           if ${{ matrix.os }} == 'macos-latest'
           then
-            echo "first"
+            cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
           elif ${{ matrix.os }} == 'ubuntu-latest'
           then
-            echo "second"
+            cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
           fi
-      # - name: Checkout [master]
-      #   uses: actions/checkout@v4
 
-      # - name: Checkout [react-charting]
-      #   uses: actions/checkout@v4
-      #   with: 
-      #     repository: "microsoft/fluentui"
-      #     path: repo1
+      - name: Generate coverage file name in windows
+        if: ${{ matrix.os }} == 'windows-latest'          
+        run: |
+            $NOW=& Get-Date -format yyyy-MM-dd
+            echo "NOW=$NOW" >> $env:GITHUB_ENV
+            echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_${{ env.NOW }}" >> $env:GITHUB_ENV
 
-      # - name: Show current directory
-      #   run: echo "$PWD" && ls
+      - name: Generate coverage file name
+        run: |          
+            echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
-      # - name: Change function visibility from private to public
-      #   id: setup
-      #   uses: ./tools/UnitTestApp/ChangeFunctionVisibility
-      #   with:
-      #     osType: ${{ matrix.os }}
-
-      # - name: Install packages
-      #   run:  yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
-
-      # - name: Build
-      #   run:  yarn --cwd ./repo1 buildto @fluentui/react-charting
-
-      # - name: Run the tests in windows
-      #   if: matrix.os == 'windows-latest'  
-      #   run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn test --coverage
-        
-      # - name: Run the tests
-      #   run: |
-      #     if ${{ matrix.os }} == 'macos-latest'
-      #       cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
-      #     elif ${{ matrix.os }} == 'ubuntu-latest'
-      #       cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn test --coverage --coverageReporters=html --verbose
-      #     fi
-
-      # - name: Generate coverage file name in windows
-      #   if: ${{ matrix.os }} == 'windows-latest'          
-      #   run: |
-      #       $NOW=& Get-Date -format yyyy-MM-dd
-      #       echo "NOW=$NOW" >> $env:GITHUB_ENV
-      #       echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_${{ env.NOW }}" >> $env:GITHUB_ENV
-
-      # - name: Generate coverage file name
-      #   run: |          
-      #       echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
-
-      # - name: Save coverage file
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: ${{env.COVERAGE_FILENAME}}
-      #     path: ./repo1/packages/react-charting/coverage
+      - name: Save coverage file
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{env.COVERAGE_FILENAME}}
+          path: ./repo1/packages/react-charting/coverage
