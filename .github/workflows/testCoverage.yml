@@ -39,9 +39,9 @@ jobs:
         run:  yarn --cwd ./repo1 buildto @fluentui/react-charting
 
       - name: Run the tests in windows
-        run: |
-          if ${{ matrix.os }} == 'windows-latest'          
-            cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn test --coverage
+        if: ${{ matrix.os }} == 'windows-latest'  
+        run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn test --coverage
+        
       - name: Run the tests
         run: |
           if ${{ matrix.os }} == 'macos-latest'
@@ -51,8 +51,8 @@ jobs:
           fi
 
       - name: Generate coverage file name in windows
+        if: ${{ matrix.os }} == 'windows-latest'          
         run: |
-          if ${{ matrix.os }} == 'windows-latest'          
             $NOW=& Get-Date -format yyyy-MM-dd
             echo "NOW=$NOW" >> $env:GITHUB_ENV
             echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_${{ env.NOW }}" >> $env:GITHUB_ENV
