@@ -49,9 +49,7 @@ jobs:
 
       - name: Generate coverage file name for windows
         if: ${{ matrix.os }} == "windows-latest"
-        run: |
-          $NOW = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss").Replace(":", "_")
-          echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$NOW" >> $env:GITHUB_ENV
+        run: $NOW = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss").Replace(":", "_") & echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$NOW" >> $env:GITHUB_ENV
         shell: bash
 
       - name: Generate coverage file name
