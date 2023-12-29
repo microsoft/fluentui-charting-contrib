@@ -96,18 +96,21 @@ jobs:
             echo "$table"
 
       - name: Setup Pages
+        if: matrix.os == 'windows-latest' 
         uses: actions/configure-pages@v4
         
       - name: Upload artifact
+        if: matrix.os == 'windows-latest'
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: './repo1/packages/react-charting/coverage'
-          name: ${{env.COVERAGE_FILENAME}}_pages
           
       - name: Deploy to GitHub Pages
         id: deployment
+        if: matrix.os == 'windows-latest'
         uses: actions/deploy-pages@v4
 
       - name: Url after deployment
+        if: matrix.os == 'windows-latest'
         run: echo "${{ steps.deployment.outputs.page_url }}"
