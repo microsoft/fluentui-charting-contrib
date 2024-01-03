@@ -79,7 +79,7 @@ jobs:
       - name: Generate html to show the latest coverages for all os types
         run: |
             cd ./repo1/packages/react-charting/coverage
-            echo "<!DOCTYPE html><html><head><title>Full test coverage</title></head><body><h1>View full test coverage</h1><ul><li><a href="./${{env.COVERAGE_FILENAME_WINDOWS}}/index.html">Coverage for Windows</a></li><li><a href="./${{env.COVERAGE_FILENAME_UBUNTU}}/index.html">Coverage for Ubuntu</a></li><li><a href="./${{env.COVERAGE_FILENAME_MACOS}}/index.html">Coverage for MacOS</a></li></ul></body></html>" >> index.html
+            echo "<!DOCTYPE html><html><head><title>Full test coverage</title></head><body><h1>View contributor guides and full test coverage reports</h1><ul><li><a href="https://uifabric.visualstudio.com/iss/_wiki/wikis/iss.wiki/280/Charting-Concepts">Contributor guides</a></li><li><a href="./${{env.COVERAGE_FILENAME_WINDOWS}}/index.html">Coverage for Windows</a></li><li><a href="./${{env.COVERAGE_FILENAME_UBUNTU}}/index.html">Coverage for Ubuntu</a></li><li><a href="./${{env.COVERAGE_FILENAME_MACOS}}/index.html">Coverage for MacOS</a></li></ul></body></html>" >> index.html
         shell: bash
 
       - name: Save coverage folder
