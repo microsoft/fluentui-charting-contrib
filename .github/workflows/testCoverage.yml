@@ -18,6 +18,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     outputs:
       test_coverage: ${{ steps.run_tests.outputs }}
+      ubuntu_artifact_name: ${{ steps.ubuntu.outputs.COVERAGE_FILENAME_UBUNTU }}
+      windows_artifact_name: ${{ steps.windows.outputs.COVERAGE_FILENAME_WINDOWS }}
+      macos_artifact_name: ${{ steps.windows.outputs.COVERAGE_FILENAME_MACOS }}
 
     steps:   
       - name: Checkout [master]
@@ -61,6 +64,7 @@ jobs:
         run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt        
 
       - name: Generate coverage file name in windows
+        id: windows
         if: matrix.os == 'windows-latest'          
         run: |
             $NOW=& Get-Date -format yyyy-MM-dd
@@ -68,12 +72,14 @@ jobs:
             echo "COVERAGE_FILENAME_CURRENT=test_coverage_${{ matrix.os }}_$NOW" >> $env:GITHUB_ENV
 
       - name: Generate coverage file name for ubuntu
+        id: ubuntu
         if: matrix.os == 'ubuntu-latest'
         run: |          
             echo "COVERAGE_FILENAME_UBUNTU=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
             echo "COVERAGE_FILENAME_CURRENT=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
       - name: Generate coverage file name for macos
+        id: macos
         if: matrix.os == 'macos-latest'
         run: |          
             echo "COVERAGE_FILENAME_MACOS=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
