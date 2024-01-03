@@ -16,10 +16,6 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
     runs-on: ${{ matrix.os }}
-    env:
-      UBUNTU_COVERAGE_FILENAME:
-      WINDOWS_COVERAGE_FILENAME:
-      MACOS_COVERAGE_FILENAME:
     outputs:
       test_coverage: ${{ steps.run_tests.outputs }}
 
@@ -88,7 +84,7 @@ jobs:
       - name: Save coverage file
         uses: actions/upload-artifact@v4
         with:
-          name: ${{env.COVERAGE_FILENAME}}_report
+          name: ${{env.COVERAGE_FILENAME_CURRENT}}_report
           path: ./repo1/packages/react-charting/coverageReport.txt
 
       - name: Extract the coverage summary table
