@@ -47,6 +47,10 @@ jobs:
       - name: Run the tests in windows
         if: matrix.os == 'windows-latest'  
         run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
+
+      - name: Run a single test in windows
+        if: matrix.os == 'windows-latest'  
+        run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest ./src/components/VerticalBarChart --coverage --coverageDirectory ./coverage/${{matrix.os}}_VerticalBarChart --verbose --coverageReporters=html
         
       - name: Run the tests in macos
         if: matrix.os == 'macos-latest'
@@ -86,6 +90,12 @@ jobs:
         with:
           name: ${{env.COVERAGE_FILENAME_CURRENT}}_report
           path: ./repo1/packages/react-charting/coverageReport.txt
+
+      - name: Save coverage folder for a single test
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{env.COVERAGE_FILENAME_CURRENT}}_VBC
+          path: ./repo1/packages/react-charting/coverage/${{matrix.os}}_VerticalBarChart
 
       - name: Extract the coverage summary table
         if: matrix.os != 'windows-latest'
