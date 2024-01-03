@@ -92,6 +92,7 @@ jobs:
           path: ./repo1/packages/react-charting/coverageReport.txt
 
       - name: Save coverage folder for a single test
+        if: matrix.os == 'windows-latest'
         uses: actions/upload-artifact@v4
         with:
           name: ${{env.COVERAGE_FILENAME_CURRENT}}_VBC
@@ -138,7 +139,7 @@ jobs:
         if: matrix.os == 'windows-latest'
         run: |
             cd ./repo1/packages/react-charting/coverage
-            echo "<!DOCTYPE html><html><head><title>Contributor Readiness</title></head><body><h1>View contributor guides and full test coverage reports</h1><ul><li><a href="https://uifabric.visualstudio.com/iss/_wiki/wikis/iss.wiki/280/Charting-Concepts">Contributor guides</a></li><li><a href="./${{env.COVERAGE_FILENAME_WINDOWS}}/index.html">Coverage for Windows</a></li><li><a href="./${{env.COVERAGE_FILENAME_UBUNTU}}/index.html">Coverage for Ubuntu</a></li><li><a href="./${{env.COVERAGE_FILENAME_MACOS}}/index.html">Coverage for MacOS</a></li></ul></body></html>" >> index.html
+            echo "<!DOCTYPE html><html><head><title>Contributor Readiness</title></head><body><h1>View contributor guides and full test coverage reports</h1><ul><li><a href="https://uifabric.visualstudio.com/iss/_wiki/wikis/iss.wiki/280/Charting-Concepts">Contributor guides</a></li><li><a href="./${{env.COVERAGE_FILENAME_WINDOWS}}/index.html">Coverage for Windows</a></li><li><a href="./${{env.COVERAGE_FILENAME_UBUNTU}}/index.html">Coverage for Ubuntu</a></li><li><a href="./${{env.COVERAGE_FILENAME_MACOS}}/index.html">Coverage for MacOS</a></li><li><a href="./${{env.COVERAGE_FILENAME_WINDOWS}}_VBC/index.html">Coverage for Vertical bar chart - Windows</a></li></ul></body></html>" >> index.html
         shell: bash
 
       - name: Setup Pages
