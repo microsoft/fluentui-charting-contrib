@@ -65,27 +65,24 @@ jobs:
         run: |
             $NOW=& Get-Date -format yyyy-MM-dd
             echo "COVERAGE_FILENAME_WINDOWS=test_coverage_${{ matrix.os }}_$NOW" >> $env:GITHUB_ENV
+            echo "COVERAGE_FILENAME_CURRENT=test_coverage_${{ matrix.os }}_$NOW" >> $env:GITHUB_ENV
 
       - name: Generate coverage file name for ubuntu
         if: matrix.os == 'ubuntu-latest'
         run: |          
             echo "COVERAGE_FILENAME_UBUNTU=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
+            echo "COVERAGE_FILENAME_CURRENT=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
       - name: Generate coverage file name for macos
         if: matrix.os == 'macos-latest'
         run: |          
-            echo "COVERAGE_FILENAME_MACOS=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV            
-
-      - name: Generate html to show the latest coverages for all os types
-        run: |
-            cd ./repo1/packages/react-charting/coverage
-            echo "<!DOCTYPE html><html><head><title>Contributor Readiness</title></head><body><h1>View contributor guides and full test coverage reports</h1><ul><li><a href="https://uifabric.visualstudio.com/iss/_wiki/wikis/iss.wiki/280/Charting-Concepts">Contributor guides</a></li><li><a href="./${{env.COVERAGE_FILENAME_WINDOWS}}/index.html">Coverage for Windows</a></li><li><a href="./${{env.COVERAGE_FILENAME_UBUNTU}}/index.html">Coverage for Ubuntu</a></li><li><a href="./${{env.COVERAGE_FILENAME_MACOS}}/index.html">Coverage for MacOS</a></li></ul></body></html>" >> index.html
-        shell: bash
+            echo "COVERAGE_FILENAME_MACOS=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
+            echo "COVERAGE_FILENAME_CURRENT=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
       - name: Save coverage folder
         uses: actions/upload-artifact@v4
         with:
-          name: ${{env.COVERAGE_FILENAME}}
+          name: ${{env.COVERAGE_FILENAME_CURRENT}}
           path: ./repo1/packages/react-charting/coverage/${{matrix.os}}
 
       - name: Save coverage file
@@ -124,6 +121,13 @@ jobs:
         with:
           name: ${{env.COVERAGE_FILENAME_MACOS}}
           path: './repo1/packages/react-charting/coverage'
+
+      - name: Generate html to show the latest coverages for all os types
+        if: matrix.os == 'windows-latest'
+        run: |
+            cd ./repo1/packages/react-charting/coverage
+            echo "<!DOCTYPE html><html><head><title>Contributor Readiness</title></head><body><h1>View contributor guides and full test coverage reports</h1><ul><li><a href="https://uifabric.visualstudio.com/iss/_wiki/wikis/iss.wiki/280/Charting-Concepts">Contributor guides</a></li><li><a href="./${{env.COVERAGE_FILENAME_WINDOWS}}/index.html">Coverage for Windows</a></li><li><a href="./${{env.COVERAGE_FILENAME_UBUNTU}}/index.html">Coverage for Ubuntu</a></li><li><a href="./${{env.COVERAGE_FILENAME_MACOS}}/index.html">Coverage for MacOS</a></li></ul></body></html>" >> index.html
+        shell: bash
 
       - name: Setup Pages
         if: matrix.os == 'windows-latest' 
