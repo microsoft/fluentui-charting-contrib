@@ -66,10 +66,11 @@ jobs:
         run: |          
             echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
-      - name: Generate an html to show thel latest coverages for all os types
+      - name: Generate html to show the latest coverages for all os types
         run: |
             cd ./repo1/packages/react-charting/coverage
             echo "<!DOCTYPE html><html><head><title>My Jekyll Site</title></head><body><h1>View full test coverage</h1><ul><li><a href="./windows-latest/index.html">Coverage for Windows</a></li><li><a href="./ubuntu-latest/index.html">Coverage for Ubuntu</a></li><li><a href="./macos-latest/index.html">Coverage for MacOS</a></li></ul></body></html>" >> index.html
+        shell: bash
 
       - name: Save coverage folder
         uses: actions/upload-artifact@v4
