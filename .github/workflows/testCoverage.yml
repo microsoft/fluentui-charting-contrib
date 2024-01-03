@@ -88,7 +88,7 @@ jobs:
       - name: Save coverage folder
         uses: actions/upload-artifact@v4
         with:
-          name: ${{env.COVERAGE_FILENAME_CURRENT}}
+          name: ${{matrix.os}}
           path: ./repo1/packages/react-charting/coverage/${{matrix.os}}
 
       - name: Save coverage file
@@ -128,8 +128,26 @@ jobs:
       - name: Download all artifacts to publish together
         uses: actions/download-artifact@v4
         with:
+          name: 'ubuntu-latest' 
+          path: './coverage/ubuntu'
+
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: 'macos-latest' 
+          path: './coverage/macos-latest'
+
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: 'windows-latest' 
+          path: './coverage/windows-latest'
+
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
           name: 'coverage_VBC' 
-          path: './coverage'
+          path: './coverage/coverage_VBC'
 
       - name: Rename folders
         run: |
@@ -155,7 +173,7 @@ jobs:
       - name: Generate html to show the latest coverages for all os types
         run: |
             cd ./coverage
-            echo "<!DOCTYPE html><html><head><title>Contributor Readiness</title></head><body><h1>View contributor guides and full test coverage reports</h1><ul><li><a href="https://uifabric.visualstudio.com/iss/_wiki/wikis/iss.wiki/280/Charting-Concepts">Contributor guides</a></li><li><a href="./windows/index.html">Coverage for Windows</a></li><li><a href="./ubuntu/index.html">Coverage for Ubuntu</a></li><li><a href="./macos/index.html">Coverage for MacOS</a></li><li><a href="./${{env.COVERAGE_FILENAME_WINDOWS}}_VBC/index.html">Coverage for Vertical bar chart - Windows</a></li></ul></body></html>" >> index.html
+            echo "<!DOCTYPE html><html><head><title>Contributor Readiness</title></head><body><h1>View contributor guides and full test coverage reports</h1><ul><li><a href="https://uifabric.visualstudio.com/iss/_wiki/wikis/iss.wiki/280/Charting-Concepts">Contributor guides</a></li><li><a href="./windows-latest/index.html">Coverage for Windows</a></li><li><a href="./ubuntu-latest/index.html">Coverage for Ubuntu</a></li><li><a href="./macos-latest/index.html">Coverage for MacOS</a></li><li><a href="./coverage_VBC/index.html">Coverage for Vertical bar chart - Windows</a></li></ul></body></html>" >> index.html
         shell: bash
 
       - name: Setup Pages
