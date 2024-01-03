@@ -128,6 +128,11 @@ jobs:
           name: ${{env.COVERAGE_FILENAME_MACOS}}
           path: './repo1/packages/react-charting/coverage'
 
+      - name: Show the coverage folder
+        run: |
+            cd ./repo1/packages/react-charting/coverage
+            ls
+
       - name: Generate html to show the latest coverages for all os types
         if: matrix.os == 'windows-latest'
         run: |
