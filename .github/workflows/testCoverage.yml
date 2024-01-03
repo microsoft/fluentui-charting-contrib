@@ -125,7 +125,6 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
       - name: Download all artifacts to publish together
-        if: matrix.os == 'windows-latest'
         uses: actions/download-artifact@v2
         with:
           path: './coverage'
@@ -168,9 +167,7 @@ jobs:
           
       - name: Deploy to GitHub Pages
         id: deployment
-        if: matrix.os == 'windows-latest'
         uses: actions/deploy-pages@v4
 
       - name: Url after deployment
-        if: matrix.os == 'windows-latest'
         run: echo "${{ steps.deployment.outputs.page_url }}"
