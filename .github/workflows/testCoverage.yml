@@ -110,7 +110,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: './repo1/packages/react-charting/coverage/${{matrix.os}}'
+          path: './repo1/packages/react-charting/coverage'
           
       - name: Deploy to GitHub Pages
         id: deployment
