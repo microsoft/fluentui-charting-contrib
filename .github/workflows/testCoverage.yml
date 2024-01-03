@@ -121,49 +121,50 @@ jobs:
             $table = [regex]::Match($fileContents, $tableRegex)
             echo "$table"
 
+  publish_to_site:
+    runs-on: 'ubuntu-latest'
+    steps:
       - name: Download all artifacts to publish together
         if: matrix.os == 'windows-latest'
         uses: actions/download-artifact@v2
         with:
-          path: './repo1/packages/react-charting/coverage'
+          path: './coverage'
 
       - name: Rename folders
         run: |
-          cd ./repo1/packages/react-charting/coverage
+          cd ./coverage
           for dir in *; do
-            if [[ $name == *"ubuntu"* ]]; then
+            if [[ $name == *"ubuntu"* ]] && [[ $name != *"_report"* ]]; then
               mv "$dir" "ubuntu"
-            elif [[ $name == *"macos"* ]]; then
+            elif [[ $name == *"macos"* ]] && [[ $name != *"_report"* ]]; then
               mv "$dir" "macos"
-            else
+            elif [[ $name == *"VBC"* ]] && [[ $name != *"_report"* ]]; then
+              mv "$dir" "VBC"
+            elif [[ $name == *"windows"* ]] && [[ $name != *"_report"* ]]; then
               mv "$dir" "windows"
             fi
           done
         shell: bash
 
       - name: Show the coverage folder
-        if: matrix.os == 'windows-latest'
         run: |
-            cd ./repo1/packages/react-charting/coverage
+            cd ./coverage
             ls
 
       - name: Generate html to show the latest coverages for all os types
-        if: matrix.os == 'windows-latest'
         run: |
-            cd ./repo1/packages/react-charting/coverage
-            echo "<!DOCTYPE html><html><head><title>Contributor Readiness</title></head><body><h1>View contributor guides and full test coverage reports</h1><ul><li><a href="https://uifabric.visualstudio.com/iss/_wiki/wikis/iss.wiki/280/Charting-Concepts">Contributor guides</a></li><li><a href="./${{env.COVERAGE_FILENAME_WINDOWS}}/index.html">Coverage for Windows</a></li><li><a href="./${{env.COVERAGE_FILENAME_UBUNTU}}/index.html">Coverage for Ubuntu</a></li><li><a href="./${{env.COVERAGE_FILENAME_MACOS}}/index.html">Coverage for MacOS</a></li><li><a href="./${{env.COVERAGE_FILENAME_WINDOWS}}_VBC/index.html">Coverage for Vertical bar chart - Windows</a></li></ul></body></html>" >> index.html
+            cd ./coverage
+            echo "<!DOCTYPE html><html><head><title>Contributor Readiness</title></head><body><h1>View contributor guides and full test coverage reports</h1><ul><li><a href="https://uifabric.visualstudio.com/iss/_wiki/wikis/iss.wiki/280/Charting-Concepts">Contributor guides</a></li><li><a href="./windows/index.html">Coverage for Windows</a></li><li><a href="./ubuntu/index.html">Coverage for Ubuntu</a></li><li><a href="./macos/index.html">Coverage for MacOS</a></li><li><a href="./${{env.COVERAGE_FILENAME_WINDOWS}}_VBC/index.html">Coverage for Vertical bar chart - Windows</a></li></ul></body></html>" >> index.html
         shell: bash
 
       - name: Setup Pages
-        if: matrix.os == 'windows-latest' 
         uses: actions/configure-pages@v4
         
       - name: Upload artifact
-        if: matrix.os == 'windows-latest'
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: './repo1/packages/react-charting/coverage'
+          path: './coverage'
           
       - name: Deploy to GitHub Pages
         id: deployment
