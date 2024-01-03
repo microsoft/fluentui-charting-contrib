@@ -20,7 +20,7 @@ jobs:
       test_coverage: ${{ steps.run_tests.outputs }}
       ubuntu_artifact_name: ${{ steps.ubuntu.outputs.COVERAGE_FILENAME_UBUNTU }}
       windows_artifact_name: ${{ steps.windows.outputs.COVERAGE_FILENAME_WINDOWS }}
-      macos_artifact_name: ${{ steps.windows.outputs.COVERAGE_FILENAME_MACOS }}
+      macos_artifact_name: ${{ steps.macos.outputs.COVERAGE_FILENAME_MACOS }}
 
     steps:   
       - name: Checkout [master]
