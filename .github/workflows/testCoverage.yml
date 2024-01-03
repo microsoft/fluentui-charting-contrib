@@ -129,6 +129,7 @@ jobs:
           path: './repo1/packages/react-charting/coverage'
 
       - name: Show the coverage folder
+        if: matrix.os == 'windows-latest'
         run: |
             cd ./repo1/packages/react-charting/coverage
             ls
