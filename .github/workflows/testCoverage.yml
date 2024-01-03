@@ -14,7 +14,7 @@ jobs:
   run_tests:
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [windows-latest, macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     outputs:
       test_coverage: ${{ steps.run_tests.outputs }}
@@ -128,6 +128,7 @@ jobs:
       - name: Download all artifacts to publish together
         uses: actions/download-artifact@v4
         with:
+          name: 'ubuntu-latest'
           path: './coverage/ubuntu'
 
       - name: Download all artifacts to publish together
