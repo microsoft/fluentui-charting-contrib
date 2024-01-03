@@ -121,19 +121,24 @@ jobs:
             $table = [regex]::Match($fileContents, $tableRegex)
             echo "$table"
 
-      - name: Download ubuntu artifacts to publish together
+      - name: Download all artifacts to publish together
         if: matrix.os == 'windows-latest'
         uses: actions/download-artifact@v2
         with:
-          name: ${{env.COVERAGE_FILENAME_UBUNTU}}
           path: './repo1/packages/react-charting/coverage'
 
-      - name: Download macos artifacts to publish together
-        if: matrix.os == 'windows-latest'
-        uses: actions/download-artifact@v2
-        with:
-          name: ${{env.COVERAGE_FILENAME_MACOS}}
-          path: './repo1/packages/react-charting/coverage'
+      - name: Rename folders
+        run: |
+          for dir in *; do
+            if [[ $name == *"ubuntu"* ]]; then
+              mv "$dir" "ubuntu"
+            elif [[ $name == *"macos"* ]]; then
+              mv "$dir" "macos"
+            else
+              mv "$dir" "windows"
+            fi
+          done
+        shell: bash
 
       - name: Show the coverage folder
         if: matrix.os == 'windows-latest'
