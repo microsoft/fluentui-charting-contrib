@@ -129,6 +129,7 @@ jobs:
 
       - name: Rename folders
         run: |
+          cd ./repo1/packages/react-charting/coverage
           for dir in *; do
             if [[ $name == *"ubuntu"* ]]; then
               mv "$dir" "ubuntu"
