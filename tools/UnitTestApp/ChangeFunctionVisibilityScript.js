@@ -7,31 +7,18 @@ function getPWD(callback) {
   try {
     const osType = core.getInput('osType');
     console.log(`The value of osType is: ${osType}`);
-
-    if (osType === 'windows-latest') {
-      exec('cd', (error, stdout, stderr) => {
-        if (error) {
-          console.error(`exec error: ${error}`);
-          return;
-        }
-        // Remove the trailing newline character
-        const pwd = stdout.trim();
-        // Call the callback function with the result
-        callback(pwd);
-      });
-      return;
-    } else if (osType === 'ubuntu-latest' || osType === 'macos-latest') {
-      exec('echo $PWD', (error, stdout, stderr) => {
-        if (error) {
-          console.error(`exec error: ${error}`);
-          return;
-        }
-        // Remove the trailing newline character
-        const pwd = stdout.trim();
-        // Call the callback function with the result
-        callback(pwd);
-      });
-    }
+    const pwdCommand = osType === 'windows-latest' ? 'cd' : 'echo $PWD';
+    exec(pwdCommand, (error, stdout, stderr) => {
+      if (error) {
+        console.error(`exec error: ${error}`);
+        return;
+      }
+      // Remove the trailing newline character
+      const pwd = stdout.trim();
+      // Call the callback function with the result
+      callback(pwd);
+    });
+    return;
   } catch (error) {
     core.setFailed(error.message);
   }
