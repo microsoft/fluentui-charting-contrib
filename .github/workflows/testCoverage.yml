@@ -68,22 +68,11 @@ jobs:
         if: matrix.os == 'windows-latest'          
         run: |
             $NOW=& Get-Date -format yyyy-MM-dd
-            echo "COVERAGE_FILENAME_WINDOWS=test_coverage_${{ matrix.os }}_$NOW" >> $env:GITHUB_ENV
-            echo "COVERAGE_FILENAME_CURRENT=test_coverage_${{ matrix.os }}_$NOW" >> $env:GITHUB_ENV
+            echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$NOW" >> $env:GITHUB_ENV
 
-      - name: Generate coverage file name for ubuntu
-        id: ubuntu
-        if: matrix.os == 'ubuntu-latest'
+      - name: Generate coverage file name
         run: |          
-            echo "COVERAGE_FILENAME_UBUNTU=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
-            echo "COVERAGE_FILENAME_CURRENT=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
-
-      - name: Generate coverage file name for macos
-        id: macos
-        if: matrix.os == 'macos-latest'
-        run: |          
-            echo "COVERAGE_FILENAME_MACOS=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
-            echo "COVERAGE_FILENAME_CURRENT=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
+            echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
       - name: Save coverage folder
         uses: actions/upload-artifact@v4
@@ -94,7 +83,7 @@ jobs:
       - name: Save coverage file
         uses: actions/upload-artifact@v4
         with:
-          name: ${{env.COVERAGE_FILENAME_CURRENT}}_report
+          name: ${{env.COVERAGE_FILENAME}}_report
           path: ./repo1/packages/react-charting/coverageReport.txt
 
       - name: Save coverage folder for a single test
@@ -129,7 +118,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: 'ubuntu-latest'
-          path: './coverage/ubuntu'
+          path: './coverage/ubuntu-latest'
 
       - name: Download all artifacts to publish together
         uses: actions/download-artifact@v4
@@ -182,7 +171,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
           path: './coverage'
           
       - name: Deploy to GitHub Pages
