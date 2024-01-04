@@ -1,6 +1,14 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 768:
+/***/ ((module) => {
+
+module.exports = eval("require")("@actions/core");
+
+
+/***/ }),
+
 /***/ 81:
 /***/ ((module) => {
 
@@ -69,18 +77,27 @@ var __webpack_exports__ = {};
 const fs = __nccwpck_require__(147);
 const path = __nccwpck_require__(17);
 const { exec } = __nccwpck_require__(81);
+const core = __nccwpck_require__(768);
 
 function getPWD(callback) {
-  exec('echo $PWD', (error, stdout, stderr) => {
-    if (error) {
-      console.error(`exec error: ${error}`);
-      return;
-    }
-    // Remove the trailing newline character
-    const pwd = stdout.trim();
-    // Call the callback function with the result
-    callback(pwd);
-  });
+  try {
+    const osType = core.getInput('osType');
+    console.log(`The value of osType is: ${osType}`);
+    const pwdCommand = osType === 'windows-latest' ? 'cd' : 'echo $PWD';
+    exec(pwdCommand, (error, stdout, stderr) => {
+      if (error) {
+        console.error(`exec error: ${error}`);
+        return;
+      }
+      // Remove the trailing newline character
+      const pwd = stdout.trim();
+      // Call the callback function with the result
+      callback(pwd);
+    });
+    return;
+  } catch (error) {
+    core.setFailed(error.message);
+  }
 }
 
 async function makePrivateFunctionsPublic(filePath) {
@@ -97,16 +114,16 @@ async function readDirectory(dirPath) {
   const items = await fs.readdirSync(dirPath);
 
   items.forEach(item => {
-      const fullPath = path.join(dirPath, item);
-      if (fullPath.includes('.base.')) {
+    const fullPath = path.join(dirPath, item);
+    if (fullPath.includes('.base.')) {
       const stat = fs.statSync(fullPath);
 
-        if (stat.isDirectory()) {
-            readDirectory(fullPath);
-        } else {
-          makePrivateFunctionsPublic(fullPath);
-        }
+      if (stat.isDirectory()) {
+        readDirectory(fullPath);
+      } else {
+        makePrivateFunctionsPublic(fullPath);
       }
+    }
   });
 }
 

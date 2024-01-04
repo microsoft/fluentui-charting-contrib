@@ -1,18 +1,27 @@
 const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
+const core = require('@actions/core');
 
 function getPWD(callback) {
-  exec('echo $PWD', (error, stdout, stderr) => {
-    if (error) {
-      console.error(`exec error: ${error}`);
-      return;
-    }
-    // Remove the trailing newline character
-    const pwd = stdout.trim();
-    // Call the callback function with the result
-    callback(pwd);
-  });
+  try {
+    const osType = core.getInput('osType');
+    console.log(`The value of osType is: ${osType}`);
+    const pwdCommand = osType === 'windows-latest' ? 'cd' : 'echo $PWD';
+    exec(pwdCommand, (error, stdout, stderr) => {
+      if (error) {
+        console.error(`exec error: ${error}`);
+        return;
+      }
+      // Remove the trailing newline character
+      const pwd = stdout.trim();
+      // Call the callback function with the result
+      callback(pwd);
+    });
+    return;
+  } catch (error) {
+    core.setFailed(error.message);
+  }
 }
 
 async function makePrivateFunctionsPublic(filePath) {
@@ -29,16 +38,16 @@ async function readDirectory(dirPath) {
   const items = await fs.readdirSync(dirPath);
 
   items.forEach(item => {
-      const fullPath = path.join(dirPath, item);
-      if (fullPath.includes('.base.')) {
+    const fullPath = path.join(dirPath, item);
+    if (fullPath.includes('.base.')) {
       const stat = fs.statSync(fullPath);
 
-        if (stat.isDirectory()) {
-            readDirectory(fullPath);
-        } else {
-          makePrivateFunctionsPublic(fullPath);
-        }
+      if (stat.isDirectory()) {
+        readDirectory(fullPath);
+      } else {
+        makePrivateFunctionsPublic(fullPath);
       }
+    }
   });
 }
 
