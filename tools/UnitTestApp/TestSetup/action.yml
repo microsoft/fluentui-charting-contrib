@@ -1,6 +1,0 @@
-name: 'Setup test environment'
-description: 'Setup test environment'
-
-runs:
-  using: 'node20'
-  main: '../dist/TestSetupAction/index.js'
