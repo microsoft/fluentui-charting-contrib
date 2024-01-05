@@ -1,0 +1,31 @@
+name: 'Setup test environment'
+on:
+  workflow_dispatch:
+defaults:
+  run:
+    working-directory: ./tools/UnitTestApp
+jobs:
+  test_env_setup_job:
+    runs-on: ubuntu-latest
+    name: A job to setup test environment
+
+    steps:
+      - name: Checkout [master]
+        uses: actions/checkout@v3
+
+      - name: Install packages
+        run: yarn --cwd ./tools/UnitTestApp --verbose
+        
+      - name: Test Environment Setup action step
+        id: setup
+        uses: ./tools/UnitTestApp/TestSetup
+
+      - name: Run tests
+        run: yarn test
+        
+      - name: Test Setup Complete        
+        working-directory: ./tools/UnitTestApp
+        run: echo "$(<./node_modules/@fluentui/react-charting/lib-commonjs/index.js)"
+        # run: echo "$(<./tools/UnitTestApp/node_modules/@fluentui/react-charting/lib-commonjs/components/AreaChart/AreaChart.base.js)"      
+      
+        
