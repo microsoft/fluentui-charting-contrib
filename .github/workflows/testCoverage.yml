@@ -35,15 +35,15 @@ jobs:
       - name: Show current directory
         run: echo "$PWD" && ls
 
+      - name: Install packages
+        run:  yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
+
       - name: Change function visibility from private to public
         id: setup
         uses: ./tools/UnitTestApp/ChangeFunctionVisibility
         with:
           osType: ${{ matrix.os }}
-
-      - name: Install packages
-        run:  yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
-
+          
       - name: Build
         run:  yarn --cwd ./repo1 buildto @fluentui/react-charting
 
