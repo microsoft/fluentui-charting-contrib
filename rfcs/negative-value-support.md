@@ -1,19 +1,9 @@
 # RFC: Supporting Negative Values in fluentui-react-charting
 
-<!--
-An RFC can be anything. A question, a suggestion, a plan. The purpose of this template is to give some structure to help folks write successful RFCs. However, don't feel constrained by this template; use your best judgement.
-
-Tips for writing a successful RFC:
-
-- Simple plain words that make your point, fancy words obfuscate
-- Try to stay concise, but don't gloss over important details
-- Try to write a neutral problem statement, not one that motivates your desired solution
-- Remember, "Writing is thinking". It's natural to realize new ideas while writing your proposal
--->
-
 ---
 
 [AtishayMsft](https://github.com/AtishayMsft)
+
 [Shubhabrata08](https://github.com/Shubhabrata08)
 
 06.01.2024
