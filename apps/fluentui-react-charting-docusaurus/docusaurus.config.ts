@@ -15,7 +15,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'microsoft', // Usually your GitHub org/user name.
+  organizationName: 'Shubhabrata08', // Usually your GitHub org/user name.
   projectName: 'fluentui-charting-config', // Usually your repo name.
 
   onBrokenLinks: 'throw',
