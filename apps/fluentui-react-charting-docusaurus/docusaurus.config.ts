@@ -4,11 +4,11 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "fluentui-charting-contrib-docsite",
-  tagline: "Dinosaurs are cool",
+  tagline: "FluentUI",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://microsoft.github.io",
+  url: "https://shubhabrata08.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/fluentui-charting-contrib/",
@@ -16,7 +16,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "Shubhabrata08", // Usually your GitHub org/user name.
-  projectName: "fluentui-charting-config", // Usually your repo name.
+  projectName: "fluentui-charting-contrib", // Usually your repo name.
   deploymentBranch: "gh-pages",
   trailingSlash: false,
 
