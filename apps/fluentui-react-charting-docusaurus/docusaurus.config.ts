@@ -3,7 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "fluentui-charting-contrib-docsite",
+  title: "FluentUI Charting Contrib Docsite",
   tagline: "FluentUI docsite",
   favicon: "img/favicon.ico",
 
