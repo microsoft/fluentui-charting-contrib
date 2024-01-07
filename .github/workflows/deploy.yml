@@ -22,8 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: ls files
-        run: ls -a
+      - name: cd to docsite directory
+        run: cd apps/fluentui-react-charting-docusaurus
       - uses: actions/setup-node@v3
         with:
           node-version: 18
