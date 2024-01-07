@@ -39,15 +39,8 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          // editUrl:
+          //   "https://github.com/microsoft/fluentui-charting-contrib/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -72,9 +65,8 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
-        { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/microsoft/fluentui-charting-contrib",
           label: "GitHub",
           position: "right",
         },
@@ -93,29 +85,21 @@ const config: Config = {
           ],
         },
         {
-          title: "Community",
+          title: "FluentUI",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Public Developer Docsite",
+              href: "https://developer.microsoft.com/en-us/fluentui#/",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              label: "Github",
+              href: "https://github.com/microsoft/fluentui",
             },
           ],
         },
         {
-          title: "More",
+          title: "FluentUI Charting Contrib",
           items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
             {
               label: "GitHub",
               href: "https://github.com/microsoft/fluentui-charting-contrib",
@@ -123,7 +107,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} FluentUI Charting, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} FluentUI React Charting. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
