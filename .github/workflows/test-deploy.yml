@@ -7,10 +7,6 @@ on:
     # Review gh actions docs if you want to further define triggers, paths, etc
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
-defaults:
-  run:
-    shell: bash
-    working-directory: ./apps/fluentui-react-charting-docusaurus
 
 jobs:
   test-deploy:
@@ -24,6 +20,6 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: cd apps/fluentui-react-charting-docusaurus && yarn install --frozen-lockfile
       - name: Test build website
-        run: yarn build
+        run: cd apps/fluentui-react-charting-docusaurus && yarn build

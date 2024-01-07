@@ -29,10 +29,6 @@ jobs:
 
       - name: Install dependencies
         run: cd apps/fluentui-react-charting-docusaurus && yarn install --frozen-lockfile
-      - name: cd to docsite directory
-        run: cd apps/fluentui-react-charting-docusaurus
-      - name: show files
-        run: ls -a
       - name: Build website
         run: cd apps/fluentui-react-charting-docusaurus && ls -a && yarn build
 
