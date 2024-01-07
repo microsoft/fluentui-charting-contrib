@@ -60,9 +60,9 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "FluentUI Charting Docs",
+      title: "FluentUI Charting",
       logo: {
-        alt: "FluentUI Charting Docs Logo",
+        alt: "FluentUI Charting Logo",
         src: "img/logo.svg",
       },
       items: [
@@ -70,7 +70,7 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Docs",
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
