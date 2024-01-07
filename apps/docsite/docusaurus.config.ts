@@ -118,12 +118,12 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/microsoft/fluentui-charting-contrib",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} FluentUI Charting, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
