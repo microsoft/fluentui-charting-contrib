@@ -4,7 +4,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "fluentui-charting-contrib-docsite",
-  tagline: "FluentUI",
+  tagline: "FluentUI docsite",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
