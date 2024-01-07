@@ -1,14 +1,14 @@
 **Details**
 
-<img width="455" alt="image" src="./images/TestingStrategy/TestingStrategy1.png" />
+<img width="455" alt="image" src="/images/TestingStrategy/TestingStrategy1.png" />
 
 **Summary**
 
-<img width="755" alt="image" src="./images/TestingStrategy/TestingStrategy2.png"/>
+<img width="755" alt="image" src="/images/TestingStrategy/TestingStrategy2.png"/>
 
 **Flowchart**
 
-<img width="594" alt="image" src="./images/TestingStrategy/TestingStrategy3.png"/>
+<img width="594" alt="image" src="/images/TestingStrategy/TestingStrategy3.png"/>
 
 Details on the above mentioned steps:
 
