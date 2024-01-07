@@ -36,7 +36,7 @@ jobs:
       - name: show files
         run: ls -a
       - name: Build website
-        run: yarn build
+        run: cd apps/fluentui-react-charting-docusaurus && yarn build
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
