@@ -20,6 +20,6 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: cd apps/fluentui-react-charting-docusaurus && yarn install --frozen-lockfile
+        run: cd apps/docsite && yarn install --frozen-lockfile
       - name: Test build website
-        run: cd apps/fluentui-react-charting-docusaurus && yarn build
+        run: cd apps/docsite && yarn build
