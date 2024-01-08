@@ -1,3 +1,6 @@
+---
+title: FluentUI React Charting
+---
 Fluent UI React (formerly Office UI Fabric React) charts is a set of modern, accessible, interactive and highly customizable visualization library representing the Microsoft design system.
 
 The charting library is built using D3 (Data Driven Documents) and other fluent UI controls.
