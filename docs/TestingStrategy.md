@@ -1,3 +1,6 @@
+---
+title: Testing Strategy
+---
 **Details**
 
 <img width="455" alt="image" src={require("./images/TestingStrategy/TestingStrategy1.png").default} />
