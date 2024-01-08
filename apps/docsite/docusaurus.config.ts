@@ -105,7 +105,7 @@ const config: Config = {
           items: [
             {
               label: "Public Developer Docsite",
-              href: "https://developer.microsoft.com/en-us/fluentui#/",
+              href: "https://aka.ms/fluentcharting",
             },
             {
               label: "Github",
