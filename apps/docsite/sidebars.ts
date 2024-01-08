@@ -20,8 +20,8 @@ const sidebars: SidebarsConfig = {
     'Fluent-React-Charting',
     'TechnicalDetails',
     'colors',
-    'TestingStrategy',
     'implementing-2-to-1-spacing',
+    'TestingStrategy',
     {
       type:'category',
       label:'Test Plans',
