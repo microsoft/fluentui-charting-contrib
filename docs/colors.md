@@ -66,10 +66,10 @@ The users can pick colors from our data visualization color palette, which is ca
 
 ### Qualitative Color Palette
 
-![First 10 colors in Qualitative palette](images/colors/1.png)
-![Second 10 colors in Qualitative palette](images/colors/2.png)
-![Third 10 colors in Qualitative palette](images/colors/3.png)
-![Final 10 colors in Qualitative palette](images/colors/4.png)
+![First 10 colors in Qualitative palette](./assets/images/colors/1.png)
+![Second 10 colors in Qualitative palette](./assets/images/colors/2.png)
+![Third 10 colors in Qualitative palette](./assets/images/colors/3.png)
+![Final 10 colors in Qualitative palette](./assets/images/colors/4.png)
 
 Each qualitative color is distinct from the others. This type of palette is ideal for visualizations displaying categorical variables that are unrelated to one another. This is our **default color palette**, which totals 40 colors, including 10 base colors and 30 extension colors. We cycle through these colors sequentially to paint the data series without color.
 
@@ -106,7 +106,7 @@ export default App;
 
 ### Semantic Color Palette
 
-![Colors in Semantic palette](images/colors/5.png)
+![Colors in Semantic palette](./assets/images/colors/5.png)
 
 Semantic color represents a clear message as well as status, such as success, error, warning, info and so on. Each color has the same basic meaning in all contexts.
 

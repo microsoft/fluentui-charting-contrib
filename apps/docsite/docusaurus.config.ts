@@ -21,7 +21,7 @@ const config: Config = {
   projectName: "fluentui-charting-contrib", // Usually your repo name.
   deploymentBranch: "gh-pages",
   trailingSlash: false,
-  staticDirectories: ['../../docs/images', 'static'],
+  staticDirectories: ['../../docs/assets', 'static'],
 
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",

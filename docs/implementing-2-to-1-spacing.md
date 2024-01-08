@@ -2,7 +2,7 @@
 
 ## Discrete Axis
 
-![Empty chart showing the total space available to render the bars](images/implementing-2-to-1-spacing/1.png)
+![Empty chart showing the total space available to render the bars](assets/images/implementing-2-to-1-spacing/1.png)
 
 As per design specs, there should be a minimum space of 8px before the first bar and after the last bar of a vertical bar chart. Let’s call this space `MIN_DOMAIN_MARGIN`.
 
@@ -45,7 +45,7 @@ $$
 \implies paddingInner = {2 \over 3}
 $$
 
-![Vertical bar chart showing the difference between the scale bandwidth and the user provided bar width](images/implementing-2-to-1-spacing/2.png)
+![Vertical bar chart showing the difference between the scale bandwidth and the user provided bar width](assets/images/implementing-2-to-1-spacing/2.png)
 
 ### Problem
 
@@ -110,7 +110,7 @@ const xBarScale = d3ScaleBand()
     .paddingInner(2 / 3);
 ```
 
-![Vertical bar chart with detached bars and x-axis labels](images/implementing-2-to-1-spacing/3.png)
+![Vertical bar chart with detached bars and x-axis labels](assets/images/implementing-2-to-1-spacing/3.png)
 
 ### Problem
 
@@ -120,29 +120,29 @@ The domain (x-axis labels) doesn’t sync with the bars.
 
 Create a function to generate margins for the domain, taking the extra space into account:
 
-![Vertical bar chart code snapshot showing the getDomainMargins function with the same logic as above, which returns margins (including domainMargin)](images/implementing-2-to-1-spacing/4.png)
+![Vertical bar chart code snapshot showing the getDomainMargins function with the same logic as above, which returns margins (including domainMargin)](assets/images/implementing-2-to-1-spacing/4.png)
 _VerticalStackedBarChart.base.tsx_
 
 Pass the function and the same inner padding to the `CartesianChart` common component where the axes are created:
 
-![Vertical bar chart code snapshot showing the props getDomainMargins, xAxisInnerPadding, and xAxisOuterPadding passed to the CartesianChart](images/implementing-2-to-1-spacing/5.png)
+![Vertical bar chart code snapshot showing the props getDomainMargins, xAxisInnerPadding, and xAxisOuterPadding passed to the CartesianChart](assets/images/implementing-2-to-1-spacing/5.png)
 _VerticalStackedBarChart.base.tsx_
 
 Update parameters of the function that creates the axis:
 
-![CartesianChart code snapshot showing the updated XAxisParams with the new props](images/implementing-2-to-1-spacing/6.png)
+![CartesianChart code snapshot showing the updated XAxisParams with the new props](assets/images/implementing-2-to-1-spacing/6.png)
 _CartesianChart.base.tsx_
 
 Set the inner padding while constructing the scale for the axis:
 
-![Utilities code snapshot showing the createStringXAxis function with updated inner and outer paddings for the scale](images/implementing-2-to-1-spacing/7.png)
+![Utilities code snapshot showing the createStringXAxis function with updated inner and outer paddings for the scale](assets/images/implementing-2-to-1-spacing/7.png)
 _utilities.ts_
 
-![Vertical bar chart with 2:1 spacing](images/implementing-2-to-1-spacing/8.png)
+![Vertical bar chart with 2:1 spacing](assets/images/implementing-2-to-1-spacing/8.png)
 
 ### Special Case: GroupedVerticalBarChart
 
-![Grouped vertical bar chart showing the scale for the groups, and the scale for the bars in a group](images/implementing-2-to-1-spacing/9.png)
+![Grouped vertical bar chart showing the scale for the groups, and the scale for the bars in a group](assets/images/implementing-2-to-1-spacing/9.png)
 
 Construct a scale to define the geometry of the bars in a group:
 
@@ -204,12 +204,12 @@ $$
 
 Create a function to generate margins for the domain, taking the extra space into account:
 
-![Grouped vertical bar chart code snapshot showing the getDomainMargins function that returns margins (including domainMargin)](images/implementing-2-to-1-spacing/10.png)
+![Grouped vertical bar chart code snapshot showing the getDomainMargins function that returns margins (including domainMargin)](assets/images/implementing-2-to-1-spacing/10.png)
 _GroupedVerticalBarChart.base.tsx_
 
 Pass the function and the same inner padding to the `CartesianChart` common component where the axes are created:
 
-![Grouped vertical bar chart code snapshot showing the props getDomainMargins, xAxisInnerPadding, and xAxisOuterPadding passed to the CartesianChart](images/implementing-2-to-1-spacing/11.png)
+![Grouped vertical bar chart code snapshot showing the props getDomainMargins, xAxisInnerPadding, and xAxisOuterPadding passed to the CartesianChart](assets/images/implementing-2-to-1-spacing/11.png)
 _GroupedVerticalBarChart.base.tsx_
 
 **Note:** The bars and the x-axis use separate scales for rendering, and code changes are done to sync these scales. A better solution would be to share the same scale with both, but doing so will need a lot of refactoring in the shared/common code.

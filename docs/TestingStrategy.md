@@ -3,15 +3,15 @@ title: Testing Strategy
 ---
 **Details**
 
-<img width="455" alt="image" src={require("./images/TestingStrategy/TestingStrategy1.png").default} />
+<img width="455" alt="image" src={require("./assets/images/TestingStrategy/TestingStrategy1.png").default} />
 
 **Summary**
 
-<img width="755" alt="image" src={require("./images/TestingStrategy/TestingStrategy2.png").default} />
+<img width="755" alt="image" src={require("./assets/images/TestingStrategy/TestingStrategy2.png").default} />
 
 **Flowchart**
 
-<img width="594" alt="image" src={require("./images/TestingStrategy/TestingStrategy3.png").default} />
+<img width="594" alt="image" src={require("./assets/images/TestingStrategy/TestingStrategy3.png").default} />
 
 Details on the above mentioned steps:
 
@@ -52,11 +52,11 @@ Currently, the code coverage for master branch:
 
 Commit Id: "1da7bd9a64b1fdf4a3944edc52dc5e851ca47548"
 
-![](./images/TestingStrategy/Coverage.png)
+![](./assets/images/TestingStrategy/Coverage.png)
 
 **Example: How to Add Tests for Donut Chart**
 
-![](./images/TestingStrategy/DonutCoverage.png)
+![](./assets/images/TestingStrategy/DonutCoverage.png)
 
 **Step 1 [Unit Tests]:**
 
