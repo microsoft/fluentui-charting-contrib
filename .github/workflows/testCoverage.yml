@@ -123,23 +123,23 @@ jobs:
           name: 'ubuntu-latest'
           path: './coverage/ubuntu-latest'
 
-      - name: Download all artifacts to publish together
-        uses: actions/download-artifact@v4
-        with:
-          name: 'macos-latest' 
-          path: './coverage/macos-latest'
+      # - name: Download all artifacts to publish together
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: 'macos-latest' 
+      #     path: './coverage/macos-latest'
 
-      - name: Download all artifacts to publish together
-        uses: actions/download-artifact@v4
-        with:
-          name: 'windows-latest' 
-          path: './coverage/windows-latest'
+      # - name: Download all artifacts to publish together
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: 'windows-latest' 
+      #     path: './coverage/windows-latest'
 
-      - name: Download all artifacts to publish together
-        uses: actions/download-artifact@v4
-        with:
-          name: 'coverage_VBC' 
-          path: './coverage/coverage_VBC'
+      # - name: Download all artifacts to publish together
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: 'coverage_VBC' 
+      #     path: './coverage/coverage_VBC'
 
       - name: Rename folders
         run: |
