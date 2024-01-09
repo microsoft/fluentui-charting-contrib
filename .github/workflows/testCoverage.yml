@@ -1,10 +1,10 @@
-name: "Test coverage"
+name: 'Test coverage'
 on:
   push:
     branches:
-      - auto-deploy-test-coverage-to-docsite
+      auto-deploy-test-coverage-to-docsite
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *" 
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -12,12 +12,12 @@ permissions:
   contents: write
   pages: write
   id-token: write
-
+  
 jobs:
   run_tests:
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        os: [windows-latest, macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     outputs:
       test_coverage: ${{ steps.run_tests.outputs }}
@@ -25,13 +25,13 @@ jobs:
       windows_artifact_name: ${{ steps.windows.outputs.COVERAGE_FILENAME_WINDOWS }}
       macos_artifact_name: ${{ steps.macos.outputs.COVERAGE_FILENAME_MACOS }}
 
-    steps:
+    steps:   
       - name: Checkout [master]
         uses: actions/checkout@v4
 
       - name: Checkout [react-charting]
         uses: actions/checkout@v4
-        with:
+        with: 
           repository: "microsoft/fluentui"
           path: repo1
 
@@ -39,43 +39,43 @@ jobs:
         run: echo "$PWD" && ls
 
       - name: Install packages
-        run: yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
+        run:  yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
 
       - name: Change function visibility from private to public
         id: setup
         uses: ./tools/UnitTestApp/ChangeFunctionVisibility
         with:
           osType: ${{ matrix.os }}
-
+          
       - name: Build
-        run: yarn --cwd ./repo1 buildto @fluentui/react-charting
+        run:  yarn --cwd ./repo1 buildto @fluentui/react-charting
 
       - name: Run the tests in windows
-        if: matrix.os == 'windows-latest'
+        if: matrix.os == 'windows-latest'  
         run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
 
       - name: Run a single test in windows
-        if: matrix.os == 'windows-latest'
+        if: matrix.os == 'windows-latest'  
         run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest ./src/components/VerticalBarChart --coverage --coverageDirectory ./coverage/${{matrix.os}}_VerticalBarChart --verbose --coverageReporters=html
-
+        
       - name: Run the tests in macos
         if: matrix.os == 'macos-latest'
         run: cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
-
+        
       - name: Run the tests in ubuntu
-        if: matrix.os == 'ubuntu-latest'
-        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
+        if: matrix.os == 'ubuntu-latest'    
+        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt        
 
       - name: Generate coverage file name in windows
         id: windows
-        if: matrix.os == 'windows-latest'
+        if: matrix.os == 'windows-latest'          
         run: |
-          $NOW=& Get-Date -format yyyy-MM-dd
-          echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$NOW" >> $env:GITHUB_ENV
+            $NOW=& Get-Date -format yyyy-MM-dd
+            echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$NOW" >> $env:GITHUB_ENV
 
       - name: Generate coverage file name
-        run: |
-          echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
+        run: |          
+            echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
       - name: Save coverage folder
         uses: actions/upload-artifact@v4
@@ -99,40 +99,23 @@ jobs:
       - name: Extract the coverage summary table
         if: matrix.os != 'windows-latest'
         run: |
-          cd ./repo1/packages/react-charting
-          file_contents=$(cat coverageReport.txt)
-          table=$(echo "$file_contents" | awk '/----/,/^$/' | sed '1d;$d')
-          echo "$table"
+            cd ./repo1/packages/react-charting
+            file_contents=$(cat coverageReport.txt)
+            table=$(echo "$file_contents" | awk '/----/,/^$/' | sed '1d;$d')
+            echo "$table"
 
       - name: Extract the coverage summary table in windows
         if: matrix.os == 'windows-latest'
         run: |
-          cd ./repo1/packages/react-charting
-          $fileContents = Get-Content -Raw -Path "coverageReport.txt"
-          $tableRegex = "(?ms)----.*?^$"
-          $table = [regex]::Match($fileContents, $tableRegex)
-          echo "$table"
+            cd ./repo1/packages/react-charting
+            $fileContents = Get-Content -Raw -Path "coverageReport.txt"
+            $tableRegex = "(?ms)----.*?^$"
+            $table = [regex]::Match($fileContents, $tableRegex)
+            echo "$table"
 
-      # - name: Download all artifacts to publish together
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: 'macos-latest'
-      #     path: './coverage/macos-latest'
-
-      # - name: Download all artifacts to publish together
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: 'windows-latest'
-      #     path: './coverage/windows-latest'
-
-      # - name: Download all artifacts to publish together
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: 'coverage_VBC'
-      #     path: './coverage/coverage_VBC'
   push_artifacts_to_repo:
     needs: run_tests
-    runs-on: "ubuntu-latest"
+    runs-on: 'ubuntu-latest'
     permissions:
       contents: write
 
@@ -140,8 +123,26 @@ jobs:
       - name: Download all artifacts to publish together
         uses: actions/download-artifact@v4
         with:
-          name: "ubuntu-latest"
-          path: "./coverage/ubuntu-latest"
+          name: 'ubuntu-latest'
+          path: './coverage/ubuntu-latest'
+
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: 'macos-latest' 
+          path: './coverage/macos-latest'
+
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: 'windows-latest' 
+          path: './coverage/windows-latest'
+
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: 'coverage_VBC' 
+          path: './coverage/coverage_VBC'
 
       - name: Rename folders
         run: |
@@ -161,26 +162,22 @@ jobs:
 
       - name: Show the coverage folder
         run: |
-          cd ./coverage
-          ls
-      - name: Show PWD
-        run: |
-          cd ./coverage
-          echo "$PWD"
+            cd ./coverage
+            ls
 
       - name: Generate html to show the latest coverages for all os types
         run: |
-          cd ./coverage
-          echo "<!DOCTYPE html><html><head><title>Contributor Readiness</title></head><body><h1>View contributor guides and full test coverage reports</h1><ul><li><a href="https://uifabric.visualstudio.com/iss/_wiki/wikis/iss.wiki/280/Charting-Concepts">Contributor guides</a></li><li><a href="./windows-latest/index.html">Coverage for Windows</a></li><li><a href="./ubuntu-latest/index.html">Coverage for Ubuntu</a></li><li><a href="./macos-latest/index.html">Coverage for MacOS</a></li><li><a href="./coverage_VBC/index.html">Coverage for Vertical bar chart - Windows</a></li></ul></body></html>" >> index.html
+            cd ./coverage
+            echo "<!DOCTYPE html><html><head><title>Contributor Readiness</title></head><body><h1>View contributor guides and full test coverage reports</h1><ul><li><a href="https://uifabric.visualstudio.com/iss/_wiki/wikis/iss.wiki/280/Charting-Concepts">Contributor guides</a></li><li><a href="./windows-latest/index.html">Coverage for Windows</a></li><li><a href="./ubuntu-latest/index.html">Coverage for Ubuntu</a></li><li><a href="./macos-latest/index.html">Coverage for MacOS</a></li><li><a href="./coverage_VBC/index.html">Coverage for Vertical bar chart - Windows</a></li></ul></body></html>" >> index.html
         shell: bash
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
-
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./coverage"
+          path: './coverage'
 
       - name: Directory disp
         run: ls -a
