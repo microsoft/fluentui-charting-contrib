@@ -185,11 +185,13 @@ jobs:
       - name: Directory disp
         run: ls -a
 
-      - name: Checkout [master]
+      - name: Checkout [main]
         uses: actions/checkout@v4
+        with:
+          path: repo
 
       - name: Move coverage to docs
-        run: ls -a && mv -f coverage ./fluentui-charting-contrib/docs
+        run: ls -a && mv -f coverage ./repo/fluentui-charting-contrib/docs
 
       - name: Run a git status
         run: git status
