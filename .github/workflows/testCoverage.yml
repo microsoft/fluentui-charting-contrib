@@ -189,7 +189,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Move coverage to docs
-        run: mv coverage ./fluentui-charting-contrib/docs
+        run: ls -a && mv -f coverage ./fluentui-charting-contrib/docs
 
       - name: Run a git status
         run: git status
