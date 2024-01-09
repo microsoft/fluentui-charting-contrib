@@ -191,7 +191,7 @@ jobs:
           path: repo
 
       - name: Move coverage to docs
-        run: ls -a && mv -f coverage ./repo/fluentui-charting-contrib/docs
+        run: ls -a && mv -f coverage repo/fluentui-charting-contrib/docs
 
       - name: Run a git status
         run: git status
