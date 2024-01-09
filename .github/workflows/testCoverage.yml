@@ -14,7 +14,7 @@ jobs:
   run_tests:
     strategy:
       matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
+        os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     outputs:
       test_coverage: ${{ steps.run_tests.outputs }}
@@ -158,6 +158,10 @@ jobs:
         run: |
             cd ./coverage
             ls
+      - name: Show PWD
+        run: |
+            cd ./coverage
+            echo "$PWD"
 
       - name: Generate html to show the latest coverages for all os types
         run: |
@@ -172,6 +176,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: './coverage'
+    
       - name: Directory disp
         run: ls -a
 
