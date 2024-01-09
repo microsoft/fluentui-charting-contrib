@@ -216,7 +216,8 @@ jobs:
         with:
           node-version: 18
           cache: yarn
-
+      - name: List files in docs
+        run: cd docs && ls -a
       - name: Install dependencies
         run: cd apps/docsite && yarn install --frozen-lockfile
       - name: Build website
