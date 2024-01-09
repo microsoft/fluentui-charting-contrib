@@ -116,6 +116,9 @@ jobs:
   publish_to_site:
     needs: run_tests
     runs-on: 'ubuntu-latest'
+    permissions:
+      contents: write
+
     steps:
       - name: Download all artifacts to publish together
         uses: actions/download-artifact@v4
@@ -183,9 +186,15 @@ jobs:
       - name: Directory disp
         run: ls -a
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Checkout [master]
+        uses: actions/checkout@v4
+          path: './repo'
 
-      - name: Url after deployment
-        run: echo "${{ steps.deployment.outputs.page_url }}"
+      - name: Move coverage to docs
+        run : mv ./coverage ./repo/fluentui-charting-contrib/docs
+
+      - name: Run a git status
+        run: git status
+      
+      - uses: stefanzweifel/git-auto-commit-action@v5
+      
