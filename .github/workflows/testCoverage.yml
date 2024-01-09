@@ -188,7 +188,8 @@ jobs:
 
       - name: Checkout [master]
         uses: actions/checkout@v4
-          path: './repo'
+          with:
+            path: './repo'
 
       - name: Move coverage to docs
         run : mv ./coverage ./repo/fluentui-charting-contrib/docs
@@ -197,4 +198,4 @@ jobs:
         run: git status
       
       - uses: stefanzweifel/git-auto-commit-action@v5
-      
+
