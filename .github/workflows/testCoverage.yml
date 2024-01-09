@@ -199,4 +199,6 @@ jobs:
       - name: Move coverage to docs
         run: ls -a && mv -f coverage repo/docs && cd repo/docs && ls -a
 
-      - uses: cd repo && stefanzweifel/git-auto-commit-action@v5
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: repo
