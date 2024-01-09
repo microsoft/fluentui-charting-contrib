@@ -191,9 +191,10 @@ jobs:
           path: repo
           ref: main
 
-      - name: Check dir
+      - name: Remove old artifacts
         run: |
-          cd ./repo
+          rm -rf ./repo/docs/coverage
+          cd ./repo/docs
           ls -a
         shell: bash
 
