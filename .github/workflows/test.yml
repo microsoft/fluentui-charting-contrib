@@ -1,0 +1,28 @@
+name: 'Test coverage'
+on:
+  push:
+    branches:
+      - auto-deploy-test-coverage-to-docsite
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  run_tests:
+    steps:   
+      - name: Checkout [master]
+        uses: actions/checkout@v4
+
+      - name: Checkout [react-charting]
+        uses: actions/checkout@v4
+        with: 
+          repository: "microsoft/fluentui"
+          path: repo1
+
+      - name: Show current directory
+        run: echo "$PWD" && ls 
+
+      - name: Show current directory
+        run: cd .. && cd .. && echo "$PWD" && ls 
+      
