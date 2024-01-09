@@ -14,15 +14,11 @@ jobs:
     steps:   
       - name: Checkout [master]
         uses: actions/checkout@v4
+          with:
+            path: repo
 
-      - name: Checkout [react-charting]
-        uses: actions/checkout@v4
-        with: 
-          repository: "microsoft/fluentui"
-          path: repo1
-
-      - name: Show current directory
-        run: echo "$PWD" && ls 
+      - name: Show repo directory
+        run: cd repo && echo "$PWD" && ls 
 
       - name: Show current directory
         run: cd .. && cd .. && echo "$PWD" && ls 
