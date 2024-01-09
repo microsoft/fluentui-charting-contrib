@@ -1,4 +1,4 @@
-name: "Test coverage"
+name: "Test"
 on:
   push:
     branches:
@@ -18,7 +18,7 @@ jobs:
           path: repo
 
       - name: Show repo directory
-        run: cd repo && echo "$PWD" && ls
+        run: cd repo && echo "$PWD" && ls && git status
 
       - name: Show current directory
         run: cd .. && cd .. && echo "$PWD" && ls
