@@ -190,6 +190,18 @@ jobs:
         with:
           path: repo
 
+      - name: Check dir
+        run: |
+          cd ./repo
+          ls -a
+          cd fluentui-charting-contrib
+          ls -a
+          cd fluentui-charting-contrib
+          ls -a
+          cd ../../../
+          ls -a
+        shell: bash
+
       - name: Move coverage to docs
         run: ls -a && mv -f coverage repo/fluentui-charting-contrib/fluentui-charting-contrib/docs
 
