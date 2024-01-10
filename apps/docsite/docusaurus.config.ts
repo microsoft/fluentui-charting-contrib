@@ -136,7 +136,7 @@ const config: Config = {
 
       indexName: "fluentui-charting-contrib",
 
-      contextualSearch: true,
+      contextualSearch: false,
     },
   } satisfies Preset.ThemeConfig,
 };
