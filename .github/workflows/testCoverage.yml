@@ -148,20 +148,24 @@ jobs:
       #   with:
       #     name: ${{env.COVERAGE_FILENAME_MACOS}}
       #     path: './coverage/coverageFileMacOS'
-      - name: Download all artifacts to publish together
-        uses: actions/download-artifact@v4
-        with:
-          name: ${{env.COVERAGE_FILENAME_UBUNTU}}
-          path: "./coverage/coverageFileUbuntu"
+      # - name: Download all artifacts to publish together
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: ${{env.COVERAGE_FILENAME_UBUNTU}}
+      #     path: "./coverage/coverageFileUbuntu"
       # - name: Download all artifacts to publish together
       #   uses: actions/download-artifact@v4
       #   with:
       #     name: ${{env.COVERAGE_FILENAME_WINDOWS}}
       #     path: './coverage/coverageFileWindows'
-      - name: "List all env variables"
-        run: env
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: "test_coverage_*"
+          path: "./coverage/coverageFiles"
+
       - name: "Check coverage file"
-        run: cd ./coverage/coverageFileUbuntu && ls -a
+        run: cd ./coverage/coverageFiles && ls -a
       - name: Rename folders
         run: |
           cd ./coverage
