@@ -129,6 +129,20 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    algolia: {
+      // The application ID provided by Algolia
+      appId: '',
+
+      // Public API key: it is safe to commit it
+      apiKey: '',
+
+      indexName: 'fluentui-charting-contrib',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+    },
+
   } satisfies Preset.ThemeConfig,
 };
 
