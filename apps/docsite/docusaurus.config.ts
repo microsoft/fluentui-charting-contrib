@@ -1,8 +1,8 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 const config: Config = {
   title: "FluentUI Charting Contrib Docsite",
@@ -21,7 +21,7 @@ const config: Config = {
   projectName: "fluentui-charting-contrib", // Usually your repo name.
   deploymentBranch: "main",
   trailingSlash: false,
-  staticDirectories: ['../../docs/assets', 'static'],
+  staticDirectories: ["../../docs/assets", "static"],
 
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
@@ -39,7 +39,7 @@ const config: Config = {
       "classic",
       {
         docs: {
-          path: '../../docs',
+          path: "../../docs",
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -57,11 +57,11 @@ const config: Config = {
 
   stylesheets: [
     {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+      type: "text/css",
       integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
+        "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+      crossorigin: "anonymous",
     },
   ],
 
@@ -128,6 +128,15 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    algolia: {
+      appId: "XZ2D9M7V2V",
+
+      apiKey: "3132c387b55f476a58851f55766065b5",
+
+      indexName: "fluentui-charting-contrib",
+
+      contextualSearch: true,
     },
   } satisfies Preset.ThemeConfig,
 };
