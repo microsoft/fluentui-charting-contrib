@@ -19,7 +19,7 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "microsoft", // Usually your GitHub org/user name.
   projectName: "fluentui-charting-contrib", // Usually your repo name.
-  deploymentBranch: "main",
+  deploymentBranch: "gh-pages",
   trailingSlash: false,
   staticDirectories: ["../../docs/assets", "static"],
 
@@ -132,7 +132,7 @@ const config: Config = {
     algolia: {
       appId: "XZ2D9M7V2V",
 
-      apiKey: "3132c387b55f476a58851f55766065b5",
+      apiKey: "dbef9c4c79e37ac05ce104dbd93faeec",
 
       indexName: "fluentui-charting-contrib",
 
