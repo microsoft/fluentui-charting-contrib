@@ -161,7 +161,7 @@ jobs:
       - name: Download all artifacts to publish together
         uses: actions/download-artifact@v4
         with:
-          name: "test_coverage_*"
+          name: test_coverage_*
           path: "./coverage/coverageFiles"
 
       - name: "Check coverage file"
