@@ -123,7 +123,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} FluentUI React Charting. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Microsoft`,
     },
     prism: {
       theme: prismThemes.github,

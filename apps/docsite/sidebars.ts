@@ -18,6 +18,7 @@ const sidebars: SidebarsConfig = {
   
   tutorialSidebar: [
     'Overview',
+    'CHANGELOG',
     'Start Developing',
     'Contributor Guide',
     'Technical Details',
