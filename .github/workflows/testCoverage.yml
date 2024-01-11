@@ -16,8 +16,7 @@ jobs:
   run_tests:
     strategy:
       matrix:
-        os: [ubuntu-latest]
-        # ,windows-latest,macos-latest]
+        os: [ubuntu-latest,windows-latest,macos-latest]
     runs-on: ${{ matrix.os }}
     outputs:
       test_coverage: ${{ steps.run_tests.outputs }}
@@ -126,39 +125,39 @@ jobs:
           name: "ubuntu-latest"
           path: "./coverage/ubuntu-latest"
 
-      # - name: Download all artifacts to publish together
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: "macos-latest"
-      #     path: "./coverage/macos-latest"
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: "macos-latest"
+          path: "./coverage/macos-latest"
 
-      # - name: Download all artifacts to publish together
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: "windows-latest"
-      #     path: "./coverage/windows-latest"
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: "windows-latest"
+          path: "./coverage/windows-latest"
 
-      # - name: Download all artifacts to publish together
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: "coverage_VBC"
-      #     path: "./coverage/coverage_VBC"
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: "coverage_VBC"
+          path: "./coverage/coverage_VBC"
 
-      # - name: Download all artifacts to publish together
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: ${{env.COVERAGE_FILENAME_MACOS}}
-      #     path: './coverage/coverageFileMacOS'
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{env.COVERAGE_FILENAME_MACOS}}
+          path: './coverage/coverageFileMacOS'
       - name: Download all artifacts to publish together
         uses: actions/download-artifact@v4
         with:
           name: ${{env.COVERAGE_FILENAME_UBUNTU}}
           path: "./coverage/coverageFileUbuntu"
-      # - name: Download all artifacts to publish together
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: ${{env.COVERAGE_FILENAME_WINDOWS}}
-      #     path: './coverage/coverageFileWindows'
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{env.COVERAGE_FILENAME_WINDOWS}}
+          path: './coverage/coverageFileWindows'
       - name: Download all artifacts to publish together
         uses: actions/download-artifact@v4
         with:
@@ -245,13 +244,14 @@ jobs:
           cd ./repo/docs
           ls -a
         shell: bash
-      - name: Rename all txt reports to md
+      - name: Rename all txt reports to md and remove unnecessary lines
         run: |
           cd ./coverage/coverageFiles
           for f in $(find ./ -name '*.txt'); do 
             sed -i '/PASS/d' "$f"
             sed -i '/yarn/d' "$f"
             sed -i '/jest/d' "$f"
+            sed -i '1d' "$f"
             dir_path=$(dirname "$f")
             file_name=$(basename "$f")
             new_file_name="Test Coverage Report.md"
