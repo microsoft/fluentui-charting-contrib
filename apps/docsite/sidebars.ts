@@ -25,8 +25,8 @@ const sidebars: SidebarsConfig = {
     'Debugging',
     'Implementation Best Practices',
     'Accessibility',
-    'Colors',
-    'Implementing-2-to-1-spacing',
+    'colors',
+    'implementing-2-to-1-spacing',
     'Testing Strategy',
     {
       type:'category',

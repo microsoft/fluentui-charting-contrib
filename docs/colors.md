@@ -1,6 +1,3 @@
----
-title: Colors
----
 # Colors
 
 We provide the following 3 ways to specify colors for the data series.

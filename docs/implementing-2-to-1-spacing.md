@@ -1,6 +1,3 @@
----
-title: Implementing-2-to-1-spacing
----
 # Implementing 2:1 spacing
 
 ## Discrete Axis
