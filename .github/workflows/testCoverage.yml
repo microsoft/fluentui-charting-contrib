@@ -181,11 +181,28 @@ jobs:
             fi
           done
         shell: bash
+      - name: Rename report files
+        run: |
+          cd ./coverage/coverageFiles
+          for dir in *; do
+            if [[ $name == *"ubuntu"* ]] && [[ $name == *"_report"* ]]; then
+              mv "$dir" "ubuntu-report"
+            elif [[ $name == *"macos"* ]] && [[ $name == *"_report"* ]]; then
+              mv "$dir" "macos-report"
+            elif [[ $name == *"windows"* ]] && [[ $name == *"_report"* ]]; then
+              mv "$dir" "windows-report"
+            fi
+          done
+        shell: bash
 
       - name: Show the coverage folder
         run: |
           cd ./coverage
           ls
+      - name: Show the coverageFiles folder
+        run: |
+          cd ./coverage/coverageFiles
+          ls -a
 
       - name: Generate html to show the latest coverages for all os types
         run: |
@@ -216,6 +233,14 @@ jobs:
           cd ./repo/docs
           ls -a
         shell: bash
+      - name: Rename all txt reports to md
+        run: |
+          ls -lR
+          for f in *.txt; do
+            mv -- "$f" "${f%.txt}.txt"
+          done
+          cd ./coverage/coverageFiles
+          ls -lR
 
       - name: Move coverage to docs
         run: ls -a && mv -f coverage/coverageFiles repo/docs && cd repo/docs && ls -a
