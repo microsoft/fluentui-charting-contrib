@@ -236,7 +236,7 @@ jobs:
             git checkout -b test-coverage-report-deployment
           fi
           git pull origin main
-          git push
+          git push --set-upstream origin test-coverage-report-deployment
       - name: Remove old artifacts
         run: |
           rm -rf ./repo/docs/coverageFiles
