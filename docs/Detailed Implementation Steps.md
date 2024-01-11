@@ -15,7 +15,7 @@ The design figma should cover specification about the following aspects before t
 5. **Theming:** How will the chart look in light mode and dark mode. What about high contrast mode.
 6. **Colors:** What is the supported color palette by this chart. It should either use the default [color palette](colors.md) of react charting or a subset of it.
 7. **Interactive behavior:** Define how the user can interact with points and other visuals in the chart. For eg: hover card when a user hovers over a chart area, selecting particular legend.
-8. **Accessibility:** The charting library is currently MAS C compliant. The chart should meet accessibility standards to ensure this grade. <Link to accessibility page>
+8. **Accessibility:** The charting library is currently MAS C compliant. The chart should meet [accessibility](Accessibility.md) standards to ensure this grade.
 9. **RTL support:** The library supports [RTL](https://en.wikipedia.org/wiki/Right-to-left_script) scripts. Do we need any special design to support them.
 
 Refer to [this](https://www.figma.com/file/oNWKEgIOCSLElvMZPOVMCq/Fluent-Data-Viz-(WIP)?node-id=1776-205538&t=77LXR8DHndlgs3ap-0) figma to see an example.
