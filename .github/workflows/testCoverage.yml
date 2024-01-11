@@ -236,10 +236,8 @@ jobs:
       - name: Rename all txt reports to md
         run: |
           ls -lR
-          for f in *.txt; do
-            mv -- "$f" "${f%.txt}.txt"
-          done
           cd ./coverage/coverageFiles
+          for f in $(find ./ -name '*.txt'); do mv -- "$f" "${f%.txt}.md"; done
           ls -lR
 
       - name: Move coverage to docs
