@@ -235,7 +235,8 @@ jobs:
           else
             git checkout -b test-coverage-report-deployment
           fi
-          git reset "$(git rev-parse main)"
+          git reset "$(git rev-parse test-coverage-report-deployment^1)"
+          git pull origin main
           git push --set-upstream origin test-coverage-report-deployment --force
       - name: Remove old artifacts
         run: |
