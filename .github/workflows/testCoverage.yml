@@ -226,7 +226,16 @@ jobs:
         with:
           path: repo
           ref: main
-
+      - name: Change branch to test-coverage-report-deployment and pull from main
+        run: |
+          cd repo
+          if [ `git rev-parse --verify test-coverage-report-deployment 2>/dev/null` ]
+          then
+            git checkout test-coverage-report-deployment
+          else
+            git checkout -b test-coverage-report-deployment
+          fi
+          git pull main
       - name: Remove old artifacts
         run: |
           rm -rf ./repo/docs/coverageFiles
@@ -246,6 +255,7 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           repository: repo
+          branch: test-coverage-report-deployment
 
   deploy:
     needs: push_artifacts_to_repo
@@ -253,7 +263,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: test-coverage-report-deployment
       - uses: actions/setup-node@v3
         with:
           node-version: 18
