@@ -246,7 +246,7 @@ jobs:
         run: |
           ls -lR
           cd ./coverage/coverageFiles
-          for f in $(find ./ -name '*.txt'); do mv -- "$f" "${f%.txt}.md"; done
+          for f in $(find ./ -name '*.txt'); do sed -i '/PASS/d' "$f" && mv -- "$f" "${f%.txt}.md"; done
           ls -lR
 
       - name: Move coverage to docs
@@ -255,11 +255,11 @@ jobs:
         run: |
           cd ./repo/docs/coverageFiles
           for dir in *; do
-            if [[ $name == *"ubuntu"* ]]]; then
+            if [[ $name == *"ubuntu"* ]]; then
               mv "$dir" "Ubuntu-Test-Coverage-Report"
-            elif [[ $name == *"macos"* ]]]; then
+            elif [[ $name == *"macos"* ]]; then
               mv "$dir" "MacOS-Test-Coverage-Report"
-            elif [[ $name == *"windows"* ]]]; then
+            elif [[ $name == *"windows"* ]]; then
               mv "$dir" "Windows-Test-Coverage-Report"
             fi
           done
