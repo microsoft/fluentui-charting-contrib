@@ -266,6 +266,7 @@ jobs:
           cd ./repo/docs/coverageFiles
           ls -lR
           for dir in *; do
+            echo "$dir"
             if [[ $name == *"ubuntu"* ]]; then
               mv "$dir" "Ubuntu-Test-Coverage-Report"
             elif [[ $name == *"macos"* ]]; then
