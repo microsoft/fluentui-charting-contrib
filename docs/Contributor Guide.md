@@ -20,13 +20,13 @@ Make sure to specify the current and expected behavior along with repro steps so
 
 **For Pull Requests:**
 _During planning of the implementation:_
-- Go through the documentation and design decisions for the respective component. Refer <Folder Structure> to identify relevant documents.
+- Go through the documentation and design decisions for the respective component.
 - Any design and/or behavior changes should be reviewed by the charting core team to validate its consistency, generalization, and visual design alignment with the rest of the charts.
 - If the change is major, the dev design should be reviewed by the charting core team to ensure the changes are aligned to the overall design of the library and does not cause any unexpected behavior.
 
 _After implementation_
-- Follow <Testing Strategy> to ensure all the changes are tested and relevant scenarios are automated.
-- Test for relevant accessibility scenarios. Refer <Accessibility testing> for more details.
+- Follow [Testing Strategy](Testing Strategy.md) to ensure all the changes are tested and relevant scenarios are automated.
+- Test for relevant accessibility scenarios. Refer [Accessibility Guide](Accessibility.md) for more details.
 - The contributor needs to provide a 30 day support to fix any bug arising due to their change. 
 
 **Checklist for a partner feature contribution.**

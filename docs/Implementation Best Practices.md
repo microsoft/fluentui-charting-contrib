@@ -22,7 +22,7 @@ Trying to logically group properties is too sensitive to each developers prefere
 
 ### Avoid re-declaring properties from native element attributes
 
-If your component provides a `forwardRef` to a native element (e.g. Button => <button>) and you intersect `React.HTMLAttributes<>`, avoid re-declaring those attributes within your component props. Doing so can lead to type mismatch problems.
+If your component provides a `forwardRef` to a native element (e.g. Button => `<button>`) and you intersect `React.HTMLAttributes<>`, avoid re-declaring those attributes within your component props. Doing so can lead to type mismatch problems.
 
 Avoid names that are commonly used in other HTML elements or attributes. They won't cause a compile or runtime error, but they may be confusing to callers.
 

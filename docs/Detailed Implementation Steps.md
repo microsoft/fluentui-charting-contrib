@@ -2,7 +2,7 @@ If you are planning to contribute a major chart, follow the below steps to align
 
 **Step 1:**
 **_Background research._**
-Is there any existing work that has already happened (either on the dev side or on the design side) or in the backlog. Any planned feature can be found in our roadmap [here](https://github.com/orgs/microsoft/projects/792/views/1) along with high level timelines and current status. Also look for any discussions about the feature in our public channel. <Provide link here>.
+Is there any existing work that has already happened (either on the dev side or on the design side) or in the backlog. Any planned feature can be found in our roadmap [here](https://github.com/orgs/microsoft/projects/792/views/1) along with high level timelines and current status. Also look for any discussions about the feature in our discord channel.
 If the ask is net new, setup sometime with the charting team. This will help determine the next steps to proceed with designing the control as per fluent charting framework. 
 
 **Step 2:**
