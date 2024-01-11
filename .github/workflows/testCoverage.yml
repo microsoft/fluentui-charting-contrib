@@ -226,18 +226,18 @@ jobs:
         with:
           path: repo
           ref: main
-      - name: Change branch to test-coverage-report-deployment and pull from main
-        run: |
-          cd repo
-          if [ `git branch | grep test-coverage-report-deployment` ]
-          then
-            git checkout test-coverage-report-deployment
-          else
-            git checkout -b test-coverage-report-deployment
-          fi
-          git reset "$(git rev-parse test-coverage-report-deployment^1)"
-          git pull origin main
-          git push --set-upstream origin test-coverage-report-deployment --force
+      # - name: Change branch to test-coverage-report-deployment and pull from main
+      #   run: |
+      #     cd repo
+      #     if [ `git branch | grep test-coverage-report-deployment` ]
+      #     then
+      #       git checkout test-coverage-report-deployment
+      #     else
+      #       git checkout -b test-coverage-report-deployment
+      #     fi
+      #     git reset "$(git rev-parse test-coverage-report-deployment^1)"
+      #     git pull origin main
+      #     git push --set-upstream origin test-coverage-report-deployment --force
       - name: Remove old artifacts
         run: |
           rm -rf ./repo/docs/coverageFiles
@@ -275,7 +275,7 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           repository: repo
-          branch: test-coverage-report-deployment
+          branch: main
 
   deploy:
     needs: push_artifacts_to_repo
@@ -283,7 +283,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: test-coverage-report-deployment
+          ref: main
       - uses: actions/setup-node@v3
         with:
           node-version: 18
