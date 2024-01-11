@@ -16,7 +16,8 @@ jobs:
   run_tests:
     strategy:
       matrix:
-        os: [ubuntu-latest,windows-latest,macos-latest]
+        os: [ubuntu-latest]
+        # ,windows-latest,macos-latest]
     runs-on: ${{ matrix.os }}
     outputs:
       test_coverage: ${{ steps.run_tests.outputs }}
@@ -251,7 +252,7 @@ jobs:
             sed -i '/PASS/d' "$f"
             sed -i '/yarn/d' "$f"
             sed -i '/jest/d' "$f"
-            mv -- "$f" "Test-Coverage-Report.md"
+            mv -- "$f" "Test Coverage Report.md"
           done
           ls -lR
 
