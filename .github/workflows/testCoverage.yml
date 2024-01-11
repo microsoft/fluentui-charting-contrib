@@ -235,7 +235,7 @@ jobs:
           else
             git checkout -b test-coverage-report-deployment
           fi
-          git pull main
+          git pull origin main
       - name: Remove old artifacts
         run: |
           rm -rf ./repo/docs/coverageFiles
@@ -259,8 +259,6 @@ jobs:
               mv "$dir" "Ubuntu-Test-Coverage-Report"
             elif [[ $name == *"macos"* ]]]; then
               mv "$dir" "MacOS-Test-Coverage-Report"
-            elif [[ $name == *"VBC"* ]]]; then
-              mv "$dir" "VBC"
             elif [[ $name == *"windows"* ]]]; then
               mv "$dir" "Windows-Test-Coverage-Report"
             fi
