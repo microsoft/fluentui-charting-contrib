@@ -229,7 +229,7 @@ jobs:
 
       - name: Remove old artifacts
         run: |
-          rm -rf ./repo/docs/coverage
+          rm -rf ./repo/docs/coverageFiles
           cd ./repo/docs
           ls -a
         shell: bash
