@@ -250,6 +250,8 @@ jobs:
             sed -i '/PASS/d' "$f"
             sed -i '/yarn/d' "$f"
             sed -i '/jest/d' "$f"
+            sed -i '0d' "$f"
+            sed -i '$d' "$f"
             mv -- "$f" "Test-Coverage-Report.md"
           done
           ls -lR
