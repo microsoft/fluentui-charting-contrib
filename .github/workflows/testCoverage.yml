@@ -250,8 +250,7 @@ jobs:
             sed -i '/PASS/d' "$f"
             sed -i '/yarn/d' "$f"
             sed -i '/jest/d' "$f"
-            mv -- "$f" "${f%.txt}.md"
-            mv "coverageReport.md" "Test-Coverage-Report.md"
+            mv -- "$f" "Test-Coverage-Report.md"
           done
           ls -lR
 
