@@ -112,7 +112,6 @@ export class LineChartExampleOne extends React.Component<{}, ILineChartBasicStat
           label="Enabled  multiple shapes for each line"
           onText="On"
           offText="Off"
-          onChange={this._onShapeChange}
           checked={this.state.allowMultipleShapes}
         />
         <div style={rootStyle}>

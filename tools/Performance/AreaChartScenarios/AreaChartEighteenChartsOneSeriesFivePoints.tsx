@@ -97,16 +97,6 @@ export class App extends React.Component<{}, IAreaChartBasicState> {
           data={chartData}
           showYAxisGridLines={true}
           // eslint-disable-next-line react/jsx-no-bind
-          onRenderCalloutPerDataPoint={(props: ICustomizedCalloutData) =>
-            props && this.state.isCalloutselected ? (
-              <ChartHoverCard
-                XValue={props.x.toString()}
-                Legend={'Custom Legend'}
-                YValue={`${props.values[0].yAxisCalloutData || props.values[0].y} h`}
-                color={'red'}
-              />
-            ) : null
-          }
         />,
       );
     }
@@ -133,7 +123,7 @@ export class App extends React.Component<{}, IAreaChartBasicState> {
           onChange={this._onHeightChange}
           aria-valuetext={`ChangeHeightslider${this.state.height}`}
         />
-        <ChoiceGroup options={options} defaultSelectedKey="basicExample" onChange={this._onChange} label="Pick one" />
+        <ChoiceGroup options={options} defaultSelectedKey="basicExample" label="Pick one" />
         <div style={rootStyle}>{charts}</div>
       </>
     );
