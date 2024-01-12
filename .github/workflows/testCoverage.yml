@@ -254,7 +254,7 @@ jobs:
             sed -i '1d' "$f"
             dir_path=$(dirname "$f")
             file_name=$(basename "$f")
-            new_file_name="Test Coverage Report.md"
+            new_file_name="TestCoverageReport.md"
             mv -- "$f" "$dir_path/$new_file_name"
           done
           ls -lR
@@ -267,11 +267,14 @@ jobs:
           ls -lR
           for dir in *; do
             if [[ $dir == *"ubuntu"* ]]; then
-              mv "$dir" "Ubuntu Test Coverage Report"
+              mv "$dir/TestCoverageReport.md" "Ubuntu Test Coverage Report.md"
+              rm -rf $dir
             elif [[ $dir == *"macos"* ]]; then
-              mv "$dir" "MacOS Test Coverage Report"
+              mv "$dir/TestCoverageReport.md" "MacOS Test Coverage Report.md"
+              rm -rf $dir
             elif [[ $dir == *"windows"* ]]; then
-              mv "$dir" "Windows Test Coverage Report"
+              mv "$dir/TestCoverageReport.md" "Windows Test Coverage Report.md"
+              rm -rf $dir
             fi
           done
           ls -lR
