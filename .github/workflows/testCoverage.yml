@@ -16,7 +16,8 @@ jobs:
   run_tests:
     strategy:
       matrix:
-        os: [ubuntu-latest,windows-latest,macos-latest]
+        os: [ubuntu-latest]
+        #,windows-latest,macos-latest]
     runs-on: ${{ matrix.os }}
     outputs:
       test_coverage: ${{ steps.run_tests.outputs }}
@@ -33,6 +34,11 @@ jobs:
         with:
           repository: "microsoft/fluentui"
           path: repo1
+      - name: Checkout [test-coverage-website]
+        uses: actions/checkout@v4
+        with:
+          repository: "Shubhabrata08/fluentui-react-charting-test-coverage"
+          path: repo2
 
       - name: Show current directory
         run: echo "$PWD" && ls
@@ -282,6 +288,18 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           repository: repo
+          branch: main
+      - name: Remove old reports from website src
+        run: |
+          rm -rf ./repo2/*
+        shell: bash
+      - name: "Move coverage website to repo2"
+        run: |
+          mv ./coverage/*
+          
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: repo2
           branch: main
 
   deploy:
