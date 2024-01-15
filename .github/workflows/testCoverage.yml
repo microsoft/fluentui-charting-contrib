@@ -46,6 +46,9 @@ jobs:
       - name: Show current directory
         run: echo "$PWD" && ls
 
+      - name: Show repo1 directory
+        run:  ls ./repo1
+
       - name: Install packages
         run:  yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
 
