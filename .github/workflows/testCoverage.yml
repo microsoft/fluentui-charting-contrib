@@ -295,7 +295,7 @@ jobs:
         shell: bash
       - name: "Move coverage website to repo2"
         run: |
-          mv ./coverage/*
+          mv ./coverage/* ./repo2/
           
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
