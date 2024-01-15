@@ -17,11 +17,18 @@ const sidebars: SidebarsConfig = {
   // But you can create a sidebar manually
   
   tutorialSidebar: [
-    'Fluent-React-Charting',
-    'TechnicalDetails',
+    'Overview',
+    'CHANGELOG',
+    'Start Developing',
+    'Contributor Guide',
+    'Technical Details',
+    'Detailed Implementation Steps',
+    'Debugging',
+    'Implementation Best Practices',
+    'Accessibility',
     'colors',
     'implementing-2-to-1-spacing',
-    'TestingStrategy',
+    'Testing Strategy',
     {
       type:'category',
       label:'Test Plans',
@@ -31,7 +38,8 @@ const sidebars: SidebarsConfig = {
           dirName:'Test Plans',
         }
       ]
-    }
+    },
+    'Testing Unpublished Library Version',
   ],
    
 };

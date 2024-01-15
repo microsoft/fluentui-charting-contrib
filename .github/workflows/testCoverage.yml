@@ -3,6 +3,16 @@ on:
   schedule:
     - cron: "0 0 * * *" 
   workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo to run the tests on'
+        required: true
+        default: "microsoft/fluentui"
+      branch:
+        description: 'Branch to run the tests on'
+        required: true
+        default: "master"
+
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -29,7 +39,8 @@ jobs:
       - name: Checkout [react-charting]
         uses: actions/checkout@v4
         with: 
-          repository: "microsoft/fluentui"
+          repository: ${{ github.event.inputs.repo }}
+          ref: ${{ github.event.inputs.branch }}
           path: repo1
 
       - name: Show current directory
