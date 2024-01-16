@@ -62,7 +62,7 @@ The Variants in the above consisting of different functionalities:
 - The color of links depends on the action taken on the chart. In the default state, the link color is grey. However, when hovering over the link, it transitions into a gradient between the source and target nodes, creating a visually appealing effect.
 ![image.png](../assets/images/SankeyChartPic2.png)
 - The details inside nodes, such as node name and weight, depend on the size of the node. If the node's height is less than 24px, no details will appear inside the node. This is because with such limited width, reading any details within the node becomes challenging. We will cover an alternative method for accessing this information in the interaction section of the contributor guide.
-![image.png](../assets/images/SankeyChartPic3.png)
+![image.png](../assets/images/SankeyChartUpadatedPic3.png)
 - There are two ways to display the node name and weight. To have the node name and weight displayed on two separate lines, a minimum height of 36px is required.
 ![image.png](../assets/images/SankeyChartPic4.png)
 
