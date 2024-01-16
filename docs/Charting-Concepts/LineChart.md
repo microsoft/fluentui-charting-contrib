@@ -16,7 +16,7 @@ We use a path based rendering technique to show datasets with large number of po
 ## Dev Design details 
 
 
-![LineChartContrib.png](images/LineChartPic1.png)
+![LineChartContrib.png](../assets/images/LineChartPic1.png)
 
 Fig A: Representing Charting Lib Components Relationships and Functionality. 
 
@@ -81,11 +81,11 @@ We have 2 rendering methods for the line chart. one of the method is optimized f
 
  Following subcomponents are accessible using a screen reader: 
 
-- Chart <svg>The role is set as presentation, and the aria-label attribute is set as a string to describe its contents. This is readable by screen reader if user has given chartTitle prop 
+- Chart `<svg>`The role is set as presentation, and the aria-label attribute is set as a string to describe its contents. This is readable by screen reader if user has given chartTitle prop 
 
-- eventAnnotation accessibility is managed by EventAnnotation sub componnets which internally uses <text> hence the labels provided in IEvenetAnnotaionProps will be read by screen reader. 
+- eventAnnotation accessibility is managed by EventAnnotation sub componnets which internally uses `<text>` hence the labels provided in IEvenetAnnotaionProps will be read by screen reader. 
 
-- Points accessibility is managed by <path> tags with role=”img” whose accessibility is managed by aria-label property . 
+- Points accessibility is managed by `<path>` tags with role=”img” whose accessibility is managed by aria-label property . 
 
 - Line chart provides a bunch of props to enable custom accessibility messages. UsexAxisCalloutAccessibilityData and callOutAccessibilityData to configure x axis and y axis accessibility messages respectively. 
 
@@ -246,7 +246,7 @@ These interactions are managed by the below states -
 
 ##Learnings 
 
-We have enhanced the performance of the chart using <path> instead of using the points to construct the path. Please refer the “Mathematical/Geometrical concepts”  section for more details. 
+We have enhanced the performance of the chart using `<path>` instead of using the points to construct the path. Please refer the “Mathematical/Geometrical concepts”  section for more details. 
 
 ##Extension 
 

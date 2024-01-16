@@ -7,7 +7,7 @@ Sankey charts are a type of data visualization that are particularly useful for 
 
 ###Fluent Sankey charts offer various functionalities, including node descriptions, diverse hover actions triggered when interacting with nodes and links.
 
-![image.png](images/SankeyChartPic1.png)
+![image.png](../assets/images/SankeyChartPic1.png)
 
 ## Dev Design details
 Following are the major components that contribute towards creating a complete Sankey Chart
@@ -50,7 +50,7 @@ We use Lighthouse tool for measuring the performance of our charts. Currently we
 The current implementation of the Sankey chart  is already performing well. However, as part of our future plans, we aim to assess the Lighthouse performance score, particularly when dealing with extensive datasets for the chart. We are committed to enhancing the performance further by identifying and capitalizing on any opportunities for improvement that may arise.
 
 ## Accessibility
-Chart <svg>The role is set as presentation, and the aria-label attribute is set as a string to describe its contents. This is readable by screen reader if user has given chartTitle prop
+Chart `<svg>`The role is set as presentation, and the aria-label attribute is set as a string to describe its contents. This is readable by screen reader if user has given chartTitle prop
 Horizontal bar chart  provides a bunch of props to enable custom accessibility messages. UsexAxisCalloutAccessibilityData and callOutAccessibilityData to configure x axis and y axis accessibility messages respectively.
 
 ## Variants
@@ -60,11 +60,11 @@ The Variants in the above consisting of different functionalities:
 
 - Nodes can have customized colors, or else the default colors will be assigned. The node border also follows the same approach.
 - The color of links depends on the action taken on the chart. In the default state, the link color is grey. However, when hovering over the link, it transitions into a gradient between the source and target nodes, creating a visually appealing effect.
-![image.png](images/SankeyChartPic2.png)
+![image.png](../assets/images/SankeyChartPic2.png)
 - The details inside nodes, such as node name and weight, depend on the size of the node. If the node's height is less than 24px, no details will appear inside the node. This is because with such limited width, reading any details within the node becomes challenging. We will cover an alternative method for accessing this information in the interaction section of the contributor guide.
-![image.png](images/SankeyChartPic3.png)
+![image.png](../assets/images/SankeyChartPic3.png)
 - There are two ways to display the node name and weight. To have the node name and weight displayed on two separate lines, a minimum height of 36px is required.
-![image.png](images/SankeyChartPic4.png)
+![image.png](../assets/images/SankeyChartPic4.png)
 
 ## Error scenarios
 ### Chart is not rendered properly if for a link source and target node will be same.
@@ -96,13 +96,13 @@ The chart also includes event handlers for mouseover and mouseout events on the 
 There are various interactions that a user experiences in Line Chart which are
 #### Hover Over Nodes
 When the user hovers over nodes, the entire flow associated with that node will be highlighted, encompassing both the links and nodes within the entire flow. Furthermore, the entire flow will be colored to match the node upon which the user has hovered. To enhance visibility, all other nodes will be rendered in white with reduced opacity.Below is an example. Here user has hovered over node with value 62 . 
-![image.png](images/SankeyChartPic5.png)
+![image.png](../assets/images/SankeyChartPic5.png)
 
 Hovering on the node with height less than 24px will display a callout with details of node name and weight. 
 #### Hover Over links
 When the user hovers over a link, the entire flow will be highlighted. All nodes will retain their original colors, while the links themselves will adopt a gradient color derived from the source and target nodes. Additionally, a callout will appear, displaying details about the link, such as the source node's name, weight, and the target node's name. To enhance the visual appeal, the link border will also transition into a gradient when the link is hovered over. Below is an example of a link being hovered over, in this case, between node 4 and node 12.
 
-![image.png](images/SankeyChartPic6.png)
+![image.png](../assets/images/SankeyChartPic6.png)
 
 
 

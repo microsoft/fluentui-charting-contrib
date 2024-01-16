@@ -1,6 +1,6 @@
 # Contributor guide: Area Chart
 
-![Areachartpic1.png](images/Areachartpic1.png)
+![Areachartpic1.png](../assets/images/Areachartpic1.png)
 
 Area charts are graphical representations of data that display quantitative data points connected by lines and filled with colors to create a visual representation of trends and patterns. The area between the line and the x-axis is filled, which helps in emphasizing the cumulative total or the overall magnitude of the data.
 
@@ -14,10 +14,10 @@ Area charts are used for various use cases which involve Trend Analysis, Cumulat
   Area chart provides a bunch of props to enable custom accessibility messages.UsexAxisCalloutAccessibilityData and callOutAccessibilityData to configure x axis and y axis accessibility messages respectively
 - ### Hover Options: 
   Area chart also provide different interactive options like ChartHoverCard on hovering over some data in chart. You can customize the content of the Hover card on the basis of the requirement.
-![areachartpic2.png](images/Areachartpic2.png)
+![areachartpic2.png](../assets/images/Areachartpic2.png)
 
 ## Dev Design Details
-![Areachart3.png](images/Areachartpic3.png)
+![Areachart3.png](../assets/images/Areachartpic3.png)
 ### 1.Area Chart 
  This is the main component which is responsible for invoking/using other components. This is the component which is responsible for creating area  and managing user interactions with itself , Legends and Cartesian Chart.
 ### 2.Cartesian chart
@@ -50,10 +50,10 @@ We use Lighthouse tool for measuring the performance of our charts. We have mult
 Last two scenarios have 90+ LH score. We are currently working on improving the performance of the area with heavy data set (30 k Data points).
 ## Accessibility
  Following subcomponents are accessible using a screen reader:
-- Chart <svg>The role is set as presentation, and the aria-label attribute is set as a string to describe its contents. This is readable by screen reader if user has given chartTitle prop
-- Points accessibility is managed by <path> tags with role=”img” whose accessibility is managed by aria-label property .
+- Chart `<svg>`The role is set as presentation, and the aria-label attribute is set as a string to describe its contents. This is readable by screen reader if user has given chartTitle prop
+- Points accessibility is managed by `<path>` tags with role=”img” whose accessibility is managed by aria-label property .
 - Area chart provides a bunch of props to enable custom accessibility messages.Use xAxisCalloutAccessibilityData and callOutAccessibilityData to configure x axis and y axis accessibility messages respectively.
-## Testing![areachart4.png](images/Areachartpic4.png)
+## Testing![areachart4.png](../assets/images/Areachartpic4.png)
 ## Variants
 Different variants of area charts are available starting from the basic area chart to stacked area charts, styled area chart, area chart with custom accessibility, Area chart with large data set, area chart with data change functionality. For more details visit DemoSite [Fluent UI React Charting Examples - Area Chart (windows.net)](https://fluentuipr.z22.web.core.windows.net/heads/master/react-charting/demo/index.html#/examples/areachart)
 - ### Stacked area chart:
