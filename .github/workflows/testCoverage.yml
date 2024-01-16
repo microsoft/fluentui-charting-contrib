@@ -1,8 +1,7 @@
 name: 'Test coverage'
 on:
   schedule:
-    - cron: "0 0 * * *" 
-    - cron: "*/15 * * * *"
+    - cron: "0 */8 * * *" 
   workflow_dispatch:
     inputs:
       repo:
@@ -65,18 +64,22 @@ jobs:
       - name: Run the tests in windows
         if: matrix.os == 'windows-latest'  
         run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
+        continue-on-error: true
 
       - name: Run a single test in windows
         if: matrix.os == 'windows-latest'  
         run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest ./src/components/VerticalBarChart --coverage --coverageDirectory ./coverage/${{matrix.os}}_VerticalBarChart --verbose --coverageReporters=html
+        continue-on-error: true
         
       - name: Run the tests in macos
         if: matrix.os == 'macos-latest'
         run: cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
+        continue-on-error: true
         
       - name: Run the tests in ubuntu
         if: matrix.os == 'ubuntu-latest'    
         run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt        
+        continue-on-error: true
 
       - name: Generate coverage file name in windows
         id: windows
