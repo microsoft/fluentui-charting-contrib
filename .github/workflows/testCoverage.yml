@@ -127,3 +127,74 @@ jobs:
             $tableRegex = "(?ms)----.*?^$"
             $table = [regex]::Match($fileContents, $tableRegex)
             echo "$table"
+
+  publish_to_site:
+    if: false
+    needs: run_tests
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: 'ubuntu-latest'
+          path: './coverage/ubuntu-latest'
+
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: 'macos-latest' 
+          path: './coverage/macos-latest'
+
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: 'windows-latest' 
+          path: './coverage/windows-latest'
+
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: 'coverage_VBC' 
+          path: './coverage/coverage_VBC'
+
+      - name: Rename folders
+        run: |
+          cd ./coverage
+          for dir in *; do
+            if [[ $name == *"ubuntu"* ]] && [[ $name != *"_report"* ]]; then
+              mv "$dir" "ubuntu"
+            elif [[ $name == *"macos"* ]] && [[ $name != *"_report"* ]]; then
+              mv "$dir" "macos"
+            elif [[ $name == *"VBC"* ]] && [[ $name != *"_report"* ]]; then
+              mv "$dir" "VBC"
+            elif [[ $name == *"windows"* ]] && [[ $name != *"_report"* ]]; then
+              mv "$dir" "windows"
+            fi
+          done
+        shell: bash
+
+      - name: Show the coverage folder
+        run: |
+            cd ./coverage
+            ls
+
+      - name: Generate html to show the latest coverages for all os types
+        run: |
+            cd ./coverage
+            echo "<!DOCTYPE html><html><head><title>Contributor Readiness</title></head><body><h1>View contributor guides and full test coverage reports</h1><ul><li><a href="https://uifabric.visualstudio.com/iss/_wiki/wikis/iss.wiki/280/Charting-Concepts">Contributor guides</a></li><li><a href="./windows-latest/index.html">Coverage for Windows</a></li><li><a href="./ubuntu-latest/index.html">Coverage for Ubuntu</a></li><li><a href="./macos-latest/index.html">Coverage for MacOS</a></li><li><a href="./coverage_VBC/index.html">Coverage for Vertical bar chart - Windows</a></li></ul></body></html>" >> index.html
+        shell: bash
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './coverage'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Url after deployment
+        run: echo "${{ steps.deployment.outputs.page_url }}"
