@@ -34,11 +34,6 @@ jobs:
         with:
           repository: "microsoft/fluentui"
           path: repo1
-      - name: Checkout [test-coverage-website]
-        uses: actions/checkout@v4
-        with:
-          repository: "Shubhabrata08/fluentui-react-charting-test-coverage"
-          path: repo2
 
       - name: Show current directory
         run: echo "$PWD" && ls
@@ -291,18 +286,6 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           repository: repo
-          branch: main
-      - name: Remove old reports from website src
-        run: |
-          rm -rf ./repo2/*
-        shell: bash
-      - name: "Move coverage website to repo2"
-        run: |
-          mv ./coverage/* ./repo2/
-          
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          repository: repo2
           branch: main
 
   deploy:
