@@ -285,6 +285,9 @@ jobs:
           done
           ls -lR
         shell: bash
+      - name: Move artifacts to docs
+        run: |
+          mv -f ./coverage ./repo/docs
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           repository: repo
