@@ -270,16 +270,16 @@ jobs:
           done
           ls -lR
         shell: bash
-      - name: Change branch to test-coverage-artifacts and pull from main
+      - name: Change branch to test-coverage-artifacts and move new artifacts to folder
         run: |
           cd repo
           if [ `git branch | grep test-coverage-artifacts` ]
           then
           git checkout test-coverage-artifacts
+          git pull origin test-coverage-artifacts
           else
           git checkout -b test-coverage-artifacts
           fi
-          git pull origin test-coverage-artifacts
           git rm ./*
           cd ..
           mv -f ./coverage ./repo/docs
