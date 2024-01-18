@@ -291,6 +291,7 @@ jobs:
         with:
           repository: repo
           branch: test-coverage-artifacts
+          push_options: "--force"
         
           
   deploy:
