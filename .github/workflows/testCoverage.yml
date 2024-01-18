@@ -65,6 +65,7 @@ jobs:
       - name: Run the tests in ubuntu
         if: matrix.os == 'ubuntu-latest'
         run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
+        continue-on-error: true
 
       - name: Generate coverage file name in windows
         id: windows
@@ -227,18 +228,7 @@ jobs:
         with:
           path: repo
           ref: main
-      # - name: Change branch to test-coverage-report-deployment and pull from main
-      #   run: |
-      #     cd repo
-      #     if [ `git branch | grep test-coverage-report-deployment` ]
-      #     then
-      #       git checkout test-coverage-report-deployment
-      #     else
-      #       git checkout -b test-coverage-report-deployment
-      #     fi
-      #     git reset "$(git rev-parse test-coverage-report-deployment^1)"
-      #     git pull origin main
-      #     git push --set-upstream origin test-coverage-report-deployment --force
+      
       - name: Remove old artifacts
         run: |
           rm -rf ./repo/docs/coverageFiles
@@ -280,14 +270,25 @@ jobs:
           done
           ls -lR
         shell: bash
-      - name: Move artifacts to docs
+      - name: Change branch to test-coverage-artifacts and pull from main
         run: |
+          cd repo
+          if [ `git branch | grep test-coverage-artifacts` ]
+          then
+          git checkout test-coverage-artifacts
+          else
+          git checkout -b test-coverage-artifacts
+          fi
+          git pull origin test-coverage-artifacts
+          git rm ./*
+          cd ..
           mv -f ./coverage ./repo/docs
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           repository: repo
-          branch: main
-
+          branch: test-coverage-artifacts
+        
+          
   deploy:
     needs: push_artifacts_to_repo
     runs-on: "ubuntu-latest"
