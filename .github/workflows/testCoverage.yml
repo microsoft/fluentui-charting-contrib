@@ -280,7 +280,7 @@ jobs:
           else
           git checkout -b test-coverage-artifacts
           fi
-          git rm ./*
+          rm -rf ./*
           cd ..
           mv -f ./coverage ./repo/docs
       - uses: stefanzweifel/git-auto-commit-action@v5
