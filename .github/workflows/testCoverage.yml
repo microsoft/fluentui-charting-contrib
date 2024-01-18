@@ -270,6 +270,10 @@ jobs:
           done
           ls -lR
         shell: bash
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: repo
+          branch: main
       - name: Change branch to test-coverage-artifacts and move new artifacts to folder
         run: |
           cd repo
@@ -282,7 +286,7 @@ jobs:
           fi
           rm -rf ./*
           cd ..
-          mv -f ./coverage ./repo/docs
+          mv -f ./coverage/* ./repo/
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           repository: repo
