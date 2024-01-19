@@ -218,15 +218,11 @@ jobs:
           cd ./coverage/coverageFiles
           for f in $(find ./ -name '*.txt'); do 
             sed -i '/PASS/d' "$f"
-            cat "$f"
+            sed -i '/FAIL/d' "$f"
             sed -i '/yarn/d' "$f"
-            cat "$f"
             sed -i '/jest/d' "$f"
-            cat "$f"
             sed -i '1d' "$f"
-            cat "$f"
-            sed -i '1i\!(Click here for a detailed report)[https://fluentui-charting-test-coverage.netlify.app/]' "$f"
-            cat "$f"
+            sed -i '1i\[Click here for a detailed report](https://fluentui-charting-test-coverage.netlify.app/)' "$f"
             dir_path=$(dirname "$f")
             file_name=$(basename "$f")
             new_file_name="TestCoverageReport.md"
