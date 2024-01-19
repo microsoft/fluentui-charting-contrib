@@ -243,6 +243,7 @@ jobs:
             sed -i '/yarn/d' "$f"
             sed -i '/jest/d' "$f"
             sed -i '1d' "$f"
+            sed -i '1i\(Click here for a detailed report)[https://fluentui-charting-test-coverage.netlify.app/]' filename.txt
             dir_path=$(dirname "$f")
             file_name=$(basename "$f")
             new_file_name="TestCoverageReport.md"
