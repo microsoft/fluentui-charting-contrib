@@ -183,28 +183,6 @@ jobs:
             fi
           done
         shell: bash
-      - name: Rename report files
-        run: |
-          cd ./coverage/coverageFiles
-          for dir in *; do
-            if [[ $name == *"ubuntu"* ]] && [[ $name == *"_report"* ]]; then
-              mv "$dir" "ubuntu-report"
-            elif [[ $name == *"macos"* ]] && [[ $name == *"_report"* ]]; then
-              mv "$dir" "macos-report"
-            elif [[ $name == *"windows"* ]] && [[ $name == *"_report"* ]]; then
-              mv "$dir" "windows-report"
-            fi
-          done
-        shell: bash
-
-      - name: Show the coverage folder
-        run: |
-          cd ./coverage
-          ls
-      - name: Show the coverageFiles folder
-        run: |
-          cd ./coverage/coverageFiles
-          ls -a
 
       - name: Generate html to show the latest coverages for all os types
         run: |
@@ -240,10 +218,15 @@ jobs:
           cd ./coverage/coverageFiles
           for f in $(find ./ -name '*.txt'); do 
             sed -i '/PASS/d' "$f"
+            cat "$f"
             sed -i '/yarn/d' "$f"
+            cat "$f"
             sed -i '/jest/d' "$f"
+            cat "$f"
             sed -i '1d' "$f"
-            sed -i '1i\(Click here for a detailed report)[https://fluentui-charting-test-coverage.netlify.app/]' "$f"
+            cat "$f"
+            sed -i '1i\!(Click here for a detailed report)[https://fluentui-charting-test-coverage.netlify.app/]' "$f"
+            cat "$f"
             dir_path=$(dirname "$f")
             file_name=$(basename "$f")
             new_file_name="TestCoverageReport.md"
