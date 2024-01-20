@@ -1,8 +1,18 @@
 name: "Test coverage"
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 */8 * * *" 
   workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo to run the tests on'
+        required: true
+        default: "microsoft/fluentui"
+      branch:
+        description: 'Branch to run the tests on'
+        required: true
+        default: "master"
+
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -35,6 +45,9 @@ jobs:
       - name: Show current directory
         run: echo "$PWD" && ls
 
+      - name: Show repo1 directory
+        run:  ls ./repo1
+
       - name: Install packages
         run: yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
 
@@ -50,18 +63,21 @@ jobs:
       - name: Run the tests in windows
         if: matrix.os == 'windows-latest'
         run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
+        continue-on-error: true
 
       - name: Run a single test in windows
         if: matrix.os == 'windows-latest'
         run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest ./src/components/VerticalBarChart --coverage --coverageDirectory ./coverage/${{matrix.os}}_VerticalBarChart --verbose --coverageReporters=html
-
+        continue-on-error: true
+        
       - name: Run the tests in macos
         if: matrix.os == 'macos-latest'
         run: cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
-
+        continue-on-error: true
+        
       - name: Run the tests in ubuntu
-        if: matrix.os == 'ubuntu-latest'
-        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
+        if: matrix.os == 'ubuntu-latest'    
+        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt        
         continue-on-error: true
 
       - name: Generate coverage file name in windows
