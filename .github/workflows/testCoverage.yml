@@ -222,6 +222,7 @@ jobs:
             sed -i '/yarn/d' "$f"
             sed -i '/jest/d' "$f"
             sed -i '1d' "$f"
+            statementCoveragePercent=$(echo $(awk '/All files/ {print}' $f) | awk -F'|' '{print $2}')
             sed -i '1i\[Click here for a detailed report](https://fluentui-charting-test-coverage.netlify.app/)' "$f"
             dir_path=$(dirname "$f")
             file_name=$(basename "$f")
