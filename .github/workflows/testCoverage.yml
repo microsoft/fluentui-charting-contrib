@@ -24,7 +24,7 @@ jobs:
   run_tests:
     strategy:
       matrix:
-        os: [ubuntu-latest,windows-latest,macos-latest]
+        os: [windows-latest, macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     outputs:
       test_coverage: ${{ steps.run_tests.outputs }}
@@ -39,7 +39,8 @@ jobs:
       - name: Checkout [react-charting]
         uses: actions/checkout@v4
         with:
-          repository: "microsoft/fluentui"
+          repository: ${{ github.event.inputs.repo || 'microsoft/fluentui' }}
+          ref: ${{ github.event.inputs.branch || 'master' }}
           path: repo1
 
       - name: Show current directory
