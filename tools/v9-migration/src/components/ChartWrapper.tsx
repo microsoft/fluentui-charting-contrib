@@ -8,6 +8,7 @@ import React from 'react';
 import { Theme,webDarkTheme,webLightTheme } from '@fluentui/react-components';
 import { LineChartBasicExample } from './LineChartBasicExample';
 import { HorizontalBarChartBasicExample } from './HorizontalBarChart.Basic.Example';
+import { HeatMapChartBasicExample } from './HeatMapChartBasic.Example';
 import * as d3Color from 'd3-color';
 
 
@@ -25,6 +26,7 @@ export function ChartWrapper() {
       <DonutChartDynamicExample/>
       <LineChartBasicExample/>
       <HorizontalBarChartBasicExample/>
+      <HeatMapChartBasicExample/>
     </div>
     </ThemeProvider>
     );
