@@ -1,10 +1,10 @@
-![Test Coverage Badge](https://img.shields.io/badge/Test_Coverage-89.14-mediumgreen)
+![Test Coverage Badge](https://img.shields.io/badge/Test_Coverage-89.17-mediumgreen)
  
 [Click here for a detailed report](https://fluentui-charting-test-coverage.netlify.app/)
 
 File                                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                                                                                        
 -------------------------------------------|---------|----------|---------|---------|------------------------------------------------------------------------------------------------------------------------------------------
-All files                                  |   89.14 |    74.73 |   72.86 |   88.91 |                                                                                                                                          
+All files                                  |   89.17 |    74.71 |   72.86 |   88.93 |                                                                                                                                          
  src                                       |     100 |      100 |    2.97 |     100 |                                                                                                                                          
   AreaChart.ts                             |     100 |      100 |     100 |     100 |                                                                                                                                          
   CartesianChart.ts                        |     100 |      100 |     100 |     100 |                                                                                                                                          
@@ -103,8 +103,8 @@ All files                                  |   89.14 |    74.73 |   72.86 |   88
   Arc.tsx                                  |   94.44 |       75 |   76.92 |   92.85 | 31,49,53                                                                                                                                 
  src/components/PieChart/Pie               |   91.89 |    45.45 |     100 |      92 |                                                                                                                                          
   Pie.tsx                                  |   91.89 |    45.45 |     100 |      92 | 44-45                                                                                                                                    
- src/components/SankeyChart                |   94.14 |    90.79 |    90.9 |   93.75 |                                                                                                                                          
-  SankeyChart.base.tsx                     |   93.95 |    91.82 |   90.78 |   93.54 | 94,278-280,560-562,619,696-697,702-707,727-729,840-841,850                                                                               
+ src/components/SankeyChart                |   94.38 |     90.3 |    90.9 |    93.9 |                                                                                                                                          
+  SankeyChart.base.tsx                     |   94.21 |     91.3 |   90.78 |   93.71 | 92-93,98-103,123-125,207-209,267,646-648,706,830-831,840                                                                                 
   SankeyChart.styles.ts                    |     100 |       50 |     100 |     100 | 20-21                                                                                                                                    
   SankeyChart.tsx                          |     100 |      100 |     100 |     100 |                                                                                                                                          
   index.ts                                 |     100 |      100 |     100 |     100 |                                                                                                                                          
