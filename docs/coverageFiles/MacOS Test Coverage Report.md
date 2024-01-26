@@ -1,10 +1,10 @@
-![Test Coverage Badge](https://img.shields.io/badge/Test_Coverage-89.17-mediumgreen)
+![Test Coverage Badge](https://img.shields.io/badge/Test_Coverage-89.3-mediumgreen)
  
 [Click here for a detailed report](https://fluentui-charting-test-coverage.netlify.app/)
 
 File                                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                                                                                        
 -------------------------------------------|---------|----------|---------|---------|------------------------------------------------------------------------------------------------------------------------------------------
-All files                                  |   89.17 |    74.71 |   72.86 |   88.93 |                                                                                                                                          
+All files                                  |    89.3 |    74.95 |   72.86 |   89.07 |                                                                                                                                          
  src                                       |     100 |      100 |    2.97 |     100 |                                                                                                                                          
   AreaChart.ts                             |     100 |      100 |     100 |     100 |                                                                                                                                          
   CartesianChart.ts                        |     100 |      100 |     100 |     100 |                                                                                                                                          
@@ -61,8 +61,8 @@ All files                                  |   89.17 |    74.71 |   72.86 |   88
   GroupedVerticalBarChart.styles.ts        |     100 |       50 |     100 |     100 | 8                                                                                                                                        
   GroupedVerticalBarChart.tsx              |     100 |      100 |     100 |     100 |                                                                                                                                          
   index.ts                                 |     100 |      100 |     100 |     100 |                                                                                                                                          
- src/components/HeatMapChart               |   96.62 |    90.99 |   96.15 |   96.36 |                                                                                                                                          
-  HeatMapChart.base.tsx                    |   96.46 |    90.99 |   96.07 |   96.19 | 434,439,445,520,534,556,629,661                                                                                                          
+ src/components/HeatMapChart               |   99.57 |    99.09 |   96.15 |   99.54 |                                                                                                                                          
+  HeatMapChart.base.tsx                    |   99.55 |    99.09 |   96.07 |   99.52 | 661                                                                                                                                      
   HeatMapChart.styles.ts                   |     100 |      100 |     100 |     100 |                                                                                                                                          
   HeatMapChart.ts                          |     100 |      100 |     100 |     100 |                                                                                                                                          
   index.ts                                 |     100 |      100 |     100 |     100 |                                                                                                                                          
