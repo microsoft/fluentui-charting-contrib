@@ -6,6 +6,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import sidebars from '@site/sidebars';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -19,7 +20,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/Fluent-React-Charting">
+            to={`/docs/${sidebars.tutorialSidebar[0]}`}>
             Getting Started 🚈
           </Link>
         </div>
