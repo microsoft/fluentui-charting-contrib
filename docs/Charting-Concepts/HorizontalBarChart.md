@@ -53,7 +53,7 @@ The following subcomponents are accessible using a screen reader:
 
 1. **Bar \<rect>**: The following attributes provide an accessible description for the bar.
    - `role` = "img"
-   - `aria-label` = "{barTitle}, {barValue}."
+   - `aria-label` = "\{barTitle}, \{barValue}."
 
    Users can customize this description using the xAxisCalloutData, yAxisCalloutData and callOutAccessibilityData props.
 
@@ -61,7 +61,7 @@ The following subcomponents are accessible using a screen reader:
 
 ![Test coverage report](../assets/images/horizontalbarchart-test-coverage.png)
 
-[HorizontalBarChart test plan](../Test%20Plans/HorizontalBarChart/ComponentTests)
+[HorizontalBarChart test plan](../Test%20Plans/HorizontalBarChart/ComponentTests.md)
 
 ## Variants
 

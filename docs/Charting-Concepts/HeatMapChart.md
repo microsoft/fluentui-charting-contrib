@@ -35,7 +35,7 @@ The following subcomponents are accessible using a screen reader:
 
 1. **Rectangle \<g>**: The following attributes provide an accessible description for the rectangle.
    - `role` = "img"
-   - `aria-label` = "{xCoordinate}, {yCoordinate}. {legend}, {rectangleValue}. {description}."
+   - `aria-label` = "\{xCoordinate}, \{yCoordinate}. \{legend}, \{rectangleValue}. \{description}."
 
    Users can customize this description using the callOutAccessibilityData prop.
 
@@ -43,7 +43,7 @@ The following subcomponents are accessible using a screen reader:
 
 ![Test coverage report](../assets/images/heatmapchart-test-coverage.png)
 
-[HeatMapChart test plan](../Test%20Plans/HeatMapChart/ComponentTests)
+[HeatMapChart test plan](../Test%20Plans/HeatMapChart/ComponentTests.md)
 
 ## Variants
 

@@ -37,7 +37,7 @@ The Gauge chart comprises the following components and subcomponents:
 
 ## Mathematical/Geometrical concepts
 
-- Segments in the chart are generated using the [arc](https://github.com/d3/d3-shape#arcs) utility from the [d3-shape](https://github.com/d3/d3-shape) library. This utility returns an arc generator that produces path data based on specified angle and radius values. The arcs are always centred at coordinates {0, 0}, so a transform is applied to move the arc to a different position.
+- Segments in the chart are generated using the [arc](https://github.com/d3/d3-shape#arcs) utility from the [d3-shape](https://github.com/d3/d3-shape) library. This utility returns an arc generator that produces path data based on specified angle and radius values. The arcs are always centred at coordinates \{0, 0}, so a transform is applied to move the arc to a different position.
 - Here, an angle of 0 radians corresponds to the positive y-axis. The arc is created in a clockwise direction if the signed difference between the start and end angles is positive. The angular span of each segment is determined by the ratio of its individual size to the total size of all segments.
 - The [pad angle](https://github.com/d3/d3-shape#arc_padAngle) is converted to a fixed linear distance separating adjacent arcs, defined as padRadius * padAngle. As per the design doc, the desired distance between adjacent arcs is 2px, referred to as ARC_PADDING. To maintain this distance between the outer boundaries of the arcs, padRadius is kept the same as outerRadius, and padAngle is calculated as ARC_PADDING / padRadius. Note that if the inner radius or angular span is small relative to the pad angle, it may not be possible to maintain parallel edges between adjacent arcs.
 
@@ -49,27 +49,27 @@ The following subcomponents are accessible using a screen reader:
 
 1. **Chart \<svg>**: The following attributes provide an accessible name describing the contents of the chart.
    - `role` = "presentation"
-   - `aria-label` = "This is a gauge chart with {numSegments} section represented."
+   - `aria-label` = "This is a gauge chart with \{numSegments} section represented."
 
 1. **Min value \<text>**: It is already accessible to screen readers, but the content doesn’t convey complete information. The following attributes specify a different accessible name for the min value.
    - `role` = "img"
-   - `aria-label` = "Min value: {minValue}"
+   - `aria-label` = "Min value: \{minValue}"
 
 1. **Max value \<text>**: It is already accessible to screen readers, but the content doesn’t convey complete information. The following attributes specify a different accessible name for the max value.
    - `role` = "img"
-   - `aria-label` = "Max value: {adjustedMaxValue}"
+   - `aria-label` = "Max value: \{adjustedMaxValue}"
 
 1. **Segments \<path>**: The following attributes provide an accessible name describing the segment.
    - `role` = "img"
    - `aria-label` =
-     "{segmentLegend}, {segmentStart} - {segmentEnd}" when variant is GaugeChartVariant.MultipleSegments, or
-     "{segmentLegend}, {segmentSize} out of {totalSizeOfSegments} or {segmentSizeInPercent}%" when variant is GaugeChartVariant.SingleSegment.
+     "\{segmentLegend}, \{segmentStart} - \{segmentEnd}" when variant is GaugeChartVariant.MultipleSegments, or
+     "\{segmentLegend}, \{segmentSize} out of \{totalSizeOfSegments} or \{segmentSizeInPercent}%" when variant is GaugeChartVariant.SingleSegment.
 
    Users can provide a custom accessible name or description for a segment using its accessibilityData prop.
 
 1. **Chart value \<text>**: It is already accessible to screen readers, but the content doesn’t convey complete information. The following attributes specify a different accessible name for the chart value.
    - `role` = "img"
-   - `aria-label` = "Current value: {formattedChartValue}"
+   - `aria-label` = "Current value: \{formattedChartValue}"
 
 1. **Sublabel \<text>**: It is already accessible to screen readers. The following attributes provide an accessible name for the sublabel.
    - `role` = "img"
@@ -79,7 +79,7 @@ The following subcomponents are accessible using a screen reader:
 
 ![Test coverage report](../assets/images/gaugechart-test-coverage.png)
 
-[GaugeChart test plan](../Test%20Plans/GaugeChart/ComponentTests)
+[GaugeChart test plan](../Test%20Plans/GaugeChart/ComponentTests.md)
 
 ## Variants
 

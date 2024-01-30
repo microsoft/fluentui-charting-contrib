@@ -54,19 +54,19 @@ The following subcomponents are accessible using a screen reader:
 
 1. **Bar segment \<g>**: The following attributes provide an accessible description for the bar segment.
    - `role` = "img"
-   - `aria-label` = "{legend}, {segmentValue}."
+   - `aria-label` = "\{legend}, \{segmentValue}."
 
    Users can customize this description using the xAxisCalloutData, yAxisCalloutData and callOutAccessibilityData props.
 
 1. **Bar label \<text>**: The bar labels are limited to the absolute-scale variant of the multi-stacked bar chart. It is already accessible to screen readers, but the content doesn’t convey complete information. The following attributes specify a different accessible name for the bar label.
    - `role` = "img"
-   - `aria-label` = "Total: ${barTotalValue}"
+   - `aria-label` = "Total: \{barTotalValue}"
 
 ## Testing
 
 ![Test coverage report](../assets/images/stackedbarchart-test-coverage.png)
 
-[StackedBarChart test plan](../Test%20Plans/StackedBarChart/ComponentTests)
+[StackedBarChart test plan](../Test%20Plans/StackedBarChart/ComponentTests.md)
 
 ## Variants
 
