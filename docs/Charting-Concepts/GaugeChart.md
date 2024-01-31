@@ -17,7 +17,7 @@ Gauge chart offers a quick and intuitive way to evaluate a single value within a
 
 ## Dev Design details
 
-![Gauge chart dev design](../assets/images/gaugechart-dev-design.png)
+<img src="../assets/images/gaugechart-dev-design.png" alt="Gauge chart dev design" width="300" />
 
 The Gauge chart comprises the following components and subcomponents:
 
