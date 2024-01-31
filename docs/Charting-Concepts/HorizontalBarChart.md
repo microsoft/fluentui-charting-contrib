@@ -86,7 +86,7 @@ Here are the props available for customizing the horizontal bar chart:
 
 - **hideLabels**: Use this prop to hide bar labels when using the AbsoluteScale variant.
 
-For more details, see [Fluent UI React Charting Examples - Horizontal Bar Chart (windows.net)](https://fluentuipr.z22.web.core.windows.net/heads/master/react-charting/demo/index.html#/examples/horizontalbarchart)
+For more details, see [Fluent UI - Controls - React - HorizontalBarChart](https://developer.microsoft.com/en-us/fluentui#/controls/web/horizontalbarchart)
 
 ## Theming
 

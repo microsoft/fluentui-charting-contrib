@@ -96,7 +96,7 @@ Here are the props available for customizing the stacked bar chart:
 
 - **hideLabels** (Multi-Stacked): Use this prop to hide bar labels when using the AbsoluteScale variant.
 
-For more details, see [Fluent UI React Charting Examples - Stacked Bar Chart (windows.net)](https://fluentuipr.z22.web.core.windows.net/heads/master/react-charting/demo/index.html#/examples/stackedbarchart) and [Fluent UI React Charting Examples - Multi Stacked Bar Chart (windows.net)](https://fluentuipr.z22.web.core.windows.net/heads/master/react-charting/demo/index.html#/examples/MultiStackedBarChart)
+For more details, see [Fluent UI - Controls - React - HorizontalBarChart - Stacked](https://developer.microsoft.com/en-us/fluentui#/controls/web/horizontalbarchart/stackedbarchart) and [Fluent UI - Controls - React - HorizontalBarChart - Multi Stacked](https://developer.microsoft.com/en-us/fluentui#/controls/web/horizontalbarchart/multistackedbarchart)
 
 ## Theming
 

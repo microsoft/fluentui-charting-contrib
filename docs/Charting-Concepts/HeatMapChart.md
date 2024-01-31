@@ -65,7 +65,7 @@ Here are the props available for customizing the heatmap chart:
 
 - **yAxisStringFormatter**: Use this prop to provide a custom function for formatting string-based y-axis labels.
 
-For more details, see [Fluent UI React Charting Examples - Heat Map Chart (windows.net)](https://fluentuipr.z22.web.core.windows.net/heads/master/react-charting/demo/index.html#/examples/HeatMapChart)
+For more details, see [Fluent UI - Controls - React - HeatMapChart](https://developer.microsoft.com/en-us/fluentui#/controls/web/heatmapchart)
 
 ## Theming
 

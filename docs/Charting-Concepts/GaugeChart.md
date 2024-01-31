@@ -112,7 +112,7 @@ Here are the props available for customizing the gauge chart:
   - *GaugeChartVariant.SingleSegment*: Displays and announces the segment sizes as percentages.
   - *GaugeChartVariant.MultipleSegments*: Displays and announces the segment sizes as ranges. This is the default variant.
 
-For more details, see [Fluent UI React Charting Examples - Gauge Chart (windows.net)](https://fluentuipr.z22.web.core.windows.net/heads/master/react-charting/demo/index.html#/examples/GaugeChart)
+For more details, see [Fluent UI - Controls - React - GaugeChart](https://developer.microsoft.com/en-us/fluentui#/controls/web/gaugechart)
 
 ## Theming
 
