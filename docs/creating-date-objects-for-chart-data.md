@@ -54,21 +54,27 @@ All other formats (including the above date-time form of the ISO format when the
 ```js
 console.log(new Date('2010-10-10T02:10').toISOString())
 // Output (IST): "2010-10-09T20:40:00.000Z"
+// Output (PDT): "2010-10-10T09:10:00.000Z"
 
-console.log(new Date('2010-10-10T02:10:10').toISOString())
-// Output (IST): "2010-10-09T20:40:10.000Z"
+console.log(new Date('2010-01-10T02:10:10').toISOString())
+// Output (IST): "2010-01-09T20:40:10.000Z"
+// Output (PST): "2010-01-10T10:10:10.000Z"
 
 console.log(new Date('2010-10-10T02:10:10.100').toISOString())
 // Output (IST): "2010-10-09T20:40:10.100Z"
+// Output (PDT): "2010-10-10T09:10:10.100Z"
 
-console.log(new Date('10/10/2010').toISOString())
-// Output (IST): "2010-10-09T18:30:00.000Z"
+console.log(new Date('1/10/2010').toISOString())
+// Output (IST): "2010-01-09T18:30:00.000Z"
+// Output (PST): "2010-01-10T08:00:00.000Z"
 
 console.log(new Date('10/10/2010 02:10').toISOString())
 // Output (IST): "2010-10-09T20:40:00.000Z"
+// Output (PDT): "2010-10-10T09:10:00.000Z"
 
-console.log(new Date(2010, 9, 10, 2, 10).toISOString())
-// Output (IST): "2010-10-09T20:40:00.000Z"
+console.log(new Date(2010, 0, 10, 2, 10).toISOString())
+// Output (IST): "2010-01-09T20:40:00.000Z"
+// Output (PST): "2010-01-10T10:10:00.000Z"
 ```
 
 > When the time zone offset is absent, **date-only forms are interpreted as a UTC time and date-time forms are interpreted as local time**. This is due to a historical spec error that was not consistent with ISO 8601 but could not be changed due to web compatibility. See [Broken Parser – A Web Reality Issue](https://maggiepint.com/2017/04/11/fixing-javascript-date-web-compatibility-and-reality/).
