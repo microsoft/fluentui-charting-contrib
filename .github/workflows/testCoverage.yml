@@ -253,6 +253,7 @@ jobs:
                 echo "$statementCovJson" > ubuntuCoverage.json
             fi
           done
+        shell: bash
 
       - name: Change branch to test-coverage-artifacts and move new artifacts to folder
         run: |
