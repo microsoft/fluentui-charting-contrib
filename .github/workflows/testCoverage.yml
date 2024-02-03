@@ -254,25 +254,6 @@ jobs:
             fi
           done
 
-      - name: Rename folder names for reports
-        run: |
-          cd ./repo/docs/coverageFiles
-          ls -lR
-          for dir in *; do
-            if [[ $dir == *"ubuntu"* ]]; then
-              mv "$dir/TestCoverageReport.md" "Ubuntu Test Coverage Report.md"
-              rm -rf $dir
-            elif [[ $dir == *"macos"* ]]; then
-              mv "$dir/TestCoverageReport.md" "MacOS Test Coverage Report.md"
-              rm -rf $dir
-            elif [[ $dir == *"windows"* ]]; then
-              mv "$dir/TestCoverageReport.md" "Windows Test Coverage Report.md"
-              rm -rf $dir
-            fi
-          done
-          ls -lR
-        shell: bash
-
       - name: Change branch to test-coverage-artifacts and move new artifacts to folder
         run: |
           cd repo
