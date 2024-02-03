@@ -253,8 +253,6 @@ jobs:
                 echo "$statementCovJson" > ubuntuCoverage.json
             fi
           done
-          cd ..
-          mv -- ./**/*Coverage.json ./coverage/
 
       - name: Rename folder names for reports
         run: |
