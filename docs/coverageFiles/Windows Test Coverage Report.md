@@ -1,10 +1,10 @@
-![Test Coverage Badge](https://img.shields.io/badge/Test_Coverage-89.3-mediumgreen)
+![Test Coverage Badge](https://img.shields.io/badge/Test_Coverage-89.29-mediumgreen)
  
 [Click here for a detailed report](https://fluentui-charting-test-coverage.netlify.app/)
 
 File                                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                                                                                        
 -------------------------------------------|---------|----------|---------|---------|------------------------------------------------------------------------------------------------------------------------------------------
-All files                                  |    89.3 |    74.95 |   72.86 |   89.07 |                                                                                                                                          
+All files                                  |   89.29 |    74.95 |   72.86 |   89.06 |                                                                                                                                          
  src                                       |     100 |      100 |    2.97 |     100 |                                                                                                                                          
   AreaChart.ts                             |     100 |      100 |     100 |     100 |                                                                                                                                          
   CartesianChart.ts                        |     100 |      100 |     100 |     100 |                                                                                                                                          
@@ -77,9 +77,9 @@ All files                                  |    89.3 |    74.95 |   72.86 |   89
   HorizontalBarChartWithAxis.styles.ts     |     100 |      100 |     100 |     100 |                                                                                                                                          
   HorizontalBarChartWithAxis.tsx           |     100 |      100 |     100 |     100 |                                                                                                                                          
   index.ts                                 |     100 |      100 |     100 |     100 |                                                                                                                                          
- src/components/Legends                    |    73.5 |    79.48 |   66.66 |   75.15 |                                                                                                                                          
-  Legends.base.tsx                         |      69 |    73.75 |   64.28 |   71.63 | 56,149-154,158-163,176,181,219-243,247-292,307                                                                                           
-  Legends.styles.ts                        |     100 |    90.62 |     100 |     100 | 50,83,98                                                                                                                                 
+ src/components/Legends                    |   73.36 |    79.48 |   66.66 |      75 |                                                                                                                                          
+  Legends.base.tsx                         |   68.82 |    73.75 |   64.28 |   71.42 | 56,149-154,158-163,176,181,219-243,247-292,307                                                                                           
+  Legends.styles.ts                        |     100 |    90.62 |     100 |     100 | 50,88,103                                                                                                                                
   Legends.tsx                              |     100 |      100 |     100 |     100 |                                                                                                                                          
   index.ts                                 |     100 |      100 |     100 |     100 |                                                                                                                                          
   shape.tsx                                |     100 |      100 |     100 |     100 |                                                                                                                                          
