@@ -79,7 +79,9 @@ console.log(new Date(2010, 0, 10, 2, 10).toISOString())
 
 > When the time zone offset is absent, **date-only forms are interpreted as a UTC time and date-time forms are interpreted as local time**. This is due to a historical spec error that was not consistent with ISO 8601 but could not be changed due to web compatibility. See [Broken Parser – A Web Reality Issue](https://maggiepint.com/2017/04/11/fixing-javascript-date-web-compatibility-and-reality/).
 
-Our charts display time in the local (host system) time zone. Therefore, it is crucial to create date objects correctly, as users from various time zones may misinterpret the information. **We recommend using UTC time consistently, especially when users are distributed across different time zones. Local time should be used only when users are in the same timezone.**
+Our charts display time in the local (host system) time zone. Therefore, it is crucial to create date objects correctly, as users from various time zones may misinterpret the information. **We recommend using UTC time consistently, especially when users are distributed across different time zones. Local time should be used only when users are in the same timezone**.
+
+We only ensure that the data points align with the axis ticks. For example, if an event occurred on 2010-10-10 00:00 UTC and a local date object is created from that, it will be shown on the chart as 2010-10-10 00:00 IST. But the correct value should be 2010-10-10 05:30 IST.
 
 ## References
 
