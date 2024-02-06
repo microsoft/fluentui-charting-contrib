@@ -229,7 +229,6 @@ jobs:
         with:
           repository: repo
           branch: test-coverage-artifacts
-          push_options: "--force"
 
   deploy:
     needs: push_artifacts_to_repo
