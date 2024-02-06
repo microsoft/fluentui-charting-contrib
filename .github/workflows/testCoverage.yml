@@ -1,8 +1,5 @@
 name: "Test coverage"
 on:
-  push:
-    branches:
-      fix-test-coverage-workflow
   schedule:
     - cron: "0 */8 * * *"
   workflow_dispatch:
