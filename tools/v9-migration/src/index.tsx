@@ -8,8 +8,8 @@ import {
   webLightTheme,
   webDarkTheme 
 } from '@fluentui/react-components';
-import {  myCustomTheme } from './components/theme';
 import { ChartWrapper } from './components/ChartWrapper';
+import {ChartWrapperDocsite} from './components/ChartWrapperDocsite';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(
 root.render(
   // Set theme here - teamsDarkTheme/teamsLightTheme/webLightTheme/webDarkTheme/myCustomTheme
   <FluentProvider theme={webLightTheme} > 
-    <App />
     <ChartWrapper />
+    <ChartWrapperDocsite/>
   </FluentProvider>
 );
