@@ -331,8 +331,10 @@ Overall, the \_getCustomizedCallout method is responsible for rendering the ca
 
 - **Rendering details**
   The Vertical stacked bar chart uses d3 SVG based rendering, which follows the following render cycles:
+  ```
   - Invocation cycle: Vertical stacked bar Chart -> Cartesian base chart -> X-axis -> X-axis labels -> Y-axis -> Y-axis labels -> bars, legends, callouts
   - Rendering cycle: Vertical stacked bar chart <- Bars (rect), lines (line), Legends, Callouts <- Axes (d3.axis, d3.scale)
+  ```
 
 **Following are the rendering details:**
 
@@ -342,7 +344,7 @@ Overall, the \_getCustomizedCallout method is responsible for rendering the ca
 1. The component also has several private methods that are used to handle user interactions with the chart. The \_legendHighlighted method is used to check if a legend is highlighted. The \_noLegendHighlighted method is used to check if no legend is highlighted. The \_getAriaLabel method is used to get the aria label for the chart.
 1. Finally, the component has a render method that renders the chart using SVG elements. The chart is rendered as a series of stacked bars, with each bar representing a category or value. The chart also includes a legend and a callout that displays additional information about the data point when the user hovers over it.
 - **Variants**
-  Following are the variants of vertical bar chart: [Ref8](https://fluentuipr.z22.web.core.windows.net/heads/master/react-charting/demo/index.html#/examples/VerticalStackedBarchart) 
+  Following are the variants of vertical bar chart: [Ref8](https://developer.microsoft.com/en-us/fluentui#/controls/web/verticalbarchart/verticalstackedbarchart) 
   - *Basic Vertical stacked bar Chart*: Only basic props are provided.
   - *Custom Callout*: Can show customized callout data.
   - *Custom Accessibility*: Providing custom aria labels.
@@ -353,24 +355,21 @@ Overall, the \_getCustomizedCallout method is responsible for rendering the ca
   ![VerticalStackedBarChart3.png](../assets/images/VSBC3.png)
 
   - Component Tests:
-    - Work item: <https://uifabric.visualstudio.com/iss/_workitems/edit/7439>
+    - Work item [7439](https://uifabric.visualstudio.com/iss/_workitems/edit/7439)
   - Unit Tests:
-    - Work item: <https://uifabric.visualstudio.com/iss/_workitems/edit/7440>
+    - Work item [7440](https://uifabric.visualstudio.com/iss/_workitems/edit/7440)
   - Manual Tests:
-    - Work item: <https://uifabric.visualstudio.com/iss/_workitems/edit/8602>
+    - Work item [8602](https://uifabric.visualstudio.com/iss/_workitems/edit/8602)
   - Accessibility Tests:
-    - Work item: <https://uifabric.visualstudio.com/iss/_workitems/edit/7438>
+    - Work item [7438](https://uifabric.visualstudio.com/iss/_workitems/edit/7438)
 - **Accessibility**
-  FAST pass checks resulted in no error for Vertical stacked bar chart. Link to the FAST pass tool: <https://accessibilityinsights.io/docs/web/getstarted/fastpass/> 
+  FAST pass checks resulted in no error for Vertical stacked bar chart. Link to the [FAST pass tool](https://accessibilityinsights.io/docs/web/getstarted/fastpass/)
   Our charts have elaborate accessibility support. The charts are WCAG 2.1 MAS C compliant for accessibility.
   Consumers can define their own aria labels for each point by setting the callOutAccessibilityData properties.
 - **Theming**
   The palette for donut chart is set from the "theme" prop as passed to the component during rendering. Both light and dark themes are supported and users can create there own theme too. [Ref3](https://github.com/microsoft/fluentui/wiki/Theming)  and [Ref4](https://github.com/microsoft/fluentui/wiki/How-to-apply-theme-to-Fluent-UI-React-components)  explains theming in detail.
 - **Debugging**
-  Following are some of the ways in which the donut chart code can be debugged:
-  - Using logging: Console logs can be used to debug the different variables within the components.
-  - Using Browser debugger: Putting breakpoints in the source code in browser and running the debugger.
-  - Using Extension: For debugging a test in VSCode, the launch.json contains the configurations for debugging the current open test. We can directly put breakpoints in the current open test and run the debugger.
+  The detailed steps on debugging has been given in [Debugging](https://github.com/microsoft/fluentui-charting-contrib/blob/main/docs/Debugging.md).
 - **Error scenarios**
   The Vertical stacked bar chart handles the following error scenario:
   - Empty data: If the data passed to the chart component is empty, the chart will not render and a message will be narrated to the user. \_isChartEmpty functions handles that scenario.
@@ -427,7 +426,6 @@ Overall, the \_getCustomizedCallout method is responsible for rendering the ca
 - **Design figma**
   Vertical Stacked Bar Chart Figma - [Link](https://www.figma.com/file/WOoCs0CmNYZhYl9xXeCGpi/Data-viz-\(Archive\)?type=design&node-id=21153-80197&mode=design&t=kjtgBpG3tOGCcx00-0) 
 - **Known issues**
-  - The axis titles are to be added (Already in [PR](https://github.com/microsoft/fluentui/pull/28580))
   - Setting the margins externally via the props may cut the x and y ticks if the margins provided are very less. Setting a minimum margin would prevent any such distortions.
 - **Performance**
   The performance aspect of a vertical stacked bar chart refers to how efficiently and effectively it conveys information to the viewer. Here are some key considerations regarding the performance of a line chart:
@@ -437,13 +435,13 @@ Overall, the \_getCustomizedCallout method is responsible for rendering the ca
   - Handling Large Datasets
   - Interactive Features
 - **References**
-1. D3-scale: <https://github.com/d3/d3-scale/blob/main/README.md> 
-1. D3-selection: <https://github.com/d3/d3-selection/blob/main/README.md> 
-1. D3-array: <https://github.com/d3/d3-array/blob/main/README.md> 
-1. D3-axis: <https://github.com/d3/d3-axis/blob/main/README.md> 
-1. <https://github.com/microsoft/fluentui/wiki/How-to-apply-theme-to-Fluent-UI-React-components> 
-1. <https://github.com/microsoft/fluentui/wiki/Theming> 
-1. <https://fluentuipr.z22.web.core.windows.net/heads/master/react-charting/demo/index.html#/examples/VerticalBarchart> 
+1. [D3-scale](https://github.com/d3/d3-scale/blob/main/README.md)
+2. [D3-selection](https://github.com/d3/d3-selection/blob/main/README.md)
+3. [D3-array](https://github.com/d3/d3-array/blob/main/README.md)
+4. [D3-axis](https://github.com/d3/d3-axis/blob/main/README.md)
+5. [How to apply theme](https://github.com/microsoft/fluentui/wiki/How-to-apply-theme-to-Fluent-UI-React-components)
+6. [Theming](https://github.com/microsoft/fluentui/wiki/Theming)
+7. [Vertical Stacked Bar Chart](https://developer.microsoft.com/en-us/fluentui#/controls/web/verticalbarchart/verticalstackedbarchart)
 
 - **Appendix**
 The mathematical formulae used in the Vertical Stacked bar chart component are as follows:

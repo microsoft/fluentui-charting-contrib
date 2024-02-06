@@ -111,13 +111,10 @@ Consumers can define their own aria labels for each point by setting the xAxisCa
 The palette for donut chart is set from the "theme" prop as passed to the component during rendering. Both light and dark themes are supported and users can create there own theme too. Ref[3]  and Ref[4]  explains theming in detail.
 
 - **Debugging**
-Following are some of the ways in which the donut chart code can be debugged:
-  1. Using logging: Console logs can be used to debug the different variables within the components.
-  2. Using Browser debugger: Putting breakpoints in the source code in browser and running the debugger.
-  3. Using Extension: For debugging a test in VSCode, the launch.json contains the configurations for debugging the current open test. We can directly put breakpoints in the current open test and run the debugger.
+The detailed steps on debugging has been given in [Debugging](https://github.com/microsoft/fluentui-charting-contrib/blob/main/docs/Debugging.md).
 
 - **Variants**
-Following are the variants of donut chart: Ref[2] 
+Following are the variants of donut chart: [Ref2](https://developer.microsoft.com/en-us/fluentui#/controls/web/donutchart)
   1. Basic Donut Chart: Only basic props are provided.
   2. Dynamic Donut Chart: The data and pie colors can change.
   3. Custom Callout: Can show customized callout data.
@@ -140,9 +137,9 @@ b. On blur on a Pie, should remove focus from the corresponding Pie.
 
 - **Some notable PRs and their brief description**
 
-  1. https://github.com/microsoft/fluentui/commit/b60d3dfb35367467568d91c2933bb7053e9b716b  - Adding the Donut Chart main component.
-  2. https://github.com/microsoft/fluentui/commit/5349c8cbc522ff7b9eac2e5858cbad092d22eb82  - Adding Tests for Donut Chart using React Testing Library.
-  3. https://github.com/microsoft/fluentui/commit/50ee71862affde61ace35edcb5c3d6f67928f343  - Allow focus navigation with tab key in donut chart (Accessibility)
+  1. [Adding the Donut Chart main component](https://github.com/microsoft/fluentui/commit/b60d3dfb35367467568d91c2933bb7053e9b716b)
+  2. [Adding Tests for Donut Chart using React Testing Library](https://github.com/microsoft/fluentui/commit/5349c8cbc522ff7b9eac2e5858cbad092d22eb82)
+  3. [Allow focus navigation with tab key in donut chart (Accessibility)](https://github.com/microsoft/fluentui/commit/50ee71862affde61ace35edcb5c3d6f67928f343)
 
 - **Learnings**
 

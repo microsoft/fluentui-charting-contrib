@@ -321,8 +321,10 @@ Overall, the createStringXAxis function is responsible for creating a string x
 - If the onRenderCalloutPerDataPoint prop is not defined, the \_getCustomizedCallout method returns null.
 - **Rendering details**
   The Grouped vertical bar chart uses d3 SVG based rendering, which follows the following render cycles:
+  ```
   - Invocation cycle: Grouped Vertical bar Chart -> Cartesian base chart -> X-axis -> X-axis labels -> Y-axis -> Y-axis labels -> bars, legends, callouts
   - Rendering cycle: Grouped vertical bar chart <- Bars (rect), Legends, Callouts <- Axes (d3.axis, d3.scale)
+  ```
 
 **Following are the detailed steps:**
 
@@ -344,26 +346,23 @@ Overall, the grouped vertical bar chart is rendered using SVG elements that ar
   The testing for Grouped Vertical bar chart have not been started. The document will be updated as and when the tests are completed.
   ![GroupedVerticalBarChart3.png](../assets/images/GVBC3.png)
   - Component Tests:
-    - Work item: <https://uifabric.visualstudio.com/iss/_workitems/edit/7411>
+    - Work item [7411](https://uifabric.visualstudio.com/iss/_workitems/edit/7411)
   - Unit Tests:
-    - Work item: <https://uifabric.visualstudio.com/iss/_workitems/edit/7412>
+    - Work item [7412](https://uifabric.visualstudio.com/iss/_workitems/edit/7412)
   - Manual Tests:
-    - Work item: <https://uifabric.visualstudio.com/iss/_workitems/edit/8605>
+    - Work item [8605](https://uifabric.visualstudio.com/iss/_workitems/edit/8605)
   - Accessibility Tests:
-    - Work item: <https://uifabric.visualstudio.com/iss/_workitems/edit/7410>
+    - Work item [7410](https://uifabric.visualstudio.com/iss/_workitems/edit/7410)
 - **Accessibility**
-  FAST pass checks resulted in no error for Grouped Vertical bar chart. Link to the FAST pass tool: <https://accessibilityinsights.io/docs/web/getstarted/fastpass/> 
+  FAST pass checks resulted in no error for Grouped Vertical bar chart. Link to the [FAST pass tool](https://accessibilityinsights.io/docs/web/getstarted/fastpass/)
   Our charts have elaborate accessibility support. The charts are WCAG 2.1 MAS C compliant for accessibility.
   Consumers can define their own aria labels for each point by setting the callOutAccessibilityData property.
 - **Theming**
   The palette for vertical bar chart is set from the "theme" prop as passed to the component during rendering. Both light and dark themes are supported and users can create there own theme too. [Ref6](https://github.com/microsoft/fluentui/wiki/Theming)  and [Ref7](https://github.com/microsoft/fluentui/wiki/How-to-apply-theme-to-Fluent-UI-React-components)  explains theming in detail.
 - **Debugging**
-  Following are some of the ways in which the donut chart code can be debugged:
-  - *Using logging*: Console logs can be used to debug the different variables within the components.
-  - *Using Browser debugger*: Putting breakpoints in the source code in browser and running the debugger.
-  - *Using Extension*: For debugging a test in VSCode, the launch.json contains the configurations for debugging the current open test. We can directly put breakpoints in the current open test and run the debugger.
+  The detailed steps on debugging has been given in [Debugging](https://github.com/microsoft/fluentui-charting-contrib/blob/main/docs/Debugging.md).
 - **Variants**
-  Following are the variants of vertical bar chart: [Ref8](https://fluentuipr.z22.web.core.windows.net/heads/master/react-charting/demo/index.html#/examples/VerticalBarchart) 
+  Following are the variants of vertical bar chart: [Ref8](https://developer.microsoft.com/en-us/fluentui#/controls/web/verticalbarchart/grouped) 
   - *Basic Grouped Vertical bar Chart*: Only basic props are provided.
   - *Custom Accessibility*: Providing custom aria labels.
   - *Styled*: Can show bars with increased bar width.
@@ -403,13 +402,11 @@ import { chartPoints } from './VerticalBarChart.test';
 ```
 - Certain props need async await structure (waitFor in react testing library) for different props or nested SVGs to render.
 - **Known issues**
-  - The axis titles are to be added (Already in [PR](https://github.com/microsoft/fluentui/pull/28580) )
   - Setting the margins externally via the props may cut the x and y ticks if the margins provided are very less. Setting a minimum margin would prevent any such distortions.
 - **Future improvements**
 
   Following are the list of future improvements for the vertical bar chart:
 
-  - Adding axis titles - Already in [PR](https://github.com/microsoft/fluentui/pull/28580) 
   - Improved accessibility: While the component already provides accessibility data for screen readers, there is always room for improvement in this area. Adding support for keyboard navigation and improving the accessibility of the callout would make the component more accessible to users with disabilities.
   - Support for animations: Adding support for animations, such as transitions between data updates or hover effects, would make the component more visually appealing and engaging for users.
   - Following error handling scenarios can be improved:
@@ -435,13 +432,13 @@ import { chartPoints } from './VerticalBarChart.test';
 We use Lighthouse tool for measuring the performance of our charts. Following are few of the scenarios for which we measure the performance score for vertical bar chart:
 
 - **References**
-1. D3-scale: <https://github.com/d3/d3-scale/blob/main/README.md> 
-1. D3-selection: <https://github.com/d3/d3-selection/blob/main/README.md> 
-1. D3-array: <https://github.com/d3/d3-array/blob/main/README.md> 
-1. D3-axis: <https://github.com/d3/d3-axis/blob/main/README.md> 
-1. <https://github.com/microsoft/fluentui/wiki/How-to-apply-theme-to-Fluent-UI-React-components> 
-1. <https://github.com/microsoft/fluentui/wiki/Theming> 
-1. <https://fluentuipr.z22.web.core.windows.net/heads/master/react-charting/demo/index.html#/examples/GroupedVerticalBarchart> 
+1. [D3-scale](https://github.com/d3/d3-scale/blob/main/README.md)
+2. [D3-selection](https://github.com/d3/d3-selection/blob/main/README.md)
+3. [D3-array](https://github.com/d3/d3-array/blob/main/README.md)
+4. [D3-axis](https://github.com/d3/d3-axis/blob/main/README.md)
+5. [How to apply theme](https://github.com/microsoft/fluentui/wiki/How-to-apply-theme-to-Fluent-UI-React-components)
+6. [Theming](https://github.com/microsoft/fluentui/wiki/Theming)
+7. [Grouped Vertical Bar Chart](https://developer.microsoft.com/en-us/fluentui#/controls/web/verticalbarchart/grouped)
 
 - **Appendix**
 The mathematical formulae used in the Grouped vertical bar chart component are as follows:

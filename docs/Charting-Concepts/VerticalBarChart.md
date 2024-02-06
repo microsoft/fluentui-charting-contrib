@@ -282,8 +282,10 @@ In the Vertical stacked bar chart, d3-axis is used to create and render the x 
     - Finally, the function returns the vertical height of the labels by computing maxHeight/tanInverse(45).
 - **Rendering details**
   The Vertical bar chart uses d3 SVG based rendering, which follows the following render cycles:
+  ```
   - Invocation cycle: Vertical bar Chart -> Cartesian base chart -> X-axis -> X-axis labels -> Y-axis -> Y-axis labels -> bars, legends, callouts
   - Rendering cycle: Vertical bar chart <- Bars (rect), lines (d3.line), Legends, Callouts <- Axes (d3.axis, d3.scale)
+  ```
 
 **Following are the detailed steps:**
 
@@ -303,25 +305,25 @@ In the Vertical stacked bar chart, d3-axis is used to create and render the x 
     ![VerticalBarChart3.png](../assets/images/VBC3.png)
 
 1. Component Tests:
-   1. Work item: <https://uifabric.visualstudio.com/iss/_workitems/edit/7435>
-   1. Test plan: <https://github.com/microsoft/fluentui/blob/master/packages/react-charting/docs/TestPlans/VerticalBarChart/ComponentTests.md> 
+   1. Work item [7435](https://uifabric.visualstudio.com/iss/_workitems/edit/7435)
+   1. Test plan: https://github.com/microsoft/fluentui/blob/master/packages/react-charting/docs/TestPlans/VerticalBarChart/ComponentTests.md 
 1. Unit Tests:
-   1. Work item: <https://uifabric.visualstudio.com/iss/_workitems/edit/7436>
+   1. Work item [7436](https://uifabric.visualstudio.com/iss/_workitems/edit/7436)
 1. Manual Tests:
-   1. Work item: <https://uifabric.visualstudio.com/iss/_workitems/edit/8604>
+   1. Work item [8604](https://uifabric.visualstudio.com/iss/_workitems/edit/8604)
 1. Accessibility Tests:
-   1. Work item: <https://uifabric.visualstudio.com/iss/_workitems/edit/7434>
+   1. Work item [7434](https://uifabric.visualstudio.com/iss/_workitems/edit/7434)
 - **Accessibility**
   Vertical bar chart is tested for fast pass accessibility.
-  Link to the FAST pass tool: <https://accessibilityinsights.io/docs/web/getstarted/fastpass/> 
+  Link to the [FAST pass tool](https://accessibilityinsights.io/docs/web/getstarted/fastpass/)
   Our charts have elaborate accessibility support. The charts are WCAG 2.1 MAS C compliant for accessibility.
   Consumers can define their own aria labels for each point by setting the callOutAccessibilityData property.
 - **Theming**
   The palette for vertical bar chart is set from the "theme" prop as passed to the component during rendering. Both light and dark themes are supported and users can create there own theme too. [Ref6](https://github.com/microsoft/fluentui/wiki/Theming)  and [Ref7](https://github.com/microsoft/fluentui/wiki/How-to-apply-theme-to-Fluent-UI-React-components)  explains theming in detail.
 - **Debugging**
-  The detailed steps on debugging has been given in [Debugging](https://uifabric.visualstudio.com/iss/_wiki/wikis/iss.wiki?wikiVersion=GBwikiMaster&pagePath=/Fluent%20React%20Charting/Debugging).
+  The detailed steps on debugging has been given in [Debugging](https://github.com/microsoft/fluentui-charting-contrib/blob/main/docs/Debugging.md).
 - **Variants**
-  Following are the variants of vertical bar chart: [Ref8](https://fluentuipr.z22.web.core.windows.net/heads/master/react-charting/demo/index.html#/examples/VerticalBarchart) 
+  Following are the variants of vertical bar chart: [Ref8](https://developer.microsoft.com/en-us/fluentui#/controls/web/verticalbarchart)
   - *Basic Vertical bar Chart*: Only basic props are provided.
   - *Dynamic Vertical bar Chart*: The data and bar colors can change.
   - *Custom Callout*: Can show customized callout data.
@@ -350,25 +352,27 @@ In the Vertical stacked bar chart, d3-axis is used to create and render the x 
   - While implementing the tests using react testing library, it was found that certain browser functions like getComputedTextLength() cannot be unit tested and needs to be tested End-to-End only.
   - Order of imports are important.
     For example: for Vertical bar charts tests, improper sequencing of the imports (data first and then render) results in incorrect and incopmlete rendering of charts:
+
+```
   - import { chartPoints } from '../VerticalBarChart/VerticalBarChart.test';
   - import { render, screen, queryAllByAttribute, fireEvent, act } from '@testing- 
   - library/react';
+```
 
-    However, the following results in correct rendering:
+However, the following results in correct rendering:
 
+```
 import { render, screen, queryAllByAttribute } from '@testing-library/react';
 
 import { chartPoints } from './VerticalBarChart.test';
-
+```
 - Certain props need async await structure (waitFor in react testing library) for different props or nested SVGs to render.
 - **Known issues**
-  - The axis titles are to be added (Already in [PR](https://github.com/microsoft/fluentui/pull/28580) )
   - Setting the margins externally via the props may cut the x and y ticks if the margins provided are very less. Setting a minimum margin would prevent any such distortions.
 - **Future improvements**
 
   Following are the list of future improvements for the vertical bar chart:
 
-  - Adding axis titles - Already in [PR](https://github.com/microsoft/fluentui/pull/28580) 
   - Improved accessibility: While the component already provides accessibility data for screen readers, there is always room for improvement in this area. Adding support for keyboard navigation and improving the accessibility of the callout would make the component more accessible to users with disabilities.
   - Support for animations: Adding support for animations, such as transitions between data updates or hover effects, would make the component more visually appealing and engaging for users.
   - Following error handling scenarios can be improved:
@@ -395,15 +399,15 @@ We use Lighthouse tool for measuring the performance of our charts. Following ar
 
 - **References**
 1. D3-scale:
-   1. <https://github.com/d3/d3-scale/blob/main/README.md> 
-   1. <https://d3js.org/d3-scale> 
-1. D3-shape: <https://github.com/d3/d3-shape/blob/main/README.md> 
-1. D3-selection: <https://github.com/d3/d3-selection/blob/main/README.md> 
-1. D3-array: <https://github.com/d3/d3-array/blob/main/README.md> 
-1. D3-axis: <https://github.com/d3/d3-axis/blob/main/README.md> 
-1. <https://github.com/microsoft/fluentui/wiki/How-to-apply-theme-to-Fluent-UI-React-components> 
-1. <https://github.com/microsoft/fluentui/wiki/Theming> 
-1. <https://fluentuipr.z22.web.core.windows.net/heads/master/react-charting/demo/index.html#/examples/VerticalBarchart> 
+   - [Link 1](https://github.com/d3/d3-scale/blob/main/README.md)
+   - [Link 2](https://d3js.org/d3-scale)
+2. [D3-shape](https://github.com/d3/d3-shape/blob/main/README.md)
+3. [D3-selection](https://github.com/d3/d3-selection/blob/main/README.md)
+4. [D3-array](https://github.com/d3/d3-array/blob/main/README.md)
+5. [D3-axis](https://github.com/d3/d3-axis/blob/main/README.md)
+6. [How to apply theme](https://github.com/microsoft/fluentui/wiki/How-to-apply-theme-to-Fluent-UI-React-components)
+7. [Theming](https://github.com/microsoft/fluentui/wiki/Theming)
+8. [Vertical Bar Chart](https://developer.microsoft.com/en-us/fluentui#/controls/web/verticalbarchart)
 
 **Appendix:**
 

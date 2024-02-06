@@ -87,17 +87,14 @@ The resulting area shape is then rendered in the drawSparkline method of the 
   Following is the test report for Sparkline Chart:
   ![Sparkline2.png](../assets/images/Sparkline2.png)
 - **Accessibility**
-  FAST pass checks resulted in no error for Sparkline chart. Link to the FAST pass tool: <https://accessibilityinsights.io/docs/web/getstarted/fastpass/> 
+  FAST pass checks resulted in no error for Sparkline chart. Link to the [FAST pass tool](https://accessibilityinsights.io/docs/web/getstarted/fastpass/) 
   Our charts have elaborate accessibility support. The charts are WCAG 2.1 MAS C compliant for accessibility.
 - **Theming**
   The palette for donut chart is set from the "theme" prop as passed to the component during rendering. Both light and dark themes are supported and users can create there own theme too. [Ref3](https://github.com/microsoft/fluentui/wiki/Theming)  and [Ref4](https://github.com/microsoft/fluentui/wiki/How-to-apply-theme-to-Fluent-UI-React-components)  explains theming in detail.
 - **Debugging**
-  Following are some of the ways in which the donut chart code can be debugged:
-  - Using logging: Console logs can be used to debug the different variables within the components.
-  - Using Browser debugger: Putting breakpoints in the source code in browser and running the debugger.
-  - Using Extension: For debugging a test in VSCode, the launch.json contains the configurations for debugging the current open test. We can directly put breakpoints in the current open test and run the debugger.
+  The detailed steps on debugging has been given in [Debugging](https://github.com/microsoft/fluentui-charting-contrib/blob/main/docs/Debugging.md).
 - **Variants**
-  Following are the variants of donut chart: [Ref2](https://fluentuipr.z22.web.core.windows.net/heads/master/react-charting/demo/index.html#/examples/sparkline) 
+  Following are the variants of donut chart: [Ref2](https://developer.microsoft.com/en-us/fluentui#/controls/web/sparklinechart) 
   - Basic Sparkline Chart: Only basic props are provided.
 - **Interaction**
   Following are the interactions that are allowed for Sparkline chart:
@@ -141,7 +138,7 @@ import { chartPoints } from './VerticalBarChart.test';
   - Handling Large Datasets
     -Interactive Features
 - **References**
-1. <https://github.com/d3/d3-shape/blob/main/README.md> 
-2. <https://fluentuipr.z22.web.core.windows.net/heads/master/react-charting/demo/index.html#/examples/Sparklinechart> 
-3. <https://github.com/microsoft/fluentui/wiki/Theming> 
-4. https://github.com/microsoft/fluentui/wiki/How-to-apply-theme-to-Fluent-UI-React-components
+1. [D3-shape](https://github.com/d3/d3-shape/blob/main/README.md)
+2. [Sparkline Chart](https://developer.microsoft.com/en-us/fluentui#/controls/web/sparklinechart)
+3. [Theming](https://github.com/microsoft/fluentui/wiki/Theming) 
+4. [How to apply theme](https://github.com/microsoft/fluentui/wiki/How-to-apply-theme-to-Fluent-UI-React-components)
