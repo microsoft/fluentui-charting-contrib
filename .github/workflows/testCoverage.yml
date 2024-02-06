@@ -274,6 +274,7 @@ jobs:
 
       - name: Move coverage JSONs to root
         run: |
+          rm -rf ./repo/*
           mv -f ./coverage/* ./repo/
           cd repo
           ls
