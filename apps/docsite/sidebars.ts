@@ -38,6 +38,7 @@ const sidebars: SidebarsConfig = {
     'Accessibility',
     'colors',
     'implementing-2-to-1-spacing',
+    'creating-date-objects-for-chart-data',
     'Testing Strategy',
     {
       type:'category',
