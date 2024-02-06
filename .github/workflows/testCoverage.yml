@@ -224,12 +224,12 @@ jobs:
           path: repo
           ref: test-coverage-artifacts
 
-      - name: Remove old artifacts
-        run: |
-          rm -rf ./repo/docs/coverageFiles
-          cd ./repo/docs
-          ls -a
-        shell: bash
+      # - name: Remove old artifacts
+      #   run: |
+      #     rm -rf ./repo/docs/coverageFiles
+      #     cd ./repo/docs
+      #     ls -a
+      #   shell: bash
       - name: Rename all txt reports to md and remove unnecessary lines
         run: |
           cd ./coverage
