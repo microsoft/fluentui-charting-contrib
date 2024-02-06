@@ -229,8 +229,8 @@ jobs:
         shell: bash
       - name: Rename all txt reports to md and remove unnecessary lines
         run: |
-          cd ./coverage/coverageFiles
-          for f in $(find ./ -name '*.txt'); do 
+          cd ./coverage
+          for f in $(find ./ -name '*.txt'); do
             sed -i '/PASS/d' "$f"
             sed -i '/FAIL/d' "$f"
             sed -i '/yarn/d' "$f"
@@ -238,40 +238,23 @@ jobs:
             sed -i '1d' "$f"
             statementCoveragePercent=$(echo $(awk '/All files/ {print}' $f) | awk -F'|' '{print $2}')
             statementCoveragePercentTrimmed=$(echo "$statementCoveragePercent" | awk '{$1=$1; print}')
-            sed -i "1i\![Test Coverage Badge](https://img.shields.io/badge/Test_Coverage-$statementCoveragePercentTrimmed-mediumgreen)\n" "$f"
-            sed -i '2i\ ' "$f"
-            sed -i '3i\[Click here for a detailed report](https://fluentui-charting-test-coverage.netlify.app/)' "$f"
             dir_path=$(dirname "$f")
             file_name=$(basename "$f")
-            new_file_name="TestCoverageReport.md"
-            mv -- "$f" "$dir_path/$new_file_name"
-          done
-          ls -lR
-
-      - name: Move coverage to docs
-        run: ls -a && mv -f coverage/coverageFiles repo/docs && cd repo/docs && ls -a
-      - name: Rename folder names for reports
-        run: |
-          cd ./repo/docs/coverageFiles
-          ls -lR
-          for dir in *; do
-            if [[ $dir == *"ubuntu"* ]]; then
-              mv "$dir/TestCoverageReport.md" "Ubuntu Test Coverage Report.md"
-              rm -rf $dir
-            elif [[ $dir == *"macos"* ]]; then
-              mv "$dir/TestCoverageReport.md" "MacOS Test Coverage Report.md"
-              rm -rf $dir
-            elif [[ $dir == *"windows"* ]]; then
-              mv "$dir/TestCoverageReport.md" "Windows Test Coverage Report.md"
-              rm -rf $dir
+            statementCovJson=$(jq -n \
+                --arg k1 "$statementCoveragePercentTrimmed" \
+                '{"statementCoverage": $k1}'
+            )
+            echo "$statementCovJson" > testCoverage.json
+            if [[ $f == *macos* ]]; then
+                echo "$statementCovJson" > macosCoverage.json
+            elif [[ $f == *windows* ]]; then
+                echo "$statementCovJson" > windowsCoverage.json
+            elif [[ $f == *ubuntu* ]]; then
+                echo "$statementCovJson" > ubuntuCoverage.json
             fi
           done
-          ls -lR
         shell: bash
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          repository: repo
-          branch: main
+
       - name: Change branch to test-coverage-artifacts and move new artifacts to folder
         run: |
           cd repo
