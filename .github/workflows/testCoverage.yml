@@ -177,11 +177,11 @@ jobs:
       #   with:
       #     name: ${{env.COVERAGE_FILENAME_WINDOWS}}
       #     path: "./coverage/coverageFileWindows"
-      # - name: Download all artifacts to publish together
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     pattern: test_coverage_*
-      #     path: "./coverage/coverageFiles"
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          pattern: test_coverage_*
+          path: "./coverage/coverageFiles"
 
       # - name: "Check coverage file"
       #   run: cd ./coverage/coverageFiles && ls -a
@@ -256,6 +256,7 @@ jobs:
                 echo "$statementCovJson" > ubuntuCoverage.json
             fi
           done
+          
         shell: bash
 
       # - name: Change branch to test-coverage-artifacts and move new artifacts to folder
