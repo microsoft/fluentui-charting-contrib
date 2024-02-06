@@ -1,8 +1,5 @@
 name: "Test coverage"
 on:
-  push:
-    branches:
-      fix-test-coverage-workflow
   schedule:
     - cron: "0 */8 * * *"
   workflow_dispatch:
@@ -221,7 +218,9 @@ jobs:
 
       - name: Move coverage JSONs to root
         run: |
-          rm -rf ./repo/*
+          cd repo
+          rm -rf !(.github)
+          cd ..
           mv -f ./coverage/* ./repo/
           cd repo
           ls
