@@ -217,10 +217,12 @@ jobs:
         shell: bash
 
       - name: Move coverage JSONs to root
-        run: |
+        run: | 
+          mv -f ./repo/.github ./
           cd repo
-          rm -rf !(.github)
+          rm -rf ./*
           cd ..
+          mv -f ./.github ./repo/
           mv -f ./coverage/* ./repo/
           cd repo
           ls
