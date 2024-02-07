@@ -250,7 +250,7 @@ jobs:
     needs: push_artifacts_to_repo
     runs-on: ubuntu-latest
     name: Build and Deploy Job
-    if: env.PUSH_STATUS == 'true'
+    if: ${{ env.PUSH_STATUS == 'true' }}
     steps:
       - uses: actions/checkout@v3
         with:
