@@ -240,7 +240,7 @@ jobs:
         if: steps.auto-commit-action.outputs.changes_detected == false
         run: |
           echo "No commit was made, skipping deploy job"
-            exit 0
+          exit 0
           
 
   build_and_deploy_job:
