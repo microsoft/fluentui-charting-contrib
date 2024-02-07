@@ -26,7 +26,8 @@ jobs:
   run_tests:
     strategy:
       matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
+        os: [ ubuntu-latest ]
+        # os: [windows-latest, macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     outputs:
       test_coverage: ${{ steps.run_tests.outputs }}
@@ -145,23 +146,23 @@ jobs:
           name: "ubuntu-latest"
           path: "./coverage/ubuntu-latest"
 
-      - name: Download all artifacts to publish together
-        uses: actions/download-artifact@v4
-        with:
-          name: "macos-latest"
-          path: "./coverage/macos-latest"
+      # - name: Download all artifacts to publish together
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: "macos-latest"
+      #     path: "./coverage/macos-latest"
 
-      - name: Download all artifacts to publish together
-        uses: actions/download-artifact@v4
-        with:
-          name: "windows-latest"
-          path: "./coverage/windows-latest"
+      # - name: Download all artifacts to publish together
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: "windows-latest"
+      #     path: "./coverage/windows-latest"
 
-      - name: Download all artifacts to publish together
-        uses: actions/download-artifact@v4
-        with:
-          name: "coverage_VBC"
-          path: "./coverage/coverage_VBC"
+      # - name: Download all artifacts to publish together
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: "coverage_VBC"
+      #     path: "./coverage/coverage_VBC"
 
       - name: Download all artifacts to publish together
         uses: actions/download-artifact@v4
@@ -223,9 +224,11 @@ jobs:
 
       - name: Move coverage JSONs to root
         run: |
+          mv -f ./repo/.github ./
           cd repo
-          rm -rf !(.github)
+          rm -rf ./*
           cd ..
+          mv -f ./.github ./repo/
           mv -f ./coverage/* ./repo/
           cd repo
           ls
