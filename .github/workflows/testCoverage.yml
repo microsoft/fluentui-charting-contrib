@@ -241,9 +241,12 @@ jobs:
           branch: test-coverage-artifacts
       - name: Check if commit was successful
         if: steps.auto-commit-action.outputs.changes_detected == true
+        run:
+        env:
+          PUSH_STATUS: 'true'
+      - name: Check PUSH_STATUS
         run: |
-          echo "Files changed!"
-          echo "::set-env name=PUSH_STATUS::true"
+          echo "${{ env.PUSH_STATUS }}"
           
 
   build_and_deploy_job:
