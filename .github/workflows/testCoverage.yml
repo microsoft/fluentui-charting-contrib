@@ -22,9 +22,6 @@ permissions:
   pages: write
   id-token: write
 
-env:
-  PUSH_STATUS: 'false'
-
 jobs:
   run_tests:
     strategy:
@@ -239,14 +236,6 @@ jobs:
         with:
           repository: repo
           branch: test-coverage-artifacts
-      - name: Check if commit was successful
-        if: steps.auto-commit-action.outputs.changes_detected == true
-        run:
-        env:
-          PUSH_STATUS: 'true'
-      - name: Check PUSH_STATUS
-        run: |
-          echo "${{ env.PUSH_STATUS }}"
           
 
   build_and_deploy_job:
@@ -260,7 +249,7 @@ jobs:
           lfs: false
           ref: test-coverage-artifacts
       - name: Build And Deploy
-        if: ${{ env.PUSH_STATUS == 'true'}}
+        if: ${{ needs.push_artifacts_to_repo.outputs.auto-commit-action.changes_detected == 'true'}}
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
