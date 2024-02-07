@@ -250,7 +250,6 @@ jobs:
     needs: push_artifacts_to_repo
     runs-on: ubuntu-latest
     name: Build and Deploy Job
-    if: ${{ env.PUSH_STATUS == 'true' }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -258,6 +257,7 @@ jobs:
           lfs: false
           ref: test-coverage-artifacts
       - name: Build And Deploy
+        if: ${{ env.PUSH_STATUS == 'true'}}
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
