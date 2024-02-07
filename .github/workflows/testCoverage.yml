@@ -37,6 +37,8 @@ jobs:
     steps:
       - name: Checkout [master]
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Checkout [react-charting]
         uses: actions/checkout@v4
