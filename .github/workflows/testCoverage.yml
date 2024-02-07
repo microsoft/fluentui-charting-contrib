@@ -237,11 +237,11 @@ jobs:
           repository: repo
           branch: test-coverage-artifacts
       - name: Check if commit was successful
+        if: steps.auto-commit-action.outputs.changes_detected == false
         run: |
-          if [[ -z ${{ steps.auto-commit.outputs.commit_hash }} ]]; then
-            echo "No commit was made, skipping deploy job"
+          echo "No commit was made, skipping deploy job"
             exit 0
-          fi
+          
 
   build_and_deploy_job:
     needs: push_artifacts_to_repo
