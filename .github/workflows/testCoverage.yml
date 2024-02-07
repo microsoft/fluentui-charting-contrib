@@ -248,6 +248,11 @@ jobs:
           submodules: true
           lfs: false
           ref: test-coverage-artifacts
+      - name: Log output
+        run: |
+          echo "${{ needs.push_artifacts_to_repo.outputs.auto-commit-action.changes_detected}}"
+          echo "${{ needs.push_artifacts_to_repo.outputs.auto-commit-action.commit_hash}}"
+
       - name: Build And Deploy
         if: ${{ needs.push_artifacts_to_repo.outputs.auto-commit-action.changes_detected == 'true'}}
         id: builddeploy
