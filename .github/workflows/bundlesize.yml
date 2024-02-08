@@ -1,0 +1,40 @@
+name: "Generate bundle-size for react charting"
+on:
+  push:
+    branches: run-monosize-ci
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: "Repo to run the tests on"
+        required: true
+        default: "microsoft/fluentui"
+      branch:
+        description: "Branch to run the tests on"
+        required: true
+        default: "master"
+jobs:
+  run-monosize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{github.event.inputs.repo || 'microsoft/fluentui'}}
+          ref: ${{github.event.inputs.branch || 'master'}}
+      
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
+      
+      - name: "Install dependencies and build upto react-charting"
+        run: yarn && yarn buildto @fluentui/react-charting
+      
+      - name: Get latest commit SHA of input branch
+        run: |
+          git fetch origin ${{ github.event.inputs.branch || 'master' }}
+          echo "COMMIT_SHA=$(git rev-parse origin/${{ github.event.inputs.branch || 'master' }})" >> $GITHUB_ENV
+      
+      - name: "Run monosize on react-charting"
+        run: |
+          cd packages/react-charting
+          yarn monosize upload-report --branch=${{github.event.inputs.branch || 'master'}} --commit-sha=$COMMIT_SHA
