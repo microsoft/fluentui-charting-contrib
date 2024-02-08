@@ -236,14 +236,6 @@ jobs:
         with:
           repository: repo
           branch: test-coverage-artifacts
-      - name: "Run if changes have been detected"
-        if: steps.auto-commit-action.outputs.changes_detected == 'true'
-        run: echo "Changes!"
-    
-      - name: "Run if no changes have been detected"
-        if: steps.auto-commit-action.outputs.changes_detected == 'false'
-        run: echo "No Changes!"
-      
   
 
   build_and_deploy_job:
@@ -256,13 +248,8 @@ jobs:
           submodules: true
           lfs: false
           ref: test-coverage-artifacts
-      - name: Log output
-        run: |
-          echo "${{ needs.push_artifacts_to_repo.outputs.auto-commit-action.outputs.changes_detected}}"
-          echo "${{ needs.push_artifacts_to_repo.outputs.auto-commit-action.outputs.commit_hash}}"
 
       - name: Build And Deploy
-        if: ${{ needs.push_artifacts_to_repo.outputs.auto-commit-action.outputs.changes_detected == 'true'}}
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
