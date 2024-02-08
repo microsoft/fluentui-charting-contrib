@@ -236,7 +236,11 @@ jobs:
         with:
           repository: repo
           branch: test-coverage-artifacts
-          
+      - name: Log output
+        run: |
+          echo "${{ steps.auto-commit-action.outputs.changes_detected}}"
+          echo "${{ steps.auto-commit-action.outputs.commit_hash}}"
+  
 
   build_and_deploy_job:
     needs: [push_artifacts_to_repo]
@@ -250,11 +254,11 @@ jobs:
           ref: test-coverage-artifacts
       - name: Log output
         run: |
-          echo "${{ needs.push_artifacts_to_repo.outputs.auto-commit-action.changes_detected}}"
-          echo "${{ needs.push_artifacts_to_repo.outputs.auto-commit-action.commit_hash}}"
+          echo "${{ needs.push_artifacts_to_repo.outputs.auto-commit-action.outputs.changes_detected}}"
+          echo "${{ needs.push_artifacts_to_repo.outputs.auto-commit-action.outputs.commit_hash}}"
 
       - name: Build And Deploy
-        if: ${{ needs.push_artifacts_to_repo.outputs.auto-commit-action.changes_detected == 'true'}}
+        if: ${{ needs.push_artifacts_to_repo.outputs.auto-commit-action.outputs.changes_detected == 'true'}}
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
