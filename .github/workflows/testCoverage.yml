@@ -1,8 +1,5 @@
 name: "Test coverage"
 on:
-  push:
-    branches:
-      add-deployment-workflow-to-test-coverage-workflow
   schedule:
     - cron: "0 */8 * * *"
   workflow_dispatch:
@@ -26,8 +23,7 @@ jobs:
   run_tests:
     strategy:
       matrix:
-        os: [ ubuntu-latest ]
-        # os: [windows-latest, macos-latest, ubuntu-latest]
+        os: [windows-latest, macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     outputs:
       test_coverage: ${{ steps.run_tests.outputs }}
@@ -146,23 +142,23 @@ jobs:
           name: "ubuntu-latest"
           path: "./coverage/ubuntu-latest"
 
-      # - name: Download all artifacts to publish together
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: "macos-latest"
-      #     path: "./coverage/macos-latest"
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: "macos-latest"
+          path: "./coverage/macos-latest"
 
-      # - name: Download all artifacts to publish together
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: "windows-latest"
-      #     path: "./coverage/windows-latest"
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: "windows-latest"
+          path: "./coverage/windows-latest"
 
-      # - name: Download all artifacts to publish together
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: "coverage_VBC"
-      #     path: "./coverage/coverage_VBC"
+      - name: Download all artifacts to publish together
+        uses: actions/download-artifact@v4
+        with:
+          name: "coverage_VBC"
+          path: "./coverage/coverage_VBC"
 
       - name: Download all artifacts to publish together
         uses: actions/download-artifact@v4
