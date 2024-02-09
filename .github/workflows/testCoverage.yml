@@ -232,6 +232,7 @@ jobs:
           branch: test-coverage-artifacts
 
   build_and_deploy_job:
+    needs: push_artifacts_to_repo
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
