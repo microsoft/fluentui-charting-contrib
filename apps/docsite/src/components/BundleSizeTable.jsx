@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 
 const BundleSizeTable = () => {
     const [bundleSizeData, setBundleSizeData] = useState();
-    const [bundleSizeTable, setBundleSizeTable] = useState();
     const createTableFromJSON = (JSONData) => {
         JSONData.map((item, index) => {
             console.log(item)
@@ -37,7 +36,6 @@ const BundleSizeTable = () => {
                             <th>Name</th>
                             <th>MIN size</th>
                             <th>GZIP size</th>
-                            {/* Add more headings if needed */}
                         </tr>
                     </thead>
                     <tbody>
@@ -51,7 +49,7 @@ const BundleSizeTable = () => {
                     </tbody>
                 </table>
             ) : (
-                <p>Loading...</p>
+                <h4>Loading...</h4>
             )}
         </>
     )
