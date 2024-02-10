@@ -37,4 +37,4 @@ jobs:
       - name: "Run monosize on react-charting"
         run: |
           cd packages/react-charting
-          yarn monosize upload-report --branch=${{github.event.inputs.branch || 'master'}} --commit-sha=$COMMIT_SHA
+          yarn monosize measure
