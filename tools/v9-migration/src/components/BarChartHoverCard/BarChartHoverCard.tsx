@@ -1,6 +1,10 @@
 import {useBarChartHoverCardClasses} from './BarChartHoverCard.styles';
 import {BarChartHoverCardProps} from './BarChartHoverCard.types';
 import {getDayName, getHourlyTimeframe} from './BarChartHoverCard.utils';
+import { 
+    FluentProvider, 
+    webLightTheme
+  } from '@fluentui/react-components';
 
 export default function BarChartHoverCard(props: BarChartHoverCardProps) {
     const classes = useBarChartHoverCardClasses();
@@ -10,6 +14,7 @@ export default function BarChartHoverCard(props: BarChartHoverCardProps) {
         calloutData.xAxisCalloutData;
 
     return (
+        <FluentProvider theme={webLightTheme} > 
         <div className={classes.root}>
             <div className={classes.datetime}>
                 <div>{getDayName(calloutData.xAxisPoint)}</div>
@@ -29,5 +34,6 @@ export default function BarChartHoverCard(props: BarChartHoverCardProps) {
                 </div>
             </div>
         </div>
+        </FluentProvider>
     );
 }
