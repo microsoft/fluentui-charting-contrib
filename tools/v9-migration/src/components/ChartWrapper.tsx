@@ -18,6 +18,7 @@ import { SparklineChartBasicExample } from './SparklineChart.Basic.Example';
 import { TreeChartThreeLayerExample } from './TreeChart.ThreeLayer.Example';
 import { GaugeChartBasicExample } from './GaugeChart.Basic.Example';
 import * as d3Color from 'd3-color';
+import { VerticalStackedBarChartToBeFixedExample } from './VerticalStackedBarChart.V9ToBeFixed.Example';
 
 
 export function ChartWrapper() {
@@ -56,6 +57,9 @@ export function ChartWrapper() {
       <SparklineChartBasicExample/>
       <Divider appearance='brand'>Gauge Chart<br/></Divider><br/>
       <GaugeChartBasicExample/>
+      <Divider appearance='brand'>Vertical StackedBar Chart (to be fixed)<br/></Divider><br/>
+      <VerticalStackedBarChartToBeFixedExample/>
+      <Divider appearance='brand'/><br/>
     </div>
     </ThemeProvider>
     );
