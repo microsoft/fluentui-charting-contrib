@@ -20,7 +20,7 @@ interface IVerticalStackedBarState {
   margins: {};
 }
 
-export class VerticalStackedBarChartToBeFixedExample extends React.Component<{}, IVerticalStackedBarState> {
+export class VerticalStackedBarChartCustomV9HoverCard extends React.Component<{}, IVerticalStackedBarState> {
   constructor(props: IVerticalStackedChartProps) {
     super(props);
     this.state = {
@@ -270,7 +270,6 @@ export class VerticalStackedBarChartToBeFixedExample extends React.Component<{},
           onChange={e => this.setState({ barGapMax: +e.target.value })}
           aria-valuetext={`ChangebarGapMaxSlider${this.state.barGapMax}`}
         />
-        <BarChartHoverCard calloutData={data[0]} />
         {this.state.showAxisTitles && (        
           <div style={rootStyle}>
             <VerticalStackedBarChart
