@@ -229,7 +229,7 @@ jobs:
           cd repo
           ls
         continue-on-error: true
-        
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           repository: repo
@@ -246,6 +246,7 @@ jobs:
         with:
           node-version: 18
           cache: yarn
+          cache-dependency-path: ./repo/yarn.lock
       - name: List files in docs
         run: cd docs && ls -a
       - name: Install dependencies
