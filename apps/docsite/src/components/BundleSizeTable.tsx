@@ -14,7 +14,7 @@ const BundleSizeTable = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://raw.githubusercontent.com/Shubhabrata08/fluentui/add-monosize-measure-json/packages/react-charting/monosize.json"
+          "https://raw.githubusercontent.com/microsoft/fluentui-charting-contrib/test-coverage-artifacts/bundle-size/monosize.json"
         )
         if (!response) {
           throw new Error("Invalid response");
