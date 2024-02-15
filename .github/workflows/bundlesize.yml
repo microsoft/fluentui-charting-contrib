@@ -30,6 +30,7 @@ jobs:
         with:
           node-version: 18
           cache: yarn
+          cache-dependency-path: ./repo/yarn.lock
       
       - name: "Install dependencies and build upto react-charting"
         run: |
