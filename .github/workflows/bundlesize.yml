@@ -53,7 +53,7 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          repository: 'microsoft/fluentui-charting-contrib'
+          repository: 'Shubhabrata08/fluentui-charting-contrib'
           ref: 'test-coverage-artifacts'
           path: contrib-repo
 
