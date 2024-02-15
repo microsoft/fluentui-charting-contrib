@@ -3,8 +3,6 @@ on:
   schedule:
     - cron: "30 3 * * *"
   # "30 3 * * *" --> Every day at 3:30 AM UTC --> Every day at  9:00 AM IST    
-  push:
-    branches: run-monosize-ci
   workflow_dispatch:
     inputs:
       repo:
