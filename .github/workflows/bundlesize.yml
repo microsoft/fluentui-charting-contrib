@@ -1,5 +1,8 @@
 name: "Generate bundle-size for react charting"
 on:
+  schedule:
+    - cron: "30 3 * * *"
+  # "30 3 * * *" --> Every day at 3:30 AM UTC --> Every day at  9:00 AM IST    
   push:
     branches: run-monosize-ci
   workflow_dispatch:
@@ -20,6 +23,8 @@ jobs:
         with:
           repository: ${{github.event.inputs.repo || 'microsoft/fluentui'}}
           ref: ${{github.event.inputs.branch || 'master'}}
+          path: repo
+          
       
       - uses: actions/setup-node@v3
         with:
@@ -27,14 +32,45 @@ jobs:
           cache: yarn
       
       - name: "Install dependencies and build upto react-charting"
-        run: yarn && yarn buildto @fluentui/react-charting
+        run: |
+          cd repo
+          yarn && yarn buildto @fluentui/react-charting
       
       - name: Get latest commit SHA of input branch
         run: |
+          cd repo 
           git fetch origin ${{ github.event.inputs.branch || 'master' }}
           echo "COMMIT_SHA=$(git rev-parse origin/${{ github.event.inputs.branch || 'master' }})" >> $GITHUB_ENV
       
       - name: "Run monosize on react-charting"
         run: |
-          cd packages/react-charting
+          cd repo/packages/react-charting
           yarn monosize measure
+          mv -f ./dist/bundle-size/monosize.json ./../../../
+          cd ./../../../
+          rm -rf ./repo
+
+      - uses: actions/checkout@v4
+        with:
+          repository: 'microsoft/fluentui-charting-contrib'
+          ref: 'test-coverage-artifacts'
+          path: contrib-repo
+
+      - name: Move new bundle-size to folder and clear old folder
+        run: |
+          cd ./contrib-repo
+          if [ -d bundle-size ]; then
+            rm -rf ./bundle-size
+          fi
+          mkdir bundle-size
+          cd ..
+          mv -f ./monosize.json ./contrib-repo/bundle-size/
+          cd contrib-repo/bundle-size
+          ls -a
+
+      - name: Push bundle-size to branch
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: contrib-repo
+          branch: test-coverage-artifacts
+          commit_message: Scheduled bundle-size changes push

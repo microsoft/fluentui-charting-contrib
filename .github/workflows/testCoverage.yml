@@ -219,13 +219,17 @@ jobs:
       - name: Move coverage JSONs to root
         run: | 
           mv -f ./repo/.github ./
+          mv -f ./repo/bundle-size ./
           cd repo
           rm -rf ./*
           cd ..
           mv -f ./.github ./repo/
+          mv -f ./bundle-size ./repo/
           mv -f ./coverage/* ./repo/
           cd repo
           ls
+        continue-on-error: true
+        
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           repository: repo
