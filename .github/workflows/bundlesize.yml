@@ -37,12 +37,6 @@ jobs:
           cd repo
           yarn && yarn buildto @fluentui/react-charting
       
-      - name: Get latest commit SHA of input branch
-        run: |
-          cd repo 
-          git fetch origin ${{ github.event.inputs.branch || 'master' }}
-          echo "COMMIT_SHA=$(git rev-parse origin/${{ github.event.inputs.branch || 'master' }})" >> $GITHUB_ENV
-      
       - name: "Run monosize on react-charting"
         run: |
           cd repo/packages/react-charting
