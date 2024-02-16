@@ -40,6 +40,7 @@ const sidebars: SidebarsConfig = {
     'implementing-2-to-1-spacing',
     'creating-date-objects-for-chart-data',
     'Testing Strategy',
+    'TestCoverage',
     {
       type:'category',
       label:'Test Plans',
