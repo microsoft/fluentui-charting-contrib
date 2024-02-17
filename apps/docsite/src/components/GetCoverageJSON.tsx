@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-interface GetCoverageJSONProps{
-    OS:string
+interface GetCoverageJSONProps {
+  OS: string;
 }
-const GetCoverageJSON: React.FC<GetCoverageJSONProps> = ({OS}) => {
+const GetCoverageJSON: React.FC<GetCoverageJSONProps> = ({ OS }) => {
   const [coverage, setCoverage] = useState<number | undefined>();
   const [errorState, setErrorState] = useState<Error | undefined>();
 
@@ -11,7 +11,8 @@ const GetCoverageJSON: React.FC<GetCoverageJSONProps> = ({OS}) => {
     const fetchData = async () => {
       try {
         const data = await fetch(
-          "https://proud-island-067885010.4.azurestaticapps.net/windowsCoverage.json"
+          `https://raw.githubusercontent.com/microsoft/fluentui-charting-contrib/test-coverage-artifacts/${OS.toLowerCase()}Coverage.json`,
+          { mode: "cors" }
         ).then((res) => res.json());
         if (!data) {
           throw new Error("Invalid response");
@@ -32,7 +33,6 @@ const GetCoverageJSON: React.FC<GetCoverageJSONProps> = ({OS}) => {
       />
     );
   }
-  console.log
   return (
     <div>
       {coverage && (
