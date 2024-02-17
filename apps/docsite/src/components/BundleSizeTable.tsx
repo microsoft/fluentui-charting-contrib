@@ -14,7 +14,8 @@ const BundleSizeTable = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://raw.githubusercontent.com/microsoft/fluentui-charting-contrib/test-coverage-artifacts/bundle-size/monosize.json"
+          "https://raw.githubusercontent.com/microsoft/fluentui-charting-contrib/test-coverage-artifacts/bundle-size/monosize.json",
+          { mode: "cors" }
         )
         if (!response) {
           throw new Error("Invalid response");
