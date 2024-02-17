@@ -5,7 +5,7 @@ Go through it to analyze if your code is validated through test automations.
 
 import GetCoverageJSON from "../apps/docsite/src/components/GetCoverageJSON.tsx"
 
-| OS | Link | Status |
+| OS | Link to report | Status |
 |----|------|--------|
 | Code coverage for Windows | [Code Coverage Report](https://proud-island-067885010.4.azurestaticapps.net/windows-latest/index.html) | <GetCoverageJSON OS="Windows"/> |
 | Code coverage for Ubuntu | [Code Coverage Report](https://proud-island-067885010.4.azurestaticapps.net/ubuntu-latest/index.html) | <GetCoverageJSON OS="Ubuntu"/>  |
