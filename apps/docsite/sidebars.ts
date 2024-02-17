@@ -52,6 +52,7 @@ const sidebars: SidebarsConfig = {
       ]
     },
     'Testing Unpublished Library Version',
+    'BundleSize'
   ],
    
 };
