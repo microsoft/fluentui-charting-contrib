@@ -4,11 +4,11 @@ import {
   IVerticalStackedChartProps,
   VerticalStackedBarChart,
   ILineChartLineOptions,
+  IVerticalStackedBarChartProps
 } from '@fluentui/react-charting';
-import { DefaultPalette } from '@fluentui/react/lib/Styling';
-import { Checkbox } from '@fluentui/react/lib/Checkbox';
-import { Toggle } from '@fluentui/react/lib/Toggle';
+import { DefaultPalette, IStyle, DefaultFontStyles } from '@fluentui/react/lib/Styling';
 import BarChartHoverCard from './BarChartHoverCard/BarChartHoverCard';
+import {tokens} from '@fluentui/react-components';
 
 interface IVerticalStackedBarState {
   width: number;
@@ -236,6 +236,34 @@ export class VerticalStackedBarChartCustomV9HoverCard extends React.Component<{}
 
     const lineOptions: ILineChartLineOptions = { lineBorderWidth: '2' };
 
+    const textStyle: IStyle = {
+      fill: tokens.colorPalettePeachBorderActive,
+      fontSize: '10px',
+      lineHeight: '14px',
+    };
+
+    const customStyles: IVerticalStackedBarChartProps['styles'] = () => {
+      return {
+        xAxis: {
+          selectors: {
+            text: { fill: tokens.colorPaletteGreenForeground1, fontSize: tokens.fontSizeBase200 },
+          },
+        },
+        yAxis: {
+          selectors: {
+            text: { fill: tokens.colorPaletteRedForeground2, fontSize: tokens.fontSizeBase300 },
+          },
+        },
+        chartLabel: {
+          color: DefaultPalette.blueMid,
+          ...DefaultFontStyles.large,
+        },
+        xAxisText: {
+          ...textStyle,
+        },
+      };
+    };
+
     const rootStyle = { width: `${this.state.width}px`, height: `${this.state.height}px` };
 
     return (
@@ -281,6 +309,7 @@ export class VerticalStackedBarChartCustomV9HoverCard extends React.Component<{}
               width={this.state.width}
               margins={this.state.margins}
               lineOptions={lineOptions}
+              styles={customStyles}
               legendProps={{
                 allowFocusOnLegends: true,
               }}

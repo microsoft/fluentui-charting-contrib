@@ -3,7 +3,7 @@ import {ThemeProvider} from '@fluentui/react'
 import { ThemeContext_unstable as V9ThemeContext } from "@fluentui/react-shared-contexts";
 import React from 'react';
 import { Theme, BrandVariants, webLightTheme } from '@fluentui/react-components';
-import { DonutChart, IDonutChartProps, IChartProps, IChartDataPoint } from '@fluentui/react-charting';
+import { DonutChart, IChartProps } from '@fluentui/react-charting';
 import * as d3Color from 'd3-color';
 
 const brandInvariant: BrandVariants = { 
@@ -26,7 +26,7 @@ const brandInvariant: BrandVariants = {
 };
 
 const data: IChartProps = {
-  chartTitle: 'Donut chart dynamic example',
+  chartTitle: 'Donut chart fluent v9 example',
   chartData: [
     { legend: 'first', data: 40, color: '#0099BC' },
     { legend: 'second', data: 20, color: '#77004D' },
