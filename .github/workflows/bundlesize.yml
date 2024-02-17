@@ -6,11 +6,11 @@ on:
   workflow_dispatch:
     inputs:
       repo:
-        description: "Repo to run the tests on"
+        description: "Repo to run monosize on"
         required: true
         default: "microsoft/fluentui"
       branch:
-        description: "Branch to run the tests on"
+        description: "Branch to run monosize on"
         required: true
         default: "master"
 jobs:
