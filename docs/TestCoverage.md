@@ -7,6 +7,6 @@ import GetCoverageJSON from "../apps/docsite/src/components/GetCoverageJSON.tsx"
 
 | OS | Link | Status |
 |----|------|--------|
-| Code coverage for Windows | https://proud-island-067885010.4.azurestaticapps.net/windows-latest/index.html | <GetCoverageJSON OS="Windows"/> |
-| Code coverage for Ubuntu | https://proud-island-067885010.4.azurestaticapps.net/ubuntu-latest/index.html | <GetCoverageJSON OS="Ubuntu"/>  |
-| Code coverage for MacOS | https://proud-island-067885010.4.azurestaticapps.net/macos-latest/index.html | <GetCoverageJSON OS="MacOS"/> |
+| Code coverage for Windows | [Code Coverage Report](https://proud-island-067885010.4.azurestaticapps.net/windows-latest/index.html) | <GetCoverageJSON OS="Windows"/> |
+| Code coverage for Ubuntu | [Code Coverage Report](https://proud-island-067885010.4.azurestaticapps.net/ubuntu-latest/index.html) | <GetCoverageJSON OS="Ubuntu"/>  |
+| Code coverage for MacOS | [Code Coverage Report](https://proud-island-067885010.4.azurestaticapps.net/macos-latest/index.html) | <GetCoverageJSON OS="MacOS"/> |
