@@ -20,6 +20,7 @@ const fetchChangelog = async () => {
             throwError
           );
         });
+        fs.appendFile(minorVersion + ".md", "\n", throwError);
       }
       if ("minor" in item.comments) {
         fs.appendFile(minorVersion + ".md", "### Minor Changes\n\n", throwError);
@@ -30,6 +31,7 @@ const fetchChangelog = async () => {
             throwError
           );
         });
+        fs.appendFile(minorVersion + ".md", "\n", throwError);
       }
       if ("patch" in item.comments) {
         fs.appendFile(minorVersion + ".md", "### Patches\n\n", throwError);
@@ -40,6 +42,7 @@ const fetchChangelog = async () => {
             throwError
           );
         });
+        fs.appendFile(minorVersion + ".md", "\n", throwError);
       }
       // if("none" in item.comments){
       //   item.comments.none.map((noneItem,noneIndex)=>{
