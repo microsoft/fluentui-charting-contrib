@@ -12,37 +12,37 @@ const fetchChangelog = async () => {
       console.log(versionSplit);
       const minorVersion = versionSplit[0] + "." + versionSplit[1];
       if ("major" in item.comments) {
-        fs.appendFile(minorVersion + ".md", "### Major Changes\n\n", throwError);
+        fs.appendFileSync(minorVersion + ".md", "### Major Changes\n\n", throwError);
         item.comments.major.map((majorItem, majorIndex) => {
-          fs.appendFile(
+          fs.appendFileSync(
             minorVersion + ".md",
             "- " + majorItem.comment + "\n",
             throwError
           );
         });
-        fs.appendFile(minorVersion + ".md", "\n", throwError);
+        fs.appendFileSync(minorVersion + ".md", "\n", throwError);
       }
       if ("minor" in item.comments) {
-        fs.appendFile(minorVersion + ".md", "### Minor Changes\n\n", throwError);
+        fs.appendFileSync(minorVersion + ".md", "### Minor Changes\n\n", throwError);
         item.comments.minor.map((minorItem, minorIndex) => {
-          fs.appendFile(
+          fs.appendFileSync(
             minorVersion + ".md",
             "- " + minorItem.comment + "\n",
             throwError
           );
         });
-        fs.appendFile(minorVersion + ".md", "\n", throwError);
+        fs.appendFileSync(minorVersion + ".md", "\n", throwError);
       }
       if ("patch" in item.comments) {
-        fs.appendFile(minorVersion + ".md", "### Patches\n\n", throwError);
+        fs.appendFileSync(minorVersion + ".md", "### Patches\n\n", throwError);
         item.comments.patch.map((patchItem, patchIndex) => {
-          fs.appendFile(
+          fs.appendFileSync(
             minorVersion + ".md",
             "- " + patchItem.comment + "\n",
             throwError
           );
         });
-        fs.appendFile(minorVersion + ".md", "\n", throwError);
+        fs.appendFileSync(minorVersion + ".md", "\n", throwError);
       }
       // if("none" in item.comments){
       //   item.comments.none.map((noneItem,noneIndex)=>{
