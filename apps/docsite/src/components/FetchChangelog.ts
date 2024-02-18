@@ -17,11 +17,16 @@ const fetchChangelog = async () => {
           `\n## [${item.version}](https://github.com/microsoft/fluentui/tree/@fluentui/react-charting_v${item.version})\n\n`,
           throwError
         );
+        fs.appendFileSync(
+          minorVersion + ".md",
+          `\n${item.date}\n[Compare Changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-charting_v${data.entries[index+1].tag}..@fluentui/react-charting_v${item.version})\n`,
+          throwError
+        );
       }
       if ("major" in item.comments) {
         fs.appendFileSync(
           minorVersion + ".md",
-          "### Major Changes\n\n",
+          "\n### Major Changes\n\n",
           throwError
         );
         item.comments.major.map((majorItem, majorIndex) => {
@@ -36,7 +41,7 @@ const fetchChangelog = async () => {
       if ("minor" in item.comments) {
         fs.appendFileSync(
           minorVersion + ".md",
-          "### Minor Changes\n\n",
+          "\n### Minor Changes\n\n",
           throwError
         );
         item.comments.minor.map((minorItem, minorIndex) => {
@@ -49,7 +54,7 @@ const fetchChangelog = async () => {
         fs.appendFileSync(minorVersion + ".md", "\n", throwError);
       }
       if ("patch" in item.comments) {
-        fs.appendFileSync(minorVersion + ".md", "### Patches\n\n", throwError);
+        fs.appendFileSync(minorVersion + ".md", "\n### Patches\n\n", throwError);
         item.comments.patch.map((patchItem, patchIndex) => {
           fs.appendFileSync(
             minorVersion + ".md",
