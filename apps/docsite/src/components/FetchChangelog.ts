@@ -11,6 +11,7 @@ const fetchChangelog = async () => {
       let versionSplit = item.version.split(".");
       console.log(versionSplit);
       const minorVersion = versionSplit[0] + "." + versionSplit[1];
+      fs.appendFileSync(minorVersion + ".md",`\n## [${item.version}](https://github.com/microsoft/fluentui/tree/@fluentui/react-charting_v${item.version})\n\n`, throwError)
       if ("major" in item.comments) {
         fs.appendFileSync(minorVersion + ".md", "### Major Changes\n\n", throwError);
         item.comments.major.map((majorItem, majorIndex) => {
