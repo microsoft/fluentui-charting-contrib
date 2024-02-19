@@ -46,7 +46,7 @@ const splitLog = () => {
   for (let i = 0; i < versionToLineMapping.length - 1; i++) {
     for(let j=versionToLineMapping[i].startLine;j<versionToLineMapping[i+1].startLine;j++)
     {
-        fs.appendFileSync(versionToLineMapping[i].version+".md",lines[j]+"\n");
+        fs.appendFileSync("dist/"+versionToLineMapping[i].version+".md",lines[j]+"\n");
     }
   }
 };
