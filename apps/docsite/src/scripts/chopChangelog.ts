@@ -1,12 +1,27 @@
 const fs = require("fs");
+
 const getVersionSplit = (line) => {
   const versionString = line.substring(4, line.lastIndexOf("]"));
   return versionString.split(".");
 };
-const splitLog = () => {
-  const data = fs.readFileSync("./CHANGELOG.md", "utf8");
+
+const createFreshDirectory = (directoryPath) => {
+  try {
+    if (fs.existsSync(directoryPath)) {
+      fs.rmSync(directoryPath+"/*",{ force:true })
+    }
+    fs.mkdirSync(directoryPath, { recursive: true });
+  } catch (err) {
+    console.error("Error :", err.message);
+  }
+};
+
+const splitLog = async() => {
+  const data = await fetch("https://raw.githubusercontent.com/microsoft/fluentui/master/packages/react-charting/CHANGELOG.md").then(res=>res.text()).catch((err)=>{
+    console.error("Fetch error:",err.message)
+    throw new Error(err.message)
+  });
   const lines = data.split("\n");
-  console.log(lines[5]);
   var currentVersion = "";
   var startChop = false;
   var versionToLineMapping = [];
@@ -21,7 +36,6 @@ const splitLog = () => {
           const minorVersion = versionSplit[0] + "." + versionSplit[1];
           if (currentVersion != minorVersion) {
             currentVersion = minorVersion;
-            // console.log(currentVersion,index)
             versionToLineMapping.push({
               version: currentVersion,
               startLine: index,
@@ -35,7 +49,6 @@ const splitLog = () => {
               version: currentVersion,
               startLine: index,
             });
-            // console.log(currentVersion,index)
           }
           return false;
         }
@@ -43,6 +56,9 @@ const splitLog = () => {
     }
     return true;
   });
+
+  createFreshDirectory("dist")
+
   for (let i = 0; i < versionToLineMapping.length - 1; i++) {
     for(let j=versionToLineMapping[i].startLine;j<versionToLineMapping[i+1].startLine;j++)
     {
@@ -50,4 +66,5 @@ const splitLog = () => {
     }
   }
 };
+
 splitLog();
