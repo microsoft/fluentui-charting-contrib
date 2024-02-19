@@ -9,7 +9,8 @@ const splitLog=()=>{
     console.log(lines[5])
     var currentVersion="";
     var startChop=false
-    lines.forEach((line,index) => {
+    var versionToLineMapping=[]
+    lines.every((line,index) => {
         if(line.startsWith("<!-- Start content -->"))
         {
             startChop=true
@@ -18,19 +19,32 @@ const splitLog=()=>{
 
             if(line.startsWith("## ["))
             {
-                // console.log(line)
                 const versionSplit=getVersionSplit(line)
                 if(versionSplit[0]==='5'){
                     const minorVersion=versionSplit[0]+'.'+versionSplit[1];
                     if(currentVersion!=minorVersion)
                     {
                         currentVersion=minorVersion
-                        console.log(currentVersion,index)
+                        // console.log(currentVersion,index)
+                        versionToLineMapping.push({version:currentVersion,startLine:index})
                     }
+                }
+                else if(versionSplit[0]==='4')
+                {
+                    const minorVersion=versionSplit[0]+'.'+versionSplit[1];
+                    if(currentVersion!=minorVersion)
+                    {
+                        currentVersion=minorVersion
+                        versionToLineMapping.push({version:currentVersion,startLine:index})
+                        // console.log(currentVersion,index)
+                    }
+                    return false;
                 }
             }
         }
+        return true;
     });
+    console.log(versionToLineMapping);
 
 }
 splitLog();
