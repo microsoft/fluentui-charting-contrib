@@ -1,0 +1,36 @@
+name: Split master CHANGELOG.md to each minor version
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"
+
+  push:
+    branches: automate-changelog-doc-generation
+
+permissions:
+  contents: write
+
+jobs:
+  split_changelog:
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Setup NodeJS"
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
+    
+    - name: "Checkout fluentui-charting-contrib"
+      uses: actions/checkout@v4
+      with:
+        path: "repo"
+        
+    - name: "Create Splits of CHANGELOG and move to docs"
+      run: |
+        node ./repo/apps/docsite/src/scripts/splitChangelog.ts
+        cd ./repo/docs
+        rm -rf ./changelogSplits
+        mkdir ./changelogSplits
+        mv -f ./../../dist/* ./changelogSplits
+
+            
+
