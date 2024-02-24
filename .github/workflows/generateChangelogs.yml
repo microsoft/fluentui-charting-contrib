@@ -32,5 +32,11 @@ jobs:
         mkdir ./changelogSplits
         mv -f ./../../dist/* ./changelogSplits
 
-            
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v6
+      with:
+        commit-message: Updating changelogs
+        delete-branch: true
+        branch: update-changelog
+        branch-suffix: short-commit-hash
 
