@@ -23,7 +23,11 @@ jobs:
       uses: actions/checkout@v4
       with:
         path: "repo"
-        
+    
+    - name: Check git config
+      run: |
+        cd ./repo
+        git remote -v
     - name: "Create Splits of CHANGELOG and move to docs"
       run: |
         node ./repo/apps/docsite/src/scripts/splitChangelog.ts
