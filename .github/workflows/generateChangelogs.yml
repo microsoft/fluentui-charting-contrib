@@ -37,5 +37,6 @@ jobs:
       with:
         commit-message: Updating changelogs
         delete-branch: true
+        path: ./repo
         branch: update-changelog
         branch-suffix: short-commit-hash
