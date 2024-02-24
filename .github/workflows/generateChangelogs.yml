@@ -45,3 +45,5 @@ jobs:
         path: ./repo
         branch: update-changelog
         branch-suffix: short-commit-hash
+        title: Automated update of CHANGELOG.md
+        body: This PR adds updates to the docsite CHANGELOG
