@@ -4,9 +4,6 @@ on:
   schedule:
     - cron: "0 0 * * 1"
 
-  push:
-    branches: automate-changelog-doc-generation
-
 permissions:
   contents: write
   pull-requests: write
