@@ -38,7 +38,9 @@ jobs:
 
     - name: Get current timestamp
       id: timestamp
-      run: echo "::set-output name=timestamp::$(date +%Y%m%d%H%M%S)"
+      run: |
+        echo "::set-output name=timestamp::$(date +%Y%m%d%H%M%S)"
+        echo "::set-output name=displayTimestamp::$(date +%Y-%m-%d\ %H:%M:%S)"
     
     - name: Commit changes to repo
       uses: stefanzweifel/git-auto-commit-action@v5
@@ -46,3 +48,4 @@ jobs:
         repository: repo
         branch: changelog-${{ steps.timestamp.outputs.timestamp }}
         create_branch: true
+        commit_message: Changelog update on ${{ steps.timestamp.outputs.displayTimestamp }}
