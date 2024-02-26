@@ -64,8 +64,8 @@ const splitLog = async() => {
     for(let j=versionToLineMapping[i].startLine;j<versionToLineMapping[i+1].startLine;j++)
     {
         fs.appendFileSync("dist/"+versionToLineMapping[i].version+".md",lines[j]+"\n");
-        changelogOrder.push(versionToLineMapping[i].version)
     }
+    changelogOrder.push("changelogSplits/"+versionToLineMapping[i].version)
   }
   const changelogJSON={
     "changelogOrder":changelogOrder
