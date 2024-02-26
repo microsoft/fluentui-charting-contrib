@@ -37,7 +37,7 @@ const GetCoverageJSON: React.FC<GetCoverageJSONProps> = ({ OS }) => {
     <div>
       {coverage && (
         <img
-          src={`https://img.shields.io/badge/${OS}-${coverage}-darkgreen`}
+          src={`https://img.shields.io/badge/Coverage-${coverage}%25-darkgreen`}
           alt="Test Coverage Badge"
         />
       )}
