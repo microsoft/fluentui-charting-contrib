@@ -1,5 +1,5 @@
 import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
-import * as changelog from "../../docs/changelogSplits/changelogOrder.json";
+import changelog from "../../docs/changelogSplits/changelogOrder.json";
 /**
  * Creating a sidebar enables you to:
  - create an ordered group of docs
