@@ -23,6 +23,7 @@ const splitLog = async() => {
   });
   const lines = data.split("\n");
   var currentVersion = "";
+  var changelogOrder=[]
   var startChop = false;
   var versionToLineMapping = [];
   lines.every((line, index) => {
@@ -63,8 +64,13 @@ const splitLog = async() => {
     for(let j=versionToLineMapping[i].startLine;j<versionToLineMapping[i+1].startLine;j++)
     {
         fs.appendFileSync("dist/"+versionToLineMapping[i].version+".md",lines[j]+"\n");
+        changelogOrder.push(versionToLineMapping[i].version)
     }
   }
+  const changelogJSON={
+    "changelogOrder":changelogOrder
+  }
+  fs.writeFileSync("dist/changelogOrder.json",JSON.stringify(changelogJSON))
 };
 
 splitLog();
