@@ -72,7 +72,7 @@ const config: Config = {
       title: "FluentUI Charting",
       logo: {
         alt: "FluentUI Charting Logo",
-        src: "img/logo.svg",
+        src: "img/microsoft.png",
       },
       items: [
         {
