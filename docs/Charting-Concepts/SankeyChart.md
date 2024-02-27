@@ -1,4 +1,4 @@
-# Contributor Guide: Sankey Chart
+# Sankey Chart
 
 Sankey charts are a type of data visualization that are particularly useful for showing the flow of resources, energy, or information through a system. They are characterized by their flowing, interconnected arrows that represent the quantity or value of something as it moves from one stage or category to another.
 

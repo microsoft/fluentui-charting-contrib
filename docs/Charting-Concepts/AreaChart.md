@@ -1,4 +1,4 @@
-# Contributor guide: Area Chart
+# Area Chart
 
 ![Areachartpic1.png](../assets/images/Areachartpic1.png)
 

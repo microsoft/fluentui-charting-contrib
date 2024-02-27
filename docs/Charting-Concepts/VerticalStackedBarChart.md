@@ -1,4 +1,4 @@
-# Contributor guide: Vertical Stacked Bar Chart
+# Vertical Stacked Bar Chart
 
 ![VerticalStackedBarChart1.png](../assets/images/VSBC1.png)
 

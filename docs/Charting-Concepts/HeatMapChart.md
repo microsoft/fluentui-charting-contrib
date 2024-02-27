@@ -1,4 +1,4 @@
-# Contributor guide: Heatmap Chart
+# Heatmap Chart
 
 A heatmap chart is a type of data visualization that represents data values as colors in a grid of rectangles. Each cell's color intensity corresponds to the value it represents, making it easy to spot patterns and variations in the data.
 
