@@ -40,21 +40,26 @@ export default function Home(): JSX.Element {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-        <div className="container headerImage" >
-          <img src={require("@site/static/img/img_header.png").default}/>
-        </div>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to={`/docs/${sidebars.tutorialSidebar[0]}`}
-          >
-            Getting Started 🚈
-          </Link>
-        </div>
+      <div className="container headerImage">
+        <img src={require("@site/static/img/img_header.png").default} />
+      </div>
+      <div className={styles.buttons}>
+        <Link
+          className="button button--secondary button--lg"
+          to={`/docs/${sidebars.tutorialSidebar[0]}`}
+        >
+          Getting Started 🚈
+        </Link>
+      </div>
       {/* <HomepageHeader /> */}
       <main>
         <HomepageFeatures />
       </main>
+      {/* <footer>
+        <div className={`container  ${styles.footer}`}>
+          <img src={require("@site/static/img/img_footer.png").default} className={styles.footerImage} />
+        </div>
+      </footer> */}
     </Layout>
   );
 }

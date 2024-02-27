@@ -89,7 +89,10 @@ const config: Config = {
       ],
     },
     footer: {
-      style: "dark",
+      // style: "dark",
+      logo:{
+        src:"img/microsoft.png"
+      },
       links: [
         {
           title: "Docs",
