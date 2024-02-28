@@ -20,7 +20,7 @@ export default function Home(): JSX.Element {
     <>
       <Layout
         title={`${siteConfig.title}`}
-        description="Description will go into a meta tag in <head />"
+        description="FluentUI Charting Docsite"
       >
         <HeaderBanner/>
         <main>
