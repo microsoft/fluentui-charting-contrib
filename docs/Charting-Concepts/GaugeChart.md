@@ -1,4 +1,4 @@
-# Contributor guide: Gauge Chart
+# Gauge Chart
 
 Gauge chart measures the progress of a metric against its target and its primary components are a speedometer and a needle. The speedometer usually consists of color-coded segments progressing value from left to right.
 

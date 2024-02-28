@@ -1,4 +1,4 @@
-# Contributor guide: Line Chart 
+# Line Chart 
 
 Line charts are a versatile type of graph used to visualize data trends over time. They are commonly used in various fields and industries for different purposes.  
 

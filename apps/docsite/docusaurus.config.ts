@@ -3,6 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import sidebars from "./sidebars";
 
 const config: Config = {
   title: "FluentUI Charting Contrib Docsite",
@@ -67,12 +68,12 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/fluent-charting-social-card.jpg",
     navbar: {
       title: "FluentUI Charting",
       logo: {
         alt: "FluentUI Charting Logo",
-        src: "img/logo.svg",
+        src: "img/microsoft.png",
       },
       items: [
         {
@@ -89,14 +90,17 @@ const config: Config = {
       ],
     },
     footer: {
-      style: "dark",
+      // style: "dark",
+      logo:{
+        src:"img/microsoft.png"
+      },
       links: [
         {
           title: "Docs",
           items: [
             {
               label: "Docs",
-              to: "/docs/Fluent-React-Charting",
+              to: `/docs/${sidebars.tutorialSidebar[0]}`,
             },
           ],
         },

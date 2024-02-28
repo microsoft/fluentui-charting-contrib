@@ -1,4 +1,4 @@
-# Contributor guide: Sparkline Chart
+# Sparkline Chart
 
 ![Sparkline1.png](../assets/images/Sparkline1.png)
 

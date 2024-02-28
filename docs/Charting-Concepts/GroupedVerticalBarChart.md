@@ -1,4 +1,4 @@
-# Contributor guide: Grouped Vertical Bar Chart
+# Grouped Vertical Bar Chart
 
 ![GroupedVerticalBarChart1.png](../assets/images/GVBC1.png)
 

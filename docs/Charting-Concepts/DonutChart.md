@@ -1,4 +1,4 @@
-# Contributor guide: Donut Chart
+# Donut Chart
 
 ![DonutChart1.png](../assets/images/DonutChart1.png)
 
