@@ -11,14 +11,6 @@ const HeaderBanner = ():JSX.Element => {
       <div className={`container ${styles.headerImageContainer}`}>
         <img className={styles.headerImage} src={require("@site/static/img/img_header.png").default} />
       </div>
-      <div className={styles.buttons}>
-        <Link
-          className="button button--secondary button--lg"
-          to={`/docs/${sidebars.tutorialSidebar[0]}`}
-        >
-          Getting Started 🚈
-        </Link>
-      </div>
     </>
   );
 };
