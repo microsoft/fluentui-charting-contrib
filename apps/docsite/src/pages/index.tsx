@@ -41,7 +41,7 @@ export default function Home(): JSX.Element {
         title={`${siteConfig.title}`}
         description="Description will go into a meta tag in <head />"
       >
-        <div className="container headerImage">
+        <div className={`container ${styles.headerImage}`}>
           <img src={require("@site/static/img/img_header.png").default} />
         </div>
         <div className={styles.buttons}>

@@ -3,6 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import sidebars from "./sidebars";
 
 const config: Config = {
   title: "FluentUI Charting Contrib Docsite",
@@ -87,6 +88,46 @@ const config: Config = {
           position: "right",
         },
       ],
+    },
+    footer: {
+      // style: "dark",
+      logo:{
+        src:"img/microsoft.png"
+      },
+      links: [
+        {
+          title: "Docs",
+          items: [
+            {
+              label: "Docs",
+              to: `/docs/${sidebars.tutorialSidebar[0]}`,
+            },
+          ],
+        },
+        {
+          title: "FluentUI",
+          items: [
+            {
+              label: "Public Developer Docsite",
+              href: "https://aka.ms/fluentcharting",
+            },
+            {
+              label: "Github",
+              href: "https://github.com/microsoft/fluentui",
+            },
+          ],
+        },
+        {
+          title: "FluentUI Charting Contrib",
+          items: [
+            {
+              label: "GitHub",
+              href: "https://github.com/microsoft/fluentui-charting-contrib",
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Microsoft`,
     },
     prism: {
       theme: prismThemes.github,
