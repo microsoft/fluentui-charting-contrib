@@ -25,5 +25,14 @@
   height: 100vh;
   background:linear-gradient(90deg,rgba(255, 203, 231, 0.4),rgba(199, 199, 237, 0.4));
   z-index:-1;
-  
+}
+
+html[data-theme='dark'] .bgGradient{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background:none;
+    z-index:-1;
 }
