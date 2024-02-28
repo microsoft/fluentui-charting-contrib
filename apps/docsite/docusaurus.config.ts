@@ -88,46 +88,6 @@ const config: Config = {
         },
       ],
     },
-    footer: {
-      // style: "dark",
-      logo:{
-        src:"img/microsoft.png"
-      },
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Docs",
-              to: "/docs/Fluent-React-Charting",
-            },
-          ],
-        },
-        {
-          title: "FluentUI",
-          items: [
-            {
-              label: "Public Developer Docsite",
-              href: "https://aka.ms/fluentcharting",
-            },
-            {
-              label: "Github",
-              href: "https://github.com/microsoft/fluentui",
-            },
-          ],
-        },
-        {
-          title: "FluentUI Charting Contrib",
-          items: [
-            {
-              label: "GitHub",
-              href: "https://github.com/microsoft/fluentui-charting-contrib",
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Microsoft`,
-    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
