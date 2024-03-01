@@ -17,7 +17,7 @@ The 2:1 spacing feature was added through [Pull Request #25838](https://github.c
 
 ## Proposal
 
-<iframe allowfullscreen frameborder="0" width="640" height="480" src="https://lucid.app/documents/embedded/86f214c8-0d6d-4640-a81a-fa492851f6d9" id="iv-eZ8WS-fIH"></iframe>
+[<img src={require("../assets/images/2-to-1-spacing-fix-flow.png").default} alt="" width="500" />](../assets/diagrams/2-to-1-spacing-fix-flow.drawio)
 
 1. Add optional `xAxisInnerPadding`, `xAxisOuterPadding` props to vertical bar charts.
    - `xAxisInnerPadding` controls the space between bars, while `xAxisOuterPadding` controls the space before the first bar and after the last bar.
