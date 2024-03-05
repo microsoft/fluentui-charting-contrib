@@ -1,4 +1,4 @@
-# Contributor guide: Stacked Bar Chart
+# Stacked Bar Chart
 
 A stacked bar chart is a type of data visualization that represents data using rectangular bars with lengths proportional to the values they represent. In a stacked bar chart, each bar is divided into segments, and the segments represent different categories or components. The segments are stacked next to each other to show the total value of each bar.
 

@@ -1,4 +1,4 @@
-# Contributor guide: Vertical Bar Chart
+# Vertical Bar Chart
 
 ![VerticalBarChart1.png](../assets/images/VBC1.png)
 
