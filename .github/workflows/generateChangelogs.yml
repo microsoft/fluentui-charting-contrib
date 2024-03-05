@@ -53,7 +53,7 @@ jobs:
     - name: Store new branch name
       run: |
         cd ./repo
-        CURRENT_BRANCH=$(git branch --show-current)
+        echo "CURRENT_BRANCH=$(git branch --show-current)" >> $GITHUB_ENV
       
     - name: "Send Notification regarding changes"
       uses: hunghg255/action-notifications@master
@@ -61,6 +61,6 @@ jobs:
       with:
         discord_webhook: ${{ secrets.DISCORD_WEBHOOK }}
         title: "Changelog changes detected !!"
-        description: "Create a pull request using this link: https://https://github.com/microsoft/fluentui-charting-contrib/pull/new/$CURRENT_BRANCH"
+        description: "Create a pull request using this link: https://https://github.com/microsoft/fluentui-charting-contrib/pull/new/${{ env.CURRENT_BRANCH }}"
 
 
