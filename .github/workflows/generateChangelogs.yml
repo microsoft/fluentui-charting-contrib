@@ -50,10 +50,17 @@ jobs:
         branch: changelog-${{ steps.timestamp.outputs.timestamp }}
         create_branch: true
         commit_message: Changelog update on ${{ steps.timestamp.outputs.displayTimestamp }}
-
+    - name: Store new branch name
+      run: |
+        cd ./repo
+        CURRENT_BRANCH=$(git branch --show-current)
+      
     - name: "Send Notification regarding changes"
       uses: hunghg255/action-notifications@master
       if: steps.auto-commit-action.outputs.changes_detected == 'true'
       with:
         discord_webhook: ${{ secrets.DISCORD_WEBHOOK }}
         title: "Changelog changes detected !!"
+        description: "Create a pull request using this link: https://https://github.com/microsoft/fluentui-charting-contrib/pull/new/$CURRENT_BRANCH"
+
+
