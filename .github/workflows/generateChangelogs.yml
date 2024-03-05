@@ -43,9 +43,17 @@ jobs:
         echo "::set-output name=displayTimestamp::$(date +%Y-%m-%d\ %H:%M:%S)"
     
     - name: Commit changes to repo
+      id: auto-commit-action
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         repository: repo
         branch: changelog-${{ steps.timestamp.outputs.timestamp }}
         create_branch: true
         commit_message: Changelog update on ${{ steps.timestamp.outputs.displayTimestamp }}
+
+    - name: "Send Notification regarding changes"
+      uses: hunghg255/action-notifications@master
+      if: steps.auto-commit-action.outputs.changes_detected == 'true'
+      with:
+        discord_webhook: ${{ secrets.DISCORD_WEBHOOK }}
+        title: "Changelog changes detected !!"
