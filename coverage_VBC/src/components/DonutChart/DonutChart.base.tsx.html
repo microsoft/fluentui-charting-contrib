@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">21.92% </span>
+                <span class="strong">21.13% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>25/114</span>
+                <span class='fraction'>26/123</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/96</span>
+                <span class='fraction'>0/102</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">3.57% </span>
+                <span class="strong">3.22% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/28</span>
+                <span class='fraction'>1/31</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">21.9% </span>
+                <span class="strong">21.05% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>23/105</span>
+                <span class='fraction'>24/114</span>
             </div>
         
             
@@ -411,7 +411,28 @@
 <a name='L346'></a><a href='#L346'>346</a>
 <a name='L347'></a><a href='#L347'>347</a>
 <a name='L348'></a><a href='#L348'>348</a>
-<a name='L349'></a><a href='#L349'>349</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
+<a name='L349'></a><a href='#L349'>349</a>
+<a name='L350'></a><a href='#L350'>350</a>
+<a name='L351'></a><a href='#L351'>351</a>
+<a name='L352'></a><a href='#L352'>352</a>
+<a name='L353'></a><a href='#L353'>353</a>
+<a name='L354'></a><a href='#L354'>354</a>
+<a name='L355'></a><a href='#L355'>355</a>
+<a name='L356'></a><a href='#L356'>356</a>
+<a name='L357'></a><a href='#L357'>357</a>
+<a name='L358'></a><a href='#L358'>358</a>
+<a name='L359'></a><a href='#L359'>359</a>
+<a name='L360'></a><a href='#L360'>360</a>
+<a name='L361'></a><a href='#L361'>361</a>
+<a name='L362'></a><a href='#L362'>362</a>
+<a name='L363'></a><a href='#L363'>363</a>
+<a name='L364'></a><a href='#L364'>364</a>
+<a name='L365'></a><a href='#L365'>365</a>
+<a name='L366'></a><a href='#L366'>366</a>
+<a name='L367'></a><a href='#L367'>367</a>
+<a name='L368'></a><a href='#L368'>368</a>
+<a name='L369'></a><a href='#L369'>369</a>
+<a name='L370'></a><a href='#L370'>370</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -603,6 +624,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -870,7 +912,7 @@ export class DonutChartBase extends React.Component&lt;IDonutChartProps, IDonutC
     const donutMarginVertical = <span class="cstat-no" title="statement not covered" >this.props.hideLabels ? 0 : 40;</span>
     const outerRadius =
 <span class="cstat-no" title="statement not covered" >      Math.min(this.state._width! - donutMarginHorizontal, this.state._height! - donutMarginVertical) / 2;</span>
-    const chartData = <span class="cstat-no" title="statement not covered" >points.filter(<span class="fstat-no" title="function not covered" >(d</span>: IChartDataPoint) =&gt; <span class="cstat-no" title="statement not covered" >d.data! &gt;= 0);</span></span>
+    const chartData = <span class="cstat-no" title="statement not covered" >this._elevateToMinimums(points.filter(<span class="fstat-no" title="function not covered" >(d</span>: IChartDataPoint) =&gt; <span class="cstat-no" title="statement not covered" >d.data! &gt;= 0))</span>;</span>
     const valueInsideDonut = <span class="cstat-no" title="statement not covered" >this._valueInsideDonut(this.props.valueInsideDonut!, chartData!);</span>
 <span class="cstat-no" title="statement not covered" >    return !this._isChartEmpty() ? (</span>
       &lt;div
@@ -952,6 +994,27 @@ export class DonutChartBase extends React.Component&lt;IDonutChartProps, IDonutC
     });
   };
 &nbsp;
+<span class="fstat-no" title="function not covered" >  private _</span>elevateToMinimums(data: IChartDataPoint[]) {
+    let sumOfData = <span class="cstat-no" title="statement not covered" >0;</span>
+    const minPercent = <span class="cstat-no" title="statement not covered" >0.01;</span>
+    const elevatedData: IChartDataPoint[] = <span class="cstat-no" title="statement not covered" >[];</span>
+<span class="cstat-no" title="statement not covered" >    data.forEach(<span class="fstat-no" title="function not covered" >item </span>=&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      sumOfData += item.data!;</span>
+    });
+<span class="cstat-no" title="statement not covered" >    data.forEach(<span class="fstat-no" title="function not covered" >item </span>=&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      elevatedData.push(</span>
+        minPercent * sumOfData &gt; item.data! &amp;&amp; item.data! &gt; 0
+          ? {
+              ...item,
+              data: minPercent * sumOfData,
+              yAxisCalloutData:
+                item.yAxisCalloutData === undefined ? item.data!.toLocaleString() : item.yAxisCalloutData,
+            }
+          : item,
+      );
+    });
+<span class="cstat-no" title="statement not covered" >    return elevatedData;</span>
+  }
 <span class="fstat-no" title="function not covered" >  private _</span>setViewBox(node: SVGElement | null): void {
 <span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (node === null) {</span>
 <span class="cstat-no" title="statement not covered" >      return;</span>
@@ -1114,7 +1177,7 @@ export class DonutChartBase extends React.Component&lt;IDonutChartProps, IDonutC
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-03-28T08:23:17.144Z
+                at 2024-03-28T16:25:19.188Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
