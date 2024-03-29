@@ -61,6 +61,6 @@ jobs:
       with:
         discord_webhook: ${{ secrets.DISCORD_WEBHOOK }}
         title: "Changelog changes detected !!"
-        description: "Create a pull request using this link: https://https://github.com/microsoft/fluentui-charting-contrib/pull/new/${{ env.CURRENT_BRANCH }}"
+        description: "Create a pull request using this link: https://www.github.com/microsoft/fluentui-charting-contrib/pull/new/${{ env.CURRENT_BRANCH }}"
 
 
