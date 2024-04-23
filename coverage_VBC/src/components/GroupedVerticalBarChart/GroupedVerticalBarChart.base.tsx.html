@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">12.62% </span>
+                <span class="strong">13.06% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>25/198</span>
+                <span class='fraction'>26/199</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/89</span>
+                <span class='fraction'>0/88</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">12.36% </span>
+                <span class="strong">12.83% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>23/186</span>
+                <span class='fraction'>24/187</span>
             </div>
         
             
@@ -708,7 +708,12 @@
 <a name='L643'></a><a href='#L643'>643</a>
 <a name='L644'></a><a href='#L644'>644</a>
 <a name='L645'></a><a href='#L645'>645</a>
-<a name='L646'></a><a href='#L646'>646</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
+<a name='L646'></a><a href='#L646'>646</a>
+<a name='L647'></a><a href='#L647'>647</a>
+<a name='L648'></a><a href='#L648'>648</a>
+<a name='L649'></a><a href='#L649'>649</a>
+<a name='L650'></a><a href='#L650'>650</a>
+<a name='L651'></a><a href='#L651'>651</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -775,6 +780,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -922,11 +931,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1308,6 +1315,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1420,6 +1430,10 @@ export class GroupedVerticalBarChartBase extends React.Component&lt;
   IGroupedVerticalBarChartProps,
   IGroupedVerticalBarChartState
 &gt; {
+  public static defaultProps: Partial&lt;IGroupedVerticalBarChartProps&gt; = {
+    maxBarWidth: 24,
+  };
+&nbsp;
   private _createSet: (
     data: IGroupedVerticalBarChartData[],
   ) =&gt; // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -1567,15 +1581,13 @@ export class GroupedVerticalBarChartBase extends React.Component&lt;
   ) =&gt; {
     const xScale0 = <span class="cstat-no" title="statement not covered" >this._createX0Scale(containerWidth);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (this.props.barwidth === 'auto') {</span>
-      // Setting the bar width here is safe because there are no dependencies earlier in the code
-      // that rely on the width of bars in vertical bar charts with string x-axis.
-<span class="cstat-no" title="statement not covered" >      this._barWidth = getBarWidth(</span>
-        this.props.barwidth,
-        this.props.maxBarWidth,
-        xScale0.bandwidth() / (this._keys.length + (this._keys.length - 1) * BAR_GAP_RATE),
-      );
-    }
+    // Setting the bar width here is safe because there are no dependencies earlier in the code
+    // that rely on the width of bars in vertical bar charts with string x-axis.
+<span class="cstat-no" title="statement not covered" >    this._barWidth = getBarWidth(</span>
+      this.props.barwidth,
+      this.props.maxBarWidth,
+      xScale0.bandwidth() / (this._keys.length + (this._keys.length - 1) * BAR_GAP_RATE),
+    );
 <span class="cstat-no" title="statement not covered" >    this._groupWidth = (this._keys.length + (this._keys.length - 1) * BAR_GAP_RATE) * this._barWidth;</span>
 &nbsp;
     const xScale1 = <span class="cstat-no" title="statement not covered" >this._createX1Scale();</span>
@@ -1957,6 +1969,9 @@ export class GroupedVerticalBarChartBase extends React.Component&lt;
         /** Total width available to render the bars */
         const totalWidth =
 <span class="cstat-no" title="statement not covered" >          containerWidth - (this.margins.left! + MIN_DOMAIN_MARGIN) - (this.margins.right! + MIN_DOMAIN_MARGIN);</span>
+        // Update the bar width so that when CartesianChart rerenders,
+        // the following calculations don't use the previous bar width.
+<span class="cstat-no" title="statement not covered" >        this._barWidth = getBarWidth(this.props.barwidth, this.props.maxBarWidth);</span>
         const groupWidth = <span class="cstat-no" title="statement not covered" >(this._keys.length + (this._keys.length - 1) * BAR_GAP_RATE) * this._barWidth;</span>
         /** Rate at which the space between the groups changes wrt the group width */
         const groupGapRate = <span class="cstat-no" title="statement not covered" >this._xAxisInnerPadding / (1 - this._xAxisInnerPadding);</span>
@@ -1965,7 +1980,7 @@ export class GroupedVerticalBarChartBase extends React.Component&lt;
 &nbsp;
 <span class="cstat-no" title="statement not covered" >        <span class="missing-if-branch" title="if path not taken" >I</span>if (totalWidth &gt;= reqWidth) {</span>
           // Center align the chart by setting equal left and right margins for domain
-<span class="cstat-no" title="statement not covered" >          this._domainMargin += (totalWidth - reqWidth) / 2;</span>
+<span class="cstat-no" title="statement not covered" >          this._domainMargin = MIN_DOMAIN_MARGIN + (totalWidth - reqWidth) / 2;</span>
         }
       }
     }
@@ -2005,7 +2020,7 @@ export class GroupedVerticalBarChartBase extends React.Component&lt;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-04-23T08:19:19.931Z
+                at 2024-04-23T16:20:41.761Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
