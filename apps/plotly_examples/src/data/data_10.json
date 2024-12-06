@@ -1,0 +1,38 @@
+{
+  "data": [
+    {
+      "type": "scatter",
+      "mode": "lines",
+      "fill": "tozeroy",
+      "x": [
+        "2023-01-01",
+        "2023-01-08",
+        "2023-01-15",
+        "2023-01-22",
+        "2023-01-29",
+        "2023-02-05",
+        "2023-02-12"
+      ],
+      "y": [
+        500,
+        1000,
+        1200,
+        1500,
+        2000,
+        2400,
+        3000
+      ],
+      "name": "Weekly Visits"
+    }
+  ],
+  "layout": {
+    "title": "Overall Growth in Weekly Visits",
+    "xaxis": {
+      "title": "Week"
+    },
+    "yaxis": {
+      "title": "Number of Visits"
+    }
+  },
+  "id": 10
+}

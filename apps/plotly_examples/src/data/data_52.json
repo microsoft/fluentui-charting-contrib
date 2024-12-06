@@ -1,0 +1,55 @@
+{
+  "data": [
+    {
+      "type": "sankey",
+      "node": {
+        "label": [
+          "Grade 9 - Math",
+          "Grade 10 - Math",
+          "Grade 11 - Math",
+          "Grade 9 - Science",
+          "Grade 10 - Science",
+          "Grade 11 - Science"
+        ],
+        "color": [
+          "blue",
+          "blue",
+          "blue",
+          "green",
+          "green",
+          "green"
+        ]
+      },
+      "link": {
+        "source": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "target": [
+          1,
+          2,
+          -1,
+          4,
+          5,
+          -1
+        ],
+        "value": [
+          10,
+          30,
+          5,
+          20,
+          25,
+          5
+        ]
+      }
+    }
+  ],
+  "layout": {
+    "title": "Flow of Performance From One Grade Level to Another"
+  },
+  "id": 52
+}

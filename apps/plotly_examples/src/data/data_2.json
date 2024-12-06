@@ -1,0 +1,80 @@
+{
+  "data": [
+    {
+      "type": "scatter",
+      "mode": "lines",
+      "name": "Category A",
+      "x": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "y": [
+        4000,
+        4100,
+        4200,
+        4300,
+        4400,
+        4500,
+        4600,
+        4700,
+        4800,
+        4900,
+        5000,
+        5100
+      ]
+    },
+    {
+      "type": "scatter",
+      "mode": "lines",
+      "name": "Category B",
+      "x": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "y": [
+        6000,
+        6200,
+        6400,
+        6600,
+        6800,
+        7000,
+        7200,
+        7400,
+        7600,
+        7800,
+        8000,
+        8200
+      ]
+    }
+  ],
+  "layout": {
+    "title": "Sales Trends Comparison",
+    "xaxis": {
+      "title": "Month"
+    },
+    "yaxis": {
+      "title": "Sales Volume"
+    }
+  },
+  "id": 2
+}

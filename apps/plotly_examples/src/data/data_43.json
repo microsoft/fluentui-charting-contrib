@@ -1,0 +1,47 @@
+{
+  "data": [
+    {
+      "type": "sankey",
+      "orientation": "h",
+      "node": {
+        "pad": 15,
+        "thickness": 20,
+        "line": {
+          "color": "black",
+          "width": 0.5
+        },
+        "label": [
+          "Portfolio",
+          "Stocks",
+          "Bonds",
+          "Real Estate",
+          "Cash"
+        ]
+      },
+      "link": {
+        "source": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "target": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "value": [
+          50,
+          30,
+          10,
+          10
+        ]
+      }
+    }
+  ],
+  "layout": {
+    "title": "Money Flow Between Asset Categories"
+  },
+  "id": 43
+}

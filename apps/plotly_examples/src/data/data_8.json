@@ -1,0 +1,80 @@
+{
+  "data": [
+    {
+      "type": "heatmap",
+      "z": [
+        [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120
+        ],
+        [
+          15,
+          25,
+          35,
+          45,
+          55,
+          65,
+          75,
+          85,
+          95,
+          105,
+          115,
+          125
+        ],
+        [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50,
+          55,
+          60
+        ]
+      ],
+      "x": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "y": [
+        "Category A",
+        "Category B",
+        "Category C"
+      ]
+    }
+  ],
+  "layout": {
+    "title": "Sales Intensity Across Months and Categories",
+    "xaxis": {
+      "title": "Month"
+    },
+    "yaxis": {
+      "title": "Category"
+    }
+  },
+  "id": 8
+}

@@ -1,0 +1,50 @@
+{
+  "data": [
+    {
+      "type": "bar",
+      "name": "Category A",
+      "x": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May"
+      ],
+      "y": [
+        2000,
+        2100,
+        2200,
+        2300,
+        2400
+      ]
+    },
+    {
+      "type": "bar",
+      "name": "Category B",
+      "x": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May"
+      ],
+      "y": [
+        3000,
+        3100,
+        3200,
+        3300,
+        3400
+      ]
+    }
+  ],
+  "layout": {
+    "title": "Sales Figures Across Months",
+    "xaxis": {
+      "title": "Months"
+    },
+    "yaxis": {
+      "title": "Sales"
+    }
+  },
+  "id": 5
+}

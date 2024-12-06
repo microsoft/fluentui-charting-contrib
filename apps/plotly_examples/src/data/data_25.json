@@ -1,0 +1,55 @@
+{
+  "data": [
+    {
+      "type": "heatmap",
+      "z": [
+        [
+          10,
+          20,
+          30,
+          40
+        ],
+        [
+          20,
+          30,
+          40,
+          50
+        ],
+        [
+          30,
+          40,
+          50,
+          60
+        ],
+        [
+          40,
+          50,
+          60,
+          70
+        ]
+      ],
+      "x": [
+        "Month 1",
+        "Month 2",
+        "Month 3",
+        "Month 4"
+      ],
+      "y": [
+        "Product A",
+        "Product B",
+        "Product C",
+        "Product D"
+      ]
+    }
+  ],
+  "layout": {
+    "title": "Product Popularity During Different Months",
+    "xaxis": {
+      "title": "Time"
+    },
+    "yaxis": {
+      "title": "Products"
+    }
+  },
+  "id": 25
+}

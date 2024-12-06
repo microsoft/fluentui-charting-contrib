@@ -1,0 +1,55 @@
+{
+  "data": [
+    {
+      "type": "heatmap",
+      "z": [
+        [
+          25,
+          30,
+          35,
+          40
+        ],
+        [
+          15,
+          18,
+          20,
+          25
+        ],
+        [
+          20,
+          22,
+          24,
+          28
+        ],
+        [
+          10,
+          12,
+          14,
+          15
+        ]
+      ],
+      "x": [
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "y": [
+        "Company A",
+        "Company B",
+        "Company C",
+        "Company D"
+      ]
+    }
+  ],
+  "layout": {
+    "title": "Market Share Fluctuations",
+    "xaxis": {
+      "title": "Year"
+    },
+    "yaxis": {
+      "title": "Company"
+    }
+  },
+  "id": 62
+}

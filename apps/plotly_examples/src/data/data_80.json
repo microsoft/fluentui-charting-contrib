@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "type": "heatmap",
+      "z": [
+        [
+          5,
+          10,
+          0
+        ],
+        [
+          10,
+          15,
+          5
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "x": [
+        "Dept A",
+        "Dept B",
+        "Dept C"
+      ],
+      "y": [
+        "Women",
+        "Men",
+        "Nonbinary"
+      ]
+    }
+  ],
+  "layout": {
+    "title": "Concentration of Different Demographics Across Departments",
+    "xaxis": {
+      "title": "Department"
+    },
+    "yaxis": {
+      "title": "Demographic"
+    }
+  },
+  "id": 80
+}

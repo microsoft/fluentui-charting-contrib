@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "type": "bar",
+      "orientation": "h",
+      "x": [
+        6000,
+        5000,
+        4000
+      ],
+      "y": [
+        "Category C",
+        "Category B",
+        "Category A"
+      ],
+      "name": "Sales Figures"
+    }
+  ],
+  "layout": {
+    "title": "Ranking Categories Based on Sales for July",
+    "xaxis": {
+      "title": "Sales"
+    },
+    "yaxis": {
+      "title": "Categories"
+    }
+  },
+  "id": 4
+}

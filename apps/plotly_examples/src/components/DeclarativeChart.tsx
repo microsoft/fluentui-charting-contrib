@@ -1,19 +1,24 @@
 import * as React from 'react';
 import { Dropdown, IDropdownOption } from '@fluentui/react/lib/Dropdown';
 import { DeclarativeChart, DeclarativeChartProps, Schema } from '@fluentui/react-charting';
-import schemasData from '../data/parsed_data.json'; // Import the JSON data
 
 interface IDeclarativeChartState {
   selectedChoice: string;
+  selectedSchema: any;
+  schemasData: any[];
 }
 
-const options: IDropdownOption[] = schemasData.map((schema) => {
-  const id = schema.id.toString() || 'unknown';
-  return {
-    key: id,
-    text: schema.layout?.title || 'unknown',
-  };
-});
+// Use require.context to load all JSON files from the split_data folder
+const requireContext = require.context('../data', false, /\.json$/);
+const schemasData = requireContext.keys().map((fileName: string) => ({
+  fileName: fileName.replace('./', ''),
+  schema: requireContext(fileName),
+}));
+
+const options: IDropdownOption[] = schemasData.map((data) => ({
+  key: data.fileName,
+  text: data.fileName,
+}));
 
 const dropdownStyles = { dropdown: { width: 200 } };
 
@@ -21,29 +26,24 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
   constructor(props: DeclarativeChartProps) {
     super(props);
     this.state = {
-      selectedChoice: schemasData[0]?.id.toString() || 'unknown', // Set the first schema as the default choice if available
+      selectedChoice: schemasData[0]?.fileName || 'unknown', // Set the first file as the default choice if available
+      selectedSchema: schemasData[0]?.schema || null,
+      schemasData: schemasData,
     };
   }
 
-  public render(): JSX.Element {
-    return <div>{this._createDeclarativeChart()}</div>;
-  }
-
   private _onChange = (ev: any, option?: IDropdownOption): void => {
-    this.setState({ selectedChoice: option?.key as string });
+    const selectedChoice = option?.key as string;
+    const selectedSchema = this.state.schemasData.find((data) => data.fileName === selectedChoice)?.schema;
+    this.setState({ selectedChoice, selectedSchema });
   };
 
-  private _getSchemaByKey(key: string): any {
-    const schema = schemasData.find((x: any) => x.id.toString() === key);
-    return schema ? schema : null;
-  }
-
   private _createDeclarativeChart(): JSX.Element {
-    const selectedPlotlySchema = this._getSchemaByKey(this.state.selectedChoice);
-    if (!selectedPlotlySchema) {
+    const { selectedSchema } = this.state;
+    if (!selectedSchema) {
       return <div>No data available</div>;
     }
-    const inputSchema: Schema = { plotlySchema: selectedPlotlySchema };
+    const inputSchema: Schema = { plotlySchema: selectedSchema };
     console.log(inputSchema);
     return (
       <>
@@ -55,10 +55,14 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
           styles={dropdownStyles}
         />
         <br />
-        <h2>{this.state.selectedChoice}. {selectedPlotlySchema.layout.title}</h2>
+        <h2>{this.state.selectedChoice}. {selectedSchema.layout.title}</h2>
         <br />
         <DeclarativeChart chartSchema={inputSchema} />
       </>
     );
+  }
+
+  public render(): JSX.Element {
+    return <div>{this._createDeclarativeChart()}</div>;
   }
 }
