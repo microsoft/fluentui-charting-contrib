@@ -16,7 +16,7 @@ const schemasData = requireContext.keys().map((fileName: string) => ({
 }));
 
 const options: IDropdownOption[] = schemasData.map((data) => ({
-  key: data.fileName,
+  key: (data.schema as { id: string }).id,
   text: data.fileName,
 }));
 
@@ -26,7 +26,7 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
   constructor(props: DeclarativeChartProps) {
     super(props);
     this.state = {
-      selectedChoice: schemasData[0]?.fileName || 'unknown', // Set the first file as the default choice if available
+      selectedChoice: (schemasData[0].schema as { id: string }).id || 'unknown', // Set the first file as the default choice if available
       selectedSchema: schemasData[0]?.schema || null,
       schemasData: schemasData,
     };
@@ -34,7 +34,7 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
 
   private _onChange = (ev: any, option?: IDropdownOption): void => {
     const selectedChoice = option?.key as string;
-    const selectedSchema = this.state.schemasData.find((data) => data.fileName === selectedChoice)?.schema;
+    const selectedSchema = this.state.schemasData.find((data) => (data.schema as { id: string }).id === selectedChoice)?.schema;
     this.setState({ selectedChoice, selectedSchema });
   };
 
