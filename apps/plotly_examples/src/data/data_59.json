@@ -1,0 +1,47 @@
+{
+  "data": [
+    {
+      "type": "bar",
+      "x": [
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "y": [
+        25,
+        30,
+        35,
+        40
+      ],
+      "name": "Company A"
+    },
+    {
+      "type": "bar",
+      "x": [
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "y": [
+        15,
+        18,
+        20,
+        25
+      ],
+      "name": "Company B"
+    }
+  ],
+  "layout": {
+    "title": "Market Share Changes Year Over Year",
+    "xaxis": {
+      "title": "Year"
+    },
+    "yaxis": {
+      "title": "Market Share (%)"
+    },
+    "barmode": "group"
+  },
+  "id": 59
+}

@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "type": "indicator",
+      "mode": "gauge+number",
+      "value": 3500,
+      "title": {
+        "text": "Today\u2019s Step Count"
+      },
+      "gauge": {
+        "axis": {
+          "range": [
+            0,
+            10000
+          ]
+        },
+        "steps": [
+          {
+            "range": [
+              0,
+              5000
+            ],
+            "color": "lightgray"
+          },
+          {
+            "range": [
+              5000,
+              10000
+            ],
+            "color": "green"
+          }
+        ],
+        "threshold": {
+          "line": {
+            "color": "red",
+            "width": 4
+          },
+          "thickness": 0.75,
+          "value": 10000
+        }
+      }
+    }
+  ],
+  "layout": {
+    "title": "Daily Step Counts Against a Set Goal"
+  },
+  "id": 72
+}

@@ -1,0 +1,50 @@
+{
+  "data": [
+    {
+      "type": "scatter",
+      "mode": "lines",
+      "fill": "tonexty",
+      "x": [
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "y": [
+        25,
+        30,
+        35,
+        40
+      ],
+      "name": "Company A"
+    },
+    {
+      "type": "scatter",
+      "mode": "lines",
+      "fill": "tonexty",
+      "x": [
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "y": [
+        15,
+        18,
+        20,
+        25
+      ],
+      "name": "Company B"
+    }
+  ],
+  "layout": {
+    "title": "Market Share Growth Over Time",
+    "xaxis": {
+      "title": "Year"
+    },
+    "yaxis": {
+      "title": "Market Share (%)"
+    }
+  },
+  "id": 55
+}

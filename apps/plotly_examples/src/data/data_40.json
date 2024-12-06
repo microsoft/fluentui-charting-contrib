@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "type": "bar",
+      "orientation": "h",
+      "x": [
+        50,
+        30,
+        10,
+        10
+      ],
+      "y": [
+        "Stocks",
+        "Bonds",
+        "Real Estate",
+        "Cash"
+      ]
+    }
+  ],
+  "layout": {
+    "title": "Weight of Different Asset Classes",
+    "xaxis": {
+      "title": "Weight (%)"
+    },
+    "yaxis": {
+      "title": "Asset Classes"
+    }
+  },
+  "id": 40
+}

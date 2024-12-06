@@ -1,0 +1,47 @@
+{
+  "data": [
+    {
+      "type": "bar",
+      "orientation": "h",
+      "x": [
+        5,
+        7,
+        10,
+        13,
+        15,
+        20,
+        25,
+        30,
+        24,
+        18,
+        10,
+        6
+      ],
+      "y": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "name": "Avg Monthly Temp"
+    }
+  ],
+  "layout": {
+    "title": "Average Monthly Temperatures",
+    "xaxis": {
+      "title": "Temperature (\u00b0C)"
+    },
+    "yaxis": {
+      "title": "Month"
+    }
+  },
+  "id": 31
+}

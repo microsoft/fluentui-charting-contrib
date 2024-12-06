@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "type": "bar",
+      "x": [
+        500,
+        400,
+        300,
+        200,
+        100
+      ],
+      "y": [
+        "Product E",
+        "Product D",
+        "Product C",
+        "Product B",
+        "Product A"
+      ],
+      "orientation": "h"
+    }
+  ],
+  "layout": {
+    "title": "Product Popularity in Aisle",
+    "yaxis": {
+      "title": "Products"
+    },
+    "xaxis": {
+      "title": "Sales"
+    }
+  },
+  "id": 22
+}

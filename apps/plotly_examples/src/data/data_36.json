@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "type": "indicator",
+      "mode": "gauge+number",
+      "value": 25,
+      "title": {
+        "text": "Current Temp vs Historical Avg"
+      },
+      "gauge": {
+        "axis": {
+          "range": [
+            null,
+            50
+          ]
+        },
+        "steps": [
+          {
+            "range": [
+              0,
+              10
+            ],
+            "color": "lightgray"
+          },
+          {
+            "range": [
+              10,
+              20
+            ],
+            "color": "gray"
+          },
+          {
+            "range": [
+              20,
+              30
+            ],
+            "color": "lightyellow"
+          },
+          {
+            "range": [
+              30,
+              40
+            ],
+            "color": "yellow"
+          },
+          {
+            "range": [
+              40,
+              50
+            ],
+            "color": "red"
+          }
+        ],
+        "threshold": {
+          "line": {
+            "color": "red",
+            "width": 4
+          },
+          "thickness": 0.75,
+          "value": 25
+        }
+      }
+    }
+  ],
+  "layout": {
+    "title": "Current Temperature Gauge"
+  },
+  "id": 36
+}

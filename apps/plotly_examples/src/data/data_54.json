@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "type": "indicator",
+      "mode": "gauge+number",
+      "value": 82,
+      "title": {
+        "text": "Average Performance in Mathematics"
+      },
+      "gauge": {
+        "axis": {
+          "range": [
+            0,
+            100
+          ]
+        },
+        "bar": {
+          "color": "darkblue"
+        },
+        "steps": [
+          {
+            "range": [
+              0,
+              50
+            ],
+            "color": "red"
+          },
+          {
+            "range": [
+              50,
+              70
+            ],
+            "color": "yellow"
+          },
+          {
+            "range": [
+              70,
+              100
+            ],
+            "color": "green"
+          }
+        ],
+        "threshold": {
+          "line": {
+            "color": "orange",
+            "width": 4
+          },
+          "thickness": 0.75,
+          "value": 60
+        }
+      }
+    }
+  ],
+  "layout": {
+    "title": "Average Performance Against Passing Benchmark"
+  },
+  "id": 54
+}

@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "type": "sankey",
+      "node": {
+        "label": [
+          "Organic",
+          "Direct",
+          "Referral",
+          "Social",
+          "Page View",
+          "Sign Up",
+          "Purchase"
+        ]
+      },
+      "link": {
+        "source": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "target": [
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          5
+        ],
+        "value": [
+          500,
+          200,
+          150,
+          100,
+          300,
+          100,
+          50,
+          30
+        ]
+      }
+    }
+  ],
+  "layout": {
+    "title": "Conversion Paths from Traffic Sources"
+  },
+  "id": 16
+}
