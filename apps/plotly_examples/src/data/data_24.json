@@ -1,0 +1,42 @@
+{
+  "data": [
+    {
+      "type": "sankey",
+      "node": {
+        "pad": 15,
+        "thickness": 20,
+        "line": {
+          "color": "black",
+          "width": 0.5
+        },
+        "label": [
+          "Aisle 1",
+          "Aisle 2",
+          "Aisle 3",
+          "Checkout"
+        ]
+      },
+      "link": {
+        "source": [
+          0,
+          1,
+          2
+        ],
+        "target": [
+          3,
+          3,
+          3
+        ],
+        "value": [
+          500,
+          300,
+          200
+        ]
+      }
+    }
+  ],
+  "layout": {
+    "title": "Flow of Customer Purchases from Aisles to Checkout"
+  },
+  "id": 24
+}

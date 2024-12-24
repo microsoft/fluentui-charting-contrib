@@ -1,0 +1,42 @@
+{
+  "data": [
+    {
+      "type": "sankey",
+      "node": {
+        "label": [
+          "Hiring",
+          "Women",
+          "Men",
+          "Nonbinary"
+        ],
+        "color": [
+          "blue",
+          "green",
+          "orange",
+          "purple"
+        ]
+      },
+      "link": {
+        "source": [
+          0,
+          0,
+          0
+        ],
+        "target": [
+          1,
+          2,
+          3
+        ],
+        "value": [
+          60,
+          50,
+          10
+        ]
+      }
+    }
+  ],
+  "layout": {
+    "title": "Employee Flow into Different Demographics from Hiring to Current Status"
+  },
+  "id": 79
+}

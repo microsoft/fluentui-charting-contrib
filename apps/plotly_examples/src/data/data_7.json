@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "type": "sankey",
+      "node": {
+        "pad": 15,
+        "thickness": 20,
+        "line": {
+          "color": "black",
+          "width": 0.5
+        },
+        "label": [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Category A",
+          "Category B",
+          "Category C"
+        ]
+      },
+      "link": {
+        "source": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2
+        ],
+        "target": [
+          3,
+          4,
+          4,
+          5,
+          5,
+          3
+        ],
+        "value": [
+          8,
+          4,
+          2,
+          8,
+          4,
+          6
+        ]
+      }
+    }
+  ],
+  "layout": {
+    "title": "Flow of Sales from Categories to Revenue Streams"
+  },
+  "id": 7
+}

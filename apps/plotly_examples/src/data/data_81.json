@@ -1,0 +1,57 @@
+{
+  "data": [
+    {
+      "type": "indicator",
+      "mode": "gauge+number",
+      "value": 30,
+      "title": {
+        "text": "Diversity Metrics"
+      },
+      "gauge": {
+        "axis": {
+          "range": [
+            0,
+            100
+          ]
+        },
+        "bar": {
+          "color": "blue"
+        },
+        "steps": [
+          {
+            "range": [
+              0,
+              20
+            ],
+            "color": "red"
+          },
+          {
+            "range": [
+              20,
+              50
+            ],
+            "color": "orange"
+          },
+          {
+            "range": [
+              50,
+              80
+            ],
+            "color": "yellow"
+          },
+          {
+            "range": [
+              80,
+              100
+            ],
+            "color": "green"
+          }
+        ]
+      }
+    }
+  ],
+  "layout": {
+    "title": "Diversity Metrics Against Target Goals for Demographic Representation"
+  },
+  "id": 81
+}
