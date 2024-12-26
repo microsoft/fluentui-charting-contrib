@@ -99,17 +99,19 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
         >
           Download
         </button>
-        <br />
-        <br />
-        <h2>{this.state.selectedChoice}. {selectedSchema.layout.title}</h2>
-        <br />
-        <br />
-        <DeclarativeChart
-          key={uniqueKey}
-          chartSchema={inputSchema}
-          onSchemaChange={this._handleChartSchemaChanged}
-          componentRef={this._declarativeChartRef}
-        />
+        <div data-testid="chart-container" >
+          <br />
+          <br />
+          <h2>{this.state.selectedChoice}. {selectedSchema.layout.title}</h2>
+          <br />
+          <br />
+          <DeclarativeChart
+            key={uniqueKey}
+            chartSchema={inputSchema}
+            onSchemaChange={this._handleChartSchemaChanged}
+            componentRef={this._declarativeChartRef}
+          />
+        </div>
         <br />
         Legend selection changed : {this.state.selectedLegends}
       </>
