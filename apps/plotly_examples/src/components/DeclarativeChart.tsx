@@ -1,13 +1,41 @@
 import * as React from 'react';
 import { Dropdown, IDropdownOption } from '@fluentui/react/lib/Dropdown';
+import { TextField, ITextFieldStyles } from '@fluentui/react/lib/TextField';
 import { DeclarativeChart, DeclarativeChartProps, IDeclarativeChart, Schema } from '@fluentui/react-charting';
-import { Toggle } from '@fluentui/react/lib/Toggle';
+
+interface IErrorBoundaryProps {
+  children: React.ReactNode;
+}
+
+interface IErrorBoundaryState {
+  hasError: boolean;
+  error: string;
+}
+
+class ErrorBoundary extends React.Component<IErrorBoundaryProps, IErrorBoundaryState> {
+  public static getDerivedStateFromError(error: Error) {
+    // Update state so the next render will show the fallback UI.
+    return { hasError: true, error: `${error.message} ${error.stack}` };
+  }
+
+  constructor(props: IErrorBoundaryProps) {
+    super(props);
+    this.state = { hasError: false, error: '' };
+  }
+
+  public render() {
+    if (this.state.hasError) {
+      return <h1>${this.state.error}</h1>;
+    }
+
+    return this.props.children;
+  }
+}
 
 interface IDeclarativeChartState {
   selectedChoice: string;
   selectedSchema: any;
   schemasData: any[];
-  preSelectLegends: boolean;
   selectedLegends: string;
 }
 
@@ -25,28 +53,45 @@ const options: IDropdownOption[] = schemasData.map((data) => ({
 
 const dropdownStyles = { dropdown: { width: 200 } };
 
+const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
+
 export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarativeChartState> {
   private _declarativeChartRef: React.RefObject<IDeclarativeChart>;
+  private _lastKnownValidLegends: string[] | undefined;
+
   constructor(props: DeclarativeChartProps) {
     super(props);
+    const selectedSchema = schemasData[0]?.schema || {};
+    const { selectedLegends } = selectedSchema as any;
     this.state = {
       selectedChoice: (schemasData[0].schema as { id: string }).id || 'unknown', // Set the first file as the default choice if available
-      selectedSchema: schemasData[0]?.schema || null,
+      selectedSchema: selectedSchema,
       schemasData: schemasData,
-      preSelectLegends: false,
-      selectedLegends: '',
+      selectedLegends: JSON.stringify(selectedLegends),
     };
+
     this._declarativeChartRef = React.createRef();
+    this._lastKnownValidLegends = selectedLegends;
+  }
+
+  public componentDidMount() {
+    document.addEventListener('contextmenu', e => {
+      e.preventDefault();
+    });
   }
 
   private _onChange = (ev: any, option?: IDropdownOption): void => {
     const selectedChoice = option?.key as string;
     const selectedSchema = this.state.schemasData.find((data) => (data.schema as { id: string }).id === selectedChoice)?.schema;
-    this.setState({ selectedChoice, selectedSchema, selectedLegends: '' });
+    const { selectedLegends } = selectedSchema as any;
+    this.setState({ selectedChoice, selectedSchema, selectedLegends: JSON.stringify(selectedLegends) });
   };
 
-  private _onTogglePreselectLegends = (ev: React.MouseEvent<HTMLElement>, checked?: boolean) => {
-    this.setState({ preSelectLegends: checked! });
+  private _onSelectedLegendsEdited = (
+    event: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>,
+    newValue?: string,
+  ): void => {
+    this.setState({ selectedLegends: newValue ?? '' });
   };
 
   private fileSaver(url: string) {
@@ -64,12 +109,24 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
   };
 
   private _createDeclarativeChart(): JSX.Element {
+
+    const uniqueKey = `${this.state.selectedChoice}`;
     const { selectedSchema } = this.state;
+    const { data, layout } = selectedSchema;
     if (!selectedSchema) {
       return <div>No data available</div>;
     }
-    const inputSchema: Schema = { plotlySchema: selectedSchema };
-    const uniqueKey = `${this.state.selectedChoice}_${this.state.preSelectLegends}`;
+    if (this.state.selectedLegends === '') {
+      this._lastKnownValidLegends = undefined;
+    } else {
+      try {
+        this._lastKnownValidLegends = JSON.parse(this.state.selectedLegends);
+      } catch (error) {
+        // Nothing to do here
+      }
+    }
+    const plotlySchema = { data, layout, selectedLegends: this._lastKnownValidLegends };
+    const inputSchema: Schema = { plotlySchema };
     return (
       <>
         <div style={{ display: 'flex' }}>
@@ -81,13 +138,6 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
             styles={dropdownStyles}
           />
           &nbsp;&nbsp;&nbsp;
-          <Toggle
-            label="Pre select legends"
-            onText="ON"
-            offText="OFF"
-            onChange={this._onTogglePreselectLegends}
-            checked={this.state.preSelectLegends}
-          />
         </div>
         <br />
         <button
@@ -105,15 +155,22 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
           <h2>{this.state.selectedChoice}. {selectedSchema.layout.title}</h2>
           <br />
           <br />
-          <DeclarativeChart
-            key={uniqueKey}
-            chartSchema={inputSchema}
-            onSchemaChange={this._handleChartSchemaChanged}
-            componentRef={this._declarativeChartRef}
-          />
+          <ErrorBoundary>
+            <DeclarativeChart
+              key={uniqueKey}
+              chartSchema={inputSchema}
+              onSchemaChange={this._handleChartSchemaChanged}
+              componentRef={this._declarativeChartRef}
+            />
+          </ErrorBoundary>
         </div>
         <br />
-        Legend selection changed : {this.state.selectedLegends}
+        <TextField
+          label="Current Legend selection"
+          value={this.state.selectedLegends}
+          onChange={this._onSelectedLegendsEdited}
+          styles={textFieldStyles}
+        />
       </>
     );
   }
