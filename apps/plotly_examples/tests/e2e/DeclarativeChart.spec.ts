@@ -12,7 +12,7 @@ test('Declarative Chart', async ({ page }) => {
   const listitems = listbox.getByRole('option');
   const lisItemsCount = await listitems.count();
   for (let i = 0; i < lisItemsCount; i++) {
-    if (i != 18 && i != 27 && i != lisItemsCount - 1) {
+    if (i != 33) {
       await listitems.nth(i).scrollIntoViewIfNeeded();
       await listitems.nth(i).click();
       const chart = page.getByTestId('chart-container');
