@@ -1,11 +1,19 @@
 import React from 'react';
-import { DeclarativeChartBasicExample } from './components/DeclarativeChart';
+import { 
+  FluentProvider, 
+  teamsDarkTheme,
+  teamsLightTheme,
+  webLightTheme,
+  webDarkTheme 
+} from '@fluentui/react-components';
+import { ChartWrapper } from './components/ChartWrapper';
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Data Visualization</h1>
-      <DeclarativeChartBasicExample />
+      <FluentProvider theme={webDarkTheme} > 
+        <ChartWrapper />
+      </FluentProvider>
     </div>
   );
 };
