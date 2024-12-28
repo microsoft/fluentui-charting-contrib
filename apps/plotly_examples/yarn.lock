@@ -1192,11 +1192,6 @@
   resolved "https://registry.yarnpkg.com/@csstools/selector-specificity/-/selector-specificity-2.2.0.tgz#2cbcf822bf3764c9658c4d2e568bd0c0cb748016"
   integrity sha512-+OJ9konv95ClSTOJCmMZqpd5+YGsB2S+x6w3E1oaM8UuR5j8nTNHYSz8c9BEPGDOCMQYIEEGlVPj/VY64iTbGw==
 
-"@ctrl/tinycolor@3.3.4":
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/@ctrl/tinycolor/-/tinycolor-3.3.4.tgz#59691edd031eedc431bda1bdf601257c06289a40"
-  integrity sha512-8vmPV/nIULFDWsnJalQJDqFLC2uTPx6A/ASA2t27QGp+7oXnbWWXCe0uV8xasIH2rGbI/XoB2vmkdP/94WvMrw==
-
 "@emotion/hash@^0.9.0":
   version "0.9.2"
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.9.2.tgz#ff9221b9f58b4dfe61e619a7788734bd63f6898b"
@@ -1272,15 +1267,6 @@
   resolved "https://registry.yarnpkg.com/@fluentui/dom-utilities/-/dom-utilities-2.3.9.tgz#59b357cd9c20904b60f0867687002223b2e83a8f"
   integrity sha512-8PPzv31VXnyMvZrzK7iSGPRx8piJjas0xV+qaNQ1tzAXHuTaLXPeADJK/gEDH1XA/e9Vaakb3lPUpRVa8tal+w==
   dependencies:
-    "@fluentui/set-version" "^8.2.23"
-    tslib "^2.1.0"
-
-"@fluentui/fluent2-theme@^8.107.118":
-  version "8.107.119"
-  resolved "https://registry.yarnpkg.com/@fluentui/fluent2-theme/-/fluent2-theme-8.107.119.tgz#bf77c8d39814cf3bdcd45ac4a20168dd56de94ce"
-  integrity sha512-nYGATKwSVcgHm7kxqxME9FTmiaCzwBpKPLOhOeXlh9lBKwf/2iiZGRukCOejKaDxkKM+phsSANBuLLAle6d7Fw==
-  dependencies:
-    "@fluentui/react" "^8.122.2"
     "@fluentui/set-version" "^8.2.23"
     tslib "^2.1.0"
 
@@ -1544,7 +1530,7 @@
     "@griffel/react" "^1.5.22"
     "@swc/helpers" "^0.5.1"
 
-"@fluentui/react-components@^9.21.0", "@fluentui/react-components@^9.56.8":
+"@fluentui/react-components@^9.21.0":
   version "9.56.8"
   resolved "https://registry.yarnpkg.com/@fluentui/react-components/-/react-components-9.56.8.tgz#e3e8702f98f6b6f3b5a98501e36929b0829d4892"
   integrity sha512-7Japh4zntMzCha2iuDYPPPCabvETpmJpxiLJptVR/iq7NdjYgpSX7RUkuIjjJOyYyvk6e1bQW9KXO6Eg3HyMPA==
@@ -1834,20 +1820,6 @@
     "@swc/helpers" "^0.5.1"
     react-transition-group "^4.4.1"
 
-"@fluentui/react-migration-v8-v9@^9.2.16":
-  version "9.6.44"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-migration-v8-v9/-/react-migration-v8-v9-9.6.44.tgz#8835aa58398956d944d963fe0c5696f1b80e0259"
-  integrity sha512-JEfe1WDZqB+qdoebBnDxuxWpM8TTvgZXlTC0apHZBtrCv+jjfChGbgNjRwNRf6HxXJYfuDhuCQz8r1qaV9mhPw==
-  dependencies:
-    "@ctrl/tinycolor" "3.3.4"
-    "@fluentui/fluent2-theme" "^8.107.118"
-    "@fluentui/react" "^8.122.1"
-    "@fluentui/react-components" "^9.56.8"
-    "@fluentui/react-hooks" "^8.8.16"
-    "@fluentui/react-icons" "^2.0.245"
-    "@griffel/react" "^1.5.22"
-    "@swc/helpers" "^0.5.1"
-
 "@fluentui/react-motion-components-preview@^0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@fluentui/react-motion-components-preview/-/react-motion-components-preview-0.4.1.tgz#0a16718204047bac26ba49af78dd3d23d5f80dfd"
@@ -1915,6 +1887,15 @@
   resolved "https://registry.yarnpkg.com/@fluentui/react-portal-compat-context/-/react-portal-compat-context-9.0.13.tgz#98a8c78e214acc7bb25e5e750df378be42567d2d"
   integrity sha512-N+c6Qs775jnr/4WIzsQuNaRu4v16fa+gGsOCzzU1bqxX0IR9BSjjO2oLGC6luaAOqlQP+JIwn/aumOIJICKXkA==
   dependencies:
+    "@swc/helpers" "^0.5.1"
+
+"@fluentui/react-portal-compat@9.0.176":
+  version "9.0.176"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-portal-compat/-/react-portal-compat-9.0.176.tgz#57ad7a1d7c204cb94aeadc2f777c83654fb44215"
+  integrity sha512-NDKr7EI0vGRgDCoLvYC6eiOfusKNogge1m3lYx1+TfKYbeVW7hysDkp3sjXBxrjYuCcPZpGu1Xy4e0jviY9FUg==
+  dependencies:
+    "@fluentui/react-portal-compat-context" "^9.0.13"
+    "@fluentui/react-tabster" "^9.23.2"
     "@swc/helpers" "^0.5.1"
 
 "@fluentui/react-portal@^9.4.40":
@@ -2361,7 +2342,7 @@
     "@fluentui/set-version" "^8.2.23"
     tslib "^2.1.0"
 
-"@fluentui/react@^8.122.1", "@fluentui/react@^8.122.2":
+"@fluentui/react@^8.122.2":
   version "8.122.2"
   resolved "https://registry.yarnpkg.com/@fluentui/react/-/react-8.122.2.tgz#75f4c34448daa3aa460b30e5ced920f8cb96e868"
   integrity sha512-GiOjekP1TPUKTvh46NqBg4o4JOpVsBQf+bunhCY9CgmYfdDEQExDCxW3wAi3DAhpRLECdc+LBRlTZQhHRJU8VA==
