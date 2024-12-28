@@ -1,6 +1,12 @@
 import * as React from 'react';
-import { Dropdown, IDropdownOption } from '@fluentui/react/lib/Dropdown';
 import { TextField, ITextFieldStyles } from '@fluentui/react/lib/TextField';
+import { 
+  Dropdown,
+  Option,
+  SelectionEvents,
+  OptionOnSelectData,
+  Subtitle2
+} from '@fluentui/react-components';
 import { DeclarativeChart, DeclarativeChartProps, IDeclarativeChart, Schema } from '@fluentui/react-charting';
 
 interface IErrorBoundaryProps {
@@ -46,11 +52,6 @@ const schemasData = requireContext.keys().map((fileName: string) => ({
   schema: requireContext(fileName),
 }));
 
-const options: IDropdownOption[] = schemasData.map((data) => ({
-  key: (data.schema as { id: string }).id,
-  text: data.fileName,
-}));
-
 const dropdownStyles = { dropdown: { width: 200 } };
 
 const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
@@ -64,7 +65,7 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
     const selectedSchema = schemasData[0]?.schema || {};
     const { selectedLegends } = selectedSchema as any;
     this.state = {
-      selectedChoice: (schemasData[0].schema as { id: string }).id || 'unknown', // Set the first file as the default choice if available
+      selectedChoice: (schemasData[0].fileName) || 'unknown', // Set the first file as the default choice if available
       selectedSchema: selectedSchema,
       schemasData: schemasData,
       selectedLegends: JSON.stringify(selectedLegends),
@@ -80,9 +81,9 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
     });
   }
 
-  private _onChange = (ev: any, option?: IDropdownOption): void => {
-    const selectedChoice = option?.key as string;
-    const selectedSchema = this.state.schemasData.find((data) => (data.schema as { id: string }).id === selectedChoice)?.schema;
+  private _onChange = (event: SelectionEvents, data: OptionOnSelectData): void => {
+    const selectedChoice = data.optionText!;
+    const selectedSchema = this.state.schemasData.find((s) => (s.schema as { id: string }).id === data.optionValue!)?.schema;
     const { selectedLegends } = selectedSchema as any;
     this.setState({ selectedChoice, selectedSchema, selectedLegends: JSON.stringify(selectedLegends) });
   };
@@ -130,13 +131,15 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
     return (
       <>
         <div style={{ display: 'flex' }}>
-          <Dropdown
-            label="Select a schema"
-            options={options}
-            onChange={this._onChange}
-            selectedKey={this.state.selectedChoice}
-            styles={dropdownStyles}
-          />
+          <label> Select a schema:</label>&nbsp;&nbsp;&nbsp;
+        <Dropdown
+            value={this.state.selectedChoice}
+            onOptionSelect={this._onChange}
+          >
+            {schemasData.map((data) => (
+            <Option value={(data.schema as { id: string }).id}>{data.fileName}</Option>
+        ))}
+          </Dropdown>
           &nbsp;&nbsp;&nbsp;
         </div>
         <br />
@@ -147,12 +150,12 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
             });
           }}
         >
-          Download
+          Download as Image
         </button>
         <div data-testid="chart-container" >
           <br />
           <br />
-          <h2>{this.state.selectedChoice}. {selectedSchema.layout.title}</h2>
+          <Subtitle2>{selectedSchema.layout.title}</Subtitle2>
           <br />
           <br />
           <ErrorBoundary>
