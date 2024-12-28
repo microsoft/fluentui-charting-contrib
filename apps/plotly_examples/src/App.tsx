@@ -13,10 +13,10 @@ import { PortalCompatProvider } from '@fluentui/react-portal-compat';
 import { ChartWrapper } from './components/ChartWrapper';
 
 const App: React.FC = () => {
-  const [value, setValue] = React.useState("Dark");
+  const [value, setValue] = React.useState("Light");
 
   const onOptionSelect = (event: SelectionEvents, data: OptionOnSelectData): void => {
-    setValue(data.optionText ?? "");
+    setValue(data.optionText ?? "Light");
   };
 
   return (
