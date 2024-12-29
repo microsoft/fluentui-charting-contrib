@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "type": "pie",
+            "labels": [
+                "Production Delays",
+                "Transport Delays",
+                "Other Delays"
+            ],
+            "values": [
+                35,
+                45,
+                20
+            ],
+            "textinfo": "label+percent",
+            "hoverinfo": "label+value"
+        }
+    ],
+    "layout": {
+        "title": {
+            "text": "Delay Contributions in Manufacturing",
+            "font": {
+                "size": 20
+            }
+        }
+    },
+    "id": 92
+}

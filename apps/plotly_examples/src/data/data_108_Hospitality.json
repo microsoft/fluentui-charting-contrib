@@ -1,0 +1,47 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec"
+            ],
+            "y": [
+                150,
+                160,
+                170,
+                180,
+                175,
+                165,
+                155,
+                160,
+                170,
+                180,
+                185,
+                190
+            ],
+            "mode": "lines+markers",
+            "name": "Customer Feedback Volume"
+        }
+    ],
+    "layout": {
+        "title": "Monthly Customer Feedback Trend",
+        "xaxis": {
+            "title": "Month"
+        },
+        "yaxis": {
+            "title": "Feedback Count"
+        }
+    },
+    "id": 108
+}

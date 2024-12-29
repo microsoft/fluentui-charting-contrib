@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "type": "line",
+            "x": [
+                "2023-01-01",
+                "2023-01-02",
+                "2023-01-03",
+                "2023-01-04",
+                "2023-01-05"
+            ],
+            "y": [
+                10,
+                9.8,
+                9.9,
+                9.7,
+                10.1
+            ],
+            "name": "Fuel Efficiency (L/100km)",
+            "line": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "2023-01-01",
+                "2023-01-02",
+                "2023-01-03",
+                "2023-01-04",
+                "2023-01-05"
+            ],
+            "y": [
+                0,
+                1,
+                0,
+                2,
+                1
+            ],
+            "name": "Maintenance Alerts",
+            "mode": "markers",
+            "marker": {
+                "color": "red"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Vehicle Performance Insights",
+        "xaxis": {
+            "title": "Date"
+        },
+        "yaxis": {
+            "title": "Fuel Efficiency & Alerts"
+        }
+    },
+    "id": 103
+}

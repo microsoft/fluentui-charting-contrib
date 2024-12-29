@@ -1,0 +1,69 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Disease A",
+                "Disease B",
+                "Disease C"
+            ],
+            "y": [
+                70,
+                60,
+                75
+            ],
+            "name": "Recovery Rate",
+            "marker": {
+                "color": "green"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Disease A",
+                "Disease B",
+                "Disease C"
+            ],
+            "y": [
+                20,
+                25,
+                15
+            ],
+            "name": "Readmission Rate",
+            "marker": {
+                "color": "orange"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Disease A",
+                "Disease B",
+                "Disease C"
+            ],
+            "y": [
+                10,
+                15,
+                10
+            ],
+            "name": "Mortality Rate",
+            "marker": {
+                "color": "red"
+            }
+        }
+    ],
+    "layout": {
+        "barmode": "group",
+        "title": "Patient Outcomes by Disease",
+        "xaxis": {
+            "title": "Disease"
+        },
+        "yaxis": {
+            "title": "Percentage (%)"
+        },
+        "legend": {
+            "title": "Metrics"
+        }
+    },
+    "id": 86
+}

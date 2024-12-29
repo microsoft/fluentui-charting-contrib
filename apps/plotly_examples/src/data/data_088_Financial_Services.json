@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "type": "heatmap",
+            "z": [
+                [
+                    10,
+                    15,
+                    20
+                ],
+                [
+                    30,
+                    10,
+                    8
+                ],
+                [
+                    5,
+                    12,
+                    25
+                ]
+            ],
+            "x": [
+                "Small",
+                "Medium",
+                "Large"
+            ],
+            "y": [
+                "North America",
+                "Europe",
+                "Asia"
+            ],
+            "colorscale": "Viridis",
+            "colorbar": {
+                "title": "Number of Flagged Transactions"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Fraud Detection Heatmap",
+        "xaxis": {
+            "title": "Transaction Size"
+        },
+        "yaxis": {
+            "title": "Geography"
+        }
+    },
+    "id": 88
+}

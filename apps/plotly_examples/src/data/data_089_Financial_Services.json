@@ -1,0 +1,66 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "markers",
+            "x": [
+                "North America",
+                "Europe",
+                "Asia",
+                "North America",
+                "Europe",
+                "Asia"
+            ],
+            "y": [
+                "Small",
+                "Medium",
+                "Large",
+                "Small",
+                "Medium",
+                "Large"
+            ],
+            "marker": {
+                "size": [
+                    30,
+                    10,
+                    8,
+                    5,
+                    12,
+                    25
+                ],
+                "color": [
+                    10,
+                    15,
+                    20,
+                    30,
+                    10,
+                    8
+                ],
+                "colorscale": "Viridis",
+                "colorbar": {
+                    "title": "Number of Flagged Transactions"
+                }
+            },
+            "text": [
+                "10",
+                "15",
+                "20",
+                "30",
+                "10",
+                "8"
+            ]
+        }
+    ],
+    "layout": {
+        "title": "Fraud Detection Scatter Plot",
+        "xaxis": {
+            "title": "Geography",
+            "type": "category"
+        },
+        "yaxis": {
+            "title": "Transaction Size",
+            "type": "category"
+        }
+    },
+    "id": 89
+}

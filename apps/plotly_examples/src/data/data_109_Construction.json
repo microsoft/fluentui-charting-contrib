@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Project A",
+                "Project B",
+                "Project C"
+            ],
+            "y": [
+                75,
+                60,
+                85
+            ],
+            "name": "Progress (%)",
+            "marker": {
+                "color": "rgb(102, 194, 165)"
+            }
+        },
+        {
+            "type": "line",
+            "x": [
+                "Project A",
+                "Project B",
+                "Project C"
+            ],
+            "y": [
+                80,
+                65,
+                90
+            ],
+            "name": "Timeline (%)",
+            "marker": {
+                "color": "rgb(252, 141, 98)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Construction Project Progress vs Timeline",
+        "xaxis": {
+            "title": "Projects"
+        },
+        "yaxis": {
+            "title": "Percentage"
+        },
+        "barmode": "group"
+    },
+    "id": 109
+}

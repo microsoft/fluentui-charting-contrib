@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "type": "pie",
+            "labels": [
+                "Healthcare",
+                "Education",
+                "Defense",
+                "Infrastructure",
+                "Welfare",
+                "Administration"
+            ],
+            "values": [
+                30,
+                20,
+                15,
+                10,
+                15,
+                10
+            ],
+            "textinfo": "label+percent",
+            "hoverinfo": "label+value",
+            "hole": 0.4
+        }
+    ],
+    "layout": {
+        "title": "Government Budget Allocation by Department",
+        "annotations": [
+            {
+                "font": {
+                    "size": 20
+                },
+                "showarrow": false,
+                "text": "Budget (in %)",
+                "x": 0.5,
+                "y": 0.5
+            }
+        ]
+    },
+    "id": 82
+}

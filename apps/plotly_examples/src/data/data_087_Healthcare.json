@@ -1,0 +1,45 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Treatment X1",
+                "Treatment X2",
+                "Treatment Y1",
+                "Treatment Y2"
+            ],
+            "y": [
+                90,
+                85,
+                88,
+                82
+            ],
+            "mode": "markers",
+            "marker": {
+                "size": [
+                    15,
+                    10,
+                    12,
+                    9
+                ]
+            },
+            "text": [
+                "90% Recovery Rate",
+                "85% Recovery Rate",
+                "88% Recovery Rate",
+                "82% Recovery Rate"
+            ],
+            "name": "Recovery Rate"
+        }
+    ],
+    "layout": {
+        "title": "Effect of Treatment Method on Recovery",
+        "xaxis": {
+            "title": "Treatment Method"
+        },
+        "yaxis": {
+            "title": "Recovery Rate (%)"
+        }
+    },
+    "id": 87
+}
