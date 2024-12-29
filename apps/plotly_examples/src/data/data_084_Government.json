@@ -1,0 +1,54 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "2020",
+                "2021",
+                "2022",
+                "2023"
+            ],
+            "y": [
+                75,
+                73,
+                78,
+                82
+            ],
+            "name": "Citizen Satisfaction for Healthcare",
+            "line": {
+                "color": "rgb(55, 128, 191)"
+            }
+        },
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "2020",
+                "2021",
+                "2022",
+                "2023"
+            ],
+            "y": [
+                68,
+                70,
+                74,
+                76
+            ],
+            "name": "Citizen Satisfaction for Education",
+            "line": {
+                "color": "rgb(235, 47, 6)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Citizen Satisfaction Over Time",
+        "xaxis": {
+            "title": "Year"
+        },
+        "yaxis": {
+            "title": "Satisfaction Rate (%)"
+        }
+    },
+    "id": 84
+}

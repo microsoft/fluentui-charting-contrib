@@ -1,0 +1,51 @@
+{
+    "data": [
+        {
+            "type": "line",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                78,
+                81,
+                85,
+                87
+            ],
+            "name": "Service Speed",
+            "mode": "lines+markers"
+        },
+        {
+            "type": "line",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                82,
+                84,
+                83,
+                86
+            ],
+            "name": "Quality of Service",
+            "mode": "lines+markers"
+        }
+    ],
+    "layout": {
+        "title": "Service Efficiency Over Time",
+        "xaxis": {
+            "title": "Quarter"
+        },
+        "yaxis": {
+            "title": "Efficiency Score"
+        },
+        "legend": {
+            "title": "Service Type"
+        }
+    },
+    "id": 107
+}

@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "2020",
+                "2021",
+                "2022",
+                "2023"
+            ],
+            "y": [
+                10,
+                15,
+                13,
+                20
+            ],
+            "name": "Education",
+            "marker": {
+                "color": "rgb(55, 83, 109)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2020",
+                "2021",
+                "2022",
+                "2023"
+            ],
+            "y": [
+                20,
+                18,
+                25,
+                30
+            ],
+            "name": "Healthcare",
+            "marker": {
+                "color": "rgb(26, 118, 255)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Year-over-Year Budget Change",
+        "xaxis": {
+            "title": "Year"
+        },
+        "yaxis": {
+            "title": "Budget Allocation (in Billion $)"
+        },
+        "barmode": "group"
+    },
+    "id": 83
+}

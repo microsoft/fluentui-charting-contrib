@@ -1,0 +1,63 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                90,
+                82,
+                88,
+                95
+            ],
+            "name": "Attendance",
+            "line": {
+                "color": "pink"
+            }
+        },
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                75,
+                80,
+                78,
+                85
+            ],
+            "name": "Engagement",
+            "line": {
+                "color": "lightblue"
+            }
+        }
+    ],
+    "layout": {
+        "title": {
+            "text": "Quarterly Trends of Attendance and Engagement",
+            "font": {
+                "size": 24
+            }
+        },
+        "xaxis": {
+            "title": "Quarters"
+        },
+        "yaxis": {
+            "title": "Percentage"
+        },
+        "legend": {
+            "x": 1,
+            "y": 1
+        }
+    },
+    "id": 101
+}

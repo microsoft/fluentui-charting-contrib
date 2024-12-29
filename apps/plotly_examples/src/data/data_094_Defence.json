@@ -1,0 +1,63 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "North America",
+                "Europe",
+                "Asia",
+                "Middle East",
+                "Africa",
+                "South America"
+            ],
+            "y": [
+                85,
+                78,
+                72,
+                90,
+                65,
+                80
+            ],
+            "name": "Troop Readiness",
+            "marker": {
+                "color": "rgb(49,130,189)",
+                "opacity": 0.7
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "North America",
+                "Europe",
+                "Asia",
+                "Middle East",
+                "Africa",
+                "South America"
+            ],
+            "y": [
+                60,
+                70,
+                68,
+                85,
+                55,
+                75
+            ],
+            "name": "Equipment Readiness",
+            "marker": {
+                "color": "rgb(204,204,204)",
+                "opacity": 0.5
+            }
+        }
+    ],
+    "layout": {
+        "title": "Mission Readiness - Troop & Equipment Readiness Levels",
+        "barmode": "overlay",
+        "xaxis": {
+            "title": "Regions"
+        },
+        "yaxis": {
+            "title": "Readiness Percentage"
+        }
+    },
+    "id": 94
+}

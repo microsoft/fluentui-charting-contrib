@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Math",
+                "Science",
+                "History",
+                "Literature",
+                "Art"
+            ],
+            "y": [
+                78,
+                85,
+                82,
+                88,
+                79
+            ],
+            "name": "Average Scores",
+            "marker": {
+                "color": "rgba(55, 128, 191, 0.7)"
+            }
+        }
+    ],
+    "layout": {
+        "title": {
+            "text": "Average Student Performance by Subject",
+            "font": {
+                "size": 24
+            }
+        },
+        "xaxis": {
+            "title": "Subjects"
+        },
+        "yaxis": {
+            "title": "Average Score"
+        },
+        "barmode": "group"
+    },
+    "id": 100
+}

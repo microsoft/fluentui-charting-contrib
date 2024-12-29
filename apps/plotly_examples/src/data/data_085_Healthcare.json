@@ -1,0 +1,104 @@
+{
+    "data": [
+        {
+            "type": "line",
+            "x": [
+                "2020 Q1",
+                "2020 Q2",
+                "2020 Q3",
+                "2020 Q4",
+                "2021 Q1",
+                "2021 Q2",
+                "2021 Q3",
+                "2021 Q4",
+                "2022 Q1",
+                "2022 Q2"
+            ],
+            "y": [
+                75,
+                78,
+                80,
+                82,
+                85,
+                88,
+                90,
+                92,
+                95,
+                97
+            ],
+            "name": "Recovery Rate",
+            "mode": "lines+markers"
+        },
+        {
+            "type": "line",
+            "x": [
+                "2020 Q1",
+                "2020 Q2",
+                "2020 Q3",
+                "2020 Q4",
+                "2021 Q1",
+                "2021 Q2",
+                "2021 Q3",
+                "2021 Q4",
+                "2022 Q1",
+                "2022 Q2"
+            ],
+            "y": [
+                15,
+                14,
+                13,
+                12,
+                11,
+                10,
+                9,
+                8,
+                7,
+                6
+            ],
+            "name": "Readmission Rate",
+            "mode": "lines+markers"
+        },
+        {
+            "type": "line",
+            "x": [
+                "2020 Q1",
+                "2020 Q2",
+                "2020 Q3",
+                "2020 Q4",
+                "2021 Q1",
+                "2021 Q2",
+                "2021 Q3",
+                "2021 Q4",
+                "2022 Q1",
+                "2022 Q2"
+            ],
+            "y": [
+                10,
+                8,
+                7,
+                6,
+                4,
+                2,
+                2,
+                1,
+                1,
+                1
+            ],
+            "name": "Mortality Rate",
+            "mode": "lines+markers"
+        }
+    ],
+    "layout": {
+        "title": "Patient Outcome Trends by Disease Over Time",
+        "xaxis": {
+            "title": "Quarter"
+        },
+        "yaxis": {
+            "title": "Percentage (%)"
+        },
+        "legend": {
+            "title": "Metrics"
+        }
+    },
+    "id": 85
+}

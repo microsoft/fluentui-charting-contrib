@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "type": "pie",
+            "labels": [
+                "Urban",
+                "Suburban",
+                "Rural"
+            ],
+            "values": [
+                40,
+                35,
+                25
+            ],
+            "name": "Demographic Distribution",
+            "hoverinfo": "label+percent",
+            "textinfo": "label+percent",
+            "hole": 0.4
+        }
+    ],
+    "layout": {
+        "title": {
+            "text": "Student Demographics by Region",
+            "font": {
+                "size": 24
+            }
+        },
+        "showlegend": true
+    },
+    "id": 102
+}

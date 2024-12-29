@@ -1,0 +1,71 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "2023-09-01",
+                "2023-09-02",
+                "2023-09-03",
+                "2023-09-04",
+                "2023-09-05"
+            ],
+            "y": [
+                95.2,
+                93.8,
+                97.1,
+                92.5,
+                96.3
+            ],
+            "name": "Server Uptime (%)"
+        },
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "2023-09-01",
+                "2023-09-02",
+                "2023-09-03",
+                "2023-09-04",
+                "2023-09-05"
+            ],
+            "y": [
+                89.6,
+                91.0,
+                88.4,
+                90.8,
+                87.9
+            ],
+            "name": "Network Stability (%)"
+        },
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "2023-09-01",
+                "2023-09-02",
+                "2023-09-03",
+                "2023-09-04",
+                "2023-09-05"
+            ],
+            "y": [
+                90.4,
+                88.9,
+                91.5,
+                87.3,
+                85.7
+            ],
+            "name": "Application Performance (%)"
+        }
+    ],
+    "layout": {
+        "title": "Historical Trends of IT Infrastructure Health",
+        "xaxis": {
+            "title": "Date"
+        },
+        "yaxis": {
+            "title": "Performance Metrics (%)"
+        }
+    },
+    "id": 97
+}

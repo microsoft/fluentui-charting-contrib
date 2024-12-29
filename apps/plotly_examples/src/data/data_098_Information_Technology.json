@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "High CPU Usage",
+                "Memory Leaks",
+                "Network Latency"
+            ],
+            "y": [
+                15,
+                5,
+                8
+            ],
+            "name": "Alerts (Last 24 Hours)",
+            "marker": {
+                "color": "orange"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Alerts for Anomalies in IT Systems",
+        "xaxis": {
+            "title": "Anomaly Type"
+        },
+        "yaxis": {
+            "title": "Number of Alerts"
+        }
+    },
+    "id": 98
+}

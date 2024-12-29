@@ -1,0 +1,47 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Raw Materials",
+                "Work in Progress",
+                "Finished Goods"
+            ],
+            "y": [
+                2000,
+                1500,
+                1000
+            ],
+            "text": [
+                "Delays: 5%",
+                "Delays: 10%",
+                "Delays: 8%"
+            ],
+            "textposition": "outside",
+            "marker": {
+                "color": [
+                    "#FF5733",
+                    "#33FF57",
+                    "#3357FF"
+                ]
+            },
+            "name": "Inventory Levels"
+        }
+    ],
+    "layout": {
+        "title": {
+            "text": "Supply Chain Inventory Levels",
+            "font": {
+                "size": 20
+            }
+        },
+        "xaxis": {
+            "title": "Category",
+            "tickangle": -45
+        },
+        "yaxis": {
+            "title": "Quantity"
+        }
+    },
+    "id": 91
+}
