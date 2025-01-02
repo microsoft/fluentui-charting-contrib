@@ -155,7 +155,7 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
         <div data-testid="chart-container" >
           <br />
           <br />
-          <Subtitle2>{selectedSchema.layout.title}</Subtitle2>
+          <Subtitle2>{typeof selectedSchema.layout.title === 'string' ? selectedSchema.layout.title : typeof selectedSchema.layout.title.text === 'string' ? selectedSchema.layout.title.text : JSON.stringify(selectedSchema.layout.title)}</Subtitle2>
           <br />
           <br />
           <ErrorBoundary>
