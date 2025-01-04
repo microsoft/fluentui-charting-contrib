@@ -106,7 +106,7 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
 
   private _handleChartSchemaChanged = (eventData: Schema) => {
     const { selectedLegends } = eventData.plotlySchema;
-    this.setState({ selectedLegends: selectedLegends.join(', ') });
+    this.setState({ selectedLegends: JSON.stringify(selectedLegends) });
   };
 
   private _createDeclarativeChart(): JSX.Element {
@@ -117,7 +117,7 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
     if (!selectedSchema) {
       return <div>No data available</div>;
     }
-    if (this.state.selectedLegends === '') {
+    if (this.state.selectedLegends === '' || this.state.selectedLegends === undefined) {
       this._lastKnownValidLegends = undefined;
     } else {
       try {

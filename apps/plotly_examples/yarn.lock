@@ -1463,14 +1463,14 @@
     embla-carousel-autoplay "^8.5.1"
     embla-carousel-fade "^8.5.1"
 
-"@fluentui/react-charting@^5.23.32":
-  version "5.23.32"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-charting/-/react-charting-5.23.32.tgz#baabde7a2e166706202323bb2984220f80eb9e8b"
-  integrity sha512-2nCOPKVSB0iRQopYRwF/eY0mqX3PArjErx32T+SWTtF5BztuHaz18NZtiKxa1PD7z+ftYHEMW327KjiZ8RHR0w==
+"@fluentui/react-charting@^5.23.34":
+  version "5.23.34"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-charting/-/react-charting-5.23.34.tgz#6be296a1dada579ec9cffb6fd14c830ce4980dd0"
+  integrity sha512-661+lS/fGWBEJHxFZelOFWNh0dvDhgv/eHosaRVfbPe0w9ajfPwoUiINztz9+oTrq8i7vDvEwWAOCGH3BP34MA==
   dependencies:
     "@fluentui/react-focus" "^8.9.20"
     "@fluentui/set-version" "^8.2.23"
-    "@fluentui/theme-samples" "^8.7.191"
+    "@fluentui/theme-samples" "^8.7.192"
     "@microsoft/load-themed-styles" "^1.10.26"
     "@types/d3-array" "^3.0.0"
     "@types/d3-axis" "^3.0.0"
@@ -2342,10 +2342,10 @@
     "@fluentui/set-version" "^8.2.23"
     tslib "^2.1.0"
 
-"@fluentui/react@^8.122.2":
-  version "8.122.2"
-  resolved "https://registry.npmjs.org/@fluentui/react/-/react-8.122.2.tgz"
-  integrity sha512-GiOjekP1TPUKTvh46NqBg4o4JOpVsBQf+bunhCY9CgmYfdDEQExDCxW3wAi3DAhpRLECdc+LBRlTZQhHRJU8VA==
+"@fluentui/react@^8.122.3":
+  version "8.122.3"
+  resolved "https://registry.yarnpkg.com/@fluentui/react/-/react-8.122.3.tgz#b7d7c95b190a44d3c54340203290be4dac582c5d"
+  integrity sha512-XAffQFevT5+PI1fvhAO+2G7ozB5OLYIFEJGXzzpIIkIOPEbZwUMgDh/J93ajVdsBc3OOLaR+mEqaO8ed5Klutw==
   dependencies:
     "@fluentui/date-time-utilities" "^8.6.9"
     "@fluentui/font-icons-mdl2" "^8.5.57"
@@ -2390,12 +2390,12 @@
     "@microsoft/load-themed-styles" "^1.10.26"
     tslib "^2.1.0"
 
-"@fluentui/theme-samples@^8.7.191":
-  version "8.7.191"
-  resolved "https://registry.npmjs.org/@fluentui/theme-samples/-/theme-samples-8.7.191.tgz"
-  integrity sha512-enNWnlIaKlqWuZwc782bT5+06EOpj0qHIwAJX/Cns4z5VfbkVmTzn644/X9CztobBBGURVuzoCUtYYf+n0/qQg==
+"@fluentui/theme-samples@^8.7.192":
+  version "8.7.192"
+  resolved "https://registry.yarnpkg.com/@fluentui/theme-samples/-/theme-samples-8.7.192.tgz#77fe063df981c2f24b5fdeea4c26a9bc0a0835e0"
+  integrity sha512-N6c7WPsEf3YO33WStT3kKuG5NGcFs8e4bhnCYFmu94KxCcBO7Azz94NB8w5MkJkMl9oURuqP6C2x+VKtT7LpOw==
   dependencies:
-    "@fluentui/react" "^8.122.2"
+    "@fluentui/react" "^8.122.3"
     "@fluentui/scheme-utilities" "^8.3.65"
     "@fluentui/set-version" "^8.2.23"
     tslib "^2.1.0"
