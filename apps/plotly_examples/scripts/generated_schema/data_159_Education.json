@@ -1,0 +1,54 @@
+{
+    "data": [
+        {
+            "type": "scatter3d",
+            "x": [
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023"
+            ],
+            "y": [
+                "Undergraduate",
+                "Graduate"
+            ],
+            "z": [
+                [
+                    4000,
+                    4100,
+                    4200,
+                    4250,
+                    4600
+                ],
+                [
+                    2000,
+                    2050,
+                    2150,
+                    2200,
+                    2300
+                ]
+            ],
+            "mode": "markers",
+            "marker": {
+                "size": 5,
+                "color": "rgba(217, 83, 79, 0.8)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "3D Scatter: Enrollment by Education Level Over Time",
+        "scene": {
+            "xaxis": {
+                "title": "Year"
+            },
+            "yaxis": {
+                "title": "Education Level"
+            },
+            "zaxis": {
+                "title": "Enrollment Numbers"
+            }
+        }
+    },
+    "id": 159
+}

@@ -1,0 +1,62 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "2023-09-01",
+                "2023-09-08",
+                "2023-09-15",
+                "2023-09-22",
+                "2023-09-29",
+                "2023-10-06"
+            ],
+            "y": [
+                85,
+                88,
+                95,
+                99,
+                105,
+                112
+            ],
+            "line": {
+                "color": "blue"
+            },
+            "name": "Equipment 1"
+        },
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "2023-09-01",
+                "2023-09-08",
+                "2023-09-15",
+                "2023-09-22",
+                "2023-09-29",
+                "2023-10-06"
+            ],
+            "y": [
+                75,
+                78,
+                82,
+                89,
+                92,
+                97
+            ],
+            "line": {
+                "color": "red"
+            },
+            "name": "Equipment 2"
+        }
+    ],
+    "layout": {
+        "title": "Weekly Operational Temperature Trends",
+        "xaxis": {
+            "title": "Date"
+        },
+        "yaxis": {
+            "title": "Temperature (\u00b0C)"
+        }
+    },
+    "id": 241
+}

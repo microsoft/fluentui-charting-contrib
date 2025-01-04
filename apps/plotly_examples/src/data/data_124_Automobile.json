@@ -1,0 +1,60 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "CO2",
+                "NOx",
+                "SOx",
+                "PM2.5"
+            ],
+            "y": [
+                1200,
+                300,
+                150,
+                80
+            ],
+            "name": "Emission Levels (tons)",
+            "marker": {
+                "color": "rgba(55, 128, 191, 0.7)",
+                "line": {
+                    "color": "rgba(55,128,191,1.0)",
+                    "width": 2
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "CO2",
+                "NOx",
+                "SOx",
+                "PM2.5"
+            ],
+            "y": [
+                2000,
+                1000,
+                500,
+                300
+            ],
+            "name": "Compliance Standards (tons)",
+            "mode": "lines",
+            "line": {
+                "dash": "dot",
+                "width": 2,
+                "color": "rgb(255,165,0)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Monthly Emission Levels vs Compliance Standards",
+        "xaxis": {
+            "title": "Emission Type"
+        },
+        "yaxis": {
+            "title": "Levels (tons)"
+        },
+        "barmode": "overlay"
+    },
+    "id": 124
+}

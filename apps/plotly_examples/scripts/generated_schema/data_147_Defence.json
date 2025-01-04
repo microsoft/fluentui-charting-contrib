@@ -1,0 +1,51 @@
+{
+    "data": [
+        {
+            "type": "heatmap",
+            "z": [
+                [
+                    80,
+                    75,
+                    85
+                ],
+                [
+                    76,
+                    80,
+                    78
+                ],
+                [
+                    83,
+                    79,
+                    90
+                ],
+                [
+                    85,
+                    82,
+                    87
+                ]
+            ],
+            "x": [
+                "Patrol",
+                "Assault",
+                "Defense"
+            ],
+            "y": [
+                "Region 1",
+                "Region 2",
+                "Region 3",
+                "Region 4"
+            ],
+            "colorscale": "Viridis"
+        }
+    ],
+    "layout": {
+        "title": "Performance Heatmap by Region and Exercise Type",
+        "xaxis": {
+            "title": "Exercise Type"
+        },
+        "yaxis": {
+            "title": "Region"
+        }
+    },
+    "id": 147
+}

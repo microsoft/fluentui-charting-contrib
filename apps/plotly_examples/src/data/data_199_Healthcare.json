@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity"
+            ],
+            "y": [
+                90,
+                75,
+                85,
+                70,
+                80
+            ],
+            "name": "Staff Efficiency (Patients/Staff)",
+            "marker": {
+                "color": "#1f77b4"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity"
+            ],
+            "y": [
+                120,
+                95,
+                100,
+                80,
+                105
+            ],
+            "name": "Patient Throughput (Admissions)",
+            "marker": {
+                "color": "#ff7f0e"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Monthly Staff Efficiency and Patient Throughput by Department",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Department"
+        },
+        "yaxis": {
+            "title": "Count"
+        }
+    },
+    "id": 199
+}

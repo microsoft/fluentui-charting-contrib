@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Equipment 1",
+                "Equipment 2",
+                "Equipment 3"
+            ],
+            "y": [
+                450,
+                390,
+                420
+            ],
+            "name": "Hours of Operation",
+            "marker": {
+                "color": "orange"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Total Hours of Operation Last Month",
+        "xaxis": {
+            "title": "Equipment ID"
+        },
+        "yaxis": {
+            "title": "Hours"
+        }
+    },
+    "id": 242
+}

@@ -1,0 +1,65 @@
+{
+    "data": [
+        {
+            "type": "heatmap",
+            "z": [
+                [
+                    2000000,
+                    1500000,
+                    1750000,
+                    1000000,
+                    2200000,
+                    1300000,
+                    1800000,
+                    1100000,
+                    2450000,
+                    1600000
+                ],
+                [
+                    85,
+                    75,
+                    80,
+                    70,
+                    90,
+                    78,
+                    85,
+                    72,
+                    95,
+                    82
+                ]
+            ],
+            "x": [
+                "Hospital A",
+                "Hospital B",
+                "Hospital C",
+                "Hospital D",
+                "Hospital E",
+                "Hospital F",
+                "Hospital G",
+                "Hospital H",
+                "Hospital I",
+                "Hospital J"
+            ],
+            "y": [
+                "Healthcare Spending (USD)",
+                "Patient Satisfaction Score"
+            ],
+            "colorscale": "Viridis",
+            "colorbar": {
+                "title": "Value"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Heatmap of Healthcare Spending and Patient Satisfaction",
+        "xaxis": {
+            "title": "Hospital"
+        },
+        "yaxis": {
+            "title": "Parameters"
+        },
+        "height": 600,
+        "width": 800
+    },
+    "id": 198
+}

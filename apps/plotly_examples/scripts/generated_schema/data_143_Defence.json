@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "type": "line",
+            "x": [
+                "2023-01",
+                "2023-02",
+                "2023-03",
+                "2023-04",
+                "2023-05",
+                "2023-06",
+                "2023-07",
+                "2023-08",
+                "2023-09",
+                "2023-10"
+            ],
+            "y": [
+                15,
+                12,
+                20,
+                22,
+                18,
+                25,
+                17,
+                19,
+                21,
+                23
+            ],
+            "name": "Projected Needs"
+        }
+    ],
+    "layout": {
+        "title": "Projected Maintenance Needs Over Time",
+        "xaxis": {
+            "title": "Month",
+            "tickformat": "%b %Y"
+        },
+        "yaxis": {
+            "title": "Maintenance Needs (in hours)"
+        },
+        "showlegend": true
+    },
+    "id": 143
+}

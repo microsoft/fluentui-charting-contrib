@@ -1,0 +1,51 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec"
+            ],
+            "y": [
+                -5,
+                10,
+                -2,
+                8,
+                3,
+                15,
+                -4,
+                9,
+                -7,
+                2,
+                11,
+                -1
+            ],
+            "mode": "lines+markers",
+            "name": "Variance Percentage",
+            "line": {
+                "color": "red"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Monthly Variance Percentage",
+        "xaxis": {
+            "title": "Month"
+        },
+        "yaxis": {
+            "title": "Variance (%)",
+            "zeroline": false
+        }
+    },
+    "id": 128
+}

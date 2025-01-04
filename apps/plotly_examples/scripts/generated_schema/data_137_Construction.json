@@ -1,0 +1,37 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June"
+            ],
+            "y": [
+                20,
+                25,
+                18,
+                22,
+                30,
+                35
+            ],
+            "name": "Interactions Count",
+            "marker": {
+                "color": "orange"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Frequency of Client Interactions by Month",
+        "xaxis": {
+            "title": "Month"
+        },
+        "yaxis": {
+            "title": "Number of Interactions"
+        }
+    },
+    "id": 137
+}

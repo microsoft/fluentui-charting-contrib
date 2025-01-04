@@ -1,0 +1,55 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Stage 1",
+                "Stage 2",
+                "Stage 3",
+                "Stage 4"
+            ],
+            "y": [
+                240,
+                370,
+                290,
+                410
+            ],
+            "name": "Machine A",
+            "marker": {
+                "color": "rgba(55, 83, 109, 0.7)"
+            },
+            "hoverinfo": "y+name"
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Stage 1",
+                "Stage 2",
+                "Stage 3",
+                "Stage 4"
+            ],
+            "y": [
+                200,
+                320,
+                270,
+                390
+            ],
+            "name": "Machine B",
+            "marker": {
+                "color": "rgba(26, 118, 255, 0.7)"
+            },
+            "hoverinfo": "y+name"
+        }
+    ],
+    "layout": {
+        "barmode": "stack",
+        "title": "Energy Consumption by Manufacturing Stage",
+        "xaxis": {
+            "title": "Manufacturing Stage"
+        },
+        "yaxis": {
+            "title": "Total Energy Consumption (kWh)"
+        }
+    },
+    "id": 248
+}

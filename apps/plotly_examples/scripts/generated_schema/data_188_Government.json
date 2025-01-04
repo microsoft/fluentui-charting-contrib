@@ -1,0 +1,83 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+            ],
+            "y": [
+                55,
+                65,
+                70,
+                80,
+                95,
+                100,
+                105,
+                110,
+                120
+            ],
+            "name": "Overall Engagement",
+            "line": {
+                "shape": "spline",
+                "color": "rgb(255, 127, 14)"
+            },
+            "marker": {
+                "symbol": "cross"
+            }
+        },
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+            ],
+            "y": [
+                50,
+                60,
+                55,
+                70,
+                85,
+                95,
+                98,
+                105,
+                115
+            ],
+            "name": "Positive Sentiment",
+            "line": {
+                "shape": "spline",
+                "color": "rgb(44, 160, 44)"
+            },
+            "marker": {
+                "symbol": "circle"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Citizen Engagement and Sentiment Over Time",
+        "xaxis": {
+            "title": "Month"
+        },
+        "yaxis": {
+            "title": "Engagement Index"
+        },
+        "hovermode": "closest"
+    },
+    "id": 188
+}

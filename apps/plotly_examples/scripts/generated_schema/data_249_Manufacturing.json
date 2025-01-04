@@ -1,0 +1,37 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines",
+            "x": [
+                "2023-10-01",
+                "2023-10-02",
+                "2023-10-03",
+                "2023-10-04",
+                "2023-10-05"
+            ],
+            "y": [
+                450,
+                480,
+                410,
+                470,
+                500
+            ],
+            "line": {
+                "shape": "spline"
+            },
+            "name": "Total Energy Consumption",
+            "hoverinfo": "y+name"
+        }
+    ],
+    "layout": {
+        "title": "Total Energy Consumption Over Time",
+        "xaxis": {
+            "title": "Date"
+        },
+        "yaxis": {
+            "title": "Total Energy Consumption (kWh)"
+        }
+    },
+    "id": 249
+}

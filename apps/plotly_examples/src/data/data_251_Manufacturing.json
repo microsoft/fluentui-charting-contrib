@@ -1,0 +1,73 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Shift A",
+                "Shift B",
+                "Shift C",
+                "Shift D",
+                "Shift E"
+            ],
+            "y": [
+                88,
+                93,
+                79,
+                84,
+                91
+            ],
+            "name": "Task Completion Rate",
+            "text": [
+                "Shift A: 88%",
+                "Shift B: 93%",
+                "Shift C: 79%",
+                "Shift D: 84%",
+                "Shift E: 91%"
+            ],
+            "hoverinfo": "text"
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Shift A",
+                "Shift B",
+                "Shift C",
+                "Shift D",
+                "Shift E"
+            ],
+            "y": [
+                6,
+                4,
+                9,
+                7,
+                5
+            ],
+            "name": "Average Overtime Hours",
+            "yaxis": "y2",
+            "text": [
+                "6 hrs",
+                "4 hrs",
+                "9 hrs",
+                "7 hrs",
+                "5 hrs"
+            ],
+            "hoverinfo": "text"
+        }
+    ],
+    "layout": {
+        "title": "Shift-wise Productivity and Overtime",
+        "xaxis": {
+            "title": "Shifts"
+        },
+        "yaxis": {
+            "title": "Task Completion Rate (%)"
+        },
+        "yaxis2": {
+            "title": "Overtime Hours",
+            "overlaying": "y",
+            "side": "right"
+        },
+        "barmode": "group"
+    },
+    "id": 251
+}

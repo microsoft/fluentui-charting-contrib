@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "x": [
+                "2023-01-01",
+                "2023-01-02",
+                "2023-01-03",
+                "2023-01-04",
+                "2023-01-05"
+            ],
+            "y": [
+                75,
+                80,
+                65,
+                90,
+                85
+            ],
+            "type": "scatter",
+            "mode": "lines+markers",
+            "name": "Hotel A"
+        },
+        {
+            "x": [
+                "2023-01-01",
+                "2023-01-02",
+                "2023-01-03",
+                "2023-01-04",
+                "2023-01-05"
+            ],
+            "y": [
+                85,
+                88,
+                70,
+                78,
+                82
+            ],
+            "type": "scatter",
+            "mode": "lines+markers",
+            "name": "Industry Average"
+        }
+    ],
+    "layout": {
+        "title": "Daily Occupancy Rate Comparison - Hotel A vs Industry Average",
+        "xaxis": {
+            "title": "Date"
+        },
+        "yaxis": {
+            "title": "Occupancy Rate (%)"
+        }
+    },
+    "id": 208
+}

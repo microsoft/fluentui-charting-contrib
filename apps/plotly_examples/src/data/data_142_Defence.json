@@ -1,0 +1,30 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Fleet A",
+                "Fleet B",
+                "Fleet C"
+            ],
+            "y": [
+                "0.8",
+                "0.9",
+                "0.7"
+            ],
+            "name": "Completion Rate"
+        }
+    ],
+    "layout": {
+        "title": "Maintenance Completion Rates by Fleet",
+        "xaxis": {
+            "title": "Fleet"
+        },
+        "yaxis": {
+            "title": "Completion Rate",
+            "tickformat": ",.0%"
+        },
+        "barmode": "group"
+    },
+    "id": 142
+}

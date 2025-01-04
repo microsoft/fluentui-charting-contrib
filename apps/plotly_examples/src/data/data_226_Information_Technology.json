@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Week 1",
+                "Week 2",
+                "Week 3",
+                "Week 4"
+            ],
+            "y": [
+                30,
+                25,
+                20,
+                15
+            ],
+            "name": "Issue Resolution Time (hours)",
+            "marker": {
+                "color": "rgb(55, 83, 109)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Week 1",
+                "Week 2",
+                "Week 3",
+                "Week 4"
+            ],
+            "y": [
+                40,
+                35,
+                30,
+                25
+            ],
+            "name": "Feature Request Completion Time (hours)",
+            "marker": {
+                "color": "rgb(26, 118, 255)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Weekly Issue Resolution and Feature Request Completion Times",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Weeks"
+        },
+        "yaxis": {
+            "title": "Time (hours)"
+        }
+    },
+    "id": 226
+}

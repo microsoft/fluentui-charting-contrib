@@ -1,0 +1,72 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                320,
+                450,
+                370,
+                400
+            ],
+            "name": "18-24",
+            "marker": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                280,
+                300,
+                330,
+                360
+            ],
+            "name": "25-34",
+            "marker": {
+                "color": "green"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                290,
+                310,
+                350,
+                380
+            ],
+            "name": "35-44",
+            "marker": {
+                "color": "red"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Age Distribution by Quarter",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Quarter"
+        },
+        "yaxis": {
+            "title": "Number of Guests"
+        }
+    },
+    "id": 215
+}

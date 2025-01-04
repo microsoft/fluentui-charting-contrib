@@ -1,0 +1,66 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Site A",
+                "Site B",
+                "Site C"
+            ],
+            "y": [
+                85,
+                65,
+                80
+            ],
+            "name": "Labor",
+            "marker": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Site A",
+                "Site B",
+                "Site C"
+            ],
+            "y": [
+                70,
+                90,
+                60
+            ],
+            "name": "Machinery",
+            "marker": {
+                "color": "green"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Site A",
+                "Site B",
+                "Site C"
+            ],
+            "y": [
+                75,
+                55,
+                85
+            ],
+            "name": "Materials",
+            "marker": {
+                "color": "orange"
+            }
+        }
+    ],
+    "layout": {
+        "barmode": "group",
+        "title": "Resource Allocation Trends Across Sites",
+        "xaxis": {
+            "title": "Project Sites"
+        },
+        "yaxis": {
+            "title": "Allocation (%)"
+        }
+    },
+    "id": 134
+}

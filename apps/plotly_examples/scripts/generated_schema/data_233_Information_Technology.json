@@ -1,0 +1,45 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September"
+            ],
+            "y": [
+                70,
+                74,
+                78,
+                77,
+                82,
+                85,
+                87,
+                89,
+                90
+            ],
+            "name": "First Contact Resolution Rate (%)",
+            "line": {
+                "color": "rgb(44, 160, 101)",
+                "width": 2
+            }
+        }
+    ],
+    "layout": {
+        "title": "Trend in First Contact Resolution Rate Over Months",
+        "xaxis": {
+            "title": "Month"
+        },
+        "yaxis": {
+            "title": "First Contact Resolution Rate (%)"
+        }
+    },
+    "id": 233
+}

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "markers",
+            "x": [
+                "USA",
+                "UK",
+                "Germany",
+                "France",
+                "Japan"
+            ],
+            "y": [
+                500,
+                300,
+                200,
+                250,
+                150
+            ],
+            "marker": {
+                "size": [
+                    50,
+                    30,
+                    20,
+                    25,
+                    15
+                ]
+            },
+            "text": [
+                "USA",
+                "UK",
+                "Germany",
+                "France",
+                "Japan"
+            ]
+        }
+    ],
+    "layout": {
+        "title": "Guest Nationality Distribution",
+        "xaxis": {
+            "title": "Country"
+        },
+        "yaxis": {
+            "title": "Number of Guests"
+        }
+    },
+    "id": 216
+}

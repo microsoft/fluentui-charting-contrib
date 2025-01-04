@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Phishing",
+                "Malware",
+                "DDoS",
+                "Unauthorized Access",
+                "Ransomware"
+            ],
+            "y": [
+                50,
+                30,
+                20,
+                25,
+                15
+            ],
+            "name": "Number of Incidents",
+            "marker": {
+                "color": "rgb(55, 83, 109)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Volume of Cybersecurity Incidents by Type",
+        "xaxis": {
+            "title": "Type of Threat"
+        },
+        "yaxis": {
+            "title": "Number of Incidents"
+        }
+    },
+    "id": 229
+}

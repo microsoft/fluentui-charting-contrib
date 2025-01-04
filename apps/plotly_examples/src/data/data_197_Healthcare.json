@@ -1,0 +1,85 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Hospital A",
+                "Hospital B",
+                "Hospital C",
+                "Hospital D",
+                "Hospital E",
+                "Hospital F",
+                "Hospital G",
+                "Hospital H",
+                "Hospital I",
+                "Hospital J"
+            ],
+            "y": [
+                85,
+                75,
+                80,
+                70,
+                90,
+                78,
+                85,
+                72,
+                95,
+                82
+            ],
+            "name": "Satisfaction Score",
+            "marker": {
+                "color": "rgba(67, 162, 202, 0.7)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Hospital A",
+                "Hospital B",
+                "Hospital C",
+                "Hospital D",
+                "Hospital E",
+                "Hospital F",
+                "Hospital G",
+                "Hospital H",
+                "Hospital I",
+                "Hospital J"
+            ],
+            "y": [
+                2000000,
+                1500000,
+                1750000,
+                1000000,
+                2200000,
+                1300000,
+                1800000,
+                1100000,
+                2450000,
+                1600000
+            ],
+            "name": "Healthcare Spending (USD)",
+            "yaxis": "y2",
+            "marker": {
+                "color": "rgba(178, 24, 43, 0.7)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Comparison of Healthcare Spending and Patient Satisfaction",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Hospital"
+        },
+        "yaxis": {
+            "title": "Patient Satisfaction Score"
+        },
+        "yaxis2": {
+            "title": "Healthcare Spending (USD)",
+            "overlaying": "y",
+            "side": "right"
+        },
+        "height": 600,
+        "width": 800
+    },
+    "id": 197
+}

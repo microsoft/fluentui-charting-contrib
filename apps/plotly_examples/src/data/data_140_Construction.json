@@ -1,0 +1,101 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                200,
+                180,
+                190,
+                170
+            ],
+            "mode": "lines+markers",
+            "name": "Carbon Footprint",
+            "line": {
+                "shape": "linear",
+                "color": "rgb(31,119,180)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                150,
+                160,
+                140,
+                130
+            ],
+            "mode": "lines+markers",
+            "name": "Waste Generation",
+            "line": {
+                "shape": "linear",
+                "color": "rgb(255,127,14)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                300,
+                280,
+                290,
+                270
+            ],
+            "mode": "lines+markers",
+            "name": "Energy Consumption",
+            "line": {
+                "shape": "linear",
+                "color": "rgb(44,160,44)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                120,
+                110,
+                115,
+                105
+            ],
+            "mode": "lines+markers",
+            "name": "Water Usage",
+            "line": {
+                "shape": "linear",
+                "color": "rgb(214,39,40)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Trends in Sustainability Metrics",
+        "xaxis": {
+            "title": "Quarters"
+        },
+        "yaxis": {
+            "title": "Metric Values"
+        },
+        "legend": {
+            "orientation": "h"
+        }
+    },
+    "id": 140
+}

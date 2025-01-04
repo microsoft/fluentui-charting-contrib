@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "type": "heatmap",
+            "z": [
+                [
+                    30,
+                    20,
+                    25
+                ],
+                [
+                    45,
+                    35,
+                    40
+                ],
+                [
+                    50,
+                    45,
+                    55
+                ],
+                [
+                    60,
+                    50,
+                    45
+                ],
+                [
+                    65,
+                    55,
+                    60
+                ]
+            ],
+            "x": [
+                "Admissions",
+                "Discharges",
+                "Average Wait"
+            ],
+            "y": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity"
+            ],
+            "colorscale": "Viridis"
+        }
+    ],
+    "layout": {
+        "title": "Departmental Throughput Metrics Heatmap",
+        "xaxis": {
+            "title": "Throughput Metrics"
+        },
+        "yaxis": {
+            "title": "Department"
+        }
+    },
+    "id": 201
+}
