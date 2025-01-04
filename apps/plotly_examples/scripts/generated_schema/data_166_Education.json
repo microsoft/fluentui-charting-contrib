@@ -1,0 +1,72 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "School A",
+                "School B",
+                "School C",
+                "School D"
+            ],
+            "y": [
+                350000,
+                500000,
+                450000,
+                400000
+            ],
+            "name": "Financial Resources",
+            "marker": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "School A",
+                "School B",
+                "School C",
+                "School D"
+            ],
+            "y": [
+                300,
+                400,
+                350,
+                320
+            ],
+            "name": "Technological Resources",
+            "marker": {
+                "color": "red"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "School A",
+                "School B",
+                "School C",
+                "School D"
+            ],
+            "y": [
+                250,
+                300,
+                280,
+                260
+            ],
+            "name": "Infrastructural Resources",
+            "marker": {
+                "color": "green"
+            }
+        }
+    ],
+    "layout": {
+        "barmode": "group",
+        "title": "School Resource Allocation",
+        "xaxis": {
+            "title": "School Name"
+        },
+        "yaxis": {
+            "title": "Resources Allocated"
+        }
+    },
+    "id": 166
+}

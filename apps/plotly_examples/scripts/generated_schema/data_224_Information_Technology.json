@@ -1,0 +1,72 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Department A",
+                "Department B",
+                "Department C",
+                "Department D"
+            ],
+            "y": [
+                3000,
+                2500,
+                2900,
+                3200
+            ],
+            "name": "AWS",
+            "marker": {
+                "color": "cyan"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Department A",
+                "Department B",
+                "Department C",
+                "Department D"
+            ],
+            "y": [
+                2000,
+                2300,
+                2100,
+                2000
+            ],
+            "name": "Azure",
+            "marker": {
+                "color": "magenta"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Department A",
+                "Department B",
+                "Department C",
+                "Department D"
+            ],
+            "y": [
+                1800,
+                1900,
+                2000,
+                2100
+            ],
+            "name": "Google Cloud",
+            "marker": {
+                "color": "yellow"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Department-wise Cloud Resource Cost Analysis",
+        "barmode": "stack",
+        "xaxis": {
+            "title": "Department"
+        },
+        "yaxis": {
+            "title": "Cost ($)"
+        }
+    },
+    "id": 224
+}

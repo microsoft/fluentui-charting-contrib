@@ -1,0 +1,83 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "markers",
+            "x": [
+                "Extracurricular",
+                "Classroom",
+                "Digital Platform",
+                "Extracurricular",
+                "Classroom",
+                "Digital Platform",
+                "Extracurricular",
+                "Classroom",
+                "Digital Platform"
+            ],
+            "y": [
+                85,
+                90,
+                78,
+                60,
+                70,
+                92,
+                75,
+                88,
+                80
+            ],
+            "text": [
+                "Grade 9",
+                "Grade 9",
+                "Grade 9",
+                "Grade 10",
+                "Grade 10",
+                "Grade 10",
+                "Grade 11",
+                "Grade 11",
+                "Grade 11"
+            ],
+            "marker": {
+                "size": [
+                    40,
+                    50,
+                    30,
+                    35,
+                    45,
+                    55,
+                    60,
+                    65,
+                    50
+                ],
+                "color": [
+                    85,
+                    90,
+                    78,
+                    60,
+                    70,
+                    92,
+                    75,
+                    88,
+                    80
+                ],
+                "colorscale": "Viridis"
+            }
+        }
+    ],
+    "layout": {
+        "title": {
+            "text": "Student Engagement Levels by Activity Type"
+        },
+        "xaxis": {
+            "title": {
+                "text": "Activity Type"
+            }
+        },
+        "yaxis": {
+            "title": {
+                "text": "Engagement Score"
+            }
+        },
+        "categoryorder": "category descending"
+    },
+    "id": 169
+}

@@ -1,0 +1,59 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E"
+            ],
+            "y": [
+                12,
+                18,
+                10,
+                22,
+                15
+            ],
+            "name": "Average Resolution Time",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(26, 118, 255, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E"
+            ],
+            "y": [
+                5,
+                9,
+                4,
+                10,
+                7
+            ],
+            "name": "Min Resolution Time",
+            "mode": "lines+markers",
+            "line": {
+                "dash": "dot",
+                "color": "rgba(50, 171, 96, 0.7)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Resolution Time across Production Batches",
+        "xaxis": {
+            "title": "Production Batch"
+        },
+        "yaxis": {
+            "title": "Resolution Time (hours)"
+        }
+    },
+    "id": 122
+}

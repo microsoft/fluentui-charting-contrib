@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D"
+            ],
+            "y": [
+                150,
+                120,
+                80,
+                200
+            ],
+            "name": "Inventory Levels",
+            "marker": {
+                "color": "#1f77b4"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D"
+            ],
+            "y": [
+                30,
+                45,
+                20,
+                50
+            ],
+            "name": "Reorder Time",
+            "marker": {
+                "color": "#ff7f0e"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Inventory Levels and Reorder Time by Supplier",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Supplier Name"
+        },
+        "yaxis": {
+            "title": "Values"
+        }
+    },
+    "id": 118
+}

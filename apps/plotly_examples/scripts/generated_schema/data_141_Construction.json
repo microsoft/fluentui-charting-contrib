@@ -1,0 +1,158 @@
+{
+    "data": [
+        {
+            "type": "pie",
+            "labels": [
+                "Carbon Footprint",
+                "Waste Generation",
+                "Energy Consumption",
+                "Water Usage"
+            ],
+            "values": [
+                200,
+                150,
+                300,
+                120
+            ],
+            "name": "Q1",
+            "hoverinfo": "label+percent+name",
+            "domain": {
+                "x": [
+                    0,
+                    0.2
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "hole": 0.4
+        },
+        {
+            "type": "pie",
+            "labels": [
+                "Carbon Footprint",
+                "Waste Generation",
+                "Energy Consumption",
+                "Water Usage"
+            ],
+            "values": [
+                180,
+                160,
+                280,
+                110
+            ],
+            "name": "Q2",
+            "hoverinfo": "label+percent+name",
+            "domain": {
+                "x": [
+                    0.25,
+                    0.45
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "hole": 0.4
+        },
+        {
+            "type": "pie",
+            "labels": [
+                "Carbon Footprint",
+                "Waste Generation",
+                "Energy Consumption",
+                "Water Usage"
+            ],
+            "values": [
+                190,
+                140,
+                290,
+                115
+            ],
+            "name": "Q3",
+            "hoverinfo": "label+percent+name",
+            "domain": {
+                "x": [
+                    0.5,
+                    0.7
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "hole": 0.4
+        },
+        {
+            "type": "pie",
+            "labels": [
+                "Carbon Footprint",
+                "Waste Generation",
+                "Energy Consumption",
+                "Water Usage"
+            ],
+            "values": [
+                170,
+                130,
+                270,
+                105
+            ],
+            "name": "Q4",
+            "hoverinfo": "label+percent+name",
+            "domain": {
+                "x": [
+                    0.75,
+                    0.95
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "hole": 0.4
+        }
+    ],
+    "layout": {
+        "title": "Distribution of Sustainability Metrics by Quarter",
+        "grid": {
+            "rows": 1,
+            "columns": 4
+        },
+        "annotations": [
+            {
+                "text": "Q1",
+                "x": 0.1,
+                "y": 1,
+                "xref": "paper",
+                "yref": "paper",
+                "showarrow": false
+            },
+            {
+                "text": "Q2",
+                "x": 0.35,
+                "y": 1,
+                "xref": "paper",
+                "yref": "paper",
+                "showarrow": false
+            },
+            {
+                "text": "Q3",
+                "x": 0.6,
+                "y": 1,
+                "xref": "paper",
+                "yref": "paper",
+                "showarrow": false
+            },
+            {
+                "text": "Q4",
+                "x": 0.85,
+                "y": 1,
+                "xref": "paper",
+                "yref": "paper",
+                "showarrow": false
+            }
+        ]
+    },
+    "id": 141
+}

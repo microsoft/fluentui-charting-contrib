@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "type": "choropleth",
+            "locations": [
+                "US",
+                "CA",
+                "FR",
+                "DE",
+                "JP"
+            ],
+            "z": [
+                300,
+                150,
+                100,
+                175,
+                220
+            ],
+            "text": [
+                "United States",
+                "Canada",
+                "France",
+                "Germany",
+                "Japan"
+            ],
+            "colorscale": "Blues",
+            "colorbar": {
+                "title": "Access Requests"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Geographic Distribution of Access Requests",
+        "geo": {
+            "projection": {
+                "type": "robinson"
+            }
+        }
+    },
+    "id": 236
+}

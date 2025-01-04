@@ -1,0 +1,42 @@
+{
+    "data": [
+        {
+            "type": "pie",
+            "labels": [
+                "Plant A",
+                "Plant B",
+                "Plant C",
+                "Plant D"
+            ],
+            "values": [
+                40,
+                30,
+                20,
+                10
+            ],
+            "name": "Incident Location",
+            "hole": 0.4,
+            "marker": {
+                "colors": [
+                    "rgb(93, 164, 214)",
+                    "rgb(255, 144, 14)",
+                    "rgb(44, 160, 101)",
+                    "rgb(255, 65, 54)"
+                ]
+            }
+        }
+    ],
+    "layout": {
+        "title": "Incident Distribution by Location",
+        "annotations": [
+            {
+                "font": {
+                    "size": 20
+                },
+                "showarrow": false,
+                "text": "Locations"
+            }
+        ]
+    },
+    "id": 125
+}

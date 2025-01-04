@@ -1,0 +1,88 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                2000000,
+                1500000,
+                1750000,
+                1000000,
+                2200000,
+                1300000,
+                1800000,
+                1100000,
+                2450000,
+                1600000
+            ],
+            "y": [
+                85,
+                75,
+                80,
+                70,
+                90,
+                78,
+                85,
+                72,
+                95,
+                82
+            ],
+            "mode": "markers",
+            "marker": {
+                "size": [
+                    20,
+                    15,
+                    17,
+                    10,
+                    22,
+                    13,
+                    18,
+                    11,
+                    24,
+                    16
+                ],
+                "color": [
+                    85,
+                    75,
+                    80,
+                    70,
+                    90,
+                    78,
+                    85,
+                    72,
+                    95,
+                    82
+                ],
+                "colorscale": "Viridis",
+                "colorbar": {
+                    "title": "Satisfaction Score"
+                }
+            },
+            "text": [
+                "Hospital A",
+                "Hospital B",
+                "Hospital C",
+                "Hospital D",
+                "Hospital E",
+                "Hospital F",
+                "Hospital G",
+                "Hospital H",
+                "Hospital I",
+                "Hospital J"
+            ]
+        }
+    ],
+    "layout": {
+        "title": {
+            "text": "Healthcare Spending vs Patient Satisfaction"
+        },
+        "xaxis": {
+            "title": "Healthcare Spending (USD)"
+        },
+        "yaxis": {
+            "title": "Patient Satisfaction Score"
+        },
+        "height": 600,
+        "width": 800
+    },
+    "id": 196
+}

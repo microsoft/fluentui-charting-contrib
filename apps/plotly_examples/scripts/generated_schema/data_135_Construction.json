@@ -1,0 +1,80 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "2023-09-01",
+                "2023-09-02",
+                "2023-09-03",
+                "2023-09-04",
+                "2023-09-05"
+            ],
+            "y": [
+                250,
+                260,
+                230,
+                240,
+                245
+            ],
+            "mode": "lines+markers",
+            "name": "Labor Demand Forecast",
+            "line": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "2023-09-01",
+                "2023-09-02",
+                "2023-09-03",
+                "2023-09-04",
+                "2023-09-05"
+            ],
+            "y": [
+                150,
+                145,
+                160,
+                155,
+                150
+            ],
+            "mode": "lines+markers",
+            "name": "Machinery Demand Forecast",
+            "line": {
+                "color": "green"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "2023-09-01",
+                "2023-09-02",
+                "2023-09-03",
+                "2023-09-04",
+                "2023-09-05"
+            ],
+            "y": [
+                300,
+                290,
+                310,
+                305,
+                295
+            ],
+            "mode": "lines+markers",
+            "name": "Material Demand Forecast",
+            "line": {
+                "color": "orange"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Forecasted Resource Demand Over Time",
+        "xaxis": {
+            "title": "Date"
+        },
+        "yaxis": {
+            "title": "Demand Units"
+        }
+    },
+    "id": 135
+}

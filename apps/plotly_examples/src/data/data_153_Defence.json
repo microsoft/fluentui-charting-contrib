@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "2023-09-01",
+                "2023-09-02",
+                "2023-09-03"
+            ],
+            "y": [
+                15,
+                25,
+                10
+            ],
+            "name": "Threat Impact Score over Time"
+        }
+    ],
+    "layout": {
+        "title": "Temporal Analysis of Threat Impact",
+        "xaxis": {
+            "title": "Date"
+        },
+        "yaxis": {
+            "title": "Impact Score"
+        }
+    },
+    "id": 153
+}

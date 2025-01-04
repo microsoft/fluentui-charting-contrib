@@ -1,0 +1,69 @@
+{
+    "data": [
+        {
+            "type": "heatmap",
+            "z": [
+                [
+                    3,
+                    1,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    2,
+                    2,
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    0,
+                    1,
+                    0,
+                    2
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    2,
+                    1,
+                    0,
+                    1,
+                    1
+                ]
+            ],
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E"
+            ],
+            "y": [
+                "Engine",
+                "Transmission",
+                "Brakes",
+                "Suspension",
+                "Electrical"
+            ],
+            "colorscale": "Viridis"
+        }
+    ],
+    "layout": {
+        "title": "Defect Occurrences per Manufacturing Cycle",
+        "xaxis": {
+            "title": "Manufacturing Cycle"
+        },
+        "yaxis": {
+            "title": "Defect Type"
+        }
+    },
+    "id": 123
+}

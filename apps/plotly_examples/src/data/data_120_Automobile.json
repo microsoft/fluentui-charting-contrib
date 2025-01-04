@@ -1,0 +1,26 @@
+{
+    "data": [
+        {
+            "type": "pie",
+            "labels": [
+                "On-time Delivery",
+                "Delayed Delivery"
+            ],
+            "values": [
+                70,
+                30
+            ],
+            "name": "Delivery Schedule",
+            "marker": {
+                "colors": [
+                    "#98df8a",
+                    "#d62728"
+                ]
+            }
+        }
+    ],
+    "layout": {
+        "title": "Delivery Schedule Performance"
+    },
+    "id": 120
+}

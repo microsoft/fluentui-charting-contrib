@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C"
+            ],
+            "y": [
+                120,
+                150,
+                100
+            ],
+            "name": "Allocated",
+            "marker": {
+                "color": "rgb(49,130,189)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C"
+            ],
+            "y": [
+                150,
+                120,
+                130
+            ],
+            "name": "Required",
+            "marker": {
+                "color": "rgb(204,204,204)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Allocated vs Required Resources by Operation",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Operation Type"
+        },
+        "yaxis": {
+            "title": "Quantity"
+        }
+    },
+    "id": 154
+}

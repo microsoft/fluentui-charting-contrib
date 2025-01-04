@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "2023-09-01",
+                "2023-09-02",
+                "2023-09-03",
+                "2023-09-04",
+                "2023-09-05"
+            ],
+            "y": [
+                24,
+                18,
+                26,
+                30,
+                22
+            ],
+            "name": "Time to Resolution (hrs)",
+            "mode": "lines+markers",
+            "line": {
+                "shape": "spline",
+                "smoothing": 1.3,
+                "color": "rgb(26, 118, 255)"
+            },
+            "marker": {
+                "size": 6
+            }
+        }
+    ],
+    "layout": {
+        "title": "Daily Average Time to Resolution (hours)",
+        "xaxis": {
+            "title": "Date"
+        },
+        "yaxis": {
+            "title": "Time to Resolution (hours)"
+        }
+    },
+    "id": 231
+}
