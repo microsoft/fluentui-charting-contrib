@@ -1,0 +1,72 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Unit A",
+                "Unit B",
+                "Unit C",
+                "Unit D"
+            ],
+            "y": [
+                85,
+                78,
+                92,
+                81
+            ],
+            "name": "Patrol",
+            "marker": {
+                "color": "rgb(55, 83, 109)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Unit A",
+                "Unit B",
+                "Unit C",
+                "Unit D"
+            ],
+            "y": [
+                75,
+                85,
+                80,
+                88
+            ],
+            "name": "Assault",
+            "marker": {
+                "color": "rgb(26, 118, 255)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Unit A",
+                "Unit B",
+                "Unit C",
+                "Unit D"
+            ],
+            "y": [
+                90,
+                84,
+                89,
+                77
+            ],
+            "name": "Defense",
+            "marker": {
+                "color": "rgb(50, 205, 50)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Success Rate by Unit and Exercise Type",
+        "xaxis": {
+            "title": "Unit ID"
+        },
+        "yaxis": {
+            "title": "Success Rate (%)"
+        },
+        "barmode": "group"
+    },
+    "id": 145
+}

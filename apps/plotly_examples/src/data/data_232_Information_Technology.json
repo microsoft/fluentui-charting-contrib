@@ -1,0 +1,90 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September"
+            ],
+            "y": [
+                75,
+                82,
+                78,
+                85,
+                88,
+                90,
+                87,
+                86,
+                91
+            ],
+            "name": "Average Resolution Time (hours)",
+            "marker": {
+                "color": "rgb(55, 83, 109)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September"
+            ],
+            "y": [
+                80,
+                85,
+                88,
+                90,
+                92,
+                94,
+                93,
+                91,
+                95
+            ],
+            "name": "Customer Satisfaction Score (%)",
+            "marker": {
+                "color": "rgb(26, 118, 255)"
+            },
+            "yaxis": "y2"
+        }
+    ],
+    "layout": {
+        "title": "Monthly IT Service Desk Performance",
+        "xaxis": {
+            "tickvals": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September"
+            ],
+            "title": "Month"
+        },
+        "yaxis": {
+            "title": "Average Resolution Time (hours)"
+        },
+        "yaxis2": {
+            "title": "Customer Satisfaction Score (%)",
+            "overlaying": "y",
+            "side": "right"
+        },
+        "barmode": "group"
+    },
+    "id": 232
+}

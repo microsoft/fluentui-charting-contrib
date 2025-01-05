@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "type": "bubble",
+            "x": [
+                "School A",
+                "School B",
+                "School C",
+                "School D"
+            ],
+            "y": [
+                15,
+                12,
+                18,
+                14
+            ],
+            "text": [
+                "School A",
+                "School B",
+                "School C",
+                "School D"
+            ],
+            "marker": {
+                "size": [
+                    30,
+                    40,
+                    35,
+                    32
+                ],
+                "color": [
+                    300,
+                    400,
+                    350,
+                    320
+                ],
+                "colorscale": "Viridis",
+                "showscale": true
+            },
+            "name": "Student-to-Resource Ratio"
+        }
+    ],
+    "layout": {
+        "title": "Student-to-Resource Ratio",
+        "xaxis": {
+            "title": "School Name"
+        },
+        "yaxis": {
+            "title": "Ratio"
+        }
+    },
+    "id": 168
+}

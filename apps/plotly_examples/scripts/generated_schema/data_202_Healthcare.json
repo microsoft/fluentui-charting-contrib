@@ -1,0 +1,65 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Antibiotics",
+                "Antihypertensives",
+                "Analgesics",
+                "Antidepressants",
+                "Statins"
+            ],
+            "y": [
+                950,
+                1120,
+                870,
+                1050,
+                980
+            ],
+            "name": "Quantity Dispensed",
+            "marker": {
+                "color": "rgba(58, 71, 80, 0.6)"
+            },
+            "orientation": "v"
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Antibiotics",
+                "Antihypertensives",
+                "Analgesics",
+                "Antidepressants",
+                "Statins"
+            ],
+            "y": [
+                85,
+                92,
+                81,
+                88,
+                90
+            ],
+            "name": "Compliance Rate (%)",
+            "yaxis": "y2",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(255, 127, 14, 0.8)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Drug Utilization Patterns and Compliance Rates",
+        "xaxis": {
+            "title": "Drug Category"
+        },
+        "yaxis": {
+            "title": "Quantity Dispensed"
+        },
+        "yaxis2": {
+            "title": "Compliance Rate (%)",
+            "overlaying": "y",
+            "side": "right"
+        },
+        "barmode": "group"
+    },
+    "id": 202
+}

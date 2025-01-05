@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "2023-10-01",
+                "2023-10-08",
+                "2023-10-15",
+                "2023-10-22",
+                "2023-10-29"
+            ],
+            "y": [
+                20,
+                25,
+                15,
+                30,
+                18
+            ],
+            "mode": "lines+markers",
+            "name": "Check-in Time (mins)"
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "2023-10-01",
+                "2023-10-08",
+                "2023-10-15",
+                "2023-10-22",
+                "2023-10-29"
+            ],
+            "y": [
+                22,
+                28,
+                16,
+                31,
+                19
+            ],
+            "mode": "lines+markers",
+            "name": "Check-out Time (mins)"
+        }
+    ],
+    "layout": {
+        "title": "Weekly Average Check-in/Check-out Times",
+        "xaxis": {
+            "title": "Week"
+        },
+        "yaxis": {
+            "title": "Average Time (minutes)"
+        }
+    },
+    "id": 220
+}

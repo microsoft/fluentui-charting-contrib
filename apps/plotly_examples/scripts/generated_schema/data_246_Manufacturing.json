@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "type": "histogram",
+            "x": [
+                "2023-10-01",
+                "2023-10-02",
+                "2023-10-03",
+                "2023-10-04",
+                "2023-10-05",
+                "2023-10-06",
+                "2023-10-07"
+            ],
+            "y": [
+                300,
+                450,
+                500,
+                400,
+                600,
+                700,
+                550
+            ],
+            "name": "Defect Rate",
+            "marker": {
+                "color": "rgb(219, 64, 82)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Histogram of Daily Defect Rates",
+        "xaxis": {
+            "title": "Date"
+        },
+        "yaxis": {
+            "title": "Defect Rate",
+            "tickformat": ",d"
+        }
+    },
+    "id": 246
+}

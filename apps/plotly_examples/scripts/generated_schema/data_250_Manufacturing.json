@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Employee 1",
+                "Employee 2",
+                "Employee 3",
+                "Employee 4",
+                "Employee 5"
+            ],
+            "y": [
+                90,
+                85,
+                95,
+                70,
+                80
+            ],
+            "mode": "markers",
+            "marker": {
+                "size": [
+                    20,
+                    15,
+                    25,
+                    10,
+                    18
+                ],
+                "color": [
+                    5,
+                    10,
+                    15,
+                    8,
+                    12
+                ],
+                "showscale": true
+            },
+            "text": [
+                "Overtime: 5 hrs/week",
+                "Overtime: 10 hrs/week",
+                "Overtime: 15 hrs/week",
+                "Overtime: 8 hrs/week",
+                "Overtime: 12 hrs/week"
+            ],
+            "hoverinfo": "text"
+        }
+    ],
+    "layout": {
+        "title": "Employee Productivity vs Overtime",
+        "xaxis": {
+            "title": "Employee ID"
+        },
+        "yaxis": {
+            "title": "Task Completion Rate (%)"
+        }
+    },
+    "id": 250
+}

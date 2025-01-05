@@ -1,0 +1,38 @@
+{
+    "data": [
+        {
+            "type": "pie",
+            "labels": [
+                "Deployment Success",
+                "Deployment Failures"
+            ],
+            "values": [
+                80,
+                20
+            ],
+            "name": "Deployment Success vs Failures",
+            "hole": 0.4,
+            "marker": {
+                "colors": [
+                    "rgb(50, 171, 96)",
+                    "rgb(222, 45, 38)"
+                ]
+            }
+        }
+    ],
+    "layout": {
+        "title": "Deployment Success Rate",
+        "annotations": [
+            {
+                "font": {
+                    "size": 20
+                },
+                "showarrow": false,
+                "text": "Deployments",
+                "x": 0.5,
+                "y": 0.5
+            }
+        ]
+    },
+    "id": 228
+}

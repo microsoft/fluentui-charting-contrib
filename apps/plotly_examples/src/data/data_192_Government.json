@@ -1,0 +1,106 @@
+{
+    "data": [
+        {
+            "colorbar": {
+                "title": {
+                    "text": "Workforce"
+                }
+            },
+            "colorscale": [
+                [
+                    0,
+                    "#f7fbff"
+                ],
+                [
+                    0.5,
+                    "#4292c6"
+                ],
+                [
+                    1,
+                    "#08306b"
+                ]
+            ],
+            "hovertemplate": "Region=%{x}<br>Resource Intensity=%{z}<extra></extra>",
+            "type": "heatmap",
+            "x": [
+                "North",
+                "South",
+                "East",
+                "West"
+            ],
+            "y": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "z": [
+                [
+                    10,
+                    15,
+                    20,
+                    25
+                ],
+                [
+                    30,
+                    35,
+                    40,
+                    45
+                ],
+                [
+                    50,
+                    55,
+                    60,
+                    65
+                ],
+                [
+                    70,
+                    75,
+                    80,
+                    85
+                ]
+            ],
+            "zmax": 100,
+            "zmin": 0
+        }
+    ],
+    "layout": {
+        "margin": {
+            "t": 60
+        },
+        "template": {
+            "data": {
+                "heatmap": [
+                    {
+                        "type": "heatmap"
+                    }
+                ]
+            }
+        },
+        "title": {
+            "text": "Resource Concentration Heatmap"
+        },
+        "xaxis": {
+            "anchor": "y",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "title": {
+                "text": "Region"
+            }
+        },
+        "yaxis": {
+            "anchor": "x",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "title": {
+                "text": "Quarter"
+            }
+        }
+    },
+    "frames": [],
+    "id": 192
+}

@@ -1,0 +1,38 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Engine",
+                "Transmission",
+                "Brakes",
+                "Suspension",
+                "Electrical",
+                "Body"
+            ],
+            "y": [
+                15,
+                25,
+                10,
+                5,
+                20,
+                8
+            ],
+            "name": "Defect Frequency",
+            "marker": {
+                "color": "rgba(55, 128, 191, 0.7)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Defect Frequency by Type",
+        "xaxis": {
+            "title": "Defect Type"
+        },
+        "yaxis": {
+            "title": "Frequency"
+        },
+        "barmode": "group"
+    },
+    "id": 121
+}

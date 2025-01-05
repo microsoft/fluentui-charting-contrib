@@ -1,0 +1,62 @@
+{
+    "data": [
+        {
+            "x": [
+                "Math",
+                "Science",
+                "English",
+                "History"
+            ],
+            "y": [
+                85,
+                78,
+                92,
+                88
+            ],
+            "type": "bar",
+            "name": "Curriculum A"
+        },
+        {
+            "x": [
+                "Math",
+                "Science",
+                "English",
+                "History"
+            ],
+            "y": [
+                88,
+                80,
+                89,
+                85
+            ],
+            "type": "bar",
+            "name": "Curriculum B"
+        },
+        {
+            "x": [
+                "Math",
+                "Science",
+                "English",
+                "History"
+            ],
+            "y": [
+                90,
+                83,
+                95,
+                87
+            ],
+            "type": "bar",
+            "name": "Curriculum C"
+        }
+    ],
+    "layout": {
+        "title": "Student Performance by Subject and Curriculum",
+        "xaxis": {
+            "title": "Subject"
+        },
+        "yaxis": {
+            "title": "Average Test Score"
+        }
+    },
+    "id": 160
+}

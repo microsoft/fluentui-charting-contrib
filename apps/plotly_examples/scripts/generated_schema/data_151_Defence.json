@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "type": "heatmap",
+            "z": [
+                [
+                    10,
+                    20,
+                    30
+                ],
+                [
+                    20,
+                    10,
+                    40
+                ],
+                [
+                    30,
+                    40,
+                    10
+                ]
+            ],
+            "x": [
+                "2023-09-01",
+                "2023-09-02",
+                "2023-09-03"
+            ],
+            "y": [
+                "Malware",
+                "Phishing",
+                "DDoS"
+            ],
+            "colorscale": "Viridis",
+            "colorbar": {
+                "title": "Impact Score"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Threat Heat Map",
+        "xaxis": {
+            "title": "Date of Occurrence"
+        },
+        "yaxis": {
+            "title": "Threat Type"
+        }
+    },
+    "id": 151
+}

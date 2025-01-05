@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Line A",
+                "Line B",
+                "Line C",
+                "Line D"
+            ],
+            "y": [
+                28,
+                42,
+                15,
+                35
+            ],
+            "name": "Defect Counts",
+            "marker": {
+                "color": "rgb(26, 118, 255)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Daily Defect Counts by Production Line",
+        "xaxis": {
+            "title": "Production Line"
+        },
+        "yaxis": {
+            "title": "Defect Counts",
+            "tickformat": ",d"
+        },
+        "barmode": "group"
+    },
+    "id": 244
+}

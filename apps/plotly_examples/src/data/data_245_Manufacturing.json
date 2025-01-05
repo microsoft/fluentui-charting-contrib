@@ -1,0 +1,59 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Crack",
+                "Color Mismatch",
+                "Size",
+                "Shape Deviation",
+                "Other"
+            ],
+            "y": [
+                100,
+                80,
+                60,
+                40,
+                20
+            ],
+            "text": [
+                "100",
+                "80",
+                "60",
+                "40",
+                "20"
+            ],
+            "textposition": "auto",
+            "marker": {
+                "color": "rgb(246, 78, 139)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Pareto Chart of Defect Types",
+        "xaxis": {
+            "title": "Type of Defect"
+        },
+        "yaxis": {
+            "title": "Number of Defects",
+            "tickformat": ",d"
+        },
+        "shapes": [
+            {
+                "type": "line",
+                "xref": "x",
+                "yref": "paper",
+                "x0": 1,
+                "x1": 1,
+                "y0": 0,
+                "y1": 1,
+                "line": {
+                    "color": "rgb(55, 128, 191)",
+                    "width": 2,
+                    "dash": "dash"
+                }
+            }
+        ]
+    },
+    "id": 245
+}

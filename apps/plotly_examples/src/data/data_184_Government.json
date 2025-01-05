@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "type": "choropleth",
+            "locations": [
+                "County A",
+                "County B",
+                "County C",
+                "County D",
+                "County E"
+            ],
+            "z": [
+                65,
+                78,
+                95,
+                45,
+                60
+            ],
+            "locationmode": "USA-states",
+            "colorscale": "YlOrRd",
+            "colorbar": {
+                "title": "Air Quality Index"
+            }
+        }
+    ],
+    "layout": {
+        "title": {
+            "text": "Air Quality Index by County"
+        },
+        "geo": {
+            "scope": "usa"
+        }
+    },
+    "id": 184
+}

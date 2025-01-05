@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Low",
+                "Medium",
+                "High",
+                "Critical"
+            ],
+            "y": [
+                120,
+                90,
+                60,
+                30
+            ],
+            "name": "Data Sensitivity Level",
+            "text": [
+                "120",
+                "90",
+                "60",
+                "30"
+            ],
+            "textposition": "auto",
+            "marker": {
+                "color": [
+                    "green",
+                    "yellow",
+                    "orange",
+                    "red"
+                ]
+            }
+        }
+    ],
+    "layout": {
+        "title": "Risk Assessment Based on Data Sensitivity",
+        "xaxis": {
+            "title": "Sensitivity Level"
+        },
+        "yaxis": {
+            "title": "Number of Access Events"
+        },
+        "barmode": "stack"
+    },
+    "id": 237
+}

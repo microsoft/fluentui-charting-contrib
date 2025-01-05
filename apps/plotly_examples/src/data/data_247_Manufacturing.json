@@ -1,0 +1,60 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "2023-10-01",
+                "2023-10-02",
+                "2023-10-03",
+                "2023-10-04",
+                "2023-10-05"
+            ],
+            "y": [
+                120,
+                150,
+                90,
+                130,
+                160
+            ],
+            "line": {
+                "shape": "linear"
+            },
+            "name": "Machine 1",
+            "hoverinfo": "y+name"
+        },
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "2023-10-01",
+                "2023-10-02",
+                "2023-10-03",
+                "2023-10-04",
+                "2023-10-05"
+            ],
+            "y": [
+                100,
+                130,
+                85,
+                120,
+                140
+            ],
+            "line": {
+                "shape": "linear"
+            },
+            "name": "Machine 2",
+            "hoverinfo": "y+name"
+        }
+    ],
+    "layout": {
+        "title": "Daily Energy Consumption per Machine",
+        "xaxis": {
+            "title": "Date"
+        },
+        "yaxis": {
+            "title": "Energy Consumption (kWh)"
+        }
+    },
+    "id": 247
+}

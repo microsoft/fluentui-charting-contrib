@@ -1,0 +1,45 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "markers",
+            "x": [
+                "North",
+                "South",
+                "East",
+                "West"
+            ],
+            "y": [
+                30000,
+                40000,
+                50000,
+                60000
+            ],
+            "marker": {
+                "size": [
+                    80,
+                    60,
+                    50,
+                    90
+                ]
+            },
+            "text": [
+                "Budget",
+                "Mid-range",
+                "Luxury",
+                "SUV"
+            ],
+            "hoverinfo": "text"
+        }
+    ],
+    "layout": {
+        "title": "Regional Preferences and Income Levels",
+        "xaxis": {
+            "title": "Region"
+        },
+        "yaxis": {
+            "title": "Average Income Level"
+        }
+    },
+    "id": 117
+}

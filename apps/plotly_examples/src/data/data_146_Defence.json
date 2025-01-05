@@ -1,0 +1,86 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June"
+            ],
+            "y": [
+                300,
+                280,
+                310,
+                290,
+                320,
+                315
+            ],
+            "line": {
+                "color": "rgb(205, 92, 92)"
+            },
+            "name": "Unit A"
+        },
+        {
+            "type": "scatter",
+            "mode": "lines",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June"
+            ],
+            "y": [
+                295,
+                300,
+                285,
+                298,
+                310,
+                300
+            ],
+            "line": {
+                "color": "rgb(65, 105, 225)"
+            },
+            "name": "Unit B"
+        },
+        {
+            "type": "scatter",
+            "mode": "lines",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June"
+            ],
+            "y": [
+                290,
+                275,
+                295,
+                310,
+                305,
+                280
+            ],
+            "line": {
+                "color": "rgb(34, 139, 34)"
+            },
+            "name": "Unit C"
+        }
+    ],
+    "layout": {
+        "title": "Completion Time Trends Over Months",
+        "xaxis": {
+            "title": "Month"
+        },
+        "yaxis": {
+            "title": "Completion Time (minutes)"
+        }
+    },
+    "id": 146
+}

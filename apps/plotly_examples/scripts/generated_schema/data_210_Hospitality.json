@@ -1,0 +1,69 @@
+{
+    "data": [
+        {
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May"
+            ],
+            "y": [
+                82,
+                78,
+                85,
+                75,
+                80
+            ],
+            "name": "Hotel A",
+            "type": "bar"
+        },
+        {
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May"
+            ],
+            "y": [
+                80,
+                77,
+                83,
+                74,
+                79
+            ],
+            "name": "Hotel B",
+            "type": "bar"
+        },
+        {
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May"
+            ],
+            "y": [
+                79,
+                76,
+                82,
+                73,
+                78
+            ],
+            "name": "Industry Average",
+            "type": "bar"
+        }
+    ],
+    "layout": {
+        "title": "Monthly Occupancy Rates - Hotel A vs Competitors",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Month"
+        },
+        "yaxis": {
+            "title": "Occupancy Rate (%)"
+        }
+    },
+    "id": 210
+}

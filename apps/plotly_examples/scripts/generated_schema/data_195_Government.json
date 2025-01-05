@@ -1,0 +1,54 @@
+{
+    "data": [
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D"
+            ],
+            "z": [
+                82,
+                78,
+                90,
+                85
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Test Scores"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D"
+            ],
+            "z": [
+                6000,
+                5000,
+                6500,
+                7000
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Funding per Student"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Test Scores and Funding by District",
+        "geo": {
+            "scope": "usa",
+            "projection": {
+                "type": "mercator"
+            }
+        }
+    },
+    "id": 195
+}

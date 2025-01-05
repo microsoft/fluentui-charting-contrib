@@ -1,0 +1,42 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June"
+            ],
+            "y": [
+                4.2,
+                4.5,
+                4.7,
+                4.9,
+                5.0,
+                5.1
+            ],
+            "name": "Average Feedback Score",
+            "line": {
+                "shape": "linear",
+                "color": "blue"
+            },
+            "marker": {
+                "size": 8
+            }
+        }
+    ],
+    "layout": {
+        "title": "Average Client Feedback Score Over Time",
+        "xaxis": {
+            "title": "Month"
+        },
+        "yaxis": {
+            "title": "Feedback Score"
+        }
+    },
+    "id": 136
+}

@@ -1,0 +1,67 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                85,
+                73,
+                60,
+                90
+            ],
+            "mode": "lines+markers",
+            "name": "County A"
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                78,
+                82,
+                77,
+                85
+            ],
+            "mode": "lines+markers",
+            "name": "County B"
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                95,
+                90,
+                88,
+                80
+            ],
+            "mode": "lines+markers",
+            "name": "County C"
+        }
+    ],
+    "layout": {
+        "title": {
+            "text": "Quarterly Air Quality Trends"
+        },
+        "xaxis": {
+            "title": "Quarter"
+        },
+        "yaxis": {
+            "title": "Air Quality Index"
+        }
+    },
+    "id": 185
+}

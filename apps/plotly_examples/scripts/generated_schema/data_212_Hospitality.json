@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "2023-09-01",
+                "2023-09-08",
+                "2023-09-15",
+                "2023-09-22",
+                "2023-09-29"
+            ],
+            "y": [
+                12000,
+                15000,
+                13500,
+                16000,
+                15500
+            ],
+            "name": "ADR",
+            "marker": {
+                "color": "#1f77b4"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023-09-01",
+                "2023-09-08",
+                "2023-09-15",
+                "2023-09-22",
+                "2023-09-29"
+            ],
+            "y": [
+                9000,
+                13000,
+                12500,
+                14000,
+                13500
+            ],
+            "name": "RevPAR",
+            "marker": {
+                "color": "#ff7f0e"
+            }
+        }
+    ],
+    "layout": {
+        "barmode": "group",
+        "title": "Weekly ADR and RevPAR Performance for September 2023",
+        "xaxis": {
+            "title": "Week of September"
+        },
+        "yaxis": {
+            "title": "Revenue (USD)"
+        }
+    },
+    "id": 212
+}

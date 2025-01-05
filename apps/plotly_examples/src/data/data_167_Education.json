@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "School A",
+                "School B",
+                "School C",
+                "School D"
+            ],
+            "y": [
+                80,
+                85,
+                78,
+                82
+            ],
+            "name": "Utilization Percentage",
+            "line": {
+                "shape": "spline",
+                "color": "orange"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Resource Utilization Percentage by School",
+        "xaxis": {
+            "title": "School Name"
+        },
+        "yaxis": {
+            "title": "Utilization Percentage"
+        }
+    },
+    "id": 167
+}

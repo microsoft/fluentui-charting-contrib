@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "type": "pie",
+            "labels": [
+                "18-24",
+                "25-34",
+                "35-44",
+                "45-54",
+                "55+"
+            ],
+            "values": [
+                1100,
+                1350,
+                900,
+                650,
+                500
+            ],
+            "name": "Citizens",
+            "textinfo": "label+percent",
+            "hoverinfo": "label+value+percent"
+        }
+    ],
+    "layout": {
+        "title": "Demographic Participation in Policy-Making",
+        "showlegend": true
+    },
+    "id": 189
+}

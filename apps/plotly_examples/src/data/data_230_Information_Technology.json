@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+            "type": "pie",
+            "labels": [
+                "Resolved",
+                "In Progress",
+                "Escalated",
+                "Unresolved"
+            ],
+            "values": [
+                40,
+                30,
+                20,
+                10
+            ],
+            "name": "Incident Status",
+            "hole": 0.4
+        }
+    ],
+    "layout": {
+        "title": "Incident Status Distribution"
+    },
+    "id": 230
+}

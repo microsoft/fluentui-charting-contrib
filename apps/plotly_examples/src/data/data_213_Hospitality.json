@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "type": "heatmap",
+            "z": [
+                [
+                    150,
+                    160,
+                    170
+                ],
+                [
+                    180,
+                    175,
+                    165
+                ],
+                [
+                    155,
+                    150,
+                    160
+                ]
+            ],
+            "x": [
+                "Standard",
+                "Deluxe",
+                "Suite"
+            ],
+            "y": [
+                "Jan-Mar",
+                "Apr-Jun",
+                "Jul-Sep"
+            ],
+            "colorscale": "Viridis",
+            "colorbar": {
+                "title": "Revenue"
+            },
+            "name": "Room Type Revenue"
+        }
+    ],
+    "layout": {
+        "title": "Quarterly Revenue by Room Type",
+        "xaxis": {
+            "title": "Room Type"
+        },
+        "yaxis": {
+            "title": "Quarter"
+        }
+    },
+    "id": 213
+}

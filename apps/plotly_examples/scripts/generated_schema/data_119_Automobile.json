@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Week 1",
+                "Week 2",
+                "Week 3",
+                "Week 4"
+            ],
+            "y": [
+                20,
+                25,
+                22,
+                24
+            ],
+            "mode": "lines+markers",
+            "name": "Order Fulfillment Time",
+            "line": {
+                "color": "#17becf"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Order Fulfillment Time Over Weeks",
+        "xaxis": {
+            "title": "Weeks"
+        },
+        "yaxis": {
+            "title": "Order Fulfillment Time (Days)"
+        }
+    },
+    "id": 119
+}

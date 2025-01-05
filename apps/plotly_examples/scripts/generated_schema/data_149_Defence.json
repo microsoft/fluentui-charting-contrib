@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C"
+            ],
+            "y": [
+                35,
+                50,
+                80
+            ],
+            "mode": "lines+markers",
+            "name": "Inventory Levels",
+            "line": {
+                "shape": "linear",
+                "color": "green"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C"
+            ],
+            "y": [
+                25,
+                60,
+                70
+            ],
+            "mode": "lines+markers",
+            "name": "Procurement Times",
+            "line": {
+                "shape": "linear",
+                "color": "royalblue"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Inventory Levels and Procurement Times per Item Category",
+        "xaxis": {
+            "title": "Item Categories"
+        },
+        "yaxis": {
+            "title": "Days/Units"
+        }
+    },
+    "id": 149
+}

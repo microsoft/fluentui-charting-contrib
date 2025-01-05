@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Week 1",
+                "Week 2",
+                "Week 3",
+                "Week 4"
+            ],
+            "y": [
+                5,
+                3,
+                6,
+                4
+            ],
+            "mode": "lines+markers",
+            "name": "Defect Occurrences",
+            "line": {
+                "color": "rgb(205, 12, 24)",
+                "width": 2
+            }
+        }
+    ],
+    "layout": {
+        "title": "Defect Occurrences over Weeks",
+        "xaxis": {
+            "title": "Weeks"
+        },
+        "yaxis": {
+            "title": "Number of Defects"
+        }
+    },
+    "id": 227
+}
