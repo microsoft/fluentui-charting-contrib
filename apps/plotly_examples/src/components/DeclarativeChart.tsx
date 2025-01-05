@@ -8,6 +8,7 @@ import {
   Subtitle2
 } from '@fluentui/react-components';
 import { DeclarativeChart, DeclarativeChartProps, IDeclarativeChart, Schema } from '@fluentui/react-charting';
+import PlotlyChart from './PlotlyChart';
 
 interface IErrorBoundaryProps {
   children: React.ReactNode;
@@ -112,6 +113,7 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
   private _createDeclarativeChart(): JSX.Element {
 
     const uniqueKey = `${this.state.selectedChoice}`;
+    const plotlyKey = `plotly_${this.state.selectedChoice}`;
     const { selectedSchema } = this.state;
     const { data, layout } = selectedSchema;
     if (!selectedSchema) {
@@ -174,6 +176,7 @@ export class DeclarativeChartBasicExample extends React.Component<{}, IDeclarati
           onChange={this._onSelectedLegendsEdited}
           styles={textFieldStyles}
         />
+        <PlotlyChart/>
       </>
     );
   }
