@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Project A",
+                "Project B",
+                "Project C",
+                "Project D"
+            ],
+            "y": [
+                150000,
+                200000,
+                250000,
+                175000
+            ],
+            "name": "Budgeted Cost",
+            "marker": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Project A",
+                "Project B",
+                "Project C",
+                "Project D"
+            ],
+            "y": [
+                165000,
+                180000,
+                260000,
+                160000
+            ],
+            "name": "Actual Cost",
+            "marker": {
+                "color": "orange"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Budgeted vs Actual Costs per Project",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Project ID"
+        },
+        "yaxis": {
+            "title": "Cost (USD)"
+        }
+    },
+    "id": 127
+}

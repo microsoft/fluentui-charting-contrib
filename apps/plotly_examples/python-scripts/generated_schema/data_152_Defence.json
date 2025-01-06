@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Malware",
+                "Phishing",
+                "DDoS"
+            ],
+            "y": [
+                5,
+                3,
+                7
+            ],
+            "name": "Average Response Time (Hours)",
+            "marker": {
+                "color": "rgb(55, 83, 109)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Average Response Time by Threat Type",
+        "xaxis": {
+            "title": "Threat Type"
+        },
+        "yaxis": {
+            "title": "Average Response Time (Hours)"
+        }
+    },
+    "id": 152
+}

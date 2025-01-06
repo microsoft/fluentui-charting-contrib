@@ -1,0 +1,71 @@
+{
+    "data": [
+        {
+            "type": "line",
+            "x": [
+                "Day 1",
+                "Day 2",
+                "Day 3",
+                "Day 4"
+            ],
+            "y": [
+                200,
+                220,
+                210,
+                230
+            ],
+            "name": "Factory A Production",
+            "line": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "line",
+            "x": [
+                "Day 1",
+                "Day 2",
+                "Day 3",
+                "Day 4"
+            ],
+            "y": [
+                180,
+                200,
+                190,
+                210
+            ],
+            "name": "Factory B Production",
+            "line": {
+                "color": "red"
+            }
+        },
+        {
+            "type": "line",
+            "x": [
+                "Day 1",
+                "Day 2",
+                "Day 3",
+                "Day 4"
+            ],
+            "y": [
+                220,
+                230,
+                240,
+                250
+            ],
+            "name": "Factory C Production",
+            "line": {
+                "color": "green"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Production Volume Over Time",
+        "xaxis": {
+            "title": "Time (Days)"
+        },
+        "yaxis": {
+            "title": "Production Volume"
+        }
+    },
+    "id": 239
+}

@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022"
+            ],
+            "y": [
+                15,
+                14.5,
+                13,
+                11,
+                10.5
+            ],
+            "mode": "lines+markers",
+            "name": "Dropout Rate (%)"
+        }
+    ],
+    "layout": {
+        "title": "Trend Analysis of Dropout Rates",
+        "xaxis": {
+            "title": "Year"
+        },
+        "yaxis": {
+            "title": "Dropout Rate (%)"
+        }
+    },
+    "id": 194
+}

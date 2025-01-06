@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Factory A",
+                "Factory B",
+                "Factory C",
+                "Factory D"
+            ],
+            "y": [
+                15,
+                20,
+                10,
+                25
+            ],
+            "name": "Downtime Hours",
+            "marker": {
+                "color": "orange"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Factory Downtime Comparison",
+        "xaxis": {
+            "title": "Factory Location"
+        },
+        "yaxis": {
+            "title": "Downtime (Hours)"
+        }
+    },
+    "id": 240
+}

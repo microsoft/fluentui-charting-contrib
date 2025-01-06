@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Low Risk",
+                "Medium Risk",
+                "High Risk"
+            ],
+            "y": [
+                150,
+                300,
+                50
+            ],
+            "name": "Risk Distribution",
+            "marker": {
+                "color": [
+                    "green",
+                    "yellow",
+                    "red"
+                ]
+            }
+        }
+    ],
+    "layout": {
+        "title": "Credit Risk Distribution",
+        "xaxis": {
+            "title": "Risk Category"
+        },
+        "yaxis": {
+            "title": "Number of Customers"
+        },
+        "barmode": "stack"
+    },
+    "id": 175
+}

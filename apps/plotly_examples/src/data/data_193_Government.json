@@ -1,0 +1,63 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "District A",
+                "District B",
+                "District C",
+                "District D"
+            ],
+            "y": [
+                88,
+                76,
+                83,
+                91
+            ],
+            "name": "Graduation Rate (%)"
+        },
+        {
+            "type": "bar",
+            "x": [
+                "District A",
+                "District B",
+                "District C",
+                "District D"
+            ],
+            "y": [
+                4500,
+                5500,
+                7000,
+                6000
+            ],
+            "name": "Funding per Student ($)"
+        },
+        {
+            "type": "bar",
+            "x": [
+                "District A",
+                "District B",
+                "District C",
+                "District D"
+            ],
+            "y": [
+                16,
+                18,
+                14,
+                17
+            ],
+            "name": "Student-to-Teacher Ratio"
+        }
+    ],
+    "layout": {
+        "title": "Key Metrics Across Districts",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Districts"
+        },
+        "yaxis": {
+            "title": "Values"
+        }
+    },
+    "id": 193
+}

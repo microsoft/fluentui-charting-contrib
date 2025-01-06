@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Equipment A",
+                "Equipment B",
+                "Equipment C"
+            ],
+            "y": [
+                3,
+                5,
+                2
+            ],
+            "name": "Maintenance Count",
+            "marker": {
+                "color": "green"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Maintenance Frequency Per Equipment",
+        "xaxis": {
+            "title": "Equipment ID"
+        },
+        "yaxis": {
+            "title": "Number of Maintenance Sessions"
+        }
+    },
+    "id": 243
+}

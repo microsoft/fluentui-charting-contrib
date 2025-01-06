@@ -1,0 +1,45 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "2023-10-01",
+                "2023-10-02",
+                "2023-10-03",
+                "2023-10-04",
+                "2023-10-05",
+                "2023-10-06",
+                "2023-10-07"
+            ],
+            "y": [
+                5,
+                9,
+                12,
+                8,
+                15,
+                7,
+                10
+            ],
+            "name": "Anomaly Score",
+            "line": {
+                "shape": "spline",
+                "color": "red"
+            },
+            "marker": {
+                "size": 8
+            }
+        }
+    ],
+    "layout": {
+        "title": "Anomalous User Behavior Over Time",
+        "xaxis": {
+            "title": "Date"
+        },
+        "yaxis": {
+            "title": "Anomaly Score"
+        },
+        "hovermode": "closest"
+    },
+    "id": 235
+}

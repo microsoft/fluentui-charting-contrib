@@ -1,0 +1,59 @@
+{
+    "data": [
+        {
+            "type": "heatmap",
+            "z": [
+                [
+                    80,
+                    60,
+                    70,
+                    90
+                ],
+                [
+                    75,
+                    50,
+                    60,
+                    85
+                ],
+                [
+                    90,
+                    95,
+                    85,
+                    80
+                ],
+                [
+                    65,
+                    70,
+                    75,
+                    55
+                ]
+            ],
+            "x": [
+                "Factory A",
+                "Factory B",
+                "Factory C",
+                "Factory D"
+            ],
+            "y": [
+                "Day 1",
+                "Day 2",
+                "Day 3",
+                "Day 4"
+            ],
+            "colorscale": "Viridis",
+            "colorbar": {
+                "title": "Efficiency (%)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Factory Efficiency Heatmap",
+        "xaxis": {
+            "title": "Factory Location"
+        },
+        "yaxis": {
+            "title": "Time (Days)"
+        }
+    },
+    "id": 238
+}

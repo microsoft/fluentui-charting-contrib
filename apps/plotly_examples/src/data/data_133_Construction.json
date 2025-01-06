@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "type": "heatmap",
+            "z": [
+                [
+                    80,
+                    60,
+                    70
+                ],
+                [
+                    90,
+                    50,
+                    60
+                ],
+                [
+                    70,
+                    80,
+                    90
+                ]
+            ],
+            "x": [
+                "Site A",
+                "Site B",
+                "Site C"
+            ],
+            "y": [
+                "Labor Utilization",
+                "Machinery Utilization",
+                "Material Utilization"
+            ],
+            "colorscale": "Viridis",
+            "colorbar": {
+                "title": "Utilization (%)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Daily Resource Utilization Heatmap",
+        "xaxis": {
+            "title": "Project Sites"
+        },
+        "yaxis": {
+            "title": "Resource Types"
+        }
+    },
+    "id": 133
+}

@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "type": "choropleth",
+            "locations": [
+                "US-CA",
+                "US-TX",
+                "US-NY",
+                "US-FL",
+                "US-IL"
+            ],
+            "z": [
+                0.8,
+                0.6,
+                0.9,
+                0.4,
+                0.7
+            ],
+            "locationmode": "USA-states",
+            "colorscale": "Blues",
+            "colorbar": {
+                "title": "Adoption Rate"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Telemedicine Adoption Rates by State",
+        "geo": {
+            "scope": "usa",
+            "projection": {
+                "type": "albers usa"
+            }
+        }
+    },
+    "id": 206
+}

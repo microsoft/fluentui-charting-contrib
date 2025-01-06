@@ -1,0 +1,61 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "18-24",
+                "25-34",
+                "35-44",
+                "45-54",
+                "55-64",
+                "65+"
+            ],
+            "y": [
+                50,
+                100,
+                75,
+                60,
+                20,
+                10
+            ],
+            "name": "Male",
+            "marker": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "18-24",
+                "25-34",
+                "35-44",
+                "45-54",
+                "55-64",
+                "65+"
+            ],
+            "y": [
+                45,
+                80,
+                70,
+                65,
+                40,
+                15
+            ],
+            "name": "Female",
+            "marker": {
+                "color": "pink"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Customer Age Groups by Gender",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Age Group"
+        },
+        "yaxis": {
+            "title": "Number of Customers"
+        }
+    },
+    "id": 116
+}

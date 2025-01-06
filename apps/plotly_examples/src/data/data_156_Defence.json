@@ -1,0 +1,50 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "Low",
+                "Medium",
+                "High"
+            ],
+            "y": [
+                100,
+                250,
+                150
+            ],
+            "name": "Allocated",
+            "line": {
+                "shape": "linear"
+            }
+        },
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "Low",
+                "Medium",
+                "High"
+            ],
+            "y": [
+                150,
+                200,
+                180
+            ],
+            "name": "Required",
+            "line": {
+                "shape": "linear"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Resource Allocation by Mission Priority",
+        "xaxis": {
+            "title": "Mission Priority Level"
+        },
+        "yaxis": {
+            "title": "Quantity"
+        }
+    },
+    "id": 156
+}

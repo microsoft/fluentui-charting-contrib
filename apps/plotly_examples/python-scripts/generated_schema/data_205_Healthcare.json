@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Region A",
+                "Region B",
+                "Region C",
+                "Region D",
+                "Region E"
+            ],
+            "y": [
+                5000,
+                3000,
+                7000,
+                1500,
+                4000
+            ],
+            "name": "Telemedicine Consultations"
+        }
+    ],
+    "layout": {
+        "title": "Number of Telemedicine Consultations by Region",
+        "xaxis": {
+            "title": "Regions"
+        },
+        "yaxis": {
+            "title": "Number of Consultations"
+        },
+        "barmode": "stack"
+    },
+    "id": 205
+}

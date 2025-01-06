@@ -1,0 +1,82 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Grade 9",
+                "Grade 10",
+                "Grade 11"
+            ],
+            "y": [
+                84.33,
+                74,
+                81.67
+            ],
+            "name": "Average Engagement Score",
+            "text": [
+                "84.33%",
+                "74%",
+                "81.67%"
+            ],
+            "textposition": "auto",
+            "marker": {
+                "color": [
+                    "#636EFA",
+                    "#EF553B",
+                    "#00CC96"
+                ]
+            }
+        },
+        {
+            "type": "line",
+            "x": [
+                "Grade 9",
+                "Grade 10",
+                "Grade 11"
+            ],
+            "y": [
+                89.5,
+                76.5,
+                85.25
+            ],
+            "name": "Average Attendance Rate",
+            "yaxis": "y2"
+        }
+    ],
+    "layout": {
+        "title": {
+            "text": "Engagement & Attendance by Grade"
+        },
+        "xaxis": {
+            "title": {
+                "text": "Grade"
+            }
+        },
+        "yaxis": {
+            "title": {
+                "text": "Average Engagement Score"
+            },
+            "range": [
+                0,
+                100
+            ]
+        },
+        "yaxis2": {
+            "title": {
+                "text": "Average Attendance Rate (%)"
+            },
+            "overlaying": "y",
+            "side": "right",
+            "range": [
+                0,
+                100
+            ]
+        },
+        "barmode": "group",
+        "legend": {
+            "x": 1.1,
+            "y": 1
+        }
+    },
+    "id": 170
+}

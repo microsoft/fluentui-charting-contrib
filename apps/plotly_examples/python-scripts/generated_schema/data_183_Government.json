@@ -1,0 +1,45 @@
+{
+    "data": [
+        {
+            "type": "heatmap",
+            "z": [
+                [
+                    8,
+                    6,
+                    3
+                ],
+                [
+                    9,
+                    7,
+                    4
+                ],
+                [
+                    10,
+                    8,
+                    5
+                ]
+            ],
+            "x": [
+                "6 AM",
+                "12 PM",
+                "6 PM"
+            ],
+            "y": [
+                "Route A",
+                "Route B",
+                "Route C"
+            ],
+            "colorscale": "Viridis"
+        }
+    ],
+    "layout": {
+        "title": "Peak Travel Times and Bottlenecks",
+        "xaxis": {
+            "title": "Time of Day"
+        },
+        "yaxis": {
+            "title": "Routes"
+        }
+    },
+    "id": 183
+}

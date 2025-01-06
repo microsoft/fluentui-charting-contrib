@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Route A",
+                "Route B",
+                "Route C",
+                "Route D"
+            ],
+            "y": [
+                25,
+                40,
+                35,
+                30
+            ],
+            "name": "Efficiency",
+            "marker": {
+                "color": "green"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Route Efficiency Comparison",
+        "xaxis": {
+            "title": "Routes"
+        },
+        "yaxis": {
+            "title": "Efficiency (%)"
+        }
+    },
+    "id": 182
+}

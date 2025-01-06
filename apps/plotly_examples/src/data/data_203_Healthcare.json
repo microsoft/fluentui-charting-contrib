@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "type": "pie",
+            "labels": [
+                "Antibiotics",
+                "Antihypertensives",
+                "Analgesics",
+                "Antidepressants",
+                "Statins"
+            ],
+            "values": [
+                85,
+                92,
+                81,
+                88,
+                90
+            ],
+            "textinfo": "label+percent",
+            "insidetextorientation": "radial",
+            "hole": 0.4
+        }
+    ],
+    "layout": {
+        "title": "Compliance Rate Distribution by Drug Category",
+        "showlegend": true
+    },
+    "id": 203
+}

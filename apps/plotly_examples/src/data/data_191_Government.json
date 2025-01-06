@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "hovertemplate": "Budget Category=%{label}<br>Proportion=%{value}<extra></extra>",
+            "labels": [
+                "Housing",
+                "Transportation",
+                "Healthcare",
+                "Education"
+            ],
+            "type": "pie",
+            "values": [
+                250000,
+                300000,
+                400000,
+                200000
+            ]
+        }
+    ],
+    "layout": {
+        "piecolorway": [
+            "#636efa",
+            "#EF553B",
+            "#00cc96",
+            "#ab63fa"
+        ],
+        "showlegend": true,
+        "template": {
+            "data": {
+                "pie": [
+                    {
+                        "type": "pie"
+                    }
+                ]
+            }
+        },
+        "title": {
+            "text": "Budget Allocation Efficiency"
+        },
+        "legend": {
+            "tracegroupgap": 0
+        }
+    },
+    "frames": [],
+    "id": 191
+}

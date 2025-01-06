@@ -12,12 +12,14 @@ import {
 } from '@fluentui/react-components';
 import { PortalCompatProvider } from '@fluentui/react-portal-compat';
 import { ChartWrapper } from './components/ChartWrapper';
+import { getSelection, saveSelection } from './components/utils';
 
 const App: React.FC = () => {
-  const [value, setValue] = React.useState("Light");
+  const [value, setValue] = React.useState(getSelection("Theme", "Light"));
 
   const onOptionSelect = (event: SelectionEvents, data: OptionOnSelectData): void => {
     setValue(data.optionText ?? "Light");
+    saveSelection("Theme", data.optionText ?? "Light");
   };
 
   return (
@@ -32,8 +34,8 @@ const App: React.FC = () => {
               <Option>Light</Option>
               <Option>Dark</Option>
             </Dropdown>
-            &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.23.34</Subtitle2>
-          <ChartWrapper />
+            &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.23.37</Subtitle2>
+          <ChartWrapper/>
         </PortalCompatProvider>
       </FluentProvider>
     </div>

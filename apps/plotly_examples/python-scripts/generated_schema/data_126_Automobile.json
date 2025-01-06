@@ -1,0 +1,50 @@
+{
+    "data": [
+        {
+            "type": "scattermapbox",
+            "lat": [
+                "34.0522",
+                "36.1699",
+                "40.7128",
+                "25.7617"
+            ],
+            "lon": [
+                "-118.2437",
+                "-115.1398",
+                "-74.0060",
+                "-80.1918"
+            ],
+            "mode": "markers+text",
+            "marker": {
+                "size": 14
+            },
+            "text": [
+                "Plant A",
+                "Plant B",
+                "Plant C",
+                "Plant D"
+            ],
+            "hoverinfo": "text",
+            "name": "Incident Locations"
+        }
+    ],
+    "layout": {
+        "title": "Geographical Distribution of Incidents",
+        "mapbox": {
+            "style": "carto-positron",
+            "center": {
+                "lat": 39.8283,
+                "lon": -98.5795
+            },
+            "zoom": 3
+        },
+        "height": 600,
+        "margin": {
+            "t": 30,
+            "b": 30,
+            "l": 30,
+            "r": 30
+        }
+    },
+    "id": 126
+}

@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "type": "heatmap",
+            "z": [
+                [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                [
+                    2,
+                    4,
+                    6,
+                    8
+                ],
+                [
+                    3,
+                    6,
+                    9,
+                    12
+                ]
+            ],
+            "x": [
+                "18-25",
+                "26-35",
+                "36-50",
+                "50+"
+            ],
+            "y": [
+                "Low Income",
+                "Middle Income",
+                "High Income"
+            ],
+            "colorscale": "Viridis"
+        }
+    ],
+    "layout": {
+        "title": "Credit Risk by Age and Income",
+        "xaxis": {
+            "title": "Age Group"
+        },
+        "yaxis": {
+            "title": "Income Level"
+        }
+    },
+    "id": 177
+}

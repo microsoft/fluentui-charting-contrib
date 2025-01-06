@@ -1,0 +1,55 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "markers",
+            "x": [
+                2019,
+                2020,
+                2021,
+                2022
+            ],
+            "y": [
+                75,
+                80,
+                85,
+                90
+            ],
+            "text": [
+                "Math - 5 years",
+                "Science - 3 years",
+                "English - 10 years",
+                "History - 8 years"
+            ],
+            "marker": {
+                "size": [
+                    30,
+                    40,
+                    50,
+                    60
+                ],
+                "color": [
+                    3,
+                    4,
+                    5,
+                    3
+                ],
+                "colorscale": "Viridis",
+                "cmin": 1,
+                "cmax": 5
+            },
+            "name": "Teacher Performance Scores"
+        }
+    ],
+    "layout": {
+        "title": "Teacher Performance Over Time",
+        "xaxis": {
+            "title": "Year"
+        },
+        "yaxis": {
+            "title": "Average Performance Score"
+        },
+        "hovermode": "closest"
+    },
+    "id": 163
+}

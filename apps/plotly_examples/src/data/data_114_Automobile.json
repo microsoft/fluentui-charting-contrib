@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "type": "line",
+            "x": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec"
+            ],
+            "y": [
+                300,
+                320,
+                290,
+                310,
+                350,
+                360,
+                380,
+                400,
+                420,
+                440,
+                460,
+                480
+            ],
+            "name": "Monthly Sales Volume",
+            "line": {
+                "color": "purple"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Monthly Sales Growth Across 2023",
+        "xaxis": {
+            "title": "Month"
+        },
+        "yaxis": {
+            "title": "Sales Volume"
+        }
+    },
+    "id": 114
+}
