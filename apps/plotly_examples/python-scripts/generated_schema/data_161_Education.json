@@ -1,0 +1,77 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Grade 6",
+                "Grade 7",
+                "Grade 8",
+                "Grade 9"
+            ],
+            "y": [
+                78,
+                82,
+                84,
+                81
+            ],
+            "mode": "lines+markers",
+            "name": "Curriculum A",
+            "line": {
+                "color": "red",
+                "dash": "dash"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Grade 6",
+                "Grade 7",
+                "Grade 8",
+                "Grade 9"
+            ],
+            "y": [
+                80,
+                85,
+                83,
+                88
+            ],
+            "mode": "lines+markers",
+            "name": "Curriculum B",
+            "line": {
+                "color": "blue",
+                "dash": "dot"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Grade 6",
+                "Grade 7",
+                "Grade 8",
+                "Grade 9"
+            ],
+            "y": [
+                82,
+                87,
+                89,
+                86
+            ],
+            "mode": "lines+markers",
+            "name": "Curriculum C",
+            "line": {
+                "color": "green",
+                "dash": "solid"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Average Test Scores Across Grades",
+        "xaxis": {
+            "title": "Grade Level"
+        },
+        "yaxis": {
+            "title": "Average Test Score"
+        }
+    },
+    "id": 161
+}

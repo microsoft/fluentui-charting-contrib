@@ -1,0 +1,26 @@
+{
+    "data": [
+        {
+            "type": "pie",
+            "labels": [
+                "Model A",
+                "Model B",
+                "Model C",
+                "Model D"
+            ],
+            "values": [
+                4000,
+                2500,
+                3500,
+                3000
+            ],
+            "hoverinfo": "label+percent+name",
+            "textinfo": "value"
+        }
+    ],
+    "layout": {
+        "title": "Top-Performing Models in 2023",
+        "showlegend": true
+    },
+    "id": 113
+}

@@ -1,0 +1,73 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Site A",
+                "Site B",
+                "Site C",
+                "Site D"
+            ],
+            "y": [
+                10,
+                5,
+                7,
+                3
+            ],
+            "name": "Injuries",
+            "marker": {
+                "color": "red"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Site A",
+                "Site B",
+                "Site C",
+                "Site D"
+            ],
+            "y": [
+                20,
+                12,
+                15,
+                8
+            ],
+            "name": "Near Misses",
+            "marker": {
+                "color": "orange"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Site A",
+                "Site B",
+                "Site C",
+                "Site D"
+            ],
+            "y": [
+                5,
+                3,
+                4,
+                2
+            ],
+            "name": "Property Damage",
+            "marker": {
+                "color": "blue"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Incident Frequency by Site",
+        "barmode": "stack",
+        "xaxis": {
+            "title": "Construction Site"
+        },
+        "yaxis": {
+            "title": "Number of Incidents"
+        },
+        "bargap": 0.2
+    },
+    "id": 130
+}

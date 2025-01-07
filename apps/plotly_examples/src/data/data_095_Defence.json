@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                78,
+                82,
+                87,
+                85
+            ],
+            "mode": "lines+markers",
+            "name": "Training Completion Rate",
+            "line": {
+                "color": "rgb(255,127,14)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Quarterly Training Completion Rates",
+        "xaxis": {
+            "title": "Quarters"
+        },
+        "yaxis": {
+            "title": "Completion Rate (%)"
+        }
+    },
+    "id": 95
+}

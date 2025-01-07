@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "North America",
+                "Europe",
+                "Asia"
+            ],
+            "y": [
+                45,
+                37,
+                38
+            ],
+            "text": [
+                "Small",
+                "Medium",
+                "Large"
+            ],
+            "marker": {
+                "color": [
+                    45,
+                    37,
+                    38
+                ],
+                "colorscale": "Viridis",
+                "colorbar": {
+                    "title": "Number of Flagged Transactions"
+                }
+            }
+        }
+    ],
+    "layout": {
+        "title": "Fraud Detection Bar Chart",
+        "xaxis": {
+            "title": "Geography"
+        },
+        "yaxis": {
+            "title": "Total Flagged Transactions",
+            "automargin": true
+        }
+    },
+    "id": 90
+}

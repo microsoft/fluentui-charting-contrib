@@ -1,0 +1,59 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Math",
+                "Science",
+                "English",
+                "History"
+            ],
+            "y": [
+                8,
+                12,
+                15,
+                10
+            ],
+            "name": "Training Sessions Attended",
+            "marker": {
+                "color": "rgba(58,71,80,0.6)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Math",
+                "Science",
+                "English",
+                "History"
+            ],
+            "y": [
+                3.5,
+                4.2,
+                4.8,
+                4.0
+            ],
+            "name": "Peer Evaluation Score",
+            "marker": {
+                "color": "rgba(246,78,139,0.6)"
+            },
+            "yaxis": "y2"
+        }
+    ],
+    "layout": {
+        "title": "Impact of Training Sessions on Peer Evaluations",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Subject Taught"
+        },
+        "yaxis": {
+            "title": "Training Sessions"
+        },
+        "yaxis2": {
+            "title": "Average Peer Evaluation",
+            "overlaying": "y",
+            "side": "right"
+        }
+    },
+    "id": 164
+}

@@ -1,0 +1,56 @@
+{
+    "data": [
+        {
+            "type": "heatmap",
+            "z": [
+                [
+                    0.1,
+                    0.2,
+                    0.3,
+                    0.2
+                ],
+                [
+                    0.4,
+                    0.5,
+                    0.6,
+                    0.4
+                ],
+                [
+                    0.1,
+                    0.4,
+                    0.7,
+                    0.6
+                ],
+                [
+                    0.3,
+                    0.5,
+                    0.7,
+                    0.8
+                ]
+            ],
+            "x": [
+                "Winter",
+                "Spring",
+                "Summer",
+                "Fall"
+            ],
+            "y": [
+                "2023",
+                "2024",
+                "2025",
+                "2026"
+            ],
+            "colorscale": "Viridis"
+        }
+    ],
+    "layout": {
+        "title": "Seasonal Occupancy Heatmap",
+        "xaxis": {
+            "title": "Season"
+        },
+        "yaxis": {
+            "title": "Year"
+        }
+    },
+    "id": 218
+}

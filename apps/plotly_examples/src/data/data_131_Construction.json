@@ -1,0 +1,56 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "Week 1",
+                "Week 2",
+                "Week 3",
+                "Week 4"
+            ],
+            "y": [
+                4.5,
+                3.9,
+                5.2,
+                4.0
+            ],
+            "name": "Average Severity Score",
+            "line": {
+                "color": "purple"
+            }
+        },
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "Week 1",
+                "Week 2",
+                "Week 3",
+                "Week 4"
+            ],
+            "y": [
+                3.2,
+                4.7,
+                2.9,
+                3.5
+            ],
+            "name": "Industry Benchmark",
+            "line": {
+                "color": "green",
+                "dash": "dash"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Weekly Severity Score vs Industry Benchmark",
+        "xaxis": {
+            "title": "Weeks"
+        },
+        "yaxis": {
+            "title": "Severity Score"
+        },
+        "showlegend": true
+    },
+    "id": 131
+}

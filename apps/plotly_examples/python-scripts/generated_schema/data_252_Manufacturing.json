@@ -1,0 +1,74 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Week 1",
+                "Week 2",
+                "Week 3",
+                "Week 4"
+            ],
+            "y": [
+                85,
+                87,
+                89,
+                90
+            ],
+            "mode": "lines+markers",
+            "name": "Team 1",
+            "line": {
+                "shape": "spline"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Week 1",
+                "Week 2",
+                "Week 3",
+                "Week 4"
+            ],
+            "y": [
+                75,
+                78,
+                80,
+                82
+            ],
+            "mode": "lines+markers",
+            "name": "Team 2",
+            "line": {
+                "shape": "spline"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Week 1",
+                "Week 2",
+                "Week 3",
+                "Week 4"
+            ],
+            "y": [
+                80,
+                85,
+                83,
+                88
+            ],
+            "mode": "lines+markers",
+            "name": "Team 3",
+            "line": {
+                "shape": "spline"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Weekly Trend in Task Completion Rate",
+        "xaxis": {
+            "title": "Weeks"
+        },
+        "yaxis": {
+            "title": "Task Completion Rate (%)"
+        }
+    },
+    "id": 252
+}

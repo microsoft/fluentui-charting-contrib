@@ -1,0 +1,72 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Portfolio A",
+                "Portfolio B",
+                "Portfolio C",
+                "Portfolio D"
+            ],
+            "y": [
+                5.3,
+                7.8,
+                6.1,
+                8.9
+            ],
+            "name": "Annualized Return (%)",
+            "marker": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Portfolio A",
+                "Portfolio B",
+                "Portfolio C",
+                "Portfolio D"
+            ],
+            "y": [
+                15.2,
+                18.5,
+                14.3,
+                20.1
+            ],
+            "name": "Volatility (%)",
+            "marker": {
+                "color": "red"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Portfolio A",
+                "Portfolio B",
+                "Portfolio C",
+                "Portfolio D"
+            ],
+            "y": [
+                11.5,
+                16.9,
+                12.4,
+                18.3
+            ],
+            "name": "Total Return (%)",
+            "marker": {
+                "color": "green"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Overall Portfolio Performance",
+        "xaxis": {
+            "title": "Portfolio ID"
+        },
+        "yaxis": {
+            "title": "Percentage (%)"
+        },
+        "barmode": "group"
+    },
+    "id": 172
+}

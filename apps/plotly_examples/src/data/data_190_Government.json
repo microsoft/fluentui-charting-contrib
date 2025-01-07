@@ -1,0 +1,79 @@
+{
+    "data": [
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "Project=%{y}<br>Start=%{x}<br>Finish=%{base}<extra></extra>",
+            "legendgroup": "",
+            "marker": {
+                "color": "#636efa"
+            },
+            "name": "",
+            "offsetgroup": "",
+            "orientation": "h",
+            "showlegend": false,
+            "width": 0.5,
+            "x": [
+                "2023-01-01",
+                "2023-02-01",
+                "2023-03-01"
+            ],
+            "xaxis": "x",
+            "y": [
+                "Road Construction",
+                "Bridge Repair",
+                "School Renovation"
+            ],
+            "yaxis": "y",
+            "type": "bar",
+            "base": [
+                "2023-06-01",
+                "2023-05-01",
+                "2023-07-01"
+            ]
+        }
+    ],
+    "layout": {
+        "barmode": "stack",
+        "legend": {
+            "tracegroupgap": 0
+        },
+        "margin": {
+            "t": 60
+        },
+        "template": {
+            "data": {
+                "bar": [
+                    {
+                        "type": "bar"
+                    }
+                ]
+            }
+        },
+        "title": {
+            "text": "Infrastructure Projects Timelines (Gantt Chart)"
+        },
+        "xaxis": {
+            "anchor": "y",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "title": {
+                "text": "Timeline"
+            },
+            "type": "date"
+        },
+        "yaxis": {
+            "anchor": "x",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "title": {
+                "text": "Projects"
+            }
+        }
+    },
+    "frames": [],
+    "id": 190
+}

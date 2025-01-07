@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines+markers",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September"
+            ],
+            "y": [
+                8,
+                7.5,
+                7,
+                8.5,
+                8,
+                7,
+                6.5,
+                7,
+                7.5
+            ],
+            "name": "Average Patient Wait Times (hours)",
+            "line": {
+                "color": "#2ca02c"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Average Patient Wait Times Over Time",
+        "xaxis": {
+            "title": "Month"
+        },
+        "yaxis": {
+            "title": "Wait Time (hours)"
+        }
+    },
+    "id": 200
+}

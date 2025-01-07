@@ -1,0 +1,72 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                1200,
+                1500,
+                1300,
+                1700
+            ],
+            "name": "North America",
+            "marker": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                900,
+                1100,
+                1000,
+                1300
+            ],
+            "name": "Europe",
+            "marker": {
+                "color": "green"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                700,
+                800,
+                750,
+                850
+            ],
+            "name": "Asia",
+            "marker": {
+                "color": "red"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Quarterly Sales Volume by Region",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Quarter"
+        },
+        "yaxis": {
+            "title": "Sales Volume"
+        }
+    },
+    "id": 112
+}

@@ -1,0 +1,42 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "y": [
+                10,
+                15,
+                13,
+                17
+            ],
+            "mode": "lines+markers",
+            "name": "Lead Time Trends",
+            "line": {
+                "shape": "spline"
+            },
+            "marker": {
+                "size": 10
+            }
+        }
+    ],
+    "layout": {
+        "title": {
+            "text": "Quarterly Lead Time Analysis",
+            "font": {
+                "size": 20
+            }
+        },
+        "xaxis": {
+            "title": "Quarter"
+        },
+        "yaxis": {
+            "title": "Average Lead Time (in days)"
+        }
+    },
+    "id": 93
+}

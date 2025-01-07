@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Vehicle Emissions",
+                "Industrial Waste",
+                "Agriculture",
+                "Residential Areas"
+            ],
+            "y": [
+                250,
+                430,
+                200,
+                150
+            ],
+            "marker": {
+                "color": "teal"
+            },
+            "name": "Source of Pollutants"
+        }
+    ],
+    "layout": {
+        "title": {
+            "text": "Pollutant Sources Analysis"
+        },
+        "xaxis": {
+            "title": "Source"
+        },
+        "yaxis": {
+            "title": "Emission Levels"
+        }
+    },
+    "id": 186
+}

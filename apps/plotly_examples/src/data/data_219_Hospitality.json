@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "New Year",
+                "Spring Festival",
+                "Summer Vacation",
+                "Fall Events"
+            ],
+            "y": [
+                85,
+                70,
+                95,
+                75
+            ],
+            "name": "2023 Events",
+            "marker": {
+                "color": "orange"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "New Year",
+                "Spring Festival",
+                "Summer Vacation",
+                "Fall Events"
+            ],
+            "y": [
+                88,
+                74,
+                97,
+                78
+            ],
+            "name": "2024 Events",
+            "marker": {
+                "color": "purple"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Occupancy During Major Events: 2023 vs 2024",
+        "xaxis": {
+            "title": "Event"
+        },
+        "yaxis": {
+            "title": "Occupancy Rate (%)"
+        },
+        "barmode": "group"
+    },
+    "id": 219
+}

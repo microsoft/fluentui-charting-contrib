@@ -1,0 +1,56 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Northeast",
+                "Midwest",
+                "South",
+                "West"
+            ],
+            "y": [
+                8500,
+                6200,
+                9100,
+                7000
+            ],
+            "name": "2023",
+            "marker": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Northeast",
+                "Midwest",
+                "South",
+                "West"
+            ],
+            "y": [
+                8300,
+                6050,
+                9000,
+                6900
+            ],
+            "name": "2022",
+            "marker": {
+                "color": "orange"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Regional Enrollment Comparison for 2022 and 2023",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Region"
+        },
+        "yaxis": {
+            "title": "Total Enrollment"
+        },
+        "legend": {
+            "title": "Year"
+        }
+    },
+    "id": 158
+}

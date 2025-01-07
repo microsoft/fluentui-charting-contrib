@@ -1,0 +1,51 @@
+{
+    "data": [
+        {
+            "type": "scattergeo",
+            "locationmode": "USA-states",
+            "lon": [
+                -74.006,
+                -118.2437,
+                -87.6298,
+                -71.0589
+            ],
+            "lat": [
+                40.7128,
+                34.0522,
+                41.8781,
+                42.3601
+            ],
+            "text": [
+                "New York",
+                "Los Angeles",
+                "Chicago",
+                "Boston"
+            ],
+            "marker": {
+                "size": [
+                    120,
+                    90,
+                    70,
+                    50
+                ],
+                "color": "blue",
+                "line": {
+                    "color": "black",
+                    "width": 2
+                }
+            }
+        }
+    ],
+    "layout": {
+        "title": "Public Transportation Passenger Counts by City",
+        "geo": {
+            "scope": "usa",
+            "projection": {
+                "type": "albers usa"
+            },
+            "showland": true,
+            "landcolor": "rgb(217, 217, 217)"
+        }
+    },
+    "id": 181
+}

@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Aggressive Driving",
+                "Harsh Braking",
+                "Speeding"
+            ],
+            "y": [
+                30,
+                20,
+                15
+            ],
+            "name": "Incident Count",
+            "marker": {
+                "color": "orange"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Driving Habits Analysis",
+        "xaxis": {
+            "title": "Incident Type"
+        },
+        "yaxis": {
+            "title": "Number of Incidents"
+        }
+    },
+    "id": 104
+}

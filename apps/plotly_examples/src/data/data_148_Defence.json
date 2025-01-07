@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D"
+            ],
+            "y": [
+                75,
+                50,
+                60,
+                40
+            ],
+            "name": "On-time Deliveries",
+            "marker": {
+                "color": "steelblue"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D"
+            ],
+            "y": [
+                10,
+                20,
+                15,
+                30
+            ],
+            "name": "Delayed Deliveries",
+            "marker": {
+                "color": "indianred"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Comparison of On-time vs Delayed Deliveries by Supplier",
+        "barmode": "stack",
+        "xaxis": {
+            "title": "Suppliers"
+        },
+        "yaxis": {
+            "title": "Number of Deliveries"
+        }
+    },
+    "id": 148
+}

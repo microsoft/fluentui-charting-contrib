@@ -1,0 +1,59 @@
+{
+    "data": [
+        {
+            "type": "gauge",
+            "value": 85,
+            "title": {
+                "text": "Maintenance Requests Resolved (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "green"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        }
+    ],
+    "layout": {
+        "title": "Maintenance Efficiency Gauge"
+    },
+    "id": 222
+}
