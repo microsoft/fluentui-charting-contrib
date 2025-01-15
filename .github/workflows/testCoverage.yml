@@ -58,7 +58,7 @@ jobs:
           osType: ${{ matrix.os }}
 
       - name: Build
-        run: yarn nx run --cwd ./repo1/packages/charts react-charting:build
+        run: cd ./repo1/packages/charts/react-charting && yarn nx run react-charting:build
 
       - name: Run the tests in windows
         if: matrix.os == 'windows-latest'
