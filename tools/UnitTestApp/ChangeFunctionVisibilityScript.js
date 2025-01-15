@@ -54,7 +54,7 @@ async function readDirectory(dirPath) {
 const changeFunctionVisibility = async () => {
   getPWD((pwd) => {
     console.log(`The pwd is: ${pwd}`);
-    readDirectory(`${pwd}/repo1/packages/react-charting/src/components/`);
+    readDirectory(`${pwd}/repo1/packages/charts/react-charting/src/components/`);
   });
 }
 
