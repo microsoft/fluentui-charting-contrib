@@ -49,7 +49,7 @@ jobs:
         run: ls ./repo1
 
       - name: Install packages
-        run: yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/react-charting
+        run: yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/charts/react-charting
 
       - name: Change function visibility from private to public
         id: setup
@@ -58,26 +58,26 @@ jobs:
           osType: ${{ matrix.os }}
 
       - name: Build
-        run: yarn --cwd ./repo1 buildto @fluentui/react-charting
+        run: yarn nx run react-charting:build
 
       - name: Run the tests in windows
         if: matrix.os == 'windows-latest'
-        run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
+        run: cd ./repo1/packages/charts/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
         continue-on-error: true
 
       - name: Run a single test in windows
         if: matrix.os == 'windows-latest'
-        run: cd ./repo1/packages/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest ./src/components/VerticalBarChart --coverage --coverageDirectory ./coverage/${{matrix.os}}_VerticalBarChart --verbose --coverageReporters=html
+        run: cd ./repo1/packages/charts/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest ./src/components/VerticalBarChart --coverage --coverageDirectory ./coverage/${{matrix.os}}_VerticalBarChart --verbose --coverageReporters=html
         continue-on-error: true
 
       - name: Run the tests in macos
         if: matrix.os == 'macos-latest'
-        run: cd ./repo1/packages/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
+        run: cd ./repo1/packages/charts/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
         continue-on-error: true
 
       - name: Run the tests in ubuntu
         if: matrix.os == 'ubuntu-latest'
-        run: cd ./repo1/packages/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
+        run: cd ./repo1/packages/charts/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
         continue-on-error: true
 
       - name: Generate coverage file name in windows
@@ -95,25 +95,25 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{matrix.os}}
-          path: ./repo1/packages/react-charting/coverage/${{matrix.os}}
+          path: ./repo1/packages/charts/react-charting/coverage/${{matrix.os}}
 
       - name: Save coverage file
         uses: actions/upload-artifact@v4
         with:
           name: ${{env.COVERAGE_FILENAME}}_report
-          path: ./repo1/packages/react-charting/coverageReport.txt
+          path: ./repo1/packages/charts/react-charting/coverageReport.txt
 
       - name: Save coverage folder for a single test
         if: matrix.os == 'windows-latest'
         uses: actions/upload-artifact@v4
         with:
           name: coverage_VBC
-          path: ./repo1/packages/react-charting/coverage/${{matrix.os}}_VerticalBarChart
+          path: ./repo1/packages/charts/react-charting/coverage/${{matrix.os}}_VerticalBarChart
 
       - name: Extract the coverage summary table
         if: matrix.os != 'windows-latest'
         run: |
-          cd ./repo1/packages/react-charting
+          cd ./repo1/packages/charts/react-charting
           file_contents=$(cat coverageReport.txt)
           table=$(echo "$file_contents" | awk '/----/,/^$/' | sed '1d;$d')
           echo "$table"
@@ -121,7 +121,7 @@ jobs:
       - name: Extract the coverage summary table in windows
         if: matrix.os == 'windows-latest'
         run: |
-          cd ./repo1/packages/react-charting
+          cd ./repo1/packages/charts/react-charting
           $fileContents = Get-Content -Raw -Path "coverageReport.txt"
           $tableRegex = "(?ms)----.*?^$"
           $table = [regex]::Match($fileContents, $tableRegex)
