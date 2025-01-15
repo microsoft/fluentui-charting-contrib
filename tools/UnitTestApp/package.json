@@ -6,6 +6,9 @@
         "type": "git",
         "url": "https://github.com/microsoft/fluentui-charting-contrib/tools/UnitTestApp"
     },
+    "engines": {
+    "node": "^20.0.0 || ^22.0.0"
+    },
     "license": "MIT",
     "scripts": {
         "test": "jest"
