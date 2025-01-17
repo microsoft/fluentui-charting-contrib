@@ -90,6 +90,12 @@ export class DeclarativeChartBasicExample extends React.Component<IDeclarativeCh
     this.setState({ selectedLegends: JSON.stringify(selectedLegends) });
   };
 
+  private htmlEncode(str: string): string {
+    return str.replace(/[\u00A0-\u9999<>\&]/gim, function(i) {
+      return '&#' + i.charCodeAt(0) + ';';
+    });
+  }
+
   private _createDeclarativeChart(): JSX.Element {
     const theme = getSelection("Theme", "Light");
     const uniqueKey = `${this.state.selectedChoice}_${theme}`;
@@ -141,7 +147,7 @@ export class DeclarativeChartBasicExample extends React.Component<IDeclarativeCh
         <div data-testid="chart-container" >
           <br />
           <br />
-          <Subtitle2>{selectedSchema.layout.title}</Subtitle2>
+          <Subtitle2>{selectedSchema.layout.title ? this.htmlEncode(selectedSchema.layout.title) : ''}</Subtitle2>
           <Divider/>
           <br />
           <br />

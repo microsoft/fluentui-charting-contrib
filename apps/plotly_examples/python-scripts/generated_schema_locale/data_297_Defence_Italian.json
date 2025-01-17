@@ -1,0 +1,84 @@
+{
+    "data": [
+        {
+            "type": "line",
+            "x": [
+                "Gennaio",
+                "Febbraio",
+                "Marzo",
+                "Aprile",
+                "Maggio",
+                "Giugno",
+                "Luglio",
+                "Agosto",
+                "Settembre",
+                "Ottobre",
+                "Novembre",
+                "Dicembre"
+            ],
+            "y": [
+                450,
+                420,
+                400,
+                380,
+                390,
+                420,
+                460,
+                480,
+                500,
+                520,
+                510,
+                470
+            ],
+            "name": "Consumo Energetico Azienda A",
+            "marker": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "line",
+            "x": [
+                "Gennaio",
+                "Febbraio",
+                "Marzo",
+                "Aprile",
+                "Maggio",
+                "Giugno",
+                "Luglio",
+                "Agosto",
+                "Settembre",
+                "Ottobre",
+                "Novembre",
+                "Dicembre"
+            ],
+            "y": [
+                300,
+                320,
+                310,
+                305,
+                310,
+                330,
+                350,
+                370,
+                390,
+                410,
+                400,
+                390
+            ],
+            "name": "Consumo Energetico Azienda B",
+            "marker": {
+                "color": "green"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Analisi del Consumo Energetico",
+        "xaxis": {
+            "title": "Mese"
+        },
+        "yaxis": {
+            "title": "Consumo Energetico (in MWh)"
+        }
+    },
+    "id": 412
+}

@@ -1,0 +1,78 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "mode": "lines",
+            "x": [
+                "Gennaio",
+                "Febbraio",
+                "Marzo",
+                "Aprile",
+                "Maggio",
+                "Giugno",
+                "Luglio",
+                "Agosto",
+                "Settembre",
+                "Ottobre"
+            ],
+            "y": [
+                8,
+                7.5,
+                8.2,
+                7.9,
+                8.5,
+                7.8,
+                8,
+                7.6,
+                8.4,
+                8.1
+            ],
+            "name": "Ore Lavorative Medie",
+            "line": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "scatter",
+            "mode": "lines",
+            "x": [
+                "Gennaio",
+                "Febbraio",
+                "Marzo",
+                "Aprile",
+                "Maggio",
+                "Giugno",
+                "Luglio",
+                "Agosto",
+                "Settembre",
+                "Ottobre"
+            ],
+            "y": [
+                5,
+                4.8,
+                5.1,
+                4.9,
+                5.3,
+                5,
+                5.2,
+                4.7,
+                5.5,
+                5.1
+            ],
+            "name": "Numero di Task Completati",
+            "line": {
+                "color": "green"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Metriche di Produttivit\u00e0 dei Dipendenti",
+        "xaxis": {
+            "title": "Mese"
+        },
+        "yaxis": {
+            "title": "Valore"
+        }
+    },
+    "id": 408
+}

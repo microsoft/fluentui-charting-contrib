@@ -1,0 +1,1283 @@
+{
+    "data": [
+        {
+            "type": "gauge",
+            "value": 85,
+            "title": {
+                "text": "Maintenance Requests Resolved (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "green"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 78,
+            "title": {
+                "text": "Customer Queries Resolved (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "yellow"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 92,
+            "title": {
+                "text": "Project Completion Time (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "green"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 67,
+            "title": {
+                "text": "System Uptime (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "yellow"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 60,
+            "title": {
+                "text": "Customer Satisfaction (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "yellow"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 95,
+            "title": {
+                "text": "Compliance to Policies (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "green"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 52,
+            "title": {
+                "text": "Employee Training Completion (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "yellow"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 89,
+            "title": {
+                "text": "Network Security Efficiency (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "green"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 73,
+            "title": {
+                "text": "Data Backup Success Rate (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "yellow"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 86,
+            "title": {
+                "text": "Service Response Time (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "green"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 58,
+            "title": {
+                "text": "IT Ticket Management Efficiency (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "yellow"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 82,
+            "title": {
+                "text": "Application Deployment Success Rate (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "green"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 75,
+            "title": {
+                "text": "Inventory Accuracy (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "yellow"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 90,
+            "title": {
+                "text": "Incident Resolution Time (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "green"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 68,
+            "title": {
+                "text": "Development Cycle Time (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "yellow"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 77,
+            "title": {
+                "text": "Bug Fixing Efficiency (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "yellow"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 84,
+            "title": {
+                "text": "Server Maintenance Effectiveness (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "green"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 61,
+            "title": {
+                "text": "Software Quality Assurance (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "yellow"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 83,
+            "title": {
+                "text": "Cloud Service Reliability (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "green"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 79,
+            "title": {
+                "text": "Patch Management Efficiency (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "yellow"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 74,
+            "title": {
+                "text": "IT Support Efficiency (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "yellow"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 87,
+            "title": {
+                "text": "Operational Efficiency (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "green"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 93,
+            "title": {
+                "text": "Production Quality (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "green"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 81,
+            "title": {
+                "text": "Vendor Management Efficiency (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "green"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "gauge",
+            "value": 63,
+            "title": {
+                "text": "Technology Adoption Rate (%)"
+            },
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "gauge": {
+                "axis": {
+                    "range": [
+                        0,
+                        100
+                    ]
+                },
+                "bar": {
+                    "color": "yellow"
+                },
+                "steps": [
+                    {
+                        "range": [
+                            0,
+                            50
+                        ],
+                        "color": "red"
+                    },
+                    {
+                        "range": [
+                            50,
+                            80
+                        ],
+                        "color": "yellow"
+                    },
+                    {
+                        "range": [
+                            80,
+                            100
+                        ],
+                        "color": "green"
+                    }
+                ]
+            }
+        }
+    ],
+    "layout": {
+        "title": "Maintenance Efficiency Gauge"
+    },
+    "id": 253
+}

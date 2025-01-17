@@ -1,0 +1,120 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Januar",
+                "Februar",
+                "M\u00e4rz",
+                "April",
+                "Mai",
+                "Juni",
+                "Juli",
+                "August",
+                "September",
+                "Oktober",
+                "November",
+                "Dezember"
+            ],
+            "y": [
+                200,
+                180,
+                210,
+                220,
+                230,
+                250,
+                270,
+                260,
+                240,
+                230,
+                220,
+                210
+            ],
+            "name": "Haushalte",
+            "marker": {
+                "color": "orange"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Januar",
+                "Februar",
+                "M\u00e4rz",
+                "April",
+                "Mai",
+                "Juni",
+                "Juli",
+                "August",
+                "September",
+                "Oktober",
+                "November",
+                "Dezember"
+            ],
+            "y": [
+                300,
+                290,
+                310,
+                320,
+                340,
+                360,
+                380,
+                370,
+                350,
+                340,
+                330,
+                310
+            ],
+            "name": "Industrie",
+            "marker": {
+                "color": "red"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Januar",
+                "Februar",
+                "M\u00e4rz",
+                "April",
+                "Mai",
+                "Juni",
+                "Juli",
+                "August",
+                "September",
+                "Oktober",
+                "November",
+                "Dezember"
+            ],
+            "y": [
+                150,
+                140,
+                160,
+                170,
+                180,
+                200,
+                220,
+                210,
+                190,
+                180,
+                170,
+                160
+            ],
+            "name": "Gewerbe",
+            "marker": {
+                "color": "blue"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Energieverbrauchsanalyse nach Monat",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Monat"
+        },
+        "yaxis": {
+            "title": "Energieverbrauch (GWh)"
+        }
+    },
+    "id": 407
+}

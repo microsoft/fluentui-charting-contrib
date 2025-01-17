@@ -1,0 +1,91 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "2023-01",
+                "2023-02",
+                "2023-03",
+                "2023-04",
+                "2023-05",
+                "2023-06"
+            ],
+            "y": [
+                80,
+                85,
+                88,
+                90,
+                86,
+                91
+            ],
+            "mode": "lines+markers",
+            "name": "Werk 1",
+            "line": {
+                "color": "red"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "2023-01",
+                "2023-02",
+                "2023-03",
+                "2023-04",
+                "2023-05",
+                "2023-06"
+            ],
+            "y": [
+                70,
+                72,
+                75,
+                78,
+                74,
+                79
+            ],
+            "mode": "lines+markers",
+            "name": "Werk 2",
+            "line": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "2023-01",
+                "2023-02",
+                "2023-03",
+                "2023-04",
+                "2023-05",
+                "2023-06"
+            ],
+            "y": [
+                60,
+                65,
+                64,
+                67,
+                66,
+                70
+            ],
+            "mode": "lines+markers",
+            "name": "Werk 3",
+            "line": {
+                "color": "green"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Monatliche Produktionsleistung der Werke",
+        "xaxis": {
+            "title": "Monat"
+        },
+        "yaxis": {
+            "title": "Produktionsleistung (in Tausend Einheiten)"
+        },
+        "legend": {
+            "title": {
+                "text": "Werke"
+            }
+        }
+    },
+    "id": 405
+}

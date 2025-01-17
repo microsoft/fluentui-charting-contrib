@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Lun",
+                "Mar",
+                "Mer",
+                "Gio",
+                "Ven"
+            ],
+            "y": [
+                7.5,
+                8,
+                8.2,
+                7.8,
+                8.5
+            ],
+            "name": "Team A",
+            "marker": {
+                "color": "orange"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Lun",
+                "Mar",
+                "Mer",
+                "Gio",
+                "Ven"
+            ],
+            "y": [
+                6.8,
+                7.2,
+                7.5,
+                7.3,
+                7.8
+            ],
+            "name": "Team B",
+            "marker": {
+                "color": "purple"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Metriche di Produttivit\u00e0 Settimanale dei Dipendenti",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Giorno della Settimana"
+        },
+        "yaxis": {
+            "title": "Ore Produttive"
+        }
+    },
+    "id": 411
+}
