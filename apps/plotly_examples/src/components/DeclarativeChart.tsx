@@ -104,6 +104,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     const layout_with_theme = { ...layout, plot_bgcolor: bgcolor, paper_bgcolor: bgcolor, font: fontColor };
     const plotlySchema = { data, layout: layout_with_theme, selectedLegends: lastKnownValidLegends };
     const inputSchema: Schema = { plotlySchema };
+    const chartTitle = typeof layout?.title === 'string' ? layout.title : layout?.title?.text ?? '';
     return (
       <div key={uniqueKey}>
         <Subtitle1 align="center" style={{marginLeft:'30%'}}>Declarative chart from fluent</Subtitle1>
@@ -132,11 +133,11 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
         <div data-testid="chart-container" >
           <br />
           <br />
-          <Subtitle2>{selectedSchema.layout.title}</Subtitle2>
-          <Divider/>
-          <br />
-          <br />
           <ErrorBoundary>
+            <Subtitle2>{chartTitle}</Subtitle2>
+            <Divider/>
+            <br />
+            <br />
             <DeclarativeChart
               chartSchema={inputSchema}
               onSchemaChange={_handleChartSchemaChanged}
