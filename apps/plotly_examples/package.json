@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
-    "@fluentui/react-charting": "^5.23.37",
+    "@fluentui/react-charting": "^5.23.41",
     "@fluentui/react-components": "^9.21.0",
     "@fluentui/react-portal-compat": "9.0.176",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
@@ -20,6 +20,7 @@
     "browserslist": "^4.18.1",
     "camelcase": "^6.2.1",
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.2.0",
     "d3-color": "^3.1.0",
@@ -89,8 +90,16 @@
     ]
   },
   "devDependencies": {
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5"
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.7",
+    "@types/react": "17.0.44",
+    "@types/react-dom": "17.0.15"
+  },
+  "resolutions": {
+    "@types/react": "17.0.44",
+    "@types/react-dom": "17.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "jest": {
     "roots": [

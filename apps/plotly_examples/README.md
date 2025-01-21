@@ -44,7 +44,21 @@ plotly_examples
 
 The application displays charts based on the data defined in `src/data/parsed_data.json`. The `DeclarativeChart` component in `src/components/DeclarativeChart.tsx` processes this data and renders it using the Fluent UI Charting library.
 
-5. **Steps to run functions for generating large data and locale based data in generate_plotly_schema.py**
+## Developing with local version of react-charting package
+1. Navigate to the local setup of `fluentui\packages\charts\react-charting`
+2. Run `yarn link`
+3. Navigate to `fluentui-charting-contrib\apps\plotly_examples` (this repo).
+4. Run `yarn link @fluentui/react-charting`
+5. Navigate back to `fluentui`
+6. Delete `node_modules\react` and `node_modules\react-dom`
+7. Run `npm link ..\fluentui-charting-contrib\apps\plotly_examples\node_modules\react --legacy-peer-deps` as per your path.
+ Ignore any EINTEGRITY errors in this step. 
+8. Run `npm link ..\fluentui-charting-contrib\apps\plotly_examples\node_modules\react-dom --legacy-peer-deps` as per your path.
+Ignore any EINTEGRITY errors in this step. 
+The local charting version is now linked.
+You can develop the charts, debug and validate using the playwright tests locally.
+
+## Steps to run functions for generating large data and locale based data in generate_plotly_schema.py
 
 **Large data generation**
 First run the functions **generate_visualization_scenarios()** and then **generate_visualization_schemas()**.
@@ -53,7 +67,8 @@ Then run **generate_detailed_visualization_schemas()** to get large data.
 **Locale based data generation**
 First run the function **generate_visualization_scenarios()**. Then run **generate_locale_visualization_schemas()**.
 
-6. **Data set number mapping**
+## Data set number mapping
 
 **253 - 277** - Large Dataset
 **278 - 302** - Locale based Dataset
+
