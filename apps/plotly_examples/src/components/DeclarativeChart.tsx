@@ -28,7 +28,7 @@ const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
 
 const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
   const savedOptionStr = getSelection("Schema", '000');
-  const savedOption = parseInt(savedOptionStr, 10);
+  const savedOption = parseInt(savedOptionStr, 10) - 1; // To handle 0 based index
   const savedFileName = `data_${savedOptionStr}.json`;
   const _selectedSchema = schemasData[savedOption]?.schema || {};
   const { selectedLegends } = _selectedSchema as any;

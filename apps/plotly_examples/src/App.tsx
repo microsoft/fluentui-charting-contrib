@@ -34,7 +34,7 @@ const App: React.FC = () => {
               <Option>Light</Option>
               <Option>Dark</Option>
             </Dropdown>
-            &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.23.41</Subtitle2>
+            &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.23.43</Subtitle2>
           <ChartWrapper/>
         </PortalCompatProvider>
       </FluentProvider>
