@@ -43,3 +43,17 @@ plotly_examples
 ## Usage
 
 The application displays charts based on the data defined in `src/data/parsed_data.json`. The `DeclarativeChart` component in `src/components/DeclarativeChart.tsx` processes this data and renders it using the Fluent UI Charting library.
+
+5. **Steps to run functions for generating large data and locale based data in generate_plotly_schema.py**
+
+**Large data generation**
+First run the functions **generate_visualization_scenarios()** and then **generate_visualization_schemas()**.
+Then run **generate_detailed_visualization_schemas()** to get large data.
+
+**Locale based data generation**
+First run the function **generate_visualization_scenarios()**. Then run **generate_locale_visualization_schemas()**.
+
+6. **Data set number mapping**
+
+**253 - 277** - Large Dataset
+**278 - 302** - Locale based Dataset
