@@ -58,3 +58,17 @@ Ignore any EINTEGRITY errors in this step.
 The local charting version is now linked.
 You can develop the charts, debug and validate using the playwright tests locally.
 
+## Steps to run functions for generating large data and locale based data in generate_plotly_schema.py
+
+**Large data generation**
+First run the functions **generate_visualization_scenarios()** and then **generate_visualization_schemas()**.
+Then run **generate_detailed_visualization_schemas()** to get large data.
+
+**Locale based data generation**
+First run the function **generate_visualization_scenarios()**. Then run **generate_locale_visualization_schemas()**.
+
+## Data set number mapping
+
+**253 - 277** - Large Dataset
+**278 - 302** - Locale based Dataset
+

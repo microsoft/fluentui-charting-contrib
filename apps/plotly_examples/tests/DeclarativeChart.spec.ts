@@ -2,7 +2,7 @@ import { test, expect, Locator } from '@playwright/test';
 import * as dotenv from 'dotenv';
 
 const chartsListWithErrors = [];
-var totalChartExamplesCount = 252;
+var totalChartExamplesCount = 302;
 
 test.beforeEach( async ({ page }) => {
   //Pass base URL as part of playwright command 

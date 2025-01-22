@@ -1,0 +1,85 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Gen",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mag",
+                "Giu",
+                "Lug",
+                "Ago",
+                "Set",
+                "Ott",
+                "Nov",
+                "Dic"
+            ],
+            "y": [
+                300,
+                280,
+                310,
+                270,
+                260,
+                245,
+                230,
+                220,
+                235,
+                250,
+                265,
+                275
+            ],
+            "name": "2022",
+            "marker": {
+                "color": "red"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Gen",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Mag",
+                "Giu",
+                "Lug",
+                "Ago",
+                "Set",
+                "Ott",
+                "Nov",
+                "Dic"
+            ],
+            "y": [
+                290,
+                275,
+                300,
+                260,
+                250,
+                235,
+                225,
+                215,
+                225,
+                245,
+                255,
+                270
+            ],
+            "name": "2023",
+            "marker": {
+                "color": "orange"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Analisi del Consumo Energetico Mensile",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Mese"
+        },
+        "yaxis": {
+            "title": "Consumo Energetico (GWh)"
+        }
+    },
+    "id": 410
+}

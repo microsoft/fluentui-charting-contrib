@@ -1,0 +1,759 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                120,
+                150,
+                100,
+                130,
+                140,
+                110,
+                160,
+                170,
+                180,
+                175
+            ],
+            "name": "Allocated",
+            "marker": {
+                "color": "rgb(49,130,189)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                150,
+                120,
+                130,
+                160,
+                170,
+                140,
+                120,
+                130,
+                140,
+                135
+            ],
+            "name": "Required",
+            "marker": {
+                "color": "rgb(204,204,204)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                130,
+                170,
+                140,
+                120,
+                130,
+                100,
+                150,
+                160,
+                165,
+                160
+            ],
+            "name": "Available",
+            "marker": {
+                "color": "rgb(95,158,160)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                140,
+                160,
+                120,
+                130,
+                120,
+                135,
+                125,
+                140,
+                123,
+                128
+            ],
+            "name": "Reserved",
+            "marker": {
+                "color": "rgb(100,100,255)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                110,
+                130,
+                140,
+                150,
+                160,
+                115,
+                105,
+                115,
+                125,
+                135
+            ],
+            "name": "Utilized",
+            "marker": {
+                "color": "rgb(255,69,0)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                120,
+                125,
+                130,
+                145,
+                150,
+                135,
+                140,
+                155,
+                160,
+                165
+            ],
+            "name": "Surplus",
+            "marker": {
+                "color": "rgb(30,144,255)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                140,
+                150,
+                130,
+                140,
+                125,
+                135,
+                145,
+                155,
+                175,
+                180
+            ],
+            "name": "Shortage",
+            "marker": {
+                "color": "rgb(144,238,144)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                150,
+                170,
+                160,
+                150,
+                150,
+                140,
+                130,
+                140,
+                150,
+                160
+            ],
+            "name": "Maximum Capacity",
+            "marker": {
+                "color": "rgb(255,215,0)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                130,
+                140,
+                135,
+                150,
+                155,
+                145,
+                140,
+                150,
+                165,
+                170
+            ],
+            "name": "Minimum Capacity",
+            "marker": {
+                "color": "rgb(218,112,214)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                140,
+                150,
+                160,
+                140,
+                150,
+                160,
+                170,
+                180,
+                190,
+                185
+            ],
+            "name": "Idle",
+            "marker": {
+                "color": "rgb(119,136,153)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                120,
+                145,
+                150,
+                155,
+                160,
+                140,
+                135,
+                130,
+                120,
+                110
+            ],
+            "name": "In Progress",
+            "marker": {
+                "color": "rgb(255,105,180)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                100,
+                120,
+                110,
+                140,
+                150,
+                130,
+                140,
+                160,
+                135,
+                125
+            ],
+            "name": "Completed",
+            "marker": {
+                "color": "rgb(255,182,193)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                110,
+                135,
+                140,
+                145,
+                155,
+                130,
+                125,
+                120,
+                110,
+                105
+            ],
+            "name": "Pending",
+            "marker": {
+                "color": "rgb(176,196,222)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                140,
+                160,
+                150,
+                140,
+                130,
+                120,
+                110,
+                100,
+                115,
+                120
+            ],
+            "name": "Delayed",
+            "marker": {
+                "color": "rgb(255,99,71)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                150,
+                170,
+                140,
+                130,
+                120,
+                135,
+                145,
+                155,
+                165,
+                170
+            ],
+            "name": "On Hold",
+            "marker": {
+                "color": "rgb(135,206,250)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                130,
+                143,
+                154,
+                165,
+                172,
+                160,
+                158,
+                150,
+                165,
+                140
+            ],
+            "name": "Completed Late",
+            "marker": {
+                "color": "rgb(211,211,211)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                120,
+                134,
+                144,
+                158,
+                165,
+                172,
+                182,
+                150,
+                170,
+                175
+            ],
+            "name": "Completed Early",
+            "marker": {
+                "color": "rgb(218,165,32)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                125,
+                132,
+                140,
+                150,
+                160,
+                170,
+                155,
+                145,
+                130,
+                136
+            ],
+            "name": "Under Capacity",
+            "marker": {
+                "color": "rgb(199,21,133)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                110,
+                130,
+                140,
+                150,
+                155,
+                144,
+                132,
+                120,
+                110,
+                100
+            ],
+            "name": "Over Capacity",
+            "marker": {
+                "color": "rgb(34,139,34)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                120,
+                130,
+                140,
+                150,
+                160,
+                170,
+                160,
+                150,
+                150,
+                140
+            ],
+            "name": "Outsourced",
+            "marker": {
+                "color": "rgb(128,0,0)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                150,
+                170,
+                150,
+                140,
+                130,
+                125,
+                135,
+                145,
+                155,
+                165
+            ],
+            "name": "Unplanned",
+            "marker": {
+                "color": "rgb(255,20,147)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                140,
+                130,
+                150,
+                160,
+                170,
+                175,
+                165,
+                155,
+                145,
+                135
+            ],
+            "name": "Planned",
+            "marker": {
+                "color": "rgb(46,139,87)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                130,
+                145,
+                150,
+                155,
+                160,
+                165,
+                170,
+                175,
+                180,
+                185
+            ],
+            "name": "Future",
+            "marker": {
+                "color": "rgb(139,0,139)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Operation A",
+                "Operation B",
+                "Operation C",
+                "Operation D",
+                "Operation E",
+                "Operation F",
+                "Operation G",
+                "Operation H",
+                "Operation I",
+                "Operation J"
+            ],
+            "y": [
+                140,
+                120,
+                110,
+                130,
+                150,
+                160,
+                170,
+                130,
+                145,
+                160
+            ],
+            "name": "Historical",
+            "marker": {
+                "color": "rgb(75,0,130)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Allocated vs Required Resources by Operation",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Operation Type"
+        },
+        "yaxis": {
+            "title": "Quantity"
+        }
+    },
+    "id": 270
+}

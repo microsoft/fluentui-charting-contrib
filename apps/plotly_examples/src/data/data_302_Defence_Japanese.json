@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "John",
+                "Mika",
+                "Sara",
+                "Taro",
+                "Hana"
+            ],
+            "y": [
+                85,
+                90,
+                75,
+                80,
+                95
+            ],
+            "name": "Tasks Completed",
+            "marker": {
+                "color": "green"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "John",
+                "Mika",
+                "Sara",
+                "Taro",
+                "Hana"
+            ],
+            "y": [
+                70,
+                80,
+                60,
+                65,
+                85
+            ],
+            "name": "Efficiency Score",
+            "marker": {
+                "color": "blue"
+            }
+        }
+    ],
+    "layout": {
+        "title": "\u5f93\u696d\u54e1\u306e\u751f\u7523\u6027\u6307\u6a19",
+        "barmode": "group",
+        "xaxis": {
+            "title": "\u5f93\u696d\u54e1"
+        },
+        "yaxis": {
+            "title": "\u30e1\u30c8\u30ea\u30c3\u30af\u30b9\u30b3\u30a2"
+        }
+    },
+    "id": 417
+}
