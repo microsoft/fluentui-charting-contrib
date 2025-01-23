@@ -12,7 +12,7 @@ test.beforeEach( async ({ page }) => {
 
 for (let index = 0; index < totalChartExamplesCount; index++) {
   test(`Declarative chart example ${ index + 1 }`, async ({ page }) => {
-    if(process.env.BASE_URL === 'http://localhost:3000/')
+    if (['http://localhost:3000/', 'http://127.0.0.1:3000/'].includes(process.env.BASE_URL))
     {
      const iframe = page.locator('#webpack-dev-server-client-overlay');
      await iframe.evaluate((el) => el.remove());
