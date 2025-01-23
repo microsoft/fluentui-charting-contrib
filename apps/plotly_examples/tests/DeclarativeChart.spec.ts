@@ -17,8 +17,8 @@ for (let index = 0; index < totalChartExamplesCount; index++) {
      const iframe = page.locator('#webpack-dev-server-client-overlay');
      await iframe.evaluate((el) => el.remove());
     }
-    const combobox = page.getByRole('combobox');
-    await combobox.last().click();
+  const combobox = page.getByRole('combobox');
+  await combobox.last().click();
   const listbox = page.getByRole('listbox');
   const listitems = listbox.last().getByRole('option');
   if (!chartsListWithErrors.includes(index)) {
