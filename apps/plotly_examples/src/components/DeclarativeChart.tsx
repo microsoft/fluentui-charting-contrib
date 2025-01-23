@@ -12,10 +12,26 @@ import {
 import { DeclarativeChart, IDeclarativeChart, Schema } from '@fluentui/react-charting';
 import PlotlyChart from './PlotlyChart';
 import { ErrorBoundary } from './ErrorBoundary';
-import { getSelection, saveSelection } from './utils'
-
+import { getSelection, saveSelection } from './utils';
 interface IDeclarativeChartProps {
 }
+
+type PlotType =
+  | 'All'
+  | 'bar'
+  | 'pie'
+  | 'scatter'
+  | 'heatmap'
+  | 'histogram'
+  | 'sankey'
+  | 'indicator'
+  | 'others';
+
+type DataType =
+  | 'All'
+  | 'general'
+  | 'largeData'
+  | 'localization';
 
 // Use require.context to load all JSON files from the split_data folder
 const requireContext = require.context('../data', false, /\.json$/);
@@ -35,6 +51,9 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
   const [selectedChoice, setSelectedChoice] = React.useState<string>(savedFileName);
   const [selectedSchema, setSelectedSchema] = React.useState<any>(_selectedSchema);
   const [selectedLegendsState, setSelectedLegendsState] = React.useState<string>(JSON.stringify(selectedLegends));
+  const [selectedPlotTypes, setSelectedPlotTypes] = React.useState<PlotType[]>(getSelection("PlotType_filter", 'All').split(',') as PlotType[]);
+  const [selectedDataTypes, setSelectedDataTypes] = React.useState<DataType[]>(getSelection("DataType_filter", 'All').split(',') as DataType[]);
+
   const declarativeChartRef = React.useRef<IDeclarativeChart>(null);
   let lastKnownValidLegends: string[] | undefined = selectedLegends;
 
@@ -91,10 +110,100 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     setSelectedLegendsState(JSON.stringify(selectedLegends));
   };
 
+  const getFilteredData = () => {
+    const filteredDataItems = schemasData
+      .filter((data) => {
+        const schemaId = parseInt((data.schema as { id: string }).id, 10);
+        return selectedDataTypes.includes('All') ||
+          (selectedDataTypes.includes('general') && schemaId >= 1 && schemaId <= 252) ||
+          (selectedDataTypes.includes('largeData') && schemaId >= 253 && schemaId <= 277) ||
+          (selectedDataTypes.includes('localization') && schemaId >= 278 && schemaId <= 302);
+      })
+      .filter((data) => {
+        const plotType = (data.schema as any).data[0].type;
+        return selectedPlotTypes.includes('All') ||
+          (selectedPlotTypes.includes('others') && !['bar', 'pie', 'scatter', 'heatmap', 'histogram', 'sankey', 'indicator'].includes(plotType)) ||
+          (selectedPlotTypes.includes(plotType as PlotType));
+      });
+    return filteredDataItems;
+  }
+
+  const handleSelectPlotTypes = (_event: SelectionEvents, data: OptionOnSelectData) => {
+    let newSelectedPlotTypes: PlotType[];
+    if (data.optionValue === 'All') {
+      newSelectedPlotTypes = ['All'];
+    } else {
+      newSelectedPlotTypes = selectedPlotTypes.includes(data.optionValue as PlotType)
+        ? selectedPlotTypes.filter(type => type !== data.optionValue)
+        : [...selectedPlotTypes.filter(type => type !== 'All'), data.optionValue as PlotType];
+      if (newSelectedPlotTypes.length === 0) {
+        newSelectedPlotTypes = ['All'];
+      }
+    }
+    setSelectedPlotTypes(newSelectedPlotTypes as PlotType[]);
+    saveSelection("PlotType_filter", newSelectedPlotTypes.join(','));
+    const filteredSchemas = newSelectedPlotTypes.includes('All') ? schemasData : getFilteredData().filter((schema_data) => {
+      const plotType = (schema_data.schema as any).data[0].type;
+      return newSelectedPlotTypes.includes('All') ||
+        (newSelectedPlotTypes.includes('others') && !['bar', 'pie', 'scatter', 'heatmap', 'histogram', 'sankey', 'indicator'].includes(plotType)) ||
+        (newSelectedPlotTypes.includes(plotType as PlotType));
+    });
+    if (filteredSchemas.length > 0) {
+      const firstFilteredSchema = filteredSchemas[0];
+      setSelectedChoice(firstFilteredSchema.fileName);
+      setSelectedSchema(firstFilteredSchema.schema);
+      setSelectedLegendsState(JSON.stringify((firstFilteredSchema.schema as any).selectedLegends));
+      const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
+      const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
+      saveSelection("Schema", num_id.toString().padStart(3, '0'));
+    } else {
+      setSelectedChoice('');
+      setSelectedSchema({});
+      setSelectedLegendsState('');
+    }
+  }
+
+  const handleSelectDataTypes = (_event: SelectionEvents, data: OptionOnSelectData) => {
+    let newSelectedDataTypes: DataType[];
+    if (data.optionValue === 'All') {
+      newSelectedDataTypes = ['All'];
+    } else {
+      newSelectedDataTypes = selectedDataTypes.includes(data.optionValue as DataType)
+        ? selectedDataTypes.filter(type => type !== data.optionValue)
+        : [...selectedDataTypes.filter(type => type !== 'All'), data.optionValue as DataType];
+      if (newSelectedDataTypes.length === 0) {
+        newSelectedDataTypes = ['All'];
+      }
+    }
+    setSelectedDataTypes(newSelectedDataTypes as DataType[]);
+    saveSelection("DataType_filter", newSelectedDataTypes.join(','));
+    const filteredSchemas = newSelectedDataTypes.includes('All') ? schemasData : getFilteredData().filter((schema_data) => {
+      const schemaId = parseInt((schema_data.schema as { id: string }).id, 10);
+      return newSelectedDataTypes.includes('All') ||
+        (newSelectedDataTypes.includes('general') && schemaId >= 1 && schemaId <= 252) ||
+        (newSelectedDataTypes.includes('largeData') && schemaId >= 253 && schemaId <= 277) ||
+        (newSelectedDataTypes.includes('localization') && schemaId >= 278 && schemaId <= 302);
+    });
+    if (filteredSchemas.length > 0) {
+      const firstFilteredSchema = filteredSchemas[0];
+      setSelectedChoice(firstFilteredSchema.fileName);
+      setSelectedSchema(firstFilteredSchema.schema);
+      setSelectedLegendsState(JSON.stringify((firstFilteredSchema.schema as any).selectedLegends));
+      const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
+      const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
+      saveSelection("Schema", num_id.toString().padStart(3, '0'));
+    } else {
+      setSelectedChoice('');
+      setSelectedSchema({});
+      setSelectedLegendsState('');
+    }
+  }
+
   const createDeclarativeChart = (): JSX.Element => {
     const theme = getSelection("Theme", "Light");
-    const uniqueKey = `${selectedChoice}_${theme}`;
-    const plotlyKey = `plotly_${selectedChoice}_${theme}`;
+    const isRTL = getSelection("RTL", "false") === "true";
+    const uniqueKey = `${theme}_${isRTL}`;
+    const plotlyKey = `plotly_${theme}_${isRTL}`;
     const { data, layout } = selectedSchema;
     if (!selectedSchema) {
       return <div>No data available</div>;
@@ -120,14 +229,47 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
         <div style={{ display: 'flex' }}>
           <label> Select a schema:</label>&nbsp;&nbsp;&nbsp;
           <Dropdown
-            value={selectedChoice}
+            value={selectedChoice}            
             onOptionSelect={_onChange}
           >
-            {schemasData.map((data) => (
-              <Option value={(data.schema as { id: string }).id}>{data.fileName}</Option>
-            ))}
+            {getFilteredData()
+              .map((data) => (
+                <Option key={data.fileName} value={(data.schema as { id: string }).id}>
+                  {data.fileName}
+                </Option>
+              ))}
           </Dropdown>
           &nbsp;&nbsp;&nbsp;
+          <label> Filter by plot type:</label>&nbsp;&nbsp;&nbsp;
+          <Dropdown
+            value={selectedPlotTypes.join(',')}
+            selectedOptions={selectedPlotTypes}
+            onOptionSelect={handleSelectPlotTypes}
+            multiselect
+          >
+            <Option value="All">All</Option>
+            <Option value="bar">bar</Option>
+            <Option value="scatter">scatter</Option>
+            <Option value="pie">pie</Option>
+            <Option value="heatmap">heatmap</Option>
+            <Option value="histogram">histogram</Option>
+            <Option value="sankey">sankey</Option>
+            <Option value="indicator">indicator</Option>
+            <Option value="others">others</Option>
+          </Dropdown>
+          &nbsp;&nbsp;&nbsp;
+          <label> Filter by data type:</label>&nbsp;&nbsp;&nbsp;
+          <Dropdown
+            value={selectedDataTypes.join(',')}
+            selectedOptions={selectedDataTypes}
+            onOptionSelect={handleSelectDataTypes}
+            multiselect
+          >
+            <Option value='All'>All</Option>
+            <Option value='general'>general</Option>
+            <Option value='largeData'>largeData</Option>
+            <Option value='localization'>localization</Option>
+          </Dropdown>
         </div>
         <br />
         <button
