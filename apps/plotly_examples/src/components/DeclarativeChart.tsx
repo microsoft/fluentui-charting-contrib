@@ -27,7 +27,7 @@ const schemasData = requireContext.keys().map((fileName: string) => ({
 const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
 
 const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
-  const savedOptionStr = getSelection("Schema", '000');
+  const savedOptionStr = getSelection("Schema", '001');
   const savedOption = parseInt(savedOptionStr, 10) - 1; // To handle 0 based index
   const savedFileName = `data_${savedOptionStr}.json`;
   const _selectedSchema = schemasData[savedOption]?.schema || {};
@@ -132,7 +132,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
         <br />
         <button
           onClick={() => {
-            declarativeChartRef.current?.exportAsImage().then((imgData: string) => {
+            declarativeChartRef.current?.exportAsImage({ scale: 1 }).then((imgData: string) => {
               fileSaver(imgData);
             });
           }}
