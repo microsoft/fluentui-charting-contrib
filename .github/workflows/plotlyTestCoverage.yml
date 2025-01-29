@@ -1,7 +1,7 @@
 name: "Plotly Test coverage"
 on:
-    schedule:
-        - cron: "0 */8 * * *"
+    pull_request:
+        types: [synchronize]
     workflow_dispatch:
         inputs:
             repo:
