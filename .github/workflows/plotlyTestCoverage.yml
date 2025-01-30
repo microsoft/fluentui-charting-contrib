@@ -55,7 +55,7 @@ jobs:
               run: yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/charts/react-charting
 
             - name: Intall nx globally
-              run: yarn global add nx
+              run: yarn add nx
 
             - name: Build
               run:  yarn --cwd ./repo1 && yarn nx run react-charting:build
