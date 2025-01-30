@@ -80,7 +80,7 @@ jobs:
                 npx playwright test --reporter=html --output=apps/plotly_examples/playwright-report/
 
             - name: Upload playwright report as artifact
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v3
               with: 
                 name: playwright-report
                 path: apps/plotly_examples/playwright-report/
