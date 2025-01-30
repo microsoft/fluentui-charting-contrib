@@ -55,7 +55,7 @@ jobs:
               run: yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/charts/react-charting
 
             - name: Build
-              run:  yarn --cwd ./repo1 yarn nx run react-charting:build
+              run:  yarn --cwd ./repo1 && yarn nx run react-charting:build
 
             - name: Run yarn pack to create .tgz file
               run: |
