@@ -1470,17 +1470,18 @@
     embla-carousel-autoplay "^8.5.1"
     embla-carousel-fade "^8.5.1"
 
-"@fluentui/react-charting@^5.23.41":
-  version "5.23.41"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-charting/-/react-charting-5.23.41.tgz#58cf3ad8e4fe39dc2efd4e1956def5982c6e13c2"
-  integrity sha512-KX4lE7B+sXIwsuvtYCeXi13CaVu69lheP8TnHY45C8mZx/5sno8DdOUMp5NP3c22mFk5ohGYF15cncF9lTqIqg==
+"@fluentui/react-charting@^5.23.46":
+  version "5.23.46"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-charting/-/react-charting-5.23.46.tgz#059aa915103fc09b55332c0c10d4de3e3d6af20d"
+  integrity sha512-+FTcxOSps2h1n2+Fyz0s47FrY/wsAK7ck8DgV/YJE5/oJyqM6npSqnqN3a+TF8IOkGa+v+rI+lfSlOWYd9sWLA==
   dependencies:
     "@fluentui/react-focus" "^8.9.20"
     "@fluentui/set-version" "^8.2.23"
-    "@fluentui/theme-samples" "^8.7.196"
+    "@fluentui/theme-samples" "^8.7.197"
     "@microsoft/load-themed-styles" "^1.10.26"
     "@types/d3-array" "^3.0.0"
     "@types/d3-axis" "^3.0.0"
+    "@types/d3-color" "^3.0.0"
     "@types/d3-format" "^3.0.0"
     "@types/d3-hierarchy" "^3.0.0"
     "@types/d3-sankey" "^0.12.3"
@@ -1491,6 +1492,7 @@
     "@types/d3-time-format" "^3.0.0"
     d3-array "^3.0.0"
     d3-axis "^3.0.0"
+    d3-color "^3.0.0"
     d3-format "^3.0.0"
     d3-hierarchy "^3.0.0"
     d3-sankey "^0.12.3"
@@ -2367,10 +2369,10 @@
     "@fluentui/set-version" "^8.2.23"
     tslib "^2.1.0"
 
-"@fluentui/react@^8.122.7":
-  version "8.122.7"
-  resolved "https://registry.yarnpkg.com/@fluentui/react/-/react-8.122.7.tgz#952a5da520f0eedda8f2adc9836127a96145f794"
-  integrity sha512-qGksVPQ+fjT0M0hUThxJk/eBfF6j0HHikE+ZVZ7LzNdhFqpggXfENcQ9aPkFbNnKro0J8KlJ7mh9UXptKLoIbg==
+"@fluentui/react@^8.122.8":
+  version "8.122.8"
+  resolved "https://registry.yarnpkg.com/@fluentui/react/-/react-8.122.8.tgz#b0b61398847e250f7b84951f6f1bb0d1a30a6f63"
+  integrity sha512-f2ccdmJjHHzI0j6aQk8vUPn/Vjg9GBWCkxcd4z26KbxdSoV8TdwKbVNAEQDjIy6DAcesYlsck6yJUptEu+hYUA==
   dependencies:
     "@fluentui/date-time-utilities" "^8.6.9"
     "@fluentui/font-icons-mdl2" "^8.5.57"
@@ -2415,12 +2417,12 @@
     "@microsoft/load-themed-styles" "^1.10.26"
     tslib "^2.1.0"
 
-"@fluentui/theme-samples@^8.7.196":
-  version "8.7.196"
-  resolved "https://registry.yarnpkg.com/@fluentui/theme-samples/-/theme-samples-8.7.196.tgz#469c4e19672d1cc01262f26c6d379f4613b00a81"
-  integrity sha512-krsEvUB4eb/RO9LAW97nmOgnrFq/2EwRK1UAZHc6AwXYdloezVtgbD19ZFfIjUfdUXjdcYf4Zrw8sT17APOUAw==
+"@fluentui/theme-samples@^8.7.197":
+  version "8.7.197"
+  resolved "https://registry.yarnpkg.com/@fluentui/theme-samples/-/theme-samples-8.7.197.tgz#56868896ab4c8f12a4e6fce71a4f9d7927220371"
+  integrity sha512-2wDwkXjR4oAbeRPp+hOVpQxDlmeHMrOjGB6EuSLez+g2QsskD2YOEElelCSTc2Y/vGvmGn2GemJINyAzdD8Yew==
   dependencies:
-    "@fluentui/react" "^8.122.7"
+    "@fluentui/react" "^8.122.8"
     "@fluentui/scheme-utilities" "^8.3.65"
     "@fluentui/set-version" "^8.2.23"
     tslib "^2.1.0"
@@ -3298,9 +3300,9 @@
   dependencies:
     "@types/d3-selection" "*"
 
-"@types/d3-color@^3.1.1":
+"@types/d3-color@^3.0.0", "@types/d3-color@^3.1.1":
   version "3.1.3"
-  resolved "https://registry.npmjs.org/@types/d3-color/-/d3-color-3.1.3.tgz"
+  resolved "https://registry.yarnpkg.com/@types/d3-color/-/d3-color-3.1.3.tgz#368c961a18de721da8200e80bf3943fb53136af2"
   integrity sha512-iO90scth9WAbmgv7ogoq57O9YpKmFBbmoEoCHDB2xMBY0+/KVrqAaCDyCE16dUspeOvIxFFRI+0sEtqDqy2b4A==
 
 "@types/d3-format@^3.0.0":
@@ -5312,7 +5314,7 @@ d3-collection@1, d3-collection@^1.0.4:
   resolved "https://registry.npmjs.org/d3-collection/-/d3-collection-1.0.7.tgz"
   integrity sha512-ii0/r5f4sjKNTfh84Di+DpztYwqKhEyUlKoPrzUFfeSkWxjW49xU2QzO9qrPrNkpdI0XJkfzvmTu8V2Zylln6A==
 
-"d3-color@1 - 3", d3-color@^3.1.0:
+"d3-color@1 - 3", d3-color@^3.0.0, d3-color@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/d3-color/-/d3-color-3.1.0.tgz"
   integrity sha512-zg/chbXyeBtMQ1LbD/WSoW2DpC3I0mpmPdW+ynRTj/x2DAWYrIY7qeZIHidozwV24m4iavr15lNwIwLxRmOxhA==

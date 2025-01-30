@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { TextField, ITextFieldStyles } from '@fluentui/react/lib/TextField';
-import { 
+import {
   Dropdown,
   Option,
   SelectionEvents,
   OptionOnSelectData,
   Subtitle1,
   Subtitle2,
-  Divider 
+  Divider
 } from '@fluentui/react-components';
 import { DeclarativeChart, IDeclarativeChart, Schema } from '@fluentui/react-charting';
 import PlotlyChart from './PlotlyChart';
@@ -28,7 +28,7 @@ const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
 
 const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
   const savedOptionStr = getSelection("Schema", '000');
-  const savedOption = parseInt(savedOptionStr, 10);
+  const savedOption = parseInt(savedOptionStr, 10) - 1; // To handle 0 based index
   const savedFileName = `data_${savedOptionStr}.json`;
   const _selectedSchema = schemasData[savedOption]?.schema || {};
   const { selectedLegends } = _selectedSchema as any;
@@ -77,6 +77,15 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     document.body.removeChild(saveLink);
   };
 
+  function htmlEncode(str: string): string {
+    if (str !== undefined) {
+      return str.replace(/[\u00A0-\u9999<>\&]/gim, function (i) {
+        return '&#' + i.charCodeAt(0) + ';';
+      });
+    }
+    return '';
+  }
+
   const _handleChartSchemaChanged = (eventData: Schema) => {
     const { selectedLegends } = eventData.plotlySchema;
     setSelectedLegendsState(JSON.stringify(selectedLegends));
@@ -99,24 +108,24 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
         // Nothing to do here
       }
     }
-    const bgcolor= theme === "Dark" ? "rgb(17,17,17)" : "white"; // Full layout for dark mode https://jsfiddle.net/3hfq7ast/
-    const fontColor = {"font": { "color": "white" }}
+    const bgcolor = theme === "Dark" ? "rgb(17,17,17)" : "white"; // Full layout for dark mode https://jsfiddle.net/3hfq7ast/
+    const fontColor = { "font": { "color": "white" } }
     const layout_with_theme = { ...layout, plot_bgcolor: bgcolor, paper_bgcolor: bgcolor, font: fontColor };
     const plotlySchema = { data, layout: layout_with_theme, selectedLegends: lastKnownValidLegends };
     const inputSchema: Schema = { plotlySchema };
-    const chartTitle = typeof layout?.title === 'string' ? layout.title : layout?.title?.text ?? '';
+    const chartTitle = typeof layout?.title === 'string' ? htmlEncode(layout.title) : htmlEncode(layout?.title?.text) ?? '';
     return (
       <div key={uniqueKey}>
-        <Subtitle1 align="center" style={{marginLeft:'30%'}}>Declarative chart from fluent</Subtitle1>
+        <Subtitle1 align="center" style={{ marginLeft: '30%' }}>Declarative chart from fluent</Subtitle1>
         <div style={{ display: 'flex' }}>
           <label> Select a schema:</label>&nbsp;&nbsp;&nbsp;
-        <Dropdown
+          <Dropdown
             value={selectedChoice}
             onOptionSelect={_onChange}
           >
             {schemasData.map((data) => (
-            <Option value={(data.schema as { id: string }).id}>{data.fileName}</Option>
-        ))}
+              <Option value={(data.schema as { id: string }).id}>{data.fileName}</Option>
+            ))}
           </Dropdown>
           &nbsp;&nbsp;&nbsp;
         </div>
@@ -135,7 +144,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
           <br />
           <ErrorBoundary>
             <Subtitle2>{chartTitle}</Subtitle2>
-            <Divider/>
+            <Divider />
             <br />
             <br />
             <DeclarativeChart
@@ -151,16 +160,16 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
           value={selectedLegendsState}
           onChange={_onSelectedLegendsEdited}
           styles={textFieldStyles}
-        />       
-        <br/>
+        />
+        <br />
         <div key={plotlyKey}>
-        <Divider/>
-        <br/>
-        <Subtitle1 align="center" style={{marginLeft:'30%'}}>Chart from plotly.js</Subtitle1>
+          <Divider />
+          <br />
+          <Subtitle1 align="center" style={{ marginLeft: '30%' }}>Chart from plotly.js</Subtitle1>
           <br />
           <br />
           <ErrorBoundary>
-            <PlotlyChart schema={plotlySchema}/>
+            <PlotlyChart schema={plotlySchema} />
           </ErrorBoundary>
         </div>
       </div>
