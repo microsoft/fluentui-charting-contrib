@@ -52,7 +52,7 @@ jobs:
                 node-version: '20.x'
 
             - name: Install packgaes
-              run: yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/charts/react-charting
+              run: yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/charts/react-charting && yarn install
 
             - name: Intall nx globally
               run: yarn add nx
