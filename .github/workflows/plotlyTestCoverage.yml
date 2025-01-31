@@ -52,16 +52,15 @@ jobs:
                 node-version: '20.x'
 
             - name: Install packgaes
-              run: yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/charts/react-charting
-
-            - name: Intall nx
-              run: yarn add nx
-
-            - name: Build
               run: |
                 cd ./repo1
                 yarn install
-                yarn nx run react-charting:build
+
+            # - name: Intall nx
+            #   run: yarn add nx
+
+            - name: Build
+              run: yarn nx run react-charting:build
 
             - name: Run yarn pack to create .tgz file
               run: |
