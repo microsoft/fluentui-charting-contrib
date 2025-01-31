@@ -82,12 +82,12 @@ jobs:
             - name: Run Playwright test script
               run: |
                 cd main_repo/apps/plotly_examples
+                npx playwright install
                 npx cross-env BASE_URL='http://localhost:3000/' npx playwright test 
 
             - name: Generate Playwright report
               run: |
                 cd main_repo/apps/plotly_examples
-                npx playwright install
                 npx playwright show-report
 
             - name: Upload Playwright report as artifact
