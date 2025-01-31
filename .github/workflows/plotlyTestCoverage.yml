@@ -79,7 +79,6 @@ jobs:
                 cd main_repo/apps/plotly_examples
                 npm start & 
                 sleep 5  
-                cat output.log 
                 npx wait-on http://localhost:3000/ --timeout 300000 
 
             - name: Run Playwright test script
