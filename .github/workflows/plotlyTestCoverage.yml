@@ -54,11 +54,15 @@ jobs:
             - name: Install packgaes
               run: yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/charts/react-charting
 
-            - name: Intall nx globally
+            - name: Intall nx
               run: yarn add nx
 
             - name: Build
-              run:  yarn --cwd ./repo1/packages/charts/react-charting && yarn nx run react-charting:build
+              run: |
+                cd ./repo1
+                rm -rf node_modules yarn.lock
+                yarn install
+                yarn nx run react-charting:build
 
             - name: Run yarn pack to create .tgz file
               run: |
