@@ -78,12 +78,6 @@ jobs:
               run: |
                 cd main_repo/apps/plotly_examples
                 npm start & 
-                sleep 5  
-                npx wait-on http://localhost:3000/ --timeout 300000 
-
-            - name: Run Playwright test script
-              run: |
-                cd main_repo/apps/plotly_examples
                 npx playwright install
                 npx cross-env BASE_URL='http://localhost:3000/' npx playwright test 
 
