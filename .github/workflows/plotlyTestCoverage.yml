@@ -77,8 +77,10 @@ jobs:
             - name: Start test app in background
               run: |
                 cd main_repo/apps/plotly_examples
-                npm start 
-                npx wait-on http://localhost:3000/
+                npm start & 
+                sleep 5  
+                cat output.log 
+                npx wait-on http://localhost:3000/ --timeout 300000 
 
             - name: Run Playwright test script
               run: |
