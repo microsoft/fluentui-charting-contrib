@@ -60,7 +60,6 @@ jobs:
             - name: Build
               run: |
                 cd ./repo1
-                rm -rf node_modules yarn.lock
                 yarn install
                 yarn nx run react-charting:build
 
