@@ -77,9 +77,20 @@ jobs:
             - name: Start test app in background
               run: |
                 cd main_repo/apps/plotly_examples
-                npm start & 
+                nohup npm start > output.log 2>&1 &  
+                npx wait-on http://localhost:3000/ --timeout 300000 
+
+            - name: Debug server logs
+              run: cat main_repo/apps/plotly_examples/output.log || echo "No logs found"
+
+            - name: Check if server is running on port 3000
+              run: netstat -ano | findstr :3000 || echo "No process found on port 3000"
+
+            - name: Run Playwright test script
+              run: |
+                cd main_repo/apps/plotly_examples
                 npx playwright install
-                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test 
+                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test
 
             - name: Generate Playwright report
               run: |
