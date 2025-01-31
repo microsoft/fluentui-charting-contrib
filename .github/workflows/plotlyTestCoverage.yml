@@ -32,8 +32,8 @@ jobs:
             - name: Checkout [react-charting]
               uses: actions/checkout@v4
               with:
-                repository: ${{ github.event.inputs.repo || github.event.repository.full_name }}
-                ref: ${{ github.event.inputs.branch || github.event.repository.default_branch }}
+                repository: ${{ github.event.inputs.repo || 'microsoft/fluentui'}}
+                ref: ${{ github.event.inputs.branch || 'master'}}
                 path: repo1
 
             - name: Show current directory
@@ -54,7 +54,7 @@ jobs:
 
             - name: Build
               run: |
-                cd ./repo1
+                cd ./repo1/packages/charts/react-charting
                 yarn nx run react-charting:build
 
             - name: Run yarn pack to create .tgz file
