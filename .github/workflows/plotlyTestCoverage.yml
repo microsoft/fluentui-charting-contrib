@@ -87,6 +87,7 @@ jobs:
             - name: Generate Playwright report
               run: |
                 cd main_repo/apps/plotly_examples
+                npx playwright install
                 npx playwright show-report
 
             - name: Upload Playwright report as artifact
