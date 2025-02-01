@@ -77,14 +77,14 @@ jobs:
             - name: Start test app in background
               run: |
                 cd main_repo/apps/plotly_examples
-                nohup npm start > output.log 2>&1 &  
+                npm start
                 npx wait-on http://localhost:3000/ --timeout 300000 
 
             - name: Run Playwright test script
               run: |
                 cd main_repo/apps/plotly_examples
                 npx playwright install
-                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test --update-snapshots || true
+                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test || true
 
             - name: Zip Playwright report
               shell: pwsh 
