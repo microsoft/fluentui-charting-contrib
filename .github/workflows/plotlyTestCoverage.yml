@@ -63,7 +63,7 @@ jobs:
                 yarn pack --filename react-charting.tgz
               id: pack
 
-            - name: Checkout [master] of current repo (without deleting previous checkout)
+            - name: Checkout [master] of current repo
               uses: actions/checkout@v4
               with:
                 path: main_repo
@@ -87,10 +87,10 @@ jobs:
                 npx cross-env BASE_URL='http://localhost:3000/' npx playwright test || true
 
             - name: Zip Playwright report
+              shell: pwsh 
               run: |
                 cd main_repo/apps/plotly_examples
-                Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip
-                shell: pwsh 
+                Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip              
 
             - name: Upload Playwright report as artifact
               uses: actions/upload-artifact@v4
