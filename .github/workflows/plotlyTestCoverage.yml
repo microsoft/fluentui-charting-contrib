@@ -90,7 +90,7 @@ jobs:
               shell: pwsh 
               run: |
                 cd main_repo/apps/plotly_examples
-                Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip              
+                Compress-Archive -Path index.html, data -DestinationPath ../playwright-report.zip          
 
             - name: Upload Playwright report as artifact
               uses: actions/upload-artifact@v4
