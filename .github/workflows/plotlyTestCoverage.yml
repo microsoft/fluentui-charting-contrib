@@ -89,7 +89,8 @@ jobs:
             - name: Zip Playwright report
               run: |
                 cd main_repo/apps/plotly_examples
-                zip -r playwright-report.zip playwright-report/
+                Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip
+                shell: pwsh 
 
             - name: Upload Playwright report as artifact
               uses: actions/upload-artifact@v4
