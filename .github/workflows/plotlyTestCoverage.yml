@@ -86,11 +86,6 @@ jobs:
                 npx playwright install
                 npx cross-env BASE_URL='http://localhost:3000/' npx playwright test || true
 
-            - name: Generate Playwright report
-              run: |
-                cd main_repo/apps/plotly_examples
-                npx playwright show-report
-
             - name: Zip Playwright report
               run: |
                 cd main_repo/apps/plotly_examples
