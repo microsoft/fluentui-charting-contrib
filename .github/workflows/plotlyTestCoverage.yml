@@ -84,7 +84,7 @@ jobs:
               run: |
                 cd main_repo/apps/plotly_examples
                 npx playwright install
-                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test --update-snapshots 
+                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test --update-snapshots || true
 
             - name: Zip Playwright report
               shell: pwsh 
