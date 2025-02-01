@@ -84,13 +84,13 @@ jobs:
               run: |
                 cd main_repo/apps/plotly_examples
                 npx playwright install
-                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test || true
+                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test --update-snapshots 
 
             - name: Zip Playwright report
               shell: pwsh 
               run: |
                 cd main_repo/apps/plotly_examples
-                Compress-Archive -Path index.html, data -DestinationPath ../playwright-report.zip          
+                Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip              
 
             - name: Upload Playwright report as artifact
               uses: actions/upload-artifact@v4
