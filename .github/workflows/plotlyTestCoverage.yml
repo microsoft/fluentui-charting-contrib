@@ -1,7 +1,5 @@
 name: "Plotly Test Coverage"
 on:
-    pull_request:
-        types: [synchronize]
     workflow_dispatch:
         inputs:
             repo:
