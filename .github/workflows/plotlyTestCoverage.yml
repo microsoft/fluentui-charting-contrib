@@ -1,0 +1,99 @@
+name: "Plotly Test coverage"
+on:
+  schedule:
+    - cron: "0 */8 * * *"
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: "Repo to run the tests on"
+        required: true
+        default: "microsoft/fluentui"
+      branch:
+        description: "Branch to run the tests on"
+        required: true
+        default: "master"
+
+permissions:
+    contents: write
+    pages: write
+    id-token: write
+
+jobs:
+    run_tests:
+        strategy:
+          matrix:
+            os: [windows-latest]
+        runs-on: ${{ matrix.os }}
+        outputs:
+            test_coverage: ${{ steps.run_tests.outputs }}
+            windows_artifact_name: ${{ steps.windows.outputs.COVERAGE_FILENAME_WINDOWS }}
+
+        steps:
+            - name: Checkout [react-charting]
+              uses: actions/checkout@v4
+              with:
+                repository: ${{ github.event.inputs.repo || 'microsoft/fluentui'}}
+                ref: ${{ github.event.inputs.branch || 'master'}}
+                path: repo1
+
+            - name: Show current directory
+              run: echo "$PWD" && ls
+
+            - name: Show repo1 repository
+              run: ls ./repo1
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                node-version: '20.x'
+
+            - name: Install packages
+              run: | 
+                cd ./repo1
+                yarn install
+
+            - name: Build
+              run: |
+                cd ./repo1/packages/charts/react-charting
+                yarn nx run react-charting:build
+
+            - name: Run yarn pack to create .tgz file
+              run: |
+                cd ./repo1/packages/charts/react-charting
+                yarn pack --filename react-charting.tgz
+              id: pack
+
+            - name: Checkout [main] of current repo
+              uses: actions/checkout@v4
+              with:
+                path: contrib_repo
+
+            - name: Install .tgz file in Plotly examples
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                yarn add ../../repo1/packages/charts/react-charting/react-charting.tgz
+                yarn install
+
+            - name: Start test app in background
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                nohup npm start > output.log 2>&1 &  
+                npx wait-on http://localhost:3000/ --timeout 300000 
+
+            - name: Run Playwright test script
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                npx playwright install
+                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test || true
+
+            - name: Zip Playwright report
+              shell: pwsh 
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip              
+
+            - name: Upload Playwright report as artifact
+              uses: actions/upload-artifact@v4
+              with: 
+                name: playwright-report
+                path: contrib_repo/apps/plotly_examples/playwright-report/
