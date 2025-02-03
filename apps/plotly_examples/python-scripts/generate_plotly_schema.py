@@ -108,8 +108,8 @@ def generate_locale_visualization_schemas():
             id = call_llm_locale_plotly_schema(json.dumps(random_scenario), id, industry, language)
     
 def call_llm(messages, response_format):
-    endpoint = "https://gptwus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview"
-    deployment = "gpt4o"
+    endpoint = "<>"
+    deployment = "<>"
 
     client = AzureOpenAI(
     azure_endpoint=endpoint,
