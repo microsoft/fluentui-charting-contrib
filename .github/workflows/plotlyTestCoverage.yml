@@ -1,7 +1,7 @@
 name: "Plotly Test coverage"
 on:
-  pull_request:
-    types: [synchronize]
+  schedule:
+    - cron: "0 */8 * * *"
   workflow_dispatch:
     inputs:
       repo:
@@ -63,37 +63,37 @@ jobs:
                 yarn pack --filename react-charting.tgz
               id: pack
 
-            - name: Checkout [master] of current repo
+            - name: Checkout [main] of current repo
               uses: actions/checkout@v4
               with:
-                path: main_repo
+                path: contrib_repo
 
             - name: Install .tgz file in Plotly examples
               run: |
-                cd main_repo/apps/plotly_examples
+                cd contrib_repo/apps/plotly_examples
                 yarn add ../../repo1/packages/charts/react-charting/react-charting.tgz
                 yarn install
 
             - name: Start test app in background
               run: |
-                cd main_repo/apps/plotly_examples
+                cd contrib_repo/apps/plotly_examples
                 nohup npm start > output.log 2>&1 &  
                 npx wait-on http://localhost:3000/ --timeout 300000 
 
             - name: Run Playwright test script
               run: |
-                cd main_repo/apps/plotly_examples
+                cd contrib_repo/apps/plotly_examples
                 npx playwright install
                 npx cross-env BASE_URL='http://localhost:3000/' npx playwright test || true
 
             - name: Zip Playwright report
               shell: pwsh 
               run: |
-                cd main_repo/apps/plotly_examples
+                cd contrib_repo/apps/plotly_examples
                 Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip              
 
             - name: Upload Playwright report as artifact
               uses: actions/upload-artifact@v4
               with: 
                 name: playwright-report
-                path: main_repo/apps/plotly_examples/playwright-report/
+                path: contrib_repo/apps/plotly_examples/playwright-report/
