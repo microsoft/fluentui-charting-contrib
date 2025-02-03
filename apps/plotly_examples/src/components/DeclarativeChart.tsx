@@ -40,6 +40,12 @@ type DataType =
   | 'largeData'
   | 'localization';
 
+const dataTypeRanges = {
+  'general': { min: 1, max: 252 },
+  'largeData': { min: 253, max: 277 },
+  'localization': { min: 278, max: 302 }
+};
+
 // Use require.context to load all JSON files from the split_data folder
 const requireContext = require.context('../data', false, /\.json$/);
 const schemasData = requireContext.keys().map((fileName: string) => ({
@@ -121,10 +127,10 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     const filteredDataItems = schemasData
       .filter((data) => {
         const schemaId = parseInt((data.schema as { id: string }).id, 10);
-        return selectedDataTypes.includes('All') ||
-          (selectedDataTypes.includes('general') && schemaId >= 1 && schemaId <= 252) ||
-          (selectedDataTypes.includes('largeData') && schemaId >= 253 && schemaId <= 277) ||
-          (selectedDataTypes.includes('localization') && schemaId >= 278 && schemaId <= 302);
+        return selectedDataTypes.includes('All') || selectedDataTypes.some(dataType => {
+          const range = dataTypeRanges[dataType as keyof typeof dataTypeRanges];
+          return schemaId >= range.min && schemaId <= range.max;
+        });
       })
       .filter((data) => {
         const fileName = data.fileName;
