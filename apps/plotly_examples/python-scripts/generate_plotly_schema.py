@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from azure.identity import ManagedIdentityCredential, DefaultAzureCredential, VisualStudioCodeCredential, InteractiveBrowserCredential, get_bearer_token_provider
 from openai import AzureOpenAI
 import random
+import glob
 
 scenario_dir = 'detailed_scenarios'
 class Scenario(BaseModel):
@@ -107,8 +108,8 @@ def generate_locale_visualization_schemas():
             id = call_llm_locale_plotly_schema(json.dumps(random_scenario), id, industry, language)
     
 def call_llm(messages, response_format):
-    endpoint = "<>"
-    deployment = "<>"
+    endpoint = "https://gptwus2.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview"
+    deployment = "gpt4o"
 
     client = AzureOpenAI(
     azure_endpoint=endpoint,
@@ -330,6 +331,56 @@ def call_llm_detailed_plotly_schema(scenario: str, id: int, suffix: str):
     
     return id
 
+def get_chart_type_from_image():
+    directory_path = os.path.join('..', 'tests', 'Plotly.spec.ts-snapshots')
+    files = glob.glob(os.path.join(directory_path, '*'))
+    print(f'Processing files: {files}')
+    dir_path = 'C:\\Users\\srmukher\\Documents\\fluentui-charting-contrib\\apps\\plotly_examples\\tests\\Plotly.spec.ts-snapshots'
+
+    files = glob.glob(os.path.join(dir_path, '*'))
+
+    chart_types = {}
+
+    for file_path in files:
+        # Extract the file number from the file path
+        file_name = os.path.basename(file_path)
+        file_number = file_name.split('-')[3]
+        print('file_number:', file_number)
+
+        with open(file_path, 'rb') as image_file:
+            response_format={ "type": "json_object" }
+            messages = [
+                {
+                    "role": "system",
+                    "content": "You are an image data analyst having expertize in predicting data visualizations."
+                }
+                ,
+                {
+                    "role": "user",
+                    "content": f"""Refer the image {image_file} and predict the chart type that best fits the data among 'Area', 'Line', 'Donut', 'Pie', 'Guage', 'Horizontal Bar tWithAxis', 'Vertical Bar', 'Vertical Stacked Bar ', 'Grouped Vertical Bar', 'Heatmap', 'Sankey'. Mark the chart type as 'Others' if none of the above types match.  Provide the output in the form of a json object. Categorize the images correctly based on the chart type.
+                    For example: {{"chart_type": "Area"}}"""
+                }
+            ]
+            response = call_llm(messages, response_format)
+            data = json.loads(response)
+            retry_count = 0
+            while 'chart_type' not in data and retry_count < 3:
+                response = call_llm(messages, response_format)
+                data = json.loads(response)
+                retry_count += 1
+            if retry_count == 3:
+                print(f"Failed to get chart type for file {file_number}")
+                continue
+            chart_type = data['chart_type']
+
+            # Map the file number and chart type
+            chart_types[file_number] = chart_type
+
+    chart_types_json = json.dumps(chart_types, indent=2)
+
+    output_path = 'aggregated_chart_types.json'
+    with open(output_path, 'w') as output_file:
+        output_file.write(chart_types_json)    
 
 file_path = 'scenarios_level1.json'
 
@@ -344,4 +395,7 @@ token_provider = get_bearer_token_provider(InteractiveBrowserCredential(), "http
 # generate_detailed_visualization_schemas()
 
 # Generate locale based schemas
-generate_locale_visualization_schemas()
+# generate_locale_visualization_schemas()
+
+# Generate chart types from screenshots taken by Playwright
+get_chart_type_from_image()

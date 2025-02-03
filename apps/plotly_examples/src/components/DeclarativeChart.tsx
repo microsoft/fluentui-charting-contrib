@@ -13,19 +13,26 @@ import { DeclarativeChart, IDeclarativeChart, Schema } from '@fluentui/react-cha
 import PlotlyChart from './PlotlyChart';
 import { ErrorBoundary } from './ErrorBoundary';
 import { getSelection, saveSelection } from './utils';
+import aggregatedChartTypes from './aggregated_chart_types.json';
+
 interface IDeclarativeChartProps {
 }
 
+
 type PlotType =
   | 'All'
-  | 'bar'
-  | 'pie'
-  | 'scatter'
-  | 'heatmap'
-  | 'histogram'
-  | 'sankey'
-  | 'indicator'
-  | 'others';
+  | 'Area'
+  | 'Line'
+  | 'Donut'
+  | 'HorizontalBarWithAxis'
+  | 'VerticalBar'
+  | 'VerticalStackedBar'
+  | 'GroupedVerticalBar'
+  | 'Gauge'
+  | 'Pie'
+  | 'Sankey'
+  | 'Heatmap'
+  | 'Others';
 
 type DataType =
   | 'All'
@@ -120,10 +127,11 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
           (selectedDataTypes.includes('localization') && schemaId >= 278 && schemaId <= 302);
       })
       .filter((data) => {
-        const plotType = (data.schema as any).data[0].type;
-        return selectedPlotTypes.includes('All') ||
-          (selectedPlotTypes.includes('others') && !['bar', 'pie', 'scatter', 'heatmap', 'histogram', 'sankey', 'indicator'].includes(plotType)) ||
-          (selectedPlotTypes.includes(plotType as PlotType));
+        const fileName = data.fileName;
+        const fileNumberMatch = fileName.match(/\d+/);
+        const fileNumber = fileNumberMatch ? parseInt(fileNumberMatch[0], 10).toString() : 0;
+        const plotType = aggregatedChartTypes[fileNumber as keyof typeof aggregatedChartTypes]; 
+        return selectedPlotTypes.includes('All') || selectedPlotTypes.includes(plotType as PlotType);
       });
     return filteredDataItems;
   }
@@ -142,12 +150,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     }
     setSelectedPlotTypes(newSelectedPlotTypes as PlotType[]);
     saveSelection("PlotType_filter", newSelectedPlotTypes.join(','));
-    const filteredSchemas = newSelectedPlotTypes.includes('All') ? schemasData : getFilteredData().filter((schema_data) => {
-      const plotType = (schema_data.schema as any).data[0].type;
-      return newSelectedPlotTypes.includes('All') ||
-        (newSelectedPlotTypes.includes('others') && !['bar', 'pie', 'scatter', 'heatmap', 'histogram', 'sankey', 'indicator'].includes(plotType)) ||
-        (newSelectedPlotTypes.includes(plotType as PlotType));
-    });
+    const filteredSchemas = getFilteredData();
     if (filteredSchemas.length > 0) {
       const firstFilteredSchema = filteredSchemas[0];
       setSelectedChoice(firstFilteredSchema.fileName);
@@ -177,13 +180,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     }
     setSelectedDataTypes(newSelectedDataTypes as DataType[]);
     saveSelection("DataType_filter", newSelectedDataTypes.join(','));
-    const filteredSchemas = newSelectedDataTypes.includes('All') ? schemasData : getFilteredData().filter((schema_data) => {
-      const schemaId = parseInt((schema_data.schema as { id: string }).id, 10);
-      return newSelectedDataTypes.includes('All') ||
-        (newSelectedDataTypes.includes('general') && schemaId >= 1 && schemaId <= 252) ||
-        (newSelectedDataTypes.includes('largeData') && schemaId >= 253 && schemaId <= 277) ||
-        (newSelectedDataTypes.includes('localization') && schemaId >= 278 && schemaId <= 302);
-    });
+    const filteredSchemas = getFilteredData();
     if (filteredSchemas.length > 0) {
       const firstFilteredSchema = filteredSchemas[0];
       setSelectedChoice(firstFilteredSchema.fileName);
@@ -229,7 +226,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
         <div style={{ display: 'flex' }}>
           <label> Select a schema:</label>&nbsp;&nbsp;&nbsp;
           <Dropdown
-            value={selectedChoice}            
+            value={selectedChoice}
             onOptionSelect={_onChange}
           >
             {getFilteredData()
@@ -248,14 +245,18 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             multiselect
           >
             <Option value="All">All</Option>
-            <Option value="bar">bar</Option>
-            <Option value="scatter">scatter</Option>
-            <Option value="pie">pie</Option>
-            <Option value="heatmap">heatmap</Option>
-            <Option value="histogram">histogram</Option>
-            <Option value="sankey">sankey</Option>
-            <Option value="indicator">indicator</Option>
-            <Option value="others">others</Option>
+            <Option value="Area">Area</Option>
+            <Option value="Line">Line</Option>
+            <Option value="Donut">Donut</Option>
+            <Option value="HorizontalBarWithAxis">HorizontalBarWithAxis</Option>
+            <Option value="VerticalBar">VerticalBar</Option>
+            <Option value="VerticalStackedBar">VerticalStackedBar</Option>
+            <Option value="GroupedVerticalBar">GroupedVerticalBar</Option>
+            <Option value="Gauge">Gauge</Option>
+            <Option value="Pie">Pie</Option>
+            <Option value="Sankey">Sankey</Option>
+            <Option value="Heatmap">Heatmap</Option>
+            <Option value="Others">Others</Option>
           </Dropdown>
           &nbsp;&nbsp;&nbsp;
           <label> Filter by data type:</label>&nbsp;&nbsp;&nbsp;
@@ -304,7 +305,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
           styles={textFieldStyles}
         />
         <br />
-        <div key={plotlyKey}>
+        <div key={plotlyKey} data-testid="plotly-plot">
           <Divider />
           <br />
           <Subtitle1 align="center" style={{ marginLeft: '30%' }}>Chart from plotly.js</Subtitle1>
