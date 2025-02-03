@@ -334,10 +334,6 @@ def call_llm_detailed_plotly_schema(scenario: str, id: int, suffix: str):
 def get_chart_type_from_image():
     directory_path = os.path.join('..', 'tests', 'Plotly.spec.ts-snapshots')
     files = glob.glob(os.path.join(directory_path, '*'))
-    print(f'Processing files: {files}')
-    dir_path = 'C:\\Users\\srmukher\\Documents\\fluentui-charting-contrib\\apps\\plotly_examples\\tests\\Plotly.spec.ts-snapshots'
-
-    files = glob.glob(os.path.join(dir_path, '*'))
 
     chart_types = {}
 
@@ -345,36 +341,38 @@ def get_chart_type_from_image():
         # Extract the file number from the file path
         file_name = os.path.basename(file_path)
         file_number = file_name.split('-')[3]
-        print('file_number:', file_number)
+        # padding the file_number with zeros making it a 3 digit number
+        if file_number.isdigit():
+            file_number = file_number.zfill(3)
 
-        with open(file_path, 'rb') as image_file:
-            response_format={ "type": "json_object" }
-            messages = [
-                {
-                    "role": "system",
-                    "content": "You are an image data analyst having expertize in predicting data visualizations."
-                }
-                ,
-                {
-                    "role": "user",
-                    "content": f"""Refer the image {image_file} and predict the chart type that best fits the data among 'Area', 'Line', 'Donut', 'Pie', 'Guage', 'Horizontal Bar tWithAxis', 'Vertical Bar', 'Vertical Stacked Bar ', 'Grouped Vertical Bar', 'Heatmap', 'Sankey'. Mark the chart type as 'Others' if none of the above types match.  Provide the output in the form of a json object. Categorize the images correctly based on the chart type.
-                    For example: {{"chart_type": "Area"}}"""
-                }
-            ]
-            response = call_llm(messages, response_format)
-            data = json.loads(response)
-            retry_count = 0
-            while 'chart_type' not in data and retry_count < 3:
+            with open(file_path, 'rb') as image_file:
+                response_format={ "type": "json_object" }
+                messages = [
+                    {
+                        "role": "system",
+                        "content": "You are an image data analyst having expertize in predicting data visualizations."
+                    }
+                    ,
+                    {
+                        "role": "user",
+                        "content": f"""Refer the image {image_file} and predict the chart type that best fits the data among 'Area', 'Line', 'Donut', 'Pie', 'Guage', 'Horizontal Bar tWithAxis', 'Vertical Bar', 'Vertical Stacked Bar ', 'Grouped Vertical Bar', 'Heatmap', 'Sankey'. Mark the chart type as 'Others' if none of the above types match.  Provide the output in the form of a json object. Categorize the images correctly based on the chart type.
+                        For example: {{"chart_type": "Area"}}"""
+                    }
+                ]
                 response = call_llm(messages, response_format)
                 data = json.loads(response)
-                retry_count += 1
-            if retry_count == 3:
-                print(f"Failed to get chart type for file {file_number}")
-                continue
-            chart_type = data['chart_type']
+                retry_count = 0
+                while 'chart_type' not in data and retry_count < 3:
+                    response = call_llm(messages, response_format)
+                    data = json.loads(response)
+                    retry_count += 1
+                if retry_count == 3:
+                    print(f"Failed to get chart type for file {file_number}")
+                    continue
+                chart_type = data['chart_type']
 
-            # Map the file number and chart type
-            chart_types[file_number] = chart_type
+                # Map the file number and chart type
+                chart_types[file_number] = chart_type
 
     chart_types_json = json.dumps(chart_types, indent=2)
 
