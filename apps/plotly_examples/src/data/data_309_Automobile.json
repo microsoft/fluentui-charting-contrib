@@ -1,0 +1,814 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                12,
+                18,
+                10,
+                22,
+                15,
+                20,
+                14,
+                19,
+                23,
+                17
+            ],
+            "name": "Average Resolution Time",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(26, 118, 255, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                5,
+                9,
+                4,
+                10,
+                7,
+                6,
+                8,
+                7,
+                9,
+                6
+            ],
+            "name": "Min Resolution Time",
+            "mode": "lines+markers",
+            "line": {
+                "dash": "dot",
+                "color": "rgba(50, 171, 96, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                20,
+                25,
+                15,
+                30,
+                22,
+                28,
+                18,
+                26,
+                32,
+                21
+            ],
+            "name": "Max Resolution Time",
+            "mode": "lines+markers",
+            "line": {
+                "dash": "solid",
+                "color": "rgba(255, 99, 71, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                14,
+                13,
+                12,
+                19,
+                16,
+                18,
+                17,
+                15,
+                20,
+                14
+            ],
+            "name": "Median Resolution Time",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(123, 104, 238, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                16,
+                10,
+                9,
+                21,
+                13,
+                15,
+                11,
+                13,
+                16,
+                10
+            ],
+            "name": "Standard Deviation",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(34, 139, 34, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                11,
+                14,
+                8,
+                20,
+                17,
+                13,
+                10,
+                12,
+                18,
+                13
+            ],
+            "name": "75th Percentile",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(255, 215, 0, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                6,
+                8,
+                7,
+                12,
+                10,
+                9,
+                11,
+                10,
+                13,
+                8
+            ],
+            "name": "25th Percentile",
+            "mode": "lines+markers",
+            "line": {
+                "dash": "dot",
+                "color": "rgba(138, 43, 226, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                15,
+                12,
+                10,
+                25,
+                18,
+                16,
+                17,
+                19,
+                21,
+                14
+            ],
+            "name": "95th Percentile",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(255, 20, 147, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                9,
+                11,
+                12,
+                17,
+                14,
+                18,
+                10,
+                13,
+                19,
+                15
+            ],
+            "name": "90th Percentile",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(47, 79, 79, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                12,
+                15,
+                13,
+                24,
+                20,
+                17,
+                18,
+                21,
+                25,
+                16
+            ],
+            "name": "First Quartile",
+            "mode": "lines+markers",
+            "line": {
+                "dash": "dot",
+                "color": "rgba(0, 191, 255, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                8,
+                10,
+                11,
+                15,
+                13,
+                16,
+                10,
+                12,
+                17,
+                11
+            ],
+            "name": "Third Quartile",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(255, 140, 0, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                18,
+                21,
+                17,
+                29,
+                24,
+                22,
+                20,
+                23,
+                26,
+                19
+            ],
+            "name": "Average Handling Time",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(220, 20, 60, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                7,
+                9,
+                6,
+                13,
+                11,
+                9,
+                8,
+                10,
+                14,
+                9
+            ],
+            "name": "Minimum Handling Time",
+            "mode": "lines+markers",
+            "line": {
+                "dash": "dot",
+                "color": "rgba(34, 139, 34, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                25,
+                28,
+                22,
+                36,
+                30,
+                32,
+                26,
+                31,
+                34,
+                27
+            ],
+            "name": "Maximum Handling Time",
+            "mode": "lines+markers",
+            "line": {
+                "dash": "solid",
+                "color": "rgba(255, 69, 0, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                15,
+                14,
+                13,
+                18,
+                16,
+                17,
+                14,
+                15,
+                19,
+                13
+            ],
+            "name": "Median Handling Time",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(123, 104, 238, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                20,
+                17,
+                16,
+                25,
+                21,
+                23,
+                19,
+                20,
+                24,
+                18
+            ],
+            "name": "Standard Deviation Handling Time",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(34, 139, 34, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                13,
+                16,
+                11,
+                22,
+                19,
+                15,
+                14,
+                16,
+                21,
+                15
+            ],
+            "name": "75th Percentile Handling Time",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(255, 215, 0, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                9,
+                11,
+                8,
+                14,
+                12,
+                10,
+                11,
+                12,
+                15,
+                11
+            ],
+            "name": "25th Percentile Handling Time",
+            "mode": "lines+markers",
+            "line": {
+                "dash": "dot",
+                "color": "rgba(138, 43, 226, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                23,
+                20,
+                18,
+                27,
+                24,
+                25,
+                20,
+                23,
+                28,
+                22
+            ],
+            "name": "95th Percentile Handling Time",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(255, 20, 147, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                18,
+                21,
+                15,
+                25,
+                23,
+                20,
+                17,
+                19,
+                26,
+                20
+            ],
+            "name": "90th Percentile Handling Time",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(47, 79, 79, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                14,
+                13,
+                17,
+                22,
+                20,
+                19,
+                18,
+                20,
+                23,
+                19
+            ],
+            "name": "Mean Time to Repair",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(220, 20, 60, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                12,
+                9,
+                10,
+                18,
+                14,
+                15,
+                12,
+                13,
+                19,
+                12
+            ],
+            "name": "Median Time to Repair",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(34, 139, 34, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                25,
+                20,
+                21,
+                30,
+                27,
+                25,
+                22,
+                24,
+                31,
+                20
+            ],
+            "name": "Max Time to Repair",
+            "mode": "lines+markers",
+            "line": {
+                "dash": "solid",
+                "color": "rgba(255, 69, 0, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                10,
+                14,
+                12,
+                23,
+                17,
+                19,
+                15,
+                17,
+                21,
+                16
+            ],
+            "name": "90th Percentile Repair Time",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(123, 104, 238, 0.7)"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Batch A",
+                "Batch B",
+                "Batch C",
+                "Batch D",
+                "Batch E",
+                "Batch F",
+                "Batch G",
+                "Batch H",
+                "Batch I",
+                "Batch J"
+            ],
+            "y": [
+                8,
+                6,
+                11,
+                20,
+                15,
+                13,
+                10,
+                12,
+                18,
+                11
+            ],
+            "name": "75th Percentile Repair Time",
+            "mode": "lines+markers",
+            "line": {
+                "color": "rgba(47, 79, 79, 0.7)"
+            }
+        },
+        "layout"
+    ],
+    "id": 309
+}
