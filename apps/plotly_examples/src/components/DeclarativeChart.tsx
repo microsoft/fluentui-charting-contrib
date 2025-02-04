@@ -135,7 +135,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
       .filter((data) => {
         const fileName = data.fileName;
         const fileNumberMatch = fileName.match(/\d+/);
-        const fileNumber = fileNumberMatch ? parseInt(fileNumberMatch[0], 10).toString() : 0;
+        const fileNumber = fileNumberMatch ? fileNumberMatch[0] : '000';
         const plotType = aggregatedChartTypes[fileNumber as keyof typeof aggregatedChartTypes]; 
         return selectedPlotTypes.includes('All') || selectedPlotTypes.includes(plotType as PlotType);
       });
