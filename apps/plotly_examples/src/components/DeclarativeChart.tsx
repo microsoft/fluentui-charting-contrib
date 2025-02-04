@@ -12,10 +12,39 @@ import {
 import { DeclarativeChart, IDeclarativeChart, Schema } from '@fluentui/react-charting';
 import PlotlyChart from './PlotlyChart';
 import { ErrorBoundary } from './ErrorBoundary';
-import { getSelection, saveSelection } from './utils'
+import { getSelection, saveSelection } from './utils';
+import aggregatedChartTypes from './aggregated_chart_types.json';
 
 interface IDeclarativeChartProps {
 }
+
+
+type PlotType =
+  | 'All'
+  | 'Area'
+  | 'Line'
+  | 'Donut'
+  | 'HorizontalBarWithAxis'
+  | 'VerticalBar'
+  | 'VerticalStackedBar'
+  | 'GroupedVerticalBar'
+  | 'Gauge'
+  | 'Pie'
+  | 'Sankey'
+  | 'Heatmap'
+  | 'Others';
+
+type DataType =
+  | 'All'
+  | 'general'
+  | 'largeData'
+  | 'localization';
+
+const dataTypeRanges = {
+  'general': { min: 1, max: 252 },
+  'largeData': { min: 253, max: 277 },
+  'localization': { min: 278, max: 302 }
+};
 
 // Use require.context to load all JSON files from the split_data folder
 const requireContext = require.context('../data', false, /\.json$/);
@@ -35,6 +64,9 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
   const [selectedChoice, setSelectedChoice] = React.useState<string>(savedFileName);
   const [selectedSchema, setSelectedSchema] = React.useState<any>(_selectedSchema);
   const [selectedLegendsState, setSelectedLegendsState] = React.useState<string>(JSON.stringify(selectedLegends));
+  const [selectedPlotTypes, setSelectedPlotTypes] = React.useState<PlotType[]>(getSelection("PlotType_filter", 'All').split(',') as PlotType[]);
+  const [selectedDataTypes, setSelectedDataTypes] = React.useState<DataType[]>(getSelection("DataType_filter", 'All').split(',') as DataType[]);
+
   const declarativeChartRef = React.useRef<IDeclarativeChart>(null);
   let lastKnownValidLegends: string[] | undefined = selectedLegends;
 
@@ -91,10 +123,90 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     setSelectedLegendsState(JSON.stringify(selectedLegends));
   };
 
+  const getFilteredData = () => {
+    const filteredDataItems = schemasData
+      .filter((data) => {
+        const schemaId = parseInt((data.schema as { id: string }).id, 10);
+        return selectedDataTypes.includes('All') || selectedDataTypes.some(dataType => {
+          const range = dataTypeRanges[dataType as keyof typeof dataTypeRanges];
+          return schemaId >= range.min && schemaId <= range.max;
+        });
+      })
+      .filter((data) => {
+        const fileName = data.fileName;
+        const fileNumberMatch = fileName.match(/\d+/);
+        const fileNumber = fileNumberMatch ? fileNumberMatch[0] : '000';
+        const plotType = aggregatedChartTypes[fileNumber as keyof typeof aggregatedChartTypes]; 
+        return selectedPlotTypes.includes('All') || selectedPlotTypes.includes(plotType as PlotType);
+      });
+    return filteredDataItems;
+  }
+
+  const handleSelectPlotTypes = (_event: SelectionEvents, data: OptionOnSelectData) => {
+    let newSelectedPlotTypes: PlotType[];
+    if (data.optionValue === 'All') {
+      newSelectedPlotTypes = ['All'];
+    } else {
+      newSelectedPlotTypes = selectedPlotTypes.includes(data.optionValue as PlotType)
+        ? selectedPlotTypes.filter(type => type !== data.optionValue)
+        : [...selectedPlotTypes.filter(type => type !== 'All'), data.optionValue as PlotType];
+      if (newSelectedPlotTypes.length === 0) {
+        newSelectedPlotTypes = ['All'];
+      }
+    }
+    setSelectedPlotTypes(newSelectedPlotTypes as PlotType[]);
+    saveSelection("PlotType_filter", newSelectedPlotTypes.join(','));
+    const filteredSchemas = getFilteredData();
+    if (filteredSchemas.length > 0) {
+      const firstFilteredSchema = filteredSchemas[0];
+      setSelectedChoice(firstFilteredSchema.fileName);
+      setSelectedSchema(firstFilteredSchema.schema);
+      setSelectedLegendsState(JSON.stringify((firstFilteredSchema.schema as any).selectedLegends));
+      const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
+      const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
+      saveSelection("Schema", num_id.toString().padStart(3, '0'));
+    } else {
+      setSelectedChoice('');
+      setSelectedSchema({});
+      setSelectedLegendsState('');
+    }
+  }
+
+  const handleSelectDataTypes = (_event: SelectionEvents, data: OptionOnSelectData) => {
+    let newSelectedDataTypes: DataType[];
+    if (data.optionValue === 'All') {
+      newSelectedDataTypes = ['All'];
+    } else {
+      newSelectedDataTypes = selectedDataTypes.includes(data.optionValue as DataType)
+        ? selectedDataTypes.filter(type => type !== data.optionValue)
+        : [...selectedDataTypes.filter(type => type !== 'All'), data.optionValue as DataType];
+      if (newSelectedDataTypes.length === 0) {
+        newSelectedDataTypes = ['All'];
+      }
+    }
+    setSelectedDataTypes(newSelectedDataTypes as DataType[]);
+    saveSelection("DataType_filter", newSelectedDataTypes.join(','));
+    const filteredSchemas = getFilteredData();
+    if (filteredSchemas.length > 0) {
+      const firstFilteredSchema = filteredSchemas[0];
+      setSelectedChoice(firstFilteredSchema.fileName);
+      setSelectedSchema(firstFilteredSchema.schema);
+      setSelectedLegendsState(JSON.stringify((firstFilteredSchema.schema as any).selectedLegends));
+      const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
+      const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
+      saveSelection("Schema", num_id.toString().padStart(3, '0'));
+    } else {
+      setSelectedChoice('');
+      setSelectedSchema({});
+      setSelectedLegendsState('');
+    }
+  }
+
   const createDeclarativeChart = (): JSX.Element => {
     const theme = getSelection("Theme", "Light");
-    const uniqueKey = `${selectedChoice}_${theme}`;
-    const plotlyKey = `plotly_${selectedChoice}_${theme}`;
+    const isRTL = getSelection("RTL", "false") === "true";
+    const uniqueKey = `${theme}_${isRTL}`;
+    const plotlyKey = `plotly_${theme}_${isRTL}`;
     const { data, layout } = selectedSchema;
     if (!selectedSchema) {
       return <div>No data available</div>;
@@ -123,11 +235,48 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             value={selectedChoice}
             onOptionSelect={_onChange}
           >
-            {schemasData.map((data) => (
-              <Option value={(data.schema as { id: string }).id}>{data.fileName}</Option>
-            ))}
+            {getFilteredData()
+              .map((data) => (
+                <Option key={data.fileName} value={(data.schema as { id: string }).id}>
+                  {data.fileName}
+                </Option>
+              ))}
           </Dropdown>
           &nbsp;&nbsp;&nbsp;
+          <label> Filter by plot type:</label>&nbsp;&nbsp;&nbsp;
+          <Dropdown
+            value={selectedPlotTypes.join(',')}
+            selectedOptions={selectedPlotTypes}
+            onOptionSelect={handleSelectPlotTypes}
+            multiselect
+          >
+            <Option value="All">All</Option>
+            <Option value="Area">Area</Option>
+            <Option value="Line">Line</Option>
+            <Option value="Donut">Donut</Option>
+            <Option value="HorizontalBarWithAxis">HorizontalBarWithAxis</Option>
+            <Option value="VerticalBar">VerticalBar</Option>
+            <Option value="VerticalStackedBar">VerticalStackedBar</Option>
+            <Option value="GroupedVerticalBar">GroupedVerticalBar</Option>
+            <Option value="Gauge">Gauge</Option>
+            <Option value="Pie">Pie</Option>
+            <Option value="Sankey">Sankey</Option>
+            <Option value="Heatmap">Heatmap</Option>
+            <Option value="Others">Others</Option>
+          </Dropdown>
+          &nbsp;&nbsp;&nbsp;
+          <label> Filter by data type:</label>&nbsp;&nbsp;&nbsp;
+          <Dropdown
+            value={selectedDataTypes.join(',')}
+            selectedOptions={selectedDataTypes}
+            onOptionSelect={handleSelectDataTypes}
+            multiselect
+          >
+            <Option value='All'>All</Option>
+            <Option value='general'>general</Option>
+            <Option value='largeData'>largeData</Option>
+            <Option value='localization'>localization</Option>
+          </Dropdown>
         </div>
         <br />
         <button
@@ -162,7 +311,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
           styles={textFieldStyles}
         />
         <br />
-        <div key={plotlyKey}>
+        <div key={plotlyKey} data-testid="plotly-plot">
           <Divider />
           <br />
           <Subtitle1 align="center" style={{ marginLeft: '30%' }}>Chart from plotly.js</Subtitle1>
