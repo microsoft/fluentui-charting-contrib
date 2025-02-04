@@ -1,0 +1,905 @@
+{
+    "data": [
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                35,
+                50,
+                80,
+                60,
+                55,
+                45,
+                70,
+                85,
+                90,
+                40
+            ],
+            "mode": "lines+markers",
+            "name": "Inventory Levels",
+            "line": {
+                "shape": "linear",
+                "color": "green"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                25,
+                60,
+                70,
+                40,
+                45,
+                55,
+                80,
+                95,
+                100,
+                50
+            ],
+            "mode": "lines+markers",
+            "name": "Procurement Times",
+            "line": {
+                "shape": "linear",
+                "color": "royalblue"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                40,
+                65,
+                85,
+                75,
+                60,
+                50,
+                65,
+                75,
+                85,
+                55
+            ],
+            "mode": "lines+markers",
+            "name": "Stock Availability",
+            "line": {
+                "shape": "linear",
+                "color": "red"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                30,
+                45,
+                85,
+                55,
+                50,
+                40,
+                65,
+                70,
+                75,
+                35
+            ],
+            "mode": "lines+markers",
+            "name": "Delivery Times",
+            "line": {
+                "shape": "linear",
+                "color": "purple"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                45,
+                55,
+                60,
+                70,
+                65,
+                50,
+                55,
+                65,
+                75,
+                40
+            ],
+            "mode": "lines+markers",
+            "name": "Sales Volume",
+            "line": {
+                "shape": "linear",
+                "color": "orange"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                20,
+                40,
+                60,
+                50,
+                55,
+                70,
+                85,
+                90,
+                95,
+                45
+            ],
+            "mode": "lines+markers",
+            "name": "Demand",
+            "line": {
+                "shape": "linear",
+                "color": "cyan"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                25,
+                50,
+                75,
+                55,
+                60,
+                45,
+                80,
+                85,
+                90,
+                30
+            ],
+            "mode": "lines+markers",
+            "name": "Supply",
+            "line": {
+                "shape": "linear",
+                "color": "magenta"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                35,
+                45,
+                55,
+                65,
+                75,
+                85,
+                95,
+                60,
+                70,
+                80
+            ],
+            "mode": "lines+markers",
+            "name": "Returns",
+            "line": {
+                "shape": "linear",
+                "color": "grey"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                30,
+                60,
+                45,
+                50,
+                65,
+                70,
+                60,
+                80,
+                90,
+                50
+            ],
+            "mode": "lines+markers",
+            "name": "Lead Times",
+            "line": {
+                "shape": "linear",
+                "color": "black"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                20,
+                40,
+                65,
+                85,
+                70,
+                75,
+                60,
+                55,
+                50,
+                30
+            ],
+            "mode": "lines+markers",
+            "name": "Order Fulfillment",
+            "line": {
+                "shape": "linear",
+                "color": "brown"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                50,
+                65,
+                70,
+                55,
+                85,
+                90,
+                95,
+                80,
+                75,
+                60
+            ],
+            "mode": "lines+markers",
+            "name": "Restock Times",
+            "line": {
+                "shape": "linear",
+                "color": "navy"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                40,
+                60,
+                80,
+                80,
+                60,
+                75,
+                60,
+                65,
+                55,
+                45
+            ],
+            "mode": "lines+markers",
+            "name": "Stock Turnover",
+            "line": {
+                "shape": "linear",
+                "color": "skyblue"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                30,
+                55,
+                75,
+                45,
+                50,
+                65,
+                70,
+                85,
+                90,
+                35
+            ],
+            "mode": "lines+markers",
+            "name": "Transit Times",
+            "line": {
+                "shape": "linear",
+                "color": "coral"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                50,
+                70,
+                60,
+                65,
+                75,
+                85,
+                90,
+                95,
+                80,
+                75
+            ],
+            "mode": "lines+markers",
+            "name": "Compliance",
+            "line": {
+                "shape": "linear",
+                "color": "olive"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                65,
+                55,
+                70,
+                65,
+                50,
+                75,
+                85,
+                90,
+                60,
+                65
+            ],
+            "mode": "lines+markers",
+            "name": "Operational Delays",
+            "line": {
+                "shape": "linear",
+                "color": "lime"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                30,
+                65,
+                70,
+                80,
+                85,
+                90,
+                50,
+                55,
+                75,
+                45
+            ],
+            "mode": "lines+markers",
+            "name": "Supplier Performance",
+            "line": {
+                "shape": "linear",
+                "color": "pink"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                25,
+                50,
+                60,
+                65,
+                70,
+                80,
+                85,
+                90,
+                95,
+                55
+            ],
+            "mode": "lines+markers",
+            "name": "Warehouse Capacity",
+            "line": {
+                "shape": "linear",
+                "color": "teal"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                60,
+                50,
+                55,
+                65,
+                75,
+                60,
+                70,
+                80,
+                85,
+                60
+            ],
+            "mode": "lines+markers",
+            "name": "Consumption Rate",
+            "line": {
+                "shape": "linear",
+                "color": "violet"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                30,
+                55,
+                70,
+                50,
+                65,
+                70,
+                85,
+                90,
+                55,
+                75
+            ],
+            "mode": "lines+markers",
+            "name": "Cycle Time",
+            "line": {
+                "shape": "linear",
+                "color": "gold"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                20,
+                45,
+                55,
+                60,
+                70,
+                75,
+                50,
+                65,
+                80,
+                55
+            ],
+            "mode": "lines+markers",
+            "name": "Utilization Rate",
+            "line": {
+                "shape": "linear",
+                "color": "maroon"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                30,
+                50,
+                60,
+                70,
+                80,
+                65,
+                55,
+                75,
+                90,
+                85
+            ],
+            "mode": "lines+markers",
+            "name": "Warehouse Efficiency",
+            "line": {
+                "shape": "linear",
+                "color": "turquoise"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                35,
+                45,
+                50,
+                50,
+                55,
+                65,
+                75,
+                80,
+                90,
+                95
+            ],
+            "mode": "lines+markers",
+            "name": "Order Processing",
+            "line": {
+                "shape": "linear",
+                "color": "lightgreen"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                25,
+                45,
+                60,
+                65,
+                75,
+                85,
+                50,
+                55,
+                60,
+                65
+            ],
+            "mode": "lines+markers",
+            "name": "Market Trends",
+            "line": {
+                "shape": "linear",
+                "color": "azure"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                30,
+                50,
+                70,
+                65,
+                60,
+                75,
+                80,
+                85,
+                90,
+                55
+            ],
+            "mode": "lines+markers",
+            "name": "Transportation Times",
+            "line": {
+                "shape": "linear",
+                "color": "darkred"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                35,
+                55,
+                65,
+                50,
+                60,
+                75,
+                80,
+                85,
+                90,
+                75
+            ],
+            "mode": "lines+markers",
+            "name": "Cost Optimization",
+            "line": {
+                "shape": "linear",
+                "color": "darkorange"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                25,
+                45,
+                60,
+                65,
+                75,
+                70,
+                50,
+                80,
+                85,
+                65
+            ],
+            "mode": "lines+markers",
+            "name": "Order Accuracy",
+            "line": {
+                "shape": "linear",
+                "color": "orchid"
+            }
+        },
+        {
+            "type": "scatter",
+            "x": [
+                "Item Category A",
+                "Item Category B",
+                "Item Category C",
+                "Item Category D",
+                "Item Category E",
+                "Item Category F",
+                "Item Category G",
+                "Item Category H",
+                "Item Category I",
+                "Item Category J"
+            ],
+            "y": [
+                50,
+                55,
+                65,
+                70,
+                80,
+                85,
+                55,
+                60,
+                75,
+                45
+            ],
+            "mode": "lines+markers",
+            "name": "Safety Stock Levels",
+            "line": {
+                "shape": "linear",
+                "color": "mediumblue"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Inventory and Related Metrics by Item Category",
+        "xaxis": {
+            "title": "Item Categories"
+        },
+        "yaxis": {
+            "title": "Days/Units"
+        }
+    },
+    "id": 310
+}

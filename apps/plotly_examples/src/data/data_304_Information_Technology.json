@@ -1,0 +1,777 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                75,
+                82,
+                78,
+                85,
+                88,
+                90,
+                87,
+                86,
+                91,
+                89
+            ],
+            "name": "Average Resolution Time (hours)",
+            "marker": {
+                "color": "rgb(55, 83, 109)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                80,
+                85,
+                88,
+                90,
+                92,
+                94,
+                93,
+                91,
+                95,
+                96
+            ],
+            "name": "Customer Satisfaction Score (%)",
+            "marker": {
+                "color": "rgb(26, 118, 255)"
+            },
+            "yaxis": "y2"
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                60,
+                67,
+                65,
+                70,
+                72,
+                75,
+                73,
+                74,
+                76,
+                78
+            ],
+            "name": "First Call Resolution (%)",
+            "marker": {
+                "color": "rgb(219, 64, 82)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                90,
+                92,
+                91,
+                89,
+                94,
+                92,
+                91,
+                90,
+                93,
+                95
+            ],
+            "name": "Service Level Agreement Compliance (%)",
+            "marker": {
+                "color": "rgb(50, 171, 96)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                15,
+                18,
+                17,
+                20,
+                22,
+                21,
+                23,
+                24,
+                22,
+                20
+            ],
+            "name": "Number of Incidents",
+            "marker": {
+                "color": "rgb(128, 0, 128)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                70,
+                75,
+                77,
+                78,
+                80,
+                82,
+                81,
+                80,
+                83,
+                84
+            ],
+            "name": "Response Time (minutes)",
+            "marker": {
+                "color": "rgb(255, 165, 0)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                50,
+                55,
+                58,
+                60,
+                62,
+                63,
+                61,
+                60,
+                64,
+                66
+            ],
+            "name": "Ticket Closure Rate (%)",
+            "marker": {
+                "color": "rgb(0, 100, 0)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                81,
+                85,
+                86,
+                84,
+                87,
+                88,
+                90,
+                89,
+                91,
+                93
+            ],
+            "name": "Incident Reopen Rate (%)",
+            "marker": {
+                "color": "rgb(255, 20, 147)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                96,
+                95,
+                98,
+                97
+            ],
+            "name": "Escalation Rate (%)",
+            "marker": {
+                "color": "rgb(144, 238, 144)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                75,
+                78,
+                77,
+                80,
+                83,
+                85,
+                82,
+                86,
+                88,
+                87
+            ],
+            "name": "Automation Rate (%)",
+            "marker": {
+                "color": "rgb(138, 43, 226)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                50,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60
+            ],
+            "name": "Regular Maintenance Hours",
+            "marker": {
+                "color": "rgb(0, 0, 255)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                85,
+                88,
+                89,
+                90,
+                92,
+                93,
+                91,
+                94,
+                95,
+                96
+            ],
+            "name": "User Training Hours",
+            "marker": {
+                "color": "rgb(160, 82, 45)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                60,
+                62,
+                63,
+                65,
+                67,
+                68,
+                69,
+                71,
+                72,
+                73
+            ],
+            "name": "Maintenance Incidents",
+            "marker": {
+                "color": "rgb(255, 123, 67)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                80,
+                81,
+                82,
+                83,
+                85,
+                88,
+                87,
+                89,
+                90,
+                91
+            ],
+            "name": "Hardware Failures",
+            "marker": {
+                "color": "rgb(134, 96, 142)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                55,
+                57,
+                58,
+                59,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66
+            ],
+            "name": "Software Incidents",
+            "marker": {
+                "color": "rgb(222, 49, 99)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                40,
+                42,
+                45,
+                47,
+                49,
+                51,
+                52,
+                53,
+                54,
+                55
+            ],
+            "name": "System Downtime (hours)",
+            "marker": {
+                "color": "rgb(123, 104, 238)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                98,
+                100,
+                102,
+                104,
+                106,
+                108,
+                110,
+                111,
+                113,
+                115
+            ],
+            "name": "User Support Requests",
+            "marker": {
+                "color": "rgb(46, 139, 87)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                70,
+                72,
+                74,
+                76,
+                78,
+                80,
+                82,
+                84,
+                86,
+                88
+            ],
+            "name": "Proactive IT Actions",
+            "marker": {
+                "color": "rgb(255, 140, 105)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                50,
+                53,
+                55,
+                57,
+                59,
+                61,
+                63,
+                65,
+                67,
+                69
+            ],
+            "name": "Incident Reporting Accuracy (%)",
+            "marker": {
+                "color": "rgb(75, 0, 130)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                90,
+                92,
+                94,
+                96,
+                98,
+                100,
+                102,
+                104,
+                106,
+                108
+            ],
+            "name": "Critical Incident Response Time (minutes)",
+            "marker": {
+                "color": "rgb(218, 112, 214)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                45,
+                48,
+                50,
+                52,
+                54,
+                56,
+                58,
+                60,
+                62,
+                64
+            ],
+            "name": "Resource Allocation Efficiency",
+            "marker": {
+                "color": "rgb(255, 69, 0)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                100,
+                105,
+                110,
+                115,
+                120,
+                125,
+                130,
+                135,
+                140,
+                145
+            ],
+            "name": "Cost per Incident",
+            "marker": {
+                "color": "rgb(0, 0, 139)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                70,
+                73,
+                75,
+                78,
+                80,
+                82,
+                85,
+                87,
+                89,
+                90
+            ],
+            "name": "Incident Recurrence Rate (%)",
+            "marker": {
+                "color": "rgb(165, 42, 42)"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "y": [
+                85,
+                88,
+                91,
+                93,
+                95,
+                98,
+                100,
+                102,
+                104,
+                105
+            ],
+            "name": "Employee Productivity Hours",
+            "marker": {
+                "color": "rgb(0, 128, 128)"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Monthly IT Service Desk Performance",
+        "xaxis": {
+            "tickvals": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October"
+            ],
+            "title": "Month"
+        },
+        "yaxis": {
+            "title": "Average Resolution Time (hours)"
+        },
+        "yaxis2": {
+            "title": "Customer Satisfaction Score (%)",
+            "overlaying": "y",
+            "side": "right"
+        },
+        "barmode": "group"
+    },
+    "id": 304
+}

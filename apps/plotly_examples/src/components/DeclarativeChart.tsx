@@ -41,9 +41,9 @@ type DataType =
   | 'localization';
 
 const dataTypeRanges = {
-  'general': { min: 1, max: 252 },
-  'largeData': { min: 253, max: 277 },
-  'localization': { min: 278, max: 302 }
+  'general': [{ min: 1, max: 252 }],
+  'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }],
+  'localization': [{ min: 278, max: 302 }]
 };
 
 // Use require.context to load all JSON files from the split_data folder
@@ -128,8 +128,8 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
       .filter((data) => {
         const schemaId = parseInt((data.schema as { id: string }).id, 10);
         return selectedDataTypes.includes('All') || selectedDataTypes.some(dataType => {
-          const range = dataTypeRanges[dataType as keyof typeof dataTypeRanges];
-          return schemaId >= range.min && schemaId <= range.max;
+          if (dataType === 'All') return true;
+          return dataTypeRanges[dataType].some(range => schemaId >= range.min && schemaId <= range.max);
         });
       })
       .filter((data) => {
