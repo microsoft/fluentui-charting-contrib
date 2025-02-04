@@ -12,15 +12,12 @@ test.beforeEach( async ({ page }) => {
 
 for (let index = 0; index < totalChartExamplesCount; index++) {
   test(`Declarative chart example ${ index + 1 }`, async ({ page }) => {
-   if (['http://localhost:3000/', 'http://127.0.0.1:3000/'].includes(process.env.BASE_URL))
-    {
-      const iframe = page.locator('#webpack-dev-server-client-overlay');
-      if (await iframe.count() > 0) {
-         await iframe.evaluate((el) => el.remove()).catch(() => {
-        console.warn("Failed to remove overlay iframe.");
-      });
-     }
-    }
+   const iframe = page.locator('#webpack-dev-server-client-overlay');
+   if (await iframe.count() > 0) {
+      await iframe.evaluate((el) => el.remove()).catch(() => {
+      console.warn("Failed to remove overlay iframe.");
+    });
+  }
   const combobox = page.getByRole('combobox');
   await combobox.nth(1).click();
   const listbox = page.getByRole('listbox');
