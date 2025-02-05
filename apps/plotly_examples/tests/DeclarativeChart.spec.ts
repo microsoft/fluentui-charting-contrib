@@ -1,10 +1,12 @@
 import { test, expect } from '@playwright/test';
 
-const chartsListWithErrors = [];
+const chartsListWithErrors: number[] = [];
 var totalChartExamplesCount = 302;
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('/');
+  //Pass base URL as part of playwright command 
+  //ex:  npx cross-env BASE_URL='https://fluentchartstest-stage.azurewebsites.net/' npx playwright test
+  await page.goto(process.env.BASE_URL);
 });
 
 for (let index = 0; index < totalChartExamplesCount; index++) {
@@ -24,7 +26,6 @@ for (let index = 0; index < totalChartExamplesCount; index++) {
       await listitems.nth(index).click();
       const chart = page.getByTestId('chart-container');
       await expect(chart).toHaveScreenshot();
-      await combobox.last().click();
     } else {
       test.fail();
     }
@@ -37,6 +38,7 @@ for (let index = 0; index < totalChartExamplesCount; index++) {
         console.warn("Failed to remove overlay iframe.");
       });
     }
+
     const combobox = page.getByRole('combobox');
     await combobox.nth(1).click();
     const listbox = page.getByRole('listbox');
@@ -50,13 +52,12 @@ for (let index = 0; index < totalChartExamplesCount; index++) {
     const downloadedImageBuffer = await stream2buffer(await download.createReadStream())
     expect(downloadedImageBuffer).toMatchSnapshot(`downloaded-declarative-chart-example-${index + 1}.png`)
     await download.delete()
-    await combobox.last().click();
   });
 };
 
-async function stream2buffer(stream) {
-  return new Promise((resolve, reject) => {
-    const _buf = [];
+async function stream2buffer(stream: Stream) {
+  return new Promise<Buffer>((resolve, reject) => {
+    const _buf = Array<any>();
     stream.on("data", chunk => _buf.push(chunk));
     stream.on("end", () => resolve(Buffer.concat(_buf)));
     stream.on("error", err => reject(`error converting stream - ${err}`));
