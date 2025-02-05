@@ -4,9 +4,11 @@ import * as dotenv from 'dotenv';
 const chartsListWithErrors = [];
 var totalChartExamplesCount = 302;
 const themes = ["Light", "Dark"];
+const modes = ["LTR", "RTL"];
 
 for (const theme of themes){
-  test.describe(`Declarative chart examples in ${theme} mode`, () => {
+  for(const mode of modes){
+  test.describe(`Declarative chart examples in ${theme} mode and ${mode} layout`, () => {
     test.beforeEach( async ({ page }) => {
       //Pass base URL as part of playwright command 
       //ex:  npx cross-env BASE_URL='https://fluentchartstest-stage.azurewebsites.net/' npx playwright test
@@ -24,6 +26,11 @@ for (let index = 0; index < totalChartExamplesCount; index++) {
   await page.getByRole('combobox').first().click();
   const listbox = page.getByRole('listbox');
   await listbox.getByRole('option').locator(`text=${theme}`).click();
+  const rtlSwitch = page.getByRole('switch');
+  const isCurrentlyRTL = await rtlSwitch.isChecked();
+  if((mode === 'RTL' && !isCurrentlyRTL) || (mode === 'LTR' && isCurrentlyRTL)){
+    await rtlSwitch.click();
+  }
   const combobox = page.getByRole('combobox');
   await combobox.nth(1).click();
   const listitems = listbox.last().getByRole('option');
@@ -39,4 +46,5 @@ for (let index = 0; index < totalChartExamplesCount; index++) {
    });
   };
  });
+}
 }
