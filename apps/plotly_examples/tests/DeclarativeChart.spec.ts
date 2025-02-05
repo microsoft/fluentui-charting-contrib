@@ -3,12 +3,15 @@ import * as dotenv from 'dotenv';
 
 const chartsListWithErrors = [];
 var totalChartExamplesCount = 302;
+const themes = ["Light", "Dark"];
 
-test.beforeEach( async ({ page }) => {
-  //Pass base URL as part of playwright command 
-  //ex:  npx cross-env BASE_URL='https://fluentchartstest-stage.azurewebsites.net/' npx playwright test
-  await page.goto(process.env.BASE_URL);
-});
+for (const theme of themes){
+  test.describe(`Declarative chart examples in ${theme} mode`, () => {
+    test.beforeEach( async ({ page }) => {
+      //Pass base URL as part of playwright command 
+      //ex:  npx cross-env BASE_URL='https://fluentchartstest-stage.azurewebsites.net/' npx playwright test
+      await page.goto(process.env.BASE_URL);
+    });
 
 for (let index = 0; index < totalChartExamplesCount; index++) {
   test(`Declarative chart example ${ index + 1 }`, async ({ page }) => {
@@ -18,9 +21,11 @@ for (let index = 0; index < totalChartExamplesCount; index++) {
       console.warn("Failed to remove overlay iframe.");
     });
   }
+  await page.getByRole('combobox').first().click();
+  const listbox = page.getByRole('listbox');
+  await listbox.getByRole('option').locator(`text=${theme}`).click();
   const combobox = page.getByRole('combobox');
   await combobox.nth(1).click();
-  const listbox = page.getByRole('listbox');
   const listitems = listbox.last().getByRole('option');
   if (!chartsListWithErrors.includes(index)) {
     await listitems.nth(index).scrollIntoViewIfNeeded();
@@ -30,6 +35,8 @@ for (let index = 0; index < totalChartExamplesCount; index++) {
     await combobox.last().click();
   } else {
     test.fail();
-  }
-  });
-};
+    }
+   });
+  };
+ });
+}
