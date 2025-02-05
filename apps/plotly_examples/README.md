@@ -72,3 +72,6 @@ First run the function **generate_visualization_scenarios()**. Then run **genera
 **253 - 277** - Large Dataset
 **278 - 302** - Locale based Dataset
 
+## Map data to the chart types
+
+This function **get_chart_type_from_image()** generates mapping of plotly chart data to the chart types available in fluent charts. Before running this, generate screenshots by running Playwright tests by changing the **getByTestId** in DeclarativeChart.spec.ts to **plotly-plot** which will take screenshots of the plotly charts only. These are then mapped to the charts available in our fluent charting library using the above function.

@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from azure.identity import ManagedIdentityCredential, DefaultAzureCredential, VisualStudioCodeCredential, InteractiveBrowserCredential, get_bearer_token_provider
 from openai import AzureOpenAI
 import random
+import glob
 
 scenario_dir = 'detailed_scenarios'
 class Scenario(BaseModel):
@@ -68,18 +69,43 @@ def generate_visualization_schemas():
             id = call_llm_plotly_schema(json.dumps(scenario_data), id)
 
 def generate_detailed_visualization_schemas():
+    print('Generating detailed schemas')
     scenario_dir = 'generated_schema'
     if not os.path.exists(scenario_dir):
         print("Populate the schemas first by calling generate_visualization_schemas()")
-    id = 253
+    id = 303
     sample_size = min(25, len(os.listdir(scenario_dir)))
-    random_files = random.sample(os.listdir(scenario_dir), sample_size)
+    chart_types = {}
+    for file_name in os.listdir(scenario_dir):
+        json_data = read_json_file(os.path.join(scenario_dir, file_name))
+        chart_type = json_data['data'][0]['type']
+        if chart_type not in chart_types:
+            chart_types[chart_type] = []
+        chart_types[chart_type].append(file_name)
+        
+    min_samples_per_chart_type = sample_size//len(chart_types)
+    random_files = []
+    for chart_type, files in chart_types.items():
+        random_files.extend(random.sample(files, min(min_samples_per_chart_type, len(files))))
+    
+    # keeping extra buffer data in case any one fails to generate
+    buffer_data = 50
+    if len(random_files) < sample_size + buffer_data:
+        remaining_files = [file for file in os.listdir(scenario_dir) if file not in random_files]
+        if len(remaining_files) > 0:
+            random_files.extend(random.sample(remaining_files, ((sample_size+buffer_data)-len(random_files))))
+
+    count = 0
     for file_name in random_files:
+        if count == sample_size:
+            break
         json_data = read_json_file(os.path.join(scenario_dir, file_name))
         curr_id = json_data['id']
         file_name_prefix = file_name.split('.')[0]
         suffix = file_name_prefix.split(str(curr_id))[1]
-        id = call_llm_detailed_plotly_schema(json.dumps(json_data), id, suffix)
+        id, isSuccess = call_llm_detailed_plotly_schema(json.dumps(json_data), id, suffix)
+        if isSuccess:
+            count = count + 1
         
 def generate_locale_visualization_schemas():
     if not os.path.exists(scenario_dir):
@@ -302,7 +328,7 @@ def call_llm_detailed_plotly_schema(scenario: str, id: int, suffix: str):
     # call only if the file does not exist
     if os.path.exists(f'generated_schema_detailed/data_{id}{suffix}.json'):
         print(f"Skipping {id}_{suffix}")
-        return id+1
+        return id+1, False
     
     # in case text_output is not a valid json, it will retry 3 times
     retry_count=0
@@ -317,7 +343,7 @@ def call_llm_detailed_plotly_schema(scenario: str, id: int, suffix: str):
 
     if retry_count == 3:
         print("Failed to generate schema")
-        return id
+        return id, False
     
     output_dir = 'generated_schema_detailed'
     os.makedirs(output_dir, exist_ok=True)
@@ -328,8 +354,56 @@ def call_llm_detailed_plotly_schema(scenario: str, id: int, suffix: str):
         json.dump(data, file, indent=4)
         id=id+1
     
-    return id
+    return id, True
 
+def get_chart_type_from_image():
+    directory_path = os.path.join('..', 'tests', 'Plotly.spec.ts-snapshots')
+    files = glob.glob(os.path.join(directory_path, '*'))
+
+    chart_types = {}
+
+    for file_path in files:
+        # Extract the file number from the file path
+        file_name = os.path.basename(file_path)
+        file_number = file_name.split('-')[3]
+        # padding the file_number with zeros making it a 3 digit number
+        if file_number.isdigit():
+            file_number = file_number.zfill(3)
+
+            with open(file_path, 'rb') as image_file:
+                response_format={ "type": "json_object" }
+                messages = [
+                    {
+                        "role": "system",
+                        "content": "You are an image data analyst having expertize in predicting data visualizations."
+                    }
+                    ,
+                    {
+                        "role": "user",
+                        "content": f"""Refer the image {image_file} and predict the chart type that best fits the data among 'Area', 'Line', 'Donut', 'Pie', 'Guage', 'Horizontal Bar tWithAxis', 'Vertical Bar', 'Vertical Stacked Bar ', 'Grouped Vertical Bar', 'Heatmap', 'Sankey'. Mark the chart type as 'Others' if none of the above types match.  Provide the output in the form of a json object. Categorize the images correctly based on the chart type.
+                        For example: {{"chart_type": "Area"}}"""
+                    }
+                ]
+                response = call_llm(messages, response_format)
+                data = json.loads(response)
+                retry_count = 0
+                while 'chart_type' not in data and retry_count < 3:
+                    response = call_llm(messages, response_format)
+                    data = json.loads(response)
+                    retry_count += 1
+                if retry_count == 3:
+                    print(f"Failed to get chart type for file {file_number}")
+                    continue
+                chart_type = data['chart_type']
+
+                # Map the file number and chart type
+                chart_types[file_number] = chart_type
+
+    chart_types_json = json.dumps(chart_types, indent=2)
+
+    output_path = 'aggregated_chart_types.json'
+    with open(output_path, 'w') as output_file:
+        output_file.write(chart_types_json)    
 
 file_path = 'scenarios_level1.json'
 
@@ -341,7 +415,10 @@ token_provider = get_bearer_token_provider(InteractiveBrowserCredential(), "http
 # generate_visualization_schemas()
 
 # Generate detailed schemas
-# generate_detailed_visualization_schemas()
+generate_detailed_visualization_schemas()
 
 # Generate locale based schemas
-generate_locale_visualization_schemas()
+# generate_locale_visualization_schemas()
+
+# Generate chart types from screenshots taken by Playwright
+# get_chart_type_from_image()

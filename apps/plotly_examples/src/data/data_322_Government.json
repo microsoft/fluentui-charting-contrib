@@ -1,0 +1,782 @@
+{
+    "data": [
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                82,
+                78,
+                90,
+                85,
+                88,
+                92,
+                81,
+                77,
+                89,
+                84
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Test Scores"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                6000,
+                5000,
+                6500,
+                7000,
+                7200,
+                6300,
+                5900,
+                5500,
+                6800,
+                6400
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Funding per Student"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                78,
+                82,
+                86,
+                90,
+                95,
+                70,
+                68,
+                74,
+                88,
+                85
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Overall Grades"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                8500,
+                8000,
+                8700,
+                8300,
+                7900,
+                8400,
+                7800,
+                8250,
+                8600,
+                8100
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Scholarship Amount"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                88,
+                75,
+                94,
+                72,
+                80,
+                65,
+                90,
+                76,
+                85,
+                78
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Science Scores"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                7700,
+                7400,
+                7100,
+                6900,
+                8200,
+                6800,
+                7000,
+                6750,
+                7800,
+                7500
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Teacher Salaries"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                92,
+                85,
+                90,
+                78,
+                87,
+                75,
+                80,
+                82,
+                95,
+                84
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Math Scores"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                9100,
+                8700,
+                9400,
+                8900,
+                8500,
+                9300,
+                8200,
+                8700,
+                9500,
+                8800
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Sports Facilities Funding"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                79,
+                77,
+                81,
+                83,
+                75,
+                80,
+                76,
+                84,
+                90,
+                85
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "English Scores"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                8300,
+                8700,
+                8000,
+                9100,
+                7600,
+                8900,
+                8500,
+                9000,
+                9400,
+                8800
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Library Grants"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                87,
+                85,
+                83,
+                79,
+                82,
+                77,
+                80,
+                76,
+                89,
+                91
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "History Scores"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                7700,
+                8200,
+                7500,
+                8900,
+                9300,
+                6900,
+                7800,
+                8100,
+                8500,
+                7400
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Mentorship Programs"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                8300,
+                8700,
+                8000,
+                9100,
+                7600,
+                8900,
+                8500,
+                9000,
+                9400,
+                8800
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Infrastructure Investments"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                89,
+                82,
+                84,
+                78,
+                85,
+                79,
+                87,
+                80,
+                91,
+                86
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Art Scores"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                8800,
+                8500,
+                9000,
+                7500,
+                8900,
+                8100,
+                8200,
+                8700,
+                9100,
+                8400
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Extra-Curricular Activities Funding"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                89,
+                92,
+                87,
+                85,
+                91,
+                79,
+                94,
+                88,
+                90,
+                86
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Foreign Language Scores"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                7900,
+                8100,
+                7500,
+                7200,
+                8300,
+                6800,
+                7700,
+                7600,
+                8500,
+                8100
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Technology Grants"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                83,
+                77,
+                79,
+                85,
+                80,
+                82,
+                75,
+                90,
+                78,
+                81
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Physical Education Scores"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                9100,
+                8900,
+                9300,
+                8700,
+                8500,
+                8300,
+                8000,
+                9400,
+                9000,
+                8800
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Emergency Funds"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                7800,
+                7500,
+                8000,
+                7400,
+                7900,
+                8300,
+                7800,
+                8500,
+                8000,
+                8200
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "School Facilities"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                85,
+                82,
+                87,
+                90,
+                79,
+                81,
+                78,
+                92,
+                88,
+                85
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Civics Scores"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                8700,
+                8200,
+                8800,
+                9000,
+                9100,
+                8600,
+                8400,
+                9300,
+                8900,
+                8500
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Nutrition Programs"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                76,
+                80,
+                82,
+                85,
+                78,
+                75,
+                80,
+                79,
+                87,
+                81
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Drama Scores"
+            }
+        },
+        {
+            "type": "choropleth",
+            "locations": [
+                "District A",
+                "District B",
+                "District C",
+                "District D",
+                "District E",
+                "District F",
+                "District G",
+                "District H",
+                "District I",
+                "District J"
+            ],
+            "z": [
+                7500,
+                7900,
+                8200,
+                8600,
+                8800,
+                7800,
+                7700,
+                8900,
+                8400,
+                8200
+            ],
+            "locationmode": "geojson-id",
+            "geojson": "url_to_geojson_file_of_district_boundaries",
+            "colorbar": {
+                "title": "Counseling Programs"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Scores and Funding by District",
+        "geo": {
+            "scope": "usa",
+            "projection": {
+                "type": "mercator"
+            }
+        }
+    },
+    "id": 322
+}

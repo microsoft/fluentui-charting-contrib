@@ -1,0 +1,759 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                75,
+                50,
+                60,
+                40,
+                80,
+                55,
+                45,
+                70,
+                65,
+                85
+            ],
+            "name": "On-time Deliveries",
+            "marker": {
+                "color": "steelblue"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                10,
+                20,
+                15,
+                30,
+                25,
+                20,
+                18,
+                28,
+                22,
+                30
+            ],
+            "name": "Delayed Deliveries",
+            "marker": {
+                "color": "indianred"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                70,
+                52,
+                61,
+                43,
+                75,
+                57,
+                48,
+                74,
+                68,
+                84
+            ],
+            "name": "Total Deliveries",
+            "marker": {
+                "color": "gold"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                15,
+                30,
+                25,
+                35,
+                25,
+                25,
+                22,
+                25,
+                25,
+                32
+            ],
+            "name": "Partial Deliveries",
+            "marker": {
+                "color": "lightgreen"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                5,
+                8,
+                12,
+                7,
+                6,
+                11,
+                9,
+                12,
+                11,
+                14
+            ],
+            "name": "Damaged Deliveries",
+            "marker": {
+                "color": "orange"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                12,
+                18,
+                10,
+                20,
+                15,
+                14,
+                13,
+                19,
+                21,
+                23
+            ],
+            "name": "Incomplete Deliveries",
+            "marker": {
+                "color": "cyan"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                38,
+                48,
+                32,
+                55,
+                45,
+                40,
+                35,
+                50,
+                52,
+                57
+            ],
+            "name": "Urgent Deliveries",
+            "marker": {
+                "color": "purple"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                33,
+                46,
+                37,
+                54,
+                44,
+                39,
+                32,
+                47,
+                50,
+                53
+            ],
+            "name": "Routine Deliveries",
+            "marker": {
+                "color": "darkgreen"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                64,
+                49,
+                56,
+                42,
+                78,
+                54,
+                46,
+                69,
+                62,
+                80
+            ],
+            "name": "International Deliveries",
+            "marker": {
+                "color": "lightblue"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                2,
+                6,
+                4,
+                8,
+                5,
+                7,
+                4,
+                6,
+                7,
+                9
+            ],
+            "name": "Returns",
+            "marker": {
+                "color": "grey"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                15,
+                26,
+                21,
+                32,
+                18,
+                25,
+                20,
+                31,
+                28,
+                36
+            ],
+            "name": "Sample Deliveries",
+            "marker": {
+                "color": "silver"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                8,
+                14,
+                11,
+                17,
+                13,
+                16,
+                14,
+                15,
+                18,
+                21
+            ],
+            "name": "Emergency Deliveries",
+            "marker": {
+                "color": "brown"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                19,
+                21,
+                20,
+                22,
+                24,
+                27,
+                23,
+                26,
+                25,
+                29
+            ],
+            "name": "Bulk Deliveries",
+            "marker": {
+                "color": "blueviolet"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                7,
+                9,
+                6,
+                8,
+                9,
+                7,
+                5,
+                10,
+                8,
+                11
+            ],
+            "name": "Special Deliveries",
+            "marker": {
+                "color": "deeppink"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                15,
+                20,
+                17,
+                22,
+                25,
+                18,
+                16,
+                21,
+                23,
+                26
+            ],
+            "name": "Local Deliveries",
+            "marker": {
+                "color": "midnightblue"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                13,
+                19,
+                14,
+                20,
+                18,
+                15,
+                17,
+                16,
+                19,
+                22
+            ],
+            "name": "Scheduled Deliveries",
+            "marker": {
+                "color": "olive"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                5,
+                10,
+                7,
+                12,
+                9,
+                10,
+                8,
+                11,
+                9,
+                13
+            ],
+            "name": "Rescheduled Deliveries",
+            "marker": {
+                "color": "royalblue"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                18,
+                24,
+                20,
+                28,
+                22,
+                21,
+                24,
+                25,
+                23,
+                27
+            ],
+            "name": "Expired Delivery Orders",
+            "marker": {
+                "color": "peru"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                9,
+                12,
+                11,
+                15,
+                14,
+                13,
+                10,
+                16,
+                13,
+                18
+            ],
+            "name": "Cold-chain Deliveries",
+            "marker": {
+                "color": "turquoise"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                27,
+                34,
+                28,
+                36,
+                30,
+                29,
+                35,
+                34,
+                32,
+                38
+            ],
+            "name": "Cross-border Deliveries",
+            "marker": {
+                "color": "slateblue"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                13,
+                16,
+                14,
+                19,
+                15,
+                16,
+                12,
+                18,
+                15,
+                20
+            ],
+            "name": "Night-time Deliveries",
+            "marker": {
+                "color": "navy"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                20,
+                25,
+                21,
+                29,
+                23,
+                22,
+                21,
+                26,
+                24,
+                27
+            ],
+            "name": "Holiday-season Deliveries",
+            "marker": {
+                "color": "chocolate"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                11,
+                15,
+                20,
+                14,
+                21,
+                14,
+                12,
+                19,
+                13,
+                23
+            ],
+            "name": "Early Morning Deliveries",
+            "marker": {
+                "color": "firebrick"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Supplier A",
+                "Supplier B",
+                "Supplier C",
+                "Supplier D",
+                "Supplier E",
+                "Supplier F",
+                "Supplier G",
+                "Supplier H",
+                "Supplier I",
+                "Supplier J"
+            ],
+            "y": [
+                6,
+                9,
+                8,
+                11,
+                8,
+                10,
+                7,
+                12,
+                8,
+                14
+            ],
+            "name": "Drone Deliveries",
+            "marker": {
+                "color": "forestgreen"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Comparison of On-time vs Delayed Deliveries by Supplier",
+        "barmode": "stack",
+        "xaxis": {
+            "title": "Suppliers"
+        },
+        "yaxis": {
+            "title": "Number of Deliveries"
+        }
+    },
+    "id": 327
+}

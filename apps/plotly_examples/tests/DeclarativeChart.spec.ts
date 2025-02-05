@@ -9,12 +9,14 @@ test.beforeEach(async ({ page }) => {
 
 for (let index = 0; index < totalChartExamplesCount; index++) {
   test(`Declarative chart example ${index + 1}`, async ({ page }) => {
-    // if (!process.env.USE_STAGING_URL) {
-    //   const iframe = page.locator('#webpack-dev-server-client-overlay');
-    //   await iframe.evaluate((el) => el.remove());
-    // }
+    const iframe = page.locator('#webpack-dev-server-client-overlay');
+    if (await iframe.count() > 0) {
+      await iframe.evaluate((el) => el.remove()).catch(() => {
+        console.warn("Failed to remove overlay iframe.");
+      });
+    }
     const combobox = page.getByRole('combobox');
-    await combobox.last().click();
+    await combobox.nth(1).click();
     const listbox = page.getByRole('listbox');
     const listitems = listbox.last().getByRole('option');
     if (!chartsListWithErrors.includes(index)) {
@@ -29,12 +31,14 @@ for (let index = 0; index < totalChartExamplesCount; index++) {
   });
 
   test(`Declarative chart example ${index + 1} downloaded image`, async ({ page }) => {
-    // if (!process.env.USE_STAGING_URL) {
-    //   const iframe = page.locator('#webpack-dev-server-client-overlay');
-    //   await iframe.evaluate((el) => el.remove());
-    // }
+    const iframe = page.locator('#webpack-dev-server-client-overlay');
+    if (await iframe.count() > 0) {
+      await iframe.evaluate((el) => el.remove()).catch(() => {
+        console.warn("Failed to remove overlay iframe.");
+      });
+    }
     const combobox = page.getByRole('combobox');
-    await combobox.last().click();
+    await combobox.nth(1).click();
     const listbox = page.getByRole('listbox');
     const listitems = listbox.last().getByRole('option');
     await listitems.nth(index).scrollIntoViewIfNeeded();

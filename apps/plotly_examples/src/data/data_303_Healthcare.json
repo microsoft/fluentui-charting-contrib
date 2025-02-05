@@ -1,0 +1,790 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                90,
+                75,
+                85,
+                70,
+                80,
+                77,
+                90,
+                65,
+                85,
+                77
+            ],
+            "name": "Staff Efficiency (Patients/Staff)",
+            "marker": {
+                "color": "#1f77b4"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                120,
+                95,
+                100,
+                80,
+                105,
+                110,
+                130,
+                85,
+                95,
+                100
+            ],
+            "name": "Patient Throughput (Admissions)",
+            "marker": {
+                "color": "#ff7f0e"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                300,
+                250,
+                270,
+                240,
+                260,
+                265,
+                285,
+                250,
+                260,
+                270
+            ],
+            "name": "Departmental Delays (Minutes)",
+            "marker": {
+                "color": "#2ca02c"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                100,
+                85,
+                90,
+                75,
+                80,
+                78,
+                95,
+                70,
+                80,
+                85
+            ],
+            "name": "Staff Availability",
+            "marker": {
+                "color": "#d62728"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                80,
+                70,
+                75,
+                65,
+                70,
+                72,
+                80,
+                60,
+                70,
+                75
+            ],
+            "name": "Medical Equipment Utilization",
+            "marker": {
+                "color": "#9467bd"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                140,
+                110,
+                125,
+                100,
+                130,
+                135,
+                150,
+                105,
+                115,
+                125
+            ],
+            "name": "Patient Satisfaction (Survey Scores)",
+            "marker": {
+                "color": "#8c564b"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                50,
+                40,
+                45,
+                35,
+                40,
+                42,
+                48,
+                30,
+                35,
+                45
+            ],
+            "name": "Emergency Response Time (Minutes)",
+            "marker": {
+                "color": "#e377c2"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                200,
+                175,
+                185,
+                160,
+                175,
+                180,
+                190,
+                155,
+                170,
+                185
+            ],
+            "name": "Average Ward Occupancy (Patients/Day)",
+            "marker": {
+                "color": "#7f7f7f"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                20,
+                15,
+                18,
+                12,
+                16,
+                17,
+                19,
+                11,
+                14,
+                15
+            ],
+            "name": "Critical Incident Frequency (Incidents/Month)",
+            "marker": {
+                "color": "#bcbd22"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                25,
+                20,
+                22,
+                18,
+                20,
+                21,
+                23,
+                17,
+                19,
+                20
+            ],
+            "name": "Staff Training Hours (Hours/Month)",
+            "marker": {
+                "color": "#17becf"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                85,
+                70,
+                88,
+                67,
+                73,
+                80,
+                95,
+                60,
+                75,
+                82
+            ],
+            "name": "Department Cleanliness (Inspection Scores)",
+            "marker": {
+                "color": "#1f77b4"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                50,
+                40,
+                45,
+                35,
+                40,
+                42,
+                50,
+                32,
+                38,
+                43
+            ],
+            "name": "Medication Error Frequency (Errors/Month)",
+            "marker": {
+                "color": "#ff7f0e"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                30,
+                25,
+                28,
+                20,
+                26,
+                27,
+                31,
+                21,
+                24,
+                26
+            ],
+            "name": "Patient Wait Time (Minutes)",
+            "marker": {
+                "color": "#2ca02c"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                9,
+                7.5,
+                8.5,
+                7,
+                8,
+                8.2,
+                9.8,
+                6.5,
+                7.5,
+                8.5
+            ],
+            "name": "Daily Consultations per Staff Member",
+            "marker": {
+                "color": "#d62728"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                150,
+                110,
+                125,
+                100,
+                135,
+                140,
+                155,
+                105,
+                115,
+                125
+            ],
+            "name": "Number of Tests Conducted",
+            "marker": {
+                "color": "#9467bd"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                12,
+                9,
+                11,
+                8,
+                10,
+                10.5,
+                13,
+                7.8,
+                8.9,
+                10.2
+            ],
+            "name": "Average Consultation Time (Minutes)",
+            "marker": {
+                "color": "#8c564b"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                55,
+                47,
+                50,
+                42,
+                49,
+                52,
+                60,
+                45,
+                48,
+                50
+            ],
+            "name": "Maintenance Downtime (Hours)",
+            "marker": {
+                "color": "#e377c2"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                240,
+                205,
+                220,
+                195,
+                210,
+                225,
+                245,
+                185,
+                200,
+                215
+            ],
+            "name": "Daily Patient Discharges",
+            "marker": {
+                "color": "#7f7f7f"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                350,
+                290,
+                310,
+                280,
+                295,
+                305,
+                320,
+                265,
+                275,
+                290
+            ],
+            "name": "Monthly Specialized Procedures",
+            "marker": {
+                "color": "#bcbd22"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                280,
+                230,
+                255,
+                220,
+                245,
+                260,
+                275,
+                210,
+                225,
+                240
+            ],
+            "name": "Monthly Follow-up Consultations",
+            "marker": {
+                "color": "#17becf"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                400,
+                340,
+                370,
+                320,
+                350,
+                365,
+                380,
+                310,
+                330,
+                350
+            ],
+            "name": "Monthly Referrals",
+            "marker": {
+                "color": "#1f77b4"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                220,
+                190,
+                205,
+                175,
+                200,
+                210,
+                225,
+                170,
+                180,
+                190
+            ],
+            "name": "Monthly Outpatient Treatments",
+            "marker": {
+                "color": "#ff7f0e"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                520,
+                430,
+                475,
+                420,
+                450,
+                485,
+                510,
+                390,
+                420,
+                440
+            ],
+            "name": "Monthly Diagnostics",
+            "marker": {
+                "color": "#2ca02c"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                600,
+                520,
+                560,
+                480,
+                530,
+                555,
+                585,
+                470,
+                500,
+                530
+            ],
+            "name": "Monthly Lab Tests",
+            "marker": {
+                "color": "#d62728"
+            }
+        },
+        {
+            "type": "bar",
+            "x": [
+                "Emergency",
+                "Surgery",
+                "Pediatrics",
+                "Oncology",
+                "Maternity",
+                "Orthopedics",
+                "Cardiology",
+                "Neurology",
+                "ENT",
+                "Urology"
+            ],
+            "y": [
+                330,
+                275,
+                300,
+                260,
+                290,
+                310,
+                330,
+                250,
+                270,
+                280
+            ],
+            "name": "Monthly Surgeries",
+            "marker": {
+                "color": "#9467bd"
+            }
+        }
+    ],
+    "layout": {
+        "title": "Monthly Staff Efficiency and Patient Throughput by Department",
+        "barmode": "group",
+        "xaxis": {
+            "title": "Department"
+        },
+        "yaxis": {
+            "title": "Count"
+        }
+    },
+    "id": 303
+}
