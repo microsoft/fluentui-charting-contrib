@@ -281,7 +281,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
         <br />
         <button
           onClick={() => {
-            declarativeChartRef.current?.exportAsImage().then((imgData: string) => {
+            declarativeChartRef.current?.exportAsImage({ scale: 1 }).then((imgData: string) => {
               fileSaver(imgData);
             });
           }}
