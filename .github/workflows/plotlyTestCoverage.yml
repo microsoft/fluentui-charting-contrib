@@ -1,10 +1,10 @@
 name: "Plotly Test coverage"
 on:
   schedule:
-    - cron: "0 */8 * * *"
+    - cron: "30 8 * * *"  # Runs every day at 2:00 PM IST (08:30 AM UTC)
   workflow_dispatch:
     inputs:
-      repo:
+      repo:s
         description: "Repo to run the tests on"
         required: true
         default: "microsoft/fluentui"
