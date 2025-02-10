@@ -191,8 +191,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-        ref: test-coverage-artifacts
-        fetch-depth: 0
+          ref: test-coverage-artifacts
+          fetch-depth: 0
 
       - name: Rename all txt reports to md and remove unnecessary lines
         run: |
