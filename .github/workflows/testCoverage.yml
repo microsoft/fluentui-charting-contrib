@@ -188,11 +188,11 @@ jobs:
       - name: Directory disp
         run: ls -a
 
-      - name: Checkout [test-coverage-artifacts]
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          path: repo
-          ref: test-coverage-artifacts
+        ref: test-coverage-artifacts
+        fetch-depth: 0
 
       - name: Rename all txt reports to md and remove unnecessary lines
         run: |
