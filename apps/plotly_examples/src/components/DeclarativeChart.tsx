@@ -14,6 +14,7 @@ import PlotlyChart from './PlotlyChart';
 import { ErrorBoundary } from './ErrorBoundary';
 import { getSelection, saveSelection } from './utils';
 import aggregatedChartTypes from './aggregated_chart_types.json';
+import { DeclarativeChart as DeclarativeChartV9 } from '@fluentui/react-charts'
 
 interface IDeclarativeChartProps {
 }
@@ -68,6 +69,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
   const [selectedDataTypes, setSelectedDataTypes] = React.useState<DataType[]>(getSelection("DataType_filter", 'All').split(',') as DataType[]);
 
   const declarativeChartRef = React.useRef<IDeclarativeChart>(null);
+  const declarativeChartV9Ref = React.useRef<IDeclarativeChart>(null);
   let lastKnownValidLegends: string[] | undefined = selectedLegends;
 
   React.useEffect(() => {
@@ -136,7 +138,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
         const fileName = data.fileName;
         const fileNumberMatch = fileName.match(/\d+/);
         const fileNumber = fileNumberMatch ? fileNumberMatch[0] : '000';
-        const plotType = aggregatedChartTypes[fileNumber as keyof typeof aggregatedChartTypes]; 
+        const plotType = aggregatedChartTypes[fileNumber as keyof typeof aggregatedChartTypes];
         return selectedPlotTypes.includes('All') || selectedPlotTypes.includes(plotType as PlotType);
       });
     return filteredDataItems;
@@ -279,38 +281,57 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
           </Dropdown>
         </div>
         <br />
-        <button
-          onClick={() => {
-            declarativeChartRef.current?.exportAsImage().then((imgData: string) => {
-              fileSaver(imgData);
-            });
-          }}
-        >
-          Download as Image
-        </button>
+        <br />
         <div data-testid="chart-container" >
+          <Subtitle2>{chartTitle} (v8)</Subtitle2>
+          <Divider />
           <br />
+          <button
+            onClick={() => {
+              declarativeChartRef.current?.exportAsImage().then((imgData: string) => {
+                fileSaver(imgData);
+              });
+            }}
+          >
+            Download as Image
+          </button>
           <br />
           <ErrorBoundary>
-            <Subtitle2>{chartTitle}</Subtitle2>
-            <Divider />
-            <br />
-            <br />
             <DeclarativeChart
               chartSchema={inputSchema}
               onSchemaChange={_handleChartSchemaChanged}
               componentRef={declarativeChartRef}
             />
           </ErrorBoundary>
+          <br />
+          <TextField
+            label="Current Legend selection"
+            value={selectedLegendsState}
+            onChange={_onSelectedLegendsEdited}
+            styles={textFieldStyles}
+          />
+          <br />
+          <Subtitle2>(v9)</Subtitle2>
+          <Divider />
+          <br />
+          <button
+            onClick={() => {
+              declarativeChartV9Ref.current?.exportAsImage().then((imgData: string) => {
+                fileSaver(imgData);
+              });
+            }}
+          >
+            Download as Image
+          </button>
+          <br />
+          <ErrorBoundary>
+            <DeclarativeChartV9
+              chartSchema={inputSchema}
+              onSchemaChange={_handleChartSchemaChanged}
+              componentRef={declarativeChartV9Ref}
+            />
+          </ErrorBoundary>
         </div>
-        <br />
-        <TextField
-          label="Current Legend selection"
-          value={selectedLegendsState}
-          onChange={_onSelectedLegendsEdited}
-          styles={textFieldStyles}
-        />
-        <br />
         <div key={plotlyKey} data-testid="plotly-plot">
           <Divider />
           <br />
