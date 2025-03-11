@@ -1,15 +1,23 @@
 {
-  "categories": [
-    "Ann Arbor Bus",
-    "SAV, Single Rider",
-    "SAV, Shared Rides",
-    "SAV, Shared Rides (400 vehicles)"
+  "data": [
+    {
+      "type": "bar",
+      "x": [
+        "Ann Arbor Bus",
+        "SAV, Single Rider",
+        "SAV, Shared Rides",
+        "SAV, Shared Rides (400 vehicles)"
+      ],
+      "y": [
+        29.3,
+        11.5,
+        15.6,
+        15.6
+      ]
+    }
   ],
-  "mean_travel_time": [
-    29.3,
-    11.5,
-    15.6,
-    15.6
-  ],
+  "layout": {
+    "title": "Mean Travel Time by Category"
+  },
   "id": 365
 }
