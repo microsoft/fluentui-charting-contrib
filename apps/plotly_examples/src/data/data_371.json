@@ -1,46 +1,24 @@
 {
     "data": [
         {
-            "hovertemplate": "Year=%{x}<br>Dividend Yield (%)=%{y}<extra></extra>",
+            "hovertemplate": "Product ID=%{x}<br>Quantity Ordered=%{y}<extra></extra>",
             "legendgroup": "",
-            "line": {
-                "color": "#636efa",
-                "dash": "solid"
-            },
             "marker": {
+                "color": "#636efa",
                 "symbol": "circle"
             },
-            "mode": "lines",
+            "mode": "markers",
             "name": "",
             "orientation": "v",
             "showlegend": false,
-            "x": [
-                "2022",
-                "2021",
-                "2020",
-                "2019",
-                "2018",
-                "2017",
-                "2016",
-                "2015",
-                "2014",
-                "2013",
-                "2012",
-                "2011",
-                "2010",
-                "2009",
-                "2008",
-                "2007",
-                "2006",
-                "2005",
-                "2004",
-                "2003",
-                "2002"
-            ],
+            "x": {
+                "dtype": "i2",
+                "bdata": "GwFEAvUA9wJWAWwA"
+            },
             "xaxis": "x",
             "y": {
-                "dtype": "f8",
-                "bdata": "MzMzMzMzAUBcj8L1KFz/P83MzMzMzAJAH4XrUbgeA0DhehSuR+ECQNejcD0K1wFAw/UoXI/CB0BI4XoUrkcHQAAAAAAAAAxAw/UoXI/CCUAAAAAAAAAKQClcj8L1KARAhetRuB6FB0A9CtejcD0KQOF6FK5H4QRAZmZmZmZmBEAUrkfhehQCQNejcD0K1/8/hetRuB6F+z/D9Shcj8L5P1yPwvUoXPc/"
+                "dtype": "i1",
+                "bdata": "H10pTjYe"
             },
             "yaxis": "y",
             "type": "scatter"
@@ -830,7 +808,7 @@
                 1.0
             ],
             "title": {
-                "text": "Year"
+                "text": "Product ID"
             }
         },
         "yaxis": {
@@ -840,15 +818,15 @@
                 1.0
             ],
             "title": {
-                "text": "Dividend Yield (%)"
+                "text": "Quantity Ordered"
             }
         },
         "legend": {
             "tracegroupgap": 0
         },
         "title": {
-            "text": "Dividend Yield over the Years"
+            "text": "Quantity Ordered for Customized Products"
         }
     },
-    "id": 336
+    "id": 371
 }
