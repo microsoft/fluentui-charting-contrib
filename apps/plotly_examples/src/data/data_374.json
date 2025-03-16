@@ -1,49 +1,34 @@
 {
     "data": [
         {
-            "hovertemplate": "Year=%{x}<br>Dividend Yield (%)=%{y}<extra></extra>",
+            "hovertemplate": "Products=%{x}<br>Scores=%{y}<extra></extra>",
             "legendgroup": "",
-            "line": {
-                "color": "#636efa",
-                "dash": "solid"
-            },
             "marker": {
-                "symbol": "circle"
+                "color": "#636efa",
+                "pattern": {
+                    "shape": ""
+                }
             },
-            "mode": "lines",
             "name": "",
             "orientation": "v",
             "showlegend": false,
+            "textposition": "auto",
             "x": [
-                "2022",
-                "2021",
-                "2020",
-                "2019",
-                "2018",
-                "2017",
-                "2016",
-                "2015",
-                "2014",
-                "2013",
-                "2012",
-                "2011",
-                "2010",
-                "2009",
-                "2008",
-                "2007",
-                "2006",
-                "2005",
-                "2004",
-                "2003",
-                "2002"
+                "HubSpot CRM",
+                "Bigin (by ZOHO)",
+                "ZOHO",
+                "Pipedrive (Essential)",
+                "SalesForce (Essential)",
+                "Freshsales",
+                "Monday.com"
             ],
             "xaxis": "x",
             "y": {
                 "dtype": "f8",
-                "bdata": "MzMzMzMzAUBcj8L1KFz/P83MzMzMzAJAH4XrUbgeA0DhehSuR+ECQNejcD0K1wFAw/UoXI/CB0BI4XoUrkcHQAAAAAAAAAxAw/UoXI/CCUAAAAAAAAAKQClcj8L1KARAhetRuB6FB0A9CtejcD0KQOF6FK5H4QRAZmZmZmZmBEAUrkfhehQCQNejcD0K1/8/hetRuB6F+z/D9Shcj8L5P1yPwvUoXPc/"
+                "bdata": "mpmZmZmZI0AAAAAAAAAjQAAAAAAAACJAmpmZmZmZIUBmZmZmZmYhQJqZmZmZmR9AMzMzMzMzHUA="
             },
             "yaxis": "y",
-            "type": "scatter"
+            "type": "bar"
         }
     ],
     "layout": {
@@ -830,7 +815,7 @@
                 1.0
             ],
             "title": {
-                "text": "Year"
+                "text": "Products"
             }
         },
         "yaxis": {
@@ -840,15 +825,16 @@
                 1.0
             ],
             "title": {
-                "text": "Dividend Yield (%)"
+                "text": "Scores"
             }
         },
         "legend": {
             "tracegroupgap": 0
         },
         "title": {
-            "text": "Dividend Yield over the Years"
-        }
+            "text": "Product Scores Based on Ranking"
+        },
+        "barmode": "relative"
     },
-    "id": 336
+    "id": 374
 }

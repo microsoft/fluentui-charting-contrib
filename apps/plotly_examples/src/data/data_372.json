@@ -1,49 +1,64 @@
 {
     "data": [
         {
-            "hovertemplate": "Year=%{x}<br>Dividend Yield (%)=%{y}<extra></extra>",
-            "legendgroup": "",
-            "line": {
-                "color": "#636efa",
-                "dash": "solid"
-            },
+            "alignmentgroup": "True",
+            "hovertemplate": "Wave=Wave 1 (April 3 - 10, 2020)<br>Concern Level=%{x}<br>Count=%{y}<extra></extra>",
+            "legendgroup": "Wave 1 (April 3 - 10, 2020)",
             "marker": {
-                "symbol": "circle"
+                "color": "#636efa",
+                "pattern": {
+                    "shape": ""
+                }
             },
-            "mode": "lines",
-            "name": "",
+            "name": "Wave 1 (April 3 - 10, 2020)",
+            "offsetgroup": "Wave 1 (April 3 - 10, 2020)",
             "orientation": "v",
-            "showlegend": false,
+            "showlegend": true,
+            "textposition": "auto",
             "x": [
-                "2022",
-                "2021",
-                "2020",
-                "2019",
-                "2018",
-                "2017",
-                "2016",
-                "2015",
-                "2014",
-                "2013",
-                "2012",
-                "2011",
-                "2010",
-                "2009",
-                "2008",
-                "2007",
-                "2006",
-                "2005",
-                "2004",
-                "2003",
-                "2002"
+                "1 Not at all concerned",
+                "2",
+                "3",
+                "4",
+                "5 Very concerned"
             ],
             "xaxis": "x",
             "y": {
-                "dtype": "f8",
-                "bdata": "MzMzMzMzAUBcj8L1KFz/P83MzMzMzAJAH4XrUbgeA0DhehSuR+ECQNejcD0K1wFAw/UoXI/CB0BI4XoUrkcHQAAAAAAAAAxAw/UoXI/CCUAAAAAAAAAKQClcj8L1KARAhetRuB6FB0A9CtejcD0KQOF6FK5H4QRAZmZmZmZmBEAUrkfhehQCQNejcD0K1/8/hetRuB6F+z/D9Shcj8L5P1yPwvUoXPc/"
+                "dtype": "i2",
+                "bdata": "HAFMAHQARACeAA=="
             },
             "yaxis": "y",
-            "type": "scatter"
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "Wave=Wave 12 (Apr 4 - 24, 2022)<br>Concern Level=%{x}<br>Count=%{y}<extra></extra>",
+            "legendgroup": "Wave 12 (Apr 4 - 24, 2022)",
+            "marker": {
+                "color": "#EF553B",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Wave 12 (Apr 4 - 24, 2022)",
+            "offsetgroup": "Wave 12 (Apr 4 - 24, 2022)",
+            "orientation": "v",
+            "showlegend": true,
+            "textposition": "auto",
+            "x": [
+                "1 Not at all concerned",
+                "2",
+                "3",
+                "4",
+                "5 Very concerned"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i2",
+                "bdata": "igOsAAwBvADwAA=="
+            },
+            "yaxis": "y",
+            "type": "bar"
         }
     ],
     "layout": {
@@ -830,7 +845,7 @@
                 1.0
             ],
             "title": {
-                "text": "Year"
+                "text": "Concern Level"
             }
         },
         "yaxis": {
@@ -840,15 +855,19 @@
                 1.0
             ],
             "title": {
-                "text": "Dividend Yield (%)"
+                "text": "Count"
             }
         },
         "legend": {
+            "title": {
+                "text": "Wave"
+            },
             "tracegroupgap": 0
         },
         "title": {
-            "text": "Dividend Yield over the Years"
-        }
+            "text": "Levels of Concern in the First and Last Survey Wave for the 56 \u2013 65 Years Old Group"
+        },
+        "barmode": "group"
     },
-    "id": 336
+    "id": 372
 }

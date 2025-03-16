@@ -45,7 +45,7 @@ const dataTypeRanges = {
   'general': [{ min: 1, max: 252 }],
   'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }],
   'localization': [{ min: 278, max: 302 }],
-  'seval': [{ min: 333, max: 369 }]
+  'seval': [{ min: 333, max: 376 }]
 };
 
 // Use require.context to load all JSON files from the split_data folder
