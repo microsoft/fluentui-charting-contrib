@@ -39,13 +39,15 @@ type DataType =
   | 'general'
   | 'largeData'
   | 'localization'
-  | 'seval';
+  | 'seval'
+  | 'plotly_express';
 
 const dataTypeRanges = {
   'general': [{ min: 1, max: 252 }],
   'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }],
   'localization': [{ min: 278, max: 302 }],
-  'seval': [{ min: 333, max: 376 }]
+  'seval': [{ min: 333, max: 376 }],
+  'plotly_express': [{ min: 377, max: 425 }]
 };
 
 // Use require.context to load all JSON files from the split_data folder
@@ -283,6 +285,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             <Option value='largeData'>largeData</Option>
             <Option value='localization'>localization</Option>
             <Option value='seval'>seval</Option>
+            <Option value='plotly_express'>plotly_express</Option>
           </Dropdown>
         </div>
         <br />
