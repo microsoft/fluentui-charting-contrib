@@ -32,6 +32,7 @@ type PlotType =
   | 'Pie'
   | 'Sankey'
   | 'Heatmap'
+  | 'Histogram'
   | 'Others';
 
 type DataType =
@@ -47,7 +48,7 @@ const dataTypeRanges = {
   'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }],
   'localization': [{ min: 278, max: 302 }],
   'seval': [{ min: 333, max: 376 }],
-  'plotly_express': [{ min: 377, max: 425 }]
+  'plotly_express': [{ min: 377, max: 427 }]
 };
 
 // Use require.context to load all JSON files from the split_data folder
@@ -270,6 +271,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             <Option value="Pie">Pie</Option>
             <Option value="Sankey">Sankey</Option>
             <Option value="Heatmap">Heatmap</Option>
+            <Option value="Histogram">Histogram</Option>
             <Option value="Others">Others</Option>
           </Dropdown>
           &nbsp;&nbsp;&nbsp;
