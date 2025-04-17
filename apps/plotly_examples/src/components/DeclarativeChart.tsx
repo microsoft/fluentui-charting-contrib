@@ -44,7 +44,7 @@ type DataType =
   | 'plotly_express';
 
 const dataTypeRanges = {
-  'general': [{ min: 1, max: 252 }],
+  'general': [{ min: 1, max: 252 },{ min: 428, max: 429 }],
   'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }],
   'localization': [{ min: 278, max: 302 }],
   'seval': [{ min: 333, max: 376 }],
