@@ -164,9 +164,12 @@ def main():
     extracted_json_directory = '/workspaces/fluentui-charting-contrib/apps/plotly_examples/python-scripts/plotly_express/generated_python_code/extracted_json'
     data_directory = '/workspaces/fluentui-charting-contrib/apps/plotly_examples/src/data'
     category_file_path = '/workspaces/fluentui-charting-contrib/apps/plotly_examples/src/components/aggregated_chart_types.json'
+
+    # Step 0: Execute the script generate_visualization_codes() from generate_plotly_schema.py to populate the code_blocks folder
     
     # Step 1: Extract or keep code
-    extract_or_keep_code(gen_code_directory, extracted_code_directory)
+    # Comment this step if extracted_code is already populated from code_blocks folder, which might take manual efforts to resolve errors
+    # extract_or_keep_code(gen_code_directory, extracted_code_directory)
 
     # Step 2: Execute Python files
     execute_python_files(extracted_code_directory)
