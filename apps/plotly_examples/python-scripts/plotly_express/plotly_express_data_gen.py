@@ -36,7 +36,6 @@ def execute_python_files(directory):
                 print(f"Error occurred while executing {new_filepath}: {e}")
             os.chdir(directory)
 
-# Step 3: Rename JSON files
 def get_existing_numbers(directory, prefix="data_", extension=".json"):
     existing_numbers = []
     for file in os.listdir(directory):
@@ -80,11 +79,11 @@ def copy_json_files(source_directory, destination_directory):
             print(f"Deleted {source_file_path}")
     os.rmdir(source_directory)
     
+# Step 3: Extract, parse and save json data 
 def extract_and_save_json(input_directory, output_directory, data_directory, category_file_path):
     data_numbers = get_existing_numbers(data_directory)
     if data_numbers:
         index = max(data_numbers) + 1
-    print('Executing extract_and_save_json function')
     # Ensure the output directory exists
     os.makedirs(output_directory, exist_ok=True)
     excluded_keys = ["data", "id", "layout", "selectedLegends", "frames"]
@@ -160,13 +159,14 @@ def extract_and_save_json(input_directory, output_directory, data_directory, cat
 
 # Main function to execute all steps
 def main():
-    # Step 1: Extract or keep code
     gen_code_directory = '/workspaces/fluentui-charting-contrib/apps/plotly_examples/python-scripts/plotly_express/generated_python_code/code_blocks'
     extracted_code_directory = '/workspaces/fluentui-charting-contrib/apps/plotly_examples/python-scripts/plotly_express/generated_python_code/extracted_code'
     extracted_json_directory = '/workspaces/fluentui-charting-contrib/apps/plotly_examples/python-scripts/plotly_express/generated_python_code/extracted_json'
     data_directory = '/workspaces/fluentui-charting-contrib/apps/plotly_examples/src/data'
     category_file_path = '/workspaces/fluentui-charting-contrib/apps/plotly_examples/src/components/aggregated_chart_types.json'
-    # extract_or_keep_code(gen_code_directory, extracted_code_directory)
+    
+    # Step 1: Extract or keep code
+    extract_or_keep_code(gen_code_directory, extracted_code_directory)
 
     # Step 2: Execute Python files
     execute_python_files(extracted_code_directory)
