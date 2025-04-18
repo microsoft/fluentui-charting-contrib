@@ -48,7 +48,7 @@ const dataTypeRanges = {
   'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }],
   'localization': [{ min: 278, max: 302 }],
   'seval': [{ min: 333, max: 376 }],
-  'plotly_express': [{ min: 377, max: 427 }]
+  'plotly_express': [{ min: 377, max: 541 }]
 };
 
 // Use require.context to load all JSON files from the split_data folder
@@ -57,7 +57,6 @@ const schemasData = requireContext.keys().map((fileName: string) => ({
   fileName: fileName.replace('./', ''),
   schema: requireContext(fileName),
 }));
-console.log('schemasData', schemasData);
 
 const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
 
@@ -66,10 +65,8 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
   const savedOption = parseInt(savedOptionStr, 10) - 1; // To handle 0 based index
   const savedFileName = `data_${savedOptionStr}.json`;
   const _selectedSchema = schemasData[savedOption]?.schema || {};
-  console.log('savedOption', savedOption);
-  console.log('selectedSchema', _selectedSchema);
+
   const { selectedLegends } = _selectedSchema as any;
-  console.log('selectedLegends', selectedLegends);
   const [selectedChoice, setSelectedChoice] = React.useState<string>(savedFileName);
   const [selectedSchema, setSelectedSchema] = React.useState<any>(_selectedSchema);
   const [selectedLegendsState, setSelectedLegendsState] = React.useState<string>(JSON.stringify(selectedLegends));
