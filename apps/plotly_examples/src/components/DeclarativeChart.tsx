@@ -118,15 +118,6 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     document.body.removeChild(saveLink);
   };
 
-  function htmlEncode(str: string): string {
-    if (str !== undefined) {
-      return str.replace(/[\u00A0-\u9999<>\&]/gim, function (i) {
-        return '&#' + i.charCodeAt(0) + ';';
-      });
-    }
-    return '';
-  }
-
   const _handleChartSchemaChanged = (eventData: Schema) => {
     const { selectedLegends } = eventData.plotlySchema;
     setSelectedLegendsState(JSON.stringify(selectedLegends));
@@ -234,7 +225,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     const layout_with_theme = { ...layout, plot_bgcolor: bgcolor, paper_bgcolor: bgcolor, font: fontColor };
     const plotlySchema = { data, layout: layout_with_theme, selectedLegends: lastKnownValidLegends };
     const inputSchema: Schema = { plotlySchema };
-    const chartTitle = typeof layout?.title === 'string' ? htmlEncode(layout.title) : htmlEncode(layout?.title?.text) ?? '';
+    const chartTitle = typeof layout?.title === 'string' ? layout.title : layout?.title?.text ?? '';
     return (
       <div key={uniqueKey}>
         <Subtitle1 align="center" style={{ marginLeft: '30%' }}>Declarative chart from fluent</Subtitle1>
