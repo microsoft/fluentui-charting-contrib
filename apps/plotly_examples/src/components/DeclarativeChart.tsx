@@ -41,7 +41,8 @@ type DataType =
   | 'largeData'
   | 'localization'
   | 'seval'
-  | 'plotly_express';
+  | 'plotly_express_basic'
+  | 'plotly_express_detailed'
 
 const dataTypeRanges = {
   'general': [{ min: 1, max: 252 }],
@@ -49,7 +50,7 @@ const dataTypeRanges = {
   'localization': [{ min: 278, max: 302 }],
   'seval': [{ min: 333, max: 376 }],
   'plotly_express_basic': [{ min: 377, max: 427 }],
-  'plotly_express_detailed': [{ min: 428, max: 541 }]
+  'plotly_express_detailed': [{ min: 428, max: 564 }],
 };
 
 // Use require.context to load all JSON files from the split_data folder
@@ -115,15 +116,6 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     saveLink.click();
     document.body.removeChild(saveLink);
   };
-
-  function htmlEncode(str: string): string {
-    if (str !== undefined) {
-      return str.replace(/[\u00A0-\u9999<>\&]/gim, function (i) {
-        return '&#' + i.charCodeAt(0) + ';';
-      });
-    }
-    return '';
-  }
 
   const _handleChartSchemaChanged = (eventData: Schema) => {
     const { selectedLegends } = eventData.plotlySchema;
@@ -232,7 +224,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     const layout_with_theme = { ...layout, plot_bgcolor: bgcolor, paper_bgcolor: bgcolor, font: fontColor };
     const plotlySchema = { data, layout: layout_with_theme, selectedLegends: lastKnownValidLegends };
     const inputSchema: Schema = { plotlySchema };
-    const chartTitle = typeof layout?.title === 'string' ? htmlEncode(layout.title) : htmlEncode(layout?.title?.text) ?? '';
+    const chartTitle = typeof layout?.title === 'string' ? layout.title : layout?.title?.text ?? '';
     return (
       <div key={uniqueKey}>
         <Subtitle1 align="center" style={{ marginLeft: '30%' }}>Declarative chart from fluent</Subtitle1>
