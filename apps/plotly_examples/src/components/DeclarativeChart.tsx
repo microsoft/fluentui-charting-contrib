@@ -33,6 +33,7 @@ type PlotType =
   | 'Sankey'
   | 'Heatmap'
   | 'Histogram'
+  | 'Scatter'
   | 'Others';
 
 type DataType =
@@ -41,14 +42,16 @@ type DataType =
   | 'largeData'
   | 'localization'
   | 'seval'
-  | 'plotly_express';
+  | 'plotly_express_basic'
+  | 'plotly_express_detailed'
 
 const dataTypeRanges = {
   'general': [{ min: 1, max: 252 }],
   'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }],
   'localization': [{ min: 278, max: 302 }],
   'seval': [{ min: 333, max: 376 }],
-  'plotly_express': [{ min: 377, max: 427 }]
+  'plotly_express_basic': [{ min: 377, max: 427 }],
+  'plotly_express_detailed': [{ min: 428, max: 564 }],
 };
 
 // Use require.context to load all JSON files from the split_data folder
@@ -57,7 +60,6 @@ const schemasData = requireContext.keys().map((fileName: string) => ({
   fileName: fileName.replace('./', ''),
   schema: requireContext(fileName),
 }));
-console.log('schemasData', schemasData);
 
 const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
 
@@ -66,10 +68,8 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
   const savedOption = parseInt(savedOptionStr, 10) - 1; // To handle 0 based index
   const savedFileName = `data_${savedOptionStr}.json`;
   const _selectedSchema = schemasData[savedOption]?.schema || {};
-  console.log('savedOption', savedOption);
-  console.log('selectedSchema', _selectedSchema);
+
   const { selectedLegends } = _selectedSchema as any;
-  console.log('selectedLegends', selectedLegends);
   const [selectedChoice, setSelectedChoice] = React.useState<string>(savedFileName);
   const [selectedSchema, setSelectedSchema] = React.useState<any>(_selectedSchema);
   const [selectedLegendsState, setSelectedLegendsState] = React.useState<string>(JSON.stringify(selectedLegends));
@@ -117,15 +117,6 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     saveLink.click();
     document.body.removeChild(saveLink);
   };
-
-  function htmlEncode(str: string): string {
-    if (str !== undefined) {
-      return str.replace(/[\u00A0-\u9999<>\&]/gim, function (i) {
-        return '&#' + i.charCodeAt(0) + ';';
-      });
-    }
-    return '';
-  }
 
   const _handleChartSchemaChanged = (eventData: Schema) => {
     const { selectedLegends } = eventData.plotlySchema;
@@ -234,7 +225,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     const layout_with_theme = { ...layout, plot_bgcolor: bgcolor, paper_bgcolor: bgcolor, font: fontColor };
     const plotlySchema = { data, layout: layout_with_theme, selectedLegends: lastKnownValidLegends };
     const inputSchema: Schema = { plotlySchema };
-    const chartTitle = typeof layout?.title === 'string' ? htmlEncode(layout.title) : htmlEncode(layout?.title?.text) ?? '';
+    const chartTitle = typeof layout?.title === 'string' ? layout.title : layout?.title?.text ?? '';
     return (
       <div key={uniqueKey}>
         <Subtitle1 align="center" style={{ marginLeft: '30%' }}>Declarative chart from fluent</Subtitle1>
@@ -272,6 +263,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             <Option value="Sankey">Sankey</Option>
             <Option value="Heatmap">Heatmap</Option>
             <Option value="Histogram">Histogram</Option>
+            <Option value="Scatter">Scatter</Option>
             <Option value="Others">Others</Option>
           </Dropdown>
           &nbsp;&nbsp;&nbsp;
@@ -287,7 +279,8 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             <Option value='largeData'>largeData</Option>
             <Option value='localization'>localization</Option>
             <Option value='seval'>seval</Option>
-            <Option value='plotly_express'>plotly_express</Option>
+            <Option value='plotly_express_basic'>plotly_express_basic</Option>
+            <Option value='plotly_express_detailed'>plotly_express_detailed</Option>
           </Dropdown>
         </div>
         <br />
