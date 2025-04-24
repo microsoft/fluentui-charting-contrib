@@ -61,7 +61,7 @@ const App: React.FC = () => {
             onChange={handleRTLSwitchChange}
             label={labelRTLMode}
           />
-          &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.23.70</Subtitle2>
+          &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.23.76</Subtitle2>
           <br />
           <Subtitle2>Chart Width:</Subtitle2>&nbsp;&nbsp;
           <Slider

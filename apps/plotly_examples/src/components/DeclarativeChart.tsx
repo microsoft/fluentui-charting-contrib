@@ -33,6 +33,7 @@ type PlotType =
   | 'Sankey'
   | 'Heatmap'
   | 'Histogram'
+  | 'Scatter'
   | 'Others';
 
 type DataType =
@@ -262,6 +263,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             <Option value="Sankey">Sankey</Option>
             <Option value="Heatmap">Heatmap</Option>
             <Option value="Histogram">Histogram</Option>
+            <Option value="Scatter">Scatter</Option>
             <Option value="Others">Others</Option>
           </Dropdown>
           &nbsp;&nbsp;&nbsp;
