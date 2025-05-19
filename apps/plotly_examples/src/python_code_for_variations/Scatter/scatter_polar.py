@@ -5,18 +5,23 @@ import plotly.io as pio
 
 # Sample data
 df = pd.DataFrame({
-    "theta": [0, 45, 90, 135, 180, 225, 270, 315],
-    "r": [1, 2, 3, 4, 5, 4, 3, 2],
-    "category": ["A", "A", "A", "A", "B", "B", "B", "B"]
+    'Category': ['A', 'B', 'C', 'D', 'E'],
+    'Value': [10, 20, 15, 25, 5]
 })
 
-# Create the scatter polar chart
-fig = px.scatter_polar(df, r="r", theta="theta", color="category", symbol="category")
+# Create polar scatter plot
+fig = px.scatter_polar(
+    df,
+    r='Value',
+    theta='Category',
+    symbol='Category',  # Optional: show different symbols
+    title='Scatter Polar Chart with Categorical Data'
+)
 
 # Convert to Plotly JSON
-plotly_json = fig.to_plotly_json()
+#plotly_json = fig.to_plotly_json()
 
 # Optional: Convert JSON object to string
-plotly_json_str = json.dumps(plotly_json, indent=2)
+#plotly_json_str = json.dumps(plotly_json, indent=2)
 
-pio.write_json(fig, "scatter_polar.json")
+pio.write_json(fig, "scatter_polar_categorical.json")
