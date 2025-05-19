@@ -14,6 +14,8 @@ import PlotlyChart from './PlotlyChart';
 import { ErrorBoundary } from './ErrorBoundary';
 import { getSelection, saveSelection } from './utils';
 import aggregatedChartTypes from './aggregated_chart_types.json';
+import type { OutputChartType } from '@fluentui/chart-utilities';
+import { mapFluentChart } from '@fluentui/chart-utilities';
 
 interface IDeclarativeChartProps {
 }
@@ -224,6 +226,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     const fontColor = { "font": { "color": "white" } }
     const layout_with_theme = { ...layout, plot_bgcolor: bgcolor, paper_bgcolor: bgcolor, font: fontColor };
     const plotlySchema = { data, layout: layout_with_theme, selectedLegends: lastKnownValidLegends };
+    const chartType: OutputChartType = mapFluentChart(plotlySchema);
     const inputSchema: Schema = { plotlySchema };
     const chartTitle = typeof layout?.title === 'string' ? layout.title : layout?.title?.text ?? '';
     return (
@@ -301,11 +304,15 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             <Divider />
             <br />
             <br />
-            <DeclarativeChart
-              chartSchema={inputSchema}
-              onSchemaChange={_handleChartSchemaChanged}
-              componentRef={declarativeChartRef}
-            />
+            {chartType.isValid ? (
+              <DeclarativeChart
+                chartSchema={inputSchema}
+                onSchemaChange={_handleChartSchemaChanged}
+                componentRef={declarativeChartRef}
+              />
+            ) : (
+              <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px'}}>{ `${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
+            )}
           </ErrorBoundary>
         </div>
         <br />
