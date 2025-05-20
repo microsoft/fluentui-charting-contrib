@@ -1,0 +1,178 @@
+{
+  "data": [
+    {
+      "hovertemplate": "Quarter=2023Q1<br>Sales Volume=%{x}<br>Region=%{y}<extra></extra>",
+      "legendgroup": "2023Q1",
+      "marker": {
+        "color": "#A0522D",
+        "pattern": {
+          "shape": ""
+        },
+        "line": {
+          "color": "rgb(77, 54, 38)",
+          "width": 1.5
+        }
+      },
+      "name": "2023Q1",
+      "orientation": "h",
+      "showlegend": true,
+      "textposition": "auto",
+      "x": {
+        "dtype": "i4",
+        "bdata": "yioAAIAwAAAiLAAAXS4AAMUpAAA="
+      },
+      "xaxis": "x",
+      "y": [
+        "Asia-Pacific",
+        "Europe",
+        "Middle East & Africa",
+        "North America",
+        "South America"
+      ],
+      "yaxis": "y",
+      "type": "bar"
+    },
+    {
+      "hovertemplate": "Quarter=2023Q2<br>Sales Volume=%{x}<br>Region=%{y}<extra></extra>",
+      "legendgroup": "2023Q2",
+      "marker": {
+        "color": "#CD853F",
+        "pattern": {
+          "shape": ""
+        },
+        "line": {
+          "color": "rgb(77, 54, 38)",
+          "width": 1.5
+        }
+      },
+      "name": "2023Q2",
+      "orientation": "h",
+      "showlegend": true,
+      "textposition": "auto",
+      "x": {
+        "dtype": "i4",
+        "bdata": "IisAAPEkAAAbLQAA7isAANIfAAA="
+      },
+      "xaxis": "x",
+      "y": [
+        "Asia-Pacific",
+        "Europe",
+        "Middle East & Africa",
+        "North America",
+        "South America"
+      ],
+      "yaxis": "y",
+      "type": "bar"
+    },
+    {
+      "hovertemplate": "Quarter=2023Q3<br>Sales Volume=%{x}<br>Region=%{y}<extra></extra>",
+      "legendgroup": "2023Q3",
+      "marker": {
+        "color": "#D2B48C",
+        "pattern": {
+          "shape": ""
+        },
+        "line": {
+          "color": "rgb(77, 54, 38)",
+          "width": 1.5
+        }
+      },
+      "name": "2023Q3",
+      "orientation": "h",
+      "showlegend": true,
+      "textposition": "auto",
+      "x": {
+        "dtype": "i4",
+        "bdata": "NCsAALAlAAAeIwAApioAAPcqAAA="
+      },
+      "xaxis": "x",
+      "y": [
+        "Asia-Pacific",
+        "Europe",
+        "Middle East & Africa",
+        "North America",
+        "South America"
+      ],
+      "yaxis": "y",
+      "type": "bar"
+    },
+    {
+      "hovertemplate": "Quarter=2023Q4<br>Sales Volume=%{x}<br>Region=%{y}<extra></extra>",
+      "legendgroup": "2023Q4",
+      "marker": {
+        "color": "#556B2F",
+        "pattern": {
+          "shape": ""
+        },
+        "line": {
+          "color": "rgb(77, 54, 38)",
+          "width": 1.5
+        }
+      },
+      "name": "2023Q4",
+      "orientation": "h",
+      "showlegend": true,
+      "textposition": "auto",
+      "x": {
+        "dtype": "i4",
+        "bdata": "OSQAAKAsAAAiJwAAKCoAALMoAAA="
+      },
+      "xaxis": "x",
+      "y": [
+        "Asia-Pacific",
+        "Europe",
+        "Middle East & Africa",
+        "North America",
+        "South America"
+      ],
+      "yaxis": "y",
+      "type": "bar"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "scatter": [
+          {
+            "type": "scatter"
+          }
+        ]
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "title": {
+        "text": "Total Sales Volume"
+      }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "title": {
+        "text": "Region"
+      }
+    },
+    "legend": {
+      "title": {
+        "text": "Quarter"
+      },
+      "tracegroupgap": 0
+    },
+    "margin": {
+      "t": 60
+    },
+    "barmode": "relative",
+    "title": {
+      "text": "Automobile Sales Performance by Region and Quarter"
+    },
+    "bargap": 0.2
+  },
+  "id": "622"
+}

@@ -1,0 +1,1423 @@
+{
+  "data": [
+    {
+      "hovertemplate": "Maintenance Status=Completed<br>Ship Type=Destroyer<br>Week=%{x}<br>Percent of Ships=%{y}<extra></extra>",
+      "legendgroup": "Completed",
+      "marker": {
+        "color": "#DEB887",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Completed",
+      "orientation": "v",
+      "showlegend": true,
+      "textposition": "auto",
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "xaxis": "x",
+      "y": {
+        "dtype": "f8",
+        "bdata": "AAAAAACAWECamZmZmflUQJqZmZmZmVNAZmZmZmZmTkAAAAAAAGBYQDMzMzMz01BAZmZmZmYmTkAAAAAAACBVQAAAAAAAwFhAmpmZmZnZVkDNzMzMzOxUQM3MzMzMzFVA"
+      },
+      "yaxis": "y",
+      "type": "bar"
+    },
+    {
+      "hovertemplate": "Maintenance Status=In Progress<br>Ship Type=Destroyer<br>Week=%{x}<br>Percent of Ships=%{y}<extra></extra>",
+      "legendgroup": "In Progress",
+      "marker": {
+        "color": "#FFE4B5",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "In Progress",
+      "orientation": "v",
+      "showlegend": true,
+      "textposition": "auto",
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "xaxis": "x",
+      "y": {
+        "dtype": "f8",
+        "bdata": "ZmZmZmZm9j/NzMzMzMwcQM3MzMzMzBxAAAAAAAAAQ0AAAAAAAAAAAM3MzMzMzCNAzczMzMzM7D+amZmZmZkBQJqZmZmZmck/MzMzMzMz+z+amZmZmZnpPzMzMzMzMxdA"
+      },
+      "yaxis": "y",
+      "type": "bar"
+    },
+    {
+      "hovertemplate": "Maintenance Status=Not Started<br>Ship Type=Destroyer<br>Week=%{x}<br>Percent of Ships=%{y}<extra></extra>",
+      "legendgroup": "Not Started",
+      "marker": {
+        "color": "#FFDAB9",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Not Started",
+      "orientation": "v",
+      "showlegend": true,
+      "textposition": "auto",
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "xaxis": "x",
+      "y": {
+        "dtype": "f8",
+        "bdata": "AAAAAAAA4D/NzMzMzMwhQM3MzMzMzCxAMzMzMzMz8z8AAAAAAAAEQDMzMzMzszZAZmZmZmZmQ0DNzMzMzMwqQJqZmZmZmek/mpmZmZmZG0AAAAAAAAAvQAAAAAAAABxA"
+      },
+      "yaxis": "y",
+      "type": "bar"
+    },
+    {
+      "hovertemplate": "Maintenance Status=Completed<br>Ship Type=Frigate<br>Week=%{x}<br>Percent of Ships=%{y}<extra></extra>",
+      "legendgroup": "Completed",
+      "marker": {
+        "color": "#DEB887",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Completed",
+      "orientation": "v",
+      "showlegend": false,
+      "textposition": "auto",
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "xaxis": "x2",
+      "y": {
+        "dtype": "f8",
+        "bdata": "AAAAAACAWECamZmZmdlSQJqZmZmZ2VVAMzMzMzPzU0BmZmZmZuZSQAAAAAAAIFJAzczMzMysVEAAAAAAAMBWQGZmZmZmRlhAMzMzMzPzUEAAAAAAAOBSQAAAAAAA4FRA"
+      },
+      "yaxis": "y2",
+      "type": "bar"
+    },
+    {
+      "hovertemplate": "Maintenance Status=In Progress<br>Ship Type=Frigate<br>Week=%{x}<br>Percent of Ships=%{y}<extra></extra>",
+      "legendgroup": "In Progress",
+      "marker": {
+        "color": "#FFE4B5",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "In Progress",
+      "orientation": "v",
+      "showlegend": false,
+      "textposition": "auto",
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "xaxis": "x2",
+      "y": {
+        "dtype": "f8",
+        "bdata": "AAAAAAAAAECamZmZmZnZP2ZmZmZmZhZAZmZmZmZm5j+amZmZmZkRQJqZmZmZmSxAAAAAAAAA4D8AAAAAAAAhQM3MzMzMzABAAAAAAAAA+D9mZmZmZmYaQAAAAAAAADBA"
+      },
+      "yaxis": "y2",
+      "type": "bar"
+    },
+    {
+      "hovertemplate": "Maintenance Status=Not Started<br>Ship Type=Frigate<br>Week=%{x}<br>Percent of Ships=%{y}<extra></extra>",
+      "legendgroup": "Not Started",
+      "marker": {
+        "color": "#FFDAB9",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Not Started",
+      "orientation": "v",
+      "showlegend": false,
+      "textposition": "auto",
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "xaxis": "x2",
+      "y": {
+        "dtype": "f8",
+        "bdata": "mpmZmZmZuT8zMzMzMzM4QGZmZmZmZhxAAAAAAACAM0BmZmZmZuYzQGZmZmZmZipAzczMzMzMMEAAAAAAAADgP5qZmZmZmek/MzMzMzOzPkDNzMzMzMwxQDMzMzMzM+M/"
+      },
+      "yaxis": "y2",
+      "type": "bar"
+    },
+    {
+      "hovertemplate": "Maintenance Status=Completed<br>Ship Type=Submarine<br>Week=%{x}<br>Percent of Ships=%{y}<extra></extra>",
+      "legendgroup": "Completed",
+      "marker": {
+        "color": "#DEB887",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Completed",
+      "orientation": "v",
+      "showlegend": false,
+      "textposition": "auto",
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "xaxis": "x3",
+      "y": {
+        "dtype": "f8",
+        "bdata": "zczMzMxsVEAAAAAAAIBPQJqZmZmZ+VBAAAAAAAAAUUCamZmZmblWQGZmZmZmJlBAzczMzMxMUkAAAAAAAEBSQAAAAAAA4FdAmpmZmZm5WEAAAAAAAKBUQJqZmZmZOVRA"
+      },
+      "yaxis": "y3",
+      "type": "bar"
+    },
+    {
+      "hovertemplate": "Maintenance Status=In Progress<br>Ship Type=Submarine<br>Week=%{x}<br>Percent of Ships=%{y}<extra></extra>",
+      "legendgroup": "In Progress",
+      "marker": {
+        "color": "#FFE4B5",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "In Progress",
+      "orientation": "v",
+      "showlegend": false,
+      "textposition": "auto",
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "xaxis": "x3",
+      "y": {
+        "dtype": "f8",
+        "bdata": "zczMzMzMBEAAAAAAAEBCQJqZmZmZmck/zczMzMzMNkBmZmZmZmbmPwAAAAAAgD5AMzMzMzMz+z8zMzMzM7MzQM3MzMzMzABAAAAAAAAA8D8AAAAAAAArQGZmZmZmZiBA"
+      },
+      "yaxis": "y3",
+      "type": "bar"
+    },
+    {
+      "hovertemplate": "Maintenance Status=Not Started<br>Ship Type=Submarine<br>Week=%{x}<br>Percent of Ships=%{y}<extra></extra>",
+      "legendgroup": "Not Started",
+      "marker": {
+        "color": "#FFDAB9",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Not Started",
+      "orientation": "v",
+      "showlegend": false,
+      "textposition": "auto",
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "xaxis": "x3",
+      "y": {
+        "dtype": "f8",
+        "bdata": "ZmZmZmZmL0AAAAAAAADgP2ZmZmZm5j9AmpmZmZmZIkAAAAAAAAAhQDMzMzMzMxNAmpmZmZkZOUAzMzMzMzMdQDMzMzMzMwNAmpmZmZmZyT8AAAAAAAAQQM3MzMzMzCVA"
+      },
+      "yaxis": "y3",
+      "type": "bar"
+    },
+    {
+      "hovertemplate": "Maintenance Status=Completed<br>Ship Type=Carrier<br>Week=%{x}<br>Percent of Ships=%{y}<extra></extra>",
+      "legendgroup": "Completed",
+      "marker": {
+        "color": "#DEB887",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Completed",
+      "orientation": "v",
+      "showlegend": false,
+      "textposition": "auto",
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "xaxis": "x4",
+      "y": {
+        "dtype": "f8",
+        "bdata": "ZmZmZmZmU0BmZmZmZiZSQGZmZmZmZlBAZmZmZmYGUUAzMzMzM/NVQDMzMzMzE1dAMzMzMzOTU0DNzMzMzOxXQJqZmZmZOVBAmpmZmZkZUEAAAAAAAABOQGZmZmZmJk5A"
+      },
+      "yaxis": "y4",
+      "type": "bar"
+    },
+    {
+      "hovertemplate": "Maintenance Status=In Progress<br>Ship Type=Carrier<br>Week=%{x}<br>Percent of Ships=%{y}<extra></extra>",
+      "legendgroup": "In Progress",
+      "marker": {
+        "color": "#FFE4B5",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "In Progress",
+      "orientation": "v",
+      "showlegend": false,
+      "textposition": "auto",
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "xaxis": "x4",
+      "y": {
+        "dtype": "f8",
+        "bdata": "AAAAAAAAEkDNzMzMzMwrQM3MzMzMzDRAmpmZmZkZPkBmZmZmZmYlQJqZmZmZmRNAzczMzMzMEkBmZmZmZmYCQAAAAAAAAClAMzMzMzMzIEAzMzMzMzMsQM3MzMzMTDRA"
+      },
+      "yaxis": "y4",
+      "type": "bar"
+    },
+    {
+      "hovertemplate": "Maintenance Status=Not Started<br>Ship Type=Carrier<br>Week=%{x}<br>Percent of Ships=%{y}<extra></extra>",
+      "legendgroup": "Not Started",
+      "marker": {
+        "color": "#FFDAB9",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Not Started",
+      "orientation": "v",
+      "showlegend": false,
+      "textposition": "auto",
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "xaxis": "x4",
+      "y": {
+        "dtype": "f8",
+        "bdata": "ZmZmZmbmMUAAAAAAAAArQDMzMzMzMytAzczMzMzM/D8AAAAAAAD4P2ZmZmZmZgZAAAAAAAAAMUAAAAAAAAAAQJqZmZmZmTZAAAAAAACAO0BmZmZmZuY5QGZmZmZmZjNA"
+      },
+      "yaxis": "y4",
+      "type": "bar"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "histogram2dcontour": [
+          {
+            "type": "histogram2dcontour",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "choropleth": [
+          {
+            "type": "choropleth",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "histogram2d": [
+          {
+            "type": "histogram2d",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "heatmap": [
+          {
+            "type": "heatmap",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "contourcarpet": [
+          {
+            "type": "contourcarpet",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "contour": [
+          {
+            "type": "contour",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "surface": [
+          {
+            "type": "surface",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "mesh3d": [
+          {
+            "type": "mesh3d",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "scatter": [
+          {
+            "fillpattern": {
+              "fillmode": "overlay",
+              "size": 10,
+              "solidity": 0.2
+            },
+            "type": "scatter"
+          }
+        ],
+        "parcoords": [
+          {
+            "type": "parcoords",
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterpolargl": [
+          {
+            "type": "scatterpolargl",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "bar": [
+          {
+            "error_x": {
+              "color": "#2a3f5f"
+            },
+            "error_y": {
+              "color": "#2a3f5f"
+            },
+            "marker": {
+              "line": {
+                "color": "#E5ECF6",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "bar"
+          }
+        ],
+        "scattergeo": [
+          {
+            "type": "scattergeo",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterpolar": [
+          {
+            "type": "scatterpolar",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "histogram": [
+          {
+            "marker": {
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "histogram"
+          }
+        ],
+        "scattergl": [
+          {
+            "type": "scattergl",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatter3d": [
+          {
+            "type": "scatter3d",
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattermap": [
+          {
+            "type": "scattermap",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattermapbox": [
+          {
+            "type": "scattermapbox",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterternary": [
+          {
+            "type": "scatterternary",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattercarpet": [
+          {
+            "type": "scattercarpet",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "carpet": [
+          {
+            "aaxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "minorgridcolor": "white",
+              "startlinecolor": "#2a3f5f"
+            },
+            "baxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "minorgridcolor": "white",
+              "startlinecolor": "#2a3f5f"
+            },
+            "type": "carpet"
+          }
+        ],
+        "table": [
+          {
+            "cells": {
+              "fill": {
+                "color": "#EBF0F8"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "header": {
+              "fill": {
+                "color": "#C8D4E3"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "type": "table"
+          }
+        ],
+        "barpolar": [
+          {
+            "marker": {
+              "line": {
+                "color": "#E5ECF6",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "barpolar"
+          }
+        ],
+        "pie": [
+          {
+            "automargin": true,
+            "type": "pie"
+          }
+        ]
+      },
+      "layout": {
+        "autotypenumbers": "strict",
+        "colorway": [
+          "#636efa",
+          "#EF553B",
+          "#00cc96",
+          "#ab63fa",
+          "#FFA15A",
+          "#19d3f3",
+          "#FF6692",
+          "#B6E880",
+          "#FF97FF",
+          "#FECB52"
+        ],
+        "font": {
+          "color": "#2a3f5f"
+        },
+        "hovermode": "closest",
+        "hoverlabel": {
+          "align": "left"
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "#E5ECF6",
+        "polar": {
+          "bgcolor": "#E5ECF6",
+          "angularaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "radialaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          }
+        },
+        "ternary": {
+          "bgcolor": "#E5ECF6",
+          "aaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "baxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "caxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          }
+        },
+        "coloraxis": {
+          "colorbar": {
+            "outlinewidth": 0,
+            "ticks": ""
+          }
+        },
+        "colorscale": {
+          "sequential": [
+            [
+              0.0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1.0,
+              "#f0f921"
+            ]
+          ],
+          "sequentialminus": [
+            [
+              0.0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1.0,
+              "#f0f921"
+            ]
+          ],
+          "diverging": [
+            [
+              0,
+              "#8e0152"
+            ],
+            [
+              0.1,
+              "#c51b7d"
+            ],
+            [
+              0.2,
+              "#de77ae"
+            ],
+            [
+              0.3,
+              "#f1b6da"
+            ],
+            [
+              0.4,
+              "#fde0ef"
+            ],
+            [
+              0.5,
+              "#f7f7f7"
+            ],
+            [
+              0.6,
+              "#e6f5d0"
+            ],
+            [
+              0.7,
+              "#b8e186"
+            ],
+            [
+              0.8,
+              "#7fbc41"
+            ],
+            [
+              0.9,
+              "#4d9221"
+            ],
+            [
+              1,
+              "#276419"
+            ]
+          ]
+        },
+        "xaxis": {
+          "gridcolor": "white",
+          "linecolor": "white",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "white",
+          "automargin": true,
+          "zerolinewidth": 2
+        },
+        "yaxis": {
+          "gridcolor": "white",
+          "linecolor": "white",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "white",
+          "automargin": true,
+          "zerolinewidth": 2
+        },
+        "scene": {
+          "xaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          },
+          "yaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          },
+          "zaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          }
+        },
+        "shapedefaults": {
+          "line": {
+            "color": "#2a3f5f"
+          }
+        },
+        "annotationdefaults": {
+          "arrowcolor": "#2a3f5f",
+          "arrowhead": 0,
+          "arrowwidth": 1
+        },
+        "geo": {
+          "bgcolor": "white",
+          "landcolor": "#E5ECF6",
+          "subunitcolor": "white",
+          "showland": true,
+          "showlakes": true,
+          "lakecolor": "white"
+        },
+        "title": {
+          "x": 0.05
+        },
+        "mapbox": {
+          "style": "light"
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        0.235
+      ],
+      "title": {
+        "text": "Week"
+      },
+      "categoryorder": "array",
+      "categoryarray": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "showgrid": false
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "title": {
+        "text": "Percent of Ships"
+      },
+      "showgrid": true,
+      "gridcolor": "#E3B778"
+    },
+    "xaxis2": {
+      "anchor": "y2",
+      "domain": [
+        0.255,
+        0.49
+      ],
+      "matches": "x",
+      "title": {
+        "text": "Week"
+      },
+      "categoryorder": "array",
+      "categoryarray": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "showgrid": false
+    },
+    "yaxis2": {
+      "anchor": "x2",
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": false,
+      "showgrid": true,
+      "gridcolor": "#E3B778"
+    },
+    "xaxis3": {
+      "anchor": "y3",
+      "domain": [
+        0.51,
+        0.745
+      ],
+      "matches": "x",
+      "title": {
+        "text": "Week"
+      },
+      "categoryorder": "array",
+      "categoryarray": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "showgrid": false
+    },
+    "yaxis3": {
+      "anchor": "x3",
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": false,
+      "showgrid": true,
+      "gridcolor": "#E3B778"
+    },
+    "xaxis4": {
+      "anchor": "y4",
+      "domain": [
+        0.7649999999999999,
+        0.9999999999999999
+      ],
+      "matches": "x",
+      "title": {
+        "text": "Week"
+      },
+      "categoryorder": "array",
+      "categoryarray": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12"
+      ],
+      "showgrid": false
+    },
+    "yaxis4": {
+      "anchor": "x4",
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": false,
+      "showgrid": true,
+      "gridcolor": "#E3B778"
+    },
+    "annotations": [
+      {
+        "font": {},
+        "showarrow": false,
+        "text": "Ship Type=Destroyer",
+        "x": 0.1175,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.0,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {},
+        "showarrow": false,
+        "text": "Ship Type=Frigate",
+        "x": 0.3725,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.0,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {},
+        "showarrow": false,
+        "text": "Ship Type=Submarine",
+        "x": 0.6275,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.0,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {},
+        "showarrow": false,
+        "text": "Ship Type=Carrier",
+        "x": 0.8824999999999998,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.0,
+        "yanchor": "bottom",
+        "yref": "paper"
+      }
+    ],
+    "legend": {
+      "title": {
+        "text": "Maintenance Status"
+      },
+      "tracegroupgap": 0
+    },
+    "title": {
+      "text": "Fleet Maintenance Status in North Atlantic (by Ship Type, Weekly)"
+    },
+    "barmode": "stack",
+    "font": {
+      "color": "#6B4F27"
+    },
+    "margin": {
+      "t": 60,
+      "l": 40,
+      "r": 40,
+      "b": 60
+    },
+    "plot_bgcolor": "#FFF8E1",
+    "paper_bgcolor": "#FFF8E1",
+    "bargap": 0.25
+  },
+  "id": "667"
+}
