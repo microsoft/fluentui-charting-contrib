@@ -2,7 +2,7 @@ import json
 import os
 import random
 import glob
-from azure.identity import InteractiveBrowserCredential, get_bearer_token_provider
+from azure.identity import DefaultAzureCredential, InteractiveBrowserCredential, get_bearer_token_provider
 from openai import AzureOpenAI
 
 class FileManager:
@@ -24,17 +24,17 @@ class LLMClient:
 
     def __init__(self, token_provider):
         endpoint = "<>"
-        deployment = "<>"
+        self.deployment = "<>"
         self.client = AzureOpenAI(
             azure_endpoint=endpoint,
             azure_ad_token_provider=token_provider,
-            api_version="2024-08-01-preview",
+            api_version="2025-01-01-preview",
         )
 
     def call_llm(self, messages, response_format):
         """Generic method to call the Azure OpenAI API."""
         completion = self.client.chat.completions.create(
-            model="gpt4o",
+            model=self.deployment,
             messages=messages,
             response_format=response_format
         )
@@ -58,7 +58,7 @@ class LLMClient:
                 }
             ]
         response_format={ "type": "json_object" }
-        text_output = call_llm(messages, response_format)
+        text_output = self.call_llm(messages, response_format)
         
         print(text_output)
 
@@ -180,7 +180,10 @@ class LLMClient:
         
         return id, True
 
-    def call_llm_python_code(self, scenario: str, id: int):
+    def call_llm_python_code(self, scenario: str, id: int, prompt: str = "", theme: str = "", number_of_charts: int = 3):
+        default_prompt = "Represent the visualization as {number_of_charts} different suitable chart types using Plotly Express. Choose the chart types that best fit the data and scenario."
+        if prompt == "":
+            prompt = default_prompt
         messages = [
             {
                 "role": "system",
@@ -189,10 +192,10 @@ class LLMClient:
             {
                 "role": "user",
                 "content": f"""Create Python code using Plotly Express to generate visualizations for the following scenario. 
-                    Use realistic data to show in the chart. Represent the visualization as 3 different suitable chart types using Plotly Express.
-                    Choose the chart types that best fit the data and scenario.
+                    Use realistic data to show in the chart.
+                    {prompt}
                     The Python code should generate the Plotly JSON chart schemas for each visualization.
-                    Output the result as Python code that, when executed, will generate and save the JSON schemas for the charts to a file. Do not include any other text or explanation.
+                    Output the result as Python code that, when executed, will generate and save the JSON schemas for the charts to a file. Do not include any other text or explanation. The python code should strictly adhere to {number_of_charts} nuumber of charts.
                     Input scenario: {scenario}"""
             }
         ]
@@ -203,8 +206,8 @@ class LLMClient:
         output_dir = 'generated_python_code/code_blocks'
         os.makedirs(output_dir, exist_ok=True)
 
-        output_file_path = os.path.join(output_dir, f'plotly_code_{id}_{industry}.py')
-        with open(output_file_path, 'w') as file:
+        output_file_path = os.path.join(output_dir, f'plotly_code_{id}_{industry}_{theme}.py')
+        with open(output_file_path, 'w', encoding="utf-8") as file:
             file.write(python_code_output)
             id = id + 1
         
@@ -345,6 +348,36 @@ Provide detailed explanation of each scenario in 10 lines in the description sec
             for scenario_data in json_data.get('scenarios', []):
                 print(f"Industry: {scenario_data['industry']}, Scenario: {scenario_data['scenario_name']}")
                 id = self.llm_client.call_llm_python_code(json.dumps(scenario_data), id)
+                
+    def generate_visualization_python_code_colors(self):
+        if not os.path.exists(self.scenario_dir):
+            print("Populate the detailed scenarios first by calling generate_visualization_scenarios()")
+            return
+        color_themes = ['dark', 'muted', 'monochrome', 'vintage', 'modern',  'subtle', 'tropical', 'arctic', 'classic', 'midnight', 'neon', 'natural', 'sunset', 'bold', 'woodland', 'gradient', 'earth tones', 'warm', 'urban', 'metallic', 'light', 'desert', 'pastel', 'cool', 'oceanic', 'twilight', 'vibrant', 'dusk', 'colorful']
+        id = 737
+        chart = "Donut"
+        prompt = f"Represent the visualization as {chart} chart providing color to each segment."
+        for file_name in os.listdir(self.scenario_dir):
+            file_path = os.path.join(self.scenario_dir, file_name)
+            print(f"Processing file: {file_name}")
+            try:
+                json_data = FileManager.read_json_file(file_path)
+                # Ensure json_data is a dictionary
+                if isinstance(json_data, str):
+                    json_data = json.loads(json_data)
+            except (json.JSONDecodeError, TypeError) as e:
+                print(f"Error reading or parsing JSON file {file_name}: {e}")
+                continue
+            # select a subset of theme colors of size 2
+            random.shuffle(color_themes)
+            color_themes = color_themes[:2]
+            for theme in color_themes:
+                print(f"Using theme: {theme}")
+                prompt += f"Use {theme} color theme for the charts."
+                for scenario_data in json_data.get('scenarios', []):
+                    print(f"Industry: {scenario_data['industry']}, Scenario: {scenario_data['scenario_name']}, Theme: {theme}")
+                    id = self.llm_client.call_llm_python_code(json.dumps(scenario_data), id, prompt, theme, 1)
+                    break
 
     def generate_detailed_visualization_schemas(self):
         print('Generating detailed schemas')
@@ -463,12 +496,16 @@ For example: {{"chart_type": "Area"}}"""
 
 # Main Execution
 if __name__ == "__main__":
-    token_provider = get_bearer_token_provider(InteractiveBrowserCredential(), "https://cognitiveservices.azure.com/.default")
+    token_provider = get_bearer_token_provider(  
+        DefaultAzureCredential(),  
+        "https://cognitiveservices.azure.com/.default"  
+    )      
     scenario_dir = 'detailed_scenarios'
 
     # Generate visualizations
     visualization_generator = VisualizationGenerator(scenario_dir, token_provider)
-    visualization_generator.generate_visualization_codes()
+    # visualization_generator.generate_visualization_codes()
+    visualization_generator.generate_visualization_python_code_colors()
 
     # Generate chart types from images
     # chart_type_generator = ChartTypeGenerator(token_provider)
