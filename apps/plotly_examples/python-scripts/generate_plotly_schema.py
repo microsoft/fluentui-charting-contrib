@@ -504,6 +504,7 @@ if __name__ == "__main__":
 
     # Generate visualizations
     visualization_generator = VisualizationGenerator(scenario_dir, token_provider)
+    # visualization_generator.generate_visualization_codes()
     visualization_generator.generate_visualization_python_code_colors()
 
     # Generate chart types from images
