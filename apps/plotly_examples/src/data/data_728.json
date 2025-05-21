@@ -1,0 +1,1583 @@
+{
+  "data": [
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Carrier<br>region=Atlantic<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Carrier",
+      "marker": {
+        "color": "#4a90e2",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Carrier",
+      "offsetgroup": "Carrier",
+      "orientation": "v",
+      "showlegend": true,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07"
+      ],
+      "xaxis": "x",
+      "y": {
+        "dtype": "i4",
+        "bdata": "BQAAAAYAAAAEAAAAAQAAAAEAAAABAAAAAAAAAA=="
+      },
+      "yaxis": "y",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Carrier<br>region=Indian<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Carrier",
+      "marker": {
+        "color": "#4a90e2",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Carrier",
+      "offsetgroup": "Carrier",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07"
+      ],
+      "xaxis": "x2",
+      "y": {
+        "dtype": "i4",
+        "bdata": "AwAAAAIAAAAFAAAAAwAAAAMAAAACAAAAAQAAAA=="
+      },
+      "yaxis": "y2",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Carrier<br>region=Mediterranean<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Carrier",
+      "marker": {
+        "color": "#4a90e2",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Carrier",
+      "offsetgroup": "Carrier",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07"
+      ],
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i4",
+        "bdata": "BQAAAAUAAAAHAAAAAwAAAAMAAAADAAAAAwAAAA=="
+      },
+      "yaxis": "y3",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Carrier<br>region=Pacific<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Carrier",
+      "marker": {
+        "color": "#4a90e2",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Carrier",
+      "offsetgroup": "Carrier",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07"
+      ],
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i4",
+        "bdata": "BQAAAAcAAAADAAAAAwAAAAEAAAABAAAAAQAAAA=="
+      },
+      "yaxis": "y4",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Corvette<br>region=Atlantic<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Corvette",
+      "marker": {
+        "color": "#50e3c2",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Corvette",
+      "offsetgroup": "Corvette",
+      "orientation": "v",
+      "showlegend": true,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07"
+      ],
+      "xaxis": "x",
+      "y": {
+        "dtype": "i4",
+        "bdata": "CgAAAAcAAAAGAAAABAAAAAIAAAACAAAAAQAAAA=="
+      },
+      "yaxis": "y",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Corvette<br>region=Indian<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Corvette",
+      "marker": {
+        "color": "#50e3c2",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Corvette",
+      "offsetgroup": "Corvette",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07"
+      ],
+      "xaxis": "x2",
+      "y": {
+        "dtype": "i4",
+        "bdata": "CQAAAAQAAAAGAAAABQAAAAQAAAAEAAAAAQAAAA=="
+      },
+      "yaxis": "y2",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Corvette<br>region=Mediterranean<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Corvette",
+      "marker": {
+        "color": "#50e3c2",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Corvette",
+      "offsetgroup": "Corvette",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06"
+      ],
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i4",
+        "bdata": "BQAAAAUAAAAEAAAAAwAAAAMAAAAAAAAA"
+      },
+      "yaxis": "y3",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Corvette<br>region=Pacific<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Corvette",
+      "marker": {
+        "color": "#50e3c2",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Corvette",
+      "offsetgroup": "Corvette",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05"
+      ],
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i4",
+        "bdata": "BgAAAAQAAAAHAAAABAAAAAMAAAA="
+      },
+      "yaxis": "y4",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Destroyer<br>region=Atlantic<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Destroyer",
+      "marker": {
+        "color": "#b8e986",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Destroyer",
+      "offsetgroup": "Destroyer",
+      "orientation": "v",
+      "showlegend": true,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06"
+      ],
+      "xaxis": "x",
+      "y": {
+        "dtype": "i4",
+        "bdata": "BwAAAAMAAAADAAAAAQAAAAEAAAABAAAA"
+      },
+      "yaxis": "y",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Destroyer<br>region=Indian<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Destroyer",
+      "marker": {
+        "color": "#b8e986",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Destroyer",
+      "offsetgroup": "Destroyer",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04"
+      ],
+      "xaxis": "x2",
+      "y": {
+        "dtype": "i4",
+        "bdata": "BgAAAAUAAAAFAAAAAgAAAA=="
+      },
+      "yaxis": "y2",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Destroyer<br>region=Mediterranean<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Destroyer",
+      "marker": {
+        "color": "#b8e986",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Destroyer",
+      "offsetgroup": "Destroyer",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06"
+      ],
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i4",
+        "bdata": "BAAAAAEAAAACAAAAAAAAAAEAAAABAAAA"
+      },
+      "yaxis": "y3",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Destroyer<br>region=Pacific<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Destroyer",
+      "marker": {
+        "color": "#b8e986",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Destroyer",
+      "offsetgroup": "Destroyer",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06"
+      ],
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i4",
+        "bdata": "CAAAAAQAAAAJAAAABAAAAAMAAAABAAAA"
+      },
+      "yaxis": "y4",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Frigate<br>region=Atlantic<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Frigate",
+      "marker": {
+        "color": "#f5a623",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Frigate",
+      "offsetgroup": "Frigate",
+      "orientation": "v",
+      "showlegend": true,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07"
+      ],
+      "xaxis": "x",
+      "y": {
+        "dtype": "i4",
+        "bdata": "BwAAAAoAAAAHAAAAAwAAAAMAAAACAAAAAgAAAA=="
+      },
+      "yaxis": "y",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Frigate<br>region=Indian<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Frigate",
+      "marker": {
+        "color": "#f5a623",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Frigate",
+      "offsetgroup": "Frigate",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06"
+      ],
+      "xaxis": "x2",
+      "y": {
+        "dtype": "i4",
+        "bdata": "CwAAAAwAAAAMAAAACQAAAAUAAAACAAAA"
+      },
+      "yaxis": "y2",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Frigate<br>region=Mediterranean<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Frigate",
+      "marker": {
+        "color": "#f5a623",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Frigate",
+      "offsetgroup": "Frigate",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07"
+      ],
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i4",
+        "bdata": "CAAAAAcAAAAIAAAABAAAAAMAAAABAAAAAgAAAA=="
+      },
+      "yaxis": "y3",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Frigate<br>region=Pacific<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Frigate",
+      "marker": {
+        "color": "#f5a623",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Frigate",
+      "offsetgroup": "Frigate",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07"
+      ],
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i4",
+        "bdata": "AgAAAAUAAAACAAAAAgAAAAIAAAABAAAAAgAAAA=="
+      },
+      "yaxis": "y4",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Submarine<br>region=Atlantic<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Submarine",
+      "marker": {
+        "color": "#d0021b",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Submarine",
+      "offsetgroup": "Submarine",
+      "orientation": "v",
+      "showlegend": true,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05"
+      ],
+      "xaxis": "x",
+      "y": {
+        "dtype": "i4",
+        "bdata": "CQAAAAQAAAAJAAAABQAAAAEAAAA="
+      },
+      "yaxis": "y",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Submarine<br>region=Indian<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Submarine",
+      "marker": {
+        "color": "#d0021b",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Submarine",
+      "offsetgroup": "Submarine",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05"
+      ],
+      "xaxis": "x2",
+      "y": {
+        "dtype": "i4",
+        "bdata": "AQAAAAIAAAABAAAAAQAAAAEAAAA="
+      },
+      "yaxis": "y2",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Submarine<br>region=Mediterranean<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Submarine",
+      "marker": {
+        "color": "#d0021b",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Submarine",
+      "offsetgroup": "Submarine",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06"
+      ],
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i4",
+        "bdata": "BwAAAAYAAAAJAAAABAAAAAIAAAABAAAA"
+      },
+      "yaxis": "y3",
+      "type": "histogram"
+    },
+    {
+      "alignmentgroup": "True",
+      "bingroup": "x",
+      "histfunc": "sum",
+      "hovertemplate": "ship_type=Submarine<br>region=Pacific<br>Month=%{x}<br>sum of Maintenance Completions=%{y}<extra></extra>",
+      "legendgroup": "Submarine",
+      "marker": {
+        "color": "#d0021b",
+        "pattern": {
+          "shape": ""
+        }
+      },
+      "name": "Submarine",
+      "offsetgroup": "Submarine",
+      "orientation": "v",
+      "showlegend": false,
+      "x": [
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07"
+      ],
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i4",
+        "bdata": "CQAAAAMAAAAGAAAAAgAAAAEAAAABAAAAAQAAAA=="
+      },
+      "yaxis": "y4",
+      "type": "histogram"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "barpolar": [
+          {
+            "marker": {
+              "line": {
+                "color": "rgb(17,17,17)",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "barpolar"
+          }
+        ],
+        "bar": [
+          {
+            "error_x": {
+              "color": "#f2f5fa"
+            },
+            "error_y": {
+              "color": "#f2f5fa"
+            },
+            "marker": {
+              "line": {
+                "color": "rgb(17,17,17)",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "bar"
+          }
+        ],
+        "carpet": [
+          {
+            "aaxis": {
+              "endlinecolor": "#A2B1C6",
+              "gridcolor": "#506784",
+              "linecolor": "#506784",
+              "minorgridcolor": "#506784",
+              "startlinecolor": "#A2B1C6"
+            },
+            "baxis": {
+              "endlinecolor": "#A2B1C6",
+              "gridcolor": "#506784",
+              "linecolor": "#506784",
+              "minorgridcolor": "#506784",
+              "startlinecolor": "#A2B1C6"
+            },
+            "type": "carpet"
+          }
+        ],
+        "choropleth": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "type": "choropleth"
+          }
+        ],
+        "contourcarpet": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "type": "contourcarpet"
+          }
+        ],
+        "contour": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ],
+            "type": "contour"
+          }
+        ],
+        "heatmap": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ],
+            "type": "heatmap"
+          }
+        ],
+        "histogram2dcontour": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ],
+            "type": "histogram2dcontour"
+          }
+        ],
+        "histogram2d": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ],
+            "type": "histogram2d"
+          }
+        ],
+        "histogram": [
+          {
+            "marker": {
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "histogram"
+          }
+        ],
+        "mesh3d": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "type": "mesh3d"
+          }
+        ],
+        "parcoords": [
+          {
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "parcoords"
+          }
+        ],
+        "pie": [
+          {
+            "automargin": true,
+            "type": "pie"
+          }
+        ],
+        "scatter3d": [
+          {
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scatter3d"
+          }
+        ],
+        "scattercarpet": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scattercarpet"
+          }
+        ],
+        "scattergeo": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scattergeo"
+          }
+        ],
+        "scattergl": [
+          {
+            "marker": {
+              "line": {
+                "color": "#283442"
+              }
+            },
+            "type": "scattergl"
+          }
+        ],
+        "scattermapbox": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scattermapbox"
+          }
+        ],
+        "scattermap": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scattermap"
+          }
+        ],
+        "scatterpolargl": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scatterpolargl"
+          }
+        ],
+        "scatterpolar": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scatterpolar"
+          }
+        ],
+        "scatter": [
+          {
+            "marker": {
+              "line": {
+                "color": "#283442"
+              }
+            },
+            "type": "scatter"
+          }
+        ],
+        "scatterternary": [
+          {
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "type": "scatterternary"
+          }
+        ],
+        "surface": [
+          {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ],
+            "type": "surface"
+          }
+        ],
+        "table": [
+          {
+            "cells": {
+              "fill": {
+                "color": "#506784"
+              },
+              "line": {
+                "color": "rgb(17,17,17)"
+              }
+            },
+            "header": {
+              "fill": {
+                "color": "#2a3f5f"
+              },
+              "line": {
+                "color": "rgb(17,17,17)"
+              }
+            },
+            "type": "table"
+          }
+        ]
+      },
+      "layout": {
+        "annotationdefaults": {
+          "arrowcolor": "#f2f5fa",
+          "arrowhead": 0,
+          "arrowwidth": 1
+        },
+        "autotypenumbers": "strict",
+        "coloraxis": {
+          "colorbar": {
+            "outlinewidth": 0,
+            "ticks": ""
+          }
+        },
+        "colorscale": {
+          "diverging": [
+            [
+              0,
+              "#8e0152"
+            ],
+            [
+              0.1,
+              "#c51b7d"
+            ],
+            [
+              0.2,
+              "#de77ae"
+            ],
+            [
+              0.3,
+              "#f1b6da"
+            ],
+            [
+              0.4,
+              "#fde0ef"
+            ],
+            [
+              0.5,
+              "#f7f7f7"
+            ],
+            [
+              0.6,
+              "#e6f5d0"
+            ],
+            [
+              0.7,
+              "#b8e186"
+            ],
+            [
+              0.8,
+              "#7fbc41"
+            ],
+            [
+              0.9,
+              "#4d9221"
+            ],
+            [
+              1,
+              "#276419"
+            ]
+          ],
+          "sequential": [
+            [
+              0.0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1.0,
+              "#f0f921"
+            ]
+          ],
+          "sequentialminus": [
+            [
+              0.0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1.0,
+              "#f0f921"
+            ]
+          ]
+        },
+        "colorway": [
+          "#636efa",
+          "#EF553B",
+          "#00cc96",
+          "#ab63fa",
+          "#FFA15A",
+          "#19d3f3",
+          "#FF6692",
+          "#B6E880",
+          "#FF97FF",
+          "#FECB52"
+        ],
+        "font": {
+          "color": "#f2f5fa"
+        },
+        "geo": {
+          "bgcolor": "rgb(17,17,17)",
+          "lakecolor": "rgb(17,17,17)",
+          "landcolor": "rgb(17,17,17)",
+          "showlakes": true,
+          "showland": true,
+          "subunitcolor": "#506784"
+        },
+        "hoverlabel": {
+          "align": "left"
+        },
+        "hovermode": "closest",
+        "mapbox": {
+          "style": "dark"
+        },
+        "paper_bgcolor": "rgb(17,17,17)",
+        "plot_bgcolor": "rgb(17,17,17)",
+        "polar": {
+          "angularaxis": {
+            "gridcolor": "#506784",
+            "linecolor": "#506784",
+            "ticks": ""
+          },
+          "bgcolor": "rgb(17,17,17)",
+          "radialaxis": {
+            "gridcolor": "#506784",
+            "linecolor": "#506784",
+            "ticks": ""
+          }
+        },
+        "scene": {
+          "xaxis": {
+            "backgroundcolor": "rgb(17,17,17)",
+            "gridcolor": "#506784",
+            "gridwidth": 2,
+            "linecolor": "#506784",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "#C8D4E3"
+          },
+          "yaxis": {
+            "backgroundcolor": "rgb(17,17,17)",
+            "gridcolor": "#506784",
+            "gridwidth": 2,
+            "linecolor": "#506784",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "#C8D4E3"
+          },
+          "zaxis": {
+            "backgroundcolor": "rgb(17,17,17)",
+            "gridcolor": "#506784",
+            "gridwidth": 2,
+            "linecolor": "#506784",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "#C8D4E3"
+          }
+        },
+        "shapedefaults": {
+          "line": {
+            "color": "#f2f5fa"
+          }
+        },
+        "sliderdefaults": {
+          "bgcolor": "#C8D4E3",
+          "bordercolor": "rgb(17,17,17)",
+          "borderwidth": 1,
+          "tickwidth": 0
+        },
+        "ternary": {
+          "aaxis": {
+            "gridcolor": "#506784",
+            "linecolor": "#506784",
+            "ticks": ""
+          },
+          "baxis": {
+            "gridcolor": "#506784",
+            "linecolor": "#506784",
+            "ticks": ""
+          },
+          "bgcolor": "rgb(17,17,17)",
+          "caxis": {
+            "gridcolor": "#506784",
+            "linecolor": "#506784",
+            "ticks": ""
+          }
+        },
+        "title": {
+          "x": 0.05
+        },
+        "updatemenudefaults": {
+          "bgcolor": "#506784",
+          "borderwidth": 0
+        },
+        "xaxis": {
+          "automargin": true,
+          "gridcolor": "#283442",
+          "linecolor": "#506784",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "#283442",
+          "zerolinewidth": 2
+        },
+        "yaxis": {
+          "automargin": true,
+          "gridcolor": "#283442",
+          "linecolor": "#506784",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "#283442",
+          "zerolinewidth": 2
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        0.235
+      ],
+      "title": {
+        "text": "Month"
+      }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "title": {
+        "text": "sum of Maintenance Completions"
+      }
+    },
+    "xaxis2": {
+      "anchor": "y2",
+      "domain": [
+        0.255,
+        0.49
+      ],
+      "matches": "x",
+      "title": {
+        "text": "Month"
+      }
+    },
+    "yaxis2": {
+      "anchor": "x2",
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": false
+    },
+    "xaxis3": {
+      "anchor": "y3",
+      "domain": [
+        0.51,
+        0.745
+      ],
+      "matches": "x",
+      "title": {
+        "text": "Month"
+      }
+    },
+    "yaxis3": {
+      "anchor": "x3",
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": false
+    },
+    "xaxis4": {
+      "anchor": "y4",
+      "domain": [
+        0.7649999999999999,
+        0.9999999999999999
+      ],
+      "matches": "x",
+      "title": {
+        "text": "Month"
+      }
+    },
+    "yaxis4": {
+      "anchor": "x4",
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": false
+    },
+    "annotations": [
+      {
+        "font": {},
+        "showarrow": false,
+        "text": "region=Atlantic",
+        "x": 0.1175,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.0,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {},
+        "showarrow": false,
+        "text": "region=Indian",
+        "x": 0.3725,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.0,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {},
+        "showarrow": false,
+        "text": "region=Mediterranean",
+        "x": 0.6275,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.0,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {},
+        "showarrow": false,
+        "text": "region=Pacific",
+        "x": 0.8824999999999998,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.0,
+        "yanchor": "bottom",
+        "yref": "paper"
+      }
+    ],
+    "legend": {
+      "title": {
+        "text": "ship_type",
+        "font": {
+          "color": "#e8f0fb"
+        }
+      },
+      "tracegroupgap": 0
+    },
+    "title": {
+      "text": "Monthly Maintenance Completions by Ship Type and Region",
+      "x": 0.5
+    },
+    "barmode": "group",
+    "font": {
+      "family": "Arial",
+      "color": "#e8f0fb"
+    },
+    "plot_bgcolor": "#132531",
+    "paper_bgcolor": "#132531"
+  },
+  "id": "728"
+}

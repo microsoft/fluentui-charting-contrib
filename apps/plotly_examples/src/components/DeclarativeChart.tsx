@@ -46,6 +46,7 @@ type DataType =
   | 'seval'
   | 'plotly_express_basic'
   | 'plotly_express_detailed'
+  | 'plotly_express_colors';
 
 const dataTypeRanges = {
   'general': [{ min: 1, max: 252 }],
@@ -53,7 +54,8 @@ const dataTypeRanges = {
   'localization': [{ min: 278, max: 302 }],
   'seval': [{ min: 333, max: 376 }],
   'plotly_express_basic': [{ min: 377, max: 427 }],
-  'plotly_express_detailed': [{ min: 428, max: 564 }],
+  'plotly_express_detailed': [{ min: 428, max: 569 }],
+  'plotly_express_colors': [{ min: 570, max: 749 }],
 };
 
 // Use require.context to load all JSON files from the split_data folder
@@ -284,6 +286,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             <Option value='seval'>seval</Option>
             <Option value='plotly_express_basic'>plotly_express_basic</Option>
             <Option value='plotly_express_detailed'>plotly_express_detailed</Option>
+            <Option value='plotly_express_colors'>plotly_express_colors</Option>
           </Dropdown>
         </div>
         <br />
