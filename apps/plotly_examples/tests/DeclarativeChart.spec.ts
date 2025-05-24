@@ -2,7 +2,7 @@ import { test, expect, Locator } from '@playwright/test';
 import * as dotenv from 'dotenv';
 
 const chartsListWithErrors = [];
-var totalChartExamplesCount = 564;
+var totalChartExamplesCount = 749;
 const themes = ["Light", "Dark"];
 const modes = ["LTR", "RTL"];
 test.beforeEach(async ({ page }) => {
