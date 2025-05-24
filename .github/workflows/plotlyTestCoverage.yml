@@ -127,7 +127,7 @@ jobs:
               run: |
                 cd contrib_repo/apps/plotly_examples
                 $total_tests = jq '[.suites[].specs[].tests] | length' playwright-report.json
-                $failures = jq '[.suites[].specs[].tests[] | select(.results[].status == \"failed\")] | length' playwright-report.json
+                $failures = jq '[.suites[].specs[].tests[] | select(.results[].status == "failed")] | length' playwright-report.json
                 echo "Total number of tests: $total_tests"
                 echo "Number of test failures: $failures"
                 echo "### Test Results" >> $GITHUB_STEP_SUMMARY
