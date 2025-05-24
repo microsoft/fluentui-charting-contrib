@@ -130,6 +130,9 @@ jobs:
                 $failures = jq '[.suites[].specs[].tests[] | select(.results[].status == \"failed\")] | length' playwright-report.json
                 echo "Total number of tests: $total_tests"
                 echo "Number of test failures: $failures"
+                echo "### Test Results" >> $GITHUB_STEP_SUMMARY
+                echo "- **Total Tests**: $total_tests" >> $GITHUB_STEP_SUMMARY
+                echo "- **Failures**: $failures" >> $GITHUB_STEP_SUMMARY
               continue-on-error: true         
 
             - name: Upload Playwright HTML report as artifact
