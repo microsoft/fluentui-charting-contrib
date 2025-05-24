@@ -133,6 +133,7 @@ jobs:
                 echo "### Test Results" >> $GITHUB_STEP_SUMMARY
                 echo "- **Total Tests**: $total_tests" >> $GITHUB_STEP_SUMMARY
                 echo "- **Failures**: $failures" >> $GITHUB_STEP_SUMMARY
+
               continue-on-error: true         
 
             - name: Upload Playwright HTML report as artifact
