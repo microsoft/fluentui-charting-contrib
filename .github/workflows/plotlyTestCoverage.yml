@@ -117,6 +117,11 @@ jobs:
                 cd contrib_repo/apps/plotly_examples
                 Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip
 
+            - name: Install jq on Windows
+              run: |
+                curl -L -o jq.exe https://github.com/stedolan/jq/releases/download/jq-1.6/jq-win64.exe
+                move jq.exe C:\Windows\System32
+
             - name: Print number of failures
               run: |
                 cd contrib_repo/apps/plotly_examples
