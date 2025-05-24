@@ -1,7 +1,8 @@
 name: "Plotly Test coverage"
 on:
   schedule:
-    - cron: "30 8 * * *"  # Runs every day at 2:00 PM IST (08:30 AM UTC)
+    - cron: "30 2 * * *"  # Runs every day at 8:00 AM IST (02:30 AM UTC)
+    - cron: "30 10 * * *" # Runs every day at 4:00 PM IST (10:30 AM UTC)
   workflow_dispatch:
     inputs:
       repo:
@@ -50,29 +51,53 @@ jobs:
             - name: Install packages
               run: | 
                 cd ./repo1
-                yarn install
+                yarn
 
             - name: Build
               run: |
-                cd ./repo1/packages/charts/react-charting
+                cd ./repo1
                 yarn nx run react-charting:build
 
-            - name: Run yarn pack to create .tgz file
+            - name: Run yarn pack in chart-utilities to create .tgz file
+              run: |
+                cd ./repo1/packages/charts/chart-utilities
+                yarn pack --filename chart-utilities.tgz
+              id: pack-util
+
+            - name: Run yarn pack in react-charting to create .tgz file
               run: |
                 cd ./repo1/packages/charts/react-charting
                 yarn pack --filename react-charting.tgz
-              id: pack
+              id: pack-chart-v8
+
+            - name: Upload chart-utilities.tgz as artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: chart-utilities-tgz
+                path: ./repo1/packages/charts/chart-utilities/chart-utilities.tgz
+
+            - name: Upload react-charting.tgz as artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: react-charting-tgz
+                path: ./repo1/packages/charts/react-charting/react-charting.tgz
 
             - name: Checkout [main] of current repo
               uses: actions/checkout@v4
               with:
                 path: contrib_repo
 
+            - name: Add chart-utils package to resolutions block
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                npx json -I -f package.json -e "this.resolutions = this.resolutions || {}; this.resolutions['chart-utilities'] = 'file:../../../repo1/packages/charts/chart-utilities/chart-utilities.tgz';"
+
+
             - name: Install .tgz file in Plotly examples
               run: |
                 cd contrib_repo/apps/plotly_examples
-                yarn add ../../repo1/packages/charts/react-charting/react-charting.tgz
-                yarn install
+                yarn add ../../../repo1/packages/charts/react-charting/react-charting.tgz
+                yarn
 
             - name: Start test app in background
               run: |
@@ -90,10 +115,24 @@ jobs:
               shell: pwsh 
               run: |
                 cd contrib_repo/apps/plotly_examples
-                Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip              
+                Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip
 
-            - name: Upload Playwright report as artifact
+            - name: Print number of failures
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                total_tests=$(jq '[.suites[].tests[]] | length' playwright-report.json)
+                failures=$(jq '.suites | map(.tests | map(select(.status == "failed")) | length) | add' playwright-report.json)
+                echo "Total number of tests: $total_tests"
+                echo "Number of test failures: $failures"         
+
+            - name: Upload Playwright HTML report as artifact
               uses: actions/upload-artifact@v4
               with: 
-                name: playwright-report
+                name: playwright-html-report
                 path: contrib_repo/apps/plotly_examples/playwright-report/
+
+            - name: Upload Playwright JSON report as artifact
+              uses: actions/upload-artifact@v4
+              with: 
+                name: playwright-json-report
+                path: contrib_repo/apps/plotly_examples/playwright-report.json
