@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "type": "bar",
+      "x": [
+        null,
+        "Q2 2023",
+        "Q3 2023",
+        "Q4 2023"
+      ],
+      "y": [
+        1200,
+        1500,
+        null,
+        2000
+      ],
+      "name": "Product A"
+    },
+    {
+      "type": "bar",
+      "x": [
+        "Q1 2023",
+        "Q2 2023",
+        "Q3 2023",
+        "Q4 2023"
+      ],
+      "y": [
+        500,
+        750,
+        1000
+      ],
+      "name": "Product B"
+    }
+  ],
+  "layout": {
+    "title": "Top Product Sales Across Different Quarters",
+    "barmode": "group",
+    "xaxis": {
+      "title": "Time"
+    },
+    "yaxis": {
+      "title": "Sales"
+    }
+  },
+  "id": 753
+}
