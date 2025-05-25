@@ -37,6 +37,13 @@ jobs:
                 ref: ${{ github.event.inputs.branch || 'master'}}
                 path: repo1
 
+            - name: Display Input Repo and Branch in Summary
+              shell: pwsh
+              run: |
+                echo "### Workflow Inputs" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Repository**: ${{ github.event.inputs.repo }}" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Branch**: ${{ github.event.inputs.branch }}" >> $env:GITHUB_STEP_SUMMARY
+
             - name: Show current directory
               run: echo "$PWD" && ls
 
@@ -130,9 +137,9 @@ jobs:
                 $failures = jq '[.suites[].specs[].tests[] | select(.results[].status == "failed")] | length' playwright-report.json
                 echo "Total number of tests: $total_tests"
                 echo "Number of test failures: $failures"
-                echo "### Test Results" >> $GITHUB_STEP_SUMMARY
-                echo "- **Total Tests**: $total_tests" >> $GITHUB_STEP_SUMMARY
-                echo "- **Failures**: $failures" >> $GITHUB_STEP_SUMMARY
+                echo "### Test Results" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Total Tests**: $total_tests" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Failures**: $failures" >> $env:GITHUB_STEP_SUMMARY
 
               continue-on-error: true         
 
