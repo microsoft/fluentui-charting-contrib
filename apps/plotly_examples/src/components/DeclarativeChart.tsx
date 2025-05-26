@@ -49,8 +49,8 @@ type DataType =
   | 'plotly_express_colors';
 
 const dataTypeRanges = {
-  'general': [{ min: 1, max: 252 }],
-  'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }],
+  'general': [{ min: 1, max: 252 }, {min: 750, max: 758 }],
+  'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }, { min: 759, max: 759 }],
   'localization': [{ min: 278, max: 302 }],
   'seval': [{ min: 333, max: 376 }],
   'plotly_express_basic': [{ min: 377, max: 427 }],
