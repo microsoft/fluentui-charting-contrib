@@ -25,7 +25,7 @@ for (const theme of themes) {
         await page.getByRole('combobox').first().click();
         const listbox = page.getByRole('listbox');
         await listbox.getByRole('option').locator(`text=${theme}`).click();
-        const rtlSwitch = page.getByRole('switch');
+        const rtlSwitch = page.getByTestId('rtl_switch');
         const isCurrentlyRTL = await rtlSwitch.isChecked();
         if ((mode === 'RTL' && !isCurrentlyRTL) || (mode === 'LTR' && isCurrentlyRTL)) {
           await rtlSwitch.click();
