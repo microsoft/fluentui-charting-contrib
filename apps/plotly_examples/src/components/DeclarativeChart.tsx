@@ -16,6 +16,7 @@ import { getSelection, saveSelection } from './utils';
 import aggregatedChartTypes from './aggregated_chart_types.json';
 import type { OutputChartType } from '@fluentui/chart-utilities';
 import { mapFluentChart } from '@fluentui/chart-utilities';
+import { DeclarativeChart as DeclarativeChartV9 } from '@fluentui/react-charts'
 
 interface IDeclarativeChartProps {
 }
@@ -82,6 +83,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
   const [selectedDataTypes, setSelectedDataTypes] = React.useState<DataType[]>(getSelection("DataType_filter", 'All').split(',') as DataType[]);
 
   const declarativeChartRef = React.useRef<IDeclarativeChart>(null);
+  const declarativeChartV9Ref = React.useRef<IDeclarativeChart>(null);
   let lastKnownValidLegends: string[] | undefined = selectedLegends;
 
   React.useEffect(() => {
@@ -301,6 +303,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
         >
           Download as Image
         </button>
+
         <div data-testid="chart-container" >
           <br />
           <br />
@@ -336,6 +339,26 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
           <br />
           <ErrorBoundary>
             <PlotlyChart schema={plotlySchema} />
+          </ErrorBoundary>
+        </div>
+        <Subtitle2>Charts v9</Subtitle2>
+        <div data-testid="chart-container-v9" >
+          <br />
+          <br />
+          <ErrorBoundary>
+            <Subtitle2>{chartTitle}</Subtitle2>
+            <Divider />
+            <br />
+            <br />
+            {chartType.isValid ? (
+              <DeclarativeChartV9
+                chartSchema={inputSchema}
+                onSchemaChange={_handleChartSchemaChanged}
+                componentRef={declarativeChartRef}
+              />
+            ) : (
+              <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px'}}>{ `${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
+            )}
           </ErrorBoundary>
         </div>
       </div>
