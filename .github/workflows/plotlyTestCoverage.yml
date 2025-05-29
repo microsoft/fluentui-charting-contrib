@@ -97,7 +97,7 @@ jobs:
             - name: Add chart-utils package to resolutions block
               run: |
                 cd contrib_repo/apps/plotly_examples
-                npx json -I -f package.json -e "this.resolutions = this.resolutions || {}; this.resolutions['chart-utilities'] = 'file:../../../repo1/packages/charts/chart-utilities/chart-utilities.tgz';"
+                npx json -I -f package.json -e "this.resolutions = this.resolutions || {}; this.resolutions['@fluentui/chart-utilities'] = 'file:../../../repo1/packages/charts/chart-utilities/chart-utilities.tgz';"
 
 
             - name: Install .tgz file in Plotly examples
@@ -117,6 +117,7 @@ jobs:
                 cd contrib_repo/apps/plotly_examples
                 npx playwright install
                 npx cross-env BASE_URL='http://localhost:3000/' npx playwright test || true
+              continue-on-error: true
 
             - name: Zip Playwright report
               shell: pwsh 
@@ -141,7 +142,6 @@ jobs:
                 echo "### Test Results" >> $env:GITHUB_STEP_SUMMARY
                 echo "- **Total Tests**: $total_tests" >> $env:GITHUB_STEP_SUMMARY
                 echo "- **Failures**: $failures" >> $env:GITHUB_STEP_SUMMARY
-
               continue-on-error: true         
 
             - name: Upload Playwright HTML report as artifact
