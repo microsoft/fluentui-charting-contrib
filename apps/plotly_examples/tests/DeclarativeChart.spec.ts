@@ -1,10 +1,8 @@
 import { test, expect, Locator } from '@playwright/test';
 import * as dotenv from 'dotenv';
+import { totalChartExamplesCount, chartsListWithErrors, themes, modes } from './constants';
 
-const chartsListWithErrors = [];
-var totalChartExamplesCount = 767;
-const themes = ["Light", "Dark"];
-const modes = ["LTR", "RTL"];
+
 test.beforeEach(async ({ page }) => {
   //Pass base URL as part of playwright command 
   //ex:  npx cross-env BASE_URL='https://fluentchartstest-stage.azurewebsites.net/' npx playwright test

@@ -1,0 +1,156 @@
+name: "Plotly Test coverage"
+on:
+  schedule:
+    - cron: "30 6 * * *"  # Runs every day at 12:00 PM IST (02:30 AM UTC)
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: "Repo to run the tests on"
+        required: true
+        default: "microsoft/fluentui"
+      branch:
+        description: "Branch to run the tests on"
+        required: true
+        default: "master"
+
+permissions:
+    contents: write
+    pages: write
+    id-token: write
+
+jobs:
+    run_tests:
+        strategy:
+          matrix:
+            os: [windows-latest]
+        runs-on: ${{ matrix.os }}
+        outputs:
+            test_coverage: ${{ steps.run_tests.outputs }}
+            windows_artifact_name: ${{ steps.windows.outputs.COVERAGE_FILENAME_WINDOWS }}
+
+        steps:
+            - name: Checkout [react-charting]
+              uses: actions/checkout@v4
+              with:
+                repository: ${{ github.event.inputs.repo || 'microsoft/fluentui'}}
+                ref: ${{ github.event.inputs.branch || 'master'}}
+                path: repo1
+
+            - name: Display Input Repo and Branch in Summary
+              shell: pwsh
+              run: |
+                echo "### Workflow Inputs" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Repository**: ${{ github.event.inputs.repo }}" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Branch**: ${{ github.event.inputs.branch }}" >> $env:GITHUB_STEP_SUMMARY
+
+            - name: Show current directory
+              run: echo "$PWD" && ls
+
+            - name: Show repo1 repository
+              run: ls ./repo1
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                node-version: '20.x'
+
+            - name: Install packages
+              run: | 
+                cd ./repo1
+                yarn
+
+            - name: Build
+              run: |
+                cd ./repo1
+                yarn nx run react-charts:build
+
+            - name: Run yarn pack in chart-utilities to create .tgz file
+              run: |
+                cd ./repo1/packages/charts/chart-utilities
+                yarn pack --filename chart-utilities.tgz
+              id: pack-util
+
+            - name: Run yarn pack in react-charts to create .tgz file
+              run: |
+                cd ./repo1/packages/charts/react-charts
+                yarn pack --filename react-charts.tgz
+              id: pack-chart-v9
+
+            - name: Upload chart-utilities.tgz as artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: chart-utilities-tgz
+                path: ./repo1/packages/charts/chart-utilities/chart-utilities.tgz
+
+            - name: Upload react-charts.tgz as artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: react-charts-tgz
+                path: ./repo1/packages/charts/react-charts/react-charts.tgz
+
+            - name: Checkout [main] of current repo
+              uses: actions/checkout@v4
+              with:
+                path: contrib_repo
+
+            - name: Add chart-utils package to resolutions block
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                npx json -I -f package.json -e "this.resolutions = this.resolutions || {}; this.resolutions['@fluentui/chart-utilities'] = 'file:../../../repo1/packages/charts/chart-utilities/chart-utilities.tgz';"
+
+
+            - name: Install .tgz file in Plotly examples
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                yarn add ../../../repo1/packages/charts/react-charts/react-charts.tgz
+                yarn
+
+            - name: Start test app in background
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                nohup npm start > output.log 2>&1 &  
+                npx wait-on http://localhost:3000/ --timeout 300000 
+
+            - name: Run Playwright test script
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                npx playwright install
+                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test tests/DeclarativeChart_v9.spec.ts || true
+              continue-on-error: true
+
+            - name: Zip Playwright report
+              shell: pwsh 
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip
+
+            - name: Install jq on Windows
+              run: |
+                curl -L -o jq.exe https://github.com/stedolan/jq/releases/download/jq-1.6/jq-win64.exe
+                move jq.exe C:\Windows\System32
+
+            - name: Print number of total tests and failures
+              shell: pwsh
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                $total_tests = jq '[.suites[].specs[].tests] | length' playwright-report.json
+                $failures = jq '[.suites[].specs[].tests[] | select(.results[].status == "failed")] | length' playwright-report.json
+                $failures = [math]::Round($failures / 3, 2)
+                echo "Total number of tests: $total_tests"
+                echo "Number of test failures: $failures"
+                echo "### Test Results" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Total Tests**: $total_tests" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Failures**: $failures" >> $env:GITHUB_STEP_SUMMARY
+              continue-on-error: true         
+
+            - name: Upload Playwright HTML report as artifact
+              uses: actions/upload-artifact@v4
+              with: 
+                name: playwright-html-report
+                path: contrib_repo/apps/plotly_examples/playwright-report/
+
+            - name: Upload Playwright JSON report as artifact
+              uses: actions/upload-artifact@v4
+              with: 
+                name: playwright-json-report
+                path: contrib_repo/apps/plotly_examples/playwright-report.json
