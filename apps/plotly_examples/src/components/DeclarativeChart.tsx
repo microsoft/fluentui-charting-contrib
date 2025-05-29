@@ -36,6 +36,7 @@ type PlotType =
   | 'Heatmap'
   | 'Histogram'
   | 'Scatter'
+  | 'Table'
   | 'Others';
 
 type DataType =
@@ -50,10 +51,10 @@ type DataType =
 
 const dataTypeRanges = {
   'general': [{ min: 1, max: 252 }, {min: 750, max: 758 }],
-  'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }, { min: 759, max: 759 }],
+  'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }, { min: 759, max: 759 }, {min: 767, max: 767}],
   'localization': [{ min: 278, max: 302 }],
   'seval': [{ min: 333, max: 376 }],
-  'plotly_express_basic': [{ min: 377, max: 427 }],
+  'plotly_express_basic': [{ min: 377, max: 427 }, {min: 760, max: 766}],
   'plotly_express_detailed': [{ min: 428, max: 569 }],
   'plotly_express_colors': [{ min: 570, max: 749 }],
 };
@@ -269,6 +270,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             <Option value="Heatmap">Heatmap</Option>
             <Option value="Histogram">Histogram</Option>
             <Option value="Scatter">Scatter</Option>
+            <Option value="Table">Table</Option>
             <Option value="Others">Others</Option>
           </Dropdown>
           &nbsp;&nbsp;&nbsp;
