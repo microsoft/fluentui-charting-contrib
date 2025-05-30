@@ -1261,7 +1261,15 @@
   resolved "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.9.tgz"
   integrity sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg==
 
-"@fluentui/chart-utilities@^1.1.12", "@fluentui/chart-utilities@^1.1.8":
+"@fluentui/chart-utilities@^1.1.13":
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/@fluentui/chart-utilities/-/chart-utilities-1.1.13.tgz#72ec94a7528fd5d9c4a721084ab116562a2d0680"
+  integrity sha512-8P6jmWkSke2b/ngpUnA2hXBKWOG3Usi+CF66pxMrgye5xJlC7Y0MId6S5jQQTLlBy7K2yH3LVpgbNMMpCeKSOA==
+  dependencies:
+    "@fluentui/set-version" "^8.2.24"
+    tslib "^2.1.0"
+
+"@fluentui/chart-utilities@^1.1.8":
   version "1.1.12"
   resolved "https://registry.yarnpkg.com/@fluentui/chart-utilities/-/chart-utilities-1.1.12.tgz#0fd45a35468ee4335609774afa9373927c7146de"
   integrity sha512-HNgFQQ2JLRASItrjFKGRQ+5PtY7M+5PafGAar19MdTqOsTYK2Zhl24bpzTTd5Ki0fykdN7bSEL6+CuKY0t2z0w==
@@ -1513,15 +1521,15 @@
     embla-carousel-autoplay "^8.5.1"
     embla-carousel-fade "^8.5.1"
 
-"@fluentui/react-charting@^5.23.94":
-  version "5.23.94"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-charting/-/react-charting-5.23.94.tgz#7ee4763f802b38f76d83edafa8e5796015890e37"
-  integrity sha512-3NnS4kLXfswM3bbGkE1X8SYC4cnNq6Ko/Lzl3dPdagWkqDA9pMFhiDVf/AkqFNLFh37xU1ECZGjmLeiWw8S7WQ==
+"@fluentui/react-charting@^5.23.96":
+  version "5.23.96"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-charting/-/react-charting-5.23.96.tgz#f26fe8ab7d1b9ea55bd78ce28deb00985eb309ba"
+  integrity sha512-8RXivvD8oXv2O3sW3OJjLdOVqP/Q428sbL8tu/HAKkh0Z+E2qDxEB6Hjs235RX4Q5j6Y9z/MKxZ9YKumNe8Fpw==
   dependencies:
-    "@fluentui/chart-utilities" "^1.1.12"
+    "@fluentui/chart-utilities" "^1.1.13"
     "@fluentui/react-focus" "^8.9.25"
     "@fluentui/set-version" "^8.2.24"
-    "@fluentui/theme-samples" "^8.7.208"
+    "@fluentui/theme-samples" "^8.7.209"
     "@microsoft/load-themed-styles" "^1.10.26"
     "@types/d3-array" "^3.0.0"
     "@types/d3-axis" "^3.0.0"
@@ -2570,10 +2578,10 @@
     "@fluentui/set-version" "^8.2.24"
     tslib "^2.1.0"
 
-"@fluentui/react@^8.122.19":
-  version "8.122.19"
-  resolved "https://registry.yarnpkg.com/@fluentui/react/-/react-8.122.19.tgz#17cb29a7c2528932020fb2ed6b2d7f71f6ed86e7"
-  integrity sha512-rByJWwm4g21cehJLZsrsuQWpLLiVQmnjlfxNXRrbokadaWlBlBR4+8+xzmcyr+lbEmCjL8z9zHcZa7VlOKl/uA==
+"@fluentui/react@^8.123.0":
+  version "8.123.0"
+  resolved "https://registry.yarnpkg.com/@fluentui/react/-/react-8.123.0.tgz#c037ac539d46a73f845b6b504d313e0b1736e000"
+  integrity sha512-ZYZF/YDhnx9gUlsJMxj1DvDRjOsD46HteYAJVbYr5ORfgAk+RpPRnBZXPwFqyJr3IDf9WtCJp2jn2Ahxtm/5oA==
   dependencies:
     "@fluentui/date-time-utilities" "^8.6.10"
     "@fluentui/font-icons-mdl2" "^8.5.62"
@@ -2618,12 +2626,12 @@
     "@microsoft/load-themed-styles" "^1.10.26"
     tslib "^2.1.0"
 
-"@fluentui/theme-samples@^8.7.208":
-  version "8.7.208"
-  resolved "https://registry.yarnpkg.com/@fluentui/theme-samples/-/theme-samples-8.7.208.tgz#35d88cbfe739d2d68bf27046c3cfb5762de38daa"
-  integrity sha512-xSZ8dSEHtPgBqVbB0r9OQVUF8WbuJQhWROnMOXj1wjhhTGRp5PVnx9sTM/MwwQ5/c8vJrT8CFcBmPcptGPQCCQ==
+"@fluentui/theme-samples@^8.7.209":
+  version "8.7.209"
+  resolved "https://registry.yarnpkg.com/@fluentui/theme-samples/-/theme-samples-8.7.209.tgz#6c858b62fc194abdf159c85a47f911395a58ff9e"
+  integrity sha512-qigL+MYRWYuCKjckUdF2kFVY+xrAJl7ElVOkfcapLdNcPQRysiZFYgcsPcM+YQE8lcGtPmUw+TCuy2TeOC/g2A==
   dependencies:
-    "@fluentui/react" "^8.122.19"
+    "@fluentui/react" "^8.123.0"
     "@fluentui/scheme-utilities" "^8.3.68"
     "@fluentui/set-version" "^8.2.24"
     tslib "^2.1.0"
@@ -11422,7 +11430,16 @@ string-split-by@^1.0.0:
   dependencies:
     parenthesis "^3.1.5"
 
-"string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0, string-width@^4.2.0:
+"string-width-cjs@npm:string-width@^4.2.0":
+  version "4.2.3"
+  resolved "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
+string-width@^4.1.0, string-width@^4.2.0:
   version "4.2.3"
   resolved "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -11531,7 +11548,14 @@ stringify-object@^3.3.0:
     is-obj "^1.0.1"
     is-regexp "^1.0.0"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -12749,7 +12773,16 @@ world-calendars@^1.0.3:
   dependencies:
     object-assign "^4.1.0"
 
-"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-7.0.0.tgz"
+  integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+
+wrap-ansi@^7.0.0:
   version "7.0.0"
   resolved "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-7.0.0.tgz"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
