@@ -1,0 +1,65 @@
+on:
+  workflow_run:
+    workflows: ["main_fluentchartseval"] # Name of Workflow A
+    types:
+      - completed
+  workflow_dispatch:
+jobs:
+  permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+    update_snapshots:
+        runs-on: windows-latest
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                node-version: '20.x'
+
+            - name: Install packages
+              run: |
+                cd apps/plotly_examples
+                yarn
+
+            - name: Run Playwright update snapshots
+              run: |
+                cd apps/plotly_examples
+                npx playwright install
+                npx cross-env BASE_URL='https://fluentchartstest.azurewebsites.net/' npx playwright test tests/DeclarativeChart.spec.ts --update-snapshots || true
+
+            - name: Create branch with timestamp
+              id: branch
+              run: |
+                BRANCH="update-v8-snapshots-$(date +'%Y%m%d-%H%M%S')"
+                git checkout -b $BRANCH
+                echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+            - name: Commit and push changes
+              run: |
+                git config user.name "github-actions[bot]"
+                git config user.email "github-actions[bot]@users.noreply.github.com"
+                cd apps/plotly_examples
+                git add *.png
+                # Only commit and push if there are staged changes
+                if git diff --cached --quiet; then
+                  echo "No changes to commit."
+                  echo "changes_committed=false" >> $GITHUB_OUTPUT
+                  exit 0
+                fi
+                git commit -m "chore: update react-charting snapshots"
+                git push origin ${{ steps.branch.outputs.branch }}
+                echo "changes_committed=true" >> $GITHUB_OUTPUT
+
+            - name: Create Pull Request
+              if: steps.commit_push.outputs.changes_committed == 'true'
+              uses: peter-evans/create-pull-request@v6
+              with:
+                branch: ${{ steps.branch.outputs.branch }}
+                title: "chore: update @fluentui/react-charting to version ${{ steps.get_latest_version.outputs.version }}"
+                body: "This PR updates @fluentui/react-charting to version ${{ steps.get_latest_version.outputs.version }}"
+                base: main
