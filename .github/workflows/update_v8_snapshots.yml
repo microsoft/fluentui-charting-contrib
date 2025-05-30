@@ -1,17 +1,19 @@
+name: Update v8 test snapshots
+
 on:
   workflow_run:
-    workflows: ["main_fluentchartseval"] # Name of Workflow A
+    workflows: ["build and deploy to fluentchartseval"] # Name of Workflow A
     types:
       - completed
   workflow_dispatch:
-jobs:
-  permissions:
-  contents: write
-  pull-requests: write
+
 
 jobs:
     update_snapshots:
         runs-on: windows-latest
+        permissions:
+          contents: write
+          pull-requests: write
 
         steps:
             - uses: actions/checkout@v4

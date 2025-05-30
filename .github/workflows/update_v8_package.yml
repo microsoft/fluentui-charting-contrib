@@ -41,7 +41,8 @@ jobs:
         id: get_current_version
         run: |
           cd apps/plotly_examples
-          echo "current_version=$(jq -r '.dependencies[\"@fluentui/react-charting\"]' package.json)" >> $GITHUB_OUTPUT
+          version=$(jq -r '.dependencies["@fluentui/react-charting"]' package.json | sed 's/^[~^]//')
+          echo "current_version=$version" >> $GITHUB_OUTPUT
 
       - name: Check if update is needed
         id: check_update
@@ -59,7 +60,7 @@ jobs:
         if: steps.check_update.outputs.up_to_date == 'false'
         run: |
           cd apps/plotly_examples
-          npm pkg set dependencies.@fluentui/react-charting=${{ steps.get_latest_version.outputs.version }}
+          npm pkg set dependencies.@fluentui/react-charting="^${{ steps.get_latest_version.outputs.version }}"
 
       - name: Install dependencies
         if: steps.check_update.outputs.up_to_date == 'false'
