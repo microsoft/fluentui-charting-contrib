@@ -56,7 +56,7 @@ const dataTypeRanges = {
   'seval': [{ min: 333, max: 376 }],
   'plotly_express_basic': [{ min: 377, max: 427 }, {min: 760, max: 766}],
   'plotly_express_detailed': [{ min: 428, max: 569 }],
-  'plotly_express_colors': [{ min: 570, max: 749 }],
+  'plotly_express_colors': [{ min: 570, max: 749 }, { min: 768, max: 787 }],
 };
 
 // Use require.context to load all JSON files from the split_data folder
