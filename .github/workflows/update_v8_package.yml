@@ -98,9 +98,10 @@ jobs:
         with:
           branch: ${{ steps.branch.outputs.branch }}
           create_branch: true
-          commit_message: chore - update @fluentui/react-charting to version ${{ steps.get_latest_version.outputs.version }}
+          commit_message: (chore) update @fluentui/react-charting to version ${{ steps.get_latest_version.outputs.version }}
         
       - name: "Publish Notification regarding changes"
         if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        shell: bash
         run: |
-          echo "Create a pull request using this link: https://www.github.com/microsoft/fluentui-charting-contrib/pull/new/${{ steps.get_latest_version.outputs.version }}" >> $env:GITHUB_STEP_SUMMARY
+          echo "Create a pull request using this link: https://www.github.com/microsoft/fluentui-charting-contrib/pull/new/$${{ steps.branch.outputs.branch }}" >> $GITHUB_STEP_SUMMARY

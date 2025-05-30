@@ -8,8 +8,8 @@ on:
   workflow_dispatch:
 
 concurrency:
-group: ${{ github.workflow }}-${{ github.ref }}
-cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
     update_snapshots:
@@ -44,27 +44,16 @@ jobs:
                 git checkout -b $BRANCH
                 echo "branch=$BRANCH" >> $GITHUB_OUTPUT
 
-            - name: Commit and push changes
-              run: |
-                git config user.name "github-actions[bot]"
-                git config user.email "github-actions[bot]@users.noreply.github.com"
-                cd apps/plotly_examples
-                git add *.png
-                # Only commit and push if there are staged changes
-                if git diff --cached --quiet; then
-                  echo "No changes to commit."
-                  echo "changes_committed=false" >> $GITHUB_OUTPUT
-                  exit 0
-                fi
-                git commit -m "chore: update react-charting snapshots"
-                git push --set-upstream origin ${{ steps.branch.outputs.branch }}
-                echo "changes_committed=true" >> $GITHUB_OUTPUT
-
-            - name: Create Pull Request
-              if: steps.commit_push.outputs.changes_committed == 'true'
-              uses: peter-evans/create-pull-request@v6
+            - name: Commit changes to repo
+              id: auto-commit-action
+              uses: stefanzweifel/git-auto-commit-action@v5
               with:
                 branch: ${{ steps.branch.outputs.branch }}
-                title: "chore: update @fluentui/react-charting to version ${{ steps.get_latest_version.outputs.version }}"
-                body: "This PR updates @fluentui/react-charting to version ${{ steps.get_latest_version.outputs.version }}"
-                base: main
+                create_branch: true
+                commit_message: (chore) update react-charting snapshots
+                file_pattern: '*.png'
+              
+            - name: "Publish Notification regarding changes"
+              if: steps.auto-commit-action.outputs.changes_detected == 'true'
+              run: |
+                echo "Create a pull request using this link: https://www.github.com/microsoft/fluentui-charting-contrib/pull/new/$${{ steps.branch.outputs.branch }}" >> $env:GITHUB_STEP_SUMMARY
