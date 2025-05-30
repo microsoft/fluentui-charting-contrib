@@ -99,7 +99,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add apps/plotly_examples/package.json apps/plotly_examples/yarn.lock
           git commit -m "chore: update @fluentui/react-charting to version ${{ steps.get_latest_version.outputs.version }}"
-          git push origin ${{ steps.branch.outputs.branch }}
+          git push
 
       - name: Create Pull Request
         if: steps.check_update.outputs.up_to_date == 'false'

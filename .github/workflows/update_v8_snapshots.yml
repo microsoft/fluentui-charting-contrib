@@ -32,7 +32,7 @@ jobs:
               run: |
                 cd apps/plotly_examples
                 npx playwright install
-                npx cross-env BASE_URL='https://fluentchartstest.azurewebsites.net/' npx playwright test tests/DeclarativeChart.spec.ts --update-snapshots || true
+                npx cross-env BASE_URL='https://fluentchartseval.azurewebsites.net/' npx playwright test tests/DeclarativeChart.spec.ts --update-snapshots || true
 
             - name: Create branch with timestamp
               id: branch
@@ -54,7 +54,7 @@ jobs:
                   exit 0
                 fi
                 git commit -m "chore: update react-charting snapshots"
-                git push origin ${{ steps.branch.outputs.branch }}
+                git push
                 echo "changes_committed=true" >> $GITHUB_OUTPUT
 
             - name: Create Pull Request
