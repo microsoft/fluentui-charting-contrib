@@ -83,7 +83,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
   const [selectedDataTypes, setSelectedDataTypes] = React.useState<DataType[]>(getSelection("DataType_filter", 'All').split(',') as DataType[]);
 
   const declarativeChartRef = React.useRef<IDeclarativeChart>(null);
-  const declarativeChartV9Ref = React.useRef<IDeclarativeChart>(null);
+  // const declarativeChartV9Ref = React.useRef<IDeclarativeChart>(null);
   let lastKnownValidLegends: string[] | undefined = selectedLegends;
 
   React.useEffect(() => {
