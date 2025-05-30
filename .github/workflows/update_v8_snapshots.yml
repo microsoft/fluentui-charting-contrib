@@ -7,6 +7,9 @@ on:
       - completed
   workflow_dispatch:
 
+concurrency:
+group: ${{ github.workflow }}-${{ github.ref }}
+cancel-in-progress: true
 
 jobs:
     update_snapshots:
@@ -54,7 +57,7 @@ jobs:
                   exit 0
                 fi
                 git commit -m "chore: update react-charting snapshots"
-                git push
+                git push --set-upstream origin ${{ steps.branch.outputs.branch }}
                 echo "changes_committed=true" >> $GITHUB_OUTPUT
 
             - name: Create Pull Request
