@@ -72,7 +72,7 @@ jobs:
 
             - name: Run yarn pack in react-charts to create .tgz file
               run: |
-                cd ./repo1/packages/charts/react-charts
+                cd ./repo1/packages/charts/react-charts/library
                 yarn pack --filename react-charts.tgz
               id: pack-chart-v9
 
@@ -86,7 +86,7 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                 name: react-charts-tgz
-                path: ./repo1/packages/charts/react-charts/react-charts.tgz
+                path: ./repo1/packages/charts/react-charts/library/react-charts.tgz
 
             - name: Checkout [main] of current repo
               uses: actions/checkout@v4
@@ -102,7 +102,7 @@ jobs:
             - name: Install .tgz file in Plotly examples
               run: |
                 cd contrib_repo/apps/plotly_examples
-                yarn add ../../../repo1/packages/charts/react-charts/react-charts.tgz
+                yarn add ../../../repo1/packages/charts/react-charts/library/react-charts.tgz
                 yarn
 
             - name: Start test app in background
