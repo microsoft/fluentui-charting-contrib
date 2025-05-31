@@ -44,14 +44,14 @@ jobs:
                 fi
 
             - name: Run Playwright update snapshots
-              if: steps.skip_check.outputs.skip_job != 'true'
+              if: github.event_name == 'workflow_dispatch' || steps.skip_check.outputs.skip_job != 'true'
               run: |
                 cd apps/plotly_examples
                 npx playwright install
                 npx cross-env BASE_URL='https://fluentchartseval.azurewebsites.net/' npx playwright test tests/DeclarativeChart.spec.ts --update-snapshots || true
 
             - name: Create branch with timestamp
-              if: steps.skip_check.outputs.skip_job != 'true'
+              if: github.event_name == 'workflow_dispatch' || steps.skip_check.outputs.skip_job != 'true'
               id: branch
               shell: bash
               run: |
@@ -60,7 +60,7 @@ jobs:
                 echo "branch=$BRANCH" >> $GITHUB_OUTPUT
 
             - name: Commit changes to repo
-              if: steps.skip_check.outputs.skip_job != 'true'
+              if: github.event_name == 'workflow_dispatch' || steps.skip_check.outputs.skip_job != 'true'
               id: auto-commit-action
               uses: stefanzweifel/git-auto-commit-action@v5
               with:
@@ -70,7 +70,7 @@ jobs:
                 file_pattern: '*.png'
               
             - name: "Publish Notification regarding changes"
-              if: steps.skip_check.outputs.skip_job != 'true' && steps.auto-commit-action.outputs.changes_detected == 'true'
+              if: (github.event_name == 'workflow_dispatch' || steps.skip_check.outputs.skip_job != 'true') && steps.auto-commit-action.outputs.changes_detected == 'true'
               shell: bash
               run: |
                 echo "Create a pull request using this link: https://www.github.com/microsoft/fluentui-charting-contrib/pull/new/${{ steps.branch.outputs.branch }}" >> $GITHUB_STEP_SUMMARY

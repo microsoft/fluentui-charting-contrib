@@ -35,6 +35,7 @@ for (const theme of themes) {
           await listitems.nth(index).scrollIntoViewIfNeeded();
           await listitems.nth(index).click();
           const chart = page.getByTestId('chart-container');
+          await page.mouse.move(0, 0); // Move mouse to top-left corner
           await expect(chart).toHaveScreenshot();
           await combobox.last().click();
         } else {
