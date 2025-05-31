@@ -8,3 +8,6 @@ export function getSelection(key: string, defaultValue: string): string {
     let value = localStorage.getItem(appKey);
     return value || defaultValue; 
 }
+
+export const SCHEMA_KEY = 'Schema';
+export const SCHEMA_KEY_DEFAULT = '001'

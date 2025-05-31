@@ -12,7 +12,7 @@ import {
 import { DeclarativeChart, IDeclarativeChart, Schema } from '@fluentui/react-charting';
 import PlotlyChart from './PlotlyChart';
 import { ErrorBoundary } from './ErrorBoundary';
-import { getSelection, saveSelection } from './utils';
+import { getSelection, saveSelection, SCHEMA_KEY, SCHEMA_KEY_DEFAULT } from './utils';
 import aggregatedChartTypes from './aggregated_chart_types.json';
 import type { OutputChartType } from '@fluentui/chart-utilities';
 import { mapFluentChart } from '@fluentui/chart-utilities';
@@ -70,7 +70,7 @@ const schemasData = requireContext.keys().map((fileName: string) => ({
 const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
 
 const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
-  const savedOptionStr = getSelection("Schema", '001');
+  const savedOptionStr = getSelection(SCHEMA_KEY, SCHEMA_KEY_DEFAULT);
   const savedOption = parseInt(savedOptionStr, 10) - 1; // To handle 0 based index
   const savedFileName = `data_${savedOptionStr}.json`;
   const _selectedSchema = schemasData[savedOption]?.schema || {};
@@ -102,7 +102,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
   const _onChange = (event: SelectionEvents, data: OptionOnSelectData): void => {
     const selectedChoice = data.optionText!;
     const selectedSchema = schemasData.find((s) => (s.schema as { id: string }).id === data.optionValue!)?.schema;
-    saveSelection("Schema", data.optionValue!.toString().padStart(3, '0'));
+    saveSelection(SCHEMA_KEY, data.optionValue!.toString().padStart(3, '0'));
     const { selectedLegends } = selectedSchema as any;
     setSelectedChoice(selectedChoice);
     setSelectedSchema(selectedSchema);
@@ -171,7 +171,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
       setSelectedLegendsState(JSON.stringify((firstFilteredSchema.schema as any).selectedLegends));
       const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
       const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
-      saveSelection("Schema", num_id.toString().padStart(3, '0'));
+      saveSelection(SCHEMA_KEY, num_id.toString().padStart(3, '0'));
     } else {
       setSelectedChoice('');
       setSelectedSchema({});
@@ -201,7 +201,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
       setSelectedLegendsState(JSON.stringify((firstFilteredSchema.schema as any).selectedLegends));
       const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
       const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
-      saveSelection("Schema", num_id.toString().padStart(3, '0'));
+      saveSelection(SCHEMA_KEY, num_id.toString().padStart(3, '0'));
     } else {
       setSelectedChoice('');
       setSelectedSchema({});
@@ -307,7 +307,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
         <div data-testid="chart-container" >
           <br />
           <br />
-          <ErrorBoundary>
+          <ErrorBoundary key={`${selectedChoice}_error-boundary-v8`}>
             <Subtitle2>{chartTitle}</Subtitle2>
             <Divider />
             <br />
@@ -345,7 +345,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
         <div data-testid="chart-container-v9" >
           <br />
           <br />
-          <ErrorBoundary>
+          <ErrorBoundary key={`${selectedChoice}_error-boundary-v9`}>
             <Subtitle2>{chartTitle}</Subtitle2>
             <Divider />
             <br />
