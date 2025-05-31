@@ -106,11 +106,12 @@ jobs:
                 yarn
 
             - name: Start test app in background
+              shell: bash
               run: |
                 cd contrib_repo/apps/plotly_examples
                 yarn build
-                nohup npx -y serve -s build > output.log 2>&1 &  
-                npx wait-on http://localhost:3000/ --timeout 300000 
+                nohup npx -y serve -s build -l 3000 > output.log 2>&1 &  
+                npx wait-on http://localhost:3000/ --timeout 300000
 
             - name: Run Playwright test script
               run: |
