@@ -1,7 +1,7 @@
 const startExampleTestIndex = 0;
 export const totalChartExamplesCount = 787;
 const startExampleTestIndexLocalization = 377;
-const endExampleTestIndexLocalization = 426;
+const endExampleTestIndexLocalization = 569;
 
 export const chartsListWithErrors = [];
 
