@@ -1,8 +1,8 @@
 name: (v9) Update react-charts package
 
 on:
-  schedule:
-    - cron: "30 8 * * *"  # Runs every day at 2:00 PM IST (02:30 AM UTC)
+  # schedule:
+  #   - cron: "30 8 * * *"  # Runs every day at 2:00 PM IST (02:30 AM UTC)
   workflow_dispatch:
 
 permissions:
