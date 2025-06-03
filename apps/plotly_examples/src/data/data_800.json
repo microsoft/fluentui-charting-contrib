@@ -1,0 +1,1080 @@
+{
+    "data": [
+        {
+            "customdata": [
+                [
+                    "Plant X",
+                    "Feb"
+                ],
+                [
+                    "Plant X",
+                    "Apr"
+                ],
+                [
+                    "Plant X",
+                    "May"
+                ],
+                [
+                    "Plant Y",
+                    "Jan"
+                ],
+                [
+                    "Plant Y",
+                    "Feb"
+                ],
+                [
+                    "Plant Y",
+                    "Mar"
+                ],
+                [
+                    "Plant Y",
+                    "Apr"
+                ],
+                [
+                    "Plant Y",
+                    "Jun"
+                ],
+                [
+                    "Plant Z",
+                    "Jan"
+                ],
+                [
+                    "Plant Z",
+                    "Feb"
+                ],
+                [
+                    "Plant Z",
+                    "Mar"
+                ],
+                [
+                    "Plant Z",
+                    "Apr"
+                ],
+                [
+                    "Plant Z",
+                    "May"
+                ]
+            ],
+            "hovertemplate": "Plant: %{customdata[0]}<br>Month: %{customdata[1]}<br>Emission Type: CO2<br>Status: Compliant<br>Level: %{y:.2f} g/km<br><extra></extra>",
+            "marker": {
+                "color": "#636efa",
+                "line": {
+                    "color": "darkgray",
+                    "width": 2
+                },
+                "opacity": 0.8,
+                "size": 9,
+                "symbol": "circle"
+            },
+            "mode": "markers",
+            "name": "CO2 - Compliant",
+            "x": {
+                "dtype": "f8",
+                "bdata": "mKg4rQlhAEBt93WyM5gQQGuN5oRcaBNA6Nt2EVOZ8D9EIYwV5SEAQFnELqkIKgdA1p0ueLjzDkBgUBp4ofYXQMVjHXmnMu0/OsPtSaBA/T9KOTW6zT4JQPCcgJGQsA9AdDf6Jqo2FEA="
+            },
+            "y": {
+                "dtype": "f8",
+                "bdata": "KmGU5wncTEBLUwbWd3pQQAW3BBJiBlVANh+p3MGOUkDO1ycwp3FSQD6P+qtwe1RA1v3PvUt/UUC0mWvf2/dLQECtOdCWHFJA4PviLQS3VEBS0LRQ60tQQILsZr2vPUpA4KdTsbeZTEA="
+            },
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    "Plant X",
+                    "Jan"
+                ],
+                [
+                    "Plant X",
+                    "Feb"
+                ],
+                [
+                    "Plant X",
+                    "Mar"
+                ],
+                [
+                    "Plant X",
+                    "Apr"
+                ],
+                [
+                    "Plant X",
+                    "Jun"
+                ],
+                [
+                    "Plant Y",
+                    "Jan"
+                ],
+                [
+                    "Plant Y",
+                    "Feb"
+                ],
+                [
+                    "Plant Y",
+                    "Jun"
+                ],
+                [
+                    "Plant Z",
+                    "Mar"
+                ],
+                [
+                    "Plant Z",
+                    "May"
+                ],
+                [
+                    "Plant Z",
+                    "Jun"
+                ]
+            ],
+            "hovertemplate": "Plant: %{customdata[0]}<br>Month: %{customdata[1]}<br>Emission Type: NOx<br>Status: Compliant<br>Level: %{y:.2f} g/km<br><extra></extra>",
+            "marker": {
+                "color": "#ef553b",
+                "line": {
+                    "color": "darkgray",
+                    "width": 2
+                },
+                "opacity": 0.8,
+                "size": 9,
+                "symbol": "circle"
+            },
+            "mode": "markers",
+            "name": "NOx - Compliant",
+            "x": {
+                "dtype": "f8",
+                "bdata": "wR35/kit7z+kAWsu/6j/P/vvSyfJwwhAG4bja8GYDkBRHU81R60XQIfXx/ouHPA/ueBNoX5HAUDJHBzDaKMXQIp8DpIW6QdAE3NVebZ0FEDJrh2/V7IXQA=="
+            },
+            "y": {
+                "dtype": "f8",
+                "bdata": "lSs49v54U0DMmhE6bTJNQCJId2B08FNAsmRM8PvIS0CrUmY79WdVQEZAonf781BAJLl3ZvQJTkAQ36l2PCFTQP+3rLdlzVJAScxRvtveUEA+j26xg61PQA=="
+            },
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    "Plant X",
+                    "Jan"
+                ],
+                [
+                    "Plant X",
+                    "Mar"
+                ],
+                [
+                    "Plant X",
+                    "Jun"
+                ],
+                [
+                    "Plant Y",
+                    "May"
+                ],
+                [
+                    "Plant Z",
+                    "Jun"
+                ]
+            ],
+            "hovertemplate": "Plant: %{customdata[0]}<br>Month: %{customdata[1]}<br>Emission Type: CO2<br>Status: Non-compliant<br>Level: %{y:.2f} g/km<br><extra></extra>",
+            "marker": {
+                "color": "red",
+                "line": {
+                    "color": "darkgray",
+                    "width": 2
+                },
+                "opacity": 1,
+                "size": 13,
+                "symbol": "x"
+            },
+            "mode": "markers",
+            "name": "CO2 - Non-compliant",
+            "x": {
+                "dtype": "f8",
+                "bdata": "4/f1h44l7D/JvIs9s78GQMa5fakukRdAxeYCXzljFEABmNU+MMsXQA=="
+            },
+            "y": {
+                "dtype": "f8",
+                "bdata": "V+iTtOquVkAjNgSdsVVWQIp4YuqDLVZAvbxUuGHaVkB2XdvM9kxZQA=="
+            },
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    "Plant X",
+                    "May"
+                ],
+                [
+                    "Plant Y",
+                    "Mar"
+                ],
+                [
+                    "Plant Y",
+                    "Apr"
+                ],
+                [
+                    "Plant Y",
+                    "May"
+                ],
+                [
+                    "Plant Z",
+                    "Jan"
+                ],
+                [
+                    "Plant Z",
+                    "Feb"
+                ],
+                [
+                    "Plant Z",
+                    "Apr"
+                ]
+            ],
+            "hovertemplate": "Plant: %{customdata[0]}<br>Month: %{customdata[1]}<br>Emission Type: NOx<br>Status: Non-compliant<br>Level: %{y:.2f} g/km<br><extra></extra>",
+            "marker": {
+                "color": "red",
+                "line": {
+                    "color": "darkgray",
+                    "width": 2
+                },
+                "opacity": 1,
+                "size": 13,
+                "symbol": "x"
+            },
+            "mode": "markers",
+            "name": "NOx - Non-compliant",
+            "x": {
+                "dtype": "f8",
+                "bdata": "wrQQf5lCFECiXkaB0WkIQJum6iV50g9AfF9PlKbyE0AeK0ZZJIPrP7iq914ltP8/wh9q0zq6DkA="
+            },
+            "y": {
+                "dtype": "f8",
+                "bdata": "MMrroT70WUC8EGqRcnFaQLyYW3bAt1ZA2ic0dsJVWEBQh/P8JGZZQJl5hURXh1VAr2IDpji5VkA="
+            },
+            "type": "scatter"
+        }
+    ],
+    "layout": {
+        "template": {
+            "data": {
+                "histogram2dcontour": [
+                    {
+                        "type": "histogram2dcontour",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "choropleth": [
+                    {
+                        "type": "choropleth",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "histogram2d": [
+                    {
+                        "type": "histogram2d",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "heatmap": [
+                    {
+                        "type": "heatmap",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "contourcarpet": [
+                    {
+                        "type": "contourcarpet",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "contour": [
+                    {
+                        "type": "contour",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "surface": [
+                    {
+                        "type": "surface",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "mesh3d": [
+                    {
+                        "type": "mesh3d",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "scatter": [
+                    {
+                        "fillpattern": {
+                            "fillmode": "overlay",
+                            "size": 10,
+                            "solidity": 0.2
+                        },
+                        "type": "scatter"
+                    }
+                ],
+                "parcoords": [
+                    {
+                        "type": "parcoords",
+                        "line": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterpolargl": [
+                    {
+                        "type": "scatterpolargl",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "bar": [
+                    {
+                        "error_x": {
+                            "color": "#2a3f5f"
+                        },
+                        "error_y": {
+                            "color": "#2a3f5f"
+                        },
+                        "marker": {
+                            "line": {
+                                "color": "#E5ECF6",
+                                "width": 0.5
+                            },
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "bar"
+                    }
+                ],
+                "scattergeo": [
+                    {
+                        "type": "scattergeo",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterpolar": [
+                    {
+                        "type": "scatterpolar",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "histogram": [
+                    {
+                        "marker": {
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "histogram"
+                    }
+                ],
+                "scattergl": [
+                    {
+                        "type": "scattergl",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatter3d": [
+                    {
+                        "type": "scatter3d",
+                        "line": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        },
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattermap": [
+                    {
+                        "type": "scattermap",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattermapbox": [
+                    {
+                        "type": "scattermapbox",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterternary": [
+                    {
+                        "type": "scatterternary",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattercarpet": [
+                    {
+                        "type": "scattercarpet",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "carpet": [
+                    {
+                        "aaxis": {
+                            "endlinecolor": "#2a3f5f",
+                            "gridcolor": "white",
+                            "linecolor": "white",
+                            "minorgridcolor": "white",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "baxis": {
+                            "endlinecolor": "#2a3f5f",
+                            "gridcolor": "white",
+                            "linecolor": "white",
+                            "minorgridcolor": "white",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "type": "carpet"
+                    }
+                ],
+                "table": [
+                    {
+                        "cells": {
+                            "fill": {
+                                "color": "#EBF0F8"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "header": {
+                            "fill": {
+                                "color": "#C8D4E3"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "type": "table"
+                    }
+                ],
+                "barpolar": [
+                    {
+                        "marker": {
+                            "line": {
+                                "color": "#E5ECF6",
+                                "width": 0.5
+                            },
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "barpolar"
+                    }
+                ],
+                "pie": [
+                    {
+                        "automargin": true,
+                        "type": "pie"
+                    }
+                ]
+            },
+            "layout": {
+                "autotypenumbers": "strict",
+                "colorway": [
+                    "#636efa",
+                    "#EF553B",
+                    "#00cc96",
+                    "#ab63fa",
+                    "#FFA15A",
+                    "#19d3f3",
+                    "#FF6692",
+                    "#B6E880",
+                    "#FF97FF",
+                    "#FECB52"
+                ],
+                "font": {
+                    "color": "#2a3f5f"
+                },
+                "hovermode": "closest",
+                "hoverlabel": {
+                    "align": "left"
+                },
+                "paper_bgcolor": "white",
+                "plot_bgcolor": "#E5ECF6",
+                "polar": {
+                    "bgcolor": "#E5ECF6",
+                    "angularaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "radialaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    }
+                },
+                "ternary": {
+                    "bgcolor": "#E5ECF6",
+                    "aaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "baxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "caxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    }
+                },
+                "coloraxis": {
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    }
+                },
+                "colorscale": {
+                    "sequential": [
+                        [
+                            0.0,
+                            "#0d0887"
+                        ],
+                        [
+                            0.1111111111111111,
+                            "#46039f"
+                        ],
+                        [
+                            0.2222222222222222,
+                            "#7201a8"
+                        ],
+                        [
+                            0.3333333333333333,
+                            "#9c179e"
+                        ],
+                        [
+                            0.4444444444444444,
+                            "#bd3786"
+                        ],
+                        [
+                            0.5555555555555556,
+                            "#d8576b"
+                        ],
+                        [
+                            0.6666666666666666,
+                            "#ed7953"
+                        ],
+                        [
+                            0.7777777777777778,
+                            "#fb9f3a"
+                        ],
+                        [
+                            0.8888888888888888,
+                            "#fdca26"
+                        ],
+                        [
+                            1.0,
+                            "#f0f921"
+                        ]
+                    ],
+                    "sequentialminus": [
+                        [
+                            0.0,
+                            "#0d0887"
+                        ],
+                        [
+                            0.1111111111111111,
+                            "#46039f"
+                        ],
+                        [
+                            0.2222222222222222,
+                            "#7201a8"
+                        ],
+                        [
+                            0.3333333333333333,
+                            "#9c179e"
+                        ],
+                        [
+                            0.4444444444444444,
+                            "#bd3786"
+                        ],
+                        [
+                            0.5555555555555556,
+                            "#d8576b"
+                        ],
+                        [
+                            0.6666666666666666,
+                            "#ed7953"
+                        ],
+                        [
+                            0.7777777777777778,
+                            "#fb9f3a"
+                        ],
+                        [
+                            0.8888888888888888,
+                            "#fdca26"
+                        ],
+                        [
+                            1.0,
+                            "#f0f921"
+                        ]
+                    ],
+                    "diverging": [
+                        [
+                            0,
+                            "#8e0152"
+                        ],
+                        [
+                            0.1,
+                            "#c51b7d"
+                        ],
+                        [
+                            0.2,
+                            "#de77ae"
+                        ],
+                        [
+                            0.3,
+                            "#f1b6da"
+                        ],
+                        [
+                            0.4,
+                            "#fde0ef"
+                        ],
+                        [
+                            0.5,
+                            "#f7f7f7"
+                        ],
+                        [
+                            0.6,
+                            "#e6f5d0"
+                        ],
+                        [
+                            0.7,
+                            "#b8e186"
+                        ],
+                        [
+                            0.8,
+                            "#7fbc41"
+                        ],
+                        [
+                            0.9,
+                            "#4d9221"
+                        ],
+                        [
+                            1,
+                            "#276419"
+                        ]
+                    ]
+                },
+                "xaxis": {
+                    "gridcolor": "white",
+                    "linecolor": "white",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "white",
+                    "automargin": true,
+                    "zerolinewidth": 2
+                },
+                "yaxis": {
+                    "gridcolor": "white",
+                    "linecolor": "white",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "white",
+                    "automargin": true,
+                    "zerolinewidth": 2
+                },
+                "scene": {
+                    "xaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    },
+                    "yaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    },
+                    "zaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    }
+                },
+                "shapedefaults": {
+                    "line": {
+                        "color": "#2a3f5f"
+                    }
+                },
+                "annotationdefaults": {
+                    "arrowcolor": "#2a3f5f",
+                    "arrowhead": 0,
+                    "arrowwidth": 1
+                },
+                "geo": {
+                    "bgcolor": "white",
+                    "landcolor": "#E5ECF6",
+                    "subunitcolor": "white",
+                    "showland": true,
+                    "showlakes": true,
+                    "lakecolor": "white"
+                },
+                "title": {
+                    "x": 0.05
+                },
+                "mapbox": {
+                    "style": "light"
+                }
+            }
+        },
+        "xaxis": {
+            "tickmode": "array",
+            "tickvals": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "ticktext": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun"
+            ],
+            "title": {
+                "text": "Month"
+            }
+        },
+        "font": {
+            "family": "Montserrat",
+            "size": 14
+        },
+        "legend": {
+            "bgcolor": "white",
+            "title": {
+                "text": "Emission Type & Compliance"
+            },
+            "bordercolor": "gray",
+            "borderwidth": 1
+        },
+        "margin": {
+            "l": 40,
+            "r": 40,
+            "t": 60,
+            "b": 40
+        },
+        "title": {
+            "text": "Plant Emission Levels with Non-Compliance Highlights"
+        },
+        "yaxis": {
+            "title": {
+                "text": "Emission Level (g/km)"
+            }
+        },
+        "plot_bgcolor": "#F8F9FA"
+    },
+    "id": 800
+}

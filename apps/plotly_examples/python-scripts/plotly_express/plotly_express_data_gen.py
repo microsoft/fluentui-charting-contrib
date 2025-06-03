@@ -53,7 +53,7 @@ def get_existing_numbers(directory, prefix="data_", extension=".json"):
 def add_id(directory):
     for filename in os.listdir(directory):
         if filename.endswith(".json"):
-            index = filename.split('_')[1].split('.')[0]
+            index = int(filename.split('_')[1].split('.')[0])
             with open(os.path.join(directory, filename), 'r') as file:
                 data = json.load(file)
             if 'id' in data:
@@ -81,9 +81,12 @@ def copy_json_files(source_directory, destination_directory):
     
 # Step 3: Extract, parse and save json data 
 def extract_and_save_json(input_directory, output_directory, data_directory, category_file_path):
+    os.makedirs(data_directory, exist_ok=True)-
     data_numbers = get_existing_numbers(data_directory)
     if data_numbers:
         index = max(data_numbers) + 1
+    else:
+        index=1
     # Ensure the output directory exists
     os.makedirs(output_directory, exist_ok=True)
     excluded_keys = ["data", "id", "layout", "selectedLegends", "frames"]
