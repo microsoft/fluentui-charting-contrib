@@ -1,0 +1,1424 @@
+{
+    "data": [
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "6QMAAAEAAADvAwAAAQAAAPIDAAABAAAA9QMAAAEAAAD4AwAAAQAAAPwDAAABAAAA",
+                "shape": "6, 2"
+            },
+            "hovertemplate": "Shift Timing=Morning<br>Week=1<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Morning, 1",
+            "marker": {
+                "color": "#636efa",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Morning, 1",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "rl7vlYc5D0B+yDFLkFIQQBesnCQO6vs//Ho88KHD/j/Q5tr4XZwSQCwI15knixlA"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "GDcxuJbOVkBIgg209TVVQOqNvN6yfFNAA8wW4NcqU0Amqa8lBvJUQDvZzcZDeVZA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "6QMAAAIAAADqAwAAAgAAAOwDAAACAAAA8gMAAAIAAAD0AwAAAgAAAPUDAAACAAAA9wMAAAIAAAD5AwAAAgAAAPoDAAACAAAA/AMAAAIAAAA=",
+                "shape": "10, 2"
+            },
+            "hovertemplate": "Shift Timing=Morning<br>Week=2<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Morning, 2",
+            "marker": {
+                "color": "#636efa",
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Morning, 2",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "7GROjnKx4j9zKOv/DvDhP6IfuP9bYQFA5HC2mBG94z9J9ducEJ0BQIacJn6e5tk/NuJ1n5dCBUCD+Psk0Sz7P+kOknClxRFACmIp+yBPB0A="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "TtPCxSAfVUDD32NO2IRRQPWc8mRE2lZAFFqioASrU0DvX1bYP9pRQNYVAGjShVFAXD2f2U0WUUCqdJdr9ptYQN6qIRtT0FdAlR5qHdmMU0A="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "6wMAAAMAAADtAwAAAwAAAO8DAAADAAAA8gMAAAMAAAD0AwAAAwAAAPcDAAADAAAA",
+                "shape": "6, 2"
+            },
+            "hovertemplate": "Shift Timing=Morning<br>Week=3<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Morning, 3",
+            "marker": {
+                "color": "#636efa",
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Morning, 3",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "8qqDfvUAGUBk8iLcqfjmP6SWeP8qotI/Z/2OC0oR8j8oO/a5UczrP5z9D1yATLE/"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "FALKUrgGVEAMncCAtmVTQAQoGHYzEVFAztXP7pwjVEAGPj2t35dPQKIG305VWFFA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "6QMAAAQAAADrAwAABAAAAOwDAAAEAAAA7QMAAAQAAADxAwAABAAAAPUDAAAEAAAA9wMAAAQAAAD5AwAABAAAAPsDAAAEAAAA",
+                "shape": "9, 2"
+            },
+            "hovertemplate": "Shift Timing=Morning<br>Week=4<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Morning, 4",
+            "marker": {
+                "color": "#636efa",
+                "symbol": "x",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Morning, 4",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "0BB4J7abEEBCHrFMsS72P3oKXkItNwNA2DhdqOqL+D/gBRT2R4PgPxcb8XU3EQRAgqJ5ce7z7j+kQZZuc5gJQHsWg/dTruA/"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "3DFvfD+lU0ASN0Dw52JXQDmA9MhoJ1VAalYVyatqVECrQp5LU9RTQJm9t/n4bVZA6Z0fhn8OUkDPTZ0EHwpTQLeBY3R/sVdA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "6QMAAAUAAADqAwAABQAAAOwDAAAFAAAA8AMAAAUAAAD4AwAABQAAAPsDAAAFAAAA",
+                "shape": "6, 2"
+            },
+            "hovertemplate": "Shift Timing=Morning<br>Week=5<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Morning, 5",
+            "marker": {
+                "color": "#636efa",
+                "symbol": "cross",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Morning, 5",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "yd7ZxMPkA0Ays4AlvvkEQLTUc2ew/gVAiVzgPCSrrz/O/j2Lct7gPwYU2jdESps/"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "5C8PtbnoU0A98KC053hVQLT+xfhHR1NACVSzj2sUUUD8w2yCYEdXQJwTMYV84lRA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "6gMAAAYAAADrAwAABgAAAO0DAAAGAAAA7wMAAAYAAADxAwAABgAAAPMDAAAGAAAA+AMAAAYAAAD6AwAABgAAAPsDAAAGAAAA",
+                "shape": "9, 2"
+            },
+            "hovertemplate": "Shift Timing=Morning<br>Week=6<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Morning, 6",
+            "marker": {
+                "color": "#636efa",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Morning, 6",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "9nq4FzTp8D/i8x/f1+n2P9OFxlsAp8U/jG6dkLMnEUBxWGhYoRT6P28RG8S3Kr0/Mx0ZBOIJCEAyQjxuHVbSP74NilwUvAlA"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "AAAAAAAASUAu2H1vTNdSQJLy/negRFJABiqHFC6FTkBlBd0uwdFSQPH7VlEKaFJA59PBEZQMVEBuI192cxNPQAHGbuhbglJA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "6gMAAAEAAADuAwAAAQAAAPEDAAABAAAA8wMAAAEAAAD3AwAAAQAAAPkDAAABAAAA",
+                "shape": "6, 2"
+            },
+            "hovertemplate": "Shift Timing=Afternoon<br>Week=1<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Afternoon, 1",
+            "marker": {
+                "color": "#EF553B",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Afternoon, 1",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "Q8S4+6JD/z9Rs5KXu7YAQMeSGxmnHNA/ZLyet1oj8T8IzwL/X4PsP3maaMmT/dc/"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "sphvm8vBVEBBcRU8301UQPEfVOo1vFdABeVQomYVVEBL6xKWKmNUQOBb7TQUK1RA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "6wMAAAIAAADuAwAAAgAAAPgDAAACAAAA+wMAAAIAAAA=",
+                "shape": "4, 2"
+            },
+            "hovertemplate": "Shift Timing=Afternoon<br>Week=2<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Afternoon, 2",
+            "marker": {
+                "color": "#EF553B",
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Afternoon, 2",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "rJ4Tpy0bCECL2fIWuKykPxy/CFNFLPI/etwWgF48A0A="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "MrSiIxwEUUDNaogzGe5TQNYYYGmHQFZAG0+0PmvyVkA="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "6QMAAAMAAADqAwAAAwAAAOwDAAADAAAA7gMAAAMAAADxAwAAAwAAAPYDAAADAAAA+AMAAAMAAAD7AwAAAwAAAPwDAAADAAAA",
+                "shape": "9, 2"
+            },
+            "hovertemplate": "Shift Timing=Afternoon<br>Week=3<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Afternoon, 3",
+            "marker": {
+                "color": "#EF553B",
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Afternoon, 3",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "hAnW7m3b+z+5sLsVO+oaQELdhBnuEvA/dRhQJhG95T8XTUarwMcbQJqJT6GSJA5AzrFEMYQgA0B7W5HSYo73P3i7DnShfuo/"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "xbQFpAlYVkA5N58CDV1TQNaKjwX1dlhAm6ORByQiVECdgKKTdr9SQI4uL1vvH1RApA6BprtYU0BO+0rzQBNSQGV7ZpYeWVVA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "7wMAAAQAAADwAwAABAAAAPQDAAAEAAAA+AMAAAQAAAD6AwAABAAAAA==",
+                "shape": "5, 2"
+            },
+            "hovertemplate": "Shift Timing=Afternoon<br>Week=4<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Afternoon, 4",
+            "marker": {
+                "color": "#EF553B",
+                "symbol": "x",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Afternoon, 4",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "zJtFRKsl3j8OTz6zFZnfP7F5kJFbMwJAj9qeaUZzDEAvuCKFlDkCQA=="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "+HsZy3zOUUAcgpUMAuVPQAAAAAAAAFlAwAQ4WzPKVkChwjPhm5RVQA=="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "6wMAAAUAAADtAwAABQAAAO4DAAAFAAAA8QMAAAUAAAD1AwAABQAAAPYDAAAFAAAA+QMAAAUAAAD8AwAABQAAAA==",
+                "shape": "8, 2"
+            },
+            "hovertemplate": "Shift Timing=Afternoon<br>Week=5<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Afternoon, 5",
+            "marker": {
+                "color": "#EF553B",
+                "symbol": "cross",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Afternoon, 5",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "Rb6h3PhH/D84I559YjAEQOr4sSM9XQ1ATgGLh79Mxj/+OHeujkD8P55JYOkaRvU/XaUJ6ZRO9T8+Ot7jVrkPQA=="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "NGMgGZcwT0DTRGvVMT1RQD+MAbpiIVRAkn94wBP7VEBAdggnY0BSQFyNOo/FSFZAygH1YuOUWEBU8rVhdJ5WQA=="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "7gMAAAYAAADwAwAABgAAAPQDAAAGAAAA9QMAAAYAAAD3AwAABgAAAA==",
+                "shape": "5, 2"
+            },
+            "hovertemplate": "Shift Timing=Afternoon<br>Week=6<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Afternoon, 6",
+            "marker": {
+                "color": "#EF553B",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Afternoon, 6",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "P4vqPdLhB0BzoKSTKQjIP0FjstjtavU/jGoUOC0IA0Ap6hjdSEMBQA=="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "gfu8jTXYVkAAxjh1zM9UQIyWZvy+AVNAEd0zfKnNWEBPO21eFtNRQA=="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "6wMAAAEAAADsAwAAAQAAAO0DAAABAAAA8AMAAAEAAAD0AwAAAQAAAPYDAAABAAAA+gMAAAEAAAD7AwAAAQAAAA==",
+                "shape": "8, 2"
+            },
+            "hovertemplate": "Shift Timing=Night<br>Week=1<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Night, 1",
+            "marker": {
+                "color": "#00cc96",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Night, 1",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "2UOYrfCEGkDfqhq7Q8j0P0d6ix0L3cI/wIEisuGI9D8NH0dO5M8HQJX9jOqfF+A/LkWljeyq0T/15RaX0A+0Pw=="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "tvN/fA5gVkBr3o6iIZ9TQEpSv2sQ51VAhJZDYKZyVUDQFScjkLNVQG0bbUBQHlRAeTX9xCiEVECqjQDKFflPQA=="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "7QMAAAIAAADvAwAAAgAAAPADAAACAAAA8QMAAAIAAADzAwAAAgAAAPYDAAACAAAA",
+                "shape": "6, 2"
+            },
+            "hovertemplate": "Shift Timing=Night<br>Week=2<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Night, 2",
+            "marker": {
+                "color": "#00cc96",
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Night, 2",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "e6XBixi2/T+v1A1Eq3nmP5CqN5CDqwJA5fds1vXdAkAWQiUXrTEVQMUZ4HTmwPk/"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "U+dTdEAQVUBpRg2rCGpSQEvuw3zYF1NAN2JRbPxPUkCzi5VL0mZUQGv3o3dxi1ZA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "8AMAAAMAAADzAwAAAwAAAPUDAAADAAAA+QMAAAMAAAD6AwAAAwAAAA==",
+                "shape": "5, 2"
+            },
+            "hovertemplate": "Shift Timing=Night<br>Week=3<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Night, 3",
+            "marker": {
+                "color": "#00cc96",
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Night, 3",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "BdfWZCIB+z8pYhNrpgLzP94oaeFGl/4/afW3qv+tHUCihkLWAMrgPw=="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "7nAi5erbWEBGSfPsOqZUQEtIpqG44lNACJrixUSuVUAnjxiMxgRVQA=="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "6gMAAAQAAADuAwAABAAAAPIDAAAEAAAA8wMAAAQAAAD2AwAABAAAAPwDAAAEAAAA",
+                "shape": "6, 2"
+            },
+            "hovertemplate": "Shift Timing=Night<br>Week=4<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Night, 4",
+            "marker": {
+                "color": "#00cc96",
+                "symbol": "x",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Night, 4",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "BtPVxMgOFUAZvuQCHjwGQG3Wc86ZPPI/Uw6VI5DaDkCarzxhe0vfP1DaXnW3v+I/"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "kThcew3PUEBudfWMa5ZVQCTPThKKSFhAMnKs8tj/VUB/oD5P6QRYQIkQyJqryVNA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "7wMAAAUAAADyAwAABQAAAPMDAAAFAAAA9AMAAAUAAAD3AwAABQAAAPoDAAAFAAAA",
+                "shape": "6, 2"
+            },
+            "hovertemplate": "Shift Timing=Night<br>Week=5<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Night, 5",
+            "marker": {
+                "color": "#00cc96",
+                "symbol": "cross",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Night, 5",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "LlZAhQkg7D+eiaMczgwFQGV8samz9qA/7cV35foCkz85FjfPjYrfP1Bg9AHZD/Y/"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "pQsv59vmU0BoUltypZpUQGxmZz+5E1NAiGuUHcxmU0DeN8s00TZVQKDl+Efu1VNA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i4",
+                "bdata": "6QMAAAYAAADsAwAABgAAAPIDAAAGAAAA9gMAAAYAAAD5AwAABgAAAPwDAAAGAAAA",
+                "shape": "6, 2"
+            },
+            "hovertemplate": "Shift Timing=Night<br>Week=6<br>Overtime Hours=%{x}<br>Task Completion Rate=%{y}<br>Employee ID=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Night, 6",
+            "marker": {
+                "color": "#00cc96",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 2
+                },
+                "size": 12
+            },
+            "mode": "markers",
+            "name": "Night, 6",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "MVwYsq9SAECTc5nDwJQfQNZerQWgfu4/cUgM3HMu8j93cQOKrWPkPwAbcgQsSfQ/"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "z3dR17TwUkCet7bsJTRVQPHseu1yN1BABHkaj73ZUkDzuXsy+RhXQDg1yl9b3lNA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        }
+    ],
+    "layout": {
+        "template": {
+            "data": {
+                "histogram2dcontour": [
+                    {
+                        "type": "histogram2dcontour",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "choropleth": [
+                    {
+                        "type": "choropleth",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "histogram2d": [
+                    {
+                        "type": "histogram2d",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "heatmap": [
+                    {
+                        "type": "heatmap",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "contourcarpet": [
+                    {
+                        "type": "contourcarpet",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "contour": [
+                    {
+                        "type": "contour",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "surface": [
+                    {
+                        "type": "surface",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "mesh3d": [
+                    {
+                        "type": "mesh3d",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "scatter": [
+                    {
+                        "fillpattern": {
+                            "fillmode": "overlay",
+                            "size": 10,
+                            "solidity": 0.2
+                        },
+                        "type": "scatter"
+                    }
+                ],
+                "parcoords": [
+                    {
+                        "type": "parcoords",
+                        "line": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterpolargl": [
+                    {
+                        "type": "scatterpolargl",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "bar": [
+                    {
+                        "error_x": {
+                            "color": "#2a3f5f"
+                        },
+                        "error_y": {
+                            "color": "#2a3f5f"
+                        },
+                        "marker": {
+                            "line": {
+                                "color": "#E5ECF6",
+                                "width": 0.5
+                            },
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "bar"
+                    }
+                ],
+                "scattergeo": [
+                    {
+                        "type": "scattergeo",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterpolar": [
+                    {
+                        "type": "scatterpolar",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "histogram": [
+                    {
+                        "marker": {
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "histogram"
+                    }
+                ],
+                "scattergl": [
+                    {
+                        "type": "scattergl",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatter3d": [
+                    {
+                        "type": "scatter3d",
+                        "line": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        },
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattermap": [
+                    {
+                        "type": "scattermap",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattermapbox": [
+                    {
+                        "type": "scattermapbox",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterternary": [
+                    {
+                        "type": "scatterternary",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattercarpet": [
+                    {
+                        "type": "scattercarpet",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "carpet": [
+                    {
+                        "aaxis": {
+                            "endlinecolor": "#2a3f5f",
+                            "gridcolor": "white",
+                            "linecolor": "white",
+                            "minorgridcolor": "white",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "baxis": {
+                            "endlinecolor": "#2a3f5f",
+                            "gridcolor": "white",
+                            "linecolor": "white",
+                            "minorgridcolor": "white",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "type": "carpet"
+                    }
+                ],
+                "table": [
+                    {
+                        "cells": {
+                            "fill": {
+                                "color": "#EBF0F8"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "header": {
+                            "fill": {
+                                "color": "#C8D4E3"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "type": "table"
+                    }
+                ],
+                "barpolar": [
+                    {
+                        "marker": {
+                            "line": {
+                                "color": "#E5ECF6",
+                                "width": 0.5
+                            },
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "barpolar"
+                    }
+                ],
+                "pie": [
+                    {
+                        "automargin": true,
+                        "type": "pie"
+                    }
+                ]
+            },
+            "layout": {
+                "autotypenumbers": "strict",
+                "colorway": [
+                    "#636efa",
+                    "#EF553B",
+                    "#00cc96",
+                    "#ab63fa",
+                    "#FFA15A",
+                    "#19d3f3",
+                    "#FF6692",
+                    "#B6E880",
+                    "#FF97FF",
+                    "#FECB52"
+                ],
+                "font": {
+                    "color": "#2a3f5f"
+                },
+                "hovermode": "closest",
+                "hoverlabel": {
+                    "align": "left"
+                },
+                "paper_bgcolor": "white",
+                "plot_bgcolor": "#E5ECF6",
+                "polar": {
+                    "bgcolor": "#E5ECF6",
+                    "angularaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "radialaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    }
+                },
+                "ternary": {
+                    "bgcolor": "#E5ECF6",
+                    "aaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "baxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "caxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    }
+                },
+                "coloraxis": {
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    }
+                },
+                "colorscale": {
+                    "sequential": [
+                        [
+                            0.0,
+                            "#0d0887"
+                        ],
+                        [
+                            0.1111111111111111,
+                            "#46039f"
+                        ],
+                        [
+                            0.2222222222222222,
+                            "#7201a8"
+                        ],
+                        [
+                            0.3333333333333333,
+                            "#9c179e"
+                        ],
+                        [
+                            0.4444444444444444,
+                            "#bd3786"
+                        ],
+                        [
+                            0.5555555555555556,
+                            "#d8576b"
+                        ],
+                        [
+                            0.6666666666666666,
+                            "#ed7953"
+                        ],
+                        [
+                            0.7777777777777778,
+                            "#fb9f3a"
+                        ],
+                        [
+                            0.8888888888888888,
+                            "#fdca26"
+                        ],
+                        [
+                            1.0,
+                            "#f0f921"
+                        ]
+                    ],
+                    "sequentialminus": [
+                        [
+                            0.0,
+                            "#0d0887"
+                        ],
+                        [
+                            0.1111111111111111,
+                            "#46039f"
+                        ],
+                        [
+                            0.2222222222222222,
+                            "#7201a8"
+                        ],
+                        [
+                            0.3333333333333333,
+                            "#9c179e"
+                        ],
+                        [
+                            0.4444444444444444,
+                            "#bd3786"
+                        ],
+                        [
+                            0.5555555555555556,
+                            "#d8576b"
+                        ],
+                        [
+                            0.6666666666666666,
+                            "#ed7953"
+                        ],
+                        [
+                            0.7777777777777778,
+                            "#fb9f3a"
+                        ],
+                        [
+                            0.8888888888888888,
+                            "#fdca26"
+                        ],
+                        [
+                            1.0,
+                            "#f0f921"
+                        ]
+                    ],
+                    "diverging": [
+                        [
+                            0,
+                            "#8e0152"
+                        ],
+                        [
+                            0.1,
+                            "#c51b7d"
+                        ],
+                        [
+                            0.2,
+                            "#de77ae"
+                        ],
+                        [
+                            0.3,
+                            "#f1b6da"
+                        ],
+                        [
+                            0.4,
+                            "#fde0ef"
+                        ],
+                        [
+                            0.5,
+                            "#f7f7f7"
+                        ],
+                        [
+                            0.6,
+                            "#e6f5d0"
+                        ],
+                        [
+                            0.7,
+                            "#b8e186"
+                        ],
+                        [
+                            0.8,
+                            "#7fbc41"
+                        ],
+                        [
+                            0.9,
+                            "#4d9221"
+                        ],
+                        [
+                            1,
+                            "#276419"
+                        ]
+                    ]
+                },
+                "xaxis": {
+                    "gridcolor": "white",
+                    "linecolor": "white",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "white",
+                    "automargin": true,
+                    "zerolinewidth": 2
+                },
+                "yaxis": {
+                    "gridcolor": "white",
+                    "linecolor": "white",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "white",
+                    "automargin": true,
+                    "zerolinewidth": 2
+                },
+                "scene": {
+                    "xaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    },
+                    "yaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    },
+                    "zaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    }
+                },
+                "shapedefaults": {
+                    "line": {
+                        "color": "#2a3f5f"
+                    }
+                },
+                "annotationdefaults": {
+                    "arrowcolor": "#2a3f5f",
+                    "arrowhead": 0,
+                    "arrowwidth": 1
+                },
+                "geo": {
+                    "bgcolor": "white",
+                    "landcolor": "#E5ECF6",
+                    "subunitcolor": "white",
+                    "showland": true,
+                    "showlakes": true,
+                    "lakecolor": "white"
+                },
+                "title": {
+                    "x": 0.05
+                },
+                "mapbox": {
+                    "style": "light"
+                }
+            }
+        },
+        "xaxis": {
+            "anchor": "y",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "title": {
+                "text": "Overtime Hours"
+            }
+        },
+        "yaxis": {
+            "anchor": "x",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "title": {
+                "text": "Task Completion Rate"
+            }
+        },
+        "legend": {
+            "title": {
+                "text": "Shift Timing, Week"
+            },
+            "tracegroupgap": 0,
+            "orientation": "h",
+            "yanchor": "bottom",
+            "y": 1.04,
+            "xanchor": "right",
+            "x": 1
+        },
+        "title": {
+            "text": "Task Completion vs Overtime by Shift and Week"
+        },
+        "font": {
+            "family": "Arial",
+            "size": 15,
+            "color": "#2b2b2b"
+        },
+        "margin": {
+            "l": 60,
+            "r": 40,
+            "t": 80,
+            "b": 60
+        },
+        "plot_bgcolor": "rgba(240,240,255,0.95)",
+        "paper_bgcolor": "rgba(220,220,255,1)"
+    },
+    "id": 819
+}

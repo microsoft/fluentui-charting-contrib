@@ -1,0 +1,1113 @@
+{
+    "data": [
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "resource type=Ammunition<br>allocation type=allocated quantity<br>operation type=%{x}<br>quantity=%{y}<extra></extra>",
+            "legendgroup": "Ammunition, allocated quantity",
+            "marker": {
+                "color": "rgba(255,161,90,0.95)",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Ammunition, allocated quantity",
+            "offsetgroup": "Ammunition, allocated quantity",
+            "orientation": "v",
+            "showlegend": true,
+            "textposition": "auto",
+            "x": [
+                "Combat",
+                "Logistics",
+                "Reconnaissance",
+                "Training"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i2",
+                "bdata": "FgLTAucB1AE="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "opacity": 0.6
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "resource type=Ammunition<br>allocation type=required quantity<br>operation type=%{x}<br>quantity=%{y}<extra></extra>",
+            "legendgroup": "Ammunition, required quantity",
+            "marker": {
+                "color": "rgba(255,161,90,0.95)",
+                "pattern": {
+                    "shape": "/"
+                }
+            },
+            "name": "Ammunition, required quantity",
+            "offsetgroup": "Ammunition, required quantity",
+            "orientation": "v",
+            "showlegend": true,
+            "textposition": "auto",
+            "x": [
+                "Combat",
+                "Logistics",
+                "Reconnaissance",
+                "Training"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i2",
+                "bdata": "WQIwA3ACHgI="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "opacity": 0.6799999999999999
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "resource type=Drones<br>allocation type=allocated quantity<br>operation type=%{x}<br>quantity=%{y}<extra></extra>",
+            "legendgroup": "Drones, allocated quantity",
+            "marker": {
+                "color": "rgba(0,204,150,0.72)",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Drones, allocated quantity",
+            "offsetgroup": "Drones, allocated quantity",
+            "orientation": "v",
+            "showlegend": true,
+            "textposition": "auto",
+            "x": [
+                "Combat",
+                "Logistics",
+                "Reconnaissance",
+                "Training"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i2",
+                "bdata": "SQIrAmYBcgI="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "opacity": 0.76
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "resource type=Drones<br>allocation type=required quantity<br>operation type=%{x}<br>quantity=%{y}<extra></extra>",
+            "legendgroup": "Drones, required quantity",
+            "marker": {
+                "color": "rgba(0,204,150,0.72)",
+                "pattern": {
+                    "shape": "/"
+                }
+            },
+            "name": "Drones, required quantity",
+            "offsetgroup": "Drones, required quantity",
+            "orientation": "v",
+            "showlegend": true,
+            "textposition": "auto",
+            "x": [
+                "Combat",
+                "Logistics",
+                "Reconnaissance",
+                "Training"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i2",
+                "bdata": "ygJ3AtMBxgI="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "opacity": 0.84
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "resource type=Medical Kits<br>allocation type=allocated quantity<br>operation type=%{x}<br>quantity=%{y}<extra></extra>",
+            "legendgroup": "Medical Kits, allocated quantity",
+            "marker": {
+                "color": "rgba(171,99,250,0.84)",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Medical Kits, allocated quantity",
+            "offsetgroup": "Medical Kits, allocated quantity",
+            "orientation": "v",
+            "showlegend": true,
+            "textposition": "auto",
+            "x": [
+                "Combat",
+                "Logistics",
+                "Reconnaissance",
+                "Training"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i2",
+                "bdata": "lgLSAWACNgI="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "opacity": 0.9199999999999999
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "resource type=Medical Kits<br>allocation type=required quantity<br>operation type=%{x}<br>quantity=%{y}<extra></extra>",
+            "legendgroup": "Medical Kits, required quantity",
+            "marker": {
+                "color": "rgba(171,99,250,0.84)",
+                "pattern": {
+                    "shape": "/"
+                }
+            },
+            "name": "Medical Kits, required quantity",
+            "offsetgroup": "Medical Kits, required quantity",
+            "orientation": "v",
+            "showlegend": true,
+            "textposition": "auto",
+            "x": [
+                "Combat",
+                "Logistics",
+                "Reconnaissance",
+                "Training"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i2",
+                "bdata": "IQMXAssC3wI="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "opacity": 0.6
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "resource type=Personnel<br>allocation type=allocated quantity<br>operation type=%{x}<br>quantity=%{y}<extra></extra>",
+            "legendgroup": "Personnel, allocated quantity",
+            "marker": {
+                "color": "rgba(99,110,250,0.50)",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Personnel, allocated quantity",
+            "offsetgroup": "Personnel, allocated quantity",
+            "orientation": "v",
+            "showlegend": true,
+            "textposition": "auto",
+            "x": [
+                "Combat",
+                "Logistics",
+                "Reconnaissance",
+                "Training"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i2",
+                "bdata": "vgK3Ai8CqAI="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "opacity": 0.6799999999999999
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "resource type=Personnel<br>allocation type=required quantity<br>operation type=%{x}<br>quantity=%{y}<extra></extra>",
+            "legendgroup": "Personnel, required quantity",
+            "marker": {
+                "color": "rgba(99,110,250,0.50)",
+                "pattern": {
+                    "shape": "/"
+                }
+            },
+            "name": "Personnel, required quantity",
+            "offsetgroup": "Personnel, required quantity",
+            "orientation": "v",
+            "showlegend": true,
+            "textposition": "auto",
+            "x": [
+                "Combat",
+                "Logistics",
+                "Reconnaissance",
+                "Training"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i2",
+                "bdata": "JQNNA7QC/QI="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "opacity": 0.76
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "resource type=Vehicles<br>allocation type=allocated quantity<br>operation type=%{x}<br>quantity=%{y}<extra></extra>",
+            "legendgroup": "Vehicles, allocated quantity",
+            "marker": {
+                "color": "rgba(239,85,59,0.61)",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Vehicles, allocated quantity",
+            "offsetgroup": "Vehicles, allocated quantity",
+            "orientation": "v",
+            "showlegend": true,
+            "textposition": "auto",
+            "x": [
+                "Combat",
+                "Logistics",
+                "Reconnaissance",
+                "Training"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i2",
+                "bdata": "MgKWAlwCSAI="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "opacity": 0.84
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "resource type=Vehicles<br>allocation type=required quantity<br>operation type=%{x}<br>quantity=%{y}<extra></extra>",
+            "legendgroup": "Vehicles, required quantity",
+            "marker": {
+                "color": "rgba(239,85,59,0.61)",
+                "pattern": {
+                    "shape": "/"
+                }
+            },
+            "name": "Vehicles, required quantity",
+            "offsetgroup": "Vehicles, required quantity",
+            "orientation": "v",
+            "showlegend": true,
+            "textposition": "auto",
+            "x": [
+                "Combat",
+                "Logistics",
+                "Reconnaissance",
+                "Training"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i2",
+                "bdata": "ZAKgArECzQI="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "opacity": 0.9199999999999999
+        }
+    ],
+    "layout": {
+        "template": {
+            "data": {
+                "histogram2dcontour": [
+                    {
+                        "type": "histogram2dcontour",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "choropleth": [
+                    {
+                        "type": "choropleth",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "histogram2d": [
+                    {
+                        "type": "histogram2d",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "heatmap": [
+                    {
+                        "type": "heatmap",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "contourcarpet": [
+                    {
+                        "type": "contourcarpet",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "contour": [
+                    {
+                        "type": "contour",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "surface": [
+                    {
+                        "type": "surface",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "mesh3d": [
+                    {
+                        "type": "mesh3d",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "scatter": [
+                    {
+                        "fillpattern": {
+                            "fillmode": "overlay",
+                            "size": 10,
+                            "solidity": 0.2
+                        },
+                        "type": "scatter"
+                    }
+                ],
+                "parcoords": [
+                    {
+                        "type": "parcoords",
+                        "line": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterpolargl": [
+                    {
+                        "type": "scatterpolargl",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "bar": [
+                    {
+                        "error_x": {
+                            "color": "#2a3f5f"
+                        },
+                        "error_y": {
+                            "color": "#2a3f5f"
+                        },
+                        "marker": {
+                            "line": {
+                                "color": "#E5ECF6",
+                                "width": 0.5
+                            },
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "bar"
+                    }
+                ],
+                "scattergeo": [
+                    {
+                        "type": "scattergeo",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterpolar": [
+                    {
+                        "type": "scatterpolar",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "histogram": [
+                    {
+                        "marker": {
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "histogram"
+                    }
+                ],
+                "scattergl": [
+                    {
+                        "type": "scattergl",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatter3d": [
+                    {
+                        "type": "scatter3d",
+                        "line": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        },
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattermap": [
+                    {
+                        "type": "scattermap",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattermapbox": [
+                    {
+                        "type": "scattermapbox",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterternary": [
+                    {
+                        "type": "scatterternary",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattercarpet": [
+                    {
+                        "type": "scattercarpet",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "carpet": [
+                    {
+                        "aaxis": {
+                            "endlinecolor": "#2a3f5f",
+                            "gridcolor": "white",
+                            "linecolor": "white",
+                            "minorgridcolor": "white",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "baxis": {
+                            "endlinecolor": "#2a3f5f",
+                            "gridcolor": "white",
+                            "linecolor": "white",
+                            "minorgridcolor": "white",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "type": "carpet"
+                    }
+                ],
+                "table": [
+                    {
+                        "cells": {
+                            "fill": {
+                                "color": "#EBF0F8"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "header": {
+                            "fill": {
+                                "color": "#C8D4E3"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "type": "table"
+                    }
+                ],
+                "barpolar": [
+                    {
+                        "marker": {
+                            "line": {
+                                "color": "#E5ECF6",
+                                "width": 0.5
+                            },
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "barpolar"
+                    }
+                ],
+                "pie": [
+                    {
+                        "automargin": true,
+                        "type": "pie"
+                    }
+                ]
+            },
+            "layout": {
+                "autotypenumbers": "strict",
+                "colorway": [
+                    "#636efa",
+                    "#EF553B",
+                    "#00cc96",
+                    "#ab63fa",
+                    "#FFA15A",
+                    "#19d3f3",
+                    "#FF6692",
+                    "#B6E880",
+                    "#FF97FF",
+                    "#FECB52"
+                ],
+                "font": {
+                    "color": "#2a3f5f"
+                },
+                "hovermode": "closest",
+                "hoverlabel": {
+                    "align": "left"
+                },
+                "paper_bgcolor": "white",
+                "plot_bgcolor": "#E5ECF6",
+                "polar": {
+                    "bgcolor": "#E5ECF6",
+                    "angularaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "radialaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    }
+                },
+                "ternary": {
+                    "bgcolor": "#E5ECF6",
+                    "aaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "baxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "caxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    }
+                },
+                "coloraxis": {
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    }
+                },
+                "colorscale": {
+                    "sequential": [
+                        [
+                            0.0,
+                            "#0d0887"
+                        ],
+                        [
+                            0.1111111111111111,
+                            "#46039f"
+                        ],
+                        [
+                            0.2222222222222222,
+                            "#7201a8"
+                        ],
+                        [
+                            0.3333333333333333,
+                            "#9c179e"
+                        ],
+                        [
+                            0.4444444444444444,
+                            "#bd3786"
+                        ],
+                        [
+                            0.5555555555555556,
+                            "#d8576b"
+                        ],
+                        [
+                            0.6666666666666666,
+                            "#ed7953"
+                        ],
+                        [
+                            0.7777777777777778,
+                            "#fb9f3a"
+                        ],
+                        [
+                            0.8888888888888888,
+                            "#fdca26"
+                        ],
+                        [
+                            1.0,
+                            "#f0f921"
+                        ]
+                    ],
+                    "sequentialminus": [
+                        [
+                            0.0,
+                            "#0d0887"
+                        ],
+                        [
+                            0.1111111111111111,
+                            "#46039f"
+                        ],
+                        [
+                            0.2222222222222222,
+                            "#7201a8"
+                        ],
+                        [
+                            0.3333333333333333,
+                            "#9c179e"
+                        ],
+                        [
+                            0.4444444444444444,
+                            "#bd3786"
+                        ],
+                        [
+                            0.5555555555555556,
+                            "#d8576b"
+                        ],
+                        [
+                            0.6666666666666666,
+                            "#ed7953"
+                        ],
+                        [
+                            0.7777777777777778,
+                            "#fb9f3a"
+                        ],
+                        [
+                            0.8888888888888888,
+                            "#fdca26"
+                        ],
+                        [
+                            1.0,
+                            "#f0f921"
+                        ]
+                    ],
+                    "diverging": [
+                        [
+                            0,
+                            "#8e0152"
+                        ],
+                        [
+                            0.1,
+                            "#c51b7d"
+                        ],
+                        [
+                            0.2,
+                            "#de77ae"
+                        ],
+                        [
+                            0.3,
+                            "#f1b6da"
+                        ],
+                        [
+                            0.4,
+                            "#fde0ef"
+                        ],
+                        [
+                            0.5,
+                            "#f7f7f7"
+                        ],
+                        [
+                            0.6,
+                            "#e6f5d0"
+                        ],
+                        [
+                            0.7,
+                            "#b8e186"
+                        ],
+                        [
+                            0.8,
+                            "#7fbc41"
+                        ],
+                        [
+                            0.9,
+                            "#4d9221"
+                        ],
+                        [
+                            1,
+                            "#276419"
+                        ]
+                    ]
+                },
+                "xaxis": {
+                    "gridcolor": "white",
+                    "linecolor": "white",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "white",
+                    "automargin": true,
+                    "zerolinewidth": 2
+                },
+                "yaxis": {
+                    "gridcolor": "white",
+                    "linecolor": "white",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "white",
+                    "automargin": true,
+                    "zerolinewidth": 2
+                },
+                "scene": {
+                    "xaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    },
+                    "yaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    },
+                    "zaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    }
+                },
+                "shapedefaults": {
+                    "line": {
+                        "color": "#2a3f5f"
+                    }
+                },
+                "annotationdefaults": {
+                    "arrowcolor": "#2a3f5f",
+                    "arrowhead": 0,
+                    "arrowwidth": 1
+                },
+                "geo": {
+                    "bgcolor": "white",
+                    "landcolor": "#E5ECF6",
+                    "subunitcolor": "white",
+                    "showland": true,
+                    "showlakes": true,
+                    "lakecolor": "white"
+                },
+                "title": {
+                    "x": 0.05
+                },
+                "mapbox": {
+                    "style": "light"
+                }
+            }
+        },
+        "xaxis": {
+            "anchor": "y",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "title": {
+                "text": "operation type"
+            }
+        },
+        "yaxis": {
+            "anchor": "x",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "title": {
+                "text": "quantity"
+            }
+        },
+        "legend": {
+            "title": {
+                "text": "resource type, allocation type"
+            },
+            "tracegroupgap": 0
+        },
+        "title": {
+            "text": "Allocated vs Required Resources by Operation Type"
+        },
+        "barmode": "group"
+    },
+    "id": 817
+}

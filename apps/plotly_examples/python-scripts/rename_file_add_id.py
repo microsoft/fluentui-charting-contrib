@@ -3,7 +3,8 @@ import json
 import uuid
 
 def process_json_files(directory):
-    unique_id = 377
+    unique_id = 788
+    output_dir = directory + '/renamed_data'
     # Iterate through all files in the directory
     for filename in os.listdir(directory):
         if filename.endswith(".json"):  # Process only JSON files
@@ -22,7 +23,7 @@ def process_json_files(directory):
             
             # Create the new file name
             new_filename = f"data_{unique_id}.json"
-            new_filepath = os.path.join(directory, new_filename)
+            new_filepath = os.path.join(output_dir, new_filename)
             
             # Write the updated JSON content to the new file
             with open(new_filepath, "w", encoding="utf-8") as file:

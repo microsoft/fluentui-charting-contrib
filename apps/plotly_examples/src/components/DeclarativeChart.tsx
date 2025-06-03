@@ -48,7 +48,8 @@ type DataType =
   | 'seval'
   | 'plotly_express_basic'
   | 'plotly_express_detailed'
-  | 'plotly_express_colors';
+  | 'plotly_express_colors'
+  | 'advanced_scenarios';
 
 const dataTypeRanges = {
   'general': [{ min: 1, max: 252 }, {min: 750, max: 758 }],
@@ -58,6 +59,7 @@ const dataTypeRanges = {
   'plotly_express_basic': [{ min: 377, max: 427 }, {min: 760, max: 766}],
   'plotly_express_detailed': [{ min: 428, max: 569 }],
   'plotly_express_colors': [{ min: 570, max: 749 }, { min: 768, max: 787 }],
+  'advanced_scenarios': [{min: 788, max: 839}]
 };
 
 // Use require.context to load all JSON files from the split_data folder
@@ -291,6 +293,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             <Option value='plotly_express_basic'>plotly_express_basic</Option>
             <Option value='plotly_express_detailed'>plotly_express_detailed</Option>
             <Option value='plotly_express_colors'>plotly_express_colors</Option>
+            <Option value='advanced_scenarios'>advanced_scenarios</Option>
           </Dropdown>
         </div>
         <br />
