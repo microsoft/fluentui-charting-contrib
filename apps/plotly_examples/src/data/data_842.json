@@ -1,0 +1,61 @@
+{
+  "data": [
+    {
+      "x": [
+        0,
+        20,
+        40
+      ],
+      "y": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "type": "bar",
+      "name": "Metadata1"
+    },
+    {
+      "x": [
+        0,
+        20
+      ],
+      "y": [
+        "high",
+        "low",
+        "medium"
+      ],
+      "type": "bar",
+      "name": "Metadata2"
+    },
+    {
+      "x": [
+        0,
+        20,
+        40
+      ],
+      "y": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "type": "scatter",
+      "name": "Supported Builds"
+    },
+    {
+      "x": [
+        0,
+        40
+      ],
+      "y": [
+        "medium",
+        "low"
+      ],
+      "type": "scatter",
+      "name": "Recommended Builds"
+    }
+  ],
+  "layout": {
+    "barmode": "stack"
+  },
+  "id": 842
+}
