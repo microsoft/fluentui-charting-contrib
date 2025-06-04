@@ -68,14 +68,14 @@ jobs:
           cd apps/plotly_examples
           yarn install
 
-      - name: Update version in App.tsx if v5.23.xx
+      - name: Update version in App.tsx if v5.23.xx or v5.24.xx
         if: steps.check_update.outputs.up_to_date == 'false'
         run: |
           cd apps/plotly_examples/src
           # Extract just the version number (e.g., 5.24.1) from the latest version
           version="${{ steps.get_latest_version.outputs.version }}"
           # Use sed to replace v5.23.xx with the new version (e.g., v5.24.1)
-          sed -i -E "s/v5\.23\.[0-9]+/v$version/g" App.tsx
+          sed -i -E "s/v5\.2[34]\.[0-9]+/v$version/g" App.tsx
           git add App.tsx
 
       - name: Build app after updating version
@@ -84,11 +84,11 @@ jobs:
           cd apps/plotly_examples
           yarn build
 
-      - name: Create branch name with timestamp
+      - name: Create branch name with updated package version
         if: steps.check_update.outputs.up_to_date == 'false'
         id: branch
         run: |
-          BRANCH="update-react-charting-$(date +'%Y%m%d-%H%M%S')"
+          BRANCH="update-react-charting-${{ steps.get_latest_version.outputs.version }}"
           echo "branch=$BRANCH" >> $GITHUB_OUTPUT
 
       - name: Commit changes to repo
@@ -98,7 +98,7 @@ jobs:
         with:
           branch: ${{ steps.branch.outputs.branch }}
           create_branch: true
-          commit_message: (chore) update @fluentui/react-charting to version ${{ steps.get_latest_version.outputs.version }}
+          commit_message: (chore) (auto) update @fluentui/react-charting to version ${{ steps.get_latest_version.outputs.version }}
         
       - name: "Publish Notification regarding changes"
         if: steps.auto-commit-action.outputs.changes_detected == 'true'

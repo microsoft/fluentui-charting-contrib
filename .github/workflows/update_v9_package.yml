@@ -1,8 +1,8 @@
 name: (v9) Update react-charts package
 
 on:
-  # schedule:
-  #   - cron: "30 8 * * *"  # Runs every day at 2:00 PM IST (02:30 AM UTC)
+  schedule:
+    - cron: "30 8 * * *"  # Runs every day at 2:00 PM IST (08:30 AM UTC)
   workflow_dispatch:
 
 permissions:
@@ -10,7 +10,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  update-react-charting:
+  update-react-charts:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -61,7 +61,7 @@ jobs:
         if: steps.check_update.outputs.up_to_date == 'false'
         run: |
           cd apps/plotly_examples
-          npm pkg set dependencies.@fluentui/react-charting="^${{ steps.get_latest_version.outputs.version }}"
+          npm pkg set dependencies.@fluentui/react-charts="${{ steps.get_latest_version.outputs.version }}"
 
       - name: Install dependencies
         if: steps.check_update.outputs.up_to_date == 'false'
@@ -69,14 +69,14 @@ jobs:
           cd apps/plotly_examples
           yarn install
 
-      - name: Update version in App.tsx if v5.23.xx
+      - name: Update version in App.tsx for nightly build
         if: steps.check_update.outputs.up_to_date == 'false'
         run: |
           cd apps/plotly_examples/src
-          # Extract just the version number (e.g., 5.24.1) from the latest version
+          # Extract just the version number (e.g., 0.0.0-nightly-20250603-0406.1) from the latest version
           version="${{ steps.get_latest_version.outputs.version }}"
-          # Use sed to replace v5.23.xx with the new version (e.g., v5.24.1)
-          sed -i -E "s/v5\.23\.[0-9]+/v$version/g" App.tsx
+          # Use sed to replace with the new version
+          sed -i -E "s/0\.0\.0-nightly-20[0-9]{6}-[0-9]{4}\.[0-9]+/$version/g" App.tsx
           git add App.tsx
 
       - name: Build app after updating version
@@ -85,11 +85,11 @@ jobs:
           cd apps/plotly_examples
           yarn build
 
-      - name: Create branch name with timestamp
+      - name: Create branch name with updated package version
         if: steps.check_update.outputs.up_to_date == 'false'
         id: branch
         run: |
-          BRANCH="update-react-charting-$(date +'%Y%m%d-%H%M%S')"
+          BRANCH="update-react-charts-${{ steps.get_latest_version.outputs.version }}"
           echo "branch=$BRANCH" >> $GITHUB_OUTPUT
 
       - name: Commit changes to repo
@@ -99,7 +99,7 @@ jobs:
         with:
           branch: ${{ steps.branch.outputs.branch }}
           create_branch: true
-          commit_message: (chore) update @fluentui/react-charting to version ${{ steps.get_latest_version.outputs.version }}
+          commit_message: (chore) (auto) update @fluentui/react-charts to version ${{ steps.get_latest_version.outputs.version }}
         
       - name: "Publish Notification regarding changes"
         if: steps.auto-commit-action.outputs.changes_detected == 'true'

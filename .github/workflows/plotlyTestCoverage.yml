@@ -157,3 +157,35 @@ jobs:
               with: 
                 name: playwright-json-report
                 path: contrib_repo/apps/plotly_examples/playwright-report.json
+
+            - name: Move Playwright JSON report to reports folder for scheduled runs
+              if: github.event_name == 'schedule'
+              shell: bash
+              run: |
+                mv contrib_repo/apps/plotly_examples/playwright-report.json contrib_repo/apps/plotly_examples/reports/playwright-report-v8.json
+                git add contrib_repo/apps/plotly_examples/reports/playwright-report-v8.json
+
+            - name: Create branch name for scheduled report
+              if: github.event_name == 'schedule'
+              id: branch
+              run: |
+                BRANCH="playwright-report-v8-$(date +'%Y%m%d-%H%M%S')"
+                echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+            - name: Commit and push v8 scheduled report
+              if: github.event_name == 'schedule'
+              uses: stefanzweifel/git-auto-commit-action@v5
+              with:
+                branch: ${{ steps.branch.outputs.branch }}
+                create_branch: true
+                commit_message: "chore: (auto) Update v8 playwright report"
+                file_pattern: apps/plotly_examples/reports/playwright-report-v8.json
+                commit_user_name: github-actions[bot]
+                commit_user_email: github-actions[bot]@users.noreply.github.com
+                repository: contrib_repo
+
+            - name: "Publish Notification for scheduled report commit"
+              if: github.event_name == 'schedule' && steps.auto-commit-action.outputs.changes_detected == 'true'
+              shell: bash
+              run: |
+                echo "v8 Playwright report committed. [Create a pull request](https://github.com/${{ github.repository }}/pull/new/${{ steps.branch.outputs.branch }})" >> $GITHUB_STEP_SUMMARY
