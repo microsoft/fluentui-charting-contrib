@@ -66,7 +66,7 @@ jobs:
               with:
                 branch: ${{ steps.branch.outputs.branch }}
                 create_branch: true
-                commit_message: (chore) update react-charts snapshots
+                commit_message: (chore) (auto) update react-charts snapshots
                 file_pattern: '*.png'
               
             - name: "Publish Notification regarding changes"

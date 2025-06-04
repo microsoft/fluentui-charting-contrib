@@ -1,0 +1,157 @@
+name: "Plotly Test Coverage"
+description: "Reusable job for Plotly test coverage with Playwright"
+inputs:
+  repo:
+    description: "Repo to run the tests on"
+    required: true
+    default: "microsoft/fluentui"
+  branch:
+    description: "Branch to run the tests on"
+    required: true
+    default: "master"
+  playwright_spec:
+    description: "Playwright spec file"
+    required: true
+  report_name:
+    description: "Report name (e.g. v8 or v9)"
+    required: true
+  chart_utils_tgz:
+    description: "Path to chart-utilities.tgz"
+    required: true
+  chart_tgz:
+    description: "Path to charting/react-charts.tgz"
+    required: true
+  charting_build_cmd:
+    description: "Build command for charting"
+    required: true
+  charting_add_tgz:
+    description: "yarn add command for charting"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout [react-charting]
+      uses: actions/checkout@v4
+      with:
+        repository: ${{ inputs.repo }}
+        ref: ${{ inputs.branch }}
+        path: repo1
+
+    - name: Checkout [main] of current repo
+      uses: actions/checkout@v4
+      with:
+        path: contrib_repo
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+
+    - name: Install packages in repo1
+      shell: bash
+      run: |
+        cd ./repo1
+        yarn
+
+    - name: Build charting
+      shell: bash
+      run: |
+        cd ./repo1
+        ${{ inputs.charting_build_cmd }}
+
+    - name: Run yarn pack in chart-utilities to create .tgz file
+      shell: bash
+      run: |
+        cd ./repo1/packages/charts/chart-utilities
+        yarn pack --filename chart-utilities.tgz
+
+    - name: Run yarn pack in charting to create .tgz file
+      shell: bash
+      run: |
+        ${{ inputs.chart_tgz }}
+
+    - name: Add chart-utils package to resolutions block
+      shell: bash
+      run: |
+        cd contrib_repo/apps/plotly_examples
+        npx json -I -f package.json -e "this.resolutions = this.resolutions || {}; this.resolutions['@fluentui/chart-utilities'] = 'file:../../../repo1/packages/charts/chart-utilities/chart-utilities.tgz';"
+
+    - name: Install .tgz file in Plotly examples
+      shell: bash
+      run: |
+        cd contrib_repo/apps/plotly_examples
+        ${{ inputs.charting_add_tgz }}
+        yarn
+
+    - name: Start test app in background
+      shell: bash
+      run: |
+        cd contrib_repo/apps/plotly_examples
+        yarn build
+        nohup npx -y serve -s build -l 3000 > output.log 2>&1 &
+        npx wait-on http://localhost:3000/ --timeout 300000
+
+    - name: Run Playwright test script
+      shell: bash
+      run: |
+        cd contrib_repo/apps/plotly_examples
+        npx playwright install
+        npx cross-env BASE_URL='http://localhost:3000/' npx playwright test ${{ inputs.playwright_spec }} || true
+
+    - name: Zip Playwright report
+      shell: pwsh
+      run: |
+        cd contrib_repo/apps/plotly_examples
+        Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip
+
+    - name: Move Playwright JSON report to reports folder for scheduled runs
+      if: ${{ github.event_name == 'schedule' }}
+      shell: bash
+      run: |
+        mkdir -p contrib_repo/apps/plotly_examples/reports
+        mv contrib_repo/apps/plotly_examples/playwright-report.json contrib_repo/apps/plotly_examples/reports/playwright-report-${{ inputs.report_name }}.json
+
+    - name: Create branch name for scheduled report
+      if: ${{ github.event_name == 'schedule' }}
+      id: branch
+      shell: bash
+      run: |
+        BRANCH="playwright-report-${{ inputs.report_name }}-$(date +'%Y%m%d-%H%M%S')"
+        echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+    - name: Commit and push scheduled report
+      if: ${{ github.event_name == 'schedule' }}
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        branch: ${{ steps.branch.outputs.branch }}
+        create_branch: true
+        commit_message: "chore: (auto) Update ${{ inputs.report_name }} playwright report"
+        file_pattern: apps/plotly_examples/reports/playwright-report-${{ inputs.report_name }}.json
+        commit_user_name: github-actions[bot]
+        commit_user_email: github-actions[bot]@users.noreply.github.com
+        repository: contrib_repo
+
+    - name: "Publish Notification for scheduled report commit"
+      if: ${{ github.event_name == 'schedule' && steps.auto-commit-action.outputs.changes_detected == 'true' }}
+      shell: bash
+      run: |
+        echo "${{ inputs.report_name }} Playwright report committed. [Create a pull request](https://github.com/${{ github.repository }}/pull/new/${{ steps.branch.outputs.branch }})" >> $GITHUB_STEP_SUMMARY
+
+# Usage
+# jobs:
+#   run_tests:
+#     runs-on: windows-latest
+#     steps:
+#       - uses: ./.github/actions/plotly-test-coverage
+#         with:
+#           repo: ${{ github.event.inputs.repo || 'microsoft/fluentui' }}
+#           branch: ${{ github.event.inputs.branch || 'master' }}
+#           playwright_spec: tests/DeclarativeChart.spec.ts
+#           report_name: v8
+#           chart_utils_tgz: ./repo1/packages/charts/chart-utilities/chart-utilities.tgz
+#           chart_tgz: |
+#             cd ./repo1/packages/charts/react-charting
+#             yarn pack --filename react-charting.tgz
+#           charting_build_cmd: yarn nx run react-charting:build
+#           charting_add_tgz: yarn add ../../../repo1/packages/charts/react-charting/react-charting.tgz
