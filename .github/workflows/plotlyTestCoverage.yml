@@ -169,6 +169,7 @@ jobs:
             - name: Create branch name for scheduled report
               if: github.event_name == 'schedule'
               id: branch
+              shell: bash
               run: |
                 BRANCH="playwright-report-v8-$(date +'%Y%m%d-%H%M%S')"
                 echo "branch=$BRANCH" >> $GITHUB_OUTPUT
