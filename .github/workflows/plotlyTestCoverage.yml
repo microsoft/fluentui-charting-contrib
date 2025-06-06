@@ -127,23 +127,11 @@ jobs:
                 cd contrib_repo/apps/plotly_examples
                 Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip
 
-            - name: Install jq on Windows
-              run: |
-                curl -L -o jq.exe https://github.com/stedolan/jq/releases/download/jq-1.6/jq-win64.exe
-                move jq.exe C:\Windows\System32
-
-            - name: Print number of total tests and failures
-              shell: pwsh
-              run: |
-                cd contrib_repo/apps/plotly_examples
-                $total_tests = jq '[.suites[].suites[].specs[].tests] | length' playwright-report.json
-                $failures = jq '[.suites[].suites[].specs[].tests[] | select(all(.results[]; .status == "failed"))] | length' playwright-report.json
-                echo "Total number of tests: $total_tests"
-                echo "Number of test failures: $failures"
-                echo "### Test Results" >> $env:GITHUB_STEP_SUMMARY
-                echo "- **Total Tests**: $total_tests" >> $env:GITHUB_STEP_SUMMARY
-                echo "- **Failures**: $failures" >> $env:GITHUB_STEP_SUMMARY
-              continue-on-error: true         
+            - name: Compute number of total tests and failures
+              uses: ./.github/actions/playwright-metrics
+              with:
+                current_report: contrib_repo/apps/plotly_examples/playwright-report.json
+                baseline_report: contrib_repo/apps/plotly_examples/reports/playwright-report-v8.json        
 
             - name: Upload Playwright HTML report as artifact
               uses: actions/upload-artifact@v4
