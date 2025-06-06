@@ -1,0 +1,23 @@
+name: "Playwright Metrics Evaluation"
+description: "Compute and summarize Playwright test and failure scores as a Markdown table"
+inputs:
+  current_report:
+    description: "Path to current Playwright JSON report"
+    required: true
+  baseline_report:
+    description: "Path to baseline Playwright JSON report"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install jq on Windows
+      run: |
+      curl -L -o jq.exe https://github.com/stedolan/jq/releases/download/jq-1.6/jq-win64.exe
+      move jq.exe C:\Windows\System32
+      
+    - name: Compute Playwright metrics
+      shell: pwsh
+      run: |
+        ./metrics.ps1 -CurrentReport "${{ inputs.current_report }}" -BaselineReport "${{ inputs.baseline_report }}"
+      continue-on-error: true  
