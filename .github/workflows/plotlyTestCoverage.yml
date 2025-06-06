@@ -128,7 +128,7 @@ jobs:
                 Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip
 
             - name: Compute number of total tests and failures
-              uses: ./contrib_repo/.github/actions/playwright-metrics
+              uses: contrib_repo/.github/actions/playwright-metrics
               with:
                 current_report: contrib_repo/apps/plotly_examples/playwright-report.json
                 baseline_report: contrib_repo/apps/plotly_examples/reports/playwright-report-v8.json        
