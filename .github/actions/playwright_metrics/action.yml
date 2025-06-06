@@ -12,12 +12,13 @@ runs:
   using: "composite"
   steps:
     - name: Install jq on Windows
+      shell: pwsh
       run: |
-      curl -L -o jq.exe https://github.com/stedolan/jq/releases/download/jq-1.6/jq-win64.exe
-      move jq.exe C:\Windows\System32
+        curl -L -o jq.exe https://github.com/stedolan/jq/releases/download/jq-1.6/jq-win64.exe
+        move jq.exe C:\Windows\System32
       
     - name: Compute Playwright metrics
       shell: pwsh
       run: |
-        ./metrics.ps1 -CurrentReport "${{ inputs.current_report }}" -BaselineReport "${{ inputs.baseline_report }}"
+        & "${{ github.action_path }}/metrics.ps1" -CurrentReport "${{ inputs.current_report }}" -BaselineReport "${{ inputs.baseline_report }}"
       continue-on-error: true  
