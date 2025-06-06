@@ -12,6 +12,7 @@ runs:
   using: "composite"
   steps:
     - name: Install jq on Windows
+      shell: pwsh
       run: |
         curl -L -o jq.exe https://github.com/stedolan/jq/releases/download/jq-1.6/jq-win64.exe
         move jq.exe C:\Windows\System32
