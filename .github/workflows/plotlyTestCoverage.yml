@@ -127,6 +127,13 @@ jobs:
                 cd contrib_repo/apps/plotly_examples
                 Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip
 
+            - name: Check repo structure
+              run: |
+                echo "$PWD" && ls
+                cd ./contrib_repo
+                echo "$PWD" && ls
+              continue-on-error: true
+
             - name: Compute number of total tests and failures
               uses: ./contrib_repo/.github/actions/playwright-metrics
               with:
