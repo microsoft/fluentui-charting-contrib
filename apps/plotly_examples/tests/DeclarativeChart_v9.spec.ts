@@ -7,12 +7,19 @@ for (const testConfig of testMatrix) {
   const mode = testConfig.mode;
   const locale = testConfig.locale;
   const testLocaleName = locale ? `-${locale}` : '';
+  const highContrast = testConfig.highContrast ? '-HighContrast' : '';
   test.describe('', () => {
     let context;
     let page;
 
     test.beforeAll(async ({ browser }) => {
-      context = await browser.newContext({ locale });
+      if (testConfig.highContrast) {
+        context = await browser.newContext({ locale, forcedColors: 'active', colorScheme: theme === 'Dark'? 'dark': 'light' });
+      }
+      else {
+        context = await browser.newContext({ locale });
+      }
+
       page = await context.newPage();
       await page.goto(process.env.BASE_URL!);
     });
@@ -22,7 +29,7 @@ for (const testConfig of testMatrix) {
     });
     //test.describe(`Declarative chart examples in ${theme} mode and ${mode} layout`, () => {
     for (let index = testConfig.startExampleIndex; index <= testConfig.endExampleIndex; index++) {
-      test(`Declarative chart example ${index + 1}-${theme}-${mode} mode${testLocaleName}` , async () => {
+      test(`Declarative chart example ${index + 1}-${theme}-${mode} mode${testLocaleName}${highContrast}` , async () => {
         const iframe = page.locator('#webpack-dev-server-client-overlay');
         if (await iframe.count() > 0) {
           await iframe.evaluate((el) => el.remove()).catch(() => {
