@@ -12,7 +12,8 @@
         "high"
       ],
       "type": "bar",
-      "name": "Metadata1"
+      "name": "Metadata1",
+      "mode": "lines+markers"
     },
     {
       "x": [
@@ -25,7 +26,8 @@
         "medium"
       ],
       "type": "bar",
-      "name": "Metadata2"
+      "name": "Metadata2",
+      "mode": "lines+markers"
     },
     {
       "x": [
@@ -39,7 +41,8 @@
         "high"
       ],
       "type": "scatter",
-      "name": "Supported Builds"
+      "name": "Supported Builds",
+      "mode": "lines+markers"
     },
     {
       "x": [
@@ -51,7 +54,8 @@
         "low"
       ],
       "type": "scatter",
-      "name": "Recommended Builds"
+      "name": "Recommended Builds",
+      "mode": "lines+markers"
     }
   ],
   "layout": {
