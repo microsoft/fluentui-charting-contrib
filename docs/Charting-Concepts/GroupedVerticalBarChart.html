@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Charting-Concepts/GroupedVerticalBarChart" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.1.0">
+<title data-rh="true">Grouped Vertical Bar Chart | FluentUI Charting Contrib Docsite</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://microsoft.github.io/fluentui-charting-contrib/img/fluent-charting-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://microsoft.github.io/fluentui-charting-contrib/img/fluent-charting-social-card.jpg"><meta data-rh="true" property="og:url" content="https://microsoft.github.io/fluentui-charting-contrib/docs/Charting-Concepts/GroupedVerticalBarChart"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Grouped Vertical Bar Chart | FluentUI Charting Contrib Docsite"><meta data-rh="true" name="description" content="GroupedVerticalBarChart1.png"><meta data-rh="true" property="og:description" content="GroupedVerticalBarChart1.png"><link data-rh="true" rel="icon" href="/fluentui-charting-contrib/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://microsoft.github.io/fluentui-charting-contrib/docs/Charting-Concepts/GroupedVerticalBarChart"><link data-rh="true" rel="alternate" href="https://microsoft.github.io/fluentui-charting-contrib/docs/Charting-Concepts/GroupedVerticalBarChart" hreflang="en"><link data-rh="true" rel="alternate" href="https://microsoft.github.io/fluentui-charting-contrib/docs/Charting-Concepts/GroupedVerticalBarChart" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://XZ2D9M7V2V-dsn.algolia.net" crossorigin="anonymous"><link rel="search" type="application/opensearchdescription+xml" title="FluentUI Charting Contrib Docsite" href="/fluentui-charting-contrib/opensearch.xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/fluentui-charting-contrib/assets/css/styles.01357342.css">
+<script src="/fluentui-charting-contrib/assets/js/runtime~main.f5e943f7.js" defer="defer"></script>
+<script src="/fluentui-charting-contrib/assets/js/main.fc172642.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/fluentui-charting-contrib/"><div class="navbar__logo"><img src="/fluentui-charting-contrib/img/microsoft.png" alt="FluentUI Charting Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/fluentui-charting-contrib/img/microsoft.png" alt="FluentUI Charting Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">FluentUI Charting</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/fluentui-charting-contrib/docs/Overview">Docs</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/microsoft/fluentui-charting-contrib" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fluentui-charting-contrib/docs/Overview">Overview</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/fluentui-charting-contrib/docs/changelogSplits/5.24">Changelog</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fluentui-charting-contrib/docs/Start Developing">Start Developing</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/fluentui-charting-contrib/docs/Contributor Guide">Contributor Guide</a><button aria-label="Collapse sidebar category &#x27;Contributor Guide&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fluentui-charting-contrib/docs/Charting-Concepts/AreaChart">Area Chart</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fluentui-charting-contrib/docs/Charting-Concepts/DonutChart">Donut Chart</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fluentui-charting-contrib/docs/Charting-Concepts/GaugeChart">Gauge Chart</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/fluentui-charting-contrib/docs/Charting-Concepts/GroupedVerticalBarChart">Grouped Vertical Bar Chart</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fluentui-charting-contrib/docs/Charting-Concepts/HeatMapChart">Heatmap Chart</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fluentui-charting-contrib/docs/Charting-Concepts/HorizontalBarChart">Horizontal Bar Chart</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fluentui-charting-contrib/docs/Charting-Concepts/LineChart">Line Chart</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fluentui-charting-contrib/docs/Charting-Concepts/SankeyChart">Sankey Chart</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fluentui-charting-contrib/docs/Charting-Concepts/SparklineChart">Sparkline Chart</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fluentui-charting-contrib/docs/Charting-Concepts/StackedBarChart">Stacked Bar Chart</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fluentui-charting-contrib/docs/Charting-Concepts/VerticalBarChart">Vertical Bar Chart</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fluentui-charting-contrib/docs/Charting-Concepts/VerticalStackedBarChart">Vertical Stacked Bar Chart</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fluentui-charting-contrib/docs/Technical Details">Technical details</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fluentui-charting-contrib/docs/Detailed Implementation Steps">Detailed Implementation Steps</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/fluentui-charting-contrib/docs/ChartingExamples/VerticalBarChartExample">Examples</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fluentui-charting-contrib/docs/Debugging">Debugging</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fluentui-charting-contrib/docs/Implementation Best Practices">Implementation Best Practices</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fluentui-charting-contrib/docs/Accessibility">Accessibility</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fluentui-charting-contrib/docs/colors">Colors</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fluentui-charting-contrib/docs/implementing-2-to-1-spacing">Implementing 2:1 spacing</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fluentui-charting-contrib/docs/creating-date-objects-for-chart-data">Creating Date Objects For Chart Data</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fluentui-charting-contrib/docs/Testing Strategy">Testing Strategy</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fluentui-charting-contrib/docs/TestCoverage">Test Coverage Report</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/fluentui-charting-contrib/docs/Test Plans/AreaChart/ComponentTests">Test Plans</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fluentui-charting-contrib/docs/Testing Unpublished Library Version">Testing Unpublished Library Version</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fluentui-charting-contrib/docs/BundleSize">Bundle Size</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/fluentui-charting-contrib/docs/rfcs/fix-2-to-1-spacing">RFCs</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/fluentui-charting-contrib/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/fluentui-charting-contrib/docs/Contributor Guide"><span itemprop="name">Contributor Guide</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Grouped Vertical Bar Chart</span><meta itemprop="position" content="2"></li></ul></nav><div class="theme-doc-markdown markdown"><h1>Grouped Vertical Bar Chart</h1>
+<p><img loading="lazy" alt="GroupedVerticalBarChart1.png" src="/fluentui-charting-contrib/assets/images/GVBC1-bfb960362b8a441805cd138056a2f8f6.png" width="1011" height="748" class="img_ev3q"></p>
+<p>A grouped vertical bar chart is a type of chart that displays multiple series of data as groups of bars, with each bar representing a category. The bars are grouped together side by side, with each group representing a different series.</p>
+<p>In a grouped vertical bar chart, the x-axis represents the categories, while the y-axis represents the values of the series. Each bar in a group is colored differently to differentiate between the series.</p>
+<ul>
+<li><strong>Use cases</strong>
+Some common use cases for a Grouped Vertical Bar Chart are as follows:<!-- -->
+<ul>
+<li>Comparing the values of multiple series across categories</li>
+<li>Displaying financial data, such as revenue and expenses, for different products or services</li>
+<li>Displaying scientific research data for different treatments or conditions</li>
+<li>Comparing the performance of different teams or departments in a company</li>
+<li>Showing the distribution of different types of crimes in a city</li>
+<li>Displaying the results of a survey for different age groups or genders</li>
+<li>Comparing the sales of different products in a store</li>
+<li>Showing the number of students enrolled in different courses in a school</li>
+<li>Displaying the number of employees in different departments of a company</li>
+<li>Comparing the number of visitors to different tourist attractions in a city</li>
+</ul>
+</li>
+<li><strong>Mathematical/Geometrical concepts</strong></li>
+</ul>
+<p><img loading="lazy" alt="GroupedVerticalBarChart2.png" src="/fluentui-charting-contrib/assets/images/GVBC2-d4cbda92ad72f6f1a2f85f9e2341b6e0.png" width="1121" height="636" class="img_ev3q"></p>
+<p>The major D3 functions that are involved in the creation of Vertical bar charts are:</p>
+<ul>
+<li>
+<p><strong>d3-scale:</strong>
+The d3-scale module is a part of the d3 library, which is a collection of JavaScript functions that are used for data visualization. The d3-scale module provides several functions for creating and manipulating scales, which are used to map data values to visual properties, such as position, size, and color.</p>
+<p>The d3-scale module includes several scale types, including linear, logarithmic, power, and time scales. These scales are used to map continuous data values to a continuous range of visual properties. The module also includes ordinal and band scales, which are used to map categorical data values to a discrete range of visual properties.</p>
+</li>
+</ul>
+<p>The d3-scale module provides several functions for creating and manipulating scales, including scaleLinear, scaleLog, scalePow, scaleTime, scaleOrdinal, and scaleBand. These functions take one or more arguments that define the domain and range of the scale, as well as any additional properties, such as the number of ticks or the padding between bands.</p>
+<p><strong>Application in Grouped Vertical bar chart:</strong>
+Grouped vertical bar chart uses the d3-scale module to create a linear scale for the y-axis of the chart. The linear scale maps a continuous domain of data values to a continuous range of visual properties, such as position or height.</p>
+<ul>
+<li>
+<p><strong>d3.scaleLinear()</strong>: The d3.scaleLinear is a function from the d3-scale module that is used to create a linear scale for the y-axis of the chart. The linear scale maps a continuous domain of data values to a continuous range of visual properties, such as position or height. The d3ScaleLinear function takes no arguments and returns a new linear scale. The scale can be customized using several methods, including domain, range, clamp, and nice. The domain method sets the domain of the scale, which is the range of data values that the scale maps to the range of visual properties. The range method sets the range of the scale, which is the range of visual properties that the scale maps to the domain of data values.</p>
+<p><strong>Application in Grouped Vertical bar chart:</strong></p>
+<ul>
+<li>In the Grouped Vertical Bar chart component, the d3.scaleLinear function from the d3-scale module is used to create a new linear scale for the y-axis of the chart.</li>
+<li>The d3.scaleLinear function takes no arguments and returns a new linear scale. The scale maps a continuous input domain to a continuous output range. In this case, the input domain is the range of values for the y-axis data, while the output range is the range of pixel values for the y-axis on the chart.</li>
+<li>The d3.scaleLinear function is used in the GroupedVerticalBarChart component to generate the y-axis scale for the chart. The yAxisScale property of the component is set to a new instance of the d3.scaleLinear function. The domain property of the yAxisScale object is set to an array of the minimum and maximum values of the y-axis data. The range property of the yAxisScale object is set to an array of the minimum and maximum pixel values for the y-axis on the chart.</li>
+<li>The d3.scaleLinear function is used to generate a linear scale that maps the y-axis data to the pixel values on the chart. This allows the y-axis data to be displayed in a way that is visually meaningful and easy to interpret.</li>
+</ul>
+</li>
+<li>
+<p><strong>d3.scaleBand():</strong> The d3.scaleBand is a function from the d3-scale module that is used to create a band scale for the x-axis of the chart. The band scale maps a discrete domain of data values to a discrete range of visual properties, such as position or width. The d3ScaleBand function takes no arguments and returns a new band scale. The scale can be customized using several methods, including domain, range, padding, and align. The domain method sets the domain of the scale, which is the range of data values that the scale maps to the range of visual properties. The range method sets the range of the scale, which is the range of visual properties that the scale maps to the domain of data values. The padding method sets the padding between the bands of the scale, which determines the width of the bands. The align method sets the alignment of the bands within the range of the scale.</p>
+<p><strong>Application in Grouped Vertical bar chart:</strong></p>
+</li>
+</ul>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">- x0_inner_padding = space_between_groups /(space_between_groups + group_width)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- space_between_groups = 2 * bar_width</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- group_width = this._keys.length * bar_width + (this._keys.length - 1) * space_between_bars</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li>In the Grouped Vertical Bar chart component, the d3.scaleBand function from the d3-scale module is used to create a new band scale for the x-axis of the chart.</li>
+<li>The d3.scaleBand function takes no arguments and returns a new band scale. The scale maps a discrete input domain to a continuous output range. In this case, the input domain is an array of categories for the x-axis, while the output range is the range of pixel values for the x-axis on the chart.</li>
+<li>The d3.scaleBand function is used in the GroupedVerticalBarChart component to generate the x-axis scale for the chart. The xAxisScale property of the component is set to a new instance of the d3.scaleBand function. The domain property of the xAxisScale object is set to an array of the categories for the x-axis. The range property of the xAxisScale object is set to an array of the minimum and maximum pixel values for the x-axis on the chart.</li>
+<li>The d3.scaleBand function is used to generate a band scale that maps the categories for the x-axis to the pixel values on the chart. This allows the categories to be displayed in a way that is visually meaningful and easy to interpret. The paddingInner and paddingOuter properties of the xAxisScale object can be used to adjust the spacing between the bars and groups of bars on the chart.</li>
+</ul>
+<p>Overall, the d3.scaleBand function is used to generate a band scale that maps the categories for the x-axis to the pixel values on the chart, allowing the categories to be displayed in a way that is visually meaningful and easy to interpret.</p>
+<ul>
+<li>
+<p><strong>d3-selection:</strong> The d3-selection is a module from the d3 library that is used to select and manipulate DOM elements in the chart component. The d3-selection module provides several functions for selecting and manipulating DOM elements, including select, selectAll, append, attr, and style. The select function is used to select a single DOM element that matches a given selector. The selectAll function is used to select multiple DOM elements that match a given selector. The append function is used to append a new DOM element to a selected element. The attr function is used to set or get an attribute of a selected element. The style function is used to set or get a style property of a selected element.</p>
+<p><strong>Application in Grouped Vertical bar chart:</strong></p>
+<ul>
+<li>In the Grouped Vertical Bar chart component, the d3Select function from the d3-selection module is used to select an element from the DOM.</li>
+<li>The d3Select function takes one argument, which is a SVG node element for the element to be selected. The function returns a new selection object that represents the selected element.</li>
+</ul>
+</li>
+</ul>
+<p>Overall, the d3Select function from the d3-selection module is used to select an element from the DOM, which allows the GroupedVerticalBarChart component to interact with and modify the chart elements.</p>
+<ul>
+<li>
+<p><strong>d3-array:</strong> The d3-array is a module from the d3 library that is used to manipulate arrays of data in the chart component. The d3-array module provides several functions for manipulating arrays of data, including max, min, extent, sum, and mean. The max function is used to find the maximum value in an array of data. The min function is used to find the minimum value in an array of data. The extent function is used to find the minimum and maximum values in an array of data. The sum function is used to find the sum of the values in an array of data. The mean function is used to find the mean (average) of the values in an array of data.</p>
+<p><strong>Application in Grouped Vertical bar chart:</strong></p>
+<ul>
+<li>In the Grouped Vertical Bar chart component, the d3Max function from the d3-array module is used to find the maximum value in an array of numbers.</li>
+<li>The d3Max function takes two arguments: the first argument is the array of numbers to be searched, and the second argument is an optional function that specifies how to extract the numeric value from each element in the array. If the second argument is not provided, the d3Max function assumes that the array contains only numeric values.</li>
+</ul>
+</li>
+</ul>
+<p>Overall, the d3Max function from the d3-array module is used to find the maximum value in an array of numbers, which allows the GroupedVerticalBarChart component to set the y-axis scale domain based on the maximum value of the y-axis data.</p>
+<ul>
+<li>
+<p><strong>d3-format:</strong> The d3-format is a module from the d3 library that is used to format numbers and strings in the chart component. The d3-format module provides several functions for formatting numbers and strings, including format, formatPrefix, precisionFixed, and precisionRound.</p>
+<p>The format function is used to format a number or string using a specified format string. The format string can include placeholders for the value, such as % for a percentage or , for a comma-separated number. The formatPrefix function is used to format a number using a prefix notation that rounds the value to a specified precision and appends a prefix, such as K for thousands or M for millions. The precisionFixed function is used to format a number using a fixed number of decimal places. The precisionRound function is used to format a number using a variable number of decimal places that is determined by the magnitude of the value.</p>
+</li>
+</ul>
+<p><strong>Application in Grouped Vertical bar chart:</strong></p>
+<ul>
+<li>In the Grouped Vertical Bar chart component, the d3FormatPrefix function from the d3-format module is used to format numbers with SI-prefixes.</li>
+<li>The d3FormatPrefix function takes one argument, which is a numeric value. The function returns a string that represents the value with an SI-prefix, such as &quot;K&quot; for thousands or &quot;M&quot; for millions.</li>
+<li>The d3FormatPrefix function is used in the GroupedVerticalBarChart component to format the bar labels for groups.</li>
+</ul>
+<p>Overall, the d3FormatPrefix function from the d3-format module is used to format numbers, which allows the component to display the bar labels in a way that is visually meaningful and easy to interpret.</p>
+<ul>
+<li>
+<p><strong>d3-axis:</strong> The d3-axis module is a part of the d3 library, which is a collection of JavaScript functions that are used for data visualization. The d3-axis module provides several functions for creating and manipulating axes, which are used to display the scales of a chart component.</p>
+<p>In data visualization, axes are used to display the scales of a chart component, such as the x-axis and y-axis of a bar chart. Axes provide visual cues to help readers interpret the data values of a chart component, such as the range and domain of the data values.</p>
+</li>
+</ul>
+<p>The d3-axis module provides several types of axes, including bottom, top, left, and right axes. Each type of axis has its own set of methods for customizing the axis and displaying the tick values.</p>
+<p>Overall, the d3-axis module is an essential part of data visualization, as it provides a powerful and flexible way to display the scales of a chart component and help readers interpret the data values of the chart.</p>
+<p><strong>Application in Grouped Vertical bar chart:</strong>
+In the Vertical stacked bar chart, d3-axis is used to create and render the x and y axes of the chart.</p>
+<ul>
+<li>The d3-axis library provides various methods for creating and rendering axes, such as axisBottom(), axisLeft(), and tickFormat(). In this case, the d3-axis library is used to create and render the x and y axes of the chart.</li>
+<li>To create the x and y axes, the d3-axis library&#x27;s axisBottom() and axisLeft() methods are used, respectively. These methods take a scale function as an argument and return a new axis function that can be used to render the axis.</li>
+<li>The resulting x and y axis functions are then used to render the x and y axes of the chart. The call() method of the selection object is used to call the axis function and render the axis.</li>
+<li>The tickFormat() method of the y-axis scale is also used to set the tick format function for the y-axis. This method takes the format function created using the d3-format library as an argument and sets it as the tick format function for the y-axis.</li>
+</ul>
+<p>Overall, the d3-axis library is used to create and render the x and y axes of the chart by using the axisBottom() and axisLeft() methods to create the axis functions and the call() method to render the axes. The tickFormat() method is also used to set the tick format function for the y-axis.</p>
+<ul>
+<li><strong>Dev Deisgn Details:</strong>
+Following are the major components that contribute towards creating a complete grouped vertical bar chart:<!-- -->
+<ul>
+<li><strong>Axes:</strong>
+<ul>
+<li>
+<p><strong>_createX0Scale():</strong> This method is responsible for generating the x and y scales that are used to map the data points to the chart dimensions. The scales are generated using the d3-scale library, which provides several scale types for different types of data.</p>
+<p><strong>Function arguments:</strong></p>
+<ul>
+<li>containerWidth: It is a number representing the width of the container element for the chart. This argument is used to calculate the range of the x-axis scale.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Working algorithm:</strong></p>
+<ul>
+<li>
+<p>The _createX0Scale method first creates a new d3ScaleBand object called x0Axis. The domain property of the x0Axis object is set to the _xAxisLabels array, which contains the labels for the main x-axis of the chart. The range property of the x0Axis object is set to an array that defines the range of the main x-axis scale. The range is calculated based on the containerWidth, the margins of the chart, and the _domainMargin property, which is the margin between the edge of the chart and the first and last bars.</p>
+</li>
+<li>
+<p>The paddingInner property of the x0Axis object is set to a value that defines the inner padding between groups of bars in the chart. The value is calculated based on the number of keys in the chart, which is the number of series in each data point, and the BAR_GAP_RATE property, which is the ratio of the space between bars to the width of a bar.</p>
+</li>
+<li>
+<p>Finally, the _createX0Scale method returns the x0Axis object.</p>
+</li>
+<li>
+<p><strong>_createX1Scale():</strong> This method generates the grouped x-axis scale for the chart. The method creates a new d3ScaleBand object and sets its domain, range, and paddingInner properties based on the _keys array, the bandwidth of the main x-axis scale, the _isRtl property, and the X1_INNER_PADDING and BAR_GAP_RATE properties. The method returns the d3ScaleBand object.</p>
+<p><strong>Function arguments:</strong></p>
+<ul>
+<li>xScale0: This argument is a scale function that is used to calculate the width of each bar in the chart. The function returns a new scale function that is used to calculate the position of each bar within a group.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Working algorithm:</strong></p>
+<ul>
+<li>
+<p>The _createX1Scale method first creates a new d3ScaleBand object say x1Axis. The domain property of the x1Axis object is set to the _keys array, which contains the keys for each series in the chart. The range property of the x1Axis object is set to an array that defines the range of the grouped x-axis scale. The range is calculated based on the bandwidth of the main x-axis scale, the _isRtl property, which is a boolean that indicates whether the chart is in right-to-left mode.</p>
+</li>
+<li>
+<p>The paddingInner property of the x1Axis object is set to a value that defines the inner padding between groups of bars in the chart. The value is calculated based on the X1_INNER_PADDING property whose value is 0.1.</p>
+</li>
+<li>
+<p>Finally, the _createX1Scale method returns the x1Axis object.</p>
+</li>
+<li>
+<p><strong>_getDomainMargins():</strong> This method calculates the margins of the chart based on the available width of the chart container and the required width to render the bars in the chart. The method calculates the barWidth and groupWidth variables based on the barwidth prop, the number of keys in the chart, and the BAR_GAP_RATE property. If the available width is greater than or equal to the required width, the method centers the chart by setting equal left and right margins for the domain. If the available width is less than the required width, the method calculates the maximum possible group width to maintain a 2:1 spacing between bars and groups of bars and recalculates the barWidth variable. The method returns an object that represents the margins of the chart.</p>
+<p><strong>Function arguments:</strong></p>
+<ul>
+<li>containerWidth: It is a number representing the width of the container in which the chart is being rendered.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Formulae:</strong></p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">x1_inner_padding = space_between_bars / (space_between_bars + bar_width)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">=&gt; space_between_bars = (x1_inner_padding / (1 - x1_inner_padding)) \* bar_width</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">BAR_GAP_RATE = Rate at which the space between the bars in a group changes wrt the bar width</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">BAR_GAP_RATE = X1_INNER_PADDING / (1 - X1_INNER_PADDING)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">X1_INNER_PADDING = 0.1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Maximum possible group width to maintain 2:1 spacing:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">InitialBarWidth = Math.min(props.barwidth || 16, 24);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">(i) InitialGroupWidth = _keys.length * InitialBarWidth+ (_keys.length - 1) * BAR_GAP_RATE * InitialBarWidth</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Total width required to render the bars. Directly proportional to bar width:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">(ii) ReqWidth = _xAxisLabels.length * InitialGroupWidth  + (_xAxisLabels.length - 1) * 2 * InitialBarWidth</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">From (i) and (ii)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Maximum possible group width to maintain 2:1 spacing</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">MaxBandwidth = totalWidth / (_xAxisLabels.length +</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">(_xAxisLabels.length - 1) \* (2 / (_keys.length + (_keys.length - 1) * BAR_GAP_RATE)))</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">FinalGroupWidth = MaxBandwidth;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">From (i)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">FinalBarWidth = FinalGroupWidth / (_keys.length + (_keys.length - 1) * BAR_GAP_RATE)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><strong>Working algorithm:</strong></p>
+<ul>
+<li>
+<p>The _getDomainMargins method first calculates the total width available to render the bars in the chart. The total width is calculated based on the containerWidth, the margins of the chart, and the MIN_DOMAIN_MARGIN property, which is the minimum margin between the edge of the chart and the first and last bars. The method then sets the barWidth variable to the minimum of the barwidth prop or 16, and the groupWidth variable to the product of the number of keys in the chart, the barWidth, and the BAR_GAP_RATE property, which is the ratio of the space between bars to the width of a bar, plus the space between groups of bars.</p>
+</li>
+<li>
+<p>The method then calculates the total width required to render the bars in the chart. The total width is calculated based on the length of the _xAxisLabels array, the groupWidth, the barWidth, and the space between groups of bars. If the total width available to render the bars is greater than or equal to the total width required to render the bars, the method sets the _domainMargin property to half of the difference between the total width available and the total width required. This centers the chart by setting equal left and right margins for the domain.</p>
+</li>
+<li>
+<p>If the total width available to render the bars is less than the total width required to render the bars, the method calculates the maximum possible group width to maintain a 2:1 spacing between bars and groups of bars. The method then sets the groupWidth variable to the maximum possible group width and recalculates the barWidth variable based on the groupWidth and the BAR_GAP_RATE property. The _domainMargin property is set to the MIN_DOMAIN_MARGIN.</p>
+</li>
+<li>
+<p>Finally, the _getDomainMargins method returns an object that represents the margins of the chart. The left and right margins of the chart are updated to include the _domainMargin.</p>
+</li>
+<li>
+<p><strong>createNumericXAxis():</strong> The code above is a function called createNumericXAxis in the utilities.ts file. This function is responsible for creating a numeric x-axis for a chart component. The function takes two arguments: xAxisParams and chartType. xAxisParams is an object that contains several properties, including domainNRangeValues, showRoundOffXTickValues, xAxistickSize, tickPadding, xAxisCount, and xAxisElement. chartType is an enumeration that specifies the type of chart component.</p>
+<p><strong>Function arguments:</strong></p>
+<ul>
+<li>xAxisParams of type IXAxisParams which is an object containing the following properties:<!-- -->
+<ul>
+<li>domainNRangeValues of type IDomainNRange which is an object containing the domain and range values for the x-axis.</li>
+<li>showRoundOffXTickValues of type boolean which is an optional property that determines whether to round off the x-axis tick values.</li>
+<li>xAxistickSize of type number which is an optional property that determines the size of the x-axis ticks.</li>
+<li>tickPadding of type number which is an optional property that determines the padding between the x-axis ticks and the x-axis labels.</li>
+<li>xAxisCount of type number which is an optional property that determines the number of x-axis ticks.</li>
+<li>xAxisElement of type SVGElement | null which is an optional property that represents the x-axis element.</li>
+</ul>
+</li>
+<li>chartType of type ChartTypes which is an enum that represents the type of chart.</li>
+<li>culture of type string which is an optional paramter represents the locale into which the numeric x-axis labels will be localized.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Working algorithm:</strong></p>
+<ul>
+<li>The function first extracts the properties of the xAxisParams object using destructuring. The domainNRangeValues property is an object that contains the start and end values of the domain and range of the x-axis. The showRoundOffXTickValues property is a boolean that specifies whether to round off the tick values of the x-axis. The xAxistickSize property is a number that specifies the size of the ticks of the x-axis. The tickPadding property is a number that specifies the padding between the ticks and the labels of the x-axis. The xAxisCount property is a number that specifies the number of ticks of the x-axis. The xAxisElement property is a reference to the DOM node that contains the x-axis of the chart.</li>
+<li>The function then creates a linear scale for the x-axis using the d3ScaleLinear function from the d3-scale module. The scale is customized using the domain and range methods, which set the domain and range of the scale, respectively. If the showRoundOffXTickValues property is true, the nice method is called on the scale to round off the tick values of the x-axis.</li>
+<li>The function then creates a bottom axis for the x-axis using the d3AxisBottom function from the d3-axis module. The axis is customized using the tickSize, tickPadding, ticks, and tickFormat methods. The tickSize method sets the size of the ticks of the x-axis. The tickPadding method sets the padding between the ticks and the labels of the x-axis. The ticks method sets the number of ticks of the x-axis. The tickFormat method formats the tick values of the x-axis using the convertToLocaleString function and the culture parameter.</li>
+<li>If the xAxisElement property is not null, the axis is rendered on the DOM node using the call method of the d3-selection module. The selectAll method is called on the axis to select all the text elements of the x-axis, and the attr method is called to set the aria-hidden attribute of the text elements to true.</li>
+<li>Finally, the function computes the tick values of the x-axis using the ticks and tickFormat methods of the scale, and returns an object that contains the x-axis scale and the tick values.</li>
+</ul>
+<p>Overall, the createNumericXAxis function is responsible for creating a numeric x-axis for a chart component. The function creates a linear scale for the x-axis and a bottom axis for the x-axis using the d3-scale and d3-axis modules, respectively. The function customizes the scale and axis using several methods, including domain, range, tickSize, tickPadding, ticks, and tickFormat. The function also renders the axis on the DOM node and computes the tick values of the x-axis.</p>
+<ul>
+<li><strong>createStringXAxis():</strong> This function is responsible for creating a string x-axis for a chart component. The function takes four arguments: xAxisParams, tickParams, dataset, and culture. xAxisParams is an object that contains several properties, including domainNRangeValues, xAxisCount, xAxistickSize, tickPadding, xAxisPadding, xAxisInnerPadding, and xAxisOuterPadding. tickParams is an object that contains several properties, including tickValues and tickFormat. dataset is an array of strings that contains the values of the x-axis. culture is a string that specifies the locale into which the x-axis labels can be localized.</li>
+</ul>
+<p><strong>Function Arguments:</strong></p>
+<ul>
+<li>xAxisParams: An object containing the parameters for the x-axis, including the domain and range values, tick size, tick padding, number of ticks, padding for the inner and outer edges of the axis, and the element to render the axis.</li>
+<li>tickParams: An object containing the parameters for the ticks on the x-axis, including the tick values and tick format.</li>
+<li>dataset: An array of strings representing the data points for the x-axis.</li>
+<li>culture: An optional string representing the culture to use for formatting the tick labels on the x-axis. However, the localization works only if the string can be converted to a numeric value. Otherwise, the x-axis labels remain unlocalized.</li>
+</ul>
+<p><strong>Working algorithm:</strong></p>
+<ul>
+<li>The function first extracts the properties of the xAxisParams object using destructuring. The domainNRangeValues property is an object that contains the start and end values of the domain and range of the x-axis. The xAxisCount property is a number that specifies the number of ticks of the x-axis. The xAxistickSize property is a number that specifies the size of the ticks of the x-axis. The tickPadding property is a number that specifies the padding between the ticks and the labels of the x-axis. The xAxisPadding property is a number that specifies the padding between the bars of the chart. The xAxisInnerPadding property is a number that specifies the inner padding between the bars of the chart. The xAxisOuterPadding property is a number that specifies the outer padding between the bars of the chart.</li>
+<li>The function then creates a band scale for the x-axis using the d3ScaleBand function from the d3-scale module. The scale is customized using the domain and range methods, which set the domain and range of the scale, respectively. The paddingInner and paddingOuter methods are used to set the inner and outer padding between the bars of the chart, respectively.</li>
+<li>The function then creates a bottom axis for the x-axis using the d3AxisBottom function from the d3-axis module. The axis is customized using the tickSize, tickPadding, ticks, and tickFormat methods. The tickSize method sets the size of the ticks of the x-axis. The tickPadding method sets the padding between the ticks and the labels of the x-axis. The ticks method sets the number of ticks of the x-axis. The tickFormat method formats the tick values of the x-axis using the convertToLocaleString function and the culture parameter.</li>
+<li>If the xAxisParams.xAxisElement property is not null, the axis is rendered on the DOM node using the call method of the d3-selection module. The selectAll method is called on the axis to select all the text elements of the x-axis, and the attr method is called to set the aria-hidden attribute of the text elements to true.</li>
+<li>Finally, the function computes the tick values of the x-axis using the tickFormat method of the axis, and returns an object that contains the x-axis scale and the tick values.</li>
+</ul>
+<p>Overall, the createStringXAxis function is responsible for creating a string x-axis for a chart component. The function creates a band scale for the x-axis and a bottom axis for the x-axis using the d3-scale and d3-axis modules, respectively. The function customizes the scale and axis using several methods, including domain, range, paddingInner, paddingOuter, tickSize, tickPadding, ticks, and tickFormat. The function also renders the axis on the DOM node and computes the tick values of the x-axis.</p>
+<ul>
+<li>
+<p><strong>createYAxis():</strong> In the Vertical bar chart component, the d3-axis module is used to create and customize the y-axis of a vertical bar chart. The createYAxis function is responsible for creating the y-axis using the createYAxisForOtherCharts function. The function takes in several parameters, including yAxisParams, isRtl, axisData, and useSecondaryYScale. These parameters are used to customize the y-axis, such as setting the tick values, tick format, and tick padding.</p>
+<p><strong>Function arguments:</strong></p>
+<ul>
+<li>yAxisParams: An object that contains various parameters related to the y-axis of the chart. It has the following properties:<!-- -->
+<ul>
+<li>yMinMaxValues: An object that contains the start and end values of the y-axis.</li>
+<li>yAxisElement: The DOM element that represents the y-axis.</li>
+<li>yMaxValue: The maximum value of the y-axis.</li>
+<li>yMinValue: The minimum value of the y-axis.</li>
+<li>containerHeight: The height of the container that holds the chart.</li>
+<li>containerWidth: The width of the container that holds the chart.</li>
+<li>margins: An object that contains the margins of the chart.</li>
+<li>tickPadding: The padding between the ticks and the axis line.</li>
+<li>maxOfYVal: The maximum value of the y-axis for area chart and Grouped vertical bar chart.</li>
+<li>yAxisTickFormat: The format of the y-axis tick labels.</li>
+<li>yAxisTickCount: The number of ticks on the y-axis.</li>
+<li>eventAnnotationProps: An object that contains the properties of the event annotation.</li>
+<li>eventLabelHeight: The height of the event label.</li>
+</ul>
+</li>
+<li>isRtl: A boolean value that indicates whether the chart is in right-to-left mode.</li>
+<li>axisData: An object that contains the data related to the axis of the chart.</li>
+<li>useSecondaryYScale: A boolean value that indicates whether to use a secondary y-axis scale.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Working algorithm:</strong></p>
+<ul>
+<li>
+<p>The function first extracts the necessary parameters from the yAxisParams object, such as the yMinMaxValues, yAxisElement, containerHeight, and containerWidth. It then calculates the final maximum and minimum values for the y-axis, based on the maxOfYVal, yMaxValue, and yMinValue parameters.</p>
+</li>
+<li>
+<p>The function then prepares the datapoints for the y-axis using the prepareDatapoints function, which calculates the tick values based on the maximum and minimum values of the y-axis. It then creates a linear scale for the y-axis using the d3ScaleLinear function from the d3-scale library.</p>
+</li>
+<li>
+<p>The function then creates the y-axis using the d3AxisLeft or d3AxisRight function from the d3-axis library, depending on the isRtl and useSecondaryYScale parameters. It sets the tick padding, tick values, and tick size for the y-axis, and formats the tick labels using the yAxisTickFormat parameter.</p>
+</li>
+<li>
+<p>Finally, the function uses the d3Select function to select the yAxisElement and apply the y-axis to it using the call method. It also sets the aria-hidden attribute of the y-axis text elements to true to improve accessibility.</p>
+</li>
+<li>
+<p><strong>createStringYAxis():</strong> In the Vertical bar chart component, the d3-axis module is used to create and customize the y-axis of a vertical bar chart. The createStringYAxis function is responsible for creating the y-axis that use string values for the y-axis using the createStringYAxisForOtherCharts function. The function takes in several parameters, including yAxisParams, dataPoints, and isRtl. These parameters are used to customize the y-axis, such as setting the tick values, tick format, and tick padding.</p>
+<p><strong>Function arguments:</strong></p>
+<ul>
+<li>yAxisParams: An object that contains the parameters for the y-axis, including containerHeight, tickPadding, margins, yAxisTickFormat, yAxisElement, and yAxisPadding.</li>
+<li>dataPoints: An array of strings that represent the data points for the y-axis.</li>
+<li>isRtl: A boolean value that indicates whether the chart is in right-to-left mode.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Working algorithm:</strong></p>
+<ul>
+<li>The function first extracts the necessary parameters from the yAxisParams object, such as the containerHeight, margins, yAxisTickFormat, yAxisElement, and yAxisPadding. It then creates a band scale for the y-axis using the d3ScaleBand function from the d3-scale library.</li>
+<li>The band scale is defined using the dataPoints array as the domain, and the containerHeight and margins parameters as the range. The padding method is used to set the padding between the bands in the y-axis.</li>
+<li>The function then creates the y-axis using the d3AxisLeft or d3AxisRight function from the d3-axis library, depending on the isRtl parameter. It sets the tick padding, tick values, and tick size for the y-axis, and formats the tick labels using the yAxisTickFormat parameter.</li>
+<li>Finally, the function uses the d3Select function to select the yAxisElement and apply the y-axis to it using the call method. It also selects all the text elements of the y-axis and returns the y-axis scale.</li>
+<li><strong>Bars:</strong>
+<ul>
+<li>
+<p><strong>_getGraphData():</strong> This method generates the set of bars for each data point in the chart. The method creates two new x-axis scales, iterates over the _datasetForBars array, and calls the _buildGraph method to generate a set of bars for each data point. The sets of bars are added to an array, which is then assigned to the _groupedVerticalBarGraph variable.</p>
+<p><strong>Function arguments:</strong></p>
+<ul>
+<li>xScale: A StringAxis or NumericAxis object that represents the x-axis scale of the chart.</li>
+<li>yScale: A NumericAxis object that represents the y-axis scale of the chart.</li>
+<li>containerHeight: A number that represents the height of the chart container.</li>
+<li>containerWidth: A number that represents the width of the chart container.</li>
+<li>xElement: An optional SVGElement or null that represents the x-axis element of the chart.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Working algorithm:</strong></p>
+<ul>
+<li>
+<p>The _getGraphData method first creates two new x-axis scales using the _createX0Scale and _createX1Scale methods. The _createX0Scale method creates a new x-axis scale for the main x-axis of the chart, while the _createX1Scale method creates a new x-axis scale for the grouped bars in the chart.</p>
+</li>
+<li>
+<p>The method then creates an empty array called allGroupsBars. The _datasetForBars array is then iterated over, and for each data point in the array, the _buildGraph method is called to generate a set of bars for the data point. The _buildGraph method takes the current data point, the two x-axis scales, the container height, and the optional x-axis element as arguments and returns a set of bars as a JSX element.</p>
+</li>
+<li>
+<p>The set of bars for each data point is added to the allGroupsBars array. Finally, the _groupedVerticalBarGraph variable is set to the allGroupsBars array.</p>
+</li>
+<li>
+<p><strong>_buildGraph():</strong> The method generates a set of bars for a single data point in the chart. The method iterates over each series in the data point and creates a rect element for each series. If the data property of the series is not null, the method also creates a text element to display the value of the data point above the bar. If the wrapXAxisLables prop is false and the showXAxisLablesTooltip prop is true, the method also displays a tooltip at the x-axis label. The method returns a g element that contains the set of bars and labels.</p>
+<p><strong>Function arguments:</strong></p>
+<ul>
+<li>singleSet: This is an object that contains the data for a single set of bars.</li>
+<li>xScale0: This is a scale function that maps the domain values to the range values for the x-axis.</li>
+<li>xScale1: This is a scale function that maps the domain values to the range values for the x-axis.</li>
+<li>containerHeight: This is the height of the container that holds the chart. It is of type number.</li>
+<li>xElement: This is the SVG element that represents the x-axis. It is of type SVGElement.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Working algorithm:</strong></p>
+<ul>
+<li>The _buildGraph method first creates two empty arrays called singleGroup and barLabelsForGroup. The yBarScale variable is then set to a new d3ScaleLinear object that represents the y-axis scale of the chart.</li>
+<li>The method then iterates over each series in the current data point. For each series, the method calculates the x and y coordinates of the bar using the xScale1 and yBarScale scales, respectively. If the data property of the series is not null, the method creates a new rect element and adds it to the singleGroup array. The rect element has properties that define its position, size, color, and event handlers. If the data property of the series is not null and the hideLabels prop is false and the _barWidth property is greater than or equal to 16, the method creates a new text element and adds it to the barLabelsForGroup array. The text element displays the value of the data point above the bar.</li>
+<li>If the wrapXAxisLables prop is false and the showXAxisLablesTooltip prop is true, the method creates a new tooltipProps object and calls the tooltipOfXAxislabels function to display a tooltip at the x-axis label.</li>
+<li>Finally, the method returns a g element that contains the singleGroup and barLabelsForGroup arrays. The g element is translated to the x-coordinate of the current data point on the main x-axis using the xScale0 scale.</li>
+<li><strong>Legends:</strong>
+<ul>
+<li>
+<p><strong>_getLegendData():</strong> The method generates the legend for the chart. The method iterates over each data point and series in the chart and creates a legend object for each unique series. The method returns a Legends component that renders the legend using the legend objects.</p>
+<p><strong>Function arguments:</strong></p>
+<ul>
+<li>points: An array of IGroupedVerticalBarChartData objects, which contain the data points for the chart.</li>
+<li>palette: An object of type IPalette, which contains the color palette for the chart.
+The function returns a JSX element that renders the legend for the chart.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Working algorithm:</strong></p>
+<ul>
+<li>The _getLegendData method starts by defining some variables. The data variable is set to the points argument. The defaultPalette variable is set to an array of colors to use for the legend. The actions variable is set to an empty array.</li>
+<li>The method then iterates over each data point in the data array. For each data point, the method iterates over each series in the data point. For each series, the method checks if a similar legend has already been added to the actions array. If a similar legend exists, the method skips to the next series. If a similar legend does not exist, the method creates a new legend object and adds it to the actions array. The legend object contains a title property, which is set to the legend property of the current series, a color property, which is set to a random color from the defaultPalette array if the color property of the current series is not defined, and action, hoverAction, and onMouseOutAction properties, which are functions that handle click, hover, and mouse out events for the legend.</li>
+<li>Finally, the method returns a Legends component that renders the legend for the chart. The legends prop is set to the actions array. The overflowProps, enabledWrapLines, focusZonePropsInHoverCard, and legendProps props are set to values from the props object.</li>
+<li><strong>Callouts:</strong>
+<ul>
+<li><strong>_getCustomizedCallout():</strong> The method returns a customized callout for a data point in the chart. The callout is rendered using the onRenderCalloutPerDataPoint prop, which is a function that takes a dataPointCalloutProps object as an argument and returns a React element.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Working algorithm:</strong></p>
+<ul>
+<li>The _getCustomizedCallout method first checks if the onRenderCalloutPerDataPoint prop is defined. If it is, the method calls the onRenderCalloutPerDataPoint function and passes in the dataPointCalloutProps object as an argument. The dataPointCalloutProps object contains information about the current data point, including its x and y values, as well as its color and data properties.</li>
+<li>If the onRenderCalloutPerDataPoint prop is not defined, the _getCustomizedCallout method returns null.</li>
+<li><strong>Rendering details</strong>
+The Grouped vertical bar chart uses d3 SVG based rendering, which follows the following render cycles:<!-- -->
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">- Invocation cycle: Grouped Vertical bar Chart -&gt; Cartesian base chart -&gt; X-axis -&gt; X-axis labels -&gt; Y-axis -&gt; Y-axis labels -&gt; bars, legends, callouts</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- Rendering cycle: Grouped vertical bar chart &lt;- Bars (rect), Legends, Callouts &lt;- Axes (d3.axis, d3.scale)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<p><strong>Following are the detailed steps:</strong></p>
+<ul>
+<li>The rendering of the grouped vertical bar chart is done using SVG elements. The chart is rendered inside a svg element that is created using the React.createElement() method.</li>
+<li>The chart is divided into two main sections: the x-axis and the bars. The x-axis is created using the d3.axis() function and is rendered as a g element inside the svg element. The bars are created using the rect element and are rendered as a g element inside the svg element.</li>
+<li>The rect elements are created using the datasetForBars array that is created using the _createDataset() method. The datasetForBars array contains an array of objects, where each object represents a group of bars. Each group of bars is rendered as a g element inside the svg element.</li>
+<li>Inside each group of bars, the rect elements are created using the map() method on the data array. The map() method creates a new array of rect elements, where each rect element represents a bar in the group. The rect elements are positioned using the x and y attributes, which are calculated based on the data and the scales that were created earlier in the file.</li>
+<li>The rect elements are also styled using various attributes such as fill, stroke, and strokeWidth. The fill attribute is set to a color that is based on the index of the rect element in the group. The stroke and strokeWidth attributes are used to create a border around each rect element.</li>
+<li>The _onBarHover() method is used to handle the hover event on the bars. This method is called when the user hovers over a bar in the chart. The method updates the state of the component to show the callout for the hovered bar.</li>
+</ul>
+<p>Overall, the grouped vertical bar chart is rendered using SVG elements that are created using the React.createElement() method. The chart is divided into two main sections: the x-axis and the bars. The bars are created using the rect element and are positioned and styled based on the data and the scales that were created earlier in the file. The _onBarHover() method is used to handle the hover event on the bars and show the callout for the hovered bar.</p>
+<ul>
+<li><strong>Error scenarios</strong>
+The Grouped Vertical bar chart handles the following error scenario:<!-- -->
+<ul>
+<li>Empty data: If the data passed to the chart component is empty, the chart will not render and a message will be narrated to the user. _isChartEmpty functions handles that scenario.</li>
+</ul>
+</li>
+<li><strong>Localization aspects</strong>
+Currently, although the component has a support for culture prop, but it does not support localization yet.</li>
+<li><strong>Testing</strong>
+The testing for Grouped Vertical bar chart have not been started. The document will be updated as and when the tests are completed.
+<img loading="lazy" alt="GroupedVerticalBarChart3.png" src="/fluentui-charting-contrib/assets/images/GVBC3-15789353c5cef662c6d0f971540ad844.png" width="2475" height="542" class="img_ev3q">
+<ul>
+<li>Component Tests:<!-- -->
+<ul>
+<li>Work item <a href="https://uifabric.visualstudio.com/iss/_workitems/edit/7411" target="_blank" rel="noopener noreferrer">7411</a></li>
+</ul>
+</li>
+<li>Unit Tests:<!-- -->
+<ul>
+<li>Work item <a href="https://uifabric.visualstudio.com/iss/_workitems/edit/7412" target="_blank" rel="noopener noreferrer">7412</a></li>
+</ul>
+</li>
+<li>Manual Tests:<!-- -->
+<ul>
+<li>Work item <a href="https://uifabric.visualstudio.com/iss/_workitems/edit/8605" target="_blank" rel="noopener noreferrer">8605</a></li>
+</ul>
+</li>
+<li>Accessibility Tests:<!-- -->
+<ul>
+<li>Work item <a href="https://uifabric.visualstudio.com/iss/_workitems/edit/7410" target="_blank" rel="noopener noreferrer">7410</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Accessibility</strong>
+FAST pass checks resulted in no error for Grouped Vertical bar chart. Link to the <a href="https://accessibilityinsights.io/docs/web/getstarted/fastpass/" target="_blank" rel="noopener noreferrer">FAST pass tool</a>
+Our charts have elaborate accessibility support. The charts are WCAG 2.1 MAS C compliant for accessibility.
+Consumers can define their own aria labels for each point by setting the callOutAccessibilityData property.</li>
+<li><strong>Theming</strong>
+The palette for vertical bar chart is set from the &quot;theme&quot; prop as passed to the component during rendering. Both light and dark themes are supported and users can create there own theme too. <a href="https://github.com/microsoft/fluentui/wiki/Theming" target="_blank" rel="noopener noreferrer">Ref6</a>  and <a href="https://github.com/microsoft/fluentui/wiki/How-to-apply-theme-to-Fluent-UI-React-components" target="_blank" rel="noopener noreferrer">Ref7</a>  explains theming in detail.</li>
+<li><strong>Debugging</strong>
+The detailed steps on debugging has been given in <a href="https://github.com/microsoft/fluentui-charting-contrib/blob/main/docs/Debugging.md" target="_blank" rel="noopener noreferrer">Debugging</a>.</li>
+<li><strong>Variants</strong>
+Following are the variants of vertical bar chart: <a href="https://developer.microsoft.com/en-us/fluentui#/controls/web/verticalbarchart/grouped" target="_blank" rel="noopener noreferrer">Ref8</a> <!-- -->
+<ul>
+<li><em>Basic Grouped Vertical bar Chart</em>: Only basic props are provided.</li>
+<li><em>Custom Accessibility</em>: Providing custom aria labels.</li>
+<li><em>Styled</em>: Can show bars with increased bar width.</li>
+<li><em>Tooltip</em>: Can show tooltip over x-axis ticks when the ticks are truncated.</li>
+</ul>
+</li>
+<li><strong>Interaction</strong>
+Following are the interactions that are allowed for donut chart:<!-- -->
+<ul>
+<li><em>Mouse Events</em>:
+a. Hover mouse over a bar, should call the corresponding handler and show the callout over that bar.
+b. On mouse move on Bar 1 (step 1) -&gt; mouse leave (step 2) -&gt; mouse move on Bar 2 (step 3), should render the callout of the Bar 2.
+c. On mouse over, callout should be defined, on mouse leave, callout should disappear.
+d. On mouse over on legends, should highlight the corresponding bar.
+f. On click on Bar, should highlight the corresponding bar.
+g. On mouse out after mouse over on first legend, should have opacity 0.1 for second bar initially (during mouseOver on first legend) and opacity set to 1 for both the bars on mouse out.</li>
+<li><em>Keyboard Events</em>:
+a. On focus on a bar, should render the corresponding callout.</li>
+</ul>
+</li>
+<li><strong>Some notable PRs and their brief description</strong>
+<ul>
+<li><a href="https://github.com/microsoft/fluentui/pull/12687" target="_blank" rel="noopener noreferrer">Adding the Grouped Vertical bar chart main component</a></li>
+<li><a href="https://github.com/microsoft/fluentui/pull/15838" target="_blank" rel="noopener noreferrer">Refactoring Grouped Vertical Bar Chart via implementation of Cartesian charts</a></li>
+<li><a href="https://github.com/microsoft/fluentui/pull/18880" target="_blank" rel="noopener noreferrer">Custom Accessibility Change for Grouped Vertical Bar Chart</a></li>
+<li><a href="https://github.com/microsoft/fluentui/pull/20347" target="_blank" rel="noopener noreferrer">Number localization in charts</a></li>
+<li><a href="https://github.com/microsoft/fluentui/pull/16914" target="_blank" rel="noopener noreferrer">Narrator issues fixed in bar charts</a></li>
+<li><a href="https://github.com/microsoft/fluentui/pull/17571" target="_blank" rel="noopener noreferrer">Callout accessibility issue fixed for bar charts</a></li>
+</ul>
+</li>
+<li><strong>Learnings</strong>
+<ul>
+<li>While implementing the tests using react testing library, it was found that certain browser functions like getComputedTextLength() cannot be unit tested and needs to be tested End-to-End only.</li>
+<li>Order of imports are important.
+For example: for Vertical bar charts tests, improper sequencing of the imports (data first and then render) results in incorrect and incopmlete rendering of charts:</li>
+</ul>
+</li>
+</ul>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">  - import { chartPoints } from &#x27;../VerticalBarChart/VerticalBarChart.test&#x27;;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  - import { render, screen, queryAllByAttribute, fireEvent, act } from &#x27;@testing-library/react&#x27;;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>However, the following results in correct rendering:</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">import { render, screen, queryAllByAttribute } from &#x27;@testing-library/react&#x27;;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">import { chartPoints } from &#x27;./VerticalBarChart.test&#x27;;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li>
+<p>Certain props need async await structure (waitFor in react testing library) for different props or nested SVGs to render.</p>
+</li>
+<li>
+<p><strong>Known issues</strong></p>
+<ul>
+<li>Setting the margins externally via the props may cut the x and y ticks if the margins provided are very less. Setting a minimum margin would prevent any such distortions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Future improvements</strong></p>
+<p>Following are the list of future improvements for the vertical bar chart:</p>
+<ul>
+<li>Improved accessibility: While the component already provides accessibility data for screen readers, there is always room for improvement in this area. Adding support for keyboard navigation and improving the accessibility of the callout would make the component more accessible to users with disabilities.</li>
+<li>Support for animations: Adding support for animations, such as transitions between data updates or hover effects, would make the component more visually appealing and engaging for users.</li>
+<li>Following error handling scenarios can be improved:<!-- -->
+<ul>
+<li>Invalid or missing chart dimensions: If the dimensions of the chart are invalid or missing, the chart will not render and a message will be displayed to the user.</li>
+<li>Invalid or missing axis parameters: If the parameters for the x-axis or y-axis are invalid or missing, the chart will not render and a message will be displayed to the user.</li>
+<li>Invalid or missing legends: If the legends for the chart are invalid or missing, the chart will not render and a message will be displayed to the user.</li>
+<li>Invalid bar width: If the bar width for the chart is invalid, the chart will not render and a message will be displayed to the user.</li>
+<li>Invalid or missing data for callout: If the data for the callout is invalid or missing, the callout will not render and a message will be displayed to the user.</li>
+<li>Invalid or missing accessibility data: If the accessibility data for the chart is invalid or missing, the chart will not render and a message will be displayed to the user.</li>
+</ul>
+</li>
+<li>Localization support can be improved for all strings and numbers.</li>
+</ul>
+</li>
+<li>
+<p><strong>Design figma</strong>
+Vertical bar Chart Figma: <a href="https://www.figma.com/file/WOoCs0CmNYZhYl9xXeCGpi/Data-viz-(Archive)?type=design&amp;node-id=21153-80245&amp;mode=design&amp;t=eFKlPGUixdgy9xRs-0" target="_blank" rel="noopener noreferrer">Link</a> </p>
+</li>
+<li>
+<p><strong>Performance</strong></p>
+<p>The performance aspect of a donut chart refers to how efficiently and effectively it conveys information to the viewer. Here are some key considerations regarding the performance of a line chart:</p>
+<ul>
+<li>Data Visualization Efficiency</li>
+<li>Clarity and Simplicity</li>
+<li>Responsiveness</li>
+<li>Handling Large Datasets</li>
+<li>Interactive Features</li>
+</ul>
+</li>
+</ul>
+<p>We use Lighthouse tool for measuring the performance of our charts. Following are few of the scenarios for which we measure the performance score for vertical bar chart:</p>
+<ul>
+<li><strong>References</strong></li>
+</ul>
+<ol>
+<li><a href="https://github.com/d3/d3-scale/blob/main/README.md" target="_blank" rel="noopener noreferrer">D3-scale</a></li>
+<li><a href="https://github.com/d3/d3-selection/blob/main/README.md" target="_blank" rel="noopener noreferrer">D3-selection</a></li>
+<li><a href="https://github.com/d3/d3-array/blob/main/README.md" target="_blank" rel="noopener noreferrer">D3-array</a></li>
+<li><a href="https://github.com/d3/d3-axis/blob/main/README.md" target="_blank" rel="noopener noreferrer">D3-axis</a></li>
+<li><a href="https://github.com/microsoft/fluentui/wiki/How-to-apply-theme-to-Fluent-UI-React-components" target="_blank" rel="noopener noreferrer">How to apply theme</a></li>
+<li><a href="https://github.com/microsoft/fluentui/wiki/Theming" target="_blank" rel="noopener noreferrer">Theming</a></li>
+<li><a href="https://developer.microsoft.com/en-us/fluentui#/controls/web/verticalbarchart/grouped" target="_blank" rel="noopener noreferrer">Grouped Vertical Bar Chart</a></li>
+</ol>
+<ul>
+<li><strong>Appendix</strong>
+The mathematical formulae used in the Grouped vertical bar chart component are as follows:</li>
+</ul>
+<ol>
+<li>Formula for calculating the x0 scale using d3ScaleBand:</li>
+</ol>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">x0 = d3ScaleBand()</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">.domain(data.map(d =&gt; d.category))</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">.range([0, width])</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">.paddingInner(x0_inner_padding)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- x0_inner_padding = space_between_groups/(space_between_groups + group_width)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- space_between_groups = 2 * bar_width</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- group_width = this._keys.length * bar_width + (this._keys.length - 1) * space_between_bars</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="2">
+<li>Formula for calculating the maximum value of the y-axis data using d3Max:</li>
+</ol>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">const maxYValue = d3Max(data, d =&gt; d3Max(\_keys, key =&gt; d[key]))</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="3">
+<li>Formula for calculating the y scale using d3ScaleLinear:</li>
+</ol>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">y = d3ScaleLinear()</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">.domain([0, maxYValue])</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">.range([0, height])</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">height = containerHeight - marginsBottom - marginsTop</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="4">
+<li>Formula for calculating the bar gap rate:</li>
+</ol>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">x1_inner_padding = space_between_bars / (space_between_bars + bar_width)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">=&gt; space_between_bars = (x1_inner_padding / (1 - x1_inner_padding)) * bar_width</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Rate at which the space between the bars in a group changes wrt the bar width</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">BAR_GAP_RATE = X1_INNER_PADDING / (1 - X1_INNER_PADDING)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">X1_INNER_PADDING = 0.1</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="5">
+<li>Formula for calculating the group width and bar width:</li>
+</ol>
+<p>Maximum possible group width to maintain 2:1 spacing:</p>
+<p>InitialBarWidth = Math.min(props.barwidth || 16, 24);</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">(i) InitialGroupWidth = _keys.length * InitialBarWidth+ (_keys.length - 1) * BAR_GAP_RATE * InitialBarWidth</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Total width required to render the bars. Directly proportional to bar width:</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">(ii) ReqWidth = _xAxisLabels.length * InitialGroupWidth  + (_xAxisLabels.length - 1) * 2 * InitialBarWidth</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">From (i) and (ii)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Maximum possible group width to maintain 2:1 spacing</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">MaxBandwidth = totalWidth / (_xAxisLabels.length +</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">(_xAxisLabels.length - 1) * (2 / (_keys.length + (_keys.length - 1) * BAR_GAP_RATE)))</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">FinalGroupWidth = MaxBandwidth;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">From (i)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">FinalBarWidth = FinalGroupWidth / (_keys.length + (_keys.length - 1) * BAR_GAP_RATE)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ol start="6">
+<li>Formula for calculating the width of each bar:</li>
+</ol>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">barWidth = (x0.bandwidth() - spaceBetweenBars) / this._keys.length</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/fluentui-charting-contrib/docs/Charting-Concepts/GaugeChart"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Gauge Chart</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/fluentui-charting-contrib/docs/Charting-Concepts/HeatMapChart"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Heatmap Chart</div></a></nav></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/fluentui-charting-contrib/docs/Overview">Docs</a></li></ul></div><div class="col footer__col"><div class="footer__title">FluentUI</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://aka.ms/fluentcharting" target="_blank" rel="noopener noreferrer" class="footer__link-item">Public Developer Docsite<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/microsoft/fluentui" target="_blank" rel="noopener noreferrer" class="footer__link-item">Github<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">FluentUI Charting Contrib</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/microsoft/fluentui-charting-contrib" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="margin-bottom--sm"><img src="/fluentui-charting-contrib/img/microsoft.png" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE"><img src="/fluentui-charting-contrib/img/microsoft.png" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU"></div><div class="footer__copyright">Copyright © 2025 Microsoft</div></div></div></footer></div>
+</body>
+</html>
