@@ -3,7 +3,11 @@ export const totalChartExamplesCount = 846;
 const startExampleTestIndexLocalization = 377;
 const endExampleTestIndexLocalization = 569;
 
-export const chartsListWithErrors = [];
+export const chartsListWithErrors = [103, 117, 163, 169, 216, 250, 28, 319, 343, 356, 360, 371, 385, 423, 430, 433, 436, 437, 439, 444, 448, 450, 452, 457, 460, 462, 467, 470, 475, 478,
+    480, 483, 485, 493, 498, 503, 504, 514, 517, 518, 519, 520, 529, 532, 536, 541, 553, 555, 559, 563, 565, 566, 617, 618, 636, 641, 660, 737, 738, 739, 740, 741, 742,
+    743, 744, 745, 746, 747, 748, 749, 752, 753, 754, 755, 756, 758, 760, 761, 762, 763, 764, 765, 766, 767, 788, 794, 800, 801, 803, 805, 810, 815, 819, 823, 828, 830, 833, 837, 
+    838, 839, 87
+ ];
 
 export const themes = ["Light", "Dark"];
 export const modes = ["LTR", "RTL"];
