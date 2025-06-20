@@ -1,6 +1,6 @@
 /* eslint-disable no-loop-func */
 import { test, expect } from '@playwright/test';
-import { chartsListWithErrors, testMatrix } from './test-matrix';
+import { chartsListWithErrorsV9, testMatrix } from './test-matrix';
 
 for (const testConfig of testMatrix) {
   const theme = testConfig.theme;
@@ -47,7 +47,7 @@ for (const testConfig of testMatrix) {
         const combobox = page.getByRole('combobox');
         await combobox.nth(1).click();
         const listitems = listbox.last().getByRole('option');
-        if (!chartsListWithErrors.includes(index)) {
+        if (!chartsListWithErrorsV9.includes(index + 1)) {
           await listitems.nth(index).scrollIntoViewIfNeeded();
           await listitems.nth(index).click();
           const chart = page.getByTestId('chart-container-v9');
