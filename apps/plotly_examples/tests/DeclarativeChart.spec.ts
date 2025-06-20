@@ -47,7 +47,7 @@ for (const testConfig of testMatrix) {
         const combobox = page.getByRole('combobox');
         await combobox.nth(1).click();
         const listitems = listbox.last().getByRole('option');
-        if (!chartsListWithErrors.includes(index)) {
+        if (!chartsListWithErrors.includes(index + 1)) {
           await listitems.nth(index).scrollIntoViewIfNeeded();
           await listitems.nth(index).click();
           const chart = page.getByTestId('chart-container');
