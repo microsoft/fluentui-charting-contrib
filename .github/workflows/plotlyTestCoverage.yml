@@ -152,6 +152,17 @@ jobs:
                 cd contrib_repo/apps/plotly_examples
                 mv playwright-report.json reports/playwright-report-v8.json
                 git add reports/playwright-report-v8.json
+            
+            - name: "Run monosize on react-charting"
+              run: |
+                cd repo1/packages/charts/react-charting
+                yarn monosize measure
+
+            - name: Upload monosize JSON report as artifact
+              uses: actions/upload-artifact@v4
+              with: 
+                name: monosize-report
+                path: repo1/packages/charts/react-charting/dist/bundle-size/monosize.json
 
             - name: Create branch name for scheduled report
               if: github.event_name == 'schedule'

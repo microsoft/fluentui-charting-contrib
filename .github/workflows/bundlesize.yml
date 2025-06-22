@@ -28,18 +28,18 @@ jobs:
       
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '20.x'
           cache: yarn
           cache-dependency-path: ./repo/yarn.lock
       
       - name: "Install dependencies and build upto react-charting"
         run: |
           cd repo
-          yarn && yarn buildto @fluentui/react-charting
+          yarn && yarn nx run react-charting:build
       
       - name: "Run monosize on react-charting"
         run: |
-          cd repo/packages/react-charting
+          cd repo/packages/charts/react-charting
           yarn monosize measure
           mv -f ./dist/bundle-size/monosize.json ./../../../
           cd ./../../../

@@ -59,7 +59,7 @@ const dataTypeRanges = {
   'plotly_express_basic': [{ min: 377, max: 427 }, {min: 760, max: 766}],
   'plotly_express_detailed': [{ min: 428, max: 569 }],
   'plotly_express_colors': [{ min: 570, max: 749 }, { min: 768, max: 787 }],
-  'advanced_scenarios': [{min: 788, max: 839}]
+  'advanced_scenarios': [{min: 788, max: 839}, {min: 847, max: 847}]
 };
 
 // Use require.context to load all JSON files from the split_data folder
@@ -85,7 +85,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
   const [selectedDataTypes, setSelectedDataTypes] = React.useState<DataType[]>(getSelection("DataType_filter", 'All').split(',') as DataType[]);
 
   const declarativeChartRef = React.useRef<IDeclarativeChart>(null);
-  // const declarativeChartV9Ref = React.useRef<IDeclarativeChart>(null);
+  const declarativeChartV9Ref = React.useRef<IDeclarativeChart>(null);
   let lastKnownValidLegends: string[] | undefined = selectedLegends;
 
   React.useEffect(() => {
@@ -357,7 +357,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
               <DeclarativeChartV9
                 chartSchema={inputSchema}
                 onSchemaChange={_handleChartSchemaChanged}
-                componentRef={declarativeChartRef}
+                componentRef={declarativeChartV9Ref}
               />
             ) : (
               <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px'}}>{ `${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
