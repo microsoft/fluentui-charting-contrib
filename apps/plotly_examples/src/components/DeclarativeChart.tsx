@@ -299,7 +299,10 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
         <br />
         <button
           onClick={() => {
+            const start = performance.now();
             declarativeChartRef.current?.exportAsImage().then((imgData: string) => {
+              const end = performance.now();
+              console.log(`exportAsImage took ${(end - start).toFixed(2)} ms`);
               fileSaver(imgData);
             });
           }}
