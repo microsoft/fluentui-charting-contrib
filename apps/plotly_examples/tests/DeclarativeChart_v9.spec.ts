@@ -47,15 +47,15 @@ for (const testConfig of testMatrix) {
         const combobox = page.getByRole('combobox');
         await combobox.nth(1).click();
         const listitems = listbox.last().getByRole('option');
+        await listitems.nth(index).scrollIntoViewIfNeeded();
+        await listitems.nth(index).click();
+        const chart = page.getByTestId('chart-container-v9');
+        await page.mouse.move(0, 0); // Move mouse to top-left corner
         if (!chartsListWithErrorsV9.includes(index + 1)) {
-          await listitems.nth(index).scrollIntoViewIfNeeded();
-          await listitems.nth(index).click();
-          const chart = page.getByTestId('chart-container-v9');
-          await page.mouse.move(0, 0); // Move mouse to top-left corner
           await expect(chart).toHaveScreenshot();
           await combobox.last().click();
         } else {
-          test.fail();
+          await expect(chart).not.toHaveScreenshot();
         }
       });
     };
