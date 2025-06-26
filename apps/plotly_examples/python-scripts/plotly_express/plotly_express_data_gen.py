@@ -81,7 +81,7 @@ def copy_json_files(source_directory, destination_directory):
     
 # Step 3: Extract, parse and save json data 
 def extract_and_save_json(input_directory, output_directory, data_directory, category_file_path):
-    os.makedirs(data_directory, exist_ok=True)-
+    os.makedirs(data_directory, exist_ok=True)
     data_numbers = get_existing_numbers(data_directory)
     if data_numbers:
         index = max(data_numbers) + 1

@@ -1,0 +1,1248 @@
+{
+  "data": [
+    {
+      "customdata": [
+        [
+          "ID1000",
+          "1st Battalion",
+          "Base Alpha"
+        ],
+        [
+          "ID1002",
+          "1st Battalion",
+          "Base Alpha"
+        ],
+        [
+          "ID1006",
+          "1st Battalion",
+          "Camp Bravo"
+        ],
+        [
+          "ID1008",
+          "3rd Fleet",
+          "Camp Bravo"
+        ],
+        [
+          "ID1009",
+          "1st Battalion",
+          "Fort Charlie"
+        ],
+        [
+          "ID1010",
+          "3rd Fleet",
+          "Base Alpha"
+        ],
+        [
+          "ID1015",
+          "2nd Squadron",
+          "Base Alpha"
+        ],
+        [
+          "ID1020",
+          "1st Battalion",
+          "Fort Charlie"
+        ],
+        [
+          "ID1022",
+          "3rd Fleet",
+          "Camp Bravo"
+        ],
+        [
+          "ID1023",
+          "3rd Fleet",
+          "Base Alpha"
+        ],
+        [
+          "ID1026",
+          "2nd Squadron",
+          "Camp Bravo"
+        ],
+        [
+          "ID1028",
+          "3rd Fleet",
+          "Camp Bravo"
+        ],
+        [
+          "ID1032",
+          "2nd Squadron",
+          "Camp Bravo"
+        ],
+        [
+          "ID1036",
+          "3rd Fleet",
+          "Base Alpha"
+        ],
+        [
+          "ID1038",
+          "2nd Squadron",
+          "Base Alpha"
+        ],
+        [
+          "ID1041",
+          "2nd Squadron",
+          "Camp Bravo"
+        ],
+        [
+          "ID1043",
+          "3rd Fleet",
+          "Fort Charlie"
+        ],
+        [
+          "ID1044",
+          "1st Battalion",
+          "Fort Charlie"
+        ],
+        [
+          "ID1045",
+          "3rd Fleet",
+          "Camp Bravo"
+        ],
+        [
+          "ID1049",
+          "3rd Fleet",
+          "Base Alpha"
+        ],
+        [
+          "ID1050",
+          "2nd Squadron",
+          "Base Alpha"
+        ],
+        [
+          "ID1052",
+          "2nd Squadron",
+          "Camp Bravo"
+        ],
+        [
+          "ID1056",
+          "1st Battalion",
+          "Fort Charlie"
+        ]
+      ],
+      "hovertemplate": "Equipment_Type=Vehicle<br>Equipment_Age_Years=%{x}<br>Maintenance_Efficiency_Score=%{y}<br>Equipment_ID=%{customdata[0]}<br>Unit=%{customdata[1]}<br>Location=%{customdata[2]}<extra></extra>",
+      "legendgroup": "Vehicle",
+      "marker": {
+        "color": "#C0C0C0",
+        "symbol": "circle",
+        "line": {
+          "color": "rgba(80,80,80,0.6)",
+          "width": 1.5
+        },
+        "opacity": 0.85,
+        "size": 16
+      },
+      "mode": "markers",
+      "name": "Vehicle",
+      "orientation": "v",
+      "showlegend": true,
+      "x": {
+        "dtype": "i4",
+        "bdata": "DAAAABwAAAAVAAAABQAAAAcAAAAFAAAAFQAAAAYAAAAgAAAABgAAAB4AAAAOAAAACwAAAAQAAAAVAAAADwAAAAsAAAAXAAAADAAAAAEAAAAUAAAAHwAAAB8AAAA="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "f8",
+        "bdata": "ZmZmZmamU0DNzMzMzKxVQJqZmZmZOVRAZmZmZmamVEBmZmZmZgZXQGZmZmZmBlNAZmZmZmbGUUAAAAAAACBUQM3MzMzMbFRAmpmZmZlZVUDNzMzMzGxTQGZmZmZmplRAmpmZmZlZTkAAAAAAAOBRQM3MzMzMTE9AMzMzMzMTUEAAAAAAAIBSQJqZmZmZWVBAMzMzMzNTU0DNzMzMzAxMQAAAAAAAQE1AAAAAAABASUDNzMzMzAxOQA=="
+      },
+      "yaxis": "y",
+      "type": "scatter"
+    },
+    {
+      "customdata": [
+        [
+          "ID1001",
+          "2nd Squadron",
+          "Fort Charlie"
+        ],
+        [
+          "ID1003",
+          "3rd Fleet",
+          "Camp Bravo"
+        ],
+        [
+          "ID1004",
+          "3rd Fleet",
+          "Base Alpha"
+        ],
+        [
+          "ID1012",
+          "1st Battalion",
+          "Base Alpha"
+        ],
+        [
+          "ID1016",
+          "1st Battalion",
+          "Base Alpha"
+        ],
+        [
+          "ID1017",
+          "1st Battalion",
+          "Base Alpha"
+        ],
+        [
+          "ID1018",
+          "2nd Squadron",
+          "Base Alpha"
+        ],
+        [
+          "ID1019",
+          "1st Battalion",
+          "Camp Bravo"
+        ],
+        [
+          "ID1021",
+          "2nd Squadron",
+          "Fort Charlie"
+        ],
+        [
+          "ID1024",
+          "1st Battalion",
+          "Camp Bravo"
+        ],
+        [
+          "ID1029",
+          "2nd Squadron",
+          "Camp Bravo"
+        ],
+        [
+          "ID1030",
+          "3rd Fleet",
+          "Fort Charlie"
+        ],
+        [
+          "ID1033",
+          "3rd Fleet",
+          "Camp Bravo"
+        ],
+        [
+          "ID1034",
+          "1st Battalion",
+          "Camp Bravo"
+        ],
+        [
+          "ID1035",
+          "1st Battalion",
+          "Fort Charlie"
+        ],
+        [
+          "ID1046",
+          "1st Battalion",
+          "Base Alpha"
+        ],
+        [
+          "ID1047",
+          "3rd Fleet",
+          "Base Alpha"
+        ],
+        [
+          "ID1051",
+          "1st Battalion",
+          "Fort Charlie"
+        ],
+        [
+          "ID1053",
+          "2nd Squadron",
+          "Base Alpha"
+        ],
+        [
+          "ID1057",
+          "2nd Squadron",
+          "Camp Bravo"
+        ],
+        [
+          "ID1058",
+          "1st Battalion",
+          "Base Alpha"
+        ],
+        [
+          "ID1059",
+          "1st Battalion",
+          "Base Alpha"
+        ]
+      ],
+      "hovertemplate": "Equipment_Type=Aircraft<br>Equipment_Age_Years=%{x}<br>Maintenance_Efficiency_Score=%{y}<br>Equipment_ID=%{customdata[0]}<br>Unit=%{customdata[1]}<br>Location=%{customdata[2]}<extra></extra>",
+      "legendgroup": "Aircraft",
+      "marker": {
+        "color": "#A57164",
+        "symbol": "diamond",
+        "line": {
+          "color": "rgba(80,80,80,0.6)",
+          "width": 1.5
+        },
+        "opacity": 0.85,
+        "size": 16
+      },
+      "mode": "markers",
+      "name": "Aircraft",
+      "orientation": "v",
+      "showlegend": true,
+      "x": {
+        "dtype": "i4",
+        "bdata": "EwAAAAEAAAAPAAAADQAAABgAAAAQAAAADgAAABYAAAABAAAAHwAAABYAAAAKAAAAGAAAAAMAAAAfAAAAAwAAABEAAAAOAAAAGQAAAA4AAAAJAAAAFAAAAA=="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "f8",
+        "bdata": "ZmZmZmZmVEAzMzMzMxNRQDMzMzMzs1VAmpmZmZn5UkAzMzMzM7NUQGZmZmZmJk5AmpmZmZmZUUCamZmZmVlRQAAAAAAAAE5AzczMzMyMUkBmZmZmZsZSQM3MzMzMTEtAmpmZmZmZT0BmZmZmZuZMQM3MzMzMTFRAmpmZmZlZTUBmZmZmZqZQQM3MzMzMDE1AMzMzMzMzTkBmZmZmZqZNQAAAAAAAgEdAAAAAAAAAREA="
+      },
+      "yaxis": "y",
+      "type": "scatter"
+    },
+    {
+      "customdata": [
+        [
+          "ID1005",
+          "3rd Fleet",
+          "Fort Charlie"
+        ],
+        [
+          "ID1007",
+          "1st Battalion",
+          "Base Alpha"
+        ],
+        [
+          "ID1011",
+          "3rd Fleet",
+          "Base Alpha"
+        ],
+        [
+          "ID1013",
+          "2nd Squadron",
+          "Fort Charlie"
+        ],
+        [
+          "ID1014",
+          "2nd Squadron",
+          "Camp Bravo"
+        ],
+        [
+          "ID1025",
+          "3rd Fleet",
+          "Camp Bravo"
+        ],
+        [
+          "ID1027",
+          "2nd Squadron",
+          "Camp Bravo"
+        ],
+        [
+          "ID1031",
+          "3rd Fleet",
+          "Fort Charlie"
+        ],
+        [
+          "ID1037",
+          "2nd Squadron",
+          "Base Alpha"
+        ],
+        [
+          "ID1039",
+          "3rd Fleet",
+          "Camp Bravo"
+        ],
+        [
+          "ID1040",
+          "3rd Fleet",
+          "Base Alpha"
+        ],
+        [
+          "ID1042",
+          "1st Battalion",
+          "Base Alpha"
+        ],
+        [
+          "ID1048",
+          "2nd Squadron",
+          "Base Alpha"
+        ],
+        [
+          "ID1054",
+          "3rd Fleet",
+          "Fort Charlie"
+        ],
+        [
+          "ID1055",
+          "3rd Fleet",
+          "Base Alpha"
+        ]
+      ],
+      "hovertemplate": "Equipment_Type=Naval Vessel<br>Equipment_Age_Years=%{x}<br>Maintenance_Efficiency_Score=%{y}<br>Equipment_ID=%{customdata[0]}<br>Unit=%{customdata[1]}<br>Location=%{customdata[2]}<extra></extra>",
+      "legendgroup": "Naval Vessel",
+      "marker": {
+        "color": "#BCC6CC",
+        "symbol": "square",
+        "line": {
+          "color": "rgba(80,80,80,0.6)",
+          "width": 1.5
+        },
+        "opacity": 0.85,
+        "size": 16
+      },
+      "mode": "markers",
+      "name": "Naval Vessel",
+      "orientation": "v",
+      "showlegend": true,
+      "x": {
+        "dtype": "i4",
+        "bdata": "DQAAAAwAAAAEAAAADwAAABAAAAABAAAABAAAAAEAAAATAAAAEgAAABwAAAACAAAAIQAAAAMAAAAEAAAA"
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "f8",
+        "bdata": "zczMzMzMVECamZmZmTlVQDMzMzMz01JAMzMzMzPzUkBmZmZmZsZTQGZmZmZmhlVAMzMzMzPzUEAAAAAAAIBQQDMzMzMzs09AmpmZmZmZUUAAAAAAAIBRQGZmZmZmZkxAzczMzMzMT0AAAAAAAIBGQDMzMzMzc0VA"
+      },
+      "yaxis": "y",
+      "type": "scatter"
+    },
+    {
+      "x": [2, 6, 10],
+      "y": [50, 80, 90],
+      "text": ["Alpha", "Bravo", "Charlie"],
+      "mode": "text+lines+markers",
+      "marker": {
+        "color": "#FFD700",
+        "size": 14,
+        "symbol": "star"
+      },
+      "line": {
+        "color": "#FFD700",
+        "width": 2,
+        "dash": "dashdot"
+      },
+      "textposition": "top center",
+      "name": "Highlighted Points",
+      "showlegend": true,
+      "type": "scatter"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "histogram2dcontour": [
+          {
+            "type": "histogram2dcontour",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "choropleth": [
+          {
+            "type": "choropleth",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "histogram2d": [
+          {
+            "type": "histogram2d",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "heatmap": [
+          {
+            "type": "heatmap",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "contourcarpet": [
+          {
+            "type": "contourcarpet",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "contour": [
+          {
+            "type": "contour",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "surface": [
+          {
+            "type": "surface",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "mesh3d": [
+          {
+            "type": "mesh3d",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "scatter": [
+          {
+            "fillpattern": {
+              "fillmode": "overlay",
+              "size": 10,
+              "solidity": 0.2
+            },
+            "type": "scatter"
+          }
+        ],
+        "parcoords": [
+          {
+            "type": "parcoords",
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterpolargl": [
+          {
+            "type": "scatterpolargl",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "bar": [
+          {
+            "error_x": {
+              "color": "#2a3f5f"
+            },
+            "error_y": {
+              "color": "#2a3f5f"
+            },
+            "marker": {
+              "line": {
+                "color": "#E5ECF6",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "bar"
+          }
+        ],
+        "scattergeo": [
+          {
+            "type": "scattergeo",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterpolar": [
+          {
+            "type": "scatterpolar",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "histogram": [
+          {
+            "marker": {
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "histogram"
+          }
+        ],
+        "scattergl": [
+          {
+            "type": "scattergl",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatter3d": [
+          {
+            "type": "scatter3d",
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattermap": [
+          {
+            "type": "scattermap",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattermapbox": [
+          {
+            "type": "scattermapbox",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterternary": [
+          {
+            "type": "scatterternary",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattercarpet": [
+          {
+            "type": "scattercarpet",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "carpet": [
+          {
+            "aaxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "minorgridcolor": "white",
+              "startlinecolor": "#2a3f5f"
+            },
+            "baxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "minorgridcolor": "white",
+              "startlinecolor": "#2a3f5f"
+            },
+            "type": "carpet"
+          }
+        ],
+        "table": [
+          {
+            "cells": {
+              "fill": {
+                "color": "#EBF0F8"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "header": {
+              "fill": {
+                "color": "#C8D4E3"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "type": "table"
+          }
+        ],
+        "barpolar": [
+          {
+            "marker": {
+              "line": {
+                "color": "#E5ECF6",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "barpolar"
+          }
+        ],
+        "pie": [
+          {
+            "automargin": true,
+            "type": "pie"
+          }
+        ]
+      },
+      "layout": {
+        "autotypenumbers": "strict",
+        "colorway": [
+          "#636efa",
+          "#EF553B",
+          "#00cc96",
+          "#ab63fa",
+          "#FFA15A",
+          "#19d3f3",
+          "#FF6692",
+          "#B6E880",
+          "#FF97FF",
+          "#FECB52"
+        ],
+        "font": {
+          "color": "#2a3f5f"
+        },
+        "hovermode": "closest",
+        "hoverlabel": {
+          "align": "left"
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "#E5ECF6",
+        "polar": {
+          "bgcolor": "#E5ECF6",
+          "angularaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "radialaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          }
+        },
+        "ternary": {
+          "bgcolor": "#E5ECF6",
+          "aaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "baxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "caxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          }
+        },
+        "coloraxis": {
+          "colorbar": {
+            "outlinewidth": 0,
+            "ticks": ""
+          }
+        },
+        "colorscale": {
+          "sequential": [
+            [
+              0.0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1.0,
+              "#f0f921"
+            ]
+          ],
+          "sequentialminus": [
+            [
+              0.0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1.0,
+              "#f0f921"
+            ]
+          ],
+          "diverging": [
+            [
+              0,
+              "#8e0152"
+            ],
+            [
+              0.1,
+              "#c51b7d"
+            ],
+            [
+              0.2,
+              "#de77ae"
+            ],
+            [
+              0.3,
+              "#f1b6da"
+            ],
+            [
+              0.4,
+              "#fde0ef"
+            ],
+            [
+              0.5,
+              "#f7f7f7"
+            ],
+            [
+              0.6,
+              "#e6f5d0"
+            ],
+            [
+              0.7,
+              "#b8e186"
+            ],
+            [
+              0.8,
+              "#7fbc41"
+            ],
+            [
+              0.9,
+              "#4d9221"
+            ],
+            [
+              1,
+              "#276419"
+            ]
+          ]
+        },
+        "xaxis": {
+          "gridcolor": "white",
+          "linecolor": "white",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "white",
+          "automargin": true,
+          "zerolinewidth": 2
+        },
+        "yaxis": {
+          "gridcolor": "white",
+          "linecolor": "white",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "white",
+          "automargin": true,
+          "zerolinewidth": 2
+        },
+        "scene": {
+          "xaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          },
+          "yaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          },
+          "zaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          }
+        },
+        "shapedefaults": {
+          "line": {
+            "color": "#2a3f5f"
+          }
+        },
+        "annotationdefaults": {
+          "arrowcolor": "#2a3f5f",
+          "arrowhead": 0,
+          "arrowwidth": 1
+        },
+        "geo": {
+          "bgcolor": "white",
+          "landcolor": "#E5ECF6",
+          "subunitcolor": "white",
+          "showland": true,
+          "showlakes": true,
+          "lakecolor": "white"
+        },
+        "title": {
+          "x": 0.05
+        },
+        "mapbox": {
+          "style": "light"
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "title": {
+        "text": "Equipment Age (Years)"
+      },
+      "gridcolor": "#2C2C36"
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "title": {
+        "text": "Maintenance Efficiency Score"
+      },
+      "range": [
+        35,
+        102
+      ],
+      "gridcolor": "#2C2C36"
+    },
+    "legend": {
+      "title": {
+        "text": "Equipment_Type",
+        "font": {
+          "size": 14,
+          "color": "#C0C0C0"
+        }
+      },
+      "tracegroupgap": 0,
+      "font": {
+        "color": "#BCC6CC"
+      }
+    },
+    "title": {
+      "text": "Maintenance Efficiency vs. Equipment Age (Defence Industry)",
+      "font": {
+        "size": 22,
+        "family": "Helvetica Neue, Arial",
+        "color": "#BCC6CC"
+      }
+    },
+    "font": {
+      "color": "#cdcdcd"
+    },
+    "plot_bgcolor": "#222228",
+    "paper_bgcolor": "#18181C"
+  },
+  "id": 854
+}

@@ -195,7 +195,7 @@ class LLMClient:
                     Use realistic data to show in the chart.
                     {prompt}
                     The Python code should generate the Plotly JSON chart schemas for each visualization.
-                    Output the result as Python code that, when executed, will generate and save the JSON schemas for the charts to a file. Do not include any other text or explanation. The python code should strictly adhere to {number_of_charts} nuumber of charts.
+                    Output the result as Python code that, when executed, will generate and save the JSON schemas for the charts to a file. Do not include any other text or explanation. The python code should strictly adhere to {number_of_charts} number of charts.
                     Input scenario: {scenario}"""
             }
         ]
