@@ -1,0 +1,1095 @@
+{
+    "data": [
+      {
+        "type": "bar",
+        "x": [
+          "Apr"
+        ],
+        "y": [
+          19
+        ],
+        "name": "Planning",
+        "marker": {
+          "color": "rgb(128, 186, 216)",
+          "opacity": 0.8,
+          "pattern": {
+            "shape": "",
+            "fillmode": "overlay",
+            "size": 10,
+            "fgcolor": "#164A78",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#164A78",
+            "width": 4
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            8.916333278301913
+          ]
+        ],
+        "hovertemplate": "Month: Apr<br>Phase: Planning<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(128, 186, 216)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Apr"
+        ],
+        "y": [
+          108
+        ],
+        "name": "Foundation",
+        "marker": {
+          "color": "rgb(13, 63, 118)",
+          "opacity": 0.5,
+          "pattern": {
+            "shape": "/",
+            "fillmode": "overlay",
+            "size": 13,
+            "fgcolor": "#BA6602",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#BA6602",
+            "width": 3
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            18.860227063388667
+          ]
+        ],
+        "hovertemplate": "Month: Apr<br>Phase: Foundation<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(13, 63, 118)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Apr"
+        ],
+        "y": [
+          154
+        ],
+        "name": "Structure",
+        "marker": {
+          "color": "rgb(5, 48, 97)",
+          "opacity": 0.8,
+          "pattern": {
+            "shape": ".",
+            "fillmode": "overlay",
+            "size": 16,
+            "fgcolor": "#21764D",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#21764D",
+            "width": 2
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            24.96565170715337
+          ]
+        ],
+        "hovertemplate": "Month: Apr<br>Phase: Structure<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(5, 48, 97)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Apr"
+        ],
+        "y": [
+          130
+        ],
+        "name": "Finishing",
+        "marker": {
+          "color": "rgb(18, 72, 131)",
+          "opacity": 0.5,
+          "pattern": {
+            "shape": "+",
+            "fillmode": "overlay",
+            "size": 19,
+            "fgcolor": "#941142",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#941142",
+            "width": 1
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            18.190836244790237
+          ]
+        ],
+        "hovertemplate": "Month: Apr<br>Phase: Finishing<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(18, 72, 131)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Feb"
+        ],
+        "y": [
+          -134
+        ],
+        "name": "Planning",
+        "marker": {
+          "color": "rgb(241, 159, 126)",
+          "opacity": 0.8,
+          "pattern": {
+            "shape": "",
+            "fillmode": "overlay",
+            "size": 10,
+            "fgcolor": "#164A78",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#164A78",
+            "width": 4
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            -8.338368233714023
+          ]
+        ],
+        "hovertemplate": "Month: Feb<br>Phase: Planning<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(241, 159, 126)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Feb"
+        ],
+        "y": [
+          -76
+        ],
+        "name": "Foundation",
+        "marker": {
+          "color": "rgb(247, 185, 156)",
+          "opacity": 0.5,
+          "pattern": {
+            "shape": "/",
+            "fillmode": "overlay",
+            "size": 13,
+            "fgcolor": "#BA6602",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#BA6602",
+            "width": 3
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            -6.5173401955860255
+          ]
+        ],
+        "hovertemplate": "Month: Feb<br>Phase: Foundation<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(247, 185, 156)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Feb"
+        ],
+        "y": [
+          -13
+        ],
+        "name": "Structure",
+        "marker": {
+          "color": "rgb(231, 239, 244)",
+          "opacity": 0.8,
+          "pattern": {
+            "shape": ".",
+            "fillmode": "overlay",
+            "size": 16,
+            "fgcolor": "#21764D",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#21764D",
+            "width": 2
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            1.722398631445844
+          ]
+        ],
+        "hovertemplate": "Month: Feb<br>Phase: Structure<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(231, 239, 244)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Feb"
+        ],
+        "y": [
+          144
+        ],
+        "name": "Finishing",
+        "marker": {
+          "color": "rgb(5, 48, 97)",
+          "opacity": 0.5,
+          "pattern": {
+            "shape": "+",
+            "fillmode": "overlay",
+            "size": 19,
+            "fgcolor": "#941142",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#941142",
+            "width": 1
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            22.454442655187638
+          ]
+        ],
+        "hovertemplate": "Month: Feb<br>Phase: Finishing<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(5, 48, 97)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Jan"
+        ],
+        "y": [
+          140
+        ],
+        "name": "Planning",
+        "marker": {
+          "color": "rgb(5, 48, 97)",
+          "opacity": 0.8,
+          "pattern": {
+            "shape": "",
+            "fillmode": "overlay",
+            "size": 10,
+            "fgcolor": "#164A78",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#164A78",
+            "width": 4
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            20.30053107437926
+          ]
+        ],
+        "hovertemplate": "Month: Jan<br>Phase: Planning<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(5, 48, 97)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Jan"
+        ],
+        "y": [
+          145
+        ],
+        "name": "Foundation",
+        "marker": {
+          "color": "rgb(5, 48, 97)",
+          "opacity": 0.5,
+          "pattern": {
+            "shape": "/",
+            "fillmode": "overlay",
+            "size": 13,
+            "fgcolor": "#BA6602",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#BA6602",
+            "width": 3
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            23.55062483012908
+          ]
+        ],
+        "hovertemplate": "Month: Jan<br>Phase: Foundation<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(5, 48, 97)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Jan"
+        ],
+        "y": [
+          -95
+        ],
+        "name": "Structure",
+        "marker": {
+          "color": "rgb(251, 207, 184)",
+          "opacity": 0.8,
+          "pattern": {
+            "shape": ".",
+            "fillmode": "overlay",
+            "size": 16,
+            "fgcolor": "#21764D",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#21764D",
+            "width": 2
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            -4.862345868527455
+          ]
+        ],
+        "hovertemplate": "Month: Jan<br>Phase: Structure<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(251, 207, 184)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Jan"
+        ],
+        "y": [
+          -35
+        ],
+        "name": "Finishing",
+        "marker": {
+          "color": "rgb(251, 228, 215)",
+          "opacity": 0.5,
+          "pattern": {
+            "shape": "+",
+            "fillmode": "overlay",
+            "size": 19,
+            "fgcolor": "#941142",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#941142",
+            "width": 1
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            -2.6476321862330416
+          ]
+        ],
+        "hovertemplate": "Month: Jan<br>Phase: Finishing<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(251, 228, 215)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Jun"
+        ],
+        "y": [
+          40
+        ],
+        "name": "Planning",
+        "marker": {
+          "color": "rgb(202, 225, 238)",
+          "opacity": 0.8,
+          "pattern": {
+            "shape": "",
+            "fillmode": "overlay",
+            "size": 10,
+            "fgcolor": "#164A78",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#164A78",
+            "width": 4
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            4.461755547298856
+          ]
+        ],
+        "hovertemplate": "Month: Jun<br>Phase: Planning<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(202, 225, 238)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Jun"
+        ],
+        "y": [
+          -25
+        ],
+        "name": "Foundation",
+        "marker": {
+          "color": "rgb(248, 243, 240)",
+          "opacity": 0.5,
+          "pattern": {
+            "shape": "/",
+            "fillmode": "overlay",
+            "size": 13,
+            "fgcolor": "#BA6602",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#BA6602",
+            "width": 3
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            -0.6188637995318174
+          ]
+        ],
+        "hovertemplate": "Month: Jun<br>Phase: Foundation<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(248, 243, 240)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Jun"
+        ],
+        "y": [
+          -57
+        ],
+        "name": "Structure",
+        "marker": {
+          "color": "rgb(247, 185, 156)",
+          "opacity": 0.8,
+          "pattern": {
+            "shape": ".",
+            "fillmode": "overlay",
+            "size": 16,
+            "fgcolor": "#21764D",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#21764D",
+            "width": 2
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            -6.49193875310429
+          ]
+        ],
+        "hovertemplate": "Month: Jun<br>Phase: Structure<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(247, 185, 156)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Jun"
+        ],
+        "y": [
+          -126
+        ],
+        "name": "Finishing",
+        "marker": {
+          "color": "rgb(209, 85, 72)",
+          "opacity": 0.5,
+          "pattern": {
+            "shape": "+",
+            "fillmode": "overlay",
+            "size": 19,
+            "fgcolor": "#941142",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#941142",
+            "width": 1
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            -12.590534024196337
+          ]
+        ],
+        "hovertemplate": "Month: Jun<br>Phase: Finishing<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(209, 85, 72)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Mar"
+        ],
+        "y": [
+          100
+        ],
+        "name": "Planning",
+        "marker": {
+          "color": "rgb(5, 48, 97)",
+          "opacity": 0.8,
+          "pattern": {
+            "shape": "",
+            "fillmode": "overlay",
+            "size": 10,
+            "fgcolor": "#164A78",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#164A78",
+            "width": 4
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            22.34922100627789
+          ]
+        ],
+        "hovertemplate": "Month: Mar<br>Phase: Planning<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(5, 48, 97)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Mar"
+        ],
+        "y": [
+          34
+        ],
+        "name": "Foundation",
+        "marker": {
+          "color": "rgb(189, 219, 234)",
+          "opacity": 0.5,
+          "pattern": {
+            "shape": "/",
+            "fillmode": "overlay",
+            "size": 13,
+            "fgcolor": "#BA6602",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#BA6602",
+            "width": 3
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            5.248291202904245
+          ]
+        ],
+        "hovertemplate": "Month: Mar<br>Phase: Foundation<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(189, 219, 234)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Mar"
+        ],
+        "y": [
+          -4
+        ],
+        "name": "Structure",
+        "marker": {
+          "color": "rgb(169, 209, 229)",
+          "opacity": 0.8,
+          "pattern": {
+            "shape": ".",
+            "fillmode": "overlay",
+            "size": 16,
+            "fgcolor": "#21764D",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#21764D",
+            "width": 2
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            6.523925874890714
+          ]
+        ],
+        "hovertemplate": "Month: Mar<br>Phase: Structure<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(169, 209, 229)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "Mar"
+        ],
+        "y": [
+          -121
+        ],
+        "name": "Finishing",
+        "marker": {
+          "color": "rgb(211, 91, 75)",
+          "opacity": 0.5,
+          "pattern": {
+            "shape": "+",
+            "fillmode": "overlay",
+            "size": 19,
+            "fgcolor": "#941142",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#941142",
+            "width": 1
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            -12.29200396964008
+          ]
+        ],
+        "hovertemplate": "Month: Mar<br>Phase: Finishing<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(211, 91, 75)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "May"
+        ],
+        "y": [
+          59
+        ],
+        "name": "Planning",
+        "marker": {
+          "color": "rgb(150, 199, 223)",
+          "opacity": 0.8,
+          "pattern": {
+            "shape": "",
+            "fillmode": "overlay",
+            "size": 10,
+            "fgcolor": "#164A78",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#164A78",
+            "width": 4
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            7.7243288627693
+          ]
+        ],
+        "hovertemplate": "Month: May<br>Phase: Planning<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(150, 199, 223)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "May"
+        ],
+        "y": [
+          229
+        ],
+        "name": "Foundation",
+        "marker": {
+          "color": "rgb(5, 48, 97)",
+          "opacity": 0.5,
+          "pattern": {
+            "shape": "/",
+            "fillmode": "overlay",
+            "size": 13,
+            "fgcolor": "#BA6602",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#BA6602",
+            "width": 3
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            32.26049863537794
+          ]
+        ],
+        "hovertemplate": "Month: May<br>Phase: Foundation<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(5, 48, 97)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "May"
+        ],
+        "y": [
+          141
+        ],
+        "name": "Structure",
+        "marker": {
+          "color": "rgb(5, 48, 97)",
+          "opacity": 0.8,
+          "pattern": {
+            "shape": ".",
+            "fillmode": "overlay",
+            "size": 16,
+            "fgcolor": "#21764D",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#21764D",
+            "width": 2
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            23.457097081673393
+          ]
+        ],
+        "hovertemplate": "Month: May<br>Phase: Structure<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(5, 48, 97)"
+      },
+      {
+        "type": "bar",
+        "x": [
+          "May"
+        ],
+        "y": [
+          124
+        ],
+        "name": "Finishing",
+        "marker": {
+          "color": "rgb(22, 81, 142)",
+          "opacity": 0.5,
+          "pattern": {
+            "shape": "+",
+            "fillmode": "overlay",
+            "size": 19,
+            "fgcolor": "#941142",
+            "bgcolor": "white"
+          },
+          "line": {
+            "color": "#941142",
+            "width": 1
+          },
+          "colorscale": "RdBu",
+          "cauto": false,
+          "cmin": -20,
+          "cmax": 20
+        },
+        "customdata": [
+          [
+            17.58902210959126
+          ]
+        ],
+        "hovertemplate": "Month: May<br>Phase: Finishing<br>Over/Under: {y}<br>Variance %: {customdata[0]:.2f}<extra></extra>",
+        "color": "rgb(22, 81, 142)"
+      }
+    ],
+    "layout": {
+      "barmode": "stack",
+      "title": {
+        "text": "Construction Project Monthly Over/Under Spend by Phase",
+        "font": {
+          "family": "Arial",
+          "size": 20
+        }
+      },
+      "xaxis": {
+        "title": "Month",
+        "tickmode": "array",
+        "tickvals": [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun"
+        ],
+        "showgrid": false,
+        "showline": true,
+        "linecolor": "#333",
+        "ticks": "outside"
+      },
+      "yaxis": {
+        "title": "Cost Over/Under (k$)",
+        "zeroline": true,
+        "zerolinecolor": "#888",
+        "gridcolor": "#f6f6fa"
+      },
+      "legend": {
+        "title": {
+          "text": "Phase"
+        },
+        "bgcolor": "rgba(255,255,255,0.9)",
+        "bordercolor": "#ccc",
+        "borderwidth": 1
+      },
+      "plot_bgcolor": "white",
+      "paper_bgcolor": "white",
+      "coloraxis": {
+        "colorscale": "RdBu",
+        "cmin": -20,
+        "cmax": 20,
+        "colorbar": {
+          "title": "Variance %",
+          "ticks": "outside"
+        }
+      },
+      "updatemenus": [
+        {
+          "type": "buttons",
+          "direction": "right",
+          "x": 0.57,
+          "y": 1.2,
+          "showactive": true,
+          "buttons": [
+            {
+              "label": "Highlight Overruns",
+              "method": "update",
+              "args": [
+                {
+                  "marker": [
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Highlight Underspending",
+              "method": "update",
+              "args": [
+                {
+                  "marker": [
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 1
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    },
+                    {
+                      "opacity": 0.5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "id": 863
+  }
