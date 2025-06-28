@@ -53,14 +53,14 @@ type DataType =
   | 'advanced_scenarios';
 
 const dataTypeRanges = {
-  'general': [{ min: 1, max: 252 }, {min: 750, max: 758 }, {min: 840, max: 846 }, {min: 848, max: 853}, {min: 855, max: 856}],
+  'general': [{ min: 1, max: 252 }, {min: 750, max: 758 }, {min: 840, max: 846 }, {min: 848, max: 853}, {min: 855, max: 856}, {min: 871, max: 871}],
   'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }, { min: 759, max: 759 }, {min: 767, max: 767}],
   'localization': [{ min: 278, max: 302 }],
   'seval': [{ min: 333, max: 376 }],
   'plotly_express_basic': [{ min: 377, max: 427 }, {min: 760, max: 766}],
   'plotly_express_detailed': [{ min: 428, max: 569 }],
   'plotly_express_colors': [{ min: 570, max: 749 }, { min: 768, max: 787 }],
-  'advanced_scenarios': [{min: 788, max: 839}, {min: 847, max: 847}, {min: 854, max: 854}]
+  'advanced_scenarios': [{min: 788, max: 839}, {min: 847, max: 847}, {min: 854, max: 854}, {min: 857, max: 870}]
 };
 
 // Use require.context to load all JSON files from the split_data folder

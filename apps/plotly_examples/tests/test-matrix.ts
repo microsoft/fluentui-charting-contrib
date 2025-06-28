@@ -1,5 +1,5 @@
 const startExampleTestIndex = 0;
-export const totalChartExamplesCount = 856;
+export const totalChartExamplesCount = 871;
 const startExampleTestIndexLocalization = 377;
 const endExampleTestIndexLocalization = 569;
 
