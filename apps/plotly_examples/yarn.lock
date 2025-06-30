@@ -1269,6 +1269,14 @@
     "@fluentui/set-version" "^8.2.24"
     tslib "^2.1.0"
 
+"@fluentui/chart-utilities@^1.1.19":
+  version "1.1.19"
+  resolved "https://registry.yarnpkg.com/@fluentui/chart-utilities/-/chart-utilities-1.1.19.tgz#7026b8a6610e91915f6a6fe9f0a91a28df93cae4"
+  integrity sha512-OeGQhGAxJeoi+kJvRkXIQaegrSLgrLcWJzLQOPdg0AN4VYfHuyYkdqos38bkAJj47n+OVOJmAD31ZJG573rp8Q==
+  dependencies:
+    "@fluentui/set-version" "^8.2.24"
+    tslib "^2.1.0"
+
 "@fluentui/date-time-utilities@^8.6.10":
   version "8.6.10"
   resolved "https://registry.yarnpkg.com/@fluentui/date-time-utilities/-/date-time-utilities-8.6.10.tgz#b24384c0f525b4cb798cf2e9d9855182da1e6a91"
@@ -1520,12 +1528,12 @@
     embla-carousel-autoplay "^8.5.1"
     embla-carousel-fade "^8.5.1"
 
-"@fluentui/react-charting@^5.24.8":
-  version "5.24.8"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-charting/-/react-charting-5.24.8.tgz#c72870b6de870536f54d861327ee1feae03179ea"
-  integrity sha512-52/w6imI1sD37AwaS4erq1286VE/ouBYUB2j6SXOzUE6B0apPQ6RGISSUZrxPjeV4tGB7Zu1WtngYLHWsGSr/Q==
+"@fluentui/react-charting@^5.24.9":
+  version "5.24.9"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-charting/-/react-charting-5.24.9.tgz#2a2b9f5ea626cbe3e1f8760eef64e61f5a712aa3"
+  integrity sha512-QX9GMphfejcd+ATVCGbCQhdozZih9kqCLGItD9kVOhjsf1YITR0/vF8AFzIpHa9jv5yM0ihd2wFw6AYCjReXNA==
   dependencies:
-    "@fluentui/chart-utilities" "^1.1.18"
+    "@fluentui/chart-utilities" "^1.1.19"
     "@fluentui/react-focus" "^8.9.25"
     "@fluentui/set-version" "^8.2.24"
     "@fluentui/theme-samples" "^8.7.209"
