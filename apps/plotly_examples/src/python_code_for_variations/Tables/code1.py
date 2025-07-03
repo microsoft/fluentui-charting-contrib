@@ -1,5 +1,5 @@
-import plotly.graph_objects as go
 import json
+import plotly.graph_objects as go
 
 # Create the table
 products = ["Apples", "Bananas", "Oranges"]
@@ -11,7 +11,7 @@ fig = go.Figure(data=[go.Table(
     header=dict(values=["Product", "Quantity", "Price", "Total"]),
     cells=dict(values=[products + ["Total"],
                        quantities + [sum(quantities)],
-                       prices + [""],
+                       prices + [None],
                        totals + [sum(totals)]])
 )])
 
@@ -23,4 +23,4 @@ with open("table_total_rows.json", "w") as f:
     f.write(fig_json)
 
 # Optional: print preview of JSON (first 300 characters)
-print(fig_json[:300])
+print("Preview of exported JSON:\n", fig_json[:300], "...")
