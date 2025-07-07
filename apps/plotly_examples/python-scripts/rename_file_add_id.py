@@ -3,8 +3,9 @@ import json
 import uuid
 
 def process_json_files(directory):
-    unique_id = 788
+    unique_id = 872
     output_dir = directory + '/renamed_data'
+    os.makedirs(output_dir, exist_ok=True)
     # Iterate through all files in the directory
     for filename in os.listdir(directory):
         if filename.endswith(".json"):  # Process only JSON files
