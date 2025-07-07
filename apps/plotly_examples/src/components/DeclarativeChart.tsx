@@ -39,6 +39,7 @@ type PlotType =
   | 'Scatter'
   | 'Table'
   | 'Funnel'
+  | 'ScatterPolar'
   | 'Others';
 
 type DataType =
@@ -277,6 +278,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             <Option value="Scatter">Scatter</Option>
             <Option value="Table">Table</Option>
             <Option value="Funnel">Funnel</Option>
+            <Option value="ScatterPolar">ScatterPolar</Option>
             <Option value="Others">Others</Option>
           </Dropdown>
           &nbsp;&nbsp;&nbsp;
