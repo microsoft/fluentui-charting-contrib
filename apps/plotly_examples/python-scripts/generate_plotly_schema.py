@@ -180,8 +180,11 @@ class LLMClient:
         
         return id, True
 
-    def call_llm_python_code(self, scenario: str, id: int, prompt: str = "", theme: str = "", number_of_charts: int = 3):
-        default_prompt = "Represent the visualization as {number_of_charts} different suitable chart types using Plotly Express. Choose the chart types that best fit the data and scenario."
+    def call_llm_python_code(self, scenario: str, id: int, prompt: str = "", theme: str = "", chartType: str="", number_of_charts: int = 1):
+        introductory_prompt = "Create Python code using Plotly Express to generate visualizations for the following scenario."
+        if chartType != "":
+            introductory_prompt = f"Create Python code using Plotly Express to generate visualizations of type '{chartType}' for the following scenario."
+        default_prompt = f"Represent the visualization strictly as {number_of_charts} 'scatterpolar' chart types using Plotly Express. Use realistic data to show in the chart."
         if prompt == "":
             prompt = default_prompt
         messages = [
@@ -191,7 +194,7 @@ class LLMClient:
             },
             {
                 "role": "user",
-                "content": f"""Create Python code using Plotly Express to generate visualizations for the following scenario. 
+                "content": f"""{introductory_prompt} 
                     Use realistic data to show in the chart.
                     {prompt}
                     The Python code should generate the Plotly JSON chart schemas for each visualization.
@@ -279,7 +282,49 @@ class LLMClient:
         
         return id
 
-
+class Response:
+    @staticmethod
+    def model_json_schema():
+        return {
+            "type": "object",
+            "properties": {
+                "scenarios": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "industry": {"type": "string"},
+                            "scenario_name": {"type": "string"},
+                            "scenario_description": {"type": "string"},
+                            "columns": {
+                                "type": "array",
+                                "items": {"type": "string"},
+                                "description": "Key columns required for the scenario."
+                            },
+                            "sources": {
+                                "type": "array",
+                                "items": {"type": "string"},
+                                "description": "Data sources integrated for the scenario."
+                            },
+                            "aggregation_level": {
+                                "type": "string",
+                                "description": "Level of aggregation required for the scenario."
+                            }
+                        },
+                        "required": [
+                            "industry",
+                            "scenario_name",
+                            "scenario_description",
+                            "columns",
+                            "sources",
+                            "aggregation_level"
+                        ]
+                    }
+                }
+            },
+            "required": ["scenarios"]
+        }
+        
 class VisualizationGenerator:
     """Generates visualization scenarios, schemas, and codes."""
 
@@ -287,7 +332,7 @@ class VisualizationGenerator:
         self.scenario_dir = scenario_dir
         self.llm_client = LLMClient(token_provider)
 
-    def generate_visualization_scenarios(self, json_data):
+    def generate_visualization_scenarios(self, json_data, chart_type=""):
         response_format = {
             'type': 'json_schema',
             'json_schema': {
@@ -295,6 +340,10 @@ class VisualizationGenerator:
                 "schema": Response.model_json_schema()
             }
         }
+        additional_prompt = ""
+        if chart_type != "":
+            additional_prompt = f"specifically for the chart type {chart_type}"
+        os.makedirs(self.scenario_dir, exist_ok=True)
         for industry_data in json_data['industries']:
             print(f"Industry: {industry_data['industry']}")
             messages = [
@@ -304,7 +353,7 @@ class VisualizationGenerator:
                 },
                 {
                     "role": "user",
-                    "content": f"""Refer to the below example. Generate similar scenarios that need charts to showcase the reports and dashboards for {industry_data['industry']} industry.
+                    "content": f"""Refer to the below example. Generate similar scenarios that need charts to showcase the reports and dashboards for {industry_data['industry']} industry {additional_prompt}.
 Provide detailed explanation of each scenario in 10 lines in the description section. Generate the output in a similar JSON structure. Include information like the columns needed, sources of data, aggregation level needed in the report.
 [START EXAMPLE]
 {json.dumps(industry_data)}
@@ -347,7 +396,8 @@ Provide detailed explanation of each scenario in 10 lines in the description sec
 
             for scenario_data in json_data.get('scenarios', []):
                 print(f"Industry: {scenario_data['industry']}, Scenario: {scenario_data['scenario_name']}")
-                id = self.llm_client.call_llm_python_code(json.dumps(scenario_data), id)
+                prompt= "Generate python code for that would generate plotly schemas for scatterpolar chart having modes 'markers'."
+                id = self.llm_client.call_llm_python_code(json.dumps(scenario_data), id, prompt, theme='', chartType='scatterpolar', number_of_charts=3)
                 
     def generate_visualization_python_code_colors(self):
         if not os.path.exists(self.scenario_dir):
@@ -376,7 +426,7 @@ Provide detailed explanation of each scenario in 10 lines in the description sec
                 prompt += f"Use {theme} color theme for the charts."
                 for scenario_data in json_data.get('scenarios', []):
                     print(f"Industry: {scenario_data['industry']}, Scenario: {scenario_data['scenario_name']}, Theme: {theme}")
-                    id = self.llm_client.call_llm_python_code(json.dumps(scenario_data), id, prompt, theme, 1)
+                    id = self.llm_client.call_llm_python_code(json.dumps(scenario_data), id, prompt, theme, '', 1)
                     break
 
     def generate_detailed_visualization_schemas(self):
@@ -500,12 +550,16 @@ if __name__ == "__main__":
         DefaultAzureCredential(),  
         "https://cognitiveservices.azure.com/.default"  
     )      
-    scenario_dir = 'detailed_scenarios'
-
+    # scenario_dir = 'detailed_scenarios'
+    scenario_dir = "scatterpolar_chart_scenarios"
     # Generate visualizations
     visualization_generator = VisualizationGenerator(scenario_dir, token_provider)
-    # visualization_generator.generate_visualization_codes()
-    visualization_generator.generate_visualization_python_code_colors()
+    visualization_generator.generate_visualization_scenarios(
+        json_data=FileManager.read_json_file('scenarios.json'),
+        chart_type="scatterpolar"
+    )
+    visualization_generator.generate_visualization_codes()
+    # visualization_generator.generate_visualization_python_code_colors()
 
     # Generate chart types from images
     # chart_type_generator = ChartTypeGenerator(token_provider)

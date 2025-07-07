@@ -39,6 +39,7 @@ type PlotType =
   | 'Scatter'
   | 'Table'
   | 'Funnel'
+  | 'ScatterPolar'
   | 'Others';
 
 type DataType =
@@ -60,7 +61,7 @@ const dataTypeRanges = {
   'plotly_express_basic': [{ min: 377, max: 427 }, {min: 760, max: 766}],
   'plotly_express_detailed': [{ min: 428, max: 569 }],
   'plotly_express_colors': [{ min: 570, max: 749 }, { min: 768, max: 787 }],
-  'advanced_scenarios': [{min: 788, max: 839}, {min: 847, max: 847}, {min: 854, max: 854}, {min: 857, max: 870}]
+  'advanced_scenarios': [{min: 788, max: 839}, {min: 847, max: 847}, {min: 854, max: 854}, {min: 857, max: 870}, {min: 872, max: 892}]
 };
 
 // Use require.context to load all JSON files from the split_data folder
@@ -277,6 +278,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             <Option value="Scatter">Scatter</Option>
             <Option value="Table">Table</Option>
             <Option value="Funnel">Funnel</Option>
+            <Option value="ScatterPolar">ScatterPolar</Option>
             <Option value="Others">Others</Option>
           </Dropdown>
           &nbsp;&nbsp;&nbsp;
