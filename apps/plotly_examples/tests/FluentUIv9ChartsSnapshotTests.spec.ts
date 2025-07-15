@@ -19,22 +19,121 @@ const charts = [
   { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner' },
 ];
 
+
+// Helper to interact with controls and take screenshots
+async function interactWithRadios(frame: any, imgId: string) {
+  const radios = frame.locator(`#${imgId} input[type="radio"]`);
+  for (let i = 0, count = await radios.count(); i < count; i++) {
+    await radios.nth(i).click();
+    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot();
+  }
+}
+
+async function interactWithSwitches(frame: any, imgId: string) {
+  const switches = frame.locator(`#${imgId} input[type="checkbox"], #${imgId} input[type="switch"]`);
+  for (let i = 0, count = await switches.count(); i < count; i++) {
+    const control = switches.nth(i);
+    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot();
+    if (!(await control.isChecked())) {
+      await control.check();
+    } else {
+      await control.uncheck();
+    }
+    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot();
+  }
+}
+
+async function interactWithSliders(frame: any, imgId: string) {
+  const sliders = frame.locator(`#${imgId} input[type="button"]`);
+  for (let i = 0, count = await sliders.count(); i < count; i++) {
+    const slider = sliders.nth(i);
+    const min = Number(await slider.getAttribute('min')) || 0;
+    const max = Number(await slider.getAttribute('max')) || 100;
+    const middle = Math.round((min + max) / 2);
+    await slider.fill(middle.toString());
+    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot();
+  }
+}
+
+async function interactWithLegends(frame: any, imgId: string) {
+  const legendItems = frame.locator(`#${imgId} button[type="button"][role="option"]`);
+  const count = await legendItems.count();
+  for (let i = 0; i < count; i++) {
+    const item = legendItems.nth(i);
+    await item.click();
+    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot();
+  }
+}
+
+const themes = ['web-light', 'web-dark'];
+
+for (const theme of themes) {
 for (const chart of charts) {
-  test(`should render ${chart.name} correctly`, async ({ page }) => {
-    await page.goto(`https://fluentuipr.z22.web.core.windows.net/pull/33270/chart-docsite/storybook/index.html?path=/docs/${chart.path}`);
+  async function loadChartPage(page: any, chart: { name: string; path: string }) {
+    const url = `https://fluentuipr.z22.web.core.windows.net/pull/33270/chart-docsite/storybook/index.html?path=/docs/${chart.path}`;
+    await page.goto(url);
+      await page.getByLabel('Shortcuts').click();
+  await page.locator('#list-item-T').click();
+    await page.getByRole('button', { name: /Theme:/ }).click();
+    await page.locator(`#list-item-${theme}`).click();
     await page.getByRole('link', { name: chart.name, exact: true }).click();
     const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
     const frame = await chartContainer.contentFrame();
+    if (!frame) throw new Error('Could not get content frame');
     const chartInner = frame.locator(chart.selector);
     await expect(chartInner).toBeVisible({ timeout: 10000 });
-    const areaChartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
-    for (const img of areaChartImages) {
-      await img.scrollIntoViewIfNeeded();
-      const imgId = await img.getAttribute('id');
-      if (imgId) {
-        const imgLocator = frame.locator(`#${imgId}`);
-        await expect(imgLocator).toHaveScreenshot();
+    return frame;
+  }
+
+  test.describe(`${chart.name} chart interactions`, () => {
+    test(`${theme} with Radio button actions`, async ({ page }) => {
+      const frame = await loadChartPage(page, chart);
+      const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
+      for (const img of chartImages) {
+        await img.scrollIntoViewIfNeeded();
+        const imgId = await img.getAttribute('id');
+        if (imgId) {
+          await interactWithRadios(frame, imgId);
+        }
       }
-    }
-});
+    });
+
+    test(`${theme} with switch actions`, async ({ page }) => {
+      const frame = await loadChartPage(page, chart);
+      const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
+      for (const img of chartImages) {
+        await img.scrollIntoViewIfNeeded();
+        const imgId = await img.getAttribute('id');
+        if (imgId) {
+          await interactWithSwitches(frame, imgId);
+        }
+      }
+    });
+
+    test(`${theme} with slider actions`, async ({ page }) => {
+      const frame = await loadChartPage(page, chart);
+      const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
+      for (const img of chartImages) {
+        await img.scrollIntoViewIfNeeded();
+        const imgId = await img.getAttribute('id');
+        if (imgId) {
+          await interactWithSliders(frame, imgId);
+        }
+      }
+    });
+
+    test(`${theme} with legend actions`, async ({ page }) => {
+      const frame = await loadChartPage(page, chart);
+      const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
+      for (const img of chartImages) {
+        await img.scrollIntoViewIfNeeded();
+        const imgId = await img.getAttribute('id');
+        if (imgId) {
+          // Interact with legend items by type="button" and role="option"
+          await interactWithLegends(frame, imgId);
+        }
+      }
+    });
+  });
+}
 }
