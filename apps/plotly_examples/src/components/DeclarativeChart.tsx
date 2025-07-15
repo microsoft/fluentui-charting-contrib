@@ -235,6 +235,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     const fontColor = { "font": { "color": "white" } }
     const layout_with_theme = { ...layout, plot_bgcolor: bgcolor, paper_bgcolor: bgcolor, font: fontColor };
     const plotlySchema = { data, layout: layout_with_theme, selectedLegends: lastKnownValidLegends };
+    const plotlySchemaCopy = JSON.parse(JSON.stringify(plotlySchema)); // Deep copy to avoid mutation
     const chartType: OutputChartType = mapFluentChart(plotlySchema);
     const inputSchema: Schema = { plotlySchema };
     const chartTitle = typeof layout?.title === 'string' ? layout.title : layout?.title?.text ?? '';
@@ -348,7 +349,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
           <br />
           <br />
           <ErrorBoundary>
-            <PlotlyChart schema={plotlySchema} />
+            <PlotlyChart schema={plotlySchemaCopy} />
           </ErrorBoundary>
         </div>
         <Subtitle2>Charts v9</Subtitle2>
