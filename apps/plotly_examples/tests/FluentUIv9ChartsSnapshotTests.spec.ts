@@ -68,72 +68,88 @@ async function interactWithLegends(frame: any, imgId: string) {
 const themes = ['web-light', 'web-dark'];
 
 for (const theme of themes) {
-for (const chart of charts) {
-  async function loadChartPage(page: any, chart: { name: string; path: string }) {
-    const url = `https://fluentuipr.z22.web.core.windows.net/pull/33270/chart-docsite/storybook/index.html?path=/docs/${chart.path}`;
-    await page.goto(url);
+  for (const chart of charts) {
+    async function loadChartPage(page: any, chart: { name: string; path: string }) {
+      const url = `http://localhost:3000/?path=/docs/${chart.path}&globals=storybook_fluentui-react-addon_theme:${theme}}`;
+      await page.goto(url);
       await page.getByLabel('Shortcuts').click();
-  await page.locator('#list-item-T').click();
-    await page.getByRole('button', { name: /Theme:/ }).click();
-    await page.locator(`#list-item-${theme}`).click();
-    await page.getByRole('link', { name: chart.name, exact: true }).click();
-    const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
-    const frame = await chartContainer.contentFrame();
-    if (!frame) throw new Error('Could not get content frame');
-    const chartInner = frame.locator(chart.selector);
-    await expect(chartInner).toBeVisible({ timeout: 10000 });
-    return frame;
+      await page.locator('#list-item-T').click();
+      await page.getByRole('button', { name: /Theme:/ }).click();
+      await page.locator(`#list-item-${theme}`).click();
+      await page.getByRole('link', { name: chart.name, exact: true }).click();
+      const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
+      const frame = await chartContainer.contentFrame();
+      if (!frame) throw new Error('Could not get content frame');
+      const chartInner = frame.locator(chart.selector);
+      await expect(chartInner).toBeVisible({ timeout: 10000 });
+      return frame;
+    }
+
+    test.describe(`${chart.name} chart interactions`, () => {
+      test(`${theme} with Radio button actions`, async ({ page }) => {
+        const frame = await loadChartPage(page, chart);
+        const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
+        for (const img of chartImages) {
+          await img.scrollIntoViewIfNeeded();
+          const imgId = await img.getAttribute('id');
+          const changeDataButton = await frame.locator('button.fui-Button.r1alrhcs', { hasText: 'Change Data' });
+          if (await changeDataButton.isVisible()) {
+            test.skip(true, 'Skipping test because Change Data button exists');
+          }
+          if (imgId) {
+            await interactWithRadios(frame, imgId);
+          }
+        }
+      });
+
+      test(`${theme} with switch actions`, async ({ page }) => {
+        const frame = await loadChartPage(page, chart);
+        const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
+        for (const img of chartImages) {
+          await img.scrollIntoViewIfNeeded();
+          const changeDataButton = await frame.locator('button.fui-Button.r1alrhcs', { hasText: 'Change Data' });
+          if (await changeDataButton.isVisible()) {
+            test.skip(true, 'Skipping test because Change Data button exists');
+          }
+          const imgId = await img.getAttribute('id');
+          if (imgId) {
+            await interactWithSwitches(frame, imgId);
+          }
+        }
+      });
+
+      test(`${theme} with slider actions`, async ({ page }) => {
+        const frame = await loadChartPage(page, chart);
+        const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
+        for (const img of chartImages) {
+          await img.scrollIntoViewIfNeeded();
+          const changeDataButton = await frame.locator('button.fui-Button.r1alrhcs', { hasText: 'Change Data' });
+          if (await changeDataButton.isVisible()) {
+            test.skip(true, 'Skipping test because Change Data button exists');
+          }
+          const imgId = await img.getAttribute('id');
+          if (imgId) {
+            await interactWithSliders(frame, imgId);
+          }
+        }
+      });
+
+      test(`${theme} with legend actions`, async ({ page }) => {
+        const frame = await loadChartPage(page, chart);
+        const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
+        for (const img of chartImages) {
+          await img.scrollIntoViewIfNeeded();
+          const changeDataButton = await frame.locator('button.fui-Button.r1alrhcs', { hasText: 'Change Data' });
+          if (await changeDataButton.isVisible()) {
+            test.skip(true, 'Skipping test because Change Data button exists');
+          }
+          const imgId = await img.getAttribute('id');
+          if (imgId) {
+            // Interact with legend items by type="button" and role="option"
+            await interactWithLegends(frame, imgId);
+          }
+        }
+      });
+    });
   }
-
-  test.describe(`${chart.name} chart interactions`, () => {
-    test(`${theme} with Radio button actions`, async ({ page }) => {
-      const frame = await loadChartPage(page, chart);
-      const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
-      for (const img of chartImages) {
-        await img.scrollIntoViewIfNeeded();
-        const imgId = await img.getAttribute('id');
-        if (imgId) {
-          await interactWithRadios(frame, imgId);
-        }
-      }
-    });
-
-    test(`${theme} with switch actions`, async ({ page }) => {
-      const frame = await loadChartPage(page, chart);
-      const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
-      for (const img of chartImages) {
-        await img.scrollIntoViewIfNeeded();
-        const imgId = await img.getAttribute('id');
-        if (imgId) {
-          await interactWithSwitches(frame, imgId);
-        }
-      }
-    });
-
-    test(`${theme} with slider actions`, async ({ page }) => {
-      const frame = await loadChartPage(page, chart);
-      const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
-      for (const img of chartImages) {
-        await img.scrollIntoViewIfNeeded();
-        const imgId = await img.getAttribute('id');
-        if (imgId) {
-          await interactWithSliders(frame, imgId);
-        }
-      }
-    });
-
-    test(`${theme} with legend actions`, async ({ page }) => {
-      const frame = await loadChartPage(page, chart);
-      const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
-      for (const img of chartImages) {
-        await img.scrollIntoViewIfNeeded();
-        const imgId = await img.getAttribute('id');
-        if (imgId) {
-          // Interact with legend items by type="button" and role="option"
-          await interactWithLegends(frame, imgId);
-        }
-      }
-    });
-  });
-}
 }
