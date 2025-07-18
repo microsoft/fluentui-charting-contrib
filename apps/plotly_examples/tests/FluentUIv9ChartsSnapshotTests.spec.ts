@@ -15,7 +15,7 @@ const charts = [
   { name: 'SankeyChart', path: 'charts-SankeyChart--docs', selector: '#story--charts-sankeychart--sankey-chart-basic--primary-inner' },
   { name: 'ScatterChart', path: 'charts-ScatterChart--docs', selector: '#story--charts-scatterchart--scatter-chart-default--primary-inner' },
   { name: 'Sparkline', path: 'charts-Sparkline--docs', selector: '#story--charts-sparkline--sparkline-basic--primary-inner' },
-  // { name: 'VerticalBarChart', path: 'charts-VerticalBarChart--docs', selector: '#story--charts-verticalbarchart--vertical-bar-default--primary-inner' },
+  { name: 'VerticalBarChart', path: 'charts-VerticalBarChart--docs', selector: '#story--charts-verticalbarchart--vertical-bar-default--primary-inner' },
   { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner' },
 ];
 
@@ -88,7 +88,7 @@ for (const theme of themes) {
         }
         await page.getByLabel('Shortcuts').click();
         await page.locator('#list-item-T').click();
-        await page.getByRole('link', { name: chart.name }).click();
+        await page.getByRole('link', { name: chart.name, exact: true }).click();
         const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
         const frame = await chartContainer.contentFrame();
         if (!frame) throw new Error('Could not get content frame');
@@ -104,10 +104,6 @@ for (const theme of themes) {
           for (const img of chartImages) {
             await img.scrollIntoViewIfNeeded();
             const imgId = await img.getAttribute('id');
-            const changeDataButton = await frame.locator('button.fui-Button.r1alrhcs', { hasText: 'Change Data' });
-            if (await changeDataButton.isVisible()) {
-              test.skip(true, 'Skipping test because Change Data button exists');
-            }
             if (imgId) {
               await interactWithRadios(frame, imgId);
             }
@@ -119,10 +115,6 @@ for (const theme of themes) {
           const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
           for (const img of chartImages) {
             await img.scrollIntoViewIfNeeded();
-            const changeDataButton = await frame.locator('button.fui-Button.r1alrhcs', { hasText: 'Change Data' });
-            if (await changeDataButton.isVisible()) {
-              test.skip(true, 'Skipping test because Change Data button exists');
-            }
             const imgId = await img.getAttribute('id');
             if (imgId) {
               await interactWithSwitches(frame, imgId);
@@ -135,10 +127,6 @@ for (const theme of themes) {
           const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
           for (const img of chartImages) {
             await img.scrollIntoViewIfNeeded();
-            const changeDataButton = await frame.locator('button.fui-Button.r1alrhcs', { hasText: 'Change Data' });
-            if (await changeDataButton.isVisible()) {
-              test.skip(true, 'Skipping test because Change Data button exists');
-            }
             const imgId = await img.getAttribute('id');
             if (imgId) {
               await interactWithSliders(frame, imgId);
@@ -151,10 +139,6 @@ for (const theme of themes) {
           const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
           for (const img of chartImages) {
             await img.scrollIntoViewIfNeeded();
-            const changeDataButton = await frame.locator('button.fui-Button.r1alrhcs', { hasText: 'Change Data' });
-            if (await changeDataButton.isVisible()) {
-              test.skip(true, 'Skipping test because Change Data button exists');
-            }
             const imgId = await img.getAttribute('id');
             if (imgId) {
               // Interact with legend items by type="button" and role="option"
