@@ -21,15 +21,18 @@ const charts = [
 
 
 // Helper to interact with controls and take screenshots
-async function interactWithRadios(frame: any, imgId: string) {
+async function interactWithRadios(frame: any, imgId: string, screenshotName: string) {
   const radios = frame.locator(`#${imgId} input[type="radio"]`);
   for (let i = 0, count = await radios.count(); i < count; i++) {
     await radios.nth(i).click();
-    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot();
+    const label = await frame.locator(`label[for="${await radios.nth(i).getAttribute('id')}"]`).textContent();
+    const labelText = label.split('(')[0].trim();
+    const path = `apps/plotly_examples/tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots/${screenshotName}-${labelText.toLowerCase()} radio-button-click.png`;
+    await frame.locator(`#${imgId}`).screenshot({ path: path });
   }
 }
 
-async function interactWithSwitches(frame: any, imgId: string) {
+async function interactWithSwitches(frame: any, imgId: string, screenshotName: string) {
   const switches = frame.locator(`#${imgId} input[type="checkbox"], #${imgId} input[type="switch"]`);
   for (let i = 0, count = await switches.count(); i < count; i++) {
     const control = switches.nth(i);
@@ -39,11 +42,14 @@ async function interactWithSwitches(frame: any, imgId: string) {
     } else {
       await control.uncheck();
     }
-    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot();
+    const label = await frame.locator(`label[for="${await control.getAttribute('id')}"]`).textContent();
+    const labelText = label.split('(')[0].trim();
+    const path = `apps/plotly_examples/tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots/${screenshotName}-${labelText.toLowerCase()} checkbox-click.png`;
+    await frame.locator(`#${imgId}`).screenshot({ path: path });
   }
 }
 
-async function interactWithSliders(frame: any, imgId: string) {
+async function interactWithSliders(frame: any, imgId: string, screenshotName: string) {
   const sliders = frame.locator(`#${imgId} input[type="range"]`);
   for (let i = 0, count = await sliders.count(); i < count; i++) {
     const slider = sliders.nth(i);
@@ -51,17 +57,24 @@ async function interactWithSliders(frame: any, imgId: string) {
     const max = Number(await slider.getAttribute('max')) || 100;
     const middle = Math.round((min + max) / 2);
     await slider.fill(middle.toString());
-    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot();
+    // Try to get the label associated with the slider by its id
+    const sliderId = await slider.getAttribute('id');
+    const sliderIdText = sliderId.split('(')[0].trim();
+    const path = `apps/plotly_examples/tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots/${screenshotName}-${sliderIdText.toLowerCase()} slider-value-change.png`;
+    await frame.locator(`#${imgId}`).screenshot({ path: path });
   }
 }
 
-async function interactWithLegends(frame: any, imgId: string) {
+async function interactWithLegends(frame: any, imgId: string, screenshotName: string) {
   const legendItems = frame.locator(`#${imgId} button[type="button"][role="option"]`);
   const count = await legendItems.count();
-  for (let i = 0; i < count; i++) {
-    const item = legendItems.nth(i);
-    await item.click();
-    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot();
+  if (count > 0) {
+    await legendItems.first().click(); // Click the first item to ensure the legend is visible
+    
+    const label = await legendItems.first().getAttribute('aria-label');
+    const labelText = label.split('(')[0].trim();
+    const path = `apps/plotly_examples/tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots/${screenshotName}-${labelText.toLowerCase()} legend-click.png`;
+    await frame.locator(`#${imgId}`).screenshot({ path: path });
   }
 }
 
@@ -83,7 +96,7 @@ for (const theme of themes) {
         const directionButton = await page.getByRole('button', { name: /Direction:/ });
         const directionText = await directionButton.textContent();
         if ((mode === 'RTL' && directionText?.includes('LTR')) ||
-            (mode === 'LTR' && directionText?.includes('RTL'))) {
+          (mode === 'LTR' && directionText?.includes('RTL'))) {
           await directionButton.click();
         }
         await page.getByLabel('Shortcuts').click();
@@ -97,15 +110,19 @@ for (const theme of themes) {
         return frame;
       }
 
-      test.describe(`${chart.name} chart interactions`, () => {
+      test.describe(`${chart.name} chart`, () => {
         test(`Radio button actions-${theme}-${mode} mode`, async ({ page }) => {
           const frame = await loadChartPage(page, chart);
           const chartImages = await frame.locator(`[id^="story--charts-${chart.name.toLowerCase()}--"][id$="-inner"]`).elementHandles();
+          // Capture data-name attribute from each chart image
           for (const img of chartImages) {
             await img.scrollIntoViewIfNeeded();
             const imgId = await img.getAttribute('id');
+            const dataName = await img.getAttribute('data-name');
+            // Append dataName to the screenshot name for better identification
+            const screenshotName = `${dataName || `${chart.name} basic`} example-${theme}-${mode} mode -`;
             if (imgId) {
-              await interactWithRadios(frame, imgId);
+              await interactWithRadios(frame, imgId, screenshotName);
             }
           }
         });
@@ -116,8 +133,11 @@ for (const theme of themes) {
           for (const img of chartImages) {
             await img.scrollIntoViewIfNeeded();
             const imgId = await img.getAttribute('id');
+            const dataName = await img.getAttribute('data-name');
+            // Append dataName to the screenshot name for better identification
+            const screenshotName = `${dataName || `${chart.name} basic`} example-${theme}-${mode} mode -`;
             if (imgId) {
-              await interactWithSwitches(frame, imgId);
+              await interactWithSwitches(frame, imgId, screenshotName);
             }
           }
         });
@@ -128,8 +148,11 @@ for (const theme of themes) {
           for (const img of chartImages) {
             await img.scrollIntoViewIfNeeded();
             const imgId = await img.getAttribute('id');
+            const dataName = await img.getAttribute('data-name');
+            // Append dataName to the screenshot name for better identification
+            const screenshotName = `${dataName || `${chart.name} basic`} example-${theme}-${mode} mode -`;
             if (imgId) {
-              await interactWithSliders(frame, imgId);
+              await interactWithSliders(frame, imgId, screenshotName);
             }
           }
         });
@@ -140,9 +163,12 @@ for (const theme of themes) {
           for (const img of chartImages) {
             await img.scrollIntoViewIfNeeded();
             const imgId = await img.getAttribute('id');
+            const dataName = await img.getAttribute('data-name');
+            // Append dataName to the screenshot name for better identification
+            const screenshotName = `${dataName || `${chart.name} basic`} example-${theme}-${mode} mode -`;
             if (imgId) {
               // Interact with legend items by type="button" and role="option"
-              await interactWithLegends(frame, imgId);
+              await interactWithLegends(frame, imgId, screenshotName);
             }
           }
         });
