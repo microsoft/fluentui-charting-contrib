@@ -1,0 +1,68 @@
+{
+    "visualizer": "plotly",
+    "data": [
+        {
+            "hole": 0.6,
+            "type": "pie",
+            "frame": null,
+            "marker": {
+                "line": {
+                    "color": "transparent"
+                },
+                "colors": [
+                    "rgba(31,119,180,1)",
+                    "rgba(255,127,14,1)",
+                    "rgba(44,160,44,1)",
+                    "rgba(214,39,40,1)",
+                    "rgba(148,103,189,1)",
+                    "rgba(140,86,75,1)",
+                    "rgba(227,119,194,1)",
+                    "rgba(127,127,127,1)",
+                    "rgba(188,189,34,1)",
+                    "rgba(23,190,207,1)"
+                ],
+                "fillcolor": "rgba(31,119,180,1)"
+            },
+            "labels": [
+                "AMC",
+                "Cadillac",
+                "Camaro",
+                "Chrysler",
+                null,
+                "Dodge",
+                "Duster",
+                "Ferrari"
+            ],
+            "values": [
+                null,
+                7,
+                1,
+                -1,
+                2,
+                1
+            ]
+        }
+    ],
+    "layout": {
+        "title": "Donut charts using Plotly",
+        "xaxis": {
+            "showgrid": false,
+            "zeroline": false,
+            "showticklabels": false
+        },
+        "yaxis": {
+            "showgrid": false,
+            "zeroline": false,
+            "showticklabels": false
+        },
+        "margin": {
+            "b": 40,
+            "l": 60,
+            "r": 10,
+            "t": 25
+        },
+        "hovermode": "closest",
+        "showlegend": true
+    },
+    "id": 750
+}

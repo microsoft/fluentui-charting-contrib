@@ -7,13 +7,20 @@ import {
   OptionOnSelectData,
   Subtitle1,
   Subtitle2,
-  Divider
+  Divider,
+  Textarea,
+  Field,
+  Switch,
+  TextareaOnChangeData
 } from '@fluentui/react-components';
 import { DeclarativeChart, IDeclarativeChart, Schema } from '@fluentui/react-charting';
 import PlotlyChart from './PlotlyChart';
 import { ErrorBoundary } from './ErrorBoundary';
-import { getSelection, saveSelection } from './utils';
+import { getSelection, saveSelection, SCHEMA_KEY, SCHEMA_KEY_DEFAULT } from './utils';
 import aggregatedChartTypes from './aggregated_chart_types.json';
+import type { OutputChartType } from '@fluentui/chart-utilities';
+import { mapFluentChart } from '@fluentui/chart-utilities';
+import { DeclarativeChart as DeclarativeChartV9 } from '@fluentui/react-charts'
 
 interface IDeclarativeChartProps {
 }
@@ -32,6 +39,12 @@ type PlotType =
   | 'Pie'
   | 'Sankey'
   | 'Heatmap'
+  | 'Histogram'
+  | 'Scatter'
+  | 'Table'
+  | 'Funnel'
+  | 'ScatterPolar'
+  | 'Gantt'
   | 'Others';
 
 type DataType =
@@ -39,13 +52,21 @@ type DataType =
   | 'general'
   | 'largeData'
   | 'localization'
-  | 'seval';
+  | 'seval'
+  | 'plotly_express_basic'
+  | 'plotly_express_detailed'
+  | 'plotly_express_colors'
+  | 'advanced_scenarios';
 
 const dataTypeRanges = {
-  'general': [{ min: 1, max: 252 }],
-  'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }],
+  'general': [{ min: 1, max: 252 }, {min: 750, max: 758 }, {min: 840, max: 846 }, {min: 848, max: 853}, {min: 855, max: 856}, {min: 871, max: 871}, {min: 893, max: 912}],
+  'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }, { min: 759, max: 759 }, {min: 767, max: 767}],
   'localization': [{ min: 278, max: 302 }],
-  'seval': [{ min: 333, max: 369 }]
+  'seval': [{ min: 333, max: 376 }],
+  'plotly_express_basic': [{ min: 377, max: 427 }, {min: 760, max: 766}],
+  'plotly_express_detailed': [{ min: 428, max: 569 }],
+  'plotly_express_colors': [{ min: 570, max: 749 }, { min: 768, max: 787 }],
+  'advanced_scenarios': [{min: 788, max: 839}, {min: 847, max: 847}, {min: 854, max: 854}, {min: 857, max: 870}, {min: 872, max: 892}]
 };
 
 // Use require.context to load all JSON files from the split_data folder
@@ -54,26 +75,26 @@ const schemasData = requireContext.keys().map((fileName: string) => ({
   fileName: fileName.replace('./', ''),
   schema: requireContext(fileName),
 }));
-console.log('schemasData', schemasData);
 
 const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
 
 const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
-  const savedOptionStr = getSelection("Schema", '001');
+  const savedOptionStr = getSelection(SCHEMA_KEY, SCHEMA_KEY_DEFAULT);
   const savedOption = parseInt(savedOptionStr, 10) - 1; // To handle 0 based index
   const savedFileName = `data_${savedOptionStr}.json`;
   const _selectedSchema = schemasData[savedOption]?.schema || {};
-  console.log('savedOption', savedOption);
-  console.log('selectedSchema', _selectedSchema);
+
   const { selectedLegends } = _selectedSchema as any;
-  console.log('selectedLegends', selectedLegends);
   const [selectedChoice, setSelectedChoice] = React.useState<string>(savedFileName);
   const [selectedSchema, setSelectedSchema] = React.useState<any>(_selectedSchema);
   const [selectedLegendsState, setSelectedLegendsState] = React.useState<string>(JSON.stringify(selectedLegends));
   const [selectedPlotTypes, setSelectedPlotTypes] = React.useState<PlotType[]>(getSelection("PlotType_filter", 'All').split(',') as PlotType[]);
   const [selectedDataTypes, setSelectedDataTypes] = React.useState<DataType[]>(getSelection("DataType_filter", 'All').split(',') as DataType[]);
+  const [isJsonInputEnabled, toggleJsonInput] = React.useState<boolean>(false);
+  const [jsonInputValue, setJsonInputValue] = React.useState<string>('');
 
   const declarativeChartRef = React.useRef<IDeclarativeChart>(null);
+  const declarativeChartV9Ref = React.useRef<IDeclarativeChart>(null);
   let lastKnownValidLegends: string[] | undefined = selectedLegends;
 
   React.useEffect(() => {
@@ -89,10 +110,10 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     };
   }, []);
 
-  const _onChange = (event: SelectionEvents, data: OptionOnSelectData): void => {
+  const _onChange = (event: SelectionEvents | null, data: OptionOnSelectData): void => {
     const selectedChoice = data.optionText!;
-    const selectedSchema = schemasData.find((s) => (s.schema as { id: string }).id === data.optionValue!)?.schema;
-    saveSelection("Schema", data.optionValue!.toString().padStart(3, '0'));
+    const selectedSchema = schemasData.find((s) => (s.schema as { id: string }).id.toString() === data.optionValue!.toString())?.schema;
+    saveSelection(SCHEMA_KEY, data.optionValue!.toString().padStart(3, '0'));
     const { selectedLegends } = selectedSchema as any;
     setSelectedChoice(selectedChoice);
     setSelectedSchema(selectedSchema);
@@ -114,15 +135,6 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     saveLink.click();
     document.body.removeChild(saveLink);
   };
-
-  function htmlEncode(str: string): string {
-    if (str !== undefined) {
-      return str.replace(/[\u00A0-\u9999<>\&]/gim, function (i) {
-        return '&#' + i.charCodeAt(0) + ';';
-      });
-    }
-    return '';
-  }
 
   const _handleChartSchemaChanged = (eventData: Schema) => {
     const { selectedLegends } = eventData.plotlySchema;
@@ -170,7 +182,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
       setSelectedLegendsState(JSON.stringify((firstFilteredSchema.schema as any).selectedLegends));
       const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
       const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
-      saveSelection("Schema", num_id.toString().padStart(3, '0'));
+      saveSelection(SCHEMA_KEY, num_id.toString().padStart(3, '0'));
     } else {
       setSelectedChoice('');
       setSelectedSchema({});
@@ -200,13 +212,35 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
       setSelectedLegendsState(JSON.stringify((firstFilteredSchema.schema as any).selectedLegends));
       const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
       const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
-      saveSelection("Schema", num_id.toString().padStart(3, '0'));
+      saveSelection(SCHEMA_KEY, num_id.toString().padStart(3, '0'));
     } else {
       setSelectedChoice('');
       setSelectedSchema({});
       setSelectedLegendsState('');
     }
   }
+  
+  const handleJsonInputSwitchChange = (ev: React.ChangeEvent<HTMLInputElement>) => {
+    const checked = ev.currentTarget.checked;
+    toggleJsonInput(checked);
+    if(checked) {
+      setSelectedChoice('input_json');
+      handleJsonInputChange(null, {value: jsonInputValue});
+    } else {
+      const paddedSchemaId = getSelection(SCHEMA_KEY, SCHEMA_KEY_DEFAULT);
+      _onChange(null, {optionText: `data_${paddedSchemaId}.json`, optionValue: (+paddedSchemaId).toString()} as OptionOnSelectData);
+    }
+  }
+
+  const handleJsonInputChange = (ev:React.ChangeEvent<HTMLTextAreaElement> | null, data:TextareaOnChangeData) => {
+    setJsonInputValue(data.value);
+    try {
+      const schema = JSON.parse(data.value);
+      setSelectedSchema(schema);
+    } catch (error) {
+      setSelectedSchema({});
+    }
+  };
 
   const createDeclarativeChart = (): JSX.Element => {
     const theme = getSelection("Theme", "Light");
@@ -230,84 +264,119 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     const fontColor = { "font": { "color": "white" } }
     const layout_with_theme = { ...layout, plot_bgcolor: bgcolor, paper_bgcolor: bgcolor, font: fontColor };
     const plotlySchema = { data, layout: layout_with_theme, selectedLegends: lastKnownValidLegends };
+    const plotlySchemaCopy = JSON.parse(JSON.stringify(plotlySchema)); // Deep copy to avoid mutation
+    const chartType: OutputChartType = mapFluentChart(plotlySchema);
     const inputSchema: Schema = { plotlySchema };
-    const chartTitle = typeof layout?.title === 'string' ? htmlEncode(layout.title) : htmlEncode(layout?.title?.text) ?? '';
+    const chartTitle = typeof layout?.title === 'string' ? layout.title : layout?.title?.text ?? '';
     return (
       <div key={uniqueKey}>
         <Subtitle1 align="center" style={{ marginLeft: '30%' }}>Declarative chart from fluent</Subtitle1>
+        <div>
+          <Switch
+            checked={isJsonInputEnabled}
+            onChange={handleJsonInputSwitchChange}
+            label={isJsonInputEnabled ? "JSON input enabled" : "JSON input disabled"}
+          />
+        </div>
         <div style={{ display: 'flex' }}>
-          <label> Select a schema:</label>&nbsp;&nbsp;&nbsp;
-          <Dropdown
-            value={selectedChoice}
-            onOptionSelect={_onChange}
-          >
-            {getFilteredData()
-              .map((data) => (
-                <Option key={data.fileName} value={(data.schema as { id: string }).id}>
-                  {data.fileName}
-                </Option>
-              ))}
-          </Dropdown>
-          &nbsp;&nbsp;&nbsp;
-          <label> Filter by plot type:</label>&nbsp;&nbsp;&nbsp;
-          <Dropdown
-            value={selectedPlotTypes.join(',')}
-            selectedOptions={selectedPlotTypes}
-            onOptionSelect={handleSelectPlotTypes}
-            multiselect
-          >
-            <Option value="All">All</Option>
-            <Option value="Area">Area</Option>
-            <Option value="Line">Line</Option>
-            <Option value="Donut">Donut</Option>
-            <Option value="HorizontalBarWithAxis">HorizontalBarWithAxis</Option>
-            <Option value="VerticalBar">VerticalBar</Option>
-            <Option value="VerticalStackedBar">VerticalStackedBar</Option>
-            <Option value="GroupedVerticalBar">GroupedVerticalBar</Option>
-            <Option value="Gauge">Gauge</Option>
-            <Option value="Pie">Pie</Option>
-            <Option value="Sankey">Sankey</Option>
-            <Option value="Heatmap">Heatmap</Option>
-            <Option value="Others">Others</Option>
-          </Dropdown>
-          &nbsp;&nbsp;&nbsp;
-          <label> Filter by data type:</label>&nbsp;&nbsp;&nbsp;
-          <Dropdown
-            value={selectedDataTypes.join(',')}
-            selectedOptions={selectedDataTypes}
-            onOptionSelect={handleSelectDataTypes}
-            multiselect
-          >
-            <Option value='All'>All</Option>
-            <Option value='general'>general</Option>
-            <Option value='largeData'>largeData</Option>
-            <Option value='localization'>localization</Option>
-            <Option value='seval'>seval</Option>
-          </Dropdown>
+          {isJsonInputEnabled ? (
+            <Field label="Input JSON">
+              <Textarea resize='both' value={jsonInputValue} onChange={handleJsonInputChange} />
+            </Field>
+          ) : (
+            <>
+              <label> Select a schema:</label>&nbsp;&nbsp;&nbsp;
+              <Dropdown
+                value={selectedChoice}
+                onOptionSelect={_onChange}
+              >
+                {getFilteredData()
+                  .map((data) => (
+                    <Option key={data.fileName} value={(data.schema as { id: string }).id}>
+                      {data.fileName}
+                    </Option>
+                  ))}
+              </Dropdown>
+              &nbsp;&nbsp;&nbsp;
+              <label> Filter by plot type:</label>&nbsp;&nbsp;&nbsp;
+              <Dropdown
+                value={selectedPlotTypes.join(',')}
+                selectedOptions={selectedPlotTypes}
+                onOptionSelect={handleSelectPlotTypes}
+                multiselect
+              >
+                <Option value="All">All</Option>
+                <Option value="Area">Area</Option>
+                <Option value="Line">Line</Option>
+                <Option value="Donut">Donut</Option>
+                <Option value="HorizontalBarWithAxis">HorizontalBarWithAxis</Option>
+                <Option value="VerticalBar">VerticalBar</Option>
+                <Option value="VerticalStackedBar">VerticalStackedBar</Option>
+                <Option value="GroupedVerticalBar">GroupedVerticalBar</Option>
+                <Option value="Gauge">Gauge</Option>
+                <Option value="Pie">Pie</Option>
+                <Option value="Sankey">Sankey</Option>
+                <Option value="Heatmap">Heatmap</Option>
+                <Option value="Histogram">Histogram</Option>
+                <Option value="Scatter">Scatter</Option>
+                <Option value="Table">Table</Option>
+                <Option value="Funnel">Funnel</Option>
+                <Option value="ScatterPolar">ScatterPolar</Option>
+                <Option value="Gantt">Gantt</Option>
+                <Option value="Others">Others</Option>
+              </Dropdown>
+              &nbsp;&nbsp;&nbsp;
+              <label> Filter by data type:</label>&nbsp;&nbsp;&nbsp;
+              <Dropdown
+                value={selectedDataTypes.join(',')}
+                selectedOptions={selectedDataTypes}
+                onOptionSelect={handleSelectDataTypes}
+                multiselect
+              >
+                <Option value='All'>All</Option>
+                <Option value='general'>general</Option>
+                <Option value='largeData'>largeData</Option>
+                <Option value='localization'>localization</Option>
+                <Option value='seval'>seval</Option>
+                <Option value='plotly_express_basic'>plotly_express_basic</Option>
+                <Option value='plotly_express_detailed'>plotly_express_detailed</Option>
+                <Option value='plotly_express_colors'>plotly_express_colors</Option>
+                <Option value='advanced_scenarios'>advanced_scenarios</Option>
+              </Dropdown>
+            </>
+          )}
         </div>
         <br />
         <button
           onClick={() => {
+            const start = performance.now();
             declarativeChartRef.current?.exportAsImage().then((imgData: string) => {
+              const end = performance.now();
+              console.log(`exportAsImage took ${(end - start).toFixed(2)} ms`);
               fileSaver(imgData);
             });
           }}
         >
           Download as Image
         </button>
+
         <div data-testid="chart-container" >
           <br />
           <br />
-          <ErrorBoundary>
+          <ErrorBoundary key={`${selectedChoice}_error-boundary-v8`}>
             <Subtitle2>{chartTitle}</Subtitle2>
             <Divider />
             <br />
             <br />
-            <DeclarativeChart
-              chartSchema={inputSchema}
-              onSchemaChange={_handleChartSchemaChanged}
-              componentRef={declarativeChartRef}
-            />
+            {chartType.isValid ? (
+              <DeclarativeChart
+                chartSchema={inputSchema}
+                onSchemaChange={_handleChartSchemaChanged}
+                componentRef={declarativeChartRef}
+              />
+            ) : (
+              <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px'}}>{ `${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
+            )}
           </ErrorBoundary>
         </div>
         <br />
@@ -316,6 +385,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
           value={selectedLegendsState}
           onChange={_onSelectedLegendsEdited}
           styles={textFieldStyles}
+          disabled={isJsonInputEnabled}
         />
         <br />
         <div key={plotlyKey} data-testid="plotly-plot">
@@ -325,7 +395,27 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
           <br />
           <br />
           <ErrorBoundary>
-            <PlotlyChart schema={plotlySchema} />
+            <PlotlyChart schema={plotlySchemaCopy} />
+          </ErrorBoundary>
+        </div>
+        <Subtitle2>Charts v9</Subtitle2>
+        <div data-testid="chart-container-v9" >
+          <br />
+          <br />
+          <ErrorBoundary key={`${selectedChoice}_error-boundary-v9`}>
+            <Subtitle2>{chartTitle}</Subtitle2>
+            <Divider />
+            <br />
+            <br />
+            {chartType.isValid ? (
+              <DeclarativeChartV9
+                chartSchema={inputSchema}
+                onSchemaChange={_handleChartSchemaChanged}
+                componentRef={declarativeChartV9Ref}
+              />
+            ) : (
+              <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px'}}>{ `${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
+            )}
           </ErrorBoundary>
         </div>
       </div>

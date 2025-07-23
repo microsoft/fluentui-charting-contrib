@@ -17,7 +17,7 @@ const createFreshDirectory = (directoryPath) => {
 };
 
 const splitLog = async() => {
-  const data = await fetch("https://raw.githubusercontent.com/microsoft/fluentui/master/packages/react-charting/CHANGELOG.md").then(res=>res.text()).catch((err)=>{
+  const data = await fetch("https://raw.githubusercontent.com/microsoft/fluentui/master/packages/charts/react-charting/CHANGELOG.md").then(res=>res.text()).catch((err)=>{
     console.error("Fetch error:",err.message)
     throw new Error(err.message)
   });

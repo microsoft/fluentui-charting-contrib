@@ -1,7 +1,8 @@
 name: "Plotly Test coverage"
 on:
   schedule:
-    - cron: "30 8 * * *"  # Runs every day at 2:00 PM IST (08:30 AM UTC)
+    - cron: "30 5 * * *"  # Runs every day at 11:00 AM IST (05:30 AM UTC)
+    - cron: "30 10 * * *" # Runs every day at 4:00 PM IST (10:30 AM UTC)
   workflow_dispatch:
     inputs:
       repo:
@@ -36,6 +37,13 @@ jobs:
                 ref: ${{ github.event.inputs.branch || 'master'}}
                 path: repo1
 
+            - name: Display Input Repo and Branch in Summary
+              shell: pwsh
+              run: |
+                echo "### Workflow Inputs" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Repository**: ${{ github.event.inputs.repo }}" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Branch**: ${{ github.event.inputs.branch }}" >> $env:GITHUB_STEP_SUMMARY
+
             - name: Show current directory
               run: echo "$PWD" && ls
 
@@ -50,50 +58,134 @@ jobs:
             - name: Install packages
               run: | 
                 cd ./repo1
-                yarn install
+                yarn
 
             - name: Build
               run: |
-                cd ./repo1/packages/charts/react-charting
+                cd ./repo1
                 yarn nx run react-charting:build
 
-            - name: Run yarn pack to create .tgz file
+            - name: Run yarn pack in chart-utilities to create .tgz file
+              run: |
+                cd ./repo1/packages/charts/chart-utilities
+                yarn pack --filename chart-utilities.tgz
+              id: pack-util
+
+            - name: Run yarn pack in react-charting to create .tgz file
               run: |
                 cd ./repo1/packages/charts/react-charting
                 yarn pack --filename react-charting.tgz
-              id: pack
+              id: pack-chart-v8
+
+            - name: Upload chart-utilities.tgz as artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: chart-utilities-tgz
+                path: ./repo1/packages/charts/chart-utilities/chart-utilities.tgz
+
+            - name: Upload react-charting.tgz as artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: react-charting-tgz
+                path: ./repo1/packages/charts/react-charting/react-charting.tgz
 
             - name: Checkout [main] of current repo
               uses: actions/checkout@v4
               with:
                 path: contrib_repo
 
+            - name: Add chart-utils package to resolutions block
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                npx json -I -f package.json -e "this.resolutions = this.resolutions || {}; this.resolutions['@fluentui/chart-utilities'] = 'file:../../../repo1/packages/charts/chart-utilities/chart-utilities.tgz';"
+
+
             - name: Install .tgz file in Plotly examples
               run: |
                 cd contrib_repo/apps/plotly_examples
-                yarn add ../../repo1/packages/charts/react-charting/react-charting.tgz
-                yarn install
+                yarn add ../../../repo1/packages/charts/react-charting/react-charting.tgz
+                yarn
 
             - name: Start test app in background
+              shell: bash
               run: |
                 cd contrib_repo/apps/plotly_examples
-                nohup npm start > output.log 2>&1 &  
+                yarn build
+                nohup npx -y serve -s build -l 3000 > output.log 2>&1 &  
                 npx wait-on http://localhost:3000/ --timeout 300000 
 
             - name: Run Playwright test script
               run: |
                 cd contrib_repo/apps/plotly_examples
                 npx playwright install
-                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test || true
+                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test tests/DeclarativeChart.spec.ts || true
+              continue-on-error: true
 
             - name: Zip Playwright report
               shell: pwsh 
               run: |
                 cd contrib_repo/apps/plotly_examples
-                Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip              
+                Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip
 
-            - name: Upload Playwright report as artifact
+            - name: Compute number of total tests and failures
+              uses: ./contrib_repo/.github/actions/playwright_metrics
+              with:
+                current_report: contrib_repo/apps/plotly_examples/playwright-report.json
+                baseline_report: contrib_repo/apps/plotly_examples/reports/playwright-report-v8.json        
+
+            - name: Upload Playwright HTML report as artifact
               uses: actions/upload-artifact@v4
               with: 
-                name: playwright-report
+                name: playwright-html-report
                 path: contrib_repo/apps/plotly_examples/playwright-report/
+
+            - name: Upload Playwright JSON report as artifact
+              uses: actions/upload-artifact@v4
+              with: 
+                name: playwright-json-report
+                path: contrib_repo/apps/plotly_examples/playwright-report.json
+
+            - name: Move Playwright JSON report to reports folder for scheduled runs
+              if: github.event_name == 'schedule'
+              shell: bash
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                mv playwright-report.json reports/playwright-report-v8.json
+                git add reports/playwright-report-v8.json
+            
+            - name: "Run monosize on react-charting"
+              run: |
+                cd repo1/packages/charts/react-charting
+                yarn monosize measure
+
+            - name: Upload monosize JSON report as artifact
+              uses: actions/upload-artifact@v4
+              with: 
+                name: monosize-report
+                path: repo1/packages/charts/react-charting/dist/bundle-size/monosize.json
+
+            - name: Create branch name for scheduled report
+              if: github.event_name == 'schedule'
+              id: branch
+              shell: bash
+              run: |
+                BRANCH="playwright-report-v8-$(date +'%Y%m%d-%H%M%S')"
+                echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+            - name: Commit and push v8 scheduled report
+              if: github.event_name == 'schedule'
+              uses: stefanzweifel/git-auto-commit-action@v5
+              with:
+                branch: ${{ steps.branch.outputs.branch }}
+                create_branch: true
+                commit_message: "chore: (auto) Update v8 playwright report"
+                file_pattern: apps/plotly_examples/reports/playwright-report-v8.json
+                commit_user_name: github-actions[bot]
+                commit_user_email: github-actions[bot]@users.noreply.github.com
+                repository: contrib_repo
+
+            - name: "Publish Notification for scheduled report commit"
+              if: github.event_name == 'schedule' && steps.auto-commit-action.outputs.changes_detected == 'true'
+              shell: bash
+              run: |
+                echo "v8 Playwright report committed. [Create a pull request](https://github.com/${{ github.repository }}/pull/new/${{ steps.branch.outputs.branch }})" >> $GITHUB_STEP_SUMMARY

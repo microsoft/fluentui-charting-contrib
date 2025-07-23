@@ -1,0 +1,1432 @@
+{
+    "data": [
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                9267,
+                9396,
+                9839,
+                9096
+            ],
+            "name": "North | Sedan",
+            "marker": {
+                "color": [
+                    "rgba(54, 182, 255, 1)",
+                    "rgba(57, 183, 255, 1)",
+                    "rgba(68, 189, 255, 1)",
+                    "rgba(50, 180, 255, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        "/",
+                        "/",
+                        "/",
+                        "/"
+                    ],
+                    "fgcolor": [
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b"
+                    ],
+                    "width": [
+                        3,
+                        3,
+                        3,
+                        3
+                    ]
+                },
+                "opacity": [
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    9267
+                ],
+                [
+                    "2023Q2",
+                    9396
+                ],
+                [
+                    "2023Q3",
+                    9839
+                ],
+                [
+                    "2023Q4",
+                    9096
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: North<br>Model: Sedan<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                9427,
+                9948,
+                9566,
+                10371
+            ],
+            "name": "North | SUV",
+            "marker": {
+                "color": [
+                    "rgba(58, 184, 255, 1)",
+                    "rgba(71, 190, 255, 1)",
+                    "rgba(61, 185, 255, 1)",
+                    "rgba(81, 195, 255, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "fgcolor": [
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e"
+                    ],
+                    "width": [
+                        2,
+                        2,
+                        2,
+                        2
+                    ]
+                },
+                "opacity": [
+                    0.5941169003602148,
+                    0.6482297381419192,
+                    0.7092737157418771,
+                    0.5382421902296768
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    9427
+                ],
+                [
+                    "2023Q2",
+                    9948
+                ],
+                [
+                    "2023Q3",
+                    9566
+                ],
+                [
+                    "2023Q4",
+                    10371
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: North<br>Model: SUV<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                11491,
+                10725,
+                9987,
+                11944
+            ],
+            "name": "North | Hatchback",
+            "marker": {
+                "color": [
+                    "rgba(109, 209, 255, 1)",
+                    "rgba(90, 200, 255, 1)",
+                    "rgba(72, 191, 255, 1)",
+                    "rgba(121, 215, 255, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        ".",
+                        ".",
+                        ".",
+                        "."
+                    ],
+                    "fgcolor": [
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f"
+                    ],
+                    "width": [
+                        2,
+                        2,
+                        2,
+                        2
+                    ]
+                },
+                "opacity": [
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    11491
+                ],
+                [
+                    "2023Q2",
+                    10725
+                ],
+                [
+                    "2023Q3",
+                    9987
+                ],
+                [
+                    "2023Q4",
+                    11944
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: North<br>Model: Hatchback<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                12798,
+                12535,
+                12605,
+                13592
+            ],
+            "name": "North | Convertible",
+            "marker": {
+                "color": [
+                    "rgba(142, 226, 255, 1)",
+                    "rgba(135, 222, 255, 1)",
+                    "rgba(137, 223, 255, 1)",
+                    "rgba(255, 191, 91, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "fgcolor": [
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9"
+                    ],
+                    "width": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                "opacity": [
+                    0.49863950093841436,
+                    0.8325890501455255,
+                    0.4516442293113768,
+                    0.8473255184080971
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    12798
+                ],
+                [
+                    "2023Q2",
+                    12535
+                ],
+                [
+                    "2023Q3",
+                    12605
+                ],
+                [
+                    "2023Q4",
+                    13592
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: North<br>Model: Convertible<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                10706,
+                12384,
+                10867,
+                9723
+            ],
+            "name": "South | Sedan",
+            "marker": {
+                "color": [
+                    "rgba(90, 200, 255, 1)",
+                    "rgba(132, 221, 255, 1)",
+                    "rgba(94, 202, 255, 1)",
+                    "rgba(65, 187, 255, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "fgcolor": [
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b"
+                    ],
+                    "width": [
+                        3,
+                        3,
+                        3,
+                        3
+                    ]
+                },
+                "opacity": [
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    10706
+                ],
+                [
+                    "2023Q2",
+                    12384
+                ],
+                [
+                    "2023Q3",
+                    10867
+                ],
+                [
+                    "2023Q4",
+                    9723
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: South<br>Model: Sedan<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                11982,
+                10670,
+                11247,
+                12779
+            ],
+            "name": "South | SUV",
+            "marker": {
+                "color": [
+                    "rgba(122, 216, 255, 1)",
+                    "rgba(89, 199, 255, 1)",
+                    "rgba(103, 206, 255, 1)",
+                    "rgba(142, 226, 255, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        "|",
+                        "|",
+                        "|",
+                        "|"
+                    ],
+                    "fgcolor": [
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e"
+                    ],
+                    "width": [
+                        2,
+                        2,
+                        2,
+                        2
+                    ]
+                },
+                "opacity": [
+                    0.541195777822126,
+                    0.8025116900959206,
+                    0.46669569041687325,
+                    0.8485745296169075
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    11982
+                ],
+                [
+                    "2023Q2",
+                    10670
+                ],
+                [
+                    "2023Q3",
+                    11247
+                ],
+                [
+                    "2023Q4",
+                    12779
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: South<br>Model: SUV<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                12651,
+                12816,
+                12745,
+                12820
+            ],
+            "name": "South | Hatchback",
+            "marker": {
+                "color": [
+                    "rgba(138, 224, 255, 1)",
+                    "rgba(143, 226, 255, 1)",
+                    "rgba(141, 225, 255, 1)",
+                    "rgba(143, 226, 255, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "fgcolor": [
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f"
+                    ],
+                    "width": [
+                        2,
+                        2,
+                        2,
+                        2
+                    ]
+                },
+                "opacity": [
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    12651
+                ],
+                [
+                    "2023Q2",
+                    12816
+                ],
+                [
+                    "2023Q3",
+                    12745
+                ],
+                [
+                    "2023Q4",
+                    12820
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: South<br>Model: Hatchback<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                13869,
+                13582,
+                14593,
+                14025
+            ],
+            "name": "South | Convertible",
+            "marker": {
+                "color": [
+                    "rgba(255, 186, 86, 1)",
+                    "rgba(255, 191, 91, 1)",
+                    "rgba(255, 173, 73, 1)",
+                    "rgba(255, 183, 83, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        "x",
+                        "x",
+                        "x",
+                        "x"
+                    ],
+                    "fgcolor": [
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9"
+                    ],
+                    "width": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                "opacity": [
+                    0.8478716493246764,
+                    0.46888432759867527,
+                    0.7990226320958698,
+                    0.5456897995826177
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    13869
+                ],
+                [
+                    "2023Q2",
+                    13582
+                ],
+                [
+                    "2023Q3",
+                    14593
+                ],
+                [
+                    "2023Q4",
+                    14025
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: South<br>Model: Convertible<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                13257,
+                12933,
+                12410,
+                12475
+            ],
+            "name": "East | Sedan",
+            "marker": {
+                "color": [
+                    "rgba(255, 197, 97, 1)",
+                    "rgba(145, 227, 255, 1)",
+                    "rgba(132, 221, 255, 1)",
+                    "rgba(134, 222, 255, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        "/",
+                        "/",
+                        "/",
+                        "/"
+                    ],
+                    "fgcolor": [
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b"
+                    ],
+                    "width": [
+                        3,
+                        3,
+                        3,
+                        3
+                    ]
+                },
+                "opacity": [
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    13257
+                ],
+                [
+                    "2023Q2",
+                    12933
+                ],
+                [
+                    "2023Q3",
+                    12410
+                ],
+                [
+                    "2023Q4",
+                    12475
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: East<br>Model: Sedan<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                13294,
+                13594,
+                12755,
+                14190
+            ],
+            "name": "East | SUV",
+            "marker": {
+                "color": [
+                    "rgba(255, 196, 96, 1)",
+                    "rgba(255, 191, 91, 1)",
+                    "rgba(141, 225, 255, 1)",
+                    "rgba(255, 180, 80, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "fgcolor": [
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e"
+                    ],
+                    "width": [
+                        2,
+                        2,
+                        2,
+                        2
+                    ]
+                },
+                "opacity": [
+                    0.8318594853651364,
+                    0.4998025506456648,
+                    0.7558165372240048,
+                    0.5975250292592142
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    13294
+                ],
+                [
+                    "2023Q2",
+                    13594
+                ],
+                [
+                    "2023Q3",
+                    12755
+                ],
+                [
+                    "2023Q4",
+                    14190
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: East<br>Model: SUV<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                16263,
+                14052,
+                14505,
+                14459
+            ],
+            "name": "East | Hatchback",
+            "marker": {
+                "color": [
+                    "rgba(255, 143, 43, 1)",
+                    "rgba(255, 182, 82, 1)",
+                    "rgba(255, 174, 74, 1)",
+                    "rgba(255, 175, 75, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        ".",
+                        ".",
+                        ".",
+                        "."
+                    ],
+                    "fgcolor": [
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f"
+                    ],
+                    "width": [
+                        2,
+                        2,
+                        2,
+                        2
+                    ]
+                },
+                "opacity": [
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    16263
+                ],
+                [
+                    "2023Q2",
+                    14052
+                ],
+                [
+                    "2023Q3",
+                    14505
+                ],
+                [
+                    "2023Q4",
+                    14459
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: East<br>Model: Hatchback<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                16209,
+                14248,
+                14857,
+                15157
+            ],
+            "name": "East | Convertible",
+            "marker": {
+                "color": [
+                    "rgba(255, 144, 44, 1)",
+                    "rgba(255, 179, 79, 1)",
+                    "rgba(255, 168, 68, 1)",
+                    "rgba(255, 163, 63, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "fgcolor": [
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9"
+                    ],
+                    "width": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                "opacity": [
+                    0.65,
+                    0.592419336666987,
+                    0.7602853362483382,
+                    0.49634906773526666
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    16209
+                ],
+                [
+                    "2023Q2",
+                    14248
+                ],
+                [
+                    "2023Q3",
+                    14857
+                ],
+                [
+                    "2023Q4",
+                    15157
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: East<br>Model: Convertible<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                14026,
+                13350,
+                14302,
+                12199
+            ],
+            "name": "West | Sedan",
+            "marker": {
+                "color": [
+                    "rgba(255, 183, 83, 1)",
+                    "rgba(255, 195, 95, 1)",
+                    "rgba(255, 178, 78, 1)",
+                    "rgba(127, 218, 255, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "fgcolor": [
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b",
+                        "#1b1b1b"
+                    ],
+                    "width": [
+                        3,
+                        3,
+                        3,
+                        3
+                    ]
+                },
+                "opacity": [
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    14026
+                ],
+                [
+                    "2023Q2",
+                    13350
+                ],
+                [
+                    "2023Q3",
+                    14302
+                ],
+                [
+                    "2023Q4",
+                    12199
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: West<br>Model: Sedan<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                15452,
+                16222,
+                15404,
+                13480
+            ],
+            "name": "West | SUV",
+            "marker": {
+                "color": [
+                    "rgba(255, 157, 57, 1)",
+                    "rgba(255, 144, 44, 1)",
+                    "rgba(255, 158, 58, 1)",
+                    "rgba(255, 193, 93, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        "|",
+                        "|",
+                        "|",
+                        "|"
+                    ],
+                    "fgcolor": [
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e",
+                        "#e73c7e"
+                    ],
+                    "width": [
+                        2,
+                        2,
+                        2,
+                        2
+                    ]
+                },
+                "opacity": [
+                    0.8481214711389741,
+                    0.45239367518142765,
+                    0.8303576695297619,
+                    0.5021638606701555
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    15452
+                ],
+                [
+                    "2023Q2",
+                    16222
+                ],
+                [
+                    "2023Q3",
+                    15404
+                ],
+                [
+                    "2023Q4",
+                    13480
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: West<br>Model: SUV<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                15243,
+                17288,
+                16331,
+                15137
+            ],
+            "name": "West | Hatchback",
+            "marker": {
+                "color": [
+                    "rgba(255, 161, 61, 1)",
+                    "rgba(255, 125, 25, 1)",
+                    "rgba(255, 142, 42, 1)",
+                    "rgba(255, 163, 63, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "fgcolor": [
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f",
+                        "#2a9d8f"
+                    ],
+                    "width": [
+                        2,
+                        2,
+                        2,
+                        2
+                    ]
+                },
+                "opacity": [
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    15243
+                ],
+                [
+                    "2023Q2",
+                    17288
+                ],
+                [
+                    "2023Q3",
+                    16331
+                ],
+                [
+                    "2023Q4",
+                    15137
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: West<br>Model: Hatchback<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        },
+        {
+            "type": "bar",
+            "x": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "y": [
+                18689,
+                18016,
+                17941,
+                17038
+            ],
+            "name": "West | Convertible",
+            "marker": {
+                "color": [
+                    "rgba(255, 100, 0, 1)",
+                    "rgba(255, 112, 12, 1)",
+                    "rgba(255, 113, 13, 1)",
+                    "rgba(255, 129, 29, 1)"
+                ],
+                "pattern": {
+                    "shape": [
+                        "x",
+                        "x",
+                        "x",
+                        "x"
+                    ],
+                    "fgcolor": [
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9"
+                    ],
+                    "size": [
+                        10,
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                "line": {
+                    "color": [
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9",
+                        "#246eb9"
+                    ],
+                    "width": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                "opacity": [
+                    0.5426854163999131,
+                    0.7041811576615739,
+                    0.6535403850210827,
+                    0.5890378757795567
+                ]
+            },
+            "orientation": "v",
+            "customdata": [
+                [
+                    "2023Q1",
+                    18689
+                ],
+                [
+                    "2023Q2",
+                    18016
+                ],
+                [
+                    "2023Q3",
+                    17941
+                ],
+                [
+                    "2023Q4",
+                    17038
+                ]
+            ],
+            "hovertemplate": "<b>%{x}</b><br>Region: West<br>Model: Convertible<br>Sales: %{y}<br>Quarter: %{customdata[0]}<extra></extra>",
+            "showlegend": true
+        }
+    ],
+    "layout": {
+        "title": {
+            "text": "Automobile Sales Performance Analysis<br><sup>Quarterly sales by region & model with advanced color and pattern mapping</sup>",
+            "x": 0.5
+        },
+        "bargap": 0.23,
+        "barmode": "group",
+        "xaxis": {
+            "title": "Quarter",
+            "type": "category",
+            "categoryorder": "array",
+            "categoryarray": [
+                "2023Q1",
+                "2023Q2",
+                "2023Q3",
+                "2023Q4"
+            ],
+            "tickangle": -25,
+            "showgrid": false,
+            "showline": true
+        },
+        "yaxis": {
+            "title": "Sales Volume",
+            "showgrid": true,
+            "gridwidth": 1,
+            "gridcolor": "#e5e5e5"
+        },
+        "plot_bgcolor": "#fafaff",
+        "legend": {
+            "title": "Region | Model",
+            "orientation": "h",
+            "y": 1.12,
+            "x": 0
+        },
+        "hovermode": "x unified",
+        "uirevision": "auto",
+        "coloraxis": {
+            "cmin": 9096,
+            "cmax": 18689,
+            "cmid": 13095.0,
+            "colorscale": [
+                [
+                    0,
+                    "#313695"
+                ],
+                [
+                    0.33,
+                    "#74add1"
+                ],
+                [
+                    0.5,
+                    "#ffffbf"
+                ],
+                [
+                    0.66,
+                    "#f46d43"
+                ],
+                [
+                    1,
+                    "#a50026"
+                ]
+            ],
+            "colorbar": {
+                "title": "Quarterly<br>Sales Volume"
+            }
+        }
+    },
+    "id": 860
+}

@@ -1,0 +1,5628 @@
+{
+    "data": [
+        {
+            "customdata": [
+                [
+                    1000,
+                    "Carol",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1025,
+                    "David",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1089,
+                    "Carol",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1182,
+                    "Carol",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1237,
+                    "Carol",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1273,
+                    "Carol",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1288,
+                    "Carol",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1294,
+                    "Carol",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1353,
+                    "Bob",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1415,
+                    "Carol",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1416,
+                    "Alice",
+                    false,
+                    "2023-10"
+                ],
+                [
+                    1422,
+                    "David",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1450,
+                    "Alice",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1473,
+                    "Carol",
+                    false,
+                    "2023-11"
+                ],
+                [
+                    1512,
+                    "Bob",
+                    true,
+                    "2023-12"
+                ],
+                [
+                    1527,
+                    "Carol",
+                    false,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=High<br>Resolution Method=Phone<br>Issue Type=Network<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "High, Phone",
+            "marker": {
+                "color": "#cbd5e8",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "High, Phone",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "j8L1KFzPQkCPwvUoXC9AQMP1KFyPQkBA7FG4HoWrPUCkcD0K12M/QOxRuB6Fy0BApHA9CtcjPEBI4XoUrgc9QArXo3A9ijlAmpmZmZm5QkBI4XoUrsc1QEjhehSuBz5AKVyPwvXoOkC4HoXrUfg1QOF6FK5HQUFAFK5H4Xq0QkA="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "16NwPQrXEUA9CtejcD0OQHsUrkfheg5AUrgehetRE0BxPQrXo3APQK5H4XoUrhJA9ihcj8L1EUDsUbgehesNQFyPwvUoXBBAcT0K16NwEECkcD0K16MQQAAAAAAAABRAKVyPwvUoEkAfhetRuB4QQNejcD0K1xBAPQrXo3A9DkA="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1029,
+                    "David",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1030,
+                    "David",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1042,
+                    "Carol",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1047,
+                    "Bob",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1214,
+                    "Bob",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1262,
+                    "Bob",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1312,
+                    "Alice",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1381,
+                    "Carol",
+                    false,
+                    "2023-09"
+                ],
+                [
+                    1383,
+                    "Bob",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1387,
+                    "Alice",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1427,
+                    "David",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1428,
+                    "Alice",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1434,
+                    "Alice",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1481,
+                    "David",
+                    false,
+                    "2023-11"
+                ],
+                [
+                    1537,
+                    "Alice",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=High<br>Resolution Method=Phone<br>Issue Type=Account<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "High, Phone",
+            "marker": {
+                "color": "#cbd5e8",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "High, Phone",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "exSuR+G6P0CuR+F6FG46QFK4HoXr0TxACtejcD0qQUCF61G4HgU9QOF6FK5H4TxAAAAAAAAAOkA9CtejcD09QB+F61G4XkFAzczMzMysQUBI4XoUroc3QAAAAAAAAD5AexSuR+E6OUDsUbgehSs6QIXrUbgeRTpA"
+            },
+            "xaxis": "x2",
+            "y": {
+                "dtype": "f8",
+                "bdata": "MzMzMzMzEUBI4XoUrkcRQB+F61G4Hg9AmpmZmZmZEUBmZmZmZmYQQDMzMzMzMw1AhetRuB6FD0B7FK5H4XoQQJqZmZmZmRJAXI/C9ShcEUD2KFyPwvURQEjhehSuRxBA16NwPQrXEEAAAAAAAAAUQHsUrkfhehBA"
+            },
+            "yaxis": "y2",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1017,
+                    "David",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1083,
+                    "Alice",
+                    false,
+                    "2023-02"
+                ],
+                [
+                    1108,
+                    "Bob",
+                    false,
+                    "2023-03"
+                ],
+                [
+                    1134,
+                    "David",
+                    false,
+                    "2023-03"
+                ],
+                [
+                    1186,
+                    "Alice",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1206,
+                    "Carol",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1233,
+                    "Carol",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1253,
+                    "Carol",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1297,
+                    "Carol",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1299,
+                    "Bob",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1305,
+                    "Carol",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1310,
+                    "Bob",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1327,
+                    "David",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1352,
+                    "Alice",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1365,
+                    "David",
+                    false,
+                    "2023-09"
+                ],
+                [
+                    1396,
+                    "David",
+                    false,
+                    "2023-09"
+                ],
+                [
+                    1407,
+                    "Bob",
+                    false,
+                    "2023-10"
+                ],
+                [
+                    1423,
+                    "Bob",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1480,
+                    "Bob",
+                    true,
+                    "2023-11"
+                ]
+            ],
+            "hovertemplate": "Priority=High<br>Resolution Method=Phone<br>Issue Type=Software<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "High, Phone",
+            "marker": {
+                "color": "#cbd5e8",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "High, Phone",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "XI/C9ShcPEDsUbgehWtCQHsUrkfh+jpAXI/C9SgcQEC4HoXrUTg/QB+F61G4HjZAmpmZmZmZP0B7FK5H4XpBQFyPwvUo3EJA16NwPQpXO0AK16NwPUpAQMP1KFyPQkFA4XoUrkfhPUB7FK5H4bo+QArXo3A9CjtAw/UoXI/CPkB7FK5H4RpDQPYoXI/C1UJAw/UoXI+iQkA="
+            },
+            "xaxis": "x3",
+            "y": {
+                "dtype": "f8",
+                "bdata": "XI/C9ShcD0DXo3A9CtcRQGZmZmZmZhFA7FG4HoXrEUC4HoXrUbgQQNejcD0K1xFArkfhehSuD0BxPQrXo3APQM3MzMzMzBNApHA9CtejEUDsUbgehesQQHsUrkfhehFAcT0K16NwEUAK16NwPQoQQK5H4XoUrg1A7FG4HoXrD0DD9Shcj8INQI/C9ShcjwpAcT0K16NwEEA="
+            },
+            "yaxis": "y3",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1078,
+                    "Alice",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1095,
+                    "Bob",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1103,
+                    "Carol",
+                    false,
+                    "2023-03"
+                ],
+                [
+                    1158,
+                    "Alice",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1204,
+                    "Alice",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1311,
+                    "David",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1475,
+                    "Carol",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1491,
+                    "Alice",
+                    true,
+                    "2023-11"
+                ]
+            ],
+            "hovertemplate": "Priority=High<br>Resolution Method=Phone<br>Issue Type=Hardware<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "High, Phone",
+            "marker": {
+                "color": "#cbd5e8",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "High, Phone",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "uB6F61EYQkCF61G4HgU/QFyPwvUoXEBAmpmZmZk5QUCuR+F6FK42QFyPwvUoXDpAzczMzMyMOkDsUbgehUtBQA=="
+            },
+            "xaxis": "x4",
+            "y": {
+                "dtype": "f8",
+                "bdata": "mpmZmZmZEEB7FK5H4XoMQD0K16NwPQxAPQrXo3A9EUCuR+F6FK4NQNejcD0K1xBAH4XrUbgeD0Bcj8L1KFwSQA=="
+            },
+            "yaxis": "y4",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1038,
+                    "Carol",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1136,
+                    "David",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1155,
+                    "Carol",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1252,
+                    "Carol",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1399,
+                    "David",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1420,
+                    "Carol",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1536,
+                    "Bob",
+                    false,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=High<br>Resolution Method=Portal<br>Issue Type=Network<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "High, Portal",
+            "marker": {
+                "color": "#cbd5e8",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "High, Portal",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "hetRuB7FPkA9CtejcL03QGZmZmZmJj5Aw/UoXI+CPUC4HoXrUfg+QArXo3A9KkBAhetRuB4FPUA="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "zczMzMzMDkBSuB6F61ERQNejcD0K1xBA7FG4HoXrEEA9CtejcD0RQHE9CtejcBBA7FG4HoXrD0A="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1065,
+                    "Bob",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1152,
+                    "Carol",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1319,
+                    "Alice",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1372,
+                    "Bob",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1487,
+                    "Bob",
+                    false,
+                    "2023-11"
+                ],
+                [
+                    1499,
+                    "Bob",
+                    false,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=High<br>Resolution Method=Portal<br>Issue Type=Account<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "High, Portal",
+            "marker": {
+                "color": "#cbd5e8",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "High, Portal",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "uB6F61F4O0AzMzMzM7NBQClcj8L1qDhApHA9CtejO0BmZmZmZuYyQIXrUbgeZUNA"
+            },
+            "xaxis": "x2",
+            "y": {
+                "dtype": "f8",
+                "bdata": "MzMzMzMzEUCuR+F6FK4RQAAAAAAAABRAhetRuB6FEEDsUbgehesQQD0K16NwPRFA"
+            },
+            "yaxis": "y2",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1026,
+                    "Carol",
+                    false,
+                    "2023-01"
+                ],
+                [
+                    1180,
+                    "Bob",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1229,
+                    "David",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1313,
+                    "Carol",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1333,
+                    "Carol",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1411,
+                    "Carol",
+                    true,
+                    "2023-10"
+                ]
+            ],
+            "hovertemplate": "Priority=High<br>Resolution Method=Portal<br>Issue Type=Software<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "High, Portal",
+            "marker": {
+                "color": "#cbd5e8",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "High, Portal",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "pHA9CtdjPEDhehSuR2E2QClcj8L1aD9APQrXo3C9PEDNzMzMzIw9QOxRuB6Fy0BA"
+            },
+            "xaxis": "x3",
+            "y": {
+                "dtype": "f8",
+                "bdata": "H4XrUbgeD0C4HoXrUbgSQAAAAAAAABJAUrgehetREUDsUbgehesPQPYoXI/C9RFA"
+            },
+            "yaxis": "y3",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1036,
+                    "David",
+                    false,
+                    "2023-01"
+                ],
+                [
+                    1052,
+                    "David",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1124,
+                    "Bob",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1193,
+                    "David",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1440,
+                    "Alice",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1486,
+                    "Bob",
+                    true,
+                    "2023-11"
+                ]
+            ],
+            "hovertemplate": "Priority=High<br>Resolution Method=Portal<br>Issue Type=Hardware<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "High, Portal",
+            "marker": {
+                "color": "#cbd5e8",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "High, Portal",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "pHA9CtejPUBSuB6F69E2QHsUrkfhujVAw/UoXI/CPUB7FK5H4fpBQB+F61G4XkBA"
+            },
+            "xaxis": "x4",
+            "y": {
+                "dtype": "f8",
+                "bdata": "j8L1KFyPEUAfhetRuB4TQGZmZmZmZg5AexSuR+F6DkDhehSuR+ERQI/C9ShcjxFA"
+            },
+            "yaxis": "y4",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1054,
+                    "David",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1063,
+                    "Carol",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1085,
+                    "Alice",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1114,
+                    "Bob",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1142,
+                    "David",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1148,
+                    "Alice",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1174,
+                    "David",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1291,
+                    "Alice",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1401,
+                    "Carol",
+                    false,
+                    "2023-09"
+                ],
+                [
+                    1485,
+                    "Alice",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1495,
+                    "Alice",
+                    false,
+                    "2023-12"
+                ],
+                [
+                    1506,
+                    "David",
+                    false,
+                    "2023-12"
+                ],
+                [
+                    1516,
+                    "David",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=High<br>Resolution Method=Email<br>Issue Type=Network<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "High, Email",
+            "marker": {
+                "color": "#cbd5e8",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "High, Email",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "j8L1KFzPN0DD9Shcj4I5QB+F61G4Xj5A7FG4HoXrO0Bcj8L1KBw5QIXrUbgehT1AhetRuB5FQEDsUbgehes+QNejcD0KF0JAH4XrUbjeOUCF61G4HgU+QLgehetR+D1AFK5H4Xp0QEA="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "UrgehetRE0DNzMzMzMwQQDMzMzMzMxNAXI/C9ShcEUAfhetRuB4RQAAAAAAAABRAH4XrUbgeEkDD9Shcj8IPQFyPwvUoXBJAKVyPwvUoDkAzMzMzMzMJQHsUrkfhehBAXI/C9ShcD0A="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1051,
+                    "David",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1059,
+                    "David",
+                    false,
+                    "2023-02"
+                ],
+                [
+                    1220,
+                    "Alice",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1281,
+                    "Bob",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1303,
+                    "Bob",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1306,
+                    "Bob",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1320,
+                    "Carol",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1430,
+                    "Bob",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1529,
+                    "Alice",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=High<br>Resolution Method=Email<br>Issue Type=Account<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "High, Email",
+            "marker": {
+                "color": "#cbd5e8",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "High, Email",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "w/UoXI/CN0AfhetRuL5BQLgehetR+EFAj8L1KFzvQUB7FK5H4fo5QHsUrkfhujdA4XoUrkchQEDsUbgehas9QJqZmZmZmTlA"
+            },
+            "xaxis": "x2",
+            "y": {
+                "dtype": "f8",
+                "bdata": "ZmZmZmZmEEBxPQrXo3AQQI/C9ShcjxJA4XoUrkfhEUBI4XoUrkcSQBSuR+F6FBJArkfhehSuEEAfhetRuB4QQLgehetRuBFA"
+            },
+            "yaxis": "y2",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1069,
+                    "David",
+                    false,
+                    "2023-02"
+                ],
+                [
+                    1081,
+                    "David",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1104,
+                    "David",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1110,
+                    "Carol",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1130,
+                    "Bob",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1139,
+                    "Alice",
+                    false,
+                    "2023-04"
+                ],
+                [
+                    1249,
+                    "David",
+                    false,
+                    "2023-06"
+                ],
+                [
+                    1276,
+                    "Bob",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1286,
+                    "Bob",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1380,
+                    "Alice",
+                    false,
+                    "2023-09"
+                ],
+                [
+                    1489,
+                    "David",
+                    true,
+                    "2023-11"
+                ]
+            ],
+            "hovertemplate": "Priority=High<br>Resolution Method=Email<br>Issue Type=Software<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "High, Email",
+            "marker": {
+                "color": "#cbd5e8",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "High, Email",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "XI/C9SjcOUBSuB6F6zFCQD0K16NwPT5AZmZmZmbmO0B7FK5H4bpBQMP1KFyPwkFAPQrXo3A9PUBSuB6F61FBQFyPwvUoHEBArkfhehRuP0CkcD0K14NAQA=="
+            },
+            "xaxis": "x3",
+            "y": {
+                "dtype": "f8",
+                "bdata": "UrgehetREUC4HoXrUbgMQGZmZmZmZgxAcT0K16NwEUAfhetRuB4JQLgehetRuBBAAAAAAAAAEUCF61G4HoUPQMP1KFyPwg1AuB6F61G4EEB7FK5H4XoRQA=="
+            },
+            "yaxis": "y3",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1014,
+                    "Bob",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1064,
+                    "Alice",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1172,
+                    "Alice",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1222,
+                    "Alice",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1406,
+                    "Carol",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1498,
+                    "Bob",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=High<br>Resolution Method=Email<br>Issue Type=Hardware<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "High, Email",
+            "marker": {
+                "color": "#cbd5e8",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "High, Email",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "AAAAAACAPECkcD0K12M8QLgehetR+EFArkfhehQOQEDsUbgehQtBQHE9CtejcDhA"
+            },
+            "xaxis": "x4",
+            "y": {
+                "dtype": "f8",
+                "bdata": "7FG4HoXrEED2KFyPwvUOQMP1KFyPwhBAUrgehetREUCkcD0K16MMQAAAAAAAABRA"
+            },
+            "yaxis": "y4",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1005,
+                    "Alice",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1011,
+                    "David",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1012,
+                    "Alice",
+                    false,
+                    "2023-01"
+                ],
+                [
+                    1016,
+                    "David",
+                    false,
+                    "2023-01"
+                ],
+                [
+                    1088,
+                    "Carol",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1117,
+                    "Alice",
+                    false,
+                    "2023-03"
+                ],
+                [
+                    1137,
+                    "Carol",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1144,
+                    "Alice",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1191,
+                    "Alice",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1201,
+                    "Alice",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1209,
+                    "Carol",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1225,
+                    "Bob",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1227,
+                    "David",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1266,
+                    "David",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1280,
+                    "Bob",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1307,
+                    "Alice",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1332,
+                    "Bob",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1336,
+                    "David",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1350,
+                    "Carol",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1354,
+                    "David",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1355,
+                    "Alice",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1359,
+                    "David",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1378,
+                    "David",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1412,
+                    "Bob",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1436,
+                    "Alice",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1444,
+                    "Bob",
+                    false,
+                    "2023-10"
+                ],
+                [
+                    1457,
+                    "Carol",
+                    false,
+                    "2023-11"
+                ],
+                [
+                    1510,
+                    "Bob",
+                    true,
+                    "2023-12"
+                ],
+                [
+                    1521,
+                    "David",
+                    true,
+                    "2023-12"
+                ],
+                [
+                    1522,
+                    "Bob",
+                    true,
+                    "2023-12"
+                ],
+                [
+                    1526,
+                    "Carol",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Medium<br>Resolution Method=Phone<br>Issue Type=Network<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Medium, Phone",
+            "marker": {
+                "color": "#fdcdac",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Medium, Phone",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "FK5H4XoULUDhehSuR+E0QEjhehSuxzZApHA9CtejMUCamZmZmZkmQLgehetROCZA7FG4HoXrIUAzMzMzMzMjQHsUrkfheilAw/UoXI9CKkAzMzMzMzMdQArXo3A9iidAMzMzMzNzO0ApXI/C9agmQClcj8L1aDFAUrgehevRNUDNzMzMzMwuQHE9CtejMDlAXI/C9SjcIEDhehSuR2EwQM3MzMzMDDdApHA9CtcjMkB7FK5H4XovQPYoXI/C9TJAhetRuB6FMECuR+F6FC4mQI/C9ShcTzFA9ihcj8K1NECPwvUoXI8tQOF6FK5H4SJArkfhehRuNEA="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "rkfhehSuD0BSuB6F61ERQB+F61G4HhJASOF6FK5HEkBmZmZmZmYRQFyPwvUoXBBAXI/C9ShcD0CuR+F6FK4LQClcj8L1KBJApHA9CtejEUCkcD0K16MSQFyPwvUoXBNAmpmZmZmZCUDD9Shcj8IQQIXrUbgehRBAZmZmZmZmDECPwvUoXI8SQGZmZmZmZhFAXI/C9ShcD0CamZmZmZkQQBSuR+F6FA5AXI/C9ShcEkCamZmZmZkSQOF6FK5H4RFAZmZmZmZmE0C4HoXrUbgSQLgehetRuBJAH4XrUbgeEUBSuB6F61EOQIXrUbgehRJAzczMzMzMEUA="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1010,
+                    "David",
+                    false,
+                    "2023-01"
+                ],
+                [
+                    1018,
+                    "Carol",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1024,
+                    "David",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1033,
+                    "Bob",
+                    false,
+                    "2023-01"
+                ],
+                [
+                    1049,
+                    "David",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1111,
+                    "Bob",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1129,
+                    "Alice",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1146,
+                    "David",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1181,
+                    "David",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1192,
+                    "Bob",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1239,
+                    "Carol",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1242,
+                    "David",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1274,
+                    "Alice",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1287,
+                    "Bob",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1308,
+                    "Alice",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1325,
+                    "David",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1337,
+                    "David",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1364,
+                    "Carol",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1413,
+                    "Alice",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1414,
+                    "Alice",
+                    false,
+                    "2023-10"
+                ],
+                [
+                    1465,
+                    "David",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1476,
+                    "Bob",
+                    true,
+                    "2023-11"
+                ]
+            ],
+            "hovertemplate": "Priority=Medium<br>Resolution Method=Phone<br>Issue Type=Account<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Medium, Phone",
+            "marker": {
+                "color": "#fdcdac",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Medium, Phone",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "KVyPwvWoNEApXI/C9agtQPYoXI/C9SpA16NwPQrXJ0ApXI/C9Sg1QOxRuB6F6ytAj8L1KFyPKkCF61G4HkU1QKRwPQrX4zFACtejcD0KD0DNzMzMzAw7QFyPwvUo3CVAcT0K16NwKEA9CtejcD0zQD0K16NwvTVAexSuR+G6MkCuR+F6FK4fQGZmZmZm5i1AAAAAAADAN0AAAAAAAEAwQJqZmZmZWTBAcT0K16NwN0A="
+            },
+            "xaxis": "x2",
+            "y": {
+                "dtype": "f8",
+                "bdata": "cT0K16NwEkDNzMzMzMwQQPYoXI/C9RBAuB6F61G4DkAAAAAAAAAUQLgehetRuBJAw/UoXI/CEEB7FK5H4XoOQNejcD0K1w9AFK5H4XoUEEBcj8L1KFwSQMP1KFyPwg9AZmZmZmZmEkAfhetRuB4PQB+F61G4HhFAKVyPwvUoEkAUrkfhehQSQNejcD0K1w9A9ihcj8L1EEAUrkfhehQRQB+F61G4HhFA4XoUrkfhEUA="
+            },
+            "yaxis": "y2",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1007,
+                    "Alice",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1031,
+                    "Carol",
+                    false,
+                    "2023-01"
+                ],
+                [
+                    1044,
+                    "Carol",
+                    false,
+                    "2023-01"
+                ],
+                [
+                    1073,
+                    "Carol",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1084,
+                    "Bob",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1098,
+                    "David",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1099,
+                    "Carol",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1125,
+                    "Carol",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1141,
+                    "Bob",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1190,
+                    "Bob",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1196,
+                    "Bob",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1257,
+                    "Carol",
+                    false,
+                    "2023-06"
+                ],
+                [
+                    1264,
+                    "David",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1309,
+                    "Carol",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1338,
+                    "Carol",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1357,
+                    "Carol",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1362,
+                    "Bob",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1379,
+                    "Bob",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1395,
+                    "David",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1404,
+                    "Carol",
+                    false,
+                    "2023-09"
+                ],
+                [
+                    1417,
+                    "David",
+                    false,
+                    "2023-10"
+                ],
+                [
+                    1470,
+                    "Alice",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1478,
+                    "Bob",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1479,
+                    "Alice",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1505,
+                    "David",
+                    false,
+                    "2023-12"
+                ],
+                [
+                    1511,
+                    "Carol",
+                    true,
+                    "2023-12"
+                ],
+                [
+                    1514,
+                    "Carol",
+                    true,
+                    "2023-12"
+                ],
+                [
+                    1532,
+                    "Bob",
+                    true,
+                    "2023-12"
+                ],
+                [
+                    1538,
+                    "Bob",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Medium<br>Resolution Method=Phone<br>Issue Type=Software<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Medium, Phone",
+            "marker": {
+                "color": "#fdcdac",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Medium, Phone",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "XI/C9SjcMEBI4XoUrkczQLgehetROCVA7FG4HoXrJ0DXo3A9CtccQJqZmZmZGS5Aj8L1KFzPMkCamZmZmVk4QD0K16NwvTFAAAAAAAAAOUAzMzMzMzMzQGZmZmZmpjJA7FG4HoXrMEBSuB6F61EsQM3MzMzMjDhACtejcD2KMEDhehSuR6E1QB+F61G43jZA7FG4HoXrKkCF61G4HoUuQGZmZmZmJjFAj8L1KFyPL0BxPQrXo3A0QFK4HoXr0TtAH4XrUbheNkB7FK5H4XopQIXrUbgexTJAH4XrUbjeN0ApXI/C9SgtQA=="
+            },
+            "xaxis": "x3",
+            "y": {
+                "dtype": "f8",
+                "bdata": "AAAAAAAAEkDD9Shcj8INQOxRuB6F6xBAAAAAAAAAFEB7FK5H4XoSQFK4HoXrUQ5AH4XrUbgeDUBI4XoUrkcQQNejcD0K1xBAcT0K16NwD0CuR+F6FK4TQOF6FK5H4RBA4XoUrkfhDEAUrkfhehQRQFK4HoXrURJA7FG4HoXrDUBxPQrXo3ASQK5H4XoUrg9AcT0K16NwEUAAAAAAAAAQQNejcD0K1xBAcT0K16NwEEAzMzMzMzMSQIXrUbgehRJAPQrXo3A9EkDhehSuR+EOQBSuR+F6FBFAmpmZmZmZE0AAAAAAAAAQQA=="
+            },
+            "yaxis": "y3",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1048,
+                    "David",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1055,
+                    "Alice",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1087,
+                    "Bob",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1090,
+                    "Bob",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1140,
+                    "Alice",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1149,
+                    "David",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1167,
+                    "Carol",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1210,
+                    "Carol",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1212,
+                    "David",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1221,
+                    "Alice",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1224,
+                    "Alice",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1226,
+                    "Carol",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1246,
+                    "Carol",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1256,
+                    "Carol",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1260,
+                    "Carol",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1271,
+                    "David",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1289,
+                    "Bob",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1321,
+                    "David",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1323,
+                    "Alice",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1346,
+                    "Alice",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1363,
+                    "Alice",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1369,
+                    "Bob",
+                    false,
+                    "2023-09"
+                ],
+                [
+                    1371,
+                    "Alice",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1424,
+                    "Alice",
+                    false,
+                    "2023-10"
+                ],
+                [
+                    1442,
+                    "David",
+                    false,
+                    "2023-10"
+                ],
+                [
+                    1468,
+                    "Carol",
+                    false,
+                    "2023-11"
+                ],
+                [
+                    1483,
+                    "David",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1490,
+                    "Carol",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1492,
+                    "Bob",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1524,
+                    "Carol",
+                    false,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Medium<br>Resolution Method=Phone<br>Issue Type=Hardware<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Medium, Phone",
+            "marker": {
+                "color": "#fdcdac",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Medium, Phone",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "hetRuB4FMkBI4XoUrscpQJqZmZmZWTNApHA9CtejJUDNzMzMzMwdQJqZmZmZ2ThAzczMzMxMKkDNzMzMzMw1QAAAAAAAQDRA9ihcj8J1KEDhehSuR6EwQM3MzMzMDDVAXI/C9SjcIUBxPQrXo/AsQHsUrkfh+ixA7FG4HoXrMEApXI/C9ag0QK5H4XoU7jRA16NwPQqXNkApXI/C9SgvQGZmZmZm5jNAmpmZmZnZMUAAAAAAAIAyQHE9Ctej8DJA7FG4HoUrMEBcj8L1KFwxQLgehetRODdAUrgehevRJkDsUbgehWsjQB+F61G4HjBA"
+            },
+            "xaxis": "x4",
+            "y": {
+                "dtype": "f8",
+                "bdata": "pHA9CtejE0A9CtejcD0RQHE9CtejcA1ApHA9CtejEEBI4XoUrkcRQMP1KFyPwhBAFK5H4XoUE0BxPQrXo3ANQDMzMzMzMxNASOF6FK5HEUCPwvUoXI8QQHE9CtejcBNAFK5H4XoUEUApXI/C9SgOQJqZmZmZmQ9AMzMzMzMzEEApXI/C9SgRQIXrUbgehRBAFK5H4XoUEUAfhetRuB4NQFK4HoXrURBArkfhehSuEkDXo3A9CtcRQB+F61G4HhBAcT0K16NwD0BxPQrXo3ASQAAAAAAAABBArkfhehSuEUBcj8L1KFwPQArXo3A9ChFA"
+            },
+            "yaxis": "y4",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1001,
+                    "Alice",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1086,
+                    "Alice",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1100,
+                    "Bob",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1112,
+                    "Alice",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1113,
+                    "Alice",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1119,
+                    "David",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1197,
+                    "David",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1198,
+                    "Alice",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1208,
+                    "Bob",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1339,
+                    "Bob",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1438,
+                    "Alice",
+                    true,
+                    "2023-10"
+                ]
+            ],
+            "hovertemplate": "Priority=Medium<br>Resolution Method=Portal<br>Issue Type=Network<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Medium, Portal",
+            "marker": {
+                "color": "#fdcdac",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Medium, Portal",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "16NwPQrXM0BxPQrXo3AvQFyPwvUoXCdA4XoUrkdhOECamZmZmdkzQHsUrkfhejdAH4XrUbieNEC4HoXrUfgxQFyPwvUo3DVAj8L1KFzPNUBSuB6F69ExQA=="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "UrgehetRE0ApXI/C9SgMQK5H4XoUrg9A16NwPQrXEEApXI/C9SgRQOxRuB6F6wtACtejcD0KE0DsUbgehesRQMP1KFyPwhBA7FG4HoXrEECamZmZmZkNQA=="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1009,
+                    "Alice",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1023,
+                    "Bob",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1040,
+                    "Bob",
+                    false,
+                    "2023-01"
+                ],
+                [
+                    1122,
+                    "Alice",
+                    false,
+                    "2023-03"
+                ],
+                [
+                    1351,
+                    "Alice",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1394,
+                    "Bob",
+                    false,
+                    "2023-09"
+                ],
+                [
+                    1429,
+                    "Carol",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1439,
+                    "Carol",
+                    false,
+                    "2023-10"
+                ]
+            ],
+            "hovertemplate": "Priority=Medium<br>Resolution Method=Portal<br>Issue Type=Account<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Medium, Portal",
+            "marker": {
+                "color": "#fdcdac",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Medium, Portal",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "pHA9CtcjLEAzMzMzM/M6QFK4HoXrkTJA4XoUrkfhKkB7FK5H4Xo0QMP1KFyPQiZAhetRuB4FM0A9CtejcP0wQA=="
+            },
+            "xaxis": "x2",
+            "y": {
+                "dtype": "f8",
+                "bdata": "UrgehetREUC4HoXrUbgRQKRwPQrXoxFAXI/C9ShcE0CPwvUoXI8MQBSuR+F6FBJAmpmZmZmZDUBI4XoUrkcJQA=="
+            },
+            "yaxis": "y2",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1070,
+                    "David",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1074,
+                    "David",
+                    false,
+                    "2023-02"
+                ],
+                [
+                    1091,
+                    "Carol",
+                    false,
+                    "2023-03"
+                ],
+                [
+                    1096,
+                    "Alice",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1154,
+                    "Carol",
+                    false,
+                    "2023-04"
+                ],
+                [
+                    1169,
+                    "David",
+                    false,
+                    "2023-04"
+                ],
+                [
+                    1173,
+                    "David",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1259,
+                    "Carol",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1295,
+                    "Alice",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1315,
+                    "Carol",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1384,
+                    "David",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1462,
+                    "David",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1501,
+                    "Carol",
+                    true,
+                    "2023-12"
+                ],
+                [
+                    1518,
+                    "Bob",
+                    false,
+                    "2023-12"
+                ],
+                [
+                    1534,
+                    "David",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Medium<br>Resolution Method=Portal<br>Issue Type=Software<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Medium, Portal",
+            "marker": {
+                "color": "#fdcdac",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Medium, Portal",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "exSuR+H6K0AAAAAAAMAwQFK4HoXrETFArkfhehQuJUCF61G4HkU1QB+F61G4HixAexSuR+E6OUAzMzMzM3M3QGZmZmZmJjNAPQrXo3C9NUCPwvUoXE80QOxRuB6FayZAXI/C9ShcL0ApXI/C9agzQPYoXI/C9SdA"
+            },
+            "xaxis": "x3",
+            "y": {
+                "dtype": "f8",
+                "bdata": "7FG4HoXrEUAzMzMzMzMPQFyPwvUoXA9AhetRuB6FD0ApXI/C9SgOQJqZmZmZmQ9A4XoUrkfhEUBxPQrXo3AQQD0K16NwPRNAH4XrUbgeEECamZmZmZkPQHsUrkfheg5ACtejcD0KD0BI4XoUrkcQQM3MzMzMzBFA"
+            },
+            "yaxis": "y3",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1060,
+                    "Alice",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1138,
+                    "David",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1205,
+                    "Alice",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1207,
+                    "Alice",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1213,
+                    "Carol",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1405,
+                    "Bob",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1421,
+                    "Bob",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1432,
+                    "Carol",
+                    false,
+                    "2023-10"
+                ],
+                [
+                    1448,
+                    "Alice",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1454,
+                    "David",
+                    false,
+                    "2023-11"
+                ]
+            ],
+            "hovertemplate": "Priority=Medium<br>Resolution Method=Portal<br>Issue Type=Hardware<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Medium, Portal",
+            "marker": {
+                "color": "#fdcdac",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Medium, Portal",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "XI/C9SgcMEB7FK5H4Xo4QOxRuB6FaytAexSuR+H6MUDhehSuR2E6QB+F61G4niRAMzMzMzNzOkAAAAAAAAAqQM3MzMzMjD9AZmZmZmZmKUA="
+            },
+            "xaxis": "x4",
+            "y": {
+                "dtype": "f8",
+                "bdata": "4XoUrkfhEkD2KFyPwvUKQHsUrkfhehNAmpmZmZmZD0BI4XoUrkcQQM3MzMzMzBFA9ihcj8L1DkAUrkfhehQTQAAAAAAAABRAzczMzMzMEEA="
+            },
+            "yaxis": "y4",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1006,
+                    "David",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1037,
+                    "David",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1115,
+                    "Alice",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1118,
+                    "Alice",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1151,
+                    "Carol",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1175,
+                    "David",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1317,
+                    "Carol",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1340,
+                    "Alice",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1358,
+                    "Carol",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1361,
+                    "David",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1373,
+                    "Alice",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1425,
+                    "David",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1446,
+                    "Bob",
+                    false,
+                    "2023-10"
+                ],
+                [
+                    1447,
+                    "Bob",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1452,
+                    "Alice",
+                    false,
+                    "2023-11"
+                ],
+                [
+                    1467,
+                    "Alice",
+                    false,
+                    "2023-11"
+                ],
+                [
+                    1508,
+                    "David",
+                    true,
+                    "2023-12"
+                ],
+                [
+                    1509,
+                    "Carol",
+                    false,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Medium<br>Resolution Method=Email<br>Issue Type=Network<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Medium, Email",
+            "marker": {
+                "color": "#fdcdac",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Medium, Email",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "zczMzMzMI0BI4XoUrkc0QAAAAAAAgCdASOF6FK7HNkCamZmZmRkzQHsUrkfhujBAw/UoXI9CNEDD9Shcj4IyQPYoXI/CdTBAzczMzMwMNEAzMzMzMzMxQI/C9ShcTzJAXI/C9SicMkD2KFyPwvUgQB+F61G4HixAhetRuB6FJEDhehSuR2EnQFK4HoXrUTJA"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "H4XrUbgeEkAUrkfhehQQQBSuR+F6FBBAMzMzMzMzEkCuR+F6FK4QQIXrUbgehRBA7FG4HoXrEEBcj8L1KFwSQNejcD0K1w9AmpmZmZmZEEApXI/C9SgOQHsUrkfhegxA9ihcj8L1DkDXo3A9CtcRQBSuR+F6FA5AFK5H4XoUEkBxPQrXo3ARQEjhehSuRxFA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1022,
+                    "Carol",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1097,
+                    "Bob",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1157,
+                    "Carol",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1168,
+                    "Alice",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1223,
+                    "Bob",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1231,
+                    "Alice",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1234,
+                    "Bob",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1243,
+                    "David",
+                    false,
+                    "2023-06"
+                ],
+                [
+                    1261,
+                    "David",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1267,
+                    "Carol",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1278,
+                    "Alice",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1343,
+                    "David",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1347,
+                    "Alice",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1349,
+                    "Carol",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1389,
+                    "David",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1456,
+                    "David",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1472,
+                    "Bob",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1477,
+                    "Bob",
+                    false,
+                    "2023-11"
+                ],
+                [
+                    1515,
+                    "Bob",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Medium<br>Resolution Method=Email<br>Issue Type=Account<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Medium, Email",
+            "marker": {
+                "color": "#fdcdac",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Medium, Email",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "w/UoXI/CM0BmZmZmZmY3QJqZmZmZmStA16NwPQrXIEC4HoXrUbgjQPYoXI/C9TZAUrgehevRNkBxPQrXo3AgQDMzMzMz8zVAuB6F61G4H0CuR+F6FK4YQI/C9ShcjydAexSuR+F6KEBcj8L1KBwwQFK4HoXrETFAFK5H4XoULEDD9Shcj0IuQFyPwvUoXDJAUrgehetRIkA="
+            },
+            "xaxis": "x2",
+            "y": {
+                "dtype": "f8",
+                "bdata": "pHA9CtejEkDNzMzMzMwQQIXrUbgehRBAH4XrUbgeEUC4HoXrUbgSQBSuR+F6FBFAKVyPwvUoEUApXI/C9SgRQHsUrkfhehFAMzMzMzMzDUA9CtejcD0OQGZmZmZmZhBAUrgehetREECF61G4HoUSQIXrUbgehQtA7FG4HoXrEUDD9Shcj8IQQJqZmZmZmRFAj8L1KFyPEUA="
+            },
+            "yaxis": "y2",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1056,
+                    "Bob",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1080,
+                    "Alice",
+                    false,
+                    "2023-02"
+                ],
+                [
+                    1082,
+                    "Carol",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1106,
+                    "Alice",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1177,
+                    "Alice",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1183,
+                    "David",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1199,
+                    "Carol",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1216,
+                    "David",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1217,
+                    "Bob",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1219,
+                    "Carol",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1232,
+                    "Alice",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1300,
+                    "Bob",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1330,
+                    "Alice",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1348,
+                    "Bob",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1445,
+                    "Carol",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1451,
+                    "Alice",
+                    false,
+                    "2023-11"
+                ],
+                [
+                    1463,
+                    "Bob",
+                    false,
+                    "2023-11"
+                ],
+                [
+                    1469,
+                    "Carol",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1482,
+                    "David",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1497,
+                    "Alice",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Medium<br>Resolution Method=Email<br>Issue Type=Software<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Medium, Email",
+            "marker": {
+                "color": "#fdcdac",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Medium, Email",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "AAAAAABANEAUrkfhepQuQNejcD0KVzBAPQrXo3A9KkB7FK5H4bozQArXo3A9ChRAPQrXo3D9MEB7FK5H4boxQJqZmZmZmSVAUrgehevRMUDD9Shcj8ItQFyPwvUo3DhAZmZmZmbmMEBcj8L1KFwzQFyPwvUoHDdApHA9CtfjM0DD9Shcj8ImQDMzMzMzszFACtejcD2KL0ApXI/C9agtQA=="
+            },
+            "xaxis": "x3",
+            "y": {
+                "dtype": "f8",
+                "bdata": "rkfhehSuD0ApXI/C9SgOQK5H4XoUrhJAZmZmZmZmEkBI4XoUrkcNQPYoXI/C9QxA7FG4HoXrEkBI4XoUrkcSQI/C9ShcjxJACtejcD0KEUB7FK5H4XoOQMP1KFyPwhBApHA9CtejEUCPwvUoXI8QQK5H4XoUrg9AhetRuB6FEUBxPQrXo3AQQK5H4XoUrhFAMzMzMzMzEEApXI/C9SgSQA=="
+            },
+            "yaxis": "y3",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1045,
+                    "Bob",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1053,
+                    "David",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1058,
+                    "Carol",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1067,
+                    "David",
+                    false,
+                    "2023-02"
+                ],
+                [
+                    1143,
+                    "David",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1156,
+                    "David",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1203,
+                    "Carol",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1251,
+                    "Carol",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1255,
+                    "Alice",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1272,
+                    "David",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1293,
+                    "Carol",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1341,
+                    "David",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1376,
+                    "Bob",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1386,
+                    "Alice",
+                    false,
+                    "2023-09"
+                ],
+                [
+                    1392,
+                    "Bob",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1402,
+                    "Alice",
+                    false,
+                    "2023-09"
+                ]
+            ],
+            "hovertemplate": "Priority=Medium<br>Resolution Method=Email<br>Issue Type=Hardware<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Medium, Email",
+            "marker": {
+                "color": "#fdcdac",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Medium, Email",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "exSuR+F6KUAAAAAAAAAqQNejcD0KlzBAXI/C9SjcLUApXI/C9eg0QGZmZmZm5ixApHA9CtejHkD2KFyPwvUUQNejcD0KFzRASOF6FK5HJkD2KFyPwnUrQGZmZmZmZhtAPQrXo3B9MEApXI/C9SgyQKRwPQrXYzFA16NwPQrXLEA="
+            },
+            "xaxis": "x4",
+            "y": {
+                "dtype": "f8",
+                "bdata": "4XoUrkfhEEAfhetRuB4RQMP1KFyPwhBASOF6FK5HD0AzMzMzMzMRQB+F61G4HhBAZmZmZmZmEEAUrkfhehQOQMP1KFyPwhBASOF6FK5HDUCF61G4HoUQQIXrUbgehQ9AhetRuB6FEkCF61G4HoUPQOF6FK5H4RBAmpmZmZmZD0A="
+            },
+            "yaxis": "y4",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1132,
+                    "David",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1147,
+                    "Bob",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1314,
+                    "David",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1385,
+                    "Bob",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1437,
+                    "Bob",
+                    false,
+                    "2023-10"
+                ]
+            ],
+            "hovertemplate": "Priority=Critical<br>Resolution Method=Phone<br>Issue Type=Network<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Critical, Phone",
+            "marker": {
+                "color": "#f4cae4",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Critical, Phone",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "rkfhehQuS0AAAAAAAMBJQK5H4XoUzkdAKVyPwvVISUCuR+F6FE5KQA=="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "9ihcj8L1DkBI4XoUrkcJQM3MzMzMzA5ACtejcD0KD0Bcj8L1KFwLQA=="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1028,
+                    "Alice",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1145,
+                    "Alice",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1164,
+                    "Alice",
+                    false,
+                    "2023-04"
+                ],
+                [
+                    1335,
+                    "Bob",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1400,
+                    "Carol",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1461,
+                    "David",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1496,
+                    "David",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Critical<br>Resolution Method=Phone<br>Issue Type=Account<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Critical, Phone",
+            "marker": {
+                "color": "#f4cae4",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Critical, Phone",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "FK5H4Xr0SUBcj8L1KBxGQNejcD0Kd0dA16NwPQq3SkDsUbgehYtGQB+F61G4nktApHA9CtejSEA="
+            },
+            "xaxis": "x2",
+            "y": {
+                "dtype": "f8",
+                "bdata": "zczMzMzMDECPwvUoXI8MQB+F61G4Hg9ACtejcD0KCUDhehSuR+EMQJqZmZmZmQ9ACtejcD0KCUA="
+            },
+            "yaxis": "y2",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1034,
+                    "Carol",
+                    false,
+                    "2023-01"
+                ],
+                [
+                    1431,
+                    "Bob",
+                    false,
+                    "2023-10"
+                ]
+            ],
+            "hovertemplate": "Priority=Critical<br>Resolution Method=Phone<br>Issue Type=Software<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Critical, Phone",
+            "marker": {
+                "color": "#f4cae4",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Critical, Phone",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "w/UoXI+iS0DsUbgehYtHQA=="
+            },
+            "xaxis": "x3",
+            "y": {
+                "dtype": "f8",
+                "bdata": "FK5H4XoUDEBmZmZmZmYOQA=="
+            },
+            "yaxis": "y3",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1008,
+                    "Alice",
+                    false,
+                    "2023-01"
+                ],
+                [
+                    1013,
+                    "Carol",
+                    false,
+                    "2023-01"
+                ],
+                [
+                    1021,
+                    "David",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1057,
+                    "David",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1258,
+                    "David",
+                    false,
+                    "2023-06"
+                ],
+                [
+                    1277,
+                    "David",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1398,
+                    "David",
+                    true,
+                    "2023-09"
+                ]
+            ],
+            "hovertemplate": "Priority=Critical<br>Resolution Method=Phone<br>Issue Type=Hardware<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Critical, Phone",
+            "marker": {
+                "color": "#f4cae4",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Critical, Phone",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "MzMzMzMzRkC4HoXrUdhLQOF6FK5HwUhAMzMzMzOTSUCkcD0K16NHQK5H4XoUrkpAPQrXo3A9R0A="
+            },
+            "xaxis": "x4",
+            "y": {
+                "dtype": "f8",
+                "bdata": "SOF6FK5HB0AfhetRuB4NQFyPwvUoXAtApHA9CtejDkD2KFyPwvUIQMP1KFyPwg1A7FG4HoXrCUA="
+            },
+            "yaxis": "y4",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1324,
+                    "David",
+                    true,
+                    "2023-08"
+                ]
+            ],
+            "hovertemplate": "Priority=Critical<br>Resolution Method=Portal<br>Issue Type=Network<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Critical, Portal",
+            "marker": {
+                "color": "#f4cae4",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Critical, Portal",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "exSuR+F6RkA="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "MzMzMzMzBUA="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1120,
+                    "David",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1520,
+                    "Alice",
+                    false,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Critical<br>Resolution Method=Portal<br>Issue Type=Account<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Critical, Portal",
+            "marker": {
+                "color": "#f4cae4",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Critical, Portal",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "MzMzMzNTSEBI4XoUrodJQA=="
+            },
+            "xaxis": "x2",
+            "y": {
+                "dtype": "f8",
+                "bdata": "7FG4HoXrEUBmZmZmZmYOQA=="
+            },
+            "yaxis": "y2",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1245,
+                    "Carol",
+                    false,
+                    "2023-06"
+                ],
+                [
+                    1455,
+                    "Bob",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1488,
+                    "Bob",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1503,
+                    "Bob",
+                    true,
+                    "2023-12"
+                ],
+                [
+                    1530,
+                    "Bob",
+                    false,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Critical<br>Resolution Method=Portal<br>Issue Type=Hardware<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Critical, Portal",
+            "marker": {
+                "color": "#f4cae4",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Critical, Portal",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "XI/C9SjcR0AfhetRuL5KQNejcD0Kd09AhetRuB7FRkDD9ShcjyJKQA=="
+            },
+            "xaxis": "x4",
+            "y": {
+                "dtype": "f8",
+                "bdata": "w/UoXI/CCUAfhetRuB4FQI/C9ShcjwxA16NwPQrXD0B7FK5H4XoQQA=="
+            },
+            "yaxis": "y4",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1093,
+                    "Bob",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1109,
+                    "David",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1539,
+                    "Alice",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Critical<br>Resolution Method=Email<br>Issue Type=Network<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Critical, Email",
+            "marker": {
+                "color": "#f4cae4",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Critical, Email",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "CtejcD1qS0DD9Shcj6JIQDMzMzMzM0lA"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "H4XrUbgeB0DD9Shcj8IPQNejcD0K1wtA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1002,
+                    "Bob",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1071,
+                    "Alice",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1102,
+                    "Carol",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1248,
+                    "Bob",
+                    false,
+                    "2023-06"
+                ],
+                [
+                    1326,
+                    "Carol",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1329,
+                    "Carol",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1471,
+                    "Bob",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1494,
+                    "Alice",
+                    false,
+                    "2023-11"
+                ]
+            ],
+            "hovertemplate": "Priority=Critical<br>Resolution Method=Email<br>Issue Type=Account<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Critical, Email",
+            "marker": {
+                "color": "#f4cae4",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Critical, Email",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "9ihcj8LVRkBI4XoUrgdIQKRwPQrX40lAexSuR+FaSEBSuB6F6zFHQMP1KFyPokRACtejcD0qR0DNzMzMzExDQA=="
+            },
+            "xaxis": "x2",
+            "y": {
+                "dtype": "f8",
+                "bdata": "exSuR+F6CkC4HoXrUbgMQClcj8L1KApA7FG4HoXrD0CamZmZmZkQQM3MzMzMzA5AmpmZmZmZD0D2KFyPwvUGQA=="
+            },
+            "yaxis": "y2",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1159,
+                    "Carol",
+                    false,
+                    "2023-04"
+                ],
+                [
+                    1435,
+                    "Bob",
+                    false,
+                    "2023-10"
+                ],
+                [
+                    1523,
+                    "Alice",
+                    false,
+                    "2023-12"
+                ],
+                [
+                    1531,
+                    "David",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Critical<br>Resolution Method=Email<br>Issue Type=Software<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Critical, Email",
+            "marker": {
+                "color": "#f4cae4",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Critical, Email",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "CtejcD2qSkDXo3A9CrdJQJqZmZmZuUpAw/UoXI9CR0A="
+            },
+            "xaxis": "x3",
+            "y": {
+                "dtype": "f8",
+                "bdata": "PQrXo3A9DEC4HoXrUbgKQDMzMzMzMw1A7FG4HoXrA0A="
+            },
+            "yaxis": "y3",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1153,
+                    "David",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1165,
+                    "Carol",
+                    false,
+                    "2023-04"
+                ],
+                [
+                    1185,
+                    "David",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1410,
+                    "David",
+                    false,
+                    "2023-10"
+                ],
+                [
+                    1459,
+                    "Alice",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1466,
+                    "David",
+                    false,
+                    "2023-11"
+                ]
+            ],
+            "hovertemplate": "Priority=Critical<br>Resolution Method=Email<br>Issue Type=Hardware<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Critical, Email",
+            "marker": {
+                "color": "#f4cae4",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Critical, Email",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "hetRuB6FSEB7FK5H4TpJQAAAAAAAwEdAuB6F61FYR0D2KFyPwtVLQFK4HoXrUUdA"
+            },
+            "xaxis": "x4",
+            "y": {
+                "dtype": "f8",
+                "bdata": "XI/C9ShcDUCPwvUoXI8MQBSuR+F6FA5A7FG4HoXrC0AAAAAAAAAKQD0K16NwPQpA"
+            },
+            "yaxis": "y4",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1027,
+                    "David",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1068,
+                    "Carol",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1101,
+                    "Carol",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1123,
+                    "Alice",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1126,
+                    "Alice",
+                    false,
+                    "2023-03"
+                ],
+                [
+                    1131,
+                    "David",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1171,
+                    "Carol",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1176,
+                    "Bob",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1178,
+                    "Carol",
+                    false,
+                    "2023-04"
+                ],
+                [
+                    1230,
+                    "Alice",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1235,
+                    "Bob",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1282,
+                    "David",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1285,
+                    "Bob",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1370,
+                    "Alice",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1374,
+                    "Alice",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1397,
+                    "Alice",
+                    false,
+                    "2023-09"
+                ],
+                [
+                    1426,
+                    "Bob",
+                    false,
+                    "2023-10"
+                ],
+                [
+                    1433,
+                    "Alice",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1502,
+                    "Bob",
+                    false,
+                    "2023-12"
+                ],
+                [
+                    1504,
+                    "Carol",
+                    true,
+                    "2023-12"
+                ],
+                [
+                    1535,
+                    "Alice",
+                    false,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Low<br>Resolution Method=Phone<br>Issue Type=Network<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Low, Phone",
+            "marker": {
+                "color": "#b3e2cd",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Low, Phone",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "FK5H4XoULUDsUbgehesHQAAAAAAAAB9AcT0K16PwKkDsUbgeheseQHE9CtejcBBAuB6F61H4MEBI4XoUrscsQEjhehSuxy9AZmZmZmZmGkBmZmZmZmYgQPYoXI/C9RJAAAAAAAAADkD2KFyPwvUCQArXo3A9yjFAj8L1KFyPIUAzMzMzMzMgQGZmZmZm5idA16NwPQrXCUBmZmZmZmYAQDMzMzMzMyhA"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "KVyPwvUoEUDD9Shcj8IQQD0K16NwPRFA4XoUrkfhEED2KFyPwvUIQB+F61G4Hg1Aw/UoXI/CEEDXo3A9CtcQQDMzMzMzMxFAMzMzMzMzD0DhehSuR+EQQHE9CtejcBFAexSuR+F6EECPwvUoXI8MQI/C9ShcjxJASOF6FK5HEEB7FK5H4XoRQHE9CtejcA9AKVyPwvUoEkCamZmZmZkPQDMzMzMzMxFA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1003,
+                    "Carol",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1046,
+                    "Bob",
+                    false,
+                    "2023-02"
+                ],
+                [
+                    1050,
+                    "Bob",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1105,
+                    "Bob",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1121,
+                    "David",
+                    false,
+                    "2023-03"
+                ],
+                [
+                    1133,
+                    "Carol",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1170,
+                    "Carol",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1189,
+                    "Alice",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1194,
+                    "Bob",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1195,
+                    "Alice",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1247,
+                    "David",
+                    false,
+                    "2023-06"
+                ],
+                [
+                    1290,
+                    "Bob",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1302,
+                    "David",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1367,
+                    "Bob",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1377,
+                    "David",
+                    false,
+                    "2023-09"
+                ],
+                [
+                    1391,
+                    "David",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1409,
+                    "Bob",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1458,
+                    "Alice",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1474,
+                    "Carol",
+                    false,
+                    "2023-11"
+                ],
+                [
+                    1500,
+                    "David",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Low<br>Resolution Method=Phone<br>Issue Type=Account<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Low, Phone",
+            "marker": {
+                "color": "#b3e2cd",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Low, Phone",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "pHA9CtcjI0Bcj8L1KNwhQD0K16NwvSdACtejcD0K/z89CtejcD0iQGZmZmZm5iRAzczMzMwMMkCamZmZmRknQEjhehSuxyhAXI/C9ShcEkCamZmZmRkmQB+F61G4nixA7FG4HoXrG0CamZmZmZkYQJqZmZmZmRhAH4XrUbgeHEA9CtejcD0IQBSuR+F6FCRAZmZmZmbmJkB7FK5H4XoTQA=="
+            },
+            "xaxis": "x2",
+            "y": {
+                "dtype": "f8",
+                "bdata": "UrgehetRDkAfhetRuB4LQIXrUbgehRFArkfhehSuEECPwvUoXI8RQOxRuB6F6w9A16NwPQrXEUAfhetRuB4RQDMzMzMzMxNAZmZmZmZmEECPwvUoXI8SQLgehetRuAxApHA9CtejEECkcD0K16MQQM3MzMzMzBFAH4XrUbgeEkBxPQrXo3AQQOxRuB6F6wtAcT0K16NwDUCPwvUoXI8SQA=="
+            },
+            "yaxis": "y2",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1004,
+                    "Bob",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1015,
+                    "Carol",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1075,
+                    "Alice",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1162,
+                    "Alice",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1166,
+                    "Alice",
+                    false,
+                    "2023-04"
+                ],
+                [
+                    1218,
+                    "Carol",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1236,
+                    "Alice",
+                    false,
+                    "2023-06"
+                ],
+                [
+                    1238,
+                    "Alice",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1263,
+                    "Alice",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1344,
+                    "Carol",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1356,
+                    "Alice",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1388,
+                    "David",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1390,
+                    "Bob",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1403,
+                    "Bob",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1460,
+                    "Alice",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1513,
+                    "Carol",
+                    false,
+                    "2023-12"
+                ],
+                [
+                    1519,
+                    "David",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Low<br>Resolution Method=Phone<br>Issue Type=Software<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Low, Phone",
+            "marker": {
+                "color": "#b3e2cd",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Low, Phone",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "KVyPwvUo7D+kcD0K16MVQHsUrkfhehRASOF6FK5HC0DhehSuR+EUQFK4HoXrkTFAKVyPwvUoEkCkcD0K1yMkQNejcD0K1xNAexSuR+F6MEDhehSuR+EiQB+F61G4Hh1Aw/UoXI/CEECF61G4HgUmQFyPwvUoXCxAzczMzMxMKkB7FK5H4XrUPw=="
+            },
+            "xaxis": "x3",
+            "y": {
+                "dtype": "f8",
+                "bdata": "7FG4HoXrEEApXI/C9SgTQFK4HoXrURJASOF6FK5HDUCamZmZmZkPQJqZmZmZmQ9AmpmZmZmZDUDNzMzMzMwRQMP1KFyPwg9A4XoUrkfhEEBSuB6F61ESQHE9CtejcA9AexSuR+F6DEDNzMzMzMwQQAAAAAAAAA5AmpmZmZmZEUCPwvUoXI8RQA=="
+            },
+            "yaxis": "y3",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1020,
+                    "Bob",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1043,
+                    "Bob",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1077,
+                    "David",
+                    false,
+                    "2023-02"
+                ],
+                [
+                    1092,
+                    "David",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1135,
+                    "Bob",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1184,
+                    "David",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1187,
+                    "Alice",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1200,
+                    "Bob",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1241,
+                    "David",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1268,
+                    "David",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1296,
+                    "Bob",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1345,
+                    "Alice",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1464,
+                    "Alice",
+                    true,
+                    "2023-11"
+                ],
+                [
+                    1528,
+                    "Carol",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Low<br>Resolution Method=Phone<br>Issue Type=Hardware<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Low, Phone",
+            "marker": {
+                "color": "#b3e2cd",
+                "opacity": 0.8,
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Low, Phone",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "exSuR+F6H0C4HoXrUbiuP5qZmZmZmRZAFK5H4XqUJ0DNzMzMzMwZQLgehetRuBRAcT0K16NwLkBSuB6F61EWQKRwPQrXIzBAZmZmZmZmKkBSuB6F69ElQD0K16NwPR9AAAAAAAAAE0DsUbgehWstQA=="
+            },
+            "xaxis": "x4",
+            "y": {
+                "dtype": "f8",
+                "bdata": "cT0K16NwC0DhehSuR+ERQK5H4XoUrhJAzczMzMzMEUDD9Shcj8IRQDMzMzMzMxFAmpmZmZmZDUCF61G4HoUPQLgehetRuBFAcT0K16NwD0DD9Shcj8ISQK5H4XoUrg9AzczMzMzMDEBmZmZmZmYSQA=="
+            },
+            "yaxis": "y4",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1127,
+                    "Bob",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1334,
+                    "Alice",
+                    false,
+                    "2023-08"
+                ],
+                [
+                    1368,
+                    "Alice",
+                    true,
+                    "2023-09"
+                ]
+            ],
+            "hovertemplate": "Priority=Low<br>Resolution Method=Portal<br>Issue Type=Network<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Low, Portal",
+            "marker": {
+                "color": "#b3e2cd",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Low, Portal",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "w/UoXI/CA0DNzMzMzMwaQBSuR+F6FBpA"
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "XI/C9ShcEECkcD0K16MRQK5H4XoUrhFA"
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1079,
+                    "David",
+                    false,
+                    "2023-02"
+                ],
+                [
+                    1188,
+                    "Alice",
+                    false,
+                    "2023-05"
+                ],
+                [
+                    1292,
+                    "David",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1304,
+                    "David",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1318,
+                    "David",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1328,
+                    "Carol",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1366,
+                    "Bob",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1533,
+                    "Bob",
+                    false,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Low<br>Resolution Method=Portal<br>Issue Type=Account<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Low, Portal",
+            "marker": {
+                "color": "#b3e2cd",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Low, Portal",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "9ihcj8J1IECPwvUoXI8kQOxRuB6F6yVA16NwPQrXKEDsUbgehesXQIXrUbgeBSJAuB6F61G4H0DXo3A9CtcQQA=="
+            },
+            "xaxis": "x2",
+            "y": {
+                "dtype": "f8",
+                "bdata": "zczMzMzMEEBcj8L1KFwRQHE9CtejcBJA16NwPQrXCUBI4XoUrkcQQArXo3A9ChBACtejcD0KEEAfhetRuB4RQA=="
+            },
+            "yaxis": "y2",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1066,
+                    "Alice",
+                    false,
+                    "2023-02"
+                ],
+                [
+                    1076,
+                    "Bob",
+                    false,
+                    "2023-02"
+                ],
+                [
+                    1116,
+                    "Bob",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1250,
+                    "Carol",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1254,
+                    "Carol",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1298,
+                    "Carol",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1443,
+                    "David",
+                    false,
+                    "2023-10"
+                ],
+                [
+                    1453,
+                    "Carol",
+                    false,
+                    "2023-11"
+                ],
+                [
+                    1525,
+                    "Alice",
+                    false,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Low<br>Resolution Method=Portal<br>Issue Type=Software<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Low, Portal",
+            "marker": {
+                "color": "#b3e2cd",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Low, Portal",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "uB6F61G47j8pXI/C9SgxQNejcD0KVyNAcT0K16Nw9T/NzMzMzMwfQOF6FK5H4eo/FK5H4XoUAkDXo3A9CtcYQAAAAAAAAPA/"
+            },
+            "xaxis": "x3",
+            "y": {
+                "dtype": "f8",
+                "bdata": "9ihcj8L1DEBcj8L1KFwNQI/C9ShcjxFAH4XrUbgeD0DXo3A9CtcQQArXo3A9ChFA4XoUrkfhEUC4HoXrUbgMQJqZmZmZmRFA"
+            },
+            "yaxis": "y3",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1035,
+                    "David",
+                    false,
+                    "2023-01"
+                ],
+                [
+                    1107,
+                    "Carol",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1128,
+                    "David",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1211,
+                    "Carol",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1269,
+                    "Bob",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1375,
+                    "Alice",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1382,
+                    "David",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1493,
+                    "Carol",
+                    true,
+                    "2023-11"
+                ]
+            ],
+            "hovertemplate": "Priority=Low<br>Resolution Method=Portal<br>Issue Type=Hardware<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Low, Portal",
+            "marker": {
+                "color": "#b3e2cd",
+                "opacity": 0.8,
+                "symbol": "diamond",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Low, Portal",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "UrgehevRJEAUrkfhehQQQIXrUbgehR9AcT0K16Nw+T/hehSuR+ETQFyPwvUoXN8/zczMzMzMGkC4HoXrUbgUQA=="
+            },
+            "xaxis": "x4",
+            "y": {
+                "dtype": "f8",
+                "bdata": "KVyPwvUoDkCuR+F6FK4JQNejcD0K1xBA7FG4HoXrEEAAAAAAAAAUQAAAAAAAABRAw/UoXI/CEUAzMzMzMzMNQA=="
+            },
+            "yaxis": "y4",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1019,
+                    "David",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1062,
+                    "Alice",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1150,
+                    "Bob",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1160,
+                    "Alice",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1215,
+                    "Bob",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1283,
+                    "David",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1284,
+                    "Carol",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1331,
+                    "Carol",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1360,
+                    "Alice",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1441,
+                    "David",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1507,
+                    "David",
+                    false,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Low<br>Resolution Method=Email<br>Issue Type=Network<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Low, Email",
+            "marker": {
+                "color": "#b3e2cd",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Low, Email",
+            "orientation": "v",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "CtejcD0KJEDhehSuR+H+P7gehetRuClAmpmZmZkZLkBmZmZmZmYeQMP1KFyPgjBAUrgehevRI0ApXI/C9SgbQJqZmZmZmRJAXI/C9ShcHkCPwvUoXI8uQA=="
+            },
+            "xaxis": "x",
+            "y": {
+                "dtype": "f8",
+                "bdata": "j8L1KFyPEEBmZmZmZmYOQM3MzMzMzBFA7FG4HoXrD0D2KFyPwvURQEjhehSuRxFAAAAAAAAAEkBxPQrXo3ARQGZmZmZmZhJAAAAAAAAAEECF61G4HoURQA=="
+            },
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1072,
+                    "Carol",
+                    true,
+                    "2023-02"
+                ],
+                [
+                    1161,
+                    "Alice",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1179,
+                    "Alice",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1228,
+                    "David",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1270,
+                    "Alice",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1316,
+                    "David",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1408,
+                    "Carol",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1449,
+                    "Carol",
+                    false,
+                    "2023-10"
+                ],
+                [
+                    1517,
+                    "David",
+                    true,
+                    "2023-12"
+                ]
+            ],
+            "hovertemplate": "Priority=Low<br>Resolution Method=Email<br>Issue Type=Account<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Low, Email",
+            "marker": {
+                "color": "#b3e2cd",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Low, Email",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "mpmZmZmZKUAK16NwPYouQHE9Ctej8CFAMzMzMzMzNEDsUbgehesQQKRwPQrXoxJAw/UoXI/CHEB7FK5H4fowQArXo3A9Csc/"
+            },
+            "xaxis": "x2",
+            "y": {
+                "dtype": "f8",
+                "bdata": "H4XrUbgeE0AUrkfhehQQQBSuR+F6FBBAcT0K16NwEkDXo3A9CtcQQEjhehSuRxJA16NwPQrXD0BI4XoUrkcQQFyPwvUoXBFA"
+            },
+            "yaxis": "y2",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1039,
+                    "Bob",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1041,
+                    "David",
+                    false,
+                    "2023-01"
+                ],
+                [
+                    1094,
+                    "Carol",
+                    true,
+                    "2023-03"
+                ],
+                [
+                    1202,
+                    "Carol",
+                    true,
+                    "2023-05"
+                ],
+                [
+                    1244,
+                    "Bob",
+                    false,
+                    "2023-06"
+                ],
+                [
+                    1275,
+                    "David",
+                    true,
+                    "2023-07"
+                ],
+                [
+                    1279,
+                    "David",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1301,
+                    "Bob",
+                    false,
+                    "2023-07"
+                ],
+                [
+                    1342,
+                    "Bob",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1393,
+                    "Carol",
+                    true,
+                    "2023-09"
+                ],
+                [
+                    1484,
+                    "Alice",
+                    false,
+                    "2023-11"
+                ]
+            ],
+            "hovertemplate": "Priority=Low<br>Resolution Method=Email<br>Issue Type=Software<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Low, Email",
+            "marker": {
+                "color": "#b3e2cd",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Low, Email",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "mpmZmZmZJUBcj8L1KFwrQB+F61G4HiNAMzMzMzMzIUAzMzMzMzP/P4/C9ShcjyVAexSuR+F6GkCF61G4HgUjQKRwPQrXIy1A16NwPQrXIUBmZmZmZmYjQA=="
+            },
+            "xaxis": "x3",
+            "y": {
+                "dtype": "f8",
+                "bdata": "XI/C9ShcEUC4HoXrUbgRQLgehetRuBFA4XoUrkfhEEDD9Shcj8ISQOxRuB6F6xJAcT0K16NwEEBmZmZmZmYOQFyPwvUoXBNA7FG4HoXrB0AUrkfhehQSQA=="
+            },
+            "yaxis": "y3",
+            "type": "scatter"
+        },
+        {
+            "customdata": [
+                [
+                    1032,
+                    "David",
+                    true,
+                    "2023-01"
+                ],
+                [
+                    1061,
+                    "Alice",
+                    false,
+                    "2023-02"
+                ],
+                [
+                    1163,
+                    "Alice",
+                    true,
+                    "2023-04"
+                ],
+                [
+                    1240,
+                    "Alice",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1265,
+                    "Alice",
+                    true,
+                    "2023-06"
+                ],
+                [
+                    1322,
+                    "David",
+                    true,
+                    "2023-08"
+                ],
+                [
+                    1418,
+                    "Bob",
+                    true,
+                    "2023-10"
+                ],
+                [
+                    1419,
+                    "Alice",
+                    true,
+                    "2023-10"
+                ]
+            ],
+            "hovertemplate": "Priority=Low<br>Resolution Method=Email<br>Issue Type=Hardware<br>Time to Resolution (hrs)=%{x}<br>Satisfaction Score=%{y}<br>Technician=%{customdata[1]}<br>First Contact Resolution=%{customdata[2]}<br>Ticket ID=%{customdata[0]}<br>Month=%{customdata[3]}<extra></extra>",
+            "legendgroup": "Low, Email",
+            "marker": {
+                "color": "#b3e2cd",
+                "opacity": 0.8,
+                "symbol": "square",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 1
+                },
+                "size": 10
+            },
+            "mode": "markers",
+            "name": "Low, Email",
+            "orientation": "v",
+            "showlegend": false,
+            "x": {
+                "dtype": "f8",
+                "bdata": "H4XrUbgeJEBmZmZmZmYdQNejcD0KVyJAMzMzMzMzMEDNzMzMzMwlQMP1KFyPQiNApHA9CtejGUBmZmZmZmYrQA=="
+            },
+            "xaxis": "x4",
+            "y": {
+                "dtype": "f8",
+                "bdata": "XI/C9ShcEkBSuB6F61ERQMP1KFyPwhBACtejcD0KD0DD9Shcj8IQQLgehetRuBFAMzMzMzMzEECamZmZmZkRQA=="
+            },
+            "yaxis": "y4",
+            "type": "scatter"
+        }
+    ],
+    "layout": {
+        "template": {
+            "data": {
+                "histogram2dcontour": [
+                    {
+                        "type": "histogram2dcontour",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "choropleth": [
+                    {
+                        "type": "choropleth",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "histogram2d": [
+                    {
+                        "type": "histogram2d",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "heatmap": [
+                    {
+                        "type": "heatmap",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "contourcarpet": [
+                    {
+                        "type": "contourcarpet",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "contour": [
+                    {
+                        "type": "contour",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "surface": [
+                    {
+                        "type": "surface",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "mesh3d": [
+                    {
+                        "type": "mesh3d",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "scatter": [
+                    {
+                        "fillpattern": {
+                            "fillmode": "overlay",
+                            "size": 10,
+                            "solidity": 0.2
+                        },
+                        "type": "scatter"
+                    }
+                ],
+                "parcoords": [
+                    {
+                        "type": "parcoords",
+                        "line": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterpolargl": [
+                    {
+                        "type": "scatterpolargl",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "bar": [
+                    {
+                        "error_x": {
+                            "color": "#2a3f5f"
+                        },
+                        "error_y": {
+                            "color": "#2a3f5f"
+                        },
+                        "marker": {
+                            "line": {
+                                "color": "#E5ECF6",
+                                "width": 0.5
+                            },
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "bar"
+                    }
+                ],
+                "scattergeo": [
+                    {
+                        "type": "scattergeo",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterpolar": [
+                    {
+                        "type": "scatterpolar",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "histogram": [
+                    {
+                        "marker": {
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "histogram"
+                    }
+                ],
+                "scattergl": [
+                    {
+                        "type": "scattergl",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatter3d": [
+                    {
+                        "type": "scatter3d",
+                        "line": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        },
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattermap": [
+                    {
+                        "type": "scattermap",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattermapbox": [
+                    {
+                        "type": "scattermapbox",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterternary": [
+                    {
+                        "type": "scatterternary",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattercarpet": [
+                    {
+                        "type": "scattercarpet",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "carpet": [
+                    {
+                        "aaxis": {
+                            "endlinecolor": "#2a3f5f",
+                            "gridcolor": "white",
+                            "linecolor": "white",
+                            "minorgridcolor": "white",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "baxis": {
+                            "endlinecolor": "#2a3f5f",
+                            "gridcolor": "white",
+                            "linecolor": "white",
+                            "minorgridcolor": "white",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "type": "carpet"
+                    }
+                ],
+                "table": [
+                    {
+                        "cells": {
+                            "fill": {
+                                "color": "#EBF0F8"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "header": {
+                            "fill": {
+                                "color": "#C8D4E3"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "type": "table"
+                    }
+                ],
+                "barpolar": [
+                    {
+                        "marker": {
+                            "line": {
+                                "color": "#E5ECF6",
+                                "width": 0.5
+                            },
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "barpolar"
+                    }
+                ],
+                "pie": [
+                    {
+                        "automargin": true,
+                        "type": "pie"
+                    }
+                ]
+            },
+            "layout": {
+                "autotypenumbers": "strict",
+                "colorway": [
+                    "#636efa",
+                    "#EF553B",
+                    "#00cc96",
+                    "#ab63fa",
+                    "#FFA15A",
+                    "#19d3f3",
+                    "#FF6692",
+                    "#B6E880",
+                    "#FF97FF",
+                    "#FECB52"
+                ],
+                "font": {
+                    "color": "#2a3f5f"
+                },
+                "hovermode": "closest",
+                "hoverlabel": {
+                    "align": "left"
+                },
+                "paper_bgcolor": "white",
+                "plot_bgcolor": "#E5ECF6",
+                "polar": {
+                    "bgcolor": "#E5ECF6",
+                    "angularaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "radialaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    }
+                },
+                "ternary": {
+                    "bgcolor": "#E5ECF6",
+                    "aaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "baxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "caxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    }
+                },
+                "coloraxis": {
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    }
+                },
+                "colorscale": {
+                    "sequential": [
+                        [
+                            0.0,
+                            "#0d0887"
+                        ],
+                        [
+                            0.1111111111111111,
+                            "#46039f"
+                        ],
+                        [
+                            0.2222222222222222,
+                            "#7201a8"
+                        ],
+                        [
+                            0.3333333333333333,
+                            "#9c179e"
+                        ],
+                        [
+                            0.4444444444444444,
+                            "#bd3786"
+                        ],
+                        [
+                            0.5555555555555556,
+                            "#d8576b"
+                        ],
+                        [
+                            0.6666666666666666,
+                            "#ed7953"
+                        ],
+                        [
+                            0.7777777777777778,
+                            "#fb9f3a"
+                        ],
+                        [
+                            0.8888888888888888,
+                            "#fdca26"
+                        ],
+                        [
+                            1.0,
+                            "#f0f921"
+                        ]
+                    ],
+                    "sequentialminus": [
+                        [
+                            0.0,
+                            "#0d0887"
+                        ],
+                        [
+                            0.1111111111111111,
+                            "#46039f"
+                        ],
+                        [
+                            0.2222222222222222,
+                            "#7201a8"
+                        ],
+                        [
+                            0.3333333333333333,
+                            "#9c179e"
+                        ],
+                        [
+                            0.4444444444444444,
+                            "#bd3786"
+                        ],
+                        [
+                            0.5555555555555556,
+                            "#d8576b"
+                        ],
+                        [
+                            0.6666666666666666,
+                            "#ed7953"
+                        ],
+                        [
+                            0.7777777777777778,
+                            "#fb9f3a"
+                        ],
+                        [
+                            0.8888888888888888,
+                            "#fdca26"
+                        ],
+                        [
+                            1.0,
+                            "#f0f921"
+                        ]
+                    ],
+                    "diverging": [
+                        [
+                            0,
+                            "#8e0152"
+                        ],
+                        [
+                            0.1,
+                            "#c51b7d"
+                        ],
+                        [
+                            0.2,
+                            "#de77ae"
+                        ],
+                        [
+                            0.3,
+                            "#f1b6da"
+                        ],
+                        [
+                            0.4,
+                            "#fde0ef"
+                        ],
+                        [
+                            0.5,
+                            "#f7f7f7"
+                        ],
+                        [
+                            0.6,
+                            "#e6f5d0"
+                        ],
+                        [
+                            0.7,
+                            "#b8e186"
+                        ],
+                        [
+                            0.8,
+                            "#7fbc41"
+                        ],
+                        [
+                            0.9,
+                            "#4d9221"
+                        ],
+                        [
+                            1,
+                            "#276419"
+                        ]
+                    ]
+                },
+                "xaxis": {
+                    "gridcolor": "white",
+                    "linecolor": "white",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "white",
+                    "automargin": true,
+                    "zerolinewidth": 2
+                },
+                "yaxis": {
+                    "gridcolor": "white",
+                    "linecolor": "white",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "white",
+                    "automargin": true,
+                    "zerolinewidth": 2
+                },
+                "scene": {
+                    "xaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    },
+                    "yaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    },
+                    "zaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    }
+                },
+                "shapedefaults": {
+                    "line": {
+                        "color": "#2a3f5f"
+                    }
+                },
+                "annotationdefaults": {
+                    "arrowcolor": "#2a3f5f",
+                    "arrowhead": 0,
+                    "arrowwidth": 1
+                },
+                "geo": {
+                    "bgcolor": "white",
+                    "landcolor": "#E5ECF6",
+                    "subunitcolor": "white",
+                    "showland": true,
+                    "showlakes": true,
+                    "lakecolor": "white"
+                },
+                "title": {
+                    "x": 0.05
+                },
+                "mapbox": {
+                    "style": "light"
+                }
+            }
+        },
+        "xaxis": {
+            "anchor": "y",
+            "domain": [
+                0.0,
+                0.235
+            ],
+            "title": {
+                "text": "Time to Resolution (hrs)"
+            }
+        },
+        "yaxis": {
+            "anchor": "x",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "title": {
+                "text": "Satisfaction Score"
+            }
+        },
+        "xaxis2": {
+            "anchor": "y2",
+            "domain": [
+                0.255,
+                0.49
+            ],
+            "matches": "x",
+            "title": {
+                "text": "Time to Resolution (hrs)"
+            }
+        },
+        "yaxis2": {
+            "anchor": "x2",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "matches": "y",
+            "showticklabels": false
+        },
+        "xaxis3": {
+            "anchor": "y3",
+            "domain": [
+                0.51,
+                0.745
+            ],
+            "matches": "x",
+            "title": {
+                "text": "Time to Resolution (hrs)"
+            }
+        },
+        "yaxis3": {
+            "anchor": "x3",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "matches": "y",
+            "showticklabels": false
+        },
+        "xaxis4": {
+            "anchor": "y4",
+            "domain": [
+                0.7649999999999999,
+                0.9999999999999999
+            ],
+            "matches": "x",
+            "title": {
+                "text": "Time to Resolution (hrs)"
+            }
+        },
+        "yaxis4": {
+            "anchor": "x4",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "matches": "y",
+            "showticklabels": false
+        },
+        "annotations": [
+            {
+                "font": {},
+                "showarrow": false,
+                "text": "Network",
+                "x": 0.1175,
+                "xanchor": "center",
+                "xref": "paper",
+                "y": 1.0,
+                "yanchor": "bottom",
+                "yref": "paper"
+            },
+            {
+                "font": {},
+                "showarrow": false,
+                "text": "Account",
+                "x": 0.3725,
+                "xanchor": "center",
+                "xref": "paper",
+                "y": 1.0,
+                "yanchor": "bottom",
+                "yref": "paper"
+            },
+            {
+                "font": {},
+                "showarrow": false,
+                "text": "Software",
+                "x": 0.6275,
+                "xanchor": "center",
+                "xref": "paper",
+                "y": 1.0,
+                "yanchor": "bottom",
+                "yref": "paper"
+            },
+            {
+                "font": {},
+                "showarrow": false,
+                "text": "Hardware",
+                "x": 0.8824999999999998,
+                "xanchor": "center",
+                "xref": "paper",
+                "y": 1.0,
+                "yanchor": "bottom",
+                "yref": "paper"
+            }
+        ],
+        "legend": {
+            "title": {
+                "text": "Priority Level"
+            },
+            "tracegroupgap": 0
+        },
+        "margin": {
+            "t": 70,
+            "l": 50,
+            "r": 50,
+            "b": 50
+        },
+        "font": {
+            "family": "Arial",
+            "size": 13
+        },
+        "title": {
+            "text": "<b>Resolution Time vs Customer Satisfaction<br>(Faceted by Issue Type)</b>"
+        },
+        "height": 540,
+        "plot_bgcolor": "#f8fafc",
+        "paper_bgcolor": "#f3f3f3"
+    },
+    "id": 788
+}

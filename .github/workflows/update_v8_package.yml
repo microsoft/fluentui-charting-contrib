@@ -1,0 +1,107 @@
+name: Update react-charting package
+
+on:
+  schedule:
+    - cron: "50 7 * * *"  # Runs every day at 1:20 PM IST (07:50 AM UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-react-charting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Get latest @fluentui/react-charting version
+        id: get_latest_version
+        run: |
+          echo "version=$(npm view @fluentui/react-charting version)" >> $GITHUB_OUTPUT
+
+      - name: Ensure jq is installed
+        run: |
+          if ! command -v jq &> /dev/null
+          then
+            sudo apt-get update
+            sudo apt-get install -y jq
+          fi
+
+      - name: Get current @fluentui/react-charting version
+        id: get_current_version
+        run: |
+          cd apps/plotly_examples
+          version=$(jq -r '.dependencies["@fluentui/react-charting"]' package.json | sed 's/^[~^]//')
+          echo "current_version=$version" >> $GITHUB_OUTPUT
+
+      - name: Check if update is needed
+        id: check_update
+        run: |
+          echo "Current: ${{ steps.get_current_version.outputs.current_version }}"
+          echo "Latest: ${{ steps.get_latest_version.outputs.version }}"
+          if [ "${{ steps.get_current_version.outputs.current_version }}" = "${{ steps.get_latest_version.outputs.version }}" ]; then
+            echo "up_to_date=true" >> $GITHUB_OUTPUT
+          else
+            echo "up_to_date=false" >> $GITHUB_OUTPUT
+          fi
+        shell: bash
+
+      - name: Update package.json with latest version
+        if: steps.check_update.outputs.up_to_date == 'false'
+        run: |
+          cd apps/plotly_examples
+          npm pkg set dependencies.@fluentui/react-charting="^${{ steps.get_latest_version.outputs.version }}"
+
+      - name: Install dependencies
+        if: steps.check_update.outputs.up_to_date == 'false'
+        run: |
+          cd apps/plotly_examples
+          yarn install
+
+      - name: Update version in App.tsx if v5.23.xx or v5.24.xx
+        if: steps.check_update.outputs.up_to_date == 'false'
+        run: |
+          cd apps/plotly_examples/src
+          # Extract just the version number (e.g., 5.24.1) from the latest version
+          version="${{ steps.get_latest_version.outputs.version }}"
+          # Use sed to replace v5.23.xx with the new version (e.g., v5.24.1)
+          sed -i -E "s/v5\.2[34]\.[0-9]+/v$version/g" App.tsx
+          git add App.tsx
+
+      - name: Build app after updating version
+        if: steps.check_update.outputs.up_to_date == 'false'
+        run: |
+          cd apps/plotly_examples
+          yarn build
+
+      - name: Create branch name with updated package version
+        if: steps.check_update.outputs.up_to_date == 'false'
+        id: branch
+        run: |
+          BRANCH="update-react-charting-${{ steps.get_latest_version.outputs.version }}"
+          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+      - name: Commit changes to repo
+        id: auto-commit-action
+        uses: stefanzweifel/git-auto-commit-action@v5
+        if: steps.check_update.outputs.up_to_date == 'false'
+        with:
+          branch: ${{ steps.branch.outputs.branch }}
+          create_branch: true
+          commit_message: (chore) (auto) update @fluentui/react-charting to version ${{ steps.get_latest_version.outputs.version }}
+        
+      - name: "Publish Notification regarding changes"
+        if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        shell: bash
+        run: |
+          echo "Create a pull request using this link: https://www.github.com/microsoft/fluentui-charting-contrib/pull/new/$${{ steps.branch.outputs.branch }}" >> $GITHUB_STEP_SUMMARY

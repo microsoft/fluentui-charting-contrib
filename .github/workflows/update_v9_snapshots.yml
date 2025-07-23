@@ -1,0 +1,76 @@
+name: Update v9 test snapshots
+
+on:
+  workflow_run:
+    workflows: ["build and deploy to fluentchartseval"] # Name of Workflow A
+    types:
+      - completed
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+    update_snapshots:
+        runs-on: windows-latest
+        permissions:
+          contents: write
+          pull-requests: write
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                node-version: '20.x'
+
+            - name: Install packages
+              run: |
+                cd apps/plotly_examples
+                yarn
+
+            - name: Skip if last commit is snapshot chore
+              id: skip_check
+              shell: bash
+              run: |
+                git fetch origin ${{ github.ref }} --depth=1
+                last_msg=$(git log -1 --pretty=%B)
+                if [[ "$last_msg" == *"(chore) update react-charting snapshots"* || "$last_msg" == *"(chore) update react-charts snapshots"* ]]; then
+                  echo "skip_job=true" >> $GITHUB_OUTPUT
+                else
+                  echo "skip_job=false" >> $GITHUB_OUTPUT
+                fi
+
+            - name: Run Playwright update snapshots
+              if: github.event_name == 'workflow_dispatch' || steps.skip_check.outputs.skip_job != 'true'
+              run: |
+                cd apps/plotly_examples
+                npx playwright install
+                npx cross-env BASE_URL='https://fluentchartseval.azurewebsites.net/' npx playwright test tests/DeclarativeChart_v9.spec.ts --update-snapshots || true
+
+            - name: Create branch with timestamp
+              if: github.event_name == 'workflow_dispatch' || steps.skip_check.outputs.skip_job != 'true'
+              id: branch
+              shell: bash
+              run: |
+                BRANCH="update-v9-snapshots-$(date +'%Y%m%d-%H%M%S')"
+                git checkout -b $BRANCH
+                echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+            - name: Commit changes to repo
+              if: github.event_name == 'workflow_dispatch' || steps.skip_check.outputs.skip_job != 'true'
+              id: auto-commit-action
+              uses: stefanzweifel/git-auto-commit-action@v5
+              with:
+                branch: ${{ steps.branch.outputs.branch }}
+                create_branch: true
+                commit_message: (chore) (auto) update react-charts snapshots
+                file_pattern: '*.png'
+              
+            - name: "Publish Notification regarding changes"
+              if: (github.event_name == 'workflow_dispatch' || steps.skip_check.outputs.skip_job != 'true') && steps.auto-commit-action.outputs.changes_detected == 'true'
+              shell: bash
+              run: |
+                echo "Create a pull request using this link: https://www.github.com/microsoft/fluentui-charting-contrib/pull/new/${{ steps.branch.outputs.branch }}" >> $GITHUB_STEP_SUMMARY

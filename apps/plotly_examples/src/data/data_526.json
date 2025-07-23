@@ -1,0 +1,944 @@
+{
+  "data": [
+    {
+      "hovertemplate": "location=Hotel A<br>Rooms Available=%{x}<br>Rooms Occupied=%{y}<extra></extra>",
+      "legendgroup": "Hotel A",
+      "marker": {
+        "color": "#636efa",
+        "symbol": "circle"
+      },
+      "mode": "markers",
+      "name": "Hotel A",
+      "showlegend": true,
+      "x": {
+        "dtype": "i2",
+        "bdata": "mACOAEAAnAB5AEYAmACrAHwAiQCmAJUAmQC0AMcAZgAzAIkAVwCzAEYAawBHAIoAYgBsAEAAZACdAGgAcQC0AGQAuABGAHoAQwC1AIoAbQA/ADoAiwBmALMAhQCNAKAAOQBUAIIAYwCZALUAMwC3AGcAmwA1AGcAwwBdAD8AkABhAEAAWQCDAKAAZgBJAK0AWgBAAF4AcgCKAHgAOgCJALIAuQBwALwAggC5AFIArAA2AFoATQC4AHkAPQBSAGEAbwBWAJQAmQBUAJYAtAAyADYAvwCYAEwAugBAAIsAWwCtAHAAkQBlAJEAtQDAAE4AVQA+AHgAhwBNAHMAXgBvALcATQBNAJ0AXQCFAE8AfACxAI0AsgCqAEwAqgClADQAmAC6AG8AZABsAKcAkQCiAG8AZQA9AFgAswC0AKIAlgCiAIIAogAzALMAZwCIALIAxACvALMAZgB1AKwAwgBXAEkAdgClAJMAvADBAJIArQB3AI4ANADFAMQAiwDEAMUAkQBlALEAWACDAJkAsgA8AFsAlAA4AMEAiwChAG0AogAzALIAYQC9AFYAOgCUAMQAYQC0AMUAZwCpAKUAfACiAJkAhQChAJQAjgDDALEAnwCDAGcAdQBSAL8ARgBhAMUAsQC5ALgAwgCxAFIApACoAEcAVwCeAGQAOQBMAEwARgBPAJIATQCgAG4AYQDEADUAVABiAEIAXwCmADcAlACtAFYASQCOAF8AkACUAKUAdACxAEMASgBnAGsAdACZAEkAowBRAIcAsACzAEIAmQC6AFwAWABLAJQAYwA+AG0AuABqAFUARQByADkAwQC/AKQAwACNAJMAcwBRAIcAZABwAK4AxwBrAGsAhwBiAHcAQABnAJYAOQBmAG0AnQA2AJgANwCeAKUAjwBgAJQAaABlAMEAPgCjAK0AmwDEAMIAqQBwAEQAjQBrAIsApgBvAEgAsAC6AL0AsgBrAA=="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "i2",
+        "bdata": "fwBUACkAYwAoACEAEAB5AEsAVgB0AGkAVQAaADgAHgCFAGEACwA0AIkAkAB5AC0APwCBADUAagAyACMAcgAZABwAlAAKACcACgBwACYANQBhADYAbgCVAEQANwAgACMAkwBQAGwASAAnABAAgAA8AGcAKQAYACYAIgCCAGsAZQBhAAsAEgBkACsAMAAQAEkAOAA2AC4ACwA9AE8AUgAHAJQAUAB1ABgAWAALAI4AOgBsABkALgAfAAkADwCQABkAVQCGAA0ATgB0AAYAiAByAEcAOgBRAHMAkQBmABAADQBrACwAYQCCACQAawAmAA4AdwADAFwAjAAPAGsAfQA2ACEADACMABEAXwB6ACYALQAcAD0ADwB4AAkAZgBTAIQAQAACAI0AdwBDAJEAJABIAI4AMAB4AFcAiwAkADwAewAmAD4ALQBXAAoAPQBMADMAAwA6AEcAkwBcAD4ANQB0AG0ASQBqADgAAgB3AAUABAAEADUALgAIAGIAEwB5ADwAegBRAD0AkAACAAwAdwB8AFgASABDAI0AZABhAAoAaABCAHoAHACIAEsACAAnABgABACKAHsAJQBHAIQAWQCRACQAOwAbAFAAcQAnACwAPQBcAHIAQgA3ACcAYQAnAFoAIAAFAJIATwBbAGAAOgA6AC8ADABqACwAWABjAAYAhAAsADkAHgAWAIkAagAmAFEAYwABAEwACwAmAAwALQBwABAAZwBhAFcAbABFAEkAPgA7AE4AJAAVAJMAXwBDABAACwCVAJAAiQB1ABUAdwAxAA0AHAB8AAYAHACKACAAhQBuAE4AOQAZABwAAwBiAIwAJgAOAHYAHABKAHMAHwCBAFMAFQAaAFAAfQBbABQALgBkAFMABQCSAIIAAAA5AHsADgA/ABgAFwALABEADgAaAEcAOwCQAFwANAAHAE4AGgAxAIIAXAAXADsAeQCCAJMALQAOABAAfQBTAA=="
+      },
+      "yaxis": "y",
+      "type": "scattergl"
+    },
+    {
+      "hovertemplate": "<b>OLS trendline</b><br>rooms_occupied = -0.0273325 * rooms_available + 73.267<br>R<sup>2</sup>=0.000745<br><br>location=Hotel A<br>Rooms Available=%{x}<br>Rooms Occupied=%{y} <b>(trend)</b><extra></extra>",
+      "legendgroup": "Hotel A",
+      "marker": {
+        "color": "#636efa",
+        "symbol": "circle"
+      },
+      "mode": "lines",
+      "name": "Hotel A",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "MgAzADMAMwAzADQANAA1ADUANgA2ADYANwA3ADgAOQA5ADkAOQA6ADoAOgA8AD0APQA+AD4APgA/AD8AQABAAEAAQABAAEAAQgBCAEMAQwBEAEUARgBGAEYARgBGAEcARwBIAEkASQBJAEkASgBLAEwATABMAEwATQBNAE0ATQBNAE4ATwBPAFEAUQBSAFIAUgBSAFQAVABUAFUAVQBWAFYAVgBXAFcAVwBYAFgAWABZAFoAWgBbAFsAXABdAF0AXgBeAF8AXwBgAGEAYQBhAGEAYQBhAGIAYgBiAGMAYwBkAGQAZABkAGQAZQBlAGUAZQBmAGYAZgBmAGYAZwBnAGcAZwBnAGcAZwBoAGgAagBrAGsAawBrAGsAawBsAGwAbQBtAG0AbQBuAG8AbwBvAG8AbwBwAHAAcABwAHEAcgByAHMAcwB0AHQAdQB1AHYAdwB3AHgAeAB5AHkAegB8AHwAfACCAIIAggCDAIMAgwCFAIUAhQCHAIcAhwCHAIgAiQCJAIkAigCKAIoAiwCLAIsAiwCLAI0AjQCNAI0AjgCOAI4AjgCPAJAAkACRAJEAkQCRAJIAkgCTAJMAlACUAJQAlACUAJQAlACUAJUAlgCWAJYAmACYAJgAmACYAJkAmQCZAJkAmQCZAJkAmwCbAJwAnQCdAJ0AngCeAJ8AoACgAKAAoQChAKIAogCiAKIAogCiAKMAowCkAKQApQClAKUApQClAKYApgCmAKcAqACpAKkAqgCqAKsArACsAK0ArQCtAK0ArQCuAK8AsACwALEAsQCxALEAsQCxALIAsgCyALIAsgCyALMAswCzALMAswCzALQAtAC0ALQAtAC1ALUAtQC3ALcAuAC4ALgAuAC5ALkAuQC6ALoAugC6ALwAvAC9AL0AvwC/AL8AwADAAMEAwQDBAMEAwgDCAMIAwwDDAMQAxADEAMQAxADEAMUAxQDFAMUAxwDHAA=="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "f8",
+        "bdata": "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"
+      },
+      "yaxis": "y",
+      "type": "scattergl"
+    },
+    {
+      "hovertemplate": "location=Hotel B<br>Rooms Available=%{x}<br>Rooms Occupied=%{y}<extra></extra>",
+      "legendgroup": "Hotel B",
+      "marker": {
+        "color": "#EF553B",
+        "symbol": "circle"
+      },
+      "mode": "markers",
+      "name": "Hotel B",
+      "showlegend": true,
+      "x": {
+        "dtype": "i2",
+        "bdata": "qwAyAFMAkQCvAKcAYQCKAKYAsgBBAHYARwCOAH0AwQCHAE4AdgBgAI8AwQCGAFgAlQBSAJYASAA7AHYAlQBTALsAxACRADIAdgA1AEEASQCBADMAsQCFAL0ArQBSAJYAPQB0AHIAewBcAF0ATgC+AD0AkABfALMAVACCAIsAOQCOAIsApACaALgAawCjAHwAqQBGALsAlgCUAFUAkQBWAD0AogA+AEgAlACaAE8AQgCiAG8AhQChAIcAvgBEAJUAvQDEAH0AOgBNALEAZQCEAKAAwQCmAHYAlAC9AEoArABmAMEAagBYAJ4AWwC/AKsAtgB8AMMAfQA6AHsAwgA4AL4AugBMAKsANgBOAIQAuQCeAHIAhwDCAHgAXgC1AFUAdwBEAJ0AjACLAEQAWACvAL4ArwBrAMUAbgCwAJoAMgC0AI0AogBpAKYAtwBrAF0AbgBgAMYAgQCnAMQARQDDAGAAYgA/AMAAMgCmAGcApwA0AMEAPQB7AEEAlwCmADkAqwCNAIsAuQBtAE0AlgBaAMIAvgBfAFQAtwCDAKQAYAA7AGkATwCeADYAqABSAKcAcgDDADwAhgBLAHAAhwBsAEwAkwCaAJQAsgDGAGgANwCQALYAlwA0AEgAZgCEAMIAhgB/AJ8AMgBkADUAogBRAFMAjQCQAHkAWACnADQArABjAD0AZwC2AGoAwgChAGAAhgC/AHMAfACYAFcAYwCTAIMATwCAAIwAZQCAAE8AmwBkAIIAtgBOALUAuwDCAHsAQgCFAHYAUwA3AGYArwBcAKQAoACBAJAApwDBADkAtQCZALUASgCRAI4AbgCrAGQAxABGADYAjQBuAEcAxgB3ADIAtgA9AIsAXwBTAH8AXgB6AEsAYACqAGkAjwCcAHAAYQBuAIIASwBVADIAOQCiAJQAYACwAGkAPwBNAH8AswCeAD8AaQCkADgANACgAJwAQwBXAKQAQACoAA=="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "i2",
+        "bdata": "CAA+AHQAgQBXAEcAigA/AEcAFAARAD8AUQBtAF4AHwAKACwAIABlAIcACgBXACgAkABLAHgALQBPADUAVQBbAJMAYAABACAATABzAJUAZgBmAFkAeQCOAGkAdgAwAGcAPAB6AIUACAAFAEgAZgAoAHEABwBHAFsAPQBTAD0AbgB+AAYAUwCDAIUAOQAVAH4AAgB+ACgAaQANAAsAVgALAIwAGAAsAHkAkgA2AGMAhwB2ADQAHwAyACsAUQCRAJUAJABfADcAaAA6AIIAIgBcAGAAhgBLADAAXQAXAJMAJAADAGsAfQATADEAXwBoAHQAYQBBAE4ABQAmAHIAfAALAIIAEQAnABQAjgBiABkABwBjAFYAKQANAE0AAQB2ACQARAAoAD0AOwB8AG4ADQBTAIEARQCQAHoAWAAbAEEABAAsAC4AHgCKAAkAdQANAE8AXAAJAEsAXQBoAAAAhAATAAcAAAA4AD8AdQAbAHgAagAwAHcAKwA3AG4AhQBrAJMAcQBNAIEAJAATABkAHAAAAHYAIgA6AEQACwATACoAfQAxABwAJgAlAFMAfwB9ACwAMwBPAHsAdgAHAFQAgAAHAF8AZQAEAFUAIQA2AHYAcQCQABkAhwAuAHAASwBHAFgALQAgAAAAkgAeAI0ANAAvAEQAaABZAD4ASABYAAwASABMAEMAYQB8AGUAgwBlABIAUQCMABYAUgBsAEoAgABXADUAWACOAEAASwCOAJQAkgA7AFwAMAAiAGUACgBiAG0ASQAIAAIAVAAZAEcALwB0AAsAhAAvACQAKwAOACoAVgBFAC0AawB6ABQAagBPAC4AdAB7AI4AGAAjADIADgBDABQAjAASACEATQB8AHQAMwAaACIAhwCPAGkAkQABAEwAgwBZAFgAXQAGAF4AawBJACYAjABGADcAKQAjAFMAdQAGADUAgAB3AGkALgB6AIwAdgCVAHUAFACIAA=="
+      },
+      "yaxis": "y",
+      "type": "scattergl"
+    },
+    {
+      "hovertemplate": "<b>OLS trendline</b><br>rooms_occupied = -0.00439503 * rooms_available + 75.4111<br>R<sup>2</sup>=0.000020<br><br>location=Hotel B<br>Rooms Available=%{x}<br>Rooms Occupied=%{y} <b>(trend)</b><extra></extra>",
+      "legendgroup": "Hotel B",
+      "marker": {
+        "color": "#EF553B",
+        "symbol": "circle"
+      },
+      "mode": "lines",
+      "name": "Hotel B",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "MgAyADIAMgAyADIAMgAzADQANAA0ADQANQA1ADYANgA2ADcANwA4ADgAOQA5ADkAOQA6ADoAOwA7ADwAPQA9AD0APQA9AD0APgA/AD8APwBAAEEAQQBBAEIAQgBDAEQARABEAEUARgBGAEcARwBIAEgASABJAEoASgBLAEsASwBMAEwATQBNAE0ATgBOAE4ATgBPAE8ATwBPAFEAUgBSAFIAUwBTAFMAUwBTAFQAVABVAFUAVQBWAFcAVwBYAFgAWABYAFoAWwBcAFwAXQBdAF4AXgBfAF8AXwBgAGAAYABgAGAAYABgAGEAYQBiAGMAYwBkAGQAZABlAGUAZgBmAGYAZwBnAGgAaQBpAGkAaQBpAGoAagBrAGsAawBsAG0AbgBuAG4AbgBuAG8AcABwAHIAcgByAHMAdAB2AHYAdgB2AHYAdgB3AHcAeAB5AHoAewB7AHsAewB8AHwAfAB9AH0AfQB/AH8AfwCAAIAAgQCBAIEAggCCAIIAgwCDAIQAhACEAIUAhQCFAIYAhgCGAIYAhwCHAIcAhwCKAIsAiwCLAIsAiwCMAIwAjQCNAI0AjQCOAI4AjgCPAI8AkACQAJAAkACRAJEAkQCRAJMAkwCUAJQAlACUAJQAlQCVAJUAlgCWAJYAlgCXAJcAmACZAJoAmgCaAJoAmwCcAJwAnQCeAJ4AngCeAJ8AoACgAKAAoQChAKIAogCiAKIAogCjAKQApACkAKQApACmAKYApgCmAKYApwCnAKcApwCnAKcAqACoAKkAqgCrAKsAqwCrAKsArACsAK0ArwCvAK8ArwCwALAAsQCxALIAsgCzALMAtAC1ALUAtQC1ALYAtgC2ALYAtgC3ALcAuAC5ALkAugC7ALsAuwC9AL0AvQC+AL4AvgC+AL4AvwC/AMAAwQDBAMEAwQDBAMEAwgDCAMIAwgDCAMIAwwDDAMMAxADEAMQAxADFAMYAxgDGAA=="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "f8",
+        "bdata": "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"
+      },
+      "yaxis": "y",
+      "type": "scattergl"
+    },
+    {
+      "hovertemplate": "location=Hotel C<br>Rooms Available=%{x}<br>Rooms Occupied=%{y}<extra></extra>",
+      "legendgroup": "Hotel C",
+      "marker": {
+        "color": "#00cc96",
+        "symbol": "circle"
+      },
+      "mode": "markers",
+      "name": "Hotel C",
+      "showlegend": true,
+      "x": {
+        "dtype": "i2",
+        "bdata": "TQBYAEIAhwCvAF0ASgDCAD4ASgB1ALsAdACeAMMAoACgAFMAoAA5AKIAhABbAJYANwBLAHEAbACeAKoAUgDHAEYAdwChADUAjwB8AG8AjwCQAGgAugC0AFAAWQBVADcAcwB8ADUAgAC3AKcAogCPAG8AgAC5AEsAXQC2AHcApwB1AEQARQCiAL0AYAAyAIsAvwBxAFcAVgCvALwAlQB+ADQAtwA7ADYAuwCzAD4AswCFAHIAcACWAHoAQgA6AMAAVwCPAJAAYgB2AG8AfwCmAKkAugB9AFQAMgBZAHEAxwBtAHEAjgB5ADwAmgA/AG0ATwBUADYAhACsAH8AbwC1AIoAWwCKAMMAWQB5AFgAmQA/AFEArgCSAEgAcADAAMIAZgCZAJkAWAC3AHQAuABbAEAAoABSAFcAkgBSAIcAcwA7ADYArAB7AJIApwBXAL4AYACeAEAAuQA2AGAAdQB9ALMAkACkAFUASwBcAEwAdgDFADwAewCZAFcAtwBIAGAAiwBfAJwAvQC+AJkAoACZAG0AlQB1ALYAqQBWAHkAsACbAI0AUACrALoAZABOAFkAWgA8ADIAXwCWAMYAiwCfAGoAMgBwAGgApADAAMYAZgC6AGoApgBUAHAASgCLAHwAVwCzALgAjABCALEAnQBKAIkATgBwAMcAowBiAIIAhQCaAMUApwCHAHAAmQBiAHgAMgC+AKwAbwBRAE4AYgBPAMEARABDADIAfwCkAKIAowBwALUAsgA5AGgAmAC0AFEAOwCfAK0AiABoAFEAuACOADkAcgBqAHQAeQBnAHQAZACSAI0AOQBUAJEAiQB/AFEAqQBfAMEAvwBoADgAewA4AIYAxAChAK4AxABVAE4AgwAzALIAYADFADwAswCoAL0ARQA2AFYAugBmAJQAhwCdAEkAggCpAGwAsQCjAKQAPwA6AFkASgCYAEcANQBOAJ4AkwBWAHwAdwDDAA=="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "i2",
+        "bdata": "GQAIAA4ACQB5AHgAfABHADAAWgAkAEMAMQASAGMAOwBYAJEAkgBEADAAawB2AJQAlQAkAI4ACgCJAE0ATAABAD8AIgAGAFQAkQBCACkAdQB8ABcALQASAEMAZQApAB8AbAAjAGAAggBIAIcAYAB6AEUADAAwADsAgQAEABoAlAAHADEAQgArAHwAOQACAFUARQCBAAEAZQAiAGEAHQBzAAcAlQArACMATAAeAC4ANgBpAHgANgCPAAsAkACPAIsAhwACAI8AHQAWAFsAcgBnAHUABABnAGsAQAB4AB0AlABTAJUAHwAPACUAjQAjAHEAQQBoAFQAAQBKAEIANgAFAJUAjgBVADsAZAALADAAKQBRACIAhQBCAE8ABgANAEgAjgCUAEEAWgCBABMACQAYABgANQAgAF4ADQBAAG0ATwA1AHwAggCFABgAjAB0AIcAlAAYAE4AQwALAB8AfwBfAFsAjAAeAE0AEwCRADsAhQBcACoAgQA7AB4ABAAJAFgAgQB9AAoANwBSAIgAYgCUAEgAcgAGAE8AjwBgAAMAAwBmACcAEABkAGYAewAzADMAewA+AHMAPQAGAFsADQBVAIQAgQA9AJQATgCUAIkAOQB3AIQAQAAMAFEAigCUADMAdAAZACEAMwBvAFEAKQAUACkAjABwAGgAEAB3AIgAgACBADsALwAcAGAACQA5ABQAGwAhAAcATgCQAFYAVwBEAFYAZAAHAEwAVgAqAIAAbAAQAIQAkwAUADkAbQCKAI4AhgAbADIABAAEAF0AXwAHAD8AiQAlAG4AbwBQAIcAZwBIADAAIwB9AEMATQBoAHkAdgBxAAkAlACLAFoAAQB1AAwAXgCPAB8AHwB7AAoACQAOABAAkQA6AE0AewBxABUAHwBwAHcAlAB5AB8AdgAmAAsAEQCUAIwAlAB9AIcALQBnAIYAVQCVAFgAFQBbABwADAABABwAGgAxAA=="
+      },
+      "yaxis": "y",
+      "type": "scattergl"
+    },
+    {
+      "hovertemplate": "<b>OLS trendline</b><br>rooms_occupied = 0.0520544 * rooms_available + 69.8479<br>R<sup>2</sup>=0.002367<br><br>location=Hotel C<br>Rooms Available=%{x}<br>Rooms Occupied=%{y} <b>(trend)</b><extra></extra>",
+      "legendgroup": "Hotel C",
+      "marker": {
+        "color": "#00cc96",
+        "symbol": "circle"
+      },
+      "mode": "lines",
+      "name": "Hotel C",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "MgAyADIAMgAyADIAMwA0ADUANQA1ADYANgA2ADYANgA3ADcAOAA4ADkAOQA5ADkAOgA6ADsAOwA7ADwAPAA8ADwAPgA+AD8APwA/AEAAQABCAEIAQgBDAEQARABFAEUARgBHAEgASABJAEoASgBKAEoASgBLAEsASwBMAE0ATgBOAE4ATgBOAE8ATwBQAFAAUQBRAFEAUQBRAFIAUgBSAFMAVABUAFQAVABVAFUAVQBWAFYAVgBWAFcAVwBXAFcAVwBXAFgAWABYAFkAWQBZAFkAWQBaAFsAWwBbAFwAXQBdAF8AXwBfAGAAYABgAGAAYABiAGIAYgBiAGQAZABmAGYAZgBnAGgAaABoAGgAaABqAGoAagBsAGwAbQBtAG0AbwBvAG8AbwBvAHAAcABwAHAAcABwAHAAcQBxAHEAcQByAHIAcwBzAHQAdAB0AHQAdQB1AHUAdQB2AHYAdwB3AHcAeAB5AHkAeQB5AHoAewB7AHsAfAB8AHwAfAB9AH0AfgB/AH8AfwB/AIAAgACCAIIAgwCEAIQAhQCFAIYAhwCHAIcAhwCIAIkAiQCKAIoAiwCLAIsAiwCMAI0AjQCOAI4AjwCPAI8AjwCQAJAAkACRAJIAkgCSAJIAkwCUAJUAlQCWAJYAlgCYAJgAmQCZAJkAmQCZAJkAmQCaAJoAmwCcAJ0AnQCeAJ4AngCeAJ8AnwCgAKAAoACgAKAAoQChAKIAogCiAKIAowCjAKMApACkAKQApACmAKYApwCnAKcApwCoAKkAqQCpAKkAqgCrAKwArACsAK0ArgCuAK8ArwCwALEAsQCyALIAswCzALMAswCzALQAtAC1ALUAtgC2ALcAtwC3ALcAuAC4ALgAuQC5ALoAugC6ALoAugC7ALsAvAC9AL0AvQC+AL4AvgC/AL8AwADAAMAAwQDBAMIAwgDDAMMAwwDEAMQAxQDFAMUAxgDGAMcAxwDHAA=="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "f8",
+        "bdata": "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"
+      },
+      "yaxis": "y",
+      "type": "scattergl"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "histogram2dcontour": [
+          {
+            "type": "histogram2dcontour",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "choropleth": [
+          {
+            "type": "choropleth",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "histogram2d": [
+          {
+            "type": "histogram2d",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "heatmap": [
+          {
+            "type": "heatmap",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "contourcarpet": [
+          {
+            "type": "contourcarpet",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "contour": [
+          {
+            "type": "contour",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "surface": [
+          {
+            "type": "surface",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [
+                0.0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1.0,
+                "#f0f921"
+              ]
+            ]
+          }
+        ],
+        "mesh3d": [
+          {
+            "type": "mesh3d",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "scatter": [
+          {
+            "fillpattern": {
+              "fillmode": "overlay",
+              "size": 10,
+              "solidity": 0.2
+            },
+            "type": "scatter"
+          }
+        ],
+        "parcoords": [
+          {
+            "type": "parcoords",
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterpolargl": [
+          {
+            "type": "scatterpolargl",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "bar": [
+          {
+            "error_x": {
+              "color": "#2a3f5f"
+            },
+            "error_y": {
+              "color": "#2a3f5f"
+            },
+            "marker": {
+              "line": {
+                "color": "#E5ECF6",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "bar"
+          }
+        ],
+        "scattergeo": [
+          {
+            "type": "scattergeo",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterpolar": [
+          {
+            "type": "scatterpolar",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "histogram": [
+          {
+            "marker": {
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "histogram"
+          }
+        ],
+        "scattergl": [
+          {
+            "type": "scattergl",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatter3d": [
+          {
+            "type": "scatter3d",
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattermap": [
+          {
+            "type": "scattermap",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattermapbox": [
+          {
+            "type": "scattermapbox",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterternary": [
+          {
+            "type": "scatterternary",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattercarpet": [
+          {
+            "type": "scattercarpet",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "carpet": [
+          {
+            "aaxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "minorgridcolor": "white",
+              "startlinecolor": "#2a3f5f"
+            },
+            "baxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "minorgridcolor": "white",
+              "startlinecolor": "#2a3f5f"
+            },
+            "type": "carpet"
+          }
+        ],
+        "table": [
+          {
+            "cells": {
+              "fill": {
+                "color": "#EBF0F8"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "header": {
+              "fill": {
+                "color": "#C8D4E3"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "type": "table"
+          }
+        ],
+        "barpolar": [
+          {
+            "marker": {
+              "line": {
+                "color": "#E5ECF6",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "barpolar"
+          }
+        ],
+        "pie": [
+          {
+            "automargin": true,
+            "type": "pie"
+          }
+        ]
+      },
+      "layout": {
+        "autotypenumbers": "strict",
+        "colorway": [
+          "#636efa",
+          "#EF553B",
+          "#00cc96",
+          "#ab63fa",
+          "#FFA15A",
+          "#19d3f3",
+          "#FF6692",
+          "#B6E880",
+          "#FF97FF",
+          "#FECB52"
+        ],
+        "font": {
+          "color": "#2a3f5f"
+        },
+        "hovermode": "closest",
+        "hoverlabel": {
+          "align": "left"
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "#E5ECF6",
+        "polar": {
+          "bgcolor": "#E5ECF6",
+          "angularaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "radialaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          }
+        },
+        "ternary": {
+          "bgcolor": "#E5ECF6",
+          "aaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "baxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "caxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          }
+        },
+        "coloraxis": {
+          "colorbar": {
+            "outlinewidth": 0,
+            "ticks": ""
+          }
+        },
+        "colorscale": {
+          "sequential": [
+            [
+              0.0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1.0,
+              "#f0f921"
+            ]
+          ],
+          "sequentialminus": [
+            [
+              0.0,
+              "#0d0887"
+            ],
+            [
+              0.1111111111111111,
+              "#46039f"
+            ],
+            [
+              0.2222222222222222,
+              "#7201a8"
+            ],
+            [
+              0.3333333333333333,
+              "#9c179e"
+            ],
+            [
+              0.4444444444444444,
+              "#bd3786"
+            ],
+            [
+              0.5555555555555556,
+              "#d8576b"
+            ],
+            [
+              0.6666666666666666,
+              "#ed7953"
+            ],
+            [
+              0.7777777777777778,
+              "#fb9f3a"
+            ],
+            [
+              0.8888888888888888,
+              "#fdca26"
+            ],
+            [
+              1.0,
+              "#f0f921"
+            ]
+          ],
+          "diverging": [
+            [
+              0,
+              "#8e0152"
+            ],
+            [
+              0.1,
+              "#c51b7d"
+            ],
+            [
+              0.2,
+              "#de77ae"
+            ],
+            [
+              0.3,
+              "#f1b6da"
+            ],
+            [
+              0.4,
+              "#fde0ef"
+            ],
+            [
+              0.5,
+              "#f7f7f7"
+            ],
+            [
+              0.6,
+              "#e6f5d0"
+            ],
+            [
+              0.7,
+              "#b8e186"
+            ],
+            [
+              0.8,
+              "#7fbc41"
+            ],
+            [
+              0.9,
+              "#4d9221"
+            ],
+            [
+              1,
+              "#276419"
+            ]
+          ]
+        },
+        "xaxis": {
+          "gridcolor": "white",
+          "linecolor": "white",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "white",
+          "automargin": true,
+          "zerolinewidth": 2
+        },
+        "yaxis": {
+          "gridcolor": "white",
+          "linecolor": "white",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "white",
+          "automargin": true,
+          "zerolinewidth": 2
+        },
+        "scene": {
+          "xaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          },
+          "yaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          },
+          "zaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          }
+        },
+        "shapedefaults": {
+          "line": {
+            "color": "#2a3f5f"
+          }
+        },
+        "annotationdefaults": {
+          "arrowcolor": "#2a3f5f",
+          "arrowhead": 0,
+          "arrowwidth": 1
+        },
+        "geo": {
+          "bgcolor": "white",
+          "landcolor": "#E5ECF6",
+          "subunitcolor": "white",
+          "showland": true,
+          "showlakes": true,
+          "lakecolor": "white"
+        },
+        "title": {
+          "x": 0.05
+        },
+        "mapbox": {
+          "style": "light"
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "title": {
+        "text": "Rooms Available"
+      }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        1.0
+      ],
+      "title": {
+        "text": "Rooms Occupied"
+      }
+    },
+    "legend": {
+      "title": {
+        "text": "location"
+      },
+      "tracegroupgap": 0
+    },
+    "title": {
+      "text": "Rooms Available vs Rooms Occupied Over Time"
+    }
+  },
+  "id": "526"
+}
