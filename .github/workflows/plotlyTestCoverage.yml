@@ -30,6 +30,9 @@ jobs:
             windows_artifact_name: ${{ steps.windows.outputs.COVERAGE_FILENAME_WINDOWS }}
 
         steps:
+            - name: Enable Git long paths
+              run: git config --global core.longpaths true
+
             - name: Checkout [react-charting]
               uses: actions/checkout@v4
               with:
