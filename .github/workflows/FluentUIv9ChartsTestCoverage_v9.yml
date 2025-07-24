@@ -24,7 +24,9 @@ jobs:
           matrix:
             os: [windows-latest]
         runs-on: ${{ matrix.os }}
-        # Removed invalid outputs referencing non-existent steps to prevent workflow errors.
+        outputs:
+            test_coverage: ${{ steps.run_tests.outputs }}
+            windows_artifact_name: ${{ steps.windows.outputs.COVERAGE_FILENAME_WINDOWS }}
 
         steps:
             - name: Enable Git long paths
@@ -111,6 +113,10 @@ jobs:
               run: |
                 cd contrib_repo/apps/plotly_examples
                 yarn build
+                if [ ! -f build/index.html ]; then
+                  echo "Error: build/index.html not found. Check your build output directory." >&2
+                  exit 1
+                fi
                 nohup npx -y serve -s build -l 3000 > output.log 2>&1 &  
                 npx wait-on http://localhost:3000/ --timeout 300000
 
