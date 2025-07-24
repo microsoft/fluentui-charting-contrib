@@ -24,9 +24,7 @@ jobs:
           matrix:
             os: [windows-latest]
         runs-on: ${{ matrix.os }}
-        outputs:
-            test_coverage: ${{ steps.run_tests.outputs }}
-            windows_artifact_name: ${{ steps.windows.outputs.COVERAGE_FILENAME_WINDOWS }}
+        # Removed invalid outputs referencing non-existent steps to prevent workflow errors.
 
         steps:
             - name: Enable Git long paths
