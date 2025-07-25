@@ -63,8 +63,8 @@ jobs:
                 yarn
 
             - name: Build
-              run: |
-                cd ./fluentui/apps/chart-docsite
+              run: | 
+                cd /apps/chart-docsite
                 yarn run build-storybook 
 
             - name: Run yarn pack in chart-utilities to create .tgz file
