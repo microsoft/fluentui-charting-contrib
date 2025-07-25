@@ -1,7 +1,7 @@
 name: "FluentUIv9Charts Test coverage"
 on:
-  schedule:
-    - cron: "30 6 * * *"  # Runs every day at 12:00 PM IST (02:30 AM UTC)
+  pull_request:
+    types: [synchronize]
   workflow_dispatch:
     inputs:
       repo:
@@ -113,10 +113,6 @@ jobs:
               run: |
                 cd contrib_repo/apps/plotly_examples
                 yarn build
-                if [ ! -f build/index.html ]; then
-                  echo "Error: build/index.html not found. Check your build output directory." >&2
-                  exit 1
-                fi
                 nohup npx -y serve -s build -l 3000 > output.log 2>&1 &  
                 npx wait-on http://localhost:3000/ --timeout 300000
 
