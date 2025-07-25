@@ -64,8 +64,8 @@ jobs:
 
             - name: Build
               run: | 
-                cd ./apps/docsite
-                yarn run build-storybook 
+                      cd ./repo1/apps/docsite
+                      yarn run build-storybook 
 
             - name: Run yarn pack in chart-utilities to create .tgz file
               run: |
