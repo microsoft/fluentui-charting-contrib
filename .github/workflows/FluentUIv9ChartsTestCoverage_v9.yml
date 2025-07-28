@@ -62,10 +62,12 @@ jobs:
                 cd ./repo1
                 yarn
 
-            - name: Build
+            - name: Build and Run storybook
               run: | 
-                      cd ./repo1/apps/docsite
-                      yarn run build-storybook 
+                cd ./repo1/apps/chart-docsite
+                yarn run build-storybook 
+                nohup yarn run storybook > output.log 2>&1 &  
+                npx wait-on http://localhost:3000/ --timeout 300000
 
             - name: Run yarn pack in chart-utilities to create .tgz file
               run: |
@@ -107,14 +109,6 @@ jobs:
                 cd contrib_repo/apps/plotly_examples
                 yarn add ../../../repo1/packages/charts/react-charts/library/react-charts.tgz
                 yarn
-
-            - name: Start test app in background
-              shell: bash
-              run: |
-                cd contrib_repo/apps/plotly_examples
-                yarn build
-                nohup npx -y serve -s build -l 3000 > output.log 2>&1 &  
-                npx wait-on http://localhost:3000/ --timeout 300000
 
             - name: Run Playwright test script
               run: |
