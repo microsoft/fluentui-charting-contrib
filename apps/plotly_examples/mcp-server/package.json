@@ -1,0 +1,20 @@
+{
+  "name": "plotly-dataset-mcp",
+  "version": "1.0.0",
+  "description": "MCP server to automate Plotly dataset generations.",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.16.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.5.0"
+  }
+}
