@@ -86,7 +86,7 @@ for (const theme of themes) {
     for (const chart of charts) {
       async function loadChartPage(page: any, chart: { name: string; path: string }) {
         await page.goto(process.env.BASE_URL!);
-        await page.getByLabel('Shortcuts').click();
+        await page.getByTitle('Shortcuts').click();
         await page.locator('#list-item-T').click();
         await page.getByRole('button', { name: /Theme:/ }).click();
         await page.locator(`#list-item-${theme}`).click();
@@ -98,7 +98,7 @@ for (const theme of themes) {
           (mode === 'LTR' && directionText?.includes('RTL'))) {
           await directionButton.click();
         }
-        await page.getByLabel('Shortcuts').click();
+        await page.getByTitle('Shortcuts').click();
         await page.locator('#list-item-T').click();
         await page.getByRole('link', { name: chart.name, exact: true }).click();
         const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
