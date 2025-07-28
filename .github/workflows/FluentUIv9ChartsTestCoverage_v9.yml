@@ -66,7 +66,7 @@ jobs:
               run: | 
                 cd ./repo1/apps/chart-docsite
                 yarn run build-storybook 
-                nohup npx http-server dist/storybook --port 3000 > output.log 2>&1 &  
+                nohup yarn run storybook > output.log 2>&1 &  
                 npx wait-on http://localhost:3000/ --timeout 300000
 
             - name: Run yarn pack in chart-utilities to create .tgz file
