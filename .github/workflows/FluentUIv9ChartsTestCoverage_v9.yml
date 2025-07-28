@@ -117,6 +117,12 @@ jobs:
                 npx cross-env BASE_URL='http://localhost:3000/' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts || true
               continue-on-error: true
 
+            - name: Show log file output
+              shell: powershell
+              run: | 
+                cd ./repo1/apps/chart-docsite
+                Get-Content ./output.log
+
             - name: Zip Playwright report
               shell: pwsh 
               run: |
