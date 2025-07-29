@@ -63,11 +63,62 @@ jobs:
                 yarn
 
             - name: Build and Run storybook
+              shell: bash
               run: | 
-                cd ./repo1/apps/chart-docsite
-                yarn run build-storybook 
-                nohup yarn run storybook > output.log 2>&1 &  
-                npx wait-on http://localhost:6006/ --timeout 300000
+                cd ./repo1
+                
+                # Check if chart-docsite exists
+                if [ -d "./apps/chart-docsite" ]; then
+                  echo "📁 Found chart-docsite directory"
+                  cd ./apps/chart-docsite
+                  
+                  echo "🔧 Building Storybook..."
+                  yarn run build-storybook
+                  
+                  echo "🚀 Starting Storybook server..."
+                  nohup yarn run storybook > output.log 2>&1 &
+                  STORYBOOK_PID=$!
+                  echo "Storybook PID: $STORYBOOK_PID"
+                  
+                  echo "⏳ Waiting for Storybook to be ready..."
+                  npx wait-on http://localhost:6006 --timeout 600000 --interval 2000
+                  
+                else
+                  echo "❌ chart-docsite directory not found"
+                  echo "📋 Available directories in repo1:"
+                  find ./repo1 -type d -maxdepth 2 | head -20
+                  exit 1
+                fi
+
+            - name: Verify Storybook is accessible
+              shell: bash
+              run: |
+                echo "🔍 Verifying Storybook accessibility..."
+                
+                # Test connection multiple times
+                for i in {1..5}; do
+                  if curl -f -s http://localhost:6006 >/dev/null 2>&1; then
+                    echo "✅ Storybook is accessible (attempt $i)"
+                    curl -I http://localhost:6006
+                    break
+                  else
+                    echo "⚠️ Storybook not accessible (attempt $i), waiting 10 seconds..."
+                    sleep 10
+                  fi
+                  
+                  if [ $i -eq 5 ]; then
+                    echo "❌ Storybook failed to become accessible after 5 attempts"
+                    echo "📋 Checking what's running on port 6006:"
+                    netstat -tlnp | grep 6006 || true
+                    echo "📋 Checking all listening ports:"
+                    netstat -tlnp | grep LISTEN | head -10
+                    echo "📋 Storybook logs:"
+                    cat ./repo1/apps/chart-docsite/output.log || echo "No log file found"
+                    echo "📋 Process list:"
+                    ps aux | grep -E "(storybook|node)" | head -10
+                    exit 1
+                  fi
+                done
 
             - name: Run yarn pack in chart-utilities to create .tgz file
               run: |
@@ -113,15 +164,87 @@ jobs:
             - name: Run Playwright test script
               run: |
                 cd contrib_repo/apps/plotly_examples
+                echo "🎭 Installing Playwright browsers..."
                 npx playwright install
-                npx cross-env BASE_URL='http://localhost:6006' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts || true
+                
+                echo "🔍 Verifying BASE_URL accessibility before tests..."
+                curl -f http://localhost:6006 || {
+                  echo "❌ Cannot reach Storybook at http://localhost:6006"
+                  echo "📋 Available ports:"
+                  netstat -tlnp | grep LISTEN
+                  exit 1
+                }
+                
+                echo "🚀 Starting Playwright tests..."
+                npx cross-env BASE_URL='http://localhost:6006' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --reporter=json || true
+                
+                echo "📊 Test execution completed"
+                if [ -f "playwright-report.json" ]; then
+                  echo "✅ JSON report generated"
+                else
+                  echo "⚠️ No JSON report found"
+                fi
               continue-on-error: true
 
             - name: Zip Playwright report
               shell: pwsh 
               run: |
                 cd contrib_repo/apps/plotly_examples
-                Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip
+                if (Test-Path "playwright-report") {
+                  Write-Host "✅ Playwright report directory found, creating zip..."
+                  Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip
+                  Write-Host "✅ Playwright report zipped successfully"
+                } else {
+                  Write-Host "⚠️ No playwright-report directory found"
+                  Write-Host "📋 Available files and directories:"
+                  Get-ChildItem | Select-Object Name, Mode | Format-Table
+                }
+
+            - name: Generate Test Summary
+              id: test_summary
+              shell: pwsh
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                
+                $totalTests = 0
+                $passedTests = 0
+                $failedTests = 0
+                $coverage = 0
+                
+                if (Test-Path "playwright-report.json") {
+                  Write-Host "📊 Parsing test results..."
+                  $report = Get-Content "playwright-report.json" | ConvertFrom-Json
+                  
+                  # Count tests from the report structure
+                  foreach ($suite in $report.suites) {
+                    if ($suite.suites) {
+                      foreach ($subSuite in $suite.suites) {
+                        if ($subSuite.specs) {
+                          foreach ($spec in $subSuite.specs) {
+                            $totalTests += $spec.tests.Count
+                            foreach ($test in $spec.tests) {
+                              if ($test.status -eq "passed") { $passedTests++ }
+                              elseif ($test.status -eq "failed") { $failedTests++ }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  
+                  $coverage = if ($totalTests -gt 0) { [math]::Round(($passedTests / $totalTests) * 100, 2) } else { 0 }
+                  
+                  Write-Host "📈 Test Summary: $totalTests total, $passedTests passed, $failedTests failed ($coverage% success)"
+                } else {
+                  Write-Host "⚠️ No playwright-report.json found for analysis"
+                }
+                
+                # Generate summary for GitHub
+                echo "### 📊 Test Execution Results" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Total Tests**: $totalTests" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Passed**: $passedTests" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Failed**: $failedTests" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Success Rate**: $coverage%" >> $env:GITHUB_STEP_SUMMARY
 
             - name: Compute number of total tests and failures
               uses: ./contrib_repo/.github/actions/playwright_metrics
@@ -140,6 +263,13 @@ jobs:
               with: 
                 name: playwright-json-report
                 path: contrib_repo/apps/plotly_examples/playwright-report.json
+
+            - name: Upload Storybook logs for debugging
+              if: always()
+              uses: actions/upload-artifact@v4
+              with: 
+                name: storybook-logs
+                path: repo1/apps/chart-docsite/output.log
 
             - name: Move Playwright JSON report to reports folder for scheduled runs
               if: github.event_name == 'schedule'
