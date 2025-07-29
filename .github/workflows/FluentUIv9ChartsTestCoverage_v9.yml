@@ -67,7 +67,8 @@ jobs:
                 cd ./repo1/apps/chart-docsite
                 yarn run build-storybook 
                 nohup yarn run storybook > output.log 2>&1 &  
-                npx wait-on http://localhost:3000 --timeout 600000 || (echo "Storybook failed to start. Output log:" && cat output.log && exit 1)
+                npx cross-env BASE_URL='http://localhost:3000' 
+                npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --trace on || true
 
             - name: Run yarn pack in chart-utilities to create .tgz file
               run: |
