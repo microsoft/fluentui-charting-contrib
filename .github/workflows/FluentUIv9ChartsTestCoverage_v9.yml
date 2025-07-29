@@ -67,8 +67,7 @@ jobs:
                 cd ./repo1/apps/chart-docsite
                 yarn run build-storybook 
                 nohup yarn run storybook > output.log 2>&1 &  
-                npx cross-env BASE_URL='http://localhost:3000' 
-                npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --trace on || true
+                npx wait-on http://localhost:6006/ --timeout 300000
 
             - name: Run yarn pack in chart-utilities to create .tgz file
               run: |
@@ -115,7 +114,7 @@ jobs:
               run: |
                 cd contrib_repo/apps/plotly_examples
                 npx playwright install
-                npx cross-env BASE_URL='http://localhost:3000' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts || true
+                npx cross-env BASE_URL='http://localhost:6006' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts || true
               continue-on-error: true
 
             - name: Zip Playwright report
