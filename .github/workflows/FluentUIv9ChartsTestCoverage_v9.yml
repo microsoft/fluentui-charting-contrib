@@ -25,8 +25,10 @@ jobs:
             os: [windows-latest]
         runs-on: ${{ matrix.os }}
         outputs:
-            test_coverage: ${{ steps.run_tests.outputs }}
-            windows_artifact_name: ${{ steps.windows.outputs.COVERAGE_FILENAME_WINDOWS }}
+            test_coverage: ${{ steps.test_summary.outputs.coverage_percentage }}
+            total_tests: ${{ steps.test_summary.outputs.total_tests }}
+            passed_tests: ${{ steps.test_summary.outputs.passed_tests }}
+            failed_tests: ${{ steps.test_summary.outputs.failed_tests }}
 
         steps:
             - name: Enable Git long paths
@@ -42,9 +44,11 @@ jobs:
             - name: Display Input Repo and Branch in Summary
               shell: pwsh
               run: |
-                echo "### Workflow Inputs" >> $env:GITHUB_STEP_SUMMARY
-                echo "- **Repository**: ${{ github.event.inputs.repo }}" >> $env:GITHUB_STEP_SUMMARY
-                echo "- **Branch**: ${{ github.event.inputs.branch }}" >> $env:GITHUB_STEP_SUMMARY
+                echo "### 🚀 Workflow Inputs" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Repository**: ${{ github.event.inputs.repo || 'microsoft/fluentui' }}" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Branch**: ${{ github.event.inputs.branch || 'master' }}" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Workflow Run ID**: ${{ github.run_id }}" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Triggered by**: ${{ github.event_name }}" >> $env:GITHUB_STEP_SUMMARY
 
             - name: Show current directory
               run: echo "$PWD" && ls
@@ -67,31 +71,45 @@ jobs:
                 cd ./repo1/apps/chart-docsite
                 yarn run build-storybook 
                 nohup yarn run storybook > output.log 2>&1 &  
-                npx wait-on http://localhost:3000 --timeout 600000
+                npx wait-on http://localhost:6006 --timeout 600000
+              shell: bash
+
+            - name: Verify Storybook is running
+              shell: bash
+              run: |
+                echo "🔍 Checking if Storybook is accessible..."
+                curl -f http://localhost:6006 || echo "⚠️ Storybook might not be fully ready"
+                echo "📊 Storybook status checked"
 
             - name: Run yarn pack in chart-utilities to create .tgz file
               run: |
                 cd ./repo1/packages/charts/chart-utilities
                 yarn pack --filename chart-utilities.tgz
+                echo "✅ chart-utilities.tgz created: $(ls -la chart-utilities.tgz)"
               id: pack-util
+              shell: bash
 
             - name: Run yarn pack in react-charts to create .tgz file
               run: |
                 cd ./repo1/packages/charts/react-charts/library
                 yarn pack --filename react-charts.tgz
+                echo "✅ react-charts.tgz created: $(ls -la react-charts.tgz)"
               id: pack-chart-v9
+              shell: bash
 
             - name: Upload chart-utilities.tgz as artifact
               uses: actions/upload-artifact@v4
               with:
-                name: chart-utilities-tgz
+                name: chart-utilities-tgz-${{ github.run_id }}
                 path: ./repo1/packages/charts/chart-utilities/chart-utilities.tgz
+                retention-days: 30
 
             - name: Upload react-charts.tgz as artifact
               uses: actions/upload-artifact@v4
               with:
-                name: react-charts-tgz
+                name: react-charts-tgz-${{ github.run_id }}
                 path: ./repo1/packages/charts/react-charts/library/react-charts.tgz
+                retention-days: 30
 
             - name: Checkout [main] of current repo
               uses: actions/checkout@v4
@@ -103,51 +121,169 @@ jobs:
                 cd contrib_repo/apps/plotly_examples
                 npx json -I -f package.json -e "this.resolutions = this.resolutions || {}; this.resolutions['@fluentui/chart-utilities'] = 'file:../../../repo1/packages/charts/chart-utilities/chart-utilities.tgz';"
 
-
             - name: Install .tgz file in Plotly examples
               run: |
                 cd contrib_repo/apps/plotly_examples
                 yarn add ../../../repo1/packages/charts/react-charts/library/react-charts.tgz
                 yarn
 
-            - name: Run Playwright test script
+            - name: Run Playwright test script with enhanced reporting
               run: |
                 cd contrib_repo/apps/plotly_examples
                 npx playwright install
-                npx cross-env BASE_URL='http://localhost:3000' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts || true
+                echo "🎭 Starting Playwright tests..."
+                npx cross-env BASE_URL='http://localhost:6006' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --reporter=html,json,junit --output-dir=test-results || true
               continue-on-error: true
 
-            - name: Zip Playwright report
-              shell: pwsh 
+            - name: Generate Test Summary
+              id: test_summary
+              shell: pwsh
               run: |
                 cd contrib_repo/apps/plotly_examples
-                Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip
+                
+                # Initialize variables
+                $totalTests = 0
+                $passedTests = 0
+                $failedTests = 0
+                $coverage = 0
+                
+                # Parse Playwright JSON report if it exists
+                if (Test-Path "test-results/results.json") {
+                  $report = Get-Content "test-results/results.json" | ConvertFrom-Json
+                  
+                  if ($report.suites) {
+                    $totalTests = ($report.suites | ForEach-Object { 
+                      if ($_.suites) { 
+                        $_.suites | ForEach-Object { 
+                          if ($_.specs) { 
+                            $_.specs | ForEach-Object { $_.tests.Count } 
+                          } 
+                        } 
+                      } 
+                    } | Measure-Object -Sum).Sum
+                    
+                    $passedTests = ($report.suites | ForEach-Object { 
+                      if ($_.suites) { 
+                        $_.suites | ForEach-Object { 
+                          if ($_.specs) { 
+                            $_.specs | ForEach-Object { 
+                              $_.tests | Where-Object { $_.status -eq "passed" } 
+                            } 
+                          } 
+                        } 
+                      } 
+                    } | Measure-Object).Count
+                    
+                    $failedTests = $totalTests - $passedTests
+                    $coverage = if ($totalTests -gt 0) { [math]::Round(($passedTests / $totalTests) * 100, 2) } else { 0 }
+                  }
+                }
+                
+                # Output to GitHub Actions
+                echo "total_tests=$totalTests" >> $env:GITHUB_OUTPUT
+                echo "passed_tests=$passedTests" >> $env:GITHUB_OUTPUT
+                echo "failed_tests=$failedTests" >> $env:GITHUB_OUTPUT
+                echo "coverage_percentage=$coverage" >> $env:GITHUB_OUTPUT
+                
+                # Generate summary
+                echo "### 📊 Test Results Summary" >> $env:GITHUB_STEP_SUMMARY
+                echo "| Metric | Value |" >> $env:GITHUB_STEP_SUMMARY
+                echo "|--------|-------|" >> $env:GITHUB_STEP_SUMMARY
+                echo "| 🎯 Total Tests | $totalTests |" >> $env:GITHUB_STEP_SUMMARY
+                echo "| ✅ Passed Tests | $passedTests |" >> $env:GITHUB_STEP_SUMMARY
+                echo "| ❌ Failed Tests | $failedTests |" >> $env:GITHUB_STEP_SUMMARY
+                echo "| 📈 Success Rate | $coverage% |" >> $env:GITHUB_STEP_SUMMARY
+                echo "" >> $env:GITHUB_STEP_SUMMARY
+                
+                if ($failedTests -gt 0) {
+                  echo "⚠️ **Warning**: $failedTests test(s) failed. Please check the detailed report below." >> $env:GITHUB_STEP_SUMMARY
+                } else {
+                  echo "🎉 **Success**: All tests passed!" >> $env:GITHUB_STEP_SUMMARY
+                }
+
+            - name: Upload Playwright HTML Report
+              if: always()
+              uses: actions/upload-artifact@v4
+              with: 
+                name: playwright-html-report-${{ github.run_id }}
+                path: contrib_repo/apps/plotly_examples/test-results/
+                retention-days: 30
+
+            - name: Upload Playwright JSON Report
+              if: always()
+              uses: actions/upload-artifact@v4
+              with: 
+                name: playwright-json-report-${{ github.run_id }}
+                path: contrib_repo/apps/plotly_examples/test-results/results.json
+                retention-days: 30
+
+            - name: Upload JUnit Test Results
+              if: always()
+              uses: actions/upload-artifact@v4
+              with: 
+                name: junit-results-${{ github.run_id }}
+                path: contrib_repo/apps/plotly_examples/test-results/results.xml
+                retention-days: 30
+
+            - name: Upload Test Screenshots
+              if: always()
+              uses: actions/upload-artifact@v4
+              with: 
+                name: test-screenshots-${{ github.run_id }}
+                path: contrib_repo/apps/plotly_examples/tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots/
+                retention-days: 30
+
+            - name: Upload Storybook Logs
+              if: always()
+              uses: actions/upload-artifact@v4
+              with: 
+                name: storybook-logs-${{ github.run_id }}
+                path: repo1/apps/chart-docsite/output.log
+                retention-days: 7
+
+            - name: Publish Test Results
+              uses: dorny/test-reporter@v1
+              if: always()
+              with:
+                name: 'Playwright Test Results'
+                path: 'contrib_repo/apps/plotly_examples/test-results/results.xml'
+                reporter: 'java-junit'
+                fail-on-error: false
 
             - name: Compute number of total tests and failures
               uses: ./contrib_repo/.github/actions/playwright_metrics
               with:
-                current_report: contrib_repo/apps/plotly_examples/playwright-report.json
+                current_report: contrib_repo/apps/plotly_examples/test-results/results.json
                 baseline_report: contrib_repo/apps/plotly_examples/reports/playwright-report-v9Storybook.json        
 
-            - name: Upload Playwright HTML report as artifact
-              uses: actions/upload-artifact@v4
-              with: 
-                name: playwright-html-report
-                path: contrib_repo/apps/plotly_examples/playwright-report/
+            - name: Archive All Test Artifacts
+              if: always()
+              shell: pwsh
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                $timestamp = Get-Date -Format "yyyy-MM-dd-HHmmss"
+                $archiveName = "test-artifacts-${{ github.run_id }}-$timestamp"
+                
+                # Create comprehensive archive
+                if (Test-Path "test-results") {
+                  Compress-Archive -Path test-results -DestinationPath "$archiveName-results.zip"
+                }
+                if (Test-Path "tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots") {
+                  Compress-Archive -Path "tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots" -DestinationPath "$archiveName-snapshots.zip"
+                }
 
-            - name: Upload Playwright JSON report as artifact
-              uses: actions/upload-artifact@v4
-              with: 
-                name: playwright-json-report
-                path: contrib_repo/apps/plotly_examples/playwright-report.json
-
-            - name: Move Playwright JSON report to reports folder for scheduled runs
+            - name: Move reports to reports folder for scheduled runs
               if: github.event_name == 'schedule'
               shell: bash
               run: |
                 cd contrib_repo/apps/plotly_examples
-                mv playwright-report.json reports/playwright-report-v9Storybook.json
-                git add reports/playwright-report-v9Storybook.json
+                if [ -f "test-results/results.json" ]; then
+                  cp test-results/results.json reports/playwright-report-v9Storybook.json
+                  git add reports/playwright-report-v9Storybook.json
+                  echo "✅ Report moved to reports folder"
+                else
+                  echo "⚠️ No test results found to move"
+                fi
 
             - name: Create branch name for scheduled report
               if: github.event_name == 'schedule'
@@ -163,14 +299,56 @@ jobs:
               with:
                 branch: ${{ steps.branch.outputs.branch }}
                 create_branch: true
-                commit_message: "chore: (auto) Update v9 playwright report"
+                commit_message: "chore: (auto) Update v9 playwright report - ${{ steps.test_summary.outputs.total_tests }} tests, ${{ steps.test_summary.outputs.coverage_percentage }}% passed"
                 file_pattern: apps/plotly_examples/reports/playwright-report-v9Storybook.json
                 commit_user_name: github-actions[bot]
                 commit_user_email: github-actions[bot]@users.noreply.github.com
                 repository: contrib_repo
 
-            - name: "Publish Notification for scheduled report commit"
-              if: github.event_name == 'schedule' && steps.auto-commit-action.outputs.changes_detected == 'true'
+            - name: Comment Test Results on PR
+              if: github.event_name == 'pull_request'
+              uses: actions/github-script@v7
+              with:
+                script: |
+                  const totalTests = '${{ steps.test_summary.outputs.total_tests }}';
+                  const passedTests = '${{ steps.test_summary.outputs.passed_tests }}';
+                  const failedTests = '${{ steps.test_summary.outputs.failed_tests }}';
+                  const coverage = '${{ steps.test_summary.outputs.coverage_percentage }}';
+                  
+                  const comment = `## 🎭 Playwright Test Results
+                  
+                  | Metric | Value | Status |
+                  |--------|-------|--------|
+                  | 🎯 Total Tests | ${totalTests} | - |
+                  | ✅ Passed | ${passedTests} | ${passedTests > 0 ? '✅' : '⚠️'} |
+                  | ❌ Failed | ${failedTests} | ${failedTests === '0' ? '✅' : '❌'} |
+                  | 📈 Success Rate | ${coverage}% | ${coverage >= 90 ? '🎉' : coverage >= 70 ? '⚠️' : '❌'} |
+                  
+                  ### 📁 Test Artifacts
+                  - [📊 HTML Report](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+                  - [🔍 Screenshots](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+                  - [📋 JSON Results](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+                  
+                  ${failedTests > 0 ? '⚠️ **Some tests failed.** Please review the detailed report.' : '🎉 **All tests passed!**'}
+                  `;
+                  
+                  github.rest.issues.createComment({
+                    issue_number: context.issue.number,
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    body: comment
+                  });
+
+            - name: "Publish Final Notification"
+              if: always()
               shell: bash
               run: |
-                echo "v9 Playwright report committed. [Create a pull request](https://github.com/${{ github.repository }}/pull/new/${{ steps.branch.outputs.branch }})" >> $GITHUB_STEP_SUMMARY
+                echo "" >> $GITHUB_STEP_SUMMARY
+                echo "### 📦 Available Artifacts" >> $GITHUB_STEP_SUMMARY
+                echo "- 🎭 [Playwright HTML Report](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
+                echo "- 📸 [Test Screenshots](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
+                echo "- 📊 [JSON Test Results](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
+                echo "- 📋 [JUnit Results](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
+                echo "- 📦 [Package Archives](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
+                echo "" >> $GITHUB_STEP_SUMMARY
+                echo "**Workflow completed at**: $(date)" >> $GITHUB_STEP_SUMMARY
