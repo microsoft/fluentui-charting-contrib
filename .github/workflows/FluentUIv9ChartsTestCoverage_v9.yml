@@ -124,13 +124,13 @@ jobs:
               run: |
                 cd ./repo1/apps/chart-docsite
                 nohup npm run storybook > output.log 2>&1 &
-                npx wait-on http://localhost:3000/?path=/docs/introduction--docs --timeout 300000 > output1.log
+                npx wait-on http://localhost:3000/  --timeout 300000 > output1.log
 
             - name: Run Playwright test script
               run: |
                 cd contrib_repo/apps/plotly_examples
                 npx playwright install
-                npx cross-env BASE_URL='http://localhost:3000/?path=/docs/introduction--docs' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --trace on || true
+                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --trace on || true
               continue-on-error: true
 
             - name: Zip Playwright report
