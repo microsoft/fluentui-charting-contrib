@@ -75,7 +75,7 @@ jobs:
 
             - name: Run Playwright test script
               run: |
-                cd ./repo1/apps/plotly_examples
+                cd ./contrib_repo/apps/plotly_examples
                 npx playwright install
                 npx cross-env BASE_URL='http://localhost:3000/?path=/docs/introduction--docs' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --trace on || true
               continue-on-error: true
