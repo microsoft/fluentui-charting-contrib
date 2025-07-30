@@ -62,6 +62,17 @@ jobs:
                 cd ./repo1
                 yarn
 
+            - name: Build storybook
+              run: | 
+                cd ./repo1/apps/chart-docsite
+                yarn run build-storybook 
+
+            - name: Run storybook in background and wait until ready
+              run: |
+                cd ./repo1/apps/chart-docsite
+                nohup npm run storybook > output.log 2>&1 &
+                npx wait-on http://localhost:3000/?path=/docs/introduction--docs --timeout 300000 > output1.log
+
             - name: Run yarn pack in chart-utilities to create .tgz file
               run: |
                 cd ./repo1/packages/charts/chart-utilities
@@ -115,22 +126,11 @@ jobs:
                 yarn add ../../../repo1/packages/charts/react-charts/library/react-charts.tgz
                 yarn
 
-            - name: Build storybook
-              run: | 
-                cd ./repo1/apps/chart-docsite
-                yarn run build-storybook 
-
-            - name: Run storybook in background and wait until ready
-              run: |
-                cd ./repo1/apps/chart-docsite
-                nohup npm run storybook > output.log 2>&1 &
-                npx wait-on http://localhost:3000/  --timeout 300000 
-
             - name: Run Playwright test script
               run: |
                 cd contrib_repo/apps/plotly_examples
                 npx playwright install
-                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --trace on || true > output1.log
+                npx cross-env BASE_URL='http://localhost:3000/?path=/docs/introduction--docs' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --trace on || true
               continue-on-error: true
 
             - name: Zip Playwright report
