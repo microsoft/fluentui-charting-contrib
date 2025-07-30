@@ -126,6 +126,9 @@ jobs:
                 yarn add ../../../repo1/packages/charts/react-charts/library/react-charts.tgz
                 yarn
 
+            - name: Wait for Storybook to be ready
+              run: npx wait-on http://localhost:3000/?path=/docs/introduction--docs --timeout 300000
+
             - name: Run Playwright test script
               run: |
                 cd contrib_repo/apps/plotly_examples
