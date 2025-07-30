@@ -85,6 +85,13 @@ for (const theme of themes) {
   for (const mode of modes) {
     for (const chart of charts) {
       async function loadChartPage(page: any, chart: { name: string; path: string }) {
+        const iframe = page.locator('#webpack-dev-server-client-overlay');
+        if (await iframe.count() > 0) {
+          await iframe.evaluate((el) => el.remove()).catch(() => {
+            console.warn("Failed to remove overlay iframe.");
+          });
+        }
+
         const url = `${process.env.BASE_URL!}`;
         await page.goto(url);
         await page.getByLabel('Shortcuts').click();
