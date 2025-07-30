@@ -97,6 +97,12 @@ jobs:
                 name: react-charts-tgz
                 path: ./repo1/packages/charts/react-charts/library/react-charts.tgz
 
+            - name: Upload FluentUI JSON report as artifact
+              uses: actions/upload-artifact@v4
+              with: 
+                name: FluentUI-json-report
+                path: ./repo1/apps/chart-docsite/output.log
+
             - name: Checkout [main] of current repo
               uses: actions/checkout@v4
               with:
