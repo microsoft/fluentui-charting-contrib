@@ -71,7 +71,7 @@ jobs:
               run: |
                 cd ./repo1/apps/chart-docsite
                 nohup npm run storybook > output.log 2>&1 &
-                npx wait-on http://localhost:3000/?path=/docs/introduction--docs --timeout 300000
+                npx wait-on http://localhost:3000/?path=/docs/introduction--docs --timeout 300000 > output1.log
 
             - name: Run yarn pack in chart-utilities to create .tgz file
               run: |
@@ -102,6 +102,12 @@ jobs:
               with: 
                 name: FluentUI-json-report
                 path: ./repo1/apps/chart-docsite/output.log
+
+            - name: Upload FluentUI URl JSON report as artifact
+              uses: actions/upload-artifact@v4
+              with: 
+                name: FluentUI-url-json-report
+                path: ./repo1/apps/chart-docsite/output1.log
 
             - name: Checkout [main] of current repo
               uses: actions/checkout@v4
