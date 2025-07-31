@@ -70,7 +70,7 @@ async function interactWithLegends(frame: any, imgId: string, screenshotName: st
   const count = await legendItems.count();
   if (count > 0) {
     await legendItems.first().click(); // Click the first item to ensure the legend is visible
-
+    
     const label = await legendItems.first().getAttribute('aria-label');
     const labelText = label.split('(')[0].trim();
     const path = `apps/plotly_examples/tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots/${screenshotName}-${labelText.toLowerCase()} legend-click.png`;
@@ -80,32 +80,13 @@ async function interactWithLegends(frame: any, imgId: string, screenshotName: st
 
 const themes = ['web-light', 'web-dark'];
 const modes = ["LTR", "RTL"];
-let page;
-let context;
-
-test.beforeAll(async ({ browser }) => {
-  context = await browser.newContext();
-  page = await context.newPage();
-  await page.goto(process.env.BASE_URL!);
-});
-
-test.afterAll(async () => {
-  await context?.close();
-});
 
 for (const theme of themes) {
   for (const mode of modes) {
     for (const chart of charts) {
       async function loadChartPage(page: any, chart: { name: string; path: string }) {
-        const iframe = page.locator('#webpack-dev-server-client-overlay');
-        if (await iframe.count() > 0) {
-          await iframe.evaluate((el) => el.remove()).catch(() => {
-            console.warn("Failed to remove overlay iframe.");
-          });
-        }
-
-        // const url = `${process.env.BASE_URL!}`;
-        // await page.goto(url);
+        const url = `${process.env.BASE_URL!}`;
+        await page.goto(url);
         await page.getByLabel('Shortcuts').click();
         await page.locator('#list-item-T').click();
         await page.getByRole('button', { name: /Theme:/ }).click();
