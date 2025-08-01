@@ -17,6 +17,9 @@ const charts = [
   { name: 'Sparkline', path: 'charts-Sparkline--docs', selector: '#story--charts-sparkline--sparkline-basic--primary-inner' },
   { name: 'VerticalBarChart', path: 'charts-VerticalBarChart--docs', selector: '#story--charts-verticalbarchart--vertical-bar-default--primary-inner' },
   { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner' },
+  { name: 'FunnelChart', path: 'charts-funnelchart--docs', selector: '#story--charts-funnelchart--funnel-chart-basic--primary-inner' },
+  { name: 'GanttChart', path: 'charts-ganttchart--docs', selector: '#story--charts-ganttchart--gantt-chart-basic--primary-inner' }
+
 ];
 
 
@@ -85,7 +88,7 @@ for (const theme of themes) {
   for (const mode of modes) {
     for (const chart of charts) {
       async function loadChartPage(page: any, chart: { name: string; path: string }) {
-        const url = `${process.env.BASE_URL!}`;
+        const url = `http://localhost:3001/?path=/docs/`;
         await page.goto(url);
         await page.getByLabel('Shortcuts').click();
         await page.locator('#list-item-T').click();
