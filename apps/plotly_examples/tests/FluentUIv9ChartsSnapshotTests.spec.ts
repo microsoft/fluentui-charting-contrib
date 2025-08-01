@@ -17,6 +17,8 @@ const charts = [
   { name: 'Sparkline', path: 'charts-Sparkline--docs', selector: '#story--charts-sparkline--sparkline-basic--primary-inner' },
   { name: 'VerticalBarChart', path: 'charts-VerticalBarChart--docs', selector: '#story--charts-verticalbarchart--vertical-bar-default--primary-inner' },
   { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner' },
+  { name: 'FunnelChart', path: 'charts-FunnelChart--docs', selector: '#story--charts-funnelchart--funnel-chart-basic--primary-inner' },
+  { name: 'GanttChart', path: 'charts-GanttChart--docs', selector: '#story--charts-ganttchart--gantt-chart-basic--primary-inner' }
 ];
 
 
