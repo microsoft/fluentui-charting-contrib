@@ -59,14 +59,14 @@ type DataType =
   | 'advanced_scenarios';
 
 const dataTypeRanges = {
-  'general': [{ min: 1, max: 252 }, {min: 750, max: 758 }, {min: 840, max: 846 }, {min: 848, max: 853}, {min: 855, max: 856}, {min: 871, max: 871}, {min: 893, max: 922}],
-  'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }, { min: 759, max: 759 }, {min: 767, max: 767}],
+  'general': [{ min: 1, max: 252 }, { min: 750, max: 758 }, { min: 840, max: 846 }, { min: 848, max: 853 }, { min: 855, max: 856 }, { min: 871, max: 871 }, { min: 893, max: 922 }],
+  'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }, { min: 759, max: 759 }, { min: 767, max: 767 }],
   'localization': [{ min: 278, max: 302 }],
   'seval': [{ min: 333, max: 376 }],
-  'plotly_express_basic': [{ min: 377, max: 427 }, {min: 760, max: 766}],
+  'plotly_express_basic': [{ min: 377, max: 427 }, { min: 760, max: 766 }],
   'plotly_express_detailed': [{ min: 428, max: 569 }],
   'plotly_express_colors': [{ min: 570, max: 749 }, { min: 768, max: 787 }],
-  'advanced_scenarios': [{min: 788, max: 839}, {min: 847, max: 847}, {min: 854, max: 854}, {min: 857, max: 870}, {min: 872, max: 892}]
+  'advanced_scenarios': [{ min: 788, max: 839 }, { min: 847, max: 847 }, { min: 854, max: 854 }, { min: 857, max: 870 }, { min: 872, max: 892 }, { min: 923, max: 927 }]
 };
 
 // Use require.context to load all JSON files from the split_data folder
@@ -219,20 +219,20 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
       setSelectedLegendsState('');
     }
   }
-  
+
   const handleJsonInputSwitchChange = (ev: React.ChangeEvent<HTMLInputElement>) => {
     const checked = ev.currentTarget.checked;
     toggleJsonInput(checked);
-    if(checked) {
+    if (checked) {
       setSelectedChoice('input_json');
-      handleJsonInputChange(null, {value: jsonInputValue});
+      handleJsonInputChange(null, { value: jsonInputValue });
     } else {
       const paddedSchemaId = getSelection(SCHEMA_KEY, SCHEMA_KEY_DEFAULT);
-      _onChange(null, {optionText: `data_${paddedSchemaId}.json`, optionValue: (+paddedSchemaId).toString()} as OptionOnSelectData);
+      _onChange(null, { optionText: `data_${paddedSchemaId}.json`, optionValue: (+paddedSchemaId).toString() } as OptionOnSelectData);
     }
   }
 
-  const handleJsonInputChange = (ev:React.ChangeEvent<HTMLTextAreaElement> | null, data:TextareaOnChangeData) => {
+  const handleJsonInputChange = (ev: React.ChangeEvent<HTMLTextAreaElement> | null, data: TextareaOnChangeData) => {
     setJsonInputValue(data.value);
     try {
       const schema = JSON.parse(data.value);
@@ -380,7 +380,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
                 componentRef={declarativeChartRef}
               />
             ) : (
-              <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px'}}>{ `${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
+              <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>{`${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
             )}
           </ErrorBoundary>
         </div>
@@ -419,7 +419,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
                 componentRef={declarativeChartV9Ref}
               />
             ) : (
-              <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px'}}>{ `${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
+              <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>{`${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
             )}
           </ErrorBoundary>
         </div>
