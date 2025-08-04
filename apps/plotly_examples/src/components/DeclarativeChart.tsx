@@ -323,6 +323,11 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
                 <Option value="Funnel">Funnel</Option>
                 <Option value="ScatterPolar">ScatterPolar</Option>
                 <Option value="Gantt">Gantt</Option>
+                <Option value="Line - Log">Line - Log</Option>
+                <Option value="Scatter - Log">Scatter - Log</Option>
+                <Option value="HorizontalBarWithAxis - Log">HorizontalBarWithAxis - Log</Option>
+                <Option value="VerticalBar - Log">VerticalBar - Log</Option>
+                <Option value="Histogram - Log">Histogram - Log</Option>
                 <Option value="Others">Others</Option>
               </Dropdown>
               &nbsp;&nbsp;&nbsp;
