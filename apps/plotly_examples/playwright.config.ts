@@ -86,8 +86,8 @@ export default defineConfig({
   // },
   webServer: {
     command: 'yarn run storybook',
-    url: 'http://localhost:3000', // Change to your Storybook URL/port
-    cwd: 'repo1/apps/chart-docsite',        // <-- The directory to run command in
+    url: 'http://localhost:3000',
+    cwd: '../../repo1/apps/chart-docsite', // Correct relative path from plotly_examples
     timeout: 120 * 1000,
     reuseExistingServer: !process.env.CI,
   }

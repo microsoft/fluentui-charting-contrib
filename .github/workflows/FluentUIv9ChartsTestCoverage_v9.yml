@@ -62,8 +62,8 @@ jobs:
                 cd ./repo1
                 yarn
 
-            - name: Build storybook
-              shell: cmd
+
+            - name: Build storybook static assets
               run: |
                 cd ./repo1/apps/chart-docsite
                 yarn run build-storybook
@@ -110,11 +110,12 @@ jobs:
                 yarn
 
 
-            - name: Run Playwright test script (with video capture)
+
+            - name: Run Playwright test script (with webServer)
               run: |
                 cd contrib_repo/apps/plotly_examples
                 npx playwright install
-                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts || true
+                npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts || true
               continue-on-error: true
 
             - name: Upload Playwright test videos as artifact
