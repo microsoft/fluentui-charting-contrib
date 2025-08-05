@@ -62,18 +62,17 @@ jobs:
                 cd ./repo1
                 yarn
 
+
+            - name: Ensure wait-on is installed in chart-docsite
+              run: |
+                cd ./repo1/apps/chart-docsite
+                yarn add --dev wait-on@8.0.4
+
             - name: Build storybook
               shell: cmd
               run: |
                 cd ./repo1/apps/chart-docsite
                 yarn run build-storybook
-
-            - name: Run storybook
-              shell: cmd
-              run: |
-                cd ./repo1/apps/chart-docsite
-                start /b yarn run storybook > output.log 2>&1
-                npx wait-on http://localhost:3000/ --timeout 300000
 
             - name: Run yarn pack in chart-utilities to create .tgz file
               run: |
