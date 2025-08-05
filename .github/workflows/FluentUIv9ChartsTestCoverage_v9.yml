@@ -63,10 +63,11 @@ jobs:
                 yarn
 
             - name: Build and Run storybook
-              run: | 
+              shell: cmd
+              run: |
                 cd ./repo1/apps/chart-docsite
-                yarn run build-storybook 
-                nohup yarn run storybook > output.log 2>&1 &  
+                yarn run build-storybook
+                start /b yarn run storybook > output.log 2>&1
                 npx wait-on http://localhost:3000/ --timeout 300000
 
             - name: Run yarn pack in chart-utilities to create .tgz file
