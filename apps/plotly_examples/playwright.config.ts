@@ -85,9 +85,9 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
   webServer: {
-    command: 'yarn run storybook',
+    command: 'pwsh -Command "yarn run storybook"',
     url: 'http://localhost:3000',
-    cwd: '../../repo1/apps/chart-docsite', // Correct relative path from plotly_examples
+    cwd: '../../repo1/apps/chart-docsite',
     timeout: 120 * 1000,
     reuseExistingServer: !process.env.CI,
   }
