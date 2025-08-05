@@ -85,7 +85,7 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
   webServer: {
-    command: 'pwsh -Command "yarn run storybook"',
+    command: 'npx yarn run storybook',
     url: 'http://localhost:3000',
     cwd: '../../repo1/apps/chart-docsite',
     timeout: 120 * 1000,
