@@ -62,12 +62,6 @@ jobs:
                 cd ./repo1
                 yarn
 
-
-            - name: Ensure wait-on is installed in chart-docsite
-              run: |
-                cd ./repo1/apps/chart-docsite
-                yarn add --dev wait-on@8.0.4
-
             - name: Build storybook
               shell: cmd
               run: |
