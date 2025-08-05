@@ -87,7 +87,7 @@ for (const theme of themes) {
   for (const mode of modes) {
     for (const chart of charts) {
       async function loadChartPage(page: any, chart: { name: string; path: string }) {
-        const url = `${process.env.BASE_URL!}/?path=/docs/`;
+        const url = `${process.env.BASE_URL!}?path=/docs/`;
         await page.goto(url);
         await page.getByLabel('Shortcuts').click();
         await page.locator('#list-item-T').click();

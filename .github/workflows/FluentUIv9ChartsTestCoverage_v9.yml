@@ -180,3 +180,9 @@ jobs:
               shell: bash
               run: |
                 echo "v9 Playwright report committed. [Create a pull request](https://github.com/${{ github.repository }}/pull/new/${{ steps.branch.outputs.branch }})" >> $GITHUB_STEP_SUMMARY
+
+            - name: Upload storybook output.log as artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: storybook-output-log
+                path: ./repo1/apps/chart-docsite/output.log
