@@ -33,7 +33,11 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     timezoneId: 'GMT',
-    trace: 'off',
+    trace: 'on',
+    video: {
+      mode: 'on', // or 'retain-on-failure', 'on-first-retry'
+      size: { width: 1280, height: 720 } // Optional: specify video resolution
+    },
   },
   timeout: 30000,
   /* Configure projects for major browsers */

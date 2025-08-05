@@ -121,7 +121,7 @@ jobs:
               run: |
                 cd contrib_repo/apps/plotly_examples
                 npx playwright install
-                npx cross-env BASE_URL='http://localhost:3000/' PLAYWRIGHT_VIDEO=on npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts || true
+                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts || true
               continue-on-error: true
 
             - name: Upload Playwright test videos as artifact
