@@ -116,12 +116,19 @@ jobs:
                 yarn add ../../../repo1/packages/charts/react-charts/library/react-charts.tgz
                 yarn
 
-            - name: Run Playwright test script
+
+            - name: Run Playwright test script (with video capture)
               run: |
                 cd contrib_repo/apps/plotly_examples
                 npx playwright install
-                npx cross-env BASE_URL='http://localhost:3000/' npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts || true
+                npx cross-env BASE_URL='http://localhost:3000/' PLAYWRIGHT_VIDEO=on npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts || true
               continue-on-error: true
+
+            - name: Upload Playwright test videos as artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: playwright-videos
+                path: contrib_repo/apps/plotly_examples/test-results/**/video/
 
             - name: Zip Playwright report
               shell: pwsh 
