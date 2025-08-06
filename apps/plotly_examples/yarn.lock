@@ -1269,6 +1269,14 @@
     "@fluentui/set-version" "^8.2.24"
     tslib "^2.1.0"
 
+"@fluentui/chart-utilities@^1.1.27":
+  version "1.1.27"
+  resolved "https://registry.yarnpkg.com/@fluentui/chart-utilities/-/chart-utilities-1.1.27.tgz#2fa51ddb136c0ea49e140d55cf66c83d59560855"
+  integrity sha512-BCQdTzPuzivBYLFa1MPHd1iYXKzCQjP7sx5Bh99ICgooToXIwnDUoHX6pWU8IqVWWFh8smkUD5fK9o8CCti/YA==
+  dependencies:
+    "@fluentui/set-version" "^8.2.24"
+    tslib "^2.1.0"
+
 "@fluentui/date-time-utilities@^8.6.10":
   version "8.6.10"
   resolved "https://registry.yarnpkg.com/@fluentui/date-time-utilities/-/date-time-utilities-8.6.10.tgz#b24384c0f525b4cb798cf2e9d9855182da1e6a91"
@@ -1520,15 +1528,15 @@
     embla-carousel-autoplay "^8.5.1"
     embla-carousel-fade "^8.5.1"
 
-"@fluentui/react-charting@^5.24.20":
-  version "5.24.20"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-charting/-/react-charting-5.24.20.tgz#ef2a9ce703571a8eee9e945f4b5afdecc374fd48"
-  integrity sha512-1R5t17L5NJr7jnxtFlvsYXu6sgcSF/lpEs4tV/HGTU1Sx9vf762TONCSMv7Xp8I2nW84/dQvToKm0Gg3MGtbjw==
+"@fluentui/react-charting@^5.24.22":
+  version "5.24.22"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-charting/-/react-charting-5.24.22.tgz#6511ad89a5dbbd7d7810717166e9ae6ff65a61b9"
+  integrity sha512-M7riaLN8imwkQotesGUsP84a7aISsIEtPsoT3NtIQAbxUqJy77CqBWb/o26dJ8CxvjqLpascgi3nbbtgxvwwqg==
   dependencies:
-    "@fluentui/chart-utilities" "^1.1.26"
+    "@fluentui/chart-utilities" "^1.1.27"
     "@fluentui/react-focus" "^8.9.25"
     "@fluentui/set-version" "^8.2.24"
-    "@fluentui/theme-samples" "^8.7.211"
+    "@fluentui/theme-samples" "^8.7.213"
     "@microsoft/load-themed-styles" "^1.10.26"
     "@types/d3-array" "^3.0.0"
     "@types/d3-axis" "^3.0.0"
@@ -2587,10 +2595,10 @@
     "@fluentui/set-version" "^8.2.24"
     tslib "^2.1.0"
 
-"@fluentui/react@^8.123.2":
-  version "8.123.2"
-  resolved "https://registry.yarnpkg.com/@fluentui/react/-/react-8.123.2.tgz#4c92385c96c62bd96d4373cc7af9d0e38e541c27"
-  integrity sha512-bquKME9HGpQ8stuh1h8Cg5rWm2TdYxp0YhLNeN3iDY49t8ivocTClv4fT+PwtW7e5+W2hEs1/0QMVj6p98iB+Q==
+"@fluentui/react@^8.123.4":
+  version "8.123.4"
+  resolved "https://registry.yarnpkg.com/@fluentui/react/-/react-8.123.4.tgz#794eaa458372173836b273363f37e04e3ac6fbbe"
+  integrity sha512-5YmEfvq4U+SwcXiva1ahYMqJGZl0Nj9zn3Y5+/dIjl3otReO9mHGnnqhuDFI942KlRbp4ABucOBon4KI9NDOPw==
   dependencies:
     "@fluentui/date-time-utilities" "^8.6.10"
     "@fluentui/font-icons-mdl2" "^8.5.62"
@@ -2635,12 +2643,12 @@
     "@microsoft/load-themed-styles" "^1.10.26"
     tslib "^2.1.0"
 
-"@fluentui/theme-samples@^8.7.211":
-  version "8.7.211"
-  resolved "https://registry.yarnpkg.com/@fluentui/theme-samples/-/theme-samples-8.7.211.tgz#1243900019270029171910ef0e5d209e53e77c75"
-  integrity sha512-BMsFoSpZnbk12xFM0zjDe1yTSbZQz9SYUrRjloA40kRGuEEkw30KOJemmxdaqVEZwcC6U8e22kwFYuwEbjq/Ig==
+"@fluentui/theme-samples@^8.7.213":
+  version "8.7.213"
+  resolved "https://registry.yarnpkg.com/@fluentui/theme-samples/-/theme-samples-8.7.213.tgz#659a643a83e39ce6df87171eeca78b13fe2aee5f"
+  integrity sha512-XItTf+fnxkvrEmv2UksONnZ4sjFS63P0LnvItxNQJv+dkaV5sVRfBwJ2JlqdfsI12bU/4M19zz8I6/b0mOtxUw==
   dependencies:
-    "@fluentui/react" "^8.123.2"
+    "@fluentui/react" "^8.123.4"
     "@fluentui/scheme-utilities" "^8.3.68"
     "@fluentui/set-version" "^8.2.24"
     tslib "^2.1.0"
