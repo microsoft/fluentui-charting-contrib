@@ -92,7 +92,7 @@ for (const theme of themes) {
         await page.locator('#list-item-T').click();
         await page.getByRole('button', { name: /Theme:/ }).click();
         await page.locator(`#list-item-${theme}`).click();
-        await page.getByRole('link', { name: chart.name, exact: true }).click();
+        await page.getByRole('button', { name: chart.name, exact: true }).click();
         // Check current direction and only click if needed
         const directionButton = await page.getByRole('button', { name: /Direction:/ });
         const directionText = await directionButton.textContent();
@@ -102,7 +102,6 @@ for (const theme of themes) {
         }
         await page.getByLabel('Shortcuts').click();
         await page.locator('#list-item-T').click();
-        await page.getByRole('link', { name: chart.name, exact: true }).click();
         const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
         const frame = await chartContainer.contentFrame();
         if (!frame) throw new Error('Could not get content frame');
