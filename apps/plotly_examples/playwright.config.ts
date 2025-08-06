@@ -87,7 +87,7 @@ export default defineConfig({
   webServer: {
     command: 'npx yarn run storybook',
     url: 'http://localhost:3000',
-    cwd: '../../repo1/apps/chart-docsite',
+    cwd: '../../../repo1/apps/chart-docsite',
     timeout: 120 * 1000,
     reuseExistingServer: !process.env.CI,
   }
