@@ -72,6 +72,7 @@ jobs:
               shell: bash
               run: |
                 BRANCH="update-v9-storybook-snapshots-$(date +'%Y%m%d-%H%M%S')"
+                cd contrib_repo
                 git checkout -b $BRANCH
                 echo "branch=$BRANCH" >> $GITHUB_OUTPUT
 
@@ -81,6 +82,7 @@ jobs:
               uses: stefanzweifel/git-auto-commit-action@v5
               with:
                 branch: ${{ steps.branch.outputs.branch }}
+                repository: contrib_repo
                 create_branch: true
                 commit_message: (chore) (auto) update react-charts storybook snapshots
                 file_pattern: '*.png'
