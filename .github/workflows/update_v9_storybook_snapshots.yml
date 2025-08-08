@@ -1,4 +1,4 @@
-name: Update v9 test snapshots
+name: Update v9 storybook test snapshots
 
 on:
   schedule:
@@ -54,6 +54,11 @@ jobs:
               uses: actions/checkout@v4
               with:
                 path: contrib_repo
+
+            - name: Install packages
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                yarn
 
             - name: Run Playwright test script (with webServer)
               run: |
