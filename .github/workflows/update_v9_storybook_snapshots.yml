@@ -1,10 +1,8 @@
-name: Update v8 test snapshots
+name: Update v9 test snapshots
 
 on:
-  workflow_run:
-    workflows: ["build and deploy to fluentchartseval"] # Name of Workflow A
-    types:
-      - completed
+  schedule:
+    - cron: "30 22 * * *"  # Runs every day at 04:00 AM IST (10:30 PM UTC)
   workflow_dispatch:
 
 concurrency:
@@ -21,8 +19,26 @@ jobs:
         steps:
             - name: Enable Git long paths
               run: git config --global core.longpaths true
-              
-            - uses: actions/checkout@v4
+
+            - name: Checkout [react-charting]
+              uses: actions/checkout@v4
+              with:
+                repository: ${{ github.event.inputs.repo || 'microsoft/fluentui'}}
+                ref: ${{ github.event.inputs.branch || 'master'}}
+                path: repo1
+
+            - name: Display Input Repo and Branch in Summary
+              shell: pwsh
+              run: |
+                echo "### Workflow Inputs" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Repository**: ${{ github.event.inputs.repo }}" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Branch**: ${{ github.event.inputs.branch }}" >> $env:GITHUB_STEP_SUMMARY
+
+            - name: Show current directory
+              run: echo "$PWD" && ls
+
+            - name: Show repo1 repository
+              run: ls ./repo1
 
             - name: Set up Node.js
               uses: actions/setup-node@v4
@@ -30,35 +46,27 @@ jobs:
                 node-version: '20.x'
 
             - name: Install packages
-              run: |
-                cd apps/plotly_examples
+              run: | 
+                cd ./repo1
                 yarn
 
-            - name: Skip if last commit is snapshot chore
-              id: skip_check
-              shell: bash
-              run: |
-                git fetch origin ${{ github.ref }} --depth=1
-                last_msg=$(git log -1 --pretty=%B)
-                if [[ "$last_msg" == *"(chore) (auto) update react-charting snapshots"* || "$last_msg" == *"(chore) (auto) update react-charts snapshots"* || "$last_msg" == *"(chore) (auto) update react-charts storybook snapshots"* ]]; then
-                  echo "skip_job=true" >> $GITHUB_OUTPUT
-                else
-                  echo "skip_job=false" >> $GITHUB_OUTPUT
-                fi
+            - name: Checkout [main] of current repo
+              uses: actions/checkout@v4
+              with:
+                path: contrib_repo
 
-            - name: Run Playwright update snapshots
-              if: github.event_name == 'workflow_dispatch' || steps.skip_check.outputs.skip_job != 'true'
+            - name: Run Playwright test script (with webServer)
               run: |
-                cd apps/plotly_examples
+                cd contrib_repo/apps/plotly_examples
                 npx playwright install
-                npx cross-env BASE_URL='https://fluentchartseval.azurewebsites.net/' npx playwright test tests/DeclarativeChart.spec.ts --update-snapshots || true
+                npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --config playwright-storybook-v9.config.ts --update-snapshots || true
 
             - name: Create branch with timestamp
               if: github.event_name == 'workflow_dispatch' || steps.skip_check.outputs.skip_job != 'true'
               id: branch
               shell: bash
               run: |
-                BRANCH="update-v8-snapshots-$(date +'%Y%m%d-%H%M%S')"
+                BRANCH="update-v9-storybook-snapshots-$(date +'%Y%m%d-%H%M%S')"
                 git checkout -b $BRANCH
                 echo "branch=$BRANCH" >> $GITHUB_OUTPUT
 
@@ -69,7 +77,7 @@ jobs:
               with:
                 branch: ${{ steps.branch.outputs.branch }}
                 create_branch: true
-                commit_message: (chore) (auto) update react-charting snapshots
+                commit_message: (chore) (auto) update react-charts storybook snapshots
                 file_pattern: '*.png'
               
             - name: "Publish Notification regarding changes"
