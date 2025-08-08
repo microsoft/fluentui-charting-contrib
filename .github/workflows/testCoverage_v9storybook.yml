@@ -67,6 +67,11 @@ jobs:
               with:
                 path: contrib_repo
 
+            - name: Install packages
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                yarn
+
             - name: Run Playwright test script (with webServer)
               run: |
                 cd contrib_repo/apps/plotly_examples
