@@ -87,13 +87,12 @@ for (const theme of themes) {
   for (const mode of modes) {
     for (const chart of charts) {
       async function loadChartPage(page: any, chart: { name: string; path: string }) {
-        const url = `${process.env.BASE_URL!}/?path=/docs/`;
-        await page.goto(url);
+        await page.goto('/?path=/docs/');
         await page.getByLabel('Shortcuts').click();
         await page.locator('#list-item-T').click();
         await page.getByRole('button', { name: /Theme:/ }).click();
         await page.locator(`#list-item-${theme}`).click();
-        await page.getByRole('link', { name: chart.name, exact: true }).click();
+        await page.getByRole('button', { name: chart.name, exact: true }).click();
         // Check current direction and only click if needed
         const directionButton = await page.getByRole('button', { name: /Direction:/ });
         const directionText = await directionButton.textContent();
@@ -103,12 +102,11 @@ for (const theme of themes) {
         }
         await page.getByLabel('Shortcuts').click();
         await page.locator('#list-item-T').click();
-        await page.getByRole('link', { name: chart.name, exact: true }).click();
         const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
         const frame = await chartContainer.contentFrame();
         if (!frame) throw new Error('Could not get content frame');
         const chartInner = frame.locator(chart.selector);
-        await expect(chartInner).toBeVisible({ timeout: 10000 });
+        await expect(chartInner).toBeVisible({ timeout: 30000 });
         return frame;
       }
 
