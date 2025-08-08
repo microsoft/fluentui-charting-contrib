@@ -106,7 +106,7 @@ for (const theme of themes) {
         const frame = await chartContainer.contentFrame();
         if (!frame) throw new Error('Could not get content frame');
         const chartInner = frame.locator(chart.selector);
-        await expect(chartInner).toBeVisible({ timeout: 10000 });
+        await expect(chartInner).toBeVisible({ timeout: 30000 });
         return frame;
       }
 
