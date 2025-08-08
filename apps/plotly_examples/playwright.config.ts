@@ -30,7 +30,6 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
-    baseURL: 'http://localhost:3000/',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     timezoneId: 'GMT',
 /*     trace: 'on',
@@ -39,7 +38,7 @@ export default defineConfig({
       size: { width: 1280, height: 720 } // Optional: specify video resolution
     }, */
   },
-  timeout: 90000,
+  timeout: 30000,
   /* Configure projects for major browsers */
   projects: [
     {
@@ -84,11 +83,4 @@ export default defineConfig({
   //   url: 'http://127.0.0.1:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
-  webServer: {
-    command: 'npx yarn run storybook',
-    url: 'http://localhost:3000',
-    cwd: '../../../repo1/apps/chart-docsite',
-    timeout: 120 * 1000,
-    reuseExistingServer: !process.env.CI,
-  }
 });
