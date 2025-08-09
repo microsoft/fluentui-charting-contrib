@@ -85,11 +85,11 @@ jobs:
                 cd contrib_repo/apps/plotly_examples
                 Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip
 
-            # - name: Compute number of total tests and failures
-            #   uses: ./contrib_repo/.github/actions/playwright_metrics
-            #   with:
-            #     current_report: contrib_repo/apps/plotly_examples/playwright-report.json
-            #     baseline_report: contrib_repo/apps/plotly_examples/playwright-report.json        
+            - name: Compute number of total tests and failures
+              uses: ./contrib_repo/.github/actions/playwright_metrics
+              with:
+                current_report: contrib_repo/apps/plotly_examples/playwright-report.json
+                baseline_report: contrib_repo/apps/plotly_examples/reports/playwright-report-v9Storybook.json        
 
             - name: Upload Playwright HTML report as artifact
               uses: actions/upload-artifact@v4
@@ -104,7 +104,7 @@ jobs:
                 path: contrib_repo/apps/plotly_examples/playwright-report.json
 
             - name: Move Playwright JSON report to reports folder for scheduled runs
-              # if: github.event_name == 'schedule'
+              if: github.event_name == 'schedule'
               shell: bash
               run: |
                 cd contrib_repo/apps/plotly_examples
@@ -112,7 +112,7 @@ jobs:
                 git add reports/playwright-report-v9Storybook.json
 
             - name: Create branch name for scheduled report
-              # if: github.event_name == 'schedule'
+              if: github.event_name == 'schedule'
               id: branch
               shell: bash
               run: |
@@ -120,7 +120,7 @@ jobs:
                 echo "branch=$BRANCH" >> $GITHUB_OUTPUT
 
             - name: Commit and push v9 scheduled report
-              # if: github.event_name == 'schedule'
+              if: github.event_name == 'schedule'
               uses: stefanzweifel/git-auto-commit-action@v5
               with:
                 branch: ${{ steps.branch.outputs.branch }}
