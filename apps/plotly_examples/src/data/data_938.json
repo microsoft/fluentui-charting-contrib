@@ -1,0 +1,1768 @@
+{
+    "data": [
+        {
+            "customdata": {
+                "dtype": "i1",
+                "bdata": "AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8",
+                "shape": "60, 1"
+            },
+            "hovertemplate": "City=%{y}<br>Latency (ms)=%{x}<br>measurement_id=%{customdata[0]}<extra></extra>",
+            "legendgroup": "New York",
+            "marker": {
+                "color": "#636efa",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 0.5
+                },
+                "opacity": 0.7,
+                "size": 9
+            },
+            "mode": "markers",
+            "name": "New York",
+            "orientation": "h",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "exSuR+F6O0CPwvUoXE84QD0K16NwPTxAj8L1KFxPQEAUrkfhetQ3QBSuR+F61DdAMzMzMzNzQEDXo3A9Ctc8QGZmZmZmpjZA9ihcj8K1O0CuR+F6FK42QOxRuB6FqzZA9ihcj8I1OkBcj8L1KNwuQOF6FK5HYTBAcT0K16MwNkBxPQrXo/AzQFK4HoXrkTpA9ihcj8J1NEBxPQrXo/AxQArXo3A9KkBAH4XrUbjeN0DXo3A9Clc5QOF6FK5H4TFASOF6FK5HNkDNzMzMzIw5QAAAAAAAQDNA4XoUrkfhOkAAAAAAAAA2QArXo3A9ijdAPQrXo3D9NUDhehSuRyFBQK5H4XoU7jhA9ihcj8K1M0Bcj8L1KBw9QGZmZmZm5jJACtejcD0KOkBmZmZmZmYuQFyPwvUoXDJAexSuR+H6OUBxPQrXo7A8QFyPwvUo3DlA7FG4HoVrOEA9CtejcH03QFyPwvUonDFAZmZmZmZmNUAzMzMzM7M2QArXo3A9Sj5AuB6F61G4OkCuR+F6FC4wQB+F61G4njpAUrgehesRN0AfhetRuJ41QI/C9ShcDzxAZmZmZmYmPkApXI/C9ag9QM3MzMzMzDRAMzMzMzNzN0ApXI/C9ag6QOF6FK5H4T1A"
+            },
+            "xaxis": "x",
+            "y": [
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York"
+            ],
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i1",
+                "bdata": "PT4/QEFCQ0RFRkdISUpLTE1OT1BRUlNUVVZXWFlaW1xdXl9gYWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd4",
+                "shape": "60, 1"
+            },
+            "hovertemplate": "City=%{y}<br>Latency (ms)=%{x}<br>measurement_id=%{customdata[0]}<extra></extra>",
+            "legendgroup": "San Francisco",
+            "marker": {
+                "color": "#EF553B",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 0.5
+                },
+                "opacity": 0.7,
+                "size": 9
+            },
+            "mode": "markers",
+            "name": "San Francisco",
+            "orientation": "h",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "exSuR+GaQUBSuB6F6xFDQHE9Ctej8DxACtejcD0KPEBxPQrXoxBIQEjhehSux0pApHA9CtejQ0CF61G4HgVJQI/C9Shcz0VAZmZmZmbGQECuR+F6FM5FQHE9CtejsEtAUrgehevRQ0AzMzMzM9NLQJqZmZmZmStAXI/C9SgcSECPwvUoXG9EQOF6FK5HgUJA9ihcj8J1REAfhetRuB40QGZmZmZm5kJAKVyPwvXIRUCkcD0K12NLQClcj8L1aEFA7FG4HoXrP0A9CtejcH1BQDMzMzMzk0hAhetRuB6lRUCamZmZmVlBQHE9CtejkEZAXI/C9Sh8REC4HoXrUdhIQD0K16NwfUBAXI/C9ShcQkAK16NwPQpCQFyPwvUoXDlAexSuR+F6RUCuR+F6FE5FQGZmZmZmBkRAMzMzMzPTQkCamZmZmdk5QIXrUbge5UFAKVyPwvVIQkB7FK5H4fo/QFK4HoXrMUNAhetRuB4FRkCuR+F6FG5NQAAAAAAA4ERACtejcD1KRUDhehSuR6FDQI/C9ShczzRAPQrXo3DdQ0DNzMzMzExEQLgehetRKFBACtejcD0KQ0DD9Shcj4JFQDMzMzMz00NAj8L1KFxPPEDXo3A9CrdJQMP1KFyPwkdA"
+            },
+            "xaxis": "x",
+            "y": [
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco",
+                "San Francisco"
+            ],
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i2",
+                "bdata": "eQB6AHsAfAB9AH4AfwCAAIEAggCDAIQAhQCGAIcAiACJAIoAiwCMAI0AjgCPAJAAkQCSAJMAlACVAJYAlwCYAJkAmgCbAJwAnQCeAJ8AoAChAKIAowCkAKUApgCnAKgAqQCqAKsArACtAK4ArwCwALEAsgCzALQA",
+                "shape": "60, 1"
+            },
+            "hovertemplate": "City=%{y}<br>Latency (ms)=%{x}<br>measurement_id=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Chicago",
+            "marker": {
+                "color": "#00cc96",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 0.5
+                },
+                "opacity": 0.7,
+                "size": 9
+            },
+            "mode": "markers",
+            "name": "Chicago",
+            "orientation": "h",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "hetRuB7FQUDhehSuR6E3QClcj8L16ENAcT0K16MwNECuR+F6FA5BQArXo3A9qkZAUrgehesRN0AK16NwPQo6QDMzMzMzsz5AexSuR+F6OkBmZmZmZiYzQHsUrkfhej5Aj8L1KFyPNkApXI/C9ahAQI/C9ShcjzdAzczMzMxsRECF61G4HoU4QAAAAAAAwDtAuB6F61HYQUDhehSuR2E1QNejcD0Klz9AMzMzMzOTQ0AAAAAAAMAyQArXo3A9Sj9AUrgehevRP0Bcj8L1KLxBQNejcD0KVzVAw/UoXI/CNEAzMzMzM9NAQArXo3A9CkBAAAAAAADAP0DXo3A9CjdAQD0K16NwPTlA4XoUrkehP0BmZmZmZgZAQAAAAAAAADlASOF6FK6HRUApXI/C9ahAQClcj8L1qDVAzczMzMxMQUCuR+F6FC43QOF6FK5HwUFArkfhehQOQ0DD9Shcj0I4QB+F61G4XkJAUrgehetxQEAAAAAAAOBBQKRwPQrXo0VASOF6FK5HPEC4HoXrUbg4QIXrUbgexTdACtejcD1KOED2KFyPwnU9QFK4HoXrMUBAcT0K16PwP0CF61G4HuVBQNejcD0KFz5A9ihcj8IVREBmZmZmZiY8QIXrUbgehUhA"
+            },
+            "xaxis": "x",
+            "y": [
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago",
+                "Chicago"
+            ],
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i2",
+                "bdata": "tQC2ALcAuAC5ALoAuwC8AL0AvgC/AMAAwQDCAMMAxADFAMYAxwDIAMkAygDLAMwAzQDOAM8A0ADRANIA0wDUANUA1gDXANgA2QDaANsA3ADdAN4A3wDgAOEA4gDjAOQA5QDmAOcA6ADpAOoA6wDsAO0A7gDvAPAA",
+                "shape": "60, 1"
+            },
+            "hovertemplate": "City=%{y}<br>Latency (ms)=%{x}<br>measurement_id=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Dallas",
+            "marker": {
+                "color": "#ab63fa",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 0.5
+                },
+                "opacity": 0.7,
+                "size": 9
+            },
+            "mode": "markers",
+            "name": "Dallas",
+            "orientation": "h",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "AAAAAADAP0Bcj8L1KNw2QFK4HoXrkTVApHA9CtfjPkApXI/C9ag6QKRwPQrXI0BA16NwPQrXPkCPwvUoXI87QOxRuB6F6zZAKVyPwvXoMkBSuB6F61E5QFK4HoXrkUBASOF6FK5HPUBI4XoUroc0QArXo3A9Cj1Aj8L1KFxPPkAzMzMzM7M2QOxRuB6F6zxAmpmZmZlZPECkcD0K1yM1QGZmZmZmJj5AXI/C9ShcP0AAAAAAAEBBQClcj8L1KEFAexSuR+G6M0AfhetRuF42QNejcD0KFz9AFK5H4XoUP0DXo3A9Chc/QI/C9Shcj0lArkfhehRuP0BI4XoUrmdBQFyPwvUo3EBAKVyPwvXoP0Bcj8L1KBw6QGZmZmZmRkBAXI/C9ShcN0AUrkfhepQ6QNejcD0KFzlAPQrXo3B9PEBSuB6F6/FEQM3MzMzMzDBAj8L1KFwPQEBSuB6F61EyQOxRuB6FKzlApHA9CtdDQUCkcD0K12M8QEjhehSuhzVA9ihcj8K1N0AK16NwPQpAQB+F61G4njdAzczMzMxMPUCF61G4HkU8QNejcD0KFzhArkfhehRuREDNzMzMzMw/QDMzMzMzsy9AH4XrUbgePUBI4XoUrgc4QK5H4XoUjkBA"
+            },
+            "xaxis": "x",
+            "y": [
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas",
+                "Dallas"
+            ],
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i2",
+                "bdata": "8QDyAPMA9AD1APYA9wD4APkA+gD7APwA/QD+AP8AAAEBAQIBAwEEAQUBBgEHAQgBCQEKAQsBDAENAQ4BDwEQAREBEgETARQBFQEWARcBGAEZARoBGwEcAR0BHgEfASABIQEiASMBJAElASYBJwEoASkBKgErASwB",
+                "shape": "60, 1"
+            },
+            "hovertemplate": "City=%{y}<br>Latency (ms)=%{x}<br>measurement_id=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Miami",
+            "marker": {
+                "color": "#FFA15A",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 0.5
+                },
+                "opacity": 0.7,
+                "size": 9
+            },
+            "mode": "markers",
+            "name": "Miami",
+            "orientation": "h",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "PQrXo3B9OUCPwvUoXM9AQEjhehSuh0RAUrgeheuxRkCamZmZmZk0QD0K16Nw/T5AzczMzMxMPUApXI/C9Sg7QLgehetRGExArkfhehTuQ0AfhetRuN4zQOF6FK5HAUdAXI/C9Sg8TkBSuB6F67FHQIXrUbgexTBAcT0K16MwPUCamZmZmRlJQMP1KFyPgjpACtejcD0qREBmZmZmZiZGQOF6FK5H4TdAhetRuB4lQUAzMzMzMzMPQPYoXI/CtTZAuB6F61H4P0BI4XoUrgc0QOxRuB6FS0tA16NwPQrXMUC4HoXrUbg9QClcj8L1SEJAZmZmZmYmSkCF61G4HsUxQHsUrkfhekhAj8L1KFyPQUC4HoXrUTg3QGZmZmZmRkRAUrgeheuxQkDNzMzMzMw7QOxRuB6F60FA4XoUrkdhPkCuR+F6FC5CQJqZmZmZeUVApHA9CtcDS0BmZmZmZiY0QM3MzMzMTE5ApHA9CtcjJ0DXo3A9CpdAQEjhehSuB0VAj8L1KFwvQ0BI4XoUroc7QAAAAAAAQEBAFK5H4XoUPUCuR+F6FO47QJqZmZmZmUZApHA9CtejQ0BxPQrXo7A6QGZmZmZm5kZAuB6F61FYQ0AAAAAAAGBGQEjhehSuR0VA"
+            },
+            "xaxis": "x",
+            "y": [
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami",
+                "Miami"
+            ],
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i2",
+                "bdata": "LQEuAS8BMAExATIBMwE0ATUBNgE3ATgBOQE6ATsBPAE9AT4BPwFAAUEBQgFDAUQBRQFGAUcBSAFJAUoBSwFMAU0BTgFPAVABUQFSAVMBVAFVAVYBVwFYAVkBWgFbAVwBXQFeAV8BYAFhAWIBYwFkAWUBZgFnAWgB",
+                "shape": "60, 1"
+            },
+            "hovertemplate": "City=%{y}<br>Latency (ms)=%{x}<br>measurement_id=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Seattle",
+            "marker": {
+                "color": "#19d3f3",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 0.5
+                },
+                "opacity": 0.7,
+                "size": 9
+            },
+            "mode": "markers",
+            "name": "Seattle",
+            "orientation": "h",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "H4XrUbheOUCF61G4HoU7QD0K16Nw/UJAcT0K16NwQkAUrkfhetQ/QLgehetReEBAXI/C9SgcRUCF61G4HkU7QHE9CtejMEJA4XoUrkdhPkDD9Shcj0I+QIXrUbgeZURAzczMzMxMQ0DhehSuR0FDQLgehetROEVA9ihcj8IVQEB7FK5H4bpCQIXrUbgehT1A7FG4HoVLQUD2KFyPwvU+QKRwPQrXY0BA4XoUrkdhQkAzMzMzM3M5QB+F61G4XkhAMzMzMzPzN0AK16NwPUo2QOF6FK5HoURACtejcD0qQ0AfhetRuH5CQKRwPQrXg0JAZmZmZmbmP0BSuB6F69E4QK5H4XoUTkBAFK5H4XqUOkBmZmZmZuZDQFK4HoXr0T5AZmZmZmZmOUCuR+F6FG49QGZmZmZmpkFAPQrXo3B9O0DsUbgehWs5QJqZmZmZ+UBAexSuR+H6QEBxPQrXo/A7QHsUrkfhOjxArkfhehTuQEDsUbgehWs0QD0K16NwvTRAAAAAAABAOkAK16NwPUo+QB+F61G4PkFAZmZmZmbmRUCuR+F6FG5DQLgehetRuD5AmpmZmZnZP0B7FK5H4fo3QJqZmZmZ2T9AcT0K16OwPUAK16NwPUpBQOF6FK5HYTlA"
+            },
+            "xaxis": "x",
+            "y": [
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle",
+                "Seattle"
+            ],
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i2",
+                "bdata": "aQFqAWsBbAFtAW4BbwFwAXEBcgFzAXQBdQF2AXcBeAF5AXoBewF8AX0BfgF/AYABgQGCAYMBhAGFAYYBhwGIAYkBigGLAYwBjQGOAY8BkAGRAZIBkwGUAZUBlgGXAZgBmQGaAZsBnAGdAZ4BnwGgAaEBogGjAaQB",
+                "shape": "60, 1"
+            },
+            "hovertemplate": "City=%{y}<br>Latency (ms)=%{x}<br>measurement_id=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Denver",
+            "marker": {
+                "color": "#FF6692",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 0.5
+                },
+                "opacity": 0.7,
+                "size": 9
+            },
+            "mode": "markers",
+            "name": "Denver",
+            "orientation": "h",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "hetRuB7lRkAfhetRuH5OQI/C9ShcL0JApHA9CtcDRkDNzMzMzCxIQHsUrkfh+j9ArkfhehSuREC4HoXrURhDQFyPwvUovENAZmZmZmZmOkCPwvUoXC9DQFyPwvUovEZAw/UoXI/iTUBSuB6F6zFKQDMzMzMzk1FAPQrXo3B9OkAK16NwPYpJQAAAAAAAYERAZmZmZma2UUDhehSuR+E5QGZmZmZmZjlAw/UoXI8CPUCPwvUoXI8YQFyPwvUoHD5AXI/C9SicOkDhehSuRyFEQHE9CtejkEVAKVyPwvWIUEDhehSuRyFKQJqZmZmZWT1AhetRuB6FOEBxPQrXo7BGQDMzMzMzMzJArkfhehReUEC4HoXrUdhLQPYoXI/C9T5AmpmZmZmZKEBI4XoUridNQKRwPQrXI0JAKVyPwvVITEApXI/C9SgsQMP1KFyPAj1ACtejcD0KQ0CamZmZmVlDQAAAAAAAQD9A7FG4HoWrR0A9CtejcP01QK5H4XoU7kFAZmZmZmbmQ0Bcj8L1KNxGQPYoXI/CVUhA4XoUrkchNUB7FK5H4fotQPYoXI/ClUxAPQrXo3B9RUCF61G4HsU6QMP1KFyPok5AH4XrUbjeQ0C4HoXrUdhLQOF6FK5HgUNA"
+            },
+            "xaxis": "x",
+            "y": [
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver",
+                "Denver"
+            ],
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i2",
+                "bdata": "pQGmAacBqAGpAaoBqwGsAa0BrgGvAbABsQGyAbMBtAG1AbYBtwG4AbkBugG7AbwBvQG+Ab8BwAHBAcIBwwHEAcUBxgHHAcgByQHKAcsBzAHNAc4BzwHQAdEB0gHTAdQB1QHWAdcB2AHZAdoB2wHcAd0B3gHfAeAB",
+                "shape": "60, 1"
+            },
+            "hovertemplate": "City=%{y}<br>Latency (ms)=%{x}<br>measurement_id=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Boston",
+            "marker": {
+                "color": "#B6E880",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 0.5
+                },
+                "opacity": 0.7,
+                "size": 9
+            },
+            "mode": "markers",
+            "name": "Boston",
+            "orientation": "h",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "ZmZmZmamQkCkcD0K1+NBQMP1KFyPwjlAXI/C9SjcP0B7FK5H4To+QOxRuB6F60BArkfhehQuNkCuR+F6FG4+QIXrUbgeJUBA9ihcj8I1MkAUrkfhehQ1QM3MzMzMzDBAZmZmZmamOUDXo3A9Cpc+QOF6FK5HQUFAH4XrUbheO0BSuB6F65FBQJqZmZmZGTRAexSuR+F6MkC4HoXrUbg6QOxRuB6F6zxA16NwPQrXOkApXI/C9agwQM3MzMzMjDpAexSuR+F6NECamZmZmVk+QBSuR+F61DxAzczMzMxMNkCuR+F6FG44QDMzMzMzszVAcT0K16OwOkBI4XoUrsc/QFK4HoXrETZAhetRuB6FPUCamZmZmVk4QArXo3A9CjdA9ihcj8J1OkBSuB6F69E1QHsUrkfhOjhAw/UoXI8CNUApXI/C9WhCQK5H4XoULjtAAAAAAACAN0BSuB6F6xE8QHE9CtejcDpAZmZmZmbmOUBSuB6F6xE+QArXo3A9yj5AmpmZmZlZOEAfhetRuB44QB+F61G4njlAexSuR+H6LkDsUbgehWszQArXo3A96kBAXI/C9SicQUAAAAAAAMA5QOF6FK5H4T1Aj8L1KFyPPEBSuB6F6zFFQM3MzMzMTEBA"
+            },
+            "xaxis": "x",
+            "y": [
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston",
+                "Boston"
+            ],
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i2",
+                "bdata": "4QHiAeMB5AHlAeYB5wHoAekB6gHrAewB7QHuAe8B8AHxAfIB8wH0AfUB9gH3AfgB+QH6AfsB/AH9Af4B/wEAAgECAgIDAgQCBQIGAgcCCAIJAgoCCwIMAg0CDgIPAhACEQISAhMCFAIVAhYCFwIYAhkCGgIbAhwC",
+                "shape": "60, 1"
+            },
+            "hovertemplate": "City=%{y}<br>Latency (ms)=%{x}<br>measurement_id=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Atlanta",
+            "marker": {
+                "color": "#FF97FF",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 0.5
+                },
+                "opacity": 0.7,
+                "size": 9
+            },
+            "mode": "markers",
+            "name": "Atlanta",
+            "orientation": "h",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "exSuR+E6PECF61G4HkU3QFyPwvUoXDNAuB6F61E4PkD2KFyPwnU4QLgehetReDRAH4XrUbgeOUDD9Shcj4I2QI/C9Shcj0NAhetRuB4lQUAzMzMzM/M8QHE9Ctej8EJA9ihcj8J1PUAUrkfhetQ3QFK4HoXrEUNAPQrXo3AdQEBI4XoUrsc2QFyPwvUo3DtAAAAAAADAN0AzMzMzM7M0QEjhehSuR0FAexSuR+E6REBcj8L1KJw0QHE9CtejMEBAmpmZmZkZOUAUrkfhehQ6QDMzMzMzczlAUrgehevRN0AK16NwPUo9QMP1KFyPAjhAH4XrUbiePkAzMzMzM7M8QFK4HoXrkTtAzczMzMyMN0AK16NwPYo5QKRwPQrXw0BA4XoUrkcBQEDhehSuRyE3QJqZmZmZmT1A4XoUrkfBQEB7FK5H4foyQOF6FK5HIUBAhetRuB4FOUD2KFyPwjVAQOxRuB6FazhA7FG4HoUrMkB7FK5H4TozQArXo3A9Sj1Aj8L1KFyPPkBSuB6F65E3QArXo3A9akBASOF6FK4HM0CamZmZmZk8QHsUrkfhujVA16NwPQoXOUBI4XoUrkc9QNejcD0K1zdAcT0K16OwOkCF61G4HoVBQArXo3A9ijlA"
+            },
+            "xaxis": "x",
+            "y": [
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta",
+                "Atlanta"
+            ],
+            "yaxis": "y",
+            "type": "scatter"
+        },
+        {
+            "customdata": {
+                "dtype": "i2",
+                "bdata": "HQIeAh8CIAIhAiICIwIkAiUCJgInAigCKQIqAisCLAItAi4CLwIwAjECMgIzAjQCNQI2AjcCOAI5AjoCOwI8Aj0CPgI/AkACQQJCAkMCRAJFAkYCRwJIAkkCSgJLAkwCTQJOAk8CUAJRAlICUwJUAlUCVgJXAlgC",
+                "shape": "60, 1"
+            },
+            "hovertemplate": "City=%{y}<br>Latency (ms)=%{x}<br>measurement_id=%{customdata[0]}<extra></extra>",
+            "legendgroup": "Los Angeles",
+            "marker": {
+                "color": "#FECB52",
+                "symbol": "circle",
+                "line": {
+                    "color": "DarkSlateGrey",
+                    "width": 0.5
+                },
+                "opacity": 0.7,
+                "size": 9
+            },
+            "mode": "markers",
+            "name": "Los Angeles",
+            "orientation": "h",
+            "showlegend": true,
+            "x": {
+                "dtype": "f8",
+                "bdata": "mpmZmZlZTECuR+F6FC49QPYoXI/CNUpA7FG4HoVLUEDNzMzMzMwkQOxRuB6F60BACtejcD2KSkAUrkfhehRFQJqZmZmZGUlAhetRuB5FQkB7FK5H4RpHQClcj8L1aEVAzczMzMysTkBI4XoUrkdIQD0K16Nw3UhAPQrXo3CdQ0D2KFyPwhVDQLgehetReENAw/UoXI9CSUCuR+F6FI5DQEjhehSuh0hApHA9CteDUkCamZmZmZlMQLgehetROERAKVyPwvXoTkCF61G4HqVDQLgehetReDBApHA9CtfjPkCPwvUoXM8yQArXo3A9CkRA4XoUrkehRkCuR+F6FB5RQArXo3A9ykhA16NwPQr3RECuR+F6FE5MQBSuR+F6FCxAZmZmZmYmSECF61G4HuVLQM3MzMzMTDhA4XoUrkeBTkAfhetRuN5IQLgehetRmENArkfhehTuSkDD9ShcjzJTQGZmZmZmxkdAPQrXo3A9SEApXI/C9UhDQM3MzMzMjEBAj8L1KFxPTEDhehSuR4FAQAAAAAAAAEdASOF6FK4nQ0B7FK5H4dpJQPYoXI/C1UhApHA9CtfDTUCuR+F6FO5CQFyPwvUonERAzczMzMxMP0CkcD0K12NDQKRwPQrXI0lA"
+            },
+            "xaxis": "x",
+            "y": [
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles",
+                "Los Angeles"
+            ],
+            "yaxis": "y",
+            "type": "scatter"
+        }
+    ],
+    "layout": {
+        "template": {
+            "data": {
+                "histogram2dcontour": [
+                    {
+                        "type": "histogram2dcontour",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "choropleth": [
+                    {
+                        "type": "choropleth",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "histogram2d": [
+                    {
+                        "type": "histogram2d",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "heatmap": [
+                    {
+                        "type": "heatmap",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "contourcarpet": [
+                    {
+                        "type": "contourcarpet",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "contour": [
+                    {
+                        "type": "contour",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "surface": [
+                    {
+                        "type": "surface",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "mesh3d": [
+                    {
+                        "type": "mesh3d",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "scatter": [
+                    {
+                        "fillpattern": {
+                            "fillmode": "overlay",
+                            "size": 10,
+                            "solidity": 0.2
+                        },
+                        "type": "scatter"
+                    }
+                ],
+                "parcoords": [
+                    {
+                        "type": "parcoords",
+                        "line": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterpolargl": [
+                    {
+                        "type": "scatterpolargl",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "bar": [
+                    {
+                        "error_x": {
+                            "color": "#2a3f5f"
+                        },
+                        "error_y": {
+                            "color": "#2a3f5f"
+                        },
+                        "marker": {
+                            "line": {
+                                "color": "#E5ECF6",
+                                "width": 0.5
+                            },
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "bar"
+                    }
+                ],
+                "scattergeo": [
+                    {
+                        "type": "scattergeo",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterpolar": [
+                    {
+                        "type": "scatterpolar",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "histogram": [
+                    {
+                        "marker": {
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "histogram"
+                    }
+                ],
+                "scattergl": [
+                    {
+                        "type": "scattergl",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatter3d": [
+                    {
+                        "type": "scatter3d",
+                        "line": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        },
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattermap": [
+                    {
+                        "type": "scattermap",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattermapbox": [
+                    {
+                        "type": "scattermapbox",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterternary": [
+                    {
+                        "type": "scatterternary",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattercarpet": [
+                    {
+                        "type": "scattercarpet",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "carpet": [
+                    {
+                        "aaxis": {
+                            "endlinecolor": "#2a3f5f",
+                            "gridcolor": "white",
+                            "linecolor": "white",
+                            "minorgridcolor": "white",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "baxis": {
+                            "endlinecolor": "#2a3f5f",
+                            "gridcolor": "white",
+                            "linecolor": "white",
+                            "minorgridcolor": "white",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "type": "carpet"
+                    }
+                ],
+                "table": [
+                    {
+                        "cells": {
+                            "fill": {
+                                "color": "#EBF0F8"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "header": {
+                            "fill": {
+                                "color": "#C8D4E3"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "type": "table"
+                    }
+                ],
+                "barpolar": [
+                    {
+                        "marker": {
+                            "line": {
+                                "color": "#E5ECF6",
+                                "width": 0.5
+                            },
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "barpolar"
+                    }
+                ],
+                "pie": [
+                    {
+                        "automargin": true,
+                        "type": "pie"
+                    }
+                ]
+            },
+            "layout": {
+                "autotypenumbers": "strict",
+                "colorway": [
+                    "#636efa",
+                    "#EF553B",
+                    "#00cc96",
+                    "#ab63fa",
+                    "#FFA15A",
+                    "#19d3f3",
+                    "#FF6692",
+                    "#B6E880",
+                    "#FF97FF",
+                    "#FECB52"
+                ],
+                "font": {
+                    "color": "#2a3f5f"
+                },
+                "hovermode": "closest",
+                "hoverlabel": {
+                    "align": "left"
+                },
+                "paper_bgcolor": "white",
+                "plot_bgcolor": "#E5ECF6",
+                "polar": {
+                    "bgcolor": "#E5ECF6",
+                    "angularaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "radialaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    }
+                },
+                "ternary": {
+                    "bgcolor": "#E5ECF6",
+                    "aaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "baxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "caxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    }
+                },
+                "coloraxis": {
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    }
+                },
+                "colorscale": {
+                    "sequential": [
+                        [
+                            0.0,
+                            "#0d0887"
+                        ],
+                        [
+                            0.1111111111111111,
+                            "#46039f"
+                        ],
+                        [
+                            0.2222222222222222,
+                            "#7201a8"
+                        ],
+                        [
+                            0.3333333333333333,
+                            "#9c179e"
+                        ],
+                        [
+                            0.4444444444444444,
+                            "#bd3786"
+                        ],
+                        [
+                            0.5555555555555556,
+                            "#d8576b"
+                        ],
+                        [
+                            0.6666666666666666,
+                            "#ed7953"
+                        ],
+                        [
+                            0.7777777777777778,
+                            "#fb9f3a"
+                        ],
+                        [
+                            0.8888888888888888,
+                            "#fdca26"
+                        ],
+                        [
+                            1.0,
+                            "#f0f921"
+                        ]
+                    ],
+                    "sequentialminus": [
+                        [
+                            0.0,
+                            "#0d0887"
+                        ],
+                        [
+                            0.1111111111111111,
+                            "#46039f"
+                        ],
+                        [
+                            0.2222222222222222,
+                            "#7201a8"
+                        ],
+                        [
+                            0.3333333333333333,
+                            "#9c179e"
+                        ],
+                        [
+                            0.4444444444444444,
+                            "#bd3786"
+                        ],
+                        [
+                            0.5555555555555556,
+                            "#d8576b"
+                        ],
+                        [
+                            0.6666666666666666,
+                            "#ed7953"
+                        ],
+                        [
+                            0.7777777777777778,
+                            "#fb9f3a"
+                        ],
+                        [
+                            0.8888888888888888,
+                            "#fdca26"
+                        ],
+                        [
+                            1.0,
+                            "#f0f921"
+                        ]
+                    ],
+                    "diverging": [
+                        [
+                            0,
+                            "#8e0152"
+                        ],
+                        [
+                            0.1,
+                            "#c51b7d"
+                        ],
+                        [
+                            0.2,
+                            "#de77ae"
+                        ],
+                        [
+                            0.3,
+                            "#f1b6da"
+                        ],
+                        [
+                            0.4,
+                            "#fde0ef"
+                        ],
+                        [
+                            0.5,
+                            "#f7f7f7"
+                        ],
+                        [
+                            0.6,
+                            "#e6f5d0"
+                        ],
+                        [
+                            0.7,
+                            "#b8e186"
+                        ],
+                        [
+                            0.8,
+                            "#7fbc41"
+                        ],
+                        [
+                            0.9,
+                            "#4d9221"
+                        ],
+                        [
+                            1,
+                            "#276419"
+                        ]
+                    ]
+                },
+                "xaxis": {
+                    "gridcolor": "white",
+                    "linecolor": "white",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "white",
+                    "automargin": true,
+                    "zerolinewidth": 2
+                },
+                "yaxis": {
+                    "gridcolor": "white",
+                    "linecolor": "white",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "white",
+                    "automargin": true,
+                    "zerolinewidth": 2
+                },
+                "scene": {
+                    "xaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    },
+                    "yaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    },
+                    "zaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    }
+                },
+                "shapedefaults": {
+                    "line": {
+                        "color": "#2a3f5f"
+                    }
+                },
+                "annotationdefaults": {
+                    "arrowcolor": "#2a3f5f",
+                    "arrowhead": 0,
+                    "arrowwidth": 1
+                },
+                "geo": {
+                    "bgcolor": "white",
+                    "landcolor": "#E5ECF6",
+                    "subunitcolor": "white",
+                    "showland": true,
+                    "showlakes": true,
+                    "lakecolor": "white"
+                },
+                "title": {
+                    "x": 0.05
+                },
+                "mapbox": {
+                    "style": "light"
+                }
+            }
+        },
+        "xaxis": {
+            "anchor": "y",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "title": {
+                "text": "Latency (ms)"
+            },
+            "gridcolor": "rgba(200,200,200,0.2)",
+            "zeroline": false
+        },
+        "yaxis": {
+            "anchor": "x",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "title": {
+                "text": "City"
+            },
+            "categoryorder": "total ascending",
+            "categoryarray": [
+                "Los Angeles",
+                "Atlanta",
+                "Boston",
+                "Denver",
+                "Seattle",
+                "Miami",
+                "Dallas",
+                "Chicago",
+                "San Francisco",
+                "New York"
+            ]
+        },
+        "legend": {
+            "title": {
+                "text": "City"
+            },
+            "tracegroupgap": 0
+        },
+        "title": {
+            "text": "Network Latency Measurements by City",
+            "font": {
+                "size": 22
+            },
+            "x": 0.5,
+            "xanchor": "center"
+        },
+        "height": 600,
+        "width": 950,
+        "hoverlabel": {
+            "font": {
+                "size": 13,
+                "family": "Arial"
+            },
+            "bgcolor": "white"
+        },
+        "margin": {
+            "l": 80,
+            "r": 40,
+            "t": 80,
+            "b": 60
+        },
+        "plot_bgcolor": "white"
+    },
+    "id": 938
+}
