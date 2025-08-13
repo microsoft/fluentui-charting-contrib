@@ -19,6 +19,9 @@ jobs:
           pull-requests: write
 
         steps:
+            - name: Enable Git long paths
+              run: git config --global core.longpaths true
+              
             - uses: actions/checkout@v4
 
             - name: Set up Node.js
@@ -37,7 +40,7 @@ jobs:
               run: |
                 git fetch origin ${{ github.ref }} --depth=1
                 last_msg=$(git log -1 --pretty=%B)
-                if [[ "$last_msg" == *"(chore) update react-charting snapshots"* || "$last_msg" == *"(chore) update react-charts snapshots"* ]]; then
+                if [[ "$last_msg" == *"(chore) (auto) update react-charting snapshots"* || "$last_msg" == *"(chore) (auto) update react-charts snapshots"* || "$last_msg" == *"(chore) (auto) update react-charts storybook snapshots"* ]]; then
                   echo "skip_job=true" >> $GITHUB_OUTPUT
                 else
                   echo "skip_job=false" >> $GITHUB_OUTPUT

@@ -1,0 +1,94 @@
+name: Update v9 storybook test snapshots
+
+on:
+  schedule:
+    - cron: "30 22 * * *"  # Runs every day at 04:00 AM IST (10:30 PM UTC)
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+    update_snapshots:
+        runs-on: windows-latest
+        permissions:
+          contents: write
+          pull-requests: write
+
+        steps:
+            - name: Enable Git long paths
+              run: git config --global core.longpaths true
+
+            - name: Checkout [react-charting]
+              uses: actions/checkout@v4
+              with:
+                repository: ${{ github.event.inputs.repo || 'microsoft/fluentui'}}
+                ref: ${{ github.event.inputs.branch || 'master'}}
+                path: repo1
+
+            - name: Display Input Repo and Branch in Summary
+              shell: pwsh
+              run: |
+                echo "### Workflow Inputs" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Repository**: ${{ github.event.inputs.repo }}" >> $env:GITHUB_STEP_SUMMARY
+                echo "- **Branch**: ${{ github.event.inputs.branch }}" >> $env:GITHUB_STEP_SUMMARY
+
+            - name: Show current directory
+              run: echo "$PWD" && ls
+
+            - name: Show repo1 repository
+              run: ls ./repo1
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                node-version: '20.x'
+
+            - name: Install packages
+              run: | 
+                cd ./repo1
+                yarn
+
+            - name: Checkout [main] of current repo
+              uses: actions/checkout@v4
+              with:
+                path: contrib_repo
+
+            - name: Install packages
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                yarn
+
+            - name: Run Playwright test script (with webServer)
+              run: |
+                cd contrib_repo/apps/plotly_examples
+                npx playwright install
+                npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --config playwright-storybook-v9.config.ts --update-snapshots || true
+
+            - name: Create branch with timestamp
+              if: github.event_name == 'workflow_dispatch' || steps.skip_check.outputs.skip_job != 'true'
+              id: branch
+              shell: bash
+              run: |
+                BRANCH="update-v9-storybook-snapshots-$(date +'%Y%m%d-%H%M%S')"
+                cd contrib_repo
+                git checkout -b $BRANCH
+                echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+            - name: Commit changes to repo
+              if: github.event_name == 'workflow_dispatch' || steps.skip_check.outputs.skip_job != 'true'
+              id: auto-commit-action
+              uses: stefanzweifel/git-auto-commit-action@v5
+              with:
+                branch: ${{ steps.branch.outputs.branch }}
+                repository: contrib_repo
+                create_branch: true
+                commit_message: (chore) (auto) update react-charts storybook snapshots
+                file_pattern: '*.png'
+              
+            - name: "Publish Notification regarding changes"
+              if: (github.event_name == 'workflow_dispatch' || steps.skip_check.outputs.skip_job != 'true') && steps.auto-commit-action.outputs.changes_detected == 'true'
+              shell: bash
+              run: |
+                echo "Create a pull request using this link: https://www.github.com/microsoft/fluentui-charting-contrib/pull/new/${{ steps.branch.outputs.branch }}" >> $GITHUB_STEP_SUMMARY
