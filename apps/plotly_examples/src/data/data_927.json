@@ -1,0 +1,656 @@
+{
+  "data": [
+    {
+      "hoverinfo": "text",
+      "hovertext": [
+        "Current Profit: $285,000\u003cbr\u003eBreak-even Point: $220,000\u003cbr\u003eMetadata:\u003cbr\u003ecuisine_type: Italian Fine Dining\u003cbr\u003eseating_capacity: 120 seats\u003cbr\u003eaverage_review_score: 4.7\u002f5 stars\u003cbr\u003epeak_hours: 7PM-9PM weekdays, 6PM-10PM weekends\u003cbr\u003ecustomer_demographics: Business professionals, tourists\u003cbr\u003eadditional_info: {'head_chef': 'Marco Rossi', 'avg_meal_price': '$85', 'staff_count': '28', 'delivery_available': 'Yes'}",
+        "Current Profit: $340,000\u003cbr\u003eBreak-even Point: $320,000\u003cbr\u003eMetadata:\u003cbr\u003ecuisine_type: French Bistro\u003cbr\u003eseating_capacity: 80 seats\u003cbr\u003eaverage_review_score: 4.9\u002f5 stars\u003cbr\u003epeak_hours: 8PM-10PM daily\u003cbr\u003ecustomer_demographics: High-income families, celebrities\u003cbr\u003eadditional_info: {'head_chef': 'Jean-Pierre Dubois', 'avg_meal_price': '$120', 'staff_count': '22', 'delivery_available': 'No'}",
+        "Current Profit: $180,000\u003cbr\u003eBreak-even Point: $195,000\u003cbr\u003eMetadata:\u003cbr\u003ecuisine_type: BBQ & Southern Comfort\u003cbr\u003eseating_capacity: 150 seats\u003cbr\u003eaverage_review_score: 4.4\u002f5 stars\u003cbr\u003epeak_hours: 12PM-2PM, 6PM-8PM\u003cbr\u003ecustomer_demographics: Young professionals, families\u003cbr\u003eadditional_info: {'head_chef': 'Billy Thompson', 'avg_meal_price': '$35', 'staff_count': '18', 'delivery_available': 'Yes'}",
+        "Current Profit: $260,000\u003cbr\u003eBreak-even Point: $240,000\u003cbr\u003eMetadata:\u003cbr\u003ecuisine_type: Modern American\u003cbr\u003eseating_capacity: 100 seats\u003cbr\u003eaverage_review_score: 4.6\u002f5 stars\u003cbr\u003epeak_hours: 7PM-9PM weekdays, 6PM-9PM weekends\u003cbr\u003ecustomer_demographics: Business travelers, local professionals\u003cbr\u003eadditional_info: {'head_chef': 'Sarah Mitchell', 'avg_meal_price': '$65', 'staff_count': '24', 'delivery_available': 'Yes'}",
+        "Current Profit: $310,000\u003cbr\u003eBreak-even Point: $280,000\u003cbr\u003eMetadata:\u003cbr\u003ecuisine_type: Seafood & Latin Fusion\u003cbr\u003eseating_capacity: 90 seats\u003cbr\u003eaverage_review_score: 4.8\u002f5 stars\u003cbr\u003epeak_hours: 8PM-11PM daily\u003cbr\u003ecustomer_demographics: Tourists, nightlife crowd\u003cbr\u003eadditional_info: {'head_chef': 'Carlos Mendez', 'avg_meal_price': '$75', 'staff_count': '26', 'delivery_available': 'No'}",
+        "Current Profit: $195,000\u003cbr\u003eBreak-even Point: $210,000\u003cbr\u003eMetadata:\u003cbr\u003ecuisine_type: Farm-to-Table Pacific Northwest\u003cbr\u003eseating_capacity: 70 seats\u003cbr\u003eaverage_review_score: 4.5\u002f5 stars\u003cbr\u003epeak_hours: 6PM-8PM weekdays, 5PM-9PM weekends\u003cbr\u003ecustomer_demographics: Eco-conscious diners, tech workers\u003cbr\u003eadditional_info: {'head_chef': 'Emma Johnson', 'avg_meal_price': '$55', 'staff_count': '16', 'delivery_available': 'Yes'}"
+      ],
+      "marker": {
+        "color": ["green", "green", "red", "green", "green", "red"]
+      },
+      "x": [
+        "Downtown Manhattan",
+        "Beverly Hills",
+        "Austin Food District",
+        "Chicago Loop",
+        "Miami Beach",
+        "Seattle Pike Place"
+      ],
+      "y": [
+        {
+          "cuisine_type": "Italian Fine Dining",
+          "seating_capacity": "120 seats",
+          "average_review_score": "4.7\u002f5 stars",
+          "peak_hours": "7PM-9PM weekdays, 6PM-10PM weekends",
+          "customer_demographics": "Business professionals, tourists",
+          "additional_info": {
+            "head_chef": "Marco Rossi",
+            "avg_meal_price": "$85",
+            "staff_count": "28",
+            "delivery_available": "Yes"
+          }
+        },
+        {
+          "cuisine_type": "French Bistro",
+          "seating_capacity": "80 seats",
+          "average_review_score": "4.9\u002f5 stars",
+          "peak_hours": "8PM-10PM daily",
+          "customer_demographics": "High-income families, celebrities",
+          "additional_info": {
+            "head_chef": "Jean-Pierre Dubois",
+            "avg_meal_price": "$120",
+            "staff_count": "22",
+            "delivery_available": "No"
+          }
+        },
+        {
+          "cuisine_type": "BBQ & Southern Comfort",
+          "seating_capacity": "150 seats",
+          "average_review_score": "4.4\u002f5 stars",
+          "peak_hours": "12PM-2PM, 6PM-8PM",
+          "customer_demographics": "Young professionals, families",
+          "additional_info": {
+            "head_chef": "Billy Thompson",
+            "avg_meal_price": "$35",
+            "staff_count": "18",
+            "delivery_available": "Yes"
+          }
+        },
+        {
+          "cuisine_type": "Modern American",
+          "seating_capacity": "100 seats",
+          "average_review_score": "4.6\u002f5 stars",
+          "peak_hours": "7PM-9PM weekdays, 6PM-9PM weekends",
+          "customer_demographics": "Business travelers, local professionals",
+          "additional_info": {
+            "head_chef": "Sarah Mitchell",
+            "avg_meal_price": "$65",
+            "staff_count": "24",
+            "delivery_available": "Yes"
+          }
+        },
+        {
+          "cuisine_type": "Seafood & Latin Fusion",
+          "seating_capacity": "90 seats",
+          "average_review_score": "4.8\u002f5 stars",
+          "peak_hours": "8PM-11PM daily",
+          "customer_demographics": "Tourists, nightlife crowd",
+          "additional_info": {
+            "head_chef": "Carlos Mendez",
+            "avg_meal_price": "$75",
+            "staff_count": "26",
+            "delivery_available": "No"
+          }
+        },
+        {
+          "cuisine_type": "Farm-to-Table Pacific Northwest",
+          "seating_capacity": "70 seats",
+          "average_review_score": "4.5\u002f5 stars",
+          "peak_hours": "6PM-8PM weekdays, 5PM-9PM weekends",
+          "customer_demographics": "Eco-conscious diners, tech workers",
+          "additional_info": {
+            "head_chef": "Emma Johnson",
+            "avg_meal_price": "$55",
+            "staff_count": "16",
+            "delivery_available": "Yes"
+          }
+        }
+      ],
+      "type": "bar"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "histogram2dcontour": [
+          {
+            "type": "histogram2dcontour",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [0.0, "#0d0887"],
+              [0.1111111111111111, "#46039f"],
+              [0.2222222222222222, "#7201a8"],
+              [0.3333333333333333, "#9c179e"],
+              [0.4444444444444444, "#bd3786"],
+              [0.5555555555555556, "#d8576b"],
+              [0.6666666666666666, "#ed7953"],
+              [0.7777777777777778, "#fb9f3a"],
+              [0.8888888888888888, "#fdca26"],
+              [1.0, "#f0f921"]
+            ]
+          }
+        ],
+        "choropleth": [
+          {
+            "type": "choropleth",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "histogram2d": [
+          {
+            "type": "histogram2d",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [0.0, "#0d0887"],
+              [0.1111111111111111, "#46039f"],
+              [0.2222222222222222, "#7201a8"],
+              [0.3333333333333333, "#9c179e"],
+              [0.4444444444444444, "#bd3786"],
+              [0.5555555555555556, "#d8576b"],
+              [0.6666666666666666, "#ed7953"],
+              [0.7777777777777778, "#fb9f3a"],
+              [0.8888888888888888, "#fdca26"],
+              [1.0, "#f0f921"]
+            ]
+          }
+        ],
+        "heatmap": [
+          {
+            "type": "heatmap",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [0.0, "#0d0887"],
+              [0.1111111111111111, "#46039f"],
+              [0.2222222222222222, "#7201a8"],
+              [0.3333333333333333, "#9c179e"],
+              [0.4444444444444444, "#bd3786"],
+              [0.5555555555555556, "#d8576b"],
+              [0.6666666666666666, "#ed7953"],
+              [0.7777777777777778, "#fb9f3a"],
+              [0.8888888888888888, "#fdca26"],
+              [1.0, "#f0f921"]
+            ]
+          }
+        ],
+        "contourcarpet": [
+          {
+            "type": "contourcarpet",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "contour": [
+          {
+            "type": "contour",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [0.0, "#0d0887"],
+              [0.1111111111111111, "#46039f"],
+              [0.2222222222222222, "#7201a8"],
+              [0.3333333333333333, "#9c179e"],
+              [0.4444444444444444, "#bd3786"],
+              [0.5555555555555556, "#d8576b"],
+              [0.6666666666666666, "#ed7953"],
+              [0.7777777777777778, "#fb9f3a"],
+              [0.8888888888888888, "#fdca26"],
+              [1.0, "#f0f921"]
+            ]
+          }
+        ],
+        "surface": [
+          {
+            "type": "surface",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            },
+            "colorscale": [
+              [0.0, "#0d0887"],
+              [0.1111111111111111, "#46039f"],
+              [0.2222222222222222, "#7201a8"],
+              [0.3333333333333333, "#9c179e"],
+              [0.4444444444444444, "#bd3786"],
+              [0.5555555555555556, "#d8576b"],
+              [0.6666666666666666, "#ed7953"],
+              [0.7777777777777778, "#fb9f3a"],
+              [0.8888888888888888, "#fdca26"],
+              [1.0, "#f0f921"]
+            ]
+          }
+        ],
+        "mesh3d": [
+          {
+            "type": "mesh3d",
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          }
+        ],
+        "scatter": [
+          {
+            "fillpattern": {
+              "fillmode": "overlay",
+              "size": 10,
+              "solidity": 0.2
+            },
+            "type": "scatter"
+          }
+        ],
+        "parcoords": [
+          {
+            "type": "parcoords",
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterpolargl": [
+          {
+            "type": "scatterpolargl",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "bar": [
+          {
+            "error_x": {
+              "color": "#2a3f5f"
+            },
+            "error_y": {
+              "color": "#2a3f5f"
+            },
+            "marker": {
+              "line": {
+                "color": "#E5ECF6",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "bar"
+          }
+        ],
+        "scattergeo": [
+          {
+            "type": "scattergeo",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterpolar": [
+          {
+            "type": "scatterpolar",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "histogram": [
+          {
+            "marker": {
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "histogram"
+          }
+        ],
+        "scattergl": [
+          {
+            "type": "scattergl",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatter3d": [
+          {
+            "type": "scatter3d",
+            "line": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            },
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattermap": [
+          {
+            "type": "scattermap",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattermapbox": [
+          {
+            "type": "scattermapbox",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scatterternary": [
+          {
+            "type": "scatterternary",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "scattercarpet": [
+          {
+            "type": "scattercarpet",
+            "marker": {
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          }
+        ],
+        "carpet": [
+          {
+            "aaxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "minorgridcolor": "white",
+              "startlinecolor": "#2a3f5f"
+            },
+            "baxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "minorgridcolor": "white",
+              "startlinecolor": "#2a3f5f"
+            },
+            "type": "carpet"
+          }
+        ],
+        "table": [
+          {
+            "cells": {
+              "fill": {
+                "color": "#EBF0F8"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "header": {
+              "fill": {
+                "color": "#C8D4E3"
+              },
+              "line": {
+                "color": "white"
+              }
+            },
+            "type": "table"
+          }
+        ],
+        "barpolar": [
+          {
+            "marker": {
+              "line": {
+                "color": "#E5ECF6",
+                "width": 0.5
+              },
+              "pattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              }
+            },
+            "type": "barpolar"
+          }
+        ],
+        "pie": [
+          {
+            "automargin": true,
+            "type": "pie"
+          }
+        ]
+      },
+      "layout": {
+        "autotypenumbers": "strict",
+        "colorway": [
+          "#636efa",
+          "#EF553B",
+          "#00cc96",
+          "#ab63fa",
+          "#FFA15A",
+          "#19d3f3",
+          "#FF6692",
+          "#B6E880",
+          "#FF97FF",
+          "#FECB52"
+        ],
+        "font": {
+          "color": "#2a3f5f"
+        },
+        "hovermode": "closest",
+        "hoverlabel": {
+          "align": "left"
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "#E5ECF6",
+        "polar": {
+          "bgcolor": "#E5ECF6",
+          "angularaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "radialaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          }
+        },
+        "ternary": {
+          "bgcolor": "#E5ECF6",
+          "aaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "baxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          },
+          "caxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": ""
+          }
+        },
+        "coloraxis": {
+          "colorbar": {
+            "outlinewidth": 0,
+            "ticks": ""
+          }
+        },
+        "colorscale": {
+          "sequential": [
+            [0.0, "#0d0887"],
+            [0.1111111111111111, "#46039f"],
+            [0.2222222222222222, "#7201a8"],
+            [0.3333333333333333, "#9c179e"],
+            [0.4444444444444444, "#bd3786"],
+            [0.5555555555555556, "#d8576b"],
+            [0.6666666666666666, "#ed7953"],
+            [0.7777777777777778, "#fb9f3a"],
+            [0.8888888888888888, "#fdca26"],
+            [1.0, "#f0f921"]
+          ],
+          "sequentialminus": [
+            [0.0, "#0d0887"],
+            [0.1111111111111111, "#46039f"],
+            [0.2222222222222222, "#7201a8"],
+            [0.3333333333333333, "#9c179e"],
+            [0.4444444444444444, "#bd3786"],
+            [0.5555555555555556, "#d8576b"],
+            [0.6666666666666666, "#ed7953"],
+            [0.7777777777777778, "#fb9f3a"],
+            [0.8888888888888888, "#fdca26"],
+            [1.0, "#f0f921"]
+          ],
+          "diverging": [
+            [0, "#8e0152"],
+            [0.1, "#c51b7d"],
+            [0.2, "#de77ae"],
+            [0.3, "#f1b6da"],
+            [0.4, "#fde0ef"],
+            [0.5, "#f7f7f7"],
+            [0.6, "#e6f5d0"],
+            [0.7, "#b8e186"],
+            [0.8, "#7fbc41"],
+            [0.9, "#4d9221"],
+            [1, "#276419"]
+          ]
+        },
+        "xaxis": {
+          "gridcolor": "white",
+          "linecolor": "white",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "white",
+          "automargin": true,
+          "zerolinewidth": 2
+        },
+        "yaxis": {
+          "gridcolor": "white",
+          "linecolor": "white",
+          "ticks": "",
+          "title": {
+            "standoff": 15
+          },
+          "zerolinecolor": "white",
+          "automargin": true,
+          "zerolinewidth": 2
+        },
+        "scene": {
+          "xaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          },
+          "yaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          },
+          "zaxis": {
+            "backgroundcolor": "#E5ECF6",
+            "gridcolor": "white",
+            "linecolor": "white",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "white",
+            "gridwidth": 2
+          }
+        },
+        "shapedefaults": {
+          "line": {
+            "color": "#2a3f5f"
+          }
+        },
+        "annotationdefaults": {
+          "arrowcolor": "#2a3f5f",
+          "arrowhead": 0,
+          "arrowwidth": 1
+        },
+        "geo": {
+          "bgcolor": "white",
+          "landcolor": "#E5ECF6",
+          "subunitcolor": "white",
+          "showland": true,
+          "showlakes": true,
+          "lakecolor": "white"
+        },
+        "title": {
+          "x": 0.05
+        },
+        "mapbox": {
+          "style": "light"
+        }
+      }
+    },
+    "title": {
+      "text": "Restaurant Chain Performance Analysis"
+    },
+    "xaxis": {
+      "title": {
+        "text": "Restaurant Location"
+      }
+    },
+    "yaxis": {
+      "title": {
+        "text": "Restaurant Metadata (Hierarchical)"
+      }
+    }
+  },
+  "id": 927
+}
