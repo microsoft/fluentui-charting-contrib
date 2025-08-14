@@ -6,8 +6,7 @@ import { isInitializeRequest } from "@modelcontextprotocol/sdk/types.js";
 import path from "path";
 import fs from "fs";
 import { fileURLToPath } from 'url';
-import readline from 'readline';
-import { exec, spawn } from 'child_process';
+import { exec } from 'child_process';
 import { promisify } from 'util';
 
 const execAsync = promisify(exec);
@@ -15,7 +14,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Logging utility
-const LOG_DIR = path.resolve(__dirname, '..', '..', 'plotly_examples', 'logs');
+const LOG_DIR = path.resolve(__dirname, '..', '..', 'logs');
 const LOG_FILE = path.join(LOG_DIR, `mcp-tools-${new Date().toISOString().replace(/[:.]/g, '-')}.log`);
 
 // Ensure log directory exists
@@ -25,13 +24,6 @@ if (!fs.existsSync(LOG_DIR)) {
 
 function logEvent(level: 'INFO' | 'ERROR' | 'DEBUG', tool: string, message: string, data?: any) {
   const timestamp = new Date().toISOString();
-  const logEntry = {
-    timestamp,
-    level,
-    tool,
-    message,
-    ...(data && { data })
-  };
   
   const logLine = `${timestamp} [${level}] [${tool}] ${message}${data ? ` | Data: ${JSON.stringify(data)}` : ''}\n`;
   
@@ -226,17 +218,6 @@ function buildServer() {
     let chartType = actualArgs.chartType || globalChartType || 'scattergl';
     let userPrompt = actualArgs.prompt || actualArgs.userPrompt || 'Generate visualization scenarios for business analytics and reporting';
     
-    // TEMPORARY DEBUG: Force bar chart scenario for testing
-    // This will help us verify the tool works independent of argument parsing issues
-    console.log('[MCP] DEBUGGING: Checking if this is a bar chart test request...');
-    if ((!chartType || chartType === 'scattergl') && (!userPrompt || userPrompt.includes('business analytics'))) {
-      console.log('[MCP] DEBUGGING: No specific arguments provided, assuming bar chart test case');
-      chartType = 'bar';
-      userPrompt = 'Generate visualization scenarios for bar charts where the y values are arrays of objects instead of arrays of numbers or strings';
-      console.log('[MCP] DEBUGGING: Set chartType to "bar" and specific userPrompt for testing');
-      logEvent('DEBUG', 'generate-visualization-scenarios', 'Forced bar chart test case', { chartType, userPrompt });
-    }
-    
     // If query is provided, try to extract chart type and user prompt from it
     if (actualArgs.query) {
       const query = String(actualArgs.query);
@@ -257,20 +238,6 @@ function buildServer() {
         userPrompt = cleanedPrompt;
         console.log(`[MCP] Explicit ChartType found - chartType: "${chartType}", cleaned userPrompt: "${userPrompt}"`);
         logEvent('INFO', 'generate-visualization-scenarios', 'Explicit ChartType found', { chartType, userPrompt });
-      } else {
-        // Fallback: Try to extract chart type from query if it contains common chart type patterns
-        const fallbackMatch = query.match(/\b(scattergl|scatter|bar|line|pie|histogram|heatmap|treemap|sunburst|funnel|waterfall|sankey|parallel|radar|polar)\b/i);
-        if (fallbackMatch) {
-          chartType = fallbackMatch[1].toLowerCase();
-          // For fallback case, use the entire query as user prompt after cleaning chart type
-          const cleanedPrompt = query.replace(/\b(scattergl|scatter|bar|line|pie|histogram|heatmap|treemap|sunburst|funnel|waterfall|sankey|parallel|radar|polar)\b/i, '').trim();
-          userPrompt = cleanedPrompt;
-        } else {
-          // If no chart type found in query, use entire query as user prompt
-          userPrompt = query.trim();
-        }
-        console.log(`[MCP] Fallback extraction - chartType: "${chartType}", userPrompt: "${userPrompt}"`);
-        logEvent('DEBUG', 'generate-visualization-scenarios', 'Fallback extraction completed', { chartType, userPrompt });
       }
     }
     
@@ -283,7 +250,7 @@ function buildServer() {
     logEvent('DEBUG', 'generate-visualization-scenarios', 'Processing scenarios', { chartType, userPrompt });
     
     try {
-      const baseDir = path.resolve(__dirname, '..', '..', 'plotly_examples', 'python-scripts');
+      const baseDir = path.resolve(__dirname, '..', '..', 'python-scripts');
       const scenariosPath = path.join(baseDir, 'scenarios.json');
       const targetDir = path.join(baseDir, `${chartType}_scenarios`);
       
@@ -711,17 +678,6 @@ Check server logs for progress.`;
     let chartType = actualArgs.chartType || globalChartType || 'scattergl';
     let userPrompt = actualArgs.prompt || actualArgs.userPrompt || 'Generate Python code for data visualization';
     
-    // TEMPORARY DEBUG: Force bar chart scenario for testing
-    // This will help us verify the tool works independent of argument parsing issues
-    console.log('[MCP] DEBUGGING: Checking if this is a bar chart test request...');
-    if ((!chartType || chartType === 'scattergl') && (!userPrompt || userPrompt.includes('data visualization'))) {
-      console.log('[MCP] DEBUGGING: No specific arguments provided, assuming bar chart test case');
-      chartType = 'bar';
-      userPrompt = 'Generate Python Plotly code for bar chart scenarios';
-      console.log('[MCP] DEBUGGING: Set chartType to "bar" and specific userPrompt for testing');
-      logEvent('DEBUG', 'generate-visualization-codes', 'Forced bar chart test case', { chartType, userPrompt });
-    }
-    
     // If query is provided, try to extract chart type and user prompt from it
     if (actualArgs.query) {
       const query = String(actualArgs.query);
@@ -742,21 +698,7 @@ Check server logs for progress.`;
         userPrompt = cleanedPrompt;
         console.log(`[MCP] Explicit ChartType found - chartType: "${chartType}", cleaned userPrompt: "${userPrompt}"`);
         logEvent('INFO', 'generate-visualization-codes', 'Explicit ChartType found', { chartType, userPrompt });
-      } else {
-        // Fallback: Try to extract chart type from query if it contains common chart type patterns
-        const fallbackMatch = query.match(/\b(scattergl|scatter|bar|line|pie|histogram|heatmap|treemap|sunburst|funnel|waterfall|sankey|parallel|radar|polar)\b/i);
-        if (fallbackMatch) {
-          chartType = fallbackMatch[1].toLowerCase();
-          // For fallback case, use the entire query as user prompt after cleaning chart type
-          const cleanedPrompt = query.replace(/\b(scattergl|scatter|bar|line|pie|histogram|heatmap|treemap|sunburst|funnel|waterfall|sankey|parallel|radar|polar)\b/i, '').trim();
-          userPrompt = cleanedPrompt;
-        } else {
-          // If no chart type found in query, use entire query as user prompt
-          userPrompt = query.trim();
-        }
-        console.log(`[MCP] Fallback extraction - chartType: "${chartType}", userPrompt: "${userPrompt}"`);
-        logEvent('DEBUG', 'generate-visualization-codes', 'Fallback extraction completed', { chartType, userPrompt });
-      }
+      } 
     }
     
     chartType = String(chartType);
@@ -770,11 +712,11 @@ Check server logs for progress.`;
     
     try {
       // Read scenarios from disk (updated to read from industry files)
-      const baseDir = path.resolve(__dirname, '..', '..', 'plotly_examples', 'python-scripts');
+      const baseDir = path.resolve(__dirname, '..', '..', 'python-scripts');
       const targetDir = path.join(baseDir, `${chartType}_scenarios`);
       
       // Define the new output directory for generated Python code
-      const outputDir = path.resolve(__dirname, '..', '..', 'plotly_examples', 'python-scripts', 'plotly_express', 'generated_python_code', 'code_blocks');
+      const outputDir = path.resolve(__dirname, '..', '..', 'python-scripts', 'plotly_express', 'generated_python_code', 'code_blocks');
       
       // Delete the output folder if it exists
       if (fs.existsSync(outputDir)) {
@@ -1005,17 +947,6 @@ The script should be complete and executable, generating both visualization file
     let userPrompt = actualArgs.prompt || actualArgs.userPrompt || 'Execute Python visualization codes with auto-fix capability';
     const maxAttempts = actualArgs.maxAttempts || 3;
     
-    // TEMPORARY DEBUG: Force bar chart scenario for testing
-    // This will help us verify the tool works independent of argument parsing issues
-    console.log('[MCP] DEBUGGING: Checking if this is a bar chart test request...');
-    if ((!chartType || chartType === 'scattergl') && (!userPrompt || userPrompt.includes('Execute Python visualization'))) {
-      console.log('[MCP] DEBUGGING: No specific arguments provided, assuming bar chart test case');
-      chartType = 'bar';
-      userPrompt = 'Execute and validate Python code for bar chart visualizations';
-      console.log('[MCP] DEBUGGING: Set chartType to "bar" and specific userPrompt for testing');
-      logEvent('DEBUG', 'execute-visualization-codes', 'Forced bar chart test case', { chartType, userPrompt });
-    }
-    
     // If query is provided, try to extract chart type and user prompt from it
     if (actualArgs.query) {
       const query = String(actualArgs.query);
@@ -1036,20 +967,6 @@ The script should be complete and executable, generating both visualization file
         userPrompt = cleanedPrompt;
         console.log(`[MCP] Explicit ChartType found - chartType: "${chartType}", cleaned userPrompt: "${userPrompt}"`);
         logEvent('INFO', 'execute-visualization-codes', 'Explicit ChartType found', { chartType, userPrompt });
-      } else {
-        // Fallback: Try to extract chart type from query if it contains common chart type patterns
-        const fallbackMatch = query.match(/\b(scattergl|scatter|bar|line|pie|histogram|heatmap|treemap|sunburst|funnel|waterfall|sankey|parallel|radar|polar)\b/i);
-        if (fallbackMatch) {
-          chartType = fallbackMatch[1].toLowerCase();
-          // For fallback case, use the entire query as user prompt after cleaning chart type
-          const cleanedPrompt = query.replace(/\b(scattergl|scatter|bar|line|pie|histogram|heatmap|treemap|sunburst|funnel|waterfall|sankey|parallel|radar|polar)\b/i, '').trim();
-          userPrompt = cleanedPrompt;
-        } else {
-          // If no chart type found in query, use entire query as user prompt
-          userPrompt = query.trim();
-        }
-        console.log(`[MCP] Fallback extraction - chartType: "${chartType}", userPrompt: "${userPrompt}"`);
-        logEvent('DEBUG', 'execute-visualization-codes', 'Fallback extraction completed', { chartType, userPrompt });
       }
     }
     
@@ -1060,9 +977,9 @@ The script should be complete and executable, generating both visualization file
     
     try {
       // Define directories
-      const codeBlocksDir = path.resolve(__dirname, '..', '..', 'plotly_examples', 'python-scripts', 'plotly_express', 'generated_python_code', 'code_blocks');
-      const extractedCodeDir = path.resolve(__dirname, '..', '..', 'plotly_examples', 'python-scripts', 'plotly_express', 'generated_python_code', 'extracted_code');
-      const extractedJsonDir = path.resolve(__dirname, '..', '..', 'plotly_examples', 'python-scripts', 'plotly_express', 'generated_python_code', 'extracted_json');
+      const codeBlocksDir = path.resolve(__dirname, '..', '..', 'python-scripts', 'plotly_express', 'generated_python_code', 'code_blocks');
+      const extractedCodeDir = path.resolve(__dirname, '..', '..', 'python-scripts', 'plotly_express', 'generated_python_code', 'extracted_code');
+      const extractedJsonDir = path.resolve(__dirname, '..', '..', 'python-scripts', 'plotly_express', 'generated_python_code', 'extracted_json');
       
       if (!fs.existsSync(codeBlocksDir)) {
         throw new Error(`Code blocks directory not found: ${codeBlocksDir}`);
@@ -1532,25 +1449,6 @@ app.get('/test/execute-visualization-codes', async (req, res) => {
     });
   }
 });
-
-// Prompt for chart type once on server start
-async function main() {
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-  });
-
-  rl.question('Enter chart type for dataset generation (e.g., scatter, bar, line): ', async (chartType) => {
-    rl.close();
-    // Pass chartType to MCP tool handler
-    // You may want to store chartType in a variable or environment for later use
-    globalChartType = chartType;
-    // Optionally, trigger dataset generation here or pass chartType to REST/tool endpoints
-    console.log(`[MCP] Chart type selected: ${chartType}`);
-  });
-}
-
-main();
 
 app.listen(PORT, () => {
   // Build server first to populate toolHandlers
