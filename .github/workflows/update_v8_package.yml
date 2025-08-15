@@ -32,6 +32,11 @@ jobs:
         run: |
           echo "version=$(npm view @fluentui/react-charting version)" >> $GITHUB_OUTPUT
 
+      - name: Get latest @fluentui/chart-utilities version
+        id: get_latest_utilities_version
+        run: |
+          echo "version=$(npm view @fluentui/chart-utilities version)" >> $GITHUB_OUTPUT
+
       - name: Ensure jq is installed
         run: |
           if ! command -v jq &> /dev/null
@@ -64,6 +69,7 @@ jobs:
         run: |
           cd apps/plotly_examples
           npm pkg set dependencies.@fluentui/react-charting="^${{ steps.get_latest_version.outputs.version }}"
+          npm pkg set resolutions.@fluentui/chart-utilities="^${{ steps.get_latest_utilities_version.outputs.version }}"
 
       - name: Install dependencies
         if: steps.check_update.outputs.up_to_date == 'false'
