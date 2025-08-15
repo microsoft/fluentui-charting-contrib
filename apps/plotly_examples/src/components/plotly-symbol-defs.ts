@@ -1,5 +1,3 @@
-'use strict';
-
 import parseSvgPath from 'parse-svg-path';
 
 function round(x: number, n?: number): number {
@@ -299,7 +297,7 @@ export const symbols = {
             var aPart = 'A ' + rc + ',' + rc + ' 0 0 1 ';
             return align(angle, standoff, 'M-' + rp + ',0' + aPart + '0,' + rp +
                 aPart + rp + ',0' + aPart + '0,-' + rp +
-                aPart + '-' + rp + ',0' + 'Z');
+                aPart + '-' + rp + ',0Z');
         }
     },
     'diamond-tall': {
