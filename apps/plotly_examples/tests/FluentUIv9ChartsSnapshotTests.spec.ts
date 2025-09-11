@@ -255,7 +255,7 @@ for (const chart of charts) {
     for (const theme of themes) {
       test.describe(`${chart.name} [${theme}] [${mode}]`, () => {
         for (const exampleSelector of chart.stories) {
-          test(`Legend Actions - ${exampleSelector}`, async ({ page }) => {
+          test(`Legend Action - ${exampleSelector.split('--').slice(-1)[0].trim()}`, async ({ page }) => {
             const frame = await loadChartPage(page, chart, theme, mode);
             const example = frame.locator(exampleSelector);
             await example.scrollIntoViewIfNeeded();
@@ -267,7 +267,7 @@ for (const chart of charts) {
             }
           });
 
-          test(`Radio button Actions - ${exampleSelector}`, async ({ page }) => {
+          test(`Radio button Action - ${exampleSelector.split('--').slice(-1)[0].trim()}`, async ({ page }) => {
             const frame = await loadChartPage(page, chart, theme, mode);
             const example = frame.locator(exampleSelector);
             await example.scrollIntoViewIfNeeded();
@@ -279,7 +279,7 @@ for (const chart of charts) {
             }
           });
 
-           test(`slider Actions - ${exampleSelector}`, async ({ page }) => {
+          test(`slider Action - ${exampleSelector.split('--').slice(-1)[0].trim()}`, async ({ page }) => {
             const frame = await loadChartPage(page, chart, theme, mode);
             const example = frame.locator(exampleSelector);
             await example.scrollIntoViewIfNeeded();
@@ -291,7 +291,7 @@ for (const chart of charts) {
             }
           });
 
-           test(`Switch Actions - ${exampleSelector}`, async ({ page }) => {
+           test(`Switch Action - ${exampleSelector.split('--').slice(-1)[0].trim()}`, async ({ page }) => {
             const frame = await loadChartPage(page, chart, theme, mode);
             const example = frame.locator(exampleSelector);
             await example.scrollIntoViewIfNeeded();
