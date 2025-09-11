@@ -170,7 +170,7 @@ async function loadChartPage(
   await page.locator('#list-item-T').click();
   await page.getByRole('button', { name: /Theme:/ }).click();
   await page.locator(`#list-item-${theme}`).click();
-  await page.getByRole('button', { name: chart.name, exact: true }).click();
+  await page.getByRole('link', { name: chart.name, exact: true }).click();
   // Check current direction and only click if needed
   const directionButton = await page.getByRole('button', { name: /Direction:/ });
   const directionText = await directionButton.textContent();
@@ -255,7 +255,8 @@ for (const chart of charts) {
     for (const theme of themes) {
       test.describe(`${chart.name} [${theme}] [${mode}]`, () => {
         for (const exampleSelector of chart.stories) {
-          test(`Legend Action - ${exampleSelector.split('--').slice(-1)[0].trim()}`, async ({ page }) => {
+          const testCaseName = exampleSelector.split('--').slice(-1)[0].trim().replace(/-inner/g, '');
+          test(`Legend Action - ${testCaseName}`, async ({ page }) => {
             const frame = await loadChartPage(page, chart, theme, mode);
             const example = frame.locator(exampleSelector);
             await example.scrollIntoViewIfNeeded();
@@ -267,7 +268,7 @@ for (const chart of charts) {
             }
           });
 
-          test(`Radio button Action - ${exampleSelector.split('--').slice(-1)[0].trim()}`, async ({ page }) => {
+          test(`Radio button Action - ${testCaseName}`, async ({ page }) => {
             const frame = await loadChartPage(page, chart, theme, mode);
             const example = frame.locator(exampleSelector);
             await example.scrollIntoViewIfNeeded();
@@ -279,7 +280,7 @@ for (const chart of charts) {
             }
           });
 
-          test(`slider Action - ${exampleSelector.split('--').slice(-1)[0].trim()}`, async ({ page }) => {
+          test(`slider Action - ${testCaseName}`, async ({ page }) => {
             const frame = await loadChartPage(page, chart, theme, mode);
             const example = frame.locator(exampleSelector);
             await example.scrollIntoViewIfNeeded();
@@ -291,7 +292,7 @@ for (const chart of charts) {
             }
           });
 
-           test(`Switch Action - ${exampleSelector.split('--').slice(-1)[0].trim()}`, async ({ page }) => {
+           test(`Switch Action - ${testCaseName}`, async ({ page }) => {
             const frame = await loadChartPage(page, chart, theme, mode);
             const example = frame.locator(exampleSelector);
             await example.scrollIntoViewIfNeeded();
