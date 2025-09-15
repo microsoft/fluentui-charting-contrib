@@ -165,7 +165,7 @@ async function loadChartPage(
   theme: string,
   mode: string
 ) {
-  await page.goto('http://localhost:3000/?path=/docs/introduction--docs');
+  await page.goto('/?path=/docs/');
   await page.getByLabel('Shortcuts').click();
   await page.locator('#list-item-T').click();
   await page.getByRole('button', { name: /Theme:/ }).click();
