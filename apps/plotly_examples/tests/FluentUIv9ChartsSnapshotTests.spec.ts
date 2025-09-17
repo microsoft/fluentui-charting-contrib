@@ -27,6 +27,10 @@ async function interactWithRadios(frame: any, imgId: string, screenshotName: str
   const radios = frame.locator(`#${imgId} input[type="radio"]`);
   for (let i = 0, count = await radios.count(); i < count; i++) {
     await radios.nth(i).click();
+    if (!(await radios.nth(i).isEnabled())) {
+      // Skip this slider if it's disabled
+      continue;
+    }
     const label = await frame.locator(`label[for="${await radios.nth(i).getAttribute('id')}"]`).textContent();
     const labelText = label.split('(')[0].trim();
     const path = `apps/plotly_examples/tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots/${screenshotName}-${labelText.toLowerCase()} radio-button-click.png`;
@@ -38,6 +42,10 @@ async function interactWithSwitches(frame: any, imgId: string, screenshotName: s
   const switches = frame.locator(`#${imgId} input[type="checkbox"], #${imgId} input[type="switch"]`);
   for (let i = 0, count = await switches.count(); i < count; i++) {
     const control = switches.nth(i);
+    if (!(await control.isEnabled())) {
+      // Skip this slider if it's disabled
+      continue;
+    }
     await expect(frame.locator(`#${imgId}`)).toHaveScreenshot();
     if (!(await control.isChecked())) {
       await control.check();
@@ -55,6 +63,10 @@ async function interactWithSliders(frame: any, imgId: string, screenshotName: st
   const sliders = frame.locator(`#${imgId} input[type="range"]`);
   for (let i = 0, count = await sliders.count(); i < count; i++) {
     const slider = sliders.nth(i);
+    if (!(await slider.isEnabled())) {
+      // Skip this slider if it's disabled
+      continue;
+    }
     const min = Number(await slider.getAttribute('min')) || 0;
     const max = Number(await slider.getAttribute('max')) || 100;
     const middle = Math.round((min + max) / 2);
@@ -72,7 +84,6 @@ async function interactWithLegends(frame: any, imgId: string, screenshotName: st
   const count = await legendItems.count();
   if (count > 0) {
     await legendItems.first().click(); // Click the first item to ensure the legend is visible
-    
     const label = await legendItems.first().getAttribute('aria-label');
     const labelText = label.split('(')[0].trim();
     const path = `apps/plotly_examples/tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots/${screenshotName}-${labelText.toLowerCase()} legend-click.png`;
