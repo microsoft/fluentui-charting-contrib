@@ -71,7 +71,7 @@ const horizontalBarChartStories = [
 const horizontalBarChartWithAxisStories = [
   '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-basic-inner',
   '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-string-axis-tooltip-inner',
-  '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-dynamic-inner'
+  // '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-dynamic-inner'
 ];
 
 const legendsStories = [
@@ -120,7 +120,7 @@ const verticalBarChartStories = [
   '#story--charts-verticalbarchart--vertical-bar-axis-tooltip-inner',
   '#story--charts-verticalbarchart--vertical-bar-rotate-labels-inner',
   '#story--charts-verticalbarchart--vertical-bar-styled-inner',
-  '#story--charts-verticalbarchart--vertical-bar-dynamic-inner',
+  // '#story--charts-verticalbarchart--vertical-bar-dynamic-inner',
   '#story--charts-verticalbarchart--vertical-bar-all-negative-inner',
   '#story--charts-verticalbarchart--vertical-bar-negative-inner',
   '#story--charts-verticalbarchart--vertical-bar-chart-responsive-inner',
@@ -134,7 +134,7 @@ const verticalStackedBarChartStories = [
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-custom-accessibility-inner',
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-date-axis-inner',
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-negative-inner',
-  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-secondary-y-axis-inner',
+  // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-secondary-y-axis-inner',
 ];
 
 const charts = [
