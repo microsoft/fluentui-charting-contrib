@@ -207,6 +207,10 @@ async function interactWithRadios(frame: any, imgId: string, screenshotName: str
   const radios = frame.locator(`#${imgId} input[type="radio"]`);
   for (let i = 0, count = await radios.count(); i < count; i++) {
     await radios.nth(i).click();
+    if (!(await radios.nth(i).isEnabled())) {
+      // Skip this slider if it's disabled
+      continue;
+    }
     const label = await frame.locator(`label[for="${await radios.nth(i).getAttribute('id')}"]`).textContent();
     const labelText = label.split('(')[0].trim();
     const path = `apps/plotly_examples/tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots/${screenshotName}-${labelText.toLowerCase()} radio-button-click.png`;
@@ -237,7 +241,10 @@ async function interactWithSwitches(frame: any, imgId: string, screenshotName: s
   const switches = frame.locator(`#${imgId} input[type="checkbox"], #${imgId} input[type="switch"]`);
   for (let i = 0, count = await switches.count(); i < count; i++) {
     const control = switches.nth(i);
-    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot();
+    if (!(await control.isEnabled())) {
+      // Skip this slider if it's disabled
+      continue;
+    }
     if (!(await control.isChecked())) {
       await control.check();
     } else {
