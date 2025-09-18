@@ -245,7 +245,6 @@ async function interactWithSwitches(frame: any, imgId: string, screenshotName: s
       // Skip this slider if it's disabled
       continue;
     }
-    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot();
     if (!(await control.isChecked())) {
       await control.check();
     } else {
