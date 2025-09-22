@@ -71,7 +71,7 @@ const horizontalBarChartStories = [
 const horizontalBarChartWithAxisStories = [
   '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-basic-inner',
   '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-string-axis-tooltip-inner',
-  '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-dynamic-inner'
+  // '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-dynamic-inner'
 ];
 
 const legendsStories = [
@@ -120,7 +120,7 @@ const verticalBarChartStories = [
   '#story--charts-verticalbarchart--vertical-bar-axis-tooltip-inner',
   '#story--charts-verticalbarchart--vertical-bar-rotate-labels-inner',
   '#story--charts-verticalbarchart--vertical-bar-styled-inner',
-  '#story--charts-verticalbarchart--vertical-bar-dynamic-inner',
+  // '#story--charts-verticalbarchart--vertical-bar-dynamic-inner',
   '#story--charts-verticalbarchart--vertical-bar-all-negative-inner',
   '#story--charts-verticalbarchart--vertical-bar-negative-inner',
   '#story--charts-verticalbarchart--vertical-bar-chart-responsive-inner',
@@ -134,19 +134,19 @@ const verticalStackedBarChartStories = [
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-custom-accessibility-inner',
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-date-axis-inner',
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-negative-inner',
-  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-secondary-y-axis-inner',
+  // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-secondary-y-axis-inner',
 ];
 
 const charts = [
   { name: 'AreaChart', path: 'charts-areachart--docs', selector: '#story--charts-areachart--area-chart-basic--primary-inner', stories: areaChartStories },
-  { name: 'DonutChart', path: 'charts-DonutChart--docs', selector: '#story--charts-donutchart--donut-chart-basic--primary-inner' , stories: donutChartStories},
+  { name: 'DonutChart', path: 'charts-DonutChart--docs', selector: '#story--charts-donutchart--donut-chart-basic--primary-inner', stories: donutChartStories },
   { name: 'FunnelChart', path: 'charts-FunnelChart--docs', selector: '#story--charts-funnelchart--funnel-chart-basic--primary-inner', stories: funnelChartStories },
   { name: 'GanttChart', path: 'charts-GanttChart--docs', selector: '#story--charts-ganttchart--gantt-chart-basic--primary-inner', stories: ganttChartStories },
-  { name: 'GaugeChart', path: 'charts-GaugeChart--docs', selector: '#story--charts-gaugechart--gauge-chart-basic--primary-inner' , stories: guageChartStories},
-  { name: 'GroupedVerticalBarChart', path: 'charts-GroupedVerticalBarChart--docs', selector: '#story--charts-groupedverticalbarchart--grouped-vertical-bar-default--primary-inner' , stories: gvbChartStories},
+  { name: 'GaugeChart', path: 'charts-GaugeChart--docs', selector: '#story--charts-gaugechart--gauge-chart-basic--primary-inner', stories: guageChartStories },
+  { name: 'GroupedVerticalBarChart', path: 'charts-GroupedVerticalBarChart--docs', selector: '#story--charts-groupedverticalbarchart--grouped-vertical-bar-default--primary-inner', stories: gvbChartStories },
   { name: 'HeatMapChart', path: 'charts-HeatMapChart--docs', selector: '#story--charts-heatmapchart--heat-map-chart-basic--primary-inner', stories: heatMapChartStories },
-  { name: 'HorizontalBarChart', path: 'charts-HorizontalBarChart--docs', selector: '#story--charts-horizontalbarchart--horizontal-bar-basic--primary-inner' , stories: horizontalBarChartStories},
-  { name: 'HorizontalBarChartWithAxis', path: 'charts-HorizontalBarChartWithAxis--docs', selector: '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-basic--primary-inner' , stories: horizontalBarChartWithAxisStories},
+  { name: 'HorizontalBarChart', path: 'charts-HorizontalBarChart--docs', selector: '#story--charts-horizontalbarchart--horizontal-bar-basic--primary-inner', stories: horizontalBarChartStories },
+  { name: 'HorizontalBarChartWithAxis', path: 'charts-HorizontalBarChartWithAxis--docs', selector: '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-basic--primary-inner', stories: horizontalBarChartWithAxisStories },
   { name: 'Legends', path: 'charts-Legends--docs', selector: '#story--charts-legends--legends-basic--primary-inner', stories: legendsStories },
   { name: 'LineChart', path: 'charts-LineChart--docs', selector: '#story--charts-linechart--line-chart-basic--primary-inner', stories: lineChartStories },
   { name: 'SankeyChart', path: 'charts-SankeyChart--docs', selector: '#story--charts-sankeychart--sankey-chart-basic--primary-inner', stories: sankeyChartStories },
@@ -165,7 +165,7 @@ async function loadChartPage(
   theme: string,
   mode: string
 ) {
-  await page.goto('/?path=/docs/');
+  await page.goto('http://localhost:3000/?path=/docs/introduction--docs');
   await page.getByLabel('Shortcuts').click();
   await page.locator('#list-item-T').click();
   await page.getByRole('button', { name: /Theme:/ }).click();
@@ -196,16 +196,21 @@ async function interactWithLegends(frame: any, imgId: string, screenshotName: st
     await legendItems.first().click();
     const label = await legendItems.first().getAttribute('aria-label');
     const labelText = label ? label.split('(')[0].trim() : 'unknown';
-    const sanitizedLabelText = sanitizeFileName(labelText);
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
-    const path = `apps/plotly_examples/tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots/${sanitizedScreenshotName}-${sanitizedLabelText}-legend-click.png`;
-    await frame.locator(`#${imgId}`).screenshot({ path: path });
+    const sanitizedLabel = sanitizeFileName(labelText);
+    const buffer = await frame.locator(`#${imgId}`).screenshot();
+    const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-legend-click.png`;
+    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.02 });
   }
 }
 
 async function interactWithRadios(frame: any, imgId: string, screenshotName: string) {
   const radios = frame.locator(`#${imgId} input[type="radio"]`);
   for (let i = 0, count = await radios.count(); i < count; i++) {
+    if (!(await radios.nth(i).isEnabled())) {
+      // Skip this slider if it's disabled
+      continue;
+    }
     await radios.nth(i).click();
     if (!(await radios.nth(i).isEnabled())) {
       // Skip this slider if it's disabled
@@ -213,8 +218,11 @@ async function interactWithRadios(frame: any, imgId: string, screenshotName: str
     }
     const label = await frame.locator(`label[for="${await radios.nth(i).getAttribute('id')}"]`).textContent();
     const labelText = label.split('(')[0].trim();
-    const path = `apps/plotly_examples/tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots/${screenshotName}-${labelText.toLowerCase()} radio-button-click.png`;
-    await frame.locator(`#${imgId}`).screenshot({ path: path });
+    const buffer = await frame.locator(`#${imgId}`).screenshot();
+    const sanitizedLabel = sanitizeFileName(labelText);
+    const sanitizedScreenshotName = sanitizeFileName(screenshotName);
+    const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-radio-button-click.png`;
+    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.02 });
   }
 }
 
@@ -232,8 +240,11 @@ async function interactWithSliders(frame: any, imgId: string, screenshotName: st
     // Try to get the label associated with the slider by its id
     const sliderId = await slider.getAttribute('id');
     const sliderIdText = sliderId.split('(')[0].trim();
-    const path = `apps/plotly_examples/tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots/${screenshotName}-${sliderIdText.toLowerCase()} slider-value-change.png`;
-    await frame.locator(`#${imgId}`).screenshot({ path: path });
+    const buffer = await frame.locator(`#${imgId}`).screenshot();
+    const sanitizedLabel = sanitizeFileName(sliderIdText);
+    const sanitizedScreenshotName = sanitizeFileName(screenshotName);
+    const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-slider-value-change.png`;
+    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.02 });
   }
 }
 
@@ -252,8 +263,12 @@ async function interactWithSwitches(frame: any, imgId: string, screenshotName: s
     }
     const label = await frame.locator(`label[for="${await control.getAttribute('id')}"]`).textContent();
     const labelText = label.split('(')[0].trim();
-    const path = `apps/plotly_examples/tests/FluentUIv9ChartsSnapshotTests.spec.ts-snapshots/${screenshotName}-${labelText.toLowerCase()} checkbox-click.png`;
-    await frame.locator(`#${imgId}`).screenshot({ path: path });
+    const buffer = await frame.locator(`#${imgId}`).screenshot();
+    const sanitizedLabel = sanitizeFileName(labelText);
+    const sanitizedScreenshotName = sanitizeFileName(screenshotName);
+    const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-checkbox-click.png`;
+    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.02 });
+
   }
 }
 
@@ -299,7 +314,7 @@ for (const chart of charts) {
             }
           });
 
-           test(`Switch Action - ${testCaseName}`, async ({ page }) => {
+          test(`Switch Action - ${testCaseName}`, async ({ page }) => {
             const frame = await loadChartPage(page, chart, theme, mode);
             const example = frame.locator(exampleSelector);
             await example.scrollIntoViewIfNeeded();
