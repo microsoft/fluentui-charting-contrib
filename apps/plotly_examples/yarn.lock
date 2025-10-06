@@ -1266,10 +1266,10 @@
   resolved "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.9.tgz"
   integrity sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg==
 
-"@fluentui/chart-utilities@^1.1.31":
-  version "1.1.31"
-  resolved "https://registry.yarnpkg.com/@fluentui/chart-utilities/-/chart-utilities-1.1.31.tgz#81c52a8592f941b9a66a1eb6e9bda35b1f1fd4e3"
-  integrity sha512-v6eQSYKki6GuoQu/5BVCYG48CJ0HPCzp/uK0ov1GUetZdrS7WHW1yQ8G23lsKh4Hwq9xdebNrVQQFYla/BXpRQ==
+"@fluentui/chart-utilities@^1.1.31", "@fluentui/chart-utilities@^1.1.32":
+  version "1.1.32"
+  resolved "https://registry.yarnpkg.com/@fluentui/chart-utilities/-/chart-utilities-1.1.32.tgz#dc7ad77f9c1bde835c10f58570e9cf4519ac2c95"
+  integrity sha512-54Tjv5aQz5zAgN6Ic0DqYM52ddZvEKeYQ6yMquaJGESoORPilImlu7p3yprLK5X270TytGO0U3wh04AORADXMQ==
   dependencies:
     "@fluentui/set-version" "^8.2.24"
     tslib "^2.1.0"
@@ -1525,12 +1525,12 @@
     embla-carousel-autoplay "^8.5.1"
     embla-carousel-fade "^8.5.1"
 
-"@fluentui/react-charting@^5.24.33":
-  version "5.24.33"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-charting/-/react-charting-5.24.33.tgz#a2c0070b641bc73fbf95933cd453737f68a6941e"
-  integrity sha512-VeQaXM7YSo0su9JGSP76QWrHBgdBhKu/dpoQ7VJ5z0aMprmXrqUL+MZY9eL0IIsXML09KTll95XXLiYeEze1Rw==
+"@fluentui/react-charting@^5.24.34":
+  version "5.24.34"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-charting/-/react-charting-5.24.34.tgz#431e8933fb65a885ef67617ecaa9f6bebf496619"
+  integrity sha512-zdzwTv5VWxwtbXYl2ow0+XFCmf/7AanqjO379+wKDAFGKbi/PqLvxBm2KYpS53u6vQipm8FgEh3RfwMqkCT8cg==
   dependencies:
-    "@fluentui/chart-utilities" "^1.1.31"
+    "@fluentui/chart-utilities" "^1.1.32"
     "@fluentui/react-focus" "^8.9.26"
     "@fluentui/set-version" "^8.2.24"
     "@fluentui/theme-samples" "^8.7.215"
