@@ -245,7 +245,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     }
   };
 
-  const createDeclarativeChart = (): JSX.Element => {
+  const createDeclarativeChart = (): React.JSX.Element => {
     const theme = getSelection("Theme", "Light");
     const isRTL = getSelection("RTL", "false") === "true";
     const uniqueKey = `${theme}_${isRTL}`;
