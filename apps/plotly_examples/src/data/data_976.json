@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "type": "scatter",
+      "mode": "markers",
+      "name": "Observations",
+      "marker": {
+        "color": "#107C10",
+        "size": 10
+      },
+      "x": [5, 10, 15, 20, 25, 30],
+      "y": [8, 13, 11, 18, 16, 22]
+    }
+  ],
+  "layout": {
+    "title": {
+      "text": "Pixel-positioned Callout"
+    },
+    "xaxis": {
+      "title": {
+        "text": "Input"
+      }
+    },
+    "yaxis": {
+      "title": {
+        "text": "Output"
+      }
+    },
+    "annotations": [
+      {
+        "text": "Pinned to top-left corner",
+        "xref": "pixel",
+        "yref": "pixel",
+        "x": 32,
+        "y": 36,
+        "showarrow": false,
+        "bgcolor": "rgba(255,255,255,0.9)",
+        "bordercolor": "#107C10",
+        "borderwidth": 1,
+        "font": {
+          "size": 12,
+          "color": "#0B6A0B"
+        },
+        "align": "left"
+      }
+    ],
+    "hoverlabel": {
+      "bgcolor": "white"
+    }
+  },
+  "id": 976
+}

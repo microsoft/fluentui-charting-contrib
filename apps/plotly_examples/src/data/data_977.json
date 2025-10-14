@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "type": "bar",
+      "name": "Q1",
+      "marker": {
+        "color": "#605E5C"
+      },
+      "x": ["North", "South", "East", "West"],
+      "y": [45, 38, 52, 41]
+    }
+  ],
+  "layout": {
+    "title": {
+      "text": "Regional Units Sold with Relative Annotation"
+    },
+    "xaxis": {
+      "title": {
+        "text": "Region"
+      }
+    },
+    "yaxis": {
+      "title": {
+        "text": "Units"
+      }
+    },
+    "annotations": [
+      {
+        "text": "Top quartile goal",
+        "xref": "paper",
+        "yref": "paper",
+        "x": 0.82,
+        "y": 0.25,
+        "showarrow": false,
+        "bgcolor": "rgba(0,120,212,0.12)",
+        "bordercolor": "#0078D4",
+        "borderwidth": 1,
+        "font": {
+          "size": 13,
+          "color": "#004578"
+        }
+      }
+    ],
+    "hoverlabel": {
+      "bgcolor": "white"
+    }
+  },
+  "id": 977
+}
