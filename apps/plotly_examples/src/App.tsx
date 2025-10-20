@@ -77,7 +77,7 @@ const App: React.FC = () => {
             label={labelWidthSwitch}
           />
           &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.24.39</Subtitle2>
-          &nbsp;&nbsp;<Body2>@fluentui/react-charts &nbsp;</Body2><Subtitle2>0.0.0-nightly-20251017-2337.1</Subtitle2>
+          &nbsp;&nbsp;<Body2>@fluentui/react-charts &nbsp;</Body2><Subtitle2>0.0.0-nightly-20251020-0413.1</Subtitle2>
           <br />
           {isWidthSet && (<>
           <Subtitle2>Chart Width:</Subtitle2>&nbsp;&nbsp;
