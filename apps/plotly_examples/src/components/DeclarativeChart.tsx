@@ -65,7 +65,7 @@ const dataTypeRanges = {
   'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }, { min: 759, max: 759 }, { min: 767, max: 767 }],
   'localization': [{ min: 278, max: 302 }],
   'seval': [{ min: 333, max: 376 }],
-  'plotly_express_basic': [{ min: 377, max: 427 }, { min: 760, max: 766 }, {min: 945, max: 957 }],
+  'plotly_express_basic': [{ min: 377, max: 427 }, { min: 760, max: 766 }, {min: 945, max: 957 }, {min: 985, max: 987 }],
   'plotly_express_detailed': [{ min: 428, max: 569 }],
   'plotly_express_colors': [{ min: 570, max: 749 }, { min: 768, max: 787 }],
   'advanced_scenarios': [{ min: 788, max: 839 }, { min: 847, max: 847 }, { min: 854, max: 854 }, { min: 857, max: 870 }, { min: 872, max: 892 }],
