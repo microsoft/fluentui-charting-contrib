@@ -77,14 +77,14 @@ jobs:
           cd apps/plotly_examples
           yarn install
 
-      - name: Update version in App.tsx if v5.23.xx or v5.24.xx
+      - name: Update version in App.tsx if v5.23.xx or v5.24.xx or v5.25.xx
         if: steps.check_update.outputs.up_to_date == 'false'
         run: |
           cd apps/plotly_examples/src
           # Extract just the version number (e.g., 5.24.1) from the latest version
           version="${{ steps.get_latest_version.outputs.version }}"
           # Use sed to replace v5.23.xx with the new version (e.g., v5.24.1)
-          sed -i -E "s/v5\.2[34]\.[0-9]+/v$version/g" App.tsx
+          sed -i -E "s/v5\.2[345]\.[0-9]+/v$version/g" App.tsx
           git add App.tsx
 
       - name: Build app after updating version
