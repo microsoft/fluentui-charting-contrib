@@ -21,6 +21,7 @@ import aggregatedChartTypes from './aggregated_chart_types.json';
 import type { OutputChartType } from '@fluentui/chart-utilities';
 import { mapFluentChart } from '@fluentui/chart-utilities';
 import { DeclarativeChart as DeclarativeChartV9 } from '@fluentui/react-charts'
+import { JSX } from 'react/jsx-runtime';
 
 interface IDeclarativeChartProps {
 }
@@ -381,7 +382,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
               <DeclarativeChart
                 chartSchema={inputSchema}
                 onSchemaChange={_handleChartSchemaChanged}
-                componentRef={declarativeChartRef}
+                componentRef={declarativeChartRef as React.RefObject<IDeclarativeChart>}
               />
             ) : (
               <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>{`${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
