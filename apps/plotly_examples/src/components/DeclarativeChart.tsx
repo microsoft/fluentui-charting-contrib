@@ -97,8 +97,8 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
   const [isJsonInputEnabled, toggleJsonInput] = React.useState<boolean>(false);
   const [jsonInputValue, setJsonInputValue] = React.useState<string>('');
 
-  const declarativeChartRef = React.useRef<IDeclarativeChart>(null!);
-  const declarativeChartV9Ref = React.useRef<IDeclarativeChart>(null!);
+  const declarativeChartRef = React.useRef<IDeclarativeChart>(null);
+  const declarativeChartV9Ref = React.useRef<IDeclarativeChart>(null);
   let lastKnownValidLegends: string[] | undefined = selectedLegends;
 
   React.useEffect(() => {
@@ -247,7 +247,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     }
   };
 
-  const createDeclarativeChart = (): React.JSX.Element => {
+  const createDeclarativeChart = (): JSX.Element => {
     const theme = getSelection("Theme", "Light");
     const isRTL = getSelection("RTL", "false") === "true";
     const uniqueKey = `${theme}_${isRTL}`;
