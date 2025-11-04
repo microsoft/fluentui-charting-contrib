@@ -1,0 +1,62 @@
+{
+  "data": [
+    {
+      "type": "scatter",
+      "mode": "lines+markers",
+      "name": "Product A",
+      "marker": {
+        "size": 8,
+        "color": "#0078D4"
+      },
+      "line": {
+        "width": 2
+      },
+      "x": ["2024-01-01", "2024-01-02", "2024-01-03", "2024-01-04", "2024-01-05"],
+      "y": [12, 18, 24, 20, 28]
+    }
+  ],
+  "layout": {
+    "title": {
+      "text": "Daily Revenue with Data-anchored Annotation"
+    },
+    "xaxis": {
+      "title": {
+        "text": "Date"
+      },
+      "type": "date"
+    },
+    "yaxis": {
+      "title": {
+        "text": "Revenue (k$)"
+      }
+    },
+    "annotations": [
+      {
+        "name": "record-day",
+        "text": "Record day",
+        "xref": "x",
+        "yref": "y",
+        "x": "2024-01-05",
+        "y": 28,
+        "showarrow": true,
+        "arrowcolor": "#d83b01",
+        "arrowwidth": 2,
+        "arrowhead": 6,
+        "ax": -40,
+        "ay": -50,
+        "bgcolor": "rgba(255,255,255,0.85)",
+        "bordercolor": "#d83b01",
+        "borderwidth": 1,
+        "align": "left",
+        "font": {
+          "size": 14,
+          "color": "#1b1a19"
+        }
+      }
+    ],
+    "hoverlabel": {
+      "bgcolor": "white"
+    }
+  },
+  "id": 975
+}

@@ -212,6 +212,10 @@ async function interactWithRadios(frame: any, imgId: string, screenshotName: str
       continue;
     }
     await radios.nth(i).click();
+    if (!(await radios.nth(i).isEnabled())) {
+      // Skip this slider if it's disabled
+      continue;
+    }
     const label = await frame.locator(`label[for="${await radios.nth(i).getAttribute('id')}"]`).textContent();
     const labelText = label.split('(')[0].trim();
     const buffer = await frame.locator(`#${imgId}`).screenshot();

@@ -1226,6 +1226,407 @@ The script should be complete and executable, generating both visualization file
   );
   toolHandlers["execute-visualization-codes"] = (args) => executeVisualizationCodesHandler(args, undefined);
 
+  // MCP tool to execute Python code and capture Fluent chart image
+  const executePythonAndCaptureChartHandler = async (
+    args: {
+      pythonCode?: string;
+      timeout?: number;
+      outputFormat?: 'png' | 'jpeg';
+    },
+    _extra: any
+  ): Promise<{ content: Array<{ type: "text"; text: string } | { type: "image"; mimeType: string; data: string }> }> => {
+    logEvent('INFO', 'execute-python-and-capture-chart', 'Handler invoked', args);
+    
+    const { 
+      pythonCode: inputPythonCode,
+      timeout = 30000,
+      outputFormat = 'png'
+    } = args;
+    
+    // pythonCode is required
+    if (!inputPythonCode) {
+      throw new Error('pythonCode is required');
+    }
+    
+    // Extract and clean Python code from string input
+    const pythonCode = extractPythonCodeBlocks(inputPythonCode);
+    const chartName = `string-chart-${Date.now()}`;
+    
+    logEvent('INFO', 'execute-python-and-capture-chart', 'Using Python code from string input', {
+      codeLength: pythonCode.length,
+      chartName
+    });
+    
+    try {
+      // Step 1: Execute Python code and get JSON files
+      const tempDir = path.resolve(__dirname, '..', 'temp');
+      const timestamp = Date.now();
+      const executionDir = path.join(tempDir, `execution_${timestamp}`);
+      
+      // Ensure temp directories exist
+      [tempDir, executionDir].forEach(dir => {
+        if (!fs.existsSync(dir)) {
+          fs.mkdirSync(dir, { recursive: true });
+        }
+      });
+      
+      // Modified Python code to generate JSON files
+      const modifiedPythonCode = `
+import json
+import plotly.express as px
+import plotly.graph_objects as go
+import pandas as pd
+import numpy as np
+from plotly.utils import PlotlyJSONEncoder
+import os
+
+os.chdir("${executionDir.replace(/\\/g, '/')}")
+
+# User code starts here
+${pythonCode}
+
+# Auto-detect and save all figures created
+import plotly.graph_objects as go_check
+figure_count = 0
+
+for name, obj in list(globals().items()):
+    if isinstance(obj, go_check.Figure):
+        figure_count += 1
+        filename = f"chart_{figure_count}_{name}.json"
+        with open(filename, "w") as f:
+            json.dump(obj.to_plotly_json(), f, cls=PlotlyJSONEncoder, indent=2)
+        print(f"Chart JSON saved to: {filename}")
+
+print(f"Total figures saved: {figure_count}")
+`;
+
+      // Write and execute Python code
+      const tempPythonFile = path.join(executionDir, 'temp_chart.py');
+      fs.writeFileSync(tempPythonFile, modifiedPythonCode);
+      
+      logEvent('INFO', 'execute-python-and-capture-chart', 'Executing Python code');
+      const { stdout, stderr } = await execAsync(`python "${tempPythonFile}"`, { 
+        cwd: executionDir,
+        timeout: timeout 
+      });
+      
+      if (stderr) {
+        logEvent('ERROR', 'execute-python-and-capture-chart', 'Python execution error', { stderr });
+        throw new Error(`Python execution failed: ${stderr}`);
+      }
+      
+      logEvent('INFO', 'execute-python-and-capture-chart', 'Python execution completed', { 
+        stdout: stdout.substring(0, 500),
+        executionDir 
+      });
+      
+      // Find generated JSON files
+      const allFilesInDir = fs.readdirSync(executionDir);
+      const jsonFiles = allFilesInDir.filter(f => f.endsWith('.json'));
+      
+      logEvent('INFO', 'execute-python-and-capture-chart', 'Directory contents after Python execution', {
+        allFiles: allFilesInDir,
+        jsonFiles: jsonFiles,
+        executionDir
+      });
+      
+      if (jsonFiles.length === 0) {
+        throw new Error('No chart JSON files were generated from Python code');
+      }
+      
+      logEvent('INFO', 'execute-python-and-capture-chart', 'Found JSON files', { 
+        jsonFiles: jsonFiles,
+        count: jsonFiles.length 
+      });
+      
+      // Create unique session output directory in mcp-server/output/charts
+      const mcpServerOutputDir = path.join(__dirname, '..', 'output', 'charts');
+      const sessionFolder = `session_${Date.now()}`;
+      const finalOutputDir = path.join(mcpServerOutputDir, sessionFolder);
+      
+      // Also create a temporary download directory for browser downloads
+      const tempDownloadDir = path.join(tempDir, 'downloads');
+      
+      if (!fs.existsSync(finalOutputDir)) {
+        fs.mkdirSync(finalOutputDir, { recursive: true });
+      }
+      if (!fs.existsSync(tempDownloadDir)) {
+        fs.mkdirSync(tempDownloadDir, { recursive: true });
+      }
+      
+      logEvent('INFO', 'execute-python-and-capture-chart', 'Created session output directory', {
+        finalOutputDir,
+        tempDownloadDir,
+        sessionFolder
+      });
+      
+      // Step 2: Process each chart with Puppeteer
+      const puppeteer = await import('puppeteer');
+      const browser = await puppeteer.default.launch({ 
+        headless: false,
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        defaultViewport: { width: 1200, height: 800 }
+      });
+      
+      const chartImages: Array<{ type: 'image', mimeType: string, data: string }> = [];
+      
+      // Limit to maximum 3 charts to prevent infinite loops
+      const maxCharts = Math.min(jsonFiles.length, 3);
+      
+      for (let i = 0; i < maxCharts; i++) {
+        const jsonFile = jsonFiles[i];
+        let page = null;
+        try {
+          const jsonFilePath = path.join(executionDir, jsonFile);
+          const chartJson = JSON.parse(fs.readFileSync(jsonFilePath, 'utf8'));
+          const chartName = path.basename(jsonFile, '.json');
+          
+          logEvent('INFO', 'execute-python-and-capture-chart', 'Processing chart', { 
+            jsonFile,
+            chartName,
+            chartIndex: i + 1,
+            totalCharts: maxCharts
+          });
+          
+          page = await browser.newPage();
+          
+          // Navigate to Fluent Charts website
+          await page.goto('https://fluentchartseval.azurewebsites.net', { 
+            waitUntil: 'networkidle0',
+            timeout: 30000 
+          });
+          
+          // Enable JSON Input switch
+          await page.waitForSelector('#switch-6', { timeout: 10000 });
+          const switchElement = await page.$('#switch-6');
+          
+          if (switchElement) {
+            const isChecked = await page.evaluate((el) => (el as HTMLInputElement).checked, switchElement);
+            if (!isChecked) {
+              await switchElement.click();
+              await page.waitForTimeout(500);
+            }
+          }
+          
+          // Paste JSON
+          await page.waitForSelector('textarea, input[type="text"]', { timeout: 10000 });
+          const jsonInput = await page.$('textarea') || await page.$('input[type="text"]');
+          
+          if (!jsonInput) {
+            throw new Error('JSON input field not found');
+          }
+          
+          await jsonInput.click({ clickCount: 3 });
+          await page.keyboard.press('Delete');
+          
+          const jsonString = JSON.stringify(chartJson, null, 2);
+          await page.evaluate((element, jsonValue) => {
+            if (element instanceof HTMLTextAreaElement || element instanceof HTMLInputElement) {
+              element.value = jsonValue;
+              element.dispatchEvent(new Event('input', { bubbles: true }));
+              element.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+          }, jsonInput, jsonString);
+          
+          // Press Enter to trigger chart rendering
+          await jsonInput.focus();
+          await page.keyboard.press('Enter');
+          await page.waitForTimeout(3000); // Wait longer for chart to render
+          
+          // Set up download handling
+          const client = await page.target().createCDPSession();
+          await client.send('Page.setDownloadBehavior', {
+            behavior: 'allow',
+            downloadPath: tempDownloadDir
+          });
+          
+          // Find and click download button using your working XPath pattern
+          let downloadButton: any = null;
+          
+          // Try XPath selectors with contains() text matching (your working pattern)
+          const xpathSelectors = [
+            '//button[contains(text(), "download")]',
+            '//button[contains(text(), "Download")]'
+          ];
+          
+          for (const xpath of xpathSelectors) {
+            const elements = await page.$x(xpath);
+            if (elements.length > 0) {
+              downloadButton = elements[0];
+              logEvent('INFO', 'execute-python-and-capture-chart', 'Found download button via XPath', { 
+                xpath, 
+                chartName 
+              });
+              break;
+            }
+          }
+          
+          if (downloadButton) {
+            // Clear download directory before each download to avoid conflicts
+            const existingFiles = fs.readdirSync(tempDownloadDir);
+            for (const file of existingFiles) {
+              try {
+                fs.unlinkSync(path.join(tempDownloadDir, file));
+              } catch (e) {
+                // Ignore errors when cleaning up
+              }
+            }
+            
+            logEvent('INFO', 'execute-python-and-capture-chart', 'Download button found, clicking', { 
+              chartName,
+              clearedFiles: existingFiles.length
+            });
+            await downloadButton.click();
+            await page.waitForTimeout(5000); // Wait longer for download
+            
+            // Check for downloaded files after clearing
+            const downloadedFiles = fs.readdirSync(tempDownloadDir).filter(f => 
+              f.endsWith('.png') || f.endsWith('.jpg') || f.endsWith('.jpeg')
+            );
+            
+            logEvent('INFO', 'execute-python-and-capture-chart', 'Download check after clearing', { 
+              chartName,
+              downloadedFiles,
+              tempDownloadDir 
+            });
+            
+            if (downloadedFiles.length > 0) {
+              const downloadedFile = downloadedFiles[downloadedFiles.length - 1];
+              const downloadedImagePath = path.join(tempDownloadDir, downloadedFile);
+              const downloadedImageBuffer = fs.readFileSync(downloadedImagePath);
+              
+              // Save both image and JSON to the session output directory
+              // Save image to final output directory
+              const outputImagePath = path.join(finalOutputDir, `${chartName}_fluent_chart.png`);
+              fs.writeFileSync(outputImagePath, downloadedImageBuffer);
+              
+              // Save the chart JSON to final output directory  
+              const outputJsonPath = path.join(finalOutputDir, `${chartName}_fluent_chart.json`);
+              fs.writeFileSync(outputJsonPath, JSON.stringify(chartJson, null, 2));
+              
+              chartImages.push({
+                type: 'image' as const,
+                mimeType: `image/${outputFormat}`,
+                data: downloadedImageBuffer.toString('base64')
+              });
+              
+              logEvent('INFO', 'execute-python-and-capture-chart', 'Chart saved successfully', { 
+                chartName,
+                downloadedFile,
+                outputImageFile: path.basename(outputImagePath),
+                outputJsonFile: path.basename(outputJsonPath),
+                imageSize: downloadedImageBuffer.length
+              });
+            } else {
+              logEvent('ERROR', 'execute-python-and-capture-chart', 'No downloaded files found', { 
+                chartName,
+                downloadedFiles,
+                tempDownloadDir 
+              });
+            }
+          } else {
+            logEvent('ERROR', 'execute-python-and-capture-chart', 'Download button not found', { chartName });
+          }
+          
+          if (page) {
+            await page.close();
+          }
+          
+          // Add delay between charts to prevent interference
+          if (i < maxCharts - 1) {
+            await new Promise(resolve => setTimeout(resolve, 2000));
+          }
+          
+        } catch (chartError) {
+          logEvent('ERROR', 'execute-python-and-capture-chart', 'Error processing chart', { 
+            jsonFile,
+            chartIndex: i + 1,
+            error: chartError instanceof Error ? chartError.message : chartError
+          });
+          
+          // Ensure page is closed even on error
+          if (page) {
+            try {
+              await page.close();
+            } catch (closeError) {
+              logEvent('DEBUG', 'execute-python-and-capture-chart', 'Error closing page', { closeError });
+            }
+          }
+        }
+      }
+      
+      await browser.close();
+      
+      // Cleanup temp files and directories
+      try {
+        // Delete the entire execution directory
+        if (fs.existsSync(executionDir)) {
+          fs.rmSync(executionDir, { recursive: true, force: true });
+          logEvent('INFO', 'execute-python-and-capture-chart', 'Cleaned up execution directory', { 
+            executionDir 
+          });
+        }
+        
+        // Delete temp download directory
+        if (fs.existsSync(tempDownloadDir)) {
+          fs.rmSync(tempDownloadDir, { recursive: true, force: true });
+          logEvent('INFO', 'execute-python-and-capture-chart', 'Cleaned up temp download directory', { 
+            tempDownloadDir 
+          });
+        }
+      } catch (cleanupError) {
+        logEvent('DEBUG', 'execute-python-and-capture-chart', 'Cleanup warning', { 
+          cleanupError: cleanupError instanceof Error ? cleanupError.message : cleanupError
+        });
+      }
+      
+      logEvent('INFO', 'execute-python-and-capture-chart', 'Handler completed successfully', {
+        sourceType: 'string',
+        chartCount: chartImages.length,
+        format: outputFormat
+      });
+      
+      // Return multiple chart images
+      return {
+        content: chartImages.length > 0 ? chartImages : [
+          { 
+            type: 'text' as const, 
+            text: 'No chart images were captured'
+          }
+        ]
+      };
+      
+    } catch (error) {
+      logEvent('ERROR', 'execute-python-and-capture-chart', 'Handler failed', { 
+        sourceType: 'string',
+        error: error instanceof Error ? error.message : error 
+      });
+      throw error;
+    }
+  };
+  
+  server.tool(
+    "execute-python-and-capture-chart",
+    "Execute Python code from a string that generates a Plotly chart, convert it to Fluent UI representation, and capture it as an image using Playwright. Returns the chart image as base64 data along with the chart JSON.",
+    {
+      pythonCode: { 
+        type: "string", 
+        description: "Python code as a string that creates a Plotly figure. This parameter is required." 
+      },
+      timeout: { 
+        type: "number", 
+        description: "Python execution timeout in milliseconds (default: 30000)" 
+      },
+      outputFormat: { 
+        type: "string", 
+        enum: ["png", "jpeg"],
+        description: "Image output format (default: png)" 
+      }
+    },
+    executePythonAndCaptureChartHandler
+  );
+  toolHandlers["execute-python-and-capture-chart"] = (args) => executePythonAndCaptureChartHandler(args, undefined);
+
   cachedServer = server;
   return server;
 }

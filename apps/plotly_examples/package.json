@@ -4,9 +4,10 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
-    "@fluentui/react-charting": "^5.24.32",
-    "@fluentui/react-charts": "0.0.0-nightly-20250912-0407.1",
-    "@fluentui/react-components": "^9.21.0",
+    "@fluentui/react-charting": "^5.25.1",
+    "@fluentui/react-charts": "0.0.0-nightly-20251031-0407.1",
+    "@fluentui/react-components": "^9.72.2",
+    "@fluentui/react-menu": "^9.20.1",
     "@fluentui/react-portal-compat": "9.0.176",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@svgr/webpack": "^5.5.0",
@@ -45,10 +46,10 @@
     "postcss-normalize": "^10.0.1",
     "postcss-preset-env": "^7.0.1",
     "prompts": "^2.4.2",
-    "react": "^17.0.2",
+    "react": "^19.0.0",
     "react-app-polyfill": "^3.0.0",
     "react-dev-utils": "^12.0.1",
-    "react-dom": "^17.0.2",
+    "react-dom": "^19.0.0",
     "react-plotly.js": "^2.6.0",
     "react-refresh": "^0.11.0",
     "resolve": "^1.20.0",
@@ -70,7 +71,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "postinstall": "patch-package"
   },
   "eslintConfig": {
     "extends": [
@@ -93,16 +95,19 @@
   "devDependencies": {
     "@playwright/test": "^1.49.1",
     "@types/node": "^22.10.7",
-    "@types/react": "17.0.44",
-    "@types/react-dom": "17.0.15",
-    "parse-svg-path": "^0.1.2"
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "parse-svg-path": "^0.1.2",
+    "patch-package": "^8.0.1",
+    "postinstall-postinstall": "^2.1.0"
   },
   "resolutions": {
-    "@types/react": "17.0.44",
-    "@types/react-dom": "17.0.15",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "@fluentui/chart-utilities": "^1.1.31"
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@fluentui/chart-utilities": "^1.1.35",
+    "@griffel/react": "1.5.30"
   },
   "jest": {
     "roots": [
