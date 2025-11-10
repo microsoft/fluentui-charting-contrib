@@ -22,9 +22,12 @@ const App: React.FC = () => {
   const [value, setValue] = React.useState(getSelection("Theme", "Light"));
   const [isRTL, setisRTL] = React.useState(getSelection("RTL", "false") === "true");
   const [isWidthSet, setisWidthSet] = React.useState(getSelection("WidthSet", "true") === "true");
+  const [isHeightSet, setisHeightSet] = React.useState(getSelection("HeightSet", "false") === "true");
   const [labelRTLMode, setLabelRTLMode] = React.useState("Enable RTL");
   const [labelWidthSwitch, setLabelWidthSwitch] = React.useState("Disable Width slider");
+  const [labelHeightSwitch, setLabelHeightSwitch] = React.useState("Enable Height slider");
   const [chartWidth, setChartWidth] = React.useState<number>(Number(getSelection("ChartWidth", window.innerWidth.toString())));
+  const [chartHeight, setChartHeight] = React.useState<number>(Number(getSelection("ChartHeight", "400")));
 
   setRTL(isRTL);
   const onOptionSelect = (event: SelectionEvents, data: OptionOnSelectData): void => {
@@ -47,9 +50,21 @@ const App: React.FC = () => {
     saveSelection("WidthSet", newIsWidthSet.toString());
   };
 
+  const handleHeightSwitchChange = () => {
+    const newIsHeightSet = !isHeightSet;
+    setisHeightSet(newIsHeightSet);
+    setLabelHeightSwitch(newIsHeightSet ? "Disable height slider" : "Enable Height slider");
+    saveSelection("HeightSet", newIsHeightSet.toString());
+  };
+
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>, data: SliderOnChangeData) => {
     setChartWidth(Number(data.value));
     saveSelection("ChartWidth", data.value.toString());
+  };
+
+  const handleHeightSliderChange = (event: React.ChangeEvent<HTMLInputElement>, data: SliderOnChangeData) => {
+    setChartHeight(Number(data.value));
+    saveSelection("ChartHeight", data.value.toString());
   };
 
   return (
@@ -76,6 +91,11 @@ const App: React.FC = () => {
             onChange={handleWidthSwitchChange}
             label={labelWidthSwitch}
           />
+          <Switch
+            checked={isHeightSet}
+            onChange={handleHeightSwitchChange}
+            label={labelHeightSwitch}
+          />
           &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.25.1</Subtitle2>
           &nbsp;&nbsp;<Body2>@fluentui/react-charts &nbsp;</Body2><Subtitle2>0.0.0-nightly-20251110-0407.1</Subtitle2>
           <br />
@@ -87,7 +107,15 @@ const App: React.FC = () => {
             value={chartWidth}
             onChange={handleSliderChange}
           /></>)}
-          <ChartWrapper width={isWidthSet ? chartWidth : undefined} />
+          {isHeightSet && (<>
+          <Subtitle2>Chart Height:</Subtitle2>&nbsp;&nbsp;
+          <Slider
+            min={300}
+            max={window.innerHeight}
+            value={chartHeight}
+            onChange={handleHeightSliderChange}
+          /></>)}
+          <ChartWrapper width={isWidthSet ? chartWidth : undefined} height={isHeightSet ? chartHeight : undefined} />
         </PortalCompatProvider>
       </FluentProvider>
     </div>

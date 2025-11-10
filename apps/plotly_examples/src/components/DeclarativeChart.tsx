@@ -23,6 +23,8 @@ import { mapFluentChart } from '@fluentui/chart-utilities';
 import { DeclarativeChart as DeclarativeChartV9 } from '@fluentui/react-charts'
 
 interface IDeclarativeChartProps {
+  width?: number;
+  height?: number;
 }
 
 
@@ -82,7 +84,7 @@ const schemasData = requireContext.keys().map((fileName: string) => ({
 
 const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
 
-const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
+const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width, height }) => {
   const savedOptionStr = getSelection(SCHEMA_KEY, SCHEMA_KEY_DEFAULT);
   const savedOption = parseInt(savedOptionStr, 10) - 1; // To handle 0 based index
   const savedFileName = `data_${savedOptionStr}.json`;
@@ -113,6 +115,33 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
       document.removeEventListener('contextmenu', handleContextMenu);
     };
   }, []);
+
+  // Force chart re-render when width or height changes
+  React.useEffect(() => {
+    // Trigger multiple resize events to ensure all charts respond
+    const triggerResize = () => {
+      window.dispatchEvent(new Event('resize'));
+      // Force redraw by modifying chart containers
+      const chartContainers = document.querySelectorAll('[data-testid^="chart-container"]');
+      chartContainers.forEach(container => {
+        const element = container as HTMLElement;
+        const currentDisplay = element.style.display;
+        element.style.display = 'none';
+        element.offsetHeight; // Trigger reflow
+        element.style.display = currentDisplay;
+      });
+    };
+    
+    const timer = setTimeout(triggerResize, 50);
+    const timer2 = setTimeout(triggerResize, 200);
+    const timer3 = setTimeout(triggerResize, 500);
+    
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(timer2);  
+      clearTimeout(timer3);
+    };
+  }, [width, height]);
 
   const _onChange = (event: SelectionEvents | null, data: OptionOnSelectData): void => {
     const selectedChoice = data.optionText!;
@@ -270,8 +299,24 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     const layout_with_theme = { ...layout, plot_bgcolor: bgcolor, paper_bgcolor: bgcolor, font: fontColor };
     const plotlySchema = { data, layout: layout_with_theme, selectedLegends: lastKnownValidLegends };
     const plotlySchemaCopy = JSON.parse(JSON.stringify(plotlySchema)); // Deep copy to avoid mutation
+    
+    // Inject height into plotly schema if specified
+    if (height && plotlySchemaCopy.layout) {
+      plotlySchemaCopy.layout.height = height - 120; // Account for padding and headers
+    }
+    
     const chartType: OutputChartType = mapFluentChart(plotlySchema);
-    const inputSchema: Schema = { plotlySchema };
+    
+    // Create input schema with height information
+    const inputSchema: Schema = { 
+      plotlySchema: {
+        ...plotlySchema,
+        layout: {
+          ...plotlySchema.layout,
+          ...(height && { height: height - 120 })
+        }
+      }
+    };
     const chartTitle = typeof layout?.title === 'string' ? layout.title : layout?.title?.text ?? '';
     return (
       <div key={uniqueKey}>
@@ -372,7 +417,16 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
           Download as Image
         </button>
 
-        <div data-testid="chart-container" >
+        <div 
+          key={`chart-container-${height || 'auto'}`}
+          data-testid="chart-container" 
+          style={{ 
+            ...(width && { width: `${width}px` }),
+            ...(height && { height: `${height}px` }),
+            display: 'flex',
+            flexDirection: 'column'
+          }}
+        >
           <br />
           <br />
           <ErrorBoundary key={`${selectedChoice}_error-boundary-v8`}>
@@ -381,11 +435,28 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             <br />
             <br />
             {chartType.isValid ? (
-              <DeclarativeChart
-                chartSchema={inputSchema}
-                onSchemaChange={_handleChartSchemaChanged}
-                componentRef={declarativeChartRef}
-              />
+              <div 
+                key={`v8-chart-${width || 'auto'}-${height || 'auto'}`}
+                style={{ 
+                  height: height ? `${height - 120}px` : '400px',
+                  width: '100%',
+                  flex: '1 1 auto'
+                }}
+              >
+                <DeclarativeChart
+                  chartSchema={inputSchema}
+                  onSchemaChange={_handleChartSchemaChanged}
+                  componentRef={declarativeChartRef}
+                />
+                <style>{`
+                  [data-testid="chart-container"] .ms-Fabric > * {
+                    height: 100% !important;
+                  }
+                  [data-testid="chart-container"] svg {
+                    height: 100% !important;
+                  }
+                `}</style>
+              </div>
             ) : (
               <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>{`${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
             )}
@@ -407,11 +478,25 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
           <br />
           <br />
           <ErrorBoundary>
-            <PlotlyChart schema={plotlySchemaCopy} />
+            <PlotlyChart 
+              key={`plotly-${width || 'auto'}-${height || 'auto'}`}
+              schema={plotlySchemaCopy} 
+              width={width} 
+              height={height ? height - 120 : undefined}
+            />
           </ErrorBoundary>
         </div>
         <Subtitle2>Charts v9</Subtitle2>
-        <div data-testid="chart-container-v9" >
+        <div 
+          key={`chart-container-v9-${height || 'auto'}`}
+          data-testid="chart-container-v9" 
+          style={{ 
+            ...(width && { width: `${width}px` }),
+            ...(height && { height: `${height}px` }),
+            display: 'flex',
+            flexDirection: 'column'
+          }}
+        >
           <br />
           <br />
           <ErrorBoundary key={`${selectedChoice}_error-boundary-v9`}>
@@ -420,11 +505,28 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             <br />
             <br />
             {chartType.isValid ? (
-              <DeclarativeChartV9
-                chartSchema={inputSchema}
-                onSchemaChange={_handleChartSchemaChanged}
-                componentRef={declarativeChartV9Ref}
-              />
+              <div 
+                key={`v9-chart-${width || 'auto'}-${height || 'auto'}`}
+                style={{ 
+                  height: height ? `${height - 120}px` : '400px',
+                  width: '100%',
+                  flex: '1 1 auto'
+                }}
+              >
+                <DeclarativeChartV9
+                  chartSchema={inputSchema}
+                  onSchemaChange={_handleChartSchemaChanged}
+                  componentRef={declarativeChartV9Ref}
+                />
+                <style>{`
+                  [data-testid="chart-container-v9"] .ms-Fabric > * {
+                    height: 100% !important;
+                  }
+                  [data-testid="chart-container-v9"] svg {
+                    height: 100% !important;
+                  }
+                `}</style>
+              </div>
             ) : (
               <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>{`${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
             )}
