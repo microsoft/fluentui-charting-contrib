@@ -386,16 +386,6 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
         >
           Download as Image
         </button>
-        <div 
-          key={`chart-container-${height || 'auto'}`}
-          data-testid="chart-container" 
-          style={{ 
-            ...(width && { width: `${width}px` }),
-            ...(height && { height: `${height}px` }),
-            display: 'flex',
-            flexDirection: 'column'
-          }}
-        >
           <br />
           <br />
           <ErrorBoundary key={`${selectedChoice}_error-boundary-v8`}>
@@ -404,25 +394,15 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
             <br />
             <br />
             {chartType.isValid ? (
-              <div 
-                key={`v8-chart-${width || 'auto'}-${height || 'auto'}`}
-                style={{ 
-                  height: height ? `${height - 120}px` : '400px',
-                  width: '100%',
-                  flex: '1 1 auto'
-                }}
-              >
                 <DeclarativeChart
                   chartSchema={inputSchema}
                   onSchemaChange={_handleChartSchemaChanged}
                   componentRef={declarativeChartRef}
                 />
-              </div>
             ) : (
               <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>{`${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
             )}
           </ErrorBoundary>
-        </div>
         <br />
         <TextField
           label="Current Legend selection"
@@ -457,16 +437,6 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
           </ErrorBoundary>
         </div>
         <Subtitle2>Charts v9</Subtitle2>
-        <div 
-          key={`chart-container-v9-${height || 'auto'}`}
-          data-testid="chart-container-v9" 
-          style={{ 
-            ...(width && { width: `${width}px` }),
-            ...(height && { height: `${height}px` }),
-            display: 'flex',
-            flexDirection: 'column'
-          }}
-        >
           <br />
           <br />
           <ErrorBoundary key={`${selectedChoice}_error-boundary-v9`}>
@@ -475,26 +445,17 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
             <br />
             <br />
             {chartType.isValid ? (
-              <div 
-                key={`v9-chart-${width || 'auto'}-${height || 'auto'}`}
-                style={{ 
-                  height: height ? `${height - 120}px` : '400px',
-                  width: '100%',
-                  flex: '1 1 auto'
-                }}
-              >
+              
                 <DeclarativeChartV9
                   chartSchema={inputSchema}
                   onSchemaChange={_handleChartSchemaChanged}
                   componentRef={declarativeChartV9Ref}
                 />
-              </div>
             ) : (
               <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>{`${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
             )}
           </ErrorBoundary>
         </div>
-      </div>
     );
   };
 
