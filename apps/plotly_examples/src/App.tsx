@@ -22,10 +22,9 @@ const App: React.FC = () => {
   const [value, setValue] = React.useState(getSelection("Theme", "Light"));
   const [isRTL, setisRTL] = React.useState(getSelection("RTL", "false") === "true");
   const [isWidthSet, setisWidthSet] = React.useState(getSelection("WidthSet", "true") === "true");
-  const [isHeightSet, setisHeightSet] = React.useState(getSelection("HeightSet", "false") === "true");
+  const [isHeightSet, setisHeightSet] = React.useState(getSelection("HeightSet", "true") === "true");
   const [labelRTLMode, setLabelRTLMode] = React.useState("Enable RTL");
-  const [labelWidthSwitch, setLabelWidthSwitch] = React.useState("Disable Width slider");
-  const [labelHeightSwitch, setLabelHeightSwitch] = React.useState("Enable Height slider");
+  const [labelDimensionSwitch, setLabelDimensionSwitch] = React.useState("Disable Width&Height slider");
   const [chartWidth, setChartWidth] = React.useState<number>(Number(getSelection("ChartWidth", window.innerWidth.toString())));
   const [chartHeight, setChartHeight] = React.useState<number>(Number(getSelection("ChartHeight", "400")));
 
@@ -43,18 +42,13 @@ const App: React.FC = () => {
     saveSelection("RTL", newIsRTL.toString());
   };
 
-  const handleWidthSwitchChange = () => {
-    const newIsWidthSet = !isWidthSet;
-    setisWidthSet(newIsWidthSet);
-    setLabelWidthSwitch(newIsWidthSet ? "Disable width slider" : "Enable Width slider");
-    saveSelection("WidthSet", newIsWidthSet.toString());
-  };
-
-  const handleHeightSwitchChange = () => {
-    const newIsHeightSet = !isHeightSet;
-    setisHeightSet(newIsHeightSet);
-    setLabelHeightSwitch(newIsHeightSet ? "Disable height slider" : "Enable Height slider");
-    saveSelection("HeightSet", newIsHeightSet.toString());
+  const handleDimensionSwitchChange = () => {
+    const newIsSet = !isWidthSet;
+    setisWidthSet(newIsSet);
+    setisHeightSet(newIsSet);
+    setLabelDimensionSwitch(newIsSet ? "Disable Width&Height slider" : "Enable Width&Height slider");
+    saveSelection("WidthSet", newIsSet.toString());
+    saveSelection("HeightSet", newIsSet.toString());
   };
 
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>, data: SliderOnChangeData) => {
@@ -88,13 +82,8 @@ const App: React.FC = () => {
           />
           <Switch
             checked={isWidthSet}
-            onChange={handleWidthSwitchChange}
-            label={labelWidthSwitch}
-          />
-          <Switch
-            checked={isHeightSet}
-            onChange={handleHeightSwitchChange}
-            label={labelHeightSwitch}
+            onChange={handleDimensionSwitchChange}
+            label={labelDimensionSwitch}
           />
           &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.25.1</Subtitle2>
           &nbsp;&nbsp;<Body2>@fluentui/react-charts &nbsp;</Body2><Subtitle2>0.0.0-nightly-20251110-0407.1</Subtitle2>
@@ -106,12 +95,11 @@ const App: React.FC = () => {
             max={window.innerWidth}
             value={chartWidth}
             onChange={handleSliderChange}
-          /></>)}
-          {isHeightSet && (<>
+          />
           <Subtitle2>Chart Height:</Subtitle2>&nbsp;&nbsp;
           <Slider
             min={300}
-            max={window.innerHeight}
+            max={800}
             value={chartHeight}
             onChange={handleHeightSliderChange}
           /></>)}
