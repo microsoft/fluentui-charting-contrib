@@ -99,7 +99,7 @@ const App: React.FC = () => {
           <Subtitle2>Chart Height:</Subtitle2>&nbsp;&nbsp;
           <Slider
             min={300}
-            max={800}
+            max={window.innerHeight}
             value={chartHeight}
             onChange={handleHeightSliderChange}
           /></>)}
