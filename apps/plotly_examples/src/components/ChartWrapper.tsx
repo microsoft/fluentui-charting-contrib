@@ -5,15 +5,15 @@ import DeclarativeChartBasicExample from './DeclarativeChart';
 
 interface ChartWrapperProps {
     width: number| undefined;
-    isV8ChartVisible?: boolean;
+    isReversedOrder?: boolean;
 }
 
-export function ChartWrapper({ width, isV8ChartVisible }: ChartWrapperProps) {
+export function ChartWrapper({ width, isReversedOrder }: ChartWrapperProps) {
     const v8Theme = createTheme({ palette: paletteSlots, semanticColors: semanticSlots }); //ToDo - Make the slot values dynamic
     return (
         <ThemeProvider theme={v8Theme}>
             <div style={{ marginLeft: '25px', ...(width !== undefined && { width }) }}>
-                <DeclarativeChartBasicExample isV8ChartVisible={isV8ChartVisible} />
+                <DeclarativeChartBasicExample isReversedOrder={isReversedOrder} />
             </div>
         </ThemeProvider>
     );
