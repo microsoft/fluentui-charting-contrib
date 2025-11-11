@@ -5,14 +5,15 @@ import DeclarativeChartBasicExample from './DeclarativeChart';
 
 interface ChartWrapperProps {
     width: number| undefined;
+    isV8ChartVisible?: boolean;
 }
 
-export function ChartWrapper({ width }: ChartWrapperProps) {
+export function ChartWrapper({ width, isV8ChartVisible }: ChartWrapperProps) {
     const v8Theme = createTheme({ palette: paletteSlots, semanticColors: semanticSlots }); //ToDo - Make the slot values dynamic
     return (
         <ThemeProvider theme={v8Theme}>
             <div style={{ marginLeft: '25px', ...(width !== undefined && { width }) }}>
-                <DeclarativeChartBasicExample />
+                <DeclarativeChartBasicExample isV8ChartVisible={isV8ChartVisible} />
             </div>
         </ThemeProvider>
     );

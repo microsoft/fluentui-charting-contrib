@@ -23,6 +23,7 @@ import { mapFluentChart } from '@fluentui/chart-utilities';
 import { DeclarativeChart as DeclarativeChartV9 } from '@fluentui/react-charts'
 
 interface IDeclarativeChartProps {
+  isV8ChartVisible?: boolean;
 }
 
 
@@ -82,7 +83,7 @@ const schemasData = requireContext.keys().map((fileName: string) => ({
 
 const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
 
-const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
+const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ isV8ChartVisible = true }) => {
   const savedOptionStr = getSelection(SCHEMA_KEY, SCHEMA_KEY_DEFAULT);
   const savedOption = parseInt(savedOptionStr, 10) - 1; // To handle 0 based index
   const savedFileName = `data_${savedOptionStr}.json`;
@@ -371,35 +372,64 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
         >
           Download as Image
         </button>
-
-        <div data-testid="chart-container" >
-          <br />
-          <br />
-          <ErrorBoundary key={`${selectedChoice}_error-boundary-v8`}>
-            <Subtitle2>{chartTitle}</Subtitle2>
-            <Divider />
-            <br />
-            <br />
-            {chartType.isValid ? (
-              <DeclarativeChart
-                chartSchema={inputSchema}
-                onSchemaChange={_handleChartSchemaChanged}
-                componentRef={declarativeChartRef}
-              />
-            ) : (
-              <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>{`${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
-            )}
-          </ErrorBoundary>
-        </div>
         <br />
-        <TextField
-          label="Current Legend selection"
-          value={selectedLegendsState}
-          onChange={_onSelectedLegendsEdited}
-          styles={textFieldStyles}
-          disabled={isJsonInputEnabled}
-        />
-        <br />
+        {!isV8ChartVisible && (
+          <>
+            <Subtitle2>Charts v9</Subtitle2>
+            <div data-testid="chart-container-v9" >
+              <br />
+              <br />
+              <ErrorBoundary key={`${selectedChoice}_error-boundary-v9`}>
+                <Subtitle2>{chartTitle}</Subtitle2>
+                <Divider />
+                <br />
+                <br />
+                {chartType.isValid ? (
+                  <DeclarativeChartV9
+                    chartSchema={inputSchema}
+                    onSchemaChange={_handleChartSchemaChanged}
+                    componentRef={declarativeChartV9Ref}
+                  />
+                ) : (
+                  <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>{`${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
+                )}
+              </ErrorBoundary>
+            </div>
+            <br />
+          </>
+        )}
+        {isV8ChartVisible && (
+          <>
+            <Subtitle1 align="center" style={{ marginLeft: '30%' }}>Declarative chart from fluent v8</Subtitle1>
+            <div data-testid="chart-container" >
+              <br />
+              <br />
+              <ErrorBoundary key={`${selectedChoice}_error-boundary-v8`}>
+                <Subtitle2>{chartTitle}</Subtitle2>
+                <Divider />
+                <br />
+                <br />
+                {chartType.isValid ? (
+                  <DeclarativeChart
+                    chartSchema={inputSchema}
+                    onSchemaChange={_handleChartSchemaChanged}
+                    componentRef={declarativeChartRef}
+                  />
+                ) : (
+                  <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>{`${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
+                )}
+              </ErrorBoundary>
+            </div>
+            <br />
+            <TextField
+              label="Current Legend selection"
+              value={selectedLegendsState}
+              onChange={_onSelectedLegendsEdited}
+              styles={textFieldStyles}
+              disabled={isJsonInputEnabled}
+            />
+          </>
+        )}
         <div key={plotlyKey} data-testid="plotly-plot">
           <Divider />
           <br />
@@ -410,26 +440,31 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
             <PlotlyChart schema={plotlySchemaCopy} />
           </ErrorBoundary>
         </div>
-        <Subtitle2>Charts v9</Subtitle2>
-        <div data-testid="chart-container-v9" >
-          <br />
-          <br />
-          <ErrorBoundary key={`${selectedChoice}_error-boundary-v9`}>
-            <Subtitle2>{chartTitle}</Subtitle2>
-            <Divider />
+        {isV8ChartVisible && (
+          <>
             <br />
-            <br />
-            {chartType.isValid ? (
-              <DeclarativeChartV9
-                chartSchema={inputSchema}
-                onSchemaChange={_handleChartSchemaChanged}
-                componentRef={declarativeChartV9Ref}
-              />
-            ) : (
-              <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>{`${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
-            )}
-          </ErrorBoundary>
-        </div>
+            <Subtitle2>Charts v9</Subtitle2>
+            <div data-testid="chart-container-v9" >
+              <br />
+              <br />
+              <ErrorBoundary key={`${selectedChoice}_error-boundary-v9`}>
+                <Subtitle2>{chartTitle}</Subtitle2>
+                <Divider />
+                <br />
+                <br />
+                {chartType.isValid ? (
+                  <DeclarativeChartV9
+                    chartSchema={inputSchema}
+                    onSchemaChange={_handleChartSchemaChanged}
+                    componentRef={declarativeChartV9Ref}
+                  />
+                ) : (
+                  <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>{`${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
+                )}
+              </ErrorBoundary>
+            </div>
+          </>
+        )}
       </div>
     );
   };

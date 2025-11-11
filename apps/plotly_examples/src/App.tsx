@@ -22,8 +22,10 @@ const App: React.FC = () => {
   const [value, setValue] = React.useState(getSelection("Theme", "Light"));
   const [isRTL, setisRTL] = React.useState(getSelection("RTL", "false") === "true");
   const [isWidthSet, setisWidthSet] = React.useState(getSelection("WidthSet", "true") === "true");
+  const [isV8ChartVisible, setIsV8ChartVisible] = React.useState(getSelection("V8ChartVisible", "true") === "true");
   const [labelRTLMode, setLabelRTLMode] = React.useState("Enable RTL");
   const [labelWidthSwitch, setLabelWidthSwitch] = React.useState("Disable Width slider");
+  const [labelV8ChartSwitch, setLabelV8ChartSwitch] = React.useState("Hide Fluent v8 Chart");
   const [chartWidth, setChartWidth] = React.useState<number>(Number(getSelection("ChartWidth", window.innerWidth.toString())));
 
   setRTL(isRTL);
@@ -45,6 +47,13 @@ const App: React.FC = () => {
     setisWidthSet(newIsWidthSet);
     setLabelWidthSwitch(newIsWidthSet ? "Disable width slider" : "Enable Width slider");
     saveSelection("WidthSet", newIsWidthSet.toString());
+  };
+
+  const handleV8ChartSwitchChange = () => {
+    const newIsV8ChartVisible = !isV8ChartVisible;
+    setIsV8ChartVisible(newIsV8ChartVisible);
+    setLabelV8ChartSwitch(newIsV8ChartVisible ? "Hide Fluent v8 Chart" : "Show Fluent v8 Chart");
+    saveSelection("V8ChartVisible", newIsV8ChartVisible.toString());
   };
 
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>, data: SliderOnChangeData) => {
@@ -76,6 +85,11 @@ const App: React.FC = () => {
             onChange={handleWidthSwitchChange}
             label={labelWidthSwitch}
           />
+          <Switch
+            checked={isV8ChartVisible}
+            onChange={handleV8ChartSwitchChange}
+            label={labelV8ChartSwitch}
+          />
           &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.25.1</Subtitle2>
           &nbsp;&nbsp;<Body2>@fluentui/react-charts &nbsp;</Body2><Subtitle2>0.0.0-nightly-20251110-0407.1</Subtitle2>
           <br />
@@ -87,7 +101,10 @@ const App: React.FC = () => {
             value={chartWidth}
             onChange={handleSliderChange}
           /></>)}
-          <ChartWrapper width={isWidthSet ? chartWidth : undefined} />
+          <ChartWrapper 
+            width={isWidthSet ? chartWidth : undefined} 
+            isV8ChartVisible={isV8ChartVisible}
+          />
         </PortalCompatProvider>
       </FluentProvider>
     </div>
