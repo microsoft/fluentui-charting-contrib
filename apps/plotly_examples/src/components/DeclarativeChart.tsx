@@ -334,10 +334,10 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ isReve
     const plotlyChart = renderPlotlyChart(plotlySchemaCopy, plotlyKey);
 
     if (isReversedOrder) {
-      // Reversed order: V8 → Plotly → V9
+      // Reversed order: V9 → Plotly → V8
       return [v9Chart, plotlyChart, v8Chart];
     } else {
-      // Default order: V9 → Plotly → V8
+      // Default order: V8 → Plotly → V9
       return [v8Chart, plotlyChart, v9Chart];
     }
   };
