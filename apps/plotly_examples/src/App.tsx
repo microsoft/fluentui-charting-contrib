@@ -21,12 +21,10 @@ import { SliderOnChangeData } from '@fluentui/react-components';
 const App: React.FC = () => {
   const [value, setValue] = React.useState(getSelection("Theme", "Light"));
   const [isRTL, setisRTL] = React.useState(getSelection("RTL", "false") === "true");
-  const [isHeightSet, setIsHeightSet] = React.useState(getSelection("HeightSet", "true") === "true");
-  const [isWidthSet, setisWidthSet] = React.useState(getSelection("WidthSet", "true") === "true");
+  const [isDimensionSlidersEnabled, setIsDimensionSlidersEnabled] = React.useState(getSelection("DimensionSlidersEnabled", "true") === "true");
   const [isV8ChartVisible, setIsV8ChartVisible] = React.useState(getSelection("V8ChartVisible", "false") === "true");
   const [labelRTLMode, setLabelRTLMode] = React.useState("Enable RTL");
-  const [labelWidthSwitch, setLabelWidthSwitch] = React.useState("Disable Width slider");
-  const [labelHeightSwitch, setLabelHeightSwitch] = React.useState("Disable Height slider");
+  const [labelDimensionSwitch, setLabelDimensionSwitch] = React.useState("Disable Dimension sliders");
   const [labelV8ChartSwitch, setLabelV8ChartSwitch] = React.useState("Reverse Chart Order");
   const [chartWidth, setChartWidth] = React.useState<number>(Number(getSelection("ChartWidth", window.innerWidth.toString())));
   const [chartHeight, setChartHeight] = React.useState<number>(Number(getSelection("ChartHeight", "520")));
@@ -45,18 +43,11 @@ const App: React.FC = () => {
     saveSelection("RTL", newIsRTL.toString());
   };
 
-  const handleHeightSwitchChange = () => {
-    const newIsHeightSet = !isHeightSet;
-    setIsHeightSet(newIsHeightSet);
-    setLabelHeightSwitch(newIsHeightSet ? "Disable Height slider" : "Enable Height slider");
-    saveSelection("HeightSet", newIsHeightSet.toString());
-  };
-
-  const handleWidthSwitchChange = () => {
-    const newIsWidthSet = !isWidthSet;
-    setisWidthSet(newIsWidthSet);
-    setLabelWidthSwitch(newIsWidthSet ? "Disable width slider" : "Enable Width slider");
-    saveSelection("WidthSet", newIsWidthSet.toString());
+  const handleDimensionSlidersChange = () => {
+    const newIsEnabled = !isDimensionSlidersEnabled;
+    setIsDimensionSlidersEnabled(newIsEnabled);
+    setLabelDimensionSwitch(newIsEnabled ? "Disable Dimension sliders" : "Enable Dimension sliders");
+    saveSelection("DimensionSlidersEnabled", newIsEnabled.toString());
   };
 
   const handleV8ChartSwitchChange = () => {
@@ -96,14 +87,9 @@ const App: React.FC = () => {
             label={labelRTLMode}
           />
           <Switch
-            checked={isWidthSet}
-            onChange={handleWidthSwitchChange}
-            label={labelWidthSwitch}
-          />
-          <Switch
-            checked={isHeightSet}
-            onChange={handleHeightSwitchChange}
-            label={labelHeightSwitch}
+            checked={isDimensionSlidersEnabled}
+            onChange={handleDimensionSlidersChange}
+            label={labelDimensionSwitch}
           />
           <Switch
             checked={isV8ChartVisible}
@@ -113,15 +99,14 @@ const App: React.FC = () => {
           &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.25.1</Subtitle2>
           &nbsp;&nbsp;<Body2>@fluentui/react-charts &nbsp;</Body2><Subtitle2>0.0.0-nightly-20251110-0407.1</Subtitle2>
           <br />
-          {isWidthSet && (<>
+          {isDimensionSlidersEnabled && (<>
           <Subtitle2>Chart Width:</Subtitle2>&nbsp;&nbsp;
           <Slider
             min={300}
             max={window.innerWidth}
             value={chartWidth}
             onChange={handleSliderChange}
-          /></>)}
-          {isHeightSet && (<>
+          />
           <Subtitle2>Chart Height:</Subtitle2>&nbsp;&nbsp;
           <Slider
             min={300}
@@ -130,8 +115,8 @@ const App: React.FC = () => {
             onChange={handleHeightSliderChange}
           /></>)}
           <ChartWrapper 
-            width={isWidthSet ? chartWidth : undefined} 
-            height={isHeightSet ? chartHeight : undefined}
+            width={isDimensionSlidersEnabled ? chartWidth : undefined} 
+            height={isDimensionSlidersEnabled ? chartHeight : undefined}
             isReversedOrder={isV8ChartVisible}
           />
         </PortalCompatProvider>

@@ -131,8 +131,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       // Find all chart containers
       const containers = [
         document.querySelector('[data-testid="chart-container"]'),
-        document.querySelector('[data-testid="chart-container-v9"]'),
-        document.querySelector('[data-testid="plotly-plot"]')
+        document.querySelector('[data-testid="chart-container-v9"]')
       ];
 
       containers.forEach(container => {
@@ -375,7 +374,11 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       <br />
       <br />
       <ErrorBoundary>
-        <PlotlyChart schema={plotlySchemaCopy} />
+        <PlotlyChart 
+          schema={plotlySchemaCopy} 
+          width={width} 
+          height={height ? height - 40 : undefined}
+        />
       </ErrorBoundary>
     </div>
   );
