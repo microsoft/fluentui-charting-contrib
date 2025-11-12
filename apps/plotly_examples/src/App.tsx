@@ -21,12 +21,15 @@ import { SliderOnChangeData } from '@fluentui/react-components';
 const App: React.FC = () => {
   const [value, setValue] = React.useState(getSelection("Theme", "Light"));
   const [isRTL, setisRTL] = React.useState(getSelection("RTL", "false") === "true");
+  const [isHeightSet, setIsHeightSet] = React.useState(getSelection("HeightSet", "true") === "true");
   const [isWidthSet, setisWidthSet] = React.useState(getSelection("WidthSet", "true") === "true");
   const [isV8ChartVisible, setIsV8ChartVisible] = React.useState(getSelection("V8ChartVisible", "false") === "true");
   const [labelRTLMode, setLabelRTLMode] = React.useState("Enable RTL");
   const [labelWidthSwitch, setLabelWidthSwitch] = React.useState("Disable Width slider");
+  const [labelHeightSwitch, setLabelHeightSwitch] = React.useState("Disable Height slider");
   const [labelV8ChartSwitch, setLabelV8ChartSwitch] = React.useState("Reverse Chart Order");
   const [chartWidth, setChartWidth] = React.useState<number>(Number(getSelection("ChartWidth", window.innerWidth.toString())));
+  const [chartHeight, setChartHeight] = React.useState<number>(Number(getSelection("ChartHeight", "520")));
 
   setRTL(isRTL);
   const onOptionSelect = (event: SelectionEvents, data: OptionOnSelectData): void => {
@@ -40,6 +43,13 @@ const App: React.FC = () => {
     setLabelRTLMode(newIsRTL ? "Disable RTL" : "Enable RTL");
     setRTL(newIsRTL);
     saveSelection("RTL", newIsRTL.toString());
+  };
+
+  const handleHeightSwitchChange = () => {
+    const newIsHeightSet = !isHeightSet;
+    setIsHeightSet(newIsHeightSet);
+    setLabelHeightSwitch(newIsHeightSet ? "Disable Height slider" : "Enable Height slider");
+    saveSelection("HeightSet", newIsHeightSet.toString());
   };
 
   const handleWidthSwitchChange = () => {
@@ -59,6 +69,11 @@ const App: React.FC = () => {
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>, data: SliderOnChangeData) => {
     setChartWidth(Number(data.value));
     saveSelection("ChartWidth", data.value.toString());
+  };
+
+  const handleHeightSliderChange = (event: React.ChangeEvent<HTMLInputElement>, data: SliderOnChangeData) => {
+    setChartHeight(Number(data.value));
+    saveSelection("ChartHeight", data.value.toString());
   };
 
   return (
@@ -86,6 +101,11 @@ const App: React.FC = () => {
             label={labelWidthSwitch}
           />
           <Switch
+            checked={isHeightSet}
+            onChange={handleHeightSwitchChange}
+            label={labelHeightSwitch}
+          />
+          <Switch
             checked={isV8ChartVisible}
             onChange={handleV8ChartSwitchChange}
             label={labelV8ChartSwitch}
@@ -101,8 +121,17 @@ const App: React.FC = () => {
             value={chartWidth}
             onChange={handleSliderChange}
           /></>)}
+          {isHeightSet && (<>
+          <Subtitle2>Chart Height:</Subtitle2>&nbsp;&nbsp;
+          <Slider
+            min={300}
+            max={800}
+            value={chartHeight}
+            onChange={handleHeightSliderChange}
+          /></>)}
           <ChartWrapper 
             width={isWidthSet ? chartWidth : undefined} 
+            height={isHeightSet ? chartHeight : undefined}
             isReversedOrder={isV8ChartVisible}
           />
         </PortalCompatProvider>

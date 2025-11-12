@@ -23,6 +23,8 @@ import { mapFluentChart } from '@fluentui/chart-utilities';
 import { DeclarativeChart as DeclarativeChartV9 } from '@fluentui/react-charts'
 
 interface IDeclarativeChartProps {
+  width?: number;
+  height?: number;
   isReversedOrder?: boolean;
 }
 
@@ -83,7 +85,7 @@ const schemasData = requireContext.keys().map((fileName: string) => ({
 
 const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
 
-const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ isReversedOrder = false }) => {
+const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width, height, isReversedOrder = false }) => {
   const savedOptionStr = getSelection(SCHEMA_KEY, SCHEMA_KEY_DEFAULT);
   const savedOption = parseInt(savedOptionStr, 10) - 1; // To handle 0 based index
   const savedFileName = `data_${savedOptionStr}.json`;
@@ -98,8 +100,9 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ isReve
   const [isJsonInputEnabled, toggleJsonInput] = React.useState<boolean>(false);
   const [jsonInputValue, setJsonInputValue] = React.useState<string>('');
 
-   const declarativeChartRef = React.useRef<IDeclarativeChart>(null!);
+  const declarativeChartRef = React.useRef<IDeclarativeChart>(null!);
   const declarativeChartV9Ref = React.useRef<IDeclarativeChart>(null!);
+  const [chartRenderKey, setChartRenderKey] = React.useState<number>(0);
   let lastKnownValidLegends: string[] | undefined = selectedLegends;
 
   React.useEffect(() => {
@@ -114,6 +117,56 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ isReve
       document.removeEventListener('contextmenu', handleContextMenu);
     };
   }, []);
+
+  // Force re-render when height or width changes
+  React.useEffect(() => {
+    setChartRenderKey(prev => prev + 1);
+  }, [height, width]);
+
+  // Force chart height after render
+  React.useEffect(() => {
+    if (!height) return;
+
+    const applyHeightToCharts = () => {
+      // Find all chart containers
+      const containers = [
+        document.querySelector('[data-testid="chart-container"]'),
+        document.querySelector('[data-testid="chart-container-v9"]'),
+        document.querySelector('[data-testid="plotly-plot"]')
+      ];
+
+      containers.forEach(container => {
+        if (container) {
+          // Find all SVG elements within the container
+          const svgs = container.querySelectorAll('svg');
+          svgs.forEach((svg: any) => {
+            if (svg) {
+              const targetHeight = height - 120;
+              svg.style.height = `${targetHeight}px`;
+              svg.style.maxHeight = `${targetHeight}px`;
+              svg.setAttribute('height', targetHeight.toString());
+            }
+          });
+
+          // Also target chart wrapper divs
+          const chartDivs = container.querySelectorAll('div[style*="height"], div[class*="chart"]');
+          chartDivs.forEach((div: any) => {
+            if (div && div.style) {
+              const targetHeight = height - 120;
+              div.style.height = `${targetHeight}px`;
+              div.style.maxHeight = `${targetHeight}px`;
+            }
+          });
+        }
+      });
+    };
+
+    // Apply immediately and after a short delay to catch async renders
+    applyHeightToCharts();
+    const timeoutId = setTimeout(applyHeightToCharts, 500);
+    
+    return () => clearTimeout(timeoutId);
+  }, [height, chartRenderKey]);
 
   const _onChange = (event: SelectionEvents | null, data: OptionOnSelectData): void => {
     const selectedChoice = data.optionText!;
