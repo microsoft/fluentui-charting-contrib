@@ -90,7 +90,7 @@ const App: React.FC = () => {
             onChange={handleV8ChartSwitchChange}
             label={labelV8ChartSwitch}
           />
-          &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.25.1</Subtitle2>
+          &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.25.2</Subtitle2>
           &nbsp;&nbsp;<Body2>@fluentui/react-charts &nbsp;</Body2><Subtitle2>0.0.0-nightly-20251110-0407.1</Subtitle2>
           <br />
           {isWidthSet && (<>
