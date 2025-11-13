@@ -22,8 +22,10 @@ const App: React.FC = () => {
   const [value, setValue] = React.useState(getSelection("Theme", "Light"));
   const [isRTL, setisRTL] = React.useState(getSelection("RTL", "false") === "true");
   const [isWidthSet, setisWidthSet] = React.useState(getSelection("WidthSet", "true") === "true");
+  const [isV9ChartFirst, setIsV9ChartFirst] = React.useState(getSelection("isV9ChartFirst", "false") === "true");
   const [labelRTLMode, setLabelRTLMode] = React.useState("Enable RTL");
   const [labelWidthSwitch, setLabelWidthSwitch] = React.useState("Disable Width slider");
+  const [labelChartOrderSwitch] = React.useState("Mean the Chart Order");
   const [chartWidth, setChartWidth] = React.useState<number>(Number(getSelection("ChartWidth", window.innerWidth.toString())));
 
   setRTL(isRTL);
@@ -45,6 +47,12 @@ const App: React.FC = () => {
     setisWidthSet(newIsWidthSet);
     setLabelWidthSwitch(newIsWidthSet ? "Disable width slider" : "Enable Width slider");
     saveSelection("WidthSet", newIsWidthSet.toString());
+  };
+
+  const handleChartOrderSwitchChange = () => {
+    const newIsV9ChartFirst = !isV9ChartFirst;
+    setIsV9ChartFirst(newIsV9ChartFirst);
+    saveSelection("isV9ChartFirst", newIsV9ChartFirst.toString());
   };
 
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>, data: SliderOnChangeData) => {
@@ -76,6 +84,11 @@ const App: React.FC = () => {
             onChange={handleWidthSwitchChange}
             label={labelWidthSwitch}
           />
+          <Switch
+            checked={isV9ChartFirst}
+            onChange={handleChartOrderSwitchChange}
+            label={labelChartOrderSwitch}
+          />
           &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.25.2</Subtitle2>
           &nbsp;&nbsp;<Body2>@fluentui/react-charts &nbsp;</Body2><Subtitle2>0.0.0-nightly-20251110-0407.1</Subtitle2>
           <br />
@@ -87,7 +100,10 @@ const App: React.FC = () => {
             value={chartWidth}
             onChange={handleSliderChange}
           /></>)}
-          <ChartWrapper width={isWidthSet ? chartWidth : undefined} />
+          <ChartWrapper 
+            width={isWidthSet ? chartWidth : undefined} 
+            isReversedOrder={isV9ChartFirst}
+          />
         </PortalCompatProvider>
       </FluentProvider>
     </div>

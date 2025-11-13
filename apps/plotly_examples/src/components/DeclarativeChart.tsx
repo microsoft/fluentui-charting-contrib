@@ -23,6 +23,7 @@ import { mapFluentChart } from '@fluentui/chart-utilities';
 import { DeclarativeChart as DeclarativeChartV9 } from '@fluentui/react-charts'
 
 interface IDeclarativeChartProps {
+  isReversedOrder?: boolean;
 }
 
 
@@ -82,7 +83,7 @@ const schemasData = requireContext.keys().map((fileName: string) => ({
 
 const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
 
-const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
+const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ isReversedOrder = false }) => {
   const savedOptionStr = getSelection(SCHEMA_KEY, SCHEMA_KEY_DEFAULT);
   const savedOption = parseInt(savedOptionStr, 10) - 1; // To handle 0 based index
   const savedFileName = `data_${savedOptionStr}.json`;
@@ -247,6 +248,100 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
     }
   };
 
+  // Render V8 Chart section
+  const renderV8Chart = (chartType: OutputChartType, inputSchema: Schema, chartTitle: string) => (
+    <>
+      <Subtitle1 align="center" style={{ marginLeft: '30%' }}>Declarative chart from fluent v8</Subtitle1>
+      <div data-testid="chart-container">
+        <br />
+        <br />
+        <ErrorBoundary key={`${selectedChoice}_error-boundary-v8`}>
+          <Subtitle2>{chartTitle}</Subtitle2>
+          <Divider />
+          <br />
+          <br />
+          {chartType.isValid ? (
+            <DeclarativeChart
+              chartSchema={inputSchema}
+              onSchemaChange={_handleChartSchemaChanged}
+              componentRef={declarativeChartRef}
+            />
+          ) : (
+            <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>
+              {`${selectedChoice}: Error: ${chartType.errorMessage}`}
+            </div>
+          )}
+        </ErrorBoundary>
+      </div>
+      <br />
+      <TextField
+        label="Current Legend selection"
+        value={selectedLegendsState}
+        onChange={_onSelectedLegendsEdited}
+        styles={textFieldStyles}
+        disabled={isJsonInputEnabled}
+      />
+    </>
+  );
+
+  // Render V9 Chart section
+  const renderV9Chart = (chartType: OutputChartType, inputSchema: Schema, chartTitle: string) => (
+    <>
+      <Subtitle2>Charts v9</Subtitle2>
+      <div data-testid="chart-container-v9">
+        <br />
+        <br />
+        <ErrorBoundary key={`${selectedChoice}_error-boundary-v9`}>
+          <Subtitle2>{chartTitle}</Subtitle2>
+          <Divider />
+          <br />
+          <br />
+          {chartType.isValid ? (
+            <DeclarativeChartV9
+              chartSchema={inputSchema}
+              onSchemaChange={_handleChartSchemaChanged}
+              componentRef={declarativeChartV9Ref}
+            />
+          ) : (
+            <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>
+              {`${selectedChoice}: Error: ${chartType.errorMessage}`}
+            </div>
+          )}
+        </ErrorBoundary>
+      </div>
+      <br />
+    </>
+  );
+
+  // Render Plotly Chart section
+  const renderPlotlyChart = (plotlySchemaCopy: any, plotlyKey: string) => (
+    <div key={plotlyKey} data-testid="plotly-plot">
+      <Divider />
+      <br />
+      <Subtitle1 align="center" style={{ marginLeft: '30%' }}>Chart from plotly.js</Subtitle1>
+      <br />
+      <br />
+      <ErrorBoundary>
+        <PlotlyChart schema={plotlySchemaCopy} />
+      </ErrorBoundary>
+    </div>
+  );
+
+  // Get chart components in the correct order
+  const getChartsInOrder = (chartType: OutputChartType, inputSchema: Schema, chartTitle: string, plotlySchemaCopy: any, plotlyKey: string) => {
+    const v8Chart = renderV8Chart(chartType, inputSchema, chartTitle);
+    const v9Chart = renderV9Chart(chartType, inputSchema, chartTitle);
+    const plotlyChart = renderPlotlyChart(plotlySchemaCopy, plotlyKey);
+
+    if (isReversedOrder) {
+      // Reversed order: V9 → Plotly → V8
+      return [v9Chart, plotlyChart, v8Chart];
+    } else {
+      // Default order: V8 → Plotly → V9
+      return [v8Chart, plotlyChart, v9Chart];
+    }
+  };
+
    const createDeclarativeChart = (): React.JSX.Element => {
     const theme = getSelection("Theme", "Light");
     const isRTL = getSelection("RTL", "false") === "true";
@@ -371,65 +466,14 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = () => {
         >
           Download as Image
         </button>
-
-        <div data-testid="chart-container" >
-          <br />
-          <br />
-          <ErrorBoundary key={`${selectedChoice}_error-boundary-v8`}>
-            <Subtitle2>{chartTitle}</Subtitle2>
-            <Divider />
-            <br />
-            <br />
-            {chartType.isValid ? (
-              <DeclarativeChart
-                chartSchema={inputSchema}
-                onSchemaChange={_handleChartSchemaChanged}
-                componentRef={declarativeChartRef}
-              />
-            ) : (
-              <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>{`${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
-            )}
-          </ErrorBoundary>
-        </div>
         <br />
-        <TextField
-          label="Current Legend selection"
-          value={selectedLegendsState}
-          onChange={_onSelectedLegendsEdited}
-          styles={textFieldStyles}
-          disabled={isJsonInputEnabled}
-        />
-        <br />
-        <div key={plotlyKey} data-testid="plotly-plot">
-          <Divider />
-          <br />
-          <Subtitle1 align="center" style={{ marginLeft: '30%' }}>Chart from plotly.js</Subtitle1>
-          <br />
-          <br />
-          <ErrorBoundary>
-            <PlotlyChart schema={plotlySchemaCopy} />
-          </ErrorBoundary>
-        </div>
-        <Subtitle2>Charts v9</Subtitle2>
-        <div data-testid="chart-container-v9" >
-          <br />
-          <br />
-          <ErrorBoundary key={`${selectedChoice}_error-boundary-v9`}>
-            <Subtitle2>{chartTitle}</Subtitle2>
-            <Divider />
-            <br />
-            <br />
-            {chartType.isValid ? (
-              <DeclarativeChartV9
-                chartSchema={inputSchema}
-                onSchemaChange={_handleChartSchemaChanged}
-                componentRef={declarativeChartV9Ref}
-              />
-            ) : (
-              <div style={{ color: 'red', height: '180px', textAlign: 'center', paddingTop: '80px' }}>{`${selectedChoice}: Error: ${chartType.errorMessage}`}</div>
-            )}
-          </ErrorBoundary>
-        </div>
+        
+        {/* Render charts in the specified order */}
+        {getChartsInOrder(chartType, inputSchema, chartTitle, plotlySchemaCopy, plotlyKey).map((chart, index) => (
+          <div key={`chart-section-${index}`}>
+            {chart}
+          </div>
+        ))}
       </div>
     );
   };
