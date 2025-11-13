@@ -22,10 +22,10 @@ const App: React.FC = () => {
   const [value, setValue] = React.useState(getSelection("Theme", "Light"));
   const [isRTL, setisRTL] = React.useState(getSelection("RTL", "false") === "true");
   const [isWidthSet, setisWidthSet] = React.useState(getSelection("WidthSet", "true") === "true");
-  const [isV8ChartVisible, setIsV8ChartVisible] = React.useState(getSelection("V8ChartVisible", "false") === "true");
+  const [isReversedOrder, setIsV9ChartFirst] = React.useState(getSelection("isV9ChartFirst", "false") === "true");
   const [labelRTLMode, setLabelRTLMode] = React.useState("Enable RTL");
   const [labelWidthSwitch, setLabelWidthSwitch] = React.useState("Disable Width slider");
-  const [labelV8ChartSwitch, setLabelV8ChartSwitch] = React.useState("Reverse Chart Order");
+  const [labelV8ChartSwitch] = React.useState("Mean the Chart Order");
   const [chartWidth, setChartWidth] = React.useState<number>(Number(getSelection("ChartWidth", window.innerWidth.toString())));
 
   setRTL(isRTL);
@@ -49,11 +49,10 @@ const App: React.FC = () => {
     saveSelection("WidthSet", newIsWidthSet.toString());
   };
 
-  const handleV8ChartSwitchChange = () => {
-    const newIsV8ChartVisible = !isV8ChartVisible;
-    setIsV8ChartVisible(newIsV8ChartVisible);
-    setLabelV8ChartSwitch("Reverse Chart Order");
-    saveSelection("V8ChartVisible", newIsV8ChartVisible.toString());
+  const handleChartOrderSwitchChange = () => {
+    const newIsV9ChartFirst = !isReversedOrder;
+    setIsV9ChartFirst(newIsV9ChartFirst);
+    saveSelection("isV9ChartFirst", newIsV9ChartFirst.toString());
   };
 
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>, data: SliderOnChangeData) => {
@@ -86,8 +85,8 @@ const App: React.FC = () => {
             label={labelWidthSwitch}
           />
           <Switch
-            checked={isV8ChartVisible}
-            onChange={handleV8ChartSwitchChange}
+            checked={isReversedOrder}
+            onChange={handleChartOrderSwitchChange}
             label={labelV8ChartSwitch}
           />
           &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.25.2</Subtitle2>
@@ -103,7 +102,7 @@ const App: React.FC = () => {
           /></>)}
           <ChartWrapper 
             width={isWidthSet ? chartWidth : undefined} 
-            isReversedOrder={isV8ChartVisible}
+            isReversedOrder={isReversedOrder}
           />
         </PortalCompatProvider>
       </FluentProvider>
