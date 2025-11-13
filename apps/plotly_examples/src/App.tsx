@@ -22,10 +22,10 @@ const App: React.FC = () => {
   const [value, setValue] = React.useState(getSelection("Theme", "Light"));
   const [isRTL, setisRTL] = React.useState(getSelection("RTL", "false") === "true");
   const [isWidthSet, setisWidthSet] = React.useState(getSelection("WidthSet", "true") === "true");
-  const [isReversedOrder, setIsV9ChartFirst] = React.useState(getSelection("isV9ChartFirst", "false") === "true");
+  const [isV9ChartFirst, setIsV9ChartFirst] = React.useState(getSelection("isV9ChartFirst", "false") === "true");
   const [labelRTLMode, setLabelRTLMode] = React.useState("Enable RTL");
   const [labelWidthSwitch, setLabelWidthSwitch] = React.useState("Disable Width slider");
-  const [labelV8ChartSwitch] = React.useState("Mean the Chart Order");
+  const [labelChartOrderSwitch] = React.useState("Mean the Chart Order");
   const [chartWidth, setChartWidth] = React.useState<number>(Number(getSelection("ChartWidth", window.innerWidth.toString())));
 
   setRTL(isRTL);
@@ -50,7 +50,7 @@ const App: React.FC = () => {
   };
 
   const handleChartOrderSwitchChange = () => {
-    const newIsV9ChartFirst = !isReversedOrder;
+    const newIsV9ChartFirst = !isV9ChartFirst;
     setIsV9ChartFirst(newIsV9ChartFirst);
     saveSelection("isV9ChartFirst", newIsV9ChartFirst.toString());
   };
@@ -85,9 +85,9 @@ const App: React.FC = () => {
             label={labelWidthSwitch}
           />
           <Switch
-            checked={isReversedOrder}
+            checked={isV9ChartFirst}
             onChange={handleChartOrderSwitchChange}
-            label={labelV8ChartSwitch}
+            label={labelChartOrderSwitch}
           />
           &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.25.2</Subtitle2>
           &nbsp;&nbsp;<Body2>@fluentui/react-charts &nbsp;</Body2><Subtitle2>0.0.0-nightly-20251110-0407.1</Subtitle2>
@@ -102,7 +102,7 @@ const App: React.FC = () => {
           /></>)}
           <ChartWrapper 
             width={isWidthSet ? chartWidth : undefined} 
-            isReversedOrder={isReversedOrder}
+            isReversedOrder={isV9ChartFirst}
           />
         </PortalCompatProvider>
       </FluentProvider>
