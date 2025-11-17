@@ -21,12 +21,13 @@ import { SliderOnChangeData } from '@fluentui/react-components';
 const App: React.FC = () => {
   const [value, setValue] = React.useState(getSelection("Theme", "Light"));
   const [isRTL, setisRTL] = React.useState(getSelection("RTL", "false") === "true");
-  const [isWidthSet, setisWidthSet] = React.useState(getSelection("WidthSet", "true") === "true");
+  const [isDimensionSlidersEnabled, setIsDimensionSlidersEnabled] = React.useState(getSelection("DimensionSlidersEnabled", "true") === "true");
   const [isV9ChartFirst, setIsV9ChartFirst] = React.useState(getSelection("isV9ChartFirst", "false") === "true");
   const [labelRTLMode, setLabelRTLMode] = React.useState("Enable RTL");
-  const [labelWidthSwitch, setLabelWidthSwitch] = React.useState("Disable Width slider");
-  const [labelChartOrderSwitch] = React.useState("Mean the Chart Order");
+  const [labelDimensionSwitch, setLabelDimensionSwitch] = React.useState("Disable Dimension sliders");
+  const [labelChartOrderSwitch] = React.useState("Show v9 first");
   const [chartWidth, setChartWidth] = React.useState<number>(Number(getSelection("ChartWidth", window.innerWidth.toString())));
+  const [chartHeight, setChartHeight] = React.useState<number>(Number(getSelection("ChartHeight", "520")));
 
   setRTL(isRTL);
   const onOptionSelect = (event: SelectionEvents, data: OptionOnSelectData): void => {
@@ -42,11 +43,11 @@ const App: React.FC = () => {
     saveSelection("RTL", newIsRTL.toString());
   };
 
-  const handleWidthSwitchChange = () => {
-    const newIsWidthSet = !isWidthSet;
-    setisWidthSet(newIsWidthSet);
-    setLabelWidthSwitch(newIsWidthSet ? "Disable width slider" : "Enable Width slider");
-    saveSelection("WidthSet", newIsWidthSet.toString());
+   const handleDimensionSlidersChange = () => {
+    const newIsEnabled = !isDimensionSlidersEnabled;
+    setIsDimensionSlidersEnabled(newIsEnabled);
+    setLabelDimensionSwitch(newIsEnabled ? "Disable Dimension sliders" : "Enable Dimension sliders");
+    saveSelection("DimensionSlidersEnabled", newIsEnabled.toString());
   };
 
   const handleChartOrderSwitchChange = () => {
@@ -58,6 +59,11 @@ const App: React.FC = () => {
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>, data: SliderOnChangeData) => {
     setChartWidth(Number(data.value));
     saveSelection("ChartWidth", data.value.toString());
+  };
+
+  const handleHeightSliderChange = (event: React.ChangeEvent<HTMLInputElement>, data: SliderOnChangeData) => {
+    setChartHeight(Number(data.value));
+    saveSelection("ChartHeight", data.value.toString());
   };
 
   return (
@@ -80,9 +86,9 @@ const App: React.FC = () => {
             label={labelRTLMode}
           />
           <Switch
-            checked={isWidthSet}
-            onChange={handleWidthSwitchChange}
-            label={labelWidthSwitch}
+            checked={isDimensionSlidersEnabled}
+            onChange={handleDimensionSlidersChange}
+            label={labelDimensionSwitch}
           />
           <Switch
             checked={isV9ChartFirst}
@@ -92,16 +98,24 @@ const App: React.FC = () => {
           &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.25.2</Subtitle2>
           &nbsp;&nbsp;<Body2>@fluentui/react-charts &nbsp;</Body2><Subtitle2>0.0.0-nightly-20251117-0407.1</Subtitle2>
           <br />
-          {isWidthSet && (<>
+          {isDimensionSlidersEnabled && (<>
           <Subtitle2>Chart Width:</Subtitle2>&nbsp;&nbsp;
           <Slider
             min={300}
             max={window.innerWidth}
             value={chartWidth}
             onChange={handleSliderChange}
+            />
+            <Subtitle2>Chart Height:</Subtitle2>&nbsp;&nbsp;
+          <Slider
+            min={300}
+            max={800}
+            value={chartHeight}
+            onChange={handleHeightSliderChange}
           /></>)}
           <ChartWrapper 
-            width={isWidthSet ? chartWidth : undefined} 
+            width={isDimensionSlidersEnabled ? chartWidth : undefined} 
+            height={isDimensionSlidersEnabled ? chartHeight : undefined}
             isReversedOrder={isV9ChartFirst}
           />
         </PortalCompatProvider>
