@@ -136,18 +136,6 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
 
       containers.forEach(container => {
         if (container) {
-          // Find all SVG elements within the container
-          const svgs = container.querySelectorAll('svg');
-          svgs.forEach((svg: any) => {
-            if (svg) {
-              const targetHeight = height - 120;
-              svg.style.height = `${targetHeight}px`;
-              svg.style.maxHeight = `${targetHeight}px`;
-              svg.setAttribute('height', targetHeight.toString());
-            }
-          });
-
-          // Also target chart wrapper divs
           const chartDivs = container.querySelectorAll('div[style*="height"], div[class*="chart"]');
           chartDivs.forEach((div: any) => {
             if (div && div.style) {

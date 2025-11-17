@@ -25,7 +25,7 @@ const App: React.FC = () => {
   const [isV9ChartFirst, setIsV9ChartFirst] = React.useState(getSelection("isV9ChartFirst", "false") === "true");
   const [labelRTLMode, setLabelRTLMode] = React.useState("Enable RTL");
   const [labelDimensionSwitch, setLabelDimensionSwitch] = React.useState("Disable Dimension sliders");
-  const [labelChartOrderSwitch] = React.useState("Mean the Chart Order");
+  const [labelChartOrderSwitch] = React.useState("Show v9 first");
   const [chartWidth, setChartWidth] = React.useState<number>(Number(getSelection("ChartWidth", window.innerWidth.toString())));
   const [chartHeight, setChartHeight] = React.useState<number>(Number(getSelection("ChartHeight", "520")));
 
