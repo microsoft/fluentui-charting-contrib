@@ -21,6 +21,7 @@ import aggregatedChartTypes from './aggregated_chart_types.json';
 import type { OutputChartType } from '@fluentui/chart-utilities';
 import { mapFluentChart } from '@fluentui/chart-utilities';
 import { DeclarativeChart as DeclarativeChartV9 } from '@fluentui/react-charts'
+import { time } from 'console';
 
 interface IDeclarativeChartProps {
   width?: number;
@@ -136,14 +137,10 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
 
       containers.forEach(container => {
         if (container) {
-          const chartDivs = container.querySelectorAll('div[style*="height"], div[class*="chart"]');
-          chartDivs.forEach((div: any) => {
-            if (div && div.style) {
-              const targetHeight = height - 120;
-              div.style.height = `${targetHeight}px`;
-              div.style.maxHeight = `${targetHeight}px`;
-            }
-          });
+          // Only set container height, don't interfere with internal chart elements
+          (container as HTMLElement).style.height = `${height}px`;
+          (container as HTMLElement).style.minHeight = `${height}px`;
+          (container as HTMLElement).style.maxHeight = `${height}px`;
         }
       });
     };
@@ -405,8 +402,15 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       }
     }
     const bgcolor = theme === "Dark" ? "rgb(17,17,17)" : "white"; // Full layout for dark mode https://jsfiddle.net/3hfq7ast/
-    const fontColor = { "font": { "color": "white" } }
-    const layout_with_theme = { ...layout, plot_bgcolor: bgcolor, paper_bgcolor: bgcolor, font: fontColor };
+    const fontColor = theme === "Dark" ? { "font": { "color": "white" } } : {};
+    const layout_with_theme = { 
+      ...layout, 
+      plot_bgcolor: bgcolor, 
+      paper_bgcolor: bgcolor, 
+      ...fontColor,
+      height: height ? height - 120 : layout?.height || 400,
+      autosize: true
+    };
     const plotlySchema = { data, layout: layout_with_theme, selectedLegends: lastKnownValidLegends };
     const plotlySchemaCopy = JSON.parse(JSON.stringify(plotlySchema)); // Deep copy to avoid mutation
     const chartType: OutputChartType = mapFluentChart(plotlySchema);
