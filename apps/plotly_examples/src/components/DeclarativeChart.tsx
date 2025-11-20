@@ -21,7 +21,6 @@ import aggregatedChartTypes from './aggregated_chart_types.json';
 import type { OutputChartType } from '@fluentui/chart-utilities';
 import { mapFluentChart } from '@fluentui/chart-utilities';
 import { DeclarativeChart as DeclarativeChartV9 } from '@fluentui/react-charts'
-import { time } from 'console';
 
 interface IDeclarativeChartProps {
   width?: number;
