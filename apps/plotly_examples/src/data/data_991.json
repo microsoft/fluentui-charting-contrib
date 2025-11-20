@@ -1,0 +1,42 @@
+{
+  "data": [
+    {
+      "mode": "lines+markers",
+      "name": "Sample A",
+      "x": [800, 2000, 3000, 4000, 5000],
+      "y": [50.5, 42.3, 38.7, 35.2, 32.8],
+      "type": "scatter"
+    },
+    {
+      "mode": "lines+markers",
+      "name": "Sample B",
+      "x": [1000, 2000, 3000, 4000, 5000],
+      "y": [45.2, 38.9, 35.1, 31.8, 29.5],
+      "type": "scatter"
+    },
+    {
+      "mode": "lines+markers",
+      "name": "Sample C",
+      "x": [1000, 2000, 3000, 4000, 5000],
+      "y": [55.8, 47.6, 43.2, 39.9, 37.1],
+      "type": "scatter"
+    }
+  ],
+  "layout": {
+    "title": {
+      "text": "Material Properties Comparison"
+    },
+    "xaxis": {
+      "title": {
+        "text": "Shear Rate (1/s)"
+      },
+      "range": [1000, 5000]
+    },
+    "yaxis": {
+      "title": {
+        "text": "Viscosity (cP)"
+      }
+    }
+  },
+    "id": "991"
+}

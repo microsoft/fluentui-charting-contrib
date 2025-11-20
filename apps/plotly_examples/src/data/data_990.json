@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "x": [0.5, 1.2, 2.1, 3.5, 4.8, 6.2],
+      "y": [3.2, 5.1, 4.7, 6.3, 7.8, 9.1],
+      "mode": "lines+markers",
+      "type": "scatter",
+      "name": "Voltage",
+      "line": {
+        "width": 2,
+        "shape": "spline"
+      },
+      "marker": {
+        "size": 10,
+        "symbol": "circle"
+      }
+    }
+  ],
+  "layout": {
+    "title": {
+      "text": "Voltage Measurements"
+    },
+    "xaxis": {
+      "title": {
+        "text": "Time (ms)"
+      },
+      "range": [0, 7.5]
+    },
+    "yaxis": {
+      "title": {
+        "text": "Voltage (V)"
+      }
+    }
+  },
+    "id": "990"
+}

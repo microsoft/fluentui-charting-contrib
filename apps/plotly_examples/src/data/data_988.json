@@ -1,0 +1,35 @@
+{
+  "data": [
+    {
+      "x": [-20, -10, 0, 10, 20, 28],
+      "y": [5, 8, 12, 15, 18, 22],
+      "mode": "lines+markers",
+      "type": "scatter",
+      "name": "Growth Rate",
+      "line": {
+        "width": 3,
+        "dash": "solid"
+      },
+      "marker": {
+        "size": 8
+      }
+    }
+  ],
+  "layout": {
+    "title": {
+      "text": "Growth Rate Analysis"
+    },
+    "xaxis": {
+      "title": {
+        "text": "Days from Start"
+      },
+      "range": [-20, 40]
+    },
+    "yaxis": {
+      "title": {
+        "text": "Growth %"
+      }
+    }
+  },
+  "id": 988
+}
