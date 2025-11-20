@@ -128,18 +128,16 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
     if (!height) return;
 
     const applyHeightToCharts = () => {
-      // Find all chart containers
-      const containers = [
-        document.querySelector('[data-testid="chart-container"]'),
-        document.querySelector('[data-testid="chart-container-v9"]')
-      ];
-
-      containers.forEach(container => {
-        if (container) {
-          // Only set container height, don't interfere with internal chart elements
-          (container as HTMLElement).style.height = `${height}px`;
-          (container as HTMLElement).style.minHeight = `${height}px`;
-          (container as HTMLElement).style.maxHeight = `${height}px`;
+      // Find all chart containers by class names
+      const chartRoots = document.querySelectorAll('[class*="chartWrapper"]');
+      chartRoots.forEach((root) => {
+        if (root) {
+          const parent = (root as HTMLElement).parentElement?.parentElement;
+          if (parent) {
+            parent.style.height = `${height}px`;
+            parent.style.minHeight = `${height}px`;
+            parent.style.maxHeight = `${height}px`;
+          }
         }
       });
     };
