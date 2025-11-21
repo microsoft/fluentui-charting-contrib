@@ -225,6 +225,8 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
       const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
       saveSelection(SCHEMA_KEY, num_id.toString().padStart(3, '0'));
+      // Force re-render to ensure height is applied to new chart
+      setChartRenderKey(prev => prev + 1);
     } else {
       setSelectedChoice('');
       setSelectedSchema({});
@@ -255,6 +257,8 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
       const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
       saveSelection(SCHEMA_KEY, num_id.toString().padStart(3, '0'));
+      // Force re-render to ensure height is applied to new chart
+      setChartRenderKey(prev => prev + 1);
     } else {
       setSelectedChoice('');
       setSelectedSchema({});
