@@ -68,7 +68,7 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <FluentProvider theme={value === "Light" ? webLightTheme : webDarkTheme} targetDocument={document}>
+      <FluentProvider theme={value === "Light" ? webLightTheme : webDarkTheme} targetDocument={document} dir={isRTL ? 'rtl' : 'ltr'}>
         <PortalCompatProvider>
           <Subtitle2> Theme:</Subtitle2>&nbsp;&nbsp;
           <Dropdown
