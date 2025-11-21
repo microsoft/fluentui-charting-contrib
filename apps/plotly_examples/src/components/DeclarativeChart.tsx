@@ -157,6 +157,8 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
     setSelectedChoice(selectedChoice);
     setSelectedSchema(selectedSchema);
     setSelectedLegendsState(JSON.stringify(selectedLegends));
+     // Force re-render to ensure height is applied to new chart
+    setChartRenderKey(prev => prev + 1);
   };
 
   const _onSelectedLegendsEdited = (
@@ -399,15 +401,8 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       }
     }
     const bgcolor = theme === "Dark" ? "rgb(17,17,17)" : "white"; // Full layout for dark mode https://jsfiddle.net/3hfq7ast/
-    const fontColor = theme === "Dark" ? { "font": { "color": "white" } } : {};
-    const layout_with_theme = { 
-      ...layout, 
-      plot_bgcolor: bgcolor, 
-      paper_bgcolor: bgcolor, 
-      ...fontColor,
-      height: height ? height - 120 : layout?.height || 400,
-      autosize: true
-    };
+   const fontColor = { "font": { "color": "white" } }
+    const layout_with_theme = { ...layout, plot_bgcolor: bgcolor, paper_bgcolor: bgcolor, font: fontColor };
     const plotlySchema = { data, layout: layout_with_theme, selectedLegends: lastKnownValidLegends };
     const plotlySchemaCopy = JSON.parse(JSON.stringify(plotlySchema)); // Deep copy to avoid mutation
     const chartType: OutputChartType = mapFluentChart(plotlySchema);
