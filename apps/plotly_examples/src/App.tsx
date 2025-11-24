@@ -27,7 +27,7 @@ const App: React.FC = () => {
   const [labelDimensionSwitch, setLabelDimensionSwitch] = React.useState("Disable Dimension sliders");
   const [labelChartOrderSwitch] = React.useState("Show v9 first");
   const [chartWidth, setChartWidth] = React.useState<number>(Number(getSelection("ChartWidth", window.innerWidth.toString())));
-  const [chartHeight, setChartHeight] = React.useState<number>(Number(getSelection("ChartHeight", "520")));
+  const [chartHeight, setChartHeight] = React.useState<number>(Number(getSelection("ChartHeight", "400")));
 
   setRTL(isRTL);
   const onOptionSelect = (event: SelectionEvents, data: OptionOnSelectData): void => {
@@ -99,24 +99,32 @@ const App: React.FC = () => {
           &nbsp;&nbsp;<Body2>@fluentui/react-charts &nbsp;</Body2><Subtitle2>0.0.0-nightly-20251117-0407.1</Subtitle2>
           <br />
           {isDimensionSlidersEnabled && (<>
-          <Subtitle2>Chart Width:</Subtitle2>&nbsp;&nbsp;
-          <Slider
-            min={300}
-            max={window.innerWidth}
-            value={chartWidth}
-            onChange={handleSliderChange}
-            />
-            <Subtitle2>Chart Height:</Subtitle2>&nbsp;&nbsp;
-          <Slider
-            min={300}
-            max={800}
-            value={chartHeight}
-            onChange={handleHeightSliderChange}
-          /></>)}
+          <div style={{ display: 'flex', flexDirection: isRTL ? 'row-reverse' : 'row', alignItems: 'center', gap: '20px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <Subtitle2>Chart Width:</Subtitle2>
+              <Slider
+                min={300}
+                max={window.innerWidth}
+                value={chartWidth}
+                onChange={handleSliderChange}
+              />
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <Subtitle2>Chart Height:</Subtitle2>
+              <Slider
+                min={300}
+                max={800}
+                value={chartHeight}
+                onChange={handleHeightSliderChange}
+              />
+            </div>
+          </div>
+          </>)}
           <ChartWrapper 
             width={isDimensionSlidersEnabled ? chartWidth : undefined} 
             height={isDimensionSlidersEnabled ? chartHeight : undefined}
             isReversedOrder={isV9ChartFirst}
+            isRTL={isRTL}
           />
         </PortalCompatProvider>
       </FluentProvider>

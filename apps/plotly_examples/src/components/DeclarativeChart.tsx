@@ -26,6 +26,7 @@ interface IDeclarativeChartProps {
   width?: number;
   height?: number;
   isReversedOrder?: boolean;
+  isRTL?: boolean;
 }
 
 
@@ -85,7 +86,7 @@ const schemasData = requireContext.keys().map((fileName: string) => ({
 
 const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
 
-const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width, height, isReversedOrder = false }) => {
+const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width, height, isReversedOrder = false, isRTL = false }) => {
   const savedOptionStr = getSelection(SCHEMA_KEY, SCHEMA_KEY_DEFAULT);
   const savedOption = parseInt(savedOptionStr, 10) - 1; // To handle 0 based index
   const savedFileName = `data_${savedOptionStr}.json`;
@@ -147,7 +148,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
     const timeoutId = setTimeout(applyHeightToCharts, 500);
 
     return () => clearTimeout(timeoutId);
-  }, [height, chartRenderKey]);
+  }, [height, chartRenderKey, isRTL]);
 
   const _onChange = (event: SelectionEvents | null, data: OptionOnSelectData): void => {
     const selectedChoice = data.optionText!;
