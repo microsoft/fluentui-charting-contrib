@@ -169,10 +169,10 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
     setSelectedLegendsState(newValue ?? '');
   };
 
-  function fileSaver(url: string) {
+  function fileSaver(url: string, name: string) {
     const saveLink = document.createElement('a');
     saveLink.href = url;
-    saveLink.download = 'converted-image.png';
+    saveLink.download = name;
     document.body.appendChild(saveLink);
     saveLink.click();
     document.body.removeChild(saveLink);
@@ -293,6 +293,19 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
   const renderV8Chart = (chartType: OutputChartType, inputSchema: Schema, chartTitle: string) => (
     <>
       <Subtitle1 align="center" style={{ marginLeft: '30%' }}>Declarative chart from fluent v8</Subtitle1>
+      <br/>
+      <button
+        onClick={() => {
+          const start = performance.now();
+          declarativeChartRef.current?.exportAsImage().then((imgData: string) => {
+            const end = performance.now();
+            console.log(`V8 exportAsImage took ${(end - start).toFixed(2)} ms`);
+            fileSaver(imgData, 'v8-chart-image.png');
+          });
+        }}
+      >
+        Download V8 Chart as Image
+      </button>
       <div data-testid="chart-container">
         <br />
         <br />
@@ -329,6 +342,19 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
   const renderV9Chart = (chartType: OutputChartType, inputSchema: Schema, chartTitle: string) => (
     <>
       <Subtitle2>Charts v9</Subtitle2>
+      <br/>
+      <button
+        onClick={() => {
+          const start = performance.now();
+          declarativeChartV9Ref.current?.exportAsImage().then((imgData: string) => {
+            const end = performance.now();
+            console.log(`V9 exportAsImage took ${(end - start).toFixed(2)} ms`);
+            fileSaver(imgData, 'v9-chart-image.png');
+          });
+        }}
+      >
+        Download V9 Chart as Image
+      </button>
       <div data-testid="chart-container-v9">
         <br />
         <br />
@@ -498,19 +524,6 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
             </>
           )}
         </div>
-        <br />
-        <button
-          onClick={() => {
-            const start = performance.now();
-            declarativeChartRef.current?.exportAsImage().then((imgData: string) => {
-              const end = performance.now();
-              console.log(`exportAsImage took ${(end - start).toFixed(2)} ms`);
-              fileSaver(imgData);
-            });
-          }}
-        >
-          Download as Image
-        </button>
         <br />
         
         {/* Render charts in the specified order */}
