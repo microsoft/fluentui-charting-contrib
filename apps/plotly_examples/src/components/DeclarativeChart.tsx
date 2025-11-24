@@ -26,6 +26,7 @@ interface IDeclarativeChartProps {
   width?: number;
   height?: number;
   isReversedOrder?: boolean;
+  isRTL?: boolean;
 }
 
 
@@ -85,7 +86,7 @@ const schemasData = requireContext.keys().map((fileName: string) => ({
 
 const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
 
-const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width, height, isReversedOrder = false }) => {
+const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width, height, isReversedOrder = false, isRTL = false }) => {
   const savedOptionStr = getSelection(SCHEMA_KEY, SCHEMA_KEY_DEFAULT);
   const savedOption = parseInt(savedOptionStr, 10) - 1; // To handle 0 based index
   const savedFileName = `data_${savedOptionStr}.json`;
@@ -128,22 +129,16 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
     if (!height) return;
 
     const applyHeightToCharts = () => {
-      // Find all chart containers
-      const containers = [
-        document.querySelector('[data-testid="chart-container"]'),
-        document.querySelector('[data-testid="chart-container-v9"]')
-      ];
-
-      containers.forEach(container => {
-        if (container) {
-          const chartDivs = container.querySelectorAll('div[style*="height"], div[class*="chart"]');
-          chartDivs.forEach((div: any) => {
-            if (div && div.style) {
-              const targetHeight = height - 120;
-              div.style.height = `${targetHeight}px`;
-              div.style.maxHeight = `${targetHeight}px`;
-            }
-          });
+      // Find all chart containers by class names
+      const chartRoots = document.querySelectorAll('[class*="chartWrapper"]');
+      chartRoots.forEach((root) => {
+        if (root) {
+          const parent = (root as HTMLElement).parentElement?.parentElement;
+          if (parent) {
+            parent.style.height = `${height}px`;
+            parent.style.minHeight = `${height}px`;
+            parent.style.maxHeight = `${height}px`;
+          }
         }
       });
     };
@@ -153,7 +148,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
     const timeoutId = setTimeout(applyHeightToCharts, 500);
 
     return () => clearTimeout(timeoutId);
-  }, [height, chartRenderKey]);
+  }, [height, chartRenderKey, isRTL]);
 
   const _onChange = (event: SelectionEvents | null, data: OptionOnSelectData): void => {
     const selectedChoice = data.optionText!;
@@ -163,6 +158,8 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
     setSelectedChoice(selectedChoice);
     setSelectedSchema(selectedSchema);
     setSelectedLegendsState(JSON.stringify(selectedLegends));
+     // Force re-render to ensure height is applied to new chart
+    setChartRenderKey(prev => prev + 1);
   };
 
   const _onSelectedLegendsEdited = (
@@ -229,6 +226,8 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
       const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
       saveSelection(SCHEMA_KEY, num_id.toString().padStart(3, '0'));
+      // Force re-render to ensure height is applied to new chart
+      setChartRenderKey(prev => prev + 1);
     } else {
       setSelectedChoice('');
       setSelectedSchema({});
@@ -259,6 +258,8 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
       const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
       saveSelection(SCHEMA_KEY, num_id.toString().padStart(3, '0'));
+      // Force re-render to ensure height is applied to new chart
+      setChartRenderKey(prev => prev + 1);
     } else {
       setSelectedChoice('');
       setSelectedSchema({});

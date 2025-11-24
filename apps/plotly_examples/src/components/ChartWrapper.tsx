@@ -7,14 +7,15 @@ interface ChartWrapperProps {
     width: number| undefined;
     height: number| undefined;
     isReversedOrder?: boolean;
+    isRTL?: boolean;
 }
 
-export function ChartWrapper({ width, height, isReversedOrder }: ChartWrapperProps) {
+export function ChartWrapper({ width, height, isReversedOrder, isRTL }: ChartWrapperProps) {
     const v8Theme = createTheme({ palette: paletteSlots, semanticColors: semanticSlots }); //ToDo - Make the slot values dynamic
     return (
         <ThemeProvider theme={v8Theme}>
             <div style={{ marginLeft: '25px', ...(width !== undefined && { width }) }}>
-                <DeclarativeChartBasicExample width={width} height={height} isReversedOrder={isReversedOrder} />
+                <DeclarativeChartBasicExample width={width} height={height} isReversedOrder={isReversedOrder} isRTL={isRTL} />
             </div>
         </ThemeProvider>
     );
