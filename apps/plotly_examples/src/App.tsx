@@ -95,7 +95,7 @@ const App: React.FC = () => {
             onChange={handleChartOrderSwitchChange}
             label={labelChartOrderSwitch}
           />
-          &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.25.2</Subtitle2>
+          &nbsp;&nbsp;<Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.25.3</Subtitle2>
           &nbsp;&nbsp;<Body2>@fluentui/react-charts &nbsp;</Body2><Subtitle2>0.0.0-nightly-20251124-0406.1</Subtitle2>
           <br />
           {isDimensionSlidersEnabled && (<>
