@@ -4,10 +4,10 @@ import { startExampleTestIndexLocalization, endExampleTestIndexLocalization, cha
 test.beforeEach(async ({ page }) => {
   //Pass base URL as part of playwright command 
   // ex:  npx cross-env BASE_URL='https://fluentchartstest-stage.azurewebsites.net/' npx playwright test
-  await page.goto("http://localhost:3000/");
+    await page.goto(process.env.BASE_URL!);
 });
 
-for (let index = 960; index < 991; index++) {
+for (let index = startExampleTestIndexLocalization; index < endExampleTestIndexLocalization; index++) {
   test(`Declarative chart example ${index + 1}`, async ({ page }) => {
     const iframe = page.locator('#webpack-dev-server-client-overlay');
     if (await iframe.count() > 0) {
