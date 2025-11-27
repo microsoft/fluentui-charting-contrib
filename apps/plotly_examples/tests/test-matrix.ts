@@ -1,11 +1,11 @@
 const startExampleTestIndex = 0;
 export const totalChartExamplesCount = 991;
-const startExampleTestIndexLocalization = 377;
-const endExampleTestIndexLocalization = 569;
+export const startExampleTestIndexLocalization = 377;
+export const endExampleTestIndexLocalization = 569;
 
-export const chartsListWithErrors = [];
+export const chartsListWithErrors: number[] = [];
 
-export const chartsListWithErrorsV9 = [];
+export const chartsListWithErrorsV9:  number[]  = [];
 
 export const themes = ["Light", "Dark"];
 export const modes = ["LTR", "RTL"];
