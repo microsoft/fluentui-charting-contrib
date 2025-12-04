@@ -319,7 +319,6 @@ module.exports = function (webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
-        "@fluentui/react-shared-contexts": path.resolve(__dirname, "../node_modules/@fluentui/react-shared-contexts")
       },
       plugins: [
         // Prevents users from importing files from outside of src/ (or node_modules/).
