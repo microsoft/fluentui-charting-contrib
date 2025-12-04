@@ -22,7 +22,7 @@ for (const testConfig of testMatrix) {
       }
 
       page = await context.newPage();
-      await page.goto(process.env.BASE_URL!);
+      await page.goto("http://localhost:3000/");
     });
 
     test.afterAll(async () => {
