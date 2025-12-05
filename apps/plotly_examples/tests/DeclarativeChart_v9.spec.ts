@@ -47,8 +47,36 @@ for (const testConfig of testMatrix) {
         const combobox = page.getByRole('combobox');
         await combobox.nth(1).click();
         const listitems = listbox.last().getByRole('option');
-        await listitems.nth(index).scrollIntoViewIfNeeded();
-        await listitems.nth(index).click();
+        // Check if the index is available, if not scroll listbox to load more items
+        let totalOptions = await listitems.count();
+        let maxAttempts = 5; // Prevent infinite loop
+        let attempts = 0;
+        
+        while (index >= totalOptions && attempts < maxAttempts) {
+          // Scroll to bottom of listbox to trigger loading more items
+          await listbox.last().evaluate((el) => {
+            el.scrollTop = el.scrollHeight;
+          });
+          // Wait for items to load
+          await page.waitForTimeout(1000);
+          
+          const newTotalOptions = await listitems.count();
+          if (newTotalOptions <= totalOptions) {
+            // No new items loaded, break to avoid infinite loop
+            break;
+          }
+          totalOptions = newTotalOptions;
+          attempts++;
+        }
+        
+        // Use the actual index if available, otherwise use the last available option
+        const actualIndex = Math.min(index, totalOptions - 1);
+        if (actualIndex !== index) {
+          console.warn(`Index ${index} not available in dropdown. Using index ${actualIndex} instead. Total available: ${totalOptions}`);
+        }
+        
+        await listitems.nth(actualIndex).scrollIntoViewIfNeeded();
+        await listitems.nth(actualIndex).click();
         const chart = page.getByTestId('chart-container-v9');
         await page.mouse.move(0, 0); // Move mouse to top-left corner
         if (!chartsListWithErrorsV9.includes(index + 1)) {

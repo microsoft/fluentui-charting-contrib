@@ -47,7 +47,6 @@ for (const testConfig of testMatrix) {
         const combobox = page.getByRole('combobox');
         await combobox.nth(1).click();
         const listitems = listbox.last().getByRole('option');
-        
         // Check if the index is available, if not scroll listbox to load more items
         let totalOptions = await listitems.count();
         let maxAttempts = 5; // Prevent infinite loop
@@ -55,7 +54,7 @@ for (const testConfig of testMatrix) {
         
         while (index >= totalOptions && attempts < maxAttempts) {
           // Scroll to bottom of listbox to trigger loading more items
-          await listbox.last().evaluate((el: any) => {
+          await listbox.last().evaluate((el) => {
             el.scrollTop = el.scrollHeight;
           });
           // Wait for items to load

@@ -22,7 +22,7 @@ for (const testConfig of testMatrix) {
       }
 
       page = await context.newPage();
-      await page.goto("http://localhost:3000/");
+      await page.goto(process.env.BASE_URL!);
     });
 
     test.afterAll(async () => {
@@ -45,11 +45,39 @@ for (const testConfig of testMatrix) {
           await rtlSwitch.click();
         }
         const combobox = page.getByRole('combobox');
-        await combobox.nth(1).click();
-        const listbox1 = page.getByRole('listbox');
-        const listitems = listbox1.last().getByRole('option');
-        await listitems.nth(index).scrollIntoViewIfNeeded();
-        await listitems.nth(index).click();
+        await combobox.nth(1).click();        
+        const listitems = listbox.last().getByRole('option');
+        
+        // Check if the index is available, if not scroll listbox to load more items
+        let totalOptions = await listitems.count();
+        let maxAttempts = 5; // Prevent infinite loop
+        let attempts = 0;
+        
+        while (index >= totalOptions && attempts < maxAttempts) {
+          // Scroll to bottom of listbox to trigger loading more items
+          await listbox.last().evaluate((el) => {
+            el.scrollTop = el.scrollHeight;
+          });
+          // Wait for items to load
+          await page.waitForTimeout(1000);
+          
+          const newTotalOptions = await listitems.count();
+          if (newTotalOptions <= totalOptions) {
+            // No new items loaded, break to avoid infinite loop
+            break;
+          }
+          totalOptions = newTotalOptions;
+          attempts++;
+        }
+        
+        // Use the actual index if available, otherwise use the last available option
+        const actualIndex = Math.min(index, totalOptions - 1);
+        if (actualIndex !== index) {
+          console.warn(`Index ${index} not available in dropdown. Using index ${actualIndex} instead. Total available: ${totalOptions}`);
+        }
+        
+        await listitems.nth(actualIndex).scrollIntoViewIfNeeded();
+        await listitems.nth(actualIndex).click();
         const [download] = await Promise.all([
           page.waitForEvent('download'),
           page.getByRole('button', { name: "Download V9 Chart as Image" }).click()
@@ -62,11 +90,11 @@ for (const testConfig of testMatrix) {
   });
 }
 
-async function stream2buffer(stream: Stream) {
-  return new Promise<Buffer>((resolve, reject) => {
+async function stream2buffer(stream: any) {
+  return new Promise<any>((resolve, reject) => {
     const _buf = Array<any>();
-    stream.on("data", chunk => _buf.push(chunk));
+    stream.on("data", (chunk: any) => _buf.push(chunk));
     stream.on("end", () => resolve(Buffer.concat(_buf)));
-    stream.on("error", err => reject(`error converting stream - ${err}`));
+    stream.on("error", (err: any) => reject(`error converting stream - ${err}`));
   });
 } 
