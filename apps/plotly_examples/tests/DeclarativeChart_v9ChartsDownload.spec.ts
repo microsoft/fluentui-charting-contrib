@@ -1,6 +1,7 @@
 /* eslint-disable no-loop-func */
-import { test, expect } from '@playwright/test';
-import { chartsListWithErrorsV9, testMatrix } from './test-matrix';
+import { test, expect, Page, BrowserContext } from '@playwright/test';
+import { testMatrix } from './test-matrix';
+
 
 for (const testConfig of testMatrix) {
   const theme = testConfig.theme;
@@ -9,8 +10,8 @@ for (const testConfig of testMatrix) {
   const testLocaleName = locale ? `-${locale}` : '';
   const highContrast = testConfig.highContrast ? '-HighContrast' : '';
   test.describe('', () => {
-    let context;
-    let page;
+    let context: BrowserContext;
+    let page: Page;
 
     test.beforeAll(async ({ browser }) => {
       if (testConfig.highContrast) {
@@ -27,9 +28,8 @@ for (const testConfig of testMatrix) {
     test.afterAll(async () => {
       await context?.close();
     });
-    //test.describe(`Declarative chart examples in ${theme} mode and ${mode} layout`, () => {
     for (let index = testConfig.startExampleIndex; index <= testConfig.endExampleIndex; index++) {
-      test(`Declarative chart example ${index + 1}-${theme}-${mode} mode${testLocaleName}${highContrast}` , async () => {
+      test(`Declarative chart example ${index + 1}-${theme}-${mode} mode${testLocaleName}${highContrast} Download V9 Chart Image`, async () => {
         const iframe = page.locator('#webpack-dev-server-client-overlay');
         if (await iframe.count() > 0) {
           await iframe.evaluate((el) => el.remove()).catch(() => {
@@ -45,8 +45,9 @@ for (const testConfig of testMatrix) {
           await rtlSwitch.click();
         }
         const combobox = page.getByRole('combobox');
-        await combobox.nth(1).click();
+        await combobox.nth(1).click();        
         const listitems = listbox.last().getByRole('option');
+        
         // Check if the index is available, if not scroll listbox to load more items
         let totalOptions = await listitems.count();
         let maxAttempts = 5; // Prevent infinite loop
@@ -77,15 +78,23 @@ for (const testConfig of testMatrix) {
         
         await listitems.nth(actualIndex).scrollIntoViewIfNeeded();
         await listitems.nth(actualIndex).click();
-        const chart = page.getByTestId('chart-container-v9');
-        await page.mouse.move(0, 0); // Move mouse to top-left corner
-        if (!chartsListWithErrorsV9.includes(index + 1)) {
-          await expect(chart).toHaveScreenshot();
-          await combobox.last().click();
-        } else {
-          await expect(chart).not.toHaveScreenshot();
-        }
+        const [download] = await Promise.all([
+          page.waitForEvent('download'),
+          page.getByRole('button', { name: "Download V9 Chart as Image" }).click()
+        ]);
+        const downloadedImageBuffer = await stream2buffer(await download.createReadStream())
+        expect(downloadedImageBuffer).toMatchSnapshot(`downloaded-declarative-chart-example-${index + 1}-${theme}-${mode}mode${testLocaleName}${highContrast}.png`)
+        await download.delete()
       });
     };
   });
 }
+
+async function stream2buffer(stream: any) {
+  return new Promise<any>((resolve, reject) => {
+    const _buf = Array<any>();
+    stream.on("data", (chunk: any) => _buf.push(chunk));
+    stream.on("end", () => resolve(Buffer.concat(_buf)));
+    stream.on("error", (err: any) => reject(`error converting stream - ${err}`));
+  });
+} 
