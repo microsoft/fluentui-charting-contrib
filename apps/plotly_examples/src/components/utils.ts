@@ -12,7 +12,7 @@ export function getSelection(key: string, defaultValue: string): string {
 }
 
 export const SCHEMA_KEY = 'Schema';
-export const SCHEMA_KEY_DEFAULT = '0001'
+export const SCHEMA_KEY_DEFAULT = '001'
 
 export function symbolWithMargin(symbolFn: (size: number) => string, size: number, margin = 1) {
     const adjustedSize = Math.max(0, size - 2 * margin);

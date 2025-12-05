@@ -49,7 +49,6 @@ type PlotType =
   | 'Funnel'
   | 'ScatterPolar'
   | 'Gantt'
-  | 'Annotation'
   | 'Others';
 
 type DataType =
@@ -75,105 +74,37 @@ const dataTypeRanges = {
   'plotly_express_colors': [{ min: 570, max: 749 }, { min: 768, max: 787 }],
   'advanced_scenarios': [{ min: 788, max: 839 }, { min: 847, max: 847 }, { min: 854, max: 854 }, { min: 857, max: 870 }, { min: 872, max: 892 }],
   'y_as_object': [{ min: 923, max: 927 }],
-  'annotations': [{ min: 966, max: 984}, { min: 992, max: 1005 }],
+  'annotations': [{ min: 966, max: 984}]
 };
 
-// Use require.context to access all JSON files from the split_data folder without eagerly loading them
+// Use require.context to load all JSON files from the split_data folder
 const requireContext = require.context('../data', false, /\.json$/);
-
-interface SchemaEntry {
-  fileName: string;
-  id: number;
-}
-
-const CHUNK_SIZE = 250;
+const schemasData = requireContext.keys().map((fileName: string) => ({
+  fileName: fileName.replace('./', ''),
+  schema: requireContext(fileName),
+}));
 
 const textFieldStyles: Partial<ITextFieldStyles> = { root: { maxWidth: 300 } };
 
 const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width, height, isReversedOrder = false, isRTL = false }) => {
   const savedOptionStr = getSelection(SCHEMA_KEY, SCHEMA_KEY_DEFAULT);
-  const schemaCacheRef = React.useRef<Map<string, Schema | undefined>>(new Map());
-  const dropdownButtonRef = React.useRef<HTMLButtonElement | null>(null);
+  const savedOption = parseInt(savedOptionStr, 10) - 1; // To handle 0 based index
+  const savedFileName = `data_${savedOptionStr}.json`;
+  const _selectedSchema = schemasData[savedOption]?.schema || {};
 
-  const [isDropdownOpen, setIsDropdownOpen] = React.useState<boolean>(false);
-
-  const loadSchema = React.useCallback((fileName: string): Schema | undefined => {
-    if (!fileName) {
-      return undefined;
-    }
-    const cachedSchema = schemaCacheRef.current.get(fileName);
-    if (cachedSchema) {
-      return cachedSchema;
-    }
-    try {
-      const schema = requireContext(`./${fileName}`) as Schema;
-      schemaCacheRef.current.set(fileName, schema);
-      return schema;
-    } catch (error) {
-      console.error(`Failed to load schema for ${fileName}`, error);
-      return undefined;
-    }
-  }, []);
-
-  const allSchemaEntries = React.useMemo<SchemaEntry[]>(() => {
-    return requireContext
-      .keys()
-      .map((rawFileName: string) => {
-        const fileName = rawFileName.replace('./', '');
-        const idMatch = fileName.match(/\d+/);
-        const id = idMatch ? parseInt(idMatch[0], 10) : 0;
-        return { fileName, id };
-      })
-      .sort((a, b) => (a.id - b.id) || a.fileName.localeCompare(b.fileName));
-  }, []);
-
-  const formatSchemaLabel = React.useCallback((entry: SchemaEntry) => {
-    const paddedId = entry.id.toString().padStart(4, '0');
-    return entry.fileName.replace(/\d+/, paddedId);
-  }, []);
-
-  const initialSelection = React.useMemo(() => {
-    const savedId = parseInt(savedOptionStr, 10);
-    const entry = allSchemaEntries.find((schemaEntry: SchemaEntry) => schemaEntry.id === savedId) ?? allSchemaEntries[0];
-    if (!entry) {
-      return {
-        fileName: '',
-        schema: {},
-        legendsString: '',
-        schemaId: undefined as number | undefined,
-      };
-    }
-    const schema = loadSchema(entry.fileName) ?? {};
-    const { selectedLegends } = schema as any;
-    return {
-      fileName: entry.fileName,
-      schema,
-      legendsString: selectedLegends ? JSON.stringify(selectedLegends) : '',
-      schemaId: entry.id,
-    };
-  }, [allSchemaEntries, loadSchema, savedOptionStr]);
-
-  const [selectedChoice, setSelectedChoice] = React.useState<string>(initialSelection.fileName);
-  const [selectedSchema, setSelectedSchema] = React.useState<any>(initialSelection.schema);
-  const [selectedLegendsState, setSelectedLegendsState] = React.useState<string>(initialSelection.legendsString);
+  const { selectedLegends } = _selectedSchema as any;
+  const [selectedChoice, setSelectedChoice] = React.useState<string>(savedFileName);
+  const [selectedSchema, setSelectedSchema] = React.useState<any>(_selectedSchema);
+  const [selectedLegendsState, setSelectedLegendsState] = React.useState<string>(JSON.stringify(selectedLegends));
   const [selectedPlotTypes, setSelectedPlotTypes] = React.useState<PlotType[]>(getSelection("PlotType_filter", 'All').split(',') as PlotType[]);
   const [selectedDataTypes, setSelectedDataTypes] = React.useState<DataType[]>(getSelection("DataType_filter", 'All').split(',') as DataType[]);
   const [isJsonInputEnabled, toggleJsonInput] = React.useState<boolean>(false);
   const [jsonInputValue, setJsonInputValue] = React.useState<string>('');
-  const [visibleCount, setVisibleCount] = React.useState<number>(CHUNK_SIZE);
 
    const declarativeChartRef = React.useRef<IDeclarativeChart>(null!);
   const declarativeChartV9Ref = React.useRef<IDeclarativeChart>(null!);
-  let lastKnownValidLegends: string[] | undefined;
+  let lastKnownValidLegends: string[] | undefined = selectedLegends;
   const [chartRenderKey, setChartRenderKey] = React.useState<number>(0);
-
-  const selectedChoiceDisplay = React.useMemo(() => {
-    if (!selectedChoice) {
-      return '';
-    }
-    const entry = allSchemaEntries.find((schemaEntry: SchemaEntry) => schemaEntry.fileName === selectedChoice);
-    return entry ? formatSchemaLabel(entry) : selectedChoice;
-  }, [allSchemaEntries, formatSchemaLabel, selectedChoice]);
 
   React.useEffect(() => {
     const handleContextMenu = (e: MouseEvent) => {
@@ -190,7 +121,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
 
   // Force re-render when height or width changes
   React.useEffect(() => {
-    setChartRenderKey((prev: number) => prev + 1);
+    setChartRenderKey(prev => prev + 1);
   }, [height, width]);
 
   // Force chart height after render
@@ -219,31 +150,16 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
     return () => clearTimeout(timeoutId);
   }, [height, chartRenderKey, isRTL]);
 
-  const updateSelectionFromEntry = React.useCallback((entry: SchemaEntry | undefined, shouldPersist = true) => {
-    if (!entry) {
-      setSelectedChoice('');
-      setSelectedSchema({});
-      setSelectedLegendsState('');
-      return;
-    }
-    const schema = loadSchema(entry.fileName) ?? {};
-    const { selectedLegends: legendsFromSchema } = schema as any;
-    setSelectedChoice(entry.fileName);
-    setSelectedSchema(schema);
-    setSelectedLegendsState(legendsFromSchema ? JSON.stringify(legendsFromSchema) : '');
-    if (shouldPersist) {
-  saveSelection(SCHEMA_KEY, entry.id.toString().padStart(4, '0'));
-    }
-    setChartRenderKey((prev: number) => prev + 1);
-  }, [loadSchema]);
-
   const _onChange = (event: SelectionEvents | null, data: OptionOnSelectData): void => {
-    if (!data.optionValue) {
-      return;
-    }
-    const selectedId = parseInt(data.optionValue.toString(), 10);
-    const entry = allSchemaEntries.find((schemaEntry: SchemaEntry) => schemaEntry.id === selectedId);
-    updateSelectionFromEntry(entry);
+    const selectedChoice = data.optionText!;
+    const selectedSchema = schemasData.find((s) => (s.schema as { id: string }).id.toString() === data.optionValue!.toString())?.schema;
+    saveSelection(SCHEMA_KEY, data.optionValue!.toString().padStart(3, '0'));
+    const { selectedLegends } = selectedSchema as any;
+    setSelectedChoice(selectedChoice);
+    setSelectedSchema(selectedSchema);
+    setSelectedLegendsState(JSON.stringify(selectedLegends));
+     // Force re-render to ensure height is applied to new chart
+    setChartRenderKey(prev => prev + 1);
   };
 
   const _onSelectedLegendsEdited = (
@@ -267,59 +183,25 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
     setSelectedLegendsState(JSON.stringify(selectedLegends));
   };
 
-  const aggregatedChartTypeMap = aggregatedChartTypes as Record<string, PlotType | undefined>;
-
-  const filteredSchemaEntries = React.useMemo<SchemaEntry[]>(() => {
-    return allSchemaEntries.filter((entry: SchemaEntry) => {
-      const schemaId = entry.id;
-      const matchesDataType = selectedDataTypes.includes('All') || selectedDataTypes.some((dataType: DataType) => {
-        if (dataType === 'All') {
-          return true;
-        }
-        const ranges = dataTypeRanges[dataType as keyof typeof dataTypeRanges];
-        return ranges ? ranges.some(range => schemaId >= range.min && schemaId <= range.max) : false;
+  const getFilteredData = () => {
+    const filteredDataItems = schemasData
+      .filter((data) => {
+        const schemaId = parseInt((data.schema as { id: string }).id, 10);
+        return selectedDataTypes.includes('All') || selectedDataTypes.some(dataType => {
+          if (dataType === 'All') return true;
+          const ranges = dataTypeRanges[dataType as keyof typeof dataTypeRanges];
+          return ranges && ranges.some(range => schemaId >= range.min && schemaId <= range.max);
+        });
+      })
+      .filter((data) => {
+        const fileName = data.fileName;
+        const fileNumberMatch = fileName.match(/\d+/);
+        const fileNumber = fileNumberMatch ? fileNumberMatch[0] : '000';
+        const plotType = aggregatedChartTypes[fileNumber as keyof typeof aggregatedChartTypes];
+        return selectedPlotTypes.includes('All') || selectedPlotTypes.includes(plotType as PlotType);
       });
-
-      if (!matchesDataType) {
-        return false;
-      }
-
-  const schemaIdKeyFourDigit = schemaId.toString().padStart(4, '0');
-  const schemaIdKeyThreeDigit = schemaId.toString().padStart(3, '0');
-  const plotType = aggregatedChartTypeMap[schemaIdKeyFourDigit] ?? aggregatedChartTypeMap[schemaIdKeyThreeDigit];
-      const matchesPlotType = selectedPlotTypes.includes('All') || (plotType ? selectedPlotTypes.includes(plotType) : false);
-      return matchesPlotType;
-    });
-  }, [allSchemaEntries, aggregatedChartTypeMap, selectedDataTypes, selectedPlotTypes]);
-
-  const visibleSchemaEntries = React.useMemo<SchemaEntry[]>(() => {
-    return filteredSchemaEntries.slice(0, visibleCount);
-  }, [filteredSchemaEntries, visibleCount]);
-
-  const canLoadMoreSchemas = visibleCount < filteredSchemaEntries.length;
-
-  const loadMoreIfPossible = React.useCallback(() => {
-    setVisibleCount((prev: number) => {
-      if (prev >= filteredSchemaEntries.length) {
-        return prev;
-      }
-      return Math.min(prev + CHUNK_SIZE, filteredSchemaEntries.length);
-    });
-  }, [filteredSchemaEntries.length]);
-
-  const ensureSelectionVisibility = React.useCallback((targetChoice: string, entries: SchemaEntry[]) => {
-    if (!targetChoice) {
-      return;
-    }
-  const targetIndex = entries.findIndex((entry: SchemaEntry) => entry.fileName === targetChoice);
-    if (targetIndex === -1) {
-      return;
-    }
-    const requiredCount = Math.ceil((targetIndex + 1) / CHUNK_SIZE) * CHUNK_SIZE;
-    if (requiredCount > visibleCount) {
-      setVisibleCount((prev: number) => Math.max(prev, requiredCount));
-    }
-  }, [visibleCount]);
+    return filteredDataItems;
+  }
 
   const handleSelectPlotTypes = (_event: SelectionEvents, data: OptionOnSelectData) => {
     let newSelectedPlotTypes: PlotType[];
@@ -327,15 +209,30 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       newSelectedPlotTypes = ['All'];
     } else {
       newSelectedPlotTypes = selectedPlotTypes.includes(data.optionValue as PlotType)
-        ? selectedPlotTypes.filter((type: PlotType) => type !== data.optionValue)
-        : [...selectedPlotTypes.filter((type: PlotType) => type !== 'All'), data.optionValue as PlotType];
+        ? selectedPlotTypes.filter(type => type !== data.optionValue)
+        : [...selectedPlotTypes.filter(type => type !== 'All'), data.optionValue as PlotType];
       if (newSelectedPlotTypes.length === 0) {
         newSelectedPlotTypes = ['All'];
       }
     }
     setSelectedPlotTypes(newSelectedPlotTypes as PlotType[]);
     saveSelection("PlotType_filter", newSelectedPlotTypes.join(','));
-    setVisibleCount(CHUNK_SIZE);
+    const filteredSchemas = getFilteredData();
+    if (filteredSchemas.length > 0) {
+      const firstFilteredSchema = filteredSchemas[0];
+      setSelectedChoice(firstFilteredSchema.fileName);
+      setSelectedSchema(firstFilteredSchema.schema);
+      setSelectedLegendsState(JSON.stringify((firstFilteredSchema.schema as any).selectedLegends));
+      const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
+      const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
+      saveSelection(SCHEMA_KEY, num_id.toString().padStart(3, '0'));
+      // Force re-render to ensure height is applied to new chart
+      setChartRenderKey(prev => prev + 1);
+    } else {
+      setSelectedChoice('');
+      setSelectedSchema({});
+      setSelectedLegendsState('');
+    }
   }
 
   const handleSelectDataTypes = (_event: SelectionEvents, data: OptionOnSelectData) => {
@@ -344,31 +241,41 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       newSelectedDataTypes = ['All'];
     } else {
       newSelectedDataTypes = selectedDataTypes.includes(data.optionValue as DataType)
-        ? selectedDataTypes.filter((type: DataType) => type !== data.optionValue)
-        : [...selectedDataTypes.filter((type: DataType) => type !== 'All'), data.optionValue as DataType];
+        ? selectedDataTypes.filter(type => type !== data.optionValue)
+        : [...selectedDataTypes.filter(type => type !== 'All'), data.optionValue as DataType];
       if (newSelectedDataTypes.length === 0) {
         newSelectedDataTypes = ['All'];
       }
     }
     setSelectedDataTypes(newSelectedDataTypes as DataType[]);
     saveSelection("DataType_filter", newSelectedDataTypes.join(','));
-    setVisibleCount(CHUNK_SIZE);
+    const filteredSchemas = getFilteredData();
+    if (filteredSchemas.length > 0) {
+      const firstFilteredSchema = filteredSchemas[0];
+      setSelectedChoice(firstFilteredSchema.fileName);
+      setSelectedSchema(firstFilteredSchema.schema);
+      setSelectedLegendsState(JSON.stringify((firstFilteredSchema.schema as any).selectedLegends));
+      const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
+      const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
+      saveSelection(SCHEMA_KEY, num_id.toString().padStart(3, '0'));
+      // Force re-render to ensure height is applied to new chart
+      setChartRenderKey(prev => prev + 1);
+    } else {
+      setSelectedChoice('');
+      setSelectedSchema({});
+      setSelectedLegendsState('');
+    }
   }
 
   const handleJsonInputSwitchChange = (ev: React.ChangeEvent<HTMLInputElement>) => {
     const checked = ev.currentTarget.checked;
     toggleJsonInput(checked);
     if (checked) {
-      setIsDropdownOpen(false);
-    }
-    if (checked) {
       setSelectedChoice('input_json');
       handleJsonInputChange(null, { value: jsonInputValue });
     } else {
       const paddedSchemaId = getSelection(SCHEMA_KEY, SCHEMA_KEY_DEFAULT);
-      const schemaId = parseInt(paddedSchemaId, 10);
-      const entry = allSchemaEntries.find((schemaEntry: SchemaEntry) => schemaEntry.id === schemaId) ?? filteredSchemaEntries[0];
-      updateSelectionFromEntry(entry);
+      _onChange(null, { optionText: `data_${paddedSchemaId}.json`, optionValue: (+paddedSchemaId).toString() } as OptionOnSelectData);
     }
   }
 
@@ -551,15 +458,13 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
             <>
               <label> Select a schema:</label>&nbsp;&nbsp;&nbsp;
               <Dropdown
-                ref={dropdownButtonRef}
-                value={selectedChoiceDisplay}
+                value={selectedChoice}
                 onOptionSelect={_onChange}
-                onOpenChange={(_event, data) => setIsDropdownOpen(data.open)}
               >
-                {visibleSchemaEntries
-                  .map((entry: SchemaEntry) => (
-                    <Option key={entry.fileName} value={entry.id.toString()}>
-                      {formatSchemaLabel(entry)}
+                {getFilteredData()
+                  .map((data) => (
+                    <Option key={data.fileName} value={(data.schema as { id: string }).id}>
+                      {data.fileName}
                     </Option>
                   ))}
               </Dropdown>
@@ -594,7 +499,6 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
                 <Option value="HorizontalBarWithAxis - Log">HorizontalBarWithAxis - Log</Option>
                 <Option value="VerticalBar - Log">VerticalBar - Log</Option>
                 <Option value="Histogram - Log">Histogram - Log</Option>
-                <Option value="Annotation">Annotation</Option>
                 <Option value="Others">Others</Option>
               </Dropdown>
               &nbsp;&nbsp;&nbsp;
@@ -631,81 +535,6 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       </div>
     );
   };
-
-  React.useEffect(() => {
-    if (isJsonInputEnabled) {
-      return;
-    }
-    if (selectedChoice && filteredSchemaEntries.some((entry: SchemaEntry) => entry.fileName === selectedChoice)) {
-      ensureSelectionVisibility(selectedChoice, filteredSchemaEntries);
-      return;
-    }
-    if (filteredSchemaEntries.length > 0) {
-      updateSelectionFromEntry(filteredSchemaEntries[0]);
-    } else {
-      updateSelectionFromEntry(undefined);
-    }
-  }, [ensureSelectionVisibility, filteredSchemaEntries, isJsonInputEnabled, selectedChoice, updateSelectionFromEntry]);
-
-  React.useEffect(() => {
-    if (!isDropdownOpen) {
-      return;
-    }
-    const dropdownButton = dropdownButtonRef.current;
-    if (!dropdownButton) {
-      return;
-    }
-    const listboxId = dropdownButton.getAttribute('aria-controls');
-    if (!listboxId) {
-      return;
-    }
-
-    let listbox: HTMLElement | null = null;
-    let rafHandle = 0;
-
-    const handleScroll = () => {
-      if (!listbox || !canLoadMoreSchemas) {
-        return;
-      }
-      const threshold = listbox.scrollHeight - listbox.clientHeight - 8;
-      if (listbox.scrollTop >= threshold) {
-        loadMoreIfPossible();
-      }
-    };
-
-    const attachListener = () => {
-      listbox = document.getElementById(listboxId);
-      if (!listbox) {
-        rafHandle = requestAnimationFrame(attachListener);
-        return;
-      }
-      listbox.addEventListener('scroll', handleScroll);
-    };
-
-    attachListener();
-
-    return () => {
-      if (rafHandle) {
-        cancelAnimationFrame(rafHandle);
-      }
-      if (listbox) {
-        listbox.removeEventListener('scroll', handleScroll);
-      }
-    };
-  }, [canLoadMoreSchemas, isDropdownOpen, loadMoreIfPossible]);
-
-  React.useEffect(() => {
-    setVisibleCount((prev: number) => {
-      if (filteredSchemaEntries.length === 0) {
-        return CHUNK_SIZE;
-      }
-      const maxVisible = Math.max(CHUNK_SIZE, filteredSchemaEntries.length);
-      if (prev > maxVisible) {
-        return maxVisible;
-      }
-      return prev;
-    });
-  }, [filteredSchemaEntries.length]);
 
   return <div>{createDeclarativeChart()}</div>;
 }
