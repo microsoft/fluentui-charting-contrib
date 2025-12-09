@@ -49,6 +49,7 @@ type PlotType =
   | 'Funnel'
   | 'ScatterPolar'
   | 'Gantt'
+  | 'Annotation'
   | 'Others';
 
 type DataType =
@@ -74,7 +75,7 @@ const dataTypeRanges = {
   'plotly_express_colors': [{ min: 570, max: 749 }, { min: 768, max: 787 }],
   'advanced_scenarios': [{ min: 788, max: 839 }, { min: 847, max: 847 }, { min: 854, max: 854 }, { min: 857, max: 870 }, { min: 872, max: 892 }],
   'y_as_object': [{ min: 923, max: 927 }],
-  'annotations': [{ min: 966, max: 984}]
+  'annotations': [{ min: 966, max: 984}, { min: 994, max: 1007 }]
 };
 
 // Use require.context to load all JSON files from the split_data folder

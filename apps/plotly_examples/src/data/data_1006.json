@@ -1,32 +1,5 @@
 {
-  "data": [
-    {
-      "coloraxis": "coloraxis",
-      "name": "0",
-      "x": [
-        "Metric A",
-        "Metric B",
-        "Metric C",
-        "Metric D",
-        "Metric E"
-      ],
-      "y": [
-        "Level 1",
-        "Level 2",
-        "Level 3",
-        "Level 4"
-      ],
-      "z": {
-        "dtype": "i1",
-        "bdata": "BgUFBgEDBAQDCQEAAAAAAQICAgE=",
-        "shape": "4, 5"
-      },
-      "type": "heatmap",
-      "xaxis": "x",
-      "yaxis": "y",
-      "hovertemplate": "Columns: %{x}<br>Categories: %{y}<br>Count: %{z}<extra></extra>"
-    }
-  ],
+  "data": [],
   "layout": {
     "template": {
       "data": {
@@ -39,7 +12,7 @@
             },
             "colorscale": [
               [
-                0,
+                0.0,
                 "#0d0887"
               ],
               [
@@ -75,7 +48,7 @@
                 "#fdca26"
               ],
               [
-                1,
+                1.0,
                 "#f0f921"
               ]
             ]
@@ -99,7 +72,7 @@
             },
             "colorscale": [
               [
-                0,
+                0.0,
                 "#0d0887"
               ],
               [
@@ -135,7 +108,7 @@
                 "#fdca26"
               ],
               [
-                1,
+                1.0,
                 "#f0f921"
               ]
             ]
@@ -150,7 +123,7 @@
             },
             "colorscale": [
               [
-                0,
+                0.0,
                 "#0d0887"
               ],
               [
@@ -186,7 +159,7 @@
                 "#fdca26"
               ],
               [
-                1,
+                1.0,
                 "#f0f921"
               ]
             ]
@@ -210,7 +183,7 @@
             },
             "colorscale": [
               [
-                0,
+                0.0,
                 "#0d0887"
               ],
               [
@@ -246,7 +219,7 @@
                 "#fdca26"
               ],
               [
-                1,
+                1.0,
                 "#f0f921"
               ]
             ]
@@ -261,7 +234,7 @@
             },
             "colorscale": [
               [
-                0,
+                0.0,
                 "#0d0887"
               ],
               [
@@ -297,7 +270,7 @@
                 "#fdca26"
               ],
               [
-                1,
+                1.0,
                 "#f0f921"
               ]
             ]
@@ -598,7 +571,7 @@
         "colorscale": {
           "sequential": [
             [
-              0,
+              0.0,
               "#0d0887"
             ],
             [
@@ -634,13 +607,13 @@
               "#fdca26"
             ],
             [
-              1,
+              1.0,
               "#f0f921"
             ]
           ],
           "sequentialminus": [
             [
-              0,
+              0.0,
               "#0d0887"
             ],
             [
@@ -676,7 +649,7 @@
               "#fdca26"
             ],
             [
-              1,
+              1.0,
               "#f0f921"
             ]
           ],
@@ -804,283 +777,88 @@
         }
       }
     },
-    "xaxis": {
-      "anchor": "y",
-      "domain": [
-        0,
-        1
-      ],
-      "scaleanchor": "y",
-      "constrain": "domain",
-      "title": {
-        "text": "Columns"
-      }
-    },
-    "yaxis": {
-      "anchor": "x",
-      "domain": [
-        0,
-        1
-      ],
-      "autorange": "reversed",
-      "constrain": "domain",
-      "title": {
-        "text": "Categories"
-      }
-    },
-    "coloraxis": {
-      "colorbar": {
-        "title": {
-          "text": "Count"
-        }
-      },
-      "colorscale": [
-        [
-          0,
-          "rgb(247,251,255)"
-        ],
-        [
-          0.125,
-          "rgb(222,235,247)"
-        ],
-        [
-          0.25,
-          "rgb(198,219,239)"
-        ],
-        [
-          0.375,
-          "rgb(158,202,225)"
-        ],
-        [
-          0.5,
-          "rgb(107,174,214)"
-        ],
-        [
-          0.625,
-          "rgb(66,146,198)"
-        ],
-        [
-          0.75,
-          "rgb(33,113,181)"
-        ],
-        [
-          0.875,
-          "rgb(8,81,156)"
-        ],
-        [
-          1,
-          "rgb(8,48,107)"
-        ]
-      ]
+    "font": {
+      "color": "#222"
     },
     "title": {
-      "text": "Heatmap of Category Frequencies with Percentages"
+      "text": "Cloud Outage Event Timeline"
     },
-    "font": {
-      "size": 16
+    "xaxis": {
+      "visible": false
     },
+    "yaxis": {
+      "visible": false
+    },
+    "margin": {
+      "l": 40,
+      "r": 40,
+      "t": 60,
+      "b": 40
+    },
+    "paper_bgcolor": "#f7f7f7",
+    "plot_bgcolor": "#f7f7f7",
     "annotations": [
       {
         "font": {
-          "color": "black",
-          "size": 14
+          "color": "#d32f2f",
+          "size": 20
         },
         "showarrow": false,
-        "text": "54.5%",
-        "x": 0,
-        "y": 0
+        "text": "<b>\ud83d\udea8 Outage Detected:</b> <i>Service interruption began at 02:15 UTC</i>",
+        "x": 0.5,
+        "xref": "paper",
+        "y": 0.85,
+        "yref": "paper"
       },
       {
         "font": {
-          "color": "black",
-          "size": 14
+          "color": "#2a72b5",
+          "size": 18
         },
         "showarrow": false,
-        "text": "45.5%",
-        "x": 1,
-        "y": 0
+        "text": "<b>\ud83c\udf0d Affected Regions:</b> US-East, EU-West<br><span style='color:#e67e22'>High severity</span>",
+        "x": 0.5,
+        "xref": "paper",
+        "y": 0.65,
+        "yref": "paper"
       },
       {
         "font": {
-          "color": "black",
-          "size": 14
+          "color": "#6d6d6d",
+          "size": 16
         },
         "showarrow": false,
-        "text": "45.5%",
-        "x": 2,
-        "y": 0
+        "text": "<b>\ud83d\udd0e Root Cause:</b> <i>Network routing failure</i><br>Mitigation underway",
+        "x": 0.5,
+        "xref": "paper",
+        "y": 0.45,
+        "yref": "paper"
       },
       {
         "font": {
-          "color": "black",
-          "size": 14
+          "color": "#388e3c",
+          "size": 16
         },
         "showarrow": false,
-        "text": "54.5%",
-        "x": 3,
-        "y": 0
+        "text": "<b>\u2705 Recovery Milestone:</b> Partial service restored at 03:10 UTC",
+        "x": 0.5,
+        "xref": "paper",
+        "y": 0.3,
+        "yref": "paper"
       },
       {
         "font": {
-          "color": "black",
+          "color": "#888",
           "size": 14
         },
         "showarrow": false,
-        "text": "9.1%",
-        "x": 4,
-        "y": 0
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "27.3%",
-        "x": 0,
-        "y": 1
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "36.4%",
-        "x": 1,
-        "y": 1
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "36.4%",
-        "x": 2,
-        "y": 1
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "27.3%",
-        "x": 3,
-        "y": 1
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "81.8%",
-        "x": 4,
-        "y": 1
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "9.1%",
-        "x": 0,
-        "y": 2
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "0.0%",
-        "x": 1,
-        "y": 2
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "0.0%",
-        "x": 2,
-        "y": 2
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "0.0%",
-        "x": 3,
-        "y": 2
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "0.0%",
-        "x": 4,
-        "y": 2
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "9.1%",
-        "x": 0,
-        "y": 3
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "18.2%",
-        "x": 1,
-        "y": 3
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "18.2%",
-        "x": 2,
-        "y": 3
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "18.2%",
-        "x": 3,
-        "y": 3
-      },
-      {
-        "font": {
-          "color": "black",
-          "size": 14
-        },
-        "showarrow": false,
-        "text": "9.1%",
-        "x": 4,
-        "y": 3
+        "text": "\u23f1\ufe0f <i>Total downtime:</i> <b>55 minutes</b><br>See <a href='https://status.example.com'>status page</a> for updates.",
+        "x": 0.5,
+        "xref": "paper",
+        "y": 0.15,
+        "yref": "paper"
       }
     ]
   },
-   "id": "993"
+  "id": "1006"
 }
