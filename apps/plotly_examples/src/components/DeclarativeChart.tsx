@@ -49,6 +49,7 @@ type PlotType =
   | 'Funnel'
   | 'ScatterPolar'
   | 'Gantt'
+  | 'Annotation'
   | 'Others';
 
 type DataType =
@@ -153,7 +154,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
   const _onChange = (event: SelectionEvents | null, data: OptionOnSelectData): void => {
     const selectedChoice = data.optionText!;
     const selectedSchema = schemasData.find((s) => (s.schema as { id: string }).id.toString() === data.optionValue!.toString())?.schema;
-    saveSelection(SCHEMA_KEY, data.optionValue!.toString().padStart(3, '0'));
+    saveSelection(SCHEMA_KEY, data.optionValue!.toString().padStart(4, '0'));
     const { selectedLegends } = selectedSchema as any;
     setSelectedChoice(selectedChoice);
     setSelectedSchema(selectedSchema);
@@ -230,7 +231,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       setSelectedLegendsState(JSON.stringify((firstFilteredSchema.schema as any).selectedLegends));
       const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
       const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
-      saveSelection(SCHEMA_KEY, num_id.toString().padStart(3, '0'));
+      saveSelection(SCHEMA_KEY, num_id.toString().padStart(4, '0'));
       // Force re-render to ensure height is applied to new chart
       setChartRenderKey(prev => prev + 1);
     } else {
@@ -262,7 +263,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       setSelectedLegendsState(JSON.stringify((firstFilteredSchema.schema as any).selectedLegends));
       const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
       const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
-      saveSelection(SCHEMA_KEY, num_id.toString().padStart(3, '0'));
+      saveSelection(SCHEMA_KEY, num_id.toString().padStart(4, '0'));
       // Force re-render to ensure height is applied to new chart
       setChartRenderKey(prev => prev + 1);
     } else {
