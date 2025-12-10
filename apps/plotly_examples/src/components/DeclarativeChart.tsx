@@ -49,6 +49,7 @@ type PlotType =
   | 'Funnel'
   | 'ScatterPolar'
   | 'Gantt'
+  | 'Annotation'
   | 'Others';
 
 type DataType =
@@ -65,7 +66,7 @@ type DataType =
   | 'annotations';
 
 const dataTypeRanges = {
-  'general': [{ min: 1, max: 252 }, { min: 750, max: 758 }, { min: 840, max: 846 }, { min: 848, max: 853 }, { min: 855, max: 856 }, { min: 871, max: 871 }, { min: 893, max: 922 }, {min: 928, max: 944 }, {min: 988, max: 991}],
+  'general': [{ min: 1, max: 252 }, { min: 750, max: 758 }, { min: 840, max: 846 }, { min: 848, max: 853 }, { min: 855, max: 856 }, { min: 871, max: 871 }, { min: 893, max: 922 }, {min: 928, max: 944 }, {min: 988, max: 993}],
   'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }, { min: 759, max: 759 }, { min: 767, max: 767 }],
   'localization': [{ min: 278, max: 302 }],
   'seval': [{ min: 333, max: 376 }],
@@ -74,7 +75,7 @@ const dataTypeRanges = {
   'plotly_express_colors': [{ min: 570, max: 749 }, { min: 768, max: 787 }],
   'advanced_scenarios': [{ min: 788, max: 839 }, { min: 847, max: 847 }, { min: 854, max: 854 }, { min: 857, max: 870 }, { min: 872, max: 892 }],
   'y_as_object': [{ min: 923, max: 927 }],
-  'annotations': [{ min: 966, max: 984}]
+  'annotations': [{ min: 966, max: 984}, { min: 994, max: 1007 }]
 };
 
 // Use require.context to load all JSON files from the split_data folder
@@ -153,7 +154,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
   const _onChange = (event: SelectionEvents | null, data: OptionOnSelectData): void => {
     const selectedChoice = data.optionText!;
     const selectedSchema = schemasData.find((s) => (s.schema as { id: string }).id.toString() === data.optionValue!.toString())?.schema;
-    saveSelection(SCHEMA_KEY, data.optionValue!.toString().padStart(3, '0'));
+    saveSelection(SCHEMA_KEY, data.optionValue!.toString().padStart(4, '0'));
     const { selectedLegends } = selectedSchema as any;
     setSelectedChoice(selectedChoice);
     setSelectedSchema(selectedSchema);
@@ -225,7 +226,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       setSelectedLegendsState(JSON.stringify((firstFilteredSchema.schema as any).selectedLegends));
       const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
       const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
-      saveSelection(SCHEMA_KEY, num_id.toString().padStart(3, '0'));
+      saveSelection(SCHEMA_KEY, num_id.toString().padStart(4, '0'));
       // Force re-render to ensure height is applied to new chart
       setChartRenderKey(prev => prev + 1);
     } else {
@@ -257,7 +258,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
       setSelectedLegendsState(JSON.stringify((firstFilteredSchema.schema as any).selectedLegends));
       const fileNumberMatch = firstFilteredSchema.fileName.match(/\d+/);
       const num_id = fileNumberMatch ? fileNumberMatch[0] : '0';
-      saveSelection(SCHEMA_KEY, num_id.toString().padStart(3, '0'));
+      saveSelection(SCHEMA_KEY, num_id.toString().padStart(4, '0'));
       // Force re-render to ensure height is applied to new chart
       setChartRenderKey(prev => prev + 1);
     } else {
