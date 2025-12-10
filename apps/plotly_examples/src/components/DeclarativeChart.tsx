@@ -65,7 +65,7 @@ type DataType =
   | 'annotations';
 
 const dataTypeRanges = {
-  'general': [{ min: 1, max: 252 }, { min: 750, max: 758 }, { min: 840, max: 846 }, { min: 848, max: 853 }, { min: 855, max: 856 }, { min: 871, max: 871 }, { min: 893, max: 922 }, {min: 928, max: 944 }, {min: 988, max: 991}],
+  'general': [{ min: 1, max: 252 }, { min: 750, max: 758 }, { min: 840, max: 846 }, { min: 848, max: 853 }, { min: 855, max: 856 }, { min: 871, max: 871 }, { min: 893, max: 922 }, {min: 928, max: 944 }, {min: 988, max: 1002}],
   'largeData': [{ min: 253, max: 277 }, { min: 303, max: 332 }, { min: 759, max: 759 }, { min: 767, max: 767 }],
   'localization': [{ min: 278, max: 302 }],
   'seval': [{ min: 333, max: 376 }],
@@ -74,7 +74,7 @@ const dataTypeRanges = {
   'plotly_express_colors': [{ min: 570, max: 749 }, { min: 768, max: 787 }],
   'advanced_scenarios': [{ min: 788, max: 839 }, { min: 847, max: 847 }, { min: 854, max: 854 }, { min: 857, max: 870 }, { min: 872, max: 892 }],
   'y_as_object': [{ min: 923, max: 927 }],
-  'annotations': [{ min: 966, max: 984}]
+  'annotations': [{ min: 966, max: 984}, { min: 1003, max: 1007 }]
 };
 
 // Use require.context to load all JSON files from the split_data folder
@@ -121,7 +121,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
 
   // Force re-render when height or width changes
   React.useEffect(() => {
-    setChartRenderKey(prev => prev + 1);
+    setChartRenderKey((prev:number) => prev + 1);
   }, [height, width]);
 
   // Force chart height after render
@@ -199,6 +199,11 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
         const fileNumber = fileNumberMatch ? fileNumberMatch[0] : '000';
         const plotType = aggregatedChartTypes[fileNumber as keyof typeof aggregatedChartTypes];
         return selectedPlotTypes.includes('All') || selectedPlotTypes.includes(plotType as PlotType);
+      })
+      .sort((a, b) => {
+        const idA = parseInt((a.schema as { id: string }).id, 10);
+        const idB = parseInt((b.schema as { id: string }).id, 10);
+        return idA - idB;
       });
     return filteredDataItems;
   }
@@ -499,6 +504,7 @@ const DeclarativeChartBasicExample: React.FC<IDeclarativeChartProps> = ({ width,
                 <Option value="HorizontalBarWithAxis - Log">HorizontalBarWithAxis - Log</Option>
                 <Option value="VerticalBar - Log">VerticalBar - Log</Option>
                 <Option value="Histogram - Log">Histogram - Log</Option>
+                 <Option value="Annotation">Annotation</Option>
                 <Option value="Others">Others</Option>
               </Dropdown>
               &nbsp;&nbsp;&nbsp;
