@@ -1,0 +1,802 @@
+{
+  "data": [
+    {
+      "alignmentgroup": "True",
+      "customdata": [
+        ["Product A", 95795],
+        ["Product A", 117194],
+        ["Product A", 85311],
+        ["Product A", 105658],
+        ["Product A", 115773],
+        ["Product A", 83890]
+      ],
+      "hovertemplate": "Product Line=%{customdata[0]}\u003cbr\u003eMonth=%{x}\u003cbr\u003eRevenue=%{text:.0f}\u003cbr\u003eRevenue Target=%{customdata[1]:.0f}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "Product A",
+      "marker": { "color": "#636efa", "pattern": { "shape": "" } },
+      "name": "Product A",
+      "offsetgroup": "Product A",
+      "orientation": "v",
+      "showlegend": true,
+      "text": {
+        "dtype": "f8",
+        "bdata": "AAAAAHDv80AAAAAAwE\u002f+QAAAAABwdPVAAAAAAADC+kAAAAAAABH5QAAAAADgUvhA"
+      },
+      "textposition": "outside",
+      "x": [
+        "Period 1",
+        "Period 2",
+        "Period 3",
+        "Period 4",
+        "Period 5",
+        "Period 6"
+      ],
+      "xaxis": "x",
+      "y": { "dtype": "i4", "bdata": "9z4BAPzkAQBHVwEAIKwBABCRAQAuhQEA" },
+      "yaxis": "y",
+      "type": "bar",
+      "texttemplate": "$%{text:,.0f}"
+    },
+    {
+      "alignmentgroup": "True",
+      "customdata": [
+        ["Product B", 118158],
+        ["Product B", 96023],
+        ["Product B", 99769],
+        ["Product B", 98431],
+        ["Product B", 81267],
+        ["Product B", 94502]
+      ],
+      "hovertemplate": "Product Line=%{customdata[0]}\u003cbr\u003eMonth=%{x}\u003cbr\u003eRevenue=%{text:.0f}\u003cbr\u003eRevenue Target=%{customdata[1]:.0f}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "Product B",
+      "marker": { "color": "#EF553B", "pattern": { "shape": "" } },
+      "name": "Product B",
+      "offsetgroup": "Product B",
+      "orientation": "v",
+      "showlegend": true,
+      "text": {
+        "dtype": "f8",
+        "bdata": "AAAAAKDw+0AAAAAAQDH0QAAAAABgs\u002ftAAAAAACAK9UAAAAAAoOH3QAAAAADwufhA"
+      },
+      "textposition": "outside",
+      "x": [
+        "Period 1",
+        "Period 2",
+        "Period 3",
+        "Period 4",
+        "Period 5",
+        "Period 6"
+      ],
+      "xaxis": "x",
+      "y": { "dtype": "i4", "bdata": "Cr8BABRDAQA2uwEAolABABp+AQCfiwEA" },
+      "yaxis": "y",
+      "type": "bar",
+      "texttemplate": "$%{text:,.0f}"
+    },
+    {
+      "alignmentgroup": "True",
+      "customdata": [
+        ["Product C", 86265],
+        ["Product C", 80769],
+        ["Product C", 86396],
+        ["Product C", 80189],
+        ["Product C", 91394],
+        ["Product C", 90627]
+      ],
+      "hovertemplate": "Product Line=%{customdata[0]}\u003cbr\u003eMonth=%{x}\u003cbr\u003eRevenue=%{text:.0f}\u003cbr\u003eRevenue Target=%{customdata[1]:.0f}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "Product C",
+      "marker": { "color": "#00cc96", "pattern": { "shape": "" } },
+      "name": "Product C",
+      "offsetgroup": "Product C",
+      "orientation": "v",
+      "showlegend": true,
+      "text": {
+        "dtype": "f8",
+        "bdata": "AAAAADCD9UAAAAAAoKbwQAAAAADAI\u002fhAAAAAADCV9EAAAAAA4ITzQAAAAAAwnPRA"
+      },
+      "textposition": "outside",
+      "x": [
+        "Period 1",
+        "Period 2",
+        "Period 3",
+        "Period 4",
+        "Period 5",
+        "Period 6"
+      ],
+      "xaxis": "x",
+      "y": { "dtype": "i4", "bdata": "M1gBAGoKAQA8ggEAU0kBAE44AQDDSQEA" },
+      "yaxis": "y",
+      "type": "bar",
+      "texttemplate": "$%{text:,.0f}"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "barpolar": [
+          {
+            "marker": {
+              "line": { "color": "white", "width": 0.5 },
+              "pattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 }
+            },
+            "type": "barpolar"
+          }
+        ],
+        "bar": [
+          {
+            "error_x": { "color": "#2a3f5f" },
+            "error_y": { "color": "#2a3f5f" },
+            "marker": {
+              "line": { "color": "white", "width": 0.5 },
+              "pattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 }
+            },
+            "type": "bar"
+          }
+        ],
+        "carpet": [
+          {
+            "aaxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "#C8D4E3",
+              "linecolor": "#C8D4E3",
+              "minorgridcolor": "#C8D4E3",
+              "startlinecolor": "#2a3f5f"
+            },
+            "baxis": {
+              "endlinecolor": "#2a3f5f",
+              "gridcolor": "#C8D4E3",
+              "linecolor": "#C8D4E3",
+              "minorgridcolor": "#C8D4E3",
+              "startlinecolor": "#2a3f5f"
+            },
+            "type": "carpet"
+          }
+        ],
+        "choropleth": [
+          {
+            "colorbar": { "outlinewidth": 0, "ticks": "" },
+            "type": "choropleth"
+          }
+        ],
+        "contourcarpet": [
+          {
+            "colorbar": { "outlinewidth": 0, "ticks": "" },
+            "type": "contourcarpet"
+          }
+        ],
+        "contour": [
+          {
+            "colorbar": { "outlinewidth": 0, "ticks": "" },
+            "colorscale": [
+              [0.0, "#0d0887"],
+              [0.1111111111111111, "#46039f"],
+              [0.2222222222222222, "#7201a8"],
+              [0.3333333333333333, "#9c179e"],
+              [0.4444444444444444, "#bd3786"],
+              [0.5555555555555556, "#d8576b"],
+              [0.6666666666666666, "#ed7953"],
+              [0.7777777777777778, "#fb9f3a"],
+              [0.8888888888888888, "#fdca26"],
+              [1.0, "#f0f921"]
+            ],
+            "type": "contour"
+          }
+        ],
+        "heatmap": [
+          {
+            "colorbar": { "outlinewidth": 0, "ticks": "" },
+            "colorscale": [
+              [0.0, "#0d0887"],
+              [0.1111111111111111, "#46039f"],
+              [0.2222222222222222, "#7201a8"],
+              [0.3333333333333333, "#9c179e"],
+              [0.4444444444444444, "#bd3786"],
+              [0.5555555555555556, "#d8576b"],
+              [0.6666666666666666, "#ed7953"],
+              [0.7777777777777778, "#fb9f3a"],
+              [0.8888888888888888, "#fdca26"],
+              [1.0, "#f0f921"]
+            ],
+            "type": "heatmap"
+          }
+        ],
+        "histogram2dcontour": [
+          {
+            "colorbar": { "outlinewidth": 0, "ticks": "" },
+            "colorscale": [
+              [0.0, "#0d0887"],
+              [0.1111111111111111, "#46039f"],
+              [0.2222222222222222, "#7201a8"],
+              [0.3333333333333333, "#9c179e"],
+              [0.4444444444444444, "#bd3786"],
+              [0.5555555555555556, "#d8576b"],
+              [0.6666666666666666, "#ed7953"],
+              [0.7777777777777778, "#fb9f3a"],
+              [0.8888888888888888, "#fdca26"],
+              [1.0, "#f0f921"]
+            ],
+            "type": "histogram2dcontour"
+          }
+        ],
+        "histogram2d": [
+          {
+            "colorbar": { "outlinewidth": 0, "ticks": "" },
+            "colorscale": [
+              [0.0, "#0d0887"],
+              [0.1111111111111111, "#46039f"],
+              [0.2222222222222222, "#7201a8"],
+              [0.3333333333333333, "#9c179e"],
+              [0.4444444444444444, "#bd3786"],
+              [0.5555555555555556, "#d8576b"],
+              [0.6666666666666666, "#ed7953"],
+              [0.7777777777777778, "#fb9f3a"],
+              [0.8888888888888888, "#fdca26"],
+              [1.0, "#f0f921"]
+            ],
+            "type": "histogram2d"
+          }
+        ],
+        "histogram": [
+          {
+            "marker": {
+              "pattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 }
+            },
+            "type": "histogram"
+          }
+        ],
+        "mesh3d": [
+          { "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }
+        ],
+        "parcoords": [
+          {
+            "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } },
+            "type": "parcoords"
+          }
+        ],
+        "pie": [{ "automargin": true, "type": "pie" }],
+        "scatter3d": [
+          {
+            "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } },
+            "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } },
+            "type": "scatter3d"
+          }
+        ],
+        "scattercarpet": [
+          {
+            "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } },
+            "type": "scattercarpet"
+          }
+        ],
+        "scattergeo": [
+          {
+            "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } },
+            "type": "scattergeo"
+          }
+        ],
+        "scattergl": [
+          {
+            "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } },
+            "type": "scattergl"
+          }
+        ],
+        "scattermapbox": [
+          {
+            "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } },
+            "type": "scattermapbox"
+          }
+        ],
+        "scattermap": [
+          {
+            "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } },
+            "type": "scattermap"
+          }
+        ],
+        "scatterpolargl": [
+          {
+            "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } },
+            "type": "scatterpolargl"
+          }
+        ],
+        "scatterpolar": [
+          {
+            "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } },
+            "type": "scatterpolar"
+          }
+        ],
+        "scatter": [
+          {
+            "fillpattern": {
+              "fillmode": "overlay",
+              "size": 10,
+              "solidity": 0.2
+            },
+            "type": "scatter"
+          }
+        ],
+        "scatterternary": [
+          {
+            "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } },
+            "type": "scatterternary"
+          }
+        ],
+        "surface": [
+          {
+            "colorbar": { "outlinewidth": 0, "ticks": "" },
+            "colorscale": [
+              [0.0, "#0d0887"],
+              [0.1111111111111111, "#46039f"],
+              [0.2222222222222222, "#7201a8"],
+              [0.3333333333333333, "#9c179e"],
+              [0.4444444444444444, "#bd3786"],
+              [0.5555555555555556, "#d8576b"],
+              [0.6666666666666666, "#ed7953"],
+              [0.7777777777777778, "#fb9f3a"],
+              [0.8888888888888888, "#fdca26"],
+              [1.0, "#f0f921"]
+            ],
+            "type": "surface"
+          }
+        ],
+        "table": [
+          {
+            "cells": {
+              "fill": { "color": "#EBF0F8" },
+              "line": { "color": "white" }
+            },
+            "header": {
+              "fill": { "color": "#C8D4E3" },
+              "line": { "color": "white" }
+            },
+            "type": "table"
+          }
+        ]
+      },
+      "layout": {
+        "annotationdefaults": {
+          "arrowcolor": "#2a3f5f",
+          "arrowhead": 0,
+          "arrowwidth": 1
+        },
+        "autotypenumbers": "strict",
+        "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } },
+        "colorscale": {
+          "diverging": [
+            [0, "#8e0152"],
+            [0.1, "#c51b7d"],
+            [0.2, "#de77ae"],
+            [0.3, "#f1b6da"],
+            [0.4, "#fde0ef"],
+            [0.5, "#f7f7f7"],
+            [0.6, "#e6f5d0"],
+            [0.7, "#b8e186"],
+            [0.8, "#7fbc41"],
+            [0.9, "#4d9221"],
+            [1, "#276419"]
+          ],
+          "sequential": [
+            [0.0, "#0d0887"],
+            [0.1111111111111111, "#46039f"],
+            [0.2222222222222222, "#7201a8"],
+            [0.3333333333333333, "#9c179e"],
+            [0.4444444444444444, "#bd3786"],
+            [0.5555555555555556, "#d8576b"],
+            [0.6666666666666666, "#ed7953"],
+            [0.7777777777777778, "#fb9f3a"],
+            [0.8888888888888888, "#fdca26"],
+            [1.0, "#f0f921"]
+          ],
+          "sequentialminus": [
+            [0.0, "#0d0887"],
+            [0.1111111111111111, "#46039f"],
+            [0.2222222222222222, "#7201a8"],
+            [0.3333333333333333, "#9c179e"],
+            [0.4444444444444444, "#bd3786"],
+            [0.5555555555555556, "#d8576b"],
+            [0.6666666666666666, "#ed7953"],
+            [0.7777777777777778, "#fb9f3a"],
+            [0.8888888888888888, "#fdca26"],
+            [1.0, "#f0f921"]
+          ]
+        },
+        "colorway": [
+          "#636efa",
+          "#EF553B",
+          "#00cc96",
+          "#ab63fa",
+          "#FFA15A",
+          "#19d3f3",
+          "#FF6692",
+          "#B6E880",
+          "#FF97FF",
+          "#FECB52"
+        ],
+        "font": { "color": "#2a3f5f" },
+        "geo": {
+          "bgcolor": "white",
+          "lakecolor": "white",
+          "landcolor": "white",
+          "showlakes": true,
+          "showland": true,
+          "subunitcolor": "#C8D4E3"
+        },
+        "hoverlabel": { "align": "left" },
+        "hovermode": "closest",
+        "mapbox": { "style": "light" },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "polar": {
+          "angularaxis": {
+            "gridcolor": "#EBF0F8",
+            "linecolor": "#EBF0F8",
+            "ticks": ""
+          },
+          "bgcolor": "white",
+          "radialaxis": {
+            "gridcolor": "#EBF0F8",
+            "linecolor": "#EBF0F8",
+            "ticks": ""
+          }
+        },
+        "scene": {
+          "xaxis": {
+            "backgroundcolor": "white",
+            "gridcolor": "#DFE8F3",
+            "gridwidth": 2,
+            "linecolor": "#EBF0F8",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "#EBF0F8"
+          },
+          "yaxis": {
+            "backgroundcolor": "white",
+            "gridcolor": "#DFE8F3",
+            "gridwidth": 2,
+            "linecolor": "#EBF0F8",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "#EBF0F8"
+          },
+          "zaxis": {
+            "backgroundcolor": "white",
+            "gridcolor": "#DFE8F3",
+            "gridwidth": 2,
+            "linecolor": "#EBF0F8",
+            "showbackground": true,
+            "ticks": "",
+            "zerolinecolor": "#EBF0F8"
+          }
+        },
+        "shapedefaults": { "line": { "color": "#2a3f5f" } },
+        "ternary": {
+          "aaxis": {
+            "gridcolor": "#DFE8F3",
+            "linecolor": "#A2B1C6",
+            "ticks": ""
+          },
+          "baxis": {
+            "gridcolor": "#DFE8F3",
+            "linecolor": "#A2B1C6",
+            "ticks": ""
+          },
+          "bgcolor": "white",
+          "caxis": {
+            "gridcolor": "#DFE8F3",
+            "linecolor": "#A2B1C6",
+            "ticks": ""
+          }
+        },
+        "title": { "x": 0.05 },
+        "xaxis": {
+          "automargin": true,
+          "gridcolor": "#EBF0F8",
+          "linecolor": "#EBF0F8",
+          "ticks": "",
+          "title": { "standoff": 15 },
+          "zerolinecolor": "#EBF0F8",
+          "zerolinewidth": 2
+        },
+        "yaxis": {
+          "automargin": true,
+          "gridcolor": "#EBF0F8",
+          "linecolor": "#EBF0F8",
+          "ticks": "",
+          "title": { "standoff": 15 },
+          "zerolinecolor": "#EBF0F8",
+          "zerolinewidth": 2
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [0.0, 1.0],
+      "title": { "text": "Month" }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [0.0, 1.0],
+      "title": { "text": "Revenue (USD)" }
+    },
+    "legend": { "title": { "text": "Product Line" }, "tracegroupgap": 0 },
+    "title": {
+      "text": "Monthly Revenue by Product Line (with Targets) - Telecommunications",
+      "font": { "size": 20 }
+    },
+    "barmode": "group",
+    "shapes": [
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Jan 2024",
+        "x1": "Jan 2024",
+        "xref": "x",
+        "y0": 95795,
+        "y1": 95795,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Jan 2024",
+        "x1": "Jan 2024",
+        "xref": "x",
+        "y0": 118158,
+        "y1": 118158,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Jan 2024",
+        "x1": "Jan 2024",
+        "xref": "x",
+        "y0": 86265,
+        "y1": 86265,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Feb 2024",
+        "x1": "Feb 2024",
+        "xref": "x",
+        "y0": 117194,
+        "y1": 117194,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Feb 2024",
+        "x1": "Feb 2024",
+        "xref": "x",
+        "y0": 96023,
+        "y1": 96023,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Feb 2024",
+        "x1": "Feb 2024",
+        "xref": "x",
+        "y0": 80769,
+        "y1": 80769,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Mar 2024",
+        "x1": "Mar 2024",
+        "xref": "x",
+        "y0": 85311,
+        "y1": 85311,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Mar 2024",
+        "x1": "Mar 2024",
+        "xref": "x",
+        "y0": 99769,
+        "y1": 99769,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Mar 2024",
+        "x1": "Mar 2024",
+        "xref": "x",
+        "y0": 86396,
+        "y1": 86396,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Apr 2024",
+        "x1": "Apr 2024",
+        "xref": "x",
+        "y0": 105658,
+        "y1": 105658,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Apr 2024",
+        "x1": "Apr 2024",
+        "xref": "x",
+        "y0": 98431,
+        "y1": 98431,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Apr 2024",
+        "x1": "Apr 2024",
+        "xref": "x",
+        "y0": 80189,
+        "y1": 80189,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "May 2024",
+        "x1": "May 2024",
+        "xref": "x",
+        "y0": 115773,
+        "y1": 115773,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "May 2024",
+        "x1": "May 2024",
+        "xref": "x",
+        "y0": 81267,
+        "y1": 81267,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "May 2024",
+        "x1": "May 2024",
+        "xref": "x",
+        "y0": 91394,
+        "y1": 91394,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Jun 2024",
+        "x1": "Jun 2024",
+        "xref": "x",
+        "y0": 83890,
+        "y1": 83890,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Jun 2024",
+        "x1": "Jun 2024",
+        "xref": "x",
+        "y0": 94502,
+        "y1": 94502,
+        "yref": "y"
+      },
+      {
+        "line": { "color": "black", "dash": "dash", "width": 2 },
+        "type": "line",
+        "x0": "Jun 2024",
+        "x1": "Jun 2024",
+        "xref": "x",
+        "y0": 90627,
+        "y1": 90627,
+        "yref": "y"
+      }
+    ],
+    "annotations": [
+      {
+        "bgcolor": "rgba(220,255,220,0.7)",
+        "font": { "color": "green", "size": 12 },
+        "showarrow": false,
+        "text": "Target Met",
+        "x": "Jan 2024",
+        "xanchor": "center",
+        "y": 91115
+      },
+      {
+        "bgcolor": "rgba(220,255,220,0.7)",
+        "font": { "color": "green", "size": 12 },
+        "showarrow": false,
+        "text": "Target Met",
+        "x": "Feb 2024",
+        "xanchor": "center",
+        "y": 127156
+      },
+      {
+        "bgcolor": "rgba(220,255,220,0.7)",
+        "font": { "color": "green", "size": 12 },
+        "showarrow": false,
+        "text": "Target Met",
+        "x": "Mar 2024",
+        "xanchor": "center",
+        "y": 90879
+      },
+      {
+        "bgcolor": "rgba(220,255,220,0.7)",
+        "font": { "color": "green", "size": 12 },
+        "showarrow": false,
+        "text": "Target Met",
+        "x": "Mar 2024",
+        "xanchor": "center",
+        "y": 116462
+      },
+      {
+        "bgcolor": "rgba(220,255,220,0.7)",
+        "font": { "color": "green", "size": 12 },
+        "showarrow": false,
+        "text": "Target Met",
+        "x": "Mar 2024",
+        "xanchor": "center",
+        "y": 101876
+      },
+      {
+        "bgcolor": "rgba(220,255,220,0.7)",
+        "font": { "color": "green", "size": 12 },
+        "showarrow": false,
+        "text": "Target Met",
+        "x": "Apr 2024",
+        "xanchor": "center",
+        "y": 112600
+      },
+      {
+        "bgcolor": "rgba(220,255,220,0.7)",
+        "font": { "color": "green", "size": 12 },
+        "showarrow": false,
+        "text": "Target Met",
+        "x": "Apr 2024",
+        "xanchor": "center",
+        "y": 87307
+      },
+      {
+        "bgcolor": "rgba(220,255,220,0.7)",
+        "font": { "color": "green", "size": 12 },
+        "showarrow": false,
+        "text": "Target Met",
+        "x": "May 2024",
+        "xanchor": "center",
+        "y": 100818
+      },
+      {
+        "bgcolor": "rgba(220,255,220,0.7)",
+        "font": { "color": "green", "size": 12 },
+        "showarrow": false,
+        "text": "Target Met",
+        "x": "Jun 2024",
+        "xanchor": "center",
+        "y": 102630
+      },
+      {
+        "bgcolor": "rgba(220,255,220,0.7)",
+        "font": { "color": "green", "size": 12 },
+        "showarrow": false,
+        "text": "Target Met",
+        "x": "Jun 2024",
+        "xanchor": "center",
+        "y": 104279
+      }
+    ],
+    "bargap": 0.25,
+    "hovermode": "x unified"
+  },
+    "id": "1008"
+}
