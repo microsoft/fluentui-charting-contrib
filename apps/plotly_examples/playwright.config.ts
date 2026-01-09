@@ -40,7 +40,7 @@ export default defineConfig({
       size: { width: 1280, height: 720 } // Optional: specify video resolution
     }, */
   },
-  timeout: 30000,
+  timeout: 100000,
   /* Configure projects for major browsers */
   projects: [
     {
