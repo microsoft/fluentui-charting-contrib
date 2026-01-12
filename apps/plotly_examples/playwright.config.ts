@@ -35,9 +35,11 @@ export default defineConfig({
     timezoneId: 'GMT',
     trace: 'off',
     
-    // Add navigation timeout for slow chart loading
-    navigationTimeout: 60000,
-    actionTimeout: 100000,
+    // Add navigation and action timeouts for Charts V9 Storybook Test coverage
+    ...(process.env.GITHUB_WORKFLOW === '[Charts V9] Storybook Test coverage' && {
+      navigationTimeout: 60000,
+      actionTimeout: 100000,
+    }),
     
 /*     trace: 'on',
     video: {
@@ -45,10 +47,15 @@ export default defineConfig({
       size: { width: 1280, height: 720 } // Optional: specify video resolution
     }, */
   },
-  timeout: 180000, // Increase global test timeout to 3 minutes
-  expect: {
-    timeout: 60000, // Increase expect timeout to 1 minute
-  },
+  // Apply extended timeouts for Charts V9 Storybook Test coverage, otherwise use default timeout
+  ...(process.env.GITHUB_WORKFLOW === '[Charts V9] Storybook Test coverage' ? {
+    timeout: 180000, // Increase global test timeout to 3 minutes
+    expect: {
+      timeout: 60000, // Increase expect timeout to 1 minute
+    },
+  } : {
+    timeout: 30000, // Default timeout
+  }),
   /* Configure projects for major browsers */
   projects: [
     {
