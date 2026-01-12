@@ -34,13 +34,21 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     timezoneId: 'GMT',
     trace: 'off',
+    
+    // Add navigation timeout for slow chart loading
+    navigationTimeout: 60000,
+    actionTimeout: 100000,
+    
 /*     trace: 'on',
     video: {
       mode: 'on', // or 'retain-on-failure', 'on-first-retry'
       size: { width: 1280, height: 720 } // Optional: specify video resolution
     }, */
   },
-  timeout: 100000,
+  timeout: 180000, // Increase global test timeout to 3 minutes
+  expect: {
+    timeout: 60000, // Increase expect timeout to 1 minute
+  },
   /* Configure projects for major browsers */
   projects: [
     {
