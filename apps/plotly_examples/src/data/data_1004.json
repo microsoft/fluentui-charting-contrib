@@ -523,14 +523,14 @@
           "#FECB52"
         ],
         "font": {
-          "color": "#2a3f5f"
+          "color": "#333"
         },
         "hovermode": "closest",
         "hoverlabel": {
           "align": "left"
         },
-        "paper_bgcolor": "white",
-        "plot_bgcolor": "#E5ECF6",
+        "paper_bgcolor": "#ffffff",
+        "plot_bgcolor": "#ffffff",
         "polar": {
           "bgcolor": "#E5ECF6",
           "angularaxis": {
@@ -777,11 +777,11 @@
         }
       }
     },
-    "font": {
-      "color": "#222"
-    },
     "title": {
-      "text": "Cloud Outage Event Timeline"
+      "font": {
+        "size": 16
+      },
+      "text": "Finance: Investment Trends"
     },
     "xaxis": {
       "visible": false
@@ -790,72 +790,192 @@
       "visible": false
     },
     "margin": {
-      "l": 40,
-      "r": 40,
+      "l": 20,
+      "r": 20,
       "t": 60,
-      "b": 40
+      "b": 20
     },
-    "paper_bgcolor": "#f7f7f7",
-    "plot_bgcolor": "#f7f7f7",
     "annotations": [
       {
         "font": {
-          "color": "#d32f2f",
-          "size": 20
+          "color": "#2b5797",
+          "size": 24
         },
         "showarrow": false,
-        "text": "<b>\ud83d\udea8 Outage Detected:</b> <i>Service interruption began at 02:15 UTC</i>",
-        "x": 0.5,
+        "text": "<b>Stocks</b>",
+        "textangle": 0,
+        "x": 0.3,
         "xref": "paper",
-        "y": 0.85,
+        "y": 0.75,
         "yref": "paper"
       },
       {
         "font": {
-          "color": "#2a72b5",
-          "size": 18
+          "color": "#d62728",
+          "size": 22
         },
         "showarrow": false,
-        "text": "<b>\ud83c\udf0d Affected Regions:</b> US-East, EU-West<br><span style='color:#e67e22'>High severity</span>",
-        "x": 0.5,
+        "text": "<b>Bonds</b>",
+        "textangle": 90,
+        "x": 0.7,
         "xref": "paper",
-        "y": 0.65,
+        "y": 0.62,
         "yref": "paper"
       },
       {
         "font": {
-          "color": "#6d6d6d",
+          "color": "#ff7f0e",
+          "size": 21
+        },
+        "showarrow": false,
+        "text": "<b>ETFs</b>",
+        "textangle": -45,
+        "x": 0.5,
+        "xref": "paper",
+        "y": 0.78,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#2ca02c",
+          "size": 17
+        },
+        "showarrow": false,
+        "text": "Crypto",
+        "textangle": 0,
+        "x": 0.2,
+        "xref": "paper",
+        "y": 0.52,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#9467bd",
           "size": 16
         },
         "showarrow": false,
-        "text": "<b>\ud83d\udd0e Root Cause:</b> <i>Network routing failure</i><br>Mitigation underway",
-        "x": 0.5,
+        "text": "Real Estate",
+        "textangle": 45,
+        "x": 0.8,
         "xref": "paper",
-        "y": 0.45,
+        "y": 0.41,
         "yref": "paper"
       },
       {
         "font": {
-          "color": "#388e3c",
-          "size": 16
+          "color": "#8c564b",
+          "size": 15
         },
         "showarrow": false,
-        "text": "<b>\u2705 Recovery Milestone:</b> Partial service restored at 03:10 UTC",
-        "x": 0.5,
+        "text": "Commodities",
+        "textangle": 0,
+        "x": 0.4,
         "xref": "paper",
-        "y": 0.3,
+        "y": 0.29,
         "yref": "paper"
       },
       {
         "font": {
-          "color": "#888",
+          "color": "#e377c2",
           "size": 14
         },
         "showarrow": false,
-        "text": "\u23f1\ufe0f <i>Total downtime:</i> <b>55 minutes</b><br>See <a href='https://status.example.com'>status page</a> for updates.",
-        "x": 0.5,
+        "text": "Dividends",
+        "textangle": -30,
+        "x": 0.6,
         "xref": "paper",
-        "y": 0.15,
+        "y": 0.36,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#7f7f7f",
+          "size": 13
+        },
+        "showarrow": false,
+        "text": "Growth",
+        "textangle": 90,
+        "x": 0.15,
+        "xref": "paper",
+        "y": 0.38,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#bcbd22",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "Value",
+        "textangle": 0,
+        "x": 0.85,
+        "xref": "paper",
+        "y": 0.72,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#17becf",
+          "size": 12
+        },
+        "showarrow": false,
+        "text": "Risk",
+        "textangle": 30,
+        "x": 0.45,
+        "xref": "paper",
+        "y": 0.44,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#2b5797",
+          "size": 13
+        },
+        "showarrow": false,
+        "text": "Diversification",
+        "textangle": 0,
+        "x": 0.23,
+        "xref": "paper",
+        "y": 0.28,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#d62728",
+          "size": 14
+        },
+        "showarrow": false,
+        "text": "Portfolio",
+        "textangle": -45,
+        "x": 0.77,
+        "xref": "paper",
+        "y": 0.55,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#ff7f0e",
+          "size": 13
+        },
+        "showarrow": false,
+        "text": "Returns",
+        "textangle": 45,
+        "x": 0.61,
+        "xref": "paper",
+        "y": 0.33,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#2ca02c",
+          "size": 12
+        },
+        "showarrow": false,
+        "text": "Market",
+        "textangle": 0,
+        "x": 0.36,
+        "xref": "paper",
+        "y": 0.58,
         "yref": "paper"
       }
     ]

@@ -1,41 +1,200 @@
 {
     "data": [
         {
-            "customdata": {
-                "dtype": "i2",
-                "bdata": "hgN3A6EEWgOiAw==",
-                "shape": "5, 1"
-            },
-            "hovertemplate": "Power Plant=%{x}\u003cbr\u003eCO\u2082 Emissions (tons)=%{marker.color}\u003cbr\u003eEmission Cap (tons)=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
-            "legendgroup": "",
+            "alignmentgroup": "True",
+            "customdata": [
+                [
+                    "Mathematics",
+                    5
+                ],
+                [
+                    "Mathematics",
+                    5
+                ]
+            ],
+            "hovertemplate": "Department=%{customdata[0]}\u003cbr\u003eFaculty Member=%{x}\u003cbr\u003eCourses Taught (Semester)=%{text}\u003cbr\u003eWorkload Target=%{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Mathematics",
             "marker": {
-                "color": {
-                    "dtype": "f8",
-                    "bdata": "AAAAAABitEBmZmZmZkGzQDQzMzOzebhAzczMzMytskCamZmZmV21QA=="
-                },
-                "coloraxis": "coloraxis",
+                "color": "#636efa",
                 "pattern": {
                     "shape": ""
                 }
             },
-            "name": "",
+            "name": "Mathematics",
+            "offsetgroup": "Mathematics",
             "orientation": "v",
-            "showlegend": false,
+            "showlegend": true,
+            "text": {
+                "dtype": "f8",
+                "bdata": "AAAAAAAAGEAAAAAAAAAIQA=="
+            },
             "textposition": "auto",
             "x": [
-                "Plant A",
-                "Plant B",
-                "Plant C",
-                "Plant D",
-                "Plant E"
+                "Dr. Alice Smith",
+                "Dr. Eva Patel"
             ],
             "xaxis": "x",
             "y": {
-                "dtype": "f8",
-                "bdata": "AAAAAABitEBmZmZmZkGzQDQzMzOzebhAzczMzMytskCamZmZmV21QA=="
+                "dtype": "i1",
+                "bdata": "BgM="
             },
             "yaxis": "y",
             "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "customdata": [
+                [
+                    "Physics",
+                    5
+                ],
+                [
+                    "Physics",
+                    5
+                ]
+            ],
+            "hovertemplate": "Department=%{customdata[0]}\u003cbr\u003eFaculty Member=%{x}\u003cbr\u003eCourses Taught (Semester)=%{text}\u003cbr\u003eWorkload Target=%{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Physics",
+            "marker": {
+                "color": "#EF553B",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Physics",
+            "offsetgroup": "Physics",
+            "orientation": "v",
+            "showlegend": true,
+            "text": {
+                "dtype": "f8",
+                "bdata": "AAAAAAAAEEAAAAAAAAAYQA=="
+            },
+            "textposition": "auto",
+            "x": [
+                "Dr. Bob Jones",
+                "Dr. Frank Wu"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i1",
+                "bdata": "BAY="
+            },
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "customdata": [
+                [
+                    "Chemistry",
+                    5
+                ],
+                [
+                    "Chemistry",
+                    5
+                ]
+            ],
+            "hovertemplate": "Department=%{customdata[0]}\u003cbr\u003eFaculty Member=%{x}\u003cbr\u003eCourses Taught (Semester)=%{text}\u003cbr\u003eWorkload Target=%{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Chemistry",
+            "marker": {
+                "color": "#00cc96",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Chemistry",
+            "offsetgroup": "Chemistry",
+            "orientation": "v",
+            "showlegend": true,
+            "text": {
+                "dtype": "f8",
+                "bdata": "AAAAAAAAFEAAAAAAAAAUQA=="
+            },
+            "textposition": "auto",
+            "x": [
+                "Dr. Carol Lee",
+                "Dr. Grace Chen"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i1",
+                "bdata": "BQU="
+            },
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "customdata": [
+                [
+                    "Biology",
+                    6
+                ],
+                [
+                    "Biology",
+                    6
+                ]
+            ],
+            "hovertemplate": "Department=%{customdata[0]}\u003cbr\u003eFaculty Member=%{x}\u003cbr\u003eCourses Taught (Semester)=%{text}\u003cbr\u003eWorkload Target=%{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Biology",
+            "marker": {
+                "color": "#ab63fa",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Biology",
+            "offsetgroup": "Biology",
+            "orientation": "v",
+            "showlegend": true,
+            "text": {
+                "dtype": "f8",
+                "bdata": "AAAAAAAAHEAAAAAAAAAYQA=="
+            },
+            "textposition": "auto",
+            "x": [
+                "Dr. David Kim",
+                "Dr. Henry Brown"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i1",
+                "bdata": "BwY="
+            },
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "hovertemplate": "Faculty Name=%{x}\u003cbr\u003eWorkload Target=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "",
+            "line": {
+                "color": "black",
+                "dash": "dash"
+            },
+            "marker": {
+                "symbol": "circle"
+            },
+            "mode": "lines",
+            "name": "Workload Target",
+            "orientation": "v",
+            "showlegend": false,
+            "x": [
+                "Dr. Alice Smith",
+                "Dr. Bob Jones",
+                "Dr. Carol Lee",
+                "Dr. David Kim",
+                "Dr. Eva Patel",
+                "Dr. Frank Wu",
+                "Dr. Grace Chen",
+                "Dr. Henry Brown"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i1",
+                "bdata": "BQUFBgUFBQY="
+            },
+            "yaxis": "y",
+            "type": "scatter"
         }
     ],
     "layout": {
@@ -822,7 +981,7 @@
                 1.0
             ],
             "title": {
-                "text": "Power Plant"
+                "text": "Faculty Member"
             }
         },
         "yaxis": {
@@ -832,218 +991,77 @@
                 1.0
             ],
             "title": {
-                "text": "Total CO\u2082 Emissions (tons)"
-            }
-        },
-        "coloraxis": {
-            "colorbar": {
-                "title": {
-                    "text": "Emissions (tons)"
-                }
+                "text": "Courses Taught (Semester)"
             },
-            "colorscale": [
-                [
-                    0.0,
-                    "rgb(255,245,240)"
-                ],
-                [
-                    0.125,
-                    "rgb(254,224,210)"
-                ],
-                [
-                    0.25,
-                    "rgb(252,187,161)"
-                ],
-                [
-                    0.375,
-                    "rgb(252,146,114)"
-                ],
-                [
-                    0.5,
-                    "rgb(251,106,74)"
-                ],
-                [
-                    0.625,
-                    "rgb(239,59,44)"
-                ],
-                [
-                    0.75,
-                    "rgb(203,24,29)"
-                ],
-                [
-                    0.875,
-                    "rgb(165,15,21)"
-                ],
-                [
-                    1.0,
-                    "rgb(103,0,13)"
-                ]
-            ]
+            "dtick": 1
         },
         "legend": {
-            "tracegroupgap": 0,
             "title": {
-                "text": ""
-            }
+                "text": "Department"
+            },
+            "tracegroupgap": 0
         },
         "title": {
-            "text": "Total Monthly CO2 Emissions by Plant (with Emission Cap Annotations)"
-        },
-        "barmode": "relative",
-        "shapes": [
-            {
-                "line": {
-                    "color": "RoyalBlue",
-                    "dash": "dash",
-                    "width": 2
-                },
-                "type": "line",
-                "x0": "Plant A",
-                "x1": "Plant A",
-                "xref": "x",
-                "y0": 902,
-                "y1": 902,
-                "yref": "y"
-            },
-            {
-                "line": {
-                    "color": "RoyalBlue",
-                    "dash": "dash",
-                    "width": 2
-                },
-                "type": "line",
-                "x0": "Plant B",
-                "x1": "Plant B",
-                "xref": "x",
-                "y0": 887,
-                "y1": 887,
-                "yref": "y"
-            },
-            {
-                "line": {
-                    "color": "RoyalBlue",
-                    "dash": "dash",
-                    "width": 2
-                },
-                "type": "line",
-                "x0": "Plant C",
-                "x1": "Plant C",
-                "xref": "x",
-                "y0": 1185,
-                "y1": 1185,
-                "yref": "y"
-            },
-            {
-                "line": {
-                    "color": "RoyalBlue",
-                    "dash": "dash",
-                    "width": 2
-                },
-                "type": "line",
-                "x0": "Plant D",
-                "x1": "Plant D",
-                "xref": "x",
-                "y0": 858,
-                "y1": 858,
-                "yref": "y"
-            },
-            {
-                "line": {
-                    "color": "RoyalBlue",
-                    "dash": "dash",
-                    "width": 2
-                },
-                "type": "line",
-                "x0": "Plant E",
-                "x1": "Plant E",
-                "xref": "x",
-                "y0": 930,
-                "y1": 930,
-                "yref": "y"
+            "text": "Faculty Workload Comparison: Courses Taught vs. Target",
+            "font": {
+                "size": 20
             }
-        ],
+        },
+        "barmode": "group",
         "annotations": [
             {
-                "arrowhead": 2,
-                "ax": 0,
-                "ay": -30,
-                "bgcolor": "rgba(255,255,255,0.7)",
                 "font": {
-                    "color": "red",
-                    "size": 12
+                    "color": "green",
+                    "size": 10
                 },
-                "showarrow": true,
-                "text": "Exceeded Cap!",
-                "x": "Plant A",
-                "y": 5238.0
+                "showarrow": false,
+                "text": "Above Target",
+                "x": "Dr. Alice Smith",
+                "y": 6.2
             },
             {
-                "arrowhead": 2,
-                "ax": 0,
-                "ay": -30,
-                "bgcolor": "rgba(255,255,255,0.7)",
                 "font": {
                     "color": "red",
-                    "size": 12
+                    "size": 10
                 },
-                "showarrow": true,
-                "text": "Exceeded Cap!",
-                "x": "Plant B",
-                "y": 4949.4
+                "showarrow": false,
+                "text": "Below Target",
+                "x": "Dr. Bob Jones",
+                "y": 4.2
             },
             {
-                "arrowhead": 2,
-                "ax": 0,
-                "ay": -30,
-                "bgcolor": "rgba(255,255,255,0.7)",
                 "font": {
-                    "color": "red",
-                    "size": 12
+                    "color": "green",
+                    "size": 10
                 },
-                "showarrow": true,
-                "text": "Exceeded Cap!",
-                "x": "Plant C",
-                "y": 6285.700000000001
+                "showarrow": false,
+                "text": "Above Target",
+                "x": "Dr. David Kim",
+                "y": 7.2
             },
             {
-                "arrowhead": 2,
-                "ax": 0,
-                "ay": -30,
-                "bgcolor": "rgba(255,255,255,0.7)",
                 "font": {
                     "color": "red",
-                    "size": 12
+                    "size": 10
                 },
-                "showarrow": true,
-                "text": "Exceeded Cap!",
-                "x": "Plant D",
-                "y": 4801.8
+                "showarrow": false,
+                "text": "Below Target",
+                "x": "Dr. Eva Patel",
+                "y": 3.2
             },
             {
-                "arrowhead": 2,
-                "ax": 0,
-                "ay": -30,
-                "bgcolor": "rgba(255,255,255,0.7)",
                 "font": {
-                    "color": "red",
-                    "size": 12
+                    "color": "green",
+                    "size": 10
                 },
-                "showarrow": true,
-                "text": "Exceeded Cap!",
-                "x": "Plant E",
-                "y": 5489.6
+                "showarrow": false,
+                "text": "Above Target",
+                "x": "Dr. Frank Wu",
+                "y": 6.2
             }
         ],
-        "font": {
-            "size": 14
-        },
-        "margin": {
-            "l": 60,
-            "r": 40,
-            "t": 80,
-            "b": 60
-        },
-        "plot_bgcolor": "white"
+        "plot_bgcolor": "#f9f9f9",
+        "hovermode": "x unified"
     },
     "id": "996"
 }

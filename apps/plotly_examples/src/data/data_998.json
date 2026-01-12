@@ -2,16 +2,16 @@
     "data": [
         {
             "customdata": {
-                "dtype": "f8",
-                "bdata": "7FG4HoXrsT+4HoXrUbi+P5qZmZmZmak\u002fMzMzMzMzwz97FK5H4XqkPwrXo3A9Csc\u002f",
-                "shape": "6, 1"
+                "dtype": "i2",
+                "bdata": "hgN3A6EEWgOiAw==",
+                "shape": "5, 1"
             },
-            "hovertemplate": "Customer Segment=%{x}\u003cbr\u003eQuarterly Revenue (USD)=%{marker.color:$,.0f}\u003cbr\u003eChurn Rate=%{customdata[0]:.1%}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "hovertemplate": "Power Plant=%{x}\u003cbr\u003eCO\u2082 Emissions (tons)=%{marker.color}\u003cbr\u003eEmission Cap (tons)=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
             "legendgroup": "",
             "marker": {
                 "color": {
-                    "dtype": "i4",
-                    "bdata": "oCUmAEAWQABAdxsAYE0vAPB+DgAg1hMA"
+                    "dtype": "f8",
+                    "bdata": "AAAAAABitEBmZmZmZkGzQDQzMzOzebhAzczMzMytskCamZmZmV21QA=="
                 },
                 "coloraxis": "coloraxis",
                 "pattern": {
@@ -23,17 +23,16 @@
             "showlegend": false,
             "textposition": "auto",
             "x": [
-                "Retail Banking",
-                "Corporate Banking",
-                "Wealth Management",
-                "SME Banking",
-                "Private Banking",
-                "Digital-Only"
+                "Plant A",
+                "Plant B",
+                "Plant C",
+                "Plant D",
+                "Plant E"
             ],
             "xaxis": "x",
             "y": {
-                "dtype": "i4",
-                "bdata": "oCUmAEAWQABAdxsAYE0vAPB+DgAg1hMA"
+                "dtype": "f8",
+                "bdata": "AAAAAABitEBmZmZmZkGzQDQzMzOzebhAzczMzMytskCamZmZmV21QA=="
             },
             "yaxis": "y",
             "type": "bar"
@@ -823,7 +822,7 @@
                 1.0
             ],
             "title": {
-                "text": "Customer Segment"
+                "text": "Power Plant"
             }
         },
         "yaxis": {
@@ -833,108 +832,209 @@
                 1.0
             ],
             "title": {
-                "text": "Quarterly Revenue (USD)"
+                "text": "Total CO\u2082 Emissions (tons)"
             }
         },
         "coloraxis": {
             "colorbar": {
                 "title": {
-                    "text": "Quarterly Revenue (USD)"
+                    "text": "Emissions (tons)"
                 }
             },
             "colorscale": [
                 [
                     0.0,
-                    "rgb(247,251,255)"
+                    "rgb(255,245,240)"
                 ],
                 [
                     0.125,
-                    "rgb(222,235,247)"
+                    "rgb(254,224,210)"
                 ],
                 [
                     0.25,
-                    "rgb(198,219,239)"
+                    "rgb(252,187,161)"
                 ],
                 [
                     0.375,
-                    "rgb(158,202,225)"
+                    "rgb(252,146,114)"
                 ],
                 [
                     0.5,
-                    "rgb(107,174,214)"
+                    "rgb(251,106,74)"
                 ],
                 [
                     0.625,
-                    "rgb(66,146,198)"
+                    "rgb(239,59,44)"
                 ],
                 [
                     0.75,
-                    "rgb(33,113,181)"
+                    "rgb(203,24,29)"
                 ],
                 [
                     0.875,
-                    "rgb(8,81,156)"
+                    "rgb(165,15,21)"
                 ],
                 [
                     1.0,
-                    "rgb(8,48,107)"
+                    "rgb(103,0,13)"
                 ]
-            ],
-            "showscale": false
+            ]
         },
         "legend": {
-            "tracegroupgap": 0
+            "tracegroupgap": 0,
+            "title": {
+                "text": ""
+            }
         },
         "title": {
-            "text": "Quarterly Revenue by Customer Segment with Churn Rate Annotations"
+            "text": "Total Monthly CO2 Emissions by Plant (with Emission Cap Annotations)"
         },
         "barmode": "relative",
+        "shapes": [
+            {
+                "line": {
+                    "color": "RoyalBlue",
+                    "dash": "dash",
+                    "width": 2
+                },
+                "type": "line",
+                "x0": "Plant A",
+                "x1": "Plant A",
+                "xref": "x",
+                "y0": 902,
+                "y1": 902,
+                "yref": "y"
+            },
+            {
+                "line": {
+                    "color": "RoyalBlue",
+                    "dash": "dash",
+                    "width": 2
+                },
+                "type": "line",
+                "x0": "Plant B",
+                "x1": "Plant B",
+                "xref": "x",
+                "y0": 887,
+                "y1": 887,
+                "yref": "y"
+            },
+            {
+                "line": {
+                    "color": "RoyalBlue",
+                    "dash": "dash",
+                    "width": 2
+                },
+                "type": "line",
+                "x0": "Plant C",
+                "x1": "Plant C",
+                "xref": "x",
+                "y0": 1185,
+                "y1": 1185,
+                "yref": "y"
+            },
+            {
+                "line": {
+                    "color": "RoyalBlue",
+                    "dash": "dash",
+                    "width": 2
+                },
+                "type": "line",
+                "x0": "Plant D",
+                "x1": "Plant D",
+                "xref": "x",
+                "y0": 858,
+                "y1": 858,
+                "yref": "y"
+            },
+            {
+                "line": {
+                    "color": "RoyalBlue",
+                    "dash": "dash",
+                    "width": 2
+                },
+                "type": "line",
+                "x0": "Plant E",
+                "x1": "Plant E",
+                "xref": "x",
+                "y0": 930,
+                "y1": 930,
+                "yref": "y"
+            }
+        ],
         "annotations": [
             {
                 "arrowhead": 2,
                 "ax": 0,
-                "ay": -40,
-                "bgcolor": "rgba(255,255,255,0.8)",
+                "ay": -30,
+                "bgcolor": "rgba(255,255,255,0.7)",
                 "font": {
                     "color": "red",
                     "size": 12
                 },
                 "showarrow": true,
-                "text": "\u26a0\ufe0f High Churn: 12.0%",
-                "x": "Corporate Banking",
-                "y": 4200000
+                "text": "Exceeded Cap!",
+                "x": "Plant A",
+                "y": 5238.0
             },
             {
                 "arrowhead": 2,
                 "ax": 0,
-                "ay": -40,
-                "bgcolor": "rgba(255,255,255,0.8)",
+                "ay": -30,
+                "bgcolor": "rgba(255,255,255,0.7)",
                 "font": {
                     "color": "red",
                     "size": 12
                 },
                 "showarrow": true,
-                "text": "\u26a0\ufe0f High Churn: 15.0%",
-                "x": "SME Banking",
-                "y": 3100000
+                "text": "Exceeded Cap!",
+                "x": "Plant B",
+                "y": 4949.4
             },
             {
                 "arrowhead": 2,
                 "ax": 0,
-                "ay": -40,
-                "bgcolor": "rgba(255,255,255,0.8)",
+                "ay": -30,
+                "bgcolor": "rgba(255,255,255,0.7)",
                 "font": {
                     "color": "red",
                     "size": 12
                 },
                 "showarrow": true,
-                "text": "\u26a0\ufe0f High Churn: 18.0%",
-                "x": "Digital-Only",
-                "y": 1300000
+                "text": "Exceeded Cap!",
+                "x": "Plant C",
+                "y": 6285.700000000001
+            },
+            {
+                "arrowhead": 2,
+                "ax": 0,
+                "ay": -30,
+                "bgcolor": "rgba(255,255,255,0.7)",
+                "font": {
+                    "color": "red",
+                    "size": 12
+                },
+                "showarrow": true,
+                "text": "Exceeded Cap!",
+                "x": "Plant D",
+                "y": 4801.8
+            },
+            {
+                "arrowhead": 2,
+                "ax": 0,
+                "ay": -30,
+                "bgcolor": "rgba(255,255,255,0.7)",
+                "font": {
+                    "color": "red",
+                    "size": 12
+                },
+                "showarrow": true,
+                "text": "Exceeded Cap!",
+                "x": "Plant E",
+                "y": 5489.6
             }
         ],
         "font": {
-            "family": "Segoe UI, Arial",
             "size": 14
         },
         "margin": {

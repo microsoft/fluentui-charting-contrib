@@ -523,14 +523,14 @@
           "#FECB52"
         ],
         "font": {
-          "color": "#222"
+          "color": "#333"
         },
         "hovermode": "closest",
         "hoverlabel": {
           "align": "left"
         },
-        "paper_bgcolor": "#f7f7f7",
-        "plot_bgcolor": "#f7f7f7",
+        "paper_bgcolor": "#ffffff",
+        "plot_bgcolor": "#ffffff",
         "polar": {
           "bgcolor": "#E5ECF6",
           "angularaxis": {
@@ -778,7 +778,10 @@
       }
     },
     "title": {
-      "text": "AI Model Performance Milestones"
+      "font": {
+        "size": 16
+      },
+      "text": "Customer Sentiment: Dramatic Angles"
     },
     "xaxis": {
       "visible": false
@@ -787,73 +790,153 @@
       "visible": false
     },
     "margin": {
-      "l": 40,
-      "r": 40,
+      "l": 20,
+      "r": 20,
       "t": 60,
-      "b": 40
+      "b": 20
     },
     "annotations": [
       {
         "font": {
-          "color": "#1a1a1a",
-          "size": 20
+          "color": "#28a745",
+          "size": 26
         },
         "showarrow": false,
-        "text": "<b>\ud83d\ude80 Model v3.0 Released</b><br><i>Accuracy: 92.4%</i>",
-        "x": 0.5,
+        "text": "<b>Excellent</b>",
+        "textangle": 15,
+        "x": 0.3,
         "xref": "paper",
-        "y": 0.85,
+        "y": 0.75,
         "yref": "paper"
       },
       {
-        "arrowhead": 2,
-        "ax": 0,
-        "ay": -40,
         "font": {
-          "color": "#2a72b5",
+          "color": "#dc3545",
           "size": 18
         },
-        "showarrow": true,
-        "text": "\ud83d\udd2c <b>Hyperparameter Tuning</b><br>Performance jump: <span style='color:#2a72b5'>+4.1%</span>",
-        "x": 0.5,
+        "showarrow": false,
+        "text": "Disappointed",
+        "textangle": -60,
+        "x": 0.7,
         "xref": "paper",
-        "y": 0.65,
+        "y": 0.62,
         "yref": "paper"
       },
       {
         "font": {
-          "color": "#6d6d6d",
+          "color": "#28a745",
+          "size": 24
+        },
+        "showarrow": false,
+        "text": "<b>Amazing</b>",
+        "textangle": 30,
+        "x": 0.5,
+        "xref": "paper",
+        "y": 0.78,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#dc3545",
           "size": 16
         },
         "showarrow": false,
-        "text": "\ud83e\udde0 <b>Algorithm Update:</b><br>$F_1 = \\frac{2 \\cdot \\text{precision} \\cdot \\text{recall}}{\\text{precision} + \\text{recall}}$",
-        "x": 0.5,
+        "text": "Frustrated",
+        "textangle": -75,
+        "x": 0.2,
         "xref": "paper",
-        "y": 0.45,
+        "y": 0.52,
         "yref": "paper"
       },
       {
         "font": {
-          "color": "#2a72b5",
-          "size": 16
+          "color": "#28a745",
+          "size": 28
         },
         "showarrow": false,
-        "text": "\ud83c\udf10 <b>Production Deployment</b><br><i>2024-05-12</i>",
-        "x": 0.5,
+        "text": "<b>Love</b>",
+        "textangle": 0,
+        "x": 0.8,
         "xref": "paper",
-        "y": 0.25,
+        "y": 0.41,
         "yref": "paper"
       },
       {
         "font": {
-          "color": "#888",
+          "color": "#ffc107",
           "size": 14
         },
         "showarrow": false,
-        "text": "\ud83d\udcca <i>Overall Progress:</i> <b>Consistent improvement across all benchmarks</b>",
-        "x": 0.5,
+        "text": "Confused",
+        "textangle": -45,
+        "x": 0.4,
         "xref": "paper",
-        "y": 0.15,
+        "y": 0.29,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#28a745",
+          "size": 22
+        },
+        "showarrow": false,
+        "text": "<b>Impressed</b>",
+        "textangle": 45,
+        "x": 0.6,
+        "xref": "paper",
+        "y": 0.36,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#dc3545",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "Annoyed",
+        "textangle": -90,
+        "x": 0.15,
+        "xref": "paper",
+        "y": 0.38,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#28a745",
+          "size": 20
+        },
+        "showarrow": false,
+        "text": "<b>Satisfied</b>",
+        "textangle": 20,
+        "x": 0.85,
+        "xref": "paper",
+        "y": 0.72,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#dc3545",
+          "size": 17
+        },
+        "showarrow": false,
+        "text": "Upset",
+        "textangle": -30,
+        "x": 0.45,
+        "xref": "paper",
+        "y": 0.44,
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "#28a745",
+          "size": 25
+        },
+        "showarrow": false,
+        "text": "<b>Delighted</b>",
+        "textangle": 60,
+        "x": 0.23,
+        "xref": "paper",
+        "y": 0.28,
         "yref": "paper"
       }
     ]

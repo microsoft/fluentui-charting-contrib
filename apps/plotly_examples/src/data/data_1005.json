@@ -778,7 +778,7 @@
       }
     },
     "title": {
-      "text": "Vulnerability Patch Timeline Annotation"
+      "text": "AI Model Performance Milestones"
     },
     "xaxis": {
       "visible": false
@@ -795,25 +795,26 @@
     "annotations": [
       {
         "font": {
-          "color": "#b22222",
+          "color": "#1a1a1a",
           "size": 20
         },
         "showarrow": false,
-        "text": "<b>\ud83d\udd12 Critical Vulnerability Discovered</b><br><i>2024-06-01</i><br>Affected: <span style='color:#b22222'>Web Server Cluster</span>",
+        "text": "<b>\ud83d\ude80 Model v3.0 Released</b><br><i>Accuracy: 92.4%</i>",
         "x": 0.5,
         "xref": "paper",
         "y": 0.85,
         "yref": "paper"
       },
       {
-        "arrowcolor": "#e67e22",
         "arrowhead": 2,
+        "ax": 0,
+        "ay": -40,
         "font": {
           "color": "#2a72b5",
           "size": 18
         },
         "showarrow": true,
-        "text": "<b>\ud83d\ude80 Patch Deployed</b><br><i>2024-06-03</i><br>Urgency: <span style='color:#e67e22'>High</span>",
+        "text": "\ud83d\udd2c <b>Hyperparameter Tuning</b><br>Performance jump: <span style='color:#2a72b5'>+4.1%</span>",
         "x": 0.5,
         "xref": "paper",
         "y": 0.65,
@@ -821,11 +822,11 @@
       },
       {
         "font": {
-          "color": "#2980b9",
+          "color": "#6d6d6d",
           "size": 16
         },
         "showarrow": false,
-        "text": "\ud83e\uddee <b>Risk Calculation:</b><br>$Risk = \\frac{Threat \\times Vulnerability}{Control}$<br>Impact: <span style='color:#2980b9'>Severe</span>",
+        "text": "\ud83e\udde0 <b>Algorithm Update:</b><br>$F_1 = \\frac{2 \\cdot \\text{precision} \\cdot \\text{recall}}{\\text{precision} + \\text{recall}}$",
         "x": 0.5,
         "xref": "paper",
         "y": 0.45,
@@ -833,11 +834,11 @@
       },
       {
         "font": {
-          "color": "#27ae60",
-          "size": 15
+          "color": "#2a72b5",
+          "size": 16
         },
         "showarrow": false,
-        "text": "<b>\u2705 Patch Coverage:</b> <span style='color:#27ae60'>95%</span><br><i>All production systems updated</i>",
+        "text": "\ud83c\udf10 <b>Production Deployment</b><br><i>2024-05-12</i>",
         "x": 0.5,
         "xref": "paper",
         "y": 0.25,
@@ -849,7 +850,7 @@
           "size": 14
         },
         "showarrow": false,
-        "text": "<i>Source: Security Operations Center | Last updated: 2024-06-04</i>",
+        "text": "\ud83d\udcca <i>Overall Progress:</i> <b>Consistent improvement across all benchmarks</b>",
         "x": 0.5,
         "xref": "paper",
         "y": 0.15,

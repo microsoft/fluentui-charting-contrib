@@ -3,172 +3,308 @@
         {
             "customdata": [
                 [
-                    "2024-08-30"
+                    "2019-06-01"
                 ]
             ],
-            "hovertemplate": "Segment=%{x}\u003cbr\u003eSales Volume (MWh)=%{text}\u003cbr\u003eContract Expiry Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
-            "legendgroup": "Industrial",
+            "hovertemplate": "Demographic Group=%{x}\u003cbr\u003eGraduation Rate (%)=%{text}\u003cbr\u003ePolicy Change Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "All Students",
             "marker": {
                 "color": "#636efa",
                 "pattern": {
                     "shape": ""
                 }
             },
-            "name": "Industrial",
+            "name": "All Students",
             "orientation": "v",
             "showlegend": true,
             "text": {
                 "dtype": "f8",
-                "bdata": "AAAAAAAQkUA="
+                "bdata": "AAAAAABAVUA="
             },
             "textposition": "outside",
             "x": [
-                "Industrial"
+                "All Students"
             ],
             "xaxis": "x",
             "y": {
-                "dtype": "i2",
-                "bdata": "RAQ="
+                "dtype": "i1",
+                "bdata": "VQ=="
             },
             "yaxis": "y",
             "type": "bar",
-            "texttemplate": "%{text}"
+            "texttemplate": "%{text}%"
         },
         {
             "customdata": [
                 [
-                    "2024-09-29"
+                    "2019-06-01"
                 ]
             ],
-            "hovertemplate": "Segment=%{x}\u003cbr\u003eSales Volume (MWh)=%{text}\u003cbr\u003eContract Expiry Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
-            "legendgroup": "Commercial",
+            "hovertemplate": "Demographic Group=%{x}\u003cbr\u003eGraduation Rate (%)=%{text}\u003cbr\u003ePolicy Change Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Female",
             "marker": {
                 "color": "#EF553B",
                 "pattern": {
                     "shape": ""
                 }
             },
-            "name": "Commercial",
+            "name": "Female",
             "orientation": "v",
             "showlegend": true,
             "text": {
                 "dtype": "f8",
-                "bdata": "AAAAAADgi0A="
+                "bdata": "AAAAAAAAVkA="
             },
             "textposition": "outside",
             "x": [
-                "Commercial"
+                "Female"
             ],
             "xaxis": "x",
             "y": {
-                "dtype": "i2",
-                "bdata": "fAM="
+                "dtype": "i1",
+                "bdata": "WA=="
             },
             "yaxis": "y",
             "type": "bar",
-            "texttemplate": "%{text}"
+            "texttemplate": "%{text}%"
         },
         {
             "customdata": [
                 [
-                    "2024-09-29"
+                    "2019-06-01"
                 ]
             ],
-            "hovertemplate": "Segment=%{x}\u003cbr\u003eSales Volume (MWh)=%{text}\u003cbr\u003eContract Expiry Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
-            "legendgroup": "Residential",
+            "hovertemplate": "Demographic Group=%{x}\u003cbr\u003eGraduation Rate (%)=%{text}\u003cbr\u003ePolicy Change Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Male",
             "marker": {
                 "color": "#00cc96",
                 "pattern": {
                     "shape": ""
                 }
             },
-            "name": "Residential",
+            "name": "Male",
             "orientation": "v",
             "showlegend": true,
             "text": {
                 "dtype": "f8",
-                "bdata": "AAAAAACYlUA="
+                "bdata": "AAAAAACAVEA="
             },
             "textposition": "outside",
             "x": [
-                "Residential"
+                "Male"
             ],
             "xaxis": "x",
             "y": {
-                "dtype": "i2",
-                "bdata": "ZgU="
+                "dtype": "i1",
+                "bdata": "Ug=="
             },
             "yaxis": "y",
             "type": "bar",
-            "texttemplate": "%{text}"
+            "texttemplate": "%{text}%"
         },
         {
             "customdata": [
                 [
-                    "2024-10-29"
+                    "2020-06-01"
                 ]
             ],
-            "hovertemplate": "Segment=%{x}\u003cbr\u003eSales Volume (MWh)=%{text}\u003cbr\u003eContract Expiry Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
-            "legendgroup": "Government",
+            "hovertemplate": "Demographic Group=%{x}\u003cbr\u003eGraduation Rate (%)=%{text}\u003cbr\u003ePolicy Change Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Hispanic",
             "marker": {
                 "color": "#ab63fa",
                 "pattern": {
                     "shape": ""
                 }
             },
-            "name": "Government",
+            "name": "Hispanic",
             "orientation": "v",
             "showlegend": true,
             "text": {
                 "dtype": "f8",
-                "bdata": "AAAAAAAElEA="
+                "bdata": "AAAAAACAU0A="
             },
             "textposition": "outside",
             "x": [
-                "Government"
+                "Hispanic"
             ],
             "xaxis": "x",
             "y": {
-                "dtype": "i2",
-                "bdata": "AQU="
+                "dtype": "i1",
+                "bdata": "Tg=="
             },
             "yaxis": "y",
             "type": "bar",
-            "texttemplate": "%{text}"
+            "texttemplate": "%{text}%"
         },
         {
             "customdata": [
                 [
-                    "2024-07-31"
+                    "2020-06-01"
                 ]
             ],
-            "hovertemplate": "Segment=%{x}\u003cbr\u003eSales Volume (MWh)=%{text}\u003cbr\u003eContract Expiry Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
-            "legendgroup": "Agriculture",
+            "hovertemplate": "Demographic Group=%{x}\u003cbr\u003eGraduation Rate (%)=%{text}\u003cbr\u003ePolicy Change Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Black",
             "marker": {
                 "color": "#FFA15A",
                 "pattern": {
                     "shape": ""
                 }
             },
-            "name": "Agriculture",
+            "name": "Black",
             "orientation": "v",
             "showlegend": true,
             "text": {
                 "dtype": "f8",
-                "bdata": "AAAAAAAckkA="
+                "bdata": "AAAAAADAUkA="
             },
             "textposition": "outside",
             "x": [
-                "Agriculture"
+                "Black"
             ],
             "xaxis": "x",
             "y": {
-                "dtype": "i2",
-                "bdata": "hwQ="
+                "dtype": "i1",
+                "bdata": "Sw=="
             },
             "yaxis": "y",
             "type": "bar",
-            "texttemplate": "%{text}"
+            "texttemplate": "%{text}%"
+        },
+        {
+            "customdata": [
+                [
+                    "2019-06-01"
+                ]
+            ],
+            "hovertemplate": "Demographic Group=%{x}\u003cbr\u003eGraduation Rate (%)=%{text}\u003cbr\u003ePolicy Change Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "White",
+            "marker": {
+                "color": "#19d3f3",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "White",
+            "orientation": "v",
+            "showlegend": true,
+            "text": {
+                "dtype": "f8",
+                "bdata": "AAAAAACAVkA="
+            },
+            "textposition": "outside",
+            "x": [
+                "White"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i1",
+                "bdata": "Wg=="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "texttemplate": "%{text}%"
+        },
+        {
+            "customdata": [
+                [
+                    "2019-06-01"
+                ]
+            ],
+            "hovertemplate": "Demographic Group=%{x}\u003cbr\u003eGraduation Rate (%)=%{text}\u003cbr\u003ePolicy Change Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Asian",
+            "marker": {
+                "color": "#FF6692",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Asian",
+            "orientation": "v",
+            "showlegend": true,
+            "text": {
+                "dtype": "f8",
+                "bdata": "AAAAAABAV0A="
+            },
+            "textposition": "outside",
+            "x": [
+                "Asian"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i1",
+                "bdata": "XQ=="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "texttemplate": "%{text}%"
+        },
+        {
+            "customdata": [
+                [
+                    "2021-06-01"
+                ]
+            ],
+            "hovertemplate": "Demographic Group=%{x}\u003cbr\u003eGraduation Rate (%)=%{text}\u003cbr\u003ePolicy Change Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Low Income",
+            "marker": {
+                "color": "#B6E880",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Low Income",
+            "orientation": "v",
+            "showlegend": true,
+            "text": {
+                "dtype": "f8",
+                "bdata": "AAAAAACAUUA="
+            },
+            "textposition": "outside",
+            "x": [
+                "Low Income"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i1",
+                "bdata": "Rg=="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "texttemplate": "%{text}%"
+        },
+        {
+            "customdata": [
+                [
+                    "2021-06-01"
+                ]
+            ],
+            "hovertemplate": "Demographic Group=%{x}\u003cbr\u003eGraduation Rate (%)=%{text}\u003cbr\u003ePolicy Change Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Special Education",
+            "marker": {
+                "color": "#FF97FF",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Special Education",
+            "orientation": "v",
+            "showlegend": true,
+            "text": {
+                "dtype": "f8",
+                "bdata": "AAAAAABAUEA="
+            },
+            "textposition": "outside",
+            "x": [
+                "Special Education"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i1",
+                "bdata": "QQ=="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "texttemplate": "%{text}%"
         }
     ],
     "layout": {
@@ -955,16 +1091,21 @@
                 1.0
             ],
             "title": {
-                "text": "Customer Segment"
+                "text": "Demographic Group"
             },
             "categoryorder": "array",
             "categoryarray": [
-                "Industrial",
-                "Commercial",
-                "Residential",
-                "Government",
-                "Agriculture"
-            ]
+                "All Students",
+                "Female",
+                "Male",
+                "Hispanic",
+                "Black",
+                "White",
+                "Asian",
+                "Low Income",
+                "Special Education"
+            ],
+            "tickangle": -30
         },
         "yaxis": {
             "anchor": "x",
@@ -973,109 +1114,91 @@
                 1.0
             ],
             "title": {
-                "text": "Sales Volume (MWh)"
-            }
+                "text": "Graduation Rate (%)"
+            },
+            "range": [
+                0,
+                100
+            ]
         },
         "legend": {
             "title": {
-                "text": "Segment"
+                "text": "Demographic Group"
             },
             "tracegroupgap": 0
         },
         "title": {
-            "text": "Energy Sales by Customer Segment (2024-06): Contract Expiry Focus"
+            "text": "Graduation Rates by Demographic Group with Policy Impact Annotations",
+            "font": {
+                "size": 22
+            }
         },
         "barmode": "relative",
-        "height": 500,
         "annotations": [
             {
-                "bgcolor": "rgba(255,255,200,0.8)",
+                "arrowhead": 1,
+                "ax": 0,
+                "ay": -30,
+                "bgcolor": "yellow",
                 "font": {
                     "color": "black",
-                    "size": 11
+                    "size": 10
                 },
-                "showarrow": false,
-                "text": "Expiry: 2024-08-30",
-                "x": "Industrial",
-                "y": 1142,
-                "yanchor": "bottom"
+                "showarrow": true,
+                "text": "Policy: 2020",
+                "x": "Hispanic",
+                "y": 81
             },
             {
-                "bgcolor": "rgba(255,255,200,0.8)",
+                "arrowhead": 1,
+                "ax": 0,
+                "ay": -30,
+                "bgcolor": "yellow",
                 "font": {
                     "color": "black",
-                    "size": 11
+                    "size": 10
                 },
-                "showarrow": false,
-                "text": "Expiry: 2024-09-29",
-                "x": "Commercial",
-                "y": 942,
-                "yanchor": "bottom"
+                "showarrow": true,
+                "text": "Policy: 2020",
+                "x": "Black",
+                "y": 78
             },
             {
-                "bgcolor": "rgba(255,255,200,0.8)",
+                "arrowhead": 1,
+                "ax": 0,
+                "ay": -30,
+                "bgcolor": "yellow",
                 "font": {
                     "color": "black",
-                    "size": 11
+                    "size": 10
                 },
-                "showarrow": false,
-                "text": "Expiry: 2024-09-29",
-                "x": "Residential",
-                "y": 1432,
-                "yanchor": "bottom"
+                "showarrow": true,
+                "text": "Policy: 2021",
+                "x": "Low Income",
+                "y": 73
             },
             {
-                "bgcolor": "rgba(255,255,200,0.8)",
+                "arrowhead": 1,
+                "ax": 0,
+                "ay": -30,
+                "bgcolor": "yellow",
                 "font": {
                     "color": "black",
-                    "size": 11
+                    "size": 10
                 },
-                "showarrow": false,
-                "text": "Expiry: 2024-10-29",
-                "x": "Government",
-                "y": 1331,
-                "yanchor": "bottom"
-            },
-            {
-                "bgcolor": "rgba(255,255,200,0.8)",
-                "font": {
-                    "color": "black",
-                    "size": 11
-                },
-                "showarrow": false,
-                "text": "Expiry: 2024-07-31",
-                "x": "Agriculture",
-                "y": 1209,
-                "yanchor": "bottom"
-            },
-            {
-                "showarrow": false,
-                "text": "Avg Sales: 1161 MWh",
-                "x": 0,
-                "xanchor": "left",
-                "xref": "x domain",
-                "y": 1161.2,
-                "yanchor": "bottom",
-                "yref": "y"
+                "showarrow": true,
+                "text": "Policy: 2021",
+                "x": "Special Education",
+                "y": 68
             }
         ],
-        "shapes": [
-            {
-                "line": {
-                    "color": "red",
-                    "dash": "dash"
-                },
-                "type": "line",
-                "x0": 0,
-                "x1": 1,
-                "xref": "x domain",
-                "y0": 1161.2,
-                "y1": 1161.2,
-                "yref": "y"
-            }
-        ],
-        "plot_bgcolor": "rgba(245,245,255,1)",
-        "bargap": 0.3
+        "margin": {
+            "l": 40,
+            "r": 40,
+            "t": 80,
+            "b": 40
+        },
+        "plot_bgcolor": "white"
     },
     "id": "997"
 }

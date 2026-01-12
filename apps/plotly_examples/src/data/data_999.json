@@ -3,132 +3,172 @@
         {
             "customdata": [
                 [
-                    "High",
-                    "No"
-                ],
-                [
-                    "High",
-                    "Yes"
+                    "2024-08-30"
                 ]
             ],
-            "hovertemplate": "Priority=%{customdata[0]}\u003cbr\u003eCustomer Segment=%{x}\u003cbr\u003eFulfillment Rate (%)=%{text:.1f}\u003cbr\u003eRisk Indicator=%{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e",
-            "legendgroup": "High",
+            "hovertemplate": "Segment=%{x}\u003cbr\u003eSales Volume (MWh)=%{text}\u003cbr\u003eContract Expiry Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Industrial",
             "marker": {
-                "color": "crimson",
+                "color": "#636efa",
                 "pattern": {
                     "shape": ""
                 }
             },
-            "name": "High",
+            "name": "Industrial",
             "orientation": "v",
             "showlegend": true,
             "text": {
                 "dtype": "f8",
-                "bdata": "AAAAAACgWECamZmZmVlVQA=="
+                "bdata": "AAAAAAAQkUA="
             },
             "textposition": "outside",
             "x": [
-                "VIP",
-                "Direct-to-Consumer"
+                "Industrial"
             ],
             "xaxis": "x",
             "y": {
-                "dtype": "f8",
-                "bdata": "AAAAAACgWECamZmZmVlVQA=="
+                "dtype": "i2",
+                "bdata": "RAQ="
             },
             "yaxis": "y",
             "type": "bar",
-            "texttemplate": "%{text:.1f}%"
+            "texttemplate": "%{text}"
         },
         {
             "customdata": [
                 [
-                    "Medium",
-                    "No"
-                ],
-                [
-                    "Medium",
-                    "No"
-                ],
-                [
-                    "Medium",
-                    "No"
+                    "2024-09-29"
                 ]
             ],
-            "hovertemplate": "Priority=%{customdata[0]}\u003cbr\u003eCustomer Segment=%{x}\u003cbr\u003eFulfillment Rate (%)=%{text:.1f}\u003cbr\u003eRisk Indicator=%{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e",
-            "legendgroup": "Medium",
+            "hovertemplate": "Segment=%{x}\u003cbr\u003eSales Volume (MWh)=%{text}\u003cbr\u003eContract Expiry Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Commercial",
             "marker": {
-                "color": "orange",
+                "color": "#EF553B",
                 "pattern": {
                     "shape": ""
                 }
             },
-            "name": "Medium",
+            "name": "Commercial",
             "orientation": "v",
             "showlegend": true,
             "text": {
                 "dtype": "f8",
-                "bdata": "zczMzMzMV0AzMzMzMxNXQDMzMzMzc1dA"
+                "bdata": "AAAAAADgi0A="
             },
             "textposition": "outside",
             "x": [
-                "Enterprise",
-                "E-commerce",
-                "Wholesale"
+                "Commercial"
             ],
             "xaxis": "x",
             "y": {
-                "dtype": "f8",
-                "bdata": "zczMzMzMV0AzMzMzMxNXQDMzMzMzc1dA"
+                "dtype": "i2",
+                "bdata": "fAM="
             },
             "yaxis": "y",
             "type": "bar",
-            "texttemplate": "%{text:.1f}%"
+            "texttemplate": "%{text}"
         },
         {
             "customdata": [
                 [
-                    "Low",
-                    "Yes"
-                ],
-                [
-                    "Low",
-                    "Yes"
-                ],
-                [
-                    "Low",
-                    "No"
+                    "2024-09-29"
                 ]
             ],
-            "hovertemplate": "Priority=%{customdata[0]}\u003cbr\u003eCustomer Segment=%{x}\u003cbr\u003eFulfillment Rate (%)=%{text:.1f}\u003cbr\u003eRisk Indicator=%{customdata[1]}\u003cextra\u003e\u003c\u002fextra\u003e",
-            "legendgroup": "Low",
+            "hovertemplate": "Segment=%{x}\u003cbr\u003eSales Volume (MWh)=%{text}\u003cbr\u003eContract Expiry Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Residential",
             "marker": {
-                "color": "steelblue",
+                "color": "#00cc96",
                 "pattern": {
                     "shape": ""
                 }
             },
-            "name": "Low",
+            "name": "Residential",
             "orientation": "v",
             "showlegend": true,
             "text": {
                 "dtype": "f8",
-                "bdata": "zczMzMxsVkAAAAAAAOBVQGZmZmZmhlZA"
+                "bdata": "AAAAAACYlUA="
             },
             "textposition": "outside",
             "x": [
-                "Small Business",
-                "Retail",
-                "Distributor"
+                "Residential"
             ],
             "xaxis": "x",
             "y": {
-                "dtype": "f8",
-                "bdata": "zczMzMxsVkAAAAAAAOBVQGZmZmZmhlZA"
+                "dtype": "i2",
+                "bdata": "ZgU="
             },
             "yaxis": "y",
             "type": "bar",
-            "texttemplate": "%{text:.1f}%"
+            "texttemplate": "%{text}"
+        },
+        {
+            "customdata": [
+                [
+                    "2024-10-29"
+                ]
+            ],
+            "hovertemplate": "Segment=%{x}\u003cbr\u003eSales Volume (MWh)=%{text}\u003cbr\u003eContract Expiry Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Government",
+            "marker": {
+                "color": "#ab63fa",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Government",
+            "orientation": "v",
+            "showlegend": true,
+            "text": {
+                "dtype": "f8",
+                "bdata": "AAAAAAAElEA="
+            },
+            "textposition": "outside",
+            "x": [
+                "Government"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i2",
+                "bdata": "AQU="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "texttemplate": "%{text}"
+        },
+        {
+            "customdata": [
+                [
+                    "2024-07-31"
+                ]
+            ],
+            "hovertemplate": "Segment=%{x}\u003cbr\u003eSales Volume (MWh)=%{text}\u003cbr\u003eContract Expiry Date=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Agriculture",
+            "marker": {
+                "color": "#FFA15A",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Agriculture",
+            "orientation": "v",
+            "showlegend": true,
+            "text": {
+                "dtype": "f8",
+                "bdata": "AAAAAAAckkA="
+            },
+            "textposition": "outside",
+            "x": [
+                "Agriculture"
+            ],
+            "xaxis": "x",
+            "y": {
+                "dtype": "i2",
+                "bdata": "hwQ="
+            },
+            "yaxis": "y",
+            "type": "bar",
+            "texttemplate": "%{text}"
         }
     ],
     "layout": {
@@ -917,7 +957,14 @@
             "title": {
                 "text": "Customer Segment"
             },
-            "tickangle": -30
+            "categoryorder": "array",
+            "categoryarray": [
+                "Industrial",
+                "Commercial",
+                "Residential",
+                "Government",
+                "Agriculture"
+            ]
         },
         "yaxis": {
             "anchor": "x",
@@ -926,84 +973,109 @@
                 1.0
             ],
             "title": {
-                "text": "Fulfillment Rate (%)"
-            },
-            "range": [
-                0,
-                105
-            ]
+                "text": "Sales Volume (MWh)"
+            }
         },
         "legend": {
             "title": {
-                "text": "Priority"
+                "text": "Segment"
             },
             "tracegroupgap": 0
         },
         "title": {
-            "text": "Monthly Order Fulfillment Rate by Customer Segment"
+            "text": "Energy Sales by Customer Segment (2024-06): Contract Expiry Focus"
         },
         "barmode": "relative",
+        "height": 500,
         "annotations": [
             {
-                "bgcolor": "rgba(255,255,255,0.7)",
+                "bgcolor": "rgba(255,255,200,0.8)",
                 "font": {
-                    "color": "red",
-                    "family": "Arial",
-                    "size": 12
+                    "color": "black",
+                    "size": 11
                 },
                 "showarrow": false,
-                "text": "High Priority",
-                "x": "VIP",
-                "y": 100.5,
+                "text": "Expiry: 2024-08-30",
+                "x": "Industrial",
+                "y": 1142,
                 "yanchor": "bottom"
             },
             {
-                "bgcolor": "rgba(255,255,255,0.7)",
+                "bgcolor": "rgba(255,255,200,0.8)",
                 "font": {
-                    "color": "red",
-                    "family": "Arial",
-                    "size": 12
+                    "color": "black",
+                    "size": 11
                 },
                 "showarrow": false,
-                "text": "\u26a0\ufe0f At Risk",
-                "x": "Small Business",
-                "y": 91.7,
+                "text": "Expiry: 2024-09-29",
+                "x": "Commercial",
+                "y": 942,
                 "yanchor": "bottom"
             },
             {
-                "bgcolor": "rgba(255,255,255,0.7)",
+                "bgcolor": "rgba(255,255,200,0.8)",
                 "font": {
-                    "color": "red",
-                    "family": "Arial",
-                    "size": 12
+                    "color": "black",
+                    "size": 11
                 },
                 "showarrow": false,
-                "text": "\u26a0\ufe0f At Risk",
-                "x": "Retail",
-                "y": 89.5,
+                "text": "Expiry: 2024-09-29",
+                "x": "Residential",
+                "y": 1432,
                 "yanchor": "bottom"
             },
             {
-                "bgcolor": "rgba(255,255,255,0.7)",
+                "bgcolor": "rgba(255,255,200,0.8)",
                 "font": {
-                    "color": "red",
-                    "family": "Arial",
-                    "size": 12
+                    "color": "black",
+                    "size": 11
                 },
                 "showarrow": false,
-                "text": "\u26a0\ufe0f High Priority",
-                "x": "Direct-to-Consumer",
-                "y": 87.4,
+                "text": "Expiry: 2024-10-29",
+                "x": "Government",
+                "y": 1331,
                 "yanchor": "bottom"
+            },
+            {
+                "bgcolor": "rgba(255,255,200,0.8)",
+                "font": {
+                    "color": "black",
+                    "size": 11
+                },
+                "showarrow": false,
+                "text": "Expiry: 2024-07-31",
+                "x": "Agriculture",
+                "y": 1209,
+                "yanchor": "bottom"
+            },
+            {
+                "showarrow": false,
+                "text": "Avg Sales: 1161 MWh",
+                "x": 0,
+                "xanchor": "left",
+                "xref": "x domain",
+                "y": 1161.2,
+                "yanchor": "bottom",
+                "yref": "y"
             }
         ],
-        "margin": {
-            "l": 60,
-            "r": 40,
-            "t": 80,
-            "b": 60
-        },
-        "plot_bgcolor": "white"
+        "shapes": [
+            {
+                "line": {
+                    "color": "red",
+                    "dash": "dash"
+                },
+                "type": "line",
+                "x0": 0,
+                "x1": 1,
+                "xref": "x domain",
+                "y0": 1161.2,
+                "y1": 1161.2,
+                "yref": "y"
+            }
+        ],
+        "plot_bgcolor": "rgba(245,245,255,1)",
+        "bargap": 0.3
     },
     "id": "999"
 }
