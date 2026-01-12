@@ -1,6 +1,8 @@
 name: Update v9 Charts Download test snapshots
 
 on:
+  pull_request:
+    types: [synchronize]
   workflow_run:
     workflows: ["build and deploy to fluentchartseval"] # Name of Workflow A
     types:
