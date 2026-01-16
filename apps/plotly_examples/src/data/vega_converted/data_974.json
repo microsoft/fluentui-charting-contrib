@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Daily active users with milestone callouts",
+  "data": {
+    "values": [
+      {"x": "2025-09-01", "y": 24},
+      {"x": "2025-09-02", "y": 27},
+      {"x": "2025-09-03", "y": 32},
+      {"x": "2025-09-04", "y": 45},
+      {"x": "2025-09-05", "y": 38},
+      {"x": "2025-09-06", "y": 41},
+      {"x": "2025-09-07", "y": 48}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "line"}
+    },
+    {
+      "mark": {"type": "point", "filled": true}
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Daily active users (k)"
+    }
+  }
+}

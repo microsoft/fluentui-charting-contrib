@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Alerts for Anomalies in IT Systems",
+  "description": "Converted from Plotly schema 98 - Bar chart",
+  "data": {
+    "values": [
+      { "anomaly": "High CPU Usage", "alerts": 15 },
+      { "anomaly": "Memory Leaks", "alerts": 5 },
+      { "anomaly": "Network Latency", "alerts": 8 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "anomaly",
+      "type": "nominal",
+      "axis": { "title": "Anomaly Type" }
+    },
+    "y": {
+      "field": "alerts",
+      "type": "quantitative",
+      "axis": { "title": "Number of Alerts" }
+    }
+  }
+}

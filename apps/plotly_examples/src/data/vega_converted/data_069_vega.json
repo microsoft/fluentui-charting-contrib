@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Proportion of Days Achieving Target Steps",
+  "description": "Converted from Plotly schema 69 - Pie chart",
+  "data": {
+    "values": [
+      { "status": "Achieved Target", "days": 4 },
+      { "status": "Did Not Achieve Target", "days": 3 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "days",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "status",
+      "type": "nominal",
+      "legend": { "title": "Status" }
+    }
+  }
+}

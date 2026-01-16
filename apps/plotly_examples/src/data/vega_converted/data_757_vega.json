@@ -1,0 +1,187 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "September",
+        "y": 72,
+        "series": "Mathematics"
+      },
+      {
+        "x": "October",
+        "y": 75,
+        "series": "Mathematics"
+      },
+      {
+        "x": "November",
+        "y": 78,
+        "series": "Mathematics"
+      },
+      {
+        "x": "December",
+        "y": 80,
+        "series": "Mathematics"
+      },
+      {
+        "x": "January",
+        "y": null,
+        "series": "Mathematics"
+      },
+      {
+        "x": "February",
+        "y": 88,
+        "series": "Mathematics"
+      },
+      {
+        "x": "March",
+        "y": 90,
+        "series": "Mathematics"
+      },
+      {
+        "x": "April",
+        "y": 93,
+        "series": "Mathematics"
+      },
+      {
+        "x": "May",
+        "y": 95,
+        "series": "Mathematics"
+      },
+      {
+        "x": "June",
+        "y": 97,
+        "series": "Mathematics"
+      },
+      {
+        "x": "September",
+        "y": 65,
+        "series": "Science"
+      },
+      {
+        "x": "October",
+        "y": 68,
+        "series": "Science"
+      },
+      {
+        "x": "November",
+        "y": 70,
+        "series": "Science"
+      },
+      {
+        "x": "December",
+        "y": 73,
+        "series": "Science"
+      },
+      {
+        "x": "January",
+        "y": 76,
+        "series": "Science"
+      },
+      {
+        "x": "February",
+        "y": 78,
+        "series": "Science"
+      },
+      {
+        "x": "March",
+        "y": 81,
+        "series": "Science"
+      },
+      {
+        "x": "April",
+        "y": 83,
+        "series": "Science"
+      },
+      {
+        "x": "May",
+        "y": 85,
+        "series": "Science"
+      },
+      {
+        "x": "September",
+        "y": null,
+        "series": "English"
+      },
+      {
+        "x": "October",
+        "y": 60,
+        "series": "English"
+      },
+      {
+        "x": "November",
+        "y": 62,
+        "series": "English"
+      },
+      {
+        "x": "December",
+        "y": 65,
+        "series": "English"
+      },
+      {
+        "x": "January",
+        "y": 68,
+        "series": "English"
+      },
+      {
+        "x": "February",
+        "y": 70,
+        "series": "English"
+      },
+      {
+        "x": "March",
+        "y": 75,
+        "series": "English"
+      },
+      {
+        "x": "April",
+        "y": 78,
+        "series": "English"
+      },
+      {
+        "x": "May",
+        "y": 80,
+        "series": "English"
+      },
+      {
+        "x": "June",
+        "y": 82,
+        "series": "English"
+      }
+    ]
+  },
+  "title": "Performance Trends Across Subjects",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Months"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Scores"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Months"
+      },
+      {
+        "field": "y",
+        "title": "Scores"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Grade 1",
+        "y": 75,
+        "series": "Traditional"
+      },
+      {
+        "x": "Grade 4",
+        "y": 82,
+        "series": "Traditional"
+      },
+      {
+        "x": "Grade 2",
+        "y": 72,
+        "series": "Traditional"
+      },
+      {
+        "x": "Grade 5",
+        "y": 78,
+        "series": "Traditional"
+      },
+      {
+        "x": "Grade 3",
+        "y": 92,
+        "series": "Traditional"
+      },
+      {
+        "x": "Grade 2",
+        "y": 78,
+        "series": "Interactive"
+      },
+      {
+        "x": "Grade 5",
+        "y": 85,
+        "series": "Interactive"
+      },
+      {
+        "x": "Grade 3",
+        "y": 74,
+        "series": "Interactive"
+      },
+      {
+        "x": "Grade 1",
+        "y": 88,
+        "series": "Interactive"
+      },
+      {
+        "x": "Grade 4",
+        "y": 94,
+        "series": "Interactive"
+      },
+      {
+        "x": "Grade 3",
+        "y": 80,
+        "series": "Experimental"
+      },
+      {
+        "x": "Grade 1",
+        "y": 68,
+        "series": "Experimental"
+      },
+      {
+        "x": "Grade 4",
+        "y": 76,
+        "series": "Experimental"
+      },
+      {
+        "x": "Grade 2",
+        "y": 90,
+        "series": "Experimental"
+      },
+      {
+        "x": "Grade 5",
+        "y": 96,
+        "series": "Experimental"
+      }
+    ]
+  },
+  "title": "Average Test Scores Progression Across Grades",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Grade"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Avg_Test_Score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Grade"
+      },
+      {
+        "field": "y",
+        "title": "Avg_Test_Score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

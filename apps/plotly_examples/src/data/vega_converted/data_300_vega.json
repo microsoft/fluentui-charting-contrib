@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "月別エネルギー消費分析",
+  "description": "Converted from Plotly schema 300 - Grouped bar chart with Japanese labels",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "1月", "consumption": 80, "sector": "家庭" },
+      { "month": "2月", "consumption": 75, "sector": "家庭" },
+      { "month": "3月", "consumption": 90, "sector": "家庭" },
+      { "month": "4月", "consumption": 100, "sector": "家庭" },
+      { "month": "5月", "consumption": 100, "sector": "家庭" },
+      { "month": "6月", "consumption": 110, "sector": "家庭" },
+      { "month": "7月", "consumption": 120, "sector": "家庭" },
+      { "month": "8月", "consumption": 130, "sector": "家庭" },
+      { "month": "9月", "consumption": 95, "sector": "家庭" },
+      { "month": "10月", "consumption": 85, "sector": "家庭" },
+      { "month": "11月", "consumption": 80, "sector": "家庭" },
+      { "month": "12月", "consumption": 90, "sector": "家庭" },
+      { "month": "1月", "consumption": 120, "sector": "企業" },
+      { "month": "2月", "consumption": 110, "sector": "企業" },
+      { "month": "3月", "consumption": 130, "sector": "企業" },
+      { "month": "4月", "consumption": 140, "sector": "企業" },
+      { "month": "5月", "consumption": 130, "sector": "企業" },
+      { "month": "6月", "consumption": 150, "sector": "企業" },
+      { "month": "7月", "consumption": 160, "sector": "企業" },
+      { "month": "8月", "consumption": 170, "sector": "企業" },
+      { "month": "9月", "consumption": 135, "sector": "企業" },
+      { "month": "10月", "consumption": 125, "sector": "企業" },
+      { "month": "11月", "consumption": 120, "sector": "企業" },
+      { "month": "12月", "consumption": 130, "sector": "企業" },
+      { "month": "1月", "consumption": 60, "sector": "公共施設" },
+      { "month": "2月", "consumption": 55, "sector": "公共施設" },
+      { "month": "3月", "consumption": 70, "sector": "公共施設" },
+      { "month": "4月", "consumption": 80, "sector": "公共施設" },
+      { "month": "5月", "consumption": 90, "sector": "公共施設" },
+      { "month": "6月", "consumption": 100, "sector": "公共施設" },
+      { "month": "7月", "consumption": 110, "sector": "公共施設" },
+      { "month": "8月", "consumption": 120, "sector": "公共施設" },
+      { "month": "9月", "consumption": 85, "sector": "公共施設" },
+      { "month": "10月", "consumption": 75, "sector": "公共施設" },
+      { "month": "11月", "consumption": 60, "sector": "公共施設" },
+      { "month": "12月", "consumption": 70, "sector": "公共施設" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+      "axis": { "title": "月" }
+    },
+    "y": {
+      "field": "consumption",
+      "type": "quantitative",
+      "axis": { "title": "消費量 (単位: 千トン)" }
+    },
+    "xOffset": {
+      "field": "sector",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "sector",
+      "type": "nominal",
+      "scale": { "range": ["red", "blue", "green"] },
+      "legend": { "title": "セクター" }
+    }
+  }
+}

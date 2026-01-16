@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Average Student Performance by Subject",
+  "description": "Converted from Plotly schema 100 - Bar chart",
+  "data": {
+    "values": [
+      { "subject": "Math", "score": 78 },
+      { "subject": "Science", "score": 85 },
+      { "subject": "History", "score": 82 },
+      { "subject": "Literature", "score": 88 },
+      { "subject": "Art", "score": 79 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "subject",
+      "type": "nominal",
+      "axis": { "title": "Subjects" }
+    },
+    "y": {
+      "field": "score",
+      "type": "quantitative",
+      "axis": { "title": "Average Score" }
+    }
+  }
+}

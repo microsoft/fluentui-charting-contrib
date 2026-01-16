@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Action",
+        "y": 350,
+        "series": "Domestic"
+      },
+      {
+        "x": "Comedy",
+        "y": 270,
+        "series": "Domestic"
+      },
+      {
+        "x": "Drama",
+        "y": 310,
+        "series": "Domestic"
+      },
+      {
+        "x": "Horror",
+        "y": 120,
+        "series": "Domestic"
+      },
+      {
+        "x": "Sci‑Fi",
+        "y": 250,
+        "series": "Domestic"
+      },
+      {
+        "x": "Action",
+        "y": 500,
+        "series": "International"
+      },
+      {
+        "x": "Comedy",
+        "y": 330,
+        "series": "International"
+      },
+      {
+        "x": "Drama",
+        "y": 390,
+        "series": "International"
+      },
+      {
+        "x": "Horror",
+        "y": 180,
+        "series": "International"
+      },
+      {
+        "x": "Sci‑Fi",
+        "y": 300,
+        "series": "International"
+      }
+    ]
+  },
+  "title": "Movie Revenue: Domestic vs International ($M)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Genre"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Revenue"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Genre"
+      },
+      {
+        "field": "y",
+        "title": "Revenue"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

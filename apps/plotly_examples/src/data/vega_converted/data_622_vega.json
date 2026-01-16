@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 10954,
+        "y": "Asia-Pacific",
+        "series": "2023Q1"
+      },
+      {
+        "x": 12416,
+        "y": "Europe",
+        "series": "2023Q1"
+      },
+      {
+        "x": 11298,
+        "y": "Middle East & Africa",
+        "series": "2023Q1"
+      },
+      {
+        "x": 11869,
+        "y": "North America",
+        "series": "2023Q1"
+      },
+      {
+        "x": 10693,
+        "y": "South America",
+        "series": "2023Q1"
+      },
+      {
+        "x": 11042,
+        "y": "Asia-Pacific",
+        "series": "2023Q2"
+      },
+      {
+        "x": 9457,
+        "y": "Europe",
+        "series": "2023Q2"
+      },
+      {
+        "x": 11547,
+        "y": "Middle East & Africa",
+        "series": "2023Q2"
+      },
+      {
+        "x": 11246,
+        "y": "North America",
+        "series": "2023Q2"
+      },
+      {
+        "x": 8146,
+        "y": "South America",
+        "series": "2023Q2"
+      },
+      {
+        "x": 11060,
+        "y": "Asia-Pacific",
+        "series": "2023Q3"
+      },
+      {
+        "x": 9648,
+        "y": "Europe",
+        "series": "2023Q3"
+      },
+      {
+        "x": 8990,
+        "y": "Middle East & Africa",
+        "series": "2023Q3"
+      },
+      {
+        "x": 10918,
+        "y": "North America",
+        "series": "2023Q3"
+      },
+      {
+        "x": 10999,
+        "y": "South America",
+        "series": "2023Q3"
+      },
+      {
+        "x": 9273,
+        "y": "Asia-Pacific",
+        "series": "2023Q4"
+      },
+      {
+        "x": 11424,
+        "y": "Europe",
+        "series": "2023Q4"
+      },
+      {
+        "x": 10018,
+        "y": "Middle East & Africa",
+        "series": "2023Q4"
+      },
+      {
+        "x": 10792,
+        "y": "North America",
+        "series": "2023Q4"
+      },
+      {
+        "x": 10419,
+        "y": "South America",
+        "series": "2023Q4"
+      }
+    ]
+  },
+  "title": "Automobile Sales Performance by Region and Quarter",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Total Sales Volume"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Region"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Total Sales Volume"
+      },
+      {
+        "field": "y",
+        "title": "Region"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Industrial",
+        "y": 1092,
+        "series": "Industrial"
+      },
+      {
+        "x": "Commercial",
+        "y": 892,
+        "series": "Commercial"
+      },
+      {
+        "x": "Residential",
+        "y": 1382,
+        "series": "Residential"
+      },
+      {
+        "x": "Government",
+        "y": 1281,
+        "series": "Government"
+      },
+      {
+        "x": "Agriculture",
+        "y": 1159,
+        "series": "Agriculture"
+      }
+    ]
+  },
+  "title": "Energy Sales by Customer Segment (2024-06): Contract Expiry Focus",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Customer Segment"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sales Volume (MWh)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Customer Segment"
+      },
+      {
+        "field": "y",
+        "title": "Sales Volume (MWh)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

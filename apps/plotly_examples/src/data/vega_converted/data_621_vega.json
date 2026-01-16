@@ -1,0 +1,642 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-05-01T00:00:00",
+        "y": 934,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-02T00:00:00",
+        "y": 865,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-03T00:00:00",
+        "y": 906,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-04T00:00:00",
+        "y": 892,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-05T00:00:00",
+        "y": 841,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-06T00:00:00",
+        "y": 920,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-07T00:00:00",
+        "y": 927,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-08T00:00:00",
+        "y": 951,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-09T00:00:00",
+        "y": 948,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-10T00:00:00",
+        "y": 835,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-11T00:00:00",
+        "y": 921,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-12T00:00:00",
+        "y": 818,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-13T00:00:00",
+        "y": 841,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-14T00:00:00",
+        "y": 807,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-15T00:00:00",
+        "y": 861,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-16T00:00:00",
+        "y": 938,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-17T00:00:00",
+        "y": 848,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-18T00:00:00",
+        "y": 895,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-19T00:00:00",
+        "y": 845,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-20T00:00:00",
+        "y": 949,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-21T00:00:00",
+        "y": 1060,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-22T00:00:00",
+        "y": 840,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-23T00:00:00",
+        "y": 932,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-24T00:00:00",
+        "y": 971,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-25T00:00:00",
+        "y": 859,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-26T00:00:00",
+        "y": 882,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-27T00:00:00",
+        "y": 836,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-28T00:00:00",
+        "y": 956,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-29T00:00:00",
+        "y": 900,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-30T00:00:00",
+        "y": 801,
+        "series": "North Plant"
+      },
+      {
+        "x": "2024-05-01T00:00:00",
+        "y": 1044,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-02T00:00:00",
+        "y": 1142,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-03T00:00:00",
+        "y": 1021,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-04T00:00:00",
+        "y": 1037,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-05T00:00:00",
+        "y": 1024,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-06T00:00:00",
+        "y": 1002,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-07T00:00:00",
+        "y": 977,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-08T00:00:00",
+        "y": 1004,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-09T00:00:00",
+        "y": 1084,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-10T00:00:00",
+        "y": 1033,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-11T00:00:00",
+        "y": 1037,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-12T00:00:00",
+        "y": 1074,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-13T00:00:00",
+        "y": 952,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-14T00:00:00",
+        "y": 1063,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-15T00:00:00",
+        "y": 1062,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-16T00:00:00",
+        "y": 1207,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-17T00:00:00",
+        "y": 1102,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-18T00:00:00",
+        "y": 943,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-19T00:00:00",
+        "y": 1023,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-20T00:00:00",
+        "y": 1035,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-21T00:00:00",
+        "y": 996,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-22T00:00:00",
+        "y": 1070,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-23T00:00:00",
+        "y": 970,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-24T00:00:00",
+        "y": 1033,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-25T00:00:00",
+        "y": 1050,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-26T00:00:00",
+        "y": 1130,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-27T00:00:00",
+        "y": 1103,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-28T00:00:00",
+        "y": 1083,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-29T00:00:00",
+        "y": 1162,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-30T00:00:00",
+        "y": 911,
+        "series": "East Hub"
+      },
+      {
+        "x": "2024-05-01T00:00:00",
+        "y": 1095,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-02T00:00:00",
+        "y": 986,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-03T00:00:00",
+        "y": 1056,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-04T00:00:00",
+        "y": 1033,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-05T00:00:00",
+        "y": 970,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-06T00:00:00",
+        "y": 1042,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-07T00:00:00",
+        "y": 1019,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-08T00:00:00",
+        "y": 986,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-09T00:00:00",
+        "y": 1007,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-10T00:00:00",
+        "y": 1059,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-11T00:00:00",
+        "y": 1254,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-12T00:00:00",
+        "y": 1068,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-13T00:00:00",
+        "y": 1000,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-14T00:00:00",
+        "y": 1075,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-15T00:00:00",
+        "y": 1079,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-16T00:00:00",
+        "y": 1025,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-17T00:00:00",
+        "y": 1094,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-18T00:00:00",
+        "y": 1051,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-19T00:00:00",
+        "y": 1139,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-20T00:00:00",
+        "y": 1027,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-21T00:00:00",
+        "y": 915,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-22T00:00:00",
+        "y": 1058,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-23T00:00:00",
+        "y": 1068,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-24T00:00:00",
+        "y": 1098,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-25T00:00:00",
+        "y": 1062,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-26T00:00:00",
+        "y": 1009,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-27T00:00:00",
+        "y": 1013,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-28T00:00:00",
+        "y": 1077,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-29T00:00:00",
+        "y": 1126,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-30T00:00:00",
+        "y": 1077,
+        "series": "South Works"
+      },
+      {
+        "x": "2024-05-01T00:00:00",
+        "y": 933,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-02T00:00:00",
+        "y": 910,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-03T00:00:00",
+        "y": 914,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-04T00:00:00",
+        "y": 1026,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-05T00:00:00",
+        "y": 867,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-06T00:00:00",
+        "y": 1016,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-07T00:00:00",
+        "y": 955,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-08T00:00:00",
+        "y": 1092,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-09T00:00:00",
+        "y": 930,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-10T00:00:00",
+        "y": 945,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-11T00:00:00",
+        "y": 1038,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-12T00:00:00",
+        "y": 946,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-13T00:00:00",
+        "y": 1051,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-14T00:00:00",
+        "y": 952,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-15T00:00:00",
+        "y": 885,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-16T00:00:00",
+        "y": 945,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-17T00:00:00",
+        "y": 942,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-18T00:00:00",
+        "y": 1062,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-19T00:00:00",
+        "y": 980,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-20T00:00:00",
+        "y": 955,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-21T00:00:00",
+        "y": 1019,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-22T00:00:00",
+        "y": 1063,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-23T00:00:00",
+        "y": 964,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-24T00:00:00",
+        "y": 1024,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-25T00:00:00",
+        "y": 1008,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-26T00:00:00",
+        "y": 1016,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-27T00:00:00",
+        "y": 850,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-28T00:00:00",
+        "y": 1102,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-29T00:00:00",
+        "y": 921,
+        "series": "West Facility"
+      },
+      {
+        "x": "2024-05-30T00:00:00",
+        "y": 1011,
+        "series": "West Facility"
+      }
+    ]
+  },
+  "title": "Daily Production Volume by Factory",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Date"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Production Volume"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Date"
+      },
+      {
+        "field": "y",
+        "title": "Production Volume"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

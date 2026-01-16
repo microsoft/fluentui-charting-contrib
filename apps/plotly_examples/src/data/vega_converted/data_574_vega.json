@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "category": "Slip/Trip",
+        "value": 32
+      },
+      {
+        "category": "Falling Object",
+        "value": 17
+      },
+      {
+        "category": "Machinery",
+        "value": 24
+      },
+      {
+        "category": "Chemical Exposure",
+        "value": 8
+      },
+      {
+        "category": "Electrical",
+        "value": 12
+      },
+      {
+        "category": "Fire",
+        "value": 4
+      },
+      {
+        "category": "Scaffolding",
+        "value": 19
+      },
+      {
+        "category": "Other",
+        "value": 7
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 50
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Incidents by Type - Construction Site Safety Analytics"
+}

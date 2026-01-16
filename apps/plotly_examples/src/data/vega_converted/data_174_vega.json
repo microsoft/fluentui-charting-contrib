@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Asset Allocation by Market Value",
+  "description": "Converted from Plotly schema 174 - Donut chart",
+  "data": {
+    "values": [
+      { "asset": "Equities", "value": 45 },
+      { "asset": "Bonds", "value": 25 },
+      { "asset": "Real Estate", "value": 20 },
+      { "asset": "Commodities", "value": 10 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "asset",
+      "type": "nominal",
+      "legend": { "title": "Asset Class" }
+    }
+  }
+}

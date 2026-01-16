@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Scatter Plot with Log Axes",
+  "data": {
+    "values": [
+      {"x": 0, "y": 8, "series": "Series 1"},
+      {"x": 1, "y": 7, "series": "Series 1"},
+      {"x": 2, "y": 6, "series": "Series 1"},
+      {"x": 3, "y": 5, "series": "Series 1"},
+      {"x": 4, "y": 4, "series": "Series 1"},
+      {"x": 5, "y": 3, "series": "Series 1"},
+      {"x": 6, "y": 2, "series": "Series 1"},
+      {"x": 7, "y": 1, "series": "Series 1"},
+      {"x": 8, "y": 0, "series": "Series 1"},
+      {"x": 0, "y": 0, "series": "Series 2"},
+      {"x": 1, "y": 1, "series": "Series 2"},
+      {"x": 2, "y": 2, "series": "Series 2"},
+      {"x": 3, "y": 3, "series": "Series 2"},
+      {"x": 4, "y": 4, "series": "Series 2"},
+      {"x": 5, "y": 5, "series": "Series 2"},
+      {"x": 6, "y": 6, "series": "Series 2"},
+      {"x": 7, "y": 7, "series": "Series 2"},
+      {"x": 8, "y": 8, "series": "Series 2"}
+    ]
+  },
+  "mark": {"type": "point", "filled": true},
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "scale": {"type": "log"}
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "scale": {"type": "log"}
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    }
+  }
+}

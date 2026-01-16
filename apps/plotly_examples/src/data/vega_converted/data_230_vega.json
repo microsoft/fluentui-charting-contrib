@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Incident Status Distribution",
+  "description": "Converted from Plotly schema 230 - Donut chart",
+  "data": {
+    "values": [
+      { "status": "Resolved", "value": 40 },
+      { "status": "In Progress", "value": 30 },
+      { "status": "Escalated", "value": 20 },
+      { "status": "Unresolved", "value": 10 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "status",
+      "type": "nominal",
+      "legend": { "title": "Status" }
+    }
+  }
+}

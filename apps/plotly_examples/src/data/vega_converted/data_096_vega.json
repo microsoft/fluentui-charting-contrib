@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Mission Availability Risk Distribution",
+  "description": "Converted from Plotly schema 96 - Pie chart",
+  "data": {
+    "values": [
+      { "risk": "Low Risk", "value": 50 },
+      { "risk": "Moderate Risk", "value": 30 },
+      { "risk": "High Risk", "value": 20 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "risk",
+      "type": "nominal",
+      "legend": { "title": "Risk Level" }
+    }
+  }
+}

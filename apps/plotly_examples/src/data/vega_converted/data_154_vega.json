@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Allocated vs Required Resources by Operation",
+  "description": "Converted from Plotly schema 154 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "operation": "Operation A", "quantity": 120, "type": "Allocated" },
+      { "operation": "Operation B", "quantity": 150, "type": "Allocated" },
+      { "operation": "Operation C", "quantity": 100, "type": "Allocated" },
+      { "operation": "Operation A", "quantity": 150, "type": "Required" },
+      { "operation": "Operation B", "quantity": 120, "type": "Required" },
+      { "operation": "Operation C", "quantity": 130, "type": "Required" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "operation",
+      "type": "nominal",
+      "axis": { "title": "Operation Type" }
+    },
+    "y": {
+      "field": "quantity",
+      "type": "quantitative",
+      "axis": { "title": "Quantity" }
+    },
+    "xOffset": {
+      "field": "type"
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Resource Type" }
+    }
+  }
+}

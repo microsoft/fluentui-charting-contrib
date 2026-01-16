@@ -1,0 +1,198 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 88,
+        "theta": "Customer_Satisfaction_Score",
+        "series": "North-001"
+      },
+      {
+        "r": 80,
+        "theta": "Operational_Efficiency_Score",
+        "series": "North-001"
+      },
+      {
+        "r": 76,
+        "theta": "Sales_Conversion_Rate",
+        "series": "North-001"
+      },
+      {
+        "r": 65,
+        "theta": "Cost_Per_Transaction",
+        "series": "North-001"
+      },
+      {
+        "r": 93,
+        "theta": "Compliance_Score",
+        "series": "North-001"
+      },
+      {
+        "r": 88,
+        "theta": "Customer_Satisfaction_Score",
+        "series": "North-001"
+      },
+      {
+        "r": 70,
+        "theta": "Customer_Satisfaction_Score",
+        "series": "South-010"
+      },
+      {
+        "r": 72,
+        "theta": "Operational_Efficiency_Score",
+        "series": "South-010"
+      },
+      {
+        "r": 82,
+        "theta": "Sales_Conversion_Rate",
+        "series": "South-010"
+      },
+      {
+        "r": 59,
+        "theta": "Cost_Per_Transaction",
+        "series": "South-010"
+      },
+      {
+        "r": 89,
+        "theta": "Compliance_Score",
+        "series": "South-010"
+      },
+      {
+        "r": 70,
+        "theta": "Customer_Satisfaction_Score",
+        "series": "South-010"
+      },
+      {
+        "r": 91,
+        "theta": "Customer_Satisfaction_Score",
+        "series": "East-004"
+      },
+      {
+        "r": 84,
+        "theta": "Operational_Efficiency_Score",
+        "series": "East-004"
+      },
+      {
+        "r": 79,
+        "theta": "Sales_Conversion_Rate",
+        "series": "East-004"
+      },
+      {
+        "r": 71,
+        "theta": "Cost_Per_Transaction",
+        "series": "East-004"
+      },
+      {
+        "r": 95,
+        "theta": "Compliance_Score",
+        "series": "East-004"
+      },
+      {
+        "r": 91,
+        "theta": "Customer_Satisfaction_Score",
+        "series": "East-004"
+      },
+      {
+        "r": 75,
+        "theta": "Customer_Satisfaction_Score",
+        "series": "West-017"
+      },
+      {
+        "r": 68,
+        "theta": "Operational_Efficiency_Score",
+        "series": "West-017"
+      },
+      {
+        "r": 67,
+        "theta": "Sales_Conversion_Rate",
+        "series": "West-017"
+      },
+      {
+        "r": 80,
+        "theta": "Cost_Per_Transaction",
+        "series": "West-017"
+      },
+      {
+        "r": 87,
+        "theta": "Compliance_Score",
+        "series": "West-017"
+      },
+      {
+        "r": 75,
+        "theta": "Customer_Satisfaction_Score",
+        "series": "West-017"
+      },
+      {
+        "r": 82,
+        "theta": "Customer_Satisfaction_Score",
+        "series": "Central-022"
+      },
+      {
+        "r": 89,
+        "theta": "Operational_Efficiency_Score",
+        "series": "Central-022"
+      },
+      {
+        "r": 88,
+        "theta": "Sales_Conversion_Rate",
+        "series": "Central-022"
+      },
+      {
+        "r": 62,
+        "theta": "Cost_Per_Transaction",
+        "series": "Central-022"
+      },
+      {
+        "r": 92,
+        "theta": "Compliance_Score",
+        "series": "Central-022"
+      },
+      {
+        "r": 82,
+        "theta": "Customer_Satisfaction_Score",
+        "series": "Central-022"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Branch Performance Metrics by Operational Category"
+}

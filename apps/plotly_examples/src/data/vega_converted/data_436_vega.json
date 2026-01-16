@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Phishing",
+        "y": 2,
+        "series": "Series"
+      },
+      {
+        "x": "Malware",
+        "y": 5,
+        "series": "Series"
+      },
+      {
+        "x": "Ransomware",
+        "y": 1,
+        "series": "Series"
+      },
+      {
+        "x": "DDoS",
+        "y": 2,
+        "series": "Series"
+      },
+      {
+        "x": "Insider Threat",
+        "y": 4,
+        "series": "Series"
+      },
+      {
+        "x": "Brute Force",
+        "y": 3,
+        "series": "Series"
+      },
+      {
+        "x": "Phishing",
+        "y": 1,
+        "series": "Series"
+      },
+      {
+        "x": "Malware",
+        "y": 2,
+        "series": "Series"
+      },
+      {
+        "x": "Ransomware",
+        "y": 3,
+        "series": "Series"
+      },
+      {
+        "x": "DDoS",
+        "y": 6,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Time to Resolution for Each Type of Threat",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "type_of_threat"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "time_to_resolution"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "type_of_threat"
+      },
+      {
+        "field": "y",
+        "title": "time_to_resolution"
+      }
+    ]
+  }
+}

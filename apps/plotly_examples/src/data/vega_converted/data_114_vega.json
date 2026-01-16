@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Sales Growth Across 2023",
+  "description": "Converted from Plotly schema 114 - Line chart",
+  "data": {
+    "values": [
+      { "month": "Jan", "sales": 300 },
+      { "month": "Feb", "sales": 320 },
+      { "month": "Mar", "sales": 290 },
+      { "month": "Apr", "sales": 310 },
+      { "month": "May", "sales": 350 },
+      { "month": "Jun", "sales": 360 },
+      { "month": "Jul", "sales": 380 },
+      { "month": "Aug", "sales": 400 },
+      { "month": "Sep", "sales": 420 },
+      { "month": "Oct", "sales": 440 },
+      { "month": "Nov", "sales": 460 },
+      { "month": "Dec", "sales": 480 }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "axis": { "title": "Month" },
+      "sort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    },
+    "y": {
+      "field": "sales",
+      "type": "quantitative",
+      "axis": { "title": "Sales Volume" }
+    }
+  }
+}

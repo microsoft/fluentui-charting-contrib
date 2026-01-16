@@ -1,0 +1,1542 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-W20",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 5,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 5,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 4,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 9,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 8,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 7,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 7,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 8,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 7,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 5,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 8,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 5,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 4,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 4,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 5,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 5,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 7,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 4,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 5,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 4,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 7,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 4,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W21",
+        "y": 4,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W23",
+        "y": 3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W24",
+        "y": 1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-W20",
+        "y": 4,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 2,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 3,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 3,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 2,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 4,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 5,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 4,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 6,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 4,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 5,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 8,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 6,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 3,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 2,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 2,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 2,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 4,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 5,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 6,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 2,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 3,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 3,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 3,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 5,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 2,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 3,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 4,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 2,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 2,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W22",
+        "y": 3,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W24",
+        "y": 1,
+        "series": "Scheduled"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 3,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 6,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 3,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 3,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 5,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 3,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 7,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 7,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 3,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 5,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 5,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 6,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 6,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 4,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 9,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 6,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 4,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 6,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 3,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 2,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W20",
+        "y": 1,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W21",
+        "y": 5,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W22",
+        "y": 5,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W23",
+        "y": 0,
+        "series": "Overdue"
+      },
+      {
+        "x": "2024-W24",
+        "y": 6,
+        "series": "Overdue"
+      }
+    ]
+  },
+  "title": "Fleet Maintenance Completion Status by Ship Type and Region",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Num Ships"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Week"
+      },
+      {
+        "field": "y",
+        "title": "Num Ships"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

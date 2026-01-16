@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2018,
+        "y": 5000,
+        "series": "North, Public"
+      },
+      {
+        "x": 2019,
+        "y": 5200,
+        "series": "North, Public"
+      },
+      {
+        "x": 2020,
+        "y": 5100,
+        "series": "North, Public"
+      },
+      {
+        "x": 2021,
+        "y": 5300,
+        "series": "North, Public"
+      },
+      {
+        "x": 2022,
+        "y": 5400,
+        "series": "North, Public"
+      },
+      {
+        "x": 2018,
+        "y": 3000,
+        "series": "South, Private"
+      },
+      {
+        "x": 2019,
+        "y": 3100,
+        "series": "South, Private"
+      },
+      {
+        "x": 2020,
+        "y": 2950,
+        "series": "South, Private"
+      },
+      {
+        "x": 2021,
+        "y": 3200,
+        "series": "South, Private"
+      },
+      {
+        "x": 2022,
+        "y": 3300,
+        "series": "South, Private"
+      }
+    ]
+  },
+  "title": "Enrollment Patterns",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "enrollment"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "year"
+      },
+      {
+        "field": "y",
+        "title": "enrollment"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 1952,
+        "y": 10039.59564,
+        "series": "Australia"
+      },
+      {
+        "x": 1957,
+        "y": 10949.64959,
+        "series": "Australia"
+      },
+      {
+        "x": 1962,
+        "y": 12217.22686,
+        "series": "Australia"
+      },
+      {
+        "x": 1967,
+        "y": 14526.12465,
+        "series": "Australia"
+      },
+      {
+        "x": 1972,
+        "y": 16788.62948,
+        "series": "Australia"
+      },
+      {
+        "x": 1977,
+        "y": 18334.19751,
+        "series": "Australia"
+      },
+      {
+        "x": 1982,
+        "y": 19477.00928,
+        "series": "Australia"
+      },
+      {
+        "x": 1987,
+        "y": 21888.88903,
+        "series": "Australia"
+      },
+      {
+        "x": 1992,
+        "y": 23424.76683,
+        "series": "Australia"
+      },
+      {
+        "x": 1997,
+        "y": 26997.93657,
+        "series": "Australia"
+      },
+      {
+        "x": 2002,
+        "y": 30687.75473,
+        "series": "Australia"
+      },
+      {
+        "x": 2007,
+        "y": 34435.367439999995,
+        "series": "Australia"
+      },
+      {
+        "x": 1952,
+        "y": 10556.57566,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1957,
+        "y": 12247.39532,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1962,
+        "y": 13175.678,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1967,
+        "y": 14463.918930000002,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1972,
+        "y": 16046.03728,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1977,
+        "y": 16233.7177,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1982,
+        "y": 17632.4104,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1987,
+        "y": 19007.19129,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1992,
+        "y": 18363.32494,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1997,
+        "y": 21050.41377,
+        "series": "New Zealand"
+      },
+      {
+        "x": 2002,
+        "y": 23189.80135,
+        "series": "New Zealand"
+      },
+      {
+        "x": 2007,
+        "y": 25185.00911,
+        "series": "New Zealand"
+      }
+    ]
+  },
+  "title": "Custom Line Styles",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "gdpPercap"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "year"
+      },
+      {
+        "field": "y",
+        "title": "gdpPercap"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

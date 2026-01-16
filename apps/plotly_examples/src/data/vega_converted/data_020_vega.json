@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Trends in the Popularity of Different Products",
+  "description": "Converted from Plotly schema 20 - Multi-series line chart",
+  "data": {
+    "values": [
+      { "month": "2023-01", "popularity": 500, "product": "Product A" },
+      { "month": "2023-02", "popularity": 700, "product": "Product A" },
+      { "month": "2023-03", "popularity": 800, "product": "Product A" },
+      { "month": "2023-04", "popularity": 900, "product": "Product A" },
+      { "month": "2023-05", "popularity": 850, "product": "Product A" },
+      { "month": "2023-06", "popularity": 900, "product": "Product A" },
+      { "month": "2023-07", "popularity": 950, "product": "Product A" },
+      { "month": "2023-08", "popularity": 1000, "product": "Product A" },
+      { "month": "2023-09", "popularity": 1050, "product": "Product A" },
+      { "month": "2023-10", "popularity": 1100, "product": "Product A" },
+      { "month": "2023-01", "popularity": 300, "product": "Product B" },
+      { "month": "2023-02", "popularity": 400, "product": "Product B" },
+      { "month": "2023-03", "popularity": 450, "product": "Product B" },
+      { "month": "2023-04", "popularity": 500, "product": "Product B" },
+      { "month": "2023-05", "popularity": 550, "product": "Product B" },
+      { "month": "2023-06", "popularity": 600, "product": "Product B" },
+      { "month": "2023-07", "popularity": 650, "product": "Product B" },
+      { "month": "2023-08", "popularity": 700, "product": "Product B" },
+      { "month": "2023-09", "popularity": 750, "product": "Product B" },
+      { "month": "2023-10", "popularity": 800, "product": "Product B" }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "axis": { "title": "Time", "format": "%b %Y" }
+    },
+    "y": {
+      "field": "popularity",
+      "type": "quantitative",
+      "axis": { "title": "Popularity" }
+    },
+    "color": {
+      "field": "product",
+      "type": "nominal",
+      "legend": { "title": "Product" }
+    }
+  }
+}

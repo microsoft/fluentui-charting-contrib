@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": 2015
+      },
+      {
+        "value": 2016
+      },
+      {
+        "value": 2017
+      },
+      {
+        "value": 2018
+      },
+      {
+        "value": 2019
+      },
+      {
+        "value": 2020
+      },
+      {
+        "value": 2021
+      },
+      {
+        "value": 2022
+      },
+      {
+        "value": 2023
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "bin": true,
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Enrollment Trends Across Institution Types (2015-2023)"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Simulated Gauge",
+  "data": {
+    "values": [
+      {"category": "Low", "value": 30, "color": "green"},
+      {"category": "Medium", "value": 20, "color": "yellow"},
+      {"category": "High", "value": 10, "color": "red"},
+      {"category": "Empty", "value": 40, "color": "lightgray"}
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 50
+  },
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative"},
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Low", "Medium", "High", "Empty"],
+        "range": ["green", "yellow", "red", "lightgray"]
+      },
+      "legend": null
+    },
+    "order": {"field": "value", "type": "quantitative", "sort": "descending"}
+  }
+}

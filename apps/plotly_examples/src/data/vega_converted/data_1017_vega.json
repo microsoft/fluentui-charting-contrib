@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 0.5,
+        "theta": 35,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 70,
+        "series": "Series"
+      },
+      {
+        "r": 2,
+        "theta": 120,
+        "series": "Series"
+      },
+      {
+        "r": 2.5,
+        "theta": 155,
+        "series": "Series"
+      },
+      {
+        "r": 3,
+        "theta": 205,
+        "series": "Series"
+      },
+      {
+        "r": 4,
+        "theta": 240,
+        "series": "Series"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

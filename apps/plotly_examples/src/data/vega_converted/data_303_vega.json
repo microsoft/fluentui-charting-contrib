@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Staff Efficiency and Patient Throughput by Department",
+  "description": "Converted from Plotly schema 303 - Grouped bar chart (simplified from 25 metrics to 4)",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "department": "Emergency", "value": 90, "metric": "Staff Efficiency" },
+      { "department": "Surgery", "value": 75, "metric": "Staff Efficiency" },
+      { "department": "Pediatrics", "value": 85, "metric": "Staff Efficiency" },
+      { "department": "Oncology", "value": 70, "metric": "Staff Efficiency" },
+      { "department": "Maternity", "value": 80, "metric": "Staff Efficiency" },
+      { "department": "Orthopedics", "value": 77, "metric": "Staff Efficiency" },
+      { "department": "Cardiology", "value": 90, "metric": "Staff Efficiency" },
+      { "department": "Neurology", "value": 65, "metric": "Staff Efficiency" },
+      { "department": "ENT", "value": 85, "metric": "Staff Efficiency" },
+      { "department": "Urology", "value": 77, "metric": "Staff Efficiency" },
+      { "department": "Emergency", "value": 120, "metric": "Patient Throughput" },
+      { "department": "Surgery", "value": 95, "metric": "Patient Throughput" },
+      { "department": "Pediatrics", "value": 100, "metric": "Patient Throughput" },
+      { "department": "Oncology", "value": 80, "metric": "Patient Throughput" },
+      { "department": "Maternity", "value": 105, "metric": "Patient Throughput" },
+      { "department": "Orthopedics", "value": 110, "metric": "Patient Throughput" },
+      { "department": "Cardiology", "value": 130, "metric": "Patient Throughput" },
+      { "department": "Neurology", "value": 85, "metric": "Patient Throughput" },
+      { "department": "ENT", "value": 95, "metric": "Patient Throughput" },
+      { "department": "Urology", "value": 100, "metric": "Patient Throughput" },
+      { "department": "Emergency", "value": 100, "metric": "Staff Availability" },
+      { "department": "Surgery", "value": 85, "metric": "Staff Availability" },
+      { "department": "Pediatrics", "value": 90, "metric": "Staff Availability" },
+      { "department": "Oncology", "value": 75, "metric": "Staff Availability" },
+      { "department": "Maternity", "value": 80, "metric": "Staff Availability" },
+      { "department": "Orthopedics", "value": 78, "metric": "Staff Availability" },
+      { "department": "Cardiology", "value": 95, "metric": "Staff Availability" },
+      { "department": "Neurology", "value": 70, "metric": "Staff Availability" },
+      { "department": "ENT", "value": 80, "metric": "Staff Availability" },
+      { "department": "Urology", "value": 85, "metric": "Staff Availability" },
+      { "department": "Emergency", "value": 140, "metric": "Patient Satisfaction" },
+      { "department": "Surgery", "value": 110, "metric": "Patient Satisfaction" },
+      { "department": "Pediatrics", "value": 125, "metric": "Patient Satisfaction" },
+      { "department": "Oncology", "value": 100, "metric": "Patient Satisfaction" },
+      { "department": "Maternity", "value": 130, "metric": "Patient Satisfaction" },
+      { "department": "Orthopedics", "value": 135, "metric": "Patient Satisfaction" },
+      { "department": "Cardiology", "value": 150, "metric": "Patient Satisfaction" },
+      { "department": "Neurology", "value": 105, "metric": "Patient Satisfaction" },
+      { "department": "ENT", "value": 115, "metric": "Patient Satisfaction" },
+      { "department": "Urology", "value": 125, "metric": "Patient Satisfaction" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "department",
+      "type": "ordinal",
+      "axis": { "title": "Department" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Count" }
+    },
+    "xOffset": {
+      "field": "metric",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "scale": { "range": ["#1f77b4", "#ff7f0e", "#d62728", "#8c564b"] },
+      "legend": { "title": "Metric" }
+    }
+  }
+}

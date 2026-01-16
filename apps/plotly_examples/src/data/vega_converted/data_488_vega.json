@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 15552000000,
+        "y": "Project A",
+        "series": "Series"
+      },
+      {
+        "x": 10195200000,
+        "y": "Project B",
+        "series": "Series"
+      },
+      {
+        "x": 15724800000,
+        "y": "Project C",
+        "series": "Series"
+      },
+      {
+        "x": 15724800000,
+        "y": "Project D",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Project Timelines",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Task"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Task"
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Frequency of Client Interactions by Month",
+  "description": "Converted from Plotly schema 269 - Grouped bar chart",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "month": "January", "count": 20, "series": "Count 1" },
+      { "month": "February", "count": 25, "series": "Count 1" },
+      { "month": "March", "count": 18, "series": "Count 1" },
+      { "month": "April", "count": 22, "series": "Count 1" },
+      { "month": "May", "count": 30, "series": "Count 1" },
+      { "month": "June", "count": 35, "series": "Count 1" },
+      { "month": "July", "count": 28, "series": "Count 1" },
+      { "month": "August", "count": 32, "series": "Count 1" },
+      { "month": "September", "count": 26, "series": "Count 1" },
+      { "month": "October", "count": 34, "series": "Count 1" },
+      { "month": "January", "count": 18, "series": "Count 2" },
+      { "month": "February", "count": 27, "series": "Count 2" },
+      { "month": "March", "count": 20, "series": "Count 2" },
+      { "month": "April", "count": 24, "series": "Count 2" },
+      { "month": "May", "count": 28, "series": "Count 2" },
+      { "month": "June", "count": 33, "series": "Count 2" },
+      { "month": "July", "count": 26, "series": "Count 2" },
+      { "month": "August", "count": 31, "series": "Count 2" },
+      { "month": "September", "count": 23, "series": "Count 2" },
+      { "month": "October", "count": 36, "series": "Count 2" },
+      { "month": "January", "count": 22, "series": "Count 3" },
+      { "month": "February", "count": 26, "series": "Count 3" },
+      { "month": "March", "count": 19, "series": "Count 3" },
+      { "month": "April", "count": 23, "series": "Count 3" },
+      { "month": "May", "count": 29, "series": "Count 3" },
+      { "month": "June", "count": 34, "series": "Count 3" },
+      { "month": "July", "count": 30, "series": "Count 3" },
+      { "month": "August", "count": 29, "series": "Count 3" },
+      { "month": "September", "count": 24, "series": "Count 3" },
+      { "month": "October", "count": 33, "series": "Count 3" },
+      { "month": "January", "count": 24, "series": "Count 4" },
+      { "month": "February", "count": 25, "series": "Count 4" },
+      { "month": "March", "count": 21, "series": "Count 4" },
+      { "month": "April", "count": 21, "series": "Count 4" },
+      { "month": "May", "count": 31, "series": "Count 4" },
+      { "month": "June", "count": 32, "series": "Count 4" },
+      { "month": "July", "count": 28, "series": "Count 4" },
+      { "month": "August", "count": 33, "series": "Count 4" },
+      { "month": "September", "count": 22, "series": "Count 4" },
+      { "month": "October", "count": 32, "series": "Count 4" },
+      { "month": "January", "count": 19, "series": "Count 5" },
+      { "month": "February", "count": 28, "series": "Count 5" },
+      { "month": "March", "count": 17, "series": "Count 5" },
+      { "month": "April", "count": 25, "series": "Count 5" },
+      { "month": "May", "count": 27, "series": "Count 5" },
+      { "month": "June", "count": 37, "series": "Count 5" },
+      { "month": "July", "count": 29, "series": "Count 5" },
+      { "month": "August", "count": 30, "series": "Count 5" },
+      { "month": "September", "count": 25, "series": "Count 5" },
+      { "month": "October", "count": 31, "series": "Count 5" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"],
+      "axis": { "title": "Month" }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": { "title": "Number of Interactions" }
+    },
+    "xOffset": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "legend": { "title": "Interaction Series" }
+    },
+    "tooltip": [
+      { "field": "month", "type": "nominal", "title": "Month" },
+      { "field": "series", "type": "nominal", "title": "Series" },
+      { "field": "count", "type": "quantitative", "title": "Count" }
+    ]
+  }
+}

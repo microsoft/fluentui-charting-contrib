@@ -1,0 +1,172 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 2.1,
+        "theta": "Defect Rate (%)",
+        "series": "Plant A"
+      },
+      {
+        "r": 3.5,
+        "theta": "Rework Rate (%)",
+        "series": "Plant A"
+      },
+      {
+        "r": 94,
+        "theta": "On-Time Production (%)",
+        "series": "Plant A"
+      },
+      {
+        "r": 2,
+        "theta": "Safety Incidents",
+        "series": "Plant A"
+      },
+      {
+        "r": 8,
+        "theta": "Equipment Downtime (hrs)",
+        "series": "Plant A"
+      },
+      {
+        "r": 1.3,
+        "theta": "Defect Rate (%)",
+        "series": "Plant B"
+      },
+      {
+        "r": 2.2,
+        "theta": "Rework Rate (%)",
+        "series": "Plant B"
+      },
+      {
+        "r": 96.8,
+        "theta": "On-Time Production (%)",
+        "series": "Plant B"
+      },
+      {
+        "r": 1,
+        "theta": "Safety Incidents",
+        "series": "Plant B"
+      },
+      {
+        "r": 5,
+        "theta": "Equipment Downtime (hrs)",
+        "series": "Plant B"
+      },
+      {
+        "r": 3.8,
+        "theta": "Defect Rate (%)",
+        "series": "Plant C"
+      },
+      {
+        "r": 4,
+        "theta": "Rework Rate (%)",
+        "series": "Plant C"
+      },
+      {
+        "r": 88.5,
+        "theta": "On-Time Production (%)",
+        "series": "Plant C"
+      },
+      {
+        "r": 4,
+        "theta": "Safety Incidents",
+        "series": "Plant C"
+      },
+      {
+        "r": 16,
+        "theta": "Equipment Downtime (hrs)",
+        "series": "Plant C"
+      },
+      {
+        "r": 2.9,
+        "theta": "Defect Rate (%)",
+        "series": "Plant D"
+      },
+      {
+        "r": 3,
+        "theta": "Rework Rate (%)",
+        "series": "Plant D"
+      },
+      {
+        "r": 91.1,
+        "theta": "On-Time Production (%)",
+        "series": "Plant D"
+      },
+      {
+        "r": 3,
+        "theta": "Safety Incidents",
+        "series": "Plant D"
+      },
+      {
+        "r": 10,
+        "theta": "Equipment Downtime (hrs)",
+        "series": "Plant D"
+      },
+      {
+        "r": 1.7,
+        "theta": "Defect Rate (%)",
+        "series": "Plant E"
+      },
+      {
+        "r": 2.5,
+        "theta": "Rework Rate (%)",
+        "series": "Plant E"
+      },
+      {
+        "r": 97.6,
+        "theta": "On-Time Production (%)",
+        "series": "Plant E"
+      },
+      {
+        "r": 0,
+        "theta": "Safety Incidents",
+        "series": "Plant E"
+      },
+      {
+        "r": 6,
+        "theta": "Equipment Downtime (hrs)",
+        "series": "Plant E"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

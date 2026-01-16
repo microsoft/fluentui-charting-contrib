@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 0,
+        "y": 1200,
+        "series": "production_volume"
+      },
+      {
+        "x": 1,
+        "y": 900,
+        "series": "production_volume"
+      },
+      {
+        "x": 2,
+        "y": 1500,
+        "series": "production_volume"
+      },
+      {
+        "x": 3,
+        "y": 1100,
+        "series": "production_volume"
+      },
+      {
+        "x": 0,
+        "y": 24,
+        "series": "operational_hours"
+      },
+      {
+        "x": 1,
+        "y": 20,
+        "series": "operational_hours"
+      },
+      {
+        "x": 2,
+        "y": 24,
+        "series": "operational_hours"
+      },
+      {
+        "x": 3,
+        "y": 22,
+        "series": "operational_hours"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "series": "downtime"
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "series": "downtime"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "series": "downtime"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "series": "downtime"
+      },
+      {
+        "x": 0,
+        "y": 90,
+        "series": "efficiency"
+      },
+      {
+        "x": 1,
+        "y": 80,
+        "series": "efficiency"
+      },
+      {
+        "x": 2,
+        "y": 95,
+        "series": "efficiency"
+      },
+      {
+        "x": 3,
+        "y": 85,
+        "series": "efficiency"
+      }
+    ]
+  },
+  "title": "Factory Performance Line Chart",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "index"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Values"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "index"
+      },
+      {
+        "field": "y",
+        "title": "Values"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

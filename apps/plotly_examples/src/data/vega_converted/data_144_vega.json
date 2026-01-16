@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Parts Replaced by Fleet",
+  "description": "Converted from Plotly schema 144 - Pie chart",
+  "data": {
+    "values": [
+      { "fleet": "Fleet A", "parts": 3 },
+      { "fleet": "Fleet B", "parts": 2 },
+      { "fleet": "Fleet C", "parts": 5 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "parts",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "fleet",
+      "type": "nominal",
+      "legend": { "title": "Fleet" }
+    }
+  }
+}

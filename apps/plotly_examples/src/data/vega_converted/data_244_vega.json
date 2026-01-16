@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Daily Defect Counts by Production Line",
+  "description": "Converted from Plotly schema 244 - Simple bar chart",
+  "data": {
+    "values": [
+      { "line": "Line A", "defects": 28 },
+      { "line": "Line B", "defects": 42 },
+      { "line": "Line C", "defects": 15 },
+      { "line": "Line D", "defects": 35 }
+    ]
+  },
+  "mark": { "type": "bar", "color": "rgb(26, 118, 255)" },
+  "encoding": {
+    "x": {
+      "field": "line",
+      "type": "ordinal",
+      "axis": { "title": "Production Line" }
+    },
+    "y": {
+      "field": "defects",
+      "type": "quantitative",
+      "axis": { "title": "Defect Counts", "format": ",d" }
+    }
+  }
+}

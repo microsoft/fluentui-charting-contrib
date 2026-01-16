@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Analisi del Consumo Energetico Mensile",
+  "description": "Converted from Plotly schema 295 - Grouped bar chart with Italian labels",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "Gen", "consumption": 300, "year": "2022" },
+      { "month": "Feb", "consumption": 280, "year": "2022" },
+      { "month": "Mar", "consumption": 310, "year": "2022" },
+      { "month": "Apr", "consumption": 270, "year": "2022" },
+      { "month": "Mag", "consumption": 260, "year": "2022" },
+      { "month": "Giu", "consumption": 245, "year": "2022" },
+      { "month": "Lug", "consumption": 230, "year": "2022" },
+      { "month": "Ago", "consumption": 220, "year": "2022" },
+      { "month": "Set", "consumption": 235, "year": "2022" },
+      { "month": "Ott", "consumption": 250, "year": "2022" },
+      { "month": "Nov", "consumption": 265, "year": "2022" },
+      { "month": "Dic", "consumption": 275, "year": "2022" },
+      { "month": "Gen", "consumption": 290, "year": "2023" },
+      { "month": "Feb", "consumption": 275, "year": "2023" },
+      { "month": "Mar", "consumption": 300, "year": "2023" },
+      { "month": "Apr", "consumption": 260, "year": "2023" },
+      { "month": "Mag", "consumption": 250, "year": "2023" },
+      { "month": "Giu", "consumption": 235, "year": "2023" },
+      { "month": "Lug", "consumption": 225, "year": "2023" },
+      { "month": "Ago", "consumption": 215, "year": "2023" },
+      { "month": "Set", "consumption": 225, "year": "2023" },
+      { "month": "Ott", "consumption": 245, "year": "2023" },
+      { "month": "Nov", "consumption": 255, "year": "2023" },
+      { "month": "Dic", "consumption": 270, "year": "2023" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"],
+      "axis": { "title": "Mese" }
+    },
+    "y": {
+      "field": "consumption",
+      "type": "quantitative",
+      "axis": { "title": "Consumo Energetico (GWh)" }
+    },
+    "xOffset": {
+      "field": "year",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "year",
+      "type": "nominal",
+      "scale": { "range": ["red", "orange"] },
+      "legend": { "title": "Anno" }
+    }
+  }
+}

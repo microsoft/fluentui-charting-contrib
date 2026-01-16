@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Unit1",
+        "y": 45,
+        "series": "E1"
+      },
+      {
+        "x": "Unit2",
+        "y": 50,
+        "series": "E1"
+      },
+      {
+        "x": "Unit3",
+        "y": 40,
+        "series": "E1"
+      },
+      {
+        "x": "Unit1",
+        "y": 60,
+        "series": "E2"
+      },
+      {
+        "x": "Unit2",
+        "y": 55,
+        "series": "E2"
+      },
+      {
+        "x": "Unit3",
+        "y": 65,
+        "series": "E2"
+      },
+      {
+        "x": "Unit1",
+        "y": 30,
+        "series": "E3"
+      },
+      {
+        "x": "Unit2",
+        "y": 35,
+        "series": "E3"
+      },
+      {
+        "x": "Unit3",
+        "y": 45,
+        "series": "E3"
+      }
+    ]
+  },
+  "title": "Completion Time by Unit and Exercise Type",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "unit ID"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "completion time"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "unit ID"
+      },
+      {
+        "field": "y",
+        "title": "completion time"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

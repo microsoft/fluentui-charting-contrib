@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Team Performance Radar",
+  "data": {
+    "values": [
+      {"category": "Speed", "team": "Alpha", "score": 85},
+      {"category": "Accuracy", "team": "Alpha", "score": 72},
+      {"category": "Teamwork", "team": "Alpha", "score": 90},
+      {"category": "Innovation", "team": "Alpha", "score": 65},
+      {"category": "Efficiency", "team": "Alpha", "score": 78},
+      {"category": "Speed", "team": "Beta", "score": 70},
+      {"category": "Accuracy", "team": "Beta", "score": 88},
+      {"category": "Teamwork", "team": "Beta", "score": 75},
+      {"category": "Innovation", "team": "Beta", "score": 82},
+      {"category": "Efficiency", "team": "Beta", "score": 68}
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "theta": {"field": "category", "type": "nominal"},
+    "radius": {"field": "score", "type": "quantitative", "scale": {"zero": true}},
+    "color": {"field": "team", "type": "nominal"}
+  }
+}

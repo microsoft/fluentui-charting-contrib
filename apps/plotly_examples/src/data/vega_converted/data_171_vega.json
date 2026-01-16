@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Participation in Extracurricular Activities",
+  "description": "Converted from Plotly schema 171 - Pie chart",
+  "data": {
+    "values": [
+      { "activity": "Sports", "participation": 40 },
+      { "activity": "Arts", "participation": 30 },
+      { "activity": "Clubs", "participation": 20 },
+      { "activity": "Online Courses", "participation": 10 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "participation",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "activity",
+      "type": "nominal",
+      "legend": { "title": "Activity" }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Age Distribution by Quarter",
+  "description": "Converted from Plotly schema 215 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "quarter": "Q1", "guests": 320, "ageGroup": "18-24" },
+      { "quarter": "Q2", "guests": 450, "ageGroup": "18-24" },
+      { "quarter": "Q3", "guests": 370, "ageGroup": "18-24" },
+      { "quarter": "Q4", "guests": 400, "ageGroup": "18-24" },
+      { "quarter": "Q1", "guests": 280, "ageGroup": "25-34" },
+      { "quarter": "Q2", "guests": 300, "ageGroup": "25-34" },
+      { "quarter": "Q3", "guests": 330, "ageGroup": "25-34" },
+      { "quarter": "Q4", "guests": 360, "ageGroup": "25-34" },
+      { "quarter": "Q1", "guests": 290, "ageGroup": "35-44" },
+      { "quarter": "Q2", "guests": 310, "ageGroup": "35-44" },
+      { "quarter": "Q3", "guests": 350, "ageGroup": "35-44" },
+      { "quarter": "Q4", "guests": 380, "ageGroup": "35-44" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "ordinal",
+      "axis": { "title": "Quarter" }
+    },
+    "y": {
+      "field": "guests",
+      "type": "quantitative",
+      "axis": { "title": "Number of Guests" }
+    },
+    "xOffset": {
+      "field": "ageGroup"
+    },
+    "color": {
+      "field": "ageGroup",
+      "type": "nominal",
+      "legend": { "title": "Age Group" }
+    }
+  }
+}

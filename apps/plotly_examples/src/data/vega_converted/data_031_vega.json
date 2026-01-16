@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Average Monthly Temperatures",
+  "description": "Converted from Plotly schema 31 - Horizontal bar chart",
+  "data": {
+    "values": [
+      { "month": "Jan", "temp": 5 },
+      { "month": "Feb", "temp": 7 },
+      { "month": "Mar", "temp": 10 },
+      { "month": "Apr", "temp": 13 },
+      { "month": "May", "temp": 15 },
+      { "month": "Jun", "temp": 20 },
+      { "month": "Jul", "temp": 25 },
+      { "month": "Aug", "temp": 30 },
+      { "month": "Sep", "temp": 24 },
+      { "month": "Oct", "temp": 18 },
+      { "month": "Nov", "temp": 10 },
+      { "month": "Dec", "temp": 6 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "temp",
+      "type": "quantitative",
+      "axis": { "title": "Temperature (C)" }
+    },
+    "y": {
+      "field": "month",
+      "type": "nominal",
+      "axis": { "title": "Month" },
+      "sort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    }
+  }
+}

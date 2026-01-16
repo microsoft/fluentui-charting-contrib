@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Fri",
+        "y": 325.88,
+        "series": "Series"
+      },
+      {
+        "x": "Thur",
+        "y": 1096.33,
+        "series": "Series"
+      },
+      {
+        "x": "Sun",
+        "y": 1627.16,
+        "series": "Series"
+      },
+      {
+        "x": "Sat",
+        "y": 1778.4,
+        "series": "Series"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "day"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "total_bill"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "day"
+      },
+      {
+        "field": "y",
+        "title": "total_bill"
+      }
+    ]
+  }
+}

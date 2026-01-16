@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "category": "Apple",
+        "value": 15
+      },
+      {
+        "category": "Banana",
+        "value": 25
+      },
+      {
+        "category": "Cherry",
+        "value": 30
+      },
+      {
+        "category": "Date",
+        "value": 10
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 40
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Donut Chart"
+}

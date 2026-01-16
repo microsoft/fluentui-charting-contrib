@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Patient Outcomes by Disease",
+  "description": "Converted from Plotly schema 86 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "disease": "Disease A", "percentage": 70, "metric": "Recovery Rate" },
+      { "disease": "Disease B", "percentage": 60, "metric": "Recovery Rate" },
+      { "disease": "Disease C", "percentage": 75, "metric": "Recovery Rate" },
+      { "disease": "Disease A", "percentage": 20, "metric": "Readmission Rate" },
+      { "disease": "Disease B", "percentage": 25, "metric": "Readmission Rate" },
+      { "disease": "Disease C", "percentage": 15, "metric": "Readmission Rate" },
+      { "disease": "Disease A", "percentage": 10, "metric": "Mortality Rate" },
+      { "disease": "Disease B", "percentage": 15, "metric": "Mortality Rate" },
+      { "disease": "Disease C", "percentage": 10, "metric": "Mortality Rate" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "disease",
+      "type": "nominal",
+      "axis": { "title": "Disease" }
+    },
+    "y": {
+      "field": "percentage",
+      "type": "quantitative",
+      "axis": { "title": "Percentage (%)" }
+    },
+    "xOffset": {
+      "field": "metric"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metrics" }
+    }
+  }
+}

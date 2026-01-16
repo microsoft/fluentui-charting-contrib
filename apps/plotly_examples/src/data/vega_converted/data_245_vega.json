@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Pareto Chart of Defect Types",
+  "description": "Converted from Plotly schema 245 - Bar chart (Pareto)",
+  "data": {
+    "values": [
+      { "defect": "Crack", "count": 100 },
+      { "defect": "Color Mismatch", "count": 80 },
+      { "defect": "Size", "count": 60 },
+      { "defect": "Shape Deviation", "count": 40 },
+      { "defect": "Other", "count": 20 }
+    ]
+  },
+  "mark": { "type": "bar", "color": "rgb(246, 78, 139)" },
+  "encoding": {
+    "x": {
+      "field": "defect",
+      "type": "ordinal",
+      "sort": ["Crack", "Color Mismatch", "Size", "Shape Deviation", "Other"],
+      "axis": { "title": "Type of Defect" }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": { "title": "Number of Defects", "format": ",d" }
+    }
+  }
+}

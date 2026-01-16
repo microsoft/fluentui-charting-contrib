@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Problem 1",
+        "y": 346,
+        "series": "Series"
+      },
+      {
+        "x": "Problem 2",
+        "y": 249,
+        "series": "Series"
+      },
+      {
+        "x": "Problem 3",
+        "y": 205,
+        "series": "Series"
+      },
+      {
+        "x": "Problem 4",
+        "y": 111,
+        "series": "Series"
+      },
+      {
+        "x": "Problem 5",
+        "y": 72,
+        "series": "Series"
+      },
+      {
+        "x": "Problem 6",
+        "y": 17,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Numerical Value for Each Problem Category",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Category / Problem"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Numerical value"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Category / Problem"
+      },
+      {
+        "field": "y",
+        "title": "Numerical value"
+      }
+    ]
+  }
+}

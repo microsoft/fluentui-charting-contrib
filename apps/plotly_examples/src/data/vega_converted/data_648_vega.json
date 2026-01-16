@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Development",
+        "y": 78.7,
+        "series": "CPU"
+      },
+      {
+        "x": "QA",
+        "y": 61.9,
+        "series": "CPU"
+      },
+      {
+        "x": "DevOps",
+        "y": 95,
+        "series": "CPU"
+      },
+      {
+        "x": "IT Support",
+        "y": 38.5,
+        "series": "CPU"
+      },
+      {
+        "x": "Data Science",
+        "y": 68.3,
+        "series": "CPU"
+      },
+      {
+        "x": "Development",
+        "y": 40.9,
+        "series": "Memory"
+      },
+      {
+        "x": "QA",
+        "y": 50,
+        "series": "Memory"
+      },
+      {
+        "x": "DevOps",
+        "y": 90.6,
+        "series": "Memory"
+      },
+      {
+        "x": "IT Support",
+        "y": 50.9,
+        "series": "Memory"
+      },
+      {
+        "x": "Data Science",
+        "y": 52.8,
+        "series": "Memory"
+      },
+      {
+        "x": "Development",
+        "y": 86.7,
+        "series": "Storage"
+      },
+      {
+        "x": "QA",
+        "y": 86.7,
+        "series": "Storage"
+      },
+      {
+        "x": "DevOps",
+        "y": 64.1,
+        "series": "Storage"
+      },
+      {
+        "x": "IT Support",
+        "y": 60.4,
+        "series": "Storage"
+      },
+      {
+        "x": "Data Science",
+        "y": 67.5,
+        "series": "Storage"
+      }
+    ]
+  },
+  "title": "Cloud Resource Usage by Department and Resource Type (2024-05)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Department"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Usage Percentage (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Department"
+      },
+      {
+        "field": "y",
+        "title": "Usage Percentage (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

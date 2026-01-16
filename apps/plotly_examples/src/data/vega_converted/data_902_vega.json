@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 777600000,
+        "y": "Design",
+        "series": "Team A"
+      },
+      {
+        "x": 777600000,
+        "y": "Development",
+        "series": "Team B"
+      },
+      {
+        "x": 345600000,
+        "y": "Testing",
+        "series": "Team C"
+      },
+      {
+        "x": 0,
+        "y": "Go Live",
+        "series": "Deployment"
+      }
+    ]
+  },
+  "title": "Gantt with Milestone",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Task"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Task"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

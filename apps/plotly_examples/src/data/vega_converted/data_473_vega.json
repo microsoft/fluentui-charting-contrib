@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan",
+        "y": 12000,
+        "series": "Series"
+      },
+      {
+        "x": "Feb",
+        "y": 15000,
+        "series": "Series"
+      },
+      {
+        "x": "Mar",
+        "y": 13000,
+        "series": "Series"
+      },
+      {
+        "x": "Apr",
+        "y": 14000,
+        "series": "Series"
+      },
+      {
+        "x": "May",
+        "y": 20000,
+        "series": "Series"
+      },
+      {
+        "x": "Jun",
+        "y": 25000,
+        "series": "Series"
+      },
+      {
+        "x": "Jul",
+        "y": 22000,
+        "series": "Series"
+      },
+      {
+        "x": "Aug",
+        "y": 24000,
+        "series": "Series"
+      },
+      {
+        "x": "Sep",
+        "y": 23000,
+        "series": "Series"
+      },
+      {
+        "x": "Oct",
+        "y": 26000,
+        "series": "Series"
+      },
+      {
+        "x": "Nov",
+        "y": 28000,
+        "series": "Series"
+      },
+      {
+        "x": "Dec",
+        "y": 30000,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Monthly Passenger Counts",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Passenger Counts"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Passenger Counts"
+      }
+    ]
+  }
+}

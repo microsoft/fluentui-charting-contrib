@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Historical Cloud Resource Usage Trends",
+  "description": "Converted from Plotly schema 320 - Multi-series line+markers (simplified from 26 to 4 metrics)",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "2023-01", "usage": 65, "metric": "CPU Usage" },
+      { "month": "2023-02", "usage": 70, "metric": "CPU Usage" },
+      { "month": "2023-03", "usage": 68, "metric": "CPU Usage" },
+      { "month": "2023-04", "usage": 72, "metric": "CPU Usage" },
+      { "month": "2023-05", "usage": 74, "metric": "CPU Usage" },
+      { "month": "2023-06", "usage": 75, "metric": "CPU Usage" },
+      { "month": "2023-07", "usage": 78, "metric": "CPU Usage" },
+      { "month": "2023-08", "usage": 76, "metric": "CPU Usage" },
+      { "month": "2023-09", "usage": 79, "metric": "CPU Usage" },
+      { "month": "2023-10", "usage": 80, "metric": "CPU Usage" },
+      { "month": "2023-01", "usage": 55, "metric": "Memory Usage" },
+      { "month": "2023-02", "usage": 60, "metric": "Memory Usage" },
+      { "month": "2023-03", "usage": 63, "metric": "Memory Usage" },
+      { "month": "2023-04", "usage": 65, "metric": "Memory Usage" },
+      { "month": "2023-05", "usage": 67, "metric": "Memory Usage" },
+      { "month": "2023-06", "usage": 68, "metric": "Memory Usage" },
+      { "month": "2023-07", "usage": 65, "metric": "Memory Usage" },
+      { "month": "2023-08", "usage": 70, "metric": "Memory Usage" },
+      { "month": "2023-09", "usage": 72, "metric": "Memory Usage" },
+      { "month": "2023-10", "usage": 75, "metric": "Memory Usage" },
+      { "month": "2023-01", "usage": 80, "metric": "Storage Usage" },
+      { "month": "2023-02", "usage": 82, "metric": "Storage Usage" },
+      { "month": "2023-03", "usage": 85, "metric": "Storage Usage" },
+      { "month": "2023-04", "usage": 87, "metric": "Storage Usage" },
+      { "month": "2023-05", "usage": 85, "metric": "Storage Usage" },
+      { "month": "2023-06", "usage": 88, "metric": "Storage Usage" },
+      { "month": "2023-07", "usage": 89, "metric": "Storage Usage" },
+      { "month": "2023-08", "usage": 90, "metric": "Storage Usage" },
+      { "month": "2023-09", "usage": 92, "metric": "Storage Usage" },
+      { "month": "2023-10", "usage": 95, "metric": "Storage Usage" },
+      { "month": "2023-01", "usage": 45, "metric": "Network Usage" },
+      { "month": "2023-02", "usage": 48, "metric": "Network Usage" },
+      { "month": "2023-03", "usage": 50, "metric": "Network Usage" },
+      { "month": "2023-04", "usage": 52, "metric": "Network Usage" },
+      { "month": "2023-05", "usage": 54, "metric": "Network Usage" },
+      { "month": "2023-06", "usage": 56, "metric": "Network Usage" },
+      { "month": "2023-07", "usage": 58, "metric": "Network Usage" },
+      { "month": "2023-08", "usage": 60, "metric": "Network Usage" },
+      { "month": "2023-09", "usage": 62, "metric": "Network Usage" },
+      { "month": "2023-10", "usage": 65, "metric": "Network Usage" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "axis": { "title": "Month" }
+        },
+        "y": {
+          "field": "usage",
+          "type": "quantitative",
+          "axis": { "title": "Usage Percentage" }
+        },
+        "color": {
+          "field": "metric",
+          "type": "nominal",
+          "scale": { "range": ["blue", "green", "red", "purple"] },
+          "legend": { "title": "Metric" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "month", "type": "ordinal" },
+        "y": { "field": "usage", "type": "quantitative" },
+        "color": { "field": "metric", "type": "nominal" }
+      }
+    }
+  ]
+}

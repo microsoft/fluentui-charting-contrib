@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 777600000,
+        "y": "Design",
+        "series": "Series"
+      },
+      {
+        "x": 777600000,
+        "y": "Development",
+        "series": "Series"
+      },
+      {
+        "x": 345600000,
+        "y": "Testing",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Gantt with % Complete",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Task"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Task"
+      }
+    ]
+  }
+}

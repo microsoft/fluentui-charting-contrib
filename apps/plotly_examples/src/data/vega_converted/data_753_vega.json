@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": null,
+        "y": 1200,
+        "series": "Product A"
+      },
+      {
+        "x": "Q2 2023",
+        "y": 1500,
+        "series": "Product A"
+      },
+      {
+        "x": "Q3 2023",
+        "y": null,
+        "series": "Product A"
+      },
+      {
+        "x": "Q4 2023",
+        "y": 2000,
+        "series": "Product A"
+      },
+      {
+        "x": "Q1 2023",
+        "y": 500,
+        "series": "Product B"
+      },
+      {
+        "x": "Q2 2023",
+        "y": 750,
+        "series": "Product B"
+      },
+      {
+        "x": "Q3 2023",
+        "y": 1000,
+        "series": "Product B"
+      }
+    ]
+  },
+  "title": "Top Product Sales Across Different Quarters",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Time"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sales"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Time"
+      },
+      {
+        "field": "y",
+        "title": "Sales"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

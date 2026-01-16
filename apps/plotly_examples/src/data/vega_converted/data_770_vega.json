@@ -1,0 +1,112 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Mon",
+        "y": 1300,
+        "series": "Desktop"
+      },
+      {
+        "x": "Tue",
+        "y": 1100,
+        "series": "Desktop"
+      },
+      {
+        "x": "Wed",
+        "y": 1400,
+        "series": "Desktop"
+      },
+      {
+        "x": "Thu",
+        "y": 1350,
+        "series": "Desktop"
+      },
+      {
+        "x": "Fri",
+        "y": 1500,
+        "series": "Desktop"
+      },
+      {
+        "x": "Sat",
+        "y": 1600,
+        "series": "Desktop"
+      },
+      {
+        "x": "Sun",
+        "y": 1450,
+        "series": "Desktop"
+      },
+      {
+        "x": "Mon",
+        "y": 1000,
+        "series": "Mobile"
+      },
+      {
+        "x": "Tue",
+        "y": 1000,
+        "series": "Mobile"
+      },
+      {
+        "x": "Wed",
+        "y": 1100,
+        "series": "Mobile"
+      },
+      {
+        "x": "Thu",
+        "y": 1050,
+        "series": "Mobile"
+      },
+      {
+        "x": "Fri",
+        "y": 1300,
+        "series": "Mobile"
+      },
+      {
+        "x": "Sat",
+        "y": 1400,
+        "series": "Mobile"
+      },
+      {
+        "x": "Sun",
+        "y": 1150,
+        "series": "Mobile"
+      }
+    ]
+  },
+  "title": "Website Traffic by Device",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Day"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Visitors"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Day"
+      },
+      {
+        "field": "y",
+        "title": "Visitors"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

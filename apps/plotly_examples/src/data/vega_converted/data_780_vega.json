@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2019,
+        "y": 8000,
+        "series": "NA"
+      },
+      {
+        "x": 2020,
+        "y": 12000,
+        "series": "NA"
+      },
+      {
+        "x": 2021,
+        "y": 18000,
+        "series": "NA"
+      },
+      {
+        "x": 2022,
+        "y": 24000,
+        "series": "NA"
+      },
+      {
+        "x": 2023,
+        "y": 30000,
+        "series": "NA"
+      },
+      {
+        "x": 2019,
+        "y": 9000,
+        "series": "EU"
+      },
+      {
+        "x": 2020,
+        "y": 14000,
+        "series": "EU"
+      },
+      {
+        "x": 2021,
+        "y": 20000,
+        "series": "EU"
+      },
+      {
+        "x": 2022,
+        "y": 26000,
+        "series": "EU"
+      },
+      {
+        "x": 2023,
+        "y": 32000,
+        "series": "EU"
+      },
+      {
+        "x": 2019,
+        "y": 11000,
+        "series": "Asia"
+      },
+      {
+        "x": 2020,
+        "y": 19000,
+        "series": "Asia"
+      },
+      {
+        "x": 2021,
+        "y": 22000,
+        "series": "Asia"
+      },
+      {
+        "x": 2022,
+        "y": 30000,
+        "series": "Asia"
+      },
+      {
+        "x": 2023,
+        "y": 33000,
+        "series": "Asia"
+      }
+    ]
+  },
+  "title": "EV Registrations by Region (stacked)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "EVs"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "EVs"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

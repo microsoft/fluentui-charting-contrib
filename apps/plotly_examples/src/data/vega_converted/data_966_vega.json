@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Term 1",
+        "y": 2.5,
+        "series": "Cumulative GPA"
+      },
+      {
+        "x": "Term 2",
+        "y": 2.7,
+        "series": "Cumulative GPA"
+      },
+      {
+        "x": "Term 3",
+        "y": 2.84,
+        "series": "Cumulative GPA"
+      },
+      {
+        "x": "Term 4",
+        "y": 3.05,
+        "series": "Cumulative GPA"
+      },
+      {
+        "x": "Term 5",
+        "y": 3.35,
+        "series": "Cumulative GPA"
+      },
+      {
+        "x": "Term 6",
+        "y": 3.48,
+        "series": "Cumulative GPA"
+      },
+      {
+        "x": "Term 7",
+        "y": 3.61,
+        "series": "Cumulative GPA"
+      },
+      {
+        "x": "Term 8",
+        "y": 3.92,
+        "series": "Cumulative GPA"
+      }
+    ]
+  },
+  "title": "Cumulative GPA Progression Over Academic Terms",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Academic Term"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Cumulative GPA"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Academic Term"
+      },
+      {
+        "field": "y",
+        "title": "Cumulative GPA"
+      }
+    ]
+  }
+}

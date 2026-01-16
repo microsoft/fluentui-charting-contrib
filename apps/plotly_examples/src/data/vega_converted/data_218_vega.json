@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Seasonal Occupancy Heatmap",
+  "description": "Converted from Plotly schema 218 - Heatmap",
+  "data": {
+    "values": [
+      { "season": "Winter", "year": "2023", "occupancy": 0.1 },
+      { "season": "Spring", "year": "2023", "occupancy": 0.2 },
+      { "season": "Summer", "year": "2023", "occupancy": 0.3 },
+      { "season": "Fall", "year": "2023", "occupancy": 0.2 },
+      { "season": "Winter", "year": "2024", "occupancy": 0.4 },
+      { "season": "Spring", "year": "2024", "occupancy": 0.5 },
+      { "season": "Summer", "year": "2024", "occupancy": 0.6 },
+      { "season": "Fall", "year": "2024", "occupancy": 0.4 },
+      { "season": "Winter", "year": "2025", "occupancy": 0.1 },
+      { "season": "Spring", "year": "2025", "occupancy": 0.4 },
+      { "season": "Summer", "year": "2025", "occupancy": 0.7 },
+      { "season": "Fall", "year": "2025", "occupancy": 0.6 },
+      { "season": "Winter", "year": "2026", "occupancy": 0.3 },
+      { "season": "Spring", "year": "2026", "occupancy": 0.5 },
+      { "season": "Summer", "year": "2026", "occupancy": 0.7 },
+      { "season": "Fall", "year": "2026", "occupancy": 0.8 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "season",
+      "type": "ordinal",
+      "axis": { "title": "Season" },
+      "sort": ["Winter", "Spring", "Summer", "Fall"]
+    },
+    "y": {
+      "field": "year",
+      "type": "ordinal",
+      "axis": { "title": "Year" }
+    },
+    "color": {
+      "field": "occupancy",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Occupancy" }
+    }
+  }
+}

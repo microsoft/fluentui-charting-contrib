@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Car Loan",
+        "y": 5054.7027027027025,
+        "series": "Series"
+      },
+      {
+        "x": "Home Loan",
+        "y": 5343.84,
+        "series": "Series"
+      },
+      {
+        "x": "Personal Loan",
+        "y": 5150.9473684210525,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Average Outstanding Balance by Loan Type",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "loan_type"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "outstanding_balance"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "loan_type"
+      },
+      {
+        "field": "y",
+        "title": "outstanding_balance"
+      }
+    ]
+  }
+}

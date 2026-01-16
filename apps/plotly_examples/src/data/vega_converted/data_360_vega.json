@@ -1,0 +1,194 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 7,
+        "y": -0.2,
+        "series": "P5"
+      },
+      {
+        "x": 11,
+        "y": -0.2,
+        "series": "P5"
+      },
+      {
+        "x": 11,
+        "y": 0.2,
+        "series": "P5"
+      },
+      {
+        "x": 7,
+        "y": 0.2,
+        "series": "P5"
+      },
+      {
+        "x": 0,
+        "y": 0.8,
+        "series": "P4"
+      },
+      {
+        "x": 7,
+        "y": 0.8,
+        "series": "P4"
+      },
+      {
+        "x": 7,
+        "y": 1.2,
+        "series": "P4"
+      },
+      {
+        "x": 0,
+        "y": 1.2,
+        "series": "P4"
+      },
+      {
+        "x": 5,
+        "y": 2.8,
+        "series": "P2"
+      },
+      {
+        "x": 11,
+        "y": 2.8,
+        "series": "P2"
+      },
+      {
+        "x": 11,
+        "y": 3.2,
+        "series": "P2"
+      },
+      {
+        "x": 5,
+        "y": 3.2,
+        "series": "P2"
+      },
+      {
+        "x": 2,
+        "y": 3.8,
+        "series": "P1"
+      },
+      {
+        "x": 4,
+        "y": 3.8,
+        "series": "P1"
+      },
+      {
+        "x": 4,
+        "y": 4.2,
+        "series": "P1"
+      },
+      {
+        "x": 2,
+        "y": 4.2,
+        "series": "P1"
+      },
+      {
+        "x": 0,
+        "y": 1.8,
+        "series": "P3"
+      },
+      {
+        "x": 4,
+        "y": 1.8,
+        "series": "P3"
+      },
+      {
+        "x": 4,
+        "y": 2.2,
+        "series": "P3"
+      },
+      {
+        "x": 0,
+        "y": 2.2,
+        "series": "P3"
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "series": "Series"
+      },
+      {
+        "x": 11,
+        "y": 0,
+        "series": "Series"
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "series": "Series"
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "series": "Series"
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "series": "Series"
+      },
+      {
+        "x": 11,
+        "y": 3,
+        "series": "Series"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "series": "Series"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Gantt Chart",
+  "mark": {
+    "type": "area",
+    "line": true,
+    "opacity": 0.7
+  },
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

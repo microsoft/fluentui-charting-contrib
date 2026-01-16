@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2950000,
+        "y": 73,
+        "series": "Spruce Medical"
+      },
+      {
+        "x": 3100000,
+        "y": 76,
+        "series": "Maple Clinic"
+      },
+      {
+        "x": 3600000,
+        "y": 81,
+        "series": "Fircrest Hospital"
+      },
+      {
+        "x": 3850000,
+        "y": 77,
+        "series": "Elm Valley"
+      },
+      {
+        "x": 3850000,
+        "y": 78,
+        "series": "Juniper Healthcare"
+      },
+      {
+        "x": 4100000,
+        "y": 79,
+        "series": "Birch Health"
+      },
+      {
+        "x": 4120000,
+        "y": 80,
+        "series": "Hemlock Clinic"
+      },
+      {
+        "x": 4800000,
+        "y": 85,
+        "series": "Willow General"
+      },
+      {
+        "x": 4900000,
+        "y": 84,
+        "series": "Magnolia Center"
+      },
+      {
+        "x": 5300000,
+        "y": 82,
+        "series": "Cedar Heights"
+      },
+      {
+        "x": 5700000,
+        "y": 87,
+        "series": "Chestnut Care"
+      },
+      {
+        "x": 6000000,
+        "y": 88,
+        "series": "Oakwood Center"
+      },
+      {
+        "x": 6250000,
+        "y": 91,
+        "series": "Aspen Point"
+      },
+      {
+        "x": 7200000,
+        "y": 93,
+        "series": "Pineview Medical"
+      },
+      {
+        "x": 8000000,
+        "y": 96,
+        "series": "Redwood Regional"
+      }
+    ]
+  },
+  "title": "Healthcare Spending vs Patient Satisfaction Across Hospitals",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Healthcare Spending (USD)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Patient Satisfaction Score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Healthcare Spending (USD)"
+      },
+      {
+        "field": "y",
+        "title": "Patient Satisfaction Score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

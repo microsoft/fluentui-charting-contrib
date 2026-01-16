@@ -1,0 +1,192 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "18-25",
+        "y": 0,
+        "series": "Comfort"
+      },
+      {
+        "x": "26-35",
+        "y": 1,
+        "series": "Comfort"
+      },
+      {
+        "x": "36-45",
+        "y": 2,
+        "series": "Comfort"
+      },
+      {
+        "x": "46-55",
+        "y": 1,
+        "series": "Comfort"
+      },
+      {
+        "x": "56-65",
+        "y": 0,
+        "series": "Comfort"
+      },
+      {
+        "x": "66-75",
+        "y": 0,
+        "series": "Comfort"
+      },
+      {
+        "x": "18-25",
+        "y": 1,
+        "series": "Economy"
+      },
+      {
+        "x": "26-35",
+        "y": 1,
+        "series": "Economy"
+      },
+      {
+        "x": "36-45",
+        "y": 0,
+        "series": "Economy"
+      },
+      {
+        "x": "46-55",
+        "y": 0,
+        "series": "Economy"
+      },
+      {
+        "x": "56-65",
+        "y": 1,
+        "series": "Economy"
+      },
+      {
+        "x": "66-75",
+        "y": 0,
+        "series": "Economy"
+      },
+      {
+        "x": "18-25",
+        "y": 0,
+        "series": "Luxury"
+      },
+      {
+        "x": "26-35",
+        "y": 1,
+        "series": "Luxury"
+      },
+      {
+        "x": "36-45",
+        "y": 0,
+        "series": "Luxury"
+      },
+      {
+        "x": "46-55",
+        "y": 0,
+        "series": "Luxury"
+      },
+      {
+        "x": "56-65",
+        "y": 1,
+        "series": "Luxury"
+      },
+      {
+        "x": "66-75",
+        "y": 1,
+        "series": "Luxury"
+      },
+      {
+        "x": "18-25",
+        "y": 0,
+        "series": "Performance"
+      },
+      {
+        "x": "26-35",
+        "y": 1,
+        "series": "Performance"
+      },
+      {
+        "x": "36-45",
+        "y": 1,
+        "series": "Performance"
+      },
+      {
+        "x": "46-55",
+        "y": 0,
+        "series": "Performance"
+      },
+      {
+        "x": "56-65",
+        "y": 0,
+        "series": "Performance"
+      },
+      {
+        "x": "66-75",
+        "y": 0,
+        "series": "Performance"
+      },
+      {
+        "x": "18-25",
+        "y": 2,
+        "series": "Safety"
+      },
+      {
+        "x": "26-35",
+        "y": 0,
+        "series": "Safety"
+      },
+      {
+        "x": "36-45",
+        "y": 1,
+        "series": "Safety"
+      },
+      {
+        "x": "46-55",
+        "y": 0,
+        "series": "Safety"
+      },
+      {
+        "x": "56-65",
+        "y": 0,
+        "series": "Safety"
+      },
+      {
+        "x": "66-75",
+        "y": 0,
+        "series": "Safety"
+      }
+    ]
+  },
+  "title": "Preferred Vehicle Features by Age Group",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Age Group"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Count"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Age Group"
+      },
+      {
+        "field": "y",
+        "title": "Count"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

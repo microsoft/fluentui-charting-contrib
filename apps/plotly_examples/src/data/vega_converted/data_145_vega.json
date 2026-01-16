@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Success Rate by Unit and Exercise Type",
+  "description": "Converted from Plotly schema 145 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "unit": "Unit A", "rate": 85, "exercise": "Patrol" },
+      { "unit": "Unit B", "rate": 78, "exercise": "Patrol" },
+      { "unit": "Unit C", "rate": 92, "exercise": "Patrol" },
+      { "unit": "Unit D", "rate": 81, "exercise": "Patrol" },
+      { "unit": "Unit A", "rate": 75, "exercise": "Assault" },
+      { "unit": "Unit B", "rate": 85, "exercise": "Assault" },
+      { "unit": "Unit C", "rate": 80, "exercise": "Assault" },
+      { "unit": "Unit D", "rate": 88, "exercise": "Assault" },
+      { "unit": "Unit A", "rate": 90, "exercise": "Defense" },
+      { "unit": "Unit B", "rate": 84, "exercise": "Defense" },
+      { "unit": "Unit C", "rate": 89, "exercise": "Defense" },
+      { "unit": "Unit D", "rate": 77, "exercise": "Defense" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "unit",
+      "type": "nominal",
+      "axis": { "title": "Unit ID" }
+    },
+    "y": {
+      "field": "rate",
+      "type": "quantitative",
+      "axis": { "title": "Success Rate (%)" }
+    },
+    "xOffset": {
+      "field": "exercise"
+    },
+    "color": {
+      "field": "exercise",
+      "type": "nominal",
+      "legend": { "title": "Exercise Type" }
+    }
+  }
+}

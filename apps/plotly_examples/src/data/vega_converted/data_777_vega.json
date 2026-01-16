@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "R&D",
+        "y": 100,
+        "series": "Q1"
+      },
+      {
+        "x": "Marketing",
+        "y": 70,
+        "series": "Q1"
+      },
+      {
+        "x": "Sales",
+        "y": 80,
+        "series": "Q1"
+      },
+      {
+        "x": "HR",
+        "y": 35,
+        "series": "Q1"
+      },
+      {
+        "x": "Ops",
+        "y": 120,
+        "series": "Q1"
+      },
+      {
+        "x": "R&D",
+        "y": 110,
+        "series": "Q2"
+      },
+      {
+        "x": "Marketing",
+        "y": 75,
+        "series": "Q2"
+      },
+      {
+        "x": "Sales",
+        "y": 90,
+        "series": "Q2"
+      },
+      {
+        "x": "HR",
+        "y": 30,
+        "series": "Q2"
+      },
+      {
+        "x": "Ops",
+        "y": 130,
+        "series": "Q2"
+      },
+      {
+        "x": "R&D",
+        "y": 90,
+        "series": "Q3"
+      },
+      {
+        "x": "Marketing",
+        "y": 80,
+        "series": "Q3"
+      },
+      {
+        "x": "Sales",
+        "y": 95,
+        "series": "Q3"
+      },
+      {
+        "x": "HR",
+        "y": 45,
+        "series": "Q3"
+      },
+      {
+        "x": "Ops",
+        "y": 120,
+        "series": "Q3"
+      },
+      {
+        "x": "R&D",
+        "y": 100,
+        "series": "Q4"
+      },
+      {
+        "x": "Marketing",
+        "y": 75,
+        "series": "Q4"
+      },
+      {
+        "x": "Sales",
+        "y": 85,
+        "series": "Q4"
+      },
+      {
+        "x": "HR",
+        "y": 40,
+        "series": "Q4"
+      },
+      {
+        "x": "Ops",
+        "y": 130,
+        "series": "Q4"
+      }
+    ]
+  },
+  "title": "Department Expenses by Quarter ($k)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Department"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Expense"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Department"
+      },
+      {
+        "field": "y",
+        "title": "Expense"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

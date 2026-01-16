@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2010-12-31T00:00:00.000000000",
+        "y": 67712.28,
+        "series": "Series"
+      },
+      {
+        "x": "2011-01-31T00:00:00.000000000",
+        "y": 43225.689999999995,
+        "series": "Series"
+      },
+      {
+        "x": "2011-02-28T00:00:00.000000000",
+        "y": 41510.26,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Total Sales Revenue per Month",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "InvoiceDate"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "TotalRevenue"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "InvoiceDate"
+      },
+      {
+        "field": "y",
+        "title": "TotalRevenue"
+      }
+    ]
+  }
+}

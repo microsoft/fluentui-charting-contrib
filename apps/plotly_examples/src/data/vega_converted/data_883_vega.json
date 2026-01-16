@@ -1,0 +1,187 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 1,
+        "theta": "Horsepower",
+        "series": "Falcon X"
+      },
+      {
+        "r": 0,
+        "theta": "Fuel Efficiency (MPG)",
+        "series": "Falcon X"
+      },
+      {
+        "r": 0.7142857142857141,
+        "theta": "Safety Rating",
+        "series": "Falcon X"
+      },
+      {
+        "r": 1,
+        "theta": "Technology Score",
+        "series": "Falcon X"
+      },
+      {
+        "r": 1,
+        "theta": "Price",
+        "series": "Falcon X"
+      },
+      {
+        "r": 1,
+        "theta": "Emissions (g/km)",
+        "series": "Falcon X"
+      },
+      {
+        "r": 1,
+        "theta": "Horsepower",
+        "series": "Falcon X"
+      },
+      {
+        "r": 0,
+        "theta": "Horsepower",
+        "series": "EcoDrive S"
+      },
+      {
+        "r": 1,
+        "theta": "Fuel Efficiency (MPG)",
+        "series": "EcoDrive S"
+      },
+      {
+        "r": 0.4285714285714282,
+        "theta": "Safety Rating",
+        "series": "EcoDrive S"
+      },
+      {
+        "r": 0,
+        "theta": "Technology Score",
+        "series": "EcoDrive S"
+      },
+      {
+        "r": 0,
+        "theta": "Price",
+        "series": "EcoDrive S"
+      },
+      {
+        "r": 0,
+        "theta": "Emissions (g/km)",
+        "series": "EcoDrive S"
+      },
+      {
+        "r": 0,
+        "theta": "Horsepower",
+        "series": "EcoDrive S"
+      },
+      {
+        "r": 0.6296296296296297,
+        "theta": "Horsepower",
+        "series": "Pioneer GT"
+      },
+      {
+        "r": 0.35714285714285715,
+        "theta": "Fuel Efficiency (MPG)",
+        "series": "Pioneer GT"
+      },
+      {
+        "r": 1,
+        "theta": "Safety Rating",
+        "series": "Pioneer GT"
+      },
+      {
+        "r": 0.5384615384615384,
+        "theta": "Technology Score",
+        "series": "Pioneer GT"
+      },
+      {
+        "r": 0.5185185185185185,
+        "theta": "Price",
+        "series": "Pioneer GT"
+      },
+      {
+        "r": 0.5742574257425742,
+        "theta": "Emissions (g/km)",
+        "series": "Pioneer GT"
+      },
+      {
+        "r": 0.6296296296296297,
+        "theta": "Horsepower",
+        "series": "Pioneer GT"
+      },
+      {
+        "r": 0.18518518518518517,
+        "theta": "Horsepower",
+        "series": "Urban Lux"
+      },
+      {
+        "r": 0.7857142857142857,
+        "theta": "Fuel Efficiency (MPG)",
+        "series": "Urban Lux"
+      },
+      {
+        "r": 0,
+        "theta": "Safety Rating",
+        "series": "Urban Lux"
+      },
+      {
+        "r": 0.8461538461538461,
+        "theta": "Technology Score",
+        "series": "Urban Lux"
+      },
+      {
+        "r": 0.8148148148148148,
+        "theta": "Price",
+        "series": "Urban Lux"
+      },
+      {
+        "r": 0.12871287128712872,
+        "theta": "Emissions (g/km)",
+        "series": "Urban Lux"
+      },
+      {
+        "r": 0.18518518518518517,
+        "theta": "Horsepower",
+        "series": "Urban Lux"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2022",
+        "y": 7.82,
+        "series": "Series"
+      },
+      {
+        "x": "2021",
+        "y": 9.12,
+        "series": "Series"
+      },
+      {
+        "x": "2020",
+        "y": 6.14,
+        "series": "Series"
+      },
+      {
+        "x": "2019",
+        "y": 8.01,
+        "series": "Series"
+      },
+      {
+        "x": "2018",
+        "y": 7.81,
+        "series": "Series"
+      },
+      {
+        "x": "2017",
+        "y": 8.57,
+        "series": "Series"
+      },
+      {
+        "x": "2016",
+        "y": 6.86,
+        "series": "Series"
+      },
+      {
+        "x": "2015",
+        "y": 6.55,
+        "series": "Series"
+      },
+      {
+        "x": "2014",
+        "y": 7.37,
+        "series": "Series"
+      },
+      {
+        "x": "2013",
+        "y": 8.2,
+        "series": "Series"
+      },
+      {
+        "x": "2012",
+        "y": 8.07,
+        "series": "Series"
+      },
+      {
+        "x": "2011",
+        "y": 8.01,
+        "series": "Series"
+      },
+      {
+        "x": "2010",
+        "y": 7,
+        "series": "Series"
+      },
+      {
+        "x": "2009",
+        "y": 6.48,
+        "series": "Series"
+      },
+      {
+        "x": "2008",
+        "y": 6.15,
+        "series": "Series"
+      },
+      {
+        "x": "2007",
+        "y": 3.57,
+        "series": "Series"
+      },
+      {
+        "x": "2006",
+        "y": 3.88,
+        "series": "Series"
+      },
+      {
+        "x": "2005",
+        "y": 3.7,
+        "series": "Series"
+      },
+      {
+        "x": "2004",
+        "y": 3.2,
+        "series": "Series"
+      },
+      {
+        "x": "2003",
+        "y": 2.34,
+        "series": "Series"
+      },
+      {
+        "x": "2002",
+        "y": 1.66,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Earnings Over the Years",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Earnings ($B)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Earnings ($B)"
+      }
+    ]
+  }
+}

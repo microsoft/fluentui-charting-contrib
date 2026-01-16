@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": "40 salads"
+      },
+      {
+        "value": "40 salads"
+      },
+      {
+        "value": "40 salads"
+      },
+      {
+        "value": "40 salads"
+      },
+      {
+        "value": "50 salads"
+      },
+      {
+        "value": "50 salads"
+      },
+      {
+        "value": "50 salads"
+      },
+      {
+        "value": "50 salads"
+      },
+      {
+        "value": "60 salads"
+      },
+      {
+        "value": "60 salads"
+      },
+      {
+        "value": "60 salads"
+      },
+      {
+        "value": "60 salads"
+      },
+      {
+        "value": "70 salads"
+      },
+      {
+        "value": "70 salads"
+      },
+      {
+        "value": "70 salads"
+      },
+      {
+        "value": "70 salads"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "bin": true,
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  }
+}

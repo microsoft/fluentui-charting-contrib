@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Impact of Training Sessions on Peer Evaluations",
+  "description": "Converted from Plotly schema 164 - Grouped bar chart (dual y-axis simplified)",
+  "data": {
+    "values": [
+      { "subject": "Math", "value": 8, "metric": "Training Sessions Attended" },
+      { "subject": "Science", "value": 12, "metric": "Training Sessions Attended" },
+      { "subject": "English", "value": 15, "metric": "Training Sessions Attended" },
+      { "subject": "History", "value": 10, "metric": "Training Sessions Attended" },
+      { "subject": "Math", "value": 3.5, "metric": "Peer Evaluation Score" },
+      { "subject": "Science", "value": 4.2, "metric": "Peer Evaluation Score" },
+      { "subject": "English", "value": 4.8, "metric": "Peer Evaluation Score" },
+      { "subject": "History", "value": 4.0, "metric": "Peer Evaluation Score" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "subject",
+      "type": "nominal",
+      "axis": { "title": "Subject Taught" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Value" }
+    },
+    "xOffset": {
+      "field": "metric"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

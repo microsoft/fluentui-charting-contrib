@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "月別品質管理統計",
+  "description": "Converted from Plotly schema 301 - Grouped bar chart with Japanese labels",
+  "width": 400,
+  "height": 300,
+  "data": {
+    "values": [
+      { "month": "January", "defects": 5, "type": "Defects A" },
+      { "month": "February", "defects": 3, "type": "Defects A" },
+      { "month": "March", "defects": 4, "type": "Defects A" },
+      { "month": "April", "defects": 2, "type": "Defects A" },
+      { "month": "May", "defects": 6, "type": "Defects A" },
+      { "month": "June", "defects": 3, "type": "Defects A" },
+      { "month": "January", "defects": 2, "type": "Defects B" },
+      { "month": "February", "defects": 2, "type": "Defects B" },
+      { "month": "March", "defects": 1, "type": "Defects B" },
+      { "month": "April", "defects": 3, "type": "Defects B" },
+      { "month": "May", "defects": 2, "type": "Defects B" },
+      { "month": "June", "defects": 4, "type": "Defects B" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": ["January", "February", "March", "April", "May", "June"],
+      "axis": { "title": "月" }
+    },
+    "y": {
+      "field": "defects",
+      "type": "quantitative",
+      "axis": { "title": "欠陥数" }
+    },
+    "xOffset": {
+      "field": "type",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "scale": { "range": ["red", "orange"] },
+      "legend": { "title": "欠陥タイプ" }
+    }
+  }
+}

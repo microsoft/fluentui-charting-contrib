@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "category": "St. Mary Medical",
+        "value": 13800000
+      },
+      {
+        "category": "Green Valley Medical",
+        "value": 10200000
+      },
+      {
+        "category": "Eastside General",
+        "value": 15800000
+      },
+      {
+        "category": "Lakeside Hospital",
+        "value": 8900000
+      },
+      {
+        "category": "River City Medical",
+        "value": 7500000
+      },
+      {
+        "category": "Hillcrest Clinic",
+        "value": 12500000
+      },
+      {
+        "category": "Sunrise Health",
+        "value": 16800000
+      },
+      {
+        "category": "Liberty Hospital",
+        "value": 9500000
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Healthcare Spending Distribution Across Hospitals"
+}

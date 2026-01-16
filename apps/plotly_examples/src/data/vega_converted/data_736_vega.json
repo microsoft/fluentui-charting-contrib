@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": 49.71
+      },
+      {
+        "value": 45.45
+      },
+      {
+        "value": 60
+      },
+      {
+        "value": 44.88
+      },
+      {
+        "value": 32.86
+      },
+      {
+        "value": 39.45
+      },
+      {
+        "value": 54.45
+      },
+      {
+        "value": 42.31
+      },
+      {
+        "value": 35.8
+      },
+      {
+        "value": 45.31
+      },
+      {
+        "value": 48.58
+      },
+      {
+        "value": 37.88
+      },
+      {
+        "value": 53.17
+      },
+      {
+        "value": 55.42
+      },
+      {
+        "value": 46.72
+      },
+      {
+        "value": 45.75
+      },
+      {
+        "value": 45.79
+      },
+      {
+        "value": 53.57
+      },
+      {
+        "value": 38.11
+      },
+      {
+        "value": 40.03
+      },
+      {
+        "value": 39.21
+      },
+      {
+        "value": 43.14
+      },
+      {
+        "value": 30
+      },
+      {
+        "value": 47.32
+      },
+      {
+        "value": 41.7
+      },
+      {
+        "value": 30
+      },
+      {
+        "value": 37.41
+      },
+      {
+        "value": 35.57
+      },
+      {
+        "value": 30
+      },
+      {
+        "value": 44.65
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "bin": true,
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Factory Efficiency Distribution"
+}

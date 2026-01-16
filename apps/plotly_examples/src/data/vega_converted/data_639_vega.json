@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2018,
+        "y": 54000,
+        "series": "Primary"
+      },
+      {
+        "x": 2019,
+        "y": 56000,
+        "series": "Primary"
+      },
+      {
+        "x": 2020,
+        "y": 57500,
+        "series": "Primary"
+      },
+      {
+        "x": 2021,
+        "y": 59000,
+        "series": "Primary"
+      },
+      {
+        "x": 2022,
+        "y": 60000,
+        "series": "Primary"
+      },
+      {
+        "x": 2018,
+        "y": 40000,
+        "series": "Secondary"
+      },
+      {
+        "x": 2019,
+        "y": 41000,
+        "series": "Secondary"
+      },
+      {
+        "x": 2020,
+        "y": 43000,
+        "series": "Secondary"
+      },
+      {
+        "x": 2021,
+        "y": 46000,
+        "series": "Secondary"
+      },
+      {
+        "x": 2022,
+        "y": 48000,
+        "series": "Secondary"
+      },
+      {
+        "x": 2018,
+        "y": 28000,
+        "series": "Higher"
+      },
+      {
+        "x": 2019,
+        "y": 30000,
+        "series": "Higher"
+      },
+      {
+        "x": 2020,
+        "y": 34000,
+        "series": "Higher"
+      },
+      {
+        "x": 2021,
+        "y": 37500,
+        "series": "Higher"
+      },
+      {
+        "x": 2022,
+        "y": 41000,
+        "series": "Higher"
+      }
+    ]
+  },
+  "title": "Urban Education Enrollment Trends (2018-2022)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Enrollment"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Enrollment"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

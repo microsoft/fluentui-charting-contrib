@@ -1,0 +1,167 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01",
+        "y": 0.6421646395205358,
+        "series": "Cityview Suites"
+      },
+      {
+        "x": "2023-02",
+        "y": 0.6409055425448869,
+        "series": "Cityview Suites"
+      },
+      {
+        "x": "2023-03",
+        "y": 0.8357130266173101,
+        "series": "Cityview Suites"
+      },
+      {
+        "x": "2023-04",
+        "y": 0.846448087431694,
+        "series": "Cityview Suites"
+      },
+      {
+        "x": "2023-05",
+        "y": 0.8364181209236735,
+        "series": "Cityview Suites"
+      },
+      {
+        "x": "2023-01",
+        "y": 0.6394895427153492,
+        "series": "Downtown Stay"
+      },
+      {
+        "x": "2023-02",
+        "y": 0.6259811616954474,
+        "series": "Downtown Stay"
+      },
+      {
+        "x": "2023-03",
+        "y": 0.8277206664303438,
+        "series": "Downtown Stay"
+      },
+      {
+        "x": "2023-04",
+        "y": 0.8417582417582418,
+        "series": "Downtown Stay"
+      },
+      {
+        "x": "2023-05",
+        "y": 0.8403048564338887,
+        "series": "Downtown Stay"
+      },
+      {
+        "x": "2023-01",
+        "y": 0.631990837946173,
+        "series": "Metro Luxe"
+      },
+      {
+        "x": "2023-02",
+        "y": 0.6280642434488588,
+        "series": "Metro Luxe"
+      },
+      {
+        "x": "2023-03",
+        "y": 0.8215308264936056,
+        "series": "Metro Luxe"
+      },
+      {
+        "x": "2023-04",
+        "y": 0.821301775147929,
+        "series": "Metro Luxe"
+      },
+      {
+        "x": "2023-05",
+        "y": 0.8410001908761214,
+        "series": "Metro Luxe"
+      },
+      {
+        "x": "2023-01",
+        "y": 0.6256646579227224,
+        "series": "Urban Grand"
+      },
+      {
+        "x": "2023-02",
+        "y": 0.6328492935635793,
+        "series": "Urban Grand"
+      },
+      {
+        "x": "2023-03",
+        "y": 0.837291740517547,
+        "series": "Urban Grand"
+      },
+      {
+        "x": "2023-04",
+        "y": 0.8161172161172161,
+        "series": "Urban Grand"
+      },
+      {
+        "x": "2023-05",
+        "y": 0.8438496986884083,
+        "series": "Urban Grand"
+      },
+      {
+        "x": "2023-01",
+        "y": 0.614516129032258,
+        "series": "Urban Plaza"
+      },
+      {
+        "x": "2023-02",
+        "y": 0.6344642857142857,
+        "series": "Urban Plaza"
+      },
+      {
+        "x": "2023-03",
+        "y": 0.8204838709677419,
+        "series": "Urban Plaza"
+      },
+      {
+        "x": "2023-04",
+        "y": 0.8173333333333334,
+        "series": "Urban Plaza"
+      },
+      {
+        "x": "2023-05",
+        "y": 0.8311290322580646,
+        "series": "Urban Plaza"
+      }
+    ]
+  },
+  "title": "Monthly Occupancy Rate by Location",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Occupancy Rate"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Occupancy Rate"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

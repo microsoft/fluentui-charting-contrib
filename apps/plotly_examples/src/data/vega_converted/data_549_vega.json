@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 120,
+        "y": "M1",
+        "series": "A"
+      },
+      {
+        "x": 220,
+        "y": "M4",
+        "series": "A"
+      },
+      {
+        "x": 150,
+        "y": "M2",
+        "series": "B"
+      },
+      {
+        "x": 190,
+        "y": "M5",
+        "series": "B"
+      },
+      {
+        "x": 180,
+        "y": "M3",
+        "series": "C"
+      }
+    ]
+  },
+  "title": "Energy Consumption Rate by Machine and Location",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "energy_consumption_rate"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "machine_id"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "energy_consumption_rate"
+      },
+      {
+        "field": "y",
+        "title": "machine_id"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Apr 2023",
+        "y": -0.05999999999999994,
+        "series": "Construction"
+      },
+      {
+        "x": "Aug 2023",
+        "y": -2.09,
+        "series": "Construction"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 1.91,
+        "series": "Construction"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 1.0166666666666666,
+        "series": "Construction"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 2.02,
+        "series": "Construction"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 2.48,
+        "series": "Construction"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 1.865,
+        "series": "Construction"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 1.415,
+        "series": "Construction"
+      },
+      {
+        "x": "May 2023",
+        "y": 2.04,
+        "series": "Construction"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 1.4233333333333331,
+        "series": "Construction"
+      },
+      {
+        "x": "Sep 2023",
+        "y": -0.13999999999999996,
+        "series": "Construction"
+      },
+      {
+        "x": "Apr 2023",
+        "y": -0.745,
+        "series": "Design"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 1.18,
+        "series": "Design"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 1.1949999999999998,
+        "series": "Design"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 3.2350000000000003,
+        "series": "Design"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 0.9799999999999999,
+        "series": "Design"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 3.57,
+        "series": "Design"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 3.72,
+        "series": "Design"
+      },
+      {
+        "x": "May 2023",
+        "y": -0.75,
+        "series": "Design"
+      },
+      {
+        "x": "Nov 2023",
+        "y": -0.88,
+        "series": "Design"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 3.27,
+        "series": "Design"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 2.11,
+        "series": "Design"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 2.71,
+        "series": "Finishing"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 3.255,
+        "series": "Finishing"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 2.3000000000000003,
+        "series": "Finishing"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 1.21,
+        "series": "Finishing"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 0.02,
+        "series": "Finishing"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 1.83,
+        "series": "Finishing"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 1.885,
+        "series": "Finishing"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 1.56,
+        "series": "Finishing"
+      },
+      {
+        "x": "May 2023",
+        "y": -1.22,
+        "series": "Finishing"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 1.465,
+        "series": "Finishing"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 0.365,
+        "series": "Finishing"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 1.5666666666666664,
+        "series": "Finishing"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 3.465,
+        "series": "Planning"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 2.0633333333333335,
+        "series": "Planning"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 2.31,
+        "series": "Planning"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 1.48,
+        "series": "Planning"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 0.9,
+        "series": "Planning"
+      },
+      {
+        "x": "Mar 2023",
+        "y": -0.98,
+        "series": "Planning"
+      },
+      {
+        "x": "May 2023",
+        "y": -0.43000000000000005,
+        "series": "Planning"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 3.46,
+        "series": "Planning"
+      },
+      {
+        "x": "Oct 2023",
+        "y": -1.6800000000000002,
+        "series": "Planning"
+      },
+      {
+        "x": "Sep 2023",
+        "y": -1.05,
+        "series": "Planning"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 3.38,
+        "series": "Procurement"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 2.14,
+        "series": "Procurement"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 2.52,
+        "series": "Procurement"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 1.7133333333333332,
+        "series": "Procurement"
+      },
+      {
+        "x": "Jun 2023",
+        "y": -1.21,
+        "series": "Procurement"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 1.2574999999999998,
+        "series": "Procurement"
+      },
+      {
+        "x": "May 2023",
+        "y": 2.39,
+        "series": "Procurement"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 1.2850000000000001,
+        "series": "Procurement"
+      },
+      {
+        "x": "Sep 2023",
+        "y": -0.55,
+        "series": "Procurement"
+      }
+    ]
+  },
+  "title": "Labor Cost Variation Trend by Phase",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Labor Variation [%]"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Labor Variation [%]"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

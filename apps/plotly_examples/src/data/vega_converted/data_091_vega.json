@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Supply Chain Inventory Levels",
+  "description": "Converted from Plotly schema 91 - Bar chart",
+  "data": {
+    "values": [
+      { "category": "Raw Materials", "quantity": 2000 },
+      { "category": "Work in Progress", "quantity": 1500 },
+      { "category": "Finished Goods", "quantity": 1000 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "category",
+      "type": "nominal",
+      "axis": { "title": "Category" }
+    },
+    "y": {
+      "field": "quantity",
+      "type": "quantitative",
+      "axis": { "title": "Quantity" }
+    }
+  }
+}

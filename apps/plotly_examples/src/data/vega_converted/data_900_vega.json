@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 345600000,
+        "y": "Sourcing",
+        "series": "Sourcing"
+      },
+      {
+        "x": 345600000,
+        "y": "Screening",
+        "series": "Screening"
+      },
+      {
+        "x": 345600000,
+        "y": "Interview",
+        "series": "Interview"
+      },
+      {
+        "x": 172800000,
+        "y": "Offer",
+        "series": "Offer"
+      }
+    ]
+  },
+  "title": "Hiring Pipeline Gantt",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Stage"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Stage"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

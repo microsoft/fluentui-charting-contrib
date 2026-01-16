@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Energieverbrauchsanalyse nach Monat",
+  "description": "Converted from Plotly schema 292 - Grouped bar chart with German labels",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "Januar", "consumption": 200, "sector": "Haushalte" },
+      { "month": "Februar", "consumption": 180, "sector": "Haushalte" },
+      { "month": "März", "consumption": 210, "sector": "Haushalte" },
+      { "month": "April", "consumption": 220, "sector": "Haushalte" },
+      { "month": "Mai", "consumption": 230, "sector": "Haushalte" },
+      { "month": "Juni", "consumption": 250, "sector": "Haushalte" },
+      { "month": "Juli", "consumption": 270, "sector": "Haushalte" },
+      { "month": "August", "consumption": 260, "sector": "Haushalte" },
+      { "month": "September", "consumption": 240, "sector": "Haushalte" },
+      { "month": "Oktober", "consumption": 230, "sector": "Haushalte" },
+      { "month": "November", "consumption": 220, "sector": "Haushalte" },
+      { "month": "Dezember", "consumption": 210, "sector": "Haushalte" },
+      { "month": "Januar", "consumption": 300, "sector": "Industrie" },
+      { "month": "Februar", "consumption": 290, "sector": "Industrie" },
+      { "month": "März", "consumption": 310, "sector": "Industrie" },
+      { "month": "April", "consumption": 320, "sector": "Industrie" },
+      { "month": "Mai", "consumption": 340, "sector": "Industrie" },
+      { "month": "Juni", "consumption": 360, "sector": "Industrie" },
+      { "month": "Juli", "consumption": 380, "sector": "Industrie" },
+      { "month": "August", "consumption": 370, "sector": "Industrie" },
+      { "month": "September", "consumption": 350, "sector": "Industrie" },
+      { "month": "Oktober", "consumption": 340, "sector": "Industrie" },
+      { "month": "November", "consumption": 330, "sector": "Industrie" },
+      { "month": "Dezember", "consumption": 310, "sector": "Industrie" },
+      { "month": "Januar", "consumption": 150, "sector": "Gewerbe" },
+      { "month": "Februar", "consumption": 140, "sector": "Gewerbe" },
+      { "month": "März", "consumption": 160, "sector": "Gewerbe" },
+      { "month": "April", "consumption": 170, "sector": "Gewerbe" },
+      { "month": "Mai", "consumption": 180, "sector": "Gewerbe" },
+      { "month": "Juni", "consumption": 200, "sector": "Gewerbe" },
+      { "month": "Juli", "consumption": 220, "sector": "Gewerbe" },
+      { "month": "August", "consumption": 210, "sector": "Gewerbe" },
+      { "month": "September", "consumption": 190, "sector": "Gewerbe" },
+      { "month": "Oktober", "consumption": 180, "sector": "Gewerbe" },
+      { "month": "November", "consumption": 170, "sector": "Gewerbe" },
+      { "month": "Dezember", "consumption": 160, "sector": "Gewerbe" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+      "axis": { "title": "Monat" }
+    },
+    "y": {
+      "field": "consumption",
+      "type": "quantitative",
+      "axis": { "title": "Energieverbrauch (GWh)" }
+    },
+    "xOffset": {
+      "field": "sector",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "sector",
+      "type": "nominal",
+      "scale": { "range": ["orange", "red", "blue"] },
+      "legend": { "title": "Sektor" }
+    }
+  }
+}

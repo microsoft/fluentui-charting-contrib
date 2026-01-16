@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 0.13500000000000023,
+        "y": 2.57,
+        "series": "Construction"
+      },
+      {
+        "x": 3.0500000000000003,
+        "y": 3.1,
+        "series": "Design"
+      },
+      {
+        "x": 13.57,
+        "y": 3.27,
+        "series": "Finishing"
+      },
+      {
+        "x": -0.11499999999999999,
+        "y": 4.365,
+        "series": "Planning"
+      },
+      {
+        "x": -7,
+        "y": 0.68,
+        "series": "Procurement"
+      }
+    ]
+  },
+  "title": "Variance % vs. Material Escalation by Project Phase",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Variance [%]"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Material Escalation [%]"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Variance [%]"
+      },
+      {
+        "field": "y",
+        "title": "Material Escalation [%]"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

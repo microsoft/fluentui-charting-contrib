@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Inventory Levels and Reorder Time by Supplier",
+  "description": "Converted from Plotly schema 118 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "supplier": "Supplier A", "value": 150, "metric": "Inventory Levels" },
+      { "supplier": "Supplier B", "value": 120, "metric": "Inventory Levels" },
+      { "supplier": "Supplier C", "value": 80, "metric": "Inventory Levels" },
+      { "supplier": "Supplier D", "value": 200, "metric": "Inventory Levels" },
+      { "supplier": "Supplier A", "value": 30, "metric": "Reorder Time" },
+      { "supplier": "Supplier B", "value": 45, "metric": "Reorder Time" },
+      { "supplier": "Supplier C", "value": 20, "metric": "Reorder Time" },
+      { "supplier": "Supplier D", "value": 50, "metric": "Reorder Time" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "supplier",
+      "type": "nominal",
+      "axis": { "title": "Supplier Name" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Values" }
+    },
+    "xOffset": {
+      "field": "metric"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

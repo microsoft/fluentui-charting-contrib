@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Transport",
+        "y": 120,
+        "series": "2023"
+      },
+      {
+        "x": "Industry",
+        "y": 200,
+        "series": "2023"
+      },
+      {
+        "x": "Residential",
+        "y": 90,
+        "series": "2023"
+      },
+      {
+        "x": "Agriculture",
+        "y": 60,
+        "series": "2023"
+      },
+      {
+        "x": "Electricity",
+        "y": 250,
+        "series": "2023"
+      },
+      {
+        "x": "Transport",
+        "y": 115,
+        "series": "2024"
+      },
+      {
+        "x": "Industry",
+        "y": 210,
+        "series": "2024"
+      },
+      {
+        "x": "Residential",
+        "y": 85,
+        "series": "2024"
+      },
+      {
+        "x": "Agriculture",
+        "y": 62,
+        "series": "2024"
+      },
+      {
+        "x": "Electricity",
+        "y": 240,
+        "series": "2024"
+      }
+    ]
+  },
+  "title": "CO₂ Emissions 2023 vs 2024",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Sector"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "CO2"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Sector"
+      },
+      {
+        "field": "y",
+        "title": "CO2"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

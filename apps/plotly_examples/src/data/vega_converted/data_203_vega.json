@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Compliance Rate Distribution by Drug Category",
+  "description": "Converted from Plotly schema 203 - Donut chart",
+  "data": {
+    "values": [
+      { "drug": "Antibiotics", "compliance": 85 },
+      { "drug": "Antihypertensives", "compliance": 92 },
+      { "drug": "Analgesics", "compliance": 81 },
+      { "drug": "Antidepressants", "compliance": 88 },
+      { "drug": "Statins", "compliance": 90 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "compliance",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "drug",
+      "type": "nominal",
+      "legend": { "title": "Drug Category" }
+    }
+  }
+}

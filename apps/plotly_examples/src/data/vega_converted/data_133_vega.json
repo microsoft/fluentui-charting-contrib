@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Daily Resource Utilization Heatmap",
+  "description": "Converted from Plotly schema 133 - Heatmap",
+  "data": {
+    "values": [
+      { "resource": "Labor Utilization", "site": "Site A", "utilization": 80 },
+      { "resource": "Labor Utilization", "site": "Site B", "utilization": 60 },
+      { "resource": "Labor Utilization", "site": "Site C", "utilization": 70 },
+      { "resource": "Machinery Utilization", "site": "Site A", "utilization": 90 },
+      { "resource": "Machinery Utilization", "site": "Site B", "utilization": 50 },
+      { "resource": "Machinery Utilization", "site": "Site C", "utilization": 60 },
+      { "resource": "Material Utilization", "site": "Site A", "utilization": 70 },
+      { "resource": "Material Utilization", "site": "Site B", "utilization": 80 },
+      { "resource": "Material Utilization", "site": "Site C", "utilization": 90 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "site",
+      "type": "nominal",
+      "axis": { "title": "Project Sites" }
+    },
+    "y": {
+      "field": "resource",
+      "type": "nominal",
+      "axis": { "title": "Resource Types" }
+    },
+    "color": {
+      "field": "utilization",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Utilization (%)" }
+    }
+  }
+}

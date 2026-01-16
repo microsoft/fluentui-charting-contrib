@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 120,
+        "y": "OpA",
+        "series": "Personnel"
+      },
+      {
+        "x": 170,
+        "y": "OpB",
+        "series": "Personnel"
+      },
+      {
+        "x": 140,
+        "y": "OpA",
+        "series": "Personnel"
+      },
+      {
+        "x": 180,
+        "y": "OpB",
+        "series": "Personnel"
+      },
+      {
+        "x": 160,
+        "y": "OpC",
+        "series": "Personnel"
+      },
+      {
+        "x": 90,
+        "y": "OpB",
+        "series": "Equipment"
+      },
+      {
+        "x": 100,
+        "y": "OpD",
+        "series": "Equipment"
+      },
+      {
+        "x": 80,
+        "y": "OpC",
+        "series": "Equipment"
+      },
+      {
+        "x": 110,
+        "y": "OpD",
+        "series": "Equipment"
+      },
+      {
+        "x": 150,
+        "y": "OpA",
+        "series": "Equipment"
+      }
+    ]
+  },
+  "title": "Allocated Quantity by Operation and Resource Type",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "allocated_quantity"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "operation_id"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "allocated_quantity"
+      },
+      {
+        "field": "y",
+        "title": "operation_id"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

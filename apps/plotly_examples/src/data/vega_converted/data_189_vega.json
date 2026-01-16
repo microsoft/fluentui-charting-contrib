@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Demographic Participation in Policy-Making",
+  "description": "Converted from Plotly schema 189 - Pie chart",
+  "data": {
+    "values": [
+      { "ageGroup": "18-24", "citizens": 1100 },
+      { "ageGroup": "25-34", "citizens": 1350 },
+      { "ageGroup": "35-44", "citizens": 900 },
+      { "ageGroup": "45-54", "citizens": 650 },
+      { "ageGroup": "55+", "citizens": 500 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "citizens",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "ageGroup",
+      "type": "nominal",
+      "legend": { "title": "Age Group" }
+    }
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "u1",
+        "y": 10,
+        "series": "US"
+      },
+      {
+        "x": "u1",
+        "y": 10,
+        "series": "US"
+      },
+      {
+        "x": "u1",
+        "y": 10,
+        "series": "US"
+      },
+      {
+        "x": "u1",
+        "y": 10,
+        "series": "US"
+      },
+      {
+        "x": "u1",
+        "y": 10,
+        "series": "US"
+      },
+      {
+        "x": "u1",
+        "y": 10,
+        "series": "US"
+      },
+      {
+        "x": "u2",
+        "y": 20,
+        "series": "UK"
+      },
+      {
+        "x": "u2",
+        "y": 20,
+        "series": "UK"
+      },
+      {
+        "x": "u2",
+        "y": 20,
+        "series": "UK"
+      },
+      {
+        "x": "u2",
+        "y": 20,
+        "series": "UK"
+      },
+      {
+        "x": "u2",
+        "y": 20,
+        "series": "UK"
+      },
+      {
+        "x": "u2",
+        "y": 20,
+        "series": "UK"
+      },
+      {
+        "x": "u3",
+        "y": 5,
+        "series": "DE"
+      },
+      {
+        "x": "u3",
+        "y": 5,
+        "series": "DE"
+      },
+      {
+        "x": "u3",
+        "y": 5,
+        "series": "DE"
+      },
+      {
+        "x": "u3",
+        "y": 5,
+        "series": "DE"
+      },
+      {
+        "x": "u3",
+        "y": 5,
+        "series": "DE"
+      },
+      {
+        "x": "u3",
+        "y": 5,
+        "series": "DE"
+      },
+      {
+        "x": "u4",
+        "y": 15,
+        "series": "FR"
+      },
+      {
+        "x": "u4",
+        "y": 15,
+        "series": "FR"
+      },
+      {
+        "x": "u4",
+        "y": 15,
+        "series": "FR"
+      },
+      {
+        "x": "u4",
+        "y": 15,
+        "series": "FR"
+      },
+      {
+        "x": "u4",
+        "y": 15,
+        "series": "FR"
+      },
+      {
+        "x": "u4",
+        "y": 15,
+        "series": "FR"
+      },
+      {
+        "x": "u5",
+        "y": 30,
+        "series": "IN"
+      },
+      {
+        "x": "u5",
+        "y": 30,
+        "series": "IN"
+      },
+      {
+        "x": "u5",
+        "y": 30,
+        "series": "IN"
+      },
+      {
+        "x": "u5",
+        "y": 30,
+        "series": "IN"
+      },
+      {
+        "x": "u5",
+        "y": 30,
+        "series": "IN"
+      },
+      {
+        "x": "u5",
+        "y": 30,
+        "series": "IN"
+      }
+    ]
+  },
+  "title": "Anomalous User Behavior",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "user_id"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "anomaly_score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "user_id"
+      },
+      {
+        "field": "y",
+        "title": "anomaly_score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

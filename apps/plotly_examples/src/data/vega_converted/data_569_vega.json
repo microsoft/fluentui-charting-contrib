@@ -1,0 +1,522 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 8,
+        "y": "Set 1",
+        "series": "Category A"
+      },
+      {
+        "x": 1,
+        "y": "Set 2",
+        "series": "Category A"
+      },
+      {
+        "x": 5,
+        "y": "Set 3",
+        "series": "Category A"
+      },
+      {
+        "x": 7,
+        "y": "Set 4",
+        "series": "Category A"
+      },
+      {
+        "x": 10,
+        "y": "Set 5",
+        "series": "Category A"
+      },
+      {
+        "x": 9,
+        "y": "Set 6",
+        "series": "Category A"
+      },
+      {
+        "x": 5,
+        "y": "Set 7",
+        "series": "Category A"
+      },
+      {
+        "x": 7,
+        "y": "Set 8",
+        "series": "Category A"
+      },
+      {
+        "x": 3,
+        "y": "Set 9",
+        "series": "Category A"
+      },
+      {
+        "x": 6,
+        "y": "Set 10",
+        "series": "Category A"
+      },
+      {
+        "x": 1,
+        "y": "Set 11",
+        "series": "Category A"
+      },
+      {
+        "x": 4,
+        "y": "Set 12",
+        "series": "Category A"
+      },
+      {
+        "x": 3,
+        "y": "Set 13",
+        "series": "Category A"
+      },
+      {
+        "x": 4,
+        "y": "Set 14",
+        "series": "Category A"
+      },
+      {
+        "x": 8,
+        "y": "Set 15",
+        "series": "Category A"
+      },
+      {
+        "x": 1,
+        "y": "Set 16",
+        "series": "Category A"
+      },
+      {
+        "x": 5,
+        "y": "Set 1",
+        "series": "Category B"
+      },
+      {
+        "x": 7,
+        "y": "Set 2",
+        "series": "Category B"
+      },
+      {
+        "x": 1,
+        "y": "Set 3",
+        "series": "Category B"
+      },
+      {
+        "x": 9,
+        "y": "Set 4",
+        "series": "Category B"
+      },
+      {
+        "x": 10,
+        "y": "Set 5",
+        "series": "Category B"
+      },
+      {
+        "x": 7,
+        "y": "Set 6",
+        "series": "Category B"
+      },
+      {
+        "x": 7,
+        "y": "Set 7",
+        "series": "Category B"
+      },
+      {
+        "x": 7,
+        "y": "Set 8",
+        "series": "Category B"
+      },
+      {
+        "x": 1,
+        "y": "Set 9",
+        "series": "Category B"
+      },
+      {
+        "x": 3,
+        "y": "Set 10",
+        "series": "Category B"
+      },
+      {
+        "x": 6,
+        "y": "Set 11",
+        "series": "Category B"
+      },
+      {
+        "x": 3,
+        "y": "Set 12",
+        "series": "Category B"
+      },
+      {
+        "x": 9,
+        "y": "Set 13",
+        "series": "Category B"
+      },
+      {
+        "x": 9,
+        "y": "Set 14",
+        "series": "Category B"
+      },
+      {
+        "x": 8,
+        "y": "Set 15",
+        "series": "Category B"
+      },
+      {
+        "x": 4,
+        "y": "Set 16",
+        "series": "Category B"
+      },
+      {
+        "x": 8,
+        "y": "Set 1",
+        "series": "Category C"
+      },
+      {
+        "x": 1,
+        "y": "Set 2",
+        "series": "Category C"
+      },
+      {
+        "x": 9,
+        "y": "Set 3",
+        "series": "Category C"
+      },
+      {
+        "x": 6,
+        "y": "Set 4",
+        "series": "Category C"
+      },
+      {
+        "x": 7,
+        "y": "Set 5",
+        "series": "Category C"
+      },
+      {
+        "x": 4,
+        "y": "Set 6",
+        "series": "Category C"
+      },
+      {
+        "x": 10,
+        "y": "Set 7",
+        "series": "Category C"
+      },
+      {
+        "x": 5,
+        "y": "Set 8",
+        "series": "Category C"
+      },
+      {
+        "x": 6,
+        "y": "Set 9",
+        "series": "Category C"
+      },
+      {
+        "x": 9,
+        "y": "Set 10",
+        "series": "Category C"
+      },
+      {
+        "x": 10,
+        "y": "Set 11",
+        "series": "Category C"
+      },
+      {
+        "x": 1,
+        "y": "Set 12",
+        "series": "Category C"
+      },
+      {
+        "x": 9,
+        "y": "Set 13",
+        "series": "Category C"
+      },
+      {
+        "x": 7,
+        "y": "Set 14",
+        "series": "Category C"
+      },
+      {
+        "x": 2,
+        "y": "Set 15",
+        "series": "Category C"
+      },
+      {
+        "x": 7,
+        "y": "Set 16",
+        "series": "Category C"
+      },
+      {
+        "x": 4,
+        "y": "Set 1",
+        "series": "Category D"
+      },
+      {
+        "x": 8,
+        "y": "Set 2",
+        "series": "Category D"
+      },
+      {
+        "x": 4,
+        "y": "Set 3",
+        "series": "Category D"
+      },
+      {
+        "x": 2,
+        "y": "Set 4",
+        "series": "Category D"
+      },
+      {
+        "x": 10,
+        "y": "Set 5",
+        "series": "Category D"
+      },
+      {
+        "x": 7,
+        "y": "Set 6",
+        "series": "Category D"
+      },
+      {
+        "x": 5,
+        "y": "Set 7",
+        "series": "Category D"
+      },
+      {
+        "x": 1,
+        "y": "Set 8",
+        "series": "Category D"
+      },
+      {
+        "x": 6,
+        "y": "Set 9",
+        "series": "Category D"
+      },
+      {
+        "x": 10,
+        "y": "Set 10",
+        "series": "Category D"
+      },
+      {
+        "x": 8,
+        "y": "Set 11",
+        "series": "Category D"
+      },
+      {
+        "x": 2,
+        "y": "Set 12",
+        "series": "Category D"
+      },
+      {
+        "x": 9,
+        "y": "Set 13",
+        "series": "Category D"
+      },
+      {
+        "x": 2,
+        "y": "Set 14",
+        "series": "Category D"
+      },
+      {
+        "x": 6,
+        "y": "Set 15",
+        "series": "Category D"
+      },
+      {
+        "x": 4,
+        "y": "Set 16",
+        "series": "Category D"
+      },
+      {
+        "x": 4,
+        "y": "Set 1",
+        "series": "Category E"
+      },
+      {
+        "x": 5,
+        "y": "Set 2",
+        "series": "Category E"
+      },
+      {
+        "x": 5,
+        "y": "Set 3",
+        "series": "Category E"
+      },
+      {
+        "x": 7,
+        "y": "Set 4",
+        "series": "Category E"
+      },
+      {
+        "x": 9,
+        "y": "Set 5",
+        "series": "Category E"
+      },
+      {
+        "x": 9,
+        "y": "Set 6",
+        "series": "Category E"
+      },
+      {
+        "x": 8,
+        "y": "Set 7",
+        "series": "Category E"
+      },
+      {
+        "x": 2,
+        "y": "Set 8",
+        "series": "Category E"
+      },
+      {
+        "x": 8,
+        "y": "Set 9",
+        "series": "Category E"
+      },
+      {
+        "x": 10,
+        "y": "Set 10",
+        "series": "Category E"
+      },
+      {
+        "x": 9,
+        "y": "Set 11",
+        "series": "Category E"
+      },
+      {
+        "x": 9,
+        "y": "Set 12",
+        "series": "Category E"
+      },
+      {
+        "x": 10,
+        "y": "Set 13",
+        "series": "Category E"
+      },
+      {
+        "x": 10,
+        "y": "Set 14",
+        "series": "Category E"
+      },
+      {
+        "x": 3,
+        "y": "Set 15",
+        "series": "Category E"
+      },
+      {
+        "x": 3,
+        "y": "Set 16",
+        "series": "Category E"
+      },
+      {
+        "x": 9,
+        "y": "Set 1",
+        "series": "Category F"
+      },
+      {
+        "x": 5,
+        "y": "Set 2",
+        "series": "Category F"
+      },
+      {
+        "x": 10,
+        "y": "Set 3",
+        "series": "Category F"
+      },
+      {
+        "x": 4,
+        "y": "Set 4",
+        "series": "Category F"
+      },
+      {
+        "x": 8,
+        "y": "Set 5",
+        "series": "Category F"
+      },
+      {
+        "x": 5,
+        "y": "Set 6",
+        "series": "Category F"
+      },
+      {
+        "x": 3,
+        "y": "Set 7",
+        "series": "Category F"
+      },
+      {
+        "x": 6,
+        "y": "Set 8",
+        "series": "Category F"
+      },
+      {
+        "x": 6,
+        "y": "Set 9",
+        "series": "Category F"
+      },
+      {
+        "x": 1,
+        "y": "Set 10",
+        "series": "Category F"
+      },
+      {
+        "x": 2,
+        "y": "Set 11",
+        "series": "Category F"
+      },
+      {
+        "x": 7,
+        "y": "Set 12",
+        "series": "Category F"
+      },
+      {
+        "x": 4,
+        "y": "Set 13",
+        "series": "Category F"
+      },
+      {
+        "x": 7,
+        "y": "Set 14",
+        "series": "Category F"
+      },
+      {
+        "x": 8,
+        "y": "Set 15",
+        "series": "Category F"
+      },
+      {
+        "x": 5,
+        "y": "Set 16",
+        "series": "Category F"
+      }
+    ]
+  },
+  "title": "Stacked Horizontal Bar Chart",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Value"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Bar Set"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Value"
+      },
+      {
+        "field": "y",
+        "title": "Bar Set"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

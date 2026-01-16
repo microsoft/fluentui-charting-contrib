@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 150000,
+        "y": 142000,
+        "series": "Planning"
+      },
+      {
+        "x": 160000,
+        "y": 150000,
+        "series": "Planning"
+      },
+      {
+        "x": 350000,
+        "y": 375000,
+        "series": "Foundation"
+      },
+      {
+        "x": 320000,
+        "y": 295000,
+        "series": "Foundation"
+      },
+      {
+        "x": 500000,
+        "y": 525000,
+        "series": "Structure"
+      },
+      {
+        "x": 480000,
+        "y": 510000,
+        "series": "Structure"
+      },
+      {
+        "x": 230000,
+        "y": 215000,
+        "series": "Finishing"
+      },
+      {
+        "x": 210000,
+        "y": 206000,
+        "series": "Finishing"
+      }
+    ]
+  },
+  "title": "Construction Project Cost Management: Actual vs Budgeted Cost",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "budgeted_cost"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "actual_cost"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "budgeted_cost"
+      },
+      {
+        "field": "y",
+        "title": "actual_cost"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

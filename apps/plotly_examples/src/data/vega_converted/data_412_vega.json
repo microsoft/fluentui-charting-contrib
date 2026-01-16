@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan",
+        "y": 200,
+        "series": "Series"
+      },
+      {
+        "x": "Feb",
+        "y": 250,
+        "series": "Series"
+      },
+      {
+        "x": "Mar",
+        "y": 300,
+        "series": "Series"
+      },
+      {
+        "x": "Apr",
+        "y": 280,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Monthly Sales",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sales"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Sales"
+      }
+    ]
+  }
+}

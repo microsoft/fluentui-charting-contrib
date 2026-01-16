@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01-01",
+        "y": 120,
+        "series": "Series"
+      },
+      {
+        "x": "2023-02-01",
+        "y": 135,
+        "series": "Series"
+      },
+      {
+        "x": "2023-03-01",
+        "y": 180,
+        "series": "Series"
+      },
+      {
+        "x": "2023-04-01",
+        "y": 150,
+        "series": "Series"
+      },
+      {
+        "x": "2023-05-01",
+        "y": 160,
+        "series": "Series"
+      },
+      {
+        "x": "2023-06-01",
+        "y": 170,
+        "series": "Series"
+      },
+      {
+        "x": "2023-07-01",
+        "y": 190,
+        "series": "Series"
+      },
+      {
+        "x": "2023-08-01",
+        "y": 210,
+        "series": "Series"
+      },
+      {
+        "x": "2023-09-01",
+        "y": 230,
+        "series": "Series"
+      },
+      {
+        "x": "2023-10-01",
+        "y": 220,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Citizen Engagement Level Over Time",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Date"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Engagement Level"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Date"
+      },
+      {
+        "field": "y",
+        "title": "Engagement Level"
+      }
+    ]
+  }
+}

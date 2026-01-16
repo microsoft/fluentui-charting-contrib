@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Processes Time and Error Rate",
+  "description": "Converted from Plotly schema 324 - Grouped bar (simplified from 25 to 4 metrics)",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "process": "Process 1", "value": 10, "metric": "Time to Complete (hours)" },
+      { "process": "Process 2", "value": 15, "metric": "Time to Complete (hours)" },
+      { "process": "Process 3", "value": 8, "metric": "Time to Complete (hours)" },
+      { "process": "Process 4", "value": 13, "metric": "Time to Complete (hours)" },
+      { "process": "Process 5", "value": 9, "metric": "Time to Complete (hours)" },
+      { "process": "Process 6", "value": 14, "metric": "Time to Complete (hours)" },
+      { "process": "Process 7", "value": 10, "metric": "Time to Complete (hours)" },
+      { "process": "Process 8", "value": 12, "metric": "Time to Complete (hours)" },
+      { "process": "Process 9", "value": 11, "metric": "Time to Complete (hours)" },
+      { "process": "Process 10", "value": 13, "metric": "Time to Complete (hours)" },
+      { "process": "Process 1", "value": 2, "metric": "Error Rate (%)" },
+      { "process": "Process 2", "value": 1, "metric": "Error Rate (%)" },
+      { "process": "Process 3", "value": 3, "metric": "Error Rate (%)" },
+      { "process": "Process 4", "value": 1, "metric": "Error Rate (%)" },
+      { "process": "Process 5", "value": 2, "metric": "Error Rate (%)" },
+      { "process": "Process 6", "value": 1, "metric": "Error Rate (%)" },
+      { "process": "Process 7", "value": 2.5, "metric": "Error Rate (%)" },
+      { "process": "Process 8", "value": 1.5, "metric": "Error Rate (%)" },
+      { "process": "Process 9", "value": 2, "metric": "Error Rate (%)" },
+      { "process": "Process 10", "value": 1.8, "metric": "Error Rate (%)" },
+      { "process": "Process 1", "value": 14, "metric": "Processing Speed" },
+      { "process": "Process 2", "value": 12, "metric": "Processing Speed" },
+      { "process": "Process 3", "value": 11, "metric": "Processing Speed" },
+      { "process": "Process 4", "value": 13, "metric": "Processing Speed" },
+      { "process": "Process 5", "value": 15, "metric": "Processing Speed" },
+      { "process": "Process 6", "value": 12, "metric": "Processing Speed" },
+      { "process": "Process 7", "value": 14, "metric": "Processing Speed" },
+      { "process": "Process 8", "value": 13, "metric": "Processing Speed" },
+      { "process": "Process 9", "value": 15, "metric": "Processing Speed" },
+      { "process": "Process 10", "value": 11, "metric": "Processing Speed" },
+      { "process": "Process 1", "value": 3, "metric": "Downtime (hours)" },
+      { "process": "Process 2", "value": 4, "metric": "Downtime (hours)" },
+      { "process": "Process 3", "value": 5, "metric": "Downtime (hours)" },
+      { "process": "Process 4", "value": 2, "metric": "Downtime (hours)" },
+      { "process": "Process 5", "value": 3, "metric": "Downtime (hours)" },
+      { "process": "Process 6", "value": 4, "metric": "Downtime (hours)" },
+      { "process": "Process 7", "value": 4, "metric": "Downtime (hours)" },
+      { "process": "Process 8", "value": 5, "metric": "Downtime (hours)" },
+      { "process": "Process 9", "value": 6, "metric": "Downtime (hours)" },
+      { "process": "Process 10", "value": 5, "metric": "Downtime (hours)" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "process",
+      "type": "ordinal",
+      "axis": { "title": "Process ID" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Hours / %" }
+    },
+    "xOffset": {
+      "field": "metric",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "scale": { "range": ["blue", "red", "green", "orange"] },
+      "legend": { "title": "Metric" }
+    },
+    "tooltip": [
+      { "field": "process", "type": "ordinal", "title": "Process" },
+      { "field": "metric", "type": "nominal", "title": "Metric" },
+      { "field": "value", "type": "quantitative", "title": "Value" }
+    ]
+  }
+}

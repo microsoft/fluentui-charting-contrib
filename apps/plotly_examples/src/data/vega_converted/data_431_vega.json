@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-W1",
+        "y": 5,
+        "series": "Series"
+      },
+      {
+        "x": "2023-W2",
+        "y": 7,
+        "series": "Series"
+      },
+      {
+        "x": "2023-W3",
+        "y": 6,
+        "series": "Series"
+      },
+      {
+        "x": "2023-W4",
+        "y": 4,
+        "series": "Series"
+      },
+      {
+        "x": "2023-W5",
+        "y": 8,
+        "series": "Series"
+      },
+      {
+        "x": "2023-W6",
+        "y": 5,
+        "series": "Series"
+      },
+      {
+        "x": "2023-W7",
+        "y": 7,
+        "series": "Series"
+      },
+      {
+        "x": "2023-W8",
+        "y": 6,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Issue Resolution Times Over Weeks",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "issue_resolution_times"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "week"
+      },
+      {
+        "field": "y",
+        "title": "issue_resolution_times"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Budget Allocation Efficiency",
+  "description": "Converted from Plotly schema 271 - Pie chart (representative sample from multiple regions)",
+  "width": 350,
+  "height": 350,
+  "data": {
+    "values": [
+      { "category": "Housing", "amount": 250000 },
+      { "category": "Transportation", "amount": 300000 },
+      { "category": "Healthcare", "amount": 400000 },
+      { "category": "Education", "amount": 200000 },
+      { "category": "Groceries", "amount": 150000 },
+      { "category": "Utilities", "amount": 120000 },
+      { "category": "Entertainment", "amount": 100000 },
+      { "category": "Savings", "amount": 80000 },
+      { "category": "Insurance", "amount": 60000 },
+      { "category": "Miscellaneous", "amount": 50000 }
+    ]
+  },
+  "mark": {
+    "type": "arc"
+  },
+  "encoding": {
+    "theta": {
+      "field": "amount",
+      "type": "quantitative",
+      "stack": true
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "scale": {
+        "range": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52", "#ffa15a"]
+      },
+      "legend": { "title": "Budget Category" }
+    },
+    "tooltip": [
+      { "field": "category", "type": "nominal", "title": "Category" },
+      { "field": "amount", "type": "quantitative", "title": "Amount", "format": "$,.0f" }
+    ]
+  }
+}

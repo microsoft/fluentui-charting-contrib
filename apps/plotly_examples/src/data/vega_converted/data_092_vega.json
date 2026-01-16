@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Delay Contributions in Manufacturing",
+  "description": "Converted from Plotly schema 92 - Pie chart",
+  "data": {
+    "values": [
+      { "type": "Production Delays", "value": 35 },
+      { "type": "Transport Delays", "value": 45 },
+      { "type": "Other Delays", "value": 20 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Delay Type" }
+    }
+  }
+}

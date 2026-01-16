@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "School A",
+        "y": 20,
+        "series": "Series"
+      },
+      {
+        "x": "School B",
+        "y": 25,
+        "series": "Series"
+      },
+      {
+        "x": "School C",
+        "y": 18,
+        "series": "Series"
+      },
+      {
+        "x": "School D",
+        "y": 22,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Student-to-Resource Ratio per School",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "school_name"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "student_to_resource_ratio"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "school_name"
+      },
+      {
+        "field": "y",
+        "title": "student_to_resource_ratio"
+      }
+    ]
+  }
+}

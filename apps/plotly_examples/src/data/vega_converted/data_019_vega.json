@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Cumulative Sales of Popular Products Over Time",
+  "description": "Converted from Plotly schema 19 - Stacked area chart",
+  "data": {
+    "values": [
+      { "month": "2023-01", "sales": 500, "product": "Product A" },
+      { "month": "2023-02", "sales": 700, "product": "Product A" },
+      { "month": "2023-03", "sales": 800, "product": "Product A" },
+      { "month": "2023-04", "sales": 900, "product": "Product A" },
+      { "month": "2023-05", "sales": 850, "product": "Product A" },
+      { "month": "2023-06", "sales": 900, "product": "Product A" },
+      { "month": "2023-07", "sales": 950, "product": "Product A" },
+      { "month": "2023-08", "sales": 1000, "product": "Product A" },
+      { "month": "2023-09", "sales": 1050, "product": "Product A" },
+      { "month": "2023-10", "sales": 1100, "product": "Product A" },
+      { "month": "2023-01", "sales": 300, "product": "Product B" },
+      { "month": "2023-02", "sales": 400, "product": "Product B" },
+      { "month": "2023-03", "sales": 450, "product": "Product B" },
+      { "month": "2023-04", "sales": 500, "product": "Product B" },
+      { "month": "2023-05", "sales": 550, "product": "Product B" },
+      { "month": "2023-06", "sales": 600, "product": "Product B" },
+      { "month": "2023-07", "sales": 650, "product": "Product B" },
+      { "month": "2023-08", "sales": 700, "product": "Product B" },
+      { "month": "2023-09", "sales": 750, "product": "Product B" },
+      { "month": "2023-10", "sales": 800, "product": "Product B" }
+    ]
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "axis": { "title": "Time", "format": "%b %Y" }
+    },
+    "y": {
+      "field": "sales",
+      "type": "quantitative",
+      "stack": "zero",
+      "axis": { "title": "Cumulative Sales" }
+    },
+    "color": {
+      "field": "product",
+      "type": "nominal",
+      "legend": { "title": "Product" }
+    }
+  }
+}

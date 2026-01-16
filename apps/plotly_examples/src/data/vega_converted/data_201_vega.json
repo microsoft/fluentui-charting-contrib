@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Departmental Throughput Metrics Heatmap",
+  "description": "Converted from Plotly schema 201 - Heatmap",
+  "data": {
+    "values": [
+      { "metric": "Admissions", "department": "Emergency", "value": 30 },
+      { "metric": "Discharges", "department": "Emergency", "value": 20 },
+      { "metric": "Average Wait", "department": "Emergency", "value": 25 },
+      { "metric": "Admissions", "department": "Surgery", "value": 45 },
+      { "metric": "Discharges", "department": "Surgery", "value": 35 },
+      { "metric": "Average Wait", "department": "Surgery", "value": 40 },
+      { "metric": "Admissions", "department": "Pediatrics", "value": 50 },
+      { "metric": "Discharges", "department": "Pediatrics", "value": 45 },
+      { "metric": "Average Wait", "department": "Pediatrics", "value": 55 },
+      { "metric": "Admissions", "department": "Oncology", "value": 60 },
+      { "metric": "Discharges", "department": "Oncology", "value": 50 },
+      { "metric": "Average Wait", "department": "Oncology", "value": 45 },
+      { "metric": "Admissions", "department": "Maternity", "value": 65 },
+      { "metric": "Discharges", "department": "Maternity", "value": 55 },
+      { "metric": "Average Wait", "department": "Maternity", "value": 60 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "metric",
+      "type": "nominal",
+      "axis": { "title": "Throughput Metrics" }
+    },
+    "y": {
+      "field": "department",
+      "type": "nominal",
+      "axis": { "title": "Department" }
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Value" }
+    }
+  }
+}

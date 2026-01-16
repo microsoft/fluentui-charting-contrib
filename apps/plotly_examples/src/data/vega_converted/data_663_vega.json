@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "New York",
+        "y": 12000,
+        "series": "Production Volume (units)"
+      },
+      {
+        "x": "Chicago",
+        "y": 10000,
+        "series": "Production Volume (units)"
+      },
+      {
+        "x": "Houston",
+        "y": 14000,
+        "series": "Production Volume (units)"
+      },
+      {
+        "x": "San Francisco",
+        "y": 9000,
+        "series": "Production Volume (units)"
+      },
+      {
+        "x": "Atlanta",
+        "y": 11000,
+        "series": "Production Volume (units)"
+      },
+      {
+        "x": "New York",
+        "y": 22,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "Chicago",
+        "y": 21,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "Houston",
+        "y": 24,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "San Francisco",
+        "y": 19,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "Atlanta",
+        "y": 20,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "New York",
+        "y": 92,
+        "series": "Efficiency (%)"
+      },
+      {
+        "x": "Chicago",
+        "y": 87,
+        "series": "Efficiency (%)"
+      },
+      {
+        "x": "Houston",
+        "y": 96,
+        "series": "Efficiency (%)"
+      },
+      {
+        "x": "San Francisco",
+        "y": 83,
+        "series": "Efficiency (%)"
+      },
+      {
+        "x": "Atlanta",
+        "y": 89,
+        "series": "Efficiency (%)"
+      }
+    ]
+  },
+  "title": "Factory Performance Metrics Comparison",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Factory"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Factory"
+      },
+      {
+        "field": "y",
+        "title": "Value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

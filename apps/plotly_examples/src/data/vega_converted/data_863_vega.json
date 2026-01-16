@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Apr",
+        "y": 19,
+        "series": "Planning"
+      },
+      {
+        "x": "Apr",
+        "y": 108,
+        "series": "Foundation"
+      },
+      {
+        "x": "Apr",
+        "y": 154,
+        "series": "Structure"
+      },
+      {
+        "x": "Apr",
+        "y": 130,
+        "series": "Finishing"
+      },
+      {
+        "x": "Feb",
+        "y": -134,
+        "series": "Planning"
+      },
+      {
+        "x": "Feb",
+        "y": -76,
+        "series": "Foundation"
+      },
+      {
+        "x": "Feb",
+        "y": -13,
+        "series": "Structure"
+      },
+      {
+        "x": "Feb",
+        "y": 144,
+        "series": "Finishing"
+      },
+      {
+        "x": "Jan",
+        "y": 140,
+        "series": "Planning"
+      },
+      {
+        "x": "Jan",
+        "y": 145,
+        "series": "Foundation"
+      },
+      {
+        "x": "Jan",
+        "y": -95,
+        "series": "Structure"
+      },
+      {
+        "x": "Jan",
+        "y": -35,
+        "series": "Finishing"
+      },
+      {
+        "x": "Jun",
+        "y": 40,
+        "series": "Planning"
+      },
+      {
+        "x": "Jun",
+        "y": -25,
+        "series": "Foundation"
+      },
+      {
+        "x": "Jun",
+        "y": -57,
+        "series": "Structure"
+      },
+      {
+        "x": "Jun",
+        "y": -126,
+        "series": "Finishing"
+      },
+      {
+        "x": "Mar",
+        "y": 100,
+        "series": "Planning"
+      },
+      {
+        "x": "Mar",
+        "y": 34,
+        "series": "Foundation"
+      },
+      {
+        "x": "Mar",
+        "y": -4,
+        "series": "Structure"
+      },
+      {
+        "x": "Mar",
+        "y": -121,
+        "series": "Finishing"
+      },
+      {
+        "x": "May",
+        "y": 59,
+        "series": "Planning"
+      },
+      {
+        "x": "May",
+        "y": 229,
+        "series": "Foundation"
+      },
+      {
+        "x": "May",
+        "y": 141,
+        "series": "Structure"
+      },
+      {
+        "x": "May",
+        "y": 124,
+        "series": "Finishing"
+      }
+    ]
+  },
+  "title": "Construction Project Monthly Over/Under Spend by Phase",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Cost Over/Under (k$)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Cost Over/Under (k$)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

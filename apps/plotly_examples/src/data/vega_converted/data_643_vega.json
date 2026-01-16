@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Mercy General",
+        "y": 77,
+        "series": "Series"
+      },
+      {
+        "x": "City Medical Center",
+        "y": 89,
+        "series": "Series"
+      },
+      {
+        "x": "St. Luke's",
+        "y": 81,
+        "series": "Series"
+      },
+      {
+        "x": "Downtown Health",
+        "y": 73,
+        "series": "Series"
+      },
+      {
+        "x": "Northside Clinic",
+        "y": 70,
+        "series": "Series"
+      },
+      {
+        "x": "Riverside Hospital",
+        "y": 85,
+        "series": "Series"
+      },
+      {
+        "x": "Wellness Point",
+        "y": 79,
+        "series": "Series"
+      },
+      {
+        "x": "CareFirst East",
+        "y": 75,
+        "series": "Series"
+      },
+      {
+        "x": "Premier Health",
+        "y": 92,
+        "series": "Series"
+      },
+      {
+        "x": "Sunrise Care",
+        "y": 76,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Healthcare Spending vs Patient Satisfaction (per Hospital)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Hospital"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Patient Satisfaction Score"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Hospital"
+      },
+      {
+        "field": "y",
+        "title": "Patient Satisfaction Score"
+      }
+    ]
+  }
+}

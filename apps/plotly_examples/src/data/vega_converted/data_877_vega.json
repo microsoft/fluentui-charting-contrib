@@ -1,0 +1,207 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 90,
+        "theta": "DDoS Exposure Score",
+        "series": "Production"
+      },
+      {
+        "r": 60,
+        "theta": "Phishing Exposure Score",
+        "series": "Production"
+      },
+      {
+        "r": 80,
+        "theta": "Malware Exposure Score",
+        "series": "Production"
+      },
+      {
+        "r": 55,
+        "theta": "Insider Threat Score",
+        "series": "Production"
+      },
+      {
+        "r": 75,
+        "theta": "SQL Injection Risk",
+        "series": "Production"
+      },
+      {
+        "r": 88,
+        "theta": "Data Breach Risk",
+        "series": "Production"
+      },
+      {
+        "r": 90,
+        "theta": "DDoS Exposure Score",
+        "series": "Production"
+      },
+      {
+        "r": 90,
+        "theta": "DDoS Exposure Score",
+        "series": "Production"
+      },
+      {
+        "r": 65,
+        "theta": "DDoS Exposure Score",
+        "series": "Staging"
+      },
+      {
+        "r": 75,
+        "theta": "Phishing Exposure Score",
+        "series": "Staging"
+      },
+      {
+        "r": 60,
+        "theta": "Malware Exposure Score",
+        "series": "Staging"
+      },
+      {
+        "r": 70,
+        "theta": "Insider Threat Score",
+        "series": "Staging"
+      },
+      {
+        "r": 60,
+        "theta": "SQL Injection Risk",
+        "series": "Staging"
+      },
+      {
+        "r": 55,
+        "theta": "Data Breach Risk",
+        "series": "Staging"
+      },
+      {
+        "r": 65,
+        "theta": "DDoS Exposure Score",
+        "series": "Staging"
+      },
+      {
+        "r": 65,
+        "theta": "DDoS Exposure Score",
+        "series": "Staging"
+      },
+      {
+        "r": 40,
+        "theta": "DDoS Exposure Score",
+        "series": "Test"
+      },
+      {
+        "r": 50,
+        "theta": "Phishing Exposure Score",
+        "series": "Test"
+      },
+      {
+        "r": 55,
+        "theta": "Malware Exposure Score",
+        "series": "Test"
+      },
+      {
+        "r": 35,
+        "theta": "Insider Threat Score",
+        "series": "Test"
+      },
+      {
+        "r": 45,
+        "theta": "SQL Injection Risk",
+        "series": "Test"
+      },
+      {
+        "r": 50,
+        "theta": "Data Breach Risk",
+        "series": "Test"
+      },
+      {
+        "r": 40,
+        "theta": "DDoS Exposure Score",
+        "series": "Test"
+      },
+      {
+        "r": 40,
+        "theta": "DDoS Exposure Score",
+        "series": "Test"
+      },
+      {
+        "r": 30,
+        "theta": "DDoS Exposure Score",
+        "series": "Development"
+      },
+      {
+        "r": 35,
+        "theta": "Phishing Exposure Score",
+        "series": "Development"
+      },
+      {
+        "r": 45,
+        "theta": "Malware Exposure Score",
+        "series": "Development"
+      },
+      {
+        "r": 60,
+        "theta": "Insider Threat Score",
+        "series": "Development"
+      },
+      {
+        "r": 55,
+        "theta": "SQL Injection Risk",
+        "series": "Development"
+      },
+      {
+        "r": 42,
+        "theta": "Data Breach Risk",
+        "series": "Development"
+      },
+      {
+        "r": 30,
+        "theta": "DDoS Exposure Score",
+        "series": "Development"
+      },
+      {
+        "r": 30,
+        "theta": "DDoS Exposure Score",
+        "series": "Development"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

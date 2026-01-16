@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "School A",
+        "y": 750000,
+        "series": "Series"
+      },
+      {
+        "x": "School B",
+        "y": 500000,
+        "series": "Series"
+      },
+      {
+        "x": "School C",
+        "y": 600000,
+        "series": "Series"
+      },
+      {
+        "x": "School D",
+        "y": 800000,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Resources Allocated per School",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "school_name"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "resources_allocated"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "school_name"
+      },
+      {
+        "field": "y",
+        "title": "resources_allocated"
+      }
+    ]
+  }
+}

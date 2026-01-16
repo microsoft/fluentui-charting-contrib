@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Volume of Cybersecurity Incidents by Type",
+  "description": "Converted from Plotly schema 326 - Multi-series grouped bar chart",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "threat": "Phishing", "incidents": 50, "quarter": "Q1 2022" },
+      { "threat": "Malware", "incidents": 30, "quarter": "Q1 2022" },
+      { "threat": "DDoS", "incidents": 20, "quarter": "Q1 2022" },
+      { "threat": "Unauthorized Access", "incidents": 25, "quarter": "Q1 2022" },
+      { "threat": "Ransomware", "incidents": 15, "quarter": "Q1 2022" },
+      { "threat": "SQL Injection", "incidents": 10, "quarter": "Q1 2022" },
+      { "threat": "Zero-day Attack", "incidents": 18, "quarter": "Q1 2022" },
+      { "threat": "Cross-site Scripting", "incidents": 22, "quarter": "Q1 2022" },
+      { "threat": "Man in the Middle", "incidents": 14, "quarter": "Q1 2022" },
+      { "threat": "Password Attack", "incidents": 28, "quarter": "Q1 2022" },
+      { "threat": "Phishing", "incidents": 70, "quarter": "Q4 2022" },
+      { "threat": "Malware", "incidents": 40, "quarter": "Q4 2022" },
+      { "threat": "DDoS", "incidents": 30, "quarter": "Q4 2022" },
+      { "threat": "Unauthorized Access", "incidents": 35, "quarter": "Q4 2022" },
+      { "threat": "Ransomware", "incidents": 25, "quarter": "Q4 2022" },
+      { "threat": "SQL Injection", "incidents": 15, "quarter": "Q4 2022" },
+      { "threat": "Zero-day Attack", "incidents": 25, "quarter": "Q4 2022" },
+      { "threat": "Cross-site Scripting", "incidents": 30, "quarter": "Q4 2022" },
+      { "threat": "Man in the Middle", "incidents": 20, "quarter": "Q4 2022" },
+      { "threat": "Password Attack", "incidents": 35, "quarter": "Q4 2022" },
+      { "threat": "Phishing", "incidents": 80, "quarter": "Q1 2026" },
+      { "threat": "Malware", "incidents": 50, "quarter": "Q1 2026" },
+      { "threat": "DDoS", "incidents": 40, "quarter": "Q1 2026" },
+      { "threat": "Unauthorized Access", "incidents": 45, "quarter": "Q1 2026" },
+      { "threat": "Ransomware", "incidents": 35, "quarter": "Q1 2026" },
+      { "threat": "SQL Injection", "incidents": 25, "quarter": "Q1 2026" },
+      { "threat": "Zero-day Attack", "incidents": 33, "quarter": "Q1 2026" },
+      { "threat": "Cross-site Scripting", "incidents": 40, "quarter": "Q1 2026" },
+      { "threat": "Man in the Middle", "incidents": 30, "quarter": "Q1 2026" },
+      { "threat": "Password Attack", "incidents": 45, "quarter": "Q1 2026" },
+      { "threat": "Phishing", "incidents": 85, "quarter": "Q1 2027" },
+      { "threat": "Malware", "incidents": 55, "quarter": "Q1 2027" },
+      { "threat": "DDoS", "incidents": 48, "quarter": "Q1 2027" },
+      { "threat": "Unauthorized Access", "incidents": 52, "quarter": "Q1 2027" },
+      { "threat": "Ransomware", "incidents": 42, "quarter": "Q1 2027" },
+      { "threat": "SQL Injection", "incidents": 30, "quarter": "Q1 2027" },
+      { "threat": "Zero-day Attack", "incidents": 37, "quarter": "Q1 2027" },
+      { "threat": "Cross-site Scripting", "incidents": 45, "quarter": "Q1 2027" },
+      { "threat": "Man in the Middle", "incidents": 38, "quarter": "Q1 2027" },
+      { "threat": "Password Attack", "incidents": 48, "quarter": "Q1 2027" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "threat",
+      "type": "nominal",
+      "axis": { "title": "Type of Threat", "labelAngle": -45 }
+    },
+    "y": {
+      "field": "incidents",
+      "type": "quantitative",
+      "axis": { "title": "Number of Incidents" }
+    },
+    "xOffset": { "field": "quarter" },
+    "color": {
+      "field": "quarter",
+      "type": "nominal",
+      "scale": { "range": ["#37536D", "#A5A5A5", "#9966FF", "#DC3545"] },
+      "legend": { "title": "Quarter" }
+    }
+  }
+}

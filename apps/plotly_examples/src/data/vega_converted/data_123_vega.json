@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Defect Occurrences per Manufacturing Cycle",
+  "description": "Converted from Plotly schema 123 - Heatmap",
+  "data": {
+    "values": [
+      { "defect": "Engine", "batch": "Batch A", "occurrences": 3 },
+      { "defect": "Engine", "batch": "Batch B", "occurrences": 1 },
+      { "defect": "Engine", "batch": "Batch C", "occurrences": 0 },
+      { "defect": "Engine", "batch": "Batch D", "occurrences": 1 },
+      { "defect": "Engine", "batch": "Batch E", "occurrences": 0 },
+      { "defect": "Transmission", "batch": "Batch A", "occurrences": 2 },
+      { "defect": "Transmission", "batch": "Batch B", "occurrences": 2 },
+      { "defect": "Transmission", "batch": "Batch C", "occurrences": 1 },
+      { "defect": "Transmission", "batch": "Batch D", "occurrences": 0 },
+      { "defect": "Transmission", "batch": "Batch E", "occurrences": 0 },
+      { "defect": "Brakes", "batch": "Batch A", "occurrences": 1 },
+      { "defect": "Brakes", "batch": "Batch B", "occurrences": 0 },
+      { "defect": "Brakes", "batch": "Batch C", "occurrences": 1 },
+      { "defect": "Brakes", "batch": "Batch D", "occurrences": 0 },
+      { "defect": "Brakes", "batch": "Batch E", "occurrences": 2 },
+      { "defect": "Suspension", "batch": "Batch A", "occurrences": 0 },
+      { "defect": "Suspension", "batch": "Batch B", "occurrences": 0 },
+      { "defect": "Suspension", "batch": "Batch C", "occurrences": 0 },
+      { "defect": "Suspension", "batch": "Batch D", "occurrences": 0 },
+      { "defect": "Suspension", "batch": "Batch E", "occurrences": 0 },
+      { "defect": "Electrical", "batch": "Batch A", "occurrences": 2 },
+      { "defect": "Electrical", "batch": "Batch B", "occurrences": 1 },
+      { "defect": "Electrical", "batch": "Batch C", "occurrences": 0 },
+      { "defect": "Electrical", "batch": "Batch D", "occurrences": 1 },
+      { "defect": "Electrical", "batch": "Batch E", "occurrences": 1 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "batch",
+      "type": "ordinal",
+      "axis": { "title": "Manufacturing Cycle" }
+    },
+    "y": {
+      "field": "defect",
+      "type": "nominal",
+      "axis": { "title": "Defect Type" }
+    },
+    "color": {
+      "field": "occurrences",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Occurrences" }
+    }
+  }
+}

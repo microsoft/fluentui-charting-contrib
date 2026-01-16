@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Proportion of Sales for March",
+  "description": "Converted from Plotly schema 3 - Donut chart",
+  "data": {
+    "values": [
+      { "category": "Category A", "value": 10000 },
+      { "category": "Category B", "value": 15000 },
+      { "category": "Category C", "value": 5000 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "legend": { "title": "Category" }
+    }
+  }
+}

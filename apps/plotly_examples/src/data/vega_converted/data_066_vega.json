@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Steps Achieved vs. Target in a Week",
+  "description": "Converted from Plotly schema 66 - Donut chart",
+  "data": {
+    "values": [
+      { "category": "Achieved Steps", "steps": 24500 },
+      { "category": "Target Steps Remaining", "steps": 5000 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "steps",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "legend": { "title": "Category" }
+    }
+  }
+}

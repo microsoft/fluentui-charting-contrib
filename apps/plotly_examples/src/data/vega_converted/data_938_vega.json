@@ -1,0 +1,2542 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 27.48,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 24.31,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 28.24,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 32.62,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 23.83,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 23.83,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 32.9,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 28.84,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 22.65,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 27.71,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 22.68,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 22.67,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 26.21,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 15.43,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 16.38,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 22.19,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 19.94,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 26.57,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 20.46,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 17.94,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 32.33,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 23.87,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 25.34,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 17.88,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 22.28,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 25.55,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 19.25,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 26.88,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 22,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 23.54,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 21.99,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 34.26,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 24.93,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 19.71,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 29.11,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 18.9,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 26.04,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 15.2,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 18.36,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 25.98,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 28.69,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 25.86,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 24.42,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 23.49,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 17.61,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 21.4,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 22.7,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 30.29,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 26.72,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 16.18,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 26.62,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 23.07,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 21.62,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 28.06,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 30.15,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 29.66,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 20.8,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 23.45,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 26.66,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 29.88,
+        "y": "New York",
+        "series": "New York"
+      },
+      {
+        "x": 35.21,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 38.14,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 28.94,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 28.04,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 48.13,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 53.56,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 39.28,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 50.04,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 43.62,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 33.55,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 43.61,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 55.38,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 39.64,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 55.65,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 13.8,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 48.22,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 40.87,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 37.01,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 40.92,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 20.12,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 37.8,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 43.57,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 54.78,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 34.82,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 31.92,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 34.98,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 49.15,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 43.29,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 34.7,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 45.13,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 40.97,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 49.69,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 32.98,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 36.72,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 36.08,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 25.36,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 42.96,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 42.61,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 40.05,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 37.65,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 25.85,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 35.79,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 36.57,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 31.98,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 38.39,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 44.04,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 58.86,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 41.75,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 42.58,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 39.26,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 20.81,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 39.73,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 40.6,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 64.63,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 38.08,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 43.02,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 39.65,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 28.31,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 51.43,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 47.52,
+        "y": "San Francisco",
+        "series": "San Francisco"
+      },
+      {
+        "x": 35.54,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 23.63,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 39.82,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 20.19,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 34.11,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 45.33,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 23.07,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 26.04,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 30.7,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 26.48,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 19.15,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 30.48,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 22.56,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 33.32,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 23.56,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 40.85,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 24.52,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 27.75,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 35.69,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 21.38,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 31.59,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 39.15,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 18.75,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 31.29,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 31.82,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 35.47,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 21.34,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 20.76,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 33.65,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 32.08,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 31.75,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 32.43,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 25.24,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 31.63,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 32.05,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 25,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 43.06,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 33.32,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 21.66,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 34.6,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 23.18,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 35.51,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 38.11,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 24.26,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 36.74,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 32.89,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 35.75,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 43.28,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 28.28,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 24.72,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 23.77,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 24.29,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 29.46,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 32.39,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 31.94,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 35.79,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 30.09,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 40.17,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 28.15,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 49.04,
+        "y": "Chicago",
+        "series": "Chicago"
+      },
+      {
+        "x": 31.75,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 22.86,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 21.57,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 30.89,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 26.66,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 32.28,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 30.84,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 27.56,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 22.92,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 18.91,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 25.32,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 33.14,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 29.28,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 20.53,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 29.04,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 30.31,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 22.7,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 28.92,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 28.35,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 21.14,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 30.15,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 31.36,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 34.5,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 34.32,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 19.73,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 22.37,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 31.09,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 31.08,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 31.09,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 51.12,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 31.43,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 34.81,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 33.72,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 31.91,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 26.11,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 32.55,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 23.36,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 26.58,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 25.09,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 28.49,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 41.89,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 16.8,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 32.12,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 18.32,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 25.17,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 34.53,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 28.39,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 21.53,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 23.71,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 32.08,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 23.62,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 29.3,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 28.27,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 24.09,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 40.86,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 31.8,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 15.85,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 29.12,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 24.03,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 33.11,
+        "y": "Dallas",
+        "series": "Dallas"
+      },
+      {
+        "x": 25.49,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 33.62,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 41.06,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 45.39,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 20.6,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 30.99,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 29.3,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 27.16,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 56.19,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 39.86,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 19.87,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 46.01,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 60.47,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 47.39,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 16.77,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 29.19,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 50.2,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 26.51,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 40.33,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 44.3,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 23.88,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 34.29,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 3.9,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 22.71,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 31.97,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 20.03,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 54.59,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 17.84,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 29.72,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 36.57,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 52.3,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 17.77,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 48.96,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 35.12,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 23.22,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 40.55,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 37.39,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 27.8,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 35.84,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 30.38,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 36.36,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 42.95,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 54.03,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 20.15,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 60.6,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 11.57,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 33.18,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 42.06,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 38.37,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 27.53,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 32.5,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 29.08,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 27.93,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 45.2,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 39.28,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 26.69,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 45.8,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 38.69,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 44.75,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 42.56,
+        "y": "Miami",
+        "series": "Miami"
+      },
+      {
+        "x": 25.37,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 27.52,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 37.98,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 36.88,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 31.83,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 32.94,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 42.22,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 27.27,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 36.38,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 30.38,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 30.26,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 40.79,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 38.6,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 38.51,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 42.44,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 32.17,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 37.46,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 29.52,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 34.59,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 30.96,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 32.78,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 36.76,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 25.45,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 48.74,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 23.95,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 22.29,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 41.26,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 38.33,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 36.99,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 37.03,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 31.9,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 24.82,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 32.61,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 26.58,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 39.8,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 30.82,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 25.4,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 29.43,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 35.3,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 27.49,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 25.42,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 33.95,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 33.96,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 27.94,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 28.23,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 33.86,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 20.42,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 20.74,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 26.25,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 30.29,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 34.49,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 43.8,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 38.86,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 30.72,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 31.85,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 23.98,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 31.85,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 29.69,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 34.58,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 25.38,
+        "y": "Seattle",
+        "series": "Seattle"
+      },
+      {
+        "x": 45.79,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 60.99,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 36.37,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 44.03,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 48.35,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 31.98,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 41.36,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 38.19,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 39.47,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 26.4,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 38.37,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 45.47,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 59.77,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 52.39,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 70.3,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 26.49,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 51.08,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 40.75,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 70.85,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 25.88,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 25.4,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 29.01,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 6.14,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 30.11,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 26.61,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 40.26,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 43.13,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 66.14,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 52.26,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 29.35,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 24.52,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 45.38,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 18.2,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 65.47,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 55.69,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 30.96,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 12.3,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 58.31,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 36.28,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 56.57,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 14.08,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 29.01,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 38.08,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 38.7,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 31.25,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 47.34,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 21.99,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 35.86,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 39.8,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 45.72,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 48.67,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 21.13,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 14.99,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 57.17,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 42.98,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 26.77,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 61.27,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 39.74,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 55.69,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 39.01,
+        "y": "Denver",
+        "series": "Denver"
+      },
+      {
+        "x": 37.3,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 35.78,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 25.76,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 31.86,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 30.23,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 33.84,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 22.18,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 30.43,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 32.29,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 18.21,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 21.08,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 16.8,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 25.65,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 30.59,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 34.51,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 27.37,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 35.14,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 20.1,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 18.48,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 26.72,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 28.92,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 26.84,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 16.66,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 26.55,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 20.48,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 30.35,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 28.83,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 22.3,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 24.43,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 21.7,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 26.69,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 31.78,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 22.07,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 29.52,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 24.35,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 23.04,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 26.46,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 21.82,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 24.23,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 21.01,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 36.82,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 27.18,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 23.5,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 28.07,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 26.44,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 25.9,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 30.07,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 30.79,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 24.35,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 24.12,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 25.62,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 15.49,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 19.42,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 33.83,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 35.22,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 25.75,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 29.88,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 28.56,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 42.39,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 32.6,
+        "y": "Boston",
+        "series": "Boston"
+      },
+      {
+        "x": 28.23,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 23.27,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 19.36,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 30.22,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 24.46,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 20.47,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 25.12,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 22.51,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 39.12,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 34.29,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 28.95,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 37.88,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 29.46,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 23.83,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 38.14,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 32.23,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 22.78,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 27.86,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 23.75,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      },
+      {
+        "x": 20.7,
+        "y": "Atlanta",
+        "series": "Atlanta"
+      }
+    ]
+  },
+  "title": "Network Latency Measurements by City",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Latency (ms)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "City"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Latency (ms)"
+      },
+      {
+        "field": "y",
+        "title": "City"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 0.8666666666666654,
+        "theta": "Uptime %",
+        "series": "M1"
+      },
+      {
+        "r": 0.7058823529411764,
+        "theta": "MTBF (hrs)",
+        "series": "M1"
+      },
+      {
+        "r": 0,
+        "theta": "Energy Consumption (kWh)",
+        "series": "M1"
+      },
+      {
+        "r": 0.9565217391304337,
+        "theta": "Output Quality %",
+        "series": "M1"
+      },
+      {
+        "r": 0.05940594059405935,
+        "theta": "Maintenance Cost ($)",
+        "series": "M1"
+      },
+      {
+        "r": 0.8666666666666654,
+        "theta": "Uptime %",
+        "series": "M1"
+      },
+      {
+        "r": 0.35238095238095113,
+        "theta": "Uptime %",
+        "series": "M2"
+      },
+      {
+        "r": 0.38235294117647056,
+        "theta": "MTBF (hrs)",
+        "series": "M2"
+      },
+      {
+        "r": 0.9999999999999991,
+        "theta": "Energy Consumption (kWh)",
+        "series": "M2"
+      },
+      {
+        "r": 0.6521739130434785,
+        "theta": "Output Quality %",
+        "series": "M2"
+      },
+      {
+        "r": 0.4158415841584159,
+        "theta": "Maintenance Cost ($)",
+        "series": "M2"
+      },
+      {
+        "r": 0.35238095238095113,
+        "theta": "Uptime %",
+        "series": "M2"
+      },
+      {
+        "r": 0,
+        "theta": "Uptime %",
+        "series": "M3"
+      },
+      {
+        "r": 0,
+        "theta": "MTBF (hrs)",
+        "series": "M3"
+      },
+      {
+        "r": 0.4999999999999991,
+        "theta": "Energy Consumption (kWh)",
+        "series": "M3"
+      },
+      {
+        "r": 0,
+        "theta": "Output Quality %",
+        "series": "M3"
+      },
+      {
+        "r": 0.9999999999999999,
+        "theta": "Maintenance Cost ($)",
+        "series": "M3"
+      },
+      {
+        "r": 0,
+        "theta": "Uptime %",
+        "series": "M3"
+      },
+      {
+        "r": 0.6571428571428566,
+        "theta": "Uptime %",
+        "series": "M4"
+      },
+      {
+        "r": 0.4852941176470589,
+        "theta": "MTBF (hrs)",
+        "series": "M4"
+      },
+      {
+        "r": 0.36666666666666625,
+        "theta": "Energy Consumption (kWh)",
+        "series": "M4"
+      },
+      {
+        "r": 0.7971014492753632,
+        "theta": "Output Quality %",
+        "series": "M4"
+      },
+      {
+        "r": 0.2178217821782178,
+        "theta": "Maintenance Cost ($)",
+        "series": "M4"
+      },
+      {
+        "r": 0.6571428571428566,
+        "theta": "Uptime %",
+        "series": "M4"
+      },
+      {
+        "r": 0.22857142857142776,
+        "theta": "Uptime %",
+        "series": "M5"
+      },
+      {
+        "r": 0.2058823529411764,
+        "theta": "MTBF (hrs)",
+        "series": "M5"
+      },
+      {
+        "r": 0.7499999999999991,
+        "theta": "Energy Consumption (kWh)",
+        "series": "M5"
+      },
+      {
+        "r": 0.17391304347826164,
+        "theta": "Output Quality %",
+        "series": "M5"
+      },
+      {
+        "r": 0.7227722772277226,
+        "theta": "Maintenance Cost ($)",
+        "series": "M5"
+      },
+      {
+        "r": 0.22857142857142776,
+        "theta": "Uptime %",
+        "series": "M5"
+      },
+      {
+        "r": 1,
+        "theta": "Uptime %",
+        "series": "M6"
+      },
+      {
+        "r": 0.9999999999999998,
+        "theta": "MTBF (hrs)",
+        "series": "M6"
+      },
+      {
+        "r": 0.16666666666666607,
+        "theta": "Energy Consumption (kWh)",
+        "series": "M6"
+      },
+      {
+        "r": 1.0000000000000018,
+        "theta": "Output Quality %",
+        "series": "M6"
+      },
+      {
+        "r": 0,
+        "theta": "Maintenance Cost ($)",
+        "series": "M6"
+      },
+      {
+        "r": 1,
+        "theta": "Uptime %",
+        "series": "M6"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Machine Performance Multidimensional Analysis"
+}

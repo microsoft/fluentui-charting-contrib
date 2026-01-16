@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Weekly Severity Score vs Industry Benchmark",
+  "description": "Converted from Plotly schema 131 - Multi-series line chart with markers",
+  "data": {
+    "values": [
+      { "week": "Week 1", "score": 4.5, "metric": "Average Severity Score" },
+      { "week": "Week 2", "score": 3.9, "metric": "Average Severity Score" },
+      { "week": "Week 3", "score": 5.2, "metric": "Average Severity Score" },
+      { "week": "Week 4", "score": 4.0, "metric": "Average Severity Score" },
+      { "week": "Week 1", "score": 3.2, "metric": "Industry Benchmark" },
+      { "week": "Week 2", "score": 4.7, "metric": "Industry Benchmark" },
+      { "week": "Week 3", "score": 2.9, "metric": "Industry Benchmark" },
+      { "week": "Week 4", "score": 3.5, "metric": "Industry Benchmark" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "week",
+      "type": "ordinal",
+      "axis": { "title": "Weeks" }
+    },
+    "y": {
+      "field": "score",
+      "type": "quantitative",
+      "axis": { "title": "Severity Score" }
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

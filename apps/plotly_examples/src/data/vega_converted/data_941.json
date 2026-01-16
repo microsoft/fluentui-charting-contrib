@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Line Chart with Custom Tick Labels",
+  "data": {
+    "values": [
+      {"x": 1, "y": 28.8},
+      {"x": 2, "y": 28.5},
+      {"x": 3, "y": 37},
+      {"x": 4, "y": 56.8},
+      {"x": 5, "y": 69.7},
+      {"x": 6, "y": 79.7},
+      {"x": 7, "y": 78.5},
+      {"x": 8, "y": 77.8},
+      {"x": 9, "y": 74.1},
+      {"x": 10, "y": 62.6},
+      {"x": 11, "y": 45.3},
+      {"x": 12, "y": 39.9}
+    ]
+  },
+  "mark": {"type": "line"},
+  "encoding": {
+    "x": {"field": "x", "type": "quantitative"},
+    "y": {"field": "y", "type": "quantitative"}
+  }
+}

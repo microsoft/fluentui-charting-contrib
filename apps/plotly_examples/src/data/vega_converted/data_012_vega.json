@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Traffic Sources Breakdown for the Week of 2023-02-12",
+  "description": "Converted from Plotly schema 12 - Donut chart",
+  "data": {
+    "values": [
+      { "source": "Organic", "visits": 900 },
+      { "source": "Direct", "visits": 350 },
+      { "source": "Referral", "visits": 250 },
+      { "source": "Social", "visits": 200 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "visits",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "source",
+      "type": "nominal",
+      "legend": { "title": "Source" }
+    }
+  }
+}

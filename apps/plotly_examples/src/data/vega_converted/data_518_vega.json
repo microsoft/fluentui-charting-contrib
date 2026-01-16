@@ -1,0 +1,542 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Software",
+        "y": 2,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 6,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 10,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 4,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 8,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 2,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 6,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 10,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 4,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 8,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 2,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 6,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 10,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 4,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 8,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 2,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 6,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 10,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 4,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 8,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 2,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 6,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 10,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 4,
+        "series": "Software"
+      },
+      {
+        "x": "Software",
+        "y": 8,
+        "series": "Software"
+      },
+      {
+        "x": "Hardware",
+        "y": 3,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 7,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 1,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 5,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 9,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 3,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 7,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 1,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 5,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 9,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 3,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 7,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 1,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 5,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 9,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 3,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 7,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 1,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 5,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 9,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 3,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 7,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 1,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 5,
+        "series": "Hardware"
+      },
+      {
+        "x": "Hardware",
+        "y": 9,
+        "series": "Hardware"
+      },
+      {
+        "x": "Network",
+        "y": 4,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 8,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 2,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 6,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 10,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 4,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 8,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 2,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 6,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 10,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 4,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 8,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 2,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 6,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 10,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 4,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 8,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 2,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 6,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 10,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 4,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 8,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 2,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 6,
+        "series": "Network"
+      },
+      {
+        "x": "Network",
+        "y": 10,
+        "series": "Network"
+      },
+      {
+        "x": "Access",
+        "y": 5,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 9,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 3,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 7,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 1,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 5,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 9,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 3,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 7,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 1,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 5,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 9,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 3,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 7,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 1,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 5,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 9,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 3,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 7,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 1,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 5,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 9,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 3,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 7,
+        "series": "Access"
+      },
+      {
+        "x": "Access",
+        "y": 1,
+        "series": "Access"
+      }
+    ]
+  },
+  "title": "Average Time to Resolution by Issue Type",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "issue_type"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Time to Resolution (hours)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "issue_type"
+      },
+      {
+        "field": "y",
+        "title": "Time to Resolution (hours)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

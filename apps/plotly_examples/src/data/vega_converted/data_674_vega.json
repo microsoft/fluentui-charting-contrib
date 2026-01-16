@@ -1,0 +1,177 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "January",
+        "y": 280000,
+        "series": "Passenger_Count"
+      },
+      {
+        "x": "February",
+        "y": 260000,
+        "series": "Passenger_Count"
+      },
+      {
+        "x": "March",
+        "y": 300000,
+        "series": "Passenger_Count"
+      },
+      {
+        "x": "January",
+        "y": 85,
+        "series": "Route_Efficiency"
+      },
+      {
+        "x": "February",
+        "y": 88,
+        "series": "Route_Efficiency"
+      },
+      {
+        "x": "March",
+        "y": 90,
+        "series": "Route_Efficiency"
+      },
+      {
+        "x": "January",
+        "y": 600,
+        "series": "Service_Frequency"
+      },
+      {
+        "x": "February",
+        "y": 620,
+        "series": "Service_Frequency"
+      },
+      {
+        "x": "March",
+        "y": 640,
+        "series": "Service_Frequency"
+      },
+      {
+        "x": "January",
+        "y": 190000,
+        "series": "Passenger_Count"
+      },
+      {
+        "x": "February",
+        "y": 200000,
+        "series": "Passenger_Count"
+      },
+      {
+        "x": "March",
+        "y": 178000,
+        "series": "Passenger_Count"
+      },
+      {
+        "x": "January",
+        "y": 80,
+        "series": "Route_Efficiency"
+      },
+      {
+        "x": "February",
+        "y": 82,
+        "series": "Route_Efficiency"
+      },
+      {
+        "x": "March",
+        "y": 83,
+        "series": "Route_Efficiency"
+      },
+      {
+        "x": "January",
+        "y": 480,
+        "series": "Service_Frequency"
+      },
+      {
+        "x": "February",
+        "y": 500,
+        "series": "Service_Frequency"
+      },
+      {
+        "x": "March",
+        "y": 510,
+        "series": "Service_Frequency"
+      },
+      {
+        "x": "January",
+        "y": 120000,
+        "series": "Passenger_Count"
+      },
+      {
+        "x": "February",
+        "y": 132000,
+        "series": "Passenger_Count"
+      },
+      {
+        "x": "March",
+        "y": 128000,
+        "series": "Passenger_Count"
+      },
+      {
+        "x": "January",
+        "y": 74,
+        "series": "Route_Efficiency"
+      },
+      {
+        "x": "February",
+        "y": 76,
+        "series": "Route_Efficiency"
+      },
+      {
+        "x": "March",
+        "y": 78,
+        "series": "Route_Efficiency"
+      },
+      {
+        "x": "January",
+        "y": 340,
+        "series": "Service_Frequency"
+      },
+      {
+        "x": "February",
+        "y": 350,
+        "series": "Service_Frequency"
+      },
+      {
+        "x": "March",
+        "y": 360,
+        "series": "Service_Frequency"
+      }
+    ]
+  },
+  "title": "Public Transportation Metrics in Major Urban Areas (Monthly)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Inventory Levels and Procurement Times per Item Category",
+  "description": "Converted from Plotly schema 149 - Multi-series line+markers chart",
+  "data": {
+    "values": [
+      { "category": "Item Category A", "value": 35, "series": "Inventory Levels" },
+      { "category": "Item Category B", "value": 50, "series": "Inventory Levels" },
+      { "category": "Item Category C", "value": 80, "series": "Inventory Levels" },
+      { "category": "Item Category A", "value": 25, "series": "Procurement Times" },
+      { "category": "Item Category B", "value": 60, "series": "Procurement Times" },
+      { "category": "Item Category C", "value": 70, "series": "Procurement Times" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "category",
+          "type": "nominal",
+          "axis": { "title": "Item Categories" }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": { "title": "Days/Units" }
+        },
+        "color": {
+          "field": "series",
+          "type": "nominal",
+          "legend": { "title": "Metric" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "category",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "series",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

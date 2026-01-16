@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 345600000,
+        "y": "Design",
+        "series": "Alpha"
+      },
+      {
+        "x": 1209600000,
+        "y": "Dev",
+        "series": "Alpha"
+      },
+      {
+        "x": 777600000,
+        "y": "Design",
+        "series": "Beta"
+      },
+      {
+        "x": 432000000,
+        "y": "Test",
+        "series": "Beta"
+      }
+    ]
+  },
+  "title": "Multiple Projects Gantt",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Task"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Task"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "January",
+        "y": 85,
+        "series": "Drug A"
+      },
+      {
+        "x": "February",
+        "y": 78,
+        "series": "Drug B"
+      },
+      {
+        "x": "March",
+        "y": 90,
+        "series": "Drug C"
+      },
+      {
+        "x": "April",
+        "y": 70,
+        "series": "Drug D"
+      },
+      {
+        "x": "May",
+        "y": 80,
+        "series": "Drug E"
+      }
+    ]
+  },
+  "title": "Compliance Rates over Time",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "compliance_rate"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "month"
+      },
+      {
+        "field": "y",
+        "title": "compliance_rate"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

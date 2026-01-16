@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Risk Assessment Based on Data Sensitivity",
+  "description": "Converted from Plotly schema 237 - Bar chart with colored bars",
+  "data": {
+    "values": [
+      { "level": "Low", "events": 120, "color": "green" },
+      { "level": "Medium", "events": 90, "color": "yellow" },
+      { "level": "High", "events": 60, "color": "orange" },
+      { "level": "Critical", "events": 30, "color": "red" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "level",
+      "type": "ordinal",
+      "sort": ["Low", "Medium", "High", "Critical"],
+      "axis": { "title": "Sensitivity Level" }
+    },
+    "y": {
+      "field": "events",
+      "type": "quantitative",
+      "axis": { "title": "Number of Access Events" }
+    },
+    "color": {
+      "field": "level",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Low", "Medium", "High", "Critical"],
+        "range": ["green", "yellow", "orange", "red"]
+      },
+      "legend": null
+    }
+  }
+}

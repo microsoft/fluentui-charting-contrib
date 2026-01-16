@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Fraud Detection Bar Chart",
+  "description": "Converted from Plotly schema 90 - Bar chart",
+  "data": {
+    "values": [
+      { "geography": "North America", "flagged": 45 },
+      { "geography": "Europe", "flagged": 37 },
+      { "geography": "Asia", "flagged": 38 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "geography",
+      "type": "nominal",
+      "axis": { "title": "Geography" }
+    },
+    "y": {
+      "field": "flagged",
+      "type": "quantitative",
+      "axis": { "title": "Total Flagged Transactions" }
+    },
+    "color": {
+      "field": "flagged",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Number of Flagged Transactions" }
+    }
+  }
+}

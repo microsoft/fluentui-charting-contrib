@@ -1,0 +1,963 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 1,
+        "theta": 0,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.995,
+        "theta": 6,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.978,
+        "theta": 12,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.951,
+        "theta": 18,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.914,
+        "theta": 24,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.866,
+        "theta": 30,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.809,
+        "theta": 36,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.743,
+        "theta": 42,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.669,
+        "theta": 48,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.588,
+        "theta": 54,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.5,
+        "theta": 60,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.407,
+        "theta": 66,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.309,
+        "theta": 72,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.208,
+        "theta": 78,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.105,
+        "theta": 84,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.105,
+        "theta": 90,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.208,
+        "theta": 96,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.309,
+        "theta": 102,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.407,
+        "theta": 108,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.5,
+        "theta": 114,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.588,
+        "theta": 120,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.669,
+        "theta": 126,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.743,
+        "theta": 132,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.809,
+        "theta": 138,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.866,
+        "theta": 144,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.914,
+        "theta": 150,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.951,
+        "theta": 156,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.978,
+        "theta": 162,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.995,
+        "theta": 168,
+        "series": "Figure 8"
+      },
+      {
+        "r": 1,
+        "theta": 174,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.995,
+        "theta": 180,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.978,
+        "theta": 186,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.951,
+        "theta": 192,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.914,
+        "theta": 198,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.866,
+        "theta": 204,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.809,
+        "theta": 210,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.743,
+        "theta": 216,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.669,
+        "theta": 222,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.588,
+        "theta": 228,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.5,
+        "theta": 234,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.407,
+        "theta": 240,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.309,
+        "theta": 246,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.208,
+        "theta": 252,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.105,
+        "theta": 258,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0,
+        "theta": 264,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.105,
+        "theta": 270,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.208,
+        "theta": 276,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.309,
+        "theta": 282,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.407,
+        "theta": 288,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.5,
+        "theta": 294,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.588,
+        "theta": 300,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.669,
+        "theta": 306,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.743,
+        "theta": 312,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.809,
+        "theta": 318,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.866,
+        "theta": 324,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.914,
+        "theta": 330,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.951,
+        "theta": 336,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.978,
+        "theta": 342,
+        "series": "Figure 8"
+      },
+      {
+        "r": 0.995,
+        "theta": 348,
+        "series": "Figure 8"
+      },
+      {
+        "r": 1,
+        "theta": 354,
+        "series": "Figure 8"
+      },
+      {
+        "r": 1,
+        "theta": 360,
+        "series": "Figure 8"
+      },
+      {
+        "r": 1,
+        "theta": 0,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.997,
+        "theta": 6,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.989,
+        "theta": 12,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.976,
+        "theta": 18,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.957,
+        "theta": 24,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.933,
+        "theta": 30,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.905,
+        "theta": 36,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.872,
+        "theta": 42,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.835,
+        "theta": 48,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.794,
+        "theta": 54,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.75,
+        "theta": 60,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.703,
+        "theta": 66,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.655,
+        "theta": 72,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.604,
+        "theta": 78,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.552,
+        "theta": 84,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.5,
+        "theta": 90,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.448,
+        "theta": 96,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.396,
+        "theta": 102,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.345,
+        "theta": 108,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.297,
+        "theta": 114,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.25,
+        "theta": 120,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.206,
+        "theta": 126,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.165,
+        "theta": 132,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.128,
+        "theta": 138,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.095,
+        "theta": 144,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.067,
+        "theta": 150,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.043,
+        "theta": 156,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.024,
+        "theta": 162,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.011,
+        "theta": 168,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.003,
+        "theta": 174,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0,
+        "theta": 180,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.003,
+        "theta": 186,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.011,
+        "theta": 192,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.024,
+        "theta": 198,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.043,
+        "theta": 204,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.067,
+        "theta": 210,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.095,
+        "theta": 216,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.128,
+        "theta": 222,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.165,
+        "theta": 228,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.206,
+        "theta": 234,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.25,
+        "theta": 240,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.297,
+        "theta": 246,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.345,
+        "theta": 252,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.396,
+        "theta": 258,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.448,
+        "theta": 264,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.5,
+        "theta": 270,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.552,
+        "theta": 276,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.604,
+        "theta": 282,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.655,
+        "theta": 288,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.703,
+        "theta": 294,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.75,
+        "theta": 300,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.794,
+        "theta": 306,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.835,
+        "theta": 312,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.872,
+        "theta": 318,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.905,
+        "theta": 324,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.933,
+        "theta": 330,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.957,
+        "theta": 336,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.976,
+        "theta": 342,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.989,
+        "theta": 348,
+        "series": "Cardioid"
+      },
+      {
+        "r": 0.997,
+        "theta": 354,
+        "series": "Cardioid"
+      },
+      {
+        "r": 1,
+        "theta": 360,
+        "series": "Cardioid"
+      },
+      {
+        "r": 1,
+        "theta": 0,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.996,
+        "theta": 6,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.984,
+        "theta": 12,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.963,
+        "theta": 18,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.935,
+        "theta": 24,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.9,
+        "theta": 30,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.857,
+        "theta": 36,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.807,
+        "theta": 42,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.752,
+        "theta": 48,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.691,
+        "theta": 54,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.625,
+        "theta": 60,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.555,
+        "theta": 66,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.482,
+        "theta": 72,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.406,
+        "theta": 78,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.328,
+        "theta": 84,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.25,
+        "theta": 90,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.172,
+        "theta": 96,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.094,
+        "theta": 102,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.018,
+        "theta": 108,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.055,
+        "theta": 114,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.125,
+        "theta": 120,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.191,
+        "theta": 126,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.252,
+        "theta": 132,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.307,
+        "theta": 138,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.357,
+        "theta": 144,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.4,
+        "theta": 150,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.435,
+        "theta": 156,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.463,
+        "theta": 162,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.484,
+        "theta": 168,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.496,
+        "theta": 174,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.5,
+        "theta": 180,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.496,
+        "theta": 186,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.484,
+        "theta": 192,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.463,
+        "theta": 198,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.435,
+        "theta": 204,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.4,
+        "theta": 210,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.357,
+        "theta": 216,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.307,
+        "theta": 222,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.252,
+        "theta": 228,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.191,
+        "theta": 234,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.125,
+        "theta": 240,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.055,
+        "theta": 246,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.018,
+        "theta": 252,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.094,
+        "theta": 258,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.172,
+        "theta": 264,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.25,
+        "theta": 270,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.328,
+        "theta": 276,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.406,
+        "theta": 282,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.482,
+        "theta": 288,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.555,
+        "theta": 294,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.625,
+        "theta": 300,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.691,
+        "theta": 306,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.752,
+        "theta": 312,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.807,
+        "theta": 318,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.857,
+        "theta": 324,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.9,
+        "theta": 330,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.935,
+        "theta": 336,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.963,
+        "theta": 342,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.984,
+        "theta": 348,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 0.996,
+        "theta": 354,
+        "series": "Hypercardioid"
+      },
+      {
+        "r": 1,
+        "theta": 360,
+        "series": "Hypercardioid"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Mic Patterns"
+}

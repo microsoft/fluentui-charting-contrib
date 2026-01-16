@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 0.7466666666666667,
+        "y": "Oceanview Resort",
+        "series": "Series"
+      },
+      {
+        "x": 0.7583333333333333,
+        "y": "City Center Suites",
+        "series": "Series"
+      },
+      {
+        "x": 0.7597955706984668,
+        "y": "Hotel Aurora",
+        "series": "Series"
+      },
+      {
+        "x": 0.7642177603293941,
+        "y": "Industry Average",
+        "series": "Series"
+      },
+      {
+        "x": 0.7757085020242915,
+        "y": "Pine Hill Lodge",
+        "series": "Series"
+      },
+      {
+        "x": 0.7805847289242123,
+        "y": "Sunset Inn",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Monthly Occupancy Rates by Hotel (Including Industry Average) - 2024-05",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Occupancy Rate"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Hotel/Location"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Occupancy Rate"
+      },
+      {
+        "field": "y",
+        "title": "Hotel/Location"
+      }
+    ]
+  }
+}

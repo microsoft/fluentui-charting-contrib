@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 1,
+        "theta": 50,
+        "series": "Series"
+      },
+      {
+        "r": 2,
+        "theta": 100,
+        "series": "Series"
+      },
+      {
+        "r": 3,
+        "theta": 200,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 1,
+        "series": "Series"
+      },
+      {
+        "r": 2,
+        "theta": 2,
+        "series": "Series"
+      },
+      {
+        "r": 3,
+        "theta": 3,
+        "series": "Series"
+      },
+      {
+        "r": "a",
+        "theta": "D",
+        "series": "Series"
+      },
+      {
+        "r": "b",
+        "theta": "C",
+        "series": "Series"
+      },
+      {
+        "r": "c",
+        "theta": "B",
+        "series": "Series"
+      },
+      {
+        "r": "b",
+        "theta": "A",
+        "series": "Series"
+      },
+      {
+        "r": 50,
+        "theta": 0,
+        "series": "Series"
+      },
+      {
+        "r": 300,
+        "theta": 90,
+        "series": "Series"
+      },
+      {
+        "r": 900,
+        "theta": 180,
+        "series": "Series"
+      },
+      {
+        "r": 3,
+        "theta": 0,
+        "series": "Series"
+      },
+      {
+        "r": 3,
+        "theta": 45,
+        "series": "Series"
+      },
+      {
+        "r": 4,
+        "theta": 90,
+        "series": "Series"
+      },
+      {
+        "r": 3,
+        "theta": 270,
+        "series": "Series"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

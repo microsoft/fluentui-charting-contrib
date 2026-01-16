@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Grade 10",
+        "y": 80,
+        "series": "Grade 10"
+      },
+      {
+        "x": "Grade 10",
+        "y": 70,
+        "series": "Grade 10"
+      },
+      {
+        "x": "Grade 11",
+        "y": 90,
+        "series": "Grade 11"
+      },
+      {
+        "x": "Grade 11",
+        "y": 75,
+        "series": "Grade 11"
+      },
+      {
+        "x": "Grade 12",
+        "y": 85,
+        "series": "Grade 12"
+      }
+    ]
+  },
+  "title": "Average Engagement Score by Grade",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "grade"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "engagement_score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "grade"
+      },
+      {
+        "field": "y",
+        "title": "engagement_score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

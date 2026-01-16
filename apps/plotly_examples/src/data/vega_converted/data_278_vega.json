@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "إحصاءات مراقبة الجودة",
+  "description": "Converted from Plotly schema 278 - Line chart with Arabic labels",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      { "month": "يناير", "rate": 95, "type": "معدل الجودة" },
+      { "month": "فبراير", "rate": 89, "type": "معدل الجودة" },
+      { "month": "مارس", "rate": 92, "type": "معدل الجودة" },
+      { "month": "أبريل", "rate": 88, "type": "معدل الجودة" },
+      { "month": "مايو", "rate": 90, "type": "معدل الجودة" },
+      { "month": "يونيو", "rate": 94, "type": "معدل الجودة" },
+      { "month": "يناير", "rate": 96, "type": "عينات مراجعة الجودة" },
+      { "month": "فبراير", "rate": 91, "type": "عينات مراجعة الجودة" },
+      { "month": "مارس", "rate": 93, "type": "عينات مراجعة الجودة" },
+      { "month": "أبريل", "rate": 89, "type": "عينات مراجعة الجودة" },
+      { "month": "مايو", "rate": 91, "type": "عينات مراجعة الجودة" },
+      { "month": "يونيو", "rate": 95, "type": "عينات مراجعة الجودة" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "sort": ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو"],
+          "axis": { "title": "الشهر" }
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative",
+          "axis": { "title": "نسبة الجودة" }
+        },
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "legend": { "title": "النوع" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true, "size": 100 },
+      "encoding": {
+        "x": { "field": "month", "type": "ordinal" },
+        "y": { "field": "rate", "type": "quantitative" },
+        "color": { "field": "type", "type": "nominal" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Engagement & Attendance by Grade",
+  "description": "Converted from Plotly schema 170 - Bar+line combo chart",
+  "data": {
+    "values": [
+      { "grade": "Grade 9", "engagement": 84.33, "attendance": 89.5 },
+      { "grade": "Grade 10", "engagement": 74, "attendance": 76.5 },
+      { "grade": "Grade 11", "engagement": 81.67, "attendance": 85.25 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "grade",
+          "type": "nominal",
+          "axis": { "title": "Grade" }
+        },
+        "y": {
+          "field": "engagement",
+          "type": "quantitative",
+          "axis": { "title": "Average Engagement Score" },
+          "scale": { "domain": [0, 100] }
+        },
+        "color": {
+          "datum": "Engagement Score",
+          "legend": { "title": "Metric" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "line", "color": "orange", "strokeWidth": 2 },
+      "encoding": {
+        "x": {
+          "field": "grade",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "attendance",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "color": "orange", "size": 60 },
+      "encoding": {
+        "x": {
+          "field": "grade",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "attendance",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

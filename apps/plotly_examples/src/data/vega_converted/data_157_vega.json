@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Enrollment Trends by Institution Type",
+  "description": "Converted from Plotly schema 157 - Multi-series line+markers chart",
+  "data": {
+    "values": [
+      { "year": "2015", "enrollment": 2300, "institution": "Universities" },
+      { "year": "2016", "enrollment": 2350, "institution": "Universities" },
+      { "year": "2017", "enrollment": 2400, "institution": "Universities" },
+      { "year": "2018", "enrollment": 2350, "institution": "Universities" },
+      { "year": "2019", "enrollment": 2450, "institution": "Universities" },
+      { "year": "2020", "enrollment": 2550, "institution": "Universities" },
+      { "year": "2021", "enrollment": 2600, "institution": "Universities" },
+      { "year": "2022", "enrollment": 2700, "institution": "Universities" },
+      { "year": "2023", "enrollment": 2750, "institution": "Universities" },
+      { "year": "2015", "enrollment": 1200, "institution": "Colleges" },
+      { "year": "2016", "enrollment": 1250, "institution": "Colleges" },
+      { "year": "2017", "enrollment": 1230, "institution": "Colleges" },
+      { "year": "2018", "enrollment": 1300, "institution": "Colleges" },
+      { "year": "2019", "enrollment": 1340, "institution": "Colleges" },
+      { "year": "2020", "enrollment": 1370, "institution": "Colleges" },
+      { "year": "2021", "enrollment": 1420, "institution": "Colleges" },
+      { "year": "2022", "enrollment": 1490, "institution": "Colleges" },
+      { "year": "2023", "enrollment": 1520, "institution": "Colleges" },
+      { "year": "2015", "enrollment": 800, "institution": "Vocational Schools" },
+      { "year": "2016", "enrollment": 810, "institution": "Vocational Schools" },
+      { "year": "2017", "enrollment": 850, "institution": "Vocational Schools" },
+      { "year": "2018", "enrollment": 870, "institution": "Vocational Schools" },
+      { "year": "2019", "enrollment": 890, "institution": "Vocational Schools" },
+      { "year": "2020", "enrollment": 900, "institution": "Vocational Schools" },
+      { "year": "2021", "enrollment": 940, "institution": "Vocational Schools" },
+      { "year": "2022", "enrollment": 990, "institution": "Vocational Schools" },
+      { "year": "2023", "enrollment": 1000, "institution": "Vocational Schools" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": { "title": "Year" }
+        },
+        "y": {
+          "field": "enrollment",
+          "type": "quantitative",
+          "axis": { "title": "Number of Enrollments" }
+        },
+        "color": {
+          "field": "institution",
+          "type": "nominal",
+          "legend": { "title": "Institution Type" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "enrollment",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "institution",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

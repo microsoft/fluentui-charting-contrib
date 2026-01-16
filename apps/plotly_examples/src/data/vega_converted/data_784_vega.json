@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "P‑A",
+        "y": 250,
+        "series": "2024"
+      },
+      {
+        "x": "P‑B",
+        "y": 300,
+        "series": "2024"
+      },
+      {
+        "x": "P‑C",
+        "y": 180,
+        "series": "2024"
+      },
+      {
+        "x": "P‑D",
+        "y": 90,
+        "series": "2024"
+      },
+      {
+        "x": "P‑A",
+        "y": 270,
+        "series": "2025"
+      },
+      {
+        "x": "P‑B",
+        "y": 320,
+        "series": "2025"
+      },
+      {
+        "x": "P‑C",
+        "y": 200,
+        "series": "2025"
+      },
+      {
+        "x": "P‑D",
+        "y": 105,
+        "series": "2025"
+      }
+    ]
+  },
+  "title": "Social‑Media Active Users (M)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Platform"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Users_M"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Platform"
+      },
+      {
+        "field": "y",
+        "title": "Users_M"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

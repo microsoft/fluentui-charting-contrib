@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Maintenance Frequency Per Equipment",
+  "description": "Converted from Plotly schema 274 - Grouped bar chart",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "equipment": "Equipment A", "count": 3, "month": "January" },
+      { "equipment": "Equipment B", "count": 5, "month": "January" },
+      { "equipment": "Equipment C", "count": 2, "month": "January" },
+      { "equipment": "Equipment D", "count": 4, "month": "January" },
+      { "equipment": "Equipment E", "count": 6, "month": "January" },
+      { "equipment": "Equipment F", "count": 7, "month": "January" },
+      { "equipment": "Equipment G", "count": 3, "month": "January" },
+      { "equipment": "Equipment H", "count": 2, "month": "January" },
+      { "equipment": "Equipment I", "count": 5, "month": "January" },
+      { "equipment": "Equipment J", "count": 4, "month": "January" },
+      { "equipment": "Equipment A", "count": 4, "month": "February" },
+      { "equipment": "Equipment B", "count": 3, "month": "February" },
+      { "equipment": "Equipment C", "count": 6, "month": "February" },
+      { "equipment": "Equipment D", "count": 2, "month": "February" },
+      { "equipment": "Equipment E", "count": 3, "month": "February" },
+      { "equipment": "Equipment F", "count": 5, "month": "February" },
+      { "equipment": "Equipment G", "count": 4, "month": "February" },
+      { "equipment": "Equipment H", "count": 6, "month": "February" },
+      { "equipment": "Equipment I", "count": 7, "month": "February" },
+      { "equipment": "Equipment J", "count": 8, "month": "February" },
+      { "equipment": "Equipment A", "count": 2, "month": "March" },
+      { "equipment": "Equipment B", "count": 4, "month": "March" },
+      { "equipment": "Equipment C", "count": 3, "month": "March" },
+      { "equipment": "Equipment D", "count": 5, "month": "March" },
+      { "equipment": "Equipment E", "count": 6, "month": "March" },
+      { "equipment": "Equipment F", "count": 3, "month": "March" },
+      { "equipment": "Equipment G", "count": 5, "month": "March" },
+      { "equipment": "Equipment H", "count": 4, "month": "March" },
+      { "equipment": "Equipment I", "count": 3, "month": "March" },
+      { "equipment": "Equipment J", "count": 5, "month": "March" },
+      { "equipment": "Equipment A", "count": 5, "month": "April" },
+      { "equipment": "Equipment B", "count": 6, "month": "April" },
+      { "equipment": "Equipment C", "count": 3, "month": "April" },
+      { "equipment": "Equipment D", "count": 2, "month": "April" },
+      { "equipment": "Equipment E", "count": 7, "month": "April" },
+      { "equipment": "Equipment F", "count": 5, "month": "April" },
+      { "equipment": "Equipment G", "count": 6, "month": "April" },
+      { "equipment": "Equipment H", "count": 3, "month": "April" },
+      { "equipment": "Equipment I", "count": 4, "month": "April" },
+      { "equipment": "Equipment J", "count": 2, "month": "April" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "equipment",
+      "type": "nominal",
+      "axis": { "title": "Equipment ID" }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": { "title": "Number of Maintenance Sessions" }
+    },
+    "xOffset": {
+      "field": "month",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "month",
+      "type": "nominal",
+      "legend": { "title": "Month" }
+    },
+    "tooltip": [
+      { "field": "equipment", "type": "nominal", "title": "Equipment" },
+      { "field": "month", "type": "nominal", "title": "Month" },
+      { "field": "count", "type": "quantitative", "title": "Maintenance Count" }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 3,
+        "y": "Supplier A",
+        "series": "Series"
+      },
+      {
+        "x": 5,
+        "y": "Supplier B",
+        "series": "Series"
+      },
+      {
+        "x": 2,
+        "y": "Supplier C",
+        "series": "Series"
+      },
+      {
+        "x": 6,
+        "y": "Supplier D",
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": "Supplier E",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Reorder Time by Supplier",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Reorder Time"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Supplier Name"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Reorder Time"
+      },
+      {
+        "field": "y",
+        "title": "Supplier Name"
+      }
+    ]
+  }
+}

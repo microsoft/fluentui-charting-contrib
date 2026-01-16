@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Performance of Different Assets",
+  "description": "Converted from Plotly schema 38 - Multi-series line chart",
+  "data": {
+    "values": [
+      { "date": "2020-01-01", "value": 100, "asset": "Asset A" },
+      { "date": "2020-02-01", "value": 110, "asset": "Asset A" },
+      { "date": "2020-03-01", "value": 105, "asset": "Asset A" },
+      { "date": "2020-04-01", "value": 115, "asset": "Asset A" },
+      { "date": "2020-05-01", "value": 112, "asset": "Asset A" },
+      { "date": "2020-06-01", "value": 118, "asset": "Asset A" },
+      { "date": "2020-01-01", "value": 200, "asset": "Asset B" },
+      { "date": "2020-02-01", "value": 210, "asset": "Asset B" },
+      { "date": "2020-03-01", "value": 205, "asset": "Asset B" },
+      { "date": "2020-04-01", "value": 215, "asset": "Asset B" },
+      { "date": "2020-05-01", "value": 210, "asset": "Asset B" },
+      { "date": "2020-06-01", "value": 218, "asset": "Asset B" }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": { "title": "Date", "format": "%b %Y" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Asset Value" }
+    },
+    "color": {
+      "field": "asset",
+      "type": "nominal",
+      "legend": { "title": "Asset" }
+    }
+  }
+}

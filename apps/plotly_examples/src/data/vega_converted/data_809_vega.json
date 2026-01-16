@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "x": "Low",
+        "y": "Malware",
+        "value": 42.80308107399172
+      },
+      {
+        "x": "Medium",
+        "y": "Malware",
+        "value": 70.85745605156639
+      },
+      {
+        "x": "High",
+        "y": "Malware",
+        "value": 91.59650274439952
+      },
+      {
+        "x": "Low",
+        "y": "Phishing",
+        "value": 52.705640488086516
+      },
+      {
+        "x": "Medium",
+        "y": "Phishing",
+        "value": 68.90109836531053
+      },
+      {
+        "x": "High",
+        "y": "Phishing",
+        "value": 90.41304664670076
+      },
+      {
+        "x": "Low",
+        "y": "DDoS",
+        "value": 53.02635318494001
+      },
+      {
+        "x": "Medium",
+        "y": "DDoS",
+        "value": 71.9506823680364
+      },
+      {
+        "x": "High",
+        "y": "DDoS",
+        "value": 88.67462653512783
+      },
+      {
+        "x": "Low",
+        "y": "Insider",
+        "value": 49.146880136107846
+      },
+      {
+        "x": "Medium",
+        "y": "Insider",
+        "value": 80.587209651893
+      },
+      {
+        "x": "High",
+        "y": "Insider",
+        "value": 87.99026662244458
+      },
+      {
+        "x": "Low",
+        "y": "Zero-Day",
+        "value": 50.872966689333644
+      },
+      {
+        "x": "Medium",
+        "y": "Zero-Day",
+        "value": 65.25672048240031
+      },
+      {
+        "x": "High",
+        "y": "Zero-Day",
+        "value": 89.9740460914703
+      },
+      {
+        "x": "Low",
+        "y": "APT",
+        "value": 52.494338402388195
+      },
+      {
+        "x": "Medium",
+        "y": "APT",
+        "value": 65.07286283962539
+      },
+      {
+        "x": "High",
+        "y": "APT",
+        "value": 85.51297582166397
+      }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "y",
+      "type": "ordinal"
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "blues"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Impact Score Heatmap by Threat Type and Complexity"
+}

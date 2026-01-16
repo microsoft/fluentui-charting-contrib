@@ -1,0 +1,129 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 0,
+        "y": 8,
+        "series": "Series"
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "series": "Series"
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "series": "Series"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "series": "Series"
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "series": "Series"
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "series": "Series"
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "series": "Series"
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "series": "Series"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "series": "Series"
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "series": "Series"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "series": "Series"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "series": "Series"
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "series": "Series"
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "series": "Series"
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "series": "Series"
+      },
+      {
+        "x": 8,
+        "y": 8,
+        "series": "Series"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 283,
+        "y": 31,
+        "series": "Series"
+      },
+      {
+        "x": 580,
+        "y": 93,
+        "series": "Series"
+      },
+      {
+        "x": 245,
+        "y": 41,
+        "series": "Series"
+      },
+      {
+        "x": 759,
+        "y": 78,
+        "series": "Series"
+      },
+      {
+        "x": 342,
+        "y": 54,
+        "series": "Series"
+      },
+      {
+        "x": 108,
+        "y": 30,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Quantity Ordered for Customized Products",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Product ID"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Quantity Ordered"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Product ID"
+      },
+      {
+        "field": "y",
+        "title": "Quantity Ordered"
+      }
+    ]
+  }
+}

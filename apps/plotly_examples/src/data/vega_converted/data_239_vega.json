@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Production Volume Over Time",
+  "description": "Converted from Plotly schema 239 - Multi-series line chart",
+  "data": {
+    "values": [
+      { "day": "Day 1", "volume": 200, "factory": "Factory A Production" },
+      { "day": "Day 2", "volume": 220, "factory": "Factory A Production" },
+      { "day": "Day 3", "volume": 210, "factory": "Factory A Production" },
+      { "day": "Day 4", "volume": 230, "factory": "Factory A Production" },
+      { "day": "Day 1", "volume": 180, "factory": "Factory B Production" },
+      { "day": "Day 2", "volume": 200, "factory": "Factory B Production" },
+      { "day": "Day 3", "volume": 190, "factory": "Factory B Production" },
+      { "day": "Day 4", "volume": 210, "factory": "Factory B Production" },
+      { "day": "Day 1", "volume": 220, "factory": "Factory C Production" },
+      { "day": "Day 2", "volume": 230, "factory": "Factory C Production" },
+      { "day": "Day 3", "volume": 240, "factory": "Factory C Production" },
+      { "day": "Day 4", "volume": 250, "factory": "Factory C Production" }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "day",
+      "type": "ordinal",
+      "axis": { "title": "Time (Days)" }
+    },
+    "y": {
+      "field": "volume",
+      "type": "quantitative",
+      "axis": { "title": "Production Volume" }
+    },
+    "color": {
+      "field": "factory",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Factory A Production", "Factory B Production", "Factory C Production"],
+        "range": ["blue", "red", "green"]
+      },
+      "legend": { "title": "Factory" }
+    }
+  }
+}

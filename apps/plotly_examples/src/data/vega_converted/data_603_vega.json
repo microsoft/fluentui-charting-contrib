@@ -1,0 +1,282 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan 2023",
+        "y": 313063,
+        "series": "Downtown"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 324127,
+        "series": "Downtown"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 323426,
+        "series": "Downtown"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 328895,
+        "series": "Downtown"
+      },
+      {
+        "x": "May 2023",
+        "y": 315782,
+        "series": "Downtown"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 315845,
+        "series": "Downtown"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 315093,
+        "series": "Downtown"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 311889,
+        "series": "Downtown"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 297999,
+        "series": "Downtown"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 326121,
+        "series": "Downtown"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 324667,
+        "series": "Downtown"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 305562,
+        "series": "Downtown"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 315273,
+        "series": "Midtown"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 311096,
+        "series": "Midtown"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 333977,
+        "series": "Midtown"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 320303,
+        "series": "Midtown"
+      },
+      {
+        "x": "May 2023",
+        "y": 322507,
+        "series": "Midtown"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 310426,
+        "series": "Midtown"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 317326,
+        "series": "Midtown"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 322426,
+        "series": "Midtown"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 312188,
+        "series": "Midtown"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 324259,
+        "series": "Midtown"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 316306,
+        "series": "Midtown"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 318634,
+        "series": "Midtown"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 316071,
+        "series": "Uptown"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 326166,
+        "series": "Uptown"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 326408,
+        "series": "Uptown"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 333850,
+        "series": "Uptown"
+      },
+      {
+        "x": "May 2023",
+        "y": 335275,
+        "series": "Uptown"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 343443,
+        "series": "Uptown"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 333424,
+        "series": "Uptown"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 355498,
+        "series": "Uptown"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 372206,
+        "series": "Uptown"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 362745,
+        "series": "Uptown"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 358162,
+        "series": "Uptown"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 366684,
+        "series": "Uptown"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 217818,
+        "series": "Suburbia"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 233612,
+        "series": "Suburbia"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 215301,
+        "series": "Suburbia"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 227157,
+        "series": "Suburbia"
+      },
+      {
+        "x": "May 2023",
+        "y": 218539,
+        "series": "Suburbia"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 216370,
+        "series": "Suburbia"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 204433,
+        "series": "Suburbia"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 223114,
+        "series": "Suburbia"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 211424,
+        "series": "Suburbia"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 214895,
+        "series": "Suburbia"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 219483,
+        "series": "Suburbia"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 218459,
+        "series": "Suburbia"
+      }
+    ]
+  },
+  "title": "Public Transportation Usage Trends by Urban Area",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Monthly Passenger Count"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Monthly Passenger Count"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

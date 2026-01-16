@@ -1,0 +1,808 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 1,
+        "theta": 0,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 1.2413793103448276,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 2.4827586206896552,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 3.724137931034483,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 4.9655172413793105,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 6.206896551724138,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 7.448275862068966,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 8.689655172413794,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 9.931034482758621,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 11.172413793103448,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 12.413793103448276,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 13.655172413793103,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 14.896551724137932,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 16.137931034482758,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 17.379310344827587,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 18.620689655172413,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 19.862068965517242,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 21.10344827586207,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 22.344827586206897,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 23.586206896551726,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 24.82758620689655,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 26.06896551724138,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 27.310344827586206,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 28.551724137931036,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 29.793103448275865,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 31.03448275862069,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 32.275862068965516,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 33.51724137931035,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 34.758620689655174,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 36,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 36,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 37.241379310344826,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 38.48275862068966,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 39.724137931034484,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 40.96551724137931,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 42.206896551724135,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 43.44827586206897,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 44.689655172413794,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 45.93103448275862,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 47.172413793103445,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 48.41379310344828,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 49.6551724137931,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 50.896551724137936,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 52.13793103448276,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 53.37931034482759,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 54.62068965517241,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 55.86206896551724,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 57.10344827586207,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 58.3448275862069,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 59.58620689655173,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 60.827586206896555,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 62.06896551724138,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 63.310344827586206,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 64.55172413793103,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 65.79310344827587,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 67.0344827586207,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 68.27586206896552,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 69.51724137931035,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 70.75862068965517,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 72,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 72,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 73.24137931034483,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 74.48275862068965,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 75.72413793103448,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 76.96551724137932,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 78.20689655172414,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 79.44827586206897,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 80.6896551724138,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 81.93103448275862,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 83.17241379310344,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 84.41379310344827,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 85.65517241379311,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 86.89655172413794,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 88.13793103448276,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 89.37931034482759,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 90.62068965517241,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 91.86206896551724,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 93.10344827586206,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 94.34482758620689,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 95.58620689655173,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 96.82758620689656,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 98.06896551724138,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 99.3103448275862,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 100.55172413793103,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 101.79310344827587,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 103.0344827586207,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 104.27586206896552,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 105.51724137931035,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 106.75862068965517,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 108,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 108,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 109.24137931034483,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 110.48275862068965,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 111.72413793103448,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 112.96551724137932,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 114.20689655172414,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 115.44827586206897,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 116.6896551724138,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 117.93103448275862,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 119.17241379310344,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 120.41379310344827,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 121.65517241379311,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 122.89655172413794,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 124.13793103448276,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 125.37931034482759,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 126.62068965517241,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 127.86206896551724,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 129.10344827586206,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 130.3448275862069,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 131.58620689655172,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 132.82758620689654,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 134.0689655172414,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 135.31034482758622,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 136.55172413793105,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 137.79310344827587,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 139.0344827586207,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 140.27586206896552,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 141.51724137931035,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 142.75862068965517,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 144,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 144,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 145.24137931034483,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 146.48275862068965,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 147.72413793103448,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 148.9655172413793,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 150.20689655172413,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 151.44827586206895,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 152.68965517241378,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 153.93103448275863,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 155.17241379310346,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 156.41379310344828,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 157.6551724137931,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 158.89655172413794,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 160.13793103448276,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 161.3793103448276,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 162.6206896551724,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 163.86206896551724,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 165.10344827586206,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 166.3448275862069,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 167.58620689655172,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 168.82758620689654,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 170.0689655172414,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 171.31034482758622,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 172.55172413793105,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 173.79310344827587,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 175.0344827586207,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 176.27586206896552,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 177.51724137931035,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 178.75862068965517,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 180,
+        "series": "Series"
+      },
+      {
+        "r": 0,
+        "theta": 0,
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": 125.99999999999999,
+        "series": "Series"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Custom Gauge using Scatterpolar"
+}

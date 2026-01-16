@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "North",
+        "y": 2200,
+        "series": "Production Volume"
+      },
+      {
+        "x": "South",
+        "y": 1800,
+        "series": "Production Volume"
+      },
+      {
+        "x": "East",
+        "y": 2500,
+        "series": "Production Volume"
+      },
+      {
+        "x": "West",
+        "y": 2000,
+        "series": "Production Volume"
+      },
+      {
+        "x": "Central",
+        "y": 2400,
+        "series": "Production Volume"
+      },
+      {
+        "x": "North",
+        "y": 20,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "South",
+        "y": 21,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "East",
+        "y": 22,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "West",
+        "y": 19,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "Central",
+        "y": 20,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "North",
+        "y": 2,
+        "series": "Downtime (hrs)"
+      },
+      {
+        "x": "South",
+        "y": 3,
+        "series": "Downtime (hrs)"
+      },
+      {
+        "x": "East",
+        "y": 1,
+        "series": "Downtime (hrs)"
+      },
+      {
+        "x": "West",
+        "y": 4,
+        "series": "Downtime (hrs)"
+      },
+      {
+        "x": "Central",
+        "y": 2,
+        "series": "Downtime (hrs)"
+      }
+    ]
+  },
+  "title": "Factory Performance Overview",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Factory Location"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Factory Location"
+      },
+      {
+        "field": "y",
+        "title": "Value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

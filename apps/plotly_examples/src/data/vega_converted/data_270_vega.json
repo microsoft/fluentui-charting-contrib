@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Allocated vs Required Resources by Operation",
+  "description": "Converted from Plotly schema 270 - Grouped bar chart",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "operation": "Operation A", "quantity": 120, "type": "Allocated" },
+      { "operation": "Operation B", "quantity": 150, "type": "Allocated" },
+      { "operation": "Operation C", "quantity": 100, "type": "Allocated" },
+      { "operation": "Operation D", "quantity": 130, "type": "Allocated" },
+      { "operation": "Operation E", "quantity": 140, "type": "Allocated" },
+      { "operation": "Operation F", "quantity": 110, "type": "Allocated" },
+      { "operation": "Operation G", "quantity": 160, "type": "Allocated" },
+      { "operation": "Operation H", "quantity": 170, "type": "Allocated" },
+      { "operation": "Operation I", "quantity": 180, "type": "Allocated" },
+      { "operation": "Operation J", "quantity": 175, "type": "Allocated" },
+      { "operation": "Operation A", "quantity": 150, "type": "Required" },
+      { "operation": "Operation B", "quantity": 120, "type": "Required" },
+      { "operation": "Operation C", "quantity": 130, "type": "Required" },
+      { "operation": "Operation D", "quantity": 160, "type": "Required" },
+      { "operation": "Operation E", "quantity": 170, "type": "Required" },
+      { "operation": "Operation F", "quantity": 140, "type": "Required" },
+      { "operation": "Operation G", "quantity": 120, "type": "Required" },
+      { "operation": "Operation H", "quantity": 130, "type": "Required" },
+      { "operation": "Operation I", "quantity": 140, "type": "Required" },
+      { "operation": "Operation J", "quantity": 135, "type": "Required" },
+      { "operation": "Operation A", "quantity": 130, "type": "Available" },
+      { "operation": "Operation B", "quantity": 170, "type": "Available" },
+      { "operation": "Operation C", "quantity": 140, "type": "Available" },
+      { "operation": "Operation D", "quantity": 120, "type": "Available" },
+      { "operation": "Operation E", "quantity": 130, "type": "Available" },
+      { "operation": "Operation F", "quantity": 100, "type": "Available" },
+      { "operation": "Operation G", "quantity": 150, "type": "Available" },
+      { "operation": "Operation H", "quantity": 160, "type": "Available" },
+      { "operation": "Operation I", "quantity": 165, "type": "Available" },
+      { "operation": "Operation J", "quantity": 160, "type": "Available" },
+      { "operation": "Operation A", "quantity": 110, "type": "Utilized" },
+      { "operation": "Operation B", "quantity": 130, "type": "Utilized" },
+      { "operation": "Operation C", "quantity": 140, "type": "Utilized" },
+      { "operation": "Operation D", "quantity": 150, "type": "Utilized" },
+      { "operation": "Operation E", "quantity": 160, "type": "Utilized" },
+      { "operation": "Operation F", "quantity": 115, "type": "Utilized" },
+      { "operation": "Operation G", "quantity": 105, "type": "Utilized" },
+      { "operation": "Operation H", "quantity": 115, "type": "Utilized" },
+      { "operation": "Operation I", "quantity": 125, "type": "Utilized" },
+      { "operation": "Operation J", "quantity": 135, "type": "Utilized" },
+      { "operation": "Operation A", "quantity": 120, "type": "Surplus" },
+      { "operation": "Operation B", "quantity": 125, "type": "Surplus" },
+      { "operation": "Operation C", "quantity": 130, "type": "Surplus" },
+      { "operation": "Operation D", "quantity": 145, "type": "Surplus" },
+      { "operation": "Operation E", "quantity": 150, "type": "Surplus" },
+      { "operation": "Operation F", "quantity": 135, "type": "Surplus" },
+      { "operation": "Operation G", "quantity": 140, "type": "Surplus" },
+      { "operation": "Operation H", "quantity": 155, "type": "Surplus" },
+      { "operation": "Operation I", "quantity": 160, "type": "Surplus" },
+      { "operation": "Operation J", "quantity": 165, "type": "Surplus" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "operation",
+      "type": "nominal",
+      "axis": { "title": "Operation Type" }
+    },
+    "y": {
+      "field": "quantity",
+      "type": "quantitative",
+      "axis": { "title": "Quantity" }
+    },
+    "xOffset": {
+      "field": "type",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Resource Type" }
+    },
+    "tooltip": [
+      { "field": "operation", "type": "nominal", "title": "Operation" },
+      { "field": "type", "type": "nominal", "title": "Type" },
+      { "field": "quantity", "type": "quantitative", "title": "Quantity" }
+    ]
+  }
+}

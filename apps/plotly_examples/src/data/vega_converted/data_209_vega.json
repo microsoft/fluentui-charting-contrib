@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Average Occupancy Rate Distribution",
+  "description": "Converted from Plotly schema 209 - Pie chart",
+  "data": {
+    "values": [
+      { "hotel": "Hotel A", "rate": 82 },
+      { "hotel": "Hotel B", "rate": 75 },
+      { "hotel": "Hotel C", "rate": 78 },
+      { "hotel": "Industry Average", "rate": 80 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "rate",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "hotel",
+      "type": "nominal",
+      "legend": { "title": "Hotel" }
+    }
+  }
+}

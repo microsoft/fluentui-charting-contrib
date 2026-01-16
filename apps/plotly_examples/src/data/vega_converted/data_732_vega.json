@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": 114388
+      },
+      {
+        "value": 121030
+      },
+      {
+        "value": 115894
+      },
+      {
+        "value": 101864
+      },
+      {
+        "value": 118714
+      },
+      {
+        "value": 146764
+      },
+      {
+        "value": 127989
+      },
+      {
+        "value": 120072
+      },
+      {
+        "value": 118096
+      },
+      {
+        "value": 155540
+      },
+      {
+        "value": 124253
+      },
+      {
+        "value": 102654
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "bin": true,
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Monthly Passenger Counts by Urban Area"
+}

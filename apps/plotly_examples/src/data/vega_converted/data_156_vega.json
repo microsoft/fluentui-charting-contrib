@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Resource Allocation by Mission Priority",
+  "description": "Converted from Plotly schema 156 - Multi-series line+markers chart",
+  "data": {
+    "values": [
+      { "priority": "Low", "quantity": 100, "type": "Allocated" },
+      { "priority": "Medium", "quantity": 250, "type": "Allocated" },
+      { "priority": "High", "quantity": 150, "type": "Allocated" },
+      { "priority": "Low", "quantity": 150, "type": "Required" },
+      { "priority": "Medium", "quantity": 200, "type": "Required" },
+      { "priority": "High", "quantity": 180, "type": "Required" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "priority",
+          "type": "ordinal",
+          "axis": { "title": "Mission Priority Level" },
+          "sort": ["Low", "Medium", "High"]
+        },
+        "y": {
+          "field": "quantity",
+          "type": "quantitative",
+          "axis": { "title": "Quantity" }
+        },
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "legend": { "title": "Resource Type" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "priority",
+          "type": "ordinal",
+          "sort": ["Low", "Medium", "High"]
+        },
+        "y": {
+          "field": "quantity",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "type",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

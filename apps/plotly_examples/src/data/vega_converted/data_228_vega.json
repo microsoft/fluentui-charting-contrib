@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Deployment Success Rate",
+  "description": "Converted from Plotly schema 228 - Donut chart",
+  "data": {
+    "values": [
+      { "status": "Deployment Success", "value": 80 },
+      { "status": "Deployment Failures", "value": 20 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "status",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Deployment Success", "Deployment Failures"],
+        "range": ["rgb(50, 171, 96)", "rgb(222, 45, 38)"]
+      },
+      "legend": { "title": "Status" }
+    }
+  }
+}

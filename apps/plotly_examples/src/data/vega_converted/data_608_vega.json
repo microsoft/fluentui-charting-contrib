@@ -1,0 +1,942 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan 2023",
+        "y": 52.3,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 55.1,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 52.7,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 53.8,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "May 2023",
+        "y": 58.5,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 58,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 56.6,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 59.7,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 58.8,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 59.9,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 62.4,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 59.2,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 71.1,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 70.4,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 70.1,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 75.3,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "May 2023",
+        "y": 75.6,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 80.5,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 76.8,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 80.6,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 79.3,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 79.7,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 77.6,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 83.1,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 55.3,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 54.4,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 56.9,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 61.1,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "May 2023",
+        "y": 60.3,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 60.9,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 63.9,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 66.3,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 65.6,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 66.8,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 70,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 68.7,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 46.4,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 46.7,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 50.3,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 48.2,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "May 2023",
+        "y": 49.2,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 51.9,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 56.1,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 53.5,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 53.6,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 57.2,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 58,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 55.8,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 35.8,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 35.6,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 40.6,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 41.9,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "May 2023",
+        "y": 41.9,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 38.4,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 47.8,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 44.7,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 46.5,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 43.5,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 47.6,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 49.5,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 73.3,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 74.3,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 70.5,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 72.5,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "May 2023",
+        "y": 76.5,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 77.6,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 78.7,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 86.4,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 81,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 83.2,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 83.9,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 84.4,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 60,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 66.5,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 61.3,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 65.3,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "May 2023",
+        "y": 65.2,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 65.4,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 69.5,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 70.4,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 69.3,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 67.2,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 71.6,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 73.8,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 66.3,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 63.3,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 67.8,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 70.7,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "May 2023",
+        "y": 71.2,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 68.5,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 70.1,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 74.5,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 75.3,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 70.6,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 71.3,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 77.1,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 72.6,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 77.7,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 72,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 80.3,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "May 2023",
+        "y": 77.6,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 79.3,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 79.1,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 81.4,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 85.2,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 85.2,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 85.8,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 86.1,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 62.9,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 60.7,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 59.3,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 66.5,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "May 2023",
+        "y": 64.7,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 68.5,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 63.9,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 67,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 69.3,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 70.4,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 70.5,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 73.8,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 59.8,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 54.9,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 55.3,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 59.7,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "May 2023",
+        "y": 61.7,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 61.9,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 59,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 64,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 62.7,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 67.7,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 68.2,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 66.7,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 67.4,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 67.6,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 72.5,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 72.1,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "May 2023",
+        "y": 74.7,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 72.7,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 73.2,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 77.8,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 77.8,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 75.4,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 83.4,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 79.2,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 66.8,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 67.1,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 66.8,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 64.5,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "May 2023",
+        "y": 66,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 66.2,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 69.9,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 64.9,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 70.6,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 72,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 70.6,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 76.3,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 66,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 70.1,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 70.7,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 64.7,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "May 2023",
+        "y": 66.5,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 66.8,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 69.6,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 72.3,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 73.8,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 71.3,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 71.7,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 75,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 59,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 60.6,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 65.2,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 63.9,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "May 2023",
+        "y": 64.2,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 65.8,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 66.5,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 64.8,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 65.5,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 73,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 70.7,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 71.6,
+        "series": "Finance, Storage"
+      }
+    ]
+  },
+  "title": "Cloud Resource Usage Trends by Department",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Usage Percentage (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Usage Percentage (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

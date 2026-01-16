@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Q1",
+        "y": 800,
+        "series": "2021"
+      },
+      {
+        "x": "Q2",
+        "y": 750,
+        "series": "2021"
+      },
+      {
+        "x": "Q3",
+        "y": 780,
+        "series": "2021"
+      },
+      {
+        "x": "Q4",
+        "y": 700,
+        "series": "2021"
+      },
+      {
+        "x": "Q1",
+        "y": 710,
+        "series": "2022"
+      },
+      {
+        "x": "Q2",
+        "y": 680,
+        "series": "2022"
+      },
+      {
+        "x": "Q3",
+        "y": 690,
+        "series": "2022"
+      },
+      {
+        "x": "Q4",
+        "y": 650,
+        "series": "2022"
+      },
+      {
+        "x": "Q1",
+        "y": 640,
+        "series": "2023"
+      },
+      {
+        "x": "Q2",
+        "y": 620,
+        "series": "2023"
+      },
+      {
+        "x": "Q3",
+        "y": 600,
+        "series": "2023"
+      },
+      {
+        "x": "Q4",
+        "y": 580,
+        "series": "2023"
+      },
+      {
+        "x": "Q1",
+        "y": 565,
+        "series": "2024"
+      },
+      {
+        "x": "Q2",
+        "y": 550,
+        "series": "2024"
+      },
+      {
+        "x": "Q3",
+        "y": 530,
+        "series": "2024"
+      },
+      {
+        "x": "Q4",
+        "y": 520,
+        "series": "2024"
+      }
+    ]
+  },
+  "title": "Quarterly Carbon Footprint Over Time",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Quarter"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Carbon Footprint (tons CO2)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Quarter"
+      },
+      {
+        "field": "y",
+        "title": "Carbon Footprint (tons CO2)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 22,
+        "y": 30000,
+        "series": "Sedan"
+      },
+      {
+        "x": 45,
+        "y": 45000,
+        "series": "Sedan"
+      },
+      {
+        "x": 19,
+        "y": 25000,
+        "series": "Sedan"
+      },
+      {
+        "x": 50,
+        "y": 52000,
+        "series": "Sedan"
+      },
+      {
+        "x": 40,
+        "y": 64000,
+        "series": "Sedan"
+      },
+      {
+        "x": 41,
+        "y": 78000,
+        "series": "Sedan"
+      },
+      {
+        "x": 35,
+        "y": 55000,
+        "series": "SUV"
+      },
+      {
+        "x": 67,
+        "y": 60000,
+        "series": "SUV"
+      },
+      {
+        "x": 23,
+        "y": 32000,
+        "series": "SUV"
+      },
+      {
+        "x": 45,
+        "y": 49000,
+        "series": "SUV"
+      },
+      {
+        "x": 29,
+        "y": 39000,
+        "series": "SUV"
+      },
+      {
+        "x": 60,
+        "y": 61000,
+        "series": "SUV"
+      },
+      {
+        "x": 56,
+        "y": 70000,
+        "series": "Hatchback"
+      },
+      {
+        "x": 30,
+        "y": 40000,
+        "series": "Hatchback"
+      },
+      {
+        "x": 33,
+        "y": 42000,
+        "series": "Hatchback"
+      }
+    ]
+  },
+  "title": "Customer Age vs Income Level by Purchase History",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Customer Age"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Income Level"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Customer Age"
+      },
+      {
+        "field": "y",
+        "title": "Income Level"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Comparison of On-time vs Delayed Deliveries by Supplier",
+  "description": "Converted from Plotly schema 148 - Stacked bar chart",
+  "data": {
+    "values": [
+      { "supplier": "Supplier A", "count": 75, "type": "On-time Deliveries" },
+      { "supplier": "Supplier B", "count": 50, "type": "On-time Deliveries" },
+      { "supplier": "Supplier C", "count": 60, "type": "On-time Deliveries" },
+      { "supplier": "Supplier D", "count": 40, "type": "On-time Deliveries" },
+      { "supplier": "Supplier A", "count": 10, "type": "Delayed Deliveries" },
+      { "supplier": "Supplier B", "count": 20, "type": "Delayed Deliveries" },
+      { "supplier": "Supplier C", "count": 15, "type": "Delayed Deliveries" },
+      { "supplier": "Supplier D", "count": 30, "type": "Delayed Deliveries" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "supplier",
+      "type": "nominal",
+      "axis": { "title": "Suppliers" }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": { "title": "Number of Deliveries" },
+      "stack": true
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Delivery Type" }
+    }
+  }
+}
