@@ -25,10 +25,10 @@ const areaChartStories = [
 const donutChartStories = [
   '#story--charts-donutchart--donut-chart-basic-inner',
   '#story--charts-donutchart--donut-chart-custom-accessibility-inner',
-  '#story--charts-donutchart--donut-chart-dynamic-inner',
-  '#story--charts-donutchart--donut-chart-custom-callout-inner',
-  '#story--charts-donutchart--donut-chart-styled-inner',
-  '#story--charts-donutchart--donut-chart-responsive-inner',
+  // '#story--charts-donutchart--donut-chart-dynamic-inner',
+  // '#story--charts-donutchart--donut-chart-custom-callout-inner',
+  // '#story--charts-donutchart--donut-chart-styled-inner',
+  // '#story--charts-donutchart--donut-chart-responsive-inner',
 ];
 
 const funnelChartStories = [
@@ -139,7 +139,7 @@ const verticalStackedBarChartStories = [
 
 const charts = [
   { name: 'AreaChart', path: 'charts-areachart--docs', selector: '#story--charts-areachart--area-chart-basic--primary-inner', stories: areaChartStories },
-  // { name: 'DonutChart', path: 'charts-DonutChart--docs', selector: '#story--charts-donutchart--donut-chart-basic--primary-inner', stories: donutChartStories },
+  { name: 'DonutChart', path: 'charts-DonutChart--docs', selector: '#story--charts-donutchart--donut-chart-basic--primary-inner', stories: donutChartStories },
   // { name: 'FunnelChart', path: 'charts-FunnelChart--docs', selector: '#story--charts-funnelchart--funnel-chart-basic--primary-inner', stories: funnelChartStories },
   // { name: 'GanttChart', path: 'charts-GanttChart--docs', selector: '#story--charts-ganttchart--gantt-chart-basic--primary-inner', stories: ganttChartStories },
   // { name: 'GaugeChart', path: 'charts-GaugeChart--docs', selector: '#story--charts-gaugechart--gauge-chart-basic--primary-inner', stories: guageChartStories },
@@ -171,7 +171,6 @@ async function loadChartPage(
   await page.locator('#list-item-T').click();
   await page.getByRole('button', { name: /Theme:/ }).click();
   await page.locator(`#list-item-${theme}`).click();
-  await page.getByRole('button', { name: chart.name, exact: true }).click();
   // Check current direction and only click if needed
   const directionButton = await page.getByRole('button', { name: /Direction:/ });
   const directionText = await directionButton.textContent();
