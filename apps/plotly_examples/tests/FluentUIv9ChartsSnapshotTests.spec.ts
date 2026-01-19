@@ -167,21 +167,11 @@ async function loadChartPage(
 ) {
   await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
   // Check if theme button exists, if not trigger the alternative action
-  let themeButton = page.locator('button[title="Change Fluent theme"]');
-  let isThemeButtonVisible = await themeButton.isVisible().catch(() => false);
-  
-  if (!isThemeButtonVisible) {
-    await page.getByLabel('Shortcuts').click();
-    await page.locator('#list-item-T').click();
-    // Wait for theme button to appear after triggering shortcuts
-    await page.waitForTimeout(1000);
-    themeButton = page.locator('button[title="Change Fluent theme"]');
-  }
-  
-  // Ensure button is visible and clickable before clicking
-  await expect(themeButton).toBeVisible({ timeout: 10000 });
-  await themeButton.click({ timeout: 10000 });
+  await page.getByLabel('Shortcuts').click();
+  await page.locator('#list-item-T').click();
+  await page.getByRole('button', { name: /Theme:/ }).click();
   await page.locator(`#list-item-${theme}`).click();
+  await page.getByRole('button', { name: chart.name, exact: true }).click();
   // Check current direction and only click if needed
   const directionButton = await page.getByRole('button', { name: /Direction:/ });
   const directionText = await directionButton.textContent();
@@ -189,6 +179,8 @@ async function loadChartPage(
     (mode === 'LTR' && directionText?.includes('RTL'))) {
     await directionButton.click();
   }
+  await page.getByLabel('Shortcuts').click();
+  await page.locator('#list-item-T').click();
   const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
   const frame = await chartContainer.contentFrame();
   if (!frame) throw new Error('Could not get content frame');
