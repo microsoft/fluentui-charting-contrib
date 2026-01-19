@@ -165,16 +165,22 @@ async function loadChartPage(
   theme: string,
   mode: string
 ) {
-  await page.goto(`http://localhost:275275/?path=/docs/${chart.path}`);
+  await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
   // Check if theme button exists, if not trigger the alternative action
-  const themeButton = page.getByRole('button', { name: /Theme:/ });
-  const isThemeButtonVisible = await themeButton.isVisible().catch(() => false);
+  let themeButton = page.getByRole('button', { name: 'Change Fluent theme' });
+  let isThemeButtonVisible = await themeButton.isVisible().catch(() => false);
   
   if (!isThemeButtonVisible) {
     await page.getByLabel('Shortcuts').click();
     await page.locator('#list-item-T').click();
+    // Wait for theme button to appear after triggering shortcuts
+    await page.waitForTimeout(1000);
+    themeButton = page.getByRole('button', { name: 'Change Fluent theme' });
   }
-  await themeButton.click();
+  
+  // Ensure button is visible and clickable before clicking
+  await expect(themeButton).toBeVisible({ timeout: 10000 });
+  await themeButton.click({ timeout: 10000 });
   await page.locator(`#list-item-${theme}`).click();
   // Check current direction and only click if needed
   const directionButton = await page.getByRole('button', { name: /Direction:/ });
