@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "North",
+        "y": 5000,
+        "series": "Public"
+      },
+      {
+        "x": "North",
+        "y": 5200,
+        "series": "Public"
+      },
+      {
+        "x": "North",
+        "y": 5100,
+        "series": "Public"
+      },
+      {
+        "x": "North",
+        "y": 5300,
+        "series": "Public"
+      },
+      {
+        "x": "North",
+        "y": 5400,
+        "series": "Public"
+      },
+      {
+        "x": "South",
+        "y": 3000,
+        "series": "Private"
+      },
+      {
+        "x": "South",
+        "y": 3100,
+        "series": "Private"
+      },
+      {
+        "x": "South",
+        "y": 2950,
+        "series": "Private"
+      },
+      {
+        "x": "South",
+        "y": 3200,
+        "series": "Private"
+      },
+      {
+        "x": "South",
+        "y": 3300,
+        "series": "Private"
+      }
+    ]
+  },
+  "title": "Enrollment by Region and Institution Type",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "region"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "enrollment"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "region"
+      },
+      {
+        "field": "y",
+        "title": "enrollment"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

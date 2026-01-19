@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Projected Maintenance Needs Over Time",
+  "description": "Converted from Plotly schema 143 - Line chart",
+  "data": {
+    "values": [
+      { "month": "2023-01", "needs": 15 },
+      { "month": "2023-02", "needs": 12 },
+      { "month": "2023-03", "needs": 20 },
+      { "month": "2023-04", "needs": 22 },
+      { "month": "2023-05", "needs": 18 },
+      { "month": "2023-06", "needs": 25 },
+      { "month": "2023-07", "needs": 17 },
+      { "month": "2023-08", "needs": 19 },
+      { "month": "2023-09", "needs": 21 },
+      { "month": "2023-10", "needs": 23 }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "axis": { "title": "Month" }
+    },
+    "y": {
+      "field": "needs",
+      "type": "quantitative",
+      "axis": { "title": "Maintenance Needs (in hours)" }
+    }
+  }
+}

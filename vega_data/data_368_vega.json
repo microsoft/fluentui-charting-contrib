@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Token Distribution",
+  "description": "Donut chart showing token allocation breakdown",
+  "data": {
+    "values": [
+      {"category": "Presale", "percentage": 40},
+      {"category": "Liquidity", "percentage": 25},
+      {"category": "Airdrop", "percentage": 10},
+      {"category": "Community events", "percentage": 15},
+      {"category": "Team and development", "percentage": 10}
+    ]
+  },
+  "mark": {"type": "arc", "innerRadius": 50},
+  "encoding": {
+    "theta": {
+      "field": "percentage",
+      "type": "quantitative",
+      "stack": true
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    }
+  }
+}

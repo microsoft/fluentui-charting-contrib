@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 69.7,
+        "y": "Seattle",
+        "series": "Series"
+      },
+      {
+        "x": 74.5,
+        "y": "Detroit",
+        "series": "Series"
+      },
+      {
+        "x": 78.3,
+        "y": "Los Angeles",
+        "series": "Series"
+      },
+      {
+        "x": 81.1,
+        "y": "Cleveland",
+        "series": "Series"
+      },
+      {
+        "x": 86.2,
+        "y": "Atlanta",
+        "series": "Series"
+      },
+      {
+        "x": 89.2,
+        "y": "Chicago",
+        "series": "Series"
+      },
+      {
+        "x": 92.7,
+        "y": "Dallas",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Factory Efficiency Comparison",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Efficiency (%)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Factory Location"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Efficiency (%)"
+      },
+      {
+        "field": "y",
+        "title": "Factory Location"
+      }
+    ]
+  }
+}

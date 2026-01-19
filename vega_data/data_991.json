@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Material Properties Comparison",
+  "data": {
+    "values": [
+      {"x": 800, "y": 50.5, "series": "Sample A"},
+      {"x": 2000, "y": 42.3, "series": "Sample A"},
+      {"x": 3000, "y": 38.7, "series": "Sample A"},
+      {"x": 4000, "y": 35.2, "series": "Sample A"},
+      {"x": 5000, "y": 32.8, "series": "Sample A"},
+      {"x": 1000, "y": 45.2, "series": "Sample B"},
+      {"x": 2000, "y": 38.9, "series": "Sample B"},
+      {"x": 3000, "y": 35.1, "series": "Sample B"},
+      {"x": 4000, "y": 31.8, "series": "Sample B"},
+      {"x": 5000, "y": 29.5, "series": "Sample B"},
+      {"x": 1000, "y": 55.8, "series": "Sample C"},
+      {"x": 2000, "y": 47.6, "series": "Sample C"},
+      {"x": 3000, "y": 43.2, "series": "Sample C"},
+      {"x": 4000, "y": 39.9, "series": "Sample C"},
+      {"x": 5000, "y": 37.1, "series": "Sample C"}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "line"}
+    },
+    {
+      "mark": {"type": "point", "filled": true}
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Shear Rate (1/s)",
+      "scale": {"domain": [1000, 5000]}
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Viscosity (cP)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Sample"
+    }
+  }
+}

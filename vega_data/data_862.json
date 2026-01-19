@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Automobile Sales Performance Analysis",
+  "description": "Segmented by Region and Model (Monthly) - Simplified to 4 representative series",
+  "data": {
+    "values": [
+      {"month": "Jan 2023", "sales": 352, "category": "North America - Sedan"},
+      {"month": "Feb 2023", "sales": 685, "category": "North America - Sedan"},
+      {"month": "Mar 2023", "sales": 1110, "category": "North America - Sedan"},
+      {"month": "Apr 2023", "sales": 520, "category": "North America - Sedan"},
+      {"month": "May 2023", "sales": 356, "category": "North America - Sedan"},
+      {"month": "Jun 2023", "sales": 321, "category": "North America - Sedan"},
+      {"month": "Jul 2023", "sales": 950, "category": "North America - Sedan"},
+      {"month": "Aug 2023", "sales": 270, "category": "North America - Sedan"},
+      {"month": "Sep 2023", "sales": 864, "category": "North America - Sedan"},
+      {"month": "Oct 2023", "sales": 371, "category": "North America - Sedan"},
+      {"month": "Nov 2023", "sales": 716, "category": "North America - Sedan"},
+      {"month": "Dec 2023", "sales": 464, "category": "North America - Sedan"},
+      {"month": "Jan 2023", "sales": 896, "category": "Europe - SUV"},
+      {"month": "Feb 2023", "sales": 270, "category": "Europe - SUV"},
+      {"month": "Mar 2023", "sales": 1090, "category": "Europe - SUV"},
+      {"month": "Apr 2023", "sales": 416, "category": "Europe - SUV"},
+      {"month": "May 2023", "sales": 523, "category": "Europe - SUV"},
+      {"month": "Jun 2023", "sales": 637, "category": "Europe - SUV"},
+      {"month": "Jul 2023", "sales": 850, "category": "Europe - SUV"},
+      {"month": "Aug 2023", "sales": 565, "category": "Europe - SUV"},
+      {"month": "Sep 2023", "sales": 263, "category": "Europe - SUV"},
+      {"month": "Oct 2023", "sales": 491, "category": "Europe - SUV"},
+      {"month": "Nov 2023", "sales": 1026, "category": "Europe - SUV"},
+      {"month": "Dec 2023", "sales": 595, "category": "Europe - SUV"},
+      {"month": "Jan 2023", "sales": 302, "category": "Asia - Truck"},
+      {"month": "Feb 2023", "sales": 1041, "category": "Asia - Truck"},
+      {"month": "Mar 2023", "sales": 1171, "category": "Asia - Truck"},
+      {"month": "Apr 2023", "sales": 466, "category": "Asia - Truck"},
+      {"month": "May 2023", "sales": 1013, "category": "Asia - Truck"},
+      {"month": "Jun 2023", "sales": 437, "category": "Asia - Truck"},
+      {"month": "Jul 2023", "sales": 629, "category": "Asia - Truck"},
+      {"month": "Aug 2023", "sales": 742, "category": "Asia - Truck"},
+      {"month": "Sep 2023", "sales": 290, "category": "Asia - Truck"},
+      {"month": "Oct 2023", "sales": 406, "category": "Asia - Truck"},
+      {"month": "Nov 2023", "sales": 264, "category": "Asia - Truck"},
+      {"month": "Dec 2023", "sales": 1062, "category": "Asia - Truck"},
+      {"month": "Jan 2023", "sales": 467, "category": "South America - Coupe"},
+      {"month": "Feb 2023", "sales": 752, "category": "South America - Coupe"},
+      {"month": "Mar 2023", "sales": 1016, "category": "South America - Coupe"},
+      {"month": "Apr 2023", "sales": 647, "category": "South America - Coupe"},
+      {"month": "May 2023", "sales": 1120, "category": "South America - Coupe"},
+      {"month": "Jun 2023", "sales": 1044, "category": "South America - Coupe"},
+      {"month": "Jul 2023", "sales": 642, "category": "South America - Coupe"},
+      {"month": "Aug 2023", "sales": 456, "category": "South America - Coupe"},
+      {"month": "Sep 2023", "sales": 264, "category": "South America - Coupe"},
+      {"month": "Oct 2023", "sales": 1107, "category": "South America - Coupe"},
+      {"month": "Nov 2023", "sales": 803, "category": "South America - Coupe"},
+      {"month": "Dec 2023", "sales": 1141, "category": "South America - Coupe"}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "title": "Month",
+      "axis": {"labelAngle": -30},
+      "sort": ["Jan 2023", "Feb 2023", "Mar 2023", "Apr 2023", "May 2023", "Jun 2023", "Jul 2023", "Aug 2023", "Sep 2023", "Oct 2023", "Nov 2023", "Dec 2023"]
+    },
+    "y": {
+      "field": "sales",
+      "type": "quantitative",
+      "title": "Sales Volume",
+      "stack": true
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Region - Model",
+      "scale": {
+        "domain": ["North America - Sedan", "Europe - SUV", "Asia - Truck", "South America - Coupe"],
+        "range": ["#3fa69a", "#ee9a85", "#92a2a9", "#f5ab70"]
+      }
+    },
+    "tooltip": [
+      {"field": "month", "type": "ordinal", "title": "Month"},
+      {"field": "category", "type": "nominal", "title": "Category"},
+      {"field": "sales", "type": "quantitative", "title": "Sales"}
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "background": "#FAFBFB"
+  }
+}

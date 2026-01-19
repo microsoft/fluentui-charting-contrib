@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-05-31",
+        "y": 88,
+        "series": "North Yard, Medium"
+      },
+      {
+        "x": "2024-06-07",
+        "y": 85,
+        "series": "North Yard, Medium"
+      },
+      {
+        "x": "2024-05-31",
+        "y": 72,
+        "series": "East Site, Low"
+      },
+      {
+        "x": "2024-06-07",
+        "y": 68,
+        "series": "East Site, Low"
+      },
+      {
+        "x": "2024-05-31",
+        "y": 81,
+        "series": "West Zone, Medium"
+      },
+      {
+        "x": "2024-06-07",
+        "y": 83,
+        "series": "West Zone, Medium"
+      },
+      {
+        "x": "2024-05-31",
+        "y": 91,
+        "series": "Central Hub, High"
+      },
+      {
+        "x": "2024-06-07",
+        "y": 94,
+        "series": "Central Hub, High"
+      },
+      {
+        "x": "2024-05-31",
+        "y": 85,
+        "series": "South Lot, Medium"
+      },
+      {
+        "x": "2024-06-07",
+        "y": 65,
+        "series": "South Lot, Low"
+      },
+      {
+        "x": "2024-05-31",
+        "y": 88,
+        "series": "North Yard Compliance Level"
+      },
+      {
+        "x": "2024-06-07",
+        "y": 85,
+        "series": "North Yard Compliance Level"
+      },
+      {
+        "x": "2024-05-31",
+        "y": 72,
+        "series": "East Site Compliance Level"
+      },
+      {
+        "x": "2024-06-07",
+        "y": 68,
+        "series": "East Site Compliance Level"
+      },
+      {
+        "x": "2024-05-31",
+        "y": 81,
+        "series": "West Zone Compliance Level"
+      },
+      {
+        "x": "2024-06-07",
+        "y": 83,
+        "series": "West Zone Compliance Level"
+      },
+      {
+        "x": "2024-05-31",
+        "y": 91,
+        "series": "Central Hub Compliance Level"
+      },
+      {
+        "x": "2024-06-07",
+        "y": 94,
+        "series": "Central Hub Compliance Level"
+      },
+      {
+        "x": "2024-05-31",
+        "y": 85,
+        "series": "South Lot Compliance Level"
+      },
+      {
+        "x": "2024-06-07",
+        "y": 65,
+        "series": "South Lot Compliance Level"
+      }
+    ]
+  },
+  "title": "Compliance Score Trend by Site",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Compliance Score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Week"
+      },
+      {
+        "field": "y",
+        "title": "Compliance Score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

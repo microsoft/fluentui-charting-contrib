@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Percentage of Women in SA Tourism (2.4.2.1)",
+  "description": "Bar chart showing target vs achieved percentage of women in SA tourism",
+  "data": {
+    "values": [
+      {"category": "Target", "percentage": 60},
+      {"category": "Achieved", "percentage": 65}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category",
+      "axis": {"labelAngle": 0}
+    },
+    "y": {
+      "field": "percentage",
+      "type": "quantitative",
+      "title": "Percentage",
+      "scale": {"domain": [0, 100]}
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "scale": {"range": ["blue", "green"]},
+      "legend": null
+    }
+  }
+}

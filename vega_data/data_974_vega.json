@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2025-09-01",
+        "y": 24,
+        "series": "Daily active users"
+      },
+      {
+        "x": "2025-09-02",
+        "y": 27,
+        "series": "Daily active users"
+      },
+      {
+        "x": "2025-09-03",
+        "y": 32,
+        "series": "Daily active users"
+      },
+      {
+        "x": "2025-09-04",
+        "y": 45,
+        "series": "Daily active users"
+      },
+      {
+        "x": "2025-09-05",
+        "y": 38,
+        "series": "Daily active users"
+      },
+      {
+        "x": "2025-09-06",
+        "y": 41,
+        "series": "Daily active users"
+      },
+      {
+        "x": "2025-09-07",
+        "y": 48,
+        "series": "Daily active users"
+      }
+    ]
+  },
+  "title": "Daily active users with milestone callouts",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Daily active users (k)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Week"
+      },
+      {
+        "field": "y",
+        "title": "Daily active users (k)"
+      }
+    ]
+  }
+}

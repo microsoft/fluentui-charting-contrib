@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Teacher Performance Over Time",
+  "description": "Converted from Plotly schema 163 - Bubble chart",
+  "data": {
+    "values": [
+      { "year": 2019, "score": 75, "subject": "Math - 5 years", "experience": 5, "rating": 3 },
+      { "year": 2020, "score": 80, "subject": "Science - 3 years", "experience": 3, "rating": 4 },
+      { "year": 2021, "score": 85, "subject": "English - 10 years", "experience": 10, "rating": 5 },
+      { "year": 2022, "score": 90, "subject": "History - 8 years", "experience": 8, "rating": 3 }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "axis": { "title": "Year" }
+    },
+    "y": {
+      "field": "score",
+      "type": "quantitative",
+      "axis": { "title": "Average Performance Score" }
+    },
+    "size": {
+      "field": "experience",
+      "type": "quantitative",
+      "legend": { "title": "Years Experience" }
+    },
+    "color": {
+      "field": "rating",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Rating" }
+    },
+    "tooltip": [
+      { "field": "subject", "type": "nominal" },
+      { "field": "score", "type": "quantitative" },
+      { "field": "experience", "type": "quantitative" }
+    ]
+  }
+}

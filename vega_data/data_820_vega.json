@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-01-31T00:00:00",
+        "y": 92.60264560189927,
+        "series": "Delivery Success Rate (%)"
+      },
+      {
+        "x": "2024-02-29T00:00:00",
+        "y": 89.74963282469315,
+        "series": "Delivery Success Rate (%)"
+      },
+      {
+        "x": "2024-03-31T00:00:00",
+        "y": 92.0078567065769,
+        "series": "Delivery Success Rate (%)"
+      },
+      {
+        "x": "2024-04-30T00:00:00",
+        "y": 93.70705438651677,
+        "series": "Delivery Success Rate (%)"
+      },
+      {
+        "x": "2024-05-31T00:00:00",
+        "y": 92.97463263375526,
+        "series": "Delivery Success Rate (%)"
+      },
+      {
+        "x": "2024-06-30T00:00:00",
+        "y": 93.6883545957732,
+        "series": "Delivery Success Rate (%)"
+      },
+      {
+        "x": "2024-07-31T00:00:00",
+        "y": 98.17345404607855,
+        "series": "Delivery Success Rate (%)"
+      },
+      {
+        "x": "2024-08-31T00:00:00",
+        "y": 98.67664042807193,
+        "series": "Delivery Success Rate (%)"
+      },
+      {
+        "x": "2024-09-30T00:00:00",
+        "y": 96.4498012868813,
+        "series": "Delivery Success Rate (%)"
+      },
+      {
+        "x": "2024-10-31T00:00:00",
+        "y": 97.83166982963765,
+        "series": "Delivery Success Rate (%)"
+      },
+      {
+        "x": "2024-01-31T00:00:00",
+        "y": 0,
+        "series": "Delayed Shipment Incidents"
+      },
+      {
+        "x": "2024-02-29T00:00:00",
+        "y": 0,
+        "series": "Delayed Shipment Incidents"
+      },
+      {
+        "x": "2024-03-31T00:00:00",
+        "y": 2,
+        "series": "Delayed Shipment Incidents"
+      },
+      {
+        "x": "2024-04-30T00:00:00",
+        "y": 1,
+        "series": "Delayed Shipment Incidents"
+      },
+      {
+        "x": "2024-05-31T00:00:00",
+        "y": 1,
+        "series": "Delayed Shipment Incidents"
+      },
+      {
+        "x": "2024-06-30T00:00:00",
+        "y": 0,
+        "series": "Delayed Shipment Incidents"
+      },
+      {
+        "x": "2024-07-31T00:00:00",
+        "y": 1,
+        "series": "Delayed Shipment Incidents"
+      },
+      {
+        "x": "2024-08-31T00:00:00",
+        "y": 1,
+        "series": "Delayed Shipment Incidents"
+      },
+      {
+        "x": "2024-09-30T00:00:00",
+        "y": 2,
+        "series": "Delayed Shipment Incidents"
+      },
+      {
+        "x": "2024-10-31T00:00:00",
+        "y": 2,
+        "series": "Delayed Shipment Incidents"
+      }
+    ]
+  },
+  "title": "Delivery Success Rate with Incident Overlay (Ammunition)",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Success Rate (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Success Rate (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

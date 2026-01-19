@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Resolution Time Analysis by Batch",
+  "description": "Converted from Plotly schema 309 - Multi-series line+markers (simplified from 25 to 4 metrics)",
+  "width": 500,
+  "height": 350,
+  "data": {
+    "values": [
+      { "batch": "Batch A", "time": 12, "metric": "Average Resolution Time" },
+      { "batch": "Batch B", "time": 18, "metric": "Average Resolution Time" },
+      { "batch": "Batch C", "time": 10, "metric": "Average Resolution Time" },
+      { "batch": "Batch D", "time": 22, "metric": "Average Resolution Time" },
+      { "batch": "Batch E", "time": 15, "metric": "Average Resolution Time" },
+      { "batch": "Batch F", "time": 20, "metric": "Average Resolution Time" },
+      { "batch": "Batch G", "time": 14, "metric": "Average Resolution Time" },
+      { "batch": "Batch H", "time": 19, "metric": "Average Resolution Time" },
+      { "batch": "Batch I", "time": 23, "metric": "Average Resolution Time" },
+      { "batch": "Batch J", "time": 17, "metric": "Average Resolution Time" },
+      { "batch": "Batch A", "time": 5, "metric": "Min Resolution Time" },
+      { "batch": "Batch B", "time": 9, "metric": "Min Resolution Time" },
+      { "batch": "Batch C", "time": 4, "metric": "Min Resolution Time" },
+      { "batch": "Batch D", "time": 10, "metric": "Min Resolution Time" },
+      { "batch": "Batch E", "time": 7, "metric": "Min Resolution Time" },
+      { "batch": "Batch F", "time": 6, "metric": "Min Resolution Time" },
+      { "batch": "Batch G", "time": 8, "metric": "Min Resolution Time" },
+      { "batch": "Batch H", "time": 7, "metric": "Min Resolution Time" },
+      { "batch": "Batch I", "time": 9, "metric": "Min Resolution Time" },
+      { "batch": "Batch J", "time": 6, "metric": "Min Resolution Time" },
+      { "batch": "Batch A", "time": 20, "metric": "Max Resolution Time" },
+      { "batch": "Batch B", "time": 25, "metric": "Max Resolution Time" },
+      { "batch": "Batch C", "time": 15, "metric": "Max Resolution Time" },
+      { "batch": "Batch D", "time": 30, "metric": "Max Resolution Time" },
+      { "batch": "Batch E", "time": 22, "metric": "Max Resolution Time" },
+      { "batch": "Batch F", "time": 28, "metric": "Max Resolution Time" },
+      { "batch": "Batch G", "time": 18, "metric": "Max Resolution Time" },
+      { "batch": "Batch H", "time": 26, "metric": "Max Resolution Time" },
+      { "batch": "Batch I", "time": 32, "metric": "Max Resolution Time" },
+      { "batch": "Batch J", "time": 21, "metric": "Max Resolution Time" },
+      { "batch": "Batch A", "time": 14, "metric": "Median Resolution Time" },
+      { "batch": "Batch B", "time": 13, "metric": "Median Resolution Time" },
+      { "batch": "Batch C", "time": 12, "metric": "Median Resolution Time" },
+      { "batch": "Batch D", "time": 19, "metric": "Median Resolution Time" },
+      { "batch": "Batch E", "time": 16, "metric": "Median Resolution Time" },
+      { "batch": "Batch F", "time": 18, "metric": "Median Resolution Time" },
+      { "batch": "Batch G", "time": 17, "metric": "Median Resolution Time" },
+      { "batch": "Batch H", "time": 15, "metric": "Median Resolution Time" },
+      { "batch": "Batch I", "time": 20, "metric": "Median Resolution Time" },
+      { "batch": "Batch J", "time": 14, "metric": "Median Resolution Time" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "batch",
+          "type": "ordinal",
+          "axis": { "title": "Batch" }
+        },
+        "y": {
+          "field": "time",
+          "type": "quantitative",
+          "axis": { "title": "Time (hours)" }
+        },
+        "color": {
+          "field": "metric",
+          "type": "nominal",
+          "scale": { "range": ["rgba(26,118,255,0.7)", "rgba(50,171,96,0.7)", "rgba(255,99,71,0.7)", "rgba(123,104,238,0.7)"] },
+          "legend": { "title": "Metric" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "batch", "type": "ordinal" },
+        "y": { "field": "time", "type": "quantitative" },
+        "color": { "field": "metric", "type": "nominal" }
+      }
+    }
+  ]
+}

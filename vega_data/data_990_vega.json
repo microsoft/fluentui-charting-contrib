@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 0.5,
+        "y": 3.2,
+        "series": "Voltage"
+      },
+      {
+        "x": 1.2,
+        "y": 5.1,
+        "series": "Voltage"
+      },
+      {
+        "x": 2.1,
+        "y": 4.7,
+        "series": "Voltage"
+      },
+      {
+        "x": 3.5,
+        "y": 6.3,
+        "series": "Voltage"
+      },
+      {
+        "x": 4.8,
+        "y": 7.8,
+        "series": "Voltage"
+      },
+      {
+        "x": 6.2,
+        "y": 9.1,
+        "series": "Voltage"
+      }
+    ]
+  },
+  "title": "Voltage Measurements",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Time (ms)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Voltage (V)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Time (ms)"
+      },
+      {
+        "field": "y",
+        "title": "Voltage (V)"
+      }
+    ]
+  }
+}

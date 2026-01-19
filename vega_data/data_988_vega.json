@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": -20,
+        "y": 5,
+        "series": "Growth Rate"
+      },
+      {
+        "x": -10,
+        "y": 8,
+        "series": "Growth Rate"
+      },
+      {
+        "x": 0,
+        "y": 12,
+        "series": "Growth Rate"
+      },
+      {
+        "x": 10,
+        "y": 15,
+        "series": "Growth Rate"
+      },
+      {
+        "x": 20,
+        "y": 18,
+        "series": "Growth Rate"
+      },
+      {
+        "x": 28,
+        "y": 22,
+        "series": "Growth Rate"
+      }
+    ]
+  },
+  "title": "Growth Rate Analysis",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Days from Start"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Growth %"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Days from Start"
+      },
+      {
+        "field": "y",
+        "title": "Growth %"
+      }
+    ]
+  }
+}

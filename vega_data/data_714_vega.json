@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "x": "Bond",
+        "y": "P100",
+        "value": 1.4802331355728444
+      },
+      {
+        "x": "Cash",
+        "y": "P100",
+        "value": 0.40171776578886714
+      },
+      {
+        "x": "Commodities",
+        "y": "P100",
+        "value": 1.292826567379725
+      },
+      {
+        "x": "Equity",
+        "y": "P100",
+        "value": -0.24976172781473807
+      },
+      {
+        "x": "Real Estate",
+        "y": "P100",
+        "value": -0.016137923719019804
+      },
+      {
+        "x": "Bond",
+        "y": "P101",
+        "value": 0.7825137106944844
+      },
+      {
+        "x": "Cash",
+        "y": "P101",
+        "value": 0.7777832803900872
+      },
+      {
+        "x": "Commodities",
+        "y": "P101",
+        "value": 1.3254579519199956
+      },
+      {
+        "x": "Equity",
+        "y": "P101",
+        "value": -0.09830727768247353
+      },
+      {
+        "x": "Real Estate",
+        "y": "P101",
+        "value": 1.820019187022084
+      },
+      {
+        "x": "Bond",
+        "y": "P102",
+        "value": -1.0937772644903985
+      },
+      {
+        "x": "Cash",
+        "y": "P102",
+        "value": 2.2970445552252814
+      },
+      {
+        "x": "Commodities",
+        "y": "P102",
+        "value": -0.6880556803829442
+      },
+      {
+        "x": "Equity",
+        "y": "P102",
+        "value": 1.2122280182732277
+      },
+      {
+        "x": "Real Estate",
+        "y": "P102",
+        "value": 0.39085612072959863
+      },
+      {
+        "x": "Bond",
+        "y": "P103",
+        "value": 0.3806055131374457
+      },
+      {
+        "x": "Cash",
+        "y": "P103",
+        "value": 0.9336255032591426
+      },
+      {
+        "x": "Commodities",
+        "y": "P103",
+        "value": 0.7450157134217678
+      },
+      {
+        "x": "Equity",
+        "y": "P103",
+        "value": -0.1011518382219686
+      },
+      {
+        "x": "Real Estate",
+        "y": "P103",
+        "value": -1.5132877763753463
+      }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "y",
+      "type": "ordinal"
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "blues"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Average Portfolio Return (%) by Portfolio & Asset Type (2023)"
+}

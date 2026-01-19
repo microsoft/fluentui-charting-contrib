@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "category": "Customer Support",
+        "value": 0.04
+      },
+      {
+        "category": "Finance",
+        "value": 0.01
+      },
+      {
+        "category": "HR",
+        "value": 0.02
+      },
+      {
+        "category": "IT",
+        "value": 0.05
+      },
+      {
+        "category": "Legal",
+        "value": 0.02
+      },
+      {
+        "category": "Operations",
+        "value": 0.03
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Departmental Contributions to Inefficiencies"
+}

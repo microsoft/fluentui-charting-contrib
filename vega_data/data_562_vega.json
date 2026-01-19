@@ -1,0 +1,533 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 4.5,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 3.6,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.9,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.3,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.2,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 4.1,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.5,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 3.6,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.9,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.3,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.2,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 4.1,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.5,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 3.6,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.9,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.3,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.2,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 4.1,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.5,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 3.6,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.9,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.3,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.2,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 4.1,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.5,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 3.6,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.9,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.3,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.2,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 4.1,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.5,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 3.6,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.9,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.3,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.2,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 4.1,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.5,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 3.6,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.9,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.3,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.2,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 4.1,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.5,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 3.6,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.9,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.3,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.2,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 4.1,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.5,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 3.6,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.9,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.3,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.2,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 4.1,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.5,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 3.6,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.9,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4.3,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 3.2,
+        "y": "Phone",
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": "Email",
+        "series": "Series"
+      },
+      {
+        "x": 4.7,
+        "y": "Chat",
+        "series": "Series"
+      },
+      {
+        "x": 4.1,
+        "y": "Phone",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Satisfaction Scores by Resolution Method",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "satisfaction_score"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "resolution_method"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "satisfaction_score"
+      },
+      {
+        "field": "y",
+        "title": "resolution_method"
+      }
+    ]
+  }
+}

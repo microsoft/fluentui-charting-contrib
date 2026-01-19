@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Average Response Time by Threat Type",
+  "description": "Converted from Plotly schema 152 - Bar chart",
+  "data": {
+    "values": [
+      { "threat": "Malware", "time": 5 },
+      { "threat": "Phishing", "time": 3 },
+      { "threat": "DDoS", "time": 7 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "threat",
+      "type": "nominal",
+      "axis": { "title": "Threat Type" }
+    },
+    "y": {
+      "field": "time",
+      "type": "quantitative",
+      "axis": { "title": "Average Response Time (Hours)" }
+    }
+  }
+}

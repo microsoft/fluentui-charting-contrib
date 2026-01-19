@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Quarterly Training Completion Rates",
+  "description": "Converted from Plotly schema 95 - Line chart with markers",
+  "data": {
+    "values": [
+      { "quarter": "Q1", "rate": 78 },
+      { "quarter": "Q2", "rate": 82 },
+      { "quarter": "Q3", "rate": 87 },
+      { "quarter": "Q4", "rate": 85 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "ordinal",
+      "axis": { "title": "Quarters" }
+    },
+    "y": {
+      "field": "rate",
+      "type": "quantitative",
+      "axis": { "title": "Completion Rate (%)" }
+    }
+  }
+}

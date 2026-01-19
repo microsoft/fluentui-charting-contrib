@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Performance Intensity Across Subjects and Exam Dates",
+  "description": "Converted from Plotly schema 53 - Heatmap",
+  "data": {
+    "values": [
+      { "subject": "Mathematics", "exam": "Sep", "score": 72 },
+      { "subject": "Mathematics", "exam": "Nov", "score": 78 },
+      { "subject": "Mathematics", "exam": "Jan", "score": 85 },
+      { "subject": "Mathematics", "exam": "Mar", "score": 90 },
+      { "subject": "Mathematics", "exam": "Jun", "score": 95 },
+      { "subject": "Science", "exam": "Sep", "score": 65 },
+      { "subject": "Science", "exam": "Nov", "score": 70 },
+      { "subject": "Science", "exam": "Jan", "score": 78 },
+      { "subject": "Science", "exam": "Mar", "score": 83 },
+      { "subject": "Science", "exam": "Jun", "score": 87 },
+      { "subject": "English", "exam": "Sep", "score": 50 },
+      { "subject": "English", "exam": "Nov", "score": 58 },
+      { "subject": "English", "exam": "Jan", "score": 65 },
+      { "subject": "English", "exam": "Mar", "score": 73 },
+      { "subject": "English", "exam": "Jun", "score": 80 },
+      { "subject": "History", "exam": "Sep", "score": 55 },
+      { "subject": "History", "exam": "Nov", "score": 60 },
+      { "subject": "History", "exam": "Jan", "score": 65 },
+      { "subject": "History", "exam": "Mar", "score": 70 },
+      { "subject": "History", "exam": "Jun", "score": 75 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "exam",
+      "type": "ordinal",
+      "axis": { "title": "Exam Dates" },
+      "sort": ["Sep", "Nov", "Jan", "Mar", "Jun"]
+    },
+    "y": {
+      "field": "subject",
+      "type": "nominal",
+      "axis": { "title": "Subjects" }
+    },
+    "color": {
+      "field": "score",
+      "type": "quantitative",
+      "scale": { "scheme": "spectral" },
+      "legend": { "title": "Score" }
+    }
+  }
+}

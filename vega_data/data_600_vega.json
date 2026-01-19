@@ -1,0 +1,282 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2016,
+        "y": 12000,
+        "series": "University"
+      },
+      {
+        "x": 2017,
+        "y": 12400,
+        "series": "University"
+      },
+      {
+        "x": 2018,
+        "y": 12850,
+        "series": "University"
+      },
+      {
+        "x": 2019,
+        "y": 13500,
+        "series": "University"
+      },
+      {
+        "x": 2020,
+        "y": 14000,
+        "series": "University"
+      },
+      {
+        "x": 2021,
+        "y": 14300,
+        "series": "University"
+      },
+      {
+        "x": 2022,
+        "y": 14750,
+        "series": "University"
+      },
+      {
+        "x": 2023,
+        "y": 15210,
+        "series": "University"
+      },
+      {
+        "x": 2016,
+        "y": 11000,
+        "series": "University"
+      },
+      {
+        "x": 2017,
+        "y": 11300,
+        "series": "University"
+      },
+      {
+        "x": 2018,
+        "y": 11500,
+        "series": "University"
+      },
+      {
+        "x": 2019,
+        "y": 12100,
+        "series": "University"
+      },
+      {
+        "x": 2020,
+        "y": 12600,
+        "series": "University"
+      },
+      {
+        "x": 2021,
+        "y": 13000,
+        "series": "University"
+      },
+      {
+        "x": 2022,
+        "y": 13400,
+        "series": "University"
+      },
+      {
+        "x": 2023,
+        "y": 13800,
+        "series": "University"
+      },
+      {
+        "x": 2016,
+        "y": 8000,
+        "series": "Community College"
+      },
+      {
+        "x": 2017,
+        "y": 8200,
+        "series": "Community College"
+      },
+      {
+        "x": 2018,
+        "y": 8450,
+        "series": "Community College"
+      },
+      {
+        "x": 2019,
+        "y": 8600,
+        "series": "Community College"
+      },
+      {
+        "x": 2020,
+        "y": 8850,
+        "series": "Community College"
+      },
+      {
+        "x": 2021,
+        "y": 9120,
+        "series": "Community College"
+      },
+      {
+        "x": 2022,
+        "y": 9300,
+        "series": "Community College"
+      },
+      {
+        "x": 2023,
+        "y": 9600,
+        "series": "Community College"
+      },
+      {
+        "x": 2016,
+        "y": 6000,
+        "series": "Community College"
+      },
+      {
+        "x": 2017,
+        "y": 6500,
+        "series": "Community College"
+      },
+      {
+        "x": 2018,
+        "y": 6700,
+        "series": "Community College"
+      },
+      {
+        "x": 2019,
+        "y": 6900,
+        "series": "Community College"
+      },
+      {
+        "x": 2020,
+        "y": 7100,
+        "series": "Community College"
+      },
+      {
+        "x": 2021,
+        "y": 7300,
+        "series": "Community College"
+      },
+      {
+        "x": 2022,
+        "y": 7600,
+        "series": "Community College"
+      },
+      {
+        "x": 2023,
+        "y": 7800,
+        "series": "Community College"
+      },
+      {
+        "x": 2016,
+        "y": 15000,
+        "series": "K-12"
+      },
+      {
+        "x": 2017,
+        "y": 15400,
+        "series": "K-12"
+      },
+      {
+        "x": 2018,
+        "y": 15500,
+        "series": "K-12"
+      },
+      {
+        "x": 2019,
+        "y": 16000,
+        "series": "K-12"
+      },
+      {
+        "x": 2020,
+        "y": 16500,
+        "series": "K-12"
+      },
+      {
+        "x": 2021,
+        "y": 17000,
+        "series": "K-12"
+      },
+      {
+        "x": 2022,
+        "y": 17350,
+        "series": "K-12"
+      },
+      {
+        "x": 2023,
+        "y": 17800,
+        "series": "K-12"
+      },
+      {
+        "x": 2016,
+        "y": 17000,
+        "series": "K-12"
+      },
+      {
+        "x": 2017,
+        "y": 17200,
+        "series": "K-12"
+      },
+      {
+        "x": 2018,
+        "y": 17500,
+        "series": "K-12"
+      },
+      {
+        "x": 2019,
+        "y": 18000,
+        "series": "K-12"
+      },
+      {
+        "x": 2020,
+        "y": 18500,
+        "series": "K-12"
+      },
+      {
+        "x": 2021,
+        "y": 19000,
+        "series": "K-12"
+      },
+      {
+        "x": 2022,
+        "y": 19500,
+        "series": "K-12"
+      },
+      {
+        "x": 2023,
+        "y": 20200,
+        "series": "K-12"
+      }
+    ]
+  },
+  "title": "Education Enrollment Trends by Institution Type and Region",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "enrollment"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "year"
+      },
+      {
+        "field": "y",
+        "title": "enrollment"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

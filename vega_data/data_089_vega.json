@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Fraud Detection Scatter Plot",
+  "description": "Converted from Plotly schema 89 - Scatter plot",
+  "data": {
+    "values": [
+      { "geography": "North America", "size": "Small", "flagged": 10 },
+      { "geography": "Europe", "size": "Medium", "flagged": 15 },
+      { "geography": "Asia", "size": "Large", "flagged": 20 },
+      { "geography": "North America", "size": "Small", "flagged": 30 },
+      { "geography": "Europe", "size": "Medium", "flagged": 10 },
+      { "geography": "Asia", "size": "Large", "flagged": 8 }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "geography",
+      "type": "nominal",
+      "axis": { "title": "Geography" }
+    },
+    "y": {
+      "field": "size",
+      "type": "nominal",
+      "axis": { "title": "Transaction Size" }
+    },
+    "color": {
+      "field": "flagged",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Number of Flagged Transactions" }
+    }
+  }
+}

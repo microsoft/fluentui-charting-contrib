@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 777600000,
+        "y": 1,
+        "series": "HR"
+      },
+      {
+        "x": 432000000,
+        "y": 2,
+        "series": "Finance"
+      },
+      {
+        "x": 604800000,
+        "y": 3,
+        "series": "IT"
+      },
+      {
+        "x": 864000000,
+        "y": 4,
+        "series": "Operations"
+      },
+      {
+        "x": 777600000,
+        "y": 5,
+        "series": "Customer Support"
+      },
+      {
+        "x": 864000000,
+        "y": 6,
+        "series": "Legal"
+      }
+    ]
+  },
+  "title": "Process Timelines - Operational Efficiency",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Process ID"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Process ID"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

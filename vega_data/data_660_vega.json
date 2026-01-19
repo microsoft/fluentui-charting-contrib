@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Hotel A",
+        "y": 79.70914127423822,
+        "series": "Hotel A"
+      },
+      {
+        "x": "Hotel B",
+        "y": 78.91696750902527,
+        "series": "Hotel B"
+      },
+      {
+        "x": "Hotel C",
+        "y": 77.8270509977827,
+        "series": "Hotel C"
+      },
+      {
+        "x": "Hotel D",
+        "y": 77.3158278628738,
+        "series": "Hotel D"
+      }
+    ]
+  },
+  "title": "Hotel Occupancy Rate by Location (Monthly Aggregation)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Hotel"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Occupancy Rate (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Hotel"
+      },
+      {
+        "field": "y",
+        "title": "Occupancy Rate (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

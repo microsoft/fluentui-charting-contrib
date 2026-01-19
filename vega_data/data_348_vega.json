@@ -1,0 +1,1573 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Abbeydale",
+        "y": 370738,
+        "series": "Series"
+      },
+      {
+        "x": "Acadia",
+        "y": 635955.2857142857,
+        "series": "Series"
+      },
+      {
+        "x": "Albert Park/Radisson Heights",
+        "y": 383711.25,
+        "series": "Series"
+      },
+      {
+        "x": "Alpine Park",
+        "y": 720437.5,
+        "series": "Series"
+      },
+      {
+        "x": "Altadore",
+        "y": 1060189.975,
+        "series": "Series"
+      },
+      {
+        "x": "Ambleton",
+        "y": 715766.6666666666,
+        "series": "Series"
+      },
+      {
+        "x": "Applewood Park",
+        "y": 513766.5,
+        "series": "Series"
+      },
+      {
+        "x": "Arbour Lake",
+        "y": 676630,
+        "series": "Series"
+      },
+      {
+        "x": "Arbour Lake Landing",
+        "y": 359900,
+        "series": "Series"
+      },
+      {
+        "x": "Aspen Woods",
+        "y": 1811246.0333333334,
+        "series": "Series"
+      },
+      {
+        "x": "Auburn Bay",
+        "y": 556982.724137931,
+        "series": "Series"
+      },
+      {
+        "x": "Banff Trail",
+        "y": 969315.3076923077,
+        "series": "Series"
+      },
+      {
+        "x": "Bankview",
+        "y": 622410.925,
+        "series": "Series"
+      },
+      {
+        "x": "Beddington Heights",
+        "y": 498159.26666666666,
+        "series": "Series"
+      },
+      {
+        "x": "Bel-Aire",
+        "y": 3950000,
+        "series": "Series"
+      },
+      {
+        "x": "Belmont",
+        "y": 652965.3333333334,
+        "series": "Series"
+      },
+      {
+        "x": "Beltline",
+        "y": 400977.89677419356,
+        "series": "Series"
+      },
+      {
+        "x": "Belvedere",
+        "y": 722427.6428571428,
+        "series": "Series"
+      },
+      {
+        "x": "Bonavista Downs",
+        "y": 650000,
+        "series": "Series"
+      },
+      {
+        "x": "Bowness",
+        "y": 1067862.857142857,
+        "series": "Series"
+      },
+      {
+        "x": "Brae Glen West",
+        "y": 299900,
+        "series": "Series"
+      },
+      {
+        "x": "Braeside",
+        "y": 498100,
+        "series": "Series"
+      },
+      {
+        "x": "Brentwood",
+        "y": 646728.5,
+        "series": "Series"
+      },
+      {
+        "x": "Bridgeland/Riverside",
+        "y": 644585.0975609756,
+        "series": "Series"
+      },
+      {
+        "x": "Bridlewood",
+        "y": 457937.5,
+        "series": "Series"
+      },
+      {
+        "x": "Brighton Court",
+        "y": 749900,
+        "series": "Series"
+      },
+      {
+        "x": "Britannia",
+        "y": 2966816.6666666665,
+        "series": "Series"
+      },
+      {
+        "x": "Brompton Court",
+        "y": 1225000,
+        "series": "Series"
+      },
+      {
+        "x": "Cactus Ridge",
+        "y": 399900,
+        "series": "Series"
+      },
+      {
+        "x": "Cambrian Heights",
+        "y": 1316633.3333333333,
+        "series": "Series"
+      },
+      {
+        "x": "Canyon Creek Heights",
+        "y": 283300,
+        "series": "Series"
+      },
+      {
+        "x": "Canyon Meadows",
+        "y": 833067.6315789474,
+        "series": "Series"
+      },
+      {
+        "x": "Capitol Hill",
+        "y": 900565.5,
+        "series": "Series"
+      },
+      {
+        "x": "Carrington",
+        "y": 774051.5384615385,
+        "series": "Series"
+      },
+      {
+        "x": "Castleridge",
+        "y": 549580,
+        "series": "Series"
+      },
+      {
+        "x": "Cedarbrae",
+        "y": 661828.5714285715,
+        "series": "Series"
+      },
+      {
+        "x": "Century Manor",
+        "y": 299900,
+        "series": "Series"
+      },
+      {
+        "x": "Chaparral",
+        "y": 755038.3846153846,
+        "series": "Series"
+      },
+      {
+        "x": "Charleswood",
+        "y": 812359.9,
+        "series": "Series"
+      },
+      {
+        "x": "Chateau Falls",
+        "y": 300000,
+        "series": "Series"
+      },
+      {
+        "x": "Chateau On The Green",
+        "y": 1024450,
+        "series": "Series"
+      },
+      {
+        "x": "Chesapeake",
+        "y": 449900,
+        "series": "Series"
+      },
+      {
+        "x": "Chinatown",
+        "y": 425588.23529411765,
+        "series": "Series"
+      },
+      {
+        "x": "Chinook Park",
+        "y": 462975,
+        "series": "Series"
+      },
+      {
+        "x": "Christie Park",
+        "y": 1017650,
+        "series": "Series"
+      },
+      {
+        "x": "Citadel",
+        "y": 539098.3571428572,
+        "series": "Series"
+      },
+      {
+        "x": "Cityscape",
+        "y": 700311.6666666666,
+        "series": "Series"
+      },
+      {
+        "x": "Classics",
+        "y": 389000,
+        "series": "Series"
+      },
+      {
+        "x": "Cliff Bungalow",
+        "y": 601166.6666666666,
+        "series": "Series"
+      },
+      {
+        "x": "Cliff Bungalow Townhouses",
+        "y": 1398000,
+        "series": "Series"
+      },
+      {
+        "x": "Coach Bluff Villas",
+        "y": 425000,
+        "series": "Series"
+      },
+      {
+        "x": "Coach Hill",
+        "y": 642579.8,
+        "series": "Series"
+      },
+      {
+        "x": "Coachway Gardens",
+        "y": 459000,
+        "series": "Series"
+      },
+      {
+        "x": "College Gate",
+        "y": 430000,
+        "series": "Series"
+      },
+      {
+        "x": "Collingwood",
+        "y": 1121869.642857143,
+        "series": "Series"
+      },
+      {
+        "x": "Copperfield",
+        "y": 464644.037037037,
+        "series": "Series"
+      },
+      {
+        "x": "Copperfield Chalet",
+        "y": 432633.3333333333,
+        "series": "Series"
+      },
+      {
+        "x": "Coral Springs",
+        "y": 851466.6666666666,
+        "series": "Series"
+      },
+      {
+        "x": "Cornerstone",
+        "y": 627371.0857142857,
+        "series": "Series"
+      },
+      {
+        "x": "Cougar Ridge",
+        "y": 982699.1333333333,
+        "series": "Series"
+      },
+      {
+        "x": "Country Hills",
+        "y": 619900,
+        "series": "Series"
+      },
+      {
+        "x": "Country Hills Village",
+        "y": 268425,
+        "series": "Series"
+      },
+      {
+        "x": "Coventry Hills",
+        "y": 589558.5909090909,
+        "series": "Series"
+      },
+      {
+        "x": "Coventry Station",
+        "y": 342449.5,
+        "series": "Series"
+      },
+      {
+        "x": "Cranston",
+        "y": 907925.6481481482,
+        "series": "Series"
+      },
+      {
+        "x": "Cranston Ridge",
+        "y": 459900,
+        "series": "Series"
+      },
+      {
+        "x": "Crescent Heights",
+        "y": 530188.2058823529,
+        "series": "Series"
+      },
+      {
+        "x": "Crestmont",
+        "y": 996968,
+        "series": "Series"
+      },
+      {
+        "x": "Currie Barracks",
+        "y": 1125129.4117647058,
+        "series": "Series"
+      },
+      {
+        "x": "Currie Barracks Axess",
+        "y": 539000,
+        "series": "Series"
+      },
+      {
+        "x": "Dalhousie",
+        "y": 508752.9090909091,
+        "series": "Series"
+      },
+      {
+        "x": "Dalton Mews",
+        "y": 359800,
+        "series": "Series"
+      },
+      {
+        "x": "Dalton Square",
+        "y": 324999.6666666667,
+        "series": "Series"
+      },
+      {
+        "x": "Deer Ridge",
+        "y": 489900,
+        "series": "Series"
+      },
+      {
+        "x": "Deer Run",
+        "y": 591225,
+        "series": "Series"
+      },
+      {
+        "x": "Diamond Cove",
+        "y": 839950,
+        "series": "Series"
+      },
+      {
+        "x": "Discovery Ridge",
+        "y": 1176516.9090909092,
+        "series": "Series"
+      },
+      {
+        "x": "Douglas Glen Gardens",
+        "y": 415000,
+        "series": "Series"
+      },
+      {
+        "x": "Douglasdale/Glen",
+        "y": 822011.5555555555,
+        "series": "Series"
+      },
+      {
+        "x": "Dover",
+        "y": 355905.17647058825,
+        "series": "Series"
+      },
+      {
+        "x": "Downtown Commercial Core",
+        "y": 663756.6,
+        "series": "Series"
+      },
+      {
+        "x": "Downtown East Village",
+        "y": 422833.9024390244,
+        "series": "Series"
+      },
+      {
+        "x": "Downtown West End",
+        "y": 498331.5789473684,
+        "series": "Series"
+      },
+      {
+        "x": "Eagle Ridge",
+        "y": 3695750,
+        "series": "Series"
+      },
+      {
+        "x": "Eau Claire",
+        "y": 1130688.3023255814,
+        "series": "Series"
+      },
+      {
+        "x": "Edenmore",
+        "y": 485000,
+        "series": "Series"
+      },
+      {
+        "x": "Edgemont",
+        "y": 885432.8333333334,
+        "series": "Series"
+      },
+      {
+        "x": "Elbow Park",
+        "y": 2516618.1818181816,
+        "series": "Series"
+      },
+      {
+        "x": "Elboya",
+        "y": 2835400,
+        "series": "Series"
+      },
+      {
+        "x": "Erin Woods",
+        "y": 406211.1111111111,
+        "series": "Series"
+      },
+      {
+        "x": "Erlton",
+        "y": 635960,
+        "series": "Series"
+      },
+      {
+        "x": "Evanston",
+        "y": 764474.1428571428,
+        "series": "Series"
+      },
+      {
+        "x": "Evanston Square",
+        "y": 427450,
+        "series": "Series"
+      },
+      {
+        "x": "Evergreen",
+        "y": 744059.96,
+        "series": "Series"
+      },
+      {
+        "x": "Everstone Place",
+        "y": 370000,
+        "series": "Series"
+      },
+      {
+        "x": "Evolution",
+        "y": 599900,
+        "series": "Series"
+      },
+      {
+        "x": "Ezra On Riley Park",
+        "y": 639900,
+        "series": "Series"
+      },
+      {
+        "x": "Fairview",
+        "y": 589360,
+        "series": "Series"
+      },
+      {
+        "x": "Fairwood Court",
+        "y": 399900,
+        "series": "Series"
+      },
+      {
+        "x": "Falconridge",
+        "y": 467863.05263157893,
+        "series": "Series"
+      },
+      {
+        "x": "Foothills",
+        "y": 2498880,
+        "series": "Series"
+      },
+      {
+        "x": "Foothills Village",
+        "y": 289900,
+        "series": "Series"
+      },
+      {
+        "x": "Forest Glen Gardens",
+        "y": 199900,
+        "series": "Series"
+      },
+      {
+        "x": "Forest Heights",
+        "y": 438300,
+        "series": "Series"
+      },
+      {
+        "x": "Forest Lawn",
+        "y": 408465.94444444444,
+        "series": "Series"
+      },
+      {
+        "x": "Fresco Gardens - Taradale",
+        "y": 374000,
+        "series": "Series"
+      },
+      {
+        "x": "Garrison Green",
+        "y": 705362.5,
+        "series": "Series"
+      },
+      {
+        "x": "Garrison Woods",
+        "y": 568300,
+        "series": "Series"
+      },
+      {
+        "x": "Georgian Village",
+        "y": 279900,
+        "series": "Series"
+      },
+      {
+        "x": "Glacier Ridge",
+        "y": 735653.3333333334,
+        "series": "Series"
+      },
+      {
+        "x": "Gladstone Gardens",
+        "y": 549900,
+        "series": "Series"
+      },
+      {
+        "x": "Glamorgan",
+        "y": 802337.5,
+        "series": "Series"
+      },
+      {
+        "x": "Glenbrook",
+        "y": 652174.9166666666,
+        "series": "Series"
+      },
+      {
+        "x": "Glendale",
+        "y": 1343300,
+        "series": "Series"
+      },
+      {
+        "x": "Goodwin By Anthem",
+        "y": 488430,
+        "series": "Series"
+      },
+      {
+        "x": "Granite",
+        "y": 369999,
+        "series": "Series"
+      },
+      {
+        "x": "Greenview",
+        "y": 318780,
+        "series": "Series"
+      },
+      {
+        "x": "Greenwood/Greenbriar",
+        "y": 552783.3333333334,
+        "series": "Series"
+      },
+      {
+        "x": "Hamptons",
+        "y": 1025859.9,
+        "series": "Series"
+      },
+      {
+        "x": "Harvest Hills",
+        "y": 557466.6666666666,
+        "series": "Series"
+      },
+      {
+        "x": "Haskayne",
+        "y": 866533.3333333334,
+        "series": "Series"
+      },
+      {
+        "x": "Hawkwood",
+        "y": 702135.4545454546,
+        "series": "Series"
+      },
+      {
+        "x": "Haysboro",
+        "y": 360073.39130434784,
+        "series": "Series"
+      },
+      {
+        "x": "Hearthstone Place",
+        "y": 379900,
+        "series": "Series"
+      },
+      {
+        "x": "Hidden Valley",
+        "y": 634533.3333333334,
+        "series": "Series"
+      },
+      {
+        "x": "Highland Park",
+        "y": 679024.1666666666,
+        "series": "Series"
+      },
+      {
+        "x": "Highwood",
+        "y": 764214.2857142857,
+        "series": "Series"
+      },
+      {
+        "x": "Hillhurst",
+        "y": 1287516.606060606,
+        "series": "Series"
+      },
+      {
+        "x": "Homestead",
+        "y": 735388.8888888889,
+        "series": "Series"
+      },
+      {
+        "x": "Horizon Village Varsity",
+        "y": 559900,
+        "series": "Series"
+      },
+      {
+        "x": "Hotchkiss",
+        "y": 644942.8571428572,
+        "series": "Series"
+      },
+      {
+        "x": "Hounsfield Heights/Briar Hill",
+        "y": 1667949.9285714286,
+        "series": "Series"
+      },
+      {
+        "x": "Huntington Hills",
+        "y": 517960,
+        "series": "Series"
+      },
+      {
+        "x": "Inglewood",
+        "y": 790194.8333333334,
+        "series": "Series"
+      },
+      {
+        "x": "Inglewood Grove",
+        "y": 524900,
+        "series": "Series"
+      },
+      {
+        "x": "Kelvin Grove",
+        "y": 1087225,
+        "series": "Series"
+      },
+      {
+        "x": "Killarney Glen Court",
+        "y": 399894,
+        "series": "Series"
+      },
+      {
+        "x": "Killarney/Glengarry",
+        "y": 886808.5714285715,
+        "series": "Series"
+      },
+      {
+        "x": "Kincora",
+        "y": 579707.6923076923,
+        "series": "Series"
+      },
+      {
+        "x": "Kingsland",
+        "y": 511365.3333333333,
+        "series": "Series"
+      },
+      {
+        "x": "Lake Bonavista",
+        "y": 927532.3333333334,
+        "series": "Series"
+      },
+      {
+        "x": "Lakeview",
+        "y": 1273191.5,
+        "series": "Series"
+      },
+      {
+        "x": "Lakeview Green 3",
+        "y": 524500,
+        "series": "Series"
+      },
+      {
+        "x": "Landmark Estates",
+        "y": 539900,
+        "series": "Series"
+      },
+      {
+        "x": "Legacy",
+        "y": 621958.6833333333,
+        "series": "Series"
+      },
+      {
+        "x": "Les Jardins",
+        "y": 626614.2857142857,
+        "series": "Series"
+      },
+      {
+        "x": "Lincoln Park",
+        "y": 352780,
+        "series": "Series"
+      },
+      {
+        "x": "Livingston",
+        "y": 723885.8846153846,
+        "series": "Series"
+      },
+      {
+        "x": "Lookout At Christie Park",
+        "y": 371633.3333333333,
+        "series": "Series"
+      },
+      {
+        "x": "Lower Mount Royal",
+        "y": 310792.4285714286,
+        "series": "Series"
+      },
+      {
+        "x": "Luna",
+        "y": 675000,
+        "series": "Series"
+      },
+      {
+        "x": "Macewan Glen",
+        "y": 606999.5,
+        "series": "Series"
+      },
+      {
+        "x": "Mahogany",
+        "y": 947050.9464285715,
+        "series": "Series"
+      },
+      {
+        "x": "Manchester",
+        "y": 313233.3333333333,
+        "series": "Series"
+      },
+      {
+        "x": "Maple Ridge",
+        "y": 843600,
+        "series": "Series"
+      },
+      {
+        "x": "Marlborough",
+        "y": 502799.85714285716,
+        "series": "Series"
+      },
+      {
+        "x": "Marlborough Park",
+        "y": 501786,
+        "series": "Series"
+      },
+      {
+        "x": "Martindale",
+        "y": 553031.48,
+        "series": "Series"
+      },
+      {
+        "x": "Mayfair",
+        "y": 2111633.3333333335,
+        "series": "Series"
+      },
+      {
+        "x": "Mayland Heights",
+        "y": 376042.85714285716,
+        "series": "Series"
+      },
+      {
+        "x": "Mckenzie Lake",
+        "y": 701462.375,
+        "series": "Series"
+      },
+      {
+        "x": "Mckenzie Towne",
+        "y": 487951.96,
+        "series": "Series"
+      },
+      {
+        "x": "Meadowlark Park",
+        "y": 756500,
+        "series": "Series"
+      },
+      {
+        "x": "Medicine Hill",
+        "y": 605606.3333333334,
+        "series": "Series"
+      },
+      {
+        "x": "Midnapore",
+        "y": 518427.5,
+        "series": "Series"
+      },
+      {
+        "x": "Millgreen Village",
+        "y": 369800,
+        "series": "Series"
+      },
+      {
+        "x": "Millrise",
+        "y": 400645.36363636365,
+        "series": "Series"
+      },
+      {
+        "x": "Mission",
+        "y": 504814.975,
+        "series": "Series"
+      },
+      {
+        "x": "Monterey Park",
+        "y": 602104,
+        "series": "Series"
+      },
+      {
+        "x": "Montgomery",
+        "y": 729197.1904761905,
+        "series": "Series"
+      },
+      {
+        "x": "Mosaic Cranston",
+        "y": 429900,
+        "series": "Series"
+      },
+      {
+        "x": "Mosaic Montage",
+        "y": 365000,
+        "series": "Series"
+      },
+      {
+        "x": "Mosaic Of Aspen Hills",
+        "y": 479950,
+        "series": "Series"
+      },
+      {
+        "x": "Mosaic Of Elgin Hill",
+        "y": 398000,
+        "series": "Series"
+      },
+      {
+        "x": "Mount Pleasant",
+        "y": 1077629.3,
+        "series": "Series"
+      },
+      {
+        "x": "New Brighton",
+        "y": 584449.9166666666,
+        "series": "Series"
+      },
+      {
+        "x": "Nolan Hill",
+        "y": 809554.3,
+        "series": "Series"
+      },
+      {
+        "x": "Nolan Park",
+        "y": 460000,
+        "series": "Series"
+      },
+      {
+        "x": "North Glenmore Park",
+        "y": 1200700,
+        "series": "Series"
+      },
+      {
+        "x": "North Haven",
+        "y": 569900,
+        "series": "Series"
+      },
+      {
+        "x": "North Haven Upper",
+        "y": 769800,
+        "series": "Series"
+      },
+      {
+        "x": "North Park",
+        "y": 329900,
+        "series": "Series"
+      },
+      {
+        "x": "Oakmoor Village",
+        "y": 387500,
+        "series": "Series"
+      },
+      {
+        "x": "Oakridge",
+        "y": 814099.8571428572,
+        "series": "Series"
+      },
+      {
+        "x": "Ogden",
+        "y": 480998.54545454547,
+        "series": "Series"
+      },
+      {
+        "x": "Olive",
+        "y": 749500,
+        "series": "Series"
+      },
+      {
+        "x": "Palace Oaks",
+        "y": 247500,
+        "series": "Series"
+      },
+      {
+        "x": "Palliser",
+        "y": 541500,
+        "series": "Series"
+      },
+      {
+        "x": "Panamount Place",
+        "y": 413900,
+        "series": "Series"
+      },
+      {
+        "x": "Panatella Landing",
+        "y": 277900,
+        "series": "Series"
+      },
+      {
+        "x": "Panorama Hills",
+        "y": 551112.0967741936,
+        "series": "Series"
+      },
+      {
+        "x": "Parkdale",
+        "y": 1160600.8125,
+        "series": "Series"
+      },
+      {
+        "x": "Parkhill",
+        "y": 1610256.25,
+        "series": "Series"
+      },
+      {
+        "x": "Parkland",
+        "y": 837933.3333333334,
+        "series": "Series"
+      },
+      {
+        "x": "Parkside Estates",
+        "y": 359000,
+        "series": "Series"
+      },
+      {
+        "x": "Patterson",
+        "y": 1066509.0909090908,
+        "series": "Series"
+      },
+      {
+        "x": "Penbrooke Meadows",
+        "y": 440966.6666666667,
+        "series": "Series"
+      },
+      {
+        "x": "Pensacola Gardens",
+        "y": 304900,
+        "series": "Series"
+      },
+      {
+        "x": "Pine Creek",
+        "y": 792049.9230769231,
+        "series": "Series"
+      },
+      {
+        "x": "Pineridge",
+        "y": 387862.375,
+        "series": "Series"
+      },
+      {
+        "x": "Pineridge Square",
+        "y": 329900,
+        "series": "Series"
+      },
+      {
+        "x": "Pinnacle At Mount Douglas",
+        "y": 415000,
+        "series": "Series"
+      },
+      {
+        "x": "Point Mckay",
+        "y": 537475,
+        "series": "Series"
+      },
+      {
+        "x": "Point Mckay Gardens",
+        "y": 679900,
+        "series": "Series"
+      },
+      {
+        "x": "Point Mckay Phase I",
+        "y": 540000,
+        "series": "Series"
+      },
+      {
+        "x": "Princes Island Estates",
+        "y": 795000,
+        "series": "Series"
+      },
+      {
+        "x": "Prominence Heights",
+        "y": 525000,
+        "series": "Series"
+      },
+      {
+        "x": "Prospect Rise",
+        "y": 449900,
+        "series": "Series"
+      },
+      {
+        "x": "Pump Hill",
+        "y": 1781333.3333333333,
+        "series": "Series"
+      },
+      {
+        "x": "Queensland",
+        "y": 583385.7142857143,
+        "series": "Series"
+      },
+      {
+        "x": "Quinterra",
+        "y": 374900,
+        "series": "Series"
+      },
+      {
+        "x": "Ramsay",
+        "y": 1111075,
+        "series": "Series"
+      },
+      {
+        "x": "Ranchlands",
+        "y": 585950,
+        "series": "Series"
+      },
+      {
+        "x": "Rangeview",
+        "y": 635748,
+        "series": "Series"
+      },
+      {
+        "x": "Red Carpet",
+        "y": 182400,
+        "series": "Series"
+      },
+      {
+        "x": "Redstone",
+        "y": 599440.4117647059,
+        "series": "Series"
+      },
+      {
+        "x": "Renfrew",
+        "y": 716608.9761904762,
+        "series": "Series"
+      },
+      {
+        "x": "Richmond",
+        "y": 938396.9310344828,
+        "series": "Series"
+      },
+      {
+        "x": "Rideau Park",
+        "y": 460000,
+        "series": "Series"
+      },
+      {
+        "x": "Riverbend",
+        "y": 575040,
+        "series": "Series"
+      },
+      {
+        "x": "Riverside Gate",
+        "y": 334900,
+        "series": "Series"
+      },
+      {
+        "x": "Rocky Ridge",
+        "y": 954628.5,
+        "series": "Series"
+      },
+      {
+        "x": "Rosedale",
+        "y": 2178700,
+        "series": "Series"
+      },
+      {
+        "x": "Rosemont",
+        "y": 1197450,
+        "series": "Series"
+      },
+      {
+        "x": "Rosscarrock",
+        "y": 732980,
+        "series": "Series"
+      },
+      {
+        "x": "Royal Oak",
+        "y": 766249.125,
+        "series": "Series"
+      },
+      {
+        "x": "Rundle",
+        "y": 465265.55555555556,
+        "series": "Series"
+      },
+      {
+        "x": "Rutland Park",
+        "y": 947483.1666666666,
+        "series": "Series"
+      },
+      {
+        "x": "Saddle Ridge",
+        "y": 704935.3194444445,
+        "series": "Series"
+      },
+      {
+        "x": "Sage Hill",
+        "y": 504655.89743589744,
+        "series": "Series"
+      },
+      {
+        "x": "Sagestone",
+        "y": 315000,
+        "series": "Series"
+      },
+      {
+        "x": "Sanctuary",
+        "y": 529000,
+        "series": "Series"
+      },
+      {
+        "x": "Sandstone Valley",
+        "y": 511171.4285714286,
+        "series": "Series"
+      },
+      {
+        "x": "Scarboro",
+        "y": 1387425,
+        "series": "Series"
+      },
+      {
+        "x": "Scarboro Park",
+        "y": 442000,
+        "series": "Series"
+      },
+      {
+        "x": "Scarboro/Sunalta West",
+        "y": 1367500,
+        "series": "Series"
+      },
+      {
+        "x": "Scenic Acres",
+        "y": 835170,
+        "series": "Series"
+      },
+      {
+        "x": "Section 23",
+        "y": 559900,
+        "series": "Series"
+      },
+      {
+        "x": "Seton",
+        "y": 509536.93023255817,
+        "series": "Series"
+      },
+      {
+        "x": "Shaganappi",
+        "y": 968077.1818181818,
+        "series": "Series"
+      },
+      {
+        "x": "Shaganappi Estates",
+        "y": 599888,
+        "series": "Series"
+      },
+      {
+        "x": "Shawnee Slopes",
+        "y": 674029.9230769231,
+        "series": "Series"
+      },
+      {
+        "x": "Shawnessy",
+        "y": 503950,
+        "series": "Series"
+      },
+      {
+        "x": "Shawnessy West",
+        "y": 384900,
+        "series": "Series"
+      },
+      {
+        "x": "Sherwood",
+        "y": 706938.8888888889,
+        "series": "Series"
+      },
+      {
+        "x": "Sienna Park Green Village",
+        "y": 595000,
+        "series": "Series"
+      },
+      {
+        "x": "Sierra Gardens",
+        "y": 204966.66666666666,
+        "series": "Series"
+      },
+      {
+        "x": "Signal Hill",
+        "y": 778928.5,
+        "series": "Series"
+      },
+      {
+        "x": "Signal Hill Green",
+        "y": 318800,
+        "series": "Series"
+      },
+      {
+        "x": "Silver Springs",
+        "y": 701200,
+        "series": "Series"
+      },
+      {
+        "x": "Silverado",
+        "y": 898782.5263157894,
+        "series": "Series"
+      },
+      {
+        "x": "Skyview Ranch",
+        "y": 412808.2916666667,
+        "series": "Series"
+      },
+      {
+        "x": "Skywood Estates",
+        "y": 399800,
+        "series": "Series"
+      },
+      {
+        "x": "Somerset",
+        "y": 449164.28571428574,
+        "series": "Series"
+      },
+      {
+        "x": "Somerset Village",
+        "y": 394900,
+        "series": "Series"
+      },
+      {
+        "x": "Sonoma At Sage Hill",
+        "y": 489999,
+        "series": "Series"
+      },
+      {
+        "x": "South CA",
+        "y": 867396.2222222222,
+        "series": "Series"
+      },
+      {
+        "x": "Southview",
+        "y": 483225,
+        "series": "Series"
+      },
+      {
+        "x": "Southwood",
+        "y": 437937.5,
+        "series": "Series"
+      },
+      {
+        "x": "Southwood Village",
+        "y": 299000,
+        "series": "Series"
+      },
+      {
+        "x": "Springbank Hill",
+        "y": 1602029.6,
+        "series": "Series"
+      },
+      {
+        "x": "Spruce Cliff",
+        "y": 523577.2727272727,
+        "series": "Series"
+      },
+      {
+        "x": "St Andrews Heights",
+        "y": 949900,
+        "series": "Series"
+      },
+      {
+        "x": "Storybook Village",
+        "y": 239900,
+        "series": "Series"
+      },
+      {
+        "x": "Strathcona Park",
+        "y": 942448.75,
+        "series": "Series"
+      },
+      {
+        "x": "Sunalta",
+        "y": 444375.82352941175,
+        "series": "Series"
+      },
+      {
+        "x": "Sundance",
+        "y": 689774.9166666666,
+        "series": "Series"
+      },
+      {
+        "x": "Sunnyside",
+        "y": 484651.48,
+        "series": "Series"
+      },
+      {
+        "x": "Taradale",
+        "y": 508992.5675675676,
+        "series": "Series"
+      },
+      {
+        "x": "Temple",
+        "y": 510431.25,
+        "series": "Series"
+      },
+      {
+        "x": "The Block",
+        "y": 499900,
+        "series": "Series"
+      },
+      {
+        "x": "The Delano",
+        "y": 574800,
+        "series": "Series"
+      },
+      {
+        "x": "The Edison",
+        "y": 420000,
+        "series": "Series"
+      },
+      {
+        "x": "The Enclave",
+        "y": 494300,
+        "series": "Series"
+      },
+      {
+        "x": "The Estate",
+        "y": 798000,
+        "series": "Series"
+      },
+      {
+        "x": "The Mosaic",
+        "y": 450000,
+        "series": "Series"
+      },
+      {
+        "x": "The Oscar",
+        "y": 469000,
+        "series": "Series"
+      },
+      {
+        "x": "The Timbers",
+        "y": 479900,
+        "series": "Series"
+      },
+      {
+        "x": "The View At The Edge",
+        "y": 409900,
+        "series": "Series"
+      },
+      {
+        "x": "Thorncliffe",
+        "y": 571212.5,
+        "series": "Series"
+      },
+      {
+        "x": "Trinity",
+        "y": 477450,
+        "series": "Series"
+      },
+      {
+        "x": "Tudor Mews",
+        "y": 443000,
+        "series": "Series"
+      },
+      {
+        "x": "Tuscany",
+        "y": 725293.3333333334,
+        "series": "Series"
+      },
+      {
+        "x": "Tuxedo Park",
+        "y": 621210.8695652174,
+        "series": "Series"
+      },
+      {
+        "x": "University District",
+        "y": 526086,
+        "series": "Series"
+      },
+      {
+        "x": "University Heights",
+        "y": 1300000,
+        "series": "Series"
+      },
+      {
+        "x": "Upper Mount Royal",
+        "y": 2709989.3684210526,
+        "series": "Series"
+      },
+      {
+        "x": "Valley Ridge",
+        "y": 846955.5555555555,
+        "series": "Series"
+      },
+      {
+        "x": "Varsity",
+        "y": 692399.9444444445,
+        "series": "Series"
+      },
+      {
+        "x": "Vista Heights",
+        "y": 386266.6666666667,
+        "series": "Series"
+      },
+      {
+        "x": "Walden",
+        "y": 597979.9333333333,
+        "series": "Series"
+      },
+      {
+        "x": "West Hillhurst",
+        "y": 1193596.9705882352,
+        "series": "Series"
+      },
+      {
+        "x": "West Springs",
+        "y": 951394.1666666666,
+        "series": "Series"
+      },
+      {
+        "x": "Westgate",
+        "y": 1007350,
+        "series": "Series"
+      },
+      {
+        "x": "Whitehorn",
+        "y": 414118.4375,
+        "series": "Series"
+      },
+      {
+        "x": "Wildstone",
+        "y": 429900,
+        "series": "Series"
+      },
+      {
+        "x": "Wildwood",
+        "y": 1311224.75,
+        "series": "Series"
+      },
+      {
+        "x": "Willow Court Green",
+        "y": 289900,
+        "series": "Series"
+      },
+      {
+        "x": "Willow Park",
+        "y": 1489350,
+        "series": "Series"
+      },
+      {
+        "x": "Windsor Park",
+        "y": 578085.2352941176,
+        "series": "Series"
+      },
+      {
+        "x": "Windsor Park Court",
+        "y": 384000,
+        "series": "Series"
+      },
+      {
+        "x": "Winston Heights/Mountview",
+        "y": 1072047.8260869565,
+        "series": "Series"
+      },
+      {
+        "x": "Wolf Willow",
+        "y": 702200,
+        "series": "Series"
+      },
+      {
+        "x": "Woodbine",
+        "y": 686738.3846153846,
+        "series": "Series"
+      },
+      {
+        "x": "Woodlands",
+        "y": 685650,
+        "series": "Series"
+      },
+      {
+        "x": "Yorke Townhomes",
+        "y": 470450,
+        "series": "Series"
+      },
+      {
+        "x": "Yorkville",
+        "y": 802593.75,
+        "series": "Series"
+      },
+      {
+        "x": "Zen In Aspen",
+        "y": 425000,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Average Home Prices Across Different Neighborhoods",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Place"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Price"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Place"
+      },
+      {
+        "field": "y",
+        "title": "Price"
+      }
+    ]
+  }
+}

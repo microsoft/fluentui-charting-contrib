@@ -1,0 +1,657 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 19.215446906537657,
+        "y": 14.197140684027213,
+        "series": "Tech, CharlieTech"
+      },
+      {
+        "x": 15.562419604313783,
+        "y": 10.261953761348641,
+        "series": "Tech, CharlieTech"
+      },
+      {
+        "x": 14.4004820325318,
+        "y": 14.073745675957362,
+        "series": "Tech, CharlieTech"
+      },
+      {
+        "x": 16.330124010806454,
+        "y": 4.111454235434648,
+        "series": "Tech, CharlieTech"
+      },
+      {
+        "x": 5.982953913713934,
+        "y": 13.888975853372372,
+        "series": "Tech, CharlieTech"
+      },
+      {
+        "x": 17.729021827168154,
+        "y": 10.403941077535524,
+        "series": "Tech, CharlieTech"
+      },
+      {
+        "x": 12.564121251149903,
+        "y": 11.056151892308794,
+        "series": "Tech, CharlieTech"
+      },
+      {
+        "x": 19.94779891757144,
+        "y": 10.129500194044628,
+        "series": "Tech, DeltaSupply"
+      },
+      {
+        "x": 19.55012118935305,
+        "y": 19.494966552863804,
+        "series": "Tech, DeltaSupply"
+      },
+      {
+        "x": 16.794133088367623,
+        "y": 15.56645472588873,
+        "series": "Tech, DeltaSupply"
+      },
+      {
+        "x": 10.645018674295518,
+        "y": 9.57953446240703,
+        "series": "Tech, DeltaSupply"
+      },
+      {
+        "x": 22.883138927087007,
+        "y": 4.425568512906777,
+        "series": "Tech, DeltaSupply"
+      },
+      {
+        "x": 15.565676623689267,
+        "y": 13.989583992327692,
+        "series": "Tech, DeltaSupply"
+      },
+      {
+        "x": 22.738403684064536,
+        "y": 15.428922383587315,
+        "series": "Tech, DeltaSupply"
+      },
+      {
+        "x": 15.116522958133295,
+        "y": 10.971938019385519,
+        "series": "Tech, AlphaLogix"
+      },
+      {
+        "x": 10.183364068598424,
+        "y": 16.09664158661131,
+        "series": "Tech, AlphaLogix"
+      },
+      {
+        "x": 12.365269141072218,
+        "y": 14.276837726731614,
+        "series": "Tech, AlphaLogix"
+      },
+      {
+        "x": 10.440545208611521,
+        "y": 9.644446391947161,
+        "series": "Tech, AlphaLogix"
+      },
+      {
+        "x": 10.601724942492531,
+        "y": 10.958562594193426,
+        "series": "Tech, AlphaLogix"
+      },
+      {
+        "x": 7.5677707234340295,
+        "y": 15.647370487988647,
+        "series": "Tech, AlphaLogix"
+      },
+      {
+        "x": 8.678230398171387,
+        "y": 12.466589883001149,
+        "series": "Tech, AlphaLogix"
+      },
+      {
+        "x": 13.24060545839543,
+        "y": 13.792678244501202,
+        "series": "Tech, AlphaLogix"
+      },
+      {
+        "x": 8.188943570466405,
+        "y": 4.481438219662654,
+        "series": "Tech, AlphaLogix"
+      },
+      {
+        "x": 15.015830387443277,
+        "y": 10.014603749001102,
+        "series": "Tech, BravoDef"
+      },
+      {
+        "x": 17.032723929308382,
+        "y": 12.446767460271904,
+        "series": "Tech, BravoDef"
+      },
+      {
+        "x": 20.95633150034992,
+        "y": 19.67736927405747,
+        "series": "Tech, BravoDef"
+      },
+      {
+        "x": 17.117348802505692,
+        "y": 16.7538641345434,
+        "series": "Tech, BravoDef"
+      },
+      {
+        "x": 15.362686834266963,
+        "y": 12.820031780364653,
+        "series": "Tech, BravoDef"
+      },
+      {
+        "x": 13.513475466027497,
+        "y": 11.693716498817365,
+        "series": "Medical, CharlieTech"
+      },
+      {
+        "x": 19.037061450612747,
+        "y": 18.557891395091822,
+        "series": "Medical, CharlieTech"
+      },
+      {
+        "x": 5.91268966083128,
+        "y": 3.6906877206636666,
+        "series": "Medical, CharlieTech"
+      },
+      {
+        "x": 20.09093813813022,
+        "y": 5.226079189034622,
+        "series": "Medical, DeltaSupply"
+      },
+      {
+        "x": 14.943371321449481,
+        "y": 16.01660848767007,
+        "series": "Medical, DeltaSupply"
+      },
+      {
+        "x": 26.49700332378474,
+        "y": 9.609527681965318,
+        "series": "Medical, DeltaSupply"
+      },
+      {
+        "x": 18.707204858497143,
+        "y": 15.453348767918287,
+        "series": "Medical, DeltaSupply"
+      },
+      {
+        "x": 8.047074235486175,
+        "y": 11.508711773614653,
+        "series": "Medical, DeltaSupply"
+      },
+      {
+        "x": 8.664233012729001,
+        "y": 15.560131246922595,
+        "series": "Medical, DeltaSupply"
+      },
+      {
+        "x": 11.890874964567018,
+        "y": 15.942506046989097,
+        "series": "Medical, AlphaLogix"
+      },
+      {
+        "x": 15.898076357068586,
+        "y": 10.29629774760649,
+        "series": "Medical, AlphaLogix"
+      },
+      {
+        "x": 21.412309466905366,
+        "y": 9.289643519649129,
+        "series": "Medical, AlphaLogix"
+      },
+      {
+        "x": 9.293936034713855,
+        "y": 11.135753872156466,
+        "series": "Medical, AlphaLogix"
+      },
+      {
+        "x": 23.278084841590932,
+        "y": 15.767516397125005,
+        "series": "Medical, AlphaLogix"
+      },
+      {
+        "x": 23.785075256126007,
+        "y": 15.54609352630421,
+        "series": "Medical, AlphaLogix"
+      },
+      {
+        "x": 16.90182197327753,
+        "y": 13.277295115012778,
+        "series": "Medical, AlphaLogix"
+      },
+      {
+        "x": 17.887601484741033,
+        "y": 10.265625879475184,
+        "series": "Medical, BravoDef"
+      },
+      {
+        "x": 23.416469834136546,
+        "y": 13.34378758966942,
+        "series": "Medical, BravoDef"
+      },
+      {
+        "x": 12.959009001128015,
+        "y": 10.462392295121228,
+        "series": "Medical, BravoDef"
+      },
+      {
+        "x": 13.259633733990078,
+        "y": 12.254797914692208,
+        "series": "Medical, BravoDef"
+      },
+      {
+        "x": 20.19193536110435,
+        "y": 10.119184395462739,
+        "series": "Medical, BravoDef"
+      },
+      {
+        "x": 20.874407205611085,
+        "y": 9.889174550447645,
+        "series": "Ammunition, CharlieTech"
+      },
+      {
+        "x": 18.669024880316762,
+        "y": 9.421946854030754,
+        "series": "Ammunition, CharlieTech"
+      },
+      {
+        "x": 15.568169177112372,
+        "y": 9.869417160434873,
+        "series": "Ammunition, CharlieTech"
+      },
+      {
+        "x": 16.310280599389195,
+        "y": 18.599836250087716,
+        "series": "Ammunition, CharlieTech"
+      },
+      {
+        "x": 15.605093084206977,
+        "y": 14.520498549490908,
+        "series": "Ammunition, CharlieTech"
+      },
+      {
+        "x": 10.989848344045097,
+        "y": 17.628173976276848,
+        "series": "Ammunition, CharlieTech"
+      },
+      {
+        "x": 20.549973165829396,
+        "y": 6.1165628139818,
+        "series": "Ammunition, CharlieTech"
+      },
+      {
+        "x": 11.23654335182407,
+        "y": 11.78324268108012,
+        "series": "Ammunition, CharlieTech"
+      },
+      {
+        "x": 23.695095389218487,
+        "y": 18.98895598391524,
+        "series": "Ammunition, CharlieTech"
+      },
+      {
+        "x": 18.238533874027695,
+        "y": 13.500594920990343,
+        "series": "Ammunition, CharlieTech"
+      },
+      {
+        "x": 29.062638076048604,
+        "y": 15.833987058016959,
+        "series": "Ammunition, DeltaSupply"
+      },
+      {
+        "x": 8.147075983236745,
+        "y": 9.544512432351205,
+        "series": "Ammunition, DeltaSupply"
+      },
+      {
+        "x": 19.47282029215279,
+        "y": 17.461875869582236,
+        "series": "Ammunition, DeltaSupply"
+      },
+      {
+        "x": 15.247006864168661,
+        "y": 13.25977771556543,
+        "series": "Ammunition, DeltaSupply"
+      },
+      {
+        "x": 15.017514671374926,
+        "y": 16.720543103877937,
+        "series": "Ammunition, DeltaSupply"
+      },
+      {
+        "x": 22.552288767561617,
+        "y": 15.52999665770426,
+        "series": "Ammunition, DeltaSupply"
+      },
+      {
+        "x": 14.488863038359426,
+        "y": 10.689285753567056,
+        "series": "Ammunition, DeltaSupply"
+      },
+      {
+        "x": 12.150365527153925,
+        "y": 13.022529544423268,
+        "series": "Ammunition, DeltaSupply"
+      },
+      {
+        "x": 24.053673069796584,
+        "y": 11.431880739060015,
+        "series": "Ammunition, DeltaSupply"
+      },
+      {
+        "x": 8.674874446864262,
+        "y": 15.134393416396152,
+        "series": "Ammunition, DeltaSupply"
+      },
+      {
+        "x": 14.138673274198924,
+        "y": 12.963000291809543,
+        "series": "Ammunition, DeltaSupply"
+      },
+      {
+        "x": 5.3397668624431365,
+        "y": 14.448927413323863,
+        "series": "Ammunition, DeltaSupply"
+      },
+      {
+        "x": 21.475149519879686,
+        "y": 17.555297229471627,
+        "series": "Ammunition, DeltaSupply"
+      },
+      {
+        "x": 13.435208678304695,
+        "y": 6.95980133158849,
+        "series": "Ammunition, AlphaLogix"
+      },
+      {
+        "x": 13.114544316266588,
+        "y": 17.8748124797617,
+        "series": "Ammunition, AlphaLogix"
+      },
+      {
+        "x": 6.914566064437027,
+        "y": 14.133559266313366,
+        "series": "Ammunition, AlphaLogix"
+      },
+      {
+        "x": 11.587413633141791,
+        "y": 5.86498915021678,
+        "series": "Ammunition, AlphaLogix"
+      },
+      {
+        "x": 15.19805660736215,
+        "y": 15.99279551518854,
+        "series": "Ammunition, AlphaLogix"
+      },
+      {
+        "x": 15.609143951005798,
+        "y": 12.202429788678321,
+        "series": "Ammunition, AlphaLogix"
+      },
+      {
+        "x": 19.14733095699611,
+        "y": 11.184248441406277,
+        "series": "Ammunition, BravoDef"
+      },
+      {
+        "x": 19.829040377337332,
+        "y": 7.175363926790045,
+        "series": "Ammunition, BravoDef"
+      },
+      {
+        "x": 21.451592131697495,
+        "y": 17.505394786541032,
+        "series": "Ammunition, BravoDef"
+      },
+      {
+        "x": 10.03866903724234,
+        "y": 4.840063050293979,
+        "series": "Ammunition, BravoDef"
+      },
+      {
+        "x": 21.28659502976053,
+        "y": 7.931374393189423,
+        "series": "Ammunition, BravoDef"
+      },
+      {
+        "x": 11.967884472257337,
+        "y": 11.537552288754577,
+        "series": "Ammunition, BravoDef"
+      },
+      {
+        "x": 14.971760118907094,
+        "y": 13.48492077802158,
+        "series": "Ammunition, BravoDef"
+      },
+      {
+        "x": 15.807627753909998,
+        "y": 11.698503463641675,
+        "series": "Fuel, CharlieTech"
+      },
+      {
+        "x": 10.701273271432703,
+        "y": 15.452987731128957,
+        "series": "Fuel, CharlieTech"
+      },
+      {
+        "x": 14.735139808114567,
+        "y": 14.7155959371767,
+        "series": "Fuel, CharlieTech"
+      },
+      {
+        "x": 15.552092415762054,
+        "y": 11.364251565769132,
+        "series": "Fuel, CharlieTech"
+      },
+      {
+        "x": 17.309562150279227,
+        "y": 12.469665117806267,
+        "series": "Fuel, DeltaSupply"
+      },
+      {
+        "x": 18.633363635968372,
+        "y": 15.04055103454508,
+        "series": "Fuel, DeltaSupply"
+      },
+      {
+        "x": 20.004366315783447,
+        "y": 15.609847288738525,
+        "series": "Fuel, DeltaSupply"
+      },
+      {
+        "x": 21.490256766521355,
+        "y": 9.29942032727344,
+        "series": "Fuel, DeltaSupply"
+      },
+      {
+        "x": 19.611900639910626,
+        "y": 11.970620493901235,
+        "series": "Fuel, DeltaSupply"
+      },
+      {
+        "x": 12.669750705465622,
+        "y": 16.72413240001855,
+        "series": "Fuel, DeltaSupply"
+      },
+      {
+        "x": 15.297117715629607,
+        "y": 18.23096849357482,
+        "series": "Fuel, DeltaSupply"
+      },
+      {
+        "x": 11.611791917385231,
+        "y": 8.178213984751071,
+        "series": "Fuel, DeltaSupply"
+      },
+      {
+        "x": 17.01836430643342,
+        "y": 21.522900806681577,
+        "series": "Fuel, DeltaSupply"
+      },
+      {
+        "x": 23.99980077898781,
+        "y": 6.994614078996371,
+        "series": "Fuel, DeltaSupply"
+      },
+      {
+        "x": 26.67911955082183,
+        "y": 10.873310254382398,
+        "series": "Fuel, DeltaSupply"
+      },
+      {
+        "x": 19.511370660468693,
+        "y": 7.177693003121794,
+        "series": "Fuel, DeltaSupply"
+      },
+      {
+        "x": 13.789090245006387,
+        "y": 13.613649264634992,
+        "series": "Fuel, DeltaSupply"
+      },
+      {
+        "x": 15.35360393465244,
+        "y": 14.321575816995246,
+        "series": "Fuel, AlphaLogix"
+      },
+      {
+        "x": 14.154868970724927,
+        "y": 11.288029616488133,
+        "series": "Fuel, AlphaLogix"
+      },
+      {
+        "x": 14.624777529776033,
+        "y": 9.725142863512225,
+        "series": "Fuel, BravoDef"
+      },
+      {
+        "x": 12.291270137719737,
+        "y": 16.258381007942305,
+        "series": "Fuel, BravoDef"
+      },
+      {
+        "x": 17.00462421626287,
+        "y": 5.240270160792769,
+        "series": "Fuel, BravoDef"
+      },
+      {
+        "x": 7.2694828719151126,
+        "y": 13.471252734565674,
+        "series": "Fuel, BravoDef"
+      },
+      {
+        "x": 25.963060319045805,
+        "y": 11.842901300071922,
+        "series": "Fuel, BravoDef"
+      },
+      {
+        "x": 18.55848055974385,
+        "y": 12.603265875427129,
+        "series": "Fuel, BravoDef"
+      },
+      {
+        "x": 19.215446906537657,
+        "y": 14.197140684027213,
+        "series": "Series"
+      },
+      {
+        "x": 13.513475466027497,
+        "y": 11.693716498817365,
+        "series": "Series"
+      },
+      {
+        "x": 29.062638076048604,
+        "y": 15.833987058016959,
+        "series": "Series"
+      },
+      {
+        "x": 19.47282029215279,
+        "y": 17.461875869582236,
+        "series": "Series"
+      },
+      {
+        "x": 23.416469834136546,
+        "y": 13.34378758966942,
+        "series": "Series"
+      },
+      {
+        "x": 19.829040377337332,
+        "y": 7.175363926790045,
+        "series": "Series"
+      },
+      {
+        "x": 9.293936034713855,
+        "y": 11.135753872156466,
+        "series": "Series"
+      },
+      {
+        "x": 15.605093084206977,
+        "y": 14.520498549490908,
+        "series": "Series"
+      },
+      {
+        "x": 5.982953913713934,
+        "y": 13.888975853372372,
+        "series": "Series"
+      },
+      {
+        "x": 18.707204858497143,
+        "y": 15.453348767918287,
+        "series": "Series"
+      },
+      {
+        "x": 8.674874446864262,
+        "y": 15.134393416396152,
+        "series": "Series"
+      },
+      {
+        "x": 14.154868970724927,
+        "y": 11.288029616488133,
+        "series": "Series"
+      },
+      {
+        "x": 13.789090245006387,
+        "y": 13.613649264634992,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Procurement vs Fulfillment Lead Times by Item Category",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Procurement Lead Time (days)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Order Fulfillment Time (days)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Procurement Lead Time (days)"
+      },
+      {
+        "field": "y",
+        "title": "Order Fulfillment Time (days)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

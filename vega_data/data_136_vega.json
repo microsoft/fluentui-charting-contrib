@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Average Client Feedback Score Over Time",
+  "description": "Converted from Plotly schema 136 - Line chart with markers",
+  "data": {
+    "values": [
+      { "month": "January", "score": 4.2 },
+      { "month": "February", "score": 4.5 },
+      { "month": "March", "score": 4.7 },
+      { "month": "April", "score": 4.9 },
+      { "month": "May", "score": 5.0 },
+      { "month": "June", "score": 5.1 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "axis": { "title": "Month" },
+      "sort": ["January", "February", "March", "April", "May", "June"]
+    },
+    "y": {
+      "field": "score",
+      "type": "quantitative",
+      "axis": { "title": "Feedback Score" }
+    }
+  }
+}

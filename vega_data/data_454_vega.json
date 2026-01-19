@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 1500000,
+        "y": 75,
+        "series": "Series"
+      },
+      {
+        "x": 2000000,
+        "y": 80,
+        "series": "Series"
+      },
+      {
+        "x": 2500000,
+        "y": 85,
+        "series": "Series"
+      },
+      {
+        "x": 3000000,
+        "y": 88,
+        "series": "Series"
+      },
+      {
+        "x": 4000000,
+        "y": 90,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Trend of Healthcare Spending vs Patient Satisfaction",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "healthcare_spending"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "patient_satisfaction_score"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "healthcare_spending"
+      },
+      {
+        "field": "y",
+        "title": "patient_satisfaction_score"
+      }
+    ]
+  }
+}

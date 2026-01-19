@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 750000,
+        "y": 85,
+        "series": "Series"
+      },
+      {
+        "x": 500000,
+        "y": 70,
+        "series": "Series"
+      },
+      {
+        "x": 600000,
+        "y": 90,
+        "series": "Series"
+      },
+      {
+        "x": 800000,
+        "y": 75,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Resource Utilization vs Allocation",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Resources Allocated ($)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Utilization (%)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Resources Allocated ($)"
+      },
+      {
+        "field": "y",
+        "title": "Utilization (%)"
+      }
+    ]
+  }
+}

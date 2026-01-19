@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 10,
+        "y": "A",
+        "series": "A"
+      },
+      {
+        "x": 20,
+        "y": "B",
+        "series": "B"
+      },
+      {
+        "x": 15,
+        "y": "C",
+        "series": "C"
+      }
+    ]
+  },
+  "title": "Custom Horizontal Bar Chart",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Value"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Category"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Value"
+      },
+      {
+        "field": "y",
+        "title": "Category"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

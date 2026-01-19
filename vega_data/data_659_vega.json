@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "St. Mary's",
+        "y": 18500000,
+        "series": "Healthcare Spending (USD)"
+      },
+      {
+        "x": "City General",
+        "y": 22800000,
+        "series": "Healthcare Spending (USD)"
+      },
+      {
+        "x": "Green Valley",
+        "y": 16800000,
+        "series": "Healthcare Spending (USD)"
+      },
+      {
+        "x": "Riverfront",
+        "y": 20400000,
+        "series": "Healthcare Spending (USD)"
+      },
+      {
+        "x": "Mercy Health",
+        "y": 25100000,
+        "series": "Healthcare Spending (USD)"
+      },
+      {
+        "x": "Lakeview",
+        "y": 19400000,
+        "series": "Healthcare Spending (USD)"
+      },
+      {
+        "x": "Central Health",
+        "y": 23700000,
+        "series": "Healthcare Spending (USD)"
+      },
+      {
+        "x": "Westside Clinic",
+        "y": 17200000,
+        "series": "Healthcare Spending (USD)"
+      },
+      {
+        "x": "Sunrise Medical",
+        "y": 21000000,
+        "series": "Healthcare Spending (USD)"
+      },
+      {
+        "x": "Hilltop Hospital",
+        "y": 18000000,
+        "series": "Healthcare Spending (USD)"
+      },
+      {
+        "x": "St. Mary's",
+        "y": 87,
+        "series": "Patient Satisfaction Score"
+      },
+      {
+        "x": "City General",
+        "y": 92,
+        "series": "Patient Satisfaction Score"
+      },
+      {
+        "x": "Green Valley",
+        "y": 84,
+        "series": "Patient Satisfaction Score"
+      },
+      {
+        "x": "Riverfront",
+        "y": 88,
+        "series": "Patient Satisfaction Score"
+      },
+      {
+        "x": "Mercy Health",
+        "y": 95,
+        "series": "Patient Satisfaction Score"
+      },
+      {
+        "x": "Lakeview",
+        "y": 89,
+        "series": "Patient Satisfaction Score"
+      },
+      {
+        "x": "Central Health",
+        "y": 91,
+        "series": "Patient Satisfaction Score"
+      },
+      {
+        "x": "Westside Clinic",
+        "y": 86,
+        "series": "Patient Satisfaction Score"
+      },
+      {
+        "x": "Sunrise Medical",
+        "y": 90,
+        "series": "Patient Satisfaction Score"
+      },
+      {
+        "x": "Hilltop Hospital",
+        "y": 85,
+        "series": "Patient Satisfaction Score"
+      }
+    ]
+  },
+  "title": "Healthcare Spending vs Patient Satisfaction by Hospital",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Hospital"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Amount (USD or Score)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Hospital"
+      },
+      {
+        "field": "y",
+        "title": "Amount (USD or Score)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

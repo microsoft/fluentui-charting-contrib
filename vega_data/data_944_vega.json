@@ -1,0 +1,108 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 1,
+        "y": "Company-Wide",
+        "series": "Series"
+      },
+      {
+        "x": 5,
+        "y": "Capital Markets Sales",
+        "series": "Series"
+      },
+      {
+        "x": 1,
+        "y": "Transformation Finance",
+        "series": "Series"
+      },
+      {
+        "x": 7,
+        "y": "Technical Product Management",
+        "series": "Series"
+      },
+      {
+        "x": 3,
+        "y": "Atelio",
+        "series": "Series"
+      },
+      {
+        "x": 1,
+        "y": "HR",
+        "series": "Series"
+      },
+      {
+        "x": 6,
+        "y": "Lending",
+        "series": "Series"
+      },
+      {
+        "x": 1,
+        "y": "Compliance",
+        "series": "Series"
+      },
+      {
+        "x": 3,
+        "y": "Corp Gov/M&A",
+        "series": "Series"
+      },
+      {
+        "x": 1,
+        "y": "Office of CFO Sales",
+        "series": "Series"
+      },
+      {
+        "x": 1,
+        "y": "Legal",
+        "series": "Series"
+      },
+      {
+        "x": 2,
+        "y": "SCM/Third Party Labor",
+        "series": "Series"
+      },
+      {
+        "x": 3,
+        "y": "TechX",
+        "series": "Series"
+      },
+      {
+        "x": 2,
+        "y": "Global Product Support",
+        "series": "Series"
+      },
+      {
+        "x": 3,
+        "y": "Adelante",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "FIS M365 Copilot Engagements by Line of Business",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Number of Meetings"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "FIS Line of Business"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Number of Meetings"
+      },
+      {
+        "field": "y",
+        "title": "FIS Line of Business"
+      }
+    ]
+  }
+}

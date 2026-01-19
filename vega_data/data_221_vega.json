@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Room Turnover Rates",
+  "description": "Converted from Plotly schema 221 - Bar chart",
+  "data": {
+    "values": [
+      { "room": "Room 101", "turnover": 45 },
+      { "room": "Room 102", "turnover": 50 },
+      { "room": "Room 103", "turnover": 42 },
+      { "room": "Room 104", "turnover": 55 },
+      { "room": "Room 105", "turnover": 47 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "room",
+      "type": "nominal",
+      "axis": { "title": "Room Numbers" }
+    },
+    "y": {
+      "field": "turnover",
+      "type": "quantitative",
+      "axis": { "title": "Turnover Rate (times/week)" }
+    }
+  }
+}

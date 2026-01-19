@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Quarterly Lead Time Analysis",
+  "description": "Converted from Plotly schema 93 - Line chart with markers",
+  "data": {
+    "values": [
+      { "quarter": "Q1", "leadTime": 10 },
+      { "quarter": "Q2", "leadTime": 15 },
+      { "quarter": "Q3", "leadTime": 13 },
+      { "quarter": "Q4", "leadTime": 17 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "ordinal",
+      "axis": { "title": "Quarter" }
+    },
+    "y": {
+      "field": "leadTime",
+      "type": "quantitative",
+      "axis": { "title": "Average Lead Time (in days)" }
+    }
+  }
+}

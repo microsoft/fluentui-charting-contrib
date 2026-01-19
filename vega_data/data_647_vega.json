@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Engineering",
+        "y": 75,
+        "series": "CPU"
+      },
+      {
+        "x": "Marketing",
+        "y": 42,
+        "series": "CPU"
+      },
+      {
+        "x": "Finance",
+        "y": 53,
+        "series": "CPU"
+      },
+      {
+        "x": "HR",
+        "y": 25,
+        "series": "CPU"
+      },
+      {
+        "x": "Engineering",
+        "y": 77,
+        "series": "CPU"
+      },
+      {
+        "x": "Marketing",
+        "y": 45,
+        "series": "CPU"
+      },
+      {
+        "x": "Finance",
+        "y": 56,
+        "series": "CPU"
+      },
+      {
+        "x": "HR",
+        "y": 27,
+        "series": "CPU"
+      },
+      {
+        "x": "Engineering",
+        "y": 68,
+        "series": "Memory"
+      },
+      {
+        "x": "Marketing",
+        "y": 39,
+        "series": "Memory"
+      },
+      {
+        "x": "Finance",
+        "y": 47,
+        "series": "Memory"
+      },
+      {
+        "x": "HR",
+        "y": 23,
+        "series": "Memory"
+      },
+      {
+        "x": "Engineering",
+        "y": 69,
+        "series": "Memory"
+      },
+      {
+        "x": "Marketing",
+        "y": 40,
+        "series": "Memory"
+      },
+      {
+        "x": "Finance",
+        "y": 49,
+        "series": "Memory"
+      },
+      {
+        "x": "HR",
+        "y": 24,
+        "series": "Memory"
+      },
+      {
+        "x": "Engineering",
+        "y": 55,
+        "series": "Storage"
+      },
+      {
+        "x": "Marketing",
+        "y": 30,
+        "series": "Storage"
+      },
+      {
+        "x": "Finance",
+        "y": 44,
+        "series": "Storage"
+      },
+      {
+        "x": "HR",
+        "y": 18,
+        "series": "Storage"
+      },
+      {
+        "x": "Engineering",
+        "y": 60,
+        "series": "Storage"
+      },
+      {
+        "x": "Marketing",
+        "y": 32,
+        "series": "Storage"
+      },
+      {
+        "x": "Finance",
+        "y": 42,
+        "series": "Storage"
+      },
+      {
+        "x": "HR",
+        "y": 20,
+        "series": "Storage"
+      }
+    ]
+  },
+  "title": "Cloud Resource Usage Percentage by Department (Monthly, Warm Theme)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Department"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Usage (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Department"
+      },
+      {
+        "field": "y",
+        "title": "Usage (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

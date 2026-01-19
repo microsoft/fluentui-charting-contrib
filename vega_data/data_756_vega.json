@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": null,
+        "y": 100,
+        "series": "Asset A"
+      },
+      {
+        "x": "2020-02-01",
+        "y": 110,
+        "series": "Asset A"
+      },
+      {
+        "x": "2020-03-01",
+        "y": 105,
+        "series": "Asset A"
+      },
+      {
+        "x": "2020-04-01",
+        "y": 115,
+        "series": "Asset A"
+      },
+      {
+        "x": "2020-05-01",
+        "y": 112,
+        "series": "Asset A"
+      },
+      {
+        "x": "2020-06-01",
+        "y": 118,
+        "series": "Asset A"
+      },
+      {
+        "x": "2020-01-01",
+        "y": 200,
+        "series": "Asset B"
+      },
+      {
+        "x": "2020-02-01",
+        "y": 210,
+        "series": "Asset B"
+      },
+      {
+        "x": "2020-03-01",
+        "y": null,
+        "series": "Asset B"
+      },
+      {
+        "x": "2020-04-01",
+        "y": 215,
+        "series": "Asset B"
+      },
+      {
+        "x": "2020-05-01",
+        "y": 210,
+        "series": "Asset B"
+      }
+    ]
+  },
+  "title": "Performance of Different Assets",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Date"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Asset Value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Date"
+      },
+      {
+        "field": "y",
+        "title": "Asset Value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

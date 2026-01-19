@@ -1,0 +1,462 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-06-01T00:00:00",
+        "y": 60,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-02T00:00:00",
+        "y": 62,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-03T00:00:00",
+        "y": 65,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-04T00:00:00",
+        "y": 70,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-05T00:00:00",
+        "y": 72,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-06T00:00:00",
+        "y": 75,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-07T00:00:00",
+        "y": 68,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-08T00:00:00",
+        "y": 74,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-09T00:00:00",
+        "y": 60,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-10T00:00:00",
+        "y": 59,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-11T00:00:00",
+        "y": 62,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-12T00:00:00",
+        "y": 77,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-13T00:00:00",
+        "y": 70,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-14T00:00:00",
+        "y": 73,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-01T00:00:00",
+        "y": 100,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-02T00:00:00",
+        "y": 104,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-03T00:00:00",
+        "y": 110,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-04T00:00:00",
+        "y": 95,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-05T00:00:00",
+        "y": 98,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-06T00:00:00",
+        "y": 108,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-07T00:00:00",
+        "y": 109,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-08T00:00:00",
+        "y": 115,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-09T00:00:00",
+        "y": 110,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-10T00:00:00",
+        "y": 101,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-11T00:00:00",
+        "y": 103,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-12T00:00:00",
+        "y": 118,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-13T00:00:00",
+        "y": 113,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-14T00:00:00",
+        "y": 114,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-01T00:00:00",
+        "y": 40,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-02T00:00:00",
+        "y": 44,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-03T00:00:00",
+        "y": 44,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-04T00:00:00",
+        "y": 50,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-05T00:00:00",
+        "y": 49,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-06T00:00:00",
+        "y": 55,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-07T00:00:00",
+        "y": 47,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-08T00:00:00",
+        "y": 51,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-09T00:00:00",
+        "y": 53,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-10T00:00:00",
+        "y": 48,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-11T00:00:00",
+        "y": 50,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-12T00:00:00",
+        "y": 59,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-13T00:00:00",
+        "y": 55,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-14T00:00:00",
+        "y": 52,
+        "series": "Occupied"
+      },
+      {
+        "x": "2024-06-01T00:00:00",
+        "y": 20,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-02T00:00:00",
+        "y": 18,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-03T00:00:00",
+        "y": 15,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-04T00:00:00",
+        "y": 10,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-05T00:00:00",
+        "y": 8,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-06T00:00:00",
+        "y": 5,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-07T00:00:00",
+        "y": 12,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-08T00:00:00",
+        "y": 6,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-09T00:00:00",
+        "y": 20,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-10T00:00:00",
+        "y": 21,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-11T00:00:00",
+        "y": 18,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-12T00:00:00",
+        "y": 3,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-13T00:00:00",
+        "y": 10,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-14T00:00:00",
+        "y": 7,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-01T00:00:00",
+        "y": 20,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-02T00:00:00",
+        "y": 16,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-03T00:00:00",
+        "y": 10,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-04T00:00:00",
+        "y": 25,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-05T00:00:00",
+        "y": 22,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-06T00:00:00",
+        "y": 12,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-07T00:00:00",
+        "y": 11,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-08T00:00:00",
+        "y": 5,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-09T00:00:00",
+        "y": 10,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-10T00:00:00",
+        "y": 19,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-11T00:00:00",
+        "y": 17,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-12T00:00:00",
+        "y": 2,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-13T00:00:00",
+        "y": 7,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-14T00:00:00",
+        "y": 6,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-01T00:00:00",
+        "y": 20,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-02T00:00:00",
+        "y": 16,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-03T00:00:00",
+        "y": 16,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-04T00:00:00",
+        "y": 10,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-05T00:00:00",
+        "y": 11,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-06T00:00:00",
+        "y": 5,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-07T00:00:00",
+        "y": 13,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-08T00:00:00",
+        "y": 9,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-09T00:00:00",
+        "y": 7,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-10T00:00:00",
+        "y": 12,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-11T00:00:00",
+        "y": 10,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-12T00:00:00",
+        "y": 1,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-13T00:00:00",
+        "y": 5,
+        "series": "Vacant"
+      },
+      {
+        "x": "2024-06-14T00:00:00",
+        "y": 8,
+        "series": "Vacant"
+      }
+    ]
+  },
+  "title": "Occupancy Rate Analysis: Stacked Daily Occupied vs Vacant Rooms across Locations",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Date"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Number of Rooms"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Date"
+      },
+      {
+        "field": "y",
+        "title": "Number of Rooms"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

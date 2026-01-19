@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Maintenance Completion Rates by Fleet",
+  "description": "Converted from Plotly schema 142 - Bar chart",
+  "data": {
+    "values": [
+      { "fleet": "Fleet A", "rate": 0.8 },
+      { "fleet": "Fleet B", "rate": 0.9 },
+      { "fleet": "Fleet C", "rate": 0.7 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "fleet",
+      "type": "nominal",
+      "axis": { "title": "Fleet" }
+    },
+    "y": {
+      "field": "rate",
+      "type": "quantitative",
+      "axis": { "title": "Completion Rate", "format": ".0%" }
+    }
+  }
+}

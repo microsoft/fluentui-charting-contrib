@@ -1,0 +1,357 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 12,
+        "y": 78.6,
+        "series": "Vehicle"
+      },
+      {
+        "x": 28,
+        "y": 86.7,
+        "series": "Vehicle"
+      },
+      {
+        "x": 21,
+        "y": 80.9,
+        "series": "Vehicle"
+      },
+      {
+        "x": 5,
+        "y": 82.6,
+        "series": "Vehicle"
+      },
+      {
+        "x": 7,
+        "y": 92.1,
+        "series": "Vehicle"
+      },
+      {
+        "x": 5,
+        "y": 76.1,
+        "series": "Vehicle"
+      },
+      {
+        "x": 21,
+        "y": 71.1,
+        "series": "Vehicle"
+      },
+      {
+        "x": 6,
+        "y": 80.5,
+        "series": "Vehicle"
+      },
+      {
+        "x": 32,
+        "y": 81.7,
+        "series": "Vehicle"
+      },
+      {
+        "x": 6,
+        "y": 85.4,
+        "series": "Vehicle"
+      },
+      {
+        "x": 30,
+        "y": 77.7,
+        "series": "Vehicle"
+      },
+      {
+        "x": 14,
+        "y": 82.6,
+        "series": "Vehicle"
+      },
+      {
+        "x": 11,
+        "y": 60.7,
+        "series": "Vehicle"
+      },
+      {
+        "x": 4,
+        "y": 71.5,
+        "series": "Vehicle"
+      },
+      {
+        "x": 21,
+        "y": 62.6,
+        "series": "Vehicle"
+      },
+      {
+        "x": 15,
+        "y": 64.3,
+        "series": "Vehicle"
+      },
+      {
+        "x": 11,
+        "y": 74,
+        "series": "Vehicle"
+      },
+      {
+        "x": 23,
+        "y": 65.4,
+        "series": "Vehicle"
+      },
+      {
+        "x": 12,
+        "y": 77.3,
+        "series": "Vehicle"
+      },
+      {
+        "x": 1,
+        "y": 56.1,
+        "series": "Vehicle"
+      },
+      {
+        "x": 20,
+        "y": 58.5,
+        "series": "Vehicle"
+      },
+      {
+        "x": 31,
+        "y": 50.5,
+        "series": "Vehicle"
+      },
+      {
+        "x": 31,
+        "y": 60.1,
+        "series": "Vehicle"
+      },
+      {
+        "x": 19,
+        "y": 81.6,
+        "series": "Aircraft"
+      },
+      {
+        "x": 1,
+        "y": 68.3,
+        "series": "Aircraft"
+      },
+      {
+        "x": 15,
+        "y": 86.8,
+        "series": "Aircraft"
+      },
+      {
+        "x": 13,
+        "y": 75.9,
+        "series": "Aircraft"
+      },
+      {
+        "x": 24,
+        "y": 82.8,
+        "series": "Aircraft"
+      },
+      {
+        "x": 16,
+        "y": 60.3,
+        "series": "Aircraft"
+      },
+      {
+        "x": 14,
+        "y": 70.4,
+        "series": "Aircraft"
+      },
+      {
+        "x": 22,
+        "y": 69.4,
+        "series": "Aircraft"
+      },
+      {
+        "x": 1,
+        "y": 60,
+        "series": "Aircraft"
+      },
+      {
+        "x": 31,
+        "y": 74.2,
+        "series": "Aircraft"
+      },
+      {
+        "x": 22,
+        "y": 75.1,
+        "series": "Aircraft"
+      },
+      {
+        "x": 10,
+        "y": 54.6,
+        "series": "Aircraft"
+      },
+      {
+        "x": 24,
+        "y": 63.2,
+        "series": "Aircraft"
+      },
+      {
+        "x": 3,
+        "y": 57.8,
+        "series": "Aircraft"
+      },
+      {
+        "x": 31,
+        "y": 81.2,
+        "series": "Aircraft"
+      },
+      {
+        "x": 3,
+        "y": 58.7,
+        "series": "Aircraft"
+      },
+      {
+        "x": 17,
+        "y": 66.6,
+        "series": "Aircraft"
+      },
+      {
+        "x": 14,
+        "y": 58.1,
+        "series": "Aircraft"
+      },
+      {
+        "x": 25,
+        "y": 60.4,
+        "series": "Aircraft"
+      },
+      {
+        "x": 14,
+        "y": 59.3,
+        "series": "Aircraft"
+      },
+      {
+        "x": 9,
+        "y": 47,
+        "series": "Aircraft"
+      },
+      {
+        "x": 20,
+        "y": 40,
+        "series": "Aircraft"
+      },
+      {
+        "x": 13,
+        "y": 83.2,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 12,
+        "y": 84.9,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 4,
+        "y": 75.3,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 15,
+        "y": 75.8,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 16,
+        "y": 79.1,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 1,
+        "y": 86.1,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 4,
+        "y": 67.8,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 1,
+        "y": 66,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 19,
+        "y": 63.4,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 18,
+        "y": 70.4,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 28,
+        "y": 70,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 2,
+        "y": 56.8,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 33,
+        "y": 63.6,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 3,
+        "y": 45,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 4,
+        "y": 42.9,
+        "series": "Naval Vessel"
+      },
+      {
+        "x": 2,
+        "y": 50,
+        "series": "Highlighted Points"
+      },
+      {
+        "x": 6,
+        "y": 80,
+        "series": "Highlighted Points"
+      },
+      {
+        "x": 10,
+        "y": 90,
+        "series": "Highlighted Points"
+      }
+    ]
+  },
+  "title": "Maintenance Efficiency vs. Equipment Age (Defence Industry)",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Equipment Age (Years)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Maintenance Efficiency Score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Equipment Age (Years)"
+      },
+      {
+        "field": "y",
+        "title": "Maintenance Efficiency Score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

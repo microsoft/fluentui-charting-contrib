@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Driving Habits Analysis",
+  "description": "Converted from Plotly schema 104 - Bar chart",
+  "data": {
+    "values": [
+      { "incident": "Aggressive Driving", "count": 30 },
+      { "incident": "Harsh Braking", "count": 20 },
+      { "incident": "Speeding", "count": 15 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "incident",
+      "type": "nominal",
+      "axis": { "title": "Incident Type" }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": { "title": "Number of Incidents" }
+    }
+  }
+}

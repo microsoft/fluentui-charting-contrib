@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-W34",
+        "y": 75,
+        "series": "E001"
+      },
+      {
+        "x": "2023-W34",
+        "y": 80,
+        "series": "E002"
+      },
+      {
+        "x": "2023-W34",
+        "y": 78,
+        "series": "E003"
+      },
+      {
+        "x": "2023-W34",
+        "y": 85,
+        "series": "E004"
+      },
+      {
+        "x": "2023-W34",
+        "y": 77,
+        "series": "E005"
+      }
+    ]
+  },
+  "title": "Trend of Operational Temperature Over Weeks",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "operational_temperature"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "week"
+      },
+      {
+        "field": "y",
+        "title": "operational_temperature"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

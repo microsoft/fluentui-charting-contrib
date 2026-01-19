@@ -1,0 +1,108 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 79,
+        "y": "Development - CPU",
+        "series": "Series"
+      },
+      {
+        "x": 65,
+        "y": "Development - Memory",
+        "series": "Series"
+      },
+      {
+        "x": 52,
+        "y": "Development - Storage",
+        "series": "Series"
+      },
+      {
+        "x": 58,
+        "y": "Marketing - CPU",
+        "series": "Series"
+      },
+      {
+        "x": 39,
+        "y": "Marketing - Memory",
+        "series": "Series"
+      },
+      {
+        "x": 31,
+        "y": "Marketing - Storage",
+        "series": "Series"
+      },
+      {
+        "x": 46,
+        "y": "Sales - CPU",
+        "series": "Series"
+      },
+      {
+        "x": 50,
+        "y": "Sales - Memory",
+        "series": "Series"
+      },
+      {
+        "x": 28,
+        "y": "Sales - Storage",
+        "series": "Series"
+      },
+      {
+        "x": 35,
+        "y": "HR - CPU",
+        "series": "Series"
+      },
+      {
+        "x": 28,
+        "y": "HR - Memory",
+        "series": "Series"
+      },
+      {
+        "x": 20,
+        "y": "HR - Storage",
+        "series": "Series"
+      },
+      {
+        "x": 41,
+        "y": "Finance - CPU",
+        "series": "Series"
+      },
+      {
+        "x": 33,
+        "y": "Finance - Memory",
+        "series": "Series"
+      },
+      {
+        "x": 23,
+        "y": "Finance - Storage",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Department-wise Cloud Resource Usage (%)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Usage (%)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Department - Resource"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Usage (%)"
+      },
+      {
+        "field": "y",
+        "title": "Department - Resource"
+      }
+    ]
+  }
+}

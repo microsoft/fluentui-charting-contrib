@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2764800000,
+        "y": "Job-1",
+        "series": "Complete"
+      },
+      {
+        "x": 2678400000,
+        "y": "Job-2",
+        "series": "Complete"
+      },
+      {
+        "x": 5097600000,
+        "y": "Job-4",
+        "series": "Complete"
+      },
+      {
+        "x": 2419200000,
+        "y": "Job-1",
+        "series": "Incomplete"
+      },
+      {
+        "x": 2678400000,
+        "y": "Job-2",
+        "series": "Not Started"
+      },
+      {
+        "x": 864000000,
+        "y": "Job-3",
+        "series": "Not Started"
+      },
+      {
+        "x": 1641600000,
+        "y": "Job-3",
+        "series": "Not Started"
+      },
+      {
+        "x": 2678400000,
+        "y": "Job-3",
+        "series": "Not Started"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Task"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Task"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

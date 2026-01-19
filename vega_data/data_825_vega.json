@@ -1,0 +1,101 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2018,
+        "y": 120000,
+        "series": "University"
+      },
+      {
+        "x": 2019,
+        "y": 124000,
+        "series": "University"
+      },
+      {
+        "x": 2020,
+        "y": 121000,
+        "series": "University"
+      },
+      {
+        "x": 2021,
+        "y": 127000,
+        "series": "University"
+      },
+      {
+        "x": 2018,
+        "y": 75000,
+        "series": "Community College"
+      },
+      {
+        "x": 2019,
+        "y": 78000,
+        "series": "Community College"
+      },
+      {
+        "x": 2020,
+        "y": 79000,
+        "series": "Community College"
+      },
+      {
+        "x": 2021,
+        "y": 81000,
+        "series": "Community College"
+      },
+      {
+        "x": 2018,
+        "y": 500000,
+        "series": "K-12"
+      },
+      {
+        "x": 2019,
+        "y": 520000,
+        "series": "K-12"
+      },
+      {
+        "x": 2020,
+        "y": 530000,
+        "series": "K-12"
+      },
+      {
+        "x": 2021,
+        "y": 540000,
+        "series": "K-12"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Enrollment"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Enrollment"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

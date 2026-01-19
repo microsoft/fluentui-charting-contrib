@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "category": "Hotel A (80.0%)",
+        "value": 19.734345351043643
+      },
+      {
+        "category": "Hotel B (90.0%)",
+        "value": 22.2011385199241
+      },
+      {
+        "category": "Hotel C (80.0%)",
+        "value": 19.734345351043643
+      },
+      {
+        "category": "Hotel D (80.0%)",
+        "value": 19.734345351043643
+      },
+      {
+        "category": "Hotel E (75.4%)",
+        "value": 18.595825426944973
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  }
+}

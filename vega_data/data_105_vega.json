@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Fleet Composition by Vehicle Type",
+  "description": "Converted from Plotly schema 105 - Donut chart",
+  "data": {
+    "values": [
+      { "type": "Sedans", "count": 120 },
+      { "type": "Trucks", "count": 85 },
+      { "type": "SUVs", "count": 75 },
+      { "type": "Vans", "count": 40 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "count",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Vehicle Type" }
+    }
+  }
+}

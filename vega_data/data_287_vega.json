@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "预测性维护 - 设备性能随时间的下降趋势",
+  "description": "Converted from Plotly schema 287 - Multi-series line+markers with Chinese labels",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "2023-01", "performance": 95, "device": "设备A" },
+      { "month": "2023-02", "performance": 90, "device": "设备A" },
+      { "month": "2023-03", "performance": 85, "device": "设备A" },
+      { "month": "2023-04", "performance": 80, "device": "设备A" },
+      { "month": "2023-05", "performance": 75, "device": "设备A" },
+      { "month": "2023-06", "performance": 70, "device": "设备A" },
+      { "month": "2023-07", "performance": 65, "device": "设备A" },
+      { "month": "2023-08", "performance": 60, "device": "设备A" },
+      { "month": "2023-09", "performance": 55, "device": "设备A" },
+      { "month": "2023-10", "performance": 50, "device": "设备A" },
+      { "month": "2023-01", "performance": 93, "device": "设备B" },
+      { "month": "2023-02", "performance": 88, "device": "设备B" },
+      { "month": "2023-03", "performance": 83, "device": "设备B" },
+      { "month": "2023-04", "performance": 78, "device": "设备B" },
+      { "month": "2023-05", "performance": 73, "device": "设备B" },
+      { "month": "2023-06", "performance": 68, "device": "设备B" },
+      { "month": "2023-07", "performance": 63, "device": "设备B" },
+      { "month": "2023-08", "performance": 58, "device": "设备B" },
+      { "month": "2023-09", "performance": 53, "device": "设备B" },
+      { "month": "2023-10", "performance": 48, "device": "设备B" },
+      { "month": "2023-01", "performance": 92, "device": "设备C" },
+      { "month": "2023-02", "performance": 87, "device": "设备C" },
+      { "month": "2023-03", "performance": 82, "device": "设备C" },
+      { "month": "2023-04", "performance": 77, "device": "设备C" },
+      { "month": "2023-05", "performance": 72, "device": "设备C" },
+      { "month": "2023-06", "performance": 67, "device": "设备C" },
+      { "month": "2023-07", "performance": 62, "device": "设备C" },
+      { "month": "2023-08", "performance": 57, "device": "设备C" },
+      { "month": "2023-09", "performance": 52, "device": "设备C" },
+      { "month": "2023-10", "performance": 47, "device": "设备C" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "axis": { "title": "时间" }
+        },
+        "y": {
+          "field": "performance",
+          "type": "quantitative",
+          "axis": { "title": "性能指标" }
+        },
+        "color": {
+          "field": "device",
+          "type": "nominal",
+          "scale": { "range": ["blue", "red", "green"] },
+          "legend": { "title": "设备" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "month", "type": "ordinal" },
+        "y": { "field": "performance", "type": "quantitative" },
+        "color": { "field": "device", "type": "nominal" }
+      }
+    }
+  ]
+}

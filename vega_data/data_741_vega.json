@@ -1,0 +1,1362 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-00",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-01",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-02",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-03",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-04",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-05",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-06",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-07",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-08",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-09",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-10",
+        "y": 0.3333333333333333,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-11",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-12",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-13",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-14",
+        "y": 0,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-15",
+        "y": 0.3333333333333333,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-16",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-17",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-18",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-19",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-20",
+        "y": 0.3333333333333333,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-21",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-22",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-23",
+        "y": 0.6666666666666666,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2024-00",
+        "y": 0.5,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-01",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-02",
+        "y": 0.5,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-03",
+        "y": 0.5,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-04",
+        "y": 0.5,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-05",
+        "y": 0.75,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-06",
+        "y": 0.75,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-07",
+        "y": 0.75,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-08",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-09",
+        "y": 0.5,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-10",
+        "y": 0.5,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-11",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-12",
+        "y": 0.75,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-13",
+        "y": 0.75,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-14",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-15",
+        "y": 0.5,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-16",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-17",
+        "y": 0.5,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-18",
+        "y": 0.75,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-19",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-20",
+        "y": 0.75,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-21",
+        "y": 0.5,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-22",
+        "y": 0.5,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-23",
+        "y": 0.75,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2024-00",
+        "y": 0,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-01",
+        "y": 1,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-02",
+        "y": 1,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-03",
+        "y": 1,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-04",
+        "y": 1,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-05",
+        "y": 0,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-06",
+        "y": 0,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-07",
+        "y": 1,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-08",
+        "y": 0,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-09",
+        "y": 0,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-10",
+        "y": 0,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-11",
+        "y": 0,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-12",
+        "y": 1,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-13",
+        "y": 1,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-14",
+        "y": 0,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-15",
+        "y": 0,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-16",
+        "y": 1,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-17",
+        "y": 0,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-18",
+        "y": 0,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-19",
+        "y": 1,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-20",
+        "y": 0,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-21",
+        "y": 1,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-22",
+        "y": 1,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-23",
+        "y": 0,
+        "series": "Atlantic, Submarine"
+      },
+      {
+        "x": "2024-00",
+        "y": 0.75,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-01",
+        "y": 0.5,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-02",
+        "y": 0.75,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-03",
+        "y": 0.75,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-04",
+        "y": 0.5,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-05",
+        "y": 0.75,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-06",
+        "y": 0.75,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-07",
+        "y": 1,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-08",
+        "y": 0.75,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-09",
+        "y": 0.75,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-10",
+        "y": 0.5,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-11",
+        "y": 0.75,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-12",
+        "y": 0.5,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-13",
+        "y": 0.25,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-14",
+        "y": 0.75,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-15",
+        "y": 0.25,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-16",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-17",
+        "y": 0.75,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-18",
+        "y": 0.5,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-19",
+        "y": 0.5,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-20",
+        "y": 0.75,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-21",
+        "y": 0.75,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-22",
+        "y": 1,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-23",
+        "y": 0.75,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2024-00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-01",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-02",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-03",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-04",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-05",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-06",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-07",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-08",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-09",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-10",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-11",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-12",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-13",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-14",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-15",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-16",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-17",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-18",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-19",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-20",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-21",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-22",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-23",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2024-00",
+        "y": 1,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-01",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-02",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-03",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-04",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-05",
+        "y": 1,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-06",
+        "y": 1,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-07",
+        "y": 1,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-08",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-09",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-10",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-11",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-12",
+        "y": 1,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-13",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-14",
+        "y": 0,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-15",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-16",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-17",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-18",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-19",
+        "y": 0,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-20",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-21",
+        "y": 0,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-22",
+        "y": 1,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-23",
+        "y": 0.5,
+        "series": "Indian, Submarine"
+      },
+      {
+        "x": "2024-00",
+        "y": 0.5,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-01",
+        "y": 1,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-02",
+        "y": 1,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-03",
+        "y": 1,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-04",
+        "y": 1,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-05",
+        "y": 0.5,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-06",
+        "y": 0.5,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-07",
+        "y": 0.5,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-08",
+        "y": 0.5,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-09",
+        "y": 0,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-10",
+        "y": 0.5,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-11",
+        "y": 0.5,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-12",
+        "y": 0,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-13",
+        "y": 1,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-14",
+        "y": 1,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-15",
+        "y": 0.5,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-16",
+        "y": 1,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-17",
+        "y": 0.5,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-18",
+        "y": 0.5,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-19",
+        "y": 0.5,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-20",
+        "y": 1,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-21",
+        "y": 1,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-22",
+        "y": 0.5,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-23",
+        "y": 0.5,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2024-00",
+        "y": 0.5,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-01",
+        "y": 0.5,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-02",
+        "y": 0,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-03",
+        "y": 0.5,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-04",
+        "y": 0.5,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-05",
+        "y": 1,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-06",
+        "y": 0,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-07",
+        "y": 1,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-08",
+        "y": 0,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-09",
+        "y": 0.5,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-10",
+        "y": 1,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-11",
+        "y": 0.5,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-12",
+        "y": 1,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-13",
+        "y": 1,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-14",
+        "y": 0.5,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-15",
+        "y": 0.5,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-16",
+        "y": 0.5,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-17",
+        "y": 0,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-18",
+        "y": 0.5,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-19",
+        "y": 1,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-20",
+        "y": 0,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-21",
+        "y": 1,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-22",
+        "y": 0.5,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-23",
+        "y": 0.5,
+        "series": "Pacific, Destroyer"
+      },
+      {
+        "x": "2024-00",
+        "y": 1,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-01",
+        "y": 1,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-02",
+        "y": 0.5,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-03",
+        "y": 0.5,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-04",
+        "y": 1,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-05",
+        "y": 1,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-06",
+        "y": 1,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-07",
+        "y": 1,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-08",
+        "y": 0.5,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-09",
+        "y": 1,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-10",
+        "y": 1,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-11",
+        "y": 0,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-12",
+        "y": 0,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-13",
+        "y": 0.5,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-14",
+        "y": 1,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-15",
+        "y": 0.5,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-16",
+        "y": 0.5,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-17",
+        "y": 0.5,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-18",
+        "y": 1,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-19",
+        "y": 0,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-20",
+        "y": 1,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-21",
+        "y": 1,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-22",
+        "y": 1,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-23",
+        "y": 1,
+        "series": "Pacific, Frigate"
+      },
+      {
+        "x": "2024-00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-01",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-02",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-03",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-04",
+        "y": 0.5,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-05",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-06",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-07",
+        "y": 0.5,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-08",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-09",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-10",
+        "y": 0,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-11",
+        "y": 0.5,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-12",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-13",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-14",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-15",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-16",
+        "y": 0.5,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-17",
+        "y": 0.5,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-18",
+        "y": 0.5,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-19",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-20",
+        "y": 0.5,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-21",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-22",
+        "y": 0.5,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-23",
+        "y": 0,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2024-00",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-01",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-02",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-03",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-04",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-05",
+        "y": 0,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-06",
+        "y": 0,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-07",
+        "y": 0,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-08",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-09",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-10",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-11",
+        "y": 0,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-12",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-13",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-14",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-15",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-16",
+        "y": 0,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-17",
+        "y": 0,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-18",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-19",
+        "y": 0,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-20",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-21",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-22",
+        "y": 1,
+        "series": "Pacific, Carrier"
+      },
+      {
+        "x": "2024-23",
+        "y": 0,
+        "series": "Pacific, Carrier"
+      }
+    ]
+  },
+  "title": "Weekly Maintenance Completion Rate by Ship Type and Region",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Completion Rate"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Week"
+      },
+      {
+        "field": "y",
+        "title": "Completion Rate"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

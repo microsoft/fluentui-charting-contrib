@@ -1,0 +1,313 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 94.62,
+        "theta": "Uptime %",
+        "series": "Machine 1"
+      },
+      {
+        "r": 356.4,
+        "theta": "MTBF (hrs)",
+        "series": "Machine 1"
+      },
+      {
+        "r": 1139,
+        "theta": "Energy Consumption (kWh)",
+        "series": "Machine 1"
+      },
+      {
+        "r": 96.69,
+        "theta": "Output Quality %",
+        "series": "Machine 1"
+      },
+      {
+        "r": 1415,
+        "theta": "Maintenance Cost ($)",
+        "series": "Machine 1"
+      },
+      {
+        "r": 94.62,
+        "theta": "Uptime %",
+        "series": "Machine 1"
+      },
+      {
+        "r": 98.66,
+        "theta": "Uptime %",
+        "series": "Machine 2"
+      },
+      {
+        "r": 394.9,
+        "theta": "MTBF (hrs)",
+        "series": "Machine 2"
+      },
+      {
+        "r": 1348.5,
+        "theta": "Energy Consumption (kWh)",
+        "series": "Machine 2"
+      },
+      {
+        "r": 98.63,
+        "theta": "Output Quality %",
+        "series": "Machine 2"
+      },
+      {
+        "r": 4331,
+        "theta": "Maintenance Cost ($)",
+        "series": "Machine 2"
+      },
+      {
+        "r": 98.66,
+        "theta": "Uptime %",
+        "series": "Machine 2"
+      },
+      {
+        "r": 97.12,
+        "theta": "Uptime %",
+        "series": "Machine 3"
+      },
+      {
+        "r": 147.4,
+        "theta": "MTBF (hrs)",
+        "series": "Machine 3"
+      },
+      {
+        "r": 1260.3,
+        "theta": "Energy Consumption (kWh)",
+        "series": "Machine 3"
+      },
+      {
+        "r": 95.18,
+        "theta": "Output Quality %",
+        "series": "Machine 3"
+      },
+      {
+        "r": 4387,
+        "theta": "Maintenance Cost ($)",
+        "series": "Machine 3"
+      },
+      {
+        "r": 97.12,
+        "theta": "Uptime %",
+        "series": "Machine 3"
+      },
+      {
+        "r": 96.19,
+        "theta": "Uptime %",
+        "series": "Machine 4"
+      },
+      {
+        "r": 489.2,
+        "theta": "MTBF (hrs)",
+        "series": "Machine 4"
+      },
+      {
+        "r": 1126.7,
+        "theta": "Energy Consumption (kWh)",
+        "series": "Machine 4"
+      },
+      {
+        "r": 97.03,
+        "theta": "Output Quality %",
+        "series": "Machine 4"
+      },
+      {
+        "r": 3868,
+        "theta": "Maintenance Cost ($)",
+        "series": "Machine 4"
+      },
+      {
+        "r": 96.19,
+        "theta": "Uptime %",
+        "series": "Machine 4"
+      },
+      {
+        "r": 93.09,
+        "theta": "Uptime %",
+        "series": "Machine 5"
+      },
+      {
+        "r": 439.7,
+        "theta": "MTBF (hrs)",
+        "series": "Machine 5"
+      },
+      {
+        "r": 1431.3,
+        "theta": "Energy Consumption (kWh)",
+        "series": "Machine 5"
+      },
+      {
+        "r": 97.5,
+        "theta": "Output Quality %",
+        "series": "Machine 5"
+      },
+      {
+        "r": 2205,
+        "theta": "Maintenance Cost ($)",
+        "series": "Machine 5"
+      },
+      {
+        "r": 93.09,
+        "theta": "Uptime %",
+        "series": "Machine 5"
+      },
+      {
+        "r": 93.09,
+        "theta": "Uptime %",
+        "series": "Machine 6"
+      },
+      {
+        "r": 216.4,
+        "theta": "MTBF (hrs)",
+        "series": "Machine 6"
+      },
+      {
+        "r": 982.5,
+        "theta": "Energy Consumption (kWh)",
+        "series": "Machine 6"
+      },
+      {
+        "r": 94.27,
+        "theta": "Output Quality %",
+        "series": "Machine 6"
+      },
+      {
+        "r": 1522,
+        "theta": "Maintenance Cost ($)",
+        "series": "Machine 6"
+      },
+      {
+        "r": 93.09,
+        "theta": "Uptime %",
+        "series": "Machine 6"
+      },
+      {
+        "r": 92.41,
+        "theta": "Uptime %",
+        "series": "Machine 7"
+      },
+      {
+        "r": 205.5,
+        "theta": "MTBF (hrs)",
+        "series": "Machine 7"
+      },
+      {
+        "r": 1127.5,
+        "theta": "Energy Consumption (kWh)",
+        "series": "Machine 7"
+      },
+      {
+        "r": 97.58,
+        "theta": "Output Quality %",
+        "series": "Machine 7"
+      },
+      {
+        "r": 3458,
+        "theta": "Maintenance Cost ($)",
+        "series": "Machine 7"
+      },
+      {
+        "r": 92.41,
+        "theta": "Uptime %",
+        "series": "Machine 7"
+      },
+      {
+        "r": 98.06,
+        "theta": "Uptime %",
+        "series": "Machine 8"
+      },
+      {
+        "r": 206,
+        "theta": "MTBF (hrs)",
+        "series": "Machine 8"
+      },
+      {
+        "r": 1198,
+        "theta": "Energy Consumption (kWh)",
+        "series": "Machine 8"
+      },
+      {
+        "r": 95.01,
+        "theta": "Output Quality %",
+        "series": "Machine 8"
+      },
+      {
+        "r": 2653,
+        "theta": "Maintenance Cost ($)",
+        "series": "Machine 8"
+      },
+      {
+        "r": 98.06,
+        "theta": "Uptime %",
+        "series": "Machine 8"
+      },
+      {
+        "r": 95.405,
+        "theta": "Uptime %",
+        "series": "KPI Mean (Donut)"
+      },
+      {
+        "r": 306.9375,
+        "theta": "MTBF (hrs)",
+        "series": "KPI Mean (Donut)"
+      },
+      {
+        "r": 1201.725,
+        "theta": "Energy Consumption (kWh)",
+        "series": "KPI Mean (Donut)"
+      },
+      {
+        "r": 96.48625,
+        "theta": "Output Quality %",
+        "series": "KPI Mean (Donut)"
+      },
+      {
+        "r": 2979.875,
+        "theta": "Maintenance Cost ($)",
+        "series": "KPI Mean (Donut)"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Machine Performance Multidimensional Analysis (Manufacturing)"
+}

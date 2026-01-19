@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": "dog"
+      },
+      {
+        "value": "dog"
+      },
+      {
+        "value": "cat"
+      },
+      {
+        "value": "cat"
+      },
+      {
+        "value": "dog"
+      },
+      {
+        "value": "cat"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "bin": true,
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  }
+}

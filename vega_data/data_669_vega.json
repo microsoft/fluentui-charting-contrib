@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2019,
+        "y": 24000,
+        "series": "College"
+      },
+      {
+        "x": 2020,
+        "y": 25200,
+        "series": "College"
+      },
+      {
+        "x": 2021,
+        "y": 26300,
+        "series": "College"
+      },
+      {
+        "x": 2022,
+        "y": 27200,
+        "series": "College"
+      },
+      {
+        "x": 2023,
+        "y": 28600,
+        "series": "College"
+      },
+      {
+        "x": 2019,
+        "y": 53000,
+        "series": "Primary"
+      },
+      {
+        "x": 2020,
+        "y": 55700,
+        "series": "Primary"
+      },
+      {
+        "x": 2021,
+        "y": 57600,
+        "series": "Primary"
+      },
+      {
+        "x": 2022,
+        "y": 58700,
+        "series": "Primary"
+      },
+      {
+        "x": 2023,
+        "y": 60900,
+        "series": "Primary"
+      },
+      {
+        "x": 2019,
+        "y": 39500,
+        "series": "Secondary"
+      },
+      {
+        "x": 2020,
+        "y": 42000,
+        "series": "Secondary"
+      },
+      {
+        "x": 2021,
+        "y": 43400,
+        "series": "Secondary"
+      },
+      {
+        "x": 2022,
+        "y": 44600,
+        "series": "Secondary"
+      },
+      {
+        "x": 2023,
+        "y": 46700,
+        "series": "Secondary"
+      },
+      {
+        "x": 2019,
+        "y": 15000,
+        "series": "University"
+      },
+      {
+        "x": 2020,
+        "y": 15800,
+        "series": "University"
+      },
+      {
+        "x": 2021,
+        "y": 16200,
+        "series": "University"
+      },
+      {
+        "x": 2022,
+        "y": 16800,
+        "series": "University"
+      },
+      {
+        "x": 2023,
+        "y": 17500,
+        "series": "University"
+      }
+    ]
+  },
+  "title": "Enrollment Trends by Institution Type (2019-2023)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Total Enrollment"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Total Enrollment"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

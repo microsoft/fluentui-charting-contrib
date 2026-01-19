@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Patient Outcome Trends by Disease Over Time",
+  "description": "Converted from Plotly schema 85 - Multi-series line chart with markers",
+  "data": {
+    "values": [
+      { "quarter": "2020 Q1", "percentage": 75, "metric": "Recovery Rate" },
+      { "quarter": "2020 Q2", "percentage": 78, "metric": "Recovery Rate" },
+      { "quarter": "2020 Q3", "percentage": 80, "metric": "Recovery Rate" },
+      { "quarter": "2020 Q4", "percentage": 82, "metric": "Recovery Rate" },
+      { "quarter": "2021 Q1", "percentage": 85, "metric": "Recovery Rate" },
+      { "quarter": "2021 Q2", "percentage": 88, "metric": "Recovery Rate" },
+      { "quarter": "2021 Q3", "percentage": 90, "metric": "Recovery Rate" },
+      { "quarter": "2021 Q4", "percentage": 92, "metric": "Recovery Rate" },
+      { "quarter": "2022 Q1", "percentage": 95, "metric": "Recovery Rate" },
+      { "quarter": "2022 Q2", "percentage": 97, "metric": "Recovery Rate" },
+      { "quarter": "2020 Q1", "percentage": 15, "metric": "Readmission Rate" },
+      { "quarter": "2020 Q2", "percentage": 14, "metric": "Readmission Rate" },
+      { "quarter": "2020 Q3", "percentage": 13, "metric": "Readmission Rate" },
+      { "quarter": "2020 Q4", "percentage": 12, "metric": "Readmission Rate" },
+      { "quarter": "2021 Q1", "percentage": 11, "metric": "Readmission Rate" },
+      { "quarter": "2021 Q2", "percentage": 10, "metric": "Readmission Rate" },
+      { "quarter": "2021 Q3", "percentage": 9, "metric": "Readmission Rate" },
+      { "quarter": "2021 Q4", "percentage": 8, "metric": "Readmission Rate" },
+      { "quarter": "2022 Q1", "percentage": 7, "metric": "Readmission Rate" },
+      { "quarter": "2022 Q2", "percentage": 6, "metric": "Readmission Rate" },
+      { "quarter": "2020 Q1", "percentage": 10, "metric": "Mortality Rate" },
+      { "quarter": "2020 Q2", "percentage": 8, "metric": "Mortality Rate" },
+      { "quarter": "2020 Q3", "percentage": 7, "metric": "Mortality Rate" },
+      { "quarter": "2020 Q4", "percentage": 6, "metric": "Mortality Rate" },
+      { "quarter": "2021 Q1", "percentage": 4, "metric": "Mortality Rate" },
+      { "quarter": "2021 Q2", "percentage": 2, "metric": "Mortality Rate" },
+      { "quarter": "2021 Q3", "percentage": 2, "metric": "Mortality Rate" },
+      { "quarter": "2021 Q4", "percentage": 1, "metric": "Mortality Rate" },
+      { "quarter": "2022 Q1", "percentage": 1, "metric": "Mortality Rate" },
+      { "quarter": "2022 Q2", "percentage": 1, "metric": "Mortality Rate" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "ordinal",
+      "axis": { "title": "Quarter" }
+    },
+    "y": {
+      "field": "percentage",
+      "type": "quantitative",
+      "axis": { "title": "Percentage (%)" }
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metrics" }
+    }
+  }
+}

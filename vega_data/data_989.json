@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Rheology Graph",
+  "data": {
+    "values": [
+      {"x": 9550, "y": 118.8, "series": "Control"},
+      {"x": 19101, "y": 98, "series": "Control"},
+      {"x": 28651, "y": 86.6, "series": "Control"},
+      {"x": 38202, "y": 79.4, "series": "Control"},
+      {"x": 47752, "y": 74.9, "series": "Control"},
+      {"x": 57303, "y": 71.1, "series": "Control"},
+      {"x": 66853, "y": 67.3, "series": "Control"},
+      {"x": 76404, "y": 63.8, "series": "Control"},
+      {"x": 85954, "y": 60, "series": "Control"},
+      {"x": 95505, "y": 55.8, "series": "Control"},
+      {"x": 105055, "y": 52.2, "series": "Control"},
+      {"x": 9550, "y": 64.6, "series": "A1"},
+      {"x": 19101, "y": 66.1, "series": "A1"},
+      {"x": 28651, "y": 60.7, "series": "A1"},
+      {"x": 38202, "y": 56.9, "series": "A1"},
+      {"x": 47752, "y": 53.6, "series": "A1"},
+      {"x": 57303, "y": 51.2, "series": "A1"},
+      {"x": 66853, "y": 49.2, "series": "A1"},
+      {"x": 76404, "y": 47.5, "series": "A1"},
+      {"x": 85954, "y": 45.1, "series": "A1"},
+      {"x": 95505, "y": 43.1, "series": "A1"},
+      {"x": 105055, "y": 40.7, "series": "A1"},
+      {"x": 9550, "y": 70.1, "series": "A2"},
+      {"x": 19101, "y": 68.6, "series": "A2"},
+      {"x": 28651, "y": 62.5, "series": "A2"},
+      {"x": 38202, "y": 58, "series": "A2"},
+      {"x": 47752, "y": 55.2, "series": "A2"},
+      {"x": 57303, "y": 53, "series": "A2"},
+      {"x": 66853, "y": 50.7, "series": "A2"},
+      {"x": 76404, "y": 49.2, "series": "A2"},
+      {"x": 85954, "y": 47, "series": "A2"},
+      {"x": 95505, "y": 44.5, "series": "A2"},
+      {"x": 105055, "y": 42.3, "series": "A2"},
+      {"x": 9550, "y": 47.9, "series": "B"},
+      {"x": 19101, "y": 38.2, "series": "B"},
+      {"x": 28651, "y": 36.5, "series": "B"},
+      {"x": 38202, "y": 34.9, "series": "B"},
+      {"x": 47752, "y": 33.6, "series": "B"},
+      {"x": 57303, "y": 32.2, "series": "B"},
+      {"x": 66853, "y": 31.4, "series": "B"},
+      {"x": 76404, "y": 30.6, "series": "B"},
+      {"x": 85954, "y": 30, "series": "B"},
+      {"x": 95505, "y": 29.4, "series": "B"},
+      {"x": 105055, "y": 28.7, "series": "B"}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "line"}
+    },
+    {
+      "mark": {"type": "point", "filled": true}
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Shear Rate (1/sec)",
+      "scale": {"domain": [0, 105055]}
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Apparent Viscosity (centipoise)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    }
+  }
+}

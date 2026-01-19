@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Factory A",
+        "y": 1200,
+        "series": "production_volume"
+      },
+      {
+        "x": "Factory B",
+        "y": 900,
+        "series": "production_volume"
+      },
+      {
+        "x": "Factory C",
+        "y": 1500,
+        "series": "production_volume"
+      },
+      {
+        "x": "Factory D",
+        "y": 1100,
+        "series": "production_volume"
+      },
+      {
+        "x": "Factory A",
+        "y": 24,
+        "series": "operational_hours"
+      },
+      {
+        "x": "Factory B",
+        "y": 20,
+        "series": "operational_hours"
+      },
+      {
+        "x": "Factory C",
+        "y": 24,
+        "series": "operational_hours"
+      },
+      {
+        "x": "Factory D",
+        "y": 22,
+        "series": "operational_hours"
+      },
+      {
+        "x": "Factory A",
+        "y": 2,
+        "series": "downtime"
+      },
+      {
+        "x": "Factory B",
+        "y": 5,
+        "series": "downtime"
+      },
+      {
+        "x": "Factory C",
+        "y": 1,
+        "series": "downtime"
+      },
+      {
+        "x": "Factory D",
+        "y": 3,
+        "series": "downtime"
+      },
+      {
+        "x": "Factory A",
+        "y": 90,
+        "series": "efficiency"
+      },
+      {
+        "x": "Factory B",
+        "y": 80,
+        "series": "efficiency"
+      },
+      {
+        "x": "Factory C",
+        "y": 95,
+        "series": "efficiency"
+      },
+      {
+        "x": "Factory D",
+        "y": 85,
+        "series": "efficiency"
+      }
+    ]
+  },
+  "title": "Factory Performance Bar Chart",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "factory_location"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "factory_location"
+      },
+      {
+        "field": "y",
+        "title": "value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

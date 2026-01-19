@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Cost Components Breakdown",
+  "description": "Converted from Plotly schema 129 - Donut chart",
+  "data": {
+    "values": [
+      { "component": "Material Cost Escalation", "value": 35 },
+      { "component": "Labor Cost Variation", "value": 25 },
+      { "component": "Overhead Costs", "value": 20 },
+      { "component": "Subcontractor Costs", "value": 20 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "component",
+      "type": "nominal",
+      "legend": { "title": "Cost Component" }
+    }
+  }
+}

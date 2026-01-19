@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2500000,
+        "y": 85,
+        "series": "Hospital A"
+      },
+      {
+        "x": 3000000,
+        "y": 88,
+        "series": "Hospital B"
+      },
+      {
+        "x": 1500000,
+        "y": 75,
+        "series": "Hospital C"
+      },
+      {
+        "x": 4000000,
+        "y": 90,
+        "series": "Hospital D"
+      },
+      {
+        "x": 2000000,
+        "y": 80,
+        "series": "Hospital E"
+      }
+    ]
+  },
+  "title": "Healthcare Spending vs Patient Satisfaction",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "healthcare_spending"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "patient_satisfaction_score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "healthcare_spending"
+      },
+      {
+        "field": "y",
+        "title": "patient_satisfaction_score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

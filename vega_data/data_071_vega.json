@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Highlight Periods of High and Low Activity",
+  "description": "Converted from Plotly schema 71 - Heatmap",
+  "data": {
+    "values": [
+      { "activity": "Steps", "date": "2023-10-01", "value": 3500 },
+      { "activity": "Steps", "date": "2023-10-02", "value": 3500 },
+      { "activity": "Steps", "date": "2023-10-03", "value": 3500 },
+      { "activity": "Steps", "date": "2023-10-04", "value": 3500 },
+      { "activity": "Steps", "date": "2023-10-05", "value": 3500 },
+      { "activity": "Steps", "date": "2023-10-06", "value": 3500 },
+      { "activity": "Steps", "date": "2023-10-07", "value": 3500 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "ordinal",
+      "axis": { "title": "Date" }
+    },
+    "y": {
+      "field": "activity",
+      "type": "nominal",
+      "axis": { "title": "Activity Level" }
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": { "scheme": "spectral" },
+      "legend": { "title": "Steps" }
+    }
+  }
+}

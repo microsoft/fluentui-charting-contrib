@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Antibiotics",
+        "y": null,
+        "series": "Quantity Dispensed"
+      },
+      {
+        "x": "Antihypertensives",
+        "y": 1120,
+        "series": "Quantity Dispensed"
+      },
+      {
+        "x": "Analgesics",
+        "y": 870,
+        "series": "Quantity Dispensed"
+      },
+      {
+        "x": "Antidepressants",
+        "y": 1050,
+        "series": "Quantity Dispensed"
+      },
+      {
+        "x": "Antibiotics",
+        "y": 85,
+        "series": "Compliance Rate (%)"
+      },
+      {
+        "x": "Antihypertensives",
+        "y": 92,
+        "series": "Compliance Rate (%)"
+      },
+      {
+        "x": "Analgesics",
+        "y": null,
+        "series": "Compliance Rate (%)"
+      },
+      {
+        "x": "Antidepressants",
+        "y": 88,
+        "series": "Compliance Rate (%)"
+      },
+      {
+        "x": "Statins",
+        "y": 90,
+        "series": "Compliance Rate (%)"
+      }
+    ]
+  },
+  "title": "Drug Utilization Patterns and Compliance Rates",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Drug Category"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Quantity Dispensed"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Drug Category"
+      },
+      {
+        "field": "y",
+        "title": "Quantity Dispensed"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

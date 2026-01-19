@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly IT Service Desk Performance",
+  "description": "Converted from Plotly schema 304 - Grouped bar chart (simplified from 24 metrics to 4)",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "month": "January", "value": 75, "metric": "Average Resolution Time (hours)" },
+      { "month": "February", "value": 82, "metric": "Average Resolution Time (hours)" },
+      { "month": "March", "value": 78, "metric": "Average Resolution Time (hours)" },
+      { "month": "April", "value": 85, "metric": "Average Resolution Time (hours)" },
+      { "month": "May", "value": 88, "metric": "Average Resolution Time (hours)" },
+      { "month": "June", "value": 90, "metric": "Average Resolution Time (hours)" },
+      { "month": "July", "value": 87, "metric": "Average Resolution Time (hours)" },
+      { "month": "August", "value": 86, "metric": "Average Resolution Time (hours)" },
+      { "month": "September", "value": 91, "metric": "Average Resolution Time (hours)" },
+      { "month": "October", "value": 89, "metric": "Average Resolution Time (hours)" },
+      { "month": "January", "value": 80, "metric": "Customer Satisfaction (%)" },
+      { "month": "February", "value": 85, "metric": "Customer Satisfaction (%)" },
+      { "month": "March", "value": 88, "metric": "Customer Satisfaction (%)" },
+      { "month": "April", "value": 90, "metric": "Customer Satisfaction (%)" },
+      { "month": "May", "value": 92, "metric": "Customer Satisfaction (%)" },
+      { "month": "June", "value": 94, "metric": "Customer Satisfaction (%)" },
+      { "month": "July", "value": 93, "metric": "Customer Satisfaction (%)" },
+      { "month": "August", "value": 91, "metric": "Customer Satisfaction (%)" },
+      { "month": "September", "value": 95, "metric": "Customer Satisfaction (%)" },
+      { "month": "October", "value": 96, "metric": "Customer Satisfaction (%)" },
+      { "month": "January", "value": 60, "metric": "First Call Resolution (%)" },
+      { "month": "February", "value": 67, "metric": "First Call Resolution (%)" },
+      { "month": "March", "value": 65, "metric": "First Call Resolution (%)" },
+      { "month": "April", "value": 70, "metric": "First Call Resolution (%)" },
+      { "month": "May", "value": 72, "metric": "First Call Resolution (%)" },
+      { "month": "June", "value": 75, "metric": "First Call Resolution (%)" },
+      { "month": "July", "value": 73, "metric": "First Call Resolution (%)" },
+      { "month": "August", "value": 74, "metric": "First Call Resolution (%)" },
+      { "month": "September", "value": 76, "metric": "First Call Resolution (%)" },
+      { "month": "October", "value": 78, "metric": "First Call Resolution (%)" },
+      { "month": "January", "value": 90, "metric": "SLA Compliance (%)" },
+      { "month": "February", "value": 92, "metric": "SLA Compliance (%)" },
+      { "month": "March", "value": 91, "metric": "SLA Compliance (%)" },
+      { "month": "April", "value": 89, "metric": "SLA Compliance (%)" },
+      { "month": "May", "value": 94, "metric": "SLA Compliance (%)" },
+      { "month": "June", "value": 92, "metric": "SLA Compliance (%)" },
+      { "month": "July", "value": 91, "metric": "SLA Compliance (%)" },
+      { "month": "August", "value": 90, "metric": "SLA Compliance (%)" },
+      { "month": "September", "value": 93, "metric": "SLA Compliance (%)" },
+      { "month": "October", "value": 95, "metric": "SLA Compliance (%)" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"],
+      "axis": { "title": "Month" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Value" }
+    },
+    "xOffset": {
+      "field": "metric",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "scale": { "range": ["#375364", "#1a76ff", "#db4052", "#32ab60"] },
+      "legend": { "title": "Metric" }
+    }
+  }
+}

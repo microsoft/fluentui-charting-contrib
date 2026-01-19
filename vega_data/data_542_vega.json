@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-08-01",
+        "y": 48,
+        "series": "Series"
+      },
+      {
+        "x": "2023-08-08",
+        "y": 52,
+        "series": "Series"
+      },
+      {
+        "x": "2023-08-15",
+        "y": 41,
+        "series": "Series"
+      },
+      {
+        "x": "2023-08-22",
+        "y": 58,
+        "series": "Series"
+      },
+      {
+        "x": "2023-08-29",
+        "y": 55,
+        "series": "Series"
+      },
+      {
+        "x": "2023-09-05",
+        "y": 43,
+        "series": "Series"
+      },
+      {
+        "x": "2023-09-12",
+        "y": 47,
+        "series": "Series"
+      },
+      {
+        "x": "2023-09-19",
+        "y": 50,
+        "series": "Series"
+      },
+      {
+        "x": "2023-09-26",
+        "y": 53,
+        "series": "Series"
+      },
+      {
+        "x": "2023-10-03",
+        "y": 45,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Weekly Issue Resolution Times",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "issue_resolution_times"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "week"
+      },
+      {
+        "field": "y",
+        "title": "issue_resolution_times"
+      }
+    ]
+  }
+}

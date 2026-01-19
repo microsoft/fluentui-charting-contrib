@@ -1,0 +1,1032 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 1982,
+        "y": 39.854,
+        "series": "Afghanistan"
+      },
+      {
+        "x": 1987,
+        "y": 40.822,
+        "series": "Afghanistan"
+      },
+      {
+        "x": 1992,
+        "y": 41.674,
+        "series": "Afghanistan"
+      },
+      {
+        "x": 1997,
+        "y": 41.76300000000001,
+        "series": "Afghanistan"
+      },
+      {
+        "x": 2002,
+        "y": 42.129,
+        "series": "Afghanistan"
+      },
+      {
+        "x": 2007,
+        "y": 43.828,
+        "series": "Afghanistan"
+      },
+      {
+        "x": 1982,
+        "y": 69.05199999999999,
+        "series": "Bahrain"
+      },
+      {
+        "x": 1987,
+        "y": 70.75,
+        "series": "Bahrain"
+      },
+      {
+        "x": 1992,
+        "y": 72.601,
+        "series": "Bahrain"
+      },
+      {
+        "x": 1997,
+        "y": 73.925,
+        "series": "Bahrain"
+      },
+      {
+        "x": 2002,
+        "y": 74.795,
+        "series": "Bahrain"
+      },
+      {
+        "x": 2007,
+        "y": 75.635,
+        "series": "Bahrain"
+      },
+      {
+        "x": 1982,
+        "y": 50.00899999999999,
+        "series": "Bangladesh"
+      },
+      {
+        "x": 1987,
+        "y": 52.819,
+        "series": "Bangladesh"
+      },
+      {
+        "x": 1992,
+        "y": 56.018,
+        "series": "Bangladesh"
+      },
+      {
+        "x": 1997,
+        "y": 59.412,
+        "series": "Bangladesh"
+      },
+      {
+        "x": 2002,
+        "y": 62.01300000000001,
+        "series": "Bangladesh"
+      },
+      {
+        "x": 2007,
+        "y": 64.062,
+        "series": "Bangladesh"
+      },
+      {
+        "x": 1982,
+        "y": 50.957,
+        "series": "Cambodia"
+      },
+      {
+        "x": 1987,
+        "y": 53.914,
+        "series": "Cambodia"
+      },
+      {
+        "x": 1992,
+        "y": 55.803,
+        "series": "Cambodia"
+      },
+      {
+        "x": 1997,
+        "y": 56.534,
+        "series": "Cambodia"
+      },
+      {
+        "x": 2002,
+        "y": 56.752,
+        "series": "Cambodia"
+      },
+      {
+        "x": 2007,
+        "y": 59.723,
+        "series": "Cambodia"
+      },
+      {
+        "x": 1982,
+        "y": 65.525,
+        "series": "China"
+      },
+      {
+        "x": 1987,
+        "y": 67.274,
+        "series": "China"
+      },
+      {
+        "x": 1992,
+        "y": 68.69,
+        "series": "China"
+      },
+      {
+        "x": 1997,
+        "y": 70.426,
+        "series": "China"
+      },
+      {
+        "x": 2002,
+        "y": 72.028,
+        "series": "China"
+      },
+      {
+        "x": 2007,
+        "y": 72.961,
+        "series": "China"
+      },
+      {
+        "x": 1982,
+        "y": 75.45,
+        "series": "Hong Kong, China"
+      },
+      {
+        "x": 1987,
+        "y": 76.2,
+        "series": "Hong Kong, China"
+      },
+      {
+        "x": 1992,
+        "y": 77.601,
+        "series": "Hong Kong, China"
+      },
+      {
+        "x": 1997,
+        "y": 80,
+        "series": "Hong Kong, China"
+      },
+      {
+        "x": 2002,
+        "y": 81.495,
+        "series": "Hong Kong, China"
+      },
+      {
+        "x": 2007,
+        "y": 82.208,
+        "series": "Hong Kong, China"
+      },
+      {
+        "x": 1982,
+        "y": 56.596,
+        "series": "India"
+      },
+      {
+        "x": 1987,
+        "y": 58.553,
+        "series": "India"
+      },
+      {
+        "x": 1992,
+        "y": 60.223,
+        "series": "India"
+      },
+      {
+        "x": 1997,
+        "y": 61.765,
+        "series": "India"
+      },
+      {
+        "x": 2002,
+        "y": 62.879,
+        "series": "India"
+      },
+      {
+        "x": 2007,
+        "y": 64.69800000000001,
+        "series": "India"
+      },
+      {
+        "x": 1982,
+        "y": 56.159,
+        "series": "Indonesia"
+      },
+      {
+        "x": 1987,
+        "y": 60.137,
+        "series": "Indonesia"
+      },
+      {
+        "x": 1992,
+        "y": 62.681,
+        "series": "Indonesia"
+      },
+      {
+        "x": 1997,
+        "y": 66.041,
+        "series": "Indonesia"
+      },
+      {
+        "x": 2002,
+        "y": 68.58800000000001,
+        "series": "Indonesia"
+      },
+      {
+        "x": 2007,
+        "y": 70.65,
+        "series": "Indonesia"
+      },
+      {
+        "x": 1982,
+        "y": 59.62,
+        "series": "Iran"
+      },
+      {
+        "x": 1987,
+        "y": 63.04,
+        "series": "Iran"
+      },
+      {
+        "x": 1992,
+        "y": 65.742,
+        "series": "Iran"
+      },
+      {
+        "x": 1997,
+        "y": 68.042,
+        "series": "Iran"
+      },
+      {
+        "x": 2002,
+        "y": 69.45100000000001,
+        "series": "Iran"
+      },
+      {
+        "x": 2007,
+        "y": 70.964,
+        "series": "Iran"
+      },
+      {
+        "x": 1982,
+        "y": 62.038,
+        "series": "Iraq"
+      },
+      {
+        "x": 1987,
+        "y": 65.044,
+        "series": "Iraq"
+      },
+      {
+        "x": 1992,
+        "y": 59.46100000000001,
+        "series": "Iraq"
+      },
+      {
+        "x": 1997,
+        "y": 58.81100000000001,
+        "series": "Iraq"
+      },
+      {
+        "x": 2002,
+        "y": 57.04600000000001,
+        "series": "Iraq"
+      },
+      {
+        "x": 2007,
+        "y": 59.545,
+        "series": "Iraq"
+      },
+      {
+        "x": 1982,
+        "y": 74.45,
+        "series": "Israel"
+      },
+      {
+        "x": 1987,
+        "y": 75.6,
+        "series": "Israel"
+      },
+      {
+        "x": 1992,
+        "y": 76.93,
+        "series": "Israel"
+      },
+      {
+        "x": 1997,
+        "y": 78.26899999999998,
+        "series": "Israel"
+      },
+      {
+        "x": 2002,
+        "y": 79.696,
+        "series": "Israel"
+      },
+      {
+        "x": 2007,
+        "y": 80.745,
+        "series": "Israel"
+      },
+      {
+        "x": 1982,
+        "y": 77.11,
+        "series": "Japan"
+      },
+      {
+        "x": 1987,
+        "y": 78.67,
+        "series": "Japan"
+      },
+      {
+        "x": 1992,
+        "y": 79.36,
+        "series": "Japan"
+      },
+      {
+        "x": 1997,
+        "y": 80.69,
+        "series": "Japan"
+      },
+      {
+        "x": 2002,
+        "y": 82,
+        "series": "Japan"
+      },
+      {
+        "x": 2007,
+        "y": 82.603,
+        "series": "Japan"
+      },
+      {
+        "x": 1982,
+        "y": 63.739,
+        "series": "Jordan"
+      },
+      {
+        "x": 1987,
+        "y": 65.869,
+        "series": "Jordan"
+      },
+      {
+        "x": 1992,
+        "y": 68.015,
+        "series": "Jordan"
+      },
+      {
+        "x": 1997,
+        "y": 69.77199999999999,
+        "series": "Jordan"
+      },
+      {
+        "x": 2002,
+        "y": 71.263,
+        "series": "Jordan"
+      },
+      {
+        "x": 2007,
+        "y": 72.535,
+        "series": "Jordan"
+      },
+      {
+        "x": 1982,
+        "y": 69.1,
+        "series": "Korea, Dem. Rep."
+      },
+      {
+        "x": 1987,
+        "y": 70.64699999999998,
+        "series": "Korea, Dem. Rep."
+      },
+      {
+        "x": 1992,
+        "y": 69.97800000000001,
+        "series": "Korea, Dem. Rep."
+      },
+      {
+        "x": 1997,
+        "y": 67.727,
+        "series": "Korea, Dem. Rep."
+      },
+      {
+        "x": 2002,
+        "y": 66.66199999999999,
+        "series": "Korea, Dem. Rep."
+      },
+      {
+        "x": 2007,
+        "y": 67.297,
+        "series": "Korea, Dem. Rep."
+      },
+      {
+        "x": 1982,
+        "y": 67.123,
+        "series": "Korea, Rep."
+      },
+      {
+        "x": 1987,
+        "y": 69.81,
+        "series": "Korea, Rep."
+      },
+      {
+        "x": 1992,
+        "y": 72.244,
+        "series": "Korea, Rep."
+      },
+      {
+        "x": 1997,
+        "y": 74.64699999999998,
+        "series": "Korea, Rep."
+      },
+      {
+        "x": 2002,
+        "y": 77.045,
+        "series": "Korea, Rep."
+      },
+      {
+        "x": 2007,
+        "y": 78.623,
+        "series": "Korea, Rep."
+      },
+      {
+        "x": 1982,
+        "y": 71.309,
+        "series": "Kuwait"
+      },
+      {
+        "x": 1987,
+        "y": 74.17399999999998,
+        "series": "Kuwait"
+      },
+      {
+        "x": 1992,
+        "y": 75.19,
+        "series": "Kuwait"
+      },
+      {
+        "x": 1997,
+        "y": 76.156,
+        "series": "Kuwait"
+      },
+      {
+        "x": 2002,
+        "y": 76.904,
+        "series": "Kuwait"
+      },
+      {
+        "x": 2007,
+        "y": 77.58800000000002,
+        "series": "Kuwait"
+      },
+      {
+        "x": 1982,
+        "y": 66.983,
+        "series": "Lebanon"
+      },
+      {
+        "x": 1987,
+        "y": 67.926,
+        "series": "Lebanon"
+      },
+      {
+        "x": 1992,
+        "y": 69.292,
+        "series": "Lebanon"
+      },
+      {
+        "x": 1997,
+        "y": 70.265,
+        "series": "Lebanon"
+      },
+      {
+        "x": 2002,
+        "y": 71.028,
+        "series": "Lebanon"
+      },
+      {
+        "x": 2007,
+        "y": 71.993,
+        "series": "Lebanon"
+      },
+      {
+        "x": 1982,
+        "y": 68,
+        "series": "Malaysia"
+      },
+      {
+        "x": 1987,
+        "y": 69.5,
+        "series": "Malaysia"
+      },
+      {
+        "x": 1992,
+        "y": 70.693,
+        "series": "Malaysia"
+      },
+      {
+        "x": 1997,
+        "y": 71.938,
+        "series": "Malaysia"
+      },
+      {
+        "x": 2002,
+        "y": 73.044,
+        "series": "Malaysia"
+      },
+      {
+        "x": 2007,
+        "y": 74.241,
+        "series": "Malaysia"
+      },
+      {
+        "x": 1982,
+        "y": 57.489,
+        "series": "Mongolia"
+      },
+      {
+        "x": 1987,
+        "y": 60.222,
+        "series": "Mongolia"
+      },
+      {
+        "x": 1992,
+        "y": 61.271,
+        "series": "Mongolia"
+      },
+      {
+        "x": 1997,
+        "y": 63.625,
+        "series": "Mongolia"
+      },
+      {
+        "x": 2002,
+        "y": 65.033,
+        "series": "Mongolia"
+      },
+      {
+        "x": 2007,
+        "y": 66.803,
+        "series": "Mongolia"
+      },
+      {
+        "x": 1982,
+        "y": 58.056,
+        "series": "Myanmar"
+      },
+      {
+        "x": 1987,
+        "y": 58.339,
+        "series": "Myanmar"
+      },
+      {
+        "x": 1992,
+        "y": 59.32,
+        "series": "Myanmar"
+      },
+      {
+        "x": 1997,
+        "y": 60.328,
+        "series": "Myanmar"
+      },
+      {
+        "x": 2002,
+        "y": 59.908,
+        "series": "Myanmar"
+      },
+      {
+        "x": 2007,
+        "y": 62.069,
+        "series": "Myanmar"
+      },
+      {
+        "x": 1982,
+        "y": 49.594,
+        "series": "Nepal"
+      },
+      {
+        "x": 1987,
+        "y": 52.537,
+        "series": "Nepal"
+      },
+      {
+        "x": 1992,
+        "y": 55.727,
+        "series": "Nepal"
+      },
+      {
+        "x": 1997,
+        "y": 59.426,
+        "series": "Nepal"
+      },
+      {
+        "x": 2002,
+        "y": 61.34,
+        "series": "Nepal"
+      },
+      {
+        "x": 2007,
+        "y": 63.785,
+        "series": "Nepal"
+      },
+      {
+        "x": 1982,
+        "y": 62.728,
+        "series": "Oman"
+      },
+      {
+        "x": 1987,
+        "y": 67.734,
+        "series": "Oman"
+      },
+      {
+        "x": 1992,
+        "y": 71.197,
+        "series": "Oman"
+      },
+      {
+        "x": 1997,
+        "y": 72.499,
+        "series": "Oman"
+      },
+      {
+        "x": 2002,
+        "y": 74.193,
+        "series": "Oman"
+      },
+      {
+        "x": 2007,
+        "y": 75.64,
+        "series": "Oman"
+      },
+      {
+        "x": 1982,
+        "y": 56.158,
+        "series": "Pakistan"
+      },
+      {
+        "x": 1987,
+        "y": 58.245,
+        "series": "Pakistan"
+      },
+      {
+        "x": 1992,
+        "y": 60.838,
+        "series": "Pakistan"
+      },
+      {
+        "x": 1997,
+        "y": 61.81800000000001,
+        "series": "Pakistan"
+      },
+      {
+        "x": 2002,
+        "y": 63.61,
+        "series": "Pakistan"
+      },
+      {
+        "x": 2007,
+        "y": 65.483,
+        "series": "Pakistan"
+      },
+      {
+        "x": 1982,
+        "y": 62.082,
+        "series": "Philippines"
+      },
+      {
+        "x": 1987,
+        "y": 64.15100000000001,
+        "series": "Philippines"
+      },
+      {
+        "x": 1992,
+        "y": 66.458,
+        "series": "Philippines"
+      },
+      {
+        "x": 1997,
+        "y": 68.564,
+        "series": "Philippines"
+      },
+      {
+        "x": 2002,
+        "y": 70.303,
+        "series": "Philippines"
+      },
+      {
+        "x": 2007,
+        "y": 71.688,
+        "series": "Philippines"
+      },
+      {
+        "x": 1982,
+        "y": 63.012,
+        "series": "Saudi Arabia"
+      },
+      {
+        "x": 1987,
+        "y": 66.295,
+        "series": "Saudi Arabia"
+      },
+      {
+        "x": 1992,
+        "y": 68.768,
+        "series": "Saudi Arabia"
+      },
+      {
+        "x": 1997,
+        "y": 70.533,
+        "series": "Saudi Arabia"
+      },
+      {
+        "x": 2002,
+        "y": 71.626,
+        "series": "Saudi Arabia"
+      },
+      {
+        "x": 2007,
+        "y": 72.777,
+        "series": "Saudi Arabia"
+      },
+      {
+        "x": 1982,
+        "y": 71.76,
+        "series": "Singapore"
+      },
+      {
+        "x": 1987,
+        "y": 73.56,
+        "series": "Singapore"
+      },
+      {
+        "x": 1992,
+        "y": 75.788,
+        "series": "Singapore"
+      },
+      {
+        "x": 1997,
+        "y": 77.158,
+        "series": "Singapore"
+      },
+      {
+        "x": 2002,
+        "y": 78.77,
+        "series": "Singapore"
+      },
+      {
+        "x": 2007,
+        "y": 79.972,
+        "series": "Singapore"
+      },
+      {
+        "x": 1982,
+        "y": 68.757,
+        "series": "Sri Lanka"
+      },
+      {
+        "x": 1987,
+        "y": 69.01100000000001,
+        "series": "Sri Lanka"
+      },
+      {
+        "x": 1992,
+        "y": 70.37899999999998,
+        "series": "Sri Lanka"
+      },
+      {
+        "x": 1997,
+        "y": 70.457,
+        "series": "Sri Lanka"
+      },
+      {
+        "x": 2002,
+        "y": 70.815,
+        "series": "Sri Lanka"
+      },
+      {
+        "x": 2007,
+        "y": 72.396,
+        "series": "Sri Lanka"
+      },
+      {
+        "x": 1982,
+        "y": 64.59,
+        "series": "Syria"
+      },
+      {
+        "x": 1987,
+        "y": 66.97399999999999,
+        "series": "Syria"
+      },
+      {
+        "x": 1992,
+        "y": 69.249,
+        "series": "Syria"
+      },
+      {
+        "x": 1997,
+        "y": 71.527,
+        "series": "Syria"
+      },
+      {
+        "x": 2002,
+        "y": 73.053,
+        "series": "Syria"
+      },
+      {
+        "x": 2007,
+        "y": 74.143,
+        "series": "Syria"
+      },
+      {
+        "x": 1982,
+        "y": 72.16,
+        "series": "Taiwan"
+      },
+      {
+        "x": 1987,
+        "y": 73.4,
+        "series": "Taiwan"
+      },
+      {
+        "x": 1992,
+        "y": 74.26,
+        "series": "Taiwan"
+      },
+      {
+        "x": 1997,
+        "y": 75.25,
+        "series": "Taiwan"
+      },
+      {
+        "x": 2002,
+        "y": 76.99,
+        "series": "Taiwan"
+      },
+      {
+        "x": 2007,
+        "y": 78.4,
+        "series": "Taiwan"
+      },
+      {
+        "x": 1982,
+        "y": 64.597,
+        "series": "Thailand"
+      },
+      {
+        "x": 1987,
+        "y": 66.084,
+        "series": "Thailand"
+      },
+      {
+        "x": 1992,
+        "y": 67.298,
+        "series": "Thailand"
+      },
+      {
+        "x": 1997,
+        "y": 67.521,
+        "series": "Thailand"
+      },
+      {
+        "x": 2002,
+        "y": 68.564,
+        "series": "Thailand"
+      },
+      {
+        "x": 2007,
+        "y": 70.616,
+        "series": "Thailand"
+      },
+      {
+        "x": 1982,
+        "y": 58.816,
+        "series": "Vietnam"
+      },
+      {
+        "x": 1987,
+        "y": 62.82,
+        "series": "Vietnam"
+      },
+      {
+        "x": 1992,
+        "y": 67.66199999999999,
+        "series": "Vietnam"
+      },
+      {
+        "x": 1997,
+        "y": 70.672,
+        "series": "Vietnam"
+      },
+      {
+        "x": 2002,
+        "y": 73.017,
+        "series": "Vietnam"
+      },
+      {
+        "x": 2007,
+        "y": 74.249,
+        "series": "Vietnam"
+      },
+      {
+        "x": 1982,
+        "y": 64.406,
+        "series": "West Bank and Gaza"
+      },
+      {
+        "x": 1987,
+        "y": 67.046,
+        "series": "West Bank and Gaza"
+      },
+      {
+        "x": 1992,
+        "y": 69.718,
+        "series": "West Bank and Gaza"
+      },
+      {
+        "x": 1997,
+        "y": 71.096,
+        "series": "West Bank and Gaza"
+      },
+      {
+        "x": 2002,
+        "y": 72.37,
+        "series": "West Bank and Gaza"
+      },
+      {
+        "x": 2007,
+        "y": 73.422,
+        "series": "West Bank and Gaza"
+      },
+      {
+        "x": 1982,
+        "y": 49.113,
+        "series": "Yemen, Rep."
+      },
+      {
+        "x": 1987,
+        "y": 52.922,
+        "series": "Yemen, Rep."
+      },
+      {
+        "x": 1992,
+        "y": 55.599,
+        "series": "Yemen, Rep."
+      },
+      {
+        "x": 1997,
+        "y": 58.02,
+        "series": "Yemen, Rep."
+      },
+      {
+        "x": 2002,
+        "y": 60.308,
+        "series": "Yemen, Rep."
+      },
+      {
+        "x": 2007,
+        "y": 62.698,
+        "series": "Yemen, Rep."
+      }
+    ]
+  },
+  "title": "Life Expectancy by Country (Asia)",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "lifeExp"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "year"
+      },
+      {
+        "field": "y",
+        "title": "lifeExp"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

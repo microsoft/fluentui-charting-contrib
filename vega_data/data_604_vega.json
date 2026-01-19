@@ -1,0 +1,192 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 13303519,
+        "y": 67.6,
+        "series": "Hospital 14"
+      },
+      {
+        "x": 13962787,
+        "y": 65,
+        "series": "Hospital 15"
+      },
+      {
+        "x": 15013381,
+        "y": 74.5,
+        "series": "Hospital 24"
+      },
+      {
+        "x": 15056937,
+        "y": 65,
+        "series": "Hospital 20"
+      },
+      {
+        "x": 15971522,
+        "y": 66.6,
+        "series": "Hospital 27"
+      },
+      {
+        "x": 16455091,
+        "y": 69.3,
+        "series": "Hospital 17"
+      },
+      {
+        "x": 16821915,
+        "y": 74.4,
+        "series": "Hospital 19"
+      },
+      {
+        "x": 17897764,
+        "y": 75.2,
+        "series": "Hospital 29"
+      },
+      {
+        "x": 18031993,
+        "y": 69,
+        "series": "Hospital 16"
+      },
+      {
+        "x": 18094660,
+        "y": 79.6,
+        "series": "Hospital 25"
+      },
+      {
+        "x": 18356839,
+        "y": 65.7,
+        "series": "Hospital 9"
+      },
+      {
+        "x": 18369945,
+        "y": 74.7,
+        "series": "Hospital 12"
+      },
+      {
+        "x": 18378038,
+        "y": 78.1,
+        "series": "Hospital 11"
+      },
+      {
+        "x": 18979071,
+        "y": 80,
+        "series": "Hospital 30"
+      },
+      {
+        "x": 19180463,
+        "y": 79.3,
+        "series": "Hospital 5"
+      },
+      {
+        "x": 19180520,
+        "y": 67,
+        "series": "Hospital 6"
+      },
+      {
+        "x": 19209782,
+        "y": 72,
+        "series": "Hospital 22"
+      },
+      {
+        "x": 19516074,
+        "y": 85.7,
+        "series": "Hospital 2"
+      },
+      {
+        "x": 20236348,
+        "y": 71.1,
+        "series": "Hospital 23"
+      },
+      {
+        "x": 20388229,
+        "y": 80.9,
+        "series": "Hospital 26"
+      },
+      {
+        "x": 20846867,
+        "y": 75,
+        "series": "Hospital 13"
+      },
+      {
+        "x": 21099865,
+        "y": 82.3,
+        "series": "Hospital 18"
+      },
+      {
+        "x": 21314943,
+        "y": 74.2,
+        "series": "Hospital 28"
+      },
+      {
+        "x": 21738499,
+        "y": 72.8,
+        "series": "Hospital 1"
+      },
+      {
+        "x": 21898960,
+        "y": 77.8,
+        "series": "Hospital 10"
+      },
+      {
+        "x": 22266909,
+        "y": 76.8,
+        "series": "Hospital 3"
+      },
+      {
+        "x": 22686021,
+        "y": 65.5,
+        "series": "Hospital 8"
+      },
+      {
+        "x": 25129770,
+        "y": 81.2,
+        "series": "Hospital 21"
+      },
+      {
+        "x": 25330604,
+        "y": 73.1,
+        "series": "Hospital 4"
+      },
+      {
+        "x": 25527244,
+        "y": 80.9,
+        "series": "Hospital 7"
+      }
+    ]
+  },
+  "title": "Healthcare Spending vs Patient Satisfaction by Facility",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Healthcare Spending (USD)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Patient Satisfaction Score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Healthcare Spending (USD)"
+      },
+      {
+        "field": "y",
+        "title": "Patient Satisfaction Score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan",
+        "y": 60,
+        "series": "Online"
+      },
+      {
+        "x": "Feb",
+        "y": 75,
+        "series": "Online"
+      },
+      {
+        "x": "Mar",
+        "y": 85,
+        "series": "Online"
+      },
+      {
+        "x": "Apr",
+        "y": 80,
+        "series": "Online"
+      },
+      {
+        "x": "May",
+        "y": 90,
+        "series": "Online"
+      },
+      {
+        "x": "Jun",
+        "y": 110,
+        "series": "Online"
+      },
+      {
+        "x": "Jan",
+        "y": 60,
+        "series": "In‑Store"
+      },
+      {
+        "x": "Feb",
+        "y": 75,
+        "series": "In‑Store"
+      },
+      {
+        "x": "Mar",
+        "y": 85,
+        "series": "In‑Store"
+      },
+      {
+        "x": "Apr",
+        "y": 80,
+        "series": "In‑Store"
+      },
+      {
+        "x": "May",
+        "y": 90,
+        "series": "In‑Store"
+      },
+      {
+        "x": "Jun",
+        "y": 90,
+        "series": "In‑Store"
+      }
+    ]
+  },
+  "title": "Retail Sales: Online vs In‑Store",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sales"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Sales"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

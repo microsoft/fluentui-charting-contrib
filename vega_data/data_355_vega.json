@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 518400000,
+        "y": "Site Preparation",
+        "series": "No"
+      },
+      {
+        "x": 1123200000,
+        "y": "Foundation Work",
+        "series": "No"
+      },
+      {
+        "x": 950400000,
+        "y": "Framing",
+        "series": "No"
+      },
+      {
+        "x": 518400000,
+        "y": "Roof Installation",
+        "series": "No"
+      },
+      {
+        "x": 1123200000,
+        "y": "Plumbing/Electrical",
+        "series": "No"
+      },
+      {
+        "x": 777600000,
+        "y": "Exterior Finishing",
+        "series": "No"
+      },
+      {
+        "x": 1123200000,
+        "y": "Interior Finishing",
+        "series": "Yes (Phase 1)"
+      },
+      {
+        "x": 518400000,
+        "y": "Final Inspections",
+        "series": "Yes (Phase 2)"
+      }
+    ]
+  },
+  "title": "Construction Project Schedule",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Date"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Task"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Date"
+      },
+      {
+        "field": "y",
+        "title": "Task"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Supplier1",
+        "y": 5,
+        "series": "Series"
+      },
+      {
+        "x": "Supplier2",
+        "y": 7,
+        "series": "Series"
+      },
+      {
+        "x": "Supplier1",
+        "y": 6,
+        "series": "Series"
+      },
+      {
+        "x": "Supplier2",
+        "y": 4,
+        "series": "Series"
+      },
+      {
+        "x": "Supplier3",
+        "y": 8,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Order Fulfillment Time by Supplier",
+  "mark": "boxplot",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Supplier"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Order Fulfillment Time (days)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Supplier"
+      },
+      {
+        "field": "y",
+        "title": "Order Fulfillment Time (days)"
+      }
+    ]
+  }
+}

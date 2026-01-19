@@ -1,0 +1,15 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Distribution of Incident Status",
+  "data": {
+    "values": [
+      {"status": "Resolved", "count": 6},
+      {"status": "In Progress", "count": 4}
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {"field": "count", "type": "quantitative"},
+    "color": {"field": "status", "type": "nominal"}
+  }
+}

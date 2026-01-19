@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Resource Allocation Trends Across Sites",
+  "description": "Converted from Plotly schema 134 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "site": "Site A", "allocation": 85, "resource": "Labor" },
+      { "site": "Site B", "allocation": 65, "resource": "Labor" },
+      { "site": "Site C", "allocation": 80, "resource": "Labor" },
+      { "site": "Site A", "allocation": 70, "resource": "Machinery" },
+      { "site": "Site B", "allocation": 90, "resource": "Machinery" },
+      { "site": "Site C", "allocation": 60, "resource": "Machinery" },
+      { "site": "Site A", "allocation": 75, "resource": "Materials" },
+      { "site": "Site B", "allocation": 55, "resource": "Materials" },
+      { "site": "Site C", "allocation": 85, "resource": "Materials" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "site",
+      "type": "nominal",
+      "axis": { "title": "Project Sites" }
+    },
+    "y": {
+      "field": "allocation",
+      "type": "quantitative",
+      "axis": { "title": "Allocation (%)" }
+    },
+    "xOffset": {
+      "field": "resource"
+    },
+    "color": {
+      "field": "resource",
+      "type": "nominal",
+      "legend": { "title": "Resource" }
+    }
+  }
+}

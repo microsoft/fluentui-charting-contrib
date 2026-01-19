@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "ICU",
+        "y": 12.697652132247244,
+        "series": "Series"
+      },
+      {
+        "x": "Emergency",
+        "y": 24.850232970934105,
+        "series": "Series"
+      },
+      {
+        "x": "Pediatrics",
+        "y": 16.666666666666668,
+        "series": "Series"
+      },
+      {
+        "x": "Oncology",
+        "y": 12.641673931996513,
+        "series": "Series"
+      },
+      {
+        "x": "Surgery",
+        "y": 29.577464788732392,
+        "series": "Series"
+      },
+      {
+        "x": "Cardiology",
+        "y": 15.274463007159905,
+        "series": "Series"
+      },
+      {
+        "x": "Neurology",
+        "y": 13.830678960603521,
+        "series": "Series"
+      },
+      {
+        "x": "Orthopedics",
+        "y": 12.463343108504398,
+        "series": "Series"
+      },
+      {
+        "x": "Maternity",
+        "y": 14.025777103866567,
+        "series": "Series"
+      },
+      {
+        "x": "Psychiatry",
+        "y": 17.04007573366993,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Medication Error Rate by Hospital Unit (per 1,000 Doses)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Hospital Unit"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Medication Error Rate (per 1,000 doses)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Hospital Unit"
+      },
+      {
+        "field": "y",
+        "title": "Medication Error Rate (per 1,000 doses)"
+      }
+    ]
+  }
+}

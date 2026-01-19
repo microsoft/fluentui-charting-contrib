@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "P101",
+        "y": 120000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "P102",
+        "y": 95000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "P103",
+        "y": 110000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "P104",
+        "y": 130000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "P105",
+        "y": 105000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "P101",
+        "y": 220000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "P102",
+        "y": 175000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "P103",
+        "y": 180000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "P104",
+        "y": 195000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "P105",
+        "y": 160000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "P101",
+        "y": 132000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "P102",
+        "y": 87000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "P103",
+        "y": 113000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "P104",
+        "y": 142000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "P105",
+        "y": 101000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "P101",
+        "y": 240000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "P102",
+        "y": 168000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "P103",
+        "y": 200000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "P104",
+        "y": 209000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "P105",
+        "y": 155000,
+        "series": "Actual Cost"
+      }
+    ]
+  },
+  "title": "Cost Management Dashboard: Budgeted vs Actual Cost by Project Phase",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Project ID"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Cost (USD)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Project ID"
+      },
+      {
+        "field": "y",
+        "title": "Cost (USD)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

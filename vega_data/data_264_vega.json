@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Airport Wait Times Trends",
+  "description": "Converted from Plotly schema 264 - Multi-series line+markers chart",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "date": "2023-10-01", "time": 20, "type": "Check-in Time (mins)" },
+      { "date": "2023-10-08", "time": 25, "type": "Check-in Time (mins)" },
+      { "date": "2023-10-15", "time": 15, "type": "Check-in Time (mins)" },
+      { "date": "2023-10-22", "time": 30, "type": "Check-in Time (mins)" },
+      { "date": "2023-10-29", "time": 18, "type": "Check-in Time (mins)" },
+      { "date": "2023-11-05", "time": 22, "type": "Check-in Time (mins)" },
+      { "date": "2023-11-12", "time": 26, "type": "Check-in Time (mins)" },
+      { "date": "2023-11-19", "time": 19, "type": "Check-in Time (mins)" },
+      { "date": "2023-11-26", "time": 23, "type": "Check-in Time (mins)" },
+      { "date": "2023-12-03", "time": 21, "type": "Check-in Time (mins)" },
+      { "date": "2023-10-01", "time": 22, "type": "Check-out Time (mins)" },
+      { "date": "2023-10-08", "time": 28, "type": "Check-out Time (mins)" },
+      { "date": "2023-10-15", "time": 16, "type": "Check-out Time (mins)" },
+      { "date": "2023-10-22", "time": 31, "type": "Check-out Time (mins)" },
+      { "date": "2023-10-29", "time": 19, "type": "Check-out Time (mins)" },
+      { "date": "2023-11-05", "time": 24, "type": "Check-out Time (mins)" },
+      { "date": "2023-11-12", "time": 28, "type": "Check-out Time (mins)" },
+      { "date": "2023-11-19", "time": 21, "type": "Check-out Time (mins)" },
+      { "date": "2023-11-26", "time": 25, "type": "Check-out Time (mins)" },
+      { "date": "2023-12-03", "time": 23, "type": "Check-out Time (mins)" },
+      { "date": "2023-10-01", "time": 18, "type": "Parking Time (mins)" },
+      { "date": "2023-10-08", "time": 23, "type": "Parking Time (mins)" },
+      { "date": "2023-10-15", "time": 13, "type": "Parking Time (mins)" },
+      { "date": "2023-10-22", "time": 29, "type": "Parking Time (mins)" },
+      { "date": "2023-10-29", "time": 17, "type": "Parking Time (mins)" },
+      { "date": "2023-11-05", "time": 21, "type": "Parking Time (mins)" },
+      { "date": "2023-11-12", "time": 25, "type": "Parking Time (mins)" },
+      { "date": "2023-11-19", "time": 18, "type": "Parking Time (mins)" },
+      { "date": "2023-11-26", "time": 22, "type": "Parking Time (mins)" },
+      { "date": "2023-12-03", "time": 20, "type": "Parking Time (mins)" },
+      { "date": "2023-10-01", "time": 35, "type": "Security Wait (mins)" },
+      { "date": "2023-10-08", "time": 40, "type": "Security Wait (mins)" },
+      { "date": "2023-10-15", "time": 28, "type": "Security Wait (mins)" },
+      { "date": "2023-10-22", "time": 45, "type": "Security Wait (mins)" },
+      { "date": "2023-10-29", "time": 32, "type": "Security Wait (mins)" },
+      { "date": "2023-11-05", "time": 38, "type": "Security Wait (mins)" },
+      { "date": "2023-11-12", "time": 42, "type": "Security Wait (mins)" },
+      { "date": "2023-11-19", "time": 34, "type": "Security Wait (mins)" },
+      { "date": "2023-11-26", "time": 39, "type": "Security Wait (mins)" },
+      { "date": "2023-12-03", "time": 36, "type": "Security Wait (mins)" },
+      { "date": "2023-10-01", "time": 15, "type": "Boarding Time (mins)" },
+      { "date": "2023-10-08", "time": 18, "type": "Boarding Time (mins)" },
+      { "date": "2023-10-15", "time": 12, "type": "Boarding Time (mins)" },
+      { "date": "2023-10-22", "time": 22, "type": "Boarding Time (mins)" },
+      { "date": "2023-10-29", "time": 14, "type": "Boarding Time (mins)" },
+      { "date": "2023-11-05", "time": 17, "type": "Boarding Time (mins)" },
+      { "date": "2023-11-12", "time": 20, "type": "Boarding Time (mins)" },
+      { "date": "2023-11-19", "time": 15, "type": "Boarding Time (mins)" },
+      { "date": "2023-11-26", "time": 18, "type": "Boarding Time (mins)" },
+      { "date": "2023-12-03", "time": 16, "type": "Boarding Time (mins)" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "ordinal",
+          "axis": { "title": "Date" }
+        },
+        "y": {
+          "field": "time",
+          "type": "quantitative",
+          "axis": { "title": "Wait Time (mins)" }
+        },
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "legend": { "title": "Wait Type" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "date", "type": "ordinal" },
+        "y": { "field": "time", "type": "quantitative" },
+        "color": { "field": "type", "type": "nominal" }
+      }
+    }
+  ]
+}

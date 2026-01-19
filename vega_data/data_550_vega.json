@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Batch A",
+        "y": 50,
+        "series": "Engine"
+      },
+      {
+        "x": "Batch B",
+        "y": 30,
+        "series": "Transmission"
+      },
+      {
+        "x": "Batch C",
+        "y": 20,
+        "series": "Brakes"
+      },
+      {
+        "x": "Batch D",
+        "y": 40,
+        "series": "Electronics"
+      },
+      {
+        "x": "Batch E",
+        "y": 10,
+        "series": "Paint"
+      }
+    ]
+  },
+  "title": "Defect Frequency across Production Batches",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Production Batch"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Frequency"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Production Batch"
+      },
+      {
+        "field": "y",
+        "title": "Frequency"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

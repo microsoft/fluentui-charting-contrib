@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-Q1",
+        "y": 3.07,
+        "series": "Bonds"
+      },
+      {
+        "x": "2023-Q2",
+        "y": 5.904999999999999,
+        "series": "Bonds"
+      },
+      {
+        "x": "2023-Q3",
+        "y": 5.4375,
+        "series": "Bonds"
+      },
+      {
+        "x": "2023-Q4",
+        "y": 4.04,
+        "series": "Bonds"
+      },
+      {
+        "x": "2023-Q1",
+        "y": 4.01,
+        "series": "Commodities"
+      },
+      {
+        "x": "2023-Q2",
+        "y": 5.0675,
+        "series": "Commodities"
+      },
+      {
+        "x": "2023-Q3",
+        "y": 0.89,
+        "series": "Commodities"
+      },
+      {
+        "x": "2023-Q4",
+        "y": 8.4925,
+        "series": "Commodities"
+      },
+      {
+        "x": "2023-Q1",
+        "y": 2.0175,
+        "series": "Equities"
+      },
+      {
+        "x": "2023-Q2",
+        "y": 4.452500000000001,
+        "series": "Equities"
+      },
+      {
+        "x": "2023-Q3",
+        "y": 3.1075,
+        "series": "Equities"
+      },
+      {
+        "x": "2023-Q4",
+        "y": 8.54,
+        "series": "Equities"
+      },
+      {
+        "x": "2023-Q1",
+        "y": 7.045,
+        "series": "Real Estate"
+      },
+      {
+        "x": "2023-Q2",
+        "y": 4.0025,
+        "series": "Real Estate"
+      },
+      {
+        "x": "2023-Q3",
+        "y": 4.4725,
+        "series": "Real Estate"
+      },
+      {
+        "x": "2023-Q4",
+        "y": 9.18,
+        "series": "Real Estate"
+      }
+    ]
+  },
+  "title": "Average Portfolio Returns by Asset Type (Quarterly)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Period"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Average Return (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Period"
+      },
+      {
+        "field": "y",
+        "title": "Average Return (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

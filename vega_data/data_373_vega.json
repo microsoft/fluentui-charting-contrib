@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "category": "Google",
+        "value": 1600000000
+      },
+      {
+        "category": "Bing",
+        "value": 400000000
+      },
+      {
+        "category": "Yahoo! Search",
+        "value": 300000000
+      },
+      {
+        "category": "Ask",
+        "value": 245000000
+      },
+      {
+        "category": "AOL Search",
+        "value": 125000000
+      },
+      {
+        "category": "Wow",
+        "value": 100000000
+      },
+      {
+        "category": "WebCrawler",
+        "value": 65000000
+      },
+      {
+        "category": "MyWebSearch",
+        "value": 60000000
+      },
+      {
+        "category": "Infospace",
+        "value": 24000000
+      },
+      {
+        "category": "Info",
+        "value": 13500000
+      },
+      {
+        "category": "Other",
+        "value": 34000000
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Estimated Unique Monthly Visitors for Top 15 Most Popular Search Engines"
+}

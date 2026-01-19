@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 8.2,
+        "y": "Equity",
+        "series": "Equity"
+      },
+      {
+        "x": 3.5,
+        "y": "Fixed Income",
+        "series": "Fixed Income"
+      },
+      {
+        "x": 6.7,
+        "y": "Real Estate",
+        "series": "Real Estate"
+      },
+      {
+        "x": 4.2,
+        "y": "Commodities",
+        "series": "Commodities"
+      },
+      {
+        "x": 1,
+        "y": "Cash",
+        "series": "Cash"
+      }
+    ]
+  },
+  "title": "Annualized Return by Asset Type",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Annualized Return (%)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Asset Type"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Annualized Return (%)"
+      },
+      {
+        "field": "y",
+        "title": "Asset Type"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

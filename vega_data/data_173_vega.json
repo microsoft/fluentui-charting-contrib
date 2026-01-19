@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Quarterly Performance Trends",
+  "description": "Converted from Plotly schema 173 - Multi-series line+markers chart",
+  "data": {
+    "values": [
+      { "quarter": "Q1 2023", "return": 2.1, "portfolio": "Portfolio A" },
+      { "quarter": "Q2 2023", "return": 3.6, "portfolio": "Portfolio A" },
+      { "quarter": "Q3 2023", "return": 1.8, "portfolio": "Portfolio A" },
+      { "quarter": "Q4 2023", "return": 4.3, "portfolio": "Portfolio A" },
+      { "quarter": "Q1 2023", "return": 1.9, "portfolio": "Portfolio B" },
+      { "quarter": "Q2 2023", "return": 4.0, "portfolio": "Portfolio B" },
+      { "quarter": "Q3 2023", "return": 3.2, "portfolio": "Portfolio B" },
+      { "quarter": "Q4 2023", "return": 5.1, "portfolio": "Portfolio B" },
+      { "quarter": "Q1 2023", "return": 2.5, "portfolio": "Portfolio C" },
+      { "quarter": "Q2 2023", "return": 3.2, "portfolio": "Portfolio C" },
+      { "quarter": "Q3 2023", "return": 3.6, "portfolio": "Portfolio C" },
+      { "quarter": "Q4 2023", "return": 4.7, "portfolio": "Portfolio C" },
+      { "quarter": "Q1 2023", "return": 2.6, "portfolio": "Portfolio D" },
+      { "quarter": "Q2 2023", "return": 3.9, "portfolio": "Portfolio D" },
+      { "quarter": "Q3 2023", "return": 2.8, "portfolio": "Portfolio D" },
+      { "quarter": "Q4 2023", "return": 5.4, "portfolio": "Portfolio D" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "interpolate": "monotone" },
+      "encoding": {
+        "x": {
+          "field": "quarter",
+          "type": "ordinal",
+          "axis": { "title": "Quarter" }
+        },
+        "y": {
+          "field": "return",
+          "type": "quantitative",
+          "axis": { "title": "Return Percentage (%)" }
+        },
+        "color": {
+          "field": "portfolio",
+          "type": "nominal",
+          "legend": { "title": "Portfolio" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "quarter",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "return",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "portfolio",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

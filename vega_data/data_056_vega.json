@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Changes in Market Share Over Time",
+  "description": "Converted from Plotly schema 56 - Multi-series line chart",
+  "data": {
+    "values": [
+      { "year": "2020", "share": 25, "company": "Company A" },
+      { "year": "2021", "share": 30, "company": "Company A" },
+      { "year": "2022", "share": 35, "company": "Company A" },
+      { "year": "2023", "share": 40, "company": "Company A" },
+      { "year": "2020", "share": 15, "company": "Company B" },
+      { "year": "2021", "share": 18, "company": "Company B" },
+      { "year": "2022", "share": 20, "company": "Company B" },
+      { "year": "2023", "share": 25, "company": "Company B" }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "axis": { "title": "Year" }
+    },
+    "y": {
+      "field": "share",
+      "type": "quantitative",
+      "axis": { "title": "Market Share (%)" }
+    },
+    "color": {
+      "field": "company",
+      "type": "nominal",
+      "legend": { "title": "Company" }
+    }
+  }
+}

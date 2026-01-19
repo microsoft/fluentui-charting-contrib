@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 1,
+        "y": 5.387096774193548,
+        "series": "Series"
+      },
+      {
+        "x": 2,
+        "y": 5.785714285714286,
+        "series": "Series"
+      },
+      {
+        "x": 3,
+        "y": 5.354838709677419,
+        "series": "Series"
+      },
+      {
+        "x": 4,
+        "y": 5.5,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Monthly Trend of Average Resolution Time",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Average Time to Resolution (hours)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Average Time to Resolution (hours)"
+      }
+    ]
+  }
+}

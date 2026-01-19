@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Year-over-Year Budget Change",
+  "description": "Converted from Plotly schema 83 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "year": "2020", "budget": 10, "department": "Education" },
+      { "year": "2021", "budget": 15, "department": "Education" },
+      { "year": "2022", "budget": 13, "department": "Education" },
+      { "year": "2023", "budget": 20, "department": "Education" },
+      { "year": "2020", "budget": 20, "department": "Healthcare" },
+      { "year": "2021", "budget": 18, "department": "Healthcare" },
+      { "year": "2022", "budget": 25, "department": "Healthcare" },
+      { "year": "2023", "budget": 30, "department": "Healthcare" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "axis": { "title": "Year" }
+    },
+    "y": {
+      "field": "budget",
+      "type": "quantitative",
+      "axis": { "title": "Budget Allocation (in Billion $)" }
+    },
+    "xOffset": {
+      "field": "department"
+    },
+    "color": {
+      "field": "department",
+      "type": "nominal",
+      "legend": { "title": "Department" }
+    }
+  }
+}

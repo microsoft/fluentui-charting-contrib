@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Top-Performing Models by Region in 2023",
+  "description": "Converted from Plotly schema 325 - Pie chart (simplified from 25 to single pie - Region 1)",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      { "model": "Model A", "sales": 4000 },
+      { "model": "Model B", "sales": 2500 },
+      { "model": "Model C", "sales": 3500 },
+      { "model": "Model D", "sales": 3000 },
+      { "model": "Model E", "sales": 3200 },
+      { "model": "Model F", "sales": 2800 },
+      { "model": "Model G", "sales": 3100 },
+      { "model": "Model H", "sales": 2600 },
+      { "model": "Model I", "sales": 2700 },
+      { "model": "Model J", "sales": 2900 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "sales",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "model",
+      "type": "nominal",
+      "legend": { "title": "Model" }
+    },
+    "tooltip": [
+      { "field": "model", "type": "nominal", "title": "Model" },
+      { "field": "sales", "type": "quantitative", "title": "Sales" }
+    ]
+  }
+}

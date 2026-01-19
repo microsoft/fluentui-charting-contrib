@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Average Temperatures in Hyderabad and Bangalore",
+  "data": {
+    "values": [
+      {"month": "January", "temperature": 22, "city": "Hyderabad"},
+      {"month": "February", "temperature": 25, "city": "Hyderabad"},
+      {"month": "March", "temperature": 30, "city": "Hyderabad"},
+      {"month": "April", "temperature": 35, "city": "Hyderabad"},
+      {"month": "May", "temperature": 38, "city": "Hyderabad"},
+      {"month": "June", "temperature": 36, "city": "Hyderabad"},
+      {"month": "July", "temperature": 32, "city": "Hyderabad"},
+      {"month": "August", "temperature": 30, "city": "Hyderabad"},
+      {"month": "September", "temperature": 28, "city": "Hyderabad"},
+      {"month": "October", "temperature": 27, "city": "Hyderabad"},
+      {"month": "November", "temperature": 24, "city": "Hyderabad"},
+      {"month": "December", "temperature": 22, "city": "Hyderabad"},
+      {"month": "January", "temperature": 20, "city": "Bangalore"},
+      {"month": "February", "temperature": 22, "city": "Bangalore"},
+      {"month": "March", "temperature": 25, "city": "Bangalore"},
+      {"month": "April", "temperature": 28, "city": "Bangalore"},
+      {"month": "May", "temperature": 30, "city": "Bangalore"},
+      {"month": "June", "temperature": 28, "city": "Bangalore"},
+      {"month": "July", "temperature": 26, "city": "Bangalore"},
+      {"month": "August", "temperature": 25, "city": "Bangalore"},
+      {"month": "September", "temperature": 24, "city": "Bangalore"},
+      {"month": "October", "temperature": 23, "city": "Bangalore"},
+      {"month": "November", "temperature": 22, "city": "Bangalore"},
+      {"month": "December", "temperature": 21, "city": "Bangalore"}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "title": "Month",
+      "sort": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    },
+    "y": {
+      "field": "temperature",
+      "type": "quantitative",
+      "title": "Temperature (°C)"
+    },
+    "color": {
+      "field": "city",
+      "type": "nominal",
+      "title": "City"
+    },
+    "xOffset": {
+      "field": "city"
+    }
+  }
+}

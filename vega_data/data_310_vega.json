@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Inventory and Related Metrics by Item Category",
+  "description": "Converted from Plotly schema 310 - Multi-series line+markers (simplified from 26 to 4 metrics)",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "category": "Item Category A", "value": 35, "metric": "Inventory Levels" },
+      { "category": "Item Category B", "value": 50, "metric": "Inventory Levels" },
+      { "category": "Item Category C", "value": 80, "metric": "Inventory Levels" },
+      { "category": "Item Category D", "value": 60, "metric": "Inventory Levels" },
+      { "category": "Item Category E", "value": 55, "metric": "Inventory Levels" },
+      { "category": "Item Category F", "value": 45, "metric": "Inventory Levels" },
+      { "category": "Item Category G", "value": 70, "metric": "Inventory Levels" },
+      { "category": "Item Category H", "value": 85, "metric": "Inventory Levels" },
+      { "category": "Item Category I", "value": 90, "metric": "Inventory Levels" },
+      { "category": "Item Category J", "value": 40, "metric": "Inventory Levels" },
+      { "category": "Item Category A", "value": 25, "metric": "Procurement Times" },
+      { "category": "Item Category B", "value": 60, "metric": "Procurement Times" },
+      { "category": "Item Category C", "value": 70, "metric": "Procurement Times" },
+      { "category": "Item Category D", "value": 40, "metric": "Procurement Times" },
+      { "category": "Item Category E", "value": 45, "metric": "Procurement Times" },
+      { "category": "Item Category F", "value": 55, "metric": "Procurement Times" },
+      { "category": "Item Category G", "value": 80, "metric": "Procurement Times" },
+      { "category": "Item Category H", "value": 95, "metric": "Procurement Times" },
+      { "category": "Item Category I", "value": 100, "metric": "Procurement Times" },
+      { "category": "Item Category J", "value": 50, "metric": "Procurement Times" },
+      { "category": "Item Category A", "value": 40, "metric": "Stock Availability" },
+      { "category": "Item Category B", "value": 65, "metric": "Stock Availability" },
+      { "category": "Item Category C", "value": 85, "metric": "Stock Availability" },
+      { "category": "Item Category D", "value": 75, "metric": "Stock Availability" },
+      { "category": "Item Category E", "value": 60, "metric": "Stock Availability" },
+      { "category": "Item Category F", "value": 50, "metric": "Stock Availability" },
+      { "category": "Item Category G", "value": 65, "metric": "Stock Availability" },
+      { "category": "Item Category H", "value": 75, "metric": "Stock Availability" },
+      { "category": "Item Category I", "value": 85, "metric": "Stock Availability" },
+      { "category": "Item Category J", "value": 55, "metric": "Stock Availability" },
+      { "category": "Item Category A", "value": 30, "metric": "Delivery Times" },
+      { "category": "Item Category B", "value": 45, "metric": "Delivery Times" },
+      { "category": "Item Category C", "value": 85, "metric": "Delivery Times" },
+      { "category": "Item Category D", "value": 55, "metric": "Delivery Times" },
+      { "category": "Item Category E", "value": 50, "metric": "Delivery Times" },
+      { "category": "Item Category F", "value": 40, "metric": "Delivery Times" },
+      { "category": "Item Category G", "value": 65, "metric": "Delivery Times" },
+      { "category": "Item Category H", "value": 70, "metric": "Delivery Times" },
+      { "category": "Item Category I", "value": 75, "metric": "Delivery Times" },
+      { "category": "Item Category J", "value": 35, "metric": "Delivery Times" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "category",
+          "type": "ordinal",
+          "axis": { "title": "Item Categories" }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": { "title": "Days/Units" }
+        },
+        "color": {
+          "field": "metric",
+          "type": "nominal",
+          "scale": { "range": ["green", "royalblue", "red", "purple"] },
+          "legend": { "title": "Metric" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "category", "type": "ordinal" },
+        "y": { "field": "value", "type": "quantitative" },
+        "color": { "field": "metric", "type": "nominal" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01",
+        "y": 0.7041403893611188,
+        "series": "Hotel Aurora"
+      },
+      {
+        "x": "2023-02",
+        "y": 0.7159638554216867,
+        "series": "Hotel Aurora"
+      },
+      {
+        "x": "2023-03",
+        "y": 0.7342771576368091,
+        "series": "Hotel Aurora"
+      },
+      {
+        "x": "2023-01",
+        "y": 0.7334754797441365,
+        "series": "Metro Suites"
+      },
+      {
+        "x": "2023-02",
+        "y": 0.7515748031496063,
+        "series": "Metro Suites"
+      },
+      {
+        "x": "2023-03",
+        "y": 0.7199148029818956,
+        "series": "Metro Suites"
+      },
+      {
+        "x": "2023-01",
+        "y": 0.7425876010781671,
+        "series": "Riverfront Inn"
+      },
+      {
+        "x": "2023-02",
+        "y": 0.7263831388784343,
+        "series": "Riverfront Inn"
+      },
+      {
+        "x": "2023-03",
+        "y": 0.7119216480918609,
+        "series": "Riverfront Inn"
+      },
+      {
+        "x": "2023-01",
+        "y": 0.7204301075268817,
+        "series": "Seaside Retreat"
+      },
+      {
+        "x": "2023-02",
+        "y": 0.7594390507011867,
+        "series": "Seaside Retreat"
+      },
+      {
+        "x": "2023-03",
+        "y": 0.6974871134020618,
+        "series": "Seaside Retreat"
+      }
+    ]
+  },
+  "title": "Monthly Occupancy Rate Comparison",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Monthly Occupancy Rate"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Monthly Occupancy Rate"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

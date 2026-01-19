@@ -1,0 +1,852 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "\u0001",
+        "y": 155.57396449704143,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 170.74468085106383,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 141.80106100795757,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 180.59327217125383,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0002",
+        "y": 165.89736842105262,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 176.64761904761906,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 181.00299401197606,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 179.23821339950373,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0003",
+        "y": 170.3815789473684,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 160.05509641873277,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 159.97448979591837,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 162.93164556962026,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0004",
+        "y": 169.52820512820512,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 187.264192139738,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 168.35119047619048,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 160.64676616915423,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0005",
+        "y": 153.81460674157304,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 155.10042735042734,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 154.4158163265306,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 160.27109974424553,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0006",
+        "y": 175.5212765957447,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 149.92245989304814,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 162.68229166666666,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 167.60313315926894,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0007",
+        "y": 167.91355140186917,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 145.63793103448276,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 179.12765957446808,
+        "series": "Hotel Alpha ADR"
+      },
+      {
+        "x": "\u0001",
+        "y": 128.73133767955392,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 148.0815934335853,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 130.08114996916458,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 148.19141106235384,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0002",
+        "y": 156.9432300882177,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 154.99931371824394,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 173.19835000859632,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 161.05974064349013,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0003",
+        "y": 142.46880057048335,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 151.5645516472427,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 136.04691197482663,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 146.33902246532085,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0004",
+        "y": 138.18356801209134,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 172.95221368950092,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 157.10054190701783,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 140.68397038808078,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0005",
+        "y": 152.41251831731537,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 151.19713654000807,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 145.39610794421307,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 151.0924403581713,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0006",
+        "y": 149.2773955209161,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 139.63223894243876,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 136.59476322357443,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 138.90958483021475,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0007",
+        "y": 167.89568184703592,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 134.63865342466863,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 158.74249744638675,
+        "series": "Hotel Alpha RevPAR"
+      },
+      {
+        "x": "\u0001",
+        "y": 164.3864229765013,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 162.9019138755981,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 165.31578947368422,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 147.2776349614396,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0002",
+        "y": 157.0373831775701,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 176.5591133004926,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 143.3521505376344,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 187.90452261306532,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0003",
+        "y": 163.86240786240785,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 144.19331742243438,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 180.06989247311827,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 157.48511904761904,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0004",
+        "y": 176.7917675544794,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 164.63095238095238,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 168.46703296703296,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 178.32369942196533,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0005",
+        "y": 171.46629213483146,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 157.0782608695652,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 167.37673130193906,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 152.9923469387755,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0006",
+        "y": 166.16455696202533,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 177.41542288557213,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 183.6157894736842,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 163.44414893617022,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0007",
+        "y": 158.78622327790973,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 146.390243902439,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 143.72881355932202,
+        "series": "Hotel Beta ADR"
+      },
+      {
+        "x": "\u0001",
+        "y": 140.98320541032564,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 149.9974903207139,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 133.892349571782,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 120.61098644062223,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0002",
+        "y": 126.66185250865773,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 158.87388726983616,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 131.90137081433596,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 152.67166403663617,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0003",
+        "y": 154.72624186065735,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 121.99893987384031,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 168.73274439904745,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 156.9149328362887,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0004",
+        "y": 165.86977971040287,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 160.7849445925728,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 166.72166419258153,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 160.01880906551324,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0005",
+        "y": 161.25804572681898,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 152.42777842823082,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 145.8389918795618,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 130.392235339835,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0006",
+        "y": 164.3898720629399,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 167.70382684069872,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 154.96005324956047,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 145.43532973239925,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0007",
+        "y": 152.32209232391116,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 133.1291320560609,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 133.66641963541267,
+        "series": "Hotel Beta RevPAR"
+      },
+      {
+        "x": "\u0001",
+        "y": 175.3753280839895,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 186.266318537859,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 172.76649746192894,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 181.59162303664922,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0002",
+        "y": 161.80430107526882,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 154.36739659367396,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 170.07068062827224,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 173.57506361323155,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0003",
+        "y": 175.50923482849603,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 153.92612137203167,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 154.72105263157894,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 177.77839335180056,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0004",
+        "y": 177.78048780487805,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 165.03072625698323,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 163.26246719160105,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 152.46791443850267,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0005",
+        "y": 166.22251308900525,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 158.17037037037036,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 165.32658959537574,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 163.57397959183675,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0006",
+        "y": 165.92505854800936,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 170.63483146067415,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 169.84972677595627,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 142.41768292682926,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0007",
+        "y": 162.07178217821783,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 176.27884615384616,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0000",
+        "y": 176.70689655172413,
+        "series": "Hotel Gamma ADR"
+      },
+      {
+        "x": "\u0001",
+        "y": 166.7387316137776,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 172.184927169521,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 156.87472052956542,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 172.4980333400058,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0002",
+        "y": 152.98800654747672,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 142.9402697954364,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 148.2944705859601,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 152.94782283432139,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0003",
+        "y": 174.4715732953416,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 126.60072322850822,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 132.0855147920859,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 159.73039340842985,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0004",
+        "y": 171.9752325965954,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 137.42688373676873,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 139.65323260430714,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 123.98075495900423,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0005",
+        "y": 156.4481394965596,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 134.0718312232753,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 145.11292587435284,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 145.37478596172926,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0006",
+        "y": 162.31831022843903,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 150.54532012160746,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 140.8130674114926,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 128.86849006992807,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0007",
+        "y": 160.8710894136675,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 162.4475016488164,
+        "series": "Hotel Gamma RevPAR"
+      },
+      {
+        "x": "\u0000",
+        "y": 176.11977800862206,
+        "series": "Hotel Gamma RevPAR"
+      }
+    ]
+  },
+  "title": "Weekly ADR and RevPAR by Hotel",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Average Daily Rate (ADR)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Week"
+      },
+      {
+        "field": "y",
+        "title": "Average Daily Rate (ADR)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

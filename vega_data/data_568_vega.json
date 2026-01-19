@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 10,
+        "theta": "A",
+        "series": "Series"
+      },
+      {
+        "r": 20,
+        "theta": "B",
+        "series": "Series"
+      },
+      {
+        "r": 30,
+        "theta": "C",
+        "series": "Series"
+      },
+      {
+        "r": 40,
+        "theta": "D",
+        "series": "Series"
+      },
+      {
+        "r": 50,
+        "theta": "E",
+        "series": "Series"
+      },
+      {
+        "r": 10,
+        "theta": "A",
+        "series": "Series"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Polar Area Chart"
+}

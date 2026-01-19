@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "HubSpot CRM",
+        "y": 9.8,
+        "series": "Series"
+      },
+      {
+        "x": "Bigin (by ZOHO)",
+        "y": 9.5,
+        "series": "Series"
+      },
+      {
+        "x": "ZOHO",
+        "y": 9,
+        "series": "Series"
+      },
+      {
+        "x": "Pipedrive (Essential)",
+        "y": 8.8,
+        "series": "Series"
+      },
+      {
+        "x": "SalesForce (Essential)",
+        "y": 8.7,
+        "series": "Series"
+      },
+      {
+        "x": "Freshsales",
+        "y": 7.9,
+        "series": "Series"
+      },
+      {
+        "x": "Monday.com",
+        "y": 7.3,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Product Scores Based on Ranking",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Products"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Scores"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Products"
+      },
+      {
+        "field": "y",
+        "title": "Scores"
+      }
+    ]
+  }
+}

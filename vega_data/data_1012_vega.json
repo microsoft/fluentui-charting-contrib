@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-01-01",
+        "y": 12860,
+        "series": "Online"
+      },
+      {
+        "x": "2024-01-08",
+        "y": 17226,
+        "series": "Online"
+      },
+      {
+        "x": "2024-01-15",
+        "y": 22772,
+        "series": "Online"
+      },
+      {
+        "x": "2024-01-22",
+        "y": 17734,
+        "series": "Online"
+      },
+      {
+        "x": "2024-01-29",
+        "y": 17334,
+        "series": "Online"
+      },
+      {
+        "x": "2024-02-05",
+        "y": 17578,
+        "series": "Online"
+      },
+      {
+        "x": "2024-02-12",
+        "y": 15171,
+        "series": "Online"
+      },
+      {
+        "x": "2024-02-19",
+        "y": 19130,
+        "series": "Online"
+      },
+      {
+        "x": "2024-02-26",
+        "y": 12769,
+        "series": "Online"
+      },
+      {
+        "x": "2024-03-04",
+        "y": 17611,
+        "series": "Online"
+      },
+      {
+        "x": "2024-03-11",
+        "y": 24311,
+        "series": "Online"
+      },
+      {
+        "x": "2024-03-18",
+        "y": 13184,
+        "series": "Online"
+      },
+      {
+        "x": "2024-01-01",
+        "y": 22390,
+        "series": "In-Store"
+      },
+      {
+        "x": "2024-01-08",
+        "y": 22191,
+        "series": "In-Store"
+      },
+      {
+        "x": "2024-01-15",
+        "y": 25092,
+        "series": "In-Store"
+      },
+      {
+        "x": "2024-01-22",
+        "y": 17466,
+        "series": "In-Store"
+      },
+      {
+        "x": "2024-01-29",
+        "y": 21426,
+        "series": "In-Store"
+      },
+      {
+        "x": "2024-02-05",
+        "y": 20444,
+        "series": "In-Store"
+      },
+      {
+        "x": "2024-02-12",
+        "y": 19919,
+        "series": "In-Store"
+      },
+      {
+        "x": "2024-02-19",
+        "y": 23685,
+        "series": "In-Store"
+      },
+      {
+        "x": "2024-02-26",
+        "y": 19391,
+        "series": "In-Store"
+      },
+      {
+        "x": "2024-03-04",
+        "y": 19433,
+        "series": "In-Store"
+      },
+      {
+        "x": "2024-03-11",
+        "y": 27051,
+        "series": "In-Store"
+      },
+      {
+        "x": "2024-03-18",
+        "y": 21555,
+        "series": "In-Store"
+      }
+    ]
+  },
+  "title": "Weekly Online vs In-Store Sales (Retail & E-commerce)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Week Starting"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sales Amount (USD)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Week Starting"
+      },
+      {
+        "field": "y",
+        "title": "Sales Amount (USD)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

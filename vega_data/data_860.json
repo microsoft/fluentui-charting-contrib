@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Automobile Sales Performance Analysis",
+  "description": "Quarterly sales by region & model",
+  "data": {
+    "values": [
+      {"quarter": "2023Q1", "sales": 9267, "category": "North | Sedan"},
+      {"quarter": "2023Q2", "sales": 9396, "category": "North | Sedan"},
+      {"quarter": "2023Q3", "sales": 9839, "category": "North | Sedan"},
+      {"quarter": "2023Q4", "sales": 9096, "category": "North | Sedan"},
+      {"quarter": "2023Q1", "sales": 11982, "category": "South | SUV"},
+      {"quarter": "2023Q2", "sales": 10670, "category": "South | SUV"},
+      {"quarter": "2023Q3", "sales": 11247, "category": "South | SUV"},
+      {"quarter": "2023Q4", "sales": 12779, "category": "South | SUV"},
+      {"quarter": "2023Q1", "sales": 16263, "category": "East | Hatchback"},
+      {"quarter": "2023Q2", "sales": 14052, "category": "East | Hatchback"},
+      {"quarter": "2023Q3", "sales": 14505, "category": "East | Hatchback"},
+      {"quarter": "2023Q4", "sales": 14459, "category": "East | Hatchback"},
+      {"quarter": "2023Q1", "sales": 18689, "category": "West | Convertible"},
+      {"quarter": "2023Q2", "sales": 18016, "category": "West | Convertible"},
+      {"quarter": "2023Q3", "sales": 17941, "category": "West | Convertible"},
+      {"quarter": "2023Q4", "sales": 17038, "category": "West | Convertible"}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "ordinal",
+      "title": "Quarter",
+      "sort": ["2023Q1", "2023Q2", "2023Q3", "2023Q4"],
+      "axis": {"labelAngle": -25}
+    },
+    "y": {
+      "field": "sales",
+      "type": "quantitative",
+      "title": "Sales Volume"
+    },
+    "xOffset": {"field": "category"},
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Region | Model",
+      "scale": {
+        "domain": ["North | Sedan", "South | SUV", "East | Hatchback", "West | Convertible"],
+        "range": ["#36b6ff", "#e73c7e", "#2a9d8f", "#246eb9"]
+      }
+    }
+  },
+  "config": {
+    "background": "#fafaff"
+  }
+}

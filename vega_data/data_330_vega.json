@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Product Popularity in Aisle",
+  "description": "Converted from Plotly schema 330 - Multi-series horizontal grouped bar chart",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "product": "Product E", "sales": 500, "region": "Region 1" },
+      { "product": "Product D", "sales": 400, "region": "Region 1" },
+      { "product": "Product C", "sales": 300, "region": "Region 1" },
+      { "product": "Product B", "sales": 200, "region": "Region 1" },
+      { "product": "Product A", "sales": 100, "region": "Region 1" },
+      { "product": "Product F", "sales": 550, "region": "Region 1" },
+      { "product": "Product G", "sales": 450, "region": "Region 1" },
+      { "product": "Product H", "sales": 350, "region": "Region 1" },
+      { "product": "Product I", "sales": 250, "region": "Region 1" },
+      { "product": "Product J", "sales": 150, "region": "Region 1" },
+      { "product": "Product E", "sales": 480, "region": "Region 2" },
+      { "product": "Product D", "sales": 420, "region": "Region 2" },
+      { "product": "Product C", "sales": 320, "region": "Region 2" },
+      { "product": "Product B", "sales": 220, "region": "Region 2" },
+      { "product": "Product A", "sales": 120, "region": "Region 2" },
+      { "product": "Product F", "sales": 530, "region": "Region 2" },
+      { "product": "Product G", "sales": 470, "region": "Region 2" },
+      { "product": "Product H", "sales": 370, "region": "Region 2" },
+      { "product": "Product I", "sales": 270, "region": "Region 2" },
+      { "product": "Product J", "sales": 170, "region": "Region 2" },
+      { "product": "Product E", "sales": 520, "region": "Region 4" },
+      { "product": "Product D", "sales": 390, "region": "Region 4" },
+      { "product": "Product C", "sales": 310, "region": "Region 4" },
+      { "product": "Product B", "sales": 210, "region": "Region 4" },
+      { "product": "Product A", "sales": 110, "region": "Region 4" },
+      { "product": "Product F", "sales": 570, "region": "Region 4" },
+      { "product": "Product G", "sales": 430, "region": "Region 4" },
+      { "product": "Product H", "sales": 360, "region": "Region 4" },
+      { "product": "Product I", "sales": 260, "region": "Region 4" },
+      { "product": "Product J", "sales": 160, "region": "Region 4" },
+      { "product": "Product E", "sales": 470, "region": "Region 6" },
+      { "product": "Product D", "sales": 450, "region": "Region 6" },
+      { "product": "Product C", "sales": 350, "region": "Region 6" },
+      { "product": "Product B", "sales": 250, "region": "Region 6" },
+      { "product": "Product A", "sales": 150, "region": "Region 6" },
+      { "product": "Product F", "sales": 520, "region": "Region 6" },
+      { "product": "Product G", "sales": 490, "region": "Region 6" },
+      { "product": "Product H", "sales": 380, "region": "Region 6" },
+      { "product": "Product I", "sales": 280, "region": "Region 6" },
+      { "product": "Product J", "sales": 180, "region": "Region 6" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "product",
+      "type": "nominal",
+      "axis": { "title": "Products" }
+    },
+    "x": {
+      "field": "sales",
+      "type": "quantitative",
+      "axis": { "title": "Sales" }
+    },
+    "yOffset": { "field": "region" },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "scale": { "range": ["blue", "green", "purple", "cyan"] },
+      "legend": { "title": "Region" }
+    }
+  }
+}

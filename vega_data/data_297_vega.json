@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Analisi del Consumo Energetico",
+  "description": "Converted from Plotly schema 297 - Multi-series line chart with Italian labels",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "Gennaio", "consumption": 450, "company": "Consumo Energetico Azienda A" },
+      { "month": "Febbraio", "consumption": 420, "company": "Consumo Energetico Azienda A" },
+      { "month": "Marzo", "consumption": 400, "company": "Consumo Energetico Azienda A" },
+      { "month": "Aprile", "consumption": 380, "company": "Consumo Energetico Azienda A" },
+      { "month": "Maggio", "consumption": 390, "company": "Consumo Energetico Azienda A" },
+      { "month": "Giugno", "consumption": 420, "company": "Consumo Energetico Azienda A" },
+      { "month": "Luglio", "consumption": 460, "company": "Consumo Energetico Azienda A" },
+      { "month": "Agosto", "consumption": 480, "company": "Consumo Energetico Azienda A" },
+      { "month": "Settembre", "consumption": 500, "company": "Consumo Energetico Azienda A" },
+      { "month": "Ottobre", "consumption": 520, "company": "Consumo Energetico Azienda A" },
+      { "month": "Novembre", "consumption": 510, "company": "Consumo Energetico Azienda A" },
+      { "month": "Dicembre", "consumption": 470, "company": "Consumo Energetico Azienda A" },
+      { "month": "Gennaio", "consumption": 300, "company": "Consumo Energetico Azienda B" },
+      { "month": "Febbraio", "consumption": 320, "company": "Consumo Energetico Azienda B" },
+      { "month": "Marzo", "consumption": 310, "company": "Consumo Energetico Azienda B" },
+      { "month": "Aprile", "consumption": 305, "company": "Consumo Energetico Azienda B" },
+      { "month": "Maggio", "consumption": 310, "company": "Consumo Energetico Azienda B" },
+      { "month": "Giugno", "consumption": 330, "company": "Consumo Energetico Azienda B" },
+      { "month": "Luglio", "consumption": 350, "company": "Consumo Energetico Azienda B" },
+      { "month": "Agosto", "consumption": 370, "company": "Consumo Energetico Azienda B" },
+      { "month": "Settembre", "consumption": 390, "company": "Consumo Energetico Azienda B" },
+      { "month": "Ottobre", "consumption": 410, "company": "Consumo Energetico Azienda B" },
+      { "month": "Novembre", "consumption": 400, "company": "Consumo Energetico Azienda B" },
+      { "month": "Dicembre", "consumption": 390, "company": "Consumo Energetico Azienda B" }
+    ]
+  },
+  "mark": { "type": "line", "point": true },
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
+      "axis": { "title": "Mese" }
+    },
+    "y": {
+      "field": "consumption",
+      "type": "quantitative",
+      "axis": { "title": "Consumo Energetico (in MWh)" }
+    },
+    "color": {
+      "field": "company",
+      "type": "nominal",
+      "scale": { "range": ["blue", "green"] },
+      "legend": { "title": "Azienda" }
+    }
+  }
+}

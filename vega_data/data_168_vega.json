@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Student-to-Resource Ratio",
+  "description": "Converted from Plotly schema 168 - Bubble chart",
+  "data": {
+    "values": [
+      { "school": "School A", "ratio": 15, "students": 30, "resources": 300 },
+      { "school": "School B", "ratio": 12, "students": 40, "resources": 400 },
+      { "school": "School C", "ratio": 18, "students": 35, "resources": 350 },
+      { "school": "School D", "ratio": 14, "students": 32, "resources": 320 }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "school",
+      "type": "nominal",
+      "axis": { "title": "School Name" }
+    },
+    "y": {
+      "field": "ratio",
+      "type": "quantitative",
+      "axis": { "title": "Ratio" }
+    },
+    "size": {
+      "field": "students",
+      "type": "quantitative",
+      "legend": { "title": "Students" }
+    },
+    "color": {
+      "field": "resources",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Resources" }
+    }
+  }
+}

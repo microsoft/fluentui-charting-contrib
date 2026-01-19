@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "School Resource Allocation",
+  "description": "Converted from Plotly schema 166 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "school": "School A", "resources": 350000, "type": "Financial Resources" },
+      { "school": "School B", "resources": 500000, "type": "Financial Resources" },
+      { "school": "School C", "resources": 450000, "type": "Financial Resources" },
+      { "school": "School D", "resources": 400000, "type": "Financial Resources" },
+      { "school": "School A", "resources": 300, "type": "Technological Resources" },
+      { "school": "School B", "resources": 400, "type": "Technological Resources" },
+      { "school": "School C", "resources": 350, "type": "Technological Resources" },
+      { "school": "School D", "resources": 320, "type": "Technological Resources" },
+      { "school": "School A", "resources": 250, "type": "Infrastructural Resources" },
+      { "school": "School B", "resources": 300, "type": "Infrastructural Resources" },
+      { "school": "School C", "resources": 280, "type": "Infrastructural Resources" },
+      { "school": "School D", "resources": 260, "type": "Infrastructural Resources" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "school",
+      "type": "nominal",
+      "axis": { "title": "School Name" }
+    },
+    "y": {
+      "field": "resources",
+      "type": "quantitative",
+      "axis": { "title": "Resources Allocated" }
+    },
+    "xOffset": {
+      "field": "type"
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Resource Type" }
+    }
+  }
+}

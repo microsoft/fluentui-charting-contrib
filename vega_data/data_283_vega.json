@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "员工生产力指标",
+  "description": "Converted from Plotly schema 283 - Grouped bar chart with Chinese labels",
+  "width": 500,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "January", "score": 80, "employee": "员工1" },
+      { "month": "February", "score": 85, "employee": "员工1" },
+      { "month": "March", "score": 90, "employee": "员工1" },
+      { "month": "April", "score": 88, "employee": "员工1" },
+      { "month": "May", "score": 92, "employee": "员工1" },
+      { "month": "June", "score": 95, "employee": "员工1" },
+      { "month": "July", "score": 93, "employee": "员工1" },
+      { "month": "August", "score": 97, "employee": "员工1" },
+      { "month": "September", "score": 96, "employee": "员工1" },
+      { "month": "January", "score": 75, "employee": "员工2" },
+      { "month": "February", "score": 80, "employee": "员工2" },
+      { "month": "March", "score": 85, "employee": "员工2" },
+      { "month": "April", "score": 82, "employee": "员工2" },
+      { "month": "May", "score": 88, "employee": "员工2" },
+      { "month": "June", "score": 90, "employee": "员工2" },
+      { "month": "July", "score": 89, "employee": "员工2" },
+      { "month": "August", "score": 91, "employee": "员工2" },
+      { "month": "September", "score": 92, "employee": "员工2" },
+      { "month": "January", "score": 70, "employee": "员工3" },
+      { "month": "February", "score": 78, "employee": "员工3" },
+      { "month": "March", "score": 83, "employee": "员工3" },
+      { "month": "April", "score": 85, "employee": "员工3" },
+      { "month": "May", "score": 84, "employee": "员工3" },
+      { "month": "June", "score": 89, "employee": "员工3" },
+      { "month": "July", "score": 87, "employee": "员工3" },
+      { "month": "August", "score": 93, "employee": "员工3" },
+      { "month": "September", "score": 90, "employee": "员工3" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": ["January", "February", "March", "April", "May", "June", "July", "August", "September"],
+      "axis": { "title": "月份" }
+    },
+    "y": {
+      "field": "score",
+      "type": "quantitative",
+      "axis": { "title": "生产力得分" }
+    },
+    "xOffset": {
+      "field": "employee",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "employee",
+      "type": "nominal",
+      "scale": { "range": ["red", "blue", "green"] },
+      "legend": { "title": "员工" }
+    },
+    "tooltip": [
+      { "field": "month", "type": "ordinal", "title": "Month" },
+      { "field": "employee", "type": "nominal", "title": "Employee" },
+      { "field": "score", "type": "quantitative", "title": "Score" }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Voltage Measurements",
+  "data": {
+    "values": [
+      {"x": 0.5, "y": 3.2},
+      {"x": 1.2, "y": 5.1},
+      {"x": 2.1, "y": 4.7},
+      {"x": 3.5, "y": 6.3},
+      {"x": 4.8, "y": 7.8},
+      {"x": 6.2, "y": 9.1}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "interpolate": "monotone"}
+    },
+    {
+      "mark": {"type": "point", "filled": true}
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Time (ms)",
+      "scale": {"domain": [0, 7.5]}
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Voltage (V)"
+    }
+  }
+}

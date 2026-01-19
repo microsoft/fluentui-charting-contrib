@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "North",
+        "y": 45,
+        "series": "Q1"
+      },
+      {
+        "x": "South",
+        "y": 38,
+        "series": "Q1"
+      },
+      {
+        "x": "East",
+        "y": 52,
+        "series": "Q1"
+      },
+      {
+        "x": "West",
+        "y": 41,
+        "series": "Q1"
+      }
+    ]
+  },
+  "title": "Regional Units Sold with Relative Annotation",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Region"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Units"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Region"
+      },
+      {
+        "field": "y",
+        "title": "Units"
+      }
+    ]
+  }
+}

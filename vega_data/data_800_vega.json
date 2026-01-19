@@ -1,0 +1,222 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2.04738173798712,
+        "y": 57.71905226464362,
+        "series": "CO2 - Compliant"
+      },
+      {
+        "x": 4.148634708833794,
+        "y": 65.91356421106063,
+        "series": "CO2 - Compliant"
+      },
+      {
+        "x": 4.851915432521632,
+        "y": 84.09973574123804,
+        "series": "CO2 - Compliant"
+      },
+      {
+        "x": 1.037432735652823,
+        "y": 74.23058239475071,
+        "series": "CO2 - Compliant"
+      },
+      {
+        "x": 2.0165502246274247,
+        "y": 73.77582935229222,
+        "series": "CO2 - Compliant"
+      },
+      {
+        "x": 2.8955243317982817,
+        "y": 81.92875194042878,
+        "series": "CO2 - Compliant"
+      },
+      {
+        "x": 3.869004191324829,
+        "y": 69.98899789153742,
+        "series": "CO2 - Compliant"
+      },
+      {
+        "x": 5.990850330930783,
+        "y": 55.93639748338629,
+        "series": "CO2 - Compliant"
+      },
+      {
+        "x": 0.9124333730243214,
+        "y": 72.44670491821762,
+        "series": "CO2 - Compliant"
+      },
+      {
+        "x": 1.828277863296718,
+        "y": 82.85963008085628,
+        "series": "CO2 - Compliant"
+      },
+      {
+        "x": 3.1556658313267336,
+        "y": 65.186237503601,
+        "series": "CO2 - Compliant"
+      },
+      {
+        "x": 3.9612132422804436,
+        "y": 52.48192565465526,
+        "series": "CO2 - Compliant"
+      },
+      {
+        "x": 5.053383454343805,
+        "y": 57.200918355796375,
+        "series": "CO2 - Compliant"
+      },
+      {
+        "x": 0.9899029712623176,
+        "y": 77.89056163297057,
+        "series": "NOx - Compliant"
+      },
+      {
+        "x": 1.9787589848711855,
+        "y": 58.393958338352235,
+        "series": "NOx - Compliant"
+      },
+      {
+        "x": 3.0955985136079085,
+        "y": 79.7571030773984,
+        "series": "NOx - Compliant"
+      },
+      {
+        "x": 3.8245876721200722,
+        "y": 55.57018855791229,
+        "series": "NOx - Compliant"
+      },
+      {
+        "x": 5.919216950372474,
+        "y": 85.62434277527306,
+        "series": "NOx - Compliant"
+      },
+      {
+        "x": 1.0068807407492117,
+        "y": 67.81222334713775,
+        "series": "NOx - Compliant"
+      },
+      {
+        "x": 2.1599094964877534,
+        "y": 60.077771004160496,
+        "series": "NOx - Compliant"
+      },
+      {
+        "x": 5.909579323378417,
+        "y": 76.51931540097235,
+        "series": "NOx - Compliant"
+      },
+      {
+        "x": 2.988812581126301,
+        "y": 75.20933334223808,
+        "series": "NOx - Compliant"
+      },
+      {
+        "x": 5.113977332916664,
+        "y": 67.4821620749291,
+        "series": "NOx - Compliant"
+      },
+      {
+        "x": 5.924162851511661,
+        "y": 63.35558145426192,
+        "series": "NOx - Compliant"
+      },
+      {
+        "x": 0.879584565685715,
+        "y": 90.7330752796564,
+        "series": "CO2 - Non-compliant"
+      },
+      {
+        "x": 2.8436035927075847,
+        "y": 89.33896565829541,
+        "series": "CO2 - Non-compliant"
+      },
+      {
+        "x": 5.891779564188658,
+        "y": 88.71117648712439,
+        "series": "CO2 - Non-compliant"
+      },
+      {
+        "x": 5.09689854102334,
+        "y": 91.41221435809253,
+        "series": "CO2 - Non-compliant"
+      },
+      {
+        "x": 5.9484262292735375,
+        "y": 101.20256349012729,
+        "series": "CO2 - Non-compliant"
+      },
+      {
+        "x": 5.065038667101534,
+        "y": 103.8163227846751,
+        "series": "NOx - Non-compliant"
+      },
+      {
+        "x": 3.0516691302871815,
+        "y": 105.77261767728754,
+        "series": "NOx - Non-compliant"
+      },
+      {
+        "x": 3.9777701341852896,
+        "y": 90.87112196869833,
+        "series": "NOx - Non-compliant"
+      },
+      {
+        "x": 4.986963574738066,
+        "y": 97.33999400227859,
+        "series": "NOx - Non-compliant"
+      },
+      {
+        "x": 0.8597585433611561,
+        "y": 101.59600757391058,
+        "series": "NOx - Non-compliant"
+      },
+      {
+        "x": 1.9814809522310224,
+        "y": 86.1147013953654,
+        "series": "NOx - Non-compliant"
+      },
+      {
+        "x": 3.8409325138818255,
+        "y": 90.89408254938711,
+        "series": "NOx - Non-compliant"
+      }
+    ]
+  },
+  "title": "Plant Emission Levels with Non-Compliance Highlights",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Emission Level (g/km)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Emission Level (g/km)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

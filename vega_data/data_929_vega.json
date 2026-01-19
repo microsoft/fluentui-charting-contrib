@@ -1,0 +1,672 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 88.5,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 84,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 89.5,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 95.7,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 83.4,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 83.4,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 96.1,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 90.4,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 81.7,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 88.8,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 81.8,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 81.7,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 86.7,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 71.6,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 72.9,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 81.1,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 77.9,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 87.2,
+        "y": "Mathematics",
+        "series": "Mathematics"
+      },
+      {
+        "x": 70.9,
+        "y": "Science",
+        "series": "Science"
+      },
+      {
+        "x": 65.9,
+        "y": "Science",
+        "series": "Science"
+      },
+      {
+        "x": 94.7,
+        "y": "Science",
+        "series": "Science"
+      },
+      {
+        "x": 77.7,
+        "y": "Science",
+        "series": "Science"
+      },
+      {
+        "x": 80.7,
+        "y": "Science",
+        "series": "Science"
+      },
+      {
+        "x": 65.8,
+        "y": "Science",
+        "series": "Science"
+      },
+      {
+        "x": 74.6,
+        "y": "Science",
+        "series": "Science"
+      },
+      {
+        "x": 81.1,
+        "y": "Science",
+        "series": "Science"
+      },
+      {
+        "x": 68.5,
+        "y": "Science",
+        "series": "Science"
+      },
+      {
+        "x": 82.5,
+        "y": "English",
+        "series": "English"
+      },
+      {
+        "x": 70.8,
+        "y": "English",
+        "series": "English"
+      },
+      {
+        "x": 74.5,
+        "y": "English",
+        "series": "English"
+      },
+      {
+        "x": 70.8,
+        "y": "English",
+        "series": "English"
+      },
+      {
+        "x": 100,
+        "y": "English",
+        "series": "English"
+      },
+      {
+        "x": 77.8,
+        "y": "English",
+        "series": "English"
+      },
+      {
+        "x": 65.3,
+        "y": "English",
+        "series": "English"
+      },
+      {
+        "x": 87.9,
+        "y": "English",
+        "series": "English"
+      },
+      {
+        "x": 65.2,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 76.7,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 59.3,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 64.4,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 76.6,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 80.9,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 76.4,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 74.1,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 72.6,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 63.2,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 69.2,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 71.3,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 83.5,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 77.7,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 60.9,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 77.6,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 71.9,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 69.6,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 79.9,
+        "y": "History",
+        "series": "History"
+      },
+      {
+        "x": 93.2,
+        "y": "Art",
+        "series": "Art"
+      },
+      {
+        "x": 92.7,
+        "y": "Art",
+        "series": "Art"
+      },
+      {
+        "x": 83.8,
+        "y": "Art",
+        "series": "Art"
+      },
+      {
+        "x": 86.5,
+        "y": "Art",
+        "series": "Art"
+      },
+      {
+        "x": 89.7,
+        "y": "Art",
+        "series": "Art"
+      },
+      {
+        "x": 92.9,
+        "y": "Art",
+        "series": "Art"
+      },
+      {
+        "x": 85.6,
+        "y": "Art",
+        "series": "Art"
+      },
+      {
+        "x": 87.1,
+        "y": "Art",
+        "series": "Art"
+      },
+      {
+        "x": 82.5,
+        "y": "Art",
+        "series": "Art"
+      },
+      {
+        "x": 82,
+        "y": "Art",
+        "series": "Art"
+      },
+      {
+        "x": 92.1,
+        "y": "Art",
+        "series": "Art"
+      },
+      {
+        "x": 94.8,
+        "y": "Art",
+        "series": "Art"
+      },
+      {
+        "x": 81.4,
+        "y": "Physical Education",
+        "series": "Physical Education"
+      },
+      {
+        "x": 91,
+        "y": "Physical Education",
+        "series": "Physical Education"
+      },
+      {
+        "x": 85.3,
+        "y": "Physical Education",
+        "series": "Physical Education"
+      },
+      {
+        "x": 76.2,
+        "y": "Physical Education",
+        "series": "Physical Education"
+      },
+      {
+        "x": 85.3,
+        "y": "Physical Education",
+        "series": "Physical Education"
+      },
+      {
+        "x": 95.8,
+        "y": "Physical Education",
+        "series": "Physical Education"
+      },
+      {
+        "x": 81.7,
+        "y": "Physical Education",
+        "series": "Physical Education"
+      },
+      {
+        "x": 96.1,
+        "y": "Physical Education",
+        "series": "Physical Education"
+      },
+      {
+        "x": 58.4,
+        "y": "Physical Education",
+        "series": "Physical Education"
+      },
+      {
+        "x": 89.4,
+        "y": "Physical Education",
+        "series": "Physical Education"
+      },
+      {
+        "x": 82.8,
+        "y": "Physical Education",
+        "series": "Physical Education"
+      },
+      {
+        "x": 88.8,
+        "y": "Music",
+        "series": "Music"
+      },
+      {
+        "x": 90.4,
+        "y": "Music",
+        "series": "Music"
+      },
+      {
+        "x": 82,
+        "y": "Music",
+        "series": "Music"
+      },
+      {
+        "x": 89.1,
+        "y": "Music",
+        "series": "Music"
+      },
+      {
+        "x": 91.4,
+        "y": "Music",
+        "series": "Music"
+      },
+      {
+        "x": 95.9,
+        "y": "Music",
+        "series": "Music"
+      },
+      {
+        "x": 87.9,
+        "y": "Music",
+        "series": "Music"
+      },
+      {
+        "x": 86.8,
+        "y": "Music",
+        "series": "Music"
+      },
+      {
+        "x": 88,
+        "y": "Music",
+        "series": "Music"
+      },
+      {
+        "x": 93.7,
+        "y": "Music",
+        "series": "Music"
+      },
+      {
+        "x": 91.3,
+        "y": "Music",
+        "series": "Music"
+      },
+      {
+        "x": 78.8,
+        "y": "Computer Science",
+        "series": "Computer Science"
+      },
+      {
+        "x": 87.1,
+        "y": "Computer Science",
+        "series": "Computer Science"
+      },
+      {
+        "x": 83.8,
+        "y": "Computer Science",
+        "series": "Computer Science"
+      },
+      {
+        "x": 90.7,
+        "y": "Computer Science",
+        "series": "Computer Science"
+      },
+      {
+        "x": 77.4,
+        "y": "Computer Science",
+        "series": "Computer Science"
+      },
+      {
+        "x": 80.4,
+        "y": "Computer Science",
+        "series": "Computer Science"
+      },
+      {
+        "x": 79.9,
+        "y": "Computer Science",
+        "series": "Computer Science"
+      },
+      {
+        "x": 71.3,
+        "y": "Computer Science",
+        "series": "Computer Science"
+      },
+      {
+        "x": 85.4,
+        "y": "Computer Science",
+        "series": "Computer Science"
+      },
+      {
+        "x": 85.1,
+        "y": "Computer Science",
+        "series": "Computer Science"
+      },
+      {
+        "x": 77.1,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 74.4,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 61.4,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 72.4,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 73.2,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 68.2,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 75.2,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 81.4,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 97.7,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 78.9,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 79.8,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 76.2,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 55.9,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 76.7,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 77.7,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 100,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 74.9,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 80.3,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 76.6,
+        "y": "Foreign Language",
+        "series": "Foreign Language"
+      },
+      {
+        "x": 67.3,
+        "y": "Social Studies",
+        "series": "Social Studies"
+      },
+      {
+        "x": 90.4,
+        "y": "Social Studies",
+        "series": "Social Studies"
+      },
+      {
+        "x": 86.5,
+        "y": "Social Studies",
+        "series": "Social Studies"
+      },
+      {
+        "x": 86.9,
+        "y": "Social Studies",
+        "series": "Social Studies"
+      },
+      {
+        "x": 69.9,
+        "y": "Social Studies",
+        "series": "Social Studies"
+      },
+      {
+        "x": 93,
+        "y": "Social Studies",
+        "series": "Social Studies"
+      },
+      {
+        "x": 65,
+        "y": "Social Studies",
+        "series": "Social Studies"
+      },
+      {
+        "x": 84.9,
+        "y": "Social Studies",
+        "series": "Social Studies"
+      },
+      {
+        "x": 100,
+        "y": "Social Studies",
+        "series": "Social Studies"
+      }
+    ]
+  },
+  "title": "Teacher Evaluation Scores by Department",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Evaluation Score"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Department"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Evaluation Score"
+      },
+      {
+        "field": "y",
+        "title": "Department"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

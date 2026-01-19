@@ -1,0 +1,202 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Gamified Learning Experience",
+        "y": 4,
+        "series": "OUR APP"
+      },
+      {
+        "x": "Customize Content for Teens",
+        "y": 4,
+        "series": "OUR APP"
+      },
+      {
+        "x": "Comprehensive Market Analysis",
+        "y": 3,
+        "series": "OUR APP"
+      },
+      {
+        "x": "Professional Insights",
+        "y": 2,
+        "series": "OUR APP"
+      },
+      {
+        "x": "Interactive Quizzes and Challenges",
+        "y": 4,
+        "series": "OUR APP"
+      },
+      {
+        "x": "Community Engagement",
+        "y": 3,
+        "series": "OUR APP"
+      },
+      {
+        "x": "Simplified Learning",
+        "y": 4,
+        "series": "OUR APP"
+      },
+      {
+        "x": "Practical Knowledge",
+        "y": 4,
+        "series": "OUR APP"
+      },
+      {
+        "x": "Gamified Learning Experience",
+        "y": 4,
+        "series": "Competitor A"
+      },
+      {
+        "x": "Customize Content for Teens",
+        "y": 2,
+        "series": "Competitor A"
+      },
+      {
+        "x": "Comprehensive Market Analysis",
+        "y": 4,
+        "series": "Competitor A"
+      },
+      {
+        "x": "Professional Insights",
+        "y": 3,
+        "series": "Competitor A"
+      },
+      {
+        "x": "Interactive Quizzes and Challenges",
+        "y": 3,
+        "series": "Competitor A"
+      },
+      {
+        "x": "Community Engagement",
+        "y": 2,
+        "series": "Competitor A"
+      },
+      {
+        "x": "Simplified Learning",
+        "y": 2,
+        "series": "Competitor A"
+      },
+      {
+        "x": "Practical Knowledge",
+        "y": 3,
+        "series": "Competitor A"
+      },
+      {
+        "x": "Gamified Learning Experience",
+        "y": 2,
+        "series": "Competitor B"
+      },
+      {
+        "x": "Customize Content for Teens",
+        "y": 4,
+        "series": "Competitor B"
+      },
+      {
+        "x": "Comprehensive Market Analysis",
+        "y": 3,
+        "series": "Competitor B"
+      },
+      {
+        "x": "Professional Insights",
+        "y": 4,
+        "series": "Competitor B"
+      },
+      {
+        "x": "Interactive Quizzes and Challenges",
+        "y": 3,
+        "series": "Competitor B"
+      },
+      {
+        "x": "Community Engagement",
+        "y": 4,
+        "series": "Competitor B"
+      },
+      {
+        "x": "Simplified Learning",
+        "y": 4,
+        "series": "Competitor B"
+      },
+      {
+        "x": "Practical Knowledge",
+        "y": 2,
+        "series": "Competitor B"
+      },
+      {
+        "x": "Gamified Learning Experience",
+        "y": 3,
+        "series": "Competitor C"
+      },
+      {
+        "x": "Customize Content for Teens",
+        "y": 1,
+        "series": "Competitor C"
+      },
+      {
+        "x": "Comprehensive Market Analysis",
+        "y": 4,
+        "series": "Competitor C"
+      },
+      {
+        "x": "Professional Insights",
+        "y": 2,
+        "series": "Competitor C"
+      },
+      {
+        "x": "Interactive Quizzes and Challenges",
+        "y": 3,
+        "series": "Competitor C"
+      },
+      {
+        "x": "Community Engagement",
+        "y": 4,
+        "series": "Competitor C"
+      },
+      {
+        "x": "Simplified Learning",
+        "y": 2,
+        "series": "Competitor C"
+      },
+      {
+        "x": "Practical Knowledge",
+        "y": 5,
+        "series": "Competitor C"
+      }
+    ]
+  },
+  "title": "Perceptual Map of Our App and Competitors",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Factors"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Rating"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Factors"
+      },
+      {
+        "field": "y",
+        "title": "Rating"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

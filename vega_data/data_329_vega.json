@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Sales Volume Growth",
+  "description": "Converted from Plotly schema 329 - Multi-series area chart with fill to zero",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "month": "2023-01-01", "sales": 5000, "category": "Category 1" },
+      { "month": "2023-02-01", "sales": 5200, "category": "Category 1" },
+      { "month": "2023-03-01", "sales": 5400, "category": "Category 1" },
+      { "month": "2023-04-01", "sales": 5600, "category": "Category 1" },
+      { "month": "2023-05-01", "sales": 5800, "category": "Category 1" },
+      { "month": "2023-06-01", "sales": 6000, "category": "Category 1" },
+      { "month": "2023-07-01", "sales": 6200, "category": "Category 1" },
+      { "month": "2023-08-01", "sales": 6400, "category": "Category 1" },
+      { "month": "2023-09-01", "sales": 6600, "category": "Category 1" },
+      { "month": "2023-10-01", "sales": 6800, "category": "Category 1" },
+      { "month": "2023-01-01", "sales": 6000, "category": "Category 8" },
+      { "month": "2023-02-01", "sales": 6200, "category": "Category 8" },
+      { "month": "2023-03-01", "sales": 6400, "category": "Category 8" },
+      { "month": "2023-04-01", "sales": 6600, "category": "Category 8" },
+      { "month": "2023-05-01", "sales": 6800, "category": "Category 8" },
+      { "month": "2023-06-01", "sales": 7000, "category": "Category 8" },
+      { "month": "2023-07-01", "sales": 7200, "category": "Category 8" },
+      { "month": "2023-08-01", "sales": 7400, "category": "Category 8" },
+      { "month": "2023-09-01", "sales": 7600, "category": "Category 8" },
+      { "month": "2023-10-01", "sales": 7800, "category": "Category 8" },
+      { "month": "2023-01-01", "sales": 3500, "category": "Category 7" },
+      { "month": "2023-02-01", "sales": 3600, "category": "Category 7" },
+      { "month": "2023-03-01", "sales": 3700, "category": "Category 7" },
+      { "month": "2023-04-01", "sales": 3800, "category": "Category 7" },
+      { "month": "2023-05-01", "sales": 3900, "category": "Category 7" },
+      { "month": "2023-06-01", "sales": 4000, "category": "Category 7" },
+      { "month": "2023-07-01", "sales": 4100, "category": "Category 7" },
+      { "month": "2023-08-01", "sales": 4200, "category": "Category 7" },
+      { "month": "2023-09-01", "sales": 4300, "category": "Category 7" },
+      { "month": "2023-10-01", "sales": 4400, "category": "Category 7" },
+      { "month": "2023-01-01", "sales": 2200, "category": "Category 4" },
+      { "month": "2023-02-01", "sales": 2400, "category": "Category 4" },
+      { "month": "2023-03-01", "sales": 2600, "category": "Category 4" },
+      { "month": "2023-04-01", "sales": 2800, "category": "Category 4" },
+      { "month": "2023-05-01", "sales": 3000, "category": "Category 4" },
+      { "month": "2023-06-01", "sales": 3200, "category": "Category 4" },
+      { "month": "2023-07-01", "sales": 3400, "category": "Category 4" },
+      { "month": "2023-08-01", "sales": 3600, "category": "Category 4" },
+      { "month": "2023-09-01", "sales": 3800, "category": "Category 4" },
+      { "month": "2023-10-01", "sales": 4000, "category": "Category 4" }
+    ]
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "axis": { "title": "Month" }
+    },
+    "y": {
+      "field": "sales",
+      "type": "quantitative",
+      "axis": { "title": "Sales Volume" }
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "legend": { "title": "Product Category" }
+    }
+  }
+}

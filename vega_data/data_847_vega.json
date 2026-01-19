@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "category": "Gasoline",
+        "value": 42
+      },
+      {
+        "category": "Diesel",
+        "value": 15
+      },
+      {
+        "category": "Hybrid",
+        "value": 9
+      },
+      {
+        "category": "Plug-in Hybrid",
+        "value": 4
+      },
+      {
+        "category": "Battery Electric",
+        "value": 11
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 30
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Electric-Vehicle Landscape — Snapshot 2024"
+}

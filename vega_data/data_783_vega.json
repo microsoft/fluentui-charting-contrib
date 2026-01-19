@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Area 1",
+        "y": 40,
+        "series": "Violent"
+      },
+      {
+        "x": "Area 2",
+        "y": 25,
+        "series": "Violent"
+      },
+      {
+        "x": "Area 3",
+        "y": 15,
+        "series": "Violent"
+      },
+      {
+        "x": "Area 4",
+        "y": 30,
+        "series": "Violent"
+      },
+      {
+        "x": "Area 5",
+        "y": 35,
+        "series": "Violent"
+      },
+      {
+        "x": "Area 6",
+        "y": 20,
+        "series": "Violent"
+      },
+      {
+        "x": "Area 1",
+        "y": 80,
+        "series": "Property"
+      },
+      {
+        "x": "Area 2",
+        "y": 55,
+        "series": "Property"
+      },
+      {
+        "x": "Area 3",
+        "y": 45,
+        "series": "Property"
+      },
+      {
+        "x": "Area 4",
+        "y": 60,
+        "series": "Property"
+      },
+      {
+        "x": "Area 5",
+        "y": 75,
+        "series": "Property"
+      },
+      {
+        "x": "Area 6",
+        "y": 50,
+        "series": "Property"
+      }
+    ]
+  },
+  "title": "Crime Incidents by Type",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Neighborhood"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Incidents"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Neighborhood"
+      },
+      {
+        "field": "y",
+        "title": "Incidents"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

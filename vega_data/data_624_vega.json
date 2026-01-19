@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 13.86,
+        "y": "P106",
+        "series": "Series"
+      },
+      {
+        "x": 8.65,
+        "y": "P108",
+        "series": "Series"
+      },
+      {
+        "x": 4.19,
+        "y": "P105",
+        "series": "Series"
+      },
+      {
+        "x": 2.22,
+        "y": "P101",
+        "series": "Series"
+      },
+      {
+        "x": 1.46,
+        "y": "P102",
+        "series": "Series"
+      },
+      {
+        "x": 0.04,
+        "y": "P103",
+        "series": "Series"
+      },
+      {
+        "x": -1.48,
+        "y": "P104",
+        "series": "Series"
+      },
+      {
+        "x": -11.33,
+        "y": "P107",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Project Cost Variance: Construction Cost Management Dashboard",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Variance (%)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Project ID"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Variance (%)"
+      },
+      {
+        "field": "y",
+        "title": "Project ID"
+      }
+    ]
+  }
+}

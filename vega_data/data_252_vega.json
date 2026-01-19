@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Weekly Trend in Task Completion Rate",
+  "description": "Converted from Plotly schema 252 - Multi-series line+markers chart",
+  "data": {
+    "values": [
+      { "week": "Week 1", "rate": 85, "team": "Team 1" },
+      { "week": "Week 2", "rate": 87, "team": "Team 1" },
+      { "week": "Week 3", "rate": 89, "team": "Team 1" },
+      { "week": "Week 4", "rate": 90, "team": "Team 1" },
+      { "week": "Week 1", "rate": 75, "team": "Team 2" },
+      { "week": "Week 2", "rate": 78, "team": "Team 2" },
+      { "week": "Week 3", "rate": 80, "team": "Team 2" },
+      { "week": "Week 4", "rate": 82, "team": "Team 2" },
+      { "week": "Week 1", "rate": 80, "team": "Team 3" },
+      { "week": "Week 2", "rate": 85, "team": "Team 3" },
+      { "week": "Week 3", "rate": 83, "team": "Team 3" },
+      { "week": "Week 4", "rate": 88, "team": "Team 3" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "interpolate": "monotone" },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "ordinal",
+          "axis": { "title": "Weeks" }
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative",
+          "axis": { "title": "Task Completion Rate (%)" }
+        },
+        "color": {
+          "field": "team",
+          "type": "nominal",
+          "legend": { "title": "Team" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": { "field": "week", "type": "ordinal" },
+        "y": { "field": "rate", "type": "quantitative" },
+        "color": { "field": "team", "type": "nominal" }
+      }
+    }
+  ]
+}

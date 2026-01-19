@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan",
+        "y": 7,
+        "series": "High"
+      },
+      {
+        "x": "Feb",
+        "y": 9,
+        "series": "High"
+      },
+      {
+        "x": "Mar",
+        "y": 13,
+        "series": "High"
+      },
+      {
+        "x": "Apr",
+        "y": 17,
+        "series": "High"
+      },
+      {
+        "x": "May",
+        "y": 21,
+        "series": "High"
+      },
+      {
+        "x": "Jun",
+        "y": 25,
+        "series": "High"
+      },
+      {
+        "x": "Jul",
+        "y": 28,
+        "series": "High"
+      },
+      {
+        "x": "Aug",
+        "y": 27,
+        "series": "High"
+      },
+      {
+        "x": "Sep",
+        "y": 23,
+        "series": "High"
+      },
+      {
+        "x": "Oct",
+        "y": 18,
+        "series": "High"
+      },
+      {
+        "x": "Nov",
+        "y": 12,
+        "series": "High"
+      },
+      {
+        "x": "Dec",
+        "y": 8,
+        "series": "High"
+      },
+      {
+        "x": "Jan",
+        "y": -1,
+        "series": "Low"
+      },
+      {
+        "x": "Feb",
+        "y": 0,
+        "series": "Low"
+      },
+      {
+        "x": "Mar",
+        "y": 3,
+        "series": "Low"
+      },
+      {
+        "x": "Apr",
+        "y": 6,
+        "series": "Low"
+      },
+      {
+        "x": "May",
+        "y": 10,
+        "series": "Low"
+      },
+      {
+        "x": "Jun",
+        "y": 14,
+        "series": "Low"
+      },
+      {
+        "x": "Jul",
+        "y": 16,
+        "series": "Low"
+      },
+      {
+        "x": "Aug",
+        "y": 16,
+        "series": "Low"
+      },
+      {
+        "x": "Sep",
+        "y": 12,
+        "series": "Low"
+      },
+      {
+        "x": "Oct",
+        "y": 7,
+        "series": "Low"
+      },
+      {
+        "x": "Nov",
+        "y": 2,
+        "series": "Low"
+      },
+      {
+        "x": "Dec",
+        "y": -1,
+        "series": "Low"
+      }
+    ]
+  },
+  "title": "Monthly High / Low Temperatures (°C)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Temp"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Temp"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

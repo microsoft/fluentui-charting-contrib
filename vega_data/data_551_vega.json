@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 50000,
+        "y": "School A",
+        "series": "Financial Resources Allocated"
+      },
+      {
+        "x": 75000,
+        "y": "School B",
+        "series": "Financial Resources Allocated"
+      },
+      {
+        "x": 60000,
+        "y": "School C",
+        "series": "Financial Resources Allocated"
+      },
+      {
+        "x": 90000,
+        "y": "School D",
+        "series": "Financial Resources Allocated"
+      },
+      {
+        "x": 65000,
+        "y": "School E",
+        "series": "Financial Resources Allocated"
+      },
+      {
+        "x": 20000,
+        "y": "School A",
+        "series": "Technological Resources Allocated"
+      },
+      {
+        "x": 35000,
+        "y": "School B",
+        "series": "Technological Resources Allocated"
+      },
+      {
+        "x": 27000,
+        "y": "School C",
+        "series": "Technological Resources Allocated"
+      },
+      {
+        "x": 40000,
+        "y": "School D",
+        "series": "Technological Resources Allocated"
+      },
+      {
+        "x": 30000,
+        "y": "School E",
+        "series": "Technological Resources Allocated"
+      },
+      {
+        "x": 30000,
+        "y": "School A",
+        "series": "Infrastructural Resources Allocated"
+      },
+      {
+        "x": 40000,
+        "y": "School B",
+        "series": "Infrastructural Resources Allocated"
+      },
+      {
+        "x": 33000,
+        "y": "School C",
+        "series": "Infrastructural Resources Allocated"
+      },
+      {
+        "x": 45000,
+        "y": "School D",
+        "series": "Infrastructural Resources Allocated"
+      },
+      {
+        "x": 35000,
+        "y": "School E",
+        "series": "Infrastructural Resources Allocated"
+      }
+    ]
+  },
+  "title": "Allocated Resources Breakdown Across Schools",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Amount Allocated"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "School Name"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Amount Allocated"
+      },
+      {
+        "field": "y",
+        "title": "School Name"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

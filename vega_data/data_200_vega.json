@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Average Patient Wait Times Over Time",
+  "description": "Converted from Plotly schema 200 - Line+markers chart",
+  "data": {
+    "values": [
+      { "month": "January", "waitTime": 8 },
+      { "month": "February", "waitTime": 7.5 },
+      { "month": "March", "waitTime": 7 },
+      { "month": "April", "waitTime": 8.5 },
+      { "month": "May", "waitTime": 8 },
+      { "month": "June", "waitTime": 7 },
+      { "month": "July", "waitTime": 6.5 },
+      { "month": "August", "waitTime": 7 },
+      { "month": "September", "waitTime": 7.5 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "axis": { "title": "Month" },
+          "sort": ["January", "February", "March", "April", "May", "June", "July", "August", "September"]
+        },
+        "y": {
+          "field": "waitTime",
+          "type": "quantitative",
+          "axis": { "title": "Wait Time (hours)" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "sort": ["January", "February", "March", "April", "May", "June", "July", "August", "September"]
+        },
+        "y": {
+          "field": "waitTime",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

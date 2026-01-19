@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Sales Intensity Across Months and Categories",
+  "description": "Converted from Plotly schema 8 - Heatmap",
+  "data": {
+    "values": [
+      { "month": "Jan", "category": "Category A", "value": 10 },
+      { "month": "Feb", "category": "Category A", "value": 20 },
+      { "month": "Mar", "category": "Category A", "value": 30 },
+      { "month": "Apr", "category": "Category A", "value": 40 },
+      { "month": "May", "category": "Category A", "value": 50 },
+      { "month": "Jun", "category": "Category A", "value": 60 },
+      { "month": "Jul", "category": "Category A", "value": 70 },
+      { "month": "Aug", "category": "Category A", "value": 80 },
+      { "month": "Sep", "category": "Category A", "value": 90 },
+      { "month": "Oct", "category": "Category A", "value": 100 },
+      { "month": "Nov", "category": "Category A", "value": 110 },
+      { "month": "Dec", "category": "Category A", "value": 120 },
+      { "month": "Jan", "category": "Category B", "value": 15 },
+      { "month": "Feb", "category": "Category B", "value": 25 },
+      { "month": "Mar", "category": "Category B", "value": 35 },
+      { "month": "Apr", "category": "Category B", "value": 45 },
+      { "month": "May", "category": "Category B", "value": 55 },
+      { "month": "Jun", "category": "Category B", "value": 65 },
+      { "month": "Jul", "category": "Category B", "value": 75 },
+      { "month": "Aug", "category": "Category B", "value": 85 },
+      { "month": "Sep", "category": "Category B", "value": 95 },
+      { "month": "Oct", "category": "Category B", "value": 105 },
+      { "month": "Nov", "category": "Category B", "value": 115 },
+      { "month": "Dec", "category": "Category B", "value": 125 },
+      { "month": "Jan", "category": "Category C", "value": 5 },
+      { "month": "Feb", "category": "Category C", "value": 10 },
+      { "month": "Mar", "category": "Category C", "value": 15 },
+      { "month": "Apr", "category": "Category C", "value": 20 },
+      { "month": "May", "category": "Category C", "value": 25 },
+      { "month": "Jun", "category": "Category C", "value": 30 },
+      { "month": "Jul", "category": "Category C", "value": 35 },
+      { "month": "Aug", "category": "Category C", "value": 40 },
+      { "month": "Sep", "category": "Category C", "value": 45 },
+      { "month": "Oct", "category": "Category C", "value": 50 },
+      { "month": "Nov", "category": "Category C", "value": 55 },
+      { "month": "Dec", "category": "Category C", "value": 60 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "axis": { "title": "Month" }
+    },
+    "y": {
+      "field": "category",
+      "type": "nominal",
+      "axis": { "title": "Category" }
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "legend": { "title": "Sales" }
+    }
+  }
+}

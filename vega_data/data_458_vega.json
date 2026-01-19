@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Site A",
+        "y": 5,
+        "series": "Fall"
+      },
+      {
+        "x": "Site B",
+        "y": 2,
+        "series": "Fall"
+      },
+      {
+        "x": "Site C",
+        "y": 4,
+        "series": "Fall"
+      },
+      {
+        "x": "Site A",
+        "y": 3,
+        "series": "Equipment"
+      },
+      {
+        "x": "Site B",
+        "y": 7,
+        "series": "Equipment"
+      },
+      {
+        "x": "Site C",
+        "y": 1,
+        "series": "Equipment"
+      }
+    ]
+  },
+  "title": "Weekly Incident Frequency by Site Location",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "site_location"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "frequency"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "site_location"
+      },
+      {
+        "field": "y",
+        "title": "frequency"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

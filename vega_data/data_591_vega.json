@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "category": "Amphibious (Completed)",
+        "value": 12
+      },
+      {
+        "category": "Carrier (Completed)",
+        "value": 10
+      },
+      {
+        "category": "Destroyer (Completed)",
+        "value": 32
+      },
+      {
+        "category": "Frigate (Completed)",
+        "value": 25
+      },
+      {
+        "category": "Submarine (Completed)",
+        "value": 18
+      },
+      {
+        "category": "Amphibious (Pending)",
+        "value": 3
+      },
+      {
+        "category": "Carrier (Pending)",
+        "value": 2
+      },
+      {
+        "category": "Destroyer (Pending)",
+        "value": 8
+      },
+      {
+        "category": "Frigate (Pending)",
+        "value": 5
+      },
+      {
+        "category": "Submarine (Pending)",
+        "value": 4
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Fleet Maintenance Completion Status by Ship Type"
+}

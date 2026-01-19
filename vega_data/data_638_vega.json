@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2018,
+        "y": 5300,
+        "series": "Primary"
+      },
+      {
+        "x": 2019,
+        "y": 5400,
+        "series": "Primary"
+      },
+      {
+        "x": 2020,
+        "y": 5500,
+        "series": "Primary"
+      },
+      {
+        "x": 2021,
+        "y": 5520,
+        "series": "Primary"
+      },
+      {
+        "x": 2018,
+        "y": 4100,
+        "series": "Secondary"
+      },
+      {
+        "x": 2019,
+        "y": 4200,
+        "series": "Secondary"
+      },
+      {
+        "x": 2020,
+        "y": 4250,
+        "series": "Secondary"
+      },
+      {
+        "x": 2021,
+        "y": 4300,
+        "series": "Secondary"
+      },
+      {
+        "x": 2018,
+        "y": 2100,
+        "series": "Higher"
+      },
+      {
+        "x": 2019,
+        "y": 2250,
+        "series": "Higher"
+      },
+      {
+        "x": 2020,
+        "y": 2300,
+        "series": "Higher"
+      },
+      {
+        "x": 2021,
+        "y": 2380,
+        "series": "Higher"
+      }
+    ]
+  },
+  "title": "Enrollment Trends in Education by Institution Type and Year",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Total Enrollment"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Total Enrollment"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

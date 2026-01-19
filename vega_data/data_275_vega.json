@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Quarterly On-time Deliveries by Supplier",
+  "description": "Converted from Plotly schema 275 - Stacked bar chart",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "quarter": "Q1", "deliveries": 75, "supplier": "Supplier A" },
+      { "quarter": "Q2", "deliveries": 80, "supplier": "Supplier A" },
+      { "quarter": "Q3", "deliveries": 85, "supplier": "Supplier A" },
+      { "quarter": "Q4", "deliveries": 78, "supplier": "Supplier A" },
+      { "quarter": "Q5", "deliveries": 82, "supplier": "Supplier A" },
+      { "quarter": "Q1", "deliveries": 50, "supplier": "Supplier B" },
+      { "quarter": "Q2", "deliveries": 53, "supplier": "Supplier B" },
+      { "quarter": "Q3", "deliveries": 55, "supplier": "Supplier B" },
+      { "quarter": "Q4", "deliveries": 51, "supplier": "Supplier B" },
+      { "quarter": "Q5", "deliveries": 60, "supplier": "Supplier B" },
+      { "quarter": "Q1", "deliveries": 60, "supplier": "Supplier C" },
+      { "quarter": "Q2", "deliveries": 65, "supplier": "Supplier C" },
+      { "quarter": "Q3", "deliveries": 63, "supplier": "Supplier C" },
+      { "quarter": "Q4", "deliveries": 68, "supplier": "Supplier C" },
+      { "quarter": "Q5", "deliveries": 70, "supplier": "Supplier C" },
+      { "quarter": "Q1", "deliveries": 40, "supplier": "Supplier D" },
+      { "quarter": "Q2", "deliveries": 38, "supplier": "Supplier D" },
+      { "quarter": "Q3", "deliveries": 42, "supplier": "Supplier D" },
+      { "quarter": "Q4", "deliveries": 45, "supplier": "Supplier D" },
+      { "quarter": "Q5", "deliveries": 48, "supplier": "Supplier D" },
+      { "quarter": "Q1", "deliveries": 55, "supplier": "Supplier E" },
+      { "quarter": "Q2", "deliveries": 57, "supplier": "Supplier E" },
+      { "quarter": "Q3", "deliveries": 60, "supplier": "Supplier E" },
+      { "quarter": "Q4", "deliveries": 62, "supplier": "Supplier E" },
+      { "quarter": "Q5", "deliveries": 65, "supplier": "Supplier E" },
+      { "quarter": "Q1", "deliveries": 88, "supplier": "Supplier I" },
+      { "quarter": "Q2", "deliveries": 89, "supplier": "Supplier I" },
+      { "quarter": "Q3", "deliveries": 91, "supplier": "Supplier I" },
+      { "quarter": "Q4", "deliveries": 93, "supplier": "Supplier I" },
+      { "quarter": "Q5", "deliveries": 95, "supplier": "Supplier I" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "ordinal",
+      "axis": { "title": "Quarter" }
+    },
+    "y": {
+      "field": "deliveries",
+      "type": "quantitative",
+      "stack": true,
+      "axis": { "title": "Number of Deliveries" }
+    },
+    "color": {
+      "field": "supplier",
+      "type": "nominal",
+      "legend": { "title": "Supplier" }
+    },
+    "tooltip": [
+      { "field": "quarter", "type": "ordinal", "title": "Quarter" },
+      { "field": "supplier", "type": "nominal", "title": "Supplier" },
+      { "field": "deliveries", "type": "quantitative", "title": "Deliveries" }
+    ]
+  }
+}

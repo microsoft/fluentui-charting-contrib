@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "District A",
+        "y": 9500,
+        "series": "Series"
+      },
+      {
+        "x": "District B",
+        "y": 9200,
+        "series": "Series"
+      },
+      {
+        "x": "District C",
+        "y": 9800,
+        "series": "Series"
+      },
+      {
+        "x": "District D",
+        "y": 9600,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Funding per Student by District",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "district"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Funding per Student ($)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "district"
+      },
+      {
+        "field": "y",
+        "title": "Funding per Student ($)"
+      }
+    ]
+  }
+}

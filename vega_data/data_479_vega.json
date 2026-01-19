@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "P1",
+        "y": 100000,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "P2",
+        "y": 150000,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "P3",
+        "y": 200000,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "P4",
+        "y": 130000,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "P5",
+        "y": 180000,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "P1",
+        "y": 110000,
+        "series": "actual_cost"
+      },
+      {
+        "x": "P2",
+        "y": 140000,
+        "series": "actual_cost"
+      },
+      {
+        "x": "P3",
+        "y": 190000,
+        "series": "actual_cost"
+      },
+      {
+        "x": "P4",
+        "y": 125000,
+        "series": "actual_cost"
+      },
+      {
+        "x": "P5",
+        "y": 175000,
+        "series": "actual_cost"
+      }
+    ]
+  },
+  "title": "Budgeted vs Actual Costs by Project",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "project_id"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "project_id"
+      },
+      {
+        "field": "y",
+        "title": "value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

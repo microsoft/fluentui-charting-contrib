@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Market Share Fluctuations",
+  "description": "Converted from Plotly schema 62 - Heatmap",
+  "data": {
+    "values": [
+      { "company": "Company A", "year": "2020", "share": 25 },
+      { "company": "Company A", "year": "2021", "share": 30 },
+      { "company": "Company A", "year": "2022", "share": 35 },
+      { "company": "Company A", "year": "2023", "share": 40 },
+      { "company": "Company B", "year": "2020", "share": 15 },
+      { "company": "Company B", "year": "2021", "share": 18 },
+      { "company": "Company B", "year": "2022", "share": 20 },
+      { "company": "Company B", "year": "2023", "share": 25 },
+      { "company": "Company C", "year": "2020", "share": 20 },
+      { "company": "Company C", "year": "2021", "share": 22 },
+      { "company": "Company C", "year": "2022", "share": 24 },
+      { "company": "Company C", "year": "2023", "share": 28 },
+      { "company": "Company D", "year": "2020", "share": 10 },
+      { "company": "Company D", "year": "2021", "share": 12 },
+      { "company": "Company D", "year": "2022", "share": 14 },
+      { "company": "Company D", "year": "2023", "share": 15 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "axis": { "title": "Year" }
+    },
+    "y": {
+      "field": "company",
+      "type": "nominal",
+      "axis": { "title": "Company" }
+    },
+    "color": {
+      "field": "share",
+      "type": "quantitative",
+      "scale": { "scheme": "spectral" },
+      "legend": { "title": "Market Share (%)" }
+    }
+  }
+}

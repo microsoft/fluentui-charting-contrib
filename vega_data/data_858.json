@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Cloud Resource Usage Analysis",
+  "data": {
+    "values": [
+      {"month": "Jan 2024", "usage": 67.3, "department": "Engineering-CPU"},
+      {"month": "Feb 2024", "usage": 36.5, "department": "Engineering-CPU"},
+      {"month": "Mar 2024", "usage": 70.2, "department": "Engineering-CPU"},
+      {"month": "Apr 2024", "usage": 66.9, "department": "Engineering-CPU"},
+      {"month": "May 2024", "usage": 34.3, "department": "Engineering-CPU"},
+      {"month": "Jun 2024", "usage": 55.4, "department": "Engineering-CPU"},
+      {"month": "Jan 2024", "usage": 74.1, "department": "R&D-Memory"},
+      {"month": "Feb 2024", "usage": 68.4, "department": "R&D-Memory"},
+      {"month": "Mar 2024", "usage": 40.2, "department": "R&D-Memory"},
+      {"month": "Apr 2024", "usage": 73.9, "department": "R&D-Memory"},
+      {"month": "May 2024", "usage": 53.6, "department": "R&D-Memory"},
+      {"month": "Jun 2024", "usage": 59.3, "department": "R&D-Memory"},
+      {"month": "Jan 2024", "usage": 61.0, "department": "Sales-Storage"},
+      {"month": "Feb 2024", "usage": 86.4, "department": "Sales-Storage"},
+      {"month": "Mar 2024", "usage": 45.7, "department": "Sales-Storage"},
+      {"month": "Apr 2024", "usage": 95.1, "department": "Sales-Storage"},
+      {"month": "May 2024", "usage": 53.4, "department": "Sales-Storage"},
+      {"month": "Jun 2024", "usage": 36.4, "department": "Sales-Storage"},
+      {"month": "Jan 2024", "usage": 54.4, "department": "HR-CPU"},
+      {"month": "Feb 2024", "usage": 82.2, "department": "HR-CPU"},
+      {"month": "Mar 2024", "usage": 83.3, "department": "HR-CPU"},
+      {"month": "Apr 2024", "usage": 87.1, "department": "HR-CPU"},
+      {"month": "May 2024", "usage": 46.7, "department": "HR-CPU"},
+      {"month": "Jun 2024", "usage": 94.7, "department": "HR-CPU"}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "title": "Month",
+      "sort": ["Jan 2024", "Feb 2024", "Mar 2024", "Apr 2024", "May 2024", "Jun 2024"],
+      "axis": {"labelAngle": -30}
+    },
+    "y": {
+      "field": "usage",
+      "type": "quantitative",
+      "title": "Usage Percentage (%)",
+      "stack": true
+    },
+    "color": {
+      "field": "department",
+      "type": "nominal",
+      "title": "Department - Resource",
+      "scale": {
+        "domain": ["Engineering-CPU", "R&D-Memory", "Sales-Storage", "HR-CPU"],
+        "range": ["#636efa", "#ef553b", "#00cc96", "#ffa15a"]
+      }
+    }
+  }
+}

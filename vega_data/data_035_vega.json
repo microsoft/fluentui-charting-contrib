@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Temperature Intensity Across Days and Months",
+  "description": "Converted from Plotly schema 35 - Heatmap",
+  "data": {
+    "values": [
+      { "date": "1-Jan", "season": "Winter", "temp": 15 },
+      { "date": "2-Jan", "season": "Winter", "temp": 16 },
+      { "date": "3-Jan", "season": "Winter", "temp": 17 },
+      { "date": "4-Jan", "season": "Winter", "temp": 18 },
+      { "date": "5-Jan", "season": "Winter", "temp": 19 },
+      { "date": "6-Jan", "season": "Winter", "temp": 18 },
+      { "date": "7-Jan", "season": "Winter", "temp": 17 },
+      { "date": "8-Jan", "season": "Winter", "temp": 16 },
+      { "date": "9-Jan", "season": "Winter", "temp": 20 },
+      { "date": "10-Jan", "season": "Winter", "temp": 21 },
+      { "date": "11-Jan", "season": "Winter", "temp": 22 },
+      { "date": "1-Jan", "season": "Spring", "temp": 20 },
+      { "date": "2-Jan", "season": "Spring", "temp": 21 },
+      { "date": "3-Jan", "season": "Spring", "temp": 22 },
+      { "date": "4-Jan", "season": "Spring", "temp": 23 },
+      { "date": "5-Jan", "season": "Spring", "temp": 24 },
+      { "date": "6-Jan", "season": "Spring", "temp": 23 },
+      { "date": "7-Jan", "season": "Spring", "temp": 22 },
+      { "date": "8-Jan", "season": "Spring", "temp": 21 },
+      { "date": "9-Jan", "season": "Spring", "temp": 25 },
+      { "date": "10-Jan", "season": "Spring", "temp": 26 },
+      { "date": "11-Jan", "season": "Spring", "temp": 27 },
+      { "date": "1-Jan", "season": "Summer", "temp": 25 },
+      { "date": "2-Jan", "season": "Summer", "temp": 26 },
+      { "date": "3-Jan", "season": "Summer", "temp": 27 },
+      { "date": "4-Jan", "season": "Summer", "temp": 28 },
+      { "date": "5-Jan", "season": "Summer", "temp": 29 },
+      { "date": "6-Jan", "season": "Summer", "temp": 28 },
+      { "date": "7-Jan", "season": "Summer", "temp": 27 },
+      { "date": "8-Jan", "season": "Summer", "temp": 26 },
+      { "date": "9-Jan", "season": "Summer", "temp": 30 },
+      { "date": "10-Jan", "season": "Summer", "temp": 31 },
+      { "date": "11-Jan", "season": "Summer", "temp": 32 },
+      { "date": "1-Jan", "season": "Fall", "temp": 30 },
+      { "date": "2-Jan", "season": "Fall", "temp": 31 },
+      { "date": "3-Jan", "season": "Fall", "temp": 32 },
+      { "date": "4-Jan", "season": "Fall", "temp": 33 },
+      { "date": "5-Jan", "season": "Fall", "temp": 34 },
+      { "date": "6-Jan", "season": "Fall", "temp": 33 },
+      { "date": "7-Jan", "season": "Fall", "temp": 32 },
+      { "date": "8-Jan", "season": "Fall", "temp": 31 },
+      { "date": "9-Jan", "season": "Fall", "temp": 35 },
+      { "date": "10-Jan", "season": "Fall", "temp": 36 },
+      { "date": "11-Jan", "season": "Fall", "temp": 37 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "ordinal",
+      "axis": { "title": "Date" }
+    },
+    "y": {
+      "field": "season",
+      "type": "nominal",
+      "axis": { "title": "Season" },
+      "sort": ["Winter", "Spring", "Summer", "Fall"]
+    },
+    "color": {
+      "field": "temp",
+      "type": "quantitative",
+      "legend": { "title": "Temperature" }
+    }
+  }
+}

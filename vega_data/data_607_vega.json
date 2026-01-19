@@ -1,0 +1,942 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01",
+        "y": 66.95976947679377,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "2023-02",
+        "y": 69.24988139105862,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "2023-03",
+        "y": 72.26663644058932,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "2023-04",
+        "y": 67.65249741720913,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "2023-05",
+        "y": 73.20905122742296,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "2023-06",
+        "y": 73.7739557394919,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "2023-07",
+        "y": 76.25487056270676,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "2023-08",
+        "y": 76.22082412985537,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "2023-09",
+        "y": 75.84070144707886,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "2023-10",
+        "y": 78.10040715817928,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "2023-11",
+        "y": 80.53243720198304,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "2023-12",
+        "y": 81.39572401431127,
+        "series": "Engineering, CPU"
+      },
+      {
+        "x": "2023-01",
+        "y": 69.15017522458884,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "2023-02",
+        "y": 69.65350115139138,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "2023-03",
+        "y": 70.48510218865579,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "2023-04",
+        "y": 68.73100814497248,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "2023-05",
+        "y": 72.63950514968714,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "2023-06",
+        "y": 74.81614557103525,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "2023-07",
+        "y": 73.27742029193926,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "2023-08",
+        "y": 77.87658306081941,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "2023-09",
+        "y": 76.76090354019685,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "2023-10",
+        "y": 76.6053340523165,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "2023-11",
+        "y": 80.10167587865664,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "2023-12",
+        "y": 81.09618668620612,
+        "series": "Engineering, Memory"
+      },
+      {
+        "x": "2023-01",
+        "y": 67.94191029266227,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "2023-02",
+        "y": 67.40246227751275,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "2023-03",
+        "y": 66.82669976592541,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "2023-04",
+        "y": 71.53127978194364,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "2023-05",
+        "y": 72.90962185450759,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "2023-06",
+        "y": 72.32615591948449,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "2023-07",
+        "y": 70.81805322421503,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "2023-08",
+        "y": 73.66467991942642,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "2023-09",
+        "y": 76.59242211099107,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "2023-10",
+        "y": 75.1862893759566,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "2023-11",
+        "y": 77.07044260194736,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "2023-12",
+        "y": 78.68126658392482,
+        "series": "Engineering, Storage"
+      },
+      {
+        "x": "2023-01",
+        "y": 30.33675952516118,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "2023-02",
+        "y": 34.78808548091951,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "2023-03",
+        "y": 37.074941543325814,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "2023-04",
+        "y": 35.02625197041698,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "2023-05",
+        "y": 38.87189370627354,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "2023-06",
+        "y": 36.255328030951695,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "2023-07",
+        "y": 39.748523432799765,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "2023-08",
+        "y": 35.85362537961972,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "2023-09",
+        "y": 41.77008045945208,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "2023-10",
+        "y": 41.684554548254134,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "2023-11",
+        "y": 42.13234211513933,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "2023-12",
+        "y": 45.33679067236776,
+        "series": "Finance, CPU"
+      },
+      {
+        "x": "2023-01",
+        "y": 30.85819369193786,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "2023-02",
+        "y": 30.37303791275096,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "2023-03",
+        "y": 34.48551456221085,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "2023-04",
+        "y": 34.68341713565217,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "2023-05",
+        "y": 36.866567482029104,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "2023-06",
+        "y": 37.851073843007164,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "2023-07",
+        "y": 35.22596098685603,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "2023-08",
+        "y": 40.90978310022687,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "2023-09",
+        "y": 39.8081344521707,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "2023-10",
+        "y": 44.68733846959292,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "2023-11",
+        "y": 43.206413565767555,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "2023-12",
+        "y": 43.81896959974464,
+        "series": "Finance, Memory"
+      },
+      {
+        "x": "2023-01",
+        "y": 31.841239751615586,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "2023-02",
+        "y": 30.86682357555586,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "2023-03",
+        "y": 36.51018841337626,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "2023-04",
+        "y": 33.760355679052054,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "2023-05",
+        "y": 32.19144870524291,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "2023-06",
+        "y": 33.5673475456081,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "2023-07",
+        "y": 35.82089780718611,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "2023-08",
+        "y": 40.98434924459477,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "2023-09",
+        "y": 38.810123820502646,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "2023-10",
+        "y": 38.56525988134822,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "2023-11",
+        "y": 42.201414046655636,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "2023-12",
+        "y": 41.72941788455373,
+        "series": "Finance, Storage"
+      },
+      {
+        "x": "2023-01",
+        "y": 26.46798989597971,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "2023-02",
+        "y": 25.26364165398994,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "2023-03",
+        "y": 24.77165837461571,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "2023-04",
+        "y": 33.04272691280807,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "2023-05",
+        "y": 29.734142102076778,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "2023-06",
+        "y": 32.10591763662373,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "2023-07",
+        "y": 32.97726053592714,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "2023-08",
+        "y": 33.306440051734604,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "2023-09",
+        "y": 35.678177067106326,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "2023-10",
+        "y": 36.59764915783512,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "2023-11",
+        "y": 38.91679177623549,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "2023-12",
+        "y": 40.13782687407315,
+        "series": "HR, CPU"
+      },
+      {
+        "x": "2023-01",
+        "y": 26.018611804453183,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "2023-02",
+        "y": 26.790565742968173,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "2023-03",
+        "y": 29.538748881129795,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "2023-04",
+        "y": 26.611275950135248,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "2023-05",
+        "y": 30.802665078249266,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "2023-06",
+        "y": 31.28402532994853,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "2023-07",
+        "y": 30.5386056808685,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "2023-08",
+        "y": 32.93317428325322,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "2023-09",
+        "y": 33.458826094833604,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "2023-10",
+        "y": 34.46200693635195,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "2023-11",
+        "y": 36.9023986223372,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "2023-12",
+        "y": 40.06293198191053,
+        "series": "HR, Memory"
+      },
+      {
+        "x": "2023-01",
+        "y": 27.144813678362492,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "2023-02",
+        "y": 26.764951134978315,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "2023-03",
+        "y": 27.728696234193155,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "2023-04",
+        "y": 27.358362354024404,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "2023-05",
+        "y": 30.456006903988754,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "2023-06",
+        "y": 27.18911021336128,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "2023-07",
+        "y": 31.94992385580071,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "2023-08",
+        "y": 33.25368997016151,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "2023-09",
+        "y": 35.31773335855599,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "2023-10",
+        "y": 34.83072859162055,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "2023-11",
+        "y": 35.448329538315086,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "2023-12",
+        "y": 39.95558363437524,
+        "series": "HR, Storage"
+      },
+      {
+        "x": "2023-01",
+        "y": 35.82995778064029,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "2023-02",
+        "y": 35.76071132736653,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "2023-03",
+        "y": 39.529515129222894,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "2023-04",
+        "y": 38.69901716806905,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "2023-05",
+        "y": 41.257380114313214,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "2023-06",
+        "y": 41.44128297807001,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "2023-07",
+        "y": 43.423369633032756,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "2023-08",
+        "y": 45.392504191448786,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "2023-09",
+        "y": 42.86668174386009,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "2023-10",
+        "y": 47.10291477944753,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "2023-11",
+        "y": 50.248931202506924,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "2023-12",
+        "y": 53.95120972856403,
+        "series": "Marketing, CPU"
+      },
+      {
+        "x": "2023-01",
+        "y": 34.3274205559269,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "2023-02",
+        "y": 38.138059338771505,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "2023-03",
+        "y": 38.64385397797686,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "2023-04",
+        "y": 39.876665042911775,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "2023-05",
+        "y": 41.62431931990479,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "2023-06",
+        "y": 43.784996309261395,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "2023-07",
+        "y": 41.90474666851585,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "2023-08",
+        "y": 43.97032713239414,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "2023-09",
+        "y": 40.18077869458313,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "2023-10",
+        "y": 46.83507575901266,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "2023-11",
+        "y": 48.13955018289343,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "2023-12",
+        "y": 46.71988935017172,
+        "series": "Marketing, Memory"
+      },
+      {
+        "x": "2023-01",
+        "y": 35.64483752494348,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "2023-02",
+        "y": 36.57892858784865,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "2023-03",
+        "y": 39.98497087043729,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "2023-04",
+        "y": 41.184117273722414,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "2023-05",
+        "y": 42.157931606184896,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "2023-06",
+        "y": 41.29213031961796,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "2023-07",
+        "y": 40.72729079958423,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "2023-08",
+        "y": 41.14697849456194,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "2023-09",
+        "y": 42.31428741328312,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "2023-10",
+        "y": 43.16187533327181,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "2023-11",
+        "y": 45.664518379842015,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "2023-12",
+        "y": 48.19921913505808,
+        "series": "Marketing, Storage"
+      },
+      {
+        "x": "2023-01",
+        "y": 46.00412570528645,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "2023-02",
+        "y": 48.68852175400079,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "2023-03",
+        "y": 50.561377387581736,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "2023-04",
+        "y": 50.67189704736308,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "2023-05",
+        "y": 49.917903937407175,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "2023-06",
+        "y": 56.52093165202448,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "2023-07",
+        "y": 55.692034981275945,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "2023-08",
+        "y": 56.14507331347301,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "2023-09",
+        "y": 57.360514946971534,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "2023-10",
+        "y": 58.89354189586884,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "2023-11",
+        "y": 60.71932022987679,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "2023-12",
+        "y": 63.455899394523044,
+        "series": "Sales, CPU"
+      },
+      {
+        "x": "2023-01",
+        "y": 44.28547130333564,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "2023-02",
+        "y": 47.66594827776515,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "2023-03",
+        "y": 47.60109620014645,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "2023-04",
+        "y": 53.55577468836578,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "2023-05",
+        "y": 48.56686427629205,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "2023-06",
+        "y": 51.363300049506016,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "2023-07",
+        "y": 55.01744660672949,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "2023-08",
+        "y": 52.830974027197044,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "2023-09",
+        "y": 59.0737462390555,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "2023-10",
+        "y": 55.47302305163362,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "2023-11",
+        "y": 59.460913478699844,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "2023-12",
+        "y": 59.83081078148276,
+        "series": "Sales, Memory"
+      },
+      {
+        "x": "2023-01",
+        "y": 47.403757865584076,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "2023-02",
+        "y": 47.80187709105394,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "2023-03",
+        "y": 47.325405187053484,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "2023-04",
+        "y": 44.164558179987885,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "2023-05",
+        "y": 50.316754105395745,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "2023-06",
+        "y": 56.27978357704012,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "2023-07",
+        "y": 51.075734783017595,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "2023-08",
+        "y": 56.07036210611802,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "2023-09",
+        "y": 54.3739401096073,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "2023-10",
+        "y": 53.62898908087224,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "2023-11",
+        "y": 57.532482664988386,
+        "series": "Sales, Storage"
+      },
+      {
+        "x": "2023-12",
+        "y": 60.29757625805376,
+        "series": "Sales, Storage"
+      }
+    ]
+  },
+  "title": "Cloud Resource Usage by Department (Monthly Average)",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Usage (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Usage (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

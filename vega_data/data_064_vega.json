@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Cumulative Step Counts Over a Period",
+  "description": "Converted from Plotly schema 64 - Area chart",
+  "data": {
+    "values": [
+      { "date": "2023-10-01", "steps": 3500 },
+      { "date": "2023-10-02", "steps": 7000 },
+      { "date": "2023-10-03", "steps": 10500 },
+      { "date": "2023-10-04", "steps": 14000 },
+      { "date": "2023-10-05", "steps": 17500 },
+      { "date": "2023-10-06", "steps": 21000 },
+      { "date": "2023-10-07", "steps": 24500 }
+    ]
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": { "title": "Date" }
+    },
+    "y": {
+      "field": "steps",
+      "type": "quantitative",
+      "axis": { "title": "Cumulative Steps" }
+    }
+  }
+}

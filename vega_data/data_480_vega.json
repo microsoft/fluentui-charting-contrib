@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Planning",
+        "y": 10,
+        "series": "P1"
+      },
+      {
+        "x": "Execution",
+        "y": -6.67,
+        "series": "P2"
+      },
+      {
+        "x": "Completion",
+        "y": -5,
+        "series": "P3"
+      },
+      {
+        "x": "Execution",
+        "y": -3.85,
+        "series": "P4"
+      },
+      {
+        "x": "Planning",
+        "y": -2.78,
+        "series": "P5"
+      }
+    ]
+  },
+  "title": "Variance Percentage by Project Phase",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "phase"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "variance_percentage"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "phase"
+      },
+      {
+        "field": "y",
+        "title": "variance_percentage"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

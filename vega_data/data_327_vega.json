@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Comparison of On-time vs Delayed Deliveries by Supplier",
+  "description": "Converted from Plotly schema 327 - Multi-series stacked bar chart",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "supplier": "Supplier A", "deliveries": 75, "type": "On-time Deliveries" },
+      { "supplier": "Supplier B", "deliveries": 50, "type": "On-time Deliveries" },
+      { "supplier": "Supplier C", "deliveries": 60, "type": "On-time Deliveries" },
+      { "supplier": "Supplier D", "deliveries": 40, "type": "On-time Deliveries" },
+      { "supplier": "Supplier E", "deliveries": 80, "type": "On-time Deliveries" },
+      { "supplier": "Supplier F", "deliveries": 55, "type": "On-time Deliveries" },
+      { "supplier": "Supplier G", "deliveries": 45, "type": "On-time Deliveries" },
+      { "supplier": "Supplier H", "deliveries": 70, "type": "On-time Deliveries" },
+      { "supplier": "Supplier I", "deliveries": 65, "type": "On-time Deliveries" },
+      { "supplier": "Supplier J", "deliveries": 85, "type": "On-time Deliveries" },
+      { "supplier": "Supplier A", "deliveries": 10, "type": "Delayed Deliveries" },
+      { "supplier": "Supplier B", "deliveries": 20, "type": "Delayed Deliveries" },
+      { "supplier": "Supplier C", "deliveries": 15, "type": "Delayed Deliveries" },
+      { "supplier": "Supplier D", "deliveries": 30, "type": "Delayed Deliveries" },
+      { "supplier": "Supplier E", "deliveries": 25, "type": "Delayed Deliveries" },
+      { "supplier": "Supplier F", "deliveries": 20, "type": "Delayed Deliveries" },
+      { "supplier": "Supplier G", "deliveries": 18, "type": "Delayed Deliveries" },
+      { "supplier": "Supplier H", "deliveries": 28, "type": "Delayed Deliveries" },
+      { "supplier": "Supplier I", "deliveries": 22, "type": "Delayed Deliveries" },
+      { "supplier": "Supplier J", "deliveries": 30, "type": "Delayed Deliveries" },
+      { "supplier": "Supplier A", "deliveries": 38, "type": "Urgent Deliveries" },
+      { "supplier": "Supplier B", "deliveries": 48, "type": "Urgent Deliveries" },
+      { "supplier": "Supplier C", "deliveries": 32, "type": "Urgent Deliveries" },
+      { "supplier": "Supplier D", "deliveries": 55, "type": "Urgent Deliveries" },
+      { "supplier": "Supplier E", "deliveries": 45, "type": "Urgent Deliveries" },
+      { "supplier": "Supplier F", "deliveries": 40, "type": "Urgent Deliveries" },
+      { "supplier": "Supplier G", "deliveries": 35, "type": "Urgent Deliveries" },
+      { "supplier": "Supplier H", "deliveries": 50, "type": "Urgent Deliveries" },
+      { "supplier": "Supplier I", "deliveries": 52, "type": "Urgent Deliveries" },
+      { "supplier": "Supplier J", "deliveries": 57, "type": "Urgent Deliveries" },
+      { "supplier": "Supplier A", "deliveries": 64, "type": "International Deliveries" },
+      { "supplier": "Supplier B", "deliveries": 49, "type": "International Deliveries" },
+      { "supplier": "Supplier C", "deliveries": 56, "type": "International Deliveries" },
+      { "supplier": "Supplier D", "deliveries": 42, "type": "International Deliveries" },
+      { "supplier": "Supplier E", "deliveries": 78, "type": "International Deliveries" },
+      { "supplier": "Supplier F", "deliveries": 54, "type": "International Deliveries" },
+      { "supplier": "Supplier G", "deliveries": 46, "type": "International Deliveries" },
+      { "supplier": "Supplier H", "deliveries": 69, "type": "International Deliveries" },
+      { "supplier": "Supplier I", "deliveries": 62, "type": "International Deliveries" },
+      { "supplier": "Supplier J", "deliveries": 80, "type": "International Deliveries" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "supplier",
+      "type": "nominal",
+      "axis": { "title": "Suppliers" }
+    },
+    "y": {
+      "field": "deliveries",
+      "type": "quantitative",
+      "axis": { "title": "Number of Deliveries" },
+      "stack": true
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "scale": { "range": ["steelblue", "indianred", "purple", "lightblue"] },
+      "legend": { "title": "Delivery Type" }
+    }
+  }
+}

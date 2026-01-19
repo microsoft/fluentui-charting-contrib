@@ -1,0 +1,187 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 12,
+        "theta": "Build Duration",
+        "series": "API-Service"
+      },
+      {
+        "r": 8,
+        "theta": "Deployment Frequency",
+        "series": "API-Service"
+      },
+      {
+        "r": 2,
+        "theta": "Failed Build Rate",
+        "series": "API-Service"
+      },
+      {
+        "r": 1,
+        "theta": "Rollback Rate",
+        "series": "API-Service"
+      },
+      {
+        "r": 91,
+        "theta": "Code Coverage",
+        "series": "API-Service"
+      },
+      {
+        "r": 30,
+        "theta": "Mean Time To Recovery",
+        "series": "API-Service"
+      },
+      {
+        "r": 12,
+        "theta": "Build Duration",
+        "series": "API-Service"
+      },
+      {
+        "r": 25,
+        "theta": "Build Duration",
+        "series": "Web-Frontend"
+      },
+      {
+        "r": 5,
+        "theta": "Deployment Frequency",
+        "series": "Web-Frontend"
+      },
+      {
+        "r": 5,
+        "theta": "Failed Build Rate",
+        "series": "Web-Frontend"
+      },
+      {
+        "r": 4,
+        "theta": "Rollback Rate",
+        "series": "Web-Frontend"
+      },
+      {
+        "r": 80,
+        "theta": "Code Coverage",
+        "series": "Web-Frontend"
+      },
+      {
+        "r": 50,
+        "theta": "Mean Time To Recovery",
+        "series": "Web-Frontend"
+      },
+      {
+        "r": 25,
+        "theta": "Build Duration",
+        "series": "Web-Frontend"
+      },
+      {
+        "r": 18,
+        "theta": "Build Duration",
+        "series": "Data-Processor"
+      },
+      {
+        "r": 10,
+        "theta": "Deployment Frequency",
+        "series": "Data-Processor"
+      },
+      {
+        "r": 1,
+        "theta": "Failed Build Rate",
+        "series": "Data-Processor"
+      },
+      {
+        "r": 2,
+        "theta": "Rollback Rate",
+        "series": "Data-Processor"
+      },
+      {
+        "r": 96,
+        "theta": "Code Coverage",
+        "series": "Data-Processor"
+      },
+      {
+        "r": 18,
+        "theta": "Mean Time To Recovery",
+        "series": "Data-Processor"
+      },
+      {
+        "r": 18,
+        "theta": "Build Duration",
+        "series": "Data-Processor"
+      },
+      {
+        "r": 22,
+        "theta": "Build Duration",
+        "series": "Mobile-App"
+      },
+      {
+        "r": 4,
+        "theta": "Deployment Frequency",
+        "series": "Mobile-App"
+      },
+      {
+        "r": 7,
+        "theta": "Failed Build Rate",
+        "series": "Mobile-App"
+      },
+      {
+        "r": 6,
+        "theta": "Rollback Rate",
+        "series": "Mobile-App"
+      },
+      {
+        "r": 74,
+        "theta": "Code Coverage",
+        "series": "Mobile-App"
+      },
+      {
+        "r": 65,
+        "theta": "Mean Time To Recovery",
+        "series": "Mobile-App"
+      },
+      {
+        "r": 22,
+        "theta": "Build Duration",
+        "series": "Mobile-App"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

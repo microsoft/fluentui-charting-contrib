@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-01",
+        "y": 65,
+        "series": "Engineering"
+      },
+      {
+        "x": "2024-02",
+        "y": 70,
+        "series": "Engineering"
+      },
+      {
+        "x": "2024-03",
+        "y": 72,
+        "series": "Engineering"
+      },
+      {
+        "x": "2024-01",
+        "y": 42,
+        "series": "Finance"
+      },
+      {
+        "x": "2024-02",
+        "y": 44,
+        "series": "Finance"
+      },
+      {
+        "x": "2024-03",
+        "y": 51,
+        "series": "Finance"
+      },
+      {
+        "x": "2024-01",
+        "y": 38,
+        "series": "HR"
+      },
+      {
+        "x": "2024-02",
+        "y": 40,
+        "series": "HR"
+      },
+      {
+        "x": "2024-03",
+        "y": 39,
+        "series": "HR"
+      },
+      {
+        "x": "2024-01",
+        "y": 50,
+        "series": "Sales"
+      },
+      {
+        "x": "2024-02",
+        "y": 53,
+        "series": "Sales"
+      },
+      {
+        "x": "2024-03",
+        "y": 57,
+        "series": "Sales"
+      },
+      {
+        "x": "2024-01",
+        "y": 47,
+        "series": "Marketing"
+      },
+      {
+        "x": "2024-02",
+        "y": 50,
+        "series": "Marketing"
+      },
+      {
+        "x": "2024-03",
+        "y": 54,
+        "series": "Marketing"
+      },
+      {
+        "x": "2024-01",
+        "y": 29,
+        "series": "Support"
+      },
+      {
+        "x": "2024-02",
+        "y": 35,
+        "series": "Support"
+      },
+      {
+        "x": "2024-03",
+        "y": 38,
+        "series": "Support"
+      }
+    ]
+  },
+  "title": "Cloud Resource CPU Usage by Department (Jan-Mar 2024)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Usage (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Usage (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

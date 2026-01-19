@@ -1,0 +1,282 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01",
+        "y": 300000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "2023-02",
+        "y": 320000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "2023-03",
+        "y": 350000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "2023-04",
+        "y": 370000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "2023-05",
+        "y": 400000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "2023-06",
+        "y": 430000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "2023-07",
+        "y": 460000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "2023-08",
+        "y": 480000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "2023-09",
+        "y": 500000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "2023-10",
+        "y": 530000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "2023-11",
+        "y": 550000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "2023-12",
+        "y": 580000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "2023-01",
+        "y": 295000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "2023-02",
+        "y": 325000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "2023-03",
+        "y": 360000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "2023-04",
+        "y": 385000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "2023-05",
+        "y": 420000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "2023-06",
+        "y": 415000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "2023-07",
+        "y": 470000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "2023-08",
+        "y": 490000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "2023-09",
+        "y": 495000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "2023-10",
+        "y": 540000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "2023-11",
+        "y": 565000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "2023-12",
+        "y": 600000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "2023-01",
+        "y": 22000,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "2023-02",
+        "y": 23500,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "2023-03",
+        "y": 24000,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "2023-04",
+        "y": 26000,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "2023-05",
+        "y": 28500,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "2023-06",
+        "y": 30000,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "2023-07",
+        "y": 31000,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "2023-08",
+        "y": 29500,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "2023-09",
+        "y": 32000,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "2023-10",
+        "y": 33000,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "2023-11",
+        "y": 31500,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "2023-12",
+        "y": 34000,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "2023-01",
+        "y": 9000,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "2023-02",
+        "y": 9500,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "2023-03",
+        "y": 9900,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "2023-04",
+        "y": 11000,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "2023-05",
+        "y": 12000,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "2023-06",
+        "y": 10500,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "2023-07",
+        "y": 12500,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "2023-08",
+        "y": 12200,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "2023-09",
+        "y": 10800,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "2023-10",
+        "y": 13500,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "2023-11",
+        "y": 13800,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "2023-12",
+        "y": 14000,
+        "series": "Labor Cost Variation"
+      }
+    ]
+  },
+  "title": "Construction Project Cost Management Overview (2023)",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Cost (USD)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Cost (USD)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

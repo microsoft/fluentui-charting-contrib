@@ -1,0 +1,15 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Gender Distribution",
+  "data": {
+    "values": [
+      {"gender": "Female", "count": 7},
+      {"gender": "Male", "count": 8}
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {"field": "count", "type": "quantitative"},
+    "color": {"field": "gender", "type": "nominal"}
+  }
+}

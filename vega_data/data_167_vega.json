@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Resource Utilization Percentage by School",
+  "description": "Converted from Plotly schema 167 - Line+markers chart",
+  "data": {
+    "values": [
+      { "school": "School A", "utilization": 80 },
+      { "school": "School B", "utilization": 85 },
+      { "school": "School C", "utilization": 78 },
+      { "school": "School D", "utilization": 82 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "interpolate": "monotone" },
+      "encoding": {
+        "x": {
+          "field": "school",
+          "type": "nominal",
+          "axis": { "title": "School Name" }
+        },
+        "y": {
+          "field": "utilization",
+          "type": "quantitative",
+          "axis": { "title": "Utilization Percentage" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "school",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "utilization",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

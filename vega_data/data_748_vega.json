@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 13588.4,
+        "y": 0.9983333333333333,
+        "series": "Atlanta"
+      },
+      {
+        "x": 11789.633333333333,
+        "y": 1,
+        "series": "Chicago"
+      },
+      {
+        "x": 13139.433333333332,
+        "y": 1,
+        "series": "Dallas"
+      },
+      {
+        "x": 15763.966666666667,
+        "y": 1,
+        "series": "Detroit"
+      },
+      {
+        "x": 12440.833333333334,
+        "y": 0.996,
+        "series": "Houston"
+      },
+      {
+        "x": 10768.7,
+        "y": 0.9823333333333333,
+        "series": "Los Angeles"
+      },
+      {
+        "x": 9804.566666666668,
+        "y": 0.958,
+        "series": "New York"
+      },
+      {
+        "x": 14862.933333333332,
+        "y": 1,
+        "series": "Phoenix"
+      }
+    ]
+  },
+  "title": "Factory Performance Monitoring: Production Volume vs Efficiency",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Production Volume"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Efficiency"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Production Volume"
+      },
+      {
+        "field": "y",
+        "title": "Efficiency"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

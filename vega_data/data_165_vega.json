@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Teacher Efficiency by Experience Level and Subject",
+  "description": "Converted from Plotly schema 165 - Heatmap",
+  "data": {
+    "values": [
+      { "experience": "1-3 yrs", "subject": "Math", "efficiency": 75 },
+      { "experience": "4-6 yrs", "subject": "Math", "efficiency": 78 },
+      { "experience": "7-9 yrs", "subject": "Math", "efficiency": 80 },
+      { "experience": "1-3 yrs", "subject": "Science", "efficiency": 82 },
+      { "experience": "4-6 yrs", "subject": "Science", "efficiency": 85 },
+      { "experience": "7-9 yrs", "subject": "Science", "efficiency": 87 },
+      { "experience": "1-3 yrs", "subject": "English", "efficiency": 90 },
+      { "experience": "4-6 yrs", "subject": "English", "efficiency": 92 },
+      { "experience": "7-9 yrs", "subject": "English", "efficiency": 94 },
+      { "experience": "1-3 yrs", "subject": "History", "efficiency": 88 },
+      { "experience": "4-6 yrs", "subject": "History", "efficiency": 90 },
+      { "experience": "7-9 yrs", "subject": "History", "efficiency": 92 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "experience",
+      "type": "ordinal",
+      "axis": { "title": "Experience Years" },
+      "sort": ["1-3 yrs", "4-6 yrs", "7-9 yrs"]
+    },
+    "y": {
+      "field": "subject",
+      "type": "nominal",
+      "axis": { "title": "Subject Taught" }
+    },
+    "color": {
+      "field": "efficiency",
+      "type": "quantitative",
+      "scale": { "scheme": "yellowgreenblue" },
+      "legend": { "title": "Efficiency Score" }
+    }
+  }
+}

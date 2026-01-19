@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Product Popularity During Different Months",
+  "description": "Converted from Plotly schema 25 - Heatmap",
+  "data": {
+    "values": [
+      { "month": "Month 1", "product": "Product A", "value": 10 },
+      { "month": "Month 2", "product": "Product A", "value": 20 },
+      { "month": "Month 3", "product": "Product A", "value": 30 },
+      { "month": "Month 4", "product": "Product A", "value": 40 },
+      { "month": "Month 1", "product": "Product B", "value": 20 },
+      { "month": "Month 2", "product": "Product B", "value": 30 },
+      { "month": "Month 3", "product": "Product B", "value": 40 },
+      { "month": "Month 4", "product": "Product B", "value": 50 },
+      { "month": "Month 1", "product": "Product C", "value": 30 },
+      { "month": "Month 2", "product": "Product C", "value": 40 },
+      { "month": "Month 3", "product": "Product C", "value": 50 },
+      { "month": "Month 4", "product": "Product C", "value": 60 },
+      { "month": "Month 1", "product": "Product D", "value": 40 },
+      { "month": "Month 2", "product": "Product D", "value": 50 },
+      { "month": "Month 3", "product": "Product D", "value": 60 },
+      { "month": "Month 4", "product": "Product D", "value": 70 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "axis": { "title": "Time" }
+    },
+    "y": {
+      "field": "product",
+      "type": "nominal",
+      "axis": { "title": "Products" }
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "legend": { "title": "Popularity" }
+    }
+  }
+}

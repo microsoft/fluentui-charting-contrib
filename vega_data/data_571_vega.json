@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "category": "North America",
+        "value": 35000
+      },
+      {
+        "category": "Europe",
+        "value": 23000
+      },
+      {
+        "category": "Asia-Pacific",
+        "value": 41000
+      },
+      {
+        "category": "Latin America",
+        "value": 9000
+      },
+      {
+        "category": "Middle East & Africa",
+        "value": 5000
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 50
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Automobile Sales Distribution by Region"
+}

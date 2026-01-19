@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Quarterly Air Quality Trends",
+  "description": "Converted from Plotly schema 185 - Multi-series line+markers chart",
+  "data": {
+    "values": [
+      { "quarter": "Q1", "aqi": 85, "county": "County A" },
+      { "quarter": "Q2", "aqi": 73, "county": "County A" },
+      { "quarter": "Q3", "aqi": 60, "county": "County A" },
+      { "quarter": "Q4", "aqi": 90, "county": "County A" },
+      { "quarter": "Q1", "aqi": 78, "county": "County B" },
+      { "quarter": "Q2", "aqi": 82, "county": "County B" },
+      { "quarter": "Q3", "aqi": 77, "county": "County B" },
+      { "quarter": "Q4", "aqi": 85, "county": "County B" },
+      { "quarter": "Q1", "aqi": 95, "county": "County C" },
+      { "quarter": "Q2", "aqi": 90, "county": "County C" },
+      { "quarter": "Q3", "aqi": 88, "county": "County C" },
+      { "quarter": "Q4", "aqi": 80, "county": "County C" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "quarter",
+          "type": "ordinal",
+          "axis": { "title": "Quarter" }
+        },
+        "y": {
+          "field": "aqi",
+          "type": "quantitative",
+          "axis": { "title": "Air Quality Index" }
+        },
+        "color": {
+          "field": "county",
+          "type": "nominal",
+          "legend": { "title": "County" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "quarter",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "aqi",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "county",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

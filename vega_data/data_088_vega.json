@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Fraud Detection Heatmap",
+  "description": "Converted from Plotly schema 88 - Heatmap",
+  "data": {
+    "values": [
+      { "geography": "North America", "size": "Small", "flagged": 10 },
+      { "geography": "North America", "size": "Medium", "flagged": 15 },
+      { "geography": "North America", "size": "Large", "flagged": 20 },
+      { "geography": "Europe", "size": "Small", "flagged": 30 },
+      { "geography": "Europe", "size": "Medium", "flagged": 10 },
+      { "geography": "Europe", "size": "Large", "flagged": 8 },
+      { "geography": "Asia", "size": "Small", "flagged": 5 },
+      { "geography": "Asia", "size": "Medium", "flagged": 12 },
+      { "geography": "Asia", "size": "Large", "flagged": 25 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "size",
+      "type": "nominal",
+      "axis": { "title": "Transaction Size" }
+    },
+    "y": {
+      "field": "geography",
+      "type": "nominal",
+      "axis": { "title": "Geography" }
+    },
+    "color": {
+      "field": "flagged",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Number of Flagged Transactions" }
+    }
+  }
+}

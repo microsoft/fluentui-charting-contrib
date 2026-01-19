@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "English",
+        "y": 86,
+        "series": "Series"
+      },
+      {
+        "x": "History",
+        "y": 77.5,
+        "series": "Series"
+      },
+      {
+        "x": "Math",
+        "y": 88,
+        "series": "Series"
+      },
+      {
+        "x": "Science",
+        "y": 88,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Average Performance Score by Subject Taught",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Subject Taught"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Average Performance Score"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Subject Taught"
+      },
+      {
+        "field": "y",
+        "title": "Average Performance Score"
+      }
+    ]
+  }
+}

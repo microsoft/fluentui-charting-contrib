@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan",
+        "y": 32000,
+        "series": "Central"
+      },
+      {
+        "x": "Feb",
+        "y": 35000,
+        "series": "Central"
+      },
+      {
+        "x": "Mar",
+        "y": 37000,
+        "series": "Central"
+      },
+      {
+        "x": "Apr",
+        "y": 39000,
+        "series": "Central"
+      },
+      {
+        "x": "Jan",
+        "y": 23000,
+        "series": "Eastside"
+      },
+      {
+        "x": "Feb",
+        "y": 25000,
+        "series": "Eastside"
+      },
+      {
+        "x": "Mar",
+        "y": 26500,
+        "series": "Eastside"
+      },
+      {
+        "x": "Apr",
+        "y": 27000,
+        "series": "Eastside"
+      },
+      {
+        "x": "Jan",
+        "y": 18000,
+        "series": "Westside"
+      },
+      {
+        "x": "Feb",
+        "y": 20000,
+        "series": "Westside"
+      },
+      {
+        "x": "Mar",
+        "y": 21000,
+        "series": "Westside"
+      },
+      {
+        "x": "Apr",
+        "y": 22500,
+        "series": "Westside"
+      }
+    ]
+  },
+  "title": "Monthly Public Transportation Usage by Urban Area",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Passenger Count"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Passenger Count"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

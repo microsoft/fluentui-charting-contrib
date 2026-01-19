@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2019,
+        "y": 18000,
+        "series": "Primary"
+      },
+      {
+        "x": 2020,
+        "y": 18500,
+        "series": "Primary"
+      },
+      {
+        "x": 2021,
+        "y": 19200,
+        "series": "Primary"
+      },
+      {
+        "x": 2022,
+        "y": 20000,
+        "series": "Primary"
+      },
+      {
+        "x": 2019,
+        "y": 15000,
+        "series": "Secondary"
+      },
+      {
+        "x": 2020,
+        "y": 14800,
+        "series": "Secondary"
+      },
+      {
+        "x": 2021,
+        "y": 15300,
+        "series": "Secondary"
+      },
+      {
+        "x": 2022,
+        "y": 16000,
+        "series": "Secondary"
+      },
+      {
+        "x": 2019,
+        "y": 9000,
+        "series": "College"
+      },
+      {
+        "x": 2020,
+        "y": 9500,
+        "series": "College"
+      },
+      {
+        "x": 2021,
+        "y": 9800,
+        "series": "College"
+      },
+      {
+        "x": 2022,
+        "y": 10200,
+        "series": "College"
+      },
+      {
+        "x": 2019,
+        "y": 7000,
+        "series": "University"
+      },
+      {
+        "x": 2020,
+        "y": 7200,
+        "series": "University"
+      },
+      {
+        "x": 2021,
+        "y": 7400,
+        "series": "University"
+      },
+      {
+        "x": 2022,
+        "y": 7600,
+        "series": "University"
+      }
+    ]
+  },
+  "title": "Enrollment Trends by Institution Type and Region (2019-2022)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Enrollment"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Enrollment"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

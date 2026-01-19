@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01-01",
+        "y": 4,
+        "series": "Site A"
+      },
+      {
+        "x": "2023-01-01",
+        "y": 3,
+        "series": "Site A"
+      },
+      {
+        "x": "2023-01-01",
+        "y": 1,
+        "series": "Site B"
+      },
+      {
+        "x": "2023-01-08",
+        "y": 5,
+        "series": "Site B"
+      },
+      {
+        "x": "2023-01-08",
+        "y": 2,
+        "series": "Site C"
+      },
+      {
+        "x": "2023-01-08",
+        "y": 1,
+        "series": "Site C"
+      }
+    ]
+  },
+  "title": "Weekly Inspection Reports Trend",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "inspection_reports"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "week"
+      },
+      {
+        "field": "y",
+        "title": "inspection_reports"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

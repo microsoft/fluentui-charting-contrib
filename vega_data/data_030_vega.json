@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Average Temperature Ranges Breakdown",
+  "description": "Converted from Plotly schema 30 - Donut chart",
+  "data": {
+    "values": [
+      { "range": "Cold", "days": 200 },
+      { "range": "Mild", "days": 150 },
+      { "range": "Hot", "days": 15 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "days",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "range",
+      "type": "nominal",
+      "legend": { "title": "Temperature Range" }
+    }
+  }
+}

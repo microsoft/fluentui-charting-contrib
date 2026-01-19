@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "x": 0,
+        "y": "production_volume",
+        "value": 1200
+      },
+      {
+        "x": 1,
+        "y": "production_volume",
+        "value": 900
+      },
+      {
+        "x": 2,
+        "y": "production_volume",
+        "value": 1500
+      },
+      {
+        "x": 3,
+        "y": "production_volume",
+        "value": 1100
+      },
+      {
+        "x": 0,
+        "y": "operational_hours",
+        "value": 24
+      },
+      {
+        "x": 1,
+        "y": "operational_hours",
+        "value": 20
+      },
+      {
+        "x": 2,
+        "y": "operational_hours",
+        "value": 24
+      },
+      {
+        "x": 3,
+        "y": "operational_hours",
+        "value": 22
+      },
+      {
+        "x": 0,
+        "y": "downtime",
+        "value": 2
+      },
+      {
+        "x": 1,
+        "y": "downtime",
+        "value": 5
+      },
+      {
+        "x": 2,
+        "y": "downtime",
+        "value": 1
+      },
+      {
+        "x": 3,
+        "y": "downtime",
+        "value": 3
+      },
+      {
+        "x": 0,
+        "y": "efficiency",
+        "value": 90
+      },
+      {
+        "x": 1,
+        "y": "efficiency",
+        "value": 80
+      },
+      {
+        "x": 2,
+        "y": "efficiency",
+        "value": 95
+      },
+      {
+        "x": 3,
+        "y": "efficiency",
+        "value": 85
+      }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "y",
+      "type": "ordinal"
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "blues"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Factory Performance Heatmap"
+}

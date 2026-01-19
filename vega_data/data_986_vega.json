@@ -1,0 +1,309 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2017-01-01",
+        "y": 2.8,
+        "series": "Complete"
+      },
+      {
+        "x": "2017-02-02",
+        "y": 2.8,
+        "series": "Complete"
+      },
+      {
+        "x": "2017-02-02",
+        "y": 3.2,
+        "series": "Complete"
+      },
+      {
+        "x": "2017-01-01",
+        "y": 3.2,
+        "series": "Complete"
+      },
+      {
+        "x": "2017-01-01",
+        "y": null,
+        "series": "Complete"
+      },
+      {
+        "x": "2017-01-17",
+        "y": 1.8,
+        "series": "Complete"
+      },
+      {
+        "x": "2017-02-17",
+        "y": 1.8,
+        "series": "Complete"
+      },
+      {
+        "x": "2017-02-17",
+        "y": 2.2,
+        "series": "Complete"
+      },
+      {
+        "x": "2017-01-17",
+        "y": 2.2,
+        "series": "Complete"
+      },
+      {
+        "x": "2017-01-17",
+        "y": null,
+        "series": "Complete"
+      },
+      {
+        "x": "2017-01-14",
+        "y": -0.2,
+        "series": "Complete"
+      },
+      {
+        "x": "2017-03-14",
+        "y": -0.2,
+        "series": "Complete"
+      },
+      {
+        "x": "2017-03-14",
+        "y": 0.2,
+        "series": "Complete"
+      },
+      {
+        "x": "2017-01-14",
+        "y": 0.2,
+        "series": "Complete"
+      },
+      {
+        "x": "2017-01-17",
+        "y": 1.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-02-17",
+        "y": 1.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-02-17",
+        "y": 2.2,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-01-17",
+        "y": 2.2,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-01-17",
+        "y": null,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-03-10",
+        "y": 0.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-03-20",
+        "y": 0.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-03-20",
+        "y": 1.2,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-03-10",
+        "y": 1.2,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-03-10",
+        "y": null,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-04-01",
+        "y": 0.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-04-20",
+        "y": 0.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-04-20",
+        "y": 1.2,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-04-01",
+        "y": 1.2,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-04-01",
+        "y": null,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-05-18",
+        "y": 0.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-06-18",
+        "y": 0.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-06-18",
+        "y": 1.2,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-05-18",
+        "y": 1.2,
+        "series": "Not Started"
+      },
+      {
+        "x": "2017-02-15",
+        "y": 2.8,
+        "series": "Incomplete"
+      },
+      {
+        "x": "2017-03-15",
+        "y": 2.8,
+        "series": "Incomplete"
+      },
+      {
+        "x": "2017-03-15",
+        "y": 3.2,
+        "series": "Incomplete"
+      },
+      {
+        "x": "2017-02-15",
+        "y": 3.2,
+        "series": "Incomplete"
+      },
+      {
+        "x": "2017-01-01",
+        "y": 3,
+        "series": "Series"
+      },
+      {
+        "x": "2017-02-02",
+        "y": 3,
+        "series": "Series"
+      },
+      {
+        "x": "2017-01-17",
+        "y": 2,
+        "series": "Series"
+      },
+      {
+        "x": "2017-02-17",
+        "y": 2,
+        "series": "Series"
+      },
+      {
+        "x": "2017-01-14",
+        "y": 0,
+        "series": "Series"
+      },
+      {
+        "x": "2017-03-14",
+        "y": 0,
+        "series": "Series"
+      },
+      {
+        "x": "2017-01-17",
+        "y": 2,
+        "series": "Series"
+      },
+      {
+        "x": "2017-02-17",
+        "y": 2,
+        "series": "Series"
+      },
+      {
+        "x": "2017-03-10",
+        "y": 1,
+        "series": "Series"
+      },
+      {
+        "x": "2017-03-20",
+        "y": 1,
+        "series": "Series"
+      },
+      {
+        "x": "2017-04-01",
+        "y": 1,
+        "series": "Series"
+      },
+      {
+        "x": "2017-04-20",
+        "y": 1,
+        "series": "Series"
+      },
+      {
+        "x": "2017-05-18",
+        "y": 1,
+        "series": "Series"
+      },
+      {
+        "x": "2017-06-18",
+        "y": 1,
+        "series": "Series"
+      },
+      {
+        "x": "2017-02-15",
+        "y": 3,
+        "series": "Series"
+      },
+      {
+        "x": "2017-03-15",
+        "y": 3,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Gantt Chart",
+  "mark": {
+    "type": "area",
+    "line": true,
+    "opacity": 0.7
+  },
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

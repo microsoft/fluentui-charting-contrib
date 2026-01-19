@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Vorhersage und tatsächliche Maschinenstörungen",
+  "description": "Converted from Plotly schema 291 - Multi-series line+markers with German labels",
+  "width": 500,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "2023-01", "failures": 5, "type": "Tatsächliche Ausfälle" },
+      { "month": "2023-02", "failures": 7, "type": "Tatsächliche Ausfälle" },
+      { "month": "2023-03", "failures": 4, "type": "Tatsächliche Ausfälle" },
+      { "month": "2023-04", "failures": 6, "type": "Tatsächliche Ausfälle" },
+      { "month": "2023-05", "failures": 3, "type": "Tatsächliche Ausfälle" },
+      { "month": "2023-06", "failures": 9, "type": "Tatsächliche Ausfälle" },
+      { "month": "2023-07", "failures": 8, "type": "Tatsächliche Ausfälle" },
+      { "month": "2023-08", "failures": 2, "type": "Tatsächliche Ausfälle" },
+      { "month": "2023-09", "failures": 7, "type": "Tatsächliche Ausfälle" },
+      { "month": "2023-10", "failures": 6, "type": "Tatsächliche Ausfälle" },
+      { "month": "2023-01", "failures": 4, "type": "Prognostizierte Ausfälle" },
+      { "month": "2023-02", "failures": 6, "type": "Prognostizierte Ausfälle" },
+      { "month": "2023-03", "failures": 5, "type": "Prognostizierte Ausfälle" },
+      { "month": "2023-04", "failures": 5, "type": "Prognostizierte Ausfälle" },
+      { "month": "2023-05", "failures": 4, "type": "Prognostizierte Ausfälle" },
+      { "month": "2023-06", "failures": 8, "type": "Prognostizierte Ausfälle" },
+      { "month": "2023-07", "failures": 7, "type": "Prognostizierte Ausfälle" },
+      { "month": "2023-08", "failures": 3, "type": "Prognostizierte Ausfälle" },
+      { "month": "2023-09", "failures": 6, "type": "Prognostizierte Ausfälle" },
+      { "month": "2023-10", "failures": 5, "type": "Prognostizierte Ausfälle" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "axis": { "title": "Monat" }
+        },
+        "y": {
+          "field": "failures",
+          "type": "quantitative",
+          "axis": { "title": "Anzahl der Ausfälle" }
+        },
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "scale": { "range": ["red", "blue"] },
+          "legend": { "title": "Typ" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "month", "type": "ordinal" },
+        "y": { "field": "failures", "type": "quantitative" },
+        "color": { "field": "type", "type": "nominal" }
+      }
+    }
+  ]
+}

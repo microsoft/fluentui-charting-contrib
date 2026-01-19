@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Line Chart with Percentage Y-Axis",
+  "data": {
+    "values": [
+      {"x": 1, "y": 0.18},
+      {"x": 2, "y": 0.38},
+      {"x": 3, "y": 0.56},
+      {"x": 4, "y": 0.46},
+      {"x": 5, "y": 0.59},
+      {"x": 6, "y": 0.4},
+      {"x": 7, "y": 0.78},
+      {"x": 8, "y": 0.77},
+      {"x": 9, "y": 0.74},
+      {"x": 10, "y": 0.42},
+      {"x": 11, "y": 0.45},
+      {"x": 12, "y": 0.39}
+    ]
+  },
+  "mark": {"type": "line"},
+  "encoding": {
+    "x": {"field": "x", "type": "quantitative"},
+    "y": {"field": "y", "type": "quantitative", "axis": {"format": "%"}}
+  }
+}

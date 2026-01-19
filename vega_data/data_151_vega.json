@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Threat Heat Map",
+  "description": "Converted from Plotly schema 151 - Heatmap",
+  "data": {
+    "values": [
+      { "date": "2023-09-01", "threat": "Malware", "score": 10 },
+      { "date": "2023-09-02", "threat": "Malware", "score": 20 },
+      { "date": "2023-09-03", "threat": "Malware", "score": 30 },
+      { "date": "2023-09-01", "threat": "Phishing", "score": 20 },
+      { "date": "2023-09-02", "threat": "Phishing", "score": 10 },
+      { "date": "2023-09-03", "threat": "Phishing", "score": 40 },
+      { "date": "2023-09-01", "threat": "DDoS", "score": 30 },
+      { "date": "2023-09-02", "threat": "DDoS", "score": 40 },
+      { "date": "2023-09-03", "threat": "DDoS", "score": 10 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "ordinal",
+      "axis": { "title": "Date of Occurrence" }
+    },
+    "y": {
+      "field": "threat",
+      "type": "nominal",
+      "axis": { "title": "Threat Type" }
+    },
+    "color": {
+      "field": "score",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Impact Score" }
+    }
+  }
+}

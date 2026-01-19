@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Ann Arbor Bus",
+        "y": 29.3,
+        "series": "Series"
+      },
+      {
+        "x": "SAV Single Rider",
+        "y": 11.5,
+        "series": "Series"
+      },
+      {
+        "x": "SAV Shared Rides",
+        "y": 15.6,
+        "series": "Series"
+      },
+      {
+        "x": "SAV Shared Rides",
+        "y": 15.6,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Mean Travel Time by Mode",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Mode"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Mean Travel Time"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Mode"
+      },
+      {
+        "field": "y",
+        "title": "Mean Travel Time"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Total Hours of Operation Last Month",
+  "description": "Converted from Plotly schema 242 - Simple bar chart",
+  "data": {
+    "values": [
+      { "equipment": "Equipment 1", "hours": 450 },
+      { "equipment": "Equipment 2", "hours": 390 },
+      { "equipment": "Equipment 3", "hours": 420 }
+    ]
+  },
+  "mark": { "type": "bar", "color": "orange" },
+  "encoding": {
+    "x": {
+      "field": "equipment",
+      "type": "ordinal",
+      "axis": { "title": "Equipment ID" }
+    },
+    "y": {
+      "field": "hours",
+      "type": "quantitative",
+      "axis": { "title": "Hours" }
+    }
+  }
+}

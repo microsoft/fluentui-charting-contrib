@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Investment Proportion in Each Sector",
+  "description": "Converted from Plotly schema 42 - Pie chart",
+  "data": {
+    "values": [
+      { "sector": "Technology", "proportion": 40 },
+      { "sector": "Healthcare", "proportion": 20 },
+      { "sector": "Finance", "proportion": 30 },
+      { "sector": "Energy", "proportion": 10 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "proportion",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "sector",
+      "type": "nominal",
+      "legend": { "title": "Sector" }
+    }
+  }
+}

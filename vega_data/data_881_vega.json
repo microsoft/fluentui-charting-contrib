@@ -1,0 +1,198 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 220,
+        "theta": "Horsepower",
+        "series": "Astra GT"
+      },
+      {
+        "r": 32,
+        "theta": "Fuel Efficiency (MPG)",
+        "series": "Astra GT"
+      },
+      {
+        "r": 4.8,
+        "theta": "Safety Rating",
+        "series": "Astra GT"
+      },
+      {
+        "r": 8.5,
+        "theta": "Technology Score",
+        "series": "Astra GT"
+      },
+      {
+        "r": 27000,
+        "theta": "Price",
+        "series": "Astra GT"
+      },
+      {
+        "r": 110,
+        "theta": "Emissions (g/km)",
+        "series": "Astra GT"
+      },
+      {
+        "r": 250,
+        "theta": "Horsepower",
+        "series": "Quantum X"
+      },
+      {
+        "r": 28,
+        "theta": "Fuel Efficiency (MPG)",
+        "series": "Quantum X"
+      },
+      {
+        "r": 4.5,
+        "theta": "Safety Rating",
+        "series": "Quantum X"
+      },
+      {
+        "r": 9.2,
+        "theta": "Technology Score",
+        "series": "Quantum X"
+      },
+      {
+        "r": 32000,
+        "theta": "Price",
+        "series": "Quantum X"
+      },
+      {
+        "r": 125,
+        "theta": "Emissions (g/km)",
+        "series": "Quantum X"
+      },
+      {
+        "r": 180,
+        "theta": "Horsepower",
+        "series": "EcoDrive S"
+      },
+      {
+        "r": 40,
+        "theta": "Fuel Efficiency (MPG)",
+        "series": "EcoDrive S"
+      },
+      {
+        "r": 4.9,
+        "theta": "Safety Rating",
+        "series": "EcoDrive S"
+      },
+      {
+        "r": 8.1,
+        "theta": "Technology Score",
+        "series": "EcoDrive S"
+      },
+      {
+        "r": 26000,
+        "theta": "Price",
+        "series": "EcoDrive S"
+      },
+      {
+        "r": 95,
+        "theta": "Emissions (g/km)",
+        "series": "EcoDrive S"
+      },
+      {
+        "r": 300,
+        "theta": "Horsepower",
+        "series": "Velocity LX"
+      },
+      {
+        "r": 25,
+        "theta": "Fuel Efficiency (MPG)",
+        "series": "Velocity LX"
+      },
+      {
+        "r": 4.6,
+        "theta": "Safety Rating",
+        "series": "Velocity LX"
+      },
+      {
+        "r": 9,
+        "theta": "Technology Score",
+        "series": "Velocity LX"
+      },
+      {
+        "r": 37000,
+        "theta": "Price",
+        "series": "Velocity LX"
+      },
+      {
+        "r": 140,
+        "theta": "Emissions (g/km)",
+        "series": "Velocity LX"
+      },
+      {
+        "r": 160,
+        "theta": "Horsepower",
+        "series": "Urban Pro"
+      },
+      {
+        "r": 37,
+        "theta": "Fuel Efficiency (MPG)",
+        "series": "Urban Pro"
+      },
+      {
+        "r": 4.7,
+        "theta": "Safety Rating",
+        "series": "Urban Pro"
+      },
+      {
+        "r": 7.8,
+        "theta": "Technology Score",
+        "series": "Urban Pro"
+      },
+      {
+        "r": 24000,
+        "theta": "Price",
+        "series": "Urban Pro"
+      },
+      {
+        "r": 100,
+        "theta": "Emissions (g/km)",
+        "series": "Urban Pro"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Comparative Analysis of Vehicle Features Across Models"
+}

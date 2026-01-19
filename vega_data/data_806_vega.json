@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 34,
+        "series": "Carrier"
+      },
+      {
+        "x": "2023-02-01T00:00:00",
+        "y": 29,
+        "series": "Carrier"
+      },
+      {
+        "x": "2023-03-01T00:00:00",
+        "y": 28,
+        "series": "Carrier"
+      },
+      {
+        "x": "2023-04-01T00:00:00",
+        "y": 29.666666666666668,
+        "series": "Carrier"
+      },
+      {
+        "x": "2023-05-01T00:00:00",
+        "y": 31.333333333333332,
+        "series": "Carrier"
+      },
+      {
+        "x": "2023-06-01T00:00:00",
+        "y": 30,
+        "series": "Carrier"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 35,
+        "series": "Destroyer"
+      },
+      {
+        "x": "2023-02-01T00:00:00",
+        "y": 31,
+        "series": "Destroyer"
+      },
+      {
+        "x": "2023-03-01T00:00:00",
+        "y": 27.333333333333332,
+        "series": "Destroyer"
+      },
+      {
+        "x": "2023-04-01T00:00:00",
+        "y": 27,
+        "series": "Destroyer"
+      },
+      {
+        "x": "2023-05-01T00:00:00",
+        "y": 25,
+        "series": "Destroyer"
+      },
+      {
+        "x": "2023-06-01T00:00:00",
+        "y": 24.333333333333332,
+        "series": "Destroyer"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 15,
+        "series": "Frigate"
+      },
+      {
+        "x": "2023-02-01T00:00:00",
+        "y": 13,
+        "series": "Frigate"
+      },
+      {
+        "x": "2023-03-01T00:00:00",
+        "y": 14,
+        "series": "Frigate"
+      },
+      {
+        "x": "2023-04-01T00:00:00",
+        "y": 14,
+        "series": "Frigate"
+      },
+      {
+        "x": "2023-05-01T00:00:00",
+        "y": 14.666666666666666,
+        "series": "Frigate"
+      },
+      {
+        "x": "2023-06-01T00:00:00",
+        "y": 14,
+        "series": "Frigate"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 17,
+        "series": "Submarine"
+      },
+      {
+        "x": "2023-02-01T00:00:00",
+        "y": 15.5,
+        "series": "Submarine"
+      },
+      {
+        "x": "2023-03-01T00:00:00",
+        "y": 16,
+        "series": "Submarine"
+      },
+      {
+        "x": "2023-04-01T00:00:00",
+        "y": 15.333333333333334,
+        "series": "Submarine"
+      },
+      {
+        "x": "2023-05-01T00:00:00",
+        "y": 14,
+        "series": "Submarine"
+      },
+      {
+        "x": "2023-06-01T00:00:00",
+        "y": 12,
+        "series": "Submarine"
+      }
+    ]
+  },
+  "title": "Projected Monthly Maintenance Needs by Ship Type (3-month Rolling Mean)",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Projected Parts Needed"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Projected Parts Needed"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Route Efficiency Comparison",
+  "description": "Converted from Plotly schema 182 - Bar chart",
+  "data": {
+    "values": [
+      { "route": "Route A", "efficiency": 25 },
+      { "route": "Route B", "efficiency": 40 },
+      { "route": "Route C", "efficiency": 35 },
+      { "route": "Route D", "efficiency": 30 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "route",
+      "type": "nominal",
+      "axis": { "title": "Routes" }
+    },
+    "y": {
+      "field": "efficiency",
+      "type": "quantitative",
+      "axis": { "title": "Efficiency (%)" }
+    },
+    "color": {
+      "value": "green"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Adverse Effects Incidence Across Quarters",
+  "description": "Converted from Plotly schema 204 - Line+markers chart",
+  "data": {
+    "values": [
+      { "quarter": "Q1 2023", "incidence": 3.1 },
+      { "quarter": "Q2 2023", "incidence": 3.5 },
+      { "quarter": "Q3 2023", "incidence": 2.9 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "quarter",
+          "type": "ordinal",
+          "axis": { "title": "Quarter" }
+        },
+        "y": {
+          "field": "incidence",
+          "type": "quantitative",
+          "axis": { "title": "Adverse Effects Incidence (%)" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "quarter",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "incidence",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

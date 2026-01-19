@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": 74.1
+      },
+      {
+        "value": 72
+      },
+      {
+        "value": 70.7
+      },
+      {
+        "value": 57.9
+      },
+      {
+        "value": 71.9
+      },
+      {
+        "value": 59.2
+      },
+      {
+        "value": 62.3
+      },
+      {
+        "value": 88.9
+      },
+      {
+        "value": 70.3
+      },
+      {
+        "value": 66.5
+      },
+      {
+        "value": 71.7
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "bin": true,
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Distribution of Patient Satisfaction Scores by Healthcare Spending Category"
+}

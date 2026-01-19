@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Occupancy During Major Events: 2023 vs 2024",
+  "description": "Converted from Plotly schema 219 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "event": "New Year", "rate": 85, "year": "2023 Events" },
+      { "event": "Spring Festival", "rate": 70, "year": "2023 Events" },
+      { "event": "Summer Vacation", "rate": 95, "year": "2023 Events" },
+      { "event": "Fall Events", "rate": 75, "year": "2023 Events" },
+      { "event": "New Year", "rate": 88, "year": "2024 Events" },
+      { "event": "Spring Festival", "rate": 74, "year": "2024 Events" },
+      { "event": "Summer Vacation", "rate": 97, "year": "2024 Events" },
+      { "event": "Fall Events", "rate": 78, "year": "2024 Events" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "event",
+      "type": "nominal",
+      "axis": { "title": "Event" }
+    },
+    "y": {
+      "field": "rate",
+      "type": "quantitative",
+      "axis": { "title": "Occupancy Rate (%)" }
+    },
+    "xOffset": {
+      "field": "year"
+    },
+    "color": {
+      "field": "year",
+      "type": "nominal",
+      "legend": { "title": "Year" }
+    }
+  }
+}

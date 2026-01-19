@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "A",
+        "y": 2242500.425371299,
+        "series": "Series"
+      },
+      {
+        "x": "B",
+        "y": 2367123.996559464,
+        "series": "Series"
+      },
+      {
+        "x": "C",
+        "y": 3210713.7915114225,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Bar Chart with Log Y-axis",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "category"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "y"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "category"
+      },
+      {
+        "field": "y",
+        "title": "y"
+      }
+    ]
+  }
+}

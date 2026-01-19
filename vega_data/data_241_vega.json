@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Weekly Operational Temperature Trends",
+  "description": "Converted from Plotly schema 241 - Multi-series line+markers chart",
+  "data": {
+    "values": [
+      { "date": "2023-09-01", "temperature": 85, "equipment": "Equipment 1" },
+      { "date": "2023-09-08", "temperature": 88, "equipment": "Equipment 1" },
+      { "date": "2023-09-15", "temperature": 95, "equipment": "Equipment 1" },
+      { "date": "2023-09-22", "temperature": 99, "equipment": "Equipment 1" },
+      { "date": "2023-09-29", "temperature": 105, "equipment": "Equipment 1" },
+      { "date": "2023-10-06", "temperature": 112, "equipment": "Equipment 1" },
+      { "date": "2023-09-01", "temperature": 75, "equipment": "Equipment 2" },
+      { "date": "2023-09-08", "temperature": 78, "equipment": "Equipment 2" },
+      { "date": "2023-09-15", "temperature": 82, "equipment": "Equipment 2" },
+      { "date": "2023-09-22", "temperature": 89, "equipment": "Equipment 2" },
+      { "date": "2023-09-29", "temperature": 92, "equipment": "Equipment 2" },
+      { "date": "2023-10-06", "temperature": 97, "equipment": "Equipment 2" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": { "title": "Date" }
+        },
+        "y": {
+          "field": "temperature",
+          "type": "quantitative",
+          "axis": { "title": "Temperature (°C)" }
+        },
+        "color": {
+          "field": "equipment",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Equipment 1", "Equipment 2"],
+            "range": ["blue", "red"]
+          },
+          "legend": { "title": "Equipment" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": { "field": "date", "type": "temporal" },
+        "y": { "field": "temperature", "type": "quantitative" },
+        "color": { "field": "equipment", "type": "nominal" }
+      }
+    }
+  ]
+}

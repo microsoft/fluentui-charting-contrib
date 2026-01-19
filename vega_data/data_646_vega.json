@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Airport",
+        "y": 0.72655663915979,
+        "series": "Airport"
+      },
+      {
+        "x": "Beachfront",
+        "y": 0.7291237703042782,
+        "series": "Beachfront"
+      },
+      {
+        "x": "Downtown",
+        "y": 0.7867520315193303,
+        "series": "Downtown"
+      },
+      {
+        "x": "Suburb",
+        "y": 0.728518412789038,
+        "series": "Suburb"
+      }
+    ]
+  },
+  "title": "Monthly Average Occupancy Rate by Location",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Hotel Location"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Occupancy Rate"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Hotel Location"
+      },
+      {
+        "field": "y",
+        "title": "Occupancy Rate"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Types of Client Queries/Complaints",
+  "description": "Converted from Plotly schema 138 - Donut chart",
+  "data": {
+    "values": [
+      { "type": "Queries", "value": 40 },
+      { "type": "Complaints", "value": 15 },
+      { "type": "Feedback", "value": 30 },
+      { "type": "Others", "value": 15 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Query Type" }
+    }
+  }
+}

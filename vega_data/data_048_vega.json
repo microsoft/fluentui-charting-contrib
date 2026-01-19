@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Grade Distribution in Mathematics",
+  "description": "Converted from Plotly schema 48 - Donut chart",
+  "data": {
+    "values": [
+      { "grade": "A", "count": 10 },
+      { "grade": "B", "count": 20 },
+      { "grade": "C", "count": 30 },
+      { "grade": "D", "count": 25 },
+      { "grade": "F", "count": 15 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "count",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "grade",
+      "type": "nominal",
+      "legend": { "title": "Grade" },
+      "sort": ["A", "B", "C", "D", "F"]
+    }
+  }
+}

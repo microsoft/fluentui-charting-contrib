@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 7600,
+        "y": "Dallas",
+        "series": "Series"
+      },
+      {
+        "x": 8700,
+        "y": "Houston",
+        "series": "Series"
+      },
+      {
+        "x": 9800,
+        "y": "Atlanta",
+        "series": "Series"
+      },
+      {
+        "x": 10200,
+        "y": "Los Angeles",
+        "series": "Series"
+      },
+      {
+        "x": 10500,
+        "y": "Boston",
+        "series": "Series"
+      },
+      {
+        "x": 11300,
+        "y": "Chicago",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Factory-wise Production Volume (Daily)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Production Volume (units)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Factory Location"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Production Volume (units)"
+      },
+      {
+        "field": "y",
+        "title": "Factory Location"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 5,
+        "y": 95,
+        "series": "Supplier1"
+      },
+      {
+        "x": 6,
+        "y": 97,
+        "series": "Supplier1"
+      },
+      {
+        "x": 7,
+        "y": 98,
+        "series": "Supplier2"
+      },
+      {
+        "x": 4,
+        "y": 93,
+        "series": "Supplier2"
+      },
+      {
+        "x": 8,
+        "y": 99,
+        "series": "Supplier3"
+      }
+    ]
+  },
+  "title": "Delivery Success Rate vs. Order Fulfillment Time",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Order Fulfillment Time (days)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Delivery Success Rate (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Order Fulfillment Time (days)"
+      },
+      {
+        "field": "y",
+        "title": "Delivery Success Rate (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Drug Utilization Patterns and Compliance Rates",
+  "description": "Converted from Plotly schema 254 - Grouped bar chart with 25 months",
+  "data": {
+    "values": [
+      { "drug": "Antibiotics", "quantity": 950, "month": "January" },
+      { "drug": "Antihypertensives", "quantity": 1120, "month": "January" },
+      { "drug": "Analgesics", "quantity": 870, "month": "January" },
+      { "drug": "Antidepressants", "quantity": 1050, "month": "January" },
+      { "drug": "Statins", "quantity": 980, "month": "January" },
+      { "drug": "Antivirals", "quantity": 1030, "month": "January" },
+      { "drug": "Vaccines", "quantity": 940, "month": "January" },
+      { "drug": "Insulin", "quantity": 1110, "month": "January" },
+      { "drug": "Antifungals", "quantity": 850, "month": "January" },
+      { "drug": "Antacids", "quantity": 920, "month": "January" },
+      { "drug": "Antibiotics", "quantity": 980, "month": "February" },
+      { "drug": "Antihypertensives", "quantity": 1150, "month": "February" },
+      { "drug": "Analgesics", "quantity": 890, "month": "February" },
+      { "drug": "Antidepressants", "quantity": 1080, "month": "February" },
+      { "drug": "Statins", "quantity": 1010, "month": "February" },
+      { "drug": "Antivirals", "quantity": 1060, "month": "February" },
+      { "drug": "Vaccines", "quantity": 970, "month": "February" },
+      { "drug": "Insulin", "quantity": 1140, "month": "February" },
+      { "drug": "Antifungals", "quantity": 870, "month": "February" },
+      { "drug": "Antacids", "quantity": 950, "month": "February" },
+      { "drug": "Antibiotics", "quantity": 1020, "month": "March" },
+      { "drug": "Antihypertensives", "quantity": 1200, "month": "March" },
+      { "drug": "Analgesics", "quantity": 910, "month": "March" },
+      { "drug": "Antidepressants", "quantity": 1120, "month": "March" },
+      { "drug": "Statins", "quantity": 1060, "month": "March" },
+      { "drug": "Antivirals", "quantity": 1110, "month": "March" },
+      { "drug": "Vaccines", "quantity": 1020, "month": "March" },
+      { "drug": "Insulin", "quantity": 1190, "month": "March" },
+      { "drug": "Antifungals", "quantity": 900, "month": "March" },
+      { "drug": "Antacids", "quantity": 980, "month": "March" },
+      { "drug": "Antibiotics", "quantity": 1050, "month": "April" },
+      { "drug": "Antihypertensives", "quantity": 1230, "month": "April" },
+      { "drug": "Analgesics", "quantity": 940, "month": "April" },
+      { "drug": "Antidepressants", "quantity": 1150, "month": "April" },
+      { "drug": "Statins", "quantity": 1090, "month": "April" },
+      { "drug": "Antivirals", "quantity": 1140, "month": "April" },
+      { "drug": "Vaccines", "quantity": 1050, "month": "April" },
+      { "drug": "Insulin", "quantity": 1220, "month": "April" },
+      { "drug": "Antifungals", "quantity": 930, "month": "April" },
+      { "drug": "Antacids", "quantity": 1010, "month": "April" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "drug",
+      "type": "ordinal",
+      "axis": { "title": "Drug Category", "labelAngle": -45 }
+    },
+    "y": {
+      "field": "quantity",
+      "type": "quantitative",
+      "axis": { "title": "Quantity Dispensed" }
+    },
+    "xOffset": { "field": "month" },
+    "color": {
+      "field": "month",
+      "type": "nominal",
+      "legend": { "title": "Month" }
+    }
+  }
+}

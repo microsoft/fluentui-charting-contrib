@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Preferred Vehicle Features",
+  "description": "Converted from Plotly schema 115 - Pie chart",
+  "data": {
+    "values": [
+      { "feature": "Safety Features", "value": 15 },
+      { "feature": "Fuel Efficiency", "value": 25 },
+      { "feature": "Technology", "value": 20 },
+      { "feature": "Comfort", "value": 10 },
+      { "feature": "Design", "value": 30 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "feature",
+      "type": "nominal",
+      "legend": { "title": "Feature" }
+    }
+  }
+}

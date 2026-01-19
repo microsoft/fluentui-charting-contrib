@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Qatar",
+        "y": 61070,
+        "series": "Series"
+      },
+      {
+        "x": "Singapore",
+        "y": 58250,
+        "series": "Series"
+      },
+      {
+        "x": "United States",
+        "y": 54370,
+        "series": "Series"
+      },
+      {
+        "x": "France",
+        "y": 37930,
+        "series": "Series"
+      },
+      {
+        "x": "South Korea",
+        "y": 28380,
+        "series": "Series"
+      },
+      {
+        "x": "China",
+        "y": 8690,
+        "series": "Series"
+      },
+      {
+        "x": "Mexico",
+        "y": 8610,
+        "series": "Series"
+      },
+      {
+        "x": "Iraq",
+        "y": 4770,
+        "series": "Series"
+      },
+      {
+        "x": "India",
+        "y": 1710,
+        "series": "Series"
+      },
+      {
+        "x": "Madagascar",
+        "y": 400,
+        "series": "Series"
+      },
+      {
+        "x": "Malawi",
+        "y": 320,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Country Per Capita 2022",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Country"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Per Capita Income (USD)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Country"
+      },
+      {
+        "field": "y",
+        "title": "Per Capita Income (USD)"
+      }
+    ]
+  }
+}

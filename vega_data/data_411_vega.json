@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 1952,
+        "y": 11367.16112,
+        "series": "Series"
+      },
+      {
+        "x": 1957,
+        "y": 12489.95006,
+        "series": "Series"
+      },
+      {
+        "x": 1962,
+        "y": 13462.48555,
+        "series": "Series"
+      },
+      {
+        "x": 1967,
+        "y": 16076.58803,
+        "series": "Series"
+      },
+      {
+        "x": 1972,
+        "y": 18970.57086,
+        "series": "Series"
+      },
+      {
+        "x": 1977,
+        "y": 22090.88306,
+        "series": "Series"
+      },
+      {
+        "x": 1982,
+        "y": 22898.79214,
+        "series": "Series"
+      },
+      {
+        "x": 1987,
+        "y": 26626.51503,
+        "series": "Series"
+      },
+      {
+        "x": 1992,
+        "y": 26342.88426,
+        "series": "Series"
+      },
+      {
+        "x": 1997,
+        "y": 28954.92589,
+        "series": "Series"
+      },
+      {
+        "x": 2002,
+        "y": 33328.96507,
+        "series": "Series"
+      },
+      {
+        "x": 2007,
+        "y": 36319.23501,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "GDP per Capita of Canada",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "gdpPercap"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "year"
+      },
+      {
+        "field": "y",
+        "title": "gdpPercap"
+      }
+    ]
+  }
+}

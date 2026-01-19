@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Daily Step Counts Over Time",
+  "description": "Converted from Plotly schema 65 - Line chart with markers",
+  "data": {
+    "values": [
+      { "date": "2023-10-01", "steps": 3500 },
+      { "date": "2023-10-02", "steps": 3500 },
+      { "date": "2023-10-03", "steps": 3500 },
+      { "date": "2023-10-04", "steps": 3500 },
+      { "date": "2023-10-05", "steps": 3500 },
+      { "date": "2023-10-06", "steps": 3500 },
+      { "date": "2023-10-07", "steps": 3500 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": { "title": "Date" }
+    },
+    "y": {
+      "field": "steps",
+      "type": "quantitative",
+      "axis": { "title": "Daily Steps" }
+    }
+  }
+}

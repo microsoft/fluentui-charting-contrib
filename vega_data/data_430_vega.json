@@ -1,0 +1,542 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 776,
+        "y": 8766,
+        "series": "High"
+      },
+      {
+        "x": 697,
+        "y": 2459,
+        "series": "High"
+      },
+      {
+        "x": 824,
+        "y": 6938,
+        "series": "High"
+      },
+      {
+        "x": 502,
+        "y": 8887,
+        "series": "High"
+      },
+      {
+        "x": 695,
+        "y": 4172,
+        "series": "High"
+      },
+      {
+        "x": 584,
+        "y": 3505,
+        "series": "High"
+      },
+      {
+        "x": 589,
+        "y": 8845,
+        "series": "High"
+      },
+      {
+        "x": 614,
+        "y": 8735,
+        "series": "High"
+      },
+      {
+        "x": 745,
+        "y": 6812,
+        "series": "High"
+      },
+      {
+        "x": 676,
+        "y": 3277,
+        "series": "High"
+      },
+      {
+        "x": 612,
+        "y": 8820,
+        "series": "High"
+      },
+      {
+        "x": 686,
+        "y": 5596,
+        "series": "High"
+      },
+      {
+        "x": 581,
+        "y": 8698,
+        "series": "High"
+      },
+      {
+        "x": 615,
+        "y": 3460,
+        "series": "High"
+      },
+      {
+        "x": 615,
+        "y": 6352,
+        "series": "High"
+      },
+      {
+        "x": 569,
+        "y": 2813,
+        "series": "High"
+      },
+      {
+        "x": 495,
+        "y": 2017,
+        "series": "High"
+      },
+      {
+        "x": 578,
+        "y": 4076,
+        "series": "High"
+      },
+      {
+        "x": 510,
+        "y": 4863,
+        "series": "High"
+      },
+      {
+        "x": 642,
+        "y": 3673,
+        "series": "High"
+      },
+      {
+        "x": 606,
+        "y": 7253,
+        "series": "High"
+      },
+      {
+        "x": 427,
+        "y": 5175,
+        "series": "High"
+      },
+      {
+        "x": 436,
+        "y": 2999,
+        "series": "High"
+      },
+      {
+        "x": 612,
+        "y": 5637,
+        "series": "High"
+      },
+      {
+        "x": 690,
+        "y": 2250,
+        "series": "High"
+      },
+      {
+        "x": 705,
+        "y": 8086,
+        "series": "High"
+      },
+      {
+        "x": 559,
+        "y": 2414,
+        "series": "High"
+      },
+      {
+        "x": 722,
+        "y": 5534,
+        "series": "High"
+      },
+      {
+        "x": 601,
+        "y": 6543,
+        "series": "High"
+      },
+      {
+        "x": 778,
+        "y": 6647,
+        "series": "High"
+      },
+      {
+        "x": 640,
+        "y": 7673,
+        "series": "High"
+      },
+      {
+        "x": 640,
+        "y": 2304,
+        "series": "Medium"
+      },
+      {
+        "x": 786,
+        "y": 2653,
+        "series": "Medium"
+      },
+      {
+        "x": 641,
+        "y": 7961,
+        "series": "Medium"
+      },
+      {
+        "x": 633,
+        "y": 6604,
+        "series": "Medium"
+      },
+      {
+        "x": 749,
+        "y": 6894,
+        "series": "Medium"
+      },
+      {
+        "x": 631,
+        "y": 6228,
+        "series": "Medium"
+      },
+      {
+        "x": 344,
+        "y": 5752,
+        "series": "Medium"
+      },
+      {
+        "x": 665,
+        "y": 2801,
+        "series": "Medium"
+      },
+      {
+        "x": 454,
+        "y": 4700,
+        "series": "Medium"
+      },
+      {
+        "x": 753,
+        "y": 6344,
+        "series": "Medium"
+      },
+      {
+        "x": 746,
+        "y": 5814,
+        "series": "Medium"
+      },
+      {
+        "x": 401,
+        "y": 5063,
+        "series": "Medium"
+      },
+      {
+        "x": 565,
+        "y": 3728,
+        "series": "Medium"
+      },
+      {
+        "x": 457,
+        "y": 5878,
+        "series": "Medium"
+      },
+      {
+        "x": 429,
+        "y": 5333,
+        "series": "Medium"
+      },
+      {
+        "x": 795,
+        "y": 6270,
+        "series": "Medium"
+      },
+      {
+        "x": 549,
+        "y": 9766,
+        "series": "Medium"
+      },
+      {
+        "x": 548,
+        "y": 3510,
+        "series": "Medium"
+      },
+      {
+        "x": 597,
+        "y": 4803,
+        "series": "Medium"
+      },
+      {
+        "x": 630,
+        "y": 2840,
+        "series": "Medium"
+      },
+      {
+        "x": 532,
+        "y": 4003,
+        "series": "Medium"
+      },
+      {
+        "x": 617,
+        "y": 2549,
+        "series": "Medium"
+      },
+      {
+        "x": 605,
+        "y": 5633,
+        "series": "Medium"
+      },
+      {
+        "x": 476,
+        "y": 3697,
+        "series": "Medium"
+      },
+      {
+        "x": 512,
+        "y": 3393,
+        "series": "Medium"
+      },
+      {
+        "x": 605,
+        "y": 5034,
+        "series": "Medium"
+      },
+      {
+        "x": 748,
+        "y": 6250,
+        "series": "Medium"
+      },
+      {
+        "x": 789,
+        "y": 1795,
+        "series": "Medium"
+      },
+      {
+        "x": 717,
+        "y": 2791,
+        "series": "Medium"
+      },
+      {
+        "x": 582,
+        "y": 5104,
+        "series": "Medium"
+      },
+      {
+        "x": 620,
+        "y": 4921,
+        "series": "Medium"
+      },
+      {
+        "x": 612,
+        "y": 9326,
+        "series": "Medium"
+      },
+      {
+        "x": 644,
+        "y": 4463,
+        "series": "Low"
+      },
+      {
+        "x": 579,
+        "y": 4689,
+        "series": "Low"
+      },
+      {
+        "x": 514,
+        "y": 6844,
+        "series": "Low"
+      },
+      {
+        "x": 525,
+        "y": 7652,
+        "series": "Low"
+      },
+      {
+        "x": 826,
+        "y": 3610,
+        "series": "Low"
+      },
+      {
+        "x": 604,
+        "y": 4129,
+        "series": "Low"
+      },
+      {
+        "x": 637,
+        "y": 6078,
+        "series": "Low"
+      },
+      {
+        "x": 511,
+        "y": 3651,
+        "series": "Low"
+      },
+      {
+        "x": 723,
+        "y": 6153,
+        "series": "Low"
+      },
+      {
+        "x": 720,
+        "y": 4583,
+        "series": "Low"
+      },
+      {
+        "x": 561,
+        "y": 5792,
+        "series": "Low"
+      },
+      {
+        "x": 556,
+        "y": 6888,
+        "series": "Low"
+      },
+      {
+        "x": 474,
+        "y": 3174,
+        "series": "Low"
+      },
+      {
+        "x": 677,
+        "y": 7234,
+        "series": "Low"
+      },
+      {
+        "x": 438,
+        "y": 2368,
+        "series": "Low"
+      },
+      {
+        "x": 638,
+        "y": 8426,
+        "series": "Low"
+      },
+      {
+        "x": 481,
+        "y": 3347,
+        "series": "Low"
+      },
+      {
+        "x": 536,
+        "y": 2705,
+        "series": "Low"
+      },
+      {
+        "x": 563,
+        "y": 4124,
+        "series": "Low"
+      },
+      {
+        "x": 564,
+        "y": 8859,
+        "series": "Low"
+      },
+      {
+        "x": 518,
+        "y": 6898,
+        "series": "Low"
+      },
+      {
+        "x": 559,
+        "y": 6688,
+        "series": "Low"
+      },
+      {
+        "x": 646,
+        "y": 1910,
+        "series": "Low"
+      },
+      {
+        "x": 509,
+        "y": 7376,
+        "series": "Low"
+      },
+      {
+        "x": 672,
+        "y": 6841,
+        "series": "Low"
+      },
+      {
+        "x": 713,
+        "y": 6713,
+        "series": "Low"
+      },
+      {
+        "x": 640,
+        "y": 2931,
+        "series": "Low"
+      },
+      {
+        "x": 531,
+        "y": 6363,
+        "series": "Low"
+      },
+      {
+        "x": 542,
+        "y": 3620,
+        "series": "Low"
+      },
+      {
+        "x": 568,
+        "y": 4088,
+        "series": "Low"
+      },
+      {
+        "x": 483,
+        "y": 4292,
+        "series": "Low"
+      },
+      {
+        "x": 646,
+        "y": 3712,
+        "series": "Low"
+      },
+      {
+        "x": 446,
+        "y": 553,
+        "series": "Low"
+      },
+      {
+        "x": 492,
+        "y": 3520,
+        "series": "Low"
+      },
+      {
+        "x": 697,
+        "y": 2663,
+        "series": "Low"
+      },
+      {
+        "x": 635,
+        "y": 6046,
+        "series": "Low"
+      },
+      {
+        "x": 670,
+        "y": 4656,
+        "series": "Low"
+      }
+    ]
+  },
+  "title": "Credit Score vs Outstanding Balance by Income Level",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "credit_score"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "outstanding_balance"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "credit_score"
+      },
+      {
+        "field": "y",
+        "title": "outstanding_balance"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

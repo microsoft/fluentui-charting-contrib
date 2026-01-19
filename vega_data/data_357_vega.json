@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Exports and Imports of Equatorial Guinea (2012-2017)",
+  "description": "Line chart showing exports and imports over time",
+  "data": {
+    "values": [
+      {"year": 2012, "value": 8377600, "series": "Exports"},
+      {"year": 2013, "value": 6937800, "series": "Exports"},
+      {"year": 2014, "value": 6250800, "series": "Exports"},
+      {"year": 2015, "value": 3370700, "series": "Exports"},
+      {"year": 2016, "value": 2463700, "series": "Exports"},
+      {"year": 2017, "value": 2722800, "series": "Exports"},
+      {"year": 2012, "value": 2947600, "series": "Imports"},
+      {"year": 2013, "value": 2844600, "series": "Imports"},
+      {"year": 2014, "value": 2712900, "series": "Imports"},
+      {"year": 2015, "value": 2084900, "series": "Imports"},
+      {"year": 2016, "value": 1377400, "series": "Imports"},
+      {"year": 2017, "value": 1195900, "series": "Imports"}
+    ]
+  },
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "US$ (Millions)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Legend"
+    }
+  }
+}

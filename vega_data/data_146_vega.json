@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Completion Time Trends Over Months",
+  "description": "Converted from Plotly schema 146 - Multi-series line chart",
+  "data": {
+    "values": [
+      { "month": "January", "time": 300, "unit": "Unit A" },
+      { "month": "February", "time": 280, "unit": "Unit A" },
+      { "month": "March", "time": 310, "unit": "Unit A" },
+      { "month": "April", "time": 290, "unit": "Unit A" },
+      { "month": "May", "time": 320, "unit": "Unit A" },
+      { "month": "June", "time": 315, "unit": "Unit A" },
+      { "month": "January", "time": 295, "unit": "Unit B" },
+      { "month": "February", "time": 300, "unit": "Unit B" },
+      { "month": "March", "time": 285, "unit": "Unit B" },
+      { "month": "April", "time": 298, "unit": "Unit B" },
+      { "month": "May", "time": 310, "unit": "Unit B" },
+      { "month": "June", "time": 300, "unit": "Unit B" },
+      { "month": "January", "time": 290, "unit": "Unit C" },
+      { "month": "February", "time": 275, "unit": "Unit C" },
+      { "month": "March", "time": 295, "unit": "Unit C" },
+      { "month": "April", "time": 310, "unit": "Unit C" },
+      { "month": "May", "time": 305, "unit": "Unit C" },
+      { "month": "June", "time": 280, "unit": "Unit C" }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "axis": { "title": "Month" },
+      "sort": ["January", "February", "March", "April", "May", "June"]
+    },
+    "y": {
+      "field": "time",
+      "type": "quantitative",
+      "axis": { "title": "Completion Time (minutes)" }
+    },
+    "color": {
+      "field": "unit",
+      "type": "nominal",
+      "legend": { "title": "Unit" }
+    }
+  }
+}

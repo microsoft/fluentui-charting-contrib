@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Resolution Time across Production Batches",
+  "description": "Converted from Plotly schema 122 - Multi-series line chart with markers",
+  "data": {
+    "values": [
+      { "batch": "Batch A", "time": 12, "metric": "Average Resolution Time" },
+      { "batch": "Batch B", "time": 18, "metric": "Average Resolution Time" },
+      { "batch": "Batch C", "time": 10, "metric": "Average Resolution Time" },
+      { "batch": "Batch D", "time": 22, "metric": "Average Resolution Time" },
+      { "batch": "Batch E", "time": 15, "metric": "Average Resolution Time" },
+      { "batch": "Batch A", "time": 5, "metric": "Min Resolution Time" },
+      { "batch": "Batch B", "time": 9, "metric": "Min Resolution Time" },
+      { "batch": "Batch C", "time": 4, "metric": "Min Resolution Time" },
+      { "batch": "Batch D", "time": 10, "metric": "Min Resolution Time" },
+      { "batch": "Batch E", "time": 7, "metric": "Min Resolution Time" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "batch",
+      "type": "ordinal",
+      "axis": { "title": "Production Batch" }
+    },
+    "y": {
+      "field": "time",
+      "type": "quantitative",
+      "axis": { "title": "Resolution Time (hours)" }
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

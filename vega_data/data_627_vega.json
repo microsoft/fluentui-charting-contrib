@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 124700,
+        "y": "Primary School",
+        "series": "Series"
+      },
+      {
+        "x": 88800,
+        "y": "Secondary School",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Total Enrollment by Institution Type (2019-2023)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Total Enrollment"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Institution Type"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Total Enrollment"
+      },
+      {
+        "field": "y",
+        "title": "Institution Type"
+      }
+    ]
+  }
+}

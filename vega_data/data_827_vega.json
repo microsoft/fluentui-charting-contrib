@@ -1,0 +1,282 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2019,
+        "y": 77.48357076505616,
+        "series": "Project-based"
+      },
+      {
+        "x": 2020,
+        "y": 74.30867849414408,
+        "series": "Project-based"
+      },
+      {
+        "x": 2021,
+        "y": 78.23844269050346,
+        "series": "Project-based"
+      },
+      {
+        "x": 2022,
+        "y": 82.61514928204012,
+        "series": "Project-based"
+      },
+      {
+        "x": 2019,
+        "y": 81.20981135783018,
+        "series": "Project-based"
+      },
+      {
+        "x": 2020,
+        "y": 70.43359877671101,
+        "series": "Project-based"
+      },
+      {
+        "x": 2021,
+        "y": 71.37541083743484,
+        "series": "Project-based"
+      },
+      {
+        "x": 2022,
+        "y": 77.18856235379513,
+        "series": "Project-based"
+      },
+      {
+        "x": 2019,
+        "y": 82.27808637737408,
+        "series": "Project-based"
+      },
+      {
+        "x": 2020,
+        "y": 85.55461294854933,
+        "series": "Project-based"
+      },
+      {
+        "x": 2021,
+        "y": 79.24503211288848,
+        "series": "Project-based"
+      },
+      {
+        "x": 2022,
+        "y": 86.87849009172837,
+        "series": "Project-based"
+      },
+      {
+        "x": 2019,
+        "y": 91.04431797502377,
+        "series": "Project-based"
+      },
+      {
+        "x": 2020,
+        "y": 80.20164938060113,
+        "series": "Project-based"
+      },
+      {
+        "x": 2021,
+        "y": 83.35906975550785,
+        "series": "Project-based"
+      },
+      {
+        "x": 2022,
+        "y": 90.98430617934562,
+        "series": "Project-based"
+      },
+      {
+        "x": 2019,
+        "y": 76.82923312638331,
+        "series": "Traditional"
+      },
+      {
+        "x": 2020,
+        "y": 76.8293152152541,
+        "series": "Traditional"
+      },
+      {
+        "x": 2021,
+        "y": 85.89606407753696,
+        "series": "Traditional"
+      },
+      {
+        "x": 2022,
+        "y": 81.83717364576455,
+        "series": "Traditional"
+      },
+      {
+        "x": 2019,
+        "y": 77.93584439832789,
+        "series": "Traditional"
+      },
+      {
+        "x": 2020,
+        "y": 84.57123666297637,
+        "series": "Traditional"
+      },
+      {
+        "x": 2021,
+        "y": 78.45987962239394,
+        "series": "Traditional"
+      },
+      {
+        "x": 2022,
+        "y": 75.93848149332354,
+        "series": "Traditional"
+      },
+      {
+        "x": 2019,
+        "y": 84.99680655040598,
+        "series": "Traditional"
+      },
+      {
+        "x": 2020,
+        "y": 86.54153125103362,
+        "series": "Traditional"
+      },
+      {
+        "x": 2021,
+        "y": 84.99146693885301,
+        "series": "Traditional"
+      },
+      {
+        "x": 2022,
+        "y": 97.26139092254469,
+        "series": "Traditional"
+      },
+      {
+        "x": 2019,
+        "y": 96.69233289997705,
+        "series": "Traditional"
+      },
+      {
+        "x": 2020,
+        "y": 93.85684140594985,
+        "series": "Traditional"
+      },
+      {
+        "x": 2021,
+        "y": 92.4217585880588,
+        "series": "Traditional"
+      },
+      {
+        "x": 2022,
+        "y": 91.49448152205356,
+        "series": "Traditional"
+      },
+      {
+        "x": 2019,
+        "y": 78.65262807032524,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2020,
+        "y": 83.71280021792982,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2021,
+        "y": 78.68291153593769,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2022,
+        "y": 78.67135123214871,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2019,
+        "y": 93.32824384460777,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2020,
+        "y": 84.87111849756732,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2021,
+        "y": 86.33764102343962,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2022,
+        "y": 78.87625906893271,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2019,
+        "y": 90.93251387631032,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2020,
+        "y": 85.71144535522049,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2021,
+        "y": 95.11272456051594,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2022,
+        "y": 84.89578175014489,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2019,
+        "y": 88.60739004816287,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2020,
+        "y": 92.40077895802645,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2021,
+        "y": 93.69680614520107,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 2022,
+        "y": 100,
+        "series": "STEM-focused"
+      }
+    ]
+  },
+  "title": "Average Test Scores Over Years by Curriculum and Grade",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Avg_Score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Avg_Score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

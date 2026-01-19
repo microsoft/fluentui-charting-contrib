@@ -1,0 +1,202 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 1972,
+        "y": 13177000,
+        "series": "Australia"
+      },
+      {
+        "x": 1977,
+        "y": 14074100,
+        "series": "Australia"
+      },
+      {
+        "x": 1982,
+        "y": 15184200,
+        "series": "Australia"
+      },
+      {
+        "x": 1987,
+        "y": 16257249,
+        "series": "Australia"
+      },
+      {
+        "x": 1992,
+        "y": 17481977,
+        "series": "Australia"
+      },
+      {
+        "x": 1997,
+        "y": 18565243,
+        "series": "Australia"
+      },
+      {
+        "x": 2002,
+        "y": 19546792,
+        "series": "Australia"
+      },
+      {
+        "x": 2007,
+        "y": 20434176,
+        "series": "Australia"
+      },
+      {
+        "x": 1972,
+        "y": 2929100,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1977,
+        "y": 3164900,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1982,
+        "y": 3210650,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1987,
+        "y": 3317166,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1992,
+        "y": 3437674,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1997,
+        "y": 3676187,
+        "series": "New Zealand"
+      },
+      {
+        "x": 2002,
+        "y": 3908037,
+        "series": "New Zealand"
+      },
+      {
+        "x": 2007,
+        "y": 4115771,
+        "series": "New Zealand"
+      },
+      {
+        "x": 1972,
+        "y": 16788629.48,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 1977,
+        "y": 18334197.51,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 1982,
+        "y": 19477009.28,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 1987,
+        "y": 21888889.03,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 1992,
+        "y": 23424766.83,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 1997,
+        "y": 26997936.57,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 2002,
+        "y": 30687754.73,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 2007,
+        "y": 34435367.44,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 1972,
+        "y": 16046037.28,
+        "series": "New Zealand GDP per Capita"
+      },
+      {
+        "x": 1977,
+        "y": 16233717.7,
+        "series": "New Zealand GDP per Capita"
+      },
+      {
+        "x": 1982,
+        "y": 17632410.4,
+        "series": "New Zealand GDP per Capita"
+      },
+      {
+        "x": 1987,
+        "y": 19007191.29,
+        "series": "New Zealand GDP per Capita"
+      },
+      {
+        "x": 1992,
+        "y": 18363324.94,
+        "series": "New Zealand GDP per Capita"
+      },
+      {
+        "x": 1997,
+        "y": 21050413.77,
+        "series": "New Zealand GDP per Capita"
+      },
+      {
+        "x": 2002,
+        "y": 23189801.35,
+        "series": "New Zealand GDP per Capita"
+      },
+      {
+        "x": 2007,
+        "y": 25185009.11,
+        "series": "New Zealand GDP per Capita"
+      }
+    ]
+  },
+  "title": "Grouped Bar with Lines for Both Countries",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "pop"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "year"
+      },
+      {
+        "field": "y",
+        "title": "pop"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

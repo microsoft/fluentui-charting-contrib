@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "1 Not at all concerned",
+        "y": 284,
+        "series": "Wave 1 (April 3 - 10, 2020)"
+      },
+      {
+        "x": "2",
+        "y": 76,
+        "series": "Wave 1 (April 3 - 10, 2020)"
+      },
+      {
+        "x": "3",
+        "y": 116,
+        "series": "Wave 1 (April 3 - 10, 2020)"
+      },
+      {
+        "x": "4",
+        "y": 68,
+        "series": "Wave 1 (April 3 - 10, 2020)"
+      },
+      {
+        "x": "5 Very concerned",
+        "y": 158,
+        "series": "Wave 1 (April 3 - 10, 2020)"
+      },
+      {
+        "x": "1 Not at all concerned",
+        "y": 906,
+        "series": "Wave 12 (Apr 4 - 24, 2022)"
+      },
+      {
+        "x": "2",
+        "y": 172,
+        "series": "Wave 12 (Apr 4 - 24, 2022)"
+      },
+      {
+        "x": "3",
+        "y": 268,
+        "series": "Wave 12 (Apr 4 - 24, 2022)"
+      },
+      {
+        "x": "4",
+        "y": 188,
+        "series": "Wave 12 (Apr 4 - 24, 2022)"
+      },
+      {
+        "x": "5 Very concerned",
+        "y": 240,
+        "series": "Wave 12 (Apr 4 - 24, 2022)"
+      }
+    ]
+  },
+  "title": "Levels of Concern in the First and Last Survey Wave for the 56 – 65 Years Old Group",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Concern Level"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Count"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Concern Level"
+      },
+      {
+        "field": "y",
+        "title": "Count"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

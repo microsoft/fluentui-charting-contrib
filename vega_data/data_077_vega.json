@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Demographic Counts Side by Side",
+  "description": "Converted from Plotly schema 77 - Vertical bar chart",
+  "data": {
+    "values": [
+      { "demographic": "Women", "count": 110 },
+      { "demographic": "Men", "count": 100 },
+      { "demographic": "Nonbinary", "count": 30 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "demographic",
+      "type": "nominal",
+      "axis": { "title": "Demographic" }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": { "title": "Employee Count" }
+    }
+  }
+}

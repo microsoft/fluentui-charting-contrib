@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Grade 1",
+        "y": 95,
+        "series": "Series"
+      },
+      {
+        "x": "Grade 2",
+        "y": 90,
+        "series": "Series"
+      },
+      {
+        "x": "Grade 3",
+        "y": 85,
+        "series": "Series"
+      },
+      {
+        "x": "Grade 4",
+        "y": 75,
+        "series": "Series"
+      },
+      {
+        "x": "Grade 5",
+        "y": 80,
+        "series": "Series"
+      },
+      {
+        "x": "Grade 6",
+        "y": 100,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Monthly Attendance Rate by Grade Level",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Grade Level"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Attendance Rate (%)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Grade Level"
+      },
+      {
+        "field": "y",
+        "title": "Attendance Rate (%)"
+      }
+    ]
+  }
+}

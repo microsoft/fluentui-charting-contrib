@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": null,
+        "y": "Product E",
+        "series": "Series"
+      },
+      {
+        "x": 400,
+        "y": "Product D",
+        "series": "Series"
+      },
+      {
+        "x": 300,
+        "y": "Product C",
+        "series": "Series"
+      },
+      {
+        "x": 200,
+        "y": null,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Product Popularity in Aisle",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Sales"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Products"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Sales"
+      },
+      {
+        "field": "y",
+        "title": "Products"
+      }
+    ]
+  }
+}

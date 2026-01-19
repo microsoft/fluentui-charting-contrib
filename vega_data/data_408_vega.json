@@ -1,0 +1,284 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": 16.99
+      },
+      {
+        "value": 24.59
+      },
+      {
+        "value": 35.26
+      },
+      {
+        "value": 14.83
+      },
+      {
+        "value": 10.33
+      },
+      {
+        "value": 16.97
+      },
+      {
+        "value": 20.29
+      },
+      {
+        "value": 15.77
+      },
+      {
+        "value": 19.65
+      },
+      {
+        "value": 15.06
+      },
+      {
+        "value": 20.69
+      },
+      {
+        "value": 16.93
+      },
+      {
+        "value": 10.29
+      },
+      {
+        "value": 34.81
+      },
+      {
+        "value": 26.41
+      },
+      {
+        "value": 16.45
+      },
+      {
+        "value": 3.07
+      },
+      {
+        "value": 17.07
+      },
+      {
+        "value": 26.86
+      },
+      {
+        "value": 25.28
+      },
+      {
+        "value": 14.73
+      },
+      {
+        "value": 10.07
+      },
+      {
+        "value": 34.83
+      },
+      {
+        "value": 5.75
+      },
+      {
+        "value": 16.32
+      },
+      {
+        "value": 22.75
+      },
+      {
+        "value": 11.35
+      },
+      {
+        "value": 15.38
+      },
+      {
+        "value": 44.3
+      },
+      {
+        "value": 22.42
+      },
+      {
+        "value": 20.92
+      },
+      {
+        "value": 14.31
+      },
+      {
+        "value": 7.25
+      },
+      {
+        "value": 25.71
+      },
+      {
+        "value": 17.31
+      },
+      {
+        "value": 10.65
+      },
+      {
+        "value": 12.43
+      },
+      {
+        "value": 24.08
+      },
+      {
+        "value": 13.42
+      },
+      {
+        "value": 12.48
+      },
+      {
+        "value": 29.8
+      },
+      {
+        "value": 14.52
+      },
+      {
+        "value": 11.38
+      },
+      {
+        "value": 20.27
+      },
+      {
+        "value": 11.17
+      },
+      {
+        "value": 12.26
+      },
+      {
+        "value": 18.26
+      },
+      {
+        "value": 8.51
+      },
+      {
+        "value": 10.33
+      },
+      {
+        "value": 14.15
+      },
+      {
+        "value": 13.16
+      },
+      {
+        "value": 17.47
+      },
+      {
+        "value": 27.05
+      },
+      {
+        "value": 16.43
+      },
+      {
+        "value": 8.35
+      },
+      {
+        "value": 18.64
+      },
+      {
+        "value": 11.87
+      },
+      {
+        "value": 29.85
+      },
+      {
+        "value": 25
+      },
+      {
+        "value": 13.39
+      },
+      {
+        "value": 16.21
+      },
+      {
+        "value": 17.51
+      },
+      {
+        "value": 10.59
+      },
+      {
+        "value": 10.63
+      },
+      {
+        "value": 9.6
+      },
+      {
+        "value": 20.9
+      },
+      {
+        "value": 18.15
+      },
+      {
+        "value": 19.81
+      },
+      {
+        "value": 43.11
+      },
+      {
+        "value": 13
+      },
+      {
+        "value": 12.74
+      },
+      {
+        "value": 13
+      },
+      {
+        "value": 16.4
+      },
+      {
+        "value": 16.47
+      },
+      {
+        "value": 12.76
+      },
+      {
+        "value": 13.27
+      },
+      {
+        "value": 28.17
+      },
+      {
+        "value": 12.9
+      },
+      {
+        "value": 30.14
+      },
+      {
+        "value": 13.42
+      },
+      {
+        "value": 15.98
+      },
+      {
+        "value": 16.27
+      },
+      {
+        "value": 10.09
+      },
+      {
+        "value": 22.12
+      },
+      {
+        "value": 35.83
+      },
+      {
+        "value": 27.18
+      },
+      {
+        "value": 18.78
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "bin": true,
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Histogram Grouped by Sex"
+}
