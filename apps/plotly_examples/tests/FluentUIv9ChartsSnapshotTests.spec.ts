@@ -178,8 +178,8 @@ async function loadChartPage(
     (mode === 'LTR' && directionText?.includes('RTL'))) {
     await directionButton.click();
   }
-  await page.getByLabel('Shortcuts').click();
-  await page.locator('#list-item-T').click();
+  // await page.getByLabel('Shortcuts').click();
+  // await page.locator('#list-item-T').click();
   const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
   const frame = await chartContainer.contentFrame();
   if (!frame) throw new Error('Could not get content frame');
