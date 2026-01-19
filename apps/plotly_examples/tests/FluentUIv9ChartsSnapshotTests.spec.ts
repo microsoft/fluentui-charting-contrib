@@ -167,7 +167,7 @@ async function loadChartPage(
 ) {
   await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
   // Check if theme button exists, if not trigger the alternative action
-  let themeButton = page.getByRole('button', { name: 'Change Fluent theme' });
+  let themeButton = page.locator('button[title="Change Fluent theme"]');
   let isThemeButtonVisible = await themeButton.isVisible().catch(() => false);
   
   if (!isThemeButtonVisible) {
@@ -175,7 +175,7 @@ async function loadChartPage(
     await page.locator('#list-item-T').click();
     // Wait for theme button to appear after triggering shortcuts
     await page.waitForTimeout(1000);
-    themeButton = page.getByRole('button', { name: 'Change Fluent theme' });
+    themeButton = page.locator('button[title="Change Fluent theme"]');
   }
   
   // Ensure button is visible and clickable before clicking
