@@ -165,7 +165,7 @@ async function loadChartPage(
   theme: string,
   mode: string
 ) {
-  await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
+  await page.goto(`http://localhost:275275/?path=/docs/${chart.path}`);
   // Check if theme button exists, if not trigger the alternative action
   const themeButton = page.getByRole('button', { name: /Theme:/ });
   const isThemeButtonVisible = await themeButton.isVisible().catch(() => false);
