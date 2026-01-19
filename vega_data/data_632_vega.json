@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 82,
+        "y": "Engineering",
+        "series": "CPU"
+      },
+      {
+        "x": 55,
+        "y": "Research",
+        "series": "CPU"
+      },
+      {
+        "x": 32,
+        "y": "Sales",
+        "series": "CPU"
+      },
+      {
+        "x": 40,
+        "y": "Marketing",
+        "series": "CPU"
+      },
+      {
+        "x": 30,
+        "y": "Finance",
+        "series": "CPU"
+      },
+      {
+        "x": 75,
+        "y": "Engineering",
+        "series": "Memory"
+      },
+      {
+        "x": 45,
+        "y": "Research",
+        "series": "Memory"
+      },
+      {
+        "x": 28,
+        "y": "Sales",
+        "series": "Memory"
+      },
+      {
+        "x": 35,
+        "y": "Marketing",
+        "series": "Memory"
+      },
+      {
+        "x": 25,
+        "y": "Finance",
+        "series": "Memory"
+      },
+      {
+        "x": 68,
+        "y": "Engineering",
+        "series": "Storage"
+      },
+      {
+        "x": 50,
+        "y": "Research",
+        "series": "Storage"
+      },
+      {
+        "x": 21,
+        "y": "Sales",
+        "series": "Storage"
+      },
+      {
+        "x": 28,
+        "y": "Marketing",
+        "series": "Storage"
+      },
+      {
+        "x": 15,
+        "y": "Finance",
+        "series": "Storage"
+      }
+    ]
+  },
+  "title": "Cloud Resource Usage by Department and Resource Type (Monthly Aggregated)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Usage Percentage (%)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Department"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Usage Percentage (%)"
+      },
+      {
+        "field": "y",
+        "title": "Department"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

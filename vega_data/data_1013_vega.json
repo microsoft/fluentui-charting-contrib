@@ -1,0 +1,687 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 0.5,
+        "theta": "N",
+        "series": "Series"
+      },
+      {
+        "r": 0.6,
+        "theta": "NNE",
+        "series": "Series"
+      },
+      {
+        "r": 0.5,
+        "theta": "NE",
+        "series": "Series"
+      },
+      {
+        "r": 0.4,
+        "theta": "ENE",
+        "series": "Series"
+      },
+      {
+        "r": 0.4,
+        "theta": "E",
+        "series": "Series"
+      },
+      {
+        "r": 0.3,
+        "theta": "ESE",
+        "series": "Series"
+      },
+      {
+        "r": 0.4,
+        "theta": "SE",
+        "series": "Series"
+      },
+      {
+        "r": 0.4,
+        "theta": "SSE",
+        "series": "Series"
+      },
+      {
+        "r": 0.6,
+        "theta": "S",
+        "series": "Series"
+      },
+      {
+        "r": 0.4,
+        "theta": "SSW",
+        "series": "Series"
+      },
+      {
+        "r": 0.5,
+        "theta": "SW",
+        "series": "Series"
+      },
+      {
+        "r": 0.6,
+        "theta": "WSW",
+        "series": "Series"
+      },
+      {
+        "r": 0.6,
+        "theta": "W",
+        "series": "Series"
+      },
+      {
+        "r": 0.5,
+        "theta": "WNW",
+        "series": "Series"
+      },
+      {
+        "r": 0.4,
+        "theta": "NW",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "NNW",
+        "series": "Series"
+      },
+      {
+        "r": 1.6,
+        "theta": "N",
+        "series": "Series"
+      },
+      {
+        "r": 1.8,
+        "theta": "NNE",
+        "series": "Series"
+      },
+      {
+        "r": 1.5,
+        "theta": "NE",
+        "series": "Series"
+      },
+      {
+        "r": 1.6,
+        "theta": "ENE",
+        "series": "Series"
+      },
+      {
+        "r": 1.6,
+        "theta": "E",
+        "series": "Series"
+      },
+      {
+        "r": 1.2,
+        "theta": "ESE",
+        "series": "Series"
+      },
+      {
+        "r": 1.5,
+        "theta": "SE",
+        "series": "Series"
+      },
+      {
+        "r": 1.7,
+        "theta": "SSE",
+        "series": "Series"
+      },
+      {
+        "r": 2.2,
+        "theta": "S",
+        "series": "Series"
+      },
+      {
+        "r": 2,
+        "theta": "SSW",
+        "series": "Series"
+      },
+      {
+        "r": 2.3,
+        "theta": "SW",
+        "series": "Series"
+      },
+      {
+        "r": 2.4,
+        "theta": "WSW",
+        "series": "Series"
+      },
+      {
+        "r": 2.3,
+        "theta": "W",
+        "series": "Series"
+      },
+      {
+        "r": 2.6,
+        "theta": "WNW",
+        "series": "Series"
+      },
+      {
+        "r": 2.3,
+        "theta": "NW",
+        "series": "Series"
+      },
+      {
+        "r": 0.8,
+        "theta": "NNW",
+        "series": "Series"
+      },
+      {
+        "r": 0.9,
+        "theta": "N",
+        "series": "Series"
+      },
+      {
+        "r": 1.3,
+        "theta": "NNE",
+        "series": "Series"
+      },
+      {
+        "r": 1.6,
+        "theta": "NE",
+        "series": "Series"
+      },
+      {
+        "r": 0.9,
+        "theta": "ENE",
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": "E",
+        "series": "Series"
+      },
+      {
+        "r": 0.6,
+        "theta": "ESE",
+        "series": "Series"
+      },
+      {
+        "r": 0.6,
+        "theta": "SE",
+        "series": "Series"
+      },
+      {
+        "r": 0.9,
+        "theta": "SSE",
+        "series": "Series"
+      },
+      {
+        "r": 1.4,
+        "theta": "S",
+        "series": "Series"
+      },
+      {
+        "r": 1.7,
+        "theta": "SSW",
+        "series": "Series"
+      },
+      {
+        "r": 1.9,
+        "theta": "SW",
+        "series": "Series"
+      },
+      {
+        "r": 2.2,
+        "theta": "WSW",
+        "series": "Series"
+      },
+      {
+        "r": 1.8,
+        "theta": "W",
+        "series": "Series"
+      },
+      {
+        "r": 1.7,
+        "theta": "WNW",
+        "series": "Series"
+      },
+      {
+        "r": 1.8,
+        "theta": "NW",
+        "series": "Series"
+      },
+      {
+        "r": 0.8,
+        "theta": "NNW",
+        "series": "Series"
+      },
+      {
+        "r": 0.9,
+        "theta": "N",
+        "series": "Series"
+      },
+      {
+        "r": 0.8,
+        "theta": "NNE",
+        "series": "Series"
+      },
+      {
+        "r": 1.2,
+        "theta": "NE",
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": "ENE",
+        "series": "Series"
+      },
+      {
+        "r": 0.8,
+        "theta": "E",
+        "series": "Series"
+      },
+      {
+        "r": 0.4,
+        "theta": "ESE",
+        "series": "Series"
+      },
+      {
+        "r": 0.5,
+        "theta": "SE",
+        "series": "Series"
+      },
+      {
+        "r": 0.5,
+        "theta": "SSE",
+        "series": "Series"
+      },
+      {
+        "r": 0.8,
+        "theta": "S",
+        "series": "Series"
+      },
+      {
+        "r": 0.9,
+        "theta": "SSW",
+        "series": "Series"
+      },
+      {
+        "r": 1.3,
+        "theta": "SW",
+        "series": "Series"
+      },
+      {
+        "r": 1.1,
+        "theta": "WSW",
+        "series": "Series"
+      },
+      {
+        "r": 1.2,
+        "theta": "W",
+        "series": "Series"
+      },
+      {
+        "r": 1.2,
+        "theta": "WNW",
+        "series": "Series"
+      },
+      {
+        "r": 1.3,
+        "theta": "NW",
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": "NNW",
+        "series": "Series"
+      },
+      {
+        "r": 0.4,
+        "theta": "N",
+        "series": "Series"
+      },
+      {
+        "r": 0.5,
+        "theta": "NNE",
+        "series": "Series"
+      },
+      {
+        "r": 1.2,
+        "theta": "NE",
+        "series": "Series"
+      },
+      {
+        "r": 0.5,
+        "theta": "ENE",
+        "series": "Series"
+      },
+      {
+        "r": 0.4,
+        "theta": "E",
+        "series": "Series"
+      },
+      {
+        "r": 0.2,
+        "theta": "ESE",
+        "series": "Series"
+      },
+      {
+        "r": 0.4,
+        "theta": "SE",
+        "series": "Series"
+      },
+      {
+        "r": 0.4,
+        "theta": "SSE",
+        "series": "Series"
+      },
+      {
+        "r": 0.7,
+        "theta": "S",
+        "series": "Series"
+      },
+      {
+        "r": 0.6,
+        "theta": "SSW",
+        "series": "Series"
+      },
+      {
+        "r": 0.7,
+        "theta": "SW",
+        "series": "Series"
+      },
+      {
+        "r": 0.8,
+        "theta": "WSW",
+        "series": "Series"
+      },
+      {
+        "r": 0.9,
+        "theta": "W",
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": "WNW",
+        "series": "Series"
+      },
+      {
+        "r": 1,
+        "theta": "NW",
+        "series": "Series"
+      },
+      {
+        "r": 0.7,
+        "theta": "NNW",
+        "series": "Series"
+      },
+      {
+        "r": 0.3,
+        "theta": "N",
+        "series": "Series"
+      },
+      {
+        "r": 0.3,
+        "theta": "NNE",
+        "series": "Series"
+      },
+      {
+        "r": 0.6,
+        "theta": "NE",
+        "series": "Series"
+      },
+      {
+        "r": 0.2,
+        "theta": "ENE",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "E",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "ESE",
+        "series": "Series"
+      },
+      {
+        "r": 0.05,
+        "theta": "SE",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "SSE",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "S",
+        "series": "Series"
+      },
+      {
+        "r": 0.2,
+        "theta": "SSW",
+        "series": "Series"
+      },
+      {
+        "r": 0.3,
+        "theta": "SW",
+        "series": "Series"
+      },
+      {
+        "r": 0.4,
+        "theta": "WSW",
+        "series": "Series"
+      },
+      {
+        "r": 0.9,
+        "theta": "W",
+        "series": "Series"
+      },
+      {
+        "r": 0.9,
+        "theta": "WNW",
+        "series": "Series"
+      },
+      {
+        "r": 0.9,
+        "theta": "NW",
+        "series": "Series"
+      },
+      {
+        "r": 0.3,
+        "theta": "NNW",
+        "series": "Series"
+      },
+      {
+        "r": 0.2,
+        "theta": "N",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "NNE",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "NE",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "ENE",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "E",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "ESE",
+        "series": "Series"
+      },
+      {
+        "r": 0.05,
+        "theta": "SE",
+        "series": "Series"
+      },
+      {
+        "r": 0.05,
+        "theta": "SSE",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "S",
+        "series": "Series"
+      },
+      {
+        "r": 0.05,
+        "theta": "SSW",
+        "series": "Series"
+      },
+      {
+        "r": 0.2,
+        "theta": "SW",
+        "series": "Series"
+      },
+      {
+        "r": 0.2,
+        "theta": "WSW",
+        "series": "Series"
+      },
+      {
+        "r": 0.4,
+        "theta": "W",
+        "series": "Series"
+      },
+      {
+        "r": 0.7,
+        "theta": "WNW",
+        "series": "Series"
+      },
+      {
+        "r": 0.7,
+        "theta": "NW",
+        "series": "Series"
+      },
+      {
+        "r": 0.4,
+        "theta": "NNW",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "N",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "NNE",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "NE",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "ENE",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "E",
+        "series": "Series"
+      },
+      {
+        "r": 0.05,
+        "theta": "ESE",
+        "series": "Series"
+      },
+      {
+        "r": 0.05,
+        "theta": "SE",
+        "series": "Series"
+      },
+      {
+        "r": 0.05,
+        "theta": "SSE",
+        "series": "Series"
+      },
+      {
+        "r": 0.05,
+        "theta": "S",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "SSW",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "SW",
+        "series": "Series"
+      },
+      {
+        "r": 0.1,
+        "theta": "WSW",
+        "series": "Series"
+      },
+      {
+        "r": 0.9,
+        "theta": "W",
+        "series": "Series"
+      },
+      {
+        "r": 2.2,
+        "theta": "WNW",
+        "series": "Series"
+      },
+      {
+        "r": 1.5,
+        "theta": "NW",
+        "series": "Series"
+      },
+      {
+        "r": 0.2,
+        "theta": "NNW",
+        "series": "Series"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

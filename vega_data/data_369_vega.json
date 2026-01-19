@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 5,
+        "y": 16208,
+        "series": "Series"
+      },
+      {
+        "x": 10,
+        "y": 24696,
+        "series": "Series"
+      },
+      {
+        "x": 15,
+        "y": 28554,
+        "series": "Series"
+      },
+      {
+        "x": 20,
+        "y": 30997,
+        "series": "Series"
+      },
+      {
+        "x": 25,
+        "y": 33046,
+        "series": "Series"
+      },
+      {
+        "x": 30,
+        "y": 35369,
+        "series": "Series"
+      },
+      {
+        "x": 40,
+        "y": 39607,
+        "series": "Series"
+      },
+      {
+        "x": 50,
+        "y": 43156,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Sensitivity vs Window",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Window (%)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sensitivity"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Window (%)"
+      },
+      {
+        "field": "y",
+        "title": "Sensitivity"
+      }
+    ]
+  }
+}

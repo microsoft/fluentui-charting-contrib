@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Plant A",
+        "y": 5218,
+        "series": "Series"
+      },
+      {
+        "x": "Plant B",
+        "y": 4929.4,
+        "series": "Series"
+      },
+      {
+        "x": "Plant C",
+        "y": 6265.700000000001,
+        "series": "Series"
+      },
+      {
+        "x": "Plant D",
+        "y": 4781.8,
+        "series": "Series"
+      },
+      {
+        "x": "Plant E",
+        "y": 5469.6,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Total Monthly CO2 Emissions by Plant (with Emission Cap Annotations)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Power Plant"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Total CO₂ Emissions (tons)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Power Plant"
+      },
+      {
+        "field": "y",
+        "title": "Total CO₂ Emissions (tons)"
+      }
+    ]
+  }
+}

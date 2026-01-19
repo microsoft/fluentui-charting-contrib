@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan",
+        "y": 120000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "Feb",
+        "y": 135000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "Mar",
+        "y": 150000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "Apr",
+        "y": 160000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "May",
+        "y": 170000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "Jun",
+        "y": 180000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "Jan",
+        "y": 115000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "Feb",
+        "y": 145000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "Mar",
+        "y": 152000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "Apr",
+        "y": 165000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "May",
+        "y": 168000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "Jun",
+        "y": 190000,
+        "series": "Actual Cost"
+      },
+      {
+        "x": "Jan",
+        "y": 0,
+        "series": "Material Cost Escalation"
+      },
+      {
+        "x": "Feb",
+        "y": 2500,
+        "series": "Material Cost Escalation"
+      },
+      {
+        "x": "Mar",
+        "y": 1800,
+        "series": "Material Cost Escalation"
+      },
+      {
+        "x": "Apr",
+        "y": 4200,
+        "series": "Material Cost Escalation"
+      },
+      {
+        "x": "May",
+        "y": 3700,
+        "series": "Material Cost Escalation"
+      },
+      {
+        "x": "Jun",
+        "y": 5200,
+        "series": "Material Cost Escalation"
+      },
+      {
+        "x": "Jan",
+        "y": 0,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "Feb",
+        "y": -1500,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "Mar",
+        "y": 2000,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "Apr",
+        "y": 1300,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "May",
+        "y": -1000,
+        "series": "Labor Cost Variation"
+      },
+      {
+        "x": "Jun",
+        "y": 2100,
+        "series": "Labor Cost Variation"
+      }
+    ]
+  },
+  "title": "Construction Cost Management Overview (Monthly)",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

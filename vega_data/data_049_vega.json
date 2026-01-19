@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Class Performance in Various Subjects",
+  "description": "Converted from Plotly schema 49 - Horizontal bar chart",
+  "data": {
+    "values": [
+      { "subject": "Mathematics", "score": 87 },
+      { "subject": "Science", "score": 85 },
+      { "subject": "English", "score": 82 },
+      { "subject": "History", "score": 78 },
+      { "subject": "Geography", "score": 75 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "score",
+      "type": "quantitative",
+      "axis": { "title": "Average Scores" }
+    },
+    "y": {
+      "field": "subject",
+      "type": "nominal",
+      "axis": { "title": "Subjects" },
+      "sort": "-x"
+    }
+  }
+}

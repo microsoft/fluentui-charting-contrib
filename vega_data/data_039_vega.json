@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Asset Allocation Breakdown",
+  "description": "Converted from Plotly schema 39 - Donut chart",
+  "data": {
+    "values": [
+      { "asset": "Stocks", "weight": 50 },
+      { "asset": "Bonds", "weight": 30 },
+      { "asset": "Real Estate", "weight": 10 },
+      { "asset": "Cash", "weight": 10 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "weight",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "asset",
+      "type": "nominal",
+      "legend": { "title": "Asset Class" }
+    }
+  }
+}

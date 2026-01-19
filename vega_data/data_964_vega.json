@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 0,
+        "y": 1.9868566120449307,
+        "series": "Series"
+      },
+      {
+        "x": 6.25,
+        "y": 20.136597967729056,
+        "series": "Series"
+      },
+      {
+        "x": 12.5,
+        "y": 37.88487179946159,
+        "series": "Series"
+      },
+      {
+        "x": 18.75,
+        "y": 52.24596557947825,
+        "series": "Series"
+      },
+      {
+        "x": 25,
+        "y": 53.6088410465612,
+        "series": "Series"
+      },
+      {
+        "x": 31.25,
+        "y": 60.28794196812164,
+        "series": "Series"
+      },
+      {
+        "x": 37.5,
+        "y": 72.98351792869624,
+        "series": "Series"
+      },
+      {
+        "x": 43.75,
+        "y": 74.25617959457774,
+        "series": "Series"
+      },
+      {
+        "x": 50,
+        "y": 73.1221024562602,
+        "series": "Series"
+      },
+      {
+        "x": 56.25,
+        "y": 80.43110973956125,
+        "series": "Series"
+      },
+      {
+        "x": 62.5,
+        "y": 79.22741030983123,
+        "series": "Series"
+      },
+      {
+        "x": 68.75,
+        "y": 81.68138478318733,
+        "series": "Series"
+      },
+      {
+        "x": 75,
+        "y": 86.68213480054985,
+        "series": "Series"
+      },
+      {
+        "x": 81.25,
+        "y": 79.98732845957106,
+        "series": "Series"
+      },
+      {
+        "x": 87.5,
+        "y": 82.46203079760744,
+        "series": "Series"
+      },
+      {
+        "x": 93.75,
+        "y": 88.65994079212702,
+        "series": "Series"
+      },
+      {
+        "x": 100,
+        "y": 88.2563678263546,
+        "series": "Series"
+      },
+      {
+        "x": 106.25,
+        "y": 94.83497098175724,
+        "series": "Series"
+      },
+      {
+        "x": 112.5,
+        "y": 91.10474580317832,
+        "series": "Series"
+      },
+      {
+        "x": 118.75,
+        "y": 90.14910452238993,
+        "series": "Series"
+      },
+      {
+        "x": 125,
+        "y": 102.63678862407332,
+        "series": "Series"
+      },
+      {
+        "x": 131.25,
+        "y": 96.77131340270502,
+        "series": "Series"
+      },
+      {
+        "x": 137.5,
+        "y": 98.77757550531886,
+        "series": "Series"
+      },
+      {
+        "x": 143.75,
+        "y": 93.58158279471452,
+        "series": "Series"
+      },
+      {
+        "x": 150,
+        "y": 97.82246910189927,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Enzyme Kinetics: Michaelis-Menten Curve",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Substrate Concentration [S] (μM)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Reaction Velocity v (μmol/min)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Substrate Concentration [S] (μM)"
+      },
+      {
+        "field": "y",
+        "title": "Reaction Velocity v (μmol/min)"
+      }
+    ]
+  }
+}

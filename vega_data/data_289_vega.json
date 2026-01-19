@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Vorausschauende Wartung: Monatliche Fehlerprognose",
+  "description": "Converted from Plotly schema 289 - Multi-series line chart with German labels",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "January", "errors": 10, "machine": "Machine 1" },
+      { "month": "February", "errors": 12, "machine": "Machine 1" },
+      { "month": "March", "errors": 15, "machine": "Machine 1" },
+      { "month": "April", "errors": 18, "machine": "Machine 1" },
+      { "month": "May", "errors": 20, "machine": "Machine 1" },
+      { "month": "June", "errors": 17, "machine": "Machine 1" },
+      { "month": "July", "errors": 20, "machine": "Machine 1" },
+      { "month": "August", "errors": 22, "machine": "Machine 1" },
+      { "month": "September", "errors": 25, "machine": "Machine 1" },
+      { "month": "October", "errors": 23, "machine": "Machine 1" },
+      { "month": "November", "errors": 21, "machine": "Machine 1" },
+      { "month": "December", "errors": 24, "machine": "Machine 1" },
+      { "month": "January", "errors": 15, "machine": "Machine 2" },
+      { "month": "February", "errors": 14, "machine": "Machine 2" },
+      { "month": "March", "errors": 17, "machine": "Machine 2" },
+      { "month": "April", "errors": 16, "machine": "Machine 2" },
+      { "month": "May", "errors": 18, "machine": "Machine 2" },
+      { "month": "June", "errors": 19, "machine": "Machine 2" },
+      { "month": "July", "errors": 21, "machine": "Machine 2" },
+      { "month": "August", "errors": 23, "machine": "Machine 2" },
+      { "month": "September", "errors": 22, "machine": "Machine 2" },
+      { "month": "October", "errors": 24, "machine": "Machine 2" },
+      { "month": "November", "errors": 26, "machine": "Machine 2" },
+      { "month": "December", "errors": 25, "machine": "Machine 2" }
+    ]
+  },
+  "mark": { "type": "line", "point": true },
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      "axis": { "title": "Monat" }
+    },
+    "y": {
+      "field": "errors",
+      "type": "quantitative",
+      "axis": { "title": "Anzahl der Fehler" }
+    },
+    "color": {
+      "field": "machine",
+      "type": "nominal",
+      "scale": { "range": ["red", "blue"] },
+      "legend": { "title": "Maschine" }
+    }
+  }
+}

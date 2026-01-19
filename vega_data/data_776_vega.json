@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "A",
+        "y": 35,
+        "series": "NA"
+      },
+      {
+        "x": "B",
+        "y": 25,
+        "series": "NA"
+      },
+      {
+        "x": "C",
+        "y": 15,
+        "series": "NA"
+      },
+      {
+        "x": "A",
+        "y": 28,
+        "series": "EU"
+      },
+      {
+        "x": "B",
+        "y": 32,
+        "series": "EU"
+      },
+      {
+        "x": "C",
+        "y": 20,
+        "series": "EU"
+      },
+      {
+        "x": "A",
+        "y": 25,
+        "series": "Asia"
+      },
+      {
+        "x": "B",
+        "y": 30,
+        "series": "Asia"
+      },
+      {
+        "x": "C",
+        "y": 28,
+        "series": "Asia"
+      }
+    ]
+  },
+  "title": "Smartphone Market Share by Region (%)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Brand"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Share"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Brand"
+      },
+      {
+        "field": "y",
+        "title": "Share"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

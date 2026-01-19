@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Traffic Trends Over Weeks by Source",
+  "description": "Converted from Plotly schema 11 - Multi-series line chart",
+  "data": {
+    "values": [
+      { "week": "2023-01-01", "visits": 300, "source": "Organic" },
+      { "week": "2023-01-08", "visits": 400, "source": "Organic" },
+      { "week": "2023-01-15", "visits": 500, "source": "Organic" },
+      { "week": "2023-01-22", "visits": 600, "source": "Organic" },
+      { "week": "2023-01-29", "visits": 700, "source": "Organic" },
+      { "week": "2023-02-05", "visits": 800, "source": "Organic" },
+      { "week": "2023-02-12", "visits": 900, "source": "Organic" },
+      { "week": "2023-01-01", "visits": 100, "source": "Direct" },
+      { "week": "2023-01-08", "visits": 150, "source": "Direct" },
+      { "week": "2023-01-15", "visits": 200, "source": "Direct" },
+      { "week": "2023-01-22", "visits": 220, "source": "Direct" },
+      { "week": "2023-01-29", "visits": 250, "source": "Direct" },
+      { "week": "2023-02-05", "visits": 300, "source": "Direct" },
+      { "week": "2023-02-12", "visits": 350, "source": "Direct" },
+      { "week": "2023-01-01", "visits": 50, "source": "Referral" },
+      { "week": "2023-01-08", "visits": 100, "source": "Referral" },
+      { "week": "2023-01-15", "visits": 150, "source": "Referral" },
+      { "week": "2023-01-22", "visits": 180, "source": "Referral" },
+      { "week": "2023-01-29", "visits": 200, "source": "Referral" },
+      { "week": "2023-02-05", "visits": 220, "source": "Referral" },
+      { "week": "2023-02-12", "visits": 250, "source": "Referral" },
+      { "week": "2023-01-01", "visits": 50, "source": "Social" },
+      { "week": "2023-01-08", "visits": 75, "source": "Social" },
+      { "week": "2023-01-15", "visits": 100, "source": "Social" },
+      { "week": "2023-01-22", "visits": 120, "source": "Social" },
+      { "week": "2023-01-29", "visits": 150, "source": "Social" },
+      { "week": "2023-02-05", "visits": 180, "source": "Social" },
+      { "week": "2023-02-12", "visits": 200, "source": "Social" }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "week",
+      "type": "temporal",
+      "axis": { "title": "Week", "format": "%b %d" }
+    },
+    "y": {
+      "field": "visits",
+      "type": "quantitative",
+      "axis": { "title": "Number of Visits" }
+    },
+    "color": {
+      "field": "source",
+      "type": "nominal",
+      "legend": { "title": "Source" }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Mon",
+        "y": 90,
+        "series": "Adults"
+      },
+      {
+        "x": "Tue",
+        "y": 80,
+        "series": "Adults"
+      },
+      {
+        "x": "Wed",
+        "y": 85,
+        "series": "Adults"
+      },
+      {
+        "x": "Thu",
+        "y": 95,
+        "series": "Adults"
+      },
+      {
+        "x": "Fri",
+        "y": 110,
+        "series": "Adults"
+      },
+      {
+        "x": "Sat",
+        "y": 120,
+        "series": "Adults"
+      },
+      {
+        "x": "Mon",
+        "y": 60,
+        "series": "Children"
+      },
+      {
+        "x": "Tue",
+        "y": 50,
+        "series": "Children"
+      },
+      {
+        "x": "Wed",
+        "y": 55,
+        "series": "Children"
+      },
+      {
+        "x": "Thu",
+        "y": 65,
+        "series": "Children"
+      },
+      {
+        "x": "Fri",
+        "y": 70,
+        "series": "Children"
+      },
+      {
+        "x": "Sat",
+        "y": 80,
+        "series": "Children"
+      }
+    ]
+  },
+  "title": "Library Visitors: Adults vs Children",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Day"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Visitors"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Day"
+      },
+      {
+        "field": "y",
+        "title": "Visitors"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

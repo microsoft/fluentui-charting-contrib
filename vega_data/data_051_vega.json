@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Proportion of Students Achieving Different Grades",
+  "description": "Converted from Plotly schema 51 - Pie chart",
+  "data": {
+    "values": [
+      { "grade": "A", "count": 30 },
+      { "grade": "B", "count": 50 },
+      { "grade": "C", "count": 20 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "count",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "grade",
+      "type": "nominal",
+      "legend": { "title": "Grade" }
+    }
+  }
+}

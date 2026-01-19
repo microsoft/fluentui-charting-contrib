@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Fleet_A",
+        "y": 3,
+        "series": "Region_1"
+      },
+      {
+        "x": "Fleet_A",
+        "y": 2,
+        "series": "Region_1"
+      },
+      {
+        "x": "Fleet_B",
+        "y": 5,
+        "series": "Region_2"
+      },
+      {
+        "x": "Fleet_B",
+        "y": 7,
+        "series": "Region_2"
+      },
+      {
+        "x": "Fleet_C",
+        "y": 4,
+        "series": "Region_3"
+      }
+    ]
+  },
+  "title": "Maintenance Completion Rates by Fleet",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "fleet"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "downtime duration"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "fleet"
+      },
+      {
+        "field": "y",
+        "title": "downtime duration"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

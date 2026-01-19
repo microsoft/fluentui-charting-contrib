@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Service Efficiency Over Time",
+  "description": "Converted from Plotly schema 107 - Multi-series line chart with markers",
+  "data": {
+    "values": [
+      { "quarter": "Q1", "score": 78, "service": "Service Speed" },
+      { "quarter": "Q2", "score": 81, "service": "Service Speed" },
+      { "quarter": "Q3", "score": 85, "service": "Service Speed" },
+      { "quarter": "Q4", "score": 87, "service": "Service Speed" },
+      { "quarter": "Q1", "score": 82, "service": "Quality of Service" },
+      { "quarter": "Q2", "score": 84, "service": "Quality of Service" },
+      { "quarter": "Q3", "score": 83, "service": "Quality of Service" },
+      { "quarter": "Q4", "score": 86, "service": "Quality of Service" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "ordinal",
+      "axis": { "title": "Quarter" }
+    },
+    "y": {
+      "field": "score",
+      "type": "quantitative",
+      "axis": { "title": "Efficiency Score" }
+    },
+    "color": {
+      "field": "service",
+      "type": "nominal",
+      "legend": { "title": "Service Type" }
+    }
+  }
+}

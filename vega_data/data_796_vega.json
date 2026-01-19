@@ -1,0 +1,167 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": "Jan"
+      },
+      {
+        "value": "Jan"
+      },
+      {
+        "value": "Jan"
+      },
+      {
+        "value": "Jan"
+      },
+      {
+        "value": "Feb"
+      },
+      {
+        "value": "Feb"
+      },
+      {
+        "value": "Feb"
+      },
+      {
+        "value": "Feb"
+      },
+      {
+        "value": "Mar"
+      },
+      {
+        "value": "Mar"
+      },
+      {
+        "value": "Mar"
+      },
+      {
+        "value": "Mar"
+      },
+      {
+        "value": "Apr"
+      },
+      {
+        "value": "Apr"
+      },
+      {
+        "value": "Apr"
+      },
+      {
+        "value": "Apr"
+      },
+      {
+        "value": "May"
+      },
+      {
+        "value": "May"
+      },
+      {
+        "value": "May"
+      },
+      {
+        "value": "May"
+      },
+      {
+        "value": "Jun"
+      },
+      {
+        "value": "Jun"
+      },
+      {
+        "value": "Jun"
+      },
+      {
+        "value": "Jun"
+      },
+      {
+        "value": "Jul"
+      },
+      {
+        "value": "Jul"
+      },
+      {
+        "value": "Jul"
+      },
+      {
+        "value": "Jul"
+      },
+      {
+        "value": "Aug"
+      },
+      {
+        "value": "Aug"
+      },
+      {
+        "value": "Aug"
+      },
+      {
+        "value": "Aug"
+      },
+      {
+        "value": "Sep"
+      },
+      {
+        "value": "Sep"
+      },
+      {
+        "value": "Sep"
+      },
+      {
+        "value": "Sep"
+      },
+      {
+        "value": "Oct"
+      },
+      {
+        "value": "Oct"
+      },
+      {
+        "value": "Oct"
+      },
+      {
+        "value": "Oct"
+      },
+      {
+        "value": "Nov"
+      },
+      {
+        "value": "Nov"
+      },
+      {
+        "value": "Nov"
+      },
+      {
+        "value": "Nov"
+      },
+      {
+        "value": "Dec"
+      },
+      {
+        "value": "Dec"
+      },
+      {
+        "value": "Dec"
+      },
+      {
+        "value": "Dec"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "bin": true,
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Monthly Occupancy Rate Heatmap by Weather"
+}

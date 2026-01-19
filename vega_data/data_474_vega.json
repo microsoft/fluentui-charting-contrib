@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan",
+        "y": 85,
+        "series": "Series"
+      },
+      {
+        "x": "Feb",
+        "y": 86,
+        "series": "Series"
+      },
+      {
+        "x": "Mar",
+        "y": 82,
+        "series": "Series"
+      },
+      {
+        "x": "Apr",
+        "y": 84,
+        "series": "Series"
+      },
+      {
+        "x": "May",
+        "y": 88,
+        "series": "Series"
+      },
+      {
+        "x": "Jun",
+        "y": 90,
+        "series": "Series"
+      },
+      {
+        "x": "Jul",
+        "y": 89,
+        "series": "Series"
+      },
+      {
+        "x": "Aug",
+        "y": 87,
+        "series": "Series"
+      },
+      {
+        "x": "Sep",
+        "y": 92,
+        "series": "Series"
+      },
+      {
+        "x": "Oct",
+        "y": 93,
+        "series": "Series"
+      },
+      {
+        "x": "Nov",
+        "y": 91,
+        "series": "Series"
+      },
+      {
+        "x": "Dec",
+        "y": 94,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Monthly Route Efficiency",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Efficiency (%)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Efficiency (%)"
+      }
+    ]
+  }
+}

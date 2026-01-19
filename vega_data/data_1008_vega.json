@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Period 1",
+        "y": 81655,
+        "series": "Product A"
+      },
+      {
+        "x": "Period 2",
+        "y": 124156,
+        "series": "Product A"
+      },
+      {
+        "x": "Period 3",
+        "y": 87879,
+        "series": "Product A"
+      },
+      {
+        "x": "Period 4",
+        "y": 109600,
+        "series": "Product A"
+      },
+      {
+        "x": "Period 5",
+        "y": 102672,
+        "series": "Product A"
+      },
+      {
+        "x": "Period 6",
+        "y": 99630,
+        "series": "Product A"
+      },
+      {
+        "x": "Period 1",
+        "y": 114442,
+        "series": "Product B"
+      },
+      {
+        "x": "Period 2",
+        "y": 82708,
+        "series": "Product B"
+      },
+      {
+        "x": "Period 3",
+        "y": 113462,
+        "series": "Product B"
+      },
+      {
+        "x": "Period 4",
+        "y": 86178,
+        "series": "Product B"
+      },
+      {
+        "x": "Period 5",
+        "y": 97818,
+        "series": "Product B"
+      },
+      {
+        "x": "Period 6",
+        "y": 101279,
+        "series": "Product B"
+      },
+      {
+        "x": "Period 1",
+        "y": 88115,
+        "series": "Product C"
+      },
+      {
+        "x": "Period 2",
+        "y": 68202,
+        "series": "Product C"
+      },
+      {
+        "x": "Period 3",
+        "y": 98876,
+        "series": "Product C"
+      },
+      {
+        "x": "Period 4",
+        "y": 84307,
+        "series": "Product C"
+      },
+      {
+        "x": "Period 5",
+        "y": 79950,
+        "series": "Product C"
+      },
+      {
+        "x": "Period 6",
+        "y": 84419,
+        "series": "Product C"
+      }
+    ]
+  },
+  "title": "Monthly Revenue by Product Line (with Targets) - Telecommunications",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Revenue (USD)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Revenue (USD)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

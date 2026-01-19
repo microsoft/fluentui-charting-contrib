@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Department-wise Cloud Resource Cost Analysis",
+  "description": "Converted from Plotly schema 224 - Stacked bar chart",
+  "data": {
+    "values": [
+      { "department": "Department A", "cost": 3000, "provider": "AWS" },
+      { "department": "Department B", "cost": 2500, "provider": "AWS" },
+      { "department": "Department C", "cost": 2900, "provider": "AWS" },
+      { "department": "Department D", "cost": 3200, "provider": "AWS" },
+      { "department": "Department A", "cost": 2000, "provider": "Azure" },
+      { "department": "Department B", "cost": 2300, "provider": "Azure" },
+      { "department": "Department C", "cost": 2100, "provider": "Azure" },
+      { "department": "Department D", "cost": 2000, "provider": "Azure" },
+      { "department": "Department A", "cost": 1800, "provider": "Google Cloud" },
+      { "department": "Department B", "cost": 1900, "provider": "Google Cloud" },
+      { "department": "Department C", "cost": 2000, "provider": "Google Cloud" },
+      { "department": "Department D", "cost": 2100, "provider": "Google Cloud" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "department",
+      "type": "nominal",
+      "axis": { "title": "Department" }
+    },
+    "y": {
+      "field": "cost",
+      "type": "quantitative",
+      "axis": { "title": "Cost ($)" },
+      "stack": true
+    },
+    "color": {
+      "field": "provider",
+      "type": "nominal",
+      "legend": { "title": "Cloud Provider" }
+    }
+  }
+}

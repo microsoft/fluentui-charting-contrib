@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Drug Utilization Patterns and Compliance Rates",
+  "description": "Converted from Plotly schema 202 - Bar+line combo chart",
+  "data": {
+    "values": [
+      { "drug": "Antibiotics", "quantity": 950, "compliance": 85 },
+      { "drug": "Antihypertensives", "quantity": 1120, "compliance": 92 },
+      { "drug": "Analgesics", "quantity": 870, "compliance": 81 },
+      { "drug": "Antidepressants", "quantity": 1050, "compliance": 88 },
+      { "drug": "Statins", "quantity": 980, "compliance": 90 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "drug",
+          "type": "nominal",
+          "axis": { "title": "Drug Category" }
+        },
+        "y": {
+          "field": "quantity",
+          "type": "quantitative",
+          "axis": { "title": "Quantity Dispensed" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "line", "color": "orange", "strokeWidth": 2 },
+      "encoding": {
+        "x": {
+          "field": "drug",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "compliance",
+          "type": "quantitative",
+          "scale": { "domain": [0, 100] }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "color": "orange", "size": 60 },
+      "encoding": {
+        "x": {
+          "field": "drug",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "compliance",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": { "y": "independent" }
+  }
+}

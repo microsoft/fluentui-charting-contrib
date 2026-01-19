@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 798.7666666666667,
+        "y": 84.89266666666667,
+        "series": "Factory A"
+      },
+      {
+        "x": 908.1,
+        "y": 102.65733333333333,
+        "series": "Factory B"
+      },
+      {
+        "x": 1011.5,
+        "y": 125.331,
+        "series": "Factory C"
+      },
+      {
+        "x": 1106.1333333333334,
+        "y": 148.46266666666668,
+        "series": "Factory D"
+      },
+      {
+        "x": 1200.9333333333334,
+        "y": 166.8383333333333,
+        "series": "Factory E"
+      }
+    ]
+  },
+  "title": "Factory Performance: Efficiency vs Production Volume",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Production Volume"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Efficiency (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Production Volume"
+      },
+      {
+        "field": "y",
+        "title": "Efficiency (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

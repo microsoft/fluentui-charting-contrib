@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 7000000,
+        "y": 69,
+        "series": "City Clinic"
+      },
+      {
+        "x": 7700000,
+        "y": 74,
+        "series": "Northview Hospital"
+      },
+      {
+        "x": 8000000,
+        "y": 73,
+        "series": "Valley Health Center"
+      },
+      {
+        "x": 8500000,
+        "y": 81,
+        "series": "Community Medical"
+      },
+      {
+        "x": 9000000,
+        "y": 78,
+        "series": "General Hospital"
+      },
+      {
+        "x": 9500000,
+        "y": 79,
+        "series": "Mercy Hospital"
+      },
+      {
+        "x": 10000000,
+        "y": 85,
+        "series": "Westside Medical"
+      },
+      {
+        "x": 10500000,
+        "y": 90,
+        "series": "Central Health"
+      },
+      {
+        "x": 11000000,
+        "y": 88,
+        "series": "St. Mary's Medical"
+      },
+      {
+        "x": 12000000,
+        "y": 92,
+        "series": "Regional Health"
+      }
+    ]
+  },
+  "title": "Healthcare Spending vs Patient Satisfaction Scores by Facility",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Healthcare Spending (USD)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Patient Satisfaction Score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Healthcare Spending (USD)"
+      },
+      {
+        "field": "y",
+        "title": "Patient Satisfaction Score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

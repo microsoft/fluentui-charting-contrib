@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Average Annual Temperature in Hyderabad (2013–2022)",
+  "data": {
+    "values": [
+      {"year": 2013, "temperature": 27.5},
+      {"year": 2014, "temperature": 27.6},
+      {"year": 2015, "temperature": 27.7},
+      {"year": 2016, "temperature": 27.8},
+      {"year": 2017, "temperature": 27.9},
+      {"year": 2018, "temperature": 28.0},
+      {"year": 2019, "temperature": 28.1},
+      {"year": 2020, "temperature": 28.2},
+      {"year": 2021, "temperature": 28.3},
+      {"year": 2022, "temperature": 28.4}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "temperature",
+      "type": "quantitative",
+      "title": "Average Temperature (°C)"
+    },
+    "color": {
+      "field": "year",
+      "type": "ordinal",
+      "scale": {
+        "range": ["red", "orange", "yellow", "green", "blue", "indigo", "violet", "red", "orange", "yellow"]
+      },
+      "legend": null
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Weekly Issue Resolution and Feature Request Completion Times",
+  "description": "Converted from Plotly schema 226 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "week": "Week 1", "time": 30, "metric": "Issue Resolution Time (hours)" },
+      { "week": "Week 2", "time": 25, "metric": "Issue Resolution Time (hours)" },
+      { "week": "Week 3", "time": 20, "metric": "Issue Resolution Time (hours)" },
+      { "week": "Week 4", "time": 15, "metric": "Issue Resolution Time (hours)" },
+      { "week": "Week 1", "time": 40, "metric": "Feature Request Completion Time (hours)" },
+      { "week": "Week 2", "time": 35, "metric": "Feature Request Completion Time (hours)" },
+      { "week": "Week 3", "time": 30, "metric": "Feature Request Completion Time (hours)" },
+      { "week": "Week 4", "time": 25, "metric": "Feature Request Completion Time (hours)" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "week",
+      "type": "ordinal",
+      "axis": { "title": "Weeks" }
+    },
+    "y": {
+      "field": "time",
+      "type": "quantitative",
+      "axis": { "title": "Time (hours)" }
+    },
+    "xOffset": {
+      "field": "metric"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

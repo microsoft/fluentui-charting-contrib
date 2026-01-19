@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Energy Consumption by Manufacturing Stage",
+  "description": "Converted from Plotly schema 248 - Stacked bar chart",
+  "data": {
+    "values": [
+      { "stage": "Stage 1", "consumption": 240, "machine": "Machine A" },
+      { "stage": "Stage 2", "consumption": 370, "machine": "Machine A" },
+      { "stage": "Stage 3", "consumption": 290, "machine": "Machine A" },
+      { "stage": "Stage 4", "consumption": 410, "machine": "Machine A" },
+      { "stage": "Stage 1", "consumption": 200, "machine": "Machine B" },
+      { "stage": "Stage 2", "consumption": 320, "machine": "Machine B" },
+      { "stage": "Stage 3", "consumption": 270, "machine": "Machine B" },
+      { "stage": "Stage 4", "consumption": 390, "machine": "Machine B" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "stage",
+      "type": "ordinal",
+      "axis": { "title": "Manufacturing Stage" }
+    },
+    "y": {
+      "field": "consumption",
+      "type": "quantitative",
+      "stack": true,
+      "axis": { "title": "Total Energy Consumption (kWh)" }
+    },
+    "color": {
+      "field": "machine",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Machine A", "Machine B"],
+        "range": ["rgba(55, 83, 109, 0.7)", "rgba(26, 118, 255, 0.7)"]
+      },
+      "legend": { "title": "Machine" }
+    }
+  }
+}

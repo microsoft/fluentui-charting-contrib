@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Credit Utilization Line Graph",
+  "description": "Converted from Plotly schema 176 - Line+markers chart",
+  "data": {
+    "values": [
+      { "month": "Jan", "utilization": 65 },
+      { "month": "Feb", "utilization": 66 },
+      { "month": "Mar", "utilization": 70 },
+      { "month": "Apr", "utilization": 68 },
+      { "month": "May", "utilization": 72 },
+      { "month": "Jun", "utilization": 71 },
+      { "month": "Jul", "utilization": 75 },
+      { "month": "Aug", "utilization": 78 },
+      { "month": "Sep", "utilization": 77 },
+      { "month": "Oct", "utilization": 80 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "axis": { "title": "Month" },
+          "sort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"]
+        },
+        "y": {
+          "field": "utilization",
+          "type": "quantitative",
+          "axis": { "title": "Average Utilization (%)" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "sort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"]
+        },
+        "y": {
+          "field": "utilization",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

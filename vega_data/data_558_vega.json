@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Morning",
+        "y": 85,
+        "series": "E1"
+      },
+      {
+        "x": "Afternoon",
+        "y": 78,
+        "series": "E2"
+      },
+      {
+        "x": "Evening",
+        "y": 92,
+        "series": "E3"
+      },
+      {
+        "x": "Night",
+        "y": 75,
+        "series": "E4"
+      },
+      {
+        "x": "Morning",
+        "y": 88,
+        "series": "E5"
+      },
+      {
+        "x": "Afternoon",
+        "y": 81,
+        "series": "E6"
+      },
+      {
+        "x": "Evening",
+        "y": 90,
+        "series": "E7"
+      },
+      {
+        "x": "Night",
+        "y": 76,
+        "series": "E8"
+      }
+    ]
+  },
+  "title": "Task Completion Rate Over Different Shifts",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "shift_timing"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "task_completion_rate"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "shift_timing"
+      },
+      {
+        "field": "y",
+        "title": "task_completion_rate"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

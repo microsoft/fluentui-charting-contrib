@@ -1,0 +1,587 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 19,
+        "y": 20,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 27,
+        "y": 4,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 16,
+        "y": 24,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 24,
+        "y": 10,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 34,
+        "y": 28,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 31,
+        "y": 4,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 18,
+        "y": 12,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 13,
+        "y": 5,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 17,
+        "y": 15,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 11,
+        "y": 19,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 26,
+        "y": 11,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 8,
+        "y": 13,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 10,
+        "y": 17,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 25,
+        "y": 15,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 26,
+        "y": 10,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 29,
+        "y": 21,
+        "series": "AlphaLogix"
+      },
+      {
+        "x": 32,
+        "y": 25,
+        "series": "BravoDef"
+      },
+      {
+        "x": 22,
+        "y": 7,
+        "series": "BravoDef"
+      },
+      {
+        "x": 6,
+        "y": 18,
+        "series": "BravoDef"
+      },
+      {
+        "x": 9,
+        "y": 17,
+        "series": "BravoDef"
+      },
+      {
+        "x": 24,
+        "y": 3,
+        "series": "BravoDef"
+      },
+      {
+        "x": 15,
+        "y": 12,
+        "series": "BravoDef"
+      },
+      {
+        "x": 34,
+        "y": 12,
+        "series": "BravoDef"
+      },
+      {
+        "x": 13,
+        "y": 15,
+        "series": "BravoDef"
+      },
+      {
+        "x": 25,
+        "y": 19,
+        "series": "BravoDef"
+      },
+      {
+        "x": 16,
+        "y": 4,
+        "series": "BravoDef"
+      },
+      {
+        "x": 21,
+        "y": 16,
+        "series": "BravoDef"
+      },
+      {
+        "x": 6,
+        "y": 22,
+        "series": "BravoDef"
+      },
+      {
+        "x": 30,
+        "y": 20,
+        "series": "BravoDef"
+      },
+      {
+        "x": 6,
+        "y": 22,
+        "series": "BravoDef"
+      },
+      {
+        "x": 15,
+        "y": 21,
+        "series": "BravoDef"
+      },
+      {
+        "x": 13,
+        "y": 15,
+        "series": "BravoDef"
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "series": "BravoDef"
+      },
+      {
+        "x": 10,
+        "y": 16,
+        "series": "BravoDef"
+      },
+      {
+        "x": 16,
+        "y": 19,
+        "series": "BravoDef"
+      },
+      {
+        "x": 33,
+        "y": 26,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 14,
+        "y": 16,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 24,
+        "y": 8,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 9,
+        "y": 19,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 9,
+        "y": 3,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 6,
+        "y": 16,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 30,
+        "y": 3,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 26,
+        "y": 21,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 14,
+        "y": 12,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 27,
+        "y": 18,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 21,
+        "y": 18,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 23,
+        "y": 21,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 21,
+        "y": 3,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 18,
+        "y": 23,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 29,
+        "y": 20,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 13,
+        "y": 24,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 26,
+        "y": 22,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 18,
+        "y": 4,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 30,
+        "y": 15,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 10,
+        "y": 5,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 21,
+        "y": 10,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 9,
+        "y": 22,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 30,
+        "y": 5,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 27,
+        "y": 19,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 14,
+        "y": 23,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 25,
+        "y": 11,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 10,
+        "y": 17,
+        "series": "CharlieTech"
+      },
+      {
+        "x": 5,
+        "y": 13,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 7,
+        "y": 19,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 27,
+        "y": 9,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 10,
+        "y": 29,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 7,
+        "y": 14,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 16,
+        "y": 12,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 28,
+        "y": 16,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 28,
+        "y": 14,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 22,
+        "y": 7,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 12,
+        "y": 13,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 15,
+        "y": 19,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 8,
+        "y": 14,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 33,
+        "y": 18,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 17,
+        "y": 13,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 27,
+        "y": 14,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 9,
+        "y": 11,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 22,
+        "y": 18,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 25,
+        "y": 7,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 14,
+        "y": 23,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 29,
+        "y": 21,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 31,
+        "y": 3,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 31,
+        "y": 3,
+        "series": "DeltaSupply"
+      },
+      {
+        "x": 14,
+        "y": 16,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 16,
+        "y": 24,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 10,
+        "y": 29,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 34,
+        "y": 12,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 16,
+        "y": 4,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 24,
+        "y": 10,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 27,
+        "y": 18,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 21,
+        "y": 18,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 22,
+        "y": 7,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 23,
+        "y": 21,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 17,
+        "y": 15,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 18,
+        "y": 4,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 30,
+        "y": 15,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 33,
+        "y": 18,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 17,
+        "y": 13,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 6,
+        "y": 22,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 9,
+        "y": 22,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 16,
+        "y": 19,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 25,
+        "y": 11,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 31,
+        "y": 3,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 10,
+        "y": 17,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 31,
+        "y": 3,
+        "series": "Incident Reported"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "series": "On Time"
+      },
+      {
+        "x": 40,
+        "y": 40,
+        "series": "On Time"
+      }
+    ]
+  },
+  "title": "Delivery Schedule Adherence: Scheduled vs Actual Delivery Days",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Scheduled Delivery Date (Day of Month)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Actual Delivery Date (Day of Month)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Scheduled Delivery Date (Day of Month)"
+      },
+      {
+        "field": "y",
+        "title": "Actual Delivery Date (Day of Month)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

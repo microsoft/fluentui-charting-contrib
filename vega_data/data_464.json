@@ -1,0 +1,15 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Purpose of Visit Distribution",
+  "data": {
+    "values": [
+      {"reason": "Leisure", "count": 60},
+      {"reason": "Business", "count": 40}
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {"field": "count", "type": "quantitative"},
+    "color": {"field": "reason", "type": "nominal"}
+  }
+}

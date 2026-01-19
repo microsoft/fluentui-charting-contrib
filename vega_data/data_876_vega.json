@@ -1,0 +1,198 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 100,
+        "theta": "Uptime %",
+        "series": "M-101"
+      },
+      {
+        "r": 100,
+        "theta": "MTBF (hrs)",
+        "series": "M-101"
+      },
+      {
+        "r": 11.764705882352942,
+        "theta": "Energy Consumption (kWh)",
+        "series": "M-101"
+      },
+      {
+        "r": 100,
+        "theta": "Output Quality %",
+        "series": "M-101"
+      },
+      {
+        "r": 0,
+        "theta": "Maintenance Cost ($)",
+        "series": "M-101"
+      },
+      {
+        "r": 100,
+        "theta": "Uptime %",
+        "series": "M-101"
+      },
+      {
+        "r": 38.79781420765025,
+        "theta": "Uptime %",
+        "series": "M-102"
+      },
+      {
+        "r": 50,
+        "theta": "MTBF (hrs)",
+        "series": "M-102"
+      },
+      {
+        "r": 70.58823529411765,
+        "theta": "Energy Consumption (kWh)",
+        "series": "M-102"
+      },
+      {
+        "r": 34.93975903614466,
+        "theta": "Output Quality %",
+        "series": "M-102"
+      },
+      {
+        "r": 69.23076923076923,
+        "theta": "Maintenance Cost ($)",
+        "series": "M-102"
+      },
+      {
+        "r": 38.79781420765025,
+        "theta": "Uptime %",
+        "series": "M-102"
+      },
+      {
+        "r": 68.30601092896175,
+        "theta": "Uptime %",
+        "series": "M-103"
+      },
+      {
+        "r": 86.11111111111111,
+        "theta": "MTBF (hrs)",
+        "series": "M-103"
+      },
+      {
+        "r": 0,
+        "theta": "Energy Consumption (kWh)",
+        "series": "M-103"
+      },
+      {
+        "r": 67.46987951807225,
+        "theta": "Output Quality %",
+        "series": "M-103"
+      },
+      {
+        "r": 23.076923076923077,
+        "theta": "Maintenance Cost ($)",
+        "series": "M-103"
+      },
+      {
+        "r": 68.30601092896175,
+        "theta": "Uptime %",
+        "series": "M-103"
+      },
+      {
+        "r": 0,
+        "theta": "Uptime %",
+        "series": "M-104"
+      },
+      {
+        "r": 0,
+        "theta": "MTBF (hrs)",
+        "series": "M-104"
+      },
+      {
+        "r": 100,
+        "theta": "Energy Consumption (kWh)",
+        "series": "M-104"
+      },
+      {
+        "r": 0,
+        "theta": "Output Quality %",
+        "series": "M-104"
+      },
+      {
+        "r": 100,
+        "theta": "Maintenance Cost ($)",
+        "series": "M-104"
+      },
+      {
+        "r": 0,
+        "theta": "Uptime %",
+        "series": "M-104"
+      },
+      {
+        "r": 88.52459016393445,
+        "theta": "Uptime %",
+        "series": "M-105"
+      },
+      {
+        "r": 97.22222222222223,
+        "theta": "MTBF (hrs)",
+        "series": "M-105"
+      },
+      {
+        "r": 8.823529411764707,
+        "theta": "Energy Consumption (kWh)",
+        "series": "M-105"
+      },
+      {
+        "r": 89.1566265060242,
+        "theta": "Output Quality %",
+        "series": "M-105"
+      },
+      {
+        "r": 11.538461538461538,
+        "theta": "Maintenance Cost ($)",
+        "series": "M-105"
+      },
+      {
+        "r": 88.52459016393445,
+        "theta": "Uptime %",
+        "series": "M-105"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Machine Performance Multidimensional Analysis"
+}

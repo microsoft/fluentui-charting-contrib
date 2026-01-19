@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "مراقبة أداء المصنع",
+  "description": "Converted from Plotly schema 280 - Line+markers chart with Arabic labels",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "يناير", "performance": 100, "product": "منتج A" },
+      { "month": "فبراير", "performance": 150, "product": "منتج A" },
+      { "month": "مارس", "performance": 200, "product": "منتج A" },
+      { "month": "أبريل", "performance": 180, "product": "منتج A" },
+      { "month": "مايو", "performance": 220, "product": "منتج A" },
+      { "month": "يونيو", "performance": 190, "product": "منتج A" },
+      { "month": "يوليو", "performance": 230, "product": "منتج A" },
+      { "month": "أغسطس", "performance": 250, "product": "منتج A" },
+      { "month": "سبتمبر", "performance": 210, "product": "منتج A" },
+      { "month": "أكتوبر", "performance": 280, "product": "منتج A" },
+      { "month": "يناير", "performance": 90, "product": "منتج B" },
+      { "month": "فبراير", "performance": 120, "product": "منتج B" },
+      { "month": "مارس", "performance": 160, "product": "منتج B" },
+      { "month": "أبريل", "performance": 140, "product": "منتج B" },
+      { "month": "مايو", "performance": 200, "product": "منتج B" },
+      { "month": "يونيو", "performance": 170, "product": "منتج B" },
+      { "month": "يوليو", "performance": 210, "product": "منتج B" },
+      { "month": "أغسطس", "performance": 240, "product": "منتج B" },
+      { "month": "سبتمبر", "performance": 200, "product": "منتج B" },
+      { "month": "أكتوبر", "performance": 260, "product": "منتج B" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "sort": ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر"],
+          "axis": { "title": "الشهر" }
+        },
+        "y": {
+          "field": "performance",
+          "type": "quantitative",
+          "axis": { "title": "الأداء" }
+        },
+        "color": {
+          "field": "product",
+          "type": "nominal",
+          "scale": { "range": ["red", "blue"] },
+          "legend": { "title": "المنتج" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "month", "type": "ordinal" },
+        "y": { "field": "performance", "type": "quantitative" },
+        "color": { "field": "product", "type": "nominal" }
+      }
+    }
+  ]
+}

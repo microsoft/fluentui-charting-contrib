@@ -1,0 +1,542 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "County A",
+        "y": 50,
+        "series": "CO2"
+      },
+      {
+        "x": "County A",
+        "y": 60,
+        "series": "CO2"
+      },
+      {
+        "x": "County A",
+        "y": 70,
+        "series": "CO2"
+      },
+      {
+        "x": "County A",
+        "y": 80,
+        "series": "CO2"
+      },
+      {
+        "x": "County B",
+        "y": 50,
+        "series": "CO2"
+      },
+      {
+        "x": "County B",
+        "y": 60,
+        "series": "CO2"
+      },
+      {
+        "x": "County B",
+        "y": 70,
+        "series": "CO2"
+      },
+      {
+        "x": "County B",
+        "y": 80,
+        "series": "CO2"
+      },
+      {
+        "x": "County C",
+        "y": 50,
+        "series": "CO2"
+      },
+      {
+        "x": "County C",
+        "y": 60,
+        "series": "CO2"
+      },
+      {
+        "x": "County C",
+        "y": 70,
+        "series": "CO2"
+      },
+      {
+        "x": "County C",
+        "y": 80,
+        "series": "CO2"
+      },
+      {
+        "x": "County D",
+        "y": 50,
+        "series": "CO2"
+      },
+      {
+        "x": "County D",
+        "y": 60,
+        "series": "CO2"
+      },
+      {
+        "x": "County D",
+        "y": 70,
+        "series": "CO2"
+      },
+      {
+        "x": "County D",
+        "y": 80,
+        "series": "CO2"
+      },
+      {
+        "x": "County E",
+        "y": 50,
+        "series": "CO2"
+      },
+      {
+        "x": "County E",
+        "y": 60,
+        "series": "CO2"
+      },
+      {
+        "x": "County E",
+        "y": 70,
+        "series": "CO2"
+      },
+      {
+        "x": "County E",
+        "y": 80,
+        "series": "CO2"
+      },
+      {
+        "x": "County A",
+        "y": 25,
+        "series": "SO2"
+      },
+      {
+        "x": "County A",
+        "y": 30,
+        "series": "SO2"
+      },
+      {
+        "x": "County A",
+        "y": 35,
+        "series": "SO2"
+      },
+      {
+        "x": "County A",
+        "y": 40,
+        "series": "SO2"
+      },
+      {
+        "x": "County B",
+        "y": 25,
+        "series": "SO2"
+      },
+      {
+        "x": "County B",
+        "y": 30,
+        "series": "SO2"
+      },
+      {
+        "x": "County B",
+        "y": 35,
+        "series": "SO2"
+      },
+      {
+        "x": "County B",
+        "y": 40,
+        "series": "SO2"
+      },
+      {
+        "x": "County C",
+        "y": 25,
+        "series": "SO2"
+      },
+      {
+        "x": "County C",
+        "y": 30,
+        "series": "SO2"
+      },
+      {
+        "x": "County C",
+        "y": 35,
+        "series": "SO2"
+      },
+      {
+        "x": "County C",
+        "y": 40,
+        "series": "SO2"
+      },
+      {
+        "x": "County D",
+        "y": 25,
+        "series": "SO2"
+      },
+      {
+        "x": "County D",
+        "y": 30,
+        "series": "SO2"
+      },
+      {
+        "x": "County D",
+        "y": 35,
+        "series": "SO2"
+      },
+      {
+        "x": "County D",
+        "y": 40,
+        "series": "SO2"
+      },
+      {
+        "x": "County E",
+        "y": 25,
+        "series": "SO2"
+      },
+      {
+        "x": "County E",
+        "y": 30,
+        "series": "SO2"
+      },
+      {
+        "x": "County E",
+        "y": 35,
+        "series": "SO2"
+      },
+      {
+        "x": "County E",
+        "y": 40,
+        "series": "SO2"
+      },
+      {
+        "x": "County A",
+        "y": 16.666666666666668,
+        "series": "NOx"
+      },
+      {
+        "x": "County A",
+        "y": 20,
+        "series": "NOx"
+      },
+      {
+        "x": "County A",
+        "y": 23.333333333333332,
+        "series": "NOx"
+      },
+      {
+        "x": "County A",
+        "y": 26.666666666666668,
+        "series": "NOx"
+      },
+      {
+        "x": "County B",
+        "y": 16.666666666666668,
+        "series": "NOx"
+      },
+      {
+        "x": "County B",
+        "y": 20,
+        "series": "NOx"
+      },
+      {
+        "x": "County B",
+        "y": 23.333333333333332,
+        "series": "NOx"
+      },
+      {
+        "x": "County B",
+        "y": 26.666666666666668,
+        "series": "NOx"
+      },
+      {
+        "x": "County C",
+        "y": 16.666666666666668,
+        "series": "NOx"
+      },
+      {
+        "x": "County C",
+        "y": 20,
+        "series": "NOx"
+      },
+      {
+        "x": "County C",
+        "y": 23.333333333333332,
+        "series": "NOx"
+      },
+      {
+        "x": "County C",
+        "y": 26.666666666666668,
+        "series": "NOx"
+      },
+      {
+        "x": "County D",
+        "y": 16.666666666666668,
+        "series": "NOx"
+      },
+      {
+        "x": "County D",
+        "y": 20,
+        "series": "NOx"
+      },
+      {
+        "x": "County D",
+        "y": 23.333333333333332,
+        "series": "NOx"
+      },
+      {
+        "x": "County D",
+        "y": 26.666666666666668,
+        "series": "NOx"
+      },
+      {
+        "x": "County E",
+        "y": 16.666666666666668,
+        "series": "NOx"
+      },
+      {
+        "x": "County E",
+        "y": 20,
+        "series": "NOx"
+      },
+      {
+        "x": "County E",
+        "y": 23.333333333333332,
+        "series": "NOx"
+      },
+      {
+        "x": "County E",
+        "y": 26.666666666666668,
+        "series": "NOx"
+      },
+      {
+        "x": "County A",
+        "y": 12.5,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County A",
+        "y": 15,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County A",
+        "y": 17.5,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County A",
+        "y": 20,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County B",
+        "y": 12.5,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County B",
+        "y": 15,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County B",
+        "y": 17.5,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County B",
+        "y": 20,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County C",
+        "y": 12.5,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County C",
+        "y": 15,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County C",
+        "y": 17.5,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County C",
+        "y": 20,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County D",
+        "y": 12.5,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County D",
+        "y": 15,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County D",
+        "y": 17.5,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County D",
+        "y": 20,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County E",
+        "y": 12.5,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County E",
+        "y": 15,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County E",
+        "y": 17.5,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County E",
+        "y": 20,
+        "series": "PM2.5"
+      },
+      {
+        "x": "County A",
+        "y": 10,
+        "series": "O3"
+      },
+      {
+        "x": "County A",
+        "y": 12,
+        "series": "O3"
+      },
+      {
+        "x": "County A",
+        "y": 14,
+        "series": "O3"
+      },
+      {
+        "x": "County A",
+        "y": 16,
+        "series": "O3"
+      },
+      {
+        "x": "County B",
+        "y": 10,
+        "series": "O3"
+      },
+      {
+        "x": "County B",
+        "y": 12,
+        "series": "O3"
+      },
+      {
+        "x": "County B",
+        "y": 14,
+        "series": "O3"
+      },
+      {
+        "x": "County B",
+        "y": 16,
+        "series": "O3"
+      },
+      {
+        "x": "County C",
+        "y": 10,
+        "series": "O3"
+      },
+      {
+        "x": "County C",
+        "y": 12,
+        "series": "O3"
+      },
+      {
+        "x": "County C",
+        "y": 14,
+        "series": "O3"
+      },
+      {
+        "x": "County C",
+        "y": 16,
+        "series": "O3"
+      },
+      {
+        "x": "County D",
+        "y": 10,
+        "series": "O3"
+      },
+      {
+        "x": "County D",
+        "y": 12,
+        "series": "O3"
+      },
+      {
+        "x": "County D",
+        "y": 14,
+        "series": "O3"
+      },
+      {
+        "x": "County D",
+        "y": 16,
+        "series": "O3"
+      },
+      {
+        "x": "County E",
+        "y": 10,
+        "series": "O3"
+      },
+      {
+        "x": "County E",
+        "y": 12,
+        "series": "O3"
+      },
+      {
+        "x": "County E",
+        "y": 14,
+        "series": "O3"
+      },
+      {
+        "x": "County E",
+        "y": 16,
+        "series": "O3"
+      }
+    ]
+  },
+  "title": "Air Quality by County",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "county"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "county"
+      },
+      {
+        "field": "y",
+        "title": "value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

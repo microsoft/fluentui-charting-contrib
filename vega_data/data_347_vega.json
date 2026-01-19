@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Analyze",
+        "y": 2276,
+        "series": "Series"
+      },
+      {
+        "x": "CleanData",
+        "y": 340,
+        "series": "Series"
+      },
+      {
+        "x": "GetData",
+        "y": 383,
+        "series": "Series"
+      },
+      {
+        "x": "Publish",
+        "y": 1335,
+        "series": "Series"
+      },
+      {
+        "x": "Review",
+        "y": 645,
+        "series": "Series"
+      },
+      {
+        "x": "System",
+        "y": 6,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Count of Users per Journey Stage",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "JourneyStage"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "UserCount"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "JourneyStage"
+      },
+      {
+        "field": "y",
+        "title": "UserCount"
+      }
+    ]
+  }
+}

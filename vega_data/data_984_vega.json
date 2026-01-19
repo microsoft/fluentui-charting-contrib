@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Electronics",
+        "y": 12.99,
+        "series": "Series"
+      },
+      {
+        "x": "Apparel",
+        "y": 17.45,
+        "series": "Series"
+      },
+      {
+        "x": "Home & Kitchen",
+        "y": 8.97,
+        "series": "Series"
+      },
+      {
+        "x": "Beauty & Personal Care",
+        "y": 13.05,
+        "series": "Series"
+      },
+      {
+        "x": "Toys & Games",
+        "y": 6.77,
+        "series": "Series"
+      },
+      {
+        "x": "Books",
+        "y": 2.88,
+        "series": "Series"
+      },
+      {
+        "x": "Sports & Outdoors",
+        "y": 10.9,
+        "series": "Series"
+      },
+      {
+        "x": "Automotive",
+        "y": 6.77,
+        "series": "Series"
+      },
+      {
+        "x": "Jewelry",
+        "y": 13.59,
+        "series": "Series"
+      },
+      {
+        "x": "Grocery",
+        "y": 2.16,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Return Rate by Product Category<br><sup>Retail & E-commerce</sup>",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Product Category"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Return Rate (%)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Product Category"
+      },
+      {
+        "field": "y",
+        "title": "Return Rate (%)"
+      }
+    ]
+  }
+}

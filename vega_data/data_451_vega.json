@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-10-01",
+        "y": 150,
+        "series": "Supplier 1"
+      },
+      {
+        "x": "2023-10-08",
+        "y": 85,
+        "series": "Supplier 2"
+      },
+      {
+        "x": "2023-10-15",
+        "y": 200,
+        "series": "Supplier 3"
+      },
+      {
+        "x": "2023-10-22",
+        "y": 120,
+        "series": "Supplier 4"
+      }
+    ]
+  },
+  "title": "Inventory Levels over Delivery Schedule",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Delivery Schedule"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Inventory Levels"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Delivery Schedule"
+      },
+      {
+        "field": "y",
+        "title": "Inventory Levels"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

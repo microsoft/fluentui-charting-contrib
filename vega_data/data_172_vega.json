@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Overall Portfolio Performance",
+  "description": "Converted from Plotly schema 172 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "portfolio": "Portfolio A", "value": 5.3, "metric": "Annualized Return (%)" },
+      { "portfolio": "Portfolio B", "value": 7.8, "metric": "Annualized Return (%)" },
+      { "portfolio": "Portfolio C", "value": 6.1, "metric": "Annualized Return (%)" },
+      { "portfolio": "Portfolio D", "value": 8.9, "metric": "Annualized Return (%)" },
+      { "portfolio": "Portfolio A", "value": 15.2, "metric": "Volatility (%)" },
+      { "portfolio": "Portfolio B", "value": 18.5, "metric": "Volatility (%)" },
+      { "portfolio": "Portfolio C", "value": 14.3, "metric": "Volatility (%)" },
+      { "portfolio": "Portfolio D", "value": 20.1, "metric": "Volatility (%)" },
+      { "portfolio": "Portfolio A", "value": 11.5, "metric": "Total Return (%)" },
+      { "portfolio": "Portfolio B", "value": 16.9, "metric": "Total Return (%)" },
+      { "portfolio": "Portfolio C", "value": 12.4, "metric": "Total Return (%)" },
+      { "portfolio": "Portfolio D", "value": 18.3, "metric": "Total Return (%)" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "portfolio",
+      "type": "nominal",
+      "axis": { "title": "Portfolio ID" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Percentage (%)" }
+    },
+    "xOffset": {
+      "field": "metric"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "category": "Slips & Trips",
+        "value": 14
+      },
+      {
+        "category": "Falls",
+        "value": 9
+      },
+      {
+        "category": "Electrocution",
+        "value": 3
+      },
+      {
+        "category": "Equipment Accident",
+        "value": 7
+      },
+      {
+        "category": "Chemical Exposure",
+        "value": 4
+      },
+      {
+        "category": "Struck By Object",
+        "value": 6
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 50
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Construction Site Safety Incidents (Weekly)"
+}

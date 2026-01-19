@@ -1,0 +1,95 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2000-01",
+        "y": -36.5,
+        "series": "Series"
+      },
+      {
+        "x": "2000-02",
+        "y": -26.6,
+        "series": "Series"
+      },
+      {
+        "x": "2000-03",
+        "y": -43.6,
+        "series": "Series"
+      },
+      {
+        "x": "2000-04",
+        "y": -52.3,
+        "series": "Series"
+      },
+      {
+        "x": "2000-05",
+        "y": -71.5,
+        "series": "Series"
+      },
+      {
+        "x": "2000-06",
+        "y": -81.4,
+        "series": "Series"
+      },
+      {
+        "x": "2000-07",
+        "y": -80.5,
+        "series": "Series"
+      },
+      {
+        "x": "2000-08",
+        "y": -82.2,
+        "series": "Series"
+      },
+      {
+        "x": "2000-09",
+        "y": -76,
+        "series": "Series"
+      },
+      {
+        "x": "2000-10",
+        "y": -67.3,
+        "series": "Series"
+      },
+      {
+        "x": "2000-11",
+        "y": -46.1,
+        "series": "Series"
+      },
+      {
+        "x": "2000-12",
+        "y": -35,
+        "series": "Series"
+      },
+      {
+        "x": "2001-01",
+        "y": -40,
+        "series": "Series"
+      }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      }
+    ]
+  }
+}

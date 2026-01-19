@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 300,
+        "y": "Antibiotic",
+        "series": "Drug A"
+      },
+      {
+        "x": 450,
+        "y": "Analgesic",
+        "series": "Drug B"
+      },
+      {
+        "x": 150,
+        "y": "Antibiotic",
+        "series": "Drug C"
+      },
+      {
+        "x": 200,
+        "y": "Antidepressant",
+        "series": "Drug D"
+      },
+      {
+        "x": 400,
+        "y": "Analgesic",
+        "series": "Drug E"
+      }
+    ]
+  },
+  "title": "Quantity Dispensed by Drug Category",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "quantity_dispensed"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "drug_category"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "quantity_dispensed"
+      },
+      {
+        "field": "y",
+        "title": "drug_category"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

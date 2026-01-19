@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Efficiency Ratios by Supplier",
+  "description": "Converted from Plotly schema 150 - Heatmap",
+  "data": {
+    "values": [
+      { "supplier": "Supplier A", "month": "Jan", "ratio": 1.2 },
+      { "supplier": "Supplier B", "month": "Jan", "ratio": 0.9 },
+      { "supplier": "Supplier C", "month": "Jan", "ratio": 1.5 },
+      { "supplier": "Supplier A", "month": "Feb", "ratio": 1.1 },
+      { "supplier": "Supplier B", "month": "Feb", "ratio": 1.3 },
+      { "supplier": "Supplier C", "month": "Feb", "ratio": 1.7 },
+      { "supplier": "Supplier A", "month": "Mar", "ratio": 1.4 },
+      { "supplier": "Supplier B", "month": "Mar", "ratio": 1.2 },
+      { "supplier": "Supplier C", "month": "Mar", "ratio": 1.3 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "supplier",
+      "type": "nominal",
+      "axis": { "title": "Suppliers" }
+    },
+    "y": {
+      "field": "month",
+      "type": "ordinal",
+      "axis": { "title": "Months" },
+      "sort": ["Jan", "Feb", "Mar"]
+    },
+    "color": {
+      "field": "ratio",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Efficiency Ratio" }
+    }
+  }
+}

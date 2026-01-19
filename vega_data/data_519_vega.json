@@ -1,0 +1,542 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Chat"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Email"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Email"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Email"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Email"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Email"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Email"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Email"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Email"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Email"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Email"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Email"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Email"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Email"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Email"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Email"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Email"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Email"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Email"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Email"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Email"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Email"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Email"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Email"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Email"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Email"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Phone"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech5",
+        "y": 5,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech4",
+        "y": 4,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech3",
+        "y": 3,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech2",
+        "y": 2,
+        "series": "Self-Service"
+      },
+      {
+        "x": "Tech1",
+        "y": 1,
+        "series": "Self-Service"
+      }
+    ]
+  },
+  "title": "Satisfaction Score by Technician",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Technician"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Satisfaction Score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Technician"
+      },
+      {
+        "field": "y",
+        "title": "Satisfaction Score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

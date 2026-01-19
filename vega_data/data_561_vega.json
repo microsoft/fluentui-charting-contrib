@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 120,
+        "y": 101,
+        "series": "Series"
+      },
+      {
+        "x": 130,
+        "y": 102,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Maintenance Requests by Room Numbers",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "resolution_time"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "room_number"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "resolution_time"
+      },
+      {
+        "field": "y",
+        "title": "room_number"
+      }
+    ]
+  }
+}

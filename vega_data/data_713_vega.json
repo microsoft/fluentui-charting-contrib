@@ -1,0 +1,342 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01",
+        "y": "Bonds",
+        "value": 2.586
+      },
+      {
+        "x": "2023-02",
+        "y": "Bonds",
+        "value": 0.42600000000000016
+      },
+      {
+        "x": "2023-03",
+        "y": "Bonds",
+        "value": 2.332
+      },
+      {
+        "x": "2023-04",
+        "y": "Bonds",
+        "value": -0.184
+      },
+      {
+        "x": "2023-05",
+        "y": "Bonds",
+        "value": 0.5160000000000001
+      },
+      {
+        "x": "2023-06",
+        "y": "Bonds",
+        "value": 1.452
+      },
+      {
+        "x": "2023-07",
+        "y": "Bonds",
+        "value": 3.168
+      },
+      {
+        "x": "2023-08",
+        "y": "Bonds",
+        "value": 0.16199999999999998
+      },
+      {
+        "x": "2023-09",
+        "y": "Bonds",
+        "value": -1.4080000000000001
+      },
+      {
+        "x": "2023-10",
+        "y": "Bonds",
+        "value": -0.04000000000000007
+      },
+      {
+        "x": "2023-11",
+        "y": "Bonds",
+        "value": 1.6640000000000001
+      },
+      {
+        "x": "2023-12",
+        "y": "Bonds",
+        "value": 0.866
+      },
+      {
+        "x": "2023-01",
+        "y": "Commodities",
+        "value": 2.484
+      },
+      {
+        "x": "2023-02",
+        "y": "Commodities",
+        "value": 0.5740000000000001
+      },
+      {
+        "x": "2023-03",
+        "y": "Commodities",
+        "value": 0.184
+      },
+      {
+        "x": "2023-04",
+        "y": "Commodities",
+        "value": 1.798
+      },
+      {
+        "x": "2023-05",
+        "y": "Commodities",
+        "value": -1.482
+      },
+      {
+        "x": "2023-06",
+        "y": "Commodities",
+        "value": 0.7060000000000001
+      },
+      {
+        "x": "2023-07",
+        "y": "Commodities",
+        "value": 2.934
+      },
+      {
+        "x": "2023-08",
+        "y": "Commodities",
+        "value": 1.5020000000000002
+      },
+      {
+        "x": "2023-09",
+        "y": "Commodities",
+        "value": 1.496
+      },
+      {
+        "x": "2023-10",
+        "y": "Commodities",
+        "value": 1.3800000000000001
+      },
+      {
+        "x": "2023-11",
+        "y": "Commodities",
+        "value": 2.1399999999999997
+      },
+      {
+        "x": "2023-12",
+        "y": "Commodities",
+        "value": 1.3679999999999999
+      },
+      {
+        "x": "2023-01",
+        "y": "Equities",
+        "value": -0.4120000000000001
+      },
+      {
+        "x": "2023-02",
+        "y": "Equities",
+        "value": 1.718
+      },
+      {
+        "x": "2023-03",
+        "y": "Equities",
+        "value": 1.09
+      },
+      {
+        "x": "2023-04",
+        "y": "Equities",
+        "value": 1.06
+      },
+      {
+        "x": "2023-05",
+        "y": "Equities",
+        "value": 2.884
+      },
+      {
+        "x": "2023-06",
+        "y": "Equities",
+        "value": 2.036
+      },
+      {
+        "x": "2023-07",
+        "y": "Equities",
+        "value": 0.15599999999999997
+      },
+      {
+        "x": "2023-08",
+        "y": "Equities",
+        "value": 2.058
+      },
+      {
+        "x": "2023-09",
+        "y": "Equities",
+        "value": 1.64
+      },
+      {
+        "x": "2023-10",
+        "y": "Equities",
+        "value": 0.908
+      },
+      {
+        "x": "2023-11",
+        "y": "Equities",
+        "value": 0.6000000000000001
+      },
+      {
+        "x": "2023-12",
+        "y": "Equities",
+        "value": 1.264
+      },
+      {
+        "x": "2023-01",
+        "y": "Private Equity",
+        "value": 1.1640000000000001
+      },
+      {
+        "x": "2023-02",
+        "y": "Private Equity",
+        "value": 1.43
+      },
+      {
+        "x": "2023-03",
+        "y": "Private Equity",
+        "value": 1.2760000000000002
+      },
+      {
+        "x": "2023-04",
+        "y": "Private Equity",
+        "value": 1.0859999999999999
+      },
+      {
+        "x": "2023-05",
+        "y": "Private Equity",
+        "value": 2.024
+      },
+      {
+        "x": "2023-06",
+        "y": "Private Equity",
+        "value": 2.55
+      },
+      {
+        "x": "2023-07",
+        "y": "Private Equity",
+        "value": 1.026
+      },
+      {
+        "x": "2023-08",
+        "y": "Private Equity",
+        "value": 2.08
+      },
+      {
+        "x": "2023-09",
+        "y": "Private Equity",
+        "value": 1.45
+      },
+      {
+        "x": "2023-10",
+        "y": "Private Equity",
+        "value": 1.848
+      },
+      {
+        "x": "2023-11",
+        "y": "Private Equity",
+        "value": 1.004
+      },
+      {
+        "x": "2023-12",
+        "y": "Private Equity",
+        "value": 2.124
+      },
+      {
+        "x": "2023-01",
+        "y": "Real Estate",
+        "value": 0.9380000000000001
+      },
+      {
+        "x": "2023-02",
+        "y": "Real Estate",
+        "value": 1.6
+      },
+      {
+        "x": "2023-03",
+        "y": "Real Estate",
+        "value": 2.52
+      },
+      {
+        "x": "2023-04",
+        "y": "Real Estate",
+        "value": 2.322
+      },
+      {
+        "x": "2023-05",
+        "y": "Real Estate",
+        "value": 1.9740000000000002
+      },
+      {
+        "x": "2023-06",
+        "y": "Real Estate",
+        "value": 1.6219999999999999
+      },
+      {
+        "x": "2023-07",
+        "y": "Real Estate",
+        "value": 2.552
+      },
+      {
+        "x": "2023-08",
+        "y": "Real Estate",
+        "value": 1.108
+      },
+      {
+        "x": "2023-09",
+        "y": "Real Estate",
+        "value": 0.302
+      },
+      {
+        "x": "2023-10",
+        "y": "Real Estate",
+        "value": 1.8519999999999999
+      },
+      {
+        "x": "2023-11",
+        "y": "Real Estate",
+        "value": 0.7680000000000001
+      },
+      {
+        "x": "2023-12",
+        "y": "Real Estate",
+        "value": 2.71
+      }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "y",
+      "type": "ordinal"
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "blues"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Average Monthly Return% by Asset Type (2023)"
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Engineering",
+        "y": 81,
+        "series": "CPU"
+      },
+      {
+        "x": "Marketing",
+        "y": 61,
+        "series": "CPU"
+      },
+      {
+        "x": "Finance",
+        "y": 34,
+        "series": "CPU"
+      },
+      {
+        "x": "HR",
+        "y": 23,
+        "series": "CPU"
+      },
+      {
+        "x": "Engineering",
+        "y": 77,
+        "series": "Memory"
+      },
+      {
+        "x": "Marketing",
+        "y": 54,
+        "series": "Memory"
+      },
+      {
+        "x": "Finance",
+        "y": 32,
+        "series": "Memory"
+      },
+      {
+        "x": "HR",
+        "y": 20,
+        "series": "Memory"
+      },
+      {
+        "x": "Engineering",
+        "y": 65,
+        "series": "Storage"
+      },
+      {
+        "x": "Marketing",
+        "y": 47,
+        "series": "Storage"
+      },
+      {
+        "x": "Finance",
+        "y": 29,
+        "series": "Storage"
+      },
+      {
+        "x": "HR",
+        "y": 17,
+        "series": "Storage"
+      }
+    ]
+  },
+  "title": "Cloud Resource Usage by Department (June 2024)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Department"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Usage Percentage (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Department"
+      },
+      {
+        "field": "y",
+        "title": "Usage Percentage (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

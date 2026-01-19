@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Metriche di Produttività Settimanale dei Dipendenti",
+  "description": "Converted from Plotly schema 296 - Grouped bar chart with Italian labels",
+  "width": 400,
+  "height": 300,
+  "data": {
+    "values": [
+      { "day": "Lun", "hours": 7.5, "team": "Team A" },
+      { "day": "Mar", "hours": 8, "team": "Team A" },
+      { "day": "Mer", "hours": 8.2, "team": "Team A" },
+      { "day": "Gio", "hours": 7.8, "team": "Team A" },
+      { "day": "Ven", "hours": 8.5, "team": "Team A" },
+      { "day": "Lun", "hours": 6.8, "team": "Team B" },
+      { "day": "Mar", "hours": 7.2, "team": "Team B" },
+      { "day": "Mer", "hours": 7.5, "team": "Team B" },
+      { "day": "Gio", "hours": 7.3, "team": "Team B" },
+      { "day": "Ven", "hours": 7.8, "team": "Team B" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "day",
+      "type": "ordinal",
+      "sort": ["Lun", "Mar", "Mer", "Gio", "Ven"],
+      "axis": { "title": "Giorno della Settimana" }
+    },
+    "y": {
+      "field": "hours",
+      "type": "quantitative",
+      "axis": { "title": "Ore Produttive" }
+    },
+    "xOffset": {
+      "field": "team",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "team",
+      "type": "nominal",
+      "scale": { "range": ["orange", "purple"] },
+      "legend": { "title": "Team" }
+    }
+  }
+}

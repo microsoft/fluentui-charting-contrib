@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Volume of Cybersecurity Incidents by Type",
+  "description": "Converted from Plotly schema 266 - Grouped bar chart",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "threat": "Phishing", "count": 50, "month": "January" },
+      { "threat": "Malware", "count": 30, "month": "January" },
+      { "threat": "DDoS", "count": 20, "month": "January" },
+      { "threat": "Unauthorized Access", "count": 25, "month": "January" },
+      { "threat": "Ransomware", "count": 15, "month": "January" },
+      { "threat": "Exploit Kits", "count": 10, "month": "January" },
+      { "threat": "Data Breach", "count": 35, "month": "January" },
+      { "threat": "Botnets", "count": 45, "month": "January" },
+      { "threat": "SQL Injection", "count": 40, "month": "January" },
+      { "threat": "Insider Threat", "count": 5, "month": "January" },
+      { "threat": "Phishing", "count": 60, "month": "February" },
+      { "threat": "Malware", "count": 35, "month": "February" },
+      { "threat": "DDoS", "count": 25, "month": "February" },
+      { "threat": "Unauthorized Access", "count": 30, "month": "February" },
+      { "threat": "Ransomware", "count": 20, "month": "February" },
+      { "threat": "Exploit Kits", "count": 15, "month": "February" },
+      { "threat": "Data Breach", "count": 45, "month": "February" },
+      { "threat": "Botnets", "count": 55, "month": "February" },
+      { "threat": "SQL Injection", "count": 50, "month": "February" },
+      { "threat": "Insider Threat", "count": 10, "month": "February" },
+      { "threat": "Phishing", "count": 55, "month": "March" },
+      { "threat": "Malware", "count": 32, "month": "March" },
+      { "threat": "DDoS", "count": 22, "month": "March" },
+      { "threat": "Unauthorized Access", "count": 26, "month": "March" },
+      { "threat": "Ransomware", "count": 18, "month": "March" },
+      { "threat": "Exploit Kits", "count": 12, "month": "March" },
+      { "threat": "Data Breach", "count": 38, "month": "March" },
+      { "threat": "Botnets", "count": 48, "month": "March" },
+      { "threat": "SQL Injection", "count": 43, "month": "March" },
+      { "threat": "Insider Threat", "count": 7, "month": "March" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "threat",
+      "type": "nominal",
+      "axis": { "title": "Type of Threat", "labelAngle": -45 }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": { "title": "Number of Incidents" }
+    },
+    "xOffset": {
+      "field": "month",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "month",
+      "type": "nominal",
+      "legend": { "title": "Month" }
+    },
+    "tooltip": [
+      { "field": "threat", "type": "nominal", "title": "Threat Type" },
+      { "field": "month", "type": "nominal", "title": "Month" },
+      { "field": "count", "type": "quantitative", "title": "Incidents" }
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 15,
+        "y": "January",
+        "series": "Interactions"
+      },
+      {
+        "x": 20,
+        "y": "February",
+        "series": "Interactions"
+      },
+      {
+        "x": 16,
+        "y": "March",
+        "series": "Interactions"
+      },
+      {
+        "x": 23,
+        "y": "April",
+        "series": "Interactions"
+      },
+      {
+        "x": 18,
+        "y": "May",
+        "series": "Interactions"
+      },
+      {
+        "x": 10,
+        "y": "June",
+        "series": "Interactions"
+      },
+      {
+        "x": 14,
+        "y": "July",
+        "series": "Interactions"
+      },
+      {
+        "x": 22,
+        "y": "August",
+        "series": "Interactions"
+      },
+      {
+        "x": 24,
+        "y": "September",
+        "series": "Interactions"
+      },
+      {
+        "x": 20,
+        "y": "October",
+        "series": "Interactions"
+      },
+      {
+        "x": 3,
+        "y": "January",
+        "series": "Queries_Complaints"
+      },
+      {
+        "x": 5,
+        "y": "February",
+        "series": "Queries_Complaints"
+      },
+      {
+        "x": 2,
+        "y": "March",
+        "series": "Queries_Complaints"
+      },
+      {
+        "x": 6,
+        "y": "April",
+        "series": "Queries_Complaints"
+      },
+      {
+        "x": 4,
+        "y": "May",
+        "series": "Queries_Complaints"
+      },
+      {
+        "x": 7,
+        "y": "June",
+        "series": "Queries_Complaints"
+      },
+      {
+        "x": 3,
+        "y": "July",
+        "series": "Queries_Complaints"
+      },
+      {
+        "x": 6,
+        "y": "August",
+        "series": "Queries_Complaints"
+      },
+      {
+        "x": 5,
+        "y": "September",
+        "series": "Queries_Complaints"
+      },
+      {
+        "x": 4,
+        "y": "October",
+        "series": "Queries_Complaints"
+      },
+      {
+        "x": 2.5,
+        "y": "January",
+        "series": "Resolution_Times"
+      },
+      {
+        "x": 3,
+        "y": "February",
+        "series": "Resolution_Times"
+      },
+      {
+        "x": 2.8,
+        "y": "March",
+        "series": "Resolution_Times"
+      },
+      {
+        "x": 3.2,
+        "y": "April",
+        "series": "Resolution_Times"
+      },
+      {
+        "x": 2.7,
+        "y": "May",
+        "series": "Resolution_Times"
+      },
+      {
+        "x": 2.4,
+        "y": "June",
+        "series": "Resolution_Times"
+      },
+      {
+        "x": 2.9,
+        "y": "July",
+        "series": "Resolution_Times"
+      },
+      {
+        "x": 3.1,
+        "y": "August",
+        "series": "Resolution_Times"
+      },
+      {
+        "x": 2.6,
+        "y": "September",
+        "series": "Resolution_Times"
+      },
+      {
+        "x": 2.8,
+        "y": "October",
+        "series": "Resolution_Times"
+      }
+    ]
+  },
+  "title": "Monthly Interactions, Queries/Complaints, and Resolution Times",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Count"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Month"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Count"
+      },
+      {
+        "field": "y",
+        "title": "Month"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

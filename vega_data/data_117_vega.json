@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Regional Preferences and Income Levels",
+  "description": "Converted from Plotly schema 117 - Scatter plot",
+  "data": {
+    "values": [
+      { "region": "North", "income": 30000 },
+      { "region": "South", "income": 40000 },
+      { "region": "East", "income": 50000 },
+      { "region": "West", "income": 60000 }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "region",
+      "type": "nominal",
+      "axis": { "title": "Region" }
+    },
+    "y": {
+      "field": "income",
+      "type": "quantitative",
+      "axis": { "title": "Average Income Level" }
+    }
+  }
+}

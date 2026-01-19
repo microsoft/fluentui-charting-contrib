@@ -1,0 +1,2542 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 81.8,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 90.9,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 72.7,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 90.9,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 90.9,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 63.6,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 72.7,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 72.7,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 72.7,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 90.9,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 81.8,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 72.7,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 90.9,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 63.6,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 81.8,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 63.6,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 81.8,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 90.9,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 54.5,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 81.8,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 63.6,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 90.9,
+        "series": "Destroyer, Atlantic"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 50,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 83.3,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 83.3,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 83.3,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 50,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 50,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 66.7,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 50,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 83.3,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 83.3,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 50,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 83.3,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 83.3,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 50,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 50,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 83.3,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 83.3,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 83.3,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 66.7,
+        "series": "Destroyer, Pacific"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 77.8,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 55.6,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 55.6,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 77.8,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 77.8,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 77.8,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 88.9,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 55.6,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 88.9,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 77.8,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 55.6,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 88.9,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 88.9,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 77.8,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 55.6,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 77.8,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 55.6,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 66.7,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 66.7,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 66.7,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 77.8,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 55.6,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 88.9,
+        "series": "Destroyer, Indian"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 85.7,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 85.7,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 71.4,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 71.4,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 85.7,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 85.7,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 71.4,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 85.7,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 57.1,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 71.4,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 85.7,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 71.4,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 57.1,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 71.4,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 71.4,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 71.4,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 71.4,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 57.1,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 100,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 71.4,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 71.4,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 85.7,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 71.4,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 85.7,
+        "series": "Destroyer, Mediterranean"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 75,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 75,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 62.5,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 75,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 75,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 75,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 62.5,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 62.5,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 62.5,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 62.5,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 62.5,
+        "series": "Aircraft Carrier, Atlantic"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 62.5,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 62.5,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 75,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 62.5,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 75,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 75,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 75,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Pacific"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 60,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 80,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 60,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 60,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 60,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 80,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 80,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 80,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 80,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 80,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 80,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 60,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 80,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 80,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 60,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 80,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 60,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Indian"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 75,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 62.5,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 62.5,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 75,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 75,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 87.5,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 62.5,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 62.5,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 62.5,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 100,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 50,
+        "series": "Aircraft Carrier, Mediterranean"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 87.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 87.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 87.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 100,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 75,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 50,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 87.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 62.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 87.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 62.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 62.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 87.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 100,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 62.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 62.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 87.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 62.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 62.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 87.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 87.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 50,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 100,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 100,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 62.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 100,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 62.5,
+        "series": "Submarine, Atlantic"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 100,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 80,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 100,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 100,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 80,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 60,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 60,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 80,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 60,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 80,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 80,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 100,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 80,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 100,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 60,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 60,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 60,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 60,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 100,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 60,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 80,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 80,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 80,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 100,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 60,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 60,
+        "series": "Submarine, Pacific"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 100,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 100,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 80,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 80,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 80,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 100,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 80,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 100,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 100,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 100,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 100,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 60,
+        "series": "Submarine, Indian"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 100,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 50,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 62.5,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 62.5,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 50,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 62.5,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 50,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 100,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 100,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 50,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 100,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 100,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 100,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 75,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 87.5,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 62.5,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 75,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 100,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 50,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 100,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 87.5,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 100,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 50,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 87.5,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 100,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 87.5,
+        "series": "Submarine, Mediterranean"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 60,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 60,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 60,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 100,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 60,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 60,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 60,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 100,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 60,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 60,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 100,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 100,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 100,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 60,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 100,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 100,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 60,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 100,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 60,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 80,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 100,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 80,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 60,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 100,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 60,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 80,
+        "series": "Frigate, Atlantic"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 100,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 80,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 80,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 60,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 80,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 80,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 100,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 100,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 100,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 100,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 60,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 100,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 80,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 60,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 80,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 80,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 80,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 100,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 100,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 60,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 60,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 100,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 80,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 60,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 100,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 100,
+        "series": "Frigate, Pacific"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 100,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 71.4,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 57.1,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 71.4,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 85.7,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 71.4,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 71.4,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 85.7,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 100,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 71.4,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 100,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 71.4,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 100,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 85.7,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 71.4,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 85.7,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 71.4,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 85.7,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 85.7,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 71.4,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 71.4,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 71.4,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 57.1,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 100,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 57.1,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 57.1,
+        "series": "Frigate, Indian"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 66.7,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 100,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 50,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 83.3,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 100,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 50,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 66.7,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 66.7,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 50,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 83.3,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 66.7,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 66.7,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 66.7,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 50,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 100,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 66.7,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 100,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 83.3,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 66.7,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 66.7,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 83.3,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 66.7,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 100,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 50,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 100,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 50,
+        "series": "Frigate, Mediterranean"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 80,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 60,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 80,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 60,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 60,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 80,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 60,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 60,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 80,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 80,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 60,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 80,
+        "series": "Cruiser, Atlantic"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 75,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 62.5,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 75,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 75,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 87.5,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 87.5,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 50,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 50,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 62.5,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 50,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 75,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 87.5,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 50,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 50,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 62.5,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 62.5,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 75,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 87.5,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 62.5,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 50,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 87.5,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 87.5,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 50,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 62.5,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 50,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 87.5,
+        "series": "Cruiser, Pacific"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 71.4,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 85.7,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 57.1,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 71.4,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 85.7,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 71.4,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 85.7,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 71.4,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 57.1,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 57.1,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 71.4,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 85.7,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 57.1,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 57.1,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 57.1,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 71.4,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 71.4,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 100,
+        "series": "Cruiser, Indian"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 88.9,
+        "series": "Cruiser, Mediterranean"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 66.7,
+        "series": "Cruiser, Mediterranean"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 55.6,
+        "series": "Cruiser, Mediterranean"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 88.9,
+        "series": "Cruiser, Mediterranean"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 77.8,
+        "series": "Cruiser, Mediterranean"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 88.9,
+        "series": "Cruiser, Mediterranean"
+      }
+    ]
+  },
+  "title": "Weekly Maintenance Completion Rate by Ship Type and Region",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Maintenance Completion Rate (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Week"
+      },
+      {
+        "field": "y",
+        "title": "Maintenance Completion Rate (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

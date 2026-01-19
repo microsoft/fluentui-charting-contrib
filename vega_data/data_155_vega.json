@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Resource Allocation by Type",
+  "description": "Converted from Plotly schema 155 - Pie chart",
+  "data": {
+    "values": [
+      { "type": "Human Resources", "value": 400 },
+      { "type": "Equipment", "value": 300 },
+      { "type": "Logistics", "value": 300 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Resource Type" }
+    }
+  }
+}

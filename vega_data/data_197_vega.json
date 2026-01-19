@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Comparison of Healthcare Spending and Patient Satisfaction",
+  "description": "Converted from Plotly schema 197 - Grouped bar chart (dual y-axis simplified)",
+  "data": {
+    "values": [
+      { "hospital": "Hospital A", "value": 85, "metric": "Satisfaction Score" },
+      { "hospital": "Hospital B", "value": 75, "metric": "Satisfaction Score" },
+      { "hospital": "Hospital C", "value": 80, "metric": "Satisfaction Score" },
+      { "hospital": "Hospital D", "value": 70, "metric": "Satisfaction Score" },
+      { "hospital": "Hospital E", "value": 90, "metric": "Satisfaction Score" },
+      { "hospital": "Hospital F", "value": 78, "metric": "Satisfaction Score" },
+      { "hospital": "Hospital G", "value": 85, "metric": "Satisfaction Score" },
+      { "hospital": "Hospital H", "value": 72, "metric": "Satisfaction Score" },
+      { "hospital": "Hospital I", "value": 95, "metric": "Satisfaction Score" },
+      { "hospital": "Hospital J", "value": 82, "metric": "Satisfaction Score" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "hospital",
+      "type": "nominal",
+      "axis": { "title": "Hospital" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Patient Satisfaction Score" }
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

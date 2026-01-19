@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2022-01-01",
+        "y": 0.02,
+        "series": "HR"
+      },
+      {
+        "x": "2022-01-15",
+        "y": 0.01,
+        "series": "Finance"
+      },
+      {
+        "x": "2022-02-01",
+        "y": 0.05,
+        "series": "IT"
+      },
+      {
+        "x": "2022-02-10",
+        "y": 0.03,
+        "series": "Operations"
+      },
+      {
+        "x": "2022-03-01",
+        "y": 0.04,
+        "series": "Customer Support"
+      },
+      {
+        "x": "2022-03-05",
+        "y": 0.02,
+        "series": "Legal"
+      }
+    ]
+  },
+  "title": "Defect Rate Trends Over Time",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Start"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Rate"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Start"
+      },
+      {
+        "field": "y",
+        "title": "Rate"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

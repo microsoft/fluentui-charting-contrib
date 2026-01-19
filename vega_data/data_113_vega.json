@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Top-Performing Models in 2023",
+  "description": "Converted from Plotly schema 113 - Pie chart",
+  "data": {
+    "values": [
+      { "model": "Model A", "sales": 4000 },
+      { "model": "Model B", "sales": 2500 },
+      { "model": "Model C", "sales": 3500 },
+      { "model": "Model D", "sales": 3000 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "sales",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "model",
+      "type": "nominal",
+      "legend": { "title": "Model" }
+    }
+  }
+}

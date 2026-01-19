@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Weekly Traffic Source Comparison",
+  "description": "Converted from Plotly schema 13 - Horizontal bar chart",
+  "data": {
+    "values": [
+      { "source": "Organic", "visits": 900 },
+      { "source": "Direct", "visits": 350 },
+      { "source": "Referral", "visits": 250 },
+      { "source": "Social", "visits": 200 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "visits",
+      "type": "quantitative",
+      "axis": { "title": "Number of Visits" }
+    },
+    "y": {
+      "field": "source",
+      "type": "nominal",
+      "axis": { "title": "Traffic Source" },
+      "sort": "-x"
+    }
+  }
+}

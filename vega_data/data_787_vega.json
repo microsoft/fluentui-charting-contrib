@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Shower",
+        "y": 60,
+        "series": "Actual"
+      },
+      {
+        "x": "Washer",
+        "y": 50,
+        "series": "Actual"
+      },
+      {
+        "x": "Dishwasher",
+        "y": 40,
+        "series": "Actual"
+      },
+      {
+        "x": "Toilet",
+        "y": 70,
+        "series": "Actual"
+      },
+      {
+        "x": "Faucet",
+        "y": 30,
+        "series": "Actual"
+      },
+      {
+        "x": "Shower",
+        "y": 50,
+        "series": "Benchmark"
+      },
+      {
+        "x": "Washer",
+        "y": 45,
+        "series": "Benchmark"
+      },
+      {
+        "x": "Dishwasher",
+        "y": 35,
+        "series": "Benchmark"
+      },
+      {
+        "x": "Toilet",
+        "y": 60,
+        "series": "Benchmark"
+      },
+      {
+        "x": "Faucet",
+        "y": 25,
+        "series": "Benchmark"
+      }
+    ]
+  },
+  "title": "Water Usage: Actual vs Benchmark (L/Day)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Appliance"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Liters"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Appliance"
+      },
+      {
+        "field": "y",
+        "title": "Liters"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

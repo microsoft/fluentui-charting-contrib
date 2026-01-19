@@ -1,0 +1,1261 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Sun",
+        "y": 16.99,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 24.59,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 35.26,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 14.83,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 10.33,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 16.97,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 20.29,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 15.77,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 19.65,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 15.06,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 20.69,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 16.93,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 10.29,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 34.81,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 26.41,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 16.45,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 3.07,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 17.07,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 26.86,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 25.28,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 14.73,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 10.07,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 34.83,
+        "series": "Female"
+      },
+      {
+        "x": "Fri",
+        "y": 5.75,
+        "series": "Female"
+      },
+      {
+        "x": "Fri",
+        "y": 16.32,
+        "series": "Female"
+      },
+      {
+        "x": "Fri",
+        "y": 22.75,
+        "series": "Female"
+      },
+      {
+        "x": "Fri",
+        "y": 11.35,
+        "series": "Female"
+      },
+      {
+        "x": "Fri",
+        "y": 15.38,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 44.3,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 22.42,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 20.92,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 14.31,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 7.25,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 25.71,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 17.31,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 10.65,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 12.43,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 24.08,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 13.42,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 12.48,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 29.8,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 14.52,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 11.38,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 20.27,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 11.17,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 12.26,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 18.26,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 8.51,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 10.33,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 14.15,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 13.16,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 17.47,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 27.05,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 16.43,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 8.35,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 18.64,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 11.87,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 29.85,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 25,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 13.39,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 16.21,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 17.51,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 10.59,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 10.63,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 9.6,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 20.9,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 18.15,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 19.81,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 43.11,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 13,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 12.74,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 13,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 16.4,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 16.47,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 12.76,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 13.27,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 28.17,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 12.9,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 30.14,
+        "series": "Female"
+      },
+      {
+        "x": "Fri",
+        "y": 13.42,
+        "series": "Female"
+      },
+      {
+        "x": "Fri",
+        "y": 15.98,
+        "series": "Female"
+      },
+      {
+        "x": "Fri",
+        "y": 16.27,
+        "series": "Female"
+      },
+      {
+        "x": "Fri",
+        "y": 10.09,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 22.12,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 35.83,
+        "series": "Female"
+      },
+      {
+        "x": "Sat",
+        "y": 27.18,
+        "series": "Female"
+      },
+      {
+        "x": "Thur",
+        "y": 18.78,
+        "series": "Female"
+      },
+      {
+        "x": "Sun",
+        "y": 10.34,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 21.01,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 23.68,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 25.29,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 8.77,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 26.88,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 15.04,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 14.78,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 10.27,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 15.42,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 18.43,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 21.58,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 16.29,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 20.65,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 17.92,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 39.42,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 19.82,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 17.81,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 13.37,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 12.69,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 21.7,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 9.55,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 18.35,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 17.78,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 24.06,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 16.31,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 18.69,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 31.27,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 16.04,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 17.46,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 13.94,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 9.68,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 30.4,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 18.29,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 22.23,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 32.4,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 28.55,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 18.04,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 12.54,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 9.94,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 25.56,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 19.49,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 38.01,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 11.24,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 48.27,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 20.29,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 13.81,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 11.02,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 18.29,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 17.59,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 20.08,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 20.23,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 15.01,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 12.02,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 10.51,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 17.92,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 27.2,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 22.76,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 17.29,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 19.44,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 16.66,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 32.68,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 15.98,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 13.03,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 18.28,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 24.71,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 21.16,
+        "series": "Male"
+      },
+      {
+        "x": "Fri",
+        "y": 28.97,
+        "series": "Male"
+      },
+      {
+        "x": "Fri",
+        "y": 22.49,
+        "series": "Male"
+      },
+      {
+        "x": "Fri",
+        "y": 40.17,
+        "series": "Male"
+      },
+      {
+        "x": "Fri",
+        "y": 27.28,
+        "series": "Male"
+      },
+      {
+        "x": "Fri",
+        "y": 12.03,
+        "series": "Male"
+      },
+      {
+        "x": "Fri",
+        "y": 21.01,
+        "series": "Male"
+      },
+      {
+        "x": "Fri",
+        "y": 12.46,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 15.36,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 20.49,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 25.21,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 18.24,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 14,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 38.07,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 23.95,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 29.93,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 11.69,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 14.26,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 15.95,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 8.52,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 22.82,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 19.08,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 16,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 34.3,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 41.19,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 9.78,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 7.51,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 14.07,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 13.13,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 17.26,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 24.55,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 19.77,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 48.17,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 16.49,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 21.5,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 12.66,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 13.81,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 24.52,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 20.76,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 31.71,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 50.81,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 15.81,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 7.25,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 31.85,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 16.82,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 32.9,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 17.89,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 14.48,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 34.63,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 34.65,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 23.33,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 45.35,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 23.17,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 40.55,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 20.69,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 30.46,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 23.1,
+        "series": "Male"
+      },
+      {
+        "x": "Sun",
+        "y": 15.69,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 28.44,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 15.48,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 16.58,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 7.56,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 10.34,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 13.51,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 18.71,
+        "series": "Male"
+      },
+      {
+        "x": "Thur",
+        "y": 20.53,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 26.59,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 38.73,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 24.27,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 30.06,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 25.89,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 48.33,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 28.15,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 11.59,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 7.74,
+        "series": "Male"
+      },
+      {
+        "x": "Fri",
+        "y": 12.16,
+        "series": "Male"
+      },
+      {
+        "x": "Fri",
+        "y": 8.58,
+        "series": "Male"
+      },
+      {
+        "x": "Fri",
+        "y": 13.42,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 20.45,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 13.28,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 24.01,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 15.69,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 11.61,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 10.77,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 15.53,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 10.07,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 12.6,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 32.83,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 29.03,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 22.67,
+        "series": "Male"
+      },
+      {
+        "x": "Sat",
+        "y": 17.82,
+        "series": "Male"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "day"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "total_bill"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "day"
+      },
+      {
+        "field": "y",
+        "title": "total_bill"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

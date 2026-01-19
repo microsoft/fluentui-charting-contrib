@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Planning",
+        "y": 4,
+        "series": "Planning"
+      },
+      {
+        "x": "Procurement",
+        "y": -0.8333333333333334,
+        "series": "Procurement"
+      },
+      {
+        "x": "Foundation",
+        "y": 12.5,
+        "series": "Foundation"
+      },
+      {
+        "x": "Structure",
+        "y": -2.142857142857143,
+        "series": "Structure"
+      },
+      {
+        "x": "Finishing",
+        "y": 7.777777777777778,
+        "series": "Finishing"
+      },
+      {
+        "x": "Commissioning",
+        "y": 5,
+        "series": "Commissioning"
+      },
+      {
+        "x": "Completion",
+        "y": -3.3333333333333335,
+        "series": "Completion"
+      }
+    ]
+  },
+  "title": "Cost Variance by Project Phase",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Project Phase"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Cost Variance (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Project Phase"
+      },
+      {
+        "field": "y",
+        "title": "Cost Variance (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

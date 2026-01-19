@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 70,
+        "series": "Labor"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 50,
+        "series": "Labor"
+      },
+      {
+        "x": "2023-09-04T00:00:00.000000000",
+        "y": 65,
+        "series": "Labor"
+      },
+      {
+        "x": "2023-09-04T00:00:00.000000000",
+        "y": 45,
+        "series": "Labor"
+      },
+      {
+        "x": "2023-09-07T00:00:00.000000000",
+        "y": 75,
+        "series": "Labor"
+      },
+      {
+        "x": "2023-09-07T00:00:00.000000000",
+        "y": 55,
+        "series": "Labor"
+      },
+      {
+        "x": "2023-09-02T00:00:00.000000000",
+        "y": 30,
+        "series": "Machinery"
+      },
+      {
+        "x": "2023-09-02T00:00:00.000000000",
+        "y": 20,
+        "series": "Machinery"
+      },
+      {
+        "x": "2023-09-05T00:00:00.000000000",
+        "y": 35,
+        "series": "Machinery"
+      },
+      {
+        "x": "2023-09-05T00:00:00.000000000",
+        "y": 25,
+        "series": "Machinery"
+      },
+      {
+        "x": "2023-09-08T00:00:00.000000000",
+        "y": 45,
+        "series": "Machinery"
+      },
+      {
+        "x": "2023-09-08T00:00:00.000000000",
+        "y": 30,
+        "series": "Machinery"
+      },
+      {
+        "x": "2023-09-03T00:00:00.000000000",
+        "y": 50,
+        "series": "Materials"
+      },
+      {
+        "x": "2023-09-03T00:00:00.000000000",
+        "y": 40,
+        "series": "Materials"
+      },
+      {
+        "x": "2023-09-06T00:00:00.000000000",
+        "y": 55,
+        "series": "Materials"
+      },
+      {
+        "x": "2023-09-06T00:00:00.000000000",
+        "y": 30,
+        "series": "Materials"
+      },
+      {
+        "x": "2023-09-09T00:00:00.000000000",
+        "y": 60,
+        "series": "Materials"
+      },
+      {
+        "x": "2023-09-09T00:00:00.000000000",
+        "y": 45,
+        "series": "Materials"
+      }
+    ]
+  },
+  "title": "Resource Availability and Usage Over Time",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "date"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Resource Counts"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "date"
+      },
+      {
+        "field": "y",
+        "title": "Resource Counts"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

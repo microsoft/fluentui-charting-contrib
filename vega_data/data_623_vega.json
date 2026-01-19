@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 14.61,
+        "y": "PJT-004",
+        "series": "Structure"
+      },
+      {
+        "x": -13.61,
+        "y": "PJT-002",
+        "series": "Structure"
+      },
+      {
+        "x": -12.69,
+        "y": "PJT-006",
+        "series": "Structure"
+      },
+      {
+        "x": -13.89,
+        "y": "PJT-008",
+        "series": "Foundation"
+      },
+      {
+        "x": 13.52,
+        "y": "PJT-001",
+        "series": "Planning"
+      },
+      {
+        "x": 11.88,
+        "y": "PJT-007",
+        "series": "Planning"
+      },
+      {
+        "x": 13.47,
+        "y": "PJT-002",
+        "series": "MEP"
+      },
+      {
+        "x": -12.78,
+        "y": "PJT-004",
+        "series": "Finishing"
+      },
+      {
+        "x": -12.07,
+        "y": "PJT-002",
+        "series": "Finishing"
+      },
+      {
+        "x": 11.91,
+        "y": "PJT-010",
+        "series": "Finishing"
+      }
+    ]
+  },
+  "title": "Top 10 Construction Project/Phase Cost Variances",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Cost Variance (%)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Project ID"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Cost Variance (%)"
+      },
+      {
+        "field": "y",
+        "title": "Project ID"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

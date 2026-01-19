@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan",
+        "y": 200000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "Feb",
+        "y": 300000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "Mar",
+        "y": 350000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "Apr",
+        "y": 250000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "May",
+        "y": 150000,
+        "series": "Budgeted Cost"
+      },
+      {
+        "x": "Jan",
+        "y": 5000,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "Feb",
+        "y": 12000,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "Mar",
+        "y": 8000,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "Apr",
+        "y": 4000,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "May",
+        "y": 3000,
+        "series": "Material Escalation"
+      },
+      {
+        "x": "Jan",
+        "y": 3000,
+        "series": "Labor Variation"
+      },
+      {
+        "x": "Feb",
+        "y": -2000,
+        "series": "Labor Variation"
+      },
+      {
+        "x": "Mar",
+        "y": 7000,
+        "series": "Labor Variation"
+      },
+      {
+        "x": "Apr",
+        "y": 1000,
+        "series": "Labor Variation"
+      },
+      {
+        "x": "May",
+        "y": 2000,
+        "series": "Labor Variation"
+      }
+    ]
+  },
+  "title": "Cost Management Dashboard: Monthly Project Costs and Variations",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Amount (USD)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Amount (USD)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

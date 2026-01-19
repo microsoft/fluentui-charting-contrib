@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "New York",
+        "y": 2300000,
+        "series": "New York"
+      },
+      {
+        "x": "Chicago",
+        "y": 700000,
+        "series": "Chicago"
+      },
+      {
+        "x": "Los Angeles",
+        "y": 1200000,
+        "series": "Los Angeles"
+      },
+      {
+        "x": "Houston",
+        "y": 500000,
+        "series": "Houston"
+      },
+      {
+        "x": "Philadelphia",
+        "y": 650000,
+        "series": "Philadelphia"
+      },
+      {
+        "x": "San Francisco",
+        "y": 800000,
+        "series": "San Francisco"
+      },
+      {
+        "x": "Washington DC",
+        "y": 950000,
+        "series": "Washington DC"
+      },
+      {
+        "x": "Boston",
+        "y": 720000,
+        "series": "Boston"
+      }
+    ]
+  },
+  "title": "Monthly Public Transportation Passenger Counts by City",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Urban Area"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Monthly Passengers"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Urban Area"
+      },
+      {
+        "field": "y",
+        "title": "Monthly Passengers"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

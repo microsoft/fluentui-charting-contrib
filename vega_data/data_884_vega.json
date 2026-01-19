@@ -1,0 +1,408 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 85,
+        "theta": "Equipment Availability Score",
+        "series": "National Disaster Management Authority (Flood)"
+      },
+      {
+        "r": 90,
+        "theta": "Training Level Score",
+        "series": "National Disaster Management Authority (Flood)"
+      },
+      {
+        "r": 4.5,
+        "theta": "Average Response Time (hrs)",
+        "series": "National Disaster Management Authority (Flood)"
+      },
+      {
+        "r": 40,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "National Disaster Management Authority (Flood)"
+      },
+      {
+        "r": 92,
+        "theta": "Readiness Rating",
+        "series": "National Disaster Management Authority (Flood)"
+      },
+      {
+        "r": 85,
+        "theta": "Equipment Availability Score",
+        "series": "National Disaster Management Authority (Flood)"
+      },
+      {
+        "r": 83,
+        "theta": "Equipment Availability Score",
+        "series": "National Disaster Management Authority (Earthquake)"
+      },
+      {
+        "r": 88,
+        "theta": "Training Level Score",
+        "series": "National Disaster Management Authority (Earthquake)"
+      },
+      {
+        "r": 4.3,
+        "theta": "Average Response Time (hrs)",
+        "series": "National Disaster Management Authority (Earthquake)"
+      },
+      {
+        "r": 40,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "National Disaster Management Authority (Earthquake)"
+      },
+      {
+        "r": 90,
+        "theta": "Readiness Rating",
+        "series": "National Disaster Management Authority (Earthquake)"
+      },
+      {
+        "r": 83,
+        "theta": "Equipment Availability Score",
+        "series": "National Disaster Management Authority (Earthquake)"
+      },
+      {
+        "r": 78,
+        "theta": "Equipment Availability Score",
+        "series": "National Disaster Management Authority (Pandemic)"
+      },
+      {
+        "r": 85,
+        "theta": "Training Level Score",
+        "series": "National Disaster Management Authority (Pandemic)"
+      },
+      {
+        "r": 3.8,
+        "theta": "Average Response Time (hrs)",
+        "series": "National Disaster Management Authority (Pandemic)"
+      },
+      {
+        "r": 40,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "National Disaster Management Authority (Pandemic)"
+      },
+      {
+        "r": 88,
+        "theta": "Readiness Rating",
+        "series": "National Disaster Management Authority (Pandemic)"
+      },
+      {
+        "r": 78,
+        "theta": "Equipment Availability Score",
+        "series": "National Disaster Management Authority (Pandemic)"
+      },
+      {
+        "r": 72,
+        "theta": "Equipment Availability Score",
+        "series": "Public Health Agency (Flood)"
+      },
+      {
+        "r": 82,
+        "theta": "Training Level Score",
+        "series": "Public Health Agency (Flood)"
+      },
+      {
+        "r": 2.5,
+        "theta": "Average Response Time (hrs)",
+        "series": "Public Health Agency (Flood)"
+      },
+      {
+        "r": 36,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "Public Health Agency (Flood)"
+      },
+      {
+        "r": 80,
+        "theta": "Readiness Rating",
+        "series": "Public Health Agency (Flood)"
+      },
+      {
+        "r": 72,
+        "theta": "Equipment Availability Score",
+        "series": "Public Health Agency (Flood)"
+      },
+      {
+        "r": 68,
+        "theta": "Equipment Availability Score",
+        "series": "Public Health Agency (Earthquake)"
+      },
+      {
+        "r": 80,
+        "theta": "Training Level Score",
+        "series": "Public Health Agency (Earthquake)"
+      },
+      {
+        "r": 2.0999999999999996,
+        "theta": "Average Response Time (hrs)",
+        "series": "Public Health Agency (Earthquake)"
+      },
+      {
+        "r": 36,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "Public Health Agency (Earthquake)"
+      },
+      {
+        "r": 78,
+        "theta": "Readiness Rating",
+        "series": "Public Health Agency (Earthquake)"
+      },
+      {
+        "r": 68,
+        "theta": "Equipment Availability Score",
+        "series": "Public Health Agency (Earthquake)"
+      },
+      {
+        "r": 88,
+        "theta": "Equipment Availability Score",
+        "series": "Public Health Agency (Pandemic)"
+      },
+      {
+        "r": 95,
+        "theta": "Training Level Score",
+        "series": "Public Health Agency (Pandemic)"
+      },
+      {
+        "r": 5.2,
+        "theta": "Average Response Time (hrs)",
+        "series": "Public Health Agency (Pandemic)"
+      },
+      {
+        "r": 36,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "Public Health Agency (Pandemic)"
+      },
+      {
+        "r": 94,
+        "theta": "Readiness Rating",
+        "series": "Public Health Agency (Pandemic)"
+      },
+      {
+        "r": 88,
+        "theta": "Equipment Availability Score",
+        "series": "Public Health Agency (Pandemic)"
+      },
+      {
+        "r": 80,
+        "theta": "Equipment Availability Score",
+        "series": "Emergency Response Force (Flood)"
+      },
+      {
+        "r": 89,
+        "theta": "Training Level Score",
+        "series": "Emergency Response Force (Flood)"
+      },
+      {
+        "r": 3.7,
+        "theta": "Average Response Time (hrs)",
+        "series": "Emergency Response Force (Flood)"
+      },
+      {
+        "r": 44,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "Emergency Response Force (Flood)"
+      },
+      {
+        "r": 87,
+        "theta": "Readiness Rating",
+        "series": "Emergency Response Force (Flood)"
+      },
+      {
+        "r": 80,
+        "theta": "Equipment Availability Score",
+        "series": "Emergency Response Force (Flood)"
+      },
+      {
+        "r": 84,
+        "theta": "Equipment Availability Score",
+        "series": "Emergency Response Force (Earthquake)"
+      },
+      {
+        "r": 91,
+        "theta": "Training Level Score",
+        "series": "Emergency Response Force (Earthquake)"
+      },
+      {
+        "r": 4,
+        "theta": "Average Response Time (hrs)",
+        "series": "Emergency Response Force (Earthquake)"
+      },
+      {
+        "r": 44,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "Emergency Response Force (Earthquake)"
+      },
+      {
+        "r": 91,
+        "theta": "Readiness Rating",
+        "series": "Emergency Response Force (Earthquake)"
+      },
+      {
+        "r": 84,
+        "theta": "Equipment Availability Score",
+        "series": "Emergency Response Force (Earthquake)"
+      },
+      {
+        "r": 75,
+        "theta": "Equipment Availability Score",
+        "series": "Emergency Response Force (Pandemic)"
+      },
+      {
+        "r": 83,
+        "theta": "Training Level Score",
+        "series": "Emergency Response Force (Pandemic)"
+      },
+      {
+        "r": 2.9000000000000004,
+        "theta": "Average Response Time (hrs)",
+        "series": "Emergency Response Force (Pandemic)"
+      },
+      {
+        "r": 44,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "Emergency Response Force (Pandemic)"
+      },
+      {
+        "r": 84,
+        "theta": "Readiness Rating",
+        "series": "Emergency Response Force (Pandemic)"
+      },
+      {
+        "r": 75,
+        "theta": "Equipment Availability Score",
+        "series": "Emergency Response Force (Pandemic)"
+      },
+      {
+        "r": 70,
+        "theta": "Equipment Availability Score",
+        "series": "Civil Protection Office (Flood)"
+      },
+      {
+        "r": 77,
+        "theta": "Training Level Score",
+        "series": "Civil Protection Office (Flood)"
+      },
+      {
+        "r": 2,
+        "theta": "Average Response Time (hrs)",
+        "series": "Civil Protection Office (Flood)"
+      },
+      {
+        "r": 30,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "Civil Protection Office (Flood)"
+      },
+      {
+        "r": 75,
+        "theta": "Readiness Rating",
+        "series": "Civil Protection Office (Flood)"
+      },
+      {
+        "r": 70,
+        "theta": "Equipment Availability Score",
+        "series": "Civil Protection Office (Flood)"
+      },
+      {
+        "r": 75,
+        "theta": "Equipment Availability Score",
+        "series": "Civil Protection Office (Earthquake)"
+      },
+      {
+        "r": 80,
+        "theta": "Training Level Score",
+        "series": "Civil Protection Office (Earthquake)"
+      },
+      {
+        "r": 2.5,
+        "theta": "Average Response Time (hrs)",
+        "series": "Civil Protection Office (Earthquake)"
+      },
+      {
+        "r": 30,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "Civil Protection Office (Earthquake)"
+      },
+      {
+        "r": 78,
+        "theta": "Readiness Rating",
+        "series": "Civil Protection Office (Earthquake)"
+      },
+      {
+        "r": 75,
+        "theta": "Equipment Availability Score",
+        "series": "Civil Protection Office (Earthquake)"
+      },
+      {
+        "r": 60,
+        "theta": "Equipment Availability Score",
+        "series": "Civil Protection Office (Pandemic)"
+      },
+      {
+        "r": 70,
+        "theta": "Training Level Score",
+        "series": "Civil Protection Office (Pandemic)"
+      },
+      {
+        "r": 1.5999999999999996,
+        "theta": "Average Response Time (hrs)",
+        "series": "Civil Protection Office (Pandemic)"
+      },
+      {
+        "r": 30,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "Civil Protection Office (Pandemic)"
+      },
+      {
+        "r": 70,
+        "theta": "Readiness Rating",
+        "series": "Civil Protection Office (Pandemic)"
+      },
+      {
+        "r": 60,
+        "theta": "Equipment Availability Score",
+        "series": "Civil Protection Office (Pandemic)"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Disaster Response Readiness Analysis by Government Agency"
+}

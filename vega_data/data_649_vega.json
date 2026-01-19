@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "New York",
+        "y": 12000,
+        "series": "New York"
+      },
+      {
+        "x": "Chicago",
+        "y": 8500,
+        "series": "Chicago"
+      },
+      {
+        "x": "Dallas",
+        "y": 9500,
+        "series": "Dallas"
+      },
+      {
+        "x": "San Francisco",
+        "y": 11000,
+        "series": "San Francisco"
+      },
+      {
+        "x": "Atlanta",
+        "y": 10300,
+        "series": "Atlanta"
+      },
+      {
+        "x": "Seattle",
+        "y": 7600,
+        "series": "Seattle"
+      },
+      {
+        "x": "Miami",
+        "y": 9100,
+        "series": "Miami"
+      }
+    ]
+  },
+  "title": "Factory Production Volume by Location",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Factory Location"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Production Volume (Units)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Factory Location"
+      },
+      {
+        "field": "y",
+        "title": "Production Volume (Units)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

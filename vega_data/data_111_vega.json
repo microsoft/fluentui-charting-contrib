@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Safety Incidents Reported",
+  "description": "Converted from Plotly schema 111 - Line chart with markers",
+  "data": {
+    "values": [
+      { "month": "January", "incidents": 0 },
+      { "month": "February", "incidents": 3 },
+      { "month": "March", "incidents": 1 },
+      { "month": "April", "incidents": 2 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "axis": { "title": "Months" },
+      "sort": ["January", "February", "March", "April"]
+    },
+    "y": {
+      "field": "incidents",
+      "type": "quantitative",
+      "axis": { "title": "Number of Incidents" }
+    }
+  }
+}

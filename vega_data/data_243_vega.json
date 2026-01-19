@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Maintenance Frequency Per Equipment",
+  "description": "Converted from Plotly schema 243 - Simple bar chart",
+  "data": {
+    "values": [
+      { "equipment": "Equipment A", "count": 3 },
+      { "equipment": "Equipment B", "count": 5 },
+      { "equipment": "Equipment C", "count": 2 }
+    ]
+  },
+  "mark": { "type": "bar", "color": "green" },
+  "encoding": {
+    "x": {
+      "field": "equipment",
+      "type": "ordinal",
+      "axis": { "title": "Equipment ID" }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": { "title": "Number of Maintenance Sessions" }
+    }
+  }
+}

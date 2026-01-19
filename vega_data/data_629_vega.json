@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 5400000,
+        "y": "Riverbend Clinic",
+        "series": "Series"
+      },
+      {
+        "x": 6000000,
+        "y": "Oakridge Hospital",
+        "series": "Series"
+      },
+      {
+        "x": 7900000,
+        "y": "Lakeside General",
+        "series": "Series"
+      },
+      {
+        "x": 8200000,
+        "y": "Green Valley Hospital",
+        "series": "Series"
+      },
+      {
+        "x": 9200000,
+        "y": "Willowbrook Center",
+        "series": "Series"
+      },
+      {
+        "x": 10700000,
+        "y": "Pinecrest Hospital",
+        "series": "Series"
+      },
+      {
+        "x": 11600000,
+        "y": "Hillview Healthcare",
+        "series": "Series"
+      },
+      {
+        "x": 12500000,
+        "y": "Central Medical Center",
+        "series": "Series"
+      },
+      {
+        "x": 13400000,
+        "y": "Westside Medical",
+        "series": "Series"
+      },
+      {
+        "x": 14800000,
+        "y": "Sunrise Health Institute",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Healthcare Spending vs Patient Satisfaction by Facility",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Spending (USD)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Hospital Facility"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Spending (USD)"
+      },
+      {
+        "field": "y",
+        "title": "Hospital Facility"
+      }
+    ]
+  }
+}

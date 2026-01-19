@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Qualitätskontrolle Statistik",
+  "description": "Converted from Plotly schema 288 - Multi-series line+markers with German labels",
+  "width": 500,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "Januar", "rate": 5, "metric": "Fehlerrate" },
+      { "month": "Februar", "rate": 7, "metric": "Fehlerrate" },
+      { "month": "März", "rate": 6, "metric": "Fehlerrate" },
+      { "month": "April", "rate": 8, "metric": "Fehlerrate" },
+      { "month": "Mai", "rate": 9, "metric": "Fehlerrate" },
+      { "month": "Juni", "rate": 7, "metric": "Fehlerrate" },
+      { "month": "Juli", "rate": 6, "metric": "Fehlerrate" },
+      { "month": "August", "rate": 5, "metric": "Fehlerrate" },
+      { "month": "September", "rate": 8, "metric": "Fehlerrate" },
+      { "month": "Oktober", "rate": 9, "metric": "Fehlerrate" },
+      { "month": "Januar", "rate": 95, "metric": "Produktionsrate" },
+      { "month": "Februar", "rate": 93, "metric": "Produktionsrate" },
+      { "month": "März", "rate": 94, "metric": "Produktionsrate" },
+      { "month": "April", "rate": 92, "metric": "Produktionsrate" },
+      { "month": "Mai", "rate": 91, "metric": "Produktionsrate" },
+      { "month": "Juni", "rate": 93, "metric": "Produktionsrate" },
+      { "month": "Juli", "rate": 94, "metric": "Produktionsrate" },
+      { "month": "August", "rate": 95, "metric": "Produktionsrate" },
+      { "month": "September", "rate": 92, "metric": "Produktionsrate" },
+      { "month": "Oktober", "rate": 91, "metric": "Produktionsrate" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "sort": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober"],
+          "axis": { "title": "Monat" }
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative",
+          "axis": { "title": "Rate (%)" }
+        },
+        "color": {
+          "field": "metric",
+          "type": "nominal",
+          "scale": { "range": ["red", "green"] },
+          "legend": { "title": "Metrik", "orient": "bottom" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "month", "type": "ordinal" },
+        "y": { "field": "rate", "type": "quantitative" },
+        "color": { "field": "metric", "type": "nominal" }
+      }
+    }
+  ]
+}

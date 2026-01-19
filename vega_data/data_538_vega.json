@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 160,
+        "y": 80,
+        "series": "Cardiology"
+      },
+      {
+        "x": 158,
+        "y": 85,
+        "series": "Cardiology"
+      },
+      {
+        "x": 162,
+        "y": 88,
+        "series": "Cardiology"
+      },
+      {
+        "x": 165,
+        "y": 75,
+        "series": "Orthopedics"
+      },
+      {
+        "x": 160,
+        "y": 78,
+        "series": "Orthopedics"
+      },
+      {
+        "x": 168,
+        "y": 83,
+        "series": "Orthopedics"
+      },
+      {
+        "x": 170,
+        "y": 65,
+        "series": "Neurology"
+      },
+      {
+        "x": 160,
+        "y": 70,
+        "series": "Neurology"
+      },
+      {
+        "x": 165,
+        "y": 68,
+        "series": "Neurology"
+      }
+    ]
+  },
+  "title": "Hours Worked vs. Patients Handled per Department",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Hours Worked"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Number of Patients Handled"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Hours Worked"
+      },
+      {
+        "field": "y",
+        "title": "Number of Patients Handled"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

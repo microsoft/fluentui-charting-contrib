@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Quarterly Trends of Attendance and Engagement",
+  "description": "Converted from Plotly schema 101 - Multi-series line chart with markers",
+  "data": {
+    "values": [
+      { "quarter": "Q1", "percentage": 90, "metric": "Attendance" },
+      { "quarter": "Q2", "percentage": 82, "metric": "Attendance" },
+      { "quarter": "Q3", "percentage": 88, "metric": "Attendance" },
+      { "quarter": "Q4", "percentage": 95, "metric": "Attendance" },
+      { "quarter": "Q1", "percentage": 75, "metric": "Engagement" },
+      { "quarter": "Q2", "percentage": 80, "metric": "Engagement" },
+      { "quarter": "Q3", "percentage": 78, "metric": "Engagement" },
+      { "quarter": "Q4", "percentage": 85, "metric": "Engagement" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "ordinal",
+      "axis": { "title": "Quarters" }
+    },
+    "y": {
+      "field": "percentage",
+      "type": "quantitative",
+      "axis": { "title": "Percentage" }
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

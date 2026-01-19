@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01-01",
+        "y": 150,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023-01-01",
+        "y": 300,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023-01-01",
+        "y": 400,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023-03-01",
+        "y": 200,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023-03-01",
+        "y": 350,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023-03-01",
+        "y": 450,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023-02-01",
+        "y": 200,
+        "series": "SUV"
+      },
+      {
+        "x": "2023-02-01",
+        "y": 250,
+        "series": "SUV"
+      },
+      {
+        "x": "2023-02-01",
+        "y": 350,
+        "series": "SUV"
+      },
+      {
+        "x": "2023-04-01",
+        "y": 250,
+        "series": "SUV"
+      },
+      {
+        "x": "2023-04-01",
+        "y": 300,
+        "series": "SUV"
+      },
+      {
+        "x": "2023-04-01",
+        "y": 400,
+        "series": "SUV"
+      }
+    ]
+  },
+  "title": "Sales Volume Over Time by Model",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Date"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sales Volume"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Date"
+      },
+      {
+        "field": "y",
+        "title": "Sales Volume"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

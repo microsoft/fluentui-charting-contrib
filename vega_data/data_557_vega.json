@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 4,
+        "y": "P1",
+        "series": "Series"
+      },
+      {
+        "x": -6.67,
+        "y": "P2",
+        "series": "Series"
+      },
+      {
+        "x": 5,
+        "y": "P3",
+        "series": "Series"
+      },
+      {
+        "x": 2.2,
+        "y": "P4",
+        "series": "Series"
+      },
+      {
+        "x": -3.33,
+        "y": "P5",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Variance Percentage across Projects",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "% Variance"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Project ID"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "% Variance"
+      },
+      {
+        "field": "y",
+        "title": "Project ID"
+      }
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-W1",
+        "y": 152,
+        "series": "Alpha Parts"
+      },
+      {
+        "x": "2024-W2",
+        "y": 180,
+        "series": "Alpha Parts"
+      },
+      {
+        "x": "2024-W3",
+        "y": 98,
+        "series": "Alpha Parts"
+      },
+      {
+        "x": "2024-W4",
+        "y": 138,
+        "series": "Alpha Parts"
+      },
+      {
+        "x": "2024-W5",
+        "y": 51,
+        "series": "Alpha Parts"
+      },
+      {
+        "x": "2024-W1",
+        "y": 238,
+        "series": "Beta Motors"
+      },
+      {
+        "x": "2024-W2",
+        "y": 307,
+        "series": "Beta Motors"
+      },
+      {
+        "x": "2024-W3",
+        "y": 104,
+        "series": "Beta Motors"
+      },
+      {
+        "x": "2024-W4",
+        "y": 314,
+        "series": "Beta Motors"
+      },
+      {
+        "x": "2024-W5",
+        "y": 155,
+        "series": "Beta Motors"
+      },
+      {
+        "x": "2024-W1",
+        "y": 171,
+        "series": "Gamma Supplies"
+      },
+      {
+        "x": "2024-W2",
+        "y": 241,
+        "series": "Gamma Supplies"
+      },
+      {
+        "x": "2024-W3",
+        "y": 180,
+        "series": "Gamma Supplies"
+      },
+      {
+        "x": "2024-W4",
+        "y": 389,
+        "series": "Gamma Supplies"
+      },
+      {
+        "x": "2024-W5",
+        "y": 240,
+        "series": "Gamma Supplies"
+      },
+      {
+        "x": "2024-W1",
+        "y": 380,
+        "series": "Delta Engines"
+      },
+      {
+        "x": "2024-W2",
+        "y": 210,
+        "series": "Delta Engines"
+      },
+      {
+        "x": "2024-W3",
+        "y": 184,
+        "series": "Delta Engines"
+      },
+      {
+        "x": "2024-W4",
+        "y": 313,
+        "series": "Delta Engines"
+      },
+      {
+        "x": "2024-W5",
+        "y": 251,
+        "series": "Delta Engines"
+      },
+      {
+        "x": "2024-W1",
+        "y": 149,
+        "series": "Epsilon Gears"
+      },
+      {
+        "x": "2024-W2",
+        "y": 302,
+        "series": "Epsilon Gears"
+      },
+      {
+        "x": "2024-W3",
+        "y": 216,
+        "series": "Epsilon Gears"
+      },
+      {
+        "x": "2024-W4",
+        "y": 99,
+        "series": "Epsilon Gears"
+      },
+      {
+        "x": "2024-W5",
+        "y": 264,
+        "series": "Epsilon Gears"
+      }
+    ]
+  },
+  "title": "Supply Chain Inventory Levels by Supplier and Week",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Inventory Levels"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Week"
+      },
+      {
+        "field": "y",
+        "title": "Inventory Levels"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Daily Occupancy Rate Comparison - Hotel A vs Industry Average",
+  "description": "Converted from Plotly schema 208 - Multi-series line+markers chart",
+  "data": {
+    "values": [
+      { "date": "2023-01-01", "rate": 75, "hotel": "Hotel A" },
+      { "date": "2023-01-02", "rate": 80, "hotel": "Hotel A" },
+      { "date": "2023-01-03", "rate": 65, "hotel": "Hotel A" },
+      { "date": "2023-01-04", "rate": 90, "hotel": "Hotel A" },
+      { "date": "2023-01-05", "rate": 85, "hotel": "Hotel A" },
+      { "date": "2023-01-01", "rate": 85, "hotel": "Industry Average" },
+      { "date": "2023-01-02", "rate": 88, "hotel": "Industry Average" },
+      { "date": "2023-01-03", "rate": 70, "hotel": "Industry Average" },
+      { "date": "2023-01-04", "rate": 78, "hotel": "Industry Average" },
+      { "date": "2023-01-05", "rate": 82, "hotel": "Industry Average" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": { "title": "Date" }
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative",
+          "axis": { "title": "Occupancy Rate (%)" }
+        },
+        "color": {
+          "field": "hotel",
+          "type": "nominal",
+          "legend": { "title": "Hotel" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "hotel",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

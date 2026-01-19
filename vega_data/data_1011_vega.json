@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan 2024",
+        "y": 81655,
+        "series": "Mobile"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 124156,
+        "series": "Mobile"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 87879,
+        "series": "Mobile"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 109600,
+        "series": "Mobile"
+      },
+      {
+        "x": "May 2024",
+        "y": 102672,
+        "series": "Mobile"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 99630,
+        "series": "Mobile"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 114442,
+        "series": "Broadband"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 82708,
+        "series": "Broadband"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 113462,
+        "series": "Broadband"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 86178,
+        "series": "Broadband"
+      },
+      {
+        "x": "May 2024",
+        "y": 97818,
+        "series": "Broadband"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 101279,
+        "series": "Broadband"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 88115,
+        "series": "TV"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 68202,
+        "series": "TV"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 98876,
+        "series": "TV"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 84307,
+        "series": "TV"
+      },
+      {
+        "x": "May 2024",
+        "y": 79950,
+        "series": "TV"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 84419,
+        "series": "TV"
+      }
+    ]
+  },
+  "title": "Monthly Revenue by Product Line (with Targets) - Telecommunications",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Revenue (USD)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Revenue (USD)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

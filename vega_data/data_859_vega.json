@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "18-25",
+        "y": 97,
+        "series": "North"
+      },
+      {
+        "x": "26-35",
+        "y": 263,
+        "series": "North"
+      },
+      {
+        "x": "36-45",
+        "y": 131,
+        "series": "North"
+      },
+      {
+        "x": "46-60",
+        "y": 238,
+        "series": "North"
+      },
+      {
+        "x": "60+",
+        "y": 312,
+        "series": "North"
+      },
+      {
+        "x": "18-25",
+        "y": 110,
+        "series": "South"
+      },
+      {
+        "x": "26-35",
+        "y": 301,
+        "series": "South"
+      },
+      {
+        "x": "36-45",
+        "y": 146,
+        "series": "South"
+      },
+      {
+        "x": "46-60",
+        "y": 61,
+        "series": "South"
+      },
+      {
+        "x": "60+",
+        "y": 276,
+        "series": "South"
+      },
+      {
+        "x": "18-25",
+        "y": 181,
+        "series": "East"
+      },
+      {
+        "x": "26-35",
+        "y": 63,
+        "series": "East"
+      },
+      {
+        "x": "36-45",
+        "y": 103,
+        "series": "East"
+      },
+      {
+        "x": "46-60",
+        "y": 169,
+        "series": "East"
+      },
+      {
+        "x": "60+",
+        "y": 256,
+        "series": "East"
+      },
+      {
+        "x": "18-25",
+        "y": 213,
+        "series": "West"
+      },
+      {
+        "x": "26-35",
+        "y": 186,
+        "series": "West"
+      },
+      {
+        "x": "36-45",
+        "y": 143,
+        "series": "West"
+      },
+      {
+        "x": "46-60",
+        "y": 203,
+        "series": "West"
+      },
+      {
+        "x": "60+",
+        "y": 134,
+        "series": "West"
+      }
+    ]
+  },
+  "title": "Automobile Industry: Customer Demographics and Preferences<br><sup>by Age Group and Region</sup>",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Customer Age Group"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "# of Customers"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Customer Age Group"
+      },
+      {
+        "field": "y",
+        "title": "# of Customers"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

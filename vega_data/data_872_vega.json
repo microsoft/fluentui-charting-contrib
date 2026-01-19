@@ -1,0 +1,187 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 100,
+        "theta": "Delivery Timeliness",
+        "series": "SUP-A"
+      },
+      {
+        "r": 100,
+        "theta": "Defect Rate",
+        "series": "SUP-A"
+      },
+      {
+        "r": 75,
+        "theta": "Unit Cost",
+        "series": "SUP-A"
+      },
+      {
+        "r": 100,
+        "theta": "Spec Compliance",
+        "series": "SUP-A"
+      },
+      {
+        "r": 100,
+        "theta": "Responsiveness",
+        "series": "SUP-A"
+      },
+      {
+        "r": 100,
+        "theta": "Delivery Timeliness",
+        "series": "SUP-A"
+      },
+      {
+        "r": 100,
+        "theta": "Delivery Timeliness",
+        "series": "SUP-A"
+      },
+      {
+        "r": 58.8235294117647,
+        "theta": "Delivery Timeliness",
+        "series": "SUP-B"
+      },
+      {
+        "r": 50,
+        "theta": "Defect Rate",
+        "series": "SUP-B"
+      },
+      {
+        "r": 100,
+        "theta": "Unit Cost",
+        "series": "SUP-B"
+      },
+      {
+        "r": 30.76923076923077,
+        "theta": "Spec Compliance",
+        "series": "SUP-B"
+      },
+      {
+        "r": 33.333333333333336,
+        "theta": "Responsiveness",
+        "series": "SUP-B"
+      },
+      {
+        "r": 58.8235294117647,
+        "theta": "Delivery Timeliness",
+        "series": "SUP-B"
+      },
+      {
+        "r": 58.8235294117647,
+        "theta": "Delivery Timeliness",
+        "series": "SUP-B"
+      },
+      {
+        "r": 0,
+        "theta": "Delivery Timeliness",
+        "series": "SUP-C"
+      },
+      {
+        "r": 0,
+        "theta": "Defect Rate",
+        "series": "SUP-C"
+      },
+      {
+        "r": 0,
+        "theta": "Unit Cost",
+        "series": "SUP-C"
+      },
+      {
+        "r": 0,
+        "theta": "Spec Compliance",
+        "series": "SUP-C"
+      },
+      {
+        "r": 0,
+        "theta": "Responsiveness",
+        "series": "SUP-C"
+      },
+      {
+        "r": 0,
+        "theta": "Delivery Timeliness",
+        "series": "SUP-C"
+      },
+      {
+        "r": 0,
+        "theta": "Delivery Timeliness",
+        "series": "SUP-C"
+      },
+      {
+        "r": 82.3529411764706,
+        "theta": "Delivery Timeliness",
+        "series": "SUP-D"
+      },
+      {
+        "r": 87.5,
+        "theta": "Defect Rate",
+        "series": "SUP-D"
+      },
+      {
+        "r": 50,
+        "theta": "Unit Cost",
+        "series": "SUP-D"
+      },
+      {
+        "r": 69.23076923076923,
+        "theta": "Spec Compliance",
+        "series": "SUP-D"
+      },
+      {
+        "r": 83.33333333333333,
+        "theta": "Responsiveness",
+        "series": "SUP-D"
+      },
+      {
+        "r": 82.3529411764706,
+        "theta": "Delivery Timeliness",
+        "series": "SUP-D"
+      },
+      {
+        "r": 82.3529411764706,
+        "theta": "Delivery Timeliness",
+        "series": "SUP-D"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

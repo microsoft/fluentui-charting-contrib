@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-01",
+        "y": 92,
+        "series": "Destroyer"
+      },
+      {
+        "x": "2024-02",
+        "y": 90,
+        "series": "Destroyer"
+      },
+      {
+        "x": "2024-01",
+        "y": 80,
+        "series": "Destroyer"
+      },
+      {
+        "x": "2024-02",
+        "y": 82,
+        "series": "Destroyer"
+      },
+      {
+        "x": "2024-01",
+        "y": 85,
+        "series": "Carrier"
+      },
+      {
+        "x": "2024-02",
+        "y": 89,
+        "series": "Carrier"
+      },
+      {
+        "x": "2024-01",
+        "y": 75,
+        "series": "Carrier"
+      },
+      {
+        "x": "2024-02",
+        "y": 77,
+        "series": "Carrier"
+      },
+      {
+        "x": "2024-01",
+        "y": 90,
+        "series": "Frigate"
+      },
+      {
+        "x": "2024-02",
+        "y": 95,
+        "series": "Frigate"
+      },
+      {
+        "x": "2024-01",
+        "y": 83,
+        "series": "Frigate"
+      },
+      {
+        "x": "2024-02",
+        "y": 85,
+        "series": "Frigate"
+      }
+    ]
+  },
+  "title": "Fleet Maintenance Completion Rates by Ship Type and Region",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Completion Rate"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Completion Rate"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

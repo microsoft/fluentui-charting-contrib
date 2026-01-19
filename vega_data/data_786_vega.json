@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Type A",
+        "y": 20,
+        "series": "Minor"
+      },
+      {
+        "x": "Type B",
+        "y": 30,
+        "series": "Minor"
+      },
+      {
+        "x": "Type C",
+        "y": 15,
+        "series": "Minor"
+      },
+      {
+        "x": "Type D",
+        "y": 25,
+        "series": "Minor"
+      },
+      {
+        "x": "Type A",
+        "y": 10,
+        "series": "Major"
+      },
+      {
+        "x": "Type B",
+        "y": 15,
+        "series": "Major"
+      },
+      {
+        "x": "Type C",
+        "y": 5,
+        "series": "Major"
+      },
+      {
+        "x": "Type D",
+        "y": 10,
+        "series": "Major"
+      }
+    ]
+  },
+  "title": "Product Defects by Severity",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Defect"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Count"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Defect"
+      },
+      {
+        "field": "y",
+        "title": "Count"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

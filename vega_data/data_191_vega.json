@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Budget Allocation Efficiency",
+  "description": "Converted from Plotly schema 191 - Pie chart",
+  "data": {
+    "values": [
+      { "category": "Housing", "amount": 250000 },
+      { "category": "Transportation", "amount": 300000 },
+      { "category": "Healthcare", "amount": 400000 },
+      { "category": "Education", "amount": 200000 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "amount",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "legend": { "title": "Budget Category" }
+    }
+  }
+}

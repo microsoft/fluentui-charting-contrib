@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Ranking Categories Based on Sales for July",
+  "description": "Converted from Plotly schema 331 - Horizontal bar chart",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "category": "Category A", "sales": 4000, "set": "Set 1" },
+      { "category": "Category B", "sales": 5000, "set": "Set 1" },
+      { "category": "Category C", "sales": 6000, "set": "Set 1" },
+      { "category": "Category D", "sales": 5500, "set": "Set 1" },
+      { "category": "Category E", "sales": 4800, "set": "Set 1" },
+      { "category": "Category F", "sales": 4900, "set": "Set 1" },
+      { "category": "Category G", "sales": 5300, "set": "Set 1" },
+      { "category": "Category H", "sales": 6200, "set": "Set 1" },
+      { "category": "Category I", "sales": 5700, "set": "Set 1" },
+      { "category": "Category J", "sales": 4500, "set": "Set 1" },
+      { "category": "Category A", "sales": 5100, "set": "Set 3" },
+      { "category": "Category B", "sales": 5200, "set": "Set 3" },
+      { "category": "Category C", "sales": 5500, "set": "Set 3" },
+      { "category": "Category D", "sales": 4700, "set": "Set 3" },
+      { "category": "Category E", "sales": 4500, "set": "Set 3" },
+      { "category": "Category F", "sales": 6000, "set": "Set 3" },
+      { "category": "Category G", "sales": 5800, "set": "Set 3" },
+      { "category": "Category H", "sales": 5700, "set": "Set 3" },
+      { "category": "Category I", "sales": 6200, "set": "Set 3" },
+      { "category": "Category J", "sales": 4000, "set": "Set 3" },
+      { "category": "Category A", "sales": 5400, "set": "Set 16" },
+      { "category": "Category B", "sales": 5500, "set": "Set 16" },
+      { "category": "Category C", "sales": 5600, "set": "Set 16" },
+      { "category": "Category D", "sales": 5700, "set": "Set 16" },
+      { "category": "Category E", "sales": 5800, "set": "Set 16" },
+      { "category": "Category F", "sales": 5900, "set": "Set 16" },
+      { "category": "Category G", "sales": 6000, "set": "Set 16" },
+      { "category": "Category H", "sales": 6100, "set": "Set 16" },
+      { "category": "Category I", "sales": 6200, "set": "Set 16" },
+      { "category": "Category J", "sales": 6300, "set": "Set 16" },
+      { "category": "Category A", "sales": 6100, "set": "Set 18" },
+      { "category": "Category B", "sales": 6200, "set": "Set 18" },
+      { "category": "Category C", "sales": 6300, "set": "Set 18" },
+      { "category": "Category D", "sales": 6400, "set": "Set 18" },
+      { "category": "Category E", "sales": 6500, "set": "Set 18" },
+      { "category": "Category F", "sales": 6600, "set": "Set 18" },
+      { "category": "Category G", "sales": 6700, "set": "Set 18" },
+      { "category": "Category H", "sales": 6800, "set": "Set 18" },
+      { "category": "Category I", "sales": 6900, "set": "Set 18" },
+      { "category": "Category J", "sales": 7000, "set": "Set 18" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "category",
+      "type": "nominal",
+      "axis": { "title": "Categories" }
+    },
+    "x": {
+      "field": "sales",
+      "type": "quantitative",
+      "axis": { "title": "Sales" }
+    },
+    "yOffset": { "field": "set" },
+    "color": {
+      "field": "set",
+      "type": "nominal",
+      "legend": { "title": "Sales Set" }
+    }
+  }
+}

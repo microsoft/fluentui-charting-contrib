@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Days Falling Into Specific Temp Ranges",
+  "description": "Converted from Plotly schema 33 - Pie chart",
+  "data": {
+    "values": [
+      { "range": "Below Freezing", "days": 30 },
+      { "range": "Cold", "days": 120 },
+      { "range": "Warm", "days": 150 },
+      { "range": "Hot", "days": 65 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "days",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "range",
+      "type": "nominal",
+      "legend": { "title": "Temperature Range" }
+    }
+  }
+}

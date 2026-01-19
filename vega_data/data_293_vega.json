@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Metriche di Produttività dei Dipendenti",
+  "description": "Converted from Plotly schema 293 - Multi-series line chart with Italian labels",
+  "width": 500,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "Gennaio", "value": 8, "metric": "Ore Lavorative Medie" },
+      { "month": "Febbraio", "value": 7.5, "metric": "Ore Lavorative Medie" },
+      { "month": "Marzo", "value": 8.2, "metric": "Ore Lavorative Medie" },
+      { "month": "Aprile", "value": 7.9, "metric": "Ore Lavorative Medie" },
+      { "month": "Maggio", "value": 8.5, "metric": "Ore Lavorative Medie" },
+      { "month": "Giugno", "value": 7.8, "metric": "Ore Lavorative Medie" },
+      { "month": "Luglio", "value": 8, "metric": "Ore Lavorative Medie" },
+      { "month": "Agosto", "value": 7.6, "metric": "Ore Lavorative Medie" },
+      { "month": "Settembre", "value": 8.4, "metric": "Ore Lavorative Medie" },
+      { "month": "Ottobre", "value": 8.1, "metric": "Ore Lavorative Medie" },
+      { "month": "Gennaio", "value": 5, "metric": "Numero di Task Completati" },
+      { "month": "Febbraio", "value": 4.8, "metric": "Numero di Task Completati" },
+      { "month": "Marzo", "value": 5.1, "metric": "Numero di Task Completati" },
+      { "month": "Aprile", "value": 4.9, "metric": "Numero di Task Completati" },
+      { "month": "Maggio", "value": 5.3, "metric": "Numero di Task Completati" },
+      { "month": "Giugno", "value": 5, "metric": "Numero di Task Completati" },
+      { "month": "Luglio", "value": 5.2, "metric": "Numero di Task Completati" },
+      { "month": "Agosto", "value": 4.7, "metric": "Numero di Task Completati" },
+      { "month": "Settembre", "value": 5.5, "metric": "Numero di Task Completati" },
+      { "month": "Ottobre", "value": 5.1, "metric": "Numero di Task Completati" }
+    ]
+  },
+  "mark": { "type": "line", "point": true },
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre"],
+      "axis": { "title": "Mese" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Valore" }
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "scale": { "range": ["blue", "green"] },
+      "legend": { "title": "Metrica" }
+    }
+  }
+}

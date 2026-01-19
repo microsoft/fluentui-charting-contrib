@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Proportion of Each Demographic Group",
+  "description": "Converted from Plotly schema 75 - Donut chart",
+  "data": {
+    "values": [
+      { "demographic": "Women", "count": 110 },
+      { "demographic": "Men", "count": 100 },
+      { "demographic": "Nonbinary", "count": 30 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "count",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "demographic",
+      "type": "nominal",
+      "legend": { "title": "Demographic" }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": -49,
+        "y": "Ammunition",
+        "series": "High"
+      },
+      {
+        "x": -153,
+        "y": "Drones",
+        "series": "High"
+      },
+      {
+        "x": -183,
+        "y": "Medical Kits",
+        "series": "High"
+      },
+      {
+        "x": -144,
+        "y": "Personnel",
+        "series": "High"
+      },
+      {
+        "x": -67,
+        "y": "Vehicles",
+        "series": "High"
+      },
+      {
+        "x": -176,
+        "y": "Ammunition",
+        "series": "Low"
+      },
+      {
+        "x": -98,
+        "y": "Drones",
+        "series": "Low"
+      },
+      {
+        "x": -149,
+        "y": "Medical Kits",
+        "series": "Low"
+      },
+      {
+        "x": -116,
+        "y": "Personnel",
+        "series": "Low"
+      },
+      {
+        "x": -64,
+        "y": "Vehicles",
+        "series": "Low"
+      },
+      {
+        "x": -146,
+        "y": "Ammunition",
+        "series": "Medium"
+      },
+      {
+        "x": -147,
+        "y": "Drones",
+        "series": "Medium"
+      },
+      {
+        "x": -152,
+        "y": "Medical Kits",
+        "series": "Medium"
+      },
+      {
+        "x": -211,
+        "y": "Personnel",
+        "series": "Medium"
+      },
+      {
+        "x": -147,
+        "y": "Vehicles",
+        "series": "Medium"
+      }
+    ]
+  },
+  "title": "Resource Shortfall by Resource Type and Priority",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "shortfall"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "resource type"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "shortfall"
+      },
+      {
+        "field": "y",
+        "title": "resource type"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

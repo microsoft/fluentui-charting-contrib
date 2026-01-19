@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Historical Trends of IT Infrastructure Health",
+  "description": "Converted from Plotly schema 97 - Multi-series line chart with markers",
+  "data": {
+    "values": [
+      { "date": "2023-09-01", "performance": 95.2, "metric": "Server Uptime (%)" },
+      { "date": "2023-09-02", "performance": 93.8, "metric": "Server Uptime (%)" },
+      { "date": "2023-09-03", "performance": 97.1, "metric": "Server Uptime (%)" },
+      { "date": "2023-09-04", "performance": 92.5, "metric": "Server Uptime (%)" },
+      { "date": "2023-09-05", "performance": 96.3, "metric": "Server Uptime (%)" },
+      { "date": "2023-09-01", "performance": 89.6, "metric": "Network Stability (%)" },
+      { "date": "2023-09-02", "performance": 91.0, "metric": "Network Stability (%)" },
+      { "date": "2023-09-03", "performance": 88.4, "metric": "Network Stability (%)" },
+      { "date": "2023-09-04", "performance": 90.8, "metric": "Network Stability (%)" },
+      { "date": "2023-09-05", "performance": 87.9, "metric": "Network Stability (%)" },
+      { "date": "2023-09-01", "performance": 90.4, "metric": "Application Performance (%)" },
+      { "date": "2023-09-02", "performance": 88.9, "metric": "Application Performance (%)" },
+      { "date": "2023-09-03", "performance": 91.5, "metric": "Application Performance (%)" },
+      { "date": "2023-09-04", "performance": 87.3, "metric": "Application Performance (%)" },
+      { "date": "2023-09-05", "performance": 85.7, "metric": "Application Performance (%)" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": { "title": "Date" }
+    },
+    "y": {
+      "field": "performance",
+      "type": "quantitative",
+      "axis": { "title": "Performance Metrics (%)" }
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

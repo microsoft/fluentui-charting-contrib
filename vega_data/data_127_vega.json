@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Budgeted vs Actual Costs per Project",
+  "description": "Converted from Plotly schema 127 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "project": "Project A", "cost": 150000, "type": "Budgeted Cost" },
+      { "project": "Project B", "cost": 200000, "type": "Budgeted Cost" },
+      { "project": "Project C", "cost": 250000, "type": "Budgeted Cost" },
+      { "project": "Project D", "cost": 175000, "type": "Budgeted Cost" },
+      { "project": "Project A", "cost": 165000, "type": "Actual Cost" },
+      { "project": "Project B", "cost": 180000, "type": "Actual Cost" },
+      { "project": "Project C", "cost": 260000, "type": "Actual Cost" },
+      { "project": "Project D", "cost": 160000, "type": "Actual Cost" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "project",
+      "type": "nominal",
+      "axis": { "title": "Project ID" }
+    },
+    "y": {
+      "field": "cost",
+      "type": "quantitative",
+      "axis": { "title": "Cost (USD)" }
+    },
+    "xOffset": {
+      "field": "type"
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Cost Type" }
+    }
+  }
+}

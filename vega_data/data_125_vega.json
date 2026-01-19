@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Incident Distribution by Location",
+  "description": "Converted from Plotly schema 125 - Donut chart",
+  "data": {
+    "values": [
+      { "location": "Plant A", "incidents": 40 },
+      { "location": "Plant B", "incidents": 30 },
+      { "location": "Plant C", "incidents": 20 },
+      { "location": "Plant D", "incidents": 10 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "incidents",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "location",
+      "type": "nominal",
+      "legend": { "title": "Location" }
+    }
+  }
+}

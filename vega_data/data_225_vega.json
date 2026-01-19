@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Resource Utilization Summary",
+  "description": "Converted from Plotly schema 225 - Pie chart",
+  "data": {
+    "values": [
+      { "status": "Underutilized", "value": 20 },
+      { "status": "Optimally Utilized", "value": 50 },
+      { "status": "Overutilized", "value": 30 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "status",
+      "type": "nominal",
+      "legend": { "title": "Utilization Status" }
+    }
+  }
+}

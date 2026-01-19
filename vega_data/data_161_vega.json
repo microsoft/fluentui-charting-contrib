@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Average Test Scores Across Grades",
+  "description": "Converted from Plotly schema 161 - Multi-series line+markers chart",
+  "data": {
+    "values": [
+      { "grade": "Grade 6", "score": 78, "curriculum": "Curriculum A" },
+      { "grade": "Grade 7", "score": 82, "curriculum": "Curriculum A" },
+      { "grade": "Grade 8", "score": 84, "curriculum": "Curriculum A" },
+      { "grade": "Grade 9", "score": 81, "curriculum": "Curriculum A" },
+      { "grade": "Grade 6", "score": 80, "curriculum": "Curriculum B" },
+      { "grade": "Grade 7", "score": 85, "curriculum": "Curriculum B" },
+      { "grade": "Grade 8", "score": 83, "curriculum": "Curriculum B" },
+      { "grade": "Grade 9", "score": 88, "curriculum": "Curriculum B" },
+      { "grade": "Grade 6", "score": 82, "curriculum": "Curriculum C" },
+      { "grade": "Grade 7", "score": 87, "curriculum": "Curriculum C" },
+      { "grade": "Grade 8", "score": 89, "curriculum": "Curriculum C" },
+      { "grade": "Grade 9", "score": 86, "curriculum": "Curriculum C" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "grade",
+          "type": "ordinal",
+          "axis": { "title": "Grade Level" },
+          "sort": ["Grade 6", "Grade 7", "Grade 8", "Grade 9"]
+        },
+        "y": {
+          "field": "score",
+          "type": "quantitative",
+          "axis": { "title": "Average Test Score" }
+        },
+        "color": {
+          "field": "curriculum",
+          "type": "nominal",
+          "legend": { "title": "Curriculum" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "grade",
+          "type": "ordinal",
+          "sort": ["Grade 6", "Grade 7", "Grade 8", "Grade 9"]
+        },
+        "y": {
+          "field": "score",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "curriculum",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

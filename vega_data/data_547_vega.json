@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 1000000,
+        "y": 75,
+        "series": "Series"
+      },
+      {
+        "x": 1500000,
+        "y": 80,
+        "series": "Series"
+      },
+      {
+        "x": 2000000,
+        "y": 90,
+        "series": "Series"
+      },
+      {
+        "x": 2500000,
+        "y": 85,
+        "series": "Series"
+      },
+      {
+        "x": 3000000,
+        "y": 95,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Healthcare Spending vs Patient Satisfaction (Area Chart)",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Healthcare Spending (USD)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Patient Satisfaction Score"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Healthcare Spending (USD)"
+      },
+      {
+        "field": "y",
+        "title": "Patient Satisfaction Score"
+      }
+    ]
+  }
+}

@@ -1,0 +1,992 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 4,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 1,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 2,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 2,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 0,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 2,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 4,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 2,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 1,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 4,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 4,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 1,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 2,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 2,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 4,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 1,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 5,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 0,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 1,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 4,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 1,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 7,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 4,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 2,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 1,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 4,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 4,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 1,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 2,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 5,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 5,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 2,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 1,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 6,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 1,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 5,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 4,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 2,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 3,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 2,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 6,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 2,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 6,
+        "y": "Headquarters",
+        "series": "Headquarters"
+      },
+      {
+        "x": 1,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 2,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 1,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 4,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 5,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 2,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 1,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 3,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 2,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 5,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 5,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 5,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 1,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 0,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 1,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 2,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 1,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 0,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 2,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 2,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 1,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 0,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 3,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 3,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 1,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 0,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 0,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 4,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 1,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 3,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 4,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 1,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 1,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 0,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 0,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 0,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 3,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 2,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 2,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 1,
+        "y": "Remote",
+        "series": "Remote"
+      },
+      {
+        "x": 5,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 1,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 0,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 5,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 5,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 1,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 0,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 2,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 2,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 2,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 6,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 6,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 5,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 5,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 0,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 2,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 5,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 5,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 1,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 4,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 3,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 2,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 2,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 2,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 6,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 4,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 1,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 1,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 1,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 5,
+        "y": "Branch Office A",
+        "series": "Branch Office A"
+      },
+      {
+        "x": 3,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 1,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 3,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 6,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 2,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 5,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 2,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 1,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 7,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 8,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 0,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 3,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 6,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 1,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 9,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 3,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 3,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 6,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 2,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 0,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 4,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 0,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 3,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 5,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 5,
+        "y": "Branch Office B",
+        "series": "Branch Office B"
+      },
+      {
+        "x": 6,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 2,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 3,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 5,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 3,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 3,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 5,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 6,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 5,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 3,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 5,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 3,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 3,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 6,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 5,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 6,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 2,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 4,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 7,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 6,
+        "y": "Warehouse",
+        "series": "Warehouse"
+      },
+      {
+        "x": 4,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      },
+      {
+        "x": 2,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      },
+      {
+        "x": 3,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      },
+      {
+        "x": 2,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      },
+      {
+        "x": 1,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      },
+      {
+        "x": 7,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      },
+      {
+        "x": 5,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      },
+      {
+        "x": 3,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      },
+      {
+        "x": 5,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      },
+      {
+        "x": 3,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      },
+      {
+        "x": 6,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      },
+      {
+        "x": 4,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      },
+      {
+        "x": 5,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      },
+      {
+        "x": 5,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      },
+      {
+        "x": 4,
+        "y": "Customer Site",
+        "series": "Customer Site"
+      }
+    ]
+  },
+  "title": "Absence Frequency by Work Location",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Number of Absences per Employee"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Work Location"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Number of Absences per Employee"
+      },
+      {
+        "field": "y",
+        "title": "Work Location"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

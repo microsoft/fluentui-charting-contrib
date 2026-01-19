@@ -1,0 +1,222 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Apr 2023",
+        "y": 11848674,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 14906032,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 14519996,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 16806204,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 13244953,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 14830482,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 12744929,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 14079330,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "May 2023",
+        "y": 15715815,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 16658467,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 13532505,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 12671148,
+        "series": "budgeted_cost"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 12074711,
+        "series": "actual_cost"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 15283697,
+        "series": "actual_cost"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 14949694,
+        "series": "actual_cost"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 17262752,
+        "series": "actual_cost"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 12910093,
+        "series": "actual_cost"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 15082992,
+        "series": "actual_cost"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 13274914,
+        "series": "actual_cost"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 14765092,
+        "series": "actual_cost"
+      },
+      {
+        "x": "May 2023",
+        "y": 16171098,
+        "series": "actual_cost"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 17129562,
+        "series": "actual_cost"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 14111236,
+        "series": "actual_cost"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 13210213,
+        "series": "actual_cost"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 1.9076987011373594,
+        "series": "Variance %"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 2.5336387309513357,
+        "series": "Variance %"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 2.9593534323287694,
+        "series": "Variance %"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 2.7165444379944454,
+        "series": "Variance %"
+      },
+      {
+        "x": "Jan 2023",
+        "y": -2.5282082918678532,
+        "series": "Variance %"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 1.702641896601877,
+        "series": "Variance %"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 4.158398999319651,
+        "series": "Variance %"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 4.870700523391383,
+        "series": "Variance %"
+      },
+      {
+        "x": "May 2023",
+        "y": 2.896973526349095,
+        "series": "Variance %"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 2.8279613004005713,
+        "series": "Variance %"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 4.276599195788215,
+        "series": "Variance %"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 4.254271199420921,
+        "series": "Variance %"
+      }
+    ]
+  },
+  "title": "Monthly Budgeted vs. Actual Cost",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Cost ($)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Cost ($)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

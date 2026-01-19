@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Combat",
+        "y": 1081,
+        "series": "High"
+      },
+      {
+        "x": "Logistics",
+        "y": 991,
+        "series": "High"
+      },
+      {
+        "x": "Reconnaissance",
+        "y": 902,
+        "series": "High"
+      },
+      {
+        "x": "Training",
+        "y": 923,
+        "series": "High"
+      },
+      {
+        "x": "Combat",
+        "y": 1008,
+        "series": "Low"
+      },
+      {
+        "x": "Logistics",
+        "y": 1050,
+        "series": "Low"
+      },
+      {
+        "x": "Reconnaissance",
+        "y": 847,
+        "series": "Low"
+      },
+      {
+        "x": "Training",
+        "y": 977,
+        "series": "Low"
+      },
+      {
+        "x": "Combat",
+        "y": 956,
+        "series": "Medium"
+      },
+      {
+        "x": "Logistics",
+        "y": 1060,
+        "series": "Medium"
+      },
+      {
+        "x": "Reconnaissance",
+        "y": 867,
+        "series": "Medium"
+      },
+      {
+        "x": "Training",
+        "y": 1024,
+        "series": "Medium"
+      }
+    ]
+  },
+  "title": "Allocated Resources by Operation and Priority",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "operation type"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "allocated quantity"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "operation type"
+      },
+      {
+        "field": "y",
+        "title": "allocated quantity"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

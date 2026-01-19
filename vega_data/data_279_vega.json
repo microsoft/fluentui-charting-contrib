@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "توقع وتنفيذ صيانة الأجهزة",
+  "description": "Converted from Plotly schema 279 - Line+markers chart with Arabic labels",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "January", "count": 5, "type": "توقع عدد الإصلاحات" },
+      { "month": "February", "count": 7, "type": "توقع عدد الإصلاحات" },
+      { "month": "March", "count": 6, "type": "توقع عدد الإصلاحات" },
+      { "month": "April", "count": 8, "type": "توقع عدد الإصلاحات" },
+      { "month": "May", "count": 9, "type": "توقع عدد الإصلاحات" },
+      { "month": "June", "count": 11, "type": "توقع عدد الإصلاحات" },
+      { "month": "July", "count": 10, "type": "توقع عدد الإصلاحات" },
+      { "month": "August", "count": 12, "type": "توقع عدد الإصلاحات" },
+      { "month": "September", "count": 11, "type": "توقع عدد الإصلاحات" },
+      { "month": "October", "count": 10, "type": "توقع عدد الإصلاحات" },
+      { "month": "November", "count": 13, "type": "توقع عدد الإصلاحات" },
+      { "month": "December", "count": 14, "type": "توقع عدد الإصلاحات" },
+      { "month": "January", "count": 4, "type": "التنفيذ الفعلي" },
+      { "month": "February", "count": 6, "type": "التنفيذ الفعلي" },
+      { "month": "March", "count": 5, "type": "التنفيذ الفعلي" },
+      { "month": "April", "count": 7, "type": "التنفيذ الفعلي" },
+      { "month": "May", "count": 8, "type": "التنفيذ الفعلي" },
+      { "month": "June", "count": 9, "type": "التنفيذ الفعلي" },
+      { "month": "July", "count": 9, "type": "التنفيذ الفعلي" },
+      { "month": "August", "count": 10, "type": "التنفيذ الفعلي" },
+      { "month": "September", "count": 9, "type": "التنفيذ الفعلي" },
+      { "month": "October", "count": 8, "type": "التنفيذ الفعلي" },
+      { "month": "November", "count": 11, "type": "التنفيذ الفعلي" },
+      { "month": "December", "count": 12, "type": "التنفيذ الفعلي" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "sort": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+          "axis": { "title": "الشهر" }
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "axis": { "title": "عدد الإصلاحات" }
+        },
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "legend": { "title": "النوع" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "month", "type": "ordinal" },
+        "y": { "field": "count", "type": "quantitative" },
+        "color": { "field": "type", "type": "nominal" }
+      }
+    }
+  ]
+}

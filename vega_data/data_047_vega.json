@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Performance Trends Across Subjects",
+  "description": "Converted from Plotly schema 47 - Multi-series line chart",
+  "data": {
+    "values": [
+      { "month": "September", "score": 72, "subject": "Mathematics" },
+      { "month": "October", "score": 75, "subject": "Mathematics" },
+      { "month": "November", "score": 78, "subject": "Mathematics" },
+      { "month": "December", "score": 80, "subject": "Mathematics" },
+      { "month": "January", "score": 85, "subject": "Mathematics" },
+      { "month": "February", "score": 88, "subject": "Mathematics" },
+      { "month": "March", "score": 90, "subject": "Mathematics" },
+      { "month": "April", "score": 93, "subject": "Mathematics" },
+      { "month": "May", "score": 95, "subject": "Mathematics" },
+      { "month": "June", "score": 97, "subject": "Mathematics" },
+      { "month": "September", "score": 65, "subject": "Science" },
+      { "month": "October", "score": 68, "subject": "Science" },
+      { "month": "November", "score": 70, "subject": "Science" },
+      { "month": "December", "score": 73, "subject": "Science" },
+      { "month": "January", "score": 76, "subject": "Science" },
+      { "month": "February", "score": 78, "subject": "Science" },
+      { "month": "March", "score": 81, "subject": "Science" },
+      { "month": "April", "score": 83, "subject": "Science" },
+      { "month": "May", "score": 85, "subject": "Science" },
+      { "month": "June", "score": 87, "subject": "Science" },
+      { "month": "September", "score": 55, "subject": "English" },
+      { "month": "October", "score": 60, "subject": "English" },
+      { "month": "November", "score": 62, "subject": "English" },
+      { "month": "December", "score": 65, "subject": "English" },
+      { "month": "January", "score": 68, "subject": "English" },
+      { "month": "February", "score": 70, "subject": "English" },
+      { "month": "March", "score": 75, "subject": "English" },
+      { "month": "April", "score": 78, "subject": "English" },
+      { "month": "May", "score": 80, "subject": "English" },
+      { "month": "June", "score": 82, "subject": "English" }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "axis": { "title": "Months" },
+      "sort": ["September", "October", "November", "December", "January", "February", "March", "April", "May", "June"]
+    },
+    "y": {
+      "field": "score",
+      "type": "quantitative",
+      "axis": { "title": "Scores" }
+    },
+    "color": {
+      "field": "subject",
+      "type": "nominal",
+      "legend": { "title": "Subject" }
+    }
+  }
+}

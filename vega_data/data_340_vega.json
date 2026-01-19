@@ -1,0 +1,252 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2022",
+        "y": 31.3,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2021",
+        "y": 26.5,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2020",
+        "y": 33.8,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2019",
+        "y": 24.8,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2018",
+        "y": 23.2,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2017",
+        "y": 26.7,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2016",
+        "y": 22,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2015",
+        "y": 24.2,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2014",
+        "y": 19.2,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2013",
+        "y": 17.3,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2012",
+        "y": 16.3,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2011",
+        "y": 18.8,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2010",
+        "y": 16.5,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2009",
+        "y": 15,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2008",
+        "y": 16.2,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2007",
+        "y": 29.3,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2006",
+        "y": 15.4,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2005",
+        "y": 16.4,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2004",
+        "y": 17.6,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2003",
+        "y": 21.4,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2002",
+        "y": 23,
+        "series": "P/E ratio"
+      },
+      {
+        "x": "2022",
+        "y": 8.33,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2021",
+        "y": 8.63,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2020",
+        "y": 8.32,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2019",
+        "y": 6.93,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2018",
+        "y": 6.48,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2017",
+        "y": 6.01,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2016",
+        "y": 4.11,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2015",
+        "y": 4.22,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2014",
+        "y": 3.29,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2013",
+        "y": 3.42,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2012",
+        "y": 3.21,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2011",
+        "y": 3.8,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2010",
+        "y": 3.36,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2009",
+        "y": 2.96,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2008",
+        "y": 2.95,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2007",
+        "y": 2.98,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2006",
+        "y": 2.56,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2005",
+        "y": 2.08,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2004",
+        "y": 2.14,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2003",
+        "y": 1.83,
+        "series": "P/S ratio"
+      },
+      {
+        "x": "2002",
+        "y": 1.32,
+        "series": "P/S ratio"
+      }
+    ]
+  },
+  "title": "P/E Ratio and P/S Ratio over the Years",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

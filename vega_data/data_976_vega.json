@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 5,
+        "y": 8,
+        "series": "Observations"
+      },
+      {
+        "x": 10,
+        "y": 13,
+        "series": "Observations"
+      },
+      {
+        "x": 15,
+        "y": 11,
+        "series": "Observations"
+      },
+      {
+        "x": 20,
+        "y": 18,
+        "series": "Observations"
+      },
+      {
+        "x": 25,
+        "y": 16,
+        "series": "Observations"
+      },
+      {
+        "x": 30,
+        "y": 22,
+        "series": "Observations"
+      }
+    ]
+  },
+  "title": "Pixel-positioned Callout",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Input"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Output"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Input"
+      },
+      {
+        "field": "y",
+        "title": "Output"
+      }
+    ]
+  }
+}

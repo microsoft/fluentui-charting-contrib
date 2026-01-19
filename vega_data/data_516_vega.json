@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Q1",
+        "y": 50,
+        "series": "Series"
+      },
+      {
+        "x": "Q2",
+        "y": 55,
+        "series": "Series"
+      },
+      {
+        "x": "Q3",
+        "y": 52,
+        "series": "Series"
+      },
+      {
+        "x": "Q4",
+        "y": 45,
+        "series": "Series"
+      },
+      {
+        "x": "Q1",
+        "y": 60,
+        "series": "Series"
+      },
+      {
+        "x": "Q2",
+        "y": 58,
+        "series": "Series"
+      },
+      {
+        "x": "Q3",
+        "y": 56,
+        "series": "Series"
+      },
+      {
+        "x": "Q4",
+        "y": 50,
+        "series": "Series"
+      },
+      {
+        "x": "Q1",
+        "y": 45,
+        "series": "Series"
+      },
+      {
+        "x": "Q2",
+        "y": 42,
+        "series": "Series"
+      },
+      {
+        "x": "Q3",
+        "y": 41,
+        "series": "Series"
+      },
+      {
+        "x": "Q4",
+        "y": 40,
+        "series": "Series"
+      },
+      {
+        "x": "Q1",
+        "y": 38,
+        "series": "Series"
+      },
+      {
+        "x": "Q2",
+        "y": 36,
+        "series": "Series"
+      },
+      {
+        "x": "Q3",
+        "y": 34,
+        "series": "Series"
+      },
+      {
+        "x": "Q4",
+        "y": 32,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Quarterly Waste Generation",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Quarter"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Waste Generation (tons)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Quarter"
+      },
+      {
+        "field": "y",
+        "title": "Waste Generation (tons)"
+      }
+    ]
+  }
+}

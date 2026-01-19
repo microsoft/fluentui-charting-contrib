@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "2023 年各机器的预测维护",
+  "description": "Converted from Plotly schema 285 - Multi-series line+markers with Chinese labels",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "2023-01", "uptime": 80, "machine": "机器 A" },
+      { "month": "2023-02", "uptime": 75, "machine": "机器 A" },
+      { "month": "2023-03", "uptime": 78, "machine": "机器 A" },
+      { "month": "2023-04", "uptime": 76, "machine": "机器 A" },
+      { "month": "2023-05", "uptime": 77, "machine": "机器 A" },
+      { "month": "2023-06", "uptime": 80, "machine": "机器 A" },
+      { "month": "2023-07", "uptime": 82, "machine": "机器 A" },
+      { "month": "2023-08", "uptime": 83, "machine": "机器 A" },
+      { "month": "2023-09", "uptime": 81, "machine": "机器 A" },
+      { "month": "2023-10", "uptime": 79, "machine": "机器 A" },
+      { "month": "2023-01", "uptime": 85, "machine": "机器 B" },
+      { "month": "2023-02", "uptime": 82, "machine": "机器 B" },
+      { "month": "2023-03", "uptime": 84, "machine": "机器 B" },
+      { "month": "2023-04", "uptime": 83, "machine": "机器 B" },
+      { "month": "2023-05", "uptime": 85, "machine": "机器 B" },
+      { "month": "2023-06", "uptime": 87, "machine": "机器 B" },
+      { "month": "2023-07", "uptime": 89, "machine": "机器 B" },
+      { "month": "2023-08", "uptime": 88, "machine": "机器 B" },
+      { "month": "2023-09", "uptime": 86, "machine": "机器 B" },
+      { "month": "2023-10", "uptime": 87, "machine": "机器 B" },
+      { "month": "2023-01", "uptime": 78, "machine": "机器 C" },
+      { "month": "2023-02", "uptime": 76, "machine": "机器 C" },
+      { "month": "2023-03", "uptime": 74, "machine": "机器 C" },
+      { "month": "2023-04", "uptime": 79, "machine": "机器 C" },
+      { "month": "2023-05", "uptime": 80, "machine": "机器 C" },
+      { "month": "2023-06", "uptime": 81, "machine": "机器 C" },
+      { "month": "2023-07", "uptime": 79, "machine": "机器 C" },
+      { "month": "2023-08", "uptime": 80, "machine": "机器 C" },
+      { "month": "2023-09", "uptime": 82, "machine": "机器 C" },
+      { "month": "2023-10", "uptime": 81, "machine": "机器 C" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "axis": { "title": "月份" }
+        },
+        "y": {
+          "field": "uptime",
+          "type": "quantitative",
+          "axis": { "title": "正常工作时间 (%)" }
+        },
+        "color": {
+          "field": "machine",
+          "type": "nominal",
+          "scale": { "range": ["red", "blue", "green"] },
+          "legend": { "title": "机器" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "month", "type": "ordinal" },
+        "y": { "field": "uptime", "type": "quantitative" },
+        "color": { "field": "machine", "type": "nominal" }
+      }
+    }
+  ]
+}

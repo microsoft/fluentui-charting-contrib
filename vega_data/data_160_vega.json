@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Student Performance by Subject and Curriculum",
+  "description": "Converted from Plotly schema 160 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "subject": "Math", "score": 85, "curriculum": "Curriculum A" },
+      { "subject": "Science", "score": 78, "curriculum": "Curriculum A" },
+      { "subject": "English", "score": 92, "curriculum": "Curriculum A" },
+      { "subject": "History", "score": 88, "curriculum": "Curriculum A" },
+      { "subject": "Math", "score": 88, "curriculum": "Curriculum B" },
+      { "subject": "Science", "score": 80, "curriculum": "Curriculum B" },
+      { "subject": "English", "score": 89, "curriculum": "Curriculum B" },
+      { "subject": "History", "score": 85, "curriculum": "Curriculum B" },
+      { "subject": "Math", "score": 90, "curriculum": "Curriculum C" },
+      { "subject": "Science", "score": 83, "curriculum": "Curriculum C" },
+      { "subject": "English", "score": 95, "curriculum": "Curriculum C" },
+      { "subject": "History", "score": 87, "curriculum": "Curriculum C" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "subject",
+      "type": "nominal",
+      "axis": { "title": "Subject" }
+    },
+    "y": {
+      "field": "score",
+      "type": "quantitative",
+      "axis": { "title": "Average Test Score" }
+    },
+    "xOffset": {
+      "field": "curriculum"
+    },
+    "color": {
+      "field": "curriculum",
+      "type": "nominal",
+      "legend": { "title": "Curriculum" }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Facility A",
+        "y": 490,
+        "series": "Within Threshold"
+      },
+      {
+        "x": "Facility B",
+        "y": 439,
+        "series": "Within Threshold"
+      },
+      {
+        "x": "Facility E",
+        "y": 431,
+        "series": "Within Threshold"
+      },
+      {
+        "x": "Facility F",
+        "y": 431,
+        "series": "Within Threshold"
+      },
+      {
+        "x": "Facility I",
+        "y": 412,
+        "series": "Within Threshold"
+      },
+      {
+        "x": "Facility J",
+        "y": 493,
+        "series": "Within Threshold"
+      },
+      {
+        "x": "Facility C",
+        "y": 502,
+        "series": "Above Threshold"
+      },
+      {
+        "x": "Facility D",
+        "y": 572,
+        "series": "Above Threshold"
+      },
+      {
+        "x": "Facility G",
+        "y": 576,
+        "series": "Above Threshold"
+      },
+      {
+        "x": "Facility H",
+        "y": 511,
+        "series": "Above Threshold"
+      }
+    ]
+  },
+  "title": "Annual CO$_2$ Emissions by Facility<br><sup>Regulatory Threshold $E_{\\text{max}} = 500$ tons</sup>",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Facility"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "CO$_2$ Emissions (tons)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Facility"
+      },
+      {
+        "field": "y",
+        "title": "CO$_2$ Emissions (tons)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "0‑14",
+        "y": 1,
+        "series": "Male"
+      },
+      {
+        "x": "15‑24",
+        "y": 0.6,
+        "series": "Male"
+      },
+      {
+        "x": "25‑54",
+        "y": 2.2,
+        "series": "Male"
+      },
+      {
+        "x": "55‑64",
+        "y": 0.5,
+        "series": "Male"
+      },
+      {
+        "x": "65+",
+        "y": 0.4,
+        "series": "Male"
+      },
+      {
+        "x": "0‑14",
+        "y": 0.9,
+        "series": "Female"
+      },
+      {
+        "x": "15‑24",
+        "y": 0.6,
+        "series": "Female"
+      },
+      {
+        "x": "25‑54",
+        "y": 2.3,
+        "series": "Female"
+      },
+      {
+        "x": "55‑64",
+        "y": 0.6,
+        "series": "Female"
+      },
+      {
+        "x": "65+",
+        "y": 0.5,
+        "series": "Female"
+      }
+    ]
+  },
+  "title": "Population by Age & Gender",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Age Group"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Population"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Age Group"
+      },
+      {
+        "field": "y",
+        "title": "Population"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

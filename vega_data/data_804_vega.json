@@ -1,0 +1,1342 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 0,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 0,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 0,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 0,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 0,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 0,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 0,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 0,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 1,
+        "series": "Arctic, Carrier"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 0,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 1,
+        "series": "Arctic, Destroyer"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 1,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 1,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 1,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 1,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 1,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 1,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 0,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 1,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 1,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 1,
+        "series": "Arctic, Submarine"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 0.3333333333333333,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 0.6666666666666666,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 0.3333333333333333,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 0.3333333333333333,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 0.3333333333333333,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 0.3333333333333333,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 0.3333333333333333,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 0.3333333333333333,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 0.3333333333333333,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 0,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 0.6666666666666666,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 0.3333333333333333,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 0,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 0.3333333333333333,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 0.6666666666666666,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 1,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 0.6666666666666666,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 0.6666666666666666,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 0.3333333333333333,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 0.6666666666666666,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 0.6666666666666666,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 0.3333333333333333,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 1,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 0.3333333333333333,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 0.6666666666666666,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 0.6666666666666666,
+        "series": "Indian, Carrier"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 1,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 1,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 1,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 1,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 1,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 1,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 1,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 1,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 1,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 0,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 1,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 1,
+        "series": "Indian, Destroyer"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 1,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 0,
+        "series": "Indian, Frigate"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Destroyer"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 1,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 0,
+        "series": "Atlantic, Frigate"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-01-08T00:00:00",
+        "y": 0,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-01-15T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-01-22T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-01-29T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-02-05T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-02-12T00:00:00",
+        "y": 0,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-02-19T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-02-26T00:00:00",
+        "y": 0,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-03-05T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-03-12T00:00:00",
+        "y": 0,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-03-19T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-03-26T00:00:00",
+        "y": 0,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-04-02T00:00:00",
+        "y": 0,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-04-09T00:00:00",
+        "y": 0,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-04-16T00:00:00",
+        "y": 0,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-04-23T00:00:00",
+        "y": 0,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 0,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-05-07T00:00:00",
+        "y": 0,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-05-14T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-05-21T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-05-28T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-06-04T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-06-11T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-06-18T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      },
+      {
+        "x": "2023-06-25T00:00:00",
+        "y": 1,
+        "series": "Pacific, Submarine"
+      }
+    ]
+  },
+  "title": "Weekly Maintenance Completion Rate by Ship Type, Region, and Fleet",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Completion Rate"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Week"
+      },
+      {
+        "field": "y",
+        "title": "Completion Rate"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

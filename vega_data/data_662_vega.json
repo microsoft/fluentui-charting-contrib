@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Factory A",
+        "y": 987,
+        "series": "Production Volume"
+      },
+      {
+        "x": "Factory B",
+        "y": 814,
+        "series": "Production Volume"
+      },
+      {
+        "x": "Factory C",
+        "y": 1320,
+        "series": "Production Volume"
+      },
+      {
+        "x": "Factory D",
+        "y": 1271,
+        "series": "Production Volume"
+      },
+      {
+        "x": "Factory A",
+        "y": 21.26,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "Factory B",
+        "y": 18.99,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "Factory C",
+        "y": 22.63,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "Factory D",
+        "y": 18.08,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "Factory A",
+        "y": 0.92,
+        "series": "Downtime (hours)"
+      },
+      {
+        "x": "Factory B",
+        "y": 0.55,
+        "series": "Downtime (hours)"
+      },
+      {
+        "x": "Factory C",
+        "y": 1.1,
+        "series": "Downtime (hours)"
+      },
+      {
+        "x": "Factory D",
+        "y": 1.1,
+        "series": "Downtime (hours)"
+      },
+      {
+        "x": "Factory A",
+        "y": 44.65,
+        "series": "Efficiency (%)"
+      },
+      {
+        "x": "Factory B",
+        "y": 41.88,
+        "series": "Efficiency (%)"
+      },
+      {
+        "x": "Factory C",
+        "y": 55.66,
+        "series": "Efficiency (%)"
+      },
+      {
+        "x": "Factory D",
+        "y": 67.07,
+        "series": "Efficiency (%)"
+      }
+    ]
+  },
+  "title": "Factory Performance Metrics (Latest Day)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Factory Location"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Metric Value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Factory Location"
+      },
+      {
+        "field": "y",
+        "title": "Metric Value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

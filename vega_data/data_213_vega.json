@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Quarterly Revenue by Room Type",
+  "description": "Converted from Plotly schema 213 - Heatmap",
+  "data": {
+    "values": [
+      { "roomType": "Standard", "quarter": "Jan-Mar", "revenue": 150 },
+      { "roomType": "Deluxe", "quarter": "Jan-Mar", "revenue": 160 },
+      { "roomType": "Suite", "quarter": "Jan-Mar", "revenue": 170 },
+      { "roomType": "Standard", "quarter": "Apr-Jun", "revenue": 180 },
+      { "roomType": "Deluxe", "quarter": "Apr-Jun", "revenue": 175 },
+      { "roomType": "Suite", "quarter": "Apr-Jun", "revenue": 165 },
+      { "roomType": "Standard", "quarter": "Jul-Sep", "revenue": 155 },
+      { "roomType": "Deluxe", "quarter": "Jul-Sep", "revenue": 150 },
+      { "roomType": "Suite", "quarter": "Jul-Sep", "revenue": 160 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "roomType",
+      "type": "nominal",
+      "axis": { "title": "Room Type" }
+    },
+    "y": {
+      "field": "quarter",
+      "type": "ordinal",
+      "axis": { "title": "Quarter" },
+      "sort": ["Jan-Mar", "Apr-Jun", "Jul-Sep"]
+    },
+    "color": {
+      "field": "revenue",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Revenue" }
+    }
+  }
+}

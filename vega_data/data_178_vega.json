@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Processes Time and Error Rate",
+  "description": "Converted from Plotly schema 178 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "process": "Process 1", "value": 10, "metric": "Time to Complete (hours)" },
+      { "process": "Process 2", "value": 15, "metric": "Time to Complete (hours)" },
+      { "process": "Process 3", "value": 8, "metric": "Time to Complete (hours)" },
+      { "process": "Process 4", "value": 13, "metric": "Time to Complete (hours)" },
+      { "process": "Process 1", "value": 2, "metric": "Error Rate (%)" },
+      { "process": "Process 2", "value": 1, "metric": "Error Rate (%)" },
+      { "process": "Process 3", "value": 3, "metric": "Error Rate (%)" },
+      { "process": "Process 4", "value": 1, "metric": "Error Rate (%)" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "process",
+      "type": "nominal",
+      "axis": { "title": "Process ID" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Hours / %" }
+    },
+    "xOffset": {
+      "field": "metric"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

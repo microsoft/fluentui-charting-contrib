@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Delivery Schedule Performance",
+  "description": "Converted from Plotly schema 120 - Pie chart",
+  "data": {
+    "values": [
+      { "status": "On-time Delivery", "value": 70 },
+      { "status": "Delayed Delivery", "value": 30 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "status",
+      "type": "nominal",
+      "legend": { "title": "Delivery Status" }
+    }
+  }
+}

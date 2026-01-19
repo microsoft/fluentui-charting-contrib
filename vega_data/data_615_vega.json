@@ -1,0 +1,842 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2015,
+        "y": 8799,
+        "series": "University"
+      },
+      {
+        "x": 2016,
+        "y": 9043,
+        "series": "University"
+      },
+      {
+        "x": 2017,
+        "y": 9303,
+        "series": "University"
+      },
+      {
+        "x": 2018,
+        "y": 9399,
+        "series": "University"
+      },
+      {
+        "x": 2019,
+        "y": 9630,
+        "series": "University"
+      },
+      {
+        "x": 2020,
+        "y": 9964,
+        "series": "University"
+      },
+      {
+        "x": 2021,
+        "y": 10215,
+        "series": "University"
+      },
+      {
+        "x": 2022,
+        "y": 10209,
+        "series": "University"
+      },
+      {
+        "x": 2023,
+        "y": 10501,
+        "series": "University"
+      },
+      {
+        "x": 2024,
+        "y": 10894,
+        "series": "University"
+      },
+      {
+        "x": 2015,
+        "y": 8309,
+        "series": "University"
+      },
+      {
+        "x": 2016,
+        "y": 8480,
+        "series": "University"
+      },
+      {
+        "x": 2017,
+        "y": 9032,
+        "series": "University"
+      },
+      {
+        "x": 2018,
+        "y": 9181,
+        "series": "University"
+      },
+      {
+        "x": 2019,
+        "y": 9141,
+        "series": "University"
+      },
+      {
+        "x": 2020,
+        "y": 9524,
+        "series": "University"
+      },
+      {
+        "x": 2021,
+        "y": 9692,
+        "series": "University"
+      },
+      {
+        "x": 2022,
+        "y": 9879,
+        "series": "University"
+      },
+      {
+        "x": 2023,
+        "y": 9914,
+        "series": "University"
+      },
+      {
+        "x": 2024,
+        "y": 10190,
+        "series": "University"
+      },
+      {
+        "x": 2015,
+        "y": 7579,
+        "series": "University"
+      },
+      {
+        "x": 2016,
+        "y": 7623,
+        "series": "University"
+      },
+      {
+        "x": 2017,
+        "y": 7923,
+        "series": "University"
+      },
+      {
+        "x": 2018,
+        "y": 8184,
+        "series": "University"
+      },
+      {
+        "x": 2019,
+        "y": 8102,
+        "series": "University"
+      },
+      {
+        "x": 2020,
+        "y": 8462,
+        "series": "University"
+      },
+      {
+        "x": 2021,
+        "y": 8805,
+        "series": "University"
+      },
+      {
+        "x": 2022,
+        "y": 8995,
+        "series": "University"
+      },
+      {
+        "x": 2023,
+        "y": 9154,
+        "series": "University"
+      },
+      {
+        "x": 2024,
+        "y": 9210,
+        "series": "University"
+      },
+      {
+        "x": 2015,
+        "y": 7962,
+        "series": "University"
+      },
+      {
+        "x": 2016,
+        "y": 8134,
+        "series": "University"
+      },
+      {
+        "x": 2017,
+        "y": 8290,
+        "series": "University"
+      },
+      {
+        "x": 2018,
+        "y": 8537,
+        "series": "University"
+      },
+      {
+        "x": 2019,
+        "y": 9018,
+        "series": "University"
+      },
+      {
+        "x": 2020,
+        "y": 8942,
+        "series": "University"
+      },
+      {
+        "x": 2021,
+        "y": 9154,
+        "series": "University"
+      },
+      {
+        "x": 2022,
+        "y": 9343,
+        "series": "University"
+      },
+      {
+        "x": 2023,
+        "y": 9682,
+        "series": "University"
+      },
+      {
+        "x": 2024,
+        "y": 9995,
+        "series": "University"
+      },
+      {
+        "x": 2015,
+        "y": 4341,
+        "series": "Community College"
+      },
+      {
+        "x": 2016,
+        "y": 4491,
+        "series": "Community College"
+      },
+      {
+        "x": 2017,
+        "y": 4516,
+        "series": "Community College"
+      },
+      {
+        "x": 2018,
+        "y": 4934,
+        "series": "Community College"
+      },
+      {
+        "x": 2019,
+        "y": 4801,
+        "series": "Community College"
+      },
+      {
+        "x": 2020,
+        "y": 4880,
+        "series": "Community College"
+      },
+      {
+        "x": 2021,
+        "y": 5017,
+        "series": "Community College"
+      },
+      {
+        "x": 2022,
+        "y": 5194,
+        "series": "Community College"
+      },
+      {
+        "x": 2023,
+        "y": 5309,
+        "series": "Community College"
+      },
+      {
+        "x": 2024,
+        "y": 5446,
+        "series": "Community College"
+      },
+      {
+        "x": 2015,
+        "y": 4181,
+        "series": "Community College"
+      },
+      {
+        "x": 2016,
+        "y": 4380,
+        "series": "Community College"
+      },
+      {
+        "x": 2017,
+        "y": 4347,
+        "series": "Community College"
+      },
+      {
+        "x": 2018,
+        "y": 4464,
+        "series": "Community College"
+      },
+      {
+        "x": 2019,
+        "y": 4499,
+        "series": "Community College"
+      },
+      {
+        "x": 2020,
+        "y": 4632,
+        "series": "Community College"
+      },
+      {
+        "x": 2021,
+        "y": 4774,
+        "series": "Community College"
+      },
+      {
+        "x": 2022,
+        "y": 4910,
+        "series": "Community College"
+      },
+      {
+        "x": 2023,
+        "y": 4930,
+        "series": "Community College"
+      },
+      {
+        "x": 2024,
+        "y": 5023,
+        "series": "Community College"
+      },
+      {
+        "x": 2015,
+        "y": 3946,
+        "series": "Community College"
+      },
+      {
+        "x": 2016,
+        "y": 3931,
+        "series": "Community College"
+      },
+      {
+        "x": 2017,
+        "y": 4187,
+        "series": "Community College"
+      },
+      {
+        "x": 2018,
+        "y": 4012,
+        "series": "Community College"
+      },
+      {
+        "x": 2019,
+        "y": 4085,
+        "series": "Community College"
+      },
+      {
+        "x": 2020,
+        "y": 4245,
+        "series": "Community College"
+      },
+      {
+        "x": 2021,
+        "y": 4325,
+        "series": "Community College"
+      },
+      {
+        "x": 2022,
+        "y": 4442,
+        "series": "Community College"
+      },
+      {
+        "x": 2023,
+        "y": 4621,
+        "series": "Community College"
+      },
+      {
+        "x": 2024,
+        "y": 4595,
+        "series": "Community College"
+      },
+      {
+        "x": 2015,
+        "y": 4034,
+        "series": "Community College"
+      },
+      {
+        "x": 2016,
+        "y": 4178,
+        "series": "Community College"
+      },
+      {
+        "x": 2017,
+        "y": 4103,
+        "series": "Community College"
+      },
+      {
+        "x": 2018,
+        "y": 4468,
+        "series": "Community College"
+      },
+      {
+        "x": 2019,
+        "y": 4571,
+        "series": "Community College"
+      },
+      {
+        "x": 2020,
+        "y": 4634,
+        "series": "Community College"
+      },
+      {
+        "x": 2021,
+        "y": 4598,
+        "series": "Community College"
+      },
+      {
+        "x": 2022,
+        "y": 4744,
+        "series": "Community College"
+      },
+      {
+        "x": 2023,
+        "y": 4724,
+        "series": "Community College"
+      },
+      {
+        "x": 2024,
+        "y": 4908,
+        "series": "Community College"
+      },
+      {
+        "x": 2015,
+        "y": 2219,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2016,
+        "y": 2309,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2017,
+        "y": 2159,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2018,
+        "y": 2488,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2019,
+        "y": 2394,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2020,
+        "y": 2453,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2021,
+        "y": 2419,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2022,
+        "y": 2606,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2023,
+        "y": 2659,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2024,
+        "y": 2737,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2015,
+        "y": 2128,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2016,
+        "y": 2232,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2017,
+        "y": 2294,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2018,
+        "y": 2245,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2019,
+        "y": 2218,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2020,
+        "y": 2245,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2021,
+        "y": 2541,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2022,
+        "y": 2364,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2023,
+        "y": 2540,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2024,
+        "y": 2625,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2015,
+        "y": 1910,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2016,
+        "y": 2028,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2017,
+        "y": 2107,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2018,
+        "y": 2161,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2019,
+        "y": 2192,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2020,
+        "y": 2147,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2021,
+        "y": 2091,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2022,
+        "y": 2373,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2023,
+        "y": 2221,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2024,
+        "y": 2463,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2015,
+        "y": 1857,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2016,
+        "y": 2140,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2017,
+        "y": 1941,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2018,
+        "y": 2113,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2019,
+        "y": 2251,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2020,
+        "y": 2118,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2021,
+        "y": 2414,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2022,
+        "y": 2348,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2023,
+        "y": 2534,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2024,
+        "y": 2395,
+        "series": "Technical Institute"
+      },
+      {
+        "x": 2015,
+        "y": 1301,
+        "series": "Private School"
+      },
+      {
+        "x": 2016,
+        "y": 1339,
+        "series": "Private School"
+      },
+      {
+        "x": 2017,
+        "y": 1537,
+        "series": "Private School"
+      },
+      {
+        "x": 2018,
+        "y": 1469,
+        "series": "Private School"
+      },
+      {
+        "x": 2019,
+        "y": 1577,
+        "series": "Private School"
+      },
+      {
+        "x": 2020,
+        "y": 1554,
+        "series": "Private School"
+      },
+      {
+        "x": 2021,
+        "y": 1668,
+        "series": "Private School"
+      },
+      {
+        "x": 2022,
+        "y": 1673,
+        "series": "Private School"
+      },
+      {
+        "x": 2023,
+        "y": 1428,
+        "series": "Private School"
+      },
+      {
+        "x": 2024,
+        "y": 1536,
+        "series": "Private School"
+      },
+      {
+        "x": 2015,
+        "y": 1243,
+        "series": "Private School"
+      },
+      {
+        "x": 2016,
+        "y": 1164,
+        "series": "Private School"
+      },
+      {
+        "x": 2017,
+        "y": 1383,
+        "series": "Private School"
+      },
+      {
+        "x": 2018,
+        "y": 1343,
+        "series": "Private School"
+      },
+      {
+        "x": 2019,
+        "y": 1506,
+        "series": "Private School"
+      },
+      {
+        "x": 2020,
+        "y": 1384,
+        "series": "Private School"
+      },
+      {
+        "x": 2021,
+        "y": 1401,
+        "series": "Private School"
+      },
+      {
+        "x": 2022,
+        "y": 1419,
+        "series": "Private School"
+      },
+      {
+        "x": 2023,
+        "y": 1472,
+        "series": "Private School"
+      },
+      {
+        "x": 2024,
+        "y": 1580,
+        "series": "Private School"
+      },
+      {
+        "x": 2015,
+        "y": 1035,
+        "series": "Private School"
+      },
+      {
+        "x": 2016,
+        "y": 1132,
+        "series": "Private School"
+      },
+      {
+        "x": 2017,
+        "y": 1220,
+        "series": "Private School"
+      },
+      {
+        "x": 2018,
+        "y": 1330,
+        "series": "Private School"
+      },
+      {
+        "x": 2019,
+        "y": 1347,
+        "series": "Private School"
+      },
+      {
+        "x": 2020,
+        "y": 1289,
+        "series": "Private School"
+      },
+      {
+        "x": 2021,
+        "y": 1303,
+        "series": "Private School"
+      },
+      {
+        "x": 2022,
+        "y": 1376,
+        "series": "Private School"
+      },
+      {
+        "x": 2023,
+        "y": 1388,
+        "series": "Private School"
+      },
+      {
+        "x": 2024,
+        "y": 1284,
+        "series": "Private School"
+      },
+      {
+        "x": 2015,
+        "y": 1152,
+        "series": "Private School"
+      },
+      {
+        "x": 2016,
+        "y": 1125,
+        "series": "Private School"
+      },
+      {
+        "x": 2017,
+        "y": 1171,
+        "series": "Private School"
+      },
+      {
+        "x": 2018,
+        "y": 1309,
+        "series": "Private School"
+      },
+      {
+        "x": 2019,
+        "y": 1312,
+        "series": "Private School"
+      },
+      {
+        "x": 2020,
+        "y": 1327,
+        "series": "Private School"
+      },
+      {
+        "x": 2021,
+        "y": 1265,
+        "series": "Private School"
+      },
+      {
+        "x": 2022,
+        "y": 1310,
+        "series": "Private School"
+      },
+      {
+        "x": 2023,
+        "y": 1580,
+        "series": "Private School"
+      },
+      {
+        "x": 2024,
+        "y": 1409,
+        "series": "Private School"
+      }
+    ]
+  },
+  "title": "Enrollment Trends and Forecasting by Institution Type (2015-2024)",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Enrollment"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Enrollment"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

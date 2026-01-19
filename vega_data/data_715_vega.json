@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "x": "Feb",
+        "y": "Chicago",
+        "value": 1150000
+      },
+      {
+        "x": "Jan",
+        "y": "Chicago",
+        "value": 1200000
+      },
+      {
+        "x": "Mar",
+        "y": "Chicago",
+        "value": 1300000
+      },
+      {
+        "x": "Feb",
+        "y": "Houston",
+        "value": 730000
+      },
+      {
+        "x": "Jan",
+        "y": "Houston",
+        "value": 750000
+      },
+      {
+        "x": "Mar",
+        "y": "Houston",
+        "value": 800000
+      },
+      {
+        "x": "Feb",
+        "y": "Los Angeles",
+        "value": 950000
+      },
+      {
+        "x": "Jan",
+        "y": "Los Angeles",
+        "value": 900000
+      },
+      {
+        "x": "Mar",
+        "y": "Los Angeles",
+        "value": 1000000
+      },
+      {
+        "x": "Feb",
+        "y": "New York",
+        "value": 2050000
+      },
+      {
+        "x": "Jan",
+        "y": "New York",
+        "value": 2200000
+      },
+      {
+        "x": "Mar",
+        "y": "New York",
+        "value": 2400000
+      }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "y",
+      "type": "ordinal"
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "blues"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Monthly Passenger Count by City - Public Transportation Analysis"
+}

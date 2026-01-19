@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Preferred Vehicle Features Across Segments",
+  "description": "Converted from Plotly schema 265 - Pie chart (representative sample from multiple segments)",
+  "width": 300,
+  "height": 300,
+  "data": {
+    "values": [
+      { "feature": "Safety Features", "preference": 15 },
+      { "feature": "Fuel Efficiency", "preference": 25 },
+      { "feature": "Technology", "preference": 20 },
+      { "feature": "Comfort", "preference": 10 },
+      { "feature": "Design", "preference": 30 },
+      { "feature": "Price", "preference": 5 },
+      { "feature": "Brand Reliability", "preference": 17 },
+      { "feature": "Resale Value", "preference": 8 },
+      { "feature": "Performance", "preference": 10 },
+      { "feature": "Luxury", "preference": 20 }
+    ]
+  },
+  "mark": {
+    "type": "arc"
+  },
+  "encoding": {
+    "theta": {
+      "field": "preference",
+      "type": "quantitative",
+      "stack": true
+    },
+    "color": {
+      "field": "feature",
+      "type": "nominal",
+      "legend": { "title": "Vehicle Feature" }
+    },
+    "tooltip": [
+      { "field": "feature", "type": "nominal", "title": "Feature" },
+      { "field": "preference", "type": "quantitative", "title": "Preference Score" }
+    ]
+  }
+}

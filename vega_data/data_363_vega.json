@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 0,
+        "y": "Analysis",
+        "series": "Series"
+      },
+      {
+        "x": 0,
+        "y": "Design",
+        "series": "Series"
+      },
+      {
+        "x": 0,
+        "y": "Development",
+        "series": "Series"
+      },
+      {
+        "x": 0,
+        "y": "Testing",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Project Timeline",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Phase"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Phase"
+      }
+    ]
+  }
+}

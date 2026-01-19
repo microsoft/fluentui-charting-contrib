@@ -1,0 +1,192 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01-01",
+        "y": 60,
+        "series": "positive_sentiment"
+      },
+      {
+        "x": "2023-02-01",
+        "y": 75,
+        "series": "positive_sentiment"
+      },
+      {
+        "x": "2023-03-01",
+        "y": 90,
+        "series": "positive_sentiment"
+      },
+      {
+        "x": "2023-04-01",
+        "y": 80,
+        "series": "positive_sentiment"
+      },
+      {
+        "x": "2023-05-01",
+        "y": 85,
+        "series": "positive_sentiment"
+      },
+      {
+        "x": "2023-06-01",
+        "y": 95,
+        "series": "positive_sentiment"
+      },
+      {
+        "x": "2023-07-01",
+        "y": 100,
+        "series": "positive_sentiment"
+      },
+      {
+        "x": "2023-08-01",
+        "y": 110,
+        "series": "positive_sentiment"
+      },
+      {
+        "x": "2023-09-01",
+        "y": 120,
+        "series": "positive_sentiment"
+      },
+      {
+        "x": "2023-10-01",
+        "y": 115,
+        "series": "positive_sentiment"
+      },
+      {
+        "x": "2023-01-01",
+        "y": 20,
+        "series": "negative_sentiment"
+      },
+      {
+        "x": "2023-02-01",
+        "y": 15,
+        "series": "negative_sentiment"
+      },
+      {
+        "x": "2023-03-01",
+        "y": 25,
+        "series": "negative_sentiment"
+      },
+      {
+        "x": "2023-04-01",
+        "y": 30,
+        "series": "negative_sentiment"
+      },
+      {
+        "x": "2023-05-01",
+        "y": 25,
+        "series": "negative_sentiment"
+      },
+      {
+        "x": "2023-06-01",
+        "y": 20,
+        "series": "negative_sentiment"
+      },
+      {
+        "x": "2023-07-01",
+        "y": 30,
+        "series": "negative_sentiment"
+      },
+      {
+        "x": "2023-08-01",
+        "y": 35,
+        "series": "negative_sentiment"
+      },
+      {
+        "x": "2023-09-01",
+        "y": 40,
+        "series": "negative_sentiment"
+      },
+      {
+        "x": "2023-10-01",
+        "y": 45,
+        "series": "negative_sentiment"
+      },
+      {
+        "x": "2023-01-01",
+        "y": 40,
+        "series": "neutral_sentiment"
+      },
+      {
+        "x": "2023-02-01",
+        "y": 45,
+        "series": "neutral_sentiment"
+      },
+      {
+        "x": "2023-03-01",
+        "y": 65,
+        "series": "neutral_sentiment"
+      },
+      {
+        "x": "2023-04-01",
+        "y": 40,
+        "series": "neutral_sentiment"
+      },
+      {
+        "x": "2023-05-01",
+        "y": 50,
+        "series": "neutral_sentiment"
+      },
+      {
+        "x": "2023-06-01",
+        "y": 55,
+        "series": "neutral_sentiment"
+      },
+      {
+        "x": "2023-07-01",
+        "y": 60,
+        "series": "neutral_sentiment"
+      },
+      {
+        "x": "2023-08-01",
+        "y": 65,
+        "series": "neutral_sentiment"
+      },
+      {
+        "x": "2023-09-01",
+        "y": 70,
+        "series": "neutral_sentiment"
+      },
+      {
+        "x": "2023-10-01",
+        "y": 60,
+        "series": "neutral_sentiment"
+      }
+    ]
+  },
+  "title": "Sentiment Analysis Over Time",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Date"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sentiment Count"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Date"
+      },
+      {
+        "field": "y",
+        "title": "Sentiment Count"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

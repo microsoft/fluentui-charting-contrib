@@ -1,0 +1,222 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 1.6242373706595672,
+        "series": "Fleet A - Arctic"
+      },
+      {
+        "x": "2023-02-01T00:00:00",
+        "y": 2.095109584097493,
+        "series": "Fleet A - Arctic"
+      },
+      {
+        "x": "2023-03-01T00:00:00",
+        "y": 2.4330459363662182,
+        "series": "Fleet A - Arctic"
+      },
+      {
+        "x": "2023-04-01T00:00:00",
+        "y": 2.4650466335734023,
+        "series": "Fleet A - Arctic"
+      },
+      {
+        "x": "2023-05-01T00:00:00",
+        "y": 2.6628551082152008,
+        "series": "Fleet A - Arctic"
+      },
+      {
+        "x": "2023-06-01T00:00:00",
+        "y": 1.6901437223716154,
+        "series": "Fleet A - Arctic"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 2.5397413936681206,
+        "series": "Fleet A - Indian"
+      },
+      {
+        "x": "2023-02-01T00:00:00",
+        "y": 1.309058570112007,
+        "series": "Fleet A - Indian"
+      },
+      {
+        "x": "2023-03-01T00:00:00",
+        "y": 1.2877649788138104,
+        "series": "Fleet A - Indian"
+      },
+      {
+        "x": "2023-04-01T00:00:00",
+        "y": 3.9187041621534737,
+        "series": "Fleet A - Indian"
+      },
+      {
+        "x": "2023-05-01T00:00:00",
+        "y": 3.183426164405567,
+        "series": "Fleet A - Indian"
+      },
+      {
+        "x": "2023-06-01T00:00:00",
+        "y": 2.059613000718175,
+        "series": "Fleet A - Indian"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 4.776021418912074,
+        "series": "Fleet A - Pacific"
+      },
+      {
+        "x": "2023-02-01T00:00:00",
+        "y": 1.7972371076664255,
+        "series": "Fleet A - Pacific"
+      },
+      {
+        "x": "2023-03-01T00:00:00",
+        "y": 2.261060902749747,
+        "series": "Fleet A - Pacific"
+      },
+      {
+        "x": "2023-04-01T00:00:00",
+        "y": 0,
+        "series": "Fleet A - Pacific"
+      },
+      {
+        "x": "2023-05-01T00:00:00",
+        "y": 4.914646905361405,
+        "series": "Fleet A - Pacific"
+      },
+      {
+        "x": "2023-06-01T00:00:00",
+        "y": 5.282963188828467,
+        "series": "Fleet A - Pacific"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 1.6133845748041842,
+        "series": "Fleet B - Arctic"
+      },
+      {
+        "x": "2023-02-01T00:00:00",
+        "y": 2.0628934770658187,
+        "series": "Fleet B - Arctic"
+      },
+      {
+        "x": "2023-03-01T00:00:00",
+        "y": 3.3347495915488583,
+        "series": "Fleet B - Arctic"
+      },
+      {
+        "x": "2023-04-01T00:00:00",
+        "y": 2.6780262574276508,
+        "series": "Fleet B - Arctic"
+      },
+      {
+        "x": "2023-05-01T00:00:00",
+        "y": 5.024839409657485,
+        "series": "Fleet B - Arctic"
+      },
+      {
+        "x": "2023-06-01T00:00:00",
+        "y": 3.863555770275185,
+        "series": "Fleet B - Arctic"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 1.677214925369292,
+        "series": "Fleet B - Indian"
+      },
+      {
+        "x": "2023-02-01T00:00:00",
+        "y": 1.206194813692362,
+        "series": "Fleet B - Indian"
+      },
+      {
+        "x": "2023-03-01T00:00:00",
+        "y": 1.547689076779718,
+        "series": "Fleet B - Indian"
+      },
+      {
+        "x": "2023-04-01T00:00:00",
+        "y": 0.9552075801782067,
+        "series": "Fleet B - Indian"
+      },
+      {
+        "x": "2023-05-01T00:00:00",
+        "y": 1.06302801214684,
+        "series": "Fleet B - Indian"
+      },
+      {
+        "x": "2023-06-01T00:00:00",
+        "y": 4.338168159151225,
+        "series": "Fleet B - Indian"
+      },
+      {
+        "x": "2023-01-01T00:00:00",
+        "y": 2.565883783396419,
+        "series": "Fleet B - Atlantic"
+      },
+      {
+        "x": "2023-02-01T00:00:00",
+        "y": 2.239766244687278,
+        "series": "Fleet B - Atlantic"
+      },
+      {
+        "x": "2023-03-01T00:00:00",
+        "y": 3.9936689888897123,
+        "series": "Fleet B - Atlantic"
+      },
+      {
+        "x": "2023-04-01T00:00:00",
+        "y": 2.4389588264985287,
+        "series": "Fleet B - Atlantic"
+      },
+      {
+        "x": "2023-05-01T00:00:00",
+        "y": 2.809731991978307,
+        "series": "Fleet B - Atlantic"
+      },
+      {
+        "x": "2023-06-01T00:00:00",
+        "y": 2.129721417306907,
+        "series": "Fleet B - Atlantic"
+      }
+    ]
+  },
+  "title": "Average Monthly Downtime by Fleet and Region",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Avg Downtime Duration (days)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Avg Downtime Duration (days)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "CNC Lathe",
+        "y": 3897,
+        "series": "False"
+      },
+      {
+        "x": "Hydraulic Press",
+        "y": 3389,
+        "series": "False"
+      },
+      {
+        "x": "Injection Molder",
+        "y": 4018,
+        "series": "False"
+      },
+      {
+        "x": "Welding Robot",
+        "y": 3313,
+        "series": "False"
+      },
+      {
+        "x": "Paint Booth",
+        "y": 3313,
+        "series": "False"
+      },
+      {
+        "x": "Assembly Line 1",
+        "y": 4114,
+        "series": "False"
+      },
+      {
+        "x": "Assembly Line 2",
+        "y": 3124,
+        "series": "False"
+      },
+      {
+        "x": "Packaging Unit",
+        "y": 3934,
+        "series": "False"
+      },
+      {
+        "x": "Laser Cutter",
+        "y": 4718,
+        "series": "True"
+      },
+      {
+        "x": "Compressor",
+        "y": 4763,
+        "series": "True"
+      }
+    ]
+  },
+  "title": "Monthly Energy Consumption by Machine",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Machine"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Energy Consumption (kWh)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Machine"
+      },
+      {
+        "field": "y",
+        "title": "Energy Consumption (kWh)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

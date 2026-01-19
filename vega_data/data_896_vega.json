@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 1036800000,
+        "y": "Procurement",
+        "series": "Procurement"
+      },
+      {
+        "x": 1036800000,
+        "y": "Assembly",
+        "series": "Assembly"
+      },
+      {
+        "x": 345600000,
+        "y": "QA",
+        "series": "QA"
+      },
+      {
+        "x": 86400000,
+        "y": "Shipping",
+        "series": "Shipping"
+      }
+    ]
+  },
+  "title": "Manufacturing Process Gantt",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Stage"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Stage"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

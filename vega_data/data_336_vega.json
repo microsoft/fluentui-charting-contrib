@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2022",
+        "y": 2.15,
+        "series": "Series"
+      },
+      {
+        "x": "2021",
+        "y": 1.96,
+        "series": "Series"
+      },
+      {
+        "x": "2020",
+        "y": 2.35,
+        "series": "Series"
+      },
+      {
+        "x": "2019",
+        "y": 2.39,
+        "series": "Series"
+      },
+      {
+        "x": "2018",
+        "y": 2.36,
+        "series": "Series"
+      },
+      {
+        "x": "2017",
+        "y": 2.23,
+        "series": "Series"
+      },
+      {
+        "x": "2016",
+        "y": 2.97,
+        "series": "Series"
+      },
+      {
+        "x": "2015",
+        "y": 2.91,
+        "series": "Series"
+      },
+      {
+        "x": "2014",
+        "y": 3.5,
+        "series": "Series"
+      },
+      {
+        "x": "2013",
+        "y": 3.22,
+        "series": "Series"
+      },
+      {
+        "x": "2012",
+        "y": 3.25,
+        "series": "Series"
+      },
+      {
+        "x": "2011",
+        "y": 2.52,
+        "series": "Series"
+      },
+      {
+        "x": "2010",
+        "y": 2.94,
+        "series": "Series"
+      },
+      {
+        "x": "2009",
+        "y": 3.28,
+        "series": "Series"
+      },
+      {
+        "x": "2008",
+        "y": 2.61,
+        "series": "Series"
+      },
+      {
+        "x": "2007",
+        "y": 2.55,
+        "series": "Series"
+      },
+      {
+        "x": "2006",
+        "y": 2.26,
+        "series": "Series"
+      },
+      {
+        "x": "2005",
+        "y": 1.99,
+        "series": "Series"
+      },
+      {
+        "x": "2004",
+        "y": 1.72,
+        "series": "Series"
+      },
+      {
+        "x": "2003",
+        "y": 1.61,
+        "series": "Series"
+      },
+      {
+        "x": "2002",
+        "y": 1.46,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Dividend Yield over the Years",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Dividend Yield (%)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Dividend Yield (%)"
+      }
+    ]
+  }
+}

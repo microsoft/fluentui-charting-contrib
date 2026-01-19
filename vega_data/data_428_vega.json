@@ -1,0 +1,149 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": 776
+      },
+      {
+        "value": 502
+      },
+      {
+        "value": 614
+      },
+      {
+        "value": 676
+      },
+      {
+        "value": 612
+      },
+      {
+        "value": 644
+      },
+      {
+        "value": 749
+      },
+      {
+        "value": 631
+      },
+      {
+        "value": 665
+      },
+      {
+        "value": 826
+      },
+      {
+        "value": 454
+      },
+      {
+        "value": 604
+      },
+      {
+        "value": 746
+      },
+      {
+        "value": 615
+      },
+      {
+        "value": 637
+      },
+      {
+        "value": 511
+      },
+      {
+        "value": 720
+      },
+      {
+        "value": 510
+      },
+      {
+        "value": 638
+      },
+      {
+        "value": 548
+      },
+      {
+        "value": 597
+      },
+      {
+        "value": 606
+      },
+      {
+        "value": 532
+      },
+      {
+        "value": 564
+      },
+      {
+        "value": 518
+      },
+      {
+        "value": 427
+      },
+      {
+        "value": 617
+      },
+      {
+        "value": 646
+      },
+      {
+        "value": 605
+      },
+      {
+        "value": 713
+      },
+      {
+        "value": 476
+      },
+      {
+        "value": 605
+      },
+      {
+        "value": 483
+      },
+      {
+        "value": 748
+      },
+      {
+        "value": 789
+      },
+      {
+        "value": 582
+      },
+      {
+        "value": 620
+      },
+      {
+        "value": 697
+      },
+      {
+        "value": 670
+      },
+      {
+        "value": 601
+      },
+      {
+        "value": 612
+      },
+      {
+        "value": 640
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "bin": true,
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Credit Score Distribution by Payment History"
+}

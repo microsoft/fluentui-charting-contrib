@@ -1,0 +1,417 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "x": "2024-05-01",
+        "y": "Central Unit",
+        "value": 74.43
+      },
+      {
+        "x": "2024-05-02",
+        "y": "Central Unit",
+        "value": 70.78
+      },
+      {
+        "x": "2024-05-03",
+        "y": "Central Unit",
+        "value": 99
+      },
+      {
+        "x": "2024-05-04",
+        "y": "Central Unit",
+        "value": 99
+      },
+      {
+        "x": "2024-05-05",
+        "y": "Central Unit",
+        "value": 78.61
+      },
+      {
+        "x": "2024-05-06",
+        "y": "Central Unit",
+        "value": 99
+      },
+      {
+        "x": "2024-05-07",
+        "y": "Central Unit",
+        "value": 85.49
+      },
+      {
+        "x": "2024-05-08",
+        "y": "Central Unit",
+        "value": 99
+      },
+      {
+        "x": "2024-05-09",
+        "y": "Central Unit",
+        "value": 99
+      },
+      {
+        "x": "2024-05-10",
+        "y": "Central Unit",
+        "value": 99
+      },
+      {
+        "x": "2024-05-11",
+        "y": "Central Unit",
+        "value": 69.19
+      },
+      {
+        "x": "2024-05-12",
+        "y": "Central Unit",
+        "value": 75.64
+      },
+      {
+        "x": "2024-05-13",
+        "y": "Central Unit",
+        "value": 99
+      },
+      {
+        "x": "2024-05-14",
+        "y": "Central Unit",
+        "value": 71.65
+      },
+      {
+        "x": "2024-05-15",
+        "y": "Central Unit",
+        "value": 61.53
+      },
+      {
+        "x": "2024-05-01",
+        "y": "East Works",
+        "value": 67.44
+      },
+      {
+        "x": "2024-05-02",
+        "y": "East Works",
+        "value": 92.5
+      },
+      {
+        "x": "2024-05-03",
+        "y": "East Works",
+        "value": 67.57
+      },
+      {
+        "x": "2024-05-04",
+        "y": "East Works",
+        "value": 60.5
+      },
+      {
+        "x": "2024-05-05",
+        "y": "East Works",
+        "value": 99
+      },
+      {
+        "x": "2024-05-06",
+        "y": "East Works",
+        "value": 99
+      },
+      {
+        "x": "2024-05-07",
+        "y": "East Works",
+        "value": 76.45
+      },
+      {
+        "x": "2024-05-08",
+        "y": "East Works",
+        "value": 99
+      },
+      {
+        "x": "2024-05-09",
+        "y": "East Works",
+        "value": 75.7
+      },
+      {
+        "x": "2024-05-10",
+        "y": "East Works",
+        "value": 60.63
+      },
+      {
+        "x": "2024-05-11",
+        "y": "East Works",
+        "value": 73.34
+      },
+      {
+        "x": "2024-05-12",
+        "y": "East Works",
+        "value": 65.12
+      },
+      {
+        "x": "2024-05-13",
+        "y": "East Works",
+        "value": 94.29
+      },
+      {
+        "x": "2024-05-14",
+        "y": "East Works",
+        "value": 99
+      },
+      {
+        "x": "2024-05-15",
+        "y": "East Works",
+        "value": 84.19
+      },
+      {
+        "x": "2024-05-01",
+        "y": "North Plant",
+        "value": 63.88
+      },
+      {
+        "x": "2024-05-02",
+        "y": "North Plant",
+        "value": 63.93
+      },
+      {
+        "x": "2024-05-03",
+        "y": "North Plant",
+        "value": 99
+      },
+      {
+        "x": "2024-05-04",
+        "y": "North Plant",
+        "value": 84.91
+      },
+      {
+        "x": "2024-05-05",
+        "y": "North Plant",
+        "value": 99
+      },
+      {
+        "x": "2024-05-06",
+        "y": "North Plant",
+        "value": 96.01
+      },
+      {
+        "x": "2024-05-07",
+        "y": "North Plant",
+        "value": 77.78
+      },
+      {
+        "x": "2024-05-08",
+        "y": "North Plant",
+        "value": 79.47
+      },
+      {
+        "x": "2024-05-09",
+        "y": "North Plant",
+        "value": 65.59
+      },
+      {
+        "x": "2024-05-10",
+        "y": "North Plant",
+        "value": 99
+      },
+      {
+        "x": "2024-05-11",
+        "y": "North Plant",
+        "value": 99
+      },
+      {
+        "x": "2024-05-12",
+        "y": "North Plant",
+        "value": 77.09
+      },
+      {
+        "x": "2024-05-13",
+        "y": "North Plant",
+        "value": 99
+      },
+      {
+        "x": "2024-05-14",
+        "y": "North Plant",
+        "value": 81.32
+      },
+      {
+        "x": "2024-05-15",
+        "y": "North Plant",
+        "value": 99
+      },
+      {
+        "x": "2024-05-01",
+        "y": "South Facility",
+        "value": 99
+      },
+      {
+        "x": "2024-05-02",
+        "y": "South Facility",
+        "value": 60
+      },
+      {
+        "x": "2024-05-03",
+        "y": "South Facility",
+        "value": 67.19
+      },
+      {
+        "x": "2024-05-04",
+        "y": "South Facility",
+        "value": 99
+      },
+      {
+        "x": "2024-05-05",
+        "y": "South Facility",
+        "value": 99
+      },
+      {
+        "x": "2024-05-06",
+        "y": "South Facility",
+        "value": 95.9
+      },
+      {
+        "x": "2024-05-07",
+        "y": "South Facility",
+        "value": 60
+      },
+      {
+        "x": "2024-05-08",
+        "y": "South Facility",
+        "value": 99
+      },
+      {
+        "x": "2024-05-09",
+        "y": "South Facility",
+        "value": 99
+      },
+      {
+        "x": "2024-05-10",
+        "y": "South Facility",
+        "value": 99
+      },
+      {
+        "x": "2024-05-11",
+        "y": "South Facility",
+        "value": 99
+      },
+      {
+        "x": "2024-05-12",
+        "y": "South Facility",
+        "value": 99
+      },
+      {
+        "x": "2024-05-13",
+        "y": "South Facility",
+        "value": 69.13
+      },
+      {
+        "x": "2024-05-14",
+        "y": "South Facility",
+        "value": 99
+      },
+      {
+        "x": "2024-05-15",
+        "y": "South Facility",
+        "value": 99
+      },
+      {
+        "x": "2024-05-01",
+        "y": "West Hub",
+        "value": 78.69
+      },
+      {
+        "x": "2024-05-02",
+        "y": "West Hub",
+        "value": 99
+      },
+      {
+        "x": "2024-05-03",
+        "y": "West Hub",
+        "value": 79.57
+      },
+      {
+        "x": "2024-05-04",
+        "y": "West Hub",
+        "value": 99
+      },
+      {
+        "x": "2024-05-05",
+        "y": "West Hub",
+        "value": 91.59
+      },
+      {
+        "x": "2024-05-06",
+        "y": "West Hub",
+        "value": 88.32
+      },
+      {
+        "x": "2024-05-07",
+        "y": "West Hub",
+        "value": 99
+      },
+      {
+        "x": "2024-05-08",
+        "y": "West Hub",
+        "value": 99
+      },
+      {
+        "x": "2024-05-09",
+        "y": "West Hub",
+        "value": 73.89
+      },
+      {
+        "x": "2024-05-10",
+        "y": "West Hub",
+        "value": 82.91
+      },
+      {
+        "x": "2024-05-11",
+        "y": "West Hub",
+        "value": 70.82
+      },
+      {
+        "x": "2024-05-12",
+        "y": "West Hub",
+        "value": 99
+      },
+      {
+        "x": "2024-05-13",
+        "y": "West Hub",
+        "value": 99
+      },
+      {
+        "x": "2024-05-14",
+        "y": "West Hub",
+        "value": 93.29
+      },
+      {
+        "x": "2024-05-15",
+        "y": "West Hub",
+        "value": 99
+      }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "y",
+      "type": "ordinal"
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "blues"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Factory Daily Efficiency Heatmap"
+}

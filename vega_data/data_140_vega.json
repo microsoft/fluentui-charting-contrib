@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Trends in Sustainability Metrics",
+  "description": "Converted from Plotly schema 140 - Multi-series line chart with markers",
+  "data": {
+    "values": [
+      { "quarter": "Q1", "value": 200, "metric": "Carbon Footprint" },
+      { "quarter": "Q2", "value": 180, "metric": "Carbon Footprint" },
+      { "quarter": "Q3", "value": 190, "metric": "Carbon Footprint" },
+      { "quarter": "Q4", "value": 170, "metric": "Carbon Footprint" },
+      { "quarter": "Q1", "value": 150, "metric": "Waste Generation" },
+      { "quarter": "Q2", "value": 160, "metric": "Waste Generation" },
+      { "quarter": "Q3", "value": 140, "metric": "Waste Generation" },
+      { "quarter": "Q4", "value": 130, "metric": "Waste Generation" },
+      { "quarter": "Q1", "value": 300, "metric": "Energy Consumption" },
+      { "quarter": "Q2", "value": 280, "metric": "Energy Consumption" },
+      { "quarter": "Q3", "value": 290, "metric": "Energy Consumption" },
+      { "quarter": "Q4", "value": 270, "metric": "Energy Consumption" },
+      { "quarter": "Q1", "value": 120, "metric": "Water Usage" },
+      { "quarter": "Q2", "value": 110, "metric": "Water Usage" },
+      { "quarter": "Q3", "value": 115, "metric": "Water Usage" },
+      { "quarter": "Q4", "value": 105, "metric": "Water Usage" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "ordinal",
+      "axis": { "title": "Quarters" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Metric Values" }
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric", "orient": "bottom" }
+    }
+  }
+}

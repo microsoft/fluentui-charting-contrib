@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Engagement & Attendance by Grade",
+  "description": "Converted from Plotly schema 256 - Grouped bar chart (simplified)",
+  "data": {
+    "values": [
+      { "grade": "Grade 9", "value": 84.33, "metric": "Average Engagement Score" },
+      { "grade": "Grade 10", "value": 74, "metric": "Average Engagement Score" },
+      { "grade": "Grade 11", "value": 81.67, "metric": "Average Engagement Score" },
+      { "grade": "Grade 12", "value": 88, "metric": "Average Engagement Score" },
+      { "grade": "Grade 13", "value": 72, "metric": "Average Engagement Score" },
+      { "grade": "Grade 9", "value": 89.5, "metric": "Average Attendance Rate" },
+      { "grade": "Grade 10", "value": 76.5, "metric": "Average Attendance Rate" },
+      { "grade": "Grade 11", "value": 85.25, "metric": "Average Attendance Rate" },
+      { "grade": "Grade 12", "value": 87, "metric": "Average Attendance Rate" },
+      { "grade": "Grade 13", "value": 73, "metric": "Average Attendance Rate" },
+      { "grade": "Grade 9", "value": 78, "metric": "Regional Comparison 1" },
+      { "grade": "Grade 10", "value": 80, "metric": "Regional Comparison 1" },
+      { "grade": "Grade 11", "value": 79, "metric": "Regional Comparison 1" },
+      { "grade": "Grade 12", "value": 77, "metric": "Regional Comparison 1" },
+      { "grade": "Grade 13", "value": 75, "metric": "Regional Comparison 1" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "grade",
+      "type": "ordinal",
+      "axis": { "title": "Grade" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Score / Rate" },
+      "scale": { "domain": [0, 100] }
+    },
+    "xOffset": { "field": "metric" },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

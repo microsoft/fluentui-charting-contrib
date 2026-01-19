@@ -1,0 +1,542 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Winter",
+        "y": 50,
+        "series": "County A"
+      },
+      {
+        "x": "Spring",
+        "y": 60,
+        "series": "County A"
+      },
+      {
+        "x": "Summer",
+        "y": 70,
+        "series": "County A"
+      },
+      {
+        "x": "Fall",
+        "y": 80,
+        "series": "County A"
+      },
+      {
+        "x": "Winter",
+        "y": 25,
+        "series": "County A"
+      },
+      {
+        "x": "Spring",
+        "y": 30,
+        "series": "County A"
+      },
+      {
+        "x": "Summer",
+        "y": 35,
+        "series": "County A"
+      },
+      {
+        "x": "Fall",
+        "y": 40,
+        "series": "County A"
+      },
+      {
+        "x": "Winter",
+        "y": 16.666666666666668,
+        "series": "County A"
+      },
+      {
+        "x": "Spring",
+        "y": 20,
+        "series": "County A"
+      },
+      {
+        "x": "Summer",
+        "y": 23.333333333333332,
+        "series": "County A"
+      },
+      {
+        "x": "Fall",
+        "y": 26.666666666666668,
+        "series": "County A"
+      },
+      {
+        "x": "Winter",
+        "y": 12.5,
+        "series": "County A"
+      },
+      {
+        "x": "Spring",
+        "y": 15,
+        "series": "County A"
+      },
+      {
+        "x": "Summer",
+        "y": 17.5,
+        "series": "County A"
+      },
+      {
+        "x": "Fall",
+        "y": 20,
+        "series": "County A"
+      },
+      {
+        "x": "Winter",
+        "y": 10,
+        "series": "County A"
+      },
+      {
+        "x": "Spring",
+        "y": 12,
+        "series": "County A"
+      },
+      {
+        "x": "Summer",
+        "y": 14,
+        "series": "County A"
+      },
+      {
+        "x": "Fall",
+        "y": 16,
+        "series": "County A"
+      },
+      {
+        "x": "Winter",
+        "y": 50,
+        "series": "County B"
+      },
+      {
+        "x": "Spring",
+        "y": 60,
+        "series": "County B"
+      },
+      {
+        "x": "Summer",
+        "y": 70,
+        "series": "County B"
+      },
+      {
+        "x": "Fall",
+        "y": 80,
+        "series": "County B"
+      },
+      {
+        "x": "Winter",
+        "y": 25,
+        "series": "County B"
+      },
+      {
+        "x": "Spring",
+        "y": 30,
+        "series": "County B"
+      },
+      {
+        "x": "Summer",
+        "y": 35,
+        "series": "County B"
+      },
+      {
+        "x": "Fall",
+        "y": 40,
+        "series": "County B"
+      },
+      {
+        "x": "Winter",
+        "y": 16.666666666666668,
+        "series": "County B"
+      },
+      {
+        "x": "Spring",
+        "y": 20,
+        "series": "County B"
+      },
+      {
+        "x": "Summer",
+        "y": 23.333333333333332,
+        "series": "County B"
+      },
+      {
+        "x": "Fall",
+        "y": 26.666666666666668,
+        "series": "County B"
+      },
+      {
+        "x": "Winter",
+        "y": 12.5,
+        "series": "County B"
+      },
+      {
+        "x": "Spring",
+        "y": 15,
+        "series": "County B"
+      },
+      {
+        "x": "Summer",
+        "y": 17.5,
+        "series": "County B"
+      },
+      {
+        "x": "Fall",
+        "y": 20,
+        "series": "County B"
+      },
+      {
+        "x": "Winter",
+        "y": 10,
+        "series": "County B"
+      },
+      {
+        "x": "Spring",
+        "y": 12,
+        "series": "County B"
+      },
+      {
+        "x": "Summer",
+        "y": 14,
+        "series": "County B"
+      },
+      {
+        "x": "Fall",
+        "y": 16,
+        "series": "County B"
+      },
+      {
+        "x": "Winter",
+        "y": 50,
+        "series": "County C"
+      },
+      {
+        "x": "Spring",
+        "y": 60,
+        "series": "County C"
+      },
+      {
+        "x": "Summer",
+        "y": 70,
+        "series": "County C"
+      },
+      {
+        "x": "Fall",
+        "y": 80,
+        "series": "County C"
+      },
+      {
+        "x": "Winter",
+        "y": 25,
+        "series": "County C"
+      },
+      {
+        "x": "Spring",
+        "y": 30,
+        "series": "County C"
+      },
+      {
+        "x": "Summer",
+        "y": 35,
+        "series": "County C"
+      },
+      {
+        "x": "Fall",
+        "y": 40,
+        "series": "County C"
+      },
+      {
+        "x": "Winter",
+        "y": 16.666666666666668,
+        "series": "County C"
+      },
+      {
+        "x": "Spring",
+        "y": 20,
+        "series": "County C"
+      },
+      {
+        "x": "Summer",
+        "y": 23.333333333333332,
+        "series": "County C"
+      },
+      {
+        "x": "Fall",
+        "y": 26.666666666666668,
+        "series": "County C"
+      },
+      {
+        "x": "Winter",
+        "y": 12.5,
+        "series": "County C"
+      },
+      {
+        "x": "Spring",
+        "y": 15,
+        "series": "County C"
+      },
+      {
+        "x": "Summer",
+        "y": 17.5,
+        "series": "County C"
+      },
+      {
+        "x": "Fall",
+        "y": 20,
+        "series": "County C"
+      },
+      {
+        "x": "Winter",
+        "y": 10,
+        "series": "County C"
+      },
+      {
+        "x": "Spring",
+        "y": 12,
+        "series": "County C"
+      },
+      {
+        "x": "Summer",
+        "y": 14,
+        "series": "County C"
+      },
+      {
+        "x": "Fall",
+        "y": 16,
+        "series": "County C"
+      },
+      {
+        "x": "Winter",
+        "y": 50,
+        "series": "County D"
+      },
+      {
+        "x": "Spring",
+        "y": 60,
+        "series": "County D"
+      },
+      {
+        "x": "Summer",
+        "y": 70,
+        "series": "County D"
+      },
+      {
+        "x": "Fall",
+        "y": 80,
+        "series": "County D"
+      },
+      {
+        "x": "Winter",
+        "y": 25,
+        "series": "County D"
+      },
+      {
+        "x": "Spring",
+        "y": 30,
+        "series": "County D"
+      },
+      {
+        "x": "Summer",
+        "y": 35,
+        "series": "County D"
+      },
+      {
+        "x": "Fall",
+        "y": 40,
+        "series": "County D"
+      },
+      {
+        "x": "Winter",
+        "y": 16.666666666666668,
+        "series": "County D"
+      },
+      {
+        "x": "Spring",
+        "y": 20,
+        "series": "County D"
+      },
+      {
+        "x": "Summer",
+        "y": 23.333333333333332,
+        "series": "County D"
+      },
+      {
+        "x": "Fall",
+        "y": 26.666666666666668,
+        "series": "County D"
+      },
+      {
+        "x": "Winter",
+        "y": 12.5,
+        "series": "County D"
+      },
+      {
+        "x": "Spring",
+        "y": 15,
+        "series": "County D"
+      },
+      {
+        "x": "Summer",
+        "y": 17.5,
+        "series": "County D"
+      },
+      {
+        "x": "Fall",
+        "y": 20,
+        "series": "County D"
+      },
+      {
+        "x": "Winter",
+        "y": 10,
+        "series": "County D"
+      },
+      {
+        "x": "Spring",
+        "y": 12,
+        "series": "County D"
+      },
+      {
+        "x": "Summer",
+        "y": 14,
+        "series": "County D"
+      },
+      {
+        "x": "Fall",
+        "y": 16,
+        "series": "County D"
+      },
+      {
+        "x": "Winter",
+        "y": 50,
+        "series": "County E"
+      },
+      {
+        "x": "Spring",
+        "y": 60,
+        "series": "County E"
+      },
+      {
+        "x": "Summer",
+        "y": 70,
+        "series": "County E"
+      },
+      {
+        "x": "Fall",
+        "y": 80,
+        "series": "County E"
+      },
+      {
+        "x": "Winter",
+        "y": 25,
+        "series": "County E"
+      },
+      {
+        "x": "Spring",
+        "y": 30,
+        "series": "County E"
+      },
+      {
+        "x": "Summer",
+        "y": 35,
+        "series": "County E"
+      },
+      {
+        "x": "Fall",
+        "y": 40,
+        "series": "County E"
+      },
+      {
+        "x": "Winter",
+        "y": 16.666666666666668,
+        "series": "County E"
+      },
+      {
+        "x": "Spring",
+        "y": 20,
+        "series": "County E"
+      },
+      {
+        "x": "Summer",
+        "y": 23.333333333333332,
+        "series": "County E"
+      },
+      {
+        "x": "Fall",
+        "y": 26.666666666666668,
+        "series": "County E"
+      },
+      {
+        "x": "Winter",
+        "y": 12.5,
+        "series": "County E"
+      },
+      {
+        "x": "Spring",
+        "y": 15,
+        "series": "County E"
+      },
+      {
+        "x": "Summer",
+        "y": 17.5,
+        "series": "County E"
+      },
+      {
+        "x": "Fall",
+        "y": 20,
+        "series": "County E"
+      },
+      {
+        "x": "Winter",
+        "y": 10,
+        "series": "County E"
+      },
+      {
+        "x": "Spring",
+        "y": 12,
+        "series": "County E"
+      },
+      {
+        "x": "Summer",
+        "y": 14,
+        "series": "County E"
+      },
+      {
+        "x": "Fall",
+        "y": 16,
+        "series": "County E"
+      }
+    ]
+  },
+  "title": "Seasonal Air Quality Metrics",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "season"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "season"
+      },
+      {
+        "field": "y",
+        "title": "value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 120000,
+        "y": 87,
+        "series": "Metro City, Jan"
+      },
+      {
+        "x": 130000,
+        "y": 89,
+        "series": "Metro City, Feb"
+      },
+      {
+        "x": 125000,
+        "y": 90,
+        "series": "Metro City, Mar"
+      },
+      {
+        "x": 90000,
+        "y": 78,
+        "series": "Centralville, Jan"
+      },
+      {
+        "x": 95000,
+        "y": 81,
+        "series": "Centralville, Feb"
+      },
+      {
+        "x": 92000,
+        "y": 80,
+        "series": "Centralville, Mar"
+      },
+      {
+        "x": 60000,
+        "y": 72,
+        "series": "Coastalburg, Jan"
+      },
+      {
+        "x": 70000,
+        "y": 75,
+        "series": "Coastalburg, Feb"
+      },
+      {
+        "x": 66500,
+        "y": 77,
+        "series": "Coastalburg, Mar"
+      },
+      {
+        "x": 40000,
+        "y": 67,
+        "series": "Hillside, Jan"
+      },
+      {
+        "x": 42000,
+        "y": 69,
+        "series": "Hillside, Feb"
+      },
+      {
+        "x": 41500,
+        "y": 68,
+        "series": "Hillside, Mar"
+      }
+    ]
+  },
+  "title": "Public Transportation Usage & Route Efficiency (Jan-Mar)",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Monthly Passenger Count"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Route Efficiency (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Monthly Passenger Count"
+      },
+      {
+        "field": "y",
+        "title": "Route Efficiency (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

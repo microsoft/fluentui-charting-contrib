@@ -1,0 +1,1542 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 96,
+        "series": "North America, Sedan X"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 109,
+        "series": "North America, Sedan X"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 91,
+        "series": "North America, Sedan X"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 98,
+        "series": "North America, Sedan X"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 109,
+        "series": "North America, Sedan X"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 108,
+        "series": "North America, Sedan X"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 106,
+        "series": "North America, Sedan X"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 92,
+        "series": "North America, Sedan X"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 98,
+        "series": "North America, Sedan X"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 123,
+        "series": "North America, Sedan X"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 86,
+        "series": "North America, Sedan X"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 105,
+        "series": "North America, Sedan X"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 117,
+        "series": "North America, SUV Pro"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 90,
+        "series": "North America, SUV Pro"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 91,
+        "series": "North America, SUV Pro"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 108,
+        "series": "North America, SUV Pro"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 104,
+        "series": "North America, SUV Pro"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 121,
+        "series": "North America, SUV Pro"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 84,
+        "series": "North America, SUV Pro"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 109,
+        "series": "North America, SUV Pro"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 99,
+        "series": "North America, SUV Pro"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 98,
+        "series": "North America, SUV Pro"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 117,
+        "series": "North America, SUV Pro"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 112,
+        "series": "North America, SUV Pro"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 95,
+        "series": "North America, Eco Compact"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 99,
+        "series": "North America, Eco Compact"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 102,
+        "series": "North America, Eco Compact"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 91,
+        "series": "North America, Eco Compact"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 88,
+        "series": "North America, Eco Compact"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 114,
+        "series": "North America, Eco Compact"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 121,
+        "series": "North America, Eco Compact"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 105,
+        "series": "North America, Eco Compact"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 104,
+        "series": "North America, Eco Compact"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 110,
+        "series": "North America, Eco Compact"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 110,
+        "series": "North America, Eco Compact"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 92,
+        "series": "North America, Eco Compact"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 53,
+        "series": "North America, Luxury Z"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 42,
+        "series": "North America, Luxury Z"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 42,
+        "series": "North America, Luxury Z"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 58,
+        "series": "North America, Luxury Z"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 24,
+        "series": "North America, Luxury Z"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 34,
+        "series": "North America, Luxury Z"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 51,
+        "series": "North America, Luxury Z"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 46,
+        "series": "North America, Luxury Z"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 44,
+        "series": "North America, Luxury Z"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 58,
+        "series": "North America, Luxury Z"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 38,
+        "series": "North America, Luxury Z"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 45,
+        "series": "North America, Luxury Z"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 74,
+        "series": "North America, Truck XL"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 124,
+        "series": "North America, Truck XL"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 99,
+        "series": "North America, Truck XL"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 122,
+        "series": "North America, Truck XL"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 106,
+        "series": "North America, Truck XL"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 96,
+        "series": "North America, Truck XL"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 102,
+        "series": "North America, Truck XL"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 106,
+        "series": "North America, Truck XL"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 119,
+        "series": "North America, Truck XL"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 115,
+        "series": "North America, Truck XL"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 120,
+        "series": "North America, Truck XL"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 110,
+        "series": "North America, Truck XL"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 104,
+        "series": "Europe, Sedan X"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 106,
+        "series": "Europe, Sedan X"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 100,
+        "series": "Europe, Sedan X"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 82,
+        "series": "Europe, Sedan X"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 110,
+        "series": "Europe, Sedan X"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 104,
+        "series": "Europe, Sedan X"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 105,
+        "series": "Europe, Sedan X"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 90,
+        "series": "Europe, Sedan X"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 102,
+        "series": "Europe, Sedan X"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 95,
+        "series": "Europe, Sedan X"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 79,
+        "series": "Europe, Sedan X"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 101,
+        "series": "Europe, Sedan X"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 102,
+        "series": "Europe, SUV Pro"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 108,
+        "series": "Europe, SUV Pro"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 116,
+        "series": "Europe, SUV Pro"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 100,
+        "series": "Europe, SUV Pro"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 94,
+        "series": "Europe, SUV Pro"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 114,
+        "series": "Europe, SUV Pro"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 108,
+        "series": "Europe, SUV Pro"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 91,
+        "series": "Europe, SUV Pro"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 95,
+        "series": "Europe, SUV Pro"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 94,
+        "series": "Europe, SUV Pro"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 98,
+        "series": "Europe, SUV Pro"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 104,
+        "series": "Europe, SUV Pro"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 100,
+        "series": "Europe, Eco Compact"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 92,
+        "series": "Europe, Eco Compact"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 134,
+        "series": "Europe, Eco Compact"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 119,
+        "series": "Europe, Eco Compact"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 104,
+        "series": "Europe, Eco Compact"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 115,
+        "series": "Europe, Eco Compact"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 93,
+        "series": "Europe, Eco Compact"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 109,
+        "series": "Europe, Eco Compact"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 102,
+        "series": "Europe, Eco Compact"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 111,
+        "series": "Europe, Eco Compact"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 89,
+        "series": "Europe, Eco Compact"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 116,
+        "series": "Europe, Eco Compact"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 52,
+        "series": "Europe, Luxury Z"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 52,
+        "series": "Europe, Luxury Z"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 54,
+        "series": "Europe, Luxury Z"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 46,
+        "series": "Europe, Luxury Z"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 52,
+        "series": "Europe, Luxury Z"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 42,
+        "series": "Europe, Luxury Z"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 50,
+        "series": "Europe, Luxury Z"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 25,
+        "series": "Europe, Luxury Z"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 24,
+        "series": "Europe, Luxury Z"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 25,
+        "series": "Europe, Luxury Z"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 60,
+        "series": "Europe, Luxury Z"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 52,
+        "series": "Europe, Luxury Z"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 82,
+        "series": "Europe, Truck XL"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 103,
+        "series": "Europe, Truck XL"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 116,
+        "series": "Europe, Truck XL"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 78,
+        "series": "Europe, Truck XL"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 79,
+        "series": "Europe, Truck XL"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 115,
+        "series": "Europe, Truck XL"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 97,
+        "series": "Europe, Truck XL"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 100,
+        "series": "Europe, Truck XL"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 119,
+        "series": "Europe, Truck XL"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 92,
+        "series": "Europe, Truck XL"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 104,
+        "series": "Europe, Truck XL"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 110,
+        "series": "Europe, Truck XL"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 119,
+        "series": "Asia, Sedan X"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 93,
+        "series": "Asia, Sedan X"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 93,
+        "series": "Asia, Sedan X"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 93,
+        "series": "Asia, Sedan X"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 104,
+        "series": "Asia, Sedan X"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 109,
+        "series": "Asia, Sedan X"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 124,
+        "series": "Asia, Sedan X"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 107,
+        "series": "Asia, Sedan X"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 110,
+        "series": "Asia, Sedan X"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 85,
+        "series": "Asia, Sedan X"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 105,
+        "series": "Asia, Sedan X"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 102,
+        "series": "Asia, Sedan X"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 93,
+        "series": "Asia, SUV Pro"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 128,
+        "series": "Asia, SUV Pro"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 114,
+        "series": "Asia, SUV Pro"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 105,
+        "series": "Asia, SUV Pro"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 91,
+        "series": "Asia, SUV Pro"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 84,
+        "series": "Asia, SUV Pro"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 90,
+        "series": "Asia, SUV Pro"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 105,
+        "series": "Asia, SUV Pro"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 103,
+        "series": "Asia, SUV Pro"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 85,
+        "series": "Asia, SUV Pro"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 106,
+        "series": "Asia, SUV Pro"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 110,
+        "series": "Asia, SUV Pro"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 103,
+        "series": "Asia, Eco Compact"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 86,
+        "series": "Asia, Eco Compact"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 100,
+        "series": "Asia, Eco Compact"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 124,
+        "series": "Asia, Eco Compact"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 113,
+        "series": "Asia, Eco Compact"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 88,
+        "series": "Asia, Eco Compact"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 90,
+        "series": "Asia, Eco Compact"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 105,
+        "series": "Asia, Eco Compact"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 96,
+        "series": "Asia, Eco Compact"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 115,
+        "series": "Asia, Eco Compact"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 102,
+        "series": "Asia, Eco Compact"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 121,
+        "series": "Asia, Eco Compact"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 31,
+        "series": "Asia, Luxury Z"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 55,
+        "series": "Asia, Luxury Z"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 58,
+        "series": "Asia, Luxury Z"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 38,
+        "series": "Asia, Luxury Z"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 32,
+        "series": "Asia, Luxury Z"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 49,
+        "series": "Asia, Luxury Z"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 34,
+        "series": "Asia, Luxury Z"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 43,
+        "series": "Asia, Luxury Z"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 49,
+        "series": "Asia, Luxury Z"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 40,
+        "series": "Asia, Luxury Z"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 49,
+        "series": "Asia, Luxury Z"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 44,
+        "series": "Asia, Luxury Z"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 93,
+        "series": "Asia, Truck XL"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 108,
+        "series": "Asia, Truck XL"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 109,
+        "series": "Asia, Truck XL"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 90,
+        "series": "Asia, Truck XL"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 106,
+        "series": "Asia, Truck XL"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 80,
+        "series": "Asia, Truck XL"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 102,
+        "series": "Asia, Truck XL"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 127,
+        "series": "Asia, Truck XL"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 107,
+        "series": "Asia, Truck XL"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 84,
+        "series": "Asia, Truck XL"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 100,
+        "series": "Asia, Truck XL"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 117,
+        "series": "Asia, Truck XL"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 109,
+        "series": "South America, Sedan X"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 106,
+        "series": "South America, Sedan X"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 116,
+        "series": "South America, Sedan X"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 85,
+        "series": "South America, Sedan X"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 87,
+        "series": "South America, Sedan X"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 107,
+        "series": "South America, Sedan X"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 84,
+        "series": "South America, Sedan X"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 109,
+        "series": "South America, Sedan X"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 110,
+        "series": "South America, Sedan X"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 80,
+        "series": "South America, Sedan X"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 123,
+        "series": "South America, Sedan X"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 93,
+        "series": "South America, Sedan X"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 120,
+        "series": "South America, SUV Pro"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 109,
+        "series": "South America, SUV Pro"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 117,
+        "series": "South America, SUV Pro"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 105,
+        "series": "South America, SUV Pro"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 122,
+        "series": "South America, SUV Pro"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 85,
+        "series": "South America, SUV Pro"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 126,
+        "series": "South America, SUV Pro"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 95,
+        "series": "South America, SUV Pro"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 108,
+        "series": "South America, SUV Pro"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 104,
+        "series": "South America, SUV Pro"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 103,
+        "series": "South America, SUV Pro"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 105,
+        "series": "South America, SUV Pro"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 109,
+        "series": "South America, Eco Compact"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 91,
+        "series": "South America, Eco Compact"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 108,
+        "series": "South America, Eco Compact"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 95,
+        "series": "South America, Eco Compact"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 92,
+        "series": "South America, Eco Compact"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 106,
+        "series": "South America, Eco Compact"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 124,
+        "series": "South America, Eco Compact"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 106,
+        "series": "South America, Eco Compact"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 96,
+        "series": "South America, Eco Compact"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 103,
+        "series": "South America, Eco Compact"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 112,
+        "series": "South America, Eco Compact"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 99,
+        "series": "South America, Eco Compact"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 58,
+        "series": "South America, Luxury Z"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 35,
+        "series": "South America, Luxury Z"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 46,
+        "series": "South America, Luxury Z"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 48,
+        "series": "South America, Luxury Z"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 33,
+        "series": "South America, Luxury Z"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 28,
+        "series": "South America, Luxury Z"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 54,
+        "series": "South America, Luxury Z"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 39,
+        "series": "South America, Luxury Z"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 28,
+        "series": "South America, Luxury Z"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 36,
+        "series": "South America, Luxury Z"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 45,
+        "series": "South America, Luxury Z"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 52,
+        "series": "South America, Luxury Z"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 98,
+        "series": "South America, Truck XL"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 102,
+        "series": "South America, Truck XL"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 86,
+        "series": "South America, Truck XL"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 112,
+        "series": "South America, Truck XL"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 101,
+        "series": "South America, Truck XL"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 88,
+        "series": "South America, Truck XL"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 100,
+        "series": "South America, Truck XL"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 84,
+        "series": "South America, Truck XL"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 87,
+        "series": "South America, Truck XL"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 103,
+        "series": "South America, Truck XL"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 106,
+        "series": "South America, Truck XL"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 85,
+        "series": "South America, Truck XL"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 77,
+        "series": "Africa, Sedan X"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 112,
+        "series": "Africa, Sedan X"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 102,
+        "series": "Africa, Sedan X"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 74,
+        "series": "Africa, Sedan X"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 118,
+        "series": "Africa, Sedan X"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 91,
+        "series": "Africa, Sedan X"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 102,
+        "series": "Africa, Sedan X"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 98,
+        "series": "Africa, Sedan X"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 114,
+        "series": "Africa, Sedan X"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 100,
+        "series": "Africa, Sedan X"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 95,
+        "series": "Africa, Sedan X"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 88,
+        "series": "Africa, Sedan X"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 97,
+        "series": "Africa, SUV Pro"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 88,
+        "series": "Africa, SUV Pro"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 112,
+        "series": "Africa, SUV Pro"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 97,
+        "series": "Africa, SUV Pro"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 99,
+        "series": "Africa, SUV Pro"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 113,
+        "series": "Africa, SUV Pro"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 103,
+        "series": "Africa, SUV Pro"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 108,
+        "series": "Africa, SUV Pro"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 96,
+        "series": "Africa, SUV Pro"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 106,
+        "series": "Africa, SUV Pro"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 89,
+        "series": "Africa, SUV Pro"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 77,
+        "series": "Africa, SUV Pro"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 82,
+        "series": "Africa, Eco Compact"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 106,
+        "series": "Africa, Eco Compact"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 88,
+        "series": "Africa, Eco Compact"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 108,
+        "series": "Africa, Eco Compact"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 100,
+        "series": "Africa, Eco Compact"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 97,
+        "series": "Africa, Eco Compact"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 99,
+        "series": "Africa, Eco Compact"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 74,
+        "series": "Africa, Eco Compact"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 102,
+        "series": "Africa, Eco Compact"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 108,
+        "series": "Africa, Eco Compact"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 80,
+        "series": "Africa, Eco Compact"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 111,
+        "series": "Africa, Eco Compact"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 41,
+        "series": "Africa, Luxury Z"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 52,
+        "series": "Africa, Luxury Z"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 60,
+        "series": "Africa, Luxury Z"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 35,
+        "series": "Africa, Luxury Z"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 29,
+        "series": "Africa, Luxury Z"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 49,
+        "series": "Africa, Luxury Z"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 42,
+        "series": "Africa, Luxury Z"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 23,
+        "series": "Africa, Luxury Z"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 57,
+        "series": "Africa, Luxury Z"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 45,
+        "series": "Africa, Luxury Z"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 45,
+        "series": "Africa, Luxury Z"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 33,
+        "series": "Africa, Luxury Z"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 102,
+        "series": "Africa, Truck XL"
+      },
+      {
+        "x": "2023-02-01T00:00:00.000000000",
+        "y": 92,
+        "series": "Africa, Truck XL"
+      },
+      {
+        "x": "2023-03-01T00:00:00.000000000",
+        "y": 90,
+        "series": "Africa, Truck XL"
+      },
+      {
+        "x": "2023-04-01T00:00:00.000000000",
+        "y": 106,
+        "series": "Africa, Truck XL"
+      },
+      {
+        "x": "2023-05-01T00:00:00.000000000",
+        "y": 103,
+        "series": "Africa, Truck XL"
+      },
+      {
+        "x": "2023-06-01T00:00:00.000000000",
+        "y": 88,
+        "series": "Africa, Truck XL"
+      },
+      {
+        "x": "2023-07-01T00:00:00.000000000",
+        "y": 115,
+        "series": "Africa, Truck XL"
+      },
+      {
+        "x": "2023-08-01T00:00:00.000000000",
+        "y": 104,
+        "series": "Africa, Truck XL"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 106,
+        "series": "Africa, Truck XL"
+      },
+      {
+        "x": "2023-10-01T00:00:00.000000000",
+        "y": 94,
+        "series": "Africa, Truck XL"
+      },
+      {
+        "x": "2023-11-01T00:00:00.000000000",
+        "y": 113,
+        "series": "Africa, Truck XL"
+      },
+      {
+        "x": "2023-12-01T00:00:00.000000000",
+        "y": 108,
+        "series": "Africa, Truck XL"
+      }
+    ]
+  },
+  "title": "Automobile Sales Performance Analysis (Monthly)",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Date"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sales Volume"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Date"
+      },
+      {
+        "field": "y",
+        "title": "Sales Volume"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

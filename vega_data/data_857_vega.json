@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Hospital 1",
+        "y": 2132368,
+        "series": "Series"
+      },
+      {
+        "x": "Hospital 2",
+        "y": 1900739,
+        "series": "Series"
+      },
+      {
+        "x": "Hospital 3",
+        "y": 2729231,
+        "series": "Series"
+      },
+      {
+        "x": "Hospital 4",
+        "y": 1924372,
+        "series": "Series"
+      },
+      {
+        "x": "Hospital 5",
+        "y": 2032883,
+        "series": "Series"
+      },
+      {
+        "x": "Hospital 6",
+        "y": 2474744,
+        "series": "Series"
+      },
+      {
+        "x": "Hospital 7",
+        "y": 1727230,
+        "series": "Series"
+      },
+      {
+        "x": "Hospital 8",
+        "y": 1822509,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Healthcare Spending and Patient Satisfaction by Hospital",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Hospital"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Spending (USD)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Hospital"
+      },
+      {
+        "field": "y",
+        "title": "Spending (USD)"
+      }
+    ]
+  }
+}

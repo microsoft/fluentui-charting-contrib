@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 900069.6178212208,
+        "y": 4.934428045451064,
+        "series": "Equities"
+      },
+      {
+        "x": 277767.23745118047,
+        "y": -0.7411377144473528,
+        "series": "Equities"
+      },
+      {
+        "x": 454655.50889012765,
+        "y": 0.3810897158349681,
+        "series": "Bonds"
+      },
+      {
+        "x": 375460.09603588126,
+        "y": 4.641771164618183,
+        "series": "Bonds"
+      },
+      {
+        "x": 153936.9379151644,
+        "y": -0.2841266122536906,
+        "series": "Bonds"
+      },
+      {
+        "x": 327680.38915033423,
+        "y": -2.07049373302671,
+        "series": "Real Estate"
+      },
+      {
+        "x": 500787.4608862806,
+        "y": -0.5866024073689614,
+        "series": "Real Estate"
+      },
+      {
+        "x": 337295.78060799534,
+        "y": -1.1293908291367936,
+        "series": "Real Estate"
+      },
+      {
+        "x": 180175.3054925035,
+        "y": 1.241962013343921,
+        "series": "Real Estate"
+      },
+      {
+        "x": 195224.80047682783,
+        "y": -4.219380884176646,
+        "series": "Commodities"
+      },
+      {
+        "x": 418189.6196552137,
+        "y": 1.8453276928647928,
+        "series": "Commodities"
+      },
+      {
+        "x": 622335.2577681736,
+        "y": -4.237299796567717,
+        "series": "Commodities"
+      },
+      {
+        "x": 621096.626169535,
+        "y": -2.257399738432404,
+        "series": "Commodities"
+      },
+      {
+        "x": 166173.52818189363,
+        "y": 2.922368520612775,
+        "series": "Commodities"
+      },
+      {
+        "x": 854086.3033133438,
+        "y": 3.474906725877955,
+        "series": "Commodities"
+      },
+      {
+        "x": 691854.1652170414,
+        "y": -2.7425460833148643,
+        "series": "Commodities"
+      },
+      {
+        "x": 664380.5008750447,
+        "y": -4.076241082054484,
+        "series": "Cash"
+      },
+      {
+        "x": 345643.85010134825,
+        "y": -1.6307316507097305,
+        "series": "Cash"
+      },
+      {
+        "x": 81241.1991929874,
+        "y": 6.326699254729086,
+        "series": "Cash"
+      },
+      {
+        "x": 429692.64027591003,
+        "y": 3.1724731251629086,
+        "series": "Cash"
+      }
+    ]
+  },
+  "title": "Portfolio Performance Snapshot (Latest Month)",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Market Value (USD)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Return (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Market Value (USD)"
+      },
+      {
+        "field": "y",
+        "title": "Return (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

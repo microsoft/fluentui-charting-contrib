@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Temporal Analysis of Threat Impact",
+  "description": "Converted from Plotly schema 153 - Line+markers chart",
+  "data": {
+    "values": [
+      { "date": "2023-09-01", "score": 15 },
+      { "date": "2023-09-02", "score": 25 },
+      { "date": "2023-09-03", "score": 10 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": { "title": "Date" }
+        },
+        "y": {
+          "field": "score",
+          "type": "quantitative",
+          "axis": { "title": "Impact Score" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "score",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

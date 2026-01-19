@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2019",
+        "y": 3500,
+        "series": "High School"
+      },
+      {
+        "x": "2020",
+        "y": 3700,
+        "series": "High School"
+      },
+      {
+        "x": "2021",
+        "y": 3800,
+        "series": "High School"
+      },
+      {
+        "x": "2022",
+        "y": 4000,
+        "series": "High School"
+      },
+      {
+        "x": "2019",
+        "y": 5200,
+        "series": "Primary School"
+      },
+      {
+        "x": "2020",
+        "y": 5400,
+        "series": "Primary School"
+      },
+      {
+        "x": "2021",
+        "y": 5600,
+        "series": "Primary School"
+      },
+      {
+        "x": "2022",
+        "y": 5900,
+        "series": "Primary School"
+      },
+      {
+        "x": "2019",
+        "y": 2800,
+        "series": "University"
+      },
+      {
+        "x": "2020",
+        "y": 3000,
+        "series": "University"
+      },
+      {
+        "x": "2021",
+        "y": 3150,
+        "series": "University"
+      },
+      {
+        "x": "2022",
+        "y": 3320,
+        "series": "University"
+      }
+    ]
+  },
+  "title": "Enrollment Trends by Institution Type (2019-2022)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Enrollment"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Enrollment"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

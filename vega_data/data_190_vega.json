@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Infrastructure Projects Timelines (Gantt Chart)",
+  "description": "Converted from Plotly schema 190 - Gantt chart",
+  "data": {
+    "values": [
+      { "project": "Road Construction", "start": "2023-01-01", "end": "2023-06-01" },
+      { "project": "Bridge Repair", "start": "2023-02-01", "end": "2023-05-01" },
+      { "project": "School Renovation", "start": "2023-03-01", "end": "2023-07-01" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "project",
+      "type": "nominal",
+      "axis": { "title": "Projects" }
+    },
+    "x": {
+      "field": "start",
+      "type": "temporal",
+      "axis": { "title": "Timeline" }
+    },
+    "x2": {
+      "field": "end"
+    },
+    "color": {
+      "field": "project",
+      "type": "nominal",
+      "legend": null
+    }
+  }
+}

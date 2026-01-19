@@ -1,0 +1,84 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Electronics",
+        "y": {
+          "profit_margin": "25%",
+          "region": "North America",
+          "manager": "Alice",
+          "quarter": "Q1",
+          "notes": "Strong online sales",
+          "sale_percent": 120,
+          "target_percent": 100,
+          "additional_info": {
+            "supplier": "TechCorp",
+            "delivery_time_days": "60"
+          }
+        },
+        "series": "Series"
+      },
+      {
+        "x": "Furniture",
+        "y": {
+          "profit_margin": "18%",
+          "region": "Europe",
+          "manager": "Bob",
+          "quarter": "Q1",
+          "notes": "Supply chain delays",
+          "sale_percent": 85,
+          "target_percent": 90,
+          "additional_info": {
+            "delivery_time_days": "30",
+            "supplier": "FurniWorld"
+          }
+        },
+        "series": "Series"
+      },
+      {
+        "x": "Clothing",
+        "y": {
+          "profit_margin": "30%",
+          "region": "Asia",
+          "manager": "Charlie",
+          "quarter": "Q1",
+          "notes": "Seasonal promotions",
+          "sale_percent": 95,
+          "target_percent": 90,
+          "additional_info": {
+            "delivery_time_days": "10",
+            "supplier": "EcoFashion"
+          }
+        },
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Quarterly Product Sales with Metadata",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Product Category"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Metadata (Hierarchical)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Product Category"
+      },
+      {
+        "field": "y",
+        "title": "Metadata (Hierarchical)"
+      }
+    ]
+  }
+}

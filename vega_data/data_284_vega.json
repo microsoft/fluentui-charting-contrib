@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "季度工厂绩效监控",
+  "description": "Converted from Plotly schema 284 - Multi-series line chart with Chinese labels",
+  "width": 500,
+  "height": 350,
+  "data": {
+    "values": [
+      { "quarter": "Q1", "performance": 85, "line": "生产线 A" },
+      { "quarter": "Q2", "performance": 90, "line": "生产线 A" },
+      { "quarter": "Q3", "performance": 88, "line": "生产线 A" },
+      { "quarter": "Q4", "performance": 92, "line": "生产线 A" },
+      { "quarter": "Q1", "performance": 80, "line": "生产线 B" },
+      { "quarter": "Q2", "performance": 85, "line": "生产线 B" },
+      { "quarter": "Q3", "performance": 84, "line": "生产线 B" },
+      { "quarter": "Q4", "performance": 87, "line": "生产线 B" },
+      { "quarter": "Q1", "performance": 78, "line": "生产线 C" },
+      { "quarter": "Q2", "performance": 82, "line": "生产线 C" },
+      { "quarter": "Q3", "performance": 80, "line": "生产线 C" },
+      { "quarter": "Q4", "performance": 85, "line": "生产线 C" }
+    ]
+  },
+  "mark": { "type": "line", "point": true },
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "ordinal",
+      "axis": { "title": "季度" }
+    },
+    "y": {
+      "field": "performance",
+      "type": "quantitative",
+      "scale": { "domain": [70, 100] },
+      "axis": { "title": "绩效" }
+    },
+    "color": {
+      "field": "line",
+      "type": "nominal",
+      "scale": { "range": ["blue", "green", "red"] },
+      "legend": { "title": "生产线" }
+    },
+    "tooltip": [
+      { "field": "quarter", "type": "ordinal", "title": "Quarter" },
+      { "field": "line", "type": "nominal", "title": "Line" },
+      { "field": "performance", "type": "quantitative", "title": "Performance" }
+    ]
+  }
+}

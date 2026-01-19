@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Proportion of Inspections by Site",
+  "description": "Converted from Plotly schema 132 - Pie chart",
+  "data": {
+    "values": [
+      { "site": "Site A", "inspections": 30 },
+      { "site": "Site B", "inspections": 20 },
+      { "site": "Site C", "inspections": 25 },
+      { "site": "Site D", "inspections": 15 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "inspections",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "site",
+      "type": "nominal",
+      "legend": { "title": "Site" }
+    }
+  }
+}

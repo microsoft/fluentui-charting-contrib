@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Sales Volume Growth",
+  "description": "Converted from Plotly schema 1 - Area chart",
+  "data": {
+    "values": [
+      { "month": "2023-01-01", "sales": 5000 },
+      { "month": "2023-02-01", "sales": 5200 },
+      { "month": "2023-03-01", "sales": 5400 },
+      { "month": "2023-04-01", "sales": 5600 },
+      { "month": "2023-05-01", "sales": 5800 },
+      { "month": "2023-06-01", "sales": 6000 },
+      { "month": "2023-07-01", "sales": 6200 },
+      { "month": "2023-08-01", "sales": 6400 },
+      { "month": "2023-09-01", "sales": 6600 },
+      { "month": "2023-10-01", "sales": 6800 },
+      { "month": "2023-11-01", "sales": 7000 },
+      { "month": "2023-12-01", "sales": 7200 }
+    ]
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "axis": { "title": "Month", "format": "%b %Y" }
+    },
+    "y": {
+      "field": "sales",
+      "type": "quantitative",
+      "axis": { "title": "Sales Volume" }
+    }
+  }
+}

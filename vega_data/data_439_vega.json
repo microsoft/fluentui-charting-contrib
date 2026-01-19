@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 80,
+        "y": 95,
+        "series": "School A"
+      },
+      {
+        "x": 90,
+        "y": 98,
+        "series": "School A"
+      },
+      {
+        "x": 75,
+        "y": 88,
+        "series": "School A"
+      },
+      {
+        "x": 70,
+        "y": 80,
+        "series": "School B"
+      },
+      {
+        "x": 85,
+        "y": 92,
+        "series": "School B"
+      }
+    ]
+  },
+  "title": "Engagement Score vs. Attendance Rate",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "engagement_score"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "attendance_rate"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "engagement_score"
+      },
+      {
+        "field": "y",
+        "title": "attendance_rate"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

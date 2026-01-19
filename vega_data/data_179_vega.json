@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Error Rate Trend Over Time",
+  "description": "Converted from Plotly schema 179 - Line chart",
+  "data": {
+    "values": [
+      { "week": "Week 1", "rate": 1.5 },
+      { "week": "Week 2", "rate": 2.2 },
+      { "week": "Week 3", "rate": 1.3 },
+      { "week": "Week 4", "rate": 2.0 }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "week",
+      "type": "ordinal",
+      "axis": { "title": "Week" }
+    },
+    "y": {
+      "field": "rate",
+      "type": "quantitative",
+      "axis": { "title": "Error Rate (%)" }
+    }
+  }
+}

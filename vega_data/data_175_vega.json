@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Credit Risk Distribution",
+  "description": "Converted from Plotly schema 175 - Bar chart",
+  "data": {
+    "values": [
+      { "risk": "Low Risk", "customers": 150 },
+      { "risk": "Medium Risk", "customers": 300 },
+      { "risk": "High Risk", "customers": 50 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "risk",
+      "type": "nominal",
+      "axis": { "title": "Risk Category" },
+      "sort": ["Low Risk", "Medium Risk", "High Risk"]
+    },
+    "y": {
+      "field": "customers",
+      "type": "quantitative",
+      "axis": { "title": "Number of Customers" }
+    },
+    "color": {
+      "field": "risk",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Low Risk", "Medium Risk", "High Risk"],
+        "range": ["green", "yellow", "red"]
+      },
+      "legend": null
+    }
+  }
+}

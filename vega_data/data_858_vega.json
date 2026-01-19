@@ -1,0 +1,582 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Apr 2024",
+        "y": 66.9,
+        "series": "Engineering-CPU"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 36.5,
+        "series": "Engineering-CPU"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 67.3,
+        "series": "Engineering-CPU"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 55.4,
+        "series": "Engineering-CPU"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 70.2,
+        "series": "Engineering-CPU"
+      },
+      {
+        "x": "May 2024",
+        "y": 34.3,
+        "series": "Engineering-CPU"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 31.4,
+        "series": "R&D-CPU"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 76.8,
+        "series": "R&D-CPU"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 68.6,
+        "series": "R&D-CPU"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 69.3,
+        "series": "R&D-CPU"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 36.8,
+        "series": "R&D-CPU"
+      },
+      {
+        "x": "May 2024",
+        "y": 63.9,
+        "series": "R&D-CPU"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 76.2,
+        "series": "Sales-CPU"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 75.4,
+        "series": "Sales-CPU"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 79,
+        "series": "Sales-CPU"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 42.7,
+        "series": "Sales-CPU"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 39.5,
+        "series": "Sales-CPU"
+      },
+      {
+        "x": "May 2024",
+        "y": 59.1,
+        "series": "Sales-CPU"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 79.7,
+        "series": "Marketing-CPU"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 80,
+        "series": "Marketing-CPU"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 40.2,
+        "series": "Marketing-CPU"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 78.7,
+        "series": "Marketing-CPU"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 41.7,
+        "series": "Marketing-CPU"
+      },
+      {
+        "x": "May 2024",
+        "y": 50.5,
+        "series": "Marketing-CPU"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 87.1,
+        "series": "HR-CPU"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 82.2,
+        "series": "HR-CPU"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 54.4,
+        "series": "HR-CPU"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 94.7,
+        "series": "HR-CPU"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 83.3,
+        "series": "HR-CPU"
+      },
+      {
+        "x": "May 2024",
+        "y": 46.7,
+        "series": "HR-CPU"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 33.1,
+        "series": "Finance-CPU"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 58.8,
+        "series": "Finance-CPU"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 47.2,
+        "series": "Finance-CPU"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 79.5,
+        "series": "Finance-CPU"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 44.4,
+        "series": "Finance-CPU"
+      },
+      {
+        "x": "May 2024",
+        "y": 65.7,
+        "series": "Finance-CPU"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 60.9,
+        "series": "Engineering-Memory"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 33.8,
+        "series": "Engineering-Memory"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 72.4,
+        "series": "Engineering-Memory"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 39.1,
+        "series": "Engineering-Memory"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 51.8,
+        "series": "Engineering-Memory"
+      },
+      {
+        "x": "May 2024",
+        "y": 53,
+        "series": "Engineering-Memory"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 73.9,
+        "series": "R&D-Memory"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 68.4,
+        "series": "R&D-Memory"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 74.1,
+        "series": "R&D-Memory"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 59.3,
+        "series": "R&D-Memory"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 40.2,
+        "series": "R&D-Memory"
+      },
+      {
+        "x": "May 2024",
+        "y": 53.6,
+        "series": "R&D-Memory"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 94.4,
+        "series": "Sales-Memory"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 48,
+        "series": "Sales-Memory"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 65.5,
+        "series": "Sales-Memory"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 91.9,
+        "series": "Sales-Memory"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 79.1,
+        "series": "Sales-Memory"
+      },
+      {
+        "x": "May 2024",
+        "y": 45.3,
+        "series": "Sales-Memory"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 84.9,
+        "series": "Marketing-Memory"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 90.9,
+        "series": "Marketing-Memory"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 76.4,
+        "series": "Marketing-Memory"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 40.9,
+        "series": "Marketing-Memory"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 42.2,
+        "series": "Marketing-Memory"
+      },
+      {
+        "x": "May 2024",
+        "y": 94.8,
+        "series": "Marketing-Memory"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 54.2,
+        "series": "HR-Memory"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 69.5,
+        "series": "HR-Memory"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 68.8,
+        "series": "HR-Memory"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 97.5,
+        "series": "HR-Memory"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 46.2,
+        "series": "HR-Memory"
+      },
+      {
+        "x": "May 2024",
+        "y": 55.8,
+        "series": "HR-Memory"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 36.8,
+        "series": "Finance-Memory"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 78.7,
+        "series": "Finance-Memory"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 75.9,
+        "series": "Finance-Memory"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 54.2,
+        "series": "Finance-Memory"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 80.3,
+        "series": "Finance-Memory"
+      },
+      {
+        "x": "May 2024",
+        "y": 55.8,
+        "series": "Finance-Memory"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 61.9,
+        "series": "Engineering-Storage"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 49.2,
+        "series": "Engineering-Storage"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 95.5,
+        "series": "Engineering-Storage"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 84.4,
+        "series": "Engineering-Storage"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 59.6,
+        "series": "Engineering-Storage"
+      },
+      {
+        "x": "May 2024",
+        "y": 63.5,
+        "series": "Engineering-Storage"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 89.3,
+        "series": "R&D-Storage"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 36.4,
+        "series": "R&D-Storage"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 96.5,
+        "series": "R&D-Storage"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 48.9,
+        "series": "R&D-Storage"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 38.4,
+        "series": "R&D-Storage"
+      },
+      {
+        "x": "May 2024",
+        "y": 81.2,
+        "series": "R&D-Storage"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 95.1,
+        "series": "Sales-Storage"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 86.4,
+        "series": "Sales-Storage"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 61,
+        "series": "Sales-Storage"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 36.4,
+        "series": "Sales-Storage"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 45.7,
+        "series": "Sales-Storage"
+      },
+      {
+        "x": "May 2024",
+        "y": 53.4,
+        "series": "Sales-Storage"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 39,
+        "series": "Marketing-Storage"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 60.4,
+        "series": "Marketing-Storage"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 36.8,
+        "series": "Marketing-Storage"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 64.2,
+        "series": "Marketing-Storage"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 53.5,
+        "series": "Marketing-Storage"
+      },
+      {
+        "x": "May 2024",
+        "y": 90,
+        "series": "Marketing-Storage"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 91.5,
+        "series": "HR-Storage"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 74.9,
+        "series": "HR-Storage"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 74.4,
+        "series": "HR-Storage"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 57.1,
+        "series": "HR-Storage"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 70.1,
+        "series": "HR-Storage"
+      },
+      {
+        "x": "May 2024",
+        "y": 33.8,
+        "series": "HR-Storage"
+      },
+      {
+        "x": "Apr 2024",
+        "y": 86.6,
+        "series": "Finance-Storage"
+      },
+      {
+        "x": "Feb 2024",
+        "y": 59.2,
+        "series": "Finance-Storage"
+      },
+      {
+        "x": "Jan 2024",
+        "y": 75.1,
+        "series": "Finance-Storage"
+      },
+      {
+        "x": "Jun 2024",
+        "y": 87.5,
+        "series": "Finance-Storage"
+      },
+      {
+        "x": "Mar 2024",
+        "y": 59.5,
+        "series": "Finance-Storage"
+      },
+      {
+        "x": "May 2024",
+        "y": 74.9,
+        "series": "Finance-Storage"
+      }
+    ]
+  },
+  "title": "<b>Cloud Resource Usage Analysis</b>",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Usage Percentage (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Usage Percentage (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

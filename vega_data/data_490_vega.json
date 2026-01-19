@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "x": "Q1",
+        "y": "East",
+        "value": 10
+      },
+      {
+        "x": "Q2",
+        "y": "East",
+        "value": 20
+      },
+      {
+        "x": "Q3",
+        "y": "East",
+        "value": 30
+      },
+      {
+        "x": "Q4",
+        "y": "East",
+        "value": 40
+      },
+      {
+        "x": "Q1",
+        "y": "West",
+        "value": 20
+      },
+      {
+        "x": "Q2",
+        "y": "West",
+        "value": 15
+      },
+      {
+        "x": "Q3",
+        "y": "West",
+        "value": 25
+      },
+      {
+        "x": "Q4",
+        "y": "West",
+        "value": 30
+      },
+      {
+        "x": "Q1",
+        "y": "North",
+        "value": 30
+      },
+      {
+        "x": "Q2",
+        "y": "North",
+        "value": 50
+      },
+      {
+        "x": "Q3",
+        "y": "North",
+        "value": 40
+      },
+      {
+        "x": "Q4",
+        "y": "North",
+        "value": 45
+      },
+      {
+        "x": "Q1",
+        "y": "South",
+        "value": 40
+      },
+      {
+        "x": "Q2",
+        "y": "South",
+        "value": 20
+      },
+      {
+        "x": "Q3",
+        "y": "South",
+        "value": 30
+      },
+      {
+        "x": "Q4",
+        "y": "South",
+        "value": 35
+      },
+      {
+        "x": "Q1",
+        "y": "Central",
+        "value": 50
+      },
+      {
+        "x": "Q2",
+        "y": "Central",
+        "value": 60
+      },
+      {
+        "x": "Q3",
+        "y": "Central",
+        "value": 70
+      },
+      {
+        "x": "Q4",
+        "y": "Central",
+        "value": 80
+      }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "y",
+      "type": "ordinal"
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "blues"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Resource Concentration Areas"
+}

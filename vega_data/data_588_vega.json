@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "category": "High Operating Hours",
+        "value": 36
+      },
+      {
+        "category": "High Temperature",
+        "value": 24
+      },
+      {
+        "category": "Vibration Anomaly",
+        "value": 15
+      },
+      {
+        "category": "Overdue Maintenance",
+        "value": 10
+      },
+      {
+        "category": "No Imminent Issue",
+        "value": 15
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 50
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Predicted Failure Reasons for Manufacturing Equipment (Weekly)"
+}

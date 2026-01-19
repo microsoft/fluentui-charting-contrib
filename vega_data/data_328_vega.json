@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Cumulative Sales of Popular Products Over Time",
+  "description": "Converted from Plotly schema 328 - Multi-series area chart",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "month": "2023-01", "sales": 500, "product": "Product A" },
+      { "month": "2023-02", "sales": 700, "product": "Product A" },
+      { "month": "2023-03", "sales": 800, "product": "Product A" },
+      { "month": "2023-04", "sales": 900, "product": "Product A" },
+      { "month": "2023-05", "sales": 850, "product": "Product A" },
+      { "month": "2023-06", "sales": 900, "product": "Product A" },
+      { "month": "2023-07", "sales": 950, "product": "Product A" },
+      { "month": "2023-08", "sales": 1000, "product": "Product A" },
+      { "month": "2023-09", "sales": 1050, "product": "Product A" },
+      { "month": "2023-10", "sales": 1100, "product": "Product A" },
+      { "month": "2023-01", "sales": 900, "product": "Product D" },
+      { "month": "2023-02", "sales": 920, "product": "Product D" },
+      { "month": "2023-03", "sales": 940, "product": "Product D" },
+      { "month": "2023-04", "sales": 960, "product": "Product D" },
+      { "month": "2023-05", "sales": 980, "product": "Product D" },
+      { "month": "2023-06", "sales": 1000, "product": "Product D" },
+      { "month": "2023-07", "sales": 1020, "product": "Product D" },
+      { "month": "2023-08", "sales": 1040, "product": "Product D" },
+      { "month": "2023-09", "sales": 1060, "product": "Product D" },
+      { "month": "2023-10", "sales": 1080, "product": "Product D" },
+      { "month": "2023-01", "sales": 200, "product": "Product F" },
+      { "month": "2023-02", "sales": 250, "product": "Product F" },
+      { "month": "2023-03", "sales": 300, "product": "Product F" },
+      { "month": "2023-04", "sales": 350, "product": "Product F" },
+      { "month": "2023-05", "sales": 400, "product": "Product F" },
+      { "month": "2023-06", "sales": 450, "product": "Product F" },
+      { "month": "2023-07", "sales": 500, "product": "Product F" },
+      { "month": "2023-08", "sales": 550, "product": "Product F" },
+      { "month": "2023-09", "sales": 600, "product": "Product F" },
+      { "month": "2023-10", "sales": 650, "product": "Product F" },
+      { "month": "2023-01", "sales": 800, "product": "Product H" },
+      { "month": "2023-02", "sales": 820, "product": "Product H" },
+      { "month": "2023-03", "sales": 840, "product": "Product H" },
+      { "month": "2023-04", "sales": 860, "product": "Product H" },
+      { "month": "2023-05", "sales": 880, "product": "Product H" },
+      { "month": "2023-06", "sales": 900, "product": "Product H" },
+      { "month": "2023-07", "sales": 920, "product": "Product H" },
+      { "month": "2023-08", "sales": 940, "product": "Product H" },
+      { "month": "2023-09", "sales": 960, "product": "Product H" },
+      { "month": "2023-10", "sales": 980, "product": "Product H" }
+    ]
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "axis": { "title": "Time" }
+    },
+    "y": {
+      "field": "sales",
+      "type": "quantitative",
+      "axis": { "title": "Cumulative Sales" }
+    },
+    "color": {
+      "field": "product",
+      "type": "nominal",
+      "legend": { "title": "Product" }
+    }
+  }
+}

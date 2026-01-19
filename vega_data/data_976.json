@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Pixel-positioned Callout",
+  "data": {
+    "values": [
+      {"x": 5, "y": 8},
+      {"x": 10, "y": 13},
+      {"x": 15, "y": 11},
+      {"x": 20, "y": 18},
+      {"x": 25, "y": 16},
+      {"x": 30, "y": 22}
+    ]
+  },
+  "mark": {"type": "point", "filled": true, "color": "#107C10", "size": 100},
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Input"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Output"
+    }
+  }
+}

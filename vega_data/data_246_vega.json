@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Histogram of Daily Defect Rates",
+  "description": "Converted from Plotly schema 246 - Bar chart (histogram style)",
+  "data": {
+    "values": [
+      { "date": "2023-10-01", "defectRate": 300 },
+      { "date": "2023-10-02", "defectRate": 450 },
+      { "date": "2023-10-03", "defectRate": 500 },
+      { "date": "2023-10-04", "defectRate": 400 },
+      { "date": "2023-10-05", "defectRate": 600 },
+      { "date": "2023-10-06", "defectRate": 700 },
+      { "date": "2023-10-07", "defectRate": 550 }
+    ]
+  },
+  "mark": { "type": "bar", "color": "rgb(219, 64, 82)" },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": { "title": "Date" }
+    },
+    "y": {
+      "field": "defectRate",
+      "type": "quantitative",
+      "axis": { "title": "Defect Rate", "format": ",d" }
+    }
+  }
+}

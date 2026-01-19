@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Predictive Analysis for Potential Failures in IT Systems",
+  "description": "Converted from Plotly schema 99 - Heatmap",
+  "data": {
+    "values": [
+      { "metric": "Server Load", "week": "Week 1", "probability": 0.2 },
+      { "metric": "Server Load", "week": "Week 2", "probability": 0.1 },
+      { "metric": "Server Load", "week": "Week 3", "probability": 0.3 },
+      { "metric": "Network Traffic", "week": "Week 1", "probability": 0.5 },
+      { "metric": "Network Traffic", "week": "Week 2", "probability": 0.4 },
+      { "metric": "Network Traffic", "week": "Week 3", "probability": 0.6 },
+      { "metric": "Application Response Time", "week": "Week 1", "probability": 0.7 },
+      { "metric": "Application Response Time", "week": "Week 2", "probability": 0.8 },
+      { "metric": "Application Response Time", "week": "Week 3", "probability": 0.9 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "week",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "metric",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "probability",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Probability of Failure" }
+    }
+  }
+}

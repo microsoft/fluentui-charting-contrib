@@ -1,0 +1,222 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 1,
+        "y": "Apollo Redesign",
+        "series": "Requirements"
+      },
+      {
+        "x": 13,
+        "y": "Mercury Launch",
+        "series": "Requirements"
+      },
+      {
+        "x": -1,
+        "y": "Gemini Upgrade",
+        "series": "Requirements"
+      },
+      {
+        "x": -4,
+        "y": "Orion Expansion",
+        "series": "Requirements"
+      },
+      {
+        "x": -4,
+        "y": "Vega Integration",
+        "series": "Requirements"
+      },
+      {
+        "x": -5,
+        "y": "Atlas Migration",
+        "series": "Requirements"
+      },
+      {
+        "x": 0,
+        "y": "Apollo Redesign",
+        "series": "Design"
+      },
+      {
+        "x": 7,
+        "y": "Mercury Launch",
+        "series": "Design"
+      },
+      {
+        "x": -5,
+        "y": "Gemini Upgrade",
+        "series": "Design"
+      },
+      {
+        "x": -5,
+        "y": "Orion Expansion",
+        "series": "Design"
+      },
+      {
+        "x": -3,
+        "y": "Vega Integration",
+        "series": "Design"
+      },
+      {
+        "x": 25,
+        "y": "Atlas Migration",
+        "series": "Design"
+      },
+      {
+        "x": 2,
+        "y": "Apollo Redesign",
+        "series": "Development"
+      },
+      {
+        "x": -1,
+        "y": "Mercury Launch",
+        "series": "Development"
+      },
+      {
+        "x": -5,
+        "y": "Gemini Upgrade",
+        "series": "Development"
+      },
+      {
+        "x": 20,
+        "y": "Orion Expansion",
+        "series": "Development"
+      },
+      {
+        "x": -5,
+        "y": "Vega Integration",
+        "series": "Development"
+      },
+      {
+        "x": 0,
+        "y": "Atlas Migration",
+        "series": "Development"
+      },
+      {
+        "x": 5,
+        "y": "Apollo Redesign",
+        "series": "Testing"
+      },
+      {
+        "x": 6,
+        "y": "Mercury Launch",
+        "series": "Testing"
+      },
+      {
+        "x": -4,
+        "y": "Gemini Upgrade",
+        "series": "Testing"
+      },
+      {
+        "x": 3,
+        "y": "Orion Expansion",
+        "series": "Testing"
+      },
+      {
+        "x": -2,
+        "y": "Vega Integration",
+        "series": "Testing"
+      },
+      {
+        "x": -5,
+        "y": "Atlas Migration",
+        "series": "Testing"
+      },
+      {
+        "x": -1,
+        "y": "Apollo Redesign",
+        "series": "Deployment"
+      },
+      {
+        "x": -1,
+        "y": "Mercury Launch",
+        "series": "Deployment"
+      },
+      {
+        "x": -5,
+        "y": "Gemini Upgrade",
+        "series": "Deployment"
+      },
+      {
+        "x": 6,
+        "y": "Orion Expansion",
+        "series": "Deployment"
+      },
+      {
+        "x": -4,
+        "y": "Vega Integration",
+        "series": "Deployment"
+      },
+      {
+        "x": 12,
+        "y": "Atlas Migration",
+        "series": "Deployment"
+      },
+      {
+        "x": -1,
+        "y": "Apollo Redesign",
+        "series": "Review"
+      },
+      {
+        "x": -1,
+        "y": "Mercury Launch",
+        "series": "Review"
+      },
+      {
+        "x": -1,
+        "y": "Gemini Upgrade",
+        "series": "Review"
+      },
+      {
+        "x": -5,
+        "y": "Orion Expansion",
+        "series": "Review"
+      },
+      {
+        "x": -4,
+        "y": "Vega Integration",
+        "series": "Review"
+      },
+      {
+        "x": -5,
+        "y": "Atlas Migration",
+        "series": "Review"
+      }
+    ]
+  },
+  "title": "Milestone Delay Analysis by Project",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Milestone Delay (days)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Project Name"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Milestone Delay (days)"
+      },
+      {
+        "field": "y",
+        "title": "Project Name"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

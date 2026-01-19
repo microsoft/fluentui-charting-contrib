@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Key Metrics Across Districts",
+  "description": "Converted from Plotly schema 193 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "district": "District A", "value": 88, "metric": "Graduation Rate (%)" },
+      { "district": "District B", "value": 76, "metric": "Graduation Rate (%)" },
+      { "district": "District C", "value": 83, "metric": "Graduation Rate (%)" },
+      { "district": "District D", "value": 91, "metric": "Graduation Rate (%)" },
+      { "district": "District A", "value": 4500, "metric": "Funding per Student ($)" },
+      { "district": "District B", "value": 5500, "metric": "Funding per Student ($)" },
+      { "district": "District C", "value": 7000, "metric": "Funding per Student ($)" },
+      { "district": "District D", "value": 6000, "metric": "Funding per Student ($)" },
+      { "district": "District A", "value": 16, "metric": "Student-to-Teacher Ratio" },
+      { "district": "District B", "value": 18, "metric": "Student-to-Teacher Ratio" },
+      { "district": "District C", "value": 14, "metric": "Student-to-Teacher Ratio" },
+      { "district": "District D", "value": 17, "metric": "Student-to-Teacher Ratio" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "district",
+      "type": "nominal",
+      "axis": { "title": "Districts" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Values" }
+    },
+    "xOffset": {
+      "field": "metric"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

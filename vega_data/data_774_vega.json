@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "1st",
+        "y": 24,
+        "series": "Male"
+      },
+      {
+        "x": "2nd",
+        "y": 22,
+        "series": "Male"
+      },
+      {
+        "x": "3rd",
+        "y": 23,
+        "series": "Male"
+      },
+      {
+        "x": "4th",
+        "y": 24,
+        "series": "Male"
+      },
+      {
+        "x": "5th",
+        "y": 25,
+        "series": "Male"
+      },
+      {
+        "x": "1st",
+        "y": 26,
+        "series": "Female"
+      },
+      {
+        "x": "2nd",
+        "y": 23,
+        "series": "Female"
+      },
+      {
+        "x": "3rd",
+        "y": 25,
+        "series": "Female"
+      },
+      {
+        "x": "4th",
+        "y": 28,
+        "series": "Female"
+      },
+      {
+        "x": "5th",
+        "y": 24,
+        "series": "Female"
+      }
+    ]
+  },
+  "title": "Students per Grade & Gender",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Grade"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Students"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Grade"
+      },
+      {
+        "field": "y",
+        "title": "Students"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

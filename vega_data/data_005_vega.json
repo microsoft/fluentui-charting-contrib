@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Sales Figures Across Months",
+  "description": "Converted from Plotly schema 5 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "month": "Jan", "sales": 2000, "category": "Category A" },
+      { "month": "Feb", "sales": 2100, "category": "Category A" },
+      { "month": "Mar", "sales": 2200, "category": "Category A" },
+      { "month": "Apr", "sales": 2300, "category": "Category A" },
+      { "month": "May", "sales": 2400, "category": "Category A" },
+      { "month": "Jan", "sales": 3000, "category": "Category B" },
+      { "month": "Feb", "sales": 3100, "category": "Category B" },
+      { "month": "Mar", "sales": 3200, "category": "Category B" },
+      { "month": "Apr", "sales": 3300, "category": "Category B" },
+      { "month": "May", "sales": 3400, "category": "Category B" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "nominal",
+      "axis": { "title": "Months" }
+    },
+    "y": {
+      "field": "sales",
+      "type": "quantitative",
+      "axis": { "title": "Sales" }
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "legend": { "title": "Category" }
+    },
+    "xOffset": { "field": "category" }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Weight of Different Asset Classes",
+  "description": "Converted from Plotly schema 40 - Horizontal bar chart",
+  "data": {
+    "values": [
+      { "asset": "Stocks", "weight": 50 },
+      { "asset": "Bonds", "weight": 30 },
+      { "asset": "Real Estate", "weight": 10 },
+      { "asset": "Cash", "weight": 10 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "weight",
+      "type": "quantitative",
+      "axis": { "title": "Weight (%)" }
+    },
+    "y": {
+      "field": "asset",
+      "type": "nominal",
+      "axis": { "title": "Asset Classes" },
+      "sort": "-x"
+    }
+  }
+}

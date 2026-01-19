@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Occupancy Rates by Region",
+  "description": "Converted from Plotly schema 318 - Multi-series line chart (simplified from 25 to 4 regions)",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "2023-01", "rate": 70, "region": "Region 1" },
+      { "month": "2023-02", "rate": 75, "region": "Region 1" },
+      { "month": "2023-03", "rate": 65, "region": "Region 1" },
+      { "month": "2023-04", "rate": 80, "region": "Region 1" },
+      { "month": "2023-05", "rate": 85, "region": "Region 1" },
+      { "month": "2023-06", "rate": 90, "region": "Region 1" },
+      { "month": "2023-07", "rate": 95, "region": "Region 1" },
+      { "month": "2023-08", "rate": 85, "region": "Region 1" },
+      { "month": "2023-09", "rate": 75, "region": "Region 1" },
+      { "month": "2023-10", "rate": 80, "region": "Region 1" },
+      { "month": "2023-01", "rate": 72, "region": "Region 2" },
+      { "month": "2023-02", "rate": 78, "region": "Region 2" },
+      { "month": "2023-03", "rate": 67, "region": "Region 2" },
+      { "month": "2023-04", "rate": 82, "region": "Region 2" },
+      { "month": "2023-05", "rate": 88, "region": "Region 2" },
+      { "month": "2023-06", "rate": 92, "region": "Region 2" },
+      { "month": "2023-07", "rate": 97, "region": "Region 2" },
+      { "month": "2023-08", "rate": 87, "region": "Region 2" },
+      { "month": "2023-09", "rate": 78, "region": "Region 2" },
+      { "month": "2023-10", "rate": 82, "region": "Region 2" },
+      { "month": "2023-01", "rate": 65, "region": "Region 3" },
+      { "month": "2023-02", "rate": 70, "region": "Region 3" },
+      { "month": "2023-03", "rate": 68, "region": "Region 3" },
+      { "month": "2023-04", "rate": 75, "region": "Region 3" },
+      { "month": "2023-05", "rate": 80, "region": "Region 3" },
+      { "month": "2023-06", "rate": 85, "region": "Region 3" },
+      { "month": "2023-07", "rate": 90, "region": "Region 3" },
+      { "month": "2023-08", "rate": 80, "region": "Region 3" },
+      { "month": "2023-09", "rate": 70, "region": "Region 3" },
+      { "month": "2023-10", "rate": 75, "region": "Region 3" },
+      { "month": "2023-01", "rate": 68, "region": "Region 4" },
+      { "month": "2023-02", "rate": 73, "region": "Region 4" },
+      { "month": "2023-03", "rate": 66, "region": "Region 4" },
+      { "month": "2023-04", "rate": 78, "region": "Region 4" },
+      { "month": "2023-05", "rate": 83, "region": "Region 4" },
+      { "month": "2023-06", "rate": 88, "region": "Region 4" },
+      { "month": "2023-07", "rate": 93, "region": "Region 4" },
+      { "month": "2023-08", "rate": 83, "region": "Region 4" },
+      { "month": "2023-09", "rate": 73, "region": "Region 4" },
+      { "month": "2023-10", "rate": 78, "region": "Region 4" }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "axis": { "title": "Month-Year" }
+    },
+    "y": {
+      "field": "rate",
+      "type": "quantitative",
+      "axis": { "title": "Occupancy Rate (%)" }
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "scale": { "range": ["blue", "green", "red", "orange"] },
+      "legend": { "title": "Region" }
+    },
+    "tooltip": [
+      { "field": "month", "type": "ordinal", "title": "Month" },
+      { "field": "region", "type": "nominal", "title": "Region" },
+      { "field": "rate", "type": "quantitative", "title": "Occupancy Rate (%)" }
+    ]
+  }
+}

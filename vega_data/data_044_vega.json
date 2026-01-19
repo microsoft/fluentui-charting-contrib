@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Performance Within Portfolio",
+  "description": "Converted from Plotly schema 44 - Heatmap",
+  "data": {
+    "values": [
+      { "asset": "Asset A", "quarter": "Q1", "value": 1 },
+      { "asset": "Asset B", "quarter": "Q1", "value": 20 },
+      { "asset": "Asset C", "quarter": "Q1", "value": 30 },
+      { "asset": "Asset A", "quarter": "Q2", "value": 20 },
+      { "asset": "Asset B", "quarter": "Q2", "value": 1 },
+      { "asset": "Asset C", "quarter": "Q2", "value": 60 },
+      { "asset": "Asset A", "quarter": "Q3", "value": 30 },
+      { "asset": "Asset B", "quarter": "Q3", "value": 60 },
+      { "asset": "Asset C", "quarter": "Q3", "value": 1 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "asset",
+      "type": "nominal",
+      "axis": { "title": "Assets" }
+    },
+    "y": {
+      "field": "quarter",
+      "type": "ordinal",
+      "axis": { "title": "Quarters" },
+      "sort": ["Q1", "Q2", "Q3"]
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "legend": { "title": "Performance" }
+    }
+  }
+}

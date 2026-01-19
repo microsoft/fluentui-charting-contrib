@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "January",
+        "y": 200,
+        "series": "Cardiology"
+      },
+      {
+        "x": "February",
+        "y": 210,
+        "series": "Cardiology"
+      },
+      {
+        "x": "March",
+        "y": 220,
+        "series": "Cardiology"
+      },
+      {
+        "x": "January",
+        "y": 195,
+        "series": "Cardiology"
+      },
+      {
+        "x": "February",
+        "y": 205,
+        "series": "Cardiology"
+      },
+      {
+        "x": "March",
+        "y": 212,
+        "series": "Cardiology"
+      },
+      {
+        "x": "January",
+        "y": 190,
+        "series": "Orthopedics"
+      },
+      {
+        "x": "February",
+        "y": 200,
+        "series": "Orthopedics"
+      },
+      {
+        "x": "March",
+        "y": 198,
+        "series": "Orthopedics"
+      },
+      {
+        "x": "January",
+        "y": 185,
+        "series": "Orthopedics"
+      },
+      {
+        "x": "February",
+        "y": 195,
+        "series": "Orthopedics"
+      },
+      {
+        "x": "March",
+        "y": 190,
+        "series": "Orthopedics"
+      },
+      {
+        "x": "January",
+        "y": 180,
+        "series": "Neurology"
+      },
+      {
+        "x": "February",
+        "y": 185,
+        "series": "Neurology"
+      },
+      {
+        "x": "March",
+        "y": 178,
+        "series": "Neurology"
+      },
+      {
+        "x": "January",
+        "y": 175,
+        "series": "Neurology"
+      },
+      {
+        "x": "February",
+        "y": 180,
+        "series": "Neurology"
+      },
+      {
+        "x": "March",
+        "y": 172,
+        "series": "Neurology"
+      }
+    ]
+  },
+  "title": "Monthly Admissions and Discharges per Department",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Count"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Count"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

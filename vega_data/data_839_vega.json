@@ -1,0 +1,402 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan 2023",
+        "y": 87.45071229516849,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 77.92603548243223,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 89.71532807151038,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 102.84544784612038,
+        "series": "Euro 6"
+      },
+      {
+        "x": "May 2023",
+        "y": 76.48769937914996,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 76.4879456457623,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 103.68819223261087,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 91.51152093729362,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 72.95788421097572,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 88.13840065378947,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 73.04873460781306,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 73.01405369644614,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 71.83425913212226,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 81.66383884564799,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 62.73509633866546,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 85.63547027518509,
+        "series": "Euro 6"
+      },
+      {
+        "x": "May 2023",
+        "y": 70.99041965121792,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 75.62459375310085,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 70.97440081655904,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 107.78417276763406,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 79.79754162893099,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 64.1343360656615,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 92.33817368154783,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 61.68734525043467,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 85.15427434352692,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 53.554397669558995,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 84.86125954092192,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 74.22376579375525,
+        "series": "Euro 6"
+      },
+      {
+        "x": "May 2023",
+        "y": 69.84616999541062,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 89.17514433261302,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 95.46499283743927,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 93.96920178674299,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 67.41173715166042,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 75.36181436223178,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 84.96895147105346,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 94.63317690683539,
+        "series": "Euro 6"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 83.62943407349051,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 51.30079633013303,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 54.12623251230451,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 71.5656870613854,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "May 2023",
+        "y": 64.80753319498365,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 84.71370998892911,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 66.37963886718184,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 58.81544447997062,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 101.98473153382331,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 76.61335549270197,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 81.01292307031886,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 58.62877720679815,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 83.13295392507133,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 50.60494814180336,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 60.07720926652354,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 82.95291853803685,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "May 2023",
+        "y": 91.07699869993115,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 82.57052421784955,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 78.2652757641764,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 75.48344456616067,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 57.82217014448859,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 69.20233687407936,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 73.09041843560318,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 95.85683339328374,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 72.81238643232065,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 77.21511535004274,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 63.40497538990958,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 62.05690063878994,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "May 2023",
+        "y": 92.18788733591298,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 100.34360042856234,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 78.91984817629499,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 95.05299346838036,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 85.42454037571451,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 70.32320368092314,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 85.4209340826262,
+        "series": "EPA Tier 3"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 103.07054849698955,
+        "series": "EPA Tier 3"
+      }
+    ]
+  },
+  "title": "Monthly Emission Levels by Type and Compliance Standard",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Emission (g/km)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Emission (g/km)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

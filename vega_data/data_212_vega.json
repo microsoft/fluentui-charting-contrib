@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Weekly ADR and RevPAR Performance for September 2023",
+  "description": "Converted from Plotly schema 212 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "week": "2023-09-01", "revenue": 12000, "metric": "ADR" },
+      { "week": "2023-09-08", "revenue": 15000, "metric": "ADR" },
+      { "week": "2023-09-15", "revenue": 13500, "metric": "ADR" },
+      { "week": "2023-09-22", "revenue": 16000, "metric": "ADR" },
+      { "week": "2023-09-29", "revenue": 15500, "metric": "ADR" },
+      { "week": "2023-09-01", "revenue": 9000, "metric": "RevPAR" },
+      { "week": "2023-09-08", "revenue": 13000, "metric": "RevPAR" },
+      { "week": "2023-09-15", "revenue": 12500, "metric": "RevPAR" },
+      { "week": "2023-09-22", "revenue": 14000, "metric": "RevPAR" },
+      { "week": "2023-09-29", "revenue": 13500, "metric": "RevPAR" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "week",
+      "type": "ordinal",
+      "axis": { "title": "Week of September" }
+    },
+    "y": {
+      "field": "revenue",
+      "type": "quantitative",
+      "axis": { "title": "Revenue (USD)" }
+    },
+    "xOffset": {
+      "field": "metric"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

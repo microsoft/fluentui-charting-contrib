@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Portfolio Value Growth Over Time",
+  "description": "Converted from Plotly schema 37 - Area chart",
+  "data": {
+    "values": [
+      { "date": "2020-01-01", "value": 10000 },
+      { "date": "2020-02-01", "value": 10500 },
+      { "date": "2020-03-01", "value": 10200 },
+      { "date": "2020-04-01", "value": 10800 },
+      { "date": "2020-05-01", "value": 10750 },
+      { "date": "2020-06-01", "value": 11000 }
+    ]
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": { "title": "Date", "format": "%b %Y" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Portfolio Value ($)", "format": "$,.0f" }
+    }
+  }
+}

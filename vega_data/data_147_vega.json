@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Performance Heatmap by Region and Exercise Type",
+  "description": "Converted from Plotly schema 147 - Heatmap",
+  "data": {
+    "values": [
+      { "exercise": "Patrol", "region": "Region 1", "value": 80 },
+      { "exercise": "Assault", "region": "Region 1", "value": 75 },
+      { "exercise": "Defense", "region": "Region 1", "value": 85 },
+      { "exercise": "Patrol", "region": "Region 2", "value": 76 },
+      { "exercise": "Assault", "region": "Region 2", "value": 80 },
+      { "exercise": "Defense", "region": "Region 2", "value": 78 },
+      { "exercise": "Patrol", "region": "Region 3", "value": 83 },
+      { "exercise": "Assault", "region": "Region 3", "value": 79 },
+      { "exercise": "Defense", "region": "Region 3", "value": 90 },
+      { "exercise": "Patrol", "region": "Region 4", "value": 85 },
+      { "exercise": "Assault", "region": "Region 4", "value": 82 },
+      { "exercise": "Defense", "region": "Region 4", "value": 87 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "exercise",
+      "type": "nominal",
+      "axis": { "title": "Exercise Type" }
+    },
+    "y": {
+      "field": "region",
+      "type": "nominal",
+      "axis": { "title": "Region" }
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Performance" }
+    }
+  }
+}

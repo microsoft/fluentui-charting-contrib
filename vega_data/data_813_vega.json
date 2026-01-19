@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Hotel Aurora",
+        "y": 2697,
+        "series": "rooms_occupied"
+      },
+      {
+        "x": "Metro Suites",
+        "y": 2028,
+        "series": "rooms_occupied"
+      },
+      {
+        "x": "Riverfront Inn",
+        "y": 2108,
+        "series": "rooms_occupied"
+      },
+      {
+        "x": "Seaside Retreat",
+        "y": 2165,
+        "series": "rooms_occupied"
+      },
+      {
+        "x": "Industry Avg",
+        "y": 8998,
+        "series": "rooms_occupied"
+      },
+      {
+        "x": "Hotel Aurora",
+        "y": 976,
+        "series": "Rooms Unoccupied"
+      },
+      {
+        "x": "Metro Suites",
+        "y": 789,
+        "series": "Rooms Unoccupied"
+      },
+      {
+        "x": "Riverfront Inn",
+        "y": 853,
+        "series": "Rooms Unoccupied"
+      },
+      {
+        "x": "Seaside Retreat",
+        "y": 939,
+        "series": "Rooms Unoccupied"
+      },
+      {
+        "x": "Industry Avg",
+        "y": 3557,
+        "series": "Rooms Unoccupied"
+      }
+    ]
+  },
+  "title": "March: Occupied vs Unoccupied Rooms per Hotel and Industry Avg",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Hotel/Industry"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "March Room Count"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Hotel/Industry"
+      },
+      {
+        "field": "y",
+        "title": "March Room Count"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

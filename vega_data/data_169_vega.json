@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Student Engagement Levels by Activity Type",
+  "description": "Converted from Plotly schema 169 - Scatter with varying markers",
+  "data": {
+    "values": [
+      { "activity": "Extracurricular", "score": 85, "grade": "Grade 9", "size": 40 },
+      { "activity": "Classroom", "score": 90, "grade": "Grade 9", "size": 50 },
+      { "activity": "Digital Platform", "score": 78, "grade": "Grade 9", "size": 30 },
+      { "activity": "Extracurricular", "score": 60, "grade": "Grade 10", "size": 35 },
+      { "activity": "Classroom", "score": 70, "grade": "Grade 10", "size": 45 },
+      { "activity": "Digital Platform", "score": 92, "grade": "Grade 10", "size": 55 },
+      { "activity": "Extracurricular", "score": 75, "grade": "Grade 11", "size": 60 },
+      { "activity": "Classroom", "score": 88, "grade": "Grade 11", "size": 65 },
+      { "activity": "Digital Platform", "score": 80, "grade": "Grade 11", "size": 50 }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "activity",
+      "type": "nominal",
+      "axis": { "title": "Activity Type" }
+    },
+    "y": {
+      "field": "score",
+      "type": "quantitative",
+      "axis": { "title": "Engagement Score" }
+    },
+    "size": {
+      "field": "size",
+      "type": "quantitative",
+      "legend": { "title": "Size" }
+    },
+    "color": {
+      "field": "score",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Score" }
+    },
+    "shape": {
+      "field": "grade",
+      "type": "nominal",
+      "legend": { "title": "Grade" }
+    }
+  }
+}

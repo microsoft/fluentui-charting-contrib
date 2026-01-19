@@ -1,0 +1,282 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01",
+        "y": 53.199999999999996,
+        "series": "Medium, CO2"
+      },
+      {
+        "x": "2023-02",
+        "y": 58.56666666666666,
+        "series": "Medium, CO2"
+      },
+      {
+        "x": "2023-03",
+        "y": 46.5,
+        "series": "Medium, CO2"
+      },
+      {
+        "x": "2023-05",
+        "y": 52.93333333333334,
+        "series": "Medium, CO2"
+      },
+      {
+        "x": "2023-06",
+        "y": 58.300000000000004,
+        "series": "Medium, CO2"
+      },
+      {
+        "x": "2023-07",
+        "y": 58.699999999999996,
+        "series": "Medium, CO2"
+      },
+      {
+        "x": "2023-08",
+        "y": 46.833333333333336,
+        "series": "Medium, CO2"
+      },
+      {
+        "x": "2023-09",
+        "y": 64.2,
+        "series": "Medium, CO2"
+      },
+      {
+        "x": "2023-11",
+        "y": 48.26666666666667,
+        "series": "Medium, CO2"
+      },
+      {
+        "x": "2023-12",
+        "y": 48.06666666666666,
+        "series": "Medium, CO2"
+      },
+      {
+        "x": "2023-01",
+        "y": 53.03333333333333,
+        "series": "Medium, NOx"
+      },
+      {
+        "x": "2023-02",
+        "y": 45.699999999999996,
+        "series": "Medium, NOx"
+      },
+      {
+        "x": "2023-03",
+        "y": 57.300000000000004,
+        "series": "Medium, NOx"
+      },
+      {
+        "x": "2023-05",
+        "y": 58.93333333333334,
+        "series": "Medium, NOx"
+      },
+      {
+        "x": "2023-06",
+        "y": 52.699999999999996,
+        "series": "Medium, NOx"
+      },
+      {
+        "x": "2023-08",
+        "y": 56.199999999999996,
+        "series": "Medium, NOx"
+      },
+      {
+        "x": "2023-10",
+        "y": 49.73333333333333,
+        "series": "Medium, NOx"
+      },
+      {
+        "x": "2023-02",
+        "y": 62.43333333333334,
+        "series": "Medium, PM2.5"
+      },
+      {
+        "x": "2023-04",
+        "y": 50.1,
+        "series": "Medium, PM2.5"
+      },
+      {
+        "x": "2023-05",
+        "y": 45.20000000000001,
+        "series": "Medium, PM2.5"
+      },
+      {
+        "x": "2023-09",
+        "y": 46.96666666666667,
+        "series": "Medium, PM2.5"
+      },
+      {
+        "x": "2023-10",
+        "y": 55.5,
+        "series": "Medium, PM2.5"
+      },
+      {
+        "x": "2023-11",
+        "y": 56.36666666666667,
+        "series": "Medium, PM2.5"
+      },
+      {
+        "x": "2023-12",
+        "y": 58.6,
+        "series": "Medium, PM2.5"
+      },
+      {
+        "x": "2023-01",
+        "y": 53.6,
+        "series": "Medium, SO2"
+      },
+      {
+        "x": "2023-02",
+        "y": 48.699999999999996,
+        "series": "Medium, SO2"
+      },
+      {
+        "x": "2023-03",
+        "y": 50.86666666666667,
+        "series": "Medium, SO2"
+      },
+      {
+        "x": "2023-06",
+        "y": 60.199999999999996,
+        "series": "Medium, SO2"
+      },
+      {
+        "x": "2023-07",
+        "y": 49.800000000000004,
+        "series": "Medium, SO2"
+      },
+      {
+        "x": "2023-08",
+        "y": 60.9,
+        "series": "Medium, SO2"
+      },
+      {
+        "x": "2023-09",
+        "y": 53.73333333333333,
+        "series": "Medium, SO2"
+      },
+      {
+        "x": "2023-10",
+        "y": 58.43333333333334,
+        "series": "Medium, SO2"
+      },
+      {
+        "x": "2023-11",
+        "y": 64.8,
+        "series": "Medium, SO2"
+      },
+      {
+        "x": "2023-12",
+        "y": 52.6,
+        "series": "Medium, SO2"
+      },
+      {
+        "x": "2023-04",
+        "y": 37.6,
+        "series": "Low, CO2"
+      },
+      {
+        "x": "2023-10",
+        "y": 43.800000000000004,
+        "series": "Low, CO2"
+      },
+      {
+        "x": "2023-04",
+        "y": 44,
+        "series": "Low, NOx"
+      },
+      {
+        "x": "2023-07",
+        "y": 41.86666666666667,
+        "series": "Low, NOx"
+      },
+      {
+        "x": "2023-09",
+        "y": 42.73333333333333,
+        "series": "Low, NOx"
+      },
+      {
+        "x": "2023-11",
+        "y": 34.833333333333336,
+        "series": "Low, NOx"
+      },
+      {
+        "x": "2023-01",
+        "y": 44.1,
+        "series": "Low, PM2.5"
+      },
+      {
+        "x": "2023-03",
+        "y": 44.166666666666664,
+        "series": "Low, PM2.5"
+      },
+      {
+        "x": "2023-06",
+        "y": 39.6,
+        "series": "Low, PM2.5"
+      },
+      {
+        "x": "2023-07",
+        "y": 38.56666666666667,
+        "series": "Low, PM2.5"
+      },
+      {
+        "x": "2023-08",
+        "y": 37.93333333333334,
+        "series": "Low, PM2.5"
+      },
+      {
+        "x": "2023-05",
+        "y": 43.46666666666667,
+        "series": "Low, SO2"
+      },
+      {
+        "x": "2023-12",
+        "y": 69.16666666666667,
+        "series": "High, NOx"
+      },
+      {
+        "x": "2023-04",
+        "y": 73.86666666666666,
+        "series": "High, SO2"
+      }
+    ]
+  },
+  "title": "Monthly Average Emission Levels by Emission Type",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Emission Level"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Emission Level"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

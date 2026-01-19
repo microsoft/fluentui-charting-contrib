@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 16607038,
+        "y": 50,
+        "series": "Hospital N"
+      },
+      {
+        "x": 17925575,
+        "y": 50,
+        "series": "Hospital O"
+      },
+      {
+        "x": 20113874,
+        "y": 50,
+        "series": "Hospital T"
+      },
+      {
+        "x": 22910182,
+        "y": 51.2,
+        "series": "Hospital Q"
+      },
+      {
+        "x": 23643831,
+        "y": 50,
+        "series": "Hospital S"
+      },
+      {
+        "x": 26063987,
+        "y": 52,
+        "series": "Hospital P"
+      },
+      {
+        "x": 26713679,
+        "y": 54.9,
+        "series": "Hospital I"
+      },
+      {
+        "x": 26739891,
+        "y": 62.3,
+        "series": "Hospital L"
+      },
+      {
+        "x": 26756076,
+        "y": 54.9,
+        "series": "Hospital K"
+      },
+      {
+        "x": 28360926,
+        "y": 57.7,
+        "series": "Hospital E"
+      },
+      {
+        "x": 28361041,
+        "y": 59.6,
+        "series": "Hospital F"
+      },
+      {
+        "x": 29032149,
+        "y": 59.7,
+        "series": "Hospital B"
+      },
+      {
+        "x": 31693735,
+        "y": 64.6,
+        "series": "Hospital M"
+      },
+      {
+        "x": 32199731,
+        "y": 59.6,
+        "series": "Hospital R"
+      },
+      {
+        "x": 33476999,
+        "y": 71.9,
+        "series": "Hospital A"
+      },
+      {
+        "x": 33797920,
+        "y": 67.1,
+        "series": "Hospital J"
+      },
+      {
+        "x": 34533819,
+        "y": 69.4,
+        "series": "Hospital C"
+      },
+      {
+        "x": 35372043,
+        "y": 71.6,
+        "series": "Hospital H"
+      },
+      {
+        "x": 40661208,
+        "y": 74.7,
+        "series": "Hospital D"
+      },
+      {
+        "x": 41054489,
+        "y": 76.2,
+        "series": "Hospital G"
+      }
+    ]
+  },
+  "title": "Healthcare Spending vs Patient Satisfaction by Hospital",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Healthcare Spending (USD)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Patient Satisfaction Score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Healthcare Spending (USD)"
+      },
+      {
+        "field": "y",
+        "title": "Patient Satisfaction Score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

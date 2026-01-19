@@ -1,0 +1,188 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 65.78947368421052,
+        "theta": "Air Quality Index",
+        "series": "Site A"
+      },
+      {
+        "r": 66.66666666666666,
+        "theta": "Noise Level (dB)",
+        "series": "Site A"
+      },
+      {
+        "r": 70.58823529411765,
+        "theta": "Recycling Ratio (%)",
+        "series": "Site A"
+      },
+      {
+        "r": 75,
+        "theta": "Energy Consumption (kWh)",
+        "series": "Site A"
+      },
+      {
+        "r": 66.66666666666666,
+        "theta": "Water Usage (L)",
+        "series": "Site A"
+      },
+      {
+        "r": 70.58823529411765,
+        "theta": "Compliance Score",
+        "series": "Site A"
+      },
+      {
+        "r": 77.77777777777777,
+        "theta": "Community Complaints",
+        "series": "Site A"
+      },
+      {
+        "r": 0,
+        "theta": "Air Quality Index",
+        "series": "Site B"
+      },
+      {
+        "r": 20,
+        "theta": "Noise Level (dB)",
+        "series": "Site B"
+      },
+      {
+        "r": 32.35294117647059,
+        "theta": "Recycling Ratio (%)",
+        "series": "Site B"
+      },
+      {
+        "r": 37.5,
+        "theta": "Energy Consumption (kWh)",
+        "series": "Site B"
+      },
+      {
+        "r": 33.33333333333333,
+        "theta": "Water Usage (L)",
+        "series": "Site B"
+      },
+      {
+        "r": 29.41176470588235,
+        "theta": "Compliance Score",
+        "series": "Site B"
+      },
+      {
+        "r": 22.22222222222223,
+        "theta": "Community Complaints",
+        "series": "Site B"
+      },
+      {
+        "r": 100,
+        "theta": "Air Quality Index",
+        "series": "Site C"
+      },
+      {
+        "r": 100,
+        "theta": "Noise Level (dB)",
+        "series": "Site C"
+      },
+      {
+        "r": 100,
+        "theta": "Recycling Ratio (%)",
+        "series": "Site C"
+      },
+      {
+        "r": 100,
+        "theta": "Energy Consumption (kWh)",
+        "series": "Site C"
+      },
+      {
+        "r": 100,
+        "theta": "Water Usage (L)",
+        "series": "Site C"
+      },
+      {
+        "r": 100,
+        "theta": "Compliance Score",
+        "series": "Site C"
+      },
+      {
+        "r": 100,
+        "theta": "Community Complaints",
+        "series": "Site C"
+      },
+      {
+        "r": 34.21052631578948,
+        "theta": "Air Quality Index",
+        "series": "Site D"
+      },
+      {
+        "r": 0,
+        "theta": "Noise Level (dB)",
+        "series": "Site D"
+      },
+      {
+        "r": 0,
+        "theta": "Recycling Ratio (%)",
+        "series": "Site D"
+      },
+      {
+        "r": 0,
+        "theta": "Energy Consumption (kWh)",
+        "series": "Site D"
+      },
+      {
+        "r": 0,
+        "theta": "Water Usage (L)",
+        "series": "Site D"
+      },
+      {
+        "r": 0,
+        "theta": "Compliance Score",
+        "series": "Site D"
+      },
+      {
+        "r": 0,
+        "theta": "Community Complaints",
+        "series": "Site D"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Environmental Impact Assessment by Construction Site"
+}

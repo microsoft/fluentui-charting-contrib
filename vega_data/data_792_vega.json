@@ -1,0 +1,582 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 1,
+        "series": "DDoS, Medium"
+      },
+      {
+        "x": "2023-01-29T00:00:00.000000000",
+        "y": 2,
+        "series": "DDoS, Medium"
+      },
+      {
+        "x": "2023-04-23T00:00:00.000000000",
+        "y": 3,
+        "series": "DDoS, Medium"
+      },
+      {
+        "x": "2023-05-21T00:00:00.000000000",
+        "y": 1,
+        "series": "DDoS, Medium"
+      },
+      {
+        "x": "2023-01-29T00:00:00.000000000",
+        "y": 1,
+        "series": "DDoS, High"
+      },
+      {
+        "x": "2023-03-12T00:00:00.000000000",
+        "y": 2,
+        "series": "DDoS, High"
+      },
+      {
+        "x": "2023-05-07T00:00:00.000000000",
+        "y": 1,
+        "series": "DDoS, High"
+      },
+      {
+        "x": "2023-05-21T00:00:00.000000000",
+        "y": 1,
+        "series": "DDoS, High"
+      },
+      {
+        "x": "2023-06-18T00:00:00.000000000",
+        "y": 1,
+        "series": "DDoS, High"
+      },
+      {
+        "x": "2023-01-15T00:00:00.000000000",
+        "y": 1,
+        "series": "DDoS, Low"
+      },
+      {
+        "x": "2023-01-29T00:00:00.000000000",
+        "y": 2,
+        "series": "DDoS, Low"
+      },
+      {
+        "x": "2023-02-12T00:00:00.000000000",
+        "y": 1,
+        "series": "DDoS, Low"
+      },
+      {
+        "x": "2023-04-23T00:00:00.000000000",
+        "y": 2,
+        "series": "DDoS, Low"
+      },
+      {
+        "x": "2023-05-07T00:00:00.000000000",
+        "y": 1,
+        "series": "DDoS, Low"
+      },
+      {
+        "x": "2023-05-21T00:00:00.000000000",
+        "y": 2,
+        "series": "DDoS, Low"
+      },
+      {
+        "x": "2023-06-18T00:00:00.000000000",
+        "y": 2,
+        "series": "DDoS, Low"
+      },
+      {
+        "x": "2023-01-15T00:00:00.000000000",
+        "y": 1,
+        "series": "Insider Threat, Medium"
+      },
+      {
+        "x": "2023-01-29T00:00:00.000000000",
+        "y": 2,
+        "series": "Insider Threat, Medium"
+      },
+      {
+        "x": "2023-02-26T00:00:00.000000000",
+        "y": 1,
+        "series": "Insider Threat, Medium"
+      },
+      {
+        "x": "2023-03-12T00:00:00.000000000",
+        "y": 1,
+        "series": "Insider Threat, Medium"
+      },
+      {
+        "x": "2023-03-26T00:00:00.000000000",
+        "y": 1,
+        "series": "Insider Threat, Medium"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 1,
+        "series": "Insider Threat, High"
+      },
+      {
+        "x": "2023-01-15T00:00:00.000000000",
+        "y": 1,
+        "series": "Insider Threat, High"
+      },
+      {
+        "x": "2023-04-09T00:00:00.000000000",
+        "y": 1,
+        "series": "Insider Threat, High"
+      },
+      {
+        "x": "2023-05-21T00:00:00.000000000",
+        "y": 2,
+        "series": "Insider Threat, High"
+      },
+      {
+        "x": "2023-06-18T00:00:00.000000000",
+        "y": 2,
+        "series": "Insider Threat, High"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 1,
+        "series": "Insider Threat, Low"
+      },
+      {
+        "x": "2023-01-15T00:00:00.000000000",
+        "y": 1,
+        "series": "Insider Threat, Low"
+      },
+      {
+        "x": "2023-03-12T00:00:00.000000000",
+        "y": 1,
+        "series": "Insider Threat, Low"
+      },
+      {
+        "x": "2023-03-26T00:00:00.000000000",
+        "y": 2,
+        "series": "Insider Threat, Low"
+      },
+      {
+        "x": "2023-04-09T00:00:00.000000000",
+        "y": 1,
+        "series": "Insider Threat, Low"
+      },
+      {
+        "x": "2023-04-23T00:00:00.000000000",
+        "y": 1,
+        "series": "Insider Threat, Low"
+      },
+      {
+        "x": "2023-05-07T00:00:00.000000000",
+        "y": 1,
+        "series": "Insider Threat, Low"
+      },
+      {
+        "x": "2023-06-18T00:00:00.000000000",
+        "y": 2,
+        "series": "Insider Threat, Low"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, Medium"
+      },
+      {
+        "x": "2023-01-29T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, Medium"
+      },
+      {
+        "x": "2023-02-26T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, Medium"
+      },
+      {
+        "x": "2023-03-12T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, Medium"
+      },
+      {
+        "x": "2023-04-09T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, Medium"
+      },
+      {
+        "x": "2023-05-21T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, Medium"
+      },
+      {
+        "x": "2023-06-04T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, Medium"
+      },
+      {
+        "x": "2023-06-18T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, Medium"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 2,
+        "series": "Malware, High"
+      },
+      {
+        "x": "2023-01-29T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, High"
+      },
+      {
+        "x": "2023-02-12T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, High"
+      },
+      {
+        "x": "2023-03-26T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, High"
+      },
+      {
+        "x": "2023-05-07T00:00:00.000000000",
+        "y": 2,
+        "series": "Malware, High"
+      },
+      {
+        "x": "2023-06-04T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, High"
+      },
+      {
+        "x": "2023-01-29T00:00:00.000000000",
+        "y": 3,
+        "series": "Malware, Low"
+      },
+      {
+        "x": "2023-02-12T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, Low"
+      },
+      {
+        "x": "2023-02-26T00:00:00.000000000",
+        "y": 2,
+        "series": "Malware, Low"
+      },
+      {
+        "x": "2023-03-12T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, Low"
+      },
+      {
+        "x": "2023-03-26T00:00:00.000000000",
+        "y": 2,
+        "series": "Malware, Low"
+      },
+      {
+        "x": "2023-05-07T00:00:00.000000000",
+        "y": 2,
+        "series": "Malware, Low"
+      },
+      {
+        "x": "2023-05-21T00:00:00.000000000",
+        "y": 1,
+        "series": "Malware, Low"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 2,
+        "series": "Phishing, Medium"
+      },
+      {
+        "x": "2023-02-12T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, Medium"
+      },
+      {
+        "x": "2023-05-07T00:00:00.000000000",
+        "y": 2,
+        "series": "Phishing, Medium"
+      },
+      {
+        "x": "2023-05-21T00:00:00.000000000",
+        "y": 3,
+        "series": "Phishing, Medium"
+      },
+      {
+        "x": "2023-06-04T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, Medium"
+      },
+      {
+        "x": "2023-06-18T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, Medium"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, High"
+      },
+      {
+        "x": "2023-01-15T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, High"
+      },
+      {
+        "x": "2023-01-29T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, High"
+      },
+      {
+        "x": "2023-02-12T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, High"
+      },
+      {
+        "x": "2023-02-26T00:00:00.000000000",
+        "y": 2,
+        "series": "Phishing, High"
+      },
+      {
+        "x": "2023-03-12T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, High"
+      },
+      {
+        "x": "2023-04-09T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, High"
+      },
+      {
+        "x": "2023-04-23T00:00:00.000000000",
+        "y": 2,
+        "series": "Phishing, High"
+      },
+      {
+        "x": "2023-05-07T00:00:00.000000000",
+        "y": 2,
+        "series": "Phishing, High"
+      },
+      {
+        "x": "2023-06-18T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, High"
+      },
+      {
+        "x": "2023-07-02T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, High"
+      },
+      {
+        "x": "2023-01-29T00:00:00.000000000",
+        "y": 2,
+        "series": "Phishing, Low"
+      },
+      {
+        "x": "2023-02-12T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, Low"
+      },
+      {
+        "x": "2023-02-26T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, Low"
+      },
+      {
+        "x": "2023-03-12T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, Low"
+      },
+      {
+        "x": "2023-03-26T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, Low"
+      },
+      {
+        "x": "2023-04-09T00:00:00.000000000",
+        "y": 2,
+        "series": "Phishing, Low"
+      },
+      {
+        "x": "2023-04-23T00:00:00.000000000",
+        "y": 2,
+        "series": "Phishing, Low"
+      },
+      {
+        "x": "2023-05-21T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, Low"
+      },
+      {
+        "x": "2023-07-02T00:00:00.000000000",
+        "y": 1,
+        "series": "Phishing, Low"
+      },
+      {
+        "x": "2023-01-15T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, Medium"
+      },
+      {
+        "x": "2023-01-29T00:00:00.000000000",
+        "y": 3,
+        "series": "Zero-Day, Medium"
+      },
+      {
+        "x": "2023-02-12T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, Medium"
+      },
+      {
+        "x": "2023-03-12T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, Medium"
+      },
+      {
+        "x": "2023-03-26T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, Medium"
+      },
+      {
+        "x": "2023-04-09T00:00:00.000000000",
+        "y": 2,
+        "series": "Zero-Day, Medium"
+      },
+      {
+        "x": "2023-05-07T00:00:00.000000000",
+        "y": 2,
+        "series": "Zero-Day, Medium"
+      },
+      {
+        "x": "2023-05-21T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, Medium"
+      },
+      {
+        "x": "2023-06-18T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, Medium"
+      },
+      {
+        "x": "2023-07-02T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, Medium"
+      },
+      {
+        "x": "2023-01-15T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, High"
+      },
+      {
+        "x": "2023-01-29T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, High"
+      },
+      {
+        "x": "2023-02-12T00:00:00.000000000",
+        "y": 2,
+        "series": "Zero-Day, High"
+      },
+      {
+        "x": "2023-04-09T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, High"
+      },
+      {
+        "x": "2023-04-23T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, High"
+      },
+      {
+        "x": "2023-05-21T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, High"
+      },
+      {
+        "x": "2023-07-02T00:00:00.000000000",
+        "y": 2,
+        "series": "Zero-Day, High"
+      },
+      {
+        "x": "2023-01-01T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, Low"
+      },
+      {
+        "x": "2023-01-15T00:00:00.000000000",
+        "y": 2,
+        "series": "Zero-Day, Low"
+      },
+      {
+        "x": "2023-01-29T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, Low"
+      },
+      {
+        "x": "2023-02-12T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, Low"
+      },
+      {
+        "x": "2023-02-26T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, Low"
+      },
+      {
+        "x": "2023-03-12T00:00:00.000000000",
+        "y": 3,
+        "series": "Zero-Day, Low"
+      },
+      {
+        "x": "2023-04-09T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, Low"
+      },
+      {
+        "x": "2023-05-07T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, Low"
+      },
+      {
+        "x": "2023-06-04T00:00:00.000000000",
+        "y": 4,
+        "series": "Zero-Day, Low"
+      },
+      {
+        "x": "2023-06-18T00:00:00.000000000",
+        "y": 1,
+        "series": "Zero-Day, Low"
+      }
+    ]
+  },
+  "title": "Incident Trends by Threat Type and Complexity",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "occurrence date"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "incident count"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "occurrence date"
+      },
+      {
+        "field": "y",
+        "title": "incident count"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

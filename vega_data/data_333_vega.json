@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Performance of Each Country Across All Medal Categories",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      {"country": "USA", "medalType": "Gold", "count": 40},
+      {"country": "USA", "medalType": "Silver", "count": 44},
+      {"country": "USA", "medalType": "Bronze", "count": 42},
+      {"country": "CHN", "medalType": "Gold", "count": 40},
+      {"country": "CHN", "medalType": "Silver", "count": 27},
+      {"country": "CHN", "medalType": "Bronze", "count": 24},
+      {"country": "GBR", "medalType": "Gold", "count": 14},
+      {"country": "GBR", "medalType": "Silver", "count": 21},
+      {"country": "GBR", "medalType": "Bronze", "count": 29},
+      {"country": "FRA", "medalType": "Gold", "count": 16},
+      {"country": "FRA", "medalType": "Silver", "count": 26},
+      {"country": "FRA", "medalType": "Bronze", "count": 22},
+      {"country": "AUS", "medalType": "Gold", "count": 18},
+      {"country": "AUS", "medalType": "Silver", "count": 19},
+      {"country": "AUS", "medalType": "Bronze", "count": 16},
+      {"country": "JPN", "medalType": "Gold", "count": 20},
+      {"country": "JPN", "medalType": "Silver", "count": 12},
+      {"country": "JPN", "medalType": "Bronze", "count": 13},
+      {"country": "NED", "medalType": "Gold", "count": 15},
+      {"country": "NED", "medalType": "Silver", "count": 7},
+      {"country": "NED", "medalType": "Bronze", "count": 12},
+      {"country": "KOR", "medalType": "Gold", "count": 13},
+      {"country": "KOR", "medalType": "Silver", "count": 9},
+      {"country": "KOR", "medalType": "Bronze", "count": 10},
+      {"country": "ITA", "medalType": "Gold", "count": 12},
+      {"country": "ITA", "medalType": "Silver", "count": 13},
+      {"country": "ITA", "medalType": "Bronze", "count": 13},
+      {"country": "GER", "medalType": "Gold", "count": 11},
+      {"country": "GER", "medalType": "Silver", "count": 13},
+      {"country": "GER", "medalType": "Bronze", "count": 8}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "country",
+      "type": "nominal",
+      "title": "Country",
+      "sort": ["USA", "CHN", "GBR", "FRA", "AUS", "JPN", "NED", "KOR", "ITA", "GER"]
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Number of Medals"
+    },
+    "xOffset": {
+      "field": "medalType"
+    },
+    "color": {
+      "field": "medalType",
+      "type": "nominal",
+      "title": "Medal Type",
+      "scale": {
+        "domain": ["Gold", "Silver", "Bronze"],
+        "range": ["#636efa", "#EF553B", "#00cc96"]
+      }
+    },
+    "tooltip": [
+      {"field": "country", "title": "Country"},
+      {"field": "medalType", "title": "Medal Type"},
+      {"field": "count", "title": "Count"}
+    ]
+  }
+}

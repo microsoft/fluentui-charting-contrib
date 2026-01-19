@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Regional Enrollment Comparison for 2022 and 2023",
+  "description": "Converted from Plotly schema 158 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "region": "Northeast", "enrollment": 8500, "year": "2023" },
+      { "region": "Midwest", "enrollment": 6200, "year": "2023" },
+      { "region": "South", "enrollment": 9100, "year": "2023" },
+      { "region": "West", "enrollment": 7000, "year": "2023" },
+      { "region": "Northeast", "enrollment": 8300, "year": "2022" },
+      { "region": "Midwest", "enrollment": 6050, "year": "2022" },
+      { "region": "South", "enrollment": 9000, "year": "2022" },
+      { "region": "West", "enrollment": 6900, "year": "2022" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "region",
+      "type": "nominal",
+      "axis": { "title": "Region" }
+    },
+    "y": {
+      "field": "enrollment",
+      "type": "quantitative",
+      "axis": { "title": "Total Enrollment" }
+    },
+    "xOffset": {
+      "field": "year"
+    },
+    "color": {
+      "field": "year",
+      "type": "nominal",
+      "legend": { "title": "Year" }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monatliche Produktionsleistung der Werke",
+  "description": "Converted from Plotly schema 290 - Multi-series line+markers with German labels",
+  "width": 500,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "2023-01", "production": 80, "plant": "Werk 1" },
+      { "month": "2023-02", "production": 85, "plant": "Werk 1" },
+      { "month": "2023-03", "production": 88, "plant": "Werk 1" },
+      { "month": "2023-04", "production": 90, "plant": "Werk 1" },
+      { "month": "2023-05", "production": 86, "plant": "Werk 1" },
+      { "month": "2023-06", "production": 91, "plant": "Werk 1" },
+      { "month": "2023-01", "production": 70, "plant": "Werk 2" },
+      { "month": "2023-02", "production": 72, "plant": "Werk 2" },
+      { "month": "2023-03", "production": 75, "plant": "Werk 2" },
+      { "month": "2023-04", "production": 78, "plant": "Werk 2" },
+      { "month": "2023-05", "production": 74, "plant": "Werk 2" },
+      { "month": "2023-06", "production": 79, "plant": "Werk 2" },
+      { "month": "2023-01", "production": 60, "plant": "Werk 3" },
+      { "month": "2023-02", "production": 65, "plant": "Werk 3" },
+      { "month": "2023-03", "production": 64, "plant": "Werk 3" },
+      { "month": "2023-04", "production": 67, "plant": "Werk 3" },
+      { "month": "2023-05", "production": 66, "plant": "Werk 3" },
+      { "month": "2023-06", "production": 70, "plant": "Werk 3" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "axis": { "title": "Monat" }
+        },
+        "y": {
+          "field": "production",
+          "type": "quantitative",
+          "axis": { "title": "Produktionsleistung (in Tausend Einheiten)" }
+        },
+        "color": {
+          "field": "plant",
+          "type": "nominal",
+          "scale": { "range": ["red", "blue", "green"] },
+          "legend": { "title": "Werke" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "month", "type": "ordinal" },
+        "y": { "field": "production", "type": "quantitative" },
+        "color": { "field": "plant", "type": "nominal" }
+      }
+    }
+  ]
+}

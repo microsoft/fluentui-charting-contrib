@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Volume of Cybersecurity Incidents by Type",
+  "description": "Converted from Plotly schema 229 - Bar chart",
+  "data": {
+    "values": [
+      { "threat": "Phishing", "incidents": 50 },
+      { "threat": "Malware", "incidents": 30 },
+      { "threat": "DDoS", "incidents": 20 },
+      { "threat": "Unauthorized Access", "incidents": 25 },
+      { "threat": "Ransomware", "incidents": 15 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "threat",
+      "type": "nominal",
+      "axis": { "title": "Type of Threat" }
+    },
+    "y": {
+      "field": "incidents",
+      "type": "quantitative",
+      "axis": { "title": "Number of Incidents" }
+    }
+  }
+}

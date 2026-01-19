@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Employee Productivity vs Overtime",
+  "description": "Converted from Plotly schema 250 - Bubble chart",
+  "data": {
+    "values": [
+      { "employee": "Employee 1", "completionRate": 90, "overtime": 5, "size": 20 },
+      { "employee": "Employee 2", "completionRate": 85, "overtime": 10, "size": 15 },
+      { "employee": "Employee 3", "completionRate": 95, "overtime": 15, "size": 25 },
+      { "employee": "Employee 4", "completionRate": 70, "overtime": 8, "size": 10 },
+      { "employee": "Employee 5", "completionRate": 80, "overtime": 12, "size": 18 }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "employee",
+      "type": "ordinal",
+      "axis": { "title": "Employee ID" }
+    },
+    "y": {
+      "field": "completionRate",
+      "type": "quantitative",
+      "axis": { "title": "Task Completion Rate (%)" }
+    },
+    "size": {
+      "field": "size",
+      "type": "quantitative",
+      "legend": { "title": "Size" }
+    },
+    "color": {
+      "field": "overtime",
+      "type": "quantitative",
+      "scale": { "scheme": "blues" },
+      "legend": { "title": "Overtime (hrs/week)" }
+    },
+    "tooltip": [
+      { "field": "employee", "type": "nominal", "title": "Employee" },
+      { "field": "completionRate", "type": "quantitative", "title": "Completion Rate" },
+      { "field": "overtime", "type": "quantitative", "title": "Overtime (hrs/week)" }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Tobacco Products Manufactured Domestically or Received from Puerto Rico in 2024",
+  "description": "Line chart showing tobacco product quantities by month",
+  "data": {
+    "values": [
+      {"month": "January", "products": 14226098777},
+      {"month": "February", "products": 14445248900},
+      {"month": "March", "products": 15014704193},
+      {"month": "April", "products": 15250331836},
+      {"month": "May", "products": 14636884237}
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "nominal",
+      "title": "Month",
+      "sort": ["January", "February", "March", "April", "May"]
+    },
+    "y": {
+      "field": "products",
+      "type": "quantitative",
+      "title": "Tobacco Products"
+    }
+  }
+}

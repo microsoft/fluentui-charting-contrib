@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Credit Risk by Age and Income",
+  "description": "Converted from Plotly schema 177 - Heatmap",
+  "data": {
+    "values": [
+      { "age": "18-25", "income": "Low Income", "risk": 1 },
+      { "age": "26-35", "income": "Low Income", "risk": 2 },
+      { "age": "36-50", "income": "Low Income", "risk": 3 },
+      { "age": "50+", "income": "Low Income", "risk": 4 },
+      { "age": "18-25", "income": "Middle Income", "risk": 2 },
+      { "age": "26-35", "income": "Middle Income", "risk": 4 },
+      { "age": "36-50", "income": "Middle Income", "risk": 6 },
+      { "age": "50+", "income": "Middle Income", "risk": 8 },
+      { "age": "18-25", "income": "High Income", "risk": 3 },
+      { "age": "26-35", "income": "High Income", "risk": 6 },
+      { "age": "36-50", "income": "High Income", "risk": 9 },
+      { "age": "50+", "income": "High Income", "risk": 12 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "age",
+      "type": "ordinal",
+      "axis": { "title": "Age Group" },
+      "sort": ["18-25", "26-35", "36-50", "50+"]
+    },
+    "y": {
+      "field": "income",
+      "type": "nominal",
+      "axis": { "title": "Income Level" },
+      "sort": ["Low Income", "Middle Income", "High Income"]
+    },
+    "color": {
+      "field": "risk",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Risk Score" }
+    }
+  }
+}

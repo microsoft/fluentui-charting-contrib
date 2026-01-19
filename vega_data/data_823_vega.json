@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 8500,
+        "y": 75.25,
+        "series": "North, N"
+      },
+      {
+        "x": 8850,
+        "y": 81.75,
+        "series": "East, N"
+      },
+      {
+        "x": 8900,
+        "y": 84.25,
+        "series": "South, N"
+      },
+      {
+        "x": 9250,
+        "y": 92.25,
+        "series": "West, N"
+      },
+      {
+        "x": 9300,
+        "y": 94.75,
+        "series": "Central, N"
+      }
+    ]
+  },
+  "title": "Graduation Rate vs Funding Per Student (2018-2022)",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Funding Per Student ($)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Graduation Rate (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Funding Per Student ($)"
+      },
+      {
+        "field": "y",
+        "title": "Graduation Rate (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

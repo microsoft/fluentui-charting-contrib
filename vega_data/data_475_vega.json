@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 30,
+        "y": 3,
+        "series": "Series"
+      },
+      {
+        "x": 35,
+        "y": 4,
+        "series": "Series"
+      },
+      {
+        "x": 38,
+        "y": 3,
+        "series": "Series"
+      },
+      {
+        "x": 40,
+        "y": 5,
+        "series": "Series"
+      },
+      {
+        "x": 45,
+        "y": 2,
+        "series": "Series"
+      },
+      {
+        "x": 50,
+        "y": 1,
+        "series": "Series"
+      },
+      {
+        "x": 48,
+        "y": 2,
+        "series": "Series"
+      },
+      {
+        "x": 47,
+        "y": 3,
+        "series": "Series"
+      },
+      {
+        "x": 52,
+        "y": 1,
+        "series": "Series"
+      },
+      {
+        "x": 53,
+        "y": 0,
+        "series": "Series"
+      },
+      {
+        "x": 55,
+        "y": 2,
+        "series": "Series"
+      },
+      {
+        "x": 60,
+        "y": 3,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Service Frequency vs Route Bottlenecks",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Service Frequency (times/month)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Number of Bottlenecks"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Service Frequency (times/month)"
+      },
+      {
+        "field": "y",
+        "title": "Number of Bottlenecks"
+      }
+    ]
+  }
+}

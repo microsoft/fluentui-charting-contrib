@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 80,
+        "y": "A1",
+        "series": "Reaction"
+      },
+      {
+        "x": 85,
+        "y": "B1",
+        "series": "Reaction"
+      },
+      {
+        "x": 75,
+        "y": "C1",
+        "series": "Reaction"
+      },
+      {
+        "x": 90,
+        "y": "D1",
+        "series": "Reaction"
+      },
+      {
+        "x": 70,
+        "y": "A1",
+        "series": "Coordination"
+      },
+      {
+        "x": 65,
+        "y": "B1",
+        "series": "Coordination"
+      },
+      {
+        "x": 80,
+        "y": "C1",
+        "series": "Coordination"
+      },
+      {
+        "x": 75,
+        "y": "D1",
+        "series": "Coordination"
+      }
+    ]
+  },
+  "title": "Success Rate by Unit and Exercise Type",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "success rate"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "unit ID"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "success rate"
+      },
+      {
+        "field": "y",
+        "title": "unit ID"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}
