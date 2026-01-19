@@ -168,7 +168,7 @@ async function loadChartPage(
   await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
   await page.getByLabel('Shortcuts').click();
   // Check if theme button exists, if not trigger the alternative action
-  const themeButton = page.getByRole('button', { name: /Theme:/ });
+  const themeButton = page.getByRole('button', { name: 'Change Fluent theme' });
   const isThemeButtonVisible = await themeButton.isVisible().catch(() => false);
   if (!isThemeButtonVisible) {
     await page.locator('#list-item-T').click();
