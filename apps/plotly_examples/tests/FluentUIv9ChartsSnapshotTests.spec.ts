@@ -138,8 +138,8 @@ const verticalStackedBarChartStories = [
 ];
 
 const charts = [
-  { name: 'AreaChart', path: 'charts-areachart--docs', selector: '#story--charts-areachart--area-chart-basic--primary-inner', stories: areaChartStories },
-  { name: 'DonutChart', path: 'charts-DonutChart--docs', selector: '#story--charts-donutchart--donut-chart-basic--primary-inner', stories: donutChartStories },
+  // { name: 'AreaChart', path: 'charts-areachart--docs', selector: '#story--charts-areachart--area-chart-basic--primary-inner', stories: areaChartStories },
+  // { name: 'DonutChart', path: 'charts-DonutChart--docs', selector: '#story--charts-donutchart--donut-chart-basic--primary-inner', stories: donutChartStories },
   // { name: 'FunnelChart', path: 'charts-FunnelChart--docs', selector: '#story--charts-funnelchart--funnel-chart-basic--primary-inner', stories: funnelChartStories },
   // { name: 'GanttChart', path: 'charts-GanttChart--docs', selector: '#story--charts-ganttchart--gantt-chart-basic--primary-inner', stories: ganttChartStories },
   // { name: 'GaugeChart', path: 'charts-GaugeChart--docs', selector: '#story--charts-gaugechart--gauge-chart-basic--primary-inner', stories: guageChartStories },
@@ -153,7 +153,7 @@ const charts = [
   // { name: 'ScatterChart', path: 'charts-ScatterChart--docs', selector: '#story--charts-scatterchart--scatter-chart-default--primary-inner', stories: scatterChartStories },
   // { name: 'Sparkline', path: 'charts-Sparkline--docs', selector: '#story--charts-sparkline--sparkline-basic--primary-inner', stories: sparklineChartStories },
   // { name: 'VerticalBarChart', path: 'charts-VerticalBarChart--docs', selector: '#story--charts-verticalbarchart--vertical-bar-default--primary-inner', stories: verticalBarChartStories },
-  // { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner', stories: verticalStackedBarChartStories },
+  { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner', stories: verticalStackedBarChartStories },
 ];
 
 const themes = ['web-light', 'web-dark'];
