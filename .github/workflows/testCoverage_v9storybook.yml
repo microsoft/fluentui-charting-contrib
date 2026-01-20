@@ -95,9 +95,13 @@ jobs:
 
             - name: Upload Playwright HTML report as artifact
               uses: actions/upload-artifact@v4
+              if: always()
               with: 
                 name: playwright-html-report
-                path: contrib_repo/apps/plotly_examples/playwright-report/
+                path: |
+                  contrib_repo/apps/plotly_examples/playwright-report/
+                  contrib_repo/apps/plotly_examples/test-results/*/video.webm
+                  contrib_repo/apps/plotly_examples/test-results/*/trace.zip
 
             - name: Upload Playwright JSON report as artifact
               uses: actions/upload-artifact@v4
