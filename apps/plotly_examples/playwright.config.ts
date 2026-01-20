@@ -40,7 +40,7 @@ export default defineConfig({
     
     trace: 'on',
     video: {
-      mode: process.env.CI ? 'retain-on-failure' : 'on', // Only record on failure in CI, always record locally
+      mode: process.env.PLAYWRIGHT_VIDEO_MODE || 'off', // Force video recording if PLAYWRIGHT_VIDEO_MODE is set
       size: { width: 1280, height: 720 } // Optional: specify video resolution
     }, 
   },
