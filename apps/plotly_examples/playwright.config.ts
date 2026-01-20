@@ -40,7 +40,7 @@ export default defineConfig({
     
     trace: 'on',
     video: {
-      mode: 'on', // or 'retain-on-failure', 'on-first-retry'
+      mode: process.env.CI ? 'retain-on-failure' : 'on', // Only record on failure in CI, always record locally
       size: { width: 1280, height: 720 } // Optional: specify video resolution
     }, 
   },
