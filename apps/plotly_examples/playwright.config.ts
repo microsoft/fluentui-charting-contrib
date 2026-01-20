@@ -33,29 +33,20 @@ export default defineConfig({
     
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     timezoneId: 'GMT',
-    trace: 'off',
     
     // Add navigation and action timeouts for Charts V9 Storybook Test coverage
-    ...(process.env.GITHUB_WORKFLOW === '[Charts V9] Storybook Test coverage' && {
-      navigationTimeout: 60000,
+     navigationTimeout: 60000,
       actionTimeout: 100000,
-    }),
     
-/*     trace: 'on',
+    trace: 'on',
     video: {
       mode: 'on', // or 'retain-on-failure', 'on-first-retry'
       size: { width: 1280, height: 720 } // Optional: specify video resolution
-    }, */
+    }, 
   },
   // Apply extended timeouts for Charts V9 Storybook Test coverage, otherwise use default timeout
-  ...(process.env.GITHUB_WORKFLOW === '[Charts V9] Storybook Test coverage' ? {
-    timeout: 180000, // Increase global test timeout to 3 minutes
-    expect: {
-      timeout: 60000, // Increase expect timeout to 1 minute
-    },
-  } : {
-    timeout: 30000, // Default timeout
-  }),
+      timeout: 180000, // Increase global test timeout to 3 minutes
+
   /* Configure projects for major browsers */
   projects: [
     {
