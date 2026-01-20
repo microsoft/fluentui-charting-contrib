@@ -100,8 +100,15 @@ jobs:
                 name: playwright-html-report
                 path: |
                   contrib_repo/apps/plotly_examples/playwright-report/
-                  contrib_repo/apps/plotly_examples/test-results/*/video.webm
-                  contrib_repo/apps/plotly_examples/test-results/*/trace.zip
+                  contrib_repo/apps/plotly_examples/test-results/
+
+            - name: Upload Playwright Test Videos (separate)
+              uses: actions/upload-artifact@v4
+              if: always()
+              with:
+                name: playwright-test-videos
+                path: contrib_repo/apps/plotly_examples/test-results/
+                retention-days: 7
 
             - name: Upload Playwright JSON report as artifact
               uses: actions/upload-artifact@v4
