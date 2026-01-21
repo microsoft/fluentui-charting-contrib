@@ -156,8 +156,8 @@ const charts = [
   { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner', stories: verticalStackedBarChartStories },
 ];
 
-const themes = ['web-light'];
-const modes = ['LTR'];
+const themes = ['web-light', 'web-dark'];
+const modes = ['LTR', 'RTL'];
 
 async function loadChartPage(
   page: any,
