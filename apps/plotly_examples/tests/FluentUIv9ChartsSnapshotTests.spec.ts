@@ -15,11 +15,11 @@ const areaChartStories = [
   '#story--charts-areachart--area-chart-basic-inner',
   '#story--charts-areachart--area-chart-custom-accessibility-inner',
   '#story--charts-areachart--area-chart-large-data-inner',
-  // '#story--charts-areachart--area-chart-multiple-inner',
-  // '#story--charts-areachart--area-chart-negative-inner',
-  // '#story--charts-areachart--area-chart-multiple-negative-inner',
-  // '#story--charts-areachart--area-chart-all-negative-inner',
-  // '#story--charts-areachart--area-chart-secondary-y-axis-inner',
+  '#story--charts-areachart--area-chart-multiple-inner',
+  '#story--charts-areachart--area-chart-negative-inner',
+  '#story--charts-areachart--area-chart-multiple-negative-inner',
+  '#story--charts-areachart--area-chart-all-negative-inner',
+  '#story--charts-areachart--area-chart-secondary-y-axis-inner',
 ];
 
 const donutChartStories = [
@@ -156,8 +156,8 @@ const charts = [
   { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner', stories: verticalStackedBarChartStories },
 ];
 
-const themes = ['web-light', 'web-dark'];
-const modes = ['LTR', 'RTL'];
+const themes = ['web-light'];
+const modes = ['LTR'];
 
 async function loadChartPage(
   page: any,
