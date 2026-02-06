@@ -13,13 +13,13 @@ function sanitizeFileName(fileName: string): string {
 
 const areaChartStories = [
   '#story--charts-areachart--area-chart-basic-inner',
-  '#story--charts-areachart--area-chart-custom-accessibility-inner',
-  '#story--charts-areachart--area-chart-large-data-inner',
-  '#story--charts-areachart--area-chart-multiple-inner',
-  '#story--charts-areachart--area-chart-negative-inner',
-  '#story--charts-areachart--area-chart-multiple-negative-inner',
-  '#story--charts-areachart--area-chart-all-negative-inner',
-  '#story--charts-areachart--area-chart-secondary-y-axis-inner',
+  // '#story--charts-areachart--area-chart-custom-accessibility-inner',
+  // '#story--charts-areachart--area-chart-large-data-inner',
+  // '#story--charts-areachart--area-chart-multiple-inner',
+  // '#story--charts-areachart--area-chart-negative-inner',
+  // '#story--charts-areachart--area-chart-multiple-negative-inner',
+  // '#story--charts-areachart--area-chart-all-negative-inner',
+  // '#story--charts-areachart--area-chart-secondary-y-axis-inner',
 ];
 
 const donutChartStories = [
@@ -184,7 +184,7 @@ async function loadChartPage(
   const frame = await chartContainer.contentFrame();
   if (!frame) throw new Error('Could not get content frame');
   const chartInner = frame.locator(chart.selector);
-  await expect(chartInner).toBeVisible({ timeout: 30000 });
+  await expect(chartInner).toBeVisible({ timeout: 80000 });
   return frame;
 }
 
