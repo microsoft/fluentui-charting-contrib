@@ -38,11 +38,7 @@ export default defineConfig({
      navigationTimeout: 60000,
       actionTimeout: 100000,
     
-    trace: 'on',
-    video: {
-      mode: process.env.PLAYWRIGHT_VIDEO_MODE || 'off', // Force video recording if PLAYWRIGHT_VIDEO_MODE is set
-      size: { width: 1280, height: 720 } // Optional: specify video resolution
-    }, 
+    trace: 'off'
   },
   // Apply extended timeouts for Charts V9 Storybook Test coverage, otherwise use default timeout
       timeout: 180000, // Increase global test timeout to 3 minutes
