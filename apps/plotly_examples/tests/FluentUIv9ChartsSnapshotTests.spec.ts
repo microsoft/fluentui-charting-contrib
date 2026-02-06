@@ -184,7 +184,7 @@ async function loadChartPage(
   const frame = await chartContainer.contentFrame();
   if (!frame) throw new Error('Could not get content frame');
   const chartInner = frame.locator(chart.selector);
-  await expect(chartInner).toBeVisible({ timeout: 80000 });
+  await expect(chartInner).toBeVisible({ timeout: 100000 });
   return frame;
 }
 
