@@ -35,13 +35,12 @@ export default defineConfig({
     timezoneId: 'GMT',
     
     // Add navigation and action timeouts for Charts V9 Storybook Test coverage
-     navigationTimeout: 60000,
-      actionTimeout: 100000,
+    navigationTimeout: 30000,
+    actionTimeout: 30000,
     
     trace: 'off'
   },
-  // Apply extended timeouts for Charts V9 Storybook Test coverage, otherwise use default timeout
-      timeout: 180000, // Increase global test timeout to 3 minutes
+    timeout: 30000,
 
   /* Configure projects for major browsers */
   projects: [
