@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Defect Occurrences over Weeks",
+  "description": "Converted from Plotly schema 227 - Line+markers chart",
+  "data": {
+    "values": [
+      { "week": "Week 1", "defects": 5 },
+      { "week": "Week 2", "defects": 3 },
+      { "week": "Week 3", "defects": 6 },
+      { "week": "Week 4", "defects": 4 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "strokeWidth": 2 },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "ordinal",
+          "axis": { "title": "Weeks" }
+        },
+        "y": {
+          "field": "defects",
+          "type": "quantitative",
+          "axis": { "title": "Number of Defects" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "defects",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

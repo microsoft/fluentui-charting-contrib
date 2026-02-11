@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Forecasted Resource Demand Over Time",
+  "description": "Converted from Plotly schema 135 - Multi-series line chart with markers",
+  "data": {
+    "values": [
+      { "date": "2023-09-01", "demand": 250, "resource": "Labor Demand Forecast" },
+      { "date": "2023-09-02", "demand": 260, "resource": "Labor Demand Forecast" },
+      { "date": "2023-09-03", "demand": 230, "resource": "Labor Demand Forecast" },
+      { "date": "2023-09-04", "demand": 240, "resource": "Labor Demand Forecast" },
+      { "date": "2023-09-05", "demand": 245, "resource": "Labor Demand Forecast" },
+      { "date": "2023-09-01", "demand": 150, "resource": "Machinery Demand Forecast" },
+      { "date": "2023-09-02", "demand": 145, "resource": "Machinery Demand Forecast" },
+      { "date": "2023-09-03", "demand": 160, "resource": "Machinery Demand Forecast" },
+      { "date": "2023-09-04", "demand": 155, "resource": "Machinery Demand Forecast" },
+      { "date": "2023-09-05", "demand": 150, "resource": "Machinery Demand Forecast" },
+      { "date": "2023-09-01", "demand": 300, "resource": "Material Demand Forecast" },
+      { "date": "2023-09-02", "demand": 290, "resource": "Material Demand Forecast" },
+      { "date": "2023-09-03", "demand": 310, "resource": "Material Demand Forecast" },
+      { "date": "2023-09-04", "demand": 305, "resource": "Material Demand Forecast" },
+      { "date": "2023-09-05", "demand": 295, "resource": "Material Demand Forecast" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": { "title": "Date" }
+    },
+    "y": {
+      "field": "demand",
+      "type": "quantitative",
+      "axis": { "title": "Demand Units" }
+    },
+    "color": {
+      "field": "resource",
+      "type": "nominal",
+      "legend": { "title": "Resource" }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Factory Efficiency Heatmap",
+  "description": "Converted from Plotly schema 311 - Heatmap showing factory efficiency",
+  "width": 400,
+  "height": 300,
+  "data": {
+    "values": [
+      { "factory": "Factory A", "day": "Day 1", "efficiency": 80 },
+      { "factory": "Factory B", "day": "Day 1", "efficiency": 60 },
+      { "factory": "Factory C", "day": "Day 1", "efficiency": 70 },
+      { "factory": "Factory D", "day": "Day 1", "efficiency": 90 },
+      { "factory": "Factory A", "day": "Day 2", "efficiency": 75 },
+      { "factory": "Factory B", "day": "Day 2", "efficiency": 50 },
+      { "factory": "Factory C", "day": "Day 2", "efficiency": 60 },
+      { "factory": "Factory D", "day": "Day 2", "efficiency": 85 },
+      { "factory": "Factory A", "day": "Day 3", "efficiency": 90 },
+      { "factory": "Factory B", "day": "Day 3", "efficiency": 95 },
+      { "factory": "Factory C", "day": "Day 3", "efficiency": 85 },
+      { "factory": "Factory D", "day": "Day 3", "efficiency": 80 },
+      { "factory": "Factory A", "day": "Day 4", "efficiency": 65 },
+      { "factory": "Factory B", "day": "Day 4", "efficiency": 70 },
+      { "factory": "Factory C", "day": "Day 4", "efficiency": 75 },
+      { "factory": "Factory D", "day": "Day 4", "efficiency": 55 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "factory",
+      "type": "ordinal",
+      "axis": { "title": "Factory Location" }
+    },
+    "y": {
+      "field": "day",
+      "type": "ordinal",
+      "sort": ["Day 1", "Day 2", "Day 3", "Day 4"],
+      "axis": { "title": "Time (Days)" }
+    },
+    "color": {
+      "field": "efficiency",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Efficiency (%)" }
+    },
+    "tooltip": [
+      { "field": "factory", "type": "ordinal", "title": "Factory" },
+      { "field": "day", "type": "ordinal", "title": "Day" },
+      { "field": "efficiency", "type": "quantitative", "title": "Efficiency (%)" }
+    ]
+  }
+}

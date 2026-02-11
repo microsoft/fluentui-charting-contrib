@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Total Energy Consumption Over Time",
+  "description": "Converted from Plotly schema 249 - Line chart",
+  "data": {
+    "values": [
+      { "date": "2023-10-01", "consumption": 450 },
+      { "date": "2023-10-02", "consumption": 480 },
+      { "date": "2023-10-03", "consumption": 410 },
+      { "date": "2023-10-04", "consumption": 470 },
+      { "date": "2023-10-05", "consumption": 500 }
+    ]
+  },
+  "mark": { "type": "line", "interpolate": "monotone" },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": { "title": "Date" }
+    },
+    "y": {
+      "field": "consumption",
+      "type": "quantitative",
+      "axis": { "title": "Total Energy Consumption (kWh)" }
+    }
+  }
+}

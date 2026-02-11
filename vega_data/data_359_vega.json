@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 0.83,
+        "y": 14.46,
+        "series": "Series"
+      },
+      {
+        "x": 1.1,
+        "y": 13.98,
+        "series": "Series"
+      },
+      {
+        "x": 1.41,
+        "y": 15.53,
+        "series": "Series"
+      },
+      {
+        "x": 1.51,
+        "y": 12.39,
+        "series": "Series"
+      },
+      {
+        "x": 1.63,
+        "y": 28.34,
+        "series": "Series"
+      },
+      {
+        "x": 1.79,
+        "y": 37.77,
+        "series": "Series"
+      },
+      {
+        "x": 2.91,
+        "y": 18.95,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Demand Curve",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Price"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Demand"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Price"
+      },
+      {
+        "field": "y",
+        "title": "Demand"
+      }
+    ]
+  }
+}

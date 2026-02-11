@@ -1,0 +1,942 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01",
+        "y": 64.97,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-02",
+        "y": 58.62,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-03",
+        "y": 66.48,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-04",
+        "y": 75.23,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-05",
+        "y": 57.66,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-06",
+        "y": 57.66,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-07",
+        "y": 75.79,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-08",
+        "y": 67.67,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-09",
+        "y": 55.31,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-10",
+        "y": 65.43,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-11",
+        "y": 55.37,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-12",
+        "y": 55.34,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-01",
+        "y": 68.16,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-02",
+        "y": 44.76,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-03",
+        "y": 55.72,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-04",
+        "y": 52.58,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-05",
+        "y": 52.97,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-06",
+        "y": 38.6,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-07",
+        "y": 53.71,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-08",
+        "y": 65.98,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-09",
+        "y": 85.59,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-10",
+        "y": 63.94,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-11",
+        "y": 61.22,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-12",
+        "y": 54.85,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-01",
+        "y": 53.99,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-02",
+        "y": 57.08,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-03",
+        "y": 53.98,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-04",
+        "y": 78.52,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-05",
+        "y": 59.87,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-06",
+        "y": 49.42,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-07",
+        "y": 68.23,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-08",
+        "y": 47.79,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-09",
+        "y": 62.09,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-10",
+        "y": 40.4,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-11",
+        "y": 46.72,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-12",
+        "y": 61.97,
+        "series": "Engineering"
+      },
+      {
+        "x": "2023-01",
+        "y": 62.19,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-02",
+        "y": 68.82,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-03",
+        "y": 49.91,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-04",
+        "y": 44.17,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-05",
+        "y": 67.74,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-06",
+        "y": 54.62,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-07",
+        "y": 46.53,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-08",
+        "y": 51.19,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-09",
+        "y": 48.69,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-10",
+        "y": 61.34,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-11",
+        "y": 65.82,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-12",
+        "y": 68.88,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-01",
+        "y": 51.61,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-02",
+        "y": 56.91,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-03",
+        "y": 63.31,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-04",
+        "y": 69.76,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-05",
+        "y": 55.21,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-06",
+        "y": 58.14,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-07",
+        "y": 48.94,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-08",
+        "y": 48.04,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-09",
+        "y": 68.13,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-10",
+        "y": 73.56,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-11",
+        "y": 59.28,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-12",
+        "y": 70.04,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-01",
+        "y": 74.95,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-02",
+        "y": 63.38,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-03",
+        "y": 93.72,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-04",
+        "y": 50.8,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-05",
+        "y": 56.01,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-06",
+        "y": 59.39,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-07",
+        "y": 45.81,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-08",
+        "y": 70.42,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-09",
+        "y": 69.04,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-10",
+        "y": 60.19,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-11",
+        "y": 54.66,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-12",
+        "y": 45.05,
+        "series": "Marketing"
+      },
+      {
+        "x": "2023-01",
+        "y": 51.92,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-02",
+        "y": 54.98,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-03",
+        "y": 69.15,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-04",
+        "y": 63.29,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-05",
+        "y": 54.7,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-06",
+        "y": 65.13,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-07",
+        "y": 60.97,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-08",
+        "y": 69.69,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-09",
+        "y": 52.98,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-10",
+        "y": 56.72,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-11",
+        "y": 56.08,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-12",
+        "y": 45.36,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-01",
+        "y": 33.45,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-02",
+        "y": 63.46,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-03",
+        "y": 56.04,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-04",
+        "y": 57.11,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-05",
+        "y": 64.53,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-06",
+        "y": 58.34,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-07",
+        "y": 62.15,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-08",
+        "y": 39.78,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-09",
+        "y": 50.57,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-10",
+        "y": 74.04,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-11",
+        "y": 59.81,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-12",
+        "y": 43.26,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-01",
+        "y": 60.6,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-02",
+        "y": 84.63,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-03",
+        "y": 58.08,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-04",
+        "y": 63.02,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-05",
+        "y": 59.65,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-06",
+        "y": 48.31,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-07",
+        "y": 71.43,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-08",
+        "y": 67.52,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-09",
+        "y": 67.91,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-10",
+        "y": 50.91,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-11",
+        "y": 74.03,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-12",
+        "y": 45.98,
+        "series": "Sales"
+      },
+      {
+        "x": "2023-01",
+        "y": 55.07,
+        "series": "HR"
+      },
+      {
+        "x": "2023-02",
+        "y": 69.23,
+        "series": "HR"
+      },
+      {
+        "x": "2023-03",
+        "y": 77.07,
+        "series": "HR"
+      },
+      {
+        "x": "2023-04",
+        "y": 68.74,
+        "series": "HR"
+      },
+      {
+        "x": "2023-05",
+        "y": 60.09,
+        "series": "HR"
+      },
+      {
+        "x": "2023-06",
+        "y": 56.34,
+        "series": "HR"
+      },
+      {
+        "x": "2023-07",
+        "y": 66.49,
+        "series": "HR"
+      },
+      {
+        "x": "2023-08",
+        "y": 47.77,
+        "series": "HR"
+      },
+      {
+        "x": "2023-09",
+        "y": 65.36,
+        "series": "HR"
+      },
+      {
+        "x": "2023-10",
+        "y": 50.85,
+        "series": "HR"
+      },
+      {
+        "x": "2023-11",
+        "y": 66.21,
+        "series": "HR"
+      },
+      {
+        "x": "2023-12",
+        "y": 58.39,
+        "series": "HR"
+      },
+      {
+        "x": "2023-01",
+        "y": 68.14,
+        "series": "HR"
+      },
+      {
+        "x": "2023-02",
+        "y": 47.69,
+        "series": "HR"
+      },
+      {
+        "x": "2023-03",
+        "y": 62.27,
+        "series": "HR"
+      },
+      {
+        "x": "2023-04",
+        "y": 73.07,
+        "series": "HR"
+      },
+      {
+        "x": "2023-05",
+        "y": 43.93,
+        "series": "HR"
+      },
+      {
+        "x": "2023-06",
+        "y": 61.85,
+        "series": "HR"
+      },
+      {
+        "x": "2023-07",
+        "y": 62.6,
+        "series": "HR"
+      },
+      {
+        "x": "2023-08",
+        "y": 67.82,
+        "series": "HR"
+      },
+      {
+        "x": "2023-09",
+        "y": 47.63,
+        "series": "HR"
+      },
+      {
+        "x": "2023-10",
+        "y": 46.8,
+        "series": "HR"
+      },
+      {
+        "x": "2023-11",
+        "y": 65.22,
+        "series": "HR"
+      },
+      {
+        "x": "2023-12",
+        "y": 62.97,
+        "series": "HR"
+      },
+      {
+        "x": "2023-01",
+        "y": 62.26,
+        "series": "HR"
+      },
+      {
+        "x": "2023-02",
+        "y": 68.47,
+        "series": "HR"
+      },
+      {
+        "x": "2023-03",
+        "y": 61.75,
+        "series": "HR"
+      },
+      {
+        "x": "2023-04",
+        "y": 47.83,
+        "series": "HR"
+      },
+      {
+        "x": "2023-05",
+        "y": 70.49,
+        "series": "HR"
+      },
+      {
+        "x": "2023-06",
+        "y": 73.25,
+        "series": "HR"
+      },
+      {
+        "x": "2023-07",
+        "y": 67.35,
+        "series": "HR"
+      },
+      {
+        "x": "2023-08",
+        "y": 50.46,
+        "series": "HR"
+      },
+      {
+        "x": "2023-09",
+        "y": 52.49,
+        "series": "HR"
+      },
+      {
+        "x": "2023-10",
+        "y": 48.7,
+        "series": "HR"
+      },
+      {
+        "x": "2023-11",
+        "y": 67.7,
+        "series": "HR"
+      },
+      {
+        "x": "2023-12",
+        "y": 72.68,
+        "series": "HR"
+      },
+      {
+        "x": "2023-01",
+        "y": 57.55,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-02",
+        "y": 52.46,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-03",
+        "y": 51.1,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-04",
+        "y": 51.84,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-05",
+        "y": 59.23,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-06",
+        "y": 63.41,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-07",
+        "y": 62.77,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-08",
+        "y": 68.27,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-09",
+        "y": 60.13,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-10",
+        "y": 74.54,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-11",
+        "y": 57.35,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-12",
+        "y": 87.2,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-01",
+        "y": 60.42,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-02",
+        "y": 58.63,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-03",
+        "y": 58.76,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-04",
+        "y": 67.4,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-05",
+        "y": 55.48,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-06",
+        "y": 67.77,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-07",
+        "y": 70.46,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-08",
+        "y": 56.58,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-09",
+        "y": 50.74,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-10",
+        "y": 54.87,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-11",
+        "y": 67.1,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-12",
+        "y": 60.92,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-01",
+        "y": 60.58,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-02",
+        "y": 48.57,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-03",
+        "y": 63.58,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-04",
+        "y": 65.61,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-05",
+        "y": 70.83,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-06",
+        "y": 70.54,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-07",
+        "y": 46.22,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-08",
+        "y": 50.62,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-09",
+        "y": 65.15,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-10",
+        "y": 65.14,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-11",
+        "y": 65.15,
+        "series": "Finance"
+      },
+      {
+        "x": "2023-12",
+        "y": 95,
+        "series": "Finance"
+      }
+    ]
+  },
+  "title": "Monthly Cloud Resource Usage Percentage Trends by Department and Resource Type",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Usage Percentage (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Usage Percentage (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

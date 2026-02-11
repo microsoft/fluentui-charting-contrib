@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Resource Concentration Heatmap",
+  "description": "Converted from Plotly schema 192 - Heatmap",
+  "data": {
+    "values": [
+      { "region": "North", "quarter": "Q1", "intensity": 10 },
+      { "region": "South", "quarter": "Q1", "intensity": 15 },
+      { "region": "East", "quarter": "Q1", "intensity": 20 },
+      { "region": "West", "quarter": "Q1", "intensity": 25 },
+      { "region": "North", "quarter": "Q2", "intensity": 30 },
+      { "region": "South", "quarter": "Q2", "intensity": 35 },
+      { "region": "East", "quarter": "Q2", "intensity": 40 },
+      { "region": "West", "quarter": "Q2", "intensity": 45 },
+      { "region": "North", "quarter": "Q3", "intensity": 50 },
+      { "region": "South", "quarter": "Q3", "intensity": 55 },
+      { "region": "East", "quarter": "Q3", "intensity": 60 },
+      { "region": "West", "quarter": "Q3", "intensity": 65 },
+      { "region": "North", "quarter": "Q4", "intensity": 70 },
+      { "region": "South", "quarter": "Q4", "intensity": 75 },
+      { "region": "East", "quarter": "Q4", "intensity": 80 },
+      { "region": "West", "quarter": "Q4", "intensity": 85 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "region",
+      "type": "nominal",
+      "axis": { "title": "Region" }
+    },
+    "y": {
+      "field": "quarter",
+      "type": "ordinal",
+      "axis": { "title": "Quarter" }
+    },
+    "color": {
+      "field": "intensity",
+      "type": "quantitative",
+      "scale": { "domain": [0, 100], "scheme": "blues" },
+      "legend": { "title": "Workforce" }
+    }
+  }
+}

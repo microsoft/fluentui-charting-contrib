@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "category": "18-24",
+        "value": 120
+      },
+      {
+        "category": "25-34",
+        "value": 320
+      },
+      {
+        "category": "35-44",
+        "value": 280
+      },
+      {
+        "category": "45-54",
+        "value": 200
+      },
+      {
+        "category": "55-64",
+        "value": 110
+      },
+      {
+        "category": "65+",
+        "value": 70
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 50
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Customer Distribution by Age Group"
+}

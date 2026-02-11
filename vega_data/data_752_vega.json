@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2019,
+        "y": 10,
+        "series": "Company A"
+      },
+      {
+        "x": 2020,
+        "y": 25,
+        "series": "Company A"
+      },
+      {
+        "x": 2021,
+        "y": 30,
+        "series": "Company A"
+      },
+      {
+        "x": 2022,
+        "y": 35,
+        "series": "Company A"
+      },
+      {
+        "x": null,
+        "y": 40,
+        "series": "Company A"
+      },
+      {
+        "x": 2019,
+        "y": 20,
+        "series": "Company B"
+      },
+      {
+        "x": 2020,
+        "y": 15,
+        "series": "Company B"
+      },
+      {
+        "x": null,
+        "y": 18,
+        "series": "Company B"
+      },
+      {
+        "x": 2022,
+        "y": 20,
+        "series": "Company B"
+      },
+      {
+        "x": 2023,
+        "y": 25,
+        "series": "Company B"
+      }
+    ]
+  },
+  "title": "Changes in Market Share Over Time",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Market Share (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Market Share (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

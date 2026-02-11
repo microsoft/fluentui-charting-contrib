@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 5,
+        "y": "A",
+        "series": "X"
+      },
+      {
+        "x": 10,
+        "y": "B",
+        "series": "X"
+      },
+      {
+        "x": 7,
+        "y": "C",
+        "series": "X"
+      },
+      {
+        "x": 5,
+        "y": "A",
+        "series": "Y"
+      },
+      {
+        "x": 10,
+        "y": "B",
+        "series": "Y"
+      },
+      {
+        "x": 8,
+        "y": "C",
+        "series": "Y"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Value"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Category"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Value"
+      },
+      {
+        "field": "y",
+        "title": "Category"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Citizen Engagement and Sentiment Over Time",
+  "description": "Converted from Plotly schema 188 - Multi-series line+markers chart",
+  "data": {
+    "values": [
+      { "month": "Jan", "index": 55, "metric": "Overall Engagement" },
+      { "month": "Feb", "index": 65, "metric": "Overall Engagement" },
+      { "month": "Mar", "index": 70, "metric": "Overall Engagement" },
+      { "month": "Apr", "index": 80, "metric": "Overall Engagement" },
+      { "month": "May", "index": 95, "metric": "Overall Engagement" },
+      { "month": "Jun", "index": 100, "metric": "Overall Engagement" },
+      { "month": "Jul", "index": 105, "metric": "Overall Engagement" },
+      { "month": "Aug", "index": 110, "metric": "Overall Engagement" },
+      { "month": "Sep", "index": 120, "metric": "Overall Engagement" },
+      { "month": "Jan", "index": 50, "metric": "Positive Sentiment" },
+      { "month": "Feb", "index": 60, "metric": "Positive Sentiment" },
+      { "month": "Mar", "index": 55, "metric": "Positive Sentiment" },
+      { "month": "Apr", "index": 70, "metric": "Positive Sentiment" },
+      { "month": "May", "index": 85, "metric": "Positive Sentiment" },
+      { "month": "Jun", "index": 95, "metric": "Positive Sentiment" },
+      { "month": "Jul", "index": 98, "metric": "Positive Sentiment" },
+      { "month": "Aug", "index": 105, "metric": "Positive Sentiment" },
+      { "month": "Sep", "index": 115, "metric": "Positive Sentiment" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "interpolate": "monotone" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "axis": { "title": "Month" },
+          "sort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"]
+        },
+        "y": {
+          "field": "index",
+          "type": "quantitative",
+          "axis": { "title": "Engagement Index" }
+        },
+        "color": {
+          "field": "metric",
+          "type": "nominal",
+          "legend": { "title": "Metric" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "sort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"]
+        },
+        "y": {
+          "field": "index",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "metric",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

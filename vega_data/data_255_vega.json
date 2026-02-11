@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Weekly Trend in Task Completion Rate",
+  "description": "Converted from Plotly schema 255 - Multi-series line+markers chart with 25 teams",
+  "data": {
+    "values": [
+      { "week": "Week 1", "rate": 85, "team": "Team 1" },
+      { "week": "Week 2", "rate": 87, "team": "Team 1" },
+      { "week": "Week 3", "rate": 89, "team": "Team 1" },
+      { "week": "Week 4", "rate": 90, "team": "Team 1" },
+      { "week": "Week 5", "rate": 92, "team": "Team 1" },
+      { "week": "Week 1", "rate": 75, "team": "Team 2" },
+      { "week": "Week 2", "rate": 78, "team": "Team 2" },
+      { "week": "Week 3", "rate": 80, "team": "Team 2" },
+      { "week": "Week 4", "rate": 82, "team": "Team 2" },
+      { "week": "Week 5", "rate": 83, "team": "Team 2" },
+      { "week": "Week 1", "rate": 80, "team": "Team 3" },
+      { "week": "Week 2", "rate": 85, "team": "Team 3" },
+      { "week": "Week 3", "rate": 83, "team": "Team 3" },
+      { "week": "Week 4", "rate": 88, "team": "Team 3" },
+      { "week": "Week 5", "rate": 90, "team": "Team 3" },
+      { "week": "Week 1", "rate": 70, "team": "Team 4" },
+      { "week": "Week 2", "rate": 72, "team": "Team 4" },
+      { "week": "Week 3", "rate": 75, "team": "Team 4" },
+      { "week": "Week 4", "rate": 77, "team": "Team 4" },
+      { "week": "Week 5", "rate": 78, "team": "Team 4" },
+      { "week": "Week 1", "rate": 65, "team": "Team 5" },
+      { "week": "Week 2", "rate": 67, "team": "Team 5" },
+      { "week": "Week 3", "rate": 70, "team": "Team 5" },
+      { "week": "Week 4", "rate": 73, "team": "Team 5" },
+      { "week": "Week 5", "rate": 75, "team": "Team 5" },
+      { "week": "Week 1", "rate": 90, "team": "Team 6" },
+      { "week": "Week 2", "rate": 92, "team": "Team 6" },
+      { "week": "Week 3", "rate": 93, "team": "Team 6" },
+      { "week": "Week 4", "rate": 94, "team": "Team 6" },
+      { "week": "Week 5", "rate": 95, "team": "Team 6" },
+      { "week": "Week 1", "rate": 60, "team": "Team 7" },
+      { "week": "Week 2", "rate": 62, "team": "Team 7" },
+      { "week": "Week 3", "rate": 65, "team": "Team 7" },
+      { "week": "Week 4", "rate": 68, "team": "Team 7" },
+      { "week": "Week 5", "rate": 70, "team": "Team 7" },
+      { "week": "Week 1", "rate": 88, "team": "Team 8" },
+      { "week": "Week 2", "rate": 90, "team": "Team 8" },
+      { "week": "Week 3", "rate": 91, "team": "Team 8" },
+      { "week": "Week 4", "rate": 92, "team": "Team 8" },
+      { "week": "Week 5", "rate": 93, "team": "Team 8" },
+      { "week": "Week 1", "rate": 78, "team": "Team 9" },
+      { "week": "Week 2", "rate": 80, "team": "Team 9" },
+      { "week": "Week 3", "rate": 82, "team": "Team 9" },
+      { "week": "Week 4", "rate": 83, "team": "Team 9" },
+      { "week": "Week 5", "rate": 84, "team": "Team 9" },
+      { "week": "Week 1", "rate": 82, "team": "Team 10" },
+      { "week": "Week 2", "rate": 85, "team": "Team 10" },
+      { "week": "Week 3", "rate": 86, "team": "Team 10" },
+      { "week": "Week 4", "rate": 87, "team": "Team 10" },
+      { "week": "Week 5", "rate": 88, "team": "Team 10" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "interpolate": "monotone" },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "ordinal",
+          "axis": { "title": "Weeks" }
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative",
+          "axis": { "title": "Task Completion Rate (%)" }
+        },
+        "color": {
+          "field": "team",
+          "type": "nominal",
+          "legend": { "title": "Team" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": { "field": "week", "type": "ordinal" },
+        "y": { "field": "rate", "type": "quantitative" },
+        "color": { "field": "team", "type": "nominal" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Alpha Corp",
+        "y": 89.4,
+        "series": "True"
+      },
+      {
+        "x": "Gamma Inc",
+        "y": 85.1,
+        "series": "True"
+      },
+      {
+        "x": "Epsilon Co",
+        "y": 82.2,
+        "series": "True"
+      },
+      {
+        "x": "Beta Ltd",
+        "y": 93.3,
+        "series": "False"
+      },
+      {
+        "x": "Delta LLC",
+        "y": 90.8,
+        "series": "False"
+      }
+    ]
+  },
+  "title": "Supplier On-Time Delivery Performance (Jun 2024)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Supplier"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "On-Time Delivery Rate (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Supplier"
+      },
+      {
+        "field": "y",
+        "title": "On-Time Delivery Rate (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

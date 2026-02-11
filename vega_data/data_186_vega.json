@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Pollutant Sources Analysis",
+  "description": "Converted from Plotly schema 186 - Bar chart",
+  "data": {
+    "values": [
+      { "source": "Vehicle Emissions", "emissions": 250 },
+      { "source": "Industrial Waste", "emissions": 430 },
+      { "source": "Agriculture", "emissions": 200 },
+      { "source": "Residential Areas", "emissions": 150 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "source",
+      "type": "nominal",
+      "axis": { "title": "Source" }
+    },
+    "y": {
+      "field": "emissions",
+      "type": "quantitative",
+      "axis": { "title": "Emission Levels" }
+    },
+    "color": {
+      "value": "teal"
+    }
+  }
+}

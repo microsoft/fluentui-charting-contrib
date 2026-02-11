@@ -1,0 +1,192 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Apr 2023",
+        "y": 4412330.21,
+        "series": "Cash"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 2111878.7,
+        "series": "Cash"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 5876347.38,
+        "series": "Cash"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 10507484.65,
+        "series": "Cash"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 3085924.25,
+        "series": "Cash"
+      },
+      {
+        "x": "May 2023",
+        "y": 10394021.66,
+        "series": "Cash"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 7127701.88,
+        "series": "Commodities"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 11411466.6,
+        "series": "Commodities"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 8484727.85,
+        "series": "Commodities"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 11428040.42,
+        "series": "Commodities"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 9948118.74,
+        "series": "Commodities"
+      },
+      {
+        "x": "May 2023",
+        "y": 11529681.65,
+        "series": "Commodities"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 4784121.29,
+        "series": "Equity"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 9898205.73,
+        "series": "Equity"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 3957638.55,
+        "series": "Equity"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 11633099.36,
+        "series": "Equity"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 3746931.59,
+        "series": "Equity"
+      },
+      {
+        "x": "May 2023",
+        "y": 10544280.34,
+        "series": "Equity"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 11125512.86,
+        "series": "Fixed Income"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 3383086.03,
+        "series": "Fixed Income"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 6477628.55,
+        "series": "Fixed Income"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 9447820.47,
+        "series": "Fixed Income"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 10909801.24,
+        "series": "Fixed Income"
+      },
+      {
+        "x": "May 2023",
+        "y": 2754464.88,
+        "series": "Fixed Income"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 7121123.11,
+        "series": "Real Estate"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 10614691.84,
+        "series": "Real Estate"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 4530864.51,
+        "series": "Real Estate"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 4808664.64,
+        "series": "Real Estate"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 6996572.93,
+        "series": "Real Estate"
+      },
+      {
+        "x": "May 2023",
+        "y": 4915215.38,
+        "series": "Real Estate"
+      }
+    ]
+  },
+  "title": "Portfolio Performance by Asset Type (Market Value)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Market Value (USD)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Market Value (USD)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

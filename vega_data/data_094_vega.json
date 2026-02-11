@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Mission Readiness - Troop & Equipment Readiness Levels",
+  "description": "Converted from Plotly schema 94 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "region": "North America", "readiness": 85, "type": "Troop Readiness" },
+      { "region": "Europe", "readiness": 78, "type": "Troop Readiness" },
+      { "region": "Asia", "readiness": 72, "type": "Troop Readiness" },
+      { "region": "Middle East", "readiness": 90, "type": "Troop Readiness" },
+      { "region": "Africa", "readiness": 65, "type": "Troop Readiness" },
+      { "region": "South America", "readiness": 80, "type": "Troop Readiness" },
+      { "region": "North America", "readiness": 60, "type": "Equipment Readiness" },
+      { "region": "Europe", "readiness": 70, "type": "Equipment Readiness" },
+      { "region": "Asia", "readiness": 68, "type": "Equipment Readiness" },
+      { "region": "Middle East", "readiness": 85, "type": "Equipment Readiness" },
+      { "region": "Africa", "readiness": 55, "type": "Equipment Readiness" },
+      { "region": "South America", "readiness": 75, "type": "Equipment Readiness" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "region",
+      "type": "nominal",
+      "axis": { "title": "Regions" }
+    },
+    "y": {
+      "field": "readiness",
+      "type": "quantitative",
+      "axis": { "title": "Readiness Percentage" }
+    },
+    "xOffset": {
+      "field": "type"
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Readiness Type" }
+    }
+  }
+}

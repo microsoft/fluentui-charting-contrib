@@ -1,0 +1,282 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2015,
+        "y": 1400,
+        "series": "Primary School - North"
+      },
+      {
+        "x": 2016,
+        "y": 1450,
+        "series": "Primary School - North"
+      },
+      {
+        "x": 2017,
+        "y": 1500,
+        "series": "Primary School - North"
+      },
+      {
+        "x": 2018,
+        "y": 1570,
+        "series": "Primary School - North"
+      },
+      {
+        "x": 2019,
+        "y": 1590,
+        "series": "Primary School - North"
+      },
+      {
+        "x": 2020,
+        "y": 1560,
+        "series": "Primary School - North"
+      },
+      {
+        "x": 2021,
+        "y": 1600,
+        "series": "Primary School - North"
+      },
+      {
+        "x": 2022,
+        "y": 1650,
+        "series": "Primary School - North"
+      },
+      {
+        "x": 2015,
+        "y": 1320,
+        "series": "Primary School - South"
+      },
+      {
+        "x": 2016,
+        "y": 1340,
+        "series": "Primary School - South"
+      },
+      {
+        "x": 2017,
+        "y": 1350,
+        "series": "Primary School - South"
+      },
+      {
+        "x": 2018,
+        "y": 1380,
+        "series": "Primary School - South"
+      },
+      {
+        "x": 2019,
+        "y": 1430,
+        "series": "Primary School - South"
+      },
+      {
+        "x": 2020,
+        "y": 1400,
+        "series": "Primary School - South"
+      },
+      {
+        "x": 2021,
+        "y": 1420,
+        "series": "Primary School - South"
+      },
+      {
+        "x": 2022,
+        "y": 1470,
+        "series": "Primary School - South"
+      },
+      {
+        "x": 2015,
+        "y": 900,
+        "series": "Secondary School - North"
+      },
+      {
+        "x": 2016,
+        "y": 940,
+        "series": "Secondary School - North"
+      },
+      {
+        "x": 2017,
+        "y": 950,
+        "series": "Secondary School - North"
+      },
+      {
+        "x": 2018,
+        "y": 980,
+        "series": "Secondary School - North"
+      },
+      {
+        "x": 2019,
+        "y": 1020,
+        "series": "Secondary School - North"
+      },
+      {
+        "x": 2020,
+        "y": 1000,
+        "series": "Secondary School - North"
+      },
+      {
+        "x": 2021,
+        "y": 1050,
+        "series": "Secondary School - North"
+      },
+      {
+        "x": 2022,
+        "y": 1090,
+        "series": "Secondary School - North"
+      },
+      {
+        "x": 2015,
+        "y": 860,
+        "series": "Secondary School - South"
+      },
+      {
+        "x": 2016,
+        "y": 880,
+        "series": "Secondary School - South"
+      },
+      {
+        "x": 2017,
+        "y": 900,
+        "series": "Secondary School - South"
+      },
+      {
+        "x": 2018,
+        "y": 920,
+        "series": "Secondary School - South"
+      },
+      {
+        "x": 2019,
+        "y": 950,
+        "series": "Secondary School - South"
+      },
+      {
+        "x": 2020,
+        "y": 940,
+        "series": "Secondary School - South"
+      },
+      {
+        "x": 2021,
+        "y": 970,
+        "series": "Secondary School - South"
+      },
+      {
+        "x": 2022,
+        "y": 1000,
+        "series": "Secondary School - South"
+      },
+      {
+        "x": 2015,
+        "y": 600,
+        "series": "Higher Ed - North"
+      },
+      {
+        "x": 2016,
+        "y": 610,
+        "series": "Higher Ed - North"
+      },
+      {
+        "x": 2017,
+        "y": 640,
+        "series": "Higher Ed - North"
+      },
+      {
+        "x": 2018,
+        "y": 660,
+        "series": "Higher Ed - North"
+      },
+      {
+        "x": 2019,
+        "y": 690,
+        "series": "Higher Ed - North"
+      },
+      {
+        "x": 2020,
+        "y": 700,
+        "series": "Higher Ed - North"
+      },
+      {
+        "x": 2021,
+        "y": 720,
+        "series": "Higher Ed - North"
+      },
+      {
+        "x": 2022,
+        "y": 740,
+        "series": "Higher Ed - North"
+      },
+      {
+        "x": 2015,
+        "y": 480,
+        "series": "Higher Ed - South"
+      },
+      {
+        "x": 2016,
+        "y": 490,
+        "series": "Higher Ed - South"
+      },
+      {
+        "x": 2017,
+        "y": 510,
+        "series": "Higher Ed - South"
+      },
+      {
+        "x": 2018,
+        "y": 520,
+        "series": "Higher Ed - South"
+      },
+      {
+        "x": 2019,
+        "y": 530,
+        "series": "Higher Ed - South"
+      },
+      {
+        "x": 2020,
+        "y": 550,
+        "series": "Higher Ed - South"
+      },
+      {
+        "x": 2021,
+        "y": 570,
+        "series": "Higher Ed - South"
+      },
+      {
+        "x": 2022,
+        "y": 590,
+        "series": "Higher Ed - South"
+      }
+    ]
+  },
+  "title": "Enrollment Trends and Forecasting by Institution Type & Region (2015-2022)",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Number of Students"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Number of Students"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

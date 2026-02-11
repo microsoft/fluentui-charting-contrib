@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "January",
+        "y": 25,
+        "series": "Hyderabad"
+      },
+      {
+        "x": "February",
+        "y": 27,
+        "series": "Hyderabad"
+      },
+      {
+        "x": "March",
+        "y": 30,
+        "series": "Hyderabad"
+      },
+      {
+        "x": "April",
+        "y": 35,
+        "series": "Hyderabad"
+      },
+      {
+        "x": "May",
+        "y": 38,
+        "series": "Hyderabad"
+      },
+      {
+        "x": "June",
+        "y": 36,
+        "series": "Hyderabad"
+      },
+      {
+        "x": "July",
+        "y": 32,
+        "series": "Hyderabad"
+      },
+      {
+        "x": "August",
+        "y": 30,
+        "series": "Hyderabad"
+      },
+      {
+        "x": "September",
+        "y": 29,
+        "series": "Hyderabad"
+      },
+      {
+        "x": "October",
+        "y": 28,
+        "series": "Hyderabad"
+      },
+      {
+        "x": "November",
+        "y": 26,
+        "series": "Hyderabad"
+      },
+      {
+        "x": "December",
+        "y": 25,
+        "series": "Hyderabad"
+      },
+      {
+        "x": "January",
+        "y": 22,
+        "series": "Bangalore"
+      },
+      {
+        "x": "February",
+        "y": 24,
+        "series": "Bangalore"
+      },
+      {
+        "x": "March",
+        "y": 27,
+        "series": "Bangalore"
+      },
+      {
+        "x": "April",
+        "y": 29,
+        "series": "Bangalore"
+      },
+      {
+        "x": "May",
+        "y": 30,
+        "series": "Bangalore"
+      },
+      {
+        "x": "June",
+        "y": 28,
+        "series": "Bangalore"
+      },
+      {
+        "x": "July",
+        "y": 26,
+        "series": "Bangalore"
+      },
+      {
+        "x": "August",
+        "y": 25,
+        "series": "Bangalore"
+      },
+      {
+        "x": "September",
+        "y": 25,
+        "series": "Bangalore"
+      },
+      {
+        "x": "October",
+        "y": 24,
+        "series": "Bangalore"
+      },
+      {
+        "x": "November",
+        "y": 23,
+        "series": "Bangalore"
+      },
+      {
+        "x": "December",
+        "y": 22,
+        "series": "Bangalore"
+      }
+    ]
+  },
+  "title": "Monthly Average Temperatures in Hyderabad and Bangalore",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Temperature (°C)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Temperature (°C)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

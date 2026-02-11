@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 91.5,
+        "y": "Carrier",
+        "series": "Atlantic"
+      },
+      {
+        "x": 91,
+        "y": "Corvette",
+        "series": "Atlantic"
+      },
+      {
+        "x": 90,
+        "y": "Frigate",
+        "series": "Atlantic"
+      },
+      {
+        "x": 85.5,
+        "y": "Submarine",
+        "series": "Atlantic"
+      },
+      {
+        "x": 68,
+        "y": "Carrier",
+        "series": "Indian Ocean"
+      },
+      {
+        "x": 70,
+        "y": "Corvette",
+        "series": "Indian Ocean"
+      },
+      {
+        "x": 78,
+        "y": "Frigate",
+        "series": "Indian Ocean"
+      },
+      {
+        "x": 79,
+        "y": "Submarine",
+        "series": "Indian Ocean"
+      },
+      {
+        "x": 73.5,
+        "y": "Carrier",
+        "series": "Mediterranean"
+      },
+      {
+        "x": 91,
+        "y": "Corvette",
+        "series": "Mediterranean"
+      },
+      {
+        "x": 79,
+        "y": "Destroyer",
+        "series": "Mediterranean"
+      },
+      {
+        "x": 74,
+        "y": "Frigate",
+        "series": "Mediterranean"
+      },
+      {
+        "x": 98,
+        "y": "Submarine",
+        "series": "Mediterranean"
+      },
+      {
+        "x": 79.5,
+        "y": "Carrier",
+        "series": "Pacific"
+      },
+      {
+        "x": 72,
+        "y": "Corvette",
+        "series": "Pacific"
+      },
+      {
+        "x": 81,
+        "y": "Destroyer",
+        "series": "Pacific"
+      },
+      {
+        "x": 83.5,
+        "y": "Frigate",
+        "series": "Pacific"
+      },
+      {
+        "x": 75.5,
+        "y": "Submarine",
+        "series": "Pacific"
+      }
+    ]
+  },
+  "title": "Maintenance Completion Rates by Ship Type and Region",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Maintenance Completion Rate (%)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Ship Type"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Maintenance Completion Rate (%)"
+      },
+      {
+        "field": "y",
+        "title": "Ship Type"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Daily Revenue with Data-anchored Annotation",
+  "data": {
+    "values": [
+      {"x": "2024-01-01", "y": 12},
+      {"x": "2024-01-02", "y": 18},
+      {"x": "2024-01-03", "y": 24},
+      {"x": "2024-01-04", "y": 20},
+      {"x": "2024-01-05", "y": 28}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "line"}
+    },
+    {
+      "mark": {"type": "point", "filled": true}
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Date"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Revenue (k$)"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Sales Growth Across 2023",
+  "description": "Converted from Plotly schema 308 - Multi-series line (simplified from 26 to 4 regions)",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "Jan", "sales": 310, "region": "North America" },
+      { "month": "Feb", "sales": 330, "region": "North America" },
+      { "month": "Mar", "sales": 305, "region": "North America" },
+      { "month": "Apr", "sales": 315, "region": "North America" },
+      { "month": "May", "sales": 355, "region": "North America" },
+      { "month": "Jun", "sales": 370, "region": "North America" },
+      { "month": "Jul", "sales": 390, "region": "North America" },
+      { "month": "Aug", "sales": 405, "region": "North America" },
+      { "month": "Sep", "sales": 425, "region": "North America" },
+      { "month": "Oct", "sales": 445, "region": "North America" },
+      { "month": "Nov", "sales": 465, "region": "North America" },
+      { "month": "Dec", "sales": 485, "region": "North America" },
+      { "month": "Jan", "sales": 280, "region": "Europe" },
+      { "month": "Feb", "sales": 300, "region": "Europe" },
+      { "month": "Mar", "sales": 270, "region": "Europe" },
+      { "month": "Apr", "sales": 290, "region": "Europe" },
+      { "month": "May", "sales": 340, "region": "Europe" },
+      { "month": "Jun", "sales": 350, "region": "Europe" },
+      { "month": "Jul", "sales": 370, "region": "Europe" },
+      { "month": "Aug", "sales": 385, "region": "Europe" },
+      { "month": "Sep", "sales": 410, "region": "Europe" },
+      { "month": "Oct", "sales": 430, "region": "Europe" },
+      { "month": "Nov", "sales": 450, "region": "Europe" },
+      { "month": "Dec", "sales": 470, "region": "Europe" },
+      { "month": "Jan", "sales": 320, "region": "Asia" },
+      { "month": "Feb", "sales": 340, "region": "Asia" },
+      { "month": "Mar", "sales": 315, "region": "Asia" },
+      { "month": "Apr", "sales": 325, "region": "Asia" },
+      { "month": "May", "sales": 365, "region": "Asia" },
+      { "month": "Jun", "sales": 380, "region": "Asia" },
+      { "month": "Jul", "sales": 400, "region": "Asia" },
+      { "month": "Aug", "sales": 410, "region": "Asia" },
+      { "month": "Sep", "sales": 435, "region": "Asia" },
+      { "month": "Oct", "sales": 455, "region": "Asia" },
+      { "month": "Nov", "sales": 475, "region": "Asia" },
+      { "month": "Dec", "sales": 495, "region": "Asia" },
+      { "month": "Jan", "sales": 295, "region": "South America" },
+      { "month": "Feb", "sales": 315, "region": "South America" },
+      { "month": "Mar", "sales": 285, "region": "South America" },
+      { "month": "Apr", "sales": 305, "region": "South America" },
+      { "month": "May", "sales": 345, "region": "South America" },
+      { "month": "Jun", "sales": 355, "region": "South America" },
+      { "month": "Jul", "sales": 375, "region": "South America" },
+      { "month": "Aug", "sales": 390, "region": "South America" },
+      { "month": "Sep", "sales": 415, "region": "South America" },
+      { "month": "Oct", "sales": 435, "region": "South America" },
+      { "month": "Nov", "sales": 455, "region": "South America" },
+      { "month": "Dec", "sales": 475, "region": "South America" }
+    ]
+  },
+  "mark": { "type": "line", "point": true },
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "axis": { "title": "Month" }
+    },
+    "y": {
+      "field": "sales",
+      "type": "quantitative",
+      "axis": { "title": "Sales Volume" }
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "scale": { "range": ["blue", "green", "red", "orange"] },
+      "legend": { "title": "Region" }
+    }
+  }
+}

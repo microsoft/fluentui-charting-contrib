@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "giraffes",
+        "y": "low",
+        "series": "Series"
+      },
+      {
+        "x": "orangutans",
+        "y": "medium",
+        "series": "Series"
+      },
+      {
+        "x": "monkeys",
+        "y": "high",
+        "series": "Series"
+      },
+      {
+        "x": "giraffes",
+        "y": "low",
+        "series": "Series"
+      },
+      {
+        "x": "orangutans",
+        "y": "medium",
+        "series": "Series"
+      },
+      {
+        "x": "monkeys",
+        "y": "high",
+        "series": "Series"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

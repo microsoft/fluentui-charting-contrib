@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Healthcare Spending vs Patient Satisfaction",
+  "description": "Converted from Plotly schema 196 - Bubble chart",
+  "data": {
+    "values": [
+      { "hospital": "Hospital A", "spending": 2000000, "satisfaction": 85, "size": 20 },
+      { "hospital": "Hospital B", "spending": 1500000, "satisfaction": 75, "size": 15 },
+      { "hospital": "Hospital C", "spending": 1750000, "satisfaction": 80, "size": 17 },
+      { "hospital": "Hospital D", "spending": 1000000, "satisfaction": 70, "size": 10 },
+      { "hospital": "Hospital E", "spending": 2200000, "satisfaction": 90, "size": 22 },
+      { "hospital": "Hospital F", "spending": 1300000, "satisfaction": 78, "size": 13 },
+      { "hospital": "Hospital G", "spending": 1800000, "satisfaction": 85, "size": 18 },
+      { "hospital": "Hospital H", "spending": 1100000, "satisfaction": 72, "size": 11 },
+      { "hospital": "Hospital I", "spending": 2450000, "satisfaction": 95, "size": 24 },
+      { "hospital": "Hospital J", "spending": 1600000, "satisfaction": 82, "size": 16 }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "spending",
+      "type": "quantitative",
+      "axis": { "title": "Healthcare Spending (USD)" }
+    },
+    "y": {
+      "field": "satisfaction",
+      "type": "quantitative",
+      "axis": { "title": "Patient Satisfaction Score" }
+    },
+    "size": {
+      "field": "size",
+      "type": "quantitative",
+      "legend": null
+    },
+    "color": {
+      "field": "satisfaction",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Satisfaction Score" }
+    },
+    "tooltip": [
+      { "field": "hospital", "type": "nominal" },
+      { "field": "spending", "type": "quantitative" },
+      { "field": "satisfaction", "type": "quantitative" }
+    ]
+  }
+}

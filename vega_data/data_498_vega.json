@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 15,
+        "y": 50,
+        "series": "sunny"
+      },
+      {
+        "x": 25,
+        "y": 65,
+        "series": "sunny"
+      },
+      {
+        "x": 30,
+        "y": 70,
+        "series": "sunny"
+      },
+      {
+        "x": 40,
+        "y": 80,
+        "series": "sunny"
+      },
+      {
+        "x": 50,
+        "y": 90,
+        "series": "sunny"
+      },
+      {
+        "x": 35,
+        "y": 70,
+        "series": "sunny"
+      },
+      {
+        "x": 25,
+        "y": 65,
+        "series": "sunny"
+      },
+      {
+        "x": 30,
+        "y": 75,
+        "series": "sunny"
+      },
+      {
+        "x": 28,
+        "y": 70,
+        "series": "sunny"
+      },
+      {
+        "x": 45,
+        "y": 85,
+        "series": "sunny"
+      },
+      {
+        "x": 50,
+        "y": 90,
+        "series": "sunny"
+      },
+      {
+        "x": 30,
+        "y": 70,
+        "series": "sunny"
+      },
+      {
+        "x": 20,
+        "y": 60,
+        "series": "rainy"
+      },
+      {
+        "x": 28,
+        "y": 65,
+        "series": "rainy"
+      },
+      {
+        "x": 45,
+        "y": 85,
+        "series": "rainy"
+      },
+      {
+        "x": 18,
+        "y": 55,
+        "series": "rainy"
+      },
+      {
+        "x": 30,
+        "y": 75,
+        "series": "rainy"
+      },
+      {
+        "x": 40,
+        "y": 80,
+        "series": "rainy"
+      },
+      {
+        "x": 18,
+        "y": 55,
+        "series": "cloudy"
+      },
+      {
+        "x": 35,
+        "y": 75,
+        "series": "cloudy"
+      },
+      {
+        "x": 42,
+        "y": 85,
+        "series": "cloudy"
+      },
+      {
+        "x": 20,
+        "y": 60,
+        "series": "cloudy"
+      },
+      {
+        "x": 35,
+        "y": 80,
+        "series": "cloudy"
+      },
+      {
+        "x": 55,
+        "y": 95,
+        "series": "cloudy"
+      }
+    ]
+  },
+  "title": "Booking Lead Time vs Occupancy Rate",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "booking_lead_time"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "occupancy_rate"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "booking_lead_time"
+      },
+      {
+        "field": "y",
+        "title": "occupancy_rate"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

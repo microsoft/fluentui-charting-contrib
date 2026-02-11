@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Order Fulfillment Time Over Weeks",
+  "description": "Converted from Plotly schema 119 - Line chart with markers",
+  "data": {
+    "values": [
+      { "week": "Week 1", "days": 20 },
+      { "week": "Week 2", "days": 25 },
+      { "week": "Week 3", "days": 22 },
+      { "week": "Week 4", "days": 24 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "week",
+      "type": "ordinal",
+      "axis": { "title": "Weeks" }
+    },
+    "y": {
+      "field": "days",
+      "type": "quantitative",
+      "axis": { "title": "Order Fulfillment Time (Days)" }
+    }
+  }
+}

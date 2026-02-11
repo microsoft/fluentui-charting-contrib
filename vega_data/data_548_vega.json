@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 75,
+        "y": "Hospital A",
+        "series": "Series"
+      },
+      {
+        "x": 80,
+        "y": "Hospital B",
+        "series": "Series"
+      },
+      {
+        "x": 90,
+        "y": "Hospital C",
+        "series": "Series"
+      },
+      {
+        "x": 85,
+        "y": "Hospital D",
+        "series": "Series"
+      },
+      {
+        "x": 95,
+        "y": "Hospital E",
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Patient Satisfaction Across Facilities",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Patient Satisfaction Score"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Facility ID"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Patient Satisfaction Score"
+      },
+      {
+        "field": "y",
+        "title": "Facility ID"
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Misalignment",
+        "y": 96,
+        "series": "Series"
+      },
+      {
+        "x": "Dent",
+        "y": 86,
+        "series": "Series"
+      },
+      {
+        "x": "Scratch",
+        "y": 83,
+        "series": "Series"
+      },
+      {
+        "x": "Discoloration",
+        "y": 79,
+        "series": "Series"
+      },
+      {
+        "x": "Crack",
+        "y": 69,
+        "series": "Series"
+      },
+      {
+        "x": "Misalignment",
+        "y": 23.24455205811138,
+        "series": "Cumulative %"
+      },
+      {
+        "x": "Dent",
+        "y": 44.06779661016949,
+        "series": "Cumulative %"
+      },
+      {
+        "x": "Scratch",
+        "y": 64.16464891041163,
+        "series": "Cumulative %"
+      },
+      {
+        "x": "Discoloration",
+        "y": 83.29297820823246,
+        "series": "Cumulative %"
+      },
+      {
+        "x": "Crack",
+        "y": 100,
+        "series": "Cumulative %"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "defect_type"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "count"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "defect_type"
+      },
+      {
+        "field": "y",
+        "title": "count"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

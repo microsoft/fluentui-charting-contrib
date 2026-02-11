@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "تنبوء المدة التشغيلية و حالات التعطل السنوية",
+  "description": "Converted from Plotly schema 282 - Multi-series line+markers with Arabic labels",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "يناير", "value": 85, "type": "متوسط العمر التشغيلي" },
+      { "month": "فبراير", "value": 80, "type": "متوسط العمر التشغيلي" },
+      { "month": "مارس", "value": 90, "type": "متوسط العمر التشغيلي" },
+      { "month": "أبريل", "value": 95, "type": "متوسط العمر التشغيلي" },
+      { "month": "مايو", "value": 100, "type": "متوسط العمر التشغيلي" },
+      { "month": "يونيو", "value": 110, "type": "متوسط العمر التشغيلي" },
+      { "month": "يوليو", "value": 105, "type": "متوسط العمر التشغيلي" },
+      { "month": "أغسطس", "value": 115, "type": "متوسط العمر التشغيلي" },
+      { "month": "سبتمبر", "value": 120, "type": "متوسط العمر التشغيلي" },
+      { "month": "أكتوبر", "value": 125, "type": "متوسط العمر التشغيلي" },
+      { "month": "نوفمبر", "value": 130, "type": "متوسط العمر التشغيلي" },
+      { "month": "ديسمبر", "value": 140, "type": "متوسط العمر التشغيلي" },
+      { "month": "يناير", "value": 5, "type": "عدد حالات التعطل" },
+      { "month": "فبراير", "value": 10, "type": "عدد حالات التعطل" },
+      { "month": "مارس", "value": 7, "type": "عدد حالات التعطل" },
+      { "month": "أبريل", "value": 6, "type": "عدد حالات التعطل" },
+      { "month": "مايو", "value": 8, "type": "عدد حالات التعطل" },
+      { "month": "يونيو", "value": 9, "type": "عدد حالات التعطل" },
+      { "month": "يوليو", "value": 7, "type": "عدد حالات التعطل" },
+      { "month": "أغسطس", "value": 5, "type": "عدد حالات التعطل" },
+      { "month": "سبتمبر", "value": 6, "type": "عدد حالات التعطل" },
+      { "month": "أكتوبر", "value": 4, "type": "عدد حالات التعطل" },
+      { "month": "نوفمبر", "value": 3, "type": "عدد حالات التعطل" },
+      { "month": "ديسمبر", "value": 2, "type": "عدد حالات التعطل" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "sort": ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
+          "axis": { "title": "الشهر" }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": { "title": "القيمة" }
+        },
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "scale": { "range": ["blue", "red"] },
+          "legend": { "title": "النوع" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true, "size": 100 },
+      "encoding": {
+        "x": { "field": "month", "type": "ordinal" },
+        "y": { "field": "value", "type": "quantitative" },
+        "color": { "field": "type", "type": "nominal" },
+        "shape": { "field": "type", "type": "nominal" }
+      }
+    }
+  ]
+}

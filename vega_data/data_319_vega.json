@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Key Metrics Across Districts",
+  "description": "Converted from Plotly schema 319 - Grouped bar chart (simplified to Region 1 metrics only)",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "district": "District A", "value": 88, "metric": "Graduation Rate (%)" },
+      { "district": "District B", "value": 76, "metric": "Graduation Rate (%)" },
+      { "district": "District C", "value": 83, "metric": "Graduation Rate (%)" },
+      { "district": "District D", "value": 91, "metric": "Graduation Rate (%)" },
+      { "district": "District E", "value": 78, "metric": "Graduation Rate (%)" },
+      { "district": "District F", "value": 85, "metric": "Graduation Rate (%)" },
+      { "district": "District G", "value": 89, "metric": "Graduation Rate (%)" },
+      { "district": "District H", "value": 90, "metric": "Graduation Rate (%)" },
+      { "district": "District I", "value": 82, "metric": "Graduation Rate (%)" },
+      { "district": "District J", "value": 87, "metric": "Graduation Rate (%)" },
+      { "district": "District A", "value": 16, "metric": "Student-to-Teacher Ratio" },
+      { "district": "District B", "value": 18, "metric": "Student-to-Teacher Ratio" },
+      { "district": "District C", "value": 14, "metric": "Student-to-Teacher Ratio" },
+      { "district": "District D", "value": 17, "metric": "Student-to-Teacher Ratio" },
+      { "district": "District E", "value": 15, "metric": "Student-to-Teacher Ratio" },
+      { "district": "District F", "value": 19, "metric": "Student-to-Teacher Ratio" },
+      { "district": "District G", "value": 16, "metric": "Student-to-Teacher Ratio" },
+      { "district": "District H", "value": 17, "metric": "Student-to-Teacher Ratio" },
+      { "district": "District I", "value": 18, "metric": "Student-to-Teacher Ratio" },
+      { "district": "District J", "value": 15, "metric": "Student-to-Teacher Ratio" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "district",
+      "type": "ordinal",
+      "axis": { "title": "Districts" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Values" }
+    },
+    "xOffset": {
+      "field": "metric",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "scale": { "range": ["steelblue", "orange"] },
+      "legend": { "title": "Metric" }
+    },
+    "tooltip": [
+      { "field": "district", "type": "ordinal", "title": "District" },
+      { "field": "metric", "type": "nominal", "title": "Metric" },
+      { "field": "value", "type": "quantitative", "title": "Value" }
+    ]
+  }
+}

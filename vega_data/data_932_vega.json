@@ -1,0 +1,2542 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2.7,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 3.21,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.09,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.13,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.1,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 1.85,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 0.67,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 3.17,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 3.07,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 1.43,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.2,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 1.98,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.01,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 1,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 0.75,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 12.98,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 4.29,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 0.87,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.59,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.14,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.08,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 3.16,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.7,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.06,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 1.78,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.39,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.13,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.5,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.34,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.77,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 1.61,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 3.26,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 13.8,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 3.34,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.65,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 3.12,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 1.79,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 1.39,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 3.04,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 2.12,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 1.56,
+        "y": "Alice Johnson",
+        "series": "Alice Johnson"
+      },
+      {
+        "x": 3.12,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 0.5,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.13,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.58,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.89,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.89,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.75,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.79,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.38,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 2.49,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 13,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.82,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.59,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 5.18,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.1,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.83,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.3,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 2.96,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.92,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.97,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.8,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 5.5,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.34,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 7.37,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.08,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.6,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.94,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 2.58,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 5.04,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.9,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.02,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 14.13,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 2.5,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.21,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.74,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.79,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.57,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.5,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 5.16,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.26,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.31,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 0.9,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.18,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.69,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.67,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.74,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.63,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 5.27,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.71,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 1.34,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.35,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.6,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 3.71,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 4.45,
+        "y": "Bob Smith",
+        "series": "Bob Smith"
+      },
+      {
+        "x": 2.87,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.17,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 1.38,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 14.31,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 4.12,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.99,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 1.66,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.14,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 0.89,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.08,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.65,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 0.68,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.38,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.79,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.54,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.66,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.27,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.99,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.61,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.08,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.38,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.62,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.36,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 4.11,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 4.12,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 4.11,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.3,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.06,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.61,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.74,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 4.37,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.7,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.01,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.71,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.52,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.02,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.43,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.27,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.5,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.87,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 0.93,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.29,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.71,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.44,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.84,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.42,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 4.09,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 5.03,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.74,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.84,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 1.85,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.95,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 4.04,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.31,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.49,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.97,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.18,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.68,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.14,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 2.03,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 3.84,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 4.06,
+        "y": "Carol Lee",
+        "series": "Carol Lee"
+      },
+      {
+        "x": 6.38,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 4.35,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 4.6,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 4.14,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.42,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 0.91,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.01,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 11.25,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 4.46,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.68,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 3.86,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 4.57,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.55,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.21,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.95,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.15,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 8.78,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.61,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 13.66,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.46,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 4.34,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.67,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.55,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.34,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.35,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.39,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 0.62,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.43,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.75,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.09,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 4.39,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 4.88,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.35,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.61,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.26,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 7.62,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.78,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 4.53,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.77,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.56,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.55,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.78,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 4.35,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 7.16,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 6.59,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 4.78,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.87,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.81,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.53,
+        "y": "David Kim",
+        "series": "David Kim"
+      },
+      {
+        "x": 5.46,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 6.08,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.51,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 14.86,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 5.59,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.76,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.69,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 3.23,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 2.85,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.68,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 3.56,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.46,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 3.91,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 2.53,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.89,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.04,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.59,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 3.52,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 0.68,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 6.22,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.64,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 1,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 3.1,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 7.13,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 6.53,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 6,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 5.41,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 14.62,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.99,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 5.65,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 3.81,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.01,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 2.66,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 3.65,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 6.33,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.13,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.15,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.85,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 2.73,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 5.54,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 5.89,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 4.92,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 6.32,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 3.04,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 6.53,
+        "y": "Eva Brown",
+        "series": "Eva Brown"
+      },
+      {
+        "x": 3.14,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 2.65,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.59,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 5.48,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.78,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 2.96,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 14.96,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.71,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 2,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 2.63,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 5.19,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 0.52,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.68,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.38,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.85,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 5.91,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 4.16,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 4.62,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.62,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.85,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 4.38,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.91,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 2.09,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 0.93,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.25,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 5.7,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 4.42,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.86,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 4.2,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.7,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.36,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.99,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 4.6,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 10.84,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.24,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.48,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 4.66,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 5.11,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 4.13,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 4.32,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.23,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 4.59,
+        "y": "Frank White",
+        "series": "Frank White"
+      },
+      {
+        "x": 3.13,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.37,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 1.73,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.07,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.4,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.5,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.73,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 0.97,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.56,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.96,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.81,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 11.44,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.49,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.37,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.66,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 0.93,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.64,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.43,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.95,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.44,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 0.55,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.53,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.52,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.08,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.26,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.2,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.38,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.79,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 1.55,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.86,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.61,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.28,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.17,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.61,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 10.03,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.92,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.14,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.32,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.49,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.51,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.4,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.62,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 1.58,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.74,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.62,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.8,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.39,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.77,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.56,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.26,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.1,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.85,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 1.93,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 12.54,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.59,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.07,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.84,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.39,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.08,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.83,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 4.17,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 3.04,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 2.54,
+        "y": "Grace Green",
+        "series": "Grace Green"
+      },
+      {
+        "x": 8.79,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 7.8,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 0.54,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 5.83,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 7.46,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 3.82,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 7.18,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 5.76,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 3.97,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 7.55,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 3.28,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 3.13,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 6.54,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 6.86,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 7.46,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 7.11,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 8.21,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 7.05,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 5.8,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 5.89,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 5.58,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 6.44,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 4.35,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 6.51,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 5.87,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 6.41,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 6.42,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 2.32,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 4.65,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 5.84,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 12.31,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 6.39,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 6.45,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 8.27,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 0.94,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 5.53,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 3.6,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 3.95,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 6.8,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 7.59,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 8.31,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 4.76,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 5.54,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 6.36,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 10.93,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 6.17,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 8.33,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 6.25,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 7.73,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 7.54,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 6.25,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 4.47,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 5.6,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 8.23,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 7.32,
+        "y": "Henry Black",
+        "series": "Henry Black"
+      },
+      {
+        "x": 11.24,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 3.86,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 2.47,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 5.64,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 10.8,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 4.06,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 4.4,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 2.03,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 3.71,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 5.53,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 0.8,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 4.53,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 4.19,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 5,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 3.92,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 2.54,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 4.19,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 4.6,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 5.32,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 2.76,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 4.08,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 4.12,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 3.1,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 4.69,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 4.95,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 3.91,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 6.26,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 3.88,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 3.75,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 3.72,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 3.38,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 3.64,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 2.77,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 4.01,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 0.8,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 1.92,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 4.1,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 4.24,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 4.71,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 5.4,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 5.05,
+        "y": "Ivy Young",
+        "series": "Ivy Young"
+      },
+      {
+        "x": 3.07,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 2.98,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.91,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.12,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 2.64,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 5.16,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.28,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.06,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 1.97,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 4.1,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 2.81,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.52,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 4.18,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 2.82,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.56,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 0.85,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 1.78,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 2.93,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 2.87,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.37,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.47,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 2.76,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.04,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 2.96,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.25,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.65,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 4.14,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 4.24,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.96,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 0.92,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.5,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 5.16,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 4.21,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 0.97,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 4.61,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.23,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.03,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 4.48,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 2.58,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 2.16,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 4.16,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.52,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.59,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 10.84,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.33,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 10.18,
+        "y": "Jack King",
+        "series": "Jack King"
+      },
+      {
+        "x": 3.06,
+        "y": "Jack King",
+        "series": "Jack King"
+      }
+    ]
+  },
+  "title": "Time to Loan Approval by Loan Officer",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Approval Time (Days)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Loan Officer"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Approval Time (Days)"
+      },
+      {
+        "field": "y",
+        "title": "Loan Officer"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

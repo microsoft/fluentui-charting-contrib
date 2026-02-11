@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 5,
+        "y": 85,
+        "series": "Math"
+      },
+      {
+        "x": 5,
+        "y": 91,
+        "series": "Math"
+      },
+      {
+        "x": 10,
+        "y": 90,
+        "series": "Science"
+      },
+      {
+        "x": 12,
+        "y": 86,
+        "series": "Science"
+      },
+      {
+        "x": 8,
+        "y": 88,
+        "series": "English"
+      },
+      {
+        "x": 9,
+        "y": 84,
+        "series": "English"
+      },
+      {
+        "x": 15,
+        "y": 77,
+        "series": "History"
+      },
+      {
+        "x": 7,
+        "y": 78,
+        "series": "History"
+      }
+    ]
+  },
+  "title": "Teacher Performance Scores Over Years of Experience",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Years of Experience"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Performance Score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Years of Experience"
+      },
+      {
+        "field": "y",
+        "title": "Performance Score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

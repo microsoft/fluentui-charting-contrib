@@ -1,0 +1,542 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 0.5009511731135067,
+        "y": 53.9,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.5198973042362002,
+        "y": 41.9,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.4536741214057508,
+        "y": 44.9,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.49969530773918347,
+        "y": 58.6,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.49095607235142114,
+        "y": 57.8,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.4380475594493116,
+        "y": 60.6,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.4738760631834751,
+        "y": 48.3,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.4644149577804583,
+        "y": 40.2,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.4443091905051734,
+        "y": 47.8,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.4370860927152318,
+        "y": 40.5,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.3763440860215054,
+        "y": 39.8,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.4634920634920635,
+        "y": 20.2,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.42435424354243545,
+        "y": 59.4,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.41009463722397477,
+        "y": 37,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.3494788473329246,
+        "y": 58.6,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.44887780548628425,
+        "y": 43.4,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.505789152955515,
+        "y": 22.9,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.4606141522029372,
+        "y": 34.9,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.4567901234567901,
+        "y": 40.8,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.5209656925031766,
+        "y": 54.5,
+        "series": "Cardiology"
+      },
+      {
+        "x": 0.4243873281530185,
+        "y": 60.4,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.5,
+        "y": 40.9,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.4695767195767196,
+        "y": 43.8,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.4109589041095891,
+        "y": 40.7,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.46954314720812185,
+        "y": 24.1,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.45781556572923476,
+        "y": 51,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.41019266625233064,
+        "y": 48.2,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.4870530209617756,
+        "y": 56.4,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.4887459807073955,
+        "y": 51.4,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.45482110369921164,
+        "y": 39.1,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.38869257950530034,
+        "y": 44.6,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.42314872433105166,
+        "y": 42.8,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.42312276519666264,
+        "y": 50.6,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.39548022598870053,
+        "y": 44.7,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.33755274261603374,
+        "y": 44.6,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.4301708898055392,
+        "y": 49.1,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.5181023720349563,
+        "y": 45.1,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.5003126954346466,
+        "y": 48.6,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.44242029928432014,
+        "y": 31.7,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.475,
+        "y": 49.5,
+        "series": "Emergency"
+      },
+      {
+        "x": 0.4793289394847214,
+        "y": 51.8,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.47794117647058826,
+        "y": 60.6,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.3562653562653562,
+        "y": 45.4,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.45571245186136067,
+        "y": 44.5,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.41139240506329117,
+        "y": 30.5,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.5123339658444023,
+        "y": 36.1,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.43087971274685816,
+        "y": 40.3,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.35561005518087063,
+        "y": 40,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.42416452442159386,
+        "y": 42.7,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.4010184595798854,
+        "y": 40.8,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.45169385194479295,
+        "y": 51.5,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.3851010101010101,
+        "y": 40.3,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.4676923076923077,
+        "y": 43,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.4065040650406504,
+        "y": 28.3,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.4498044328552803,
+        "y": 37.3,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.37388724035608306,
+        "y": 53.7,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.3870558375634518,
+        "y": 47.2,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.41770573566084784,
+        "y": 35.5,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.4485981308411215,
+        "y": 30,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.4251497005988024,
+        "y": 58.9,
+        "series": "Oncology"
+      },
+      {
+        "x": 0.44526901669758817,
+        "y": 64.1,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.4853205512282804,
+        "y": 51.5,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.3923973022685469,
+        "y": 36.4,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.4567143830947512,
+        "y": 55.9,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.4401735895846249,
+        "y": 40.5,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.48575129533678757,
+        "y": 62.5,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.48825710754017304,
+        "y": 41.1,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.3979460847240051,
+        "y": 35.6,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.4534005037783375,
+        "y": 52,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.4469606674612634,
+        "y": 44.3,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.3979785217940619,
+        "y": 61.7,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.5269922879177378,
+        "y": 36.8,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.3872579637726421,
+        "y": 44.8,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.437125748502994,
+        "y": 41.1,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.3264812575574365,
+        "y": 34.7,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.44632086851628466,
+        "y": 36.8,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.5539971949509117,
+        "y": 42.3,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.4002463054187192,
+        "y": 44.3,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.48580441640378547,
+        "y": 47.2,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.43962848297213625,
+        "y": 37.9,
+        "series": "Pediatrics"
+      },
+      {
+        "x": 0.4625684723067559,
+        "y": 49.7,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.408423739629866,
+        "y": 28.1,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.5266666666666666,
+        "y": 49.3,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.5282784338098198,
+        "y": 37.2,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.36662452591656136,
+        "y": 49.7,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.36107711138310894,
+        "y": 49.7,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.43103448275862066,
+        "y": 39.3,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.4263322884012539,
+        "y": 40.1,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.482897384305835,
+        "y": 65.3,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.46044098573281456,
+        "y": 70.6,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.37037037037037035,
+        "y": 33.4,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.4271356783919598,
+        "y": 38.1,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.39325842696629215,
+        "y": 55.7,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.3974358974358974,
+        "y": 61.2,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.4764971023824855,
+        "y": 61.2,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.4308252427184466,
+        "y": 50.4,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.4933586337760911,
+        "y": 45.2,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.3931847968545216,
+        "y": 48.2,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.5309734513274337,
+        "y": 46.6,
+        "series": "Surgery"
+      },
+      {
+        "x": 0.40606060606060607,
+        "y": 39.9,
+        "series": "Surgery"
+      }
+    ]
+  },
+  "title": "Staff Efficiency vs. Avg Patient Wait Time per Month",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Patients per Hour"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Avg Wait Time (min)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Patients per Hour"
+      },
+      {
+        "field": "y",
+        "title": "Avg Wait Time (min)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

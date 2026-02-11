@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Sales Trends Comparison",
+  "description": "Converted from Plotly schema 2 - Multi-series line chart",
+  "data": {
+    "values": [
+      { "month": "2023-01-01", "sales": 4000, "category": "Category A" },
+      { "month": "2023-02-01", "sales": 4100, "category": "Category A" },
+      { "month": "2023-03-01", "sales": 4200, "category": "Category A" },
+      { "month": "2023-04-01", "sales": 4300, "category": "Category A" },
+      { "month": "2023-05-01", "sales": 4400, "category": "Category A" },
+      { "month": "2023-06-01", "sales": 4500, "category": "Category A" },
+      { "month": "2023-07-01", "sales": 4600, "category": "Category A" },
+      { "month": "2023-08-01", "sales": 4700, "category": "Category A" },
+      { "month": "2023-09-01", "sales": 4800, "category": "Category A" },
+      { "month": "2023-10-01", "sales": 4900, "category": "Category A" },
+      { "month": "2023-11-01", "sales": 5000, "category": "Category A" },
+      { "month": "2023-12-01", "sales": 5100, "category": "Category A" },
+      { "month": "2023-01-01", "sales": 6000, "category": "Category B" },
+      { "month": "2023-02-01", "sales": 6200, "category": "Category B" },
+      { "month": "2023-03-01", "sales": 6400, "category": "Category B" },
+      { "month": "2023-04-01", "sales": 6600, "category": "Category B" },
+      { "month": "2023-05-01", "sales": 6800, "category": "Category B" },
+      { "month": "2023-06-01", "sales": 7000, "category": "Category B" },
+      { "month": "2023-07-01", "sales": 7200, "category": "Category B" },
+      { "month": "2023-08-01", "sales": 7400, "category": "Category B" },
+      { "month": "2023-09-01", "sales": 7600, "category": "Category B" },
+      { "month": "2023-10-01", "sales": 7800, "category": "Category B" },
+      { "month": "2023-11-01", "sales": 8000, "category": "Category B" },
+      { "month": "2023-12-01", "sales": 8200, "category": "Category B" }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "axis": { "title": "Month", "format": "%b %Y" }
+    },
+    "y": {
+      "field": "sales",
+      "type": "quantitative",
+      "axis": { "title": "Sales Volume" }
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "legend": { "title": "Category" }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Winter",
+        "y": 20,
+        "series": "County A"
+      },
+      {
+        "x": "Spring",
+        "y": 30,
+        "series": "County A"
+      },
+      {
+        "x": "Summer",
+        "y": 40,
+        "series": "County A"
+      },
+      {
+        "x": "Fall",
+        "y": 50,
+        "series": "County A"
+      },
+      {
+        "x": "Winter",
+        "y": 20,
+        "series": "County B"
+      },
+      {
+        "x": "Spring",
+        "y": 30,
+        "series": "County B"
+      },
+      {
+        "x": "Summer",
+        "y": 40,
+        "series": "County B"
+      },
+      {
+        "x": "Fall",
+        "y": 50,
+        "series": "County B"
+      },
+      {
+        "x": "Winter",
+        "y": 20,
+        "series": "County C"
+      },
+      {
+        "x": "Spring",
+        "y": 30,
+        "series": "County C"
+      },
+      {
+        "x": "Summer",
+        "y": 40,
+        "series": "County C"
+      },
+      {
+        "x": "Fall",
+        "y": 50,
+        "series": "County C"
+      },
+      {
+        "x": "Winter",
+        "y": 20,
+        "series": "County D"
+      },
+      {
+        "x": "Spring",
+        "y": 30,
+        "series": "County D"
+      },
+      {
+        "x": "Summer",
+        "y": 40,
+        "series": "County D"
+      },
+      {
+        "x": "Fall",
+        "y": 50,
+        "series": "County D"
+      },
+      {
+        "x": "Winter",
+        "y": 20,
+        "series": "County E"
+      },
+      {
+        "x": "Spring",
+        "y": 30,
+        "series": "County E"
+      },
+      {
+        "x": "Summer",
+        "y": 40,
+        "series": "County E"
+      },
+      {
+        "x": "Fall",
+        "y": 50,
+        "series": "County E"
+      }
+    ]
+  },
+  "title": "Seasonal Water Pollution Levels",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "season"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "pollution_level"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "season"
+      },
+      {
+        "field": "y",
+        "title": "pollution_level"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

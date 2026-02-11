@@ -1,0 +1,342 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Denver",
+        "y": 200,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": "Denver",
+        "y": 205,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": "Denver",
+        "y": 210,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": "Denver",
+        "y": 215,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": "Denver",
+        "y": 220,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": "Denver",
+        "y": 225,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": "Denver",
+        "y": 230,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": "Denver",
+        "y": 235,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": "Denver",
+        "y": 240,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": "Denver",
+        "y": 245,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": "Denver",
+        "y": 250,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": "Denver",
+        "y": 255,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": "Phoenix",
+        "y": 150,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": "Phoenix",
+        "y": 155,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": "Phoenix",
+        "y": 160,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": "Phoenix",
+        "y": 165,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": "Phoenix",
+        "y": 170,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": "Phoenix",
+        "y": 175,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": "Phoenix",
+        "y": 180,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": "Phoenix",
+        "y": 185,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": "Phoenix",
+        "y": 190,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": "Phoenix",
+        "y": 195,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": "Phoenix",
+        "y": 200,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": "Phoenix",
+        "y": 205,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": "San Francisco",
+        "y": 180,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": "San Francisco",
+        "y": 185,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": "San Francisco",
+        "y": 190,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": "San Francisco",
+        "y": 195,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": "San Francisco",
+        "y": 200,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": "San Francisco",
+        "y": 205,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": "San Francisco",
+        "y": 210,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": "San Francisco",
+        "y": 215,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": "San Francisco",
+        "y": 220,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": "San Francisco",
+        "y": 225,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": "San Francisco",
+        "y": 230,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": "San Francisco",
+        "y": 235,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": "Detroit",
+        "y": 220,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": "Detroit",
+        "y": 225,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": "Detroit",
+        "y": 230,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": "Detroit",
+        "y": 235,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": "Detroit",
+        "y": 240,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": "Detroit",
+        "y": 245,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": "Detroit",
+        "y": 250,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": "Detroit",
+        "y": 255,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": "Detroit",
+        "y": 260,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": "Detroit",
+        "y": 265,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": "Detroit",
+        "y": 270,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": "Detroit",
+        "y": 275,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": "Houston",
+        "y": 70,
+        "series": "Lead"
+      },
+      {
+        "x": "Houston",
+        "y": 75,
+        "series": "Lead"
+      },
+      {
+        "x": "Houston",
+        "y": 80,
+        "series": "Lead"
+      },
+      {
+        "x": "Houston",
+        "y": 85,
+        "series": "Lead"
+      },
+      {
+        "x": "Houston",
+        "y": 90,
+        "series": "Lead"
+      },
+      {
+        "x": "Houston",
+        "y": 95,
+        "series": "Lead"
+      },
+      {
+        "x": "Houston",
+        "y": 100,
+        "series": "Lead"
+      },
+      {
+        "x": "Houston",
+        "y": 105,
+        "series": "Lead"
+      },
+      {
+        "x": "Houston",
+        "y": 110,
+        "series": "Lead"
+      },
+      {
+        "x": "Houston",
+        "y": 115,
+        "series": "Lead"
+      },
+      {
+        "x": "Houston",
+        "y": 120,
+        "series": "Lead"
+      },
+      {
+        "x": "Houston",
+        "y": 125,
+        "series": "Lead"
+      }
+    ]
+  },
+  "title": "Emission Levels at Different Incident Locations",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Incident Location"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Emission Levels"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Incident Location"
+      },
+      {
+        "field": "y",
+        "title": "Emission Levels"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

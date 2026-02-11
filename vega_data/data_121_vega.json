@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Defect Frequency by Type",
+  "description": "Converted from Plotly schema 121 - Bar chart",
+  "data": {
+    "values": [
+      { "defect": "Engine", "frequency": 15 },
+      { "defect": "Transmission", "frequency": 25 },
+      { "defect": "Brakes", "frequency": 10 },
+      { "defect": "Suspension", "frequency": 5 },
+      { "defect": "Electrical", "frequency": 20 },
+      { "defect": "Body", "frequency": 8 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "defect",
+      "type": "nominal",
+      "axis": { "title": "Defect Type" }
+    },
+    "y": {
+      "field": "frequency",
+      "type": "quantitative",
+      "axis": { "title": "Frequency" }
+    }
+  }
+}

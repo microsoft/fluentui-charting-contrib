@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Carrier",
+        "y": 90,
+        "series": "Atlantic"
+      },
+      {
+        "x": "Destroyer",
+        "y": 96,
+        "series": "Atlantic"
+      },
+      {
+        "x": "Submarine",
+        "y": 80,
+        "series": "Atlantic"
+      },
+      {
+        "x": "Carrier",
+        "y": 83.3,
+        "series": "Pacific"
+      },
+      {
+        "x": "Destroyer",
+        "y": 83.3,
+        "series": "Pacific"
+      },
+      {
+        "x": "Submarine",
+        "y": 83.3,
+        "series": "Pacific"
+      },
+      {
+        "x": "Carrier",
+        "y": 83.3,
+        "series": "Indian"
+      },
+      {
+        "x": "Destroyer",
+        "y": 87.5,
+        "series": "Indian"
+      },
+      {
+        "x": "Submarine",
+        "y": 80,
+        "series": "Indian"
+      }
+    ]
+  },
+  "title": "Maintenance Completion Rates by Ship Type and Region, April 2024",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Ship Type"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Completion Rate (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Ship Type"
+      },
+      {
+        "field": "y",
+        "title": "Completion Rate (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

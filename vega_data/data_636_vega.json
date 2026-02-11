@@ -1,0 +1,282 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023Q1",
+        "y": 110,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q2",
+        "y": 120,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q3",
+        "y": 130,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q4",
+        "y": 140,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q1",
+        "y": 150,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q2",
+        "y": 180,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q3",
+        "y": 185,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q4",
+        "y": 200,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q1",
+        "y": 200,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q2",
+        "y": 240,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q3",
+        "y": 260,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q4",
+        "y": 300,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q1",
+        "y": 90,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q2",
+        "y": 115,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q3",
+        "y": 120,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q4",
+        "y": 140,
+        "series": "Hatchback"
+      },
+      {
+        "x": "2023Q1",
+        "y": 220,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q2",
+        "y": 245,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q3",
+        "y": 265,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q4",
+        "y": 278,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q1",
+        "y": 280,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q2",
+        "y": 295,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q3",
+        "y": 310,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q4",
+        "y": 325,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q1",
+        "y": 340,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q2",
+        "y": 365,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q3",
+        "y": 370,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q4",
+        "y": 400,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q1",
+        "y": 250,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q2",
+        "y": 280,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q3",
+        "y": 310,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q4",
+        "y": 335,
+        "series": "SUV"
+      },
+      {
+        "x": "2023Q1",
+        "y": 180,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q2",
+        "y": 195,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q3",
+        "y": 210,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q4",
+        "y": 220,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q1",
+        "y": 320,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q2",
+        "y": 350,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q3",
+        "y": 365,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q4",
+        "y": 390,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q1",
+        "y": 210,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q2",
+        "y": 240,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q3",
+        "y": 270,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q4",
+        "y": 295,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q1",
+        "y": 170,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q2",
+        "y": 210,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q3",
+        "y": 230,
+        "series": "Sedan"
+      },
+      {
+        "x": "2023Q4",
+        "y": 240,
+        "series": "Sedan"
+      }
+    ]
+  },
+  "title": "Automobile Sales Volume by Quarter, Region, and Model",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Quarter"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sales Volume"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Quarter"
+      },
+      {
+        "field": "y",
+        "title": "Sales Volume"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

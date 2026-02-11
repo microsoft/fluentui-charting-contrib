@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Vehicle Performance Insights",
+  "description": "Converted from Plotly schema 103 - Mixed line and scatter chart",
+  "data": {
+    "values": [
+      { "date": "2023-01-01", "value": 10, "metric": "Fuel Efficiency (L/100km)" },
+      { "date": "2023-01-02", "value": 9.8, "metric": "Fuel Efficiency (L/100km)" },
+      { "date": "2023-01-03", "value": 9.9, "metric": "Fuel Efficiency (L/100km)" },
+      { "date": "2023-01-04", "value": 9.7, "metric": "Fuel Efficiency (L/100km)" },
+      { "date": "2023-01-05", "value": 10.1, "metric": "Fuel Efficiency (L/100km)" },
+      { "date": "2023-01-01", "value": 0, "metric": "Maintenance Alerts" },
+      { "date": "2023-01-02", "value": 1, "metric": "Maintenance Alerts" },
+      { "date": "2023-01-03", "value": 0, "metric": "Maintenance Alerts" },
+      { "date": "2023-01-04", "value": 2, "metric": "Maintenance Alerts" },
+      { "date": "2023-01-05", "value": 1, "metric": "Maintenance Alerts" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": { "title": "Date" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Fuel Efficiency & Alerts" }
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

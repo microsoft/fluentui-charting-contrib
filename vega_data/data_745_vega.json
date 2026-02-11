@@ -1,0 +1,462 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 0.85,
+        "y": 4325259,
+        "series": "New York"
+      },
+      {
+        "x": 0.82,
+        "y": 4089519,
+        "series": "New York"
+      },
+      {
+        "x": 0.86,
+        "y": 4423613,
+        "series": "New York"
+      },
+      {
+        "x": 0.87,
+        "y": 4723097,
+        "series": "New York"
+      },
+      {
+        "x": 0.83,
+        "y": 4997187,
+        "series": "New York"
+      },
+      {
+        "x": 0.84,
+        "y": 4632752,
+        "series": "New York"
+      },
+      {
+        "x": 0.82,
+        "y": 4770487,
+        "series": "New York"
+      },
+      {
+        "x": 0.84,
+        "y": 4702176,
+        "series": "New York"
+      },
+      {
+        "x": 0.85,
+        "y": 5380409,
+        "series": "New York"
+      },
+      {
+        "x": 0.85,
+        "y": 4660114,
+        "series": "New York"
+      },
+      {
+        "x": 0.88,
+        "y": 4751342,
+        "series": "New York"
+      },
+      {
+        "x": 0.83,
+        "y": 5327941,
+        "series": "New York"
+      },
+      {
+        "x": 0.7,
+        "y": 4789815,
+        "series": "Los Angeles"
+      },
+      {
+        "x": 0.66,
+        "y": 4747840,
+        "series": "Los Angeles"
+      },
+      {
+        "x": 0.66,
+        "y": 4862811,
+        "series": "Los Angeles"
+      },
+      {
+        "x": 0.7,
+        "y": 4698771,
+        "series": "Los Angeles"
+      },
+      {
+        "x": 0.7,
+        "y": 5784327,
+        "series": "Los Angeles"
+      },
+      {
+        "x": 0.68,
+        "y": 5076434,
+        "series": "Los Angeles"
+      },
+      {
+        "x": 0.7,
+        "y": 5607245,
+        "series": "Los Angeles"
+      },
+      {
+        "x": 0.68,
+        "y": 5410944,
+        "series": "Los Angeles"
+      },
+      {
+        "x": 0.67,
+        "y": 6387176,
+        "series": "Los Angeles"
+      },
+      {
+        "x": 0.65,
+        "y": 5328224,
+        "series": "Los Angeles"
+      },
+      {
+        "x": 0.67,
+        "y": 5588523,
+        "series": "Los Angeles"
+      },
+      {
+        "x": 0.69,
+        "y": 5534113,
+        "series": "Los Angeles"
+      },
+      {
+        "x": 0.65,
+        "y": 4169985,
+        "series": "Chicago"
+      },
+      {
+        "x": 0.61,
+        "y": 4143506,
+        "series": "Chicago"
+      },
+      {
+        "x": 0.64,
+        "y": 4346655,
+        "series": "Chicago"
+      },
+      {
+        "x": 0.63,
+        "y": 4207042,
+        "series": "Chicago"
+      },
+      {
+        "x": 0.65,
+        "y": 5391886,
+        "series": "Chicago"
+      },
+      {
+        "x": 0.62,
+        "y": 4343033,
+        "series": "Chicago"
+      },
+      {
+        "x": 0.61,
+        "y": 4706039,
+        "series": "Chicago"
+      },
+      {
+        "x": 0.65,
+        "y": 4480091,
+        "series": "Chicago"
+      },
+      {
+        "x": 0.64,
+        "y": 5500182,
+        "series": "Chicago"
+      },
+      {
+        "x": 0.63,
+        "y": 4891166,
+        "series": "Chicago"
+      },
+      {
+        "x": 0.63,
+        "y": 5191050,
+        "series": "Chicago"
+      },
+      {
+        "x": 0.63,
+        "y": 5236903,
+        "series": "Chicago"
+      },
+      {
+        "x": 0.9,
+        "y": 2013052,
+        "series": "Houston"
+      },
+      {
+        "x": 0.9,
+        "y": 2226987,
+        "series": "Houston"
+      },
+      {
+        "x": 0.85,
+        "y": 2071750,
+        "series": "Houston"
+      },
+      {
+        "x": 0.89,
+        "y": 2317394,
+        "series": "Houston"
+      },
+      {
+        "x": 0.86,
+        "y": 2610628,
+        "series": "Houston"
+      },
+      {
+        "x": 0.86,
+        "y": 2194235,
+        "series": "Houston"
+      },
+      {
+        "x": 0.87,
+        "y": 2296585,
+        "series": "Houston"
+      },
+      {
+        "x": 0.9,
+        "y": 2350235,
+        "series": "Houston"
+      },
+      {
+        "x": 0.87,
+        "y": 2709269,
+        "series": "Houston"
+      },
+      {
+        "x": 0.84,
+        "y": 2407202,
+        "series": "Houston"
+      },
+      {
+        "x": 0.84,
+        "y": 2519691,
+        "series": "Houston"
+      },
+      {
+        "x": 0.85,
+        "y": 2697385,
+        "series": "Houston"
+      },
+      {
+        "x": 0.75,
+        "y": 2727962,
+        "series": "Philadelphia"
+      },
+      {
+        "x": 0.76,
+        "y": 2780859,
+        "series": "Philadelphia"
+      },
+      {
+        "x": 0.75,
+        "y": 2986781,
+        "series": "Philadelphia"
+      },
+      {
+        "x": 0.76,
+        "y": 2832302,
+        "series": "Philadelphia"
+      },
+      {
+        "x": 0.71,
+        "y": 3362687,
+        "series": "Philadelphia"
+      },
+      {
+        "x": 0.71,
+        "y": 3177458,
+        "series": "Philadelphia"
+      },
+      {
+        "x": 0.75,
+        "y": 3048889,
+        "series": "Philadelphia"
+      },
+      {
+        "x": 0.74,
+        "y": 3298625,
+        "series": "Philadelphia"
+      },
+      {
+        "x": 0.73,
+        "y": 3587666,
+        "series": "Philadelphia"
+      },
+      {
+        "x": 0.76,
+        "y": 3516107,
+        "series": "Philadelphia"
+      },
+      {
+        "x": 0.76,
+        "y": 3458537,
+        "series": "Philadelphia"
+      },
+      {
+        "x": 0.73,
+        "y": 3457530,
+        "series": "Philadelphia"
+      },
+      {
+        "x": 0.89,
+        "y": 4739004,
+        "series": "San Francisco"
+      },
+      {
+        "x": 0.87,
+        "y": 5209324,
+        "series": "San Francisco"
+      },
+      {
+        "x": 0.91,
+        "y": 5307890,
+        "series": "San Francisco"
+      },
+      {
+        "x": 0.88,
+        "y": 5287002,
+        "series": "San Francisco"
+      },
+      {
+        "x": 0.91,
+        "y": 6409486,
+        "series": "San Francisco"
+      },
+      {
+        "x": 0.88,
+        "y": 5231485,
+        "series": "San Francisco"
+      },
+      {
+        "x": 0.86,
+        "y": 5818683,
+        "series": "San Francisco"
+      },
+      {
+        "x": 0.86,
+        "y": 5558754,
+        "series": "San Francisco"
+      },
+      {
+        "x": 0.89,
+        "y": 6717588,
+        "series": "San Francisco"
+      },
+      {
+        "x": 0.88,
+        "y": 5790397,
+        "series": "San Francisco"
+      },
+      {
+        "x": 0.89,
+        "y": 5665069,
+        "series": "San Francisco"
+      },
+      {
+        "x": 0.91,
+        "y": 5943279,
+        "series": "San Francisco"
+      },
+      {
+        "x": 0.74,
+        "y": 3990506,
+        "series": "Boston"
+      },
+      {
+        "x": 0.73,
+        "y": 3957600,
+        "series": "Boston"
+      },
+      {
+        "x": 0.78,
+        "y": 3978937,
+        "series": "Boston"
+      },
+      {
+        "x": 0.75,
+        "y": 4463577,
+        "series": "Boston"
+      },
+      {
+        "x": 0.75,
+        "y": 5238686,
+        "series": "Boston"
+      },
+      {
+        "x": 0.78,
+        "y": 4660003,
+        "series": "Boston"
+      },
+      {
+        "x": 0.78,
+        "y": 4406579,
+        "series": "Boston"
+      },
+      {
+        "x": 0.76,
+        "y": 4356995,
+        "series": "Boston"
+      },
+      {
+        "x": 0.76,
+        "y": 5465019,
+        "series": "Boston"
+      },
+      {
+        "x": 0.79,
+        "y": 4784229,
+        "series": "Boston"
+      },
+      {
+        "x": 0.78,
+        "y": 4804773,
+        "series": "Boston"
+      },
+      {
+        "x": 0.77,
+        "y": 4998621,
+        "series": "Boston"
+      }
+    ]
+  },
+  "title": "Public Transportation Usage and Efficiency by City (2023)",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Route_Efficiency"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Passenger_Count"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Route_Efficiency"
+      },
+      {
+        "field": "y",
+        "title": "Passenger_Count"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

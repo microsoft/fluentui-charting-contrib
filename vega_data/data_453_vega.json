@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Hospital A",
+        "y": 2500000,
+        "series": "Series"
+      },
+      {
+        "x": "Hospital B",
+        "y": 3000000,
+        "series": "Series"
+      },
+      {
+        "x": "Hospital C",
+        "y": 1500000,
+        "series": "Series"
+      },
+      {
+        "x": "Hospital D",
+        "y": 4000000,
+        "series": "Series"
+      },
+      {
+        "x": "Hospital E",
+        "y": 2000000,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Healthcare Spending by Facility",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "facility_id"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "healthcare_spending"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "facility_id"
+      },
+      {
+        "field": "y",
+        "title": "healthcare_spending"
+      }
+    ]
+  }
+}

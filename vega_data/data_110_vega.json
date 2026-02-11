@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Budget Utilization of Construction Projects",
+  "description": "Converted from Plotly schema 110 - Pie chart",
+  "data": {
+    "values": [
+      { "project": "Project A", "budget": 300000 },
+      { "project": "Project B", "budget": 250000 },
+      { "project": "Project C", "budget": 400000 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "budget",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "project",
+      "type": "nominal",
+      "legend": { "title": "Project" }
+    }
+  }
+}

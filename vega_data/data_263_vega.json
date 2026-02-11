@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Financial Metrics Trends",
+  "description": "Converted from Plotly schema 263 - Multi-series line+markers chart",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "month": "2023-01", "value": 120, "metric": "ADR" },
+      { "month": "2023-02", "value": 150, "metric": "ADR" },
+      { "month": "2023-03", "value": 180, "metric": "ADR" },
+      { "month": "2023-04", "value": 130, "metric": "ADR" },
+      { "month": "2023-05", "value": 160, "metric": "ADR" },
+      { "month": "2023-06", "value": 190, "metric": "ADR" },
+      { "month": "2023-07", "value": 200, "metric": "ADR" },
+      { "month": "2023-08", "value": 175, "metric": "ADR" },
+      { "month": "2023-09", "value": 160, "metric": "ADR" },
+      { "month": "2023-10", "value": 180, "metric": "ADR" },
+      { "month": "2023-01", "value": 90, "metric": "RevPAR" },
+      { "month": "2023-02", "value": 110, "metric": "RevPAR" },
+      { "month": "2023-03", "value": 140, "metric": "RevPAR" },
+      { "month": "2023-04", "value": 100, "metric": "RevPAR" },
+      { "month": "2023-05", "value": 130, "metric": "RevPAR" },
+      { "month": "2023-06", "value": 160, "metric": "RevPAR" },
+      { "month": "2023-07", "value": 170, "metric": "RevPAR" },
+      { "month": "2023-08", "value": 150, "metric": "RevPAR" },
+      { "month": "2023-09", "value": 145, "metric": "RevPAR" },
+      { "month": "2023-10", "value": 160, "metric": "RevPAR" },
+      { "month": "2023-01", "value": 85, "metric": "Occupancy" },
+      { "month": "2023-02", "value": 105, "metric": "Occupancy" },
+      { "month": "2023-03", "value": 135, "metric": "Occupancy" },
+      { "month": "2023-04", "value": 95, "metric": "Occupancy" },
+      { "month": "2023-05", "value": 125, "metric": "Occupancy" },
+      { "month": "2023-06", "value": 155, "metric": "Occupancy" },
+      { "month": "2023-07", "value": 165, "metric": "Occupancy" },
+      { "month": "2023-08", "value": 145, "metric": "Occupancy" },
+      { "month": "2023-09", "value": 140, "metric": "Occupancy" },
+      { "month": "2023-10", "value": 155, "metric": "Occupancy" },
+      { "month": "2023-01", "value": 130, "metric": "Total Revenue" },
+      { "month": "2023-02", "value": 160, "metric": "Total Revenue" },
+      { "month": "2023-03", "value": 190, "metric": "Total Revenue" },
+      { "month": "2023-04", "value": 140, "metric": "Total Revenue" },
+      { "month": "2023-05", "value": 170, "metric": "Total Revenue" },
+      { "month": "2023-06", "value": 200, "metric": "Total Revenue" },
+      { "month": "2023-07", "value": 210, "metric": "Total Revenue" },
+      { "month": "2023-08", "value": 185, "metric": "Total Revenue" },
+      { "month": "2023-09", "value": 180, "metric": "Total Revenue" },
+      { "month": "2023-10", "value": 200, "metric": "Total Revenue" },
+      { "month": "2023-01", "value": 95, "metric": "Net Income" },
+      { "month": "2023-02", "value": 115, "metric": "Net Income" },
+      { "month": "2023-03", "value": 145, "metric": "Net Income" },
+      { "month": "2023-04", "value": 105, "metric": "Net Income" },
+      { "month": "2023-05", "value": 135, "metric": "Net Income" },
+      { "month": "2023-06", "value": 165, "metric": "Net Income" },
+      { "month": "2023-07", "value": 175, "metric": "Net Income" },
+      { "month": "2023-08", "value": 155, "metric": "Net Income" },
+      { "month": "2023-09", "value": 150, "metric": "Net Income" },
+      { "month": "2023-10", "value": 165, "metric": "Net Income" },
+      { "month": "2023-01", "value": 110, "metric": "Gross Profit" },
+      { "month": "2023-02", "value": 140, "metric": "Gross Profit" },
+      { "month": "2023-03", "value": 170, "metric": "Gross Profit" },
+      { "month": "2023-04", "value": 120, "metric": "Gross Profit" },
+      { "month": "2023-05", "value": 150, "metric": "Gross Profit" },
+      { "month": "2023-06", "value": 180, "metric": "Gross Profit" },
+      { "month": "2023-07", "value": 190, "metric": "Gross Profit" },
+      { "month": "2023-08", "value": 165, "metric": "Gross Profit" },
+      { "month": "2023-09", "value": 160, "metric": "Gross Profit" },
+      { "month": "2023-10", "value": 180, "metric": "Gross Profit" },
+      { "month": "2023-01", "value": 105, "metric": "EBITDA" },
+      { "month": "2023-02", "value": 135, "metric": "EBITDA" },
+      { "month": "2023-03", "value": 160, "metric": "EBITDA" },
+      { "month": "2023-04", "value": 115, "metric": "EBITDA" },
+      { "month": "2023-05", "value": 145, "metric": "EBITDA" },
+      { "month": "2023-06", "value": 175, "metric": "EBITDA" },
+      { "month": "2023-07", "value": 185, "metric": "EBITDA" },
+      { "month": "2023-08", "value": 165, "metric": "EBITDA" },
+      { "month": "2023-09", "value": 155, "metric": "EBITDA" },
+      { "month": "2023-10", "value": 170, "metric": "EBITDA" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "axis": { "title": "Month" }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": { "title": "Metric Value" }
+        },
+        "color": {
+          "field": "metric",
+          "type": "nominal",
+          "legend": { "title": "Metric" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "month", "type": "ordinal" },
+        "y": { "field": "value", "type": "quantitative" },
+        "color": { "field": "metric", "type": "nominal" }
+      }
+    }
+  ]
+}

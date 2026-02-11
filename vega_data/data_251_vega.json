@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Shift-wise Productivity and Overtime",
+  "description": "Converted from Plotly schema 251 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "shift": "Shift A", "value": 88, "metric": "Task Completion Rate (%)" },
+      { "shift": "Shift B", "value": 93, "metric": "Task Completion Rate (%)" },
+      { "shift": "Shift C", "value": 79, "metric": "Task Completion Rate (%)" },
+      { "shift": "Shift D", "value": 84, "metric": "Task Completion Rate (%)" },
+      { "shift": "Shift E", "value": 91, "metric": "Task Completion Rate (%)" },
+      { "shift": "Shift A", "value": 6, "metric": "Average Overtime Hours" },
+      { "shift": "Shift B", "value": 4, "metric": "Average Overtime Hours" },
+      { "shift": "Shift C", "value": 9, "metric": "Average Overtime Hours" },
+      { "shift": "Shift D", "value": 7, "metric": "Average Overtime Hours" },
+      { "shift": "Shift E", "value": 5, "metric": "Average Overtime Hours" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "shift",
+      "type": "ordinal",
+      "axis": { "title": "Shifts" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Value" }
+    },
+    "xOffset": { "field": "metric" },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

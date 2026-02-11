@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "High",
+        "y": 5,
+        "series": "Fall"
+      },
+      {
+        "x": "Low",
+        "y": 2,
+        "series": "Fall"
+      },
+      {
+        "x": "Medium",
+        "y": 4,
+        "series": "Fall"
+      },
+      {
+        "x": "Medium",
+        "y": 3,
+        "series": "Equipment"
+      },
+      {
+        "x": "High",
+        "y": 7,
+        "series": "Equipment"
+      },
+      {
+        "x": "Low",
+        "y": 1,
+        "series": "Equipment"
+      }
+    ]
+  },
+  "title": "Incident Severity vs Frequency",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "severity"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "frequency"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "severity"
+      },
+      {
+        "field": "y",
+        "title": "frequency"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

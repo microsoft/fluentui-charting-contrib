@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Trend Analysis of Dropout Rates",
+  "description": "Converted from Plotly schema 194 - Line+markers chart",
+  "data": {
+    "values": [
+      { "year": "2018", "rate": 15 },
+      { "year": "2019", "rate": 14.5 },
+      { "year": "2020", "rate": 13 },
+      { "year": "2021", "rate": 11 },
+      { "year": "2022", "rate": 10.5 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": { "title": "Year" }
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative",
+          "axis": { "title": "Dropout Rate (%)" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

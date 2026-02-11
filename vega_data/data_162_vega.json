@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Overall Average Score by Curriculum",
+  "description": "Converted from Plotly schema 162 - Pie chart",
+  "data": {
+    "values": [
+      { "curriculum": "Curriculum A", "score": 85 },
+      { "curriculum": "Curriculum B", "score": 88 },
+      { "curriculum": "Curriculum C", "score": 90 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "score",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "curriculum",
+      "type": "nominal",
+      "legend": { "title": "Curriculum" }
+    }
+  }
+}

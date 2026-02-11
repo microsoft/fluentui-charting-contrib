@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "East Plant",
+        "y": 1200,
+        "series": "Production Volume"
+      },
+      {
+        "x": "West Plant",
+        "y": 1100,
+        "series": "Production Volume"
+      },
+      {
+        "x": "North Plant",
+        "y": 1350,
+        "series": "Production Volume"
+      },
+      {
+        "x": "South Plant",
+        "y": 900,
+        "series": "Production Volume"
+      },
+      {
+        "x": "East Plant",
+        "y": 320,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "West Plant",
+        "y": 310,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "North Plant",
+        "y": 340,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "South Plant",
+        "y": 295,
+        "series": "Operational Hours"
+      },
+      {
+        "x": "East Plant",
+        "y": 40,
+        "series": "Downtime"
+      },
+      {
+        "x": "West Plant",
+        "y": 60,
+        "series": "Downtime"
+      },
+      {
+        "x": "North Plant",
+        "y": 35,
+        "series": "Downtime"
+      },
+      {
+        "x": "South Plant",
+        "y": 80,
+        "series": "Downtime"
+      },
+      {
+        "x": "East Plant",
+        "y": 88,
+        "series": "Efficiency (%)"
+      },
+      {
+        "x": "West Plant",
+        "y": 82,
+        "series": "Efficiency (%)"
+      },
+      {
+        "x": "North Plant",
+        "y": 90,
+        "series": "Efficiency (%)"
+      },
+      {
+        "x": "South Plant",
+        "y": 77,
+        "series": "Efficiency (%)"
+      }
+    ]
+  },
+  "title": "Factory Performance Metrics",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Factory"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Factory"
+      },
+      {
+        "field": "y",
+        "title": "Value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

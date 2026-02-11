@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Top Product Sales Across Different Quarters",
+  "description": "Converted from Plotly schema 27 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "quarter": "Q1 2023", "sales": 1200, "product": "Product A" },
+      { "quarter": "Q2 2023", "sales": 1500, "product": "Product A" },
+      { "quarter": "Q3 2023", "sales": 1800, "product": "Product A" },
+      { "quarter": "Q4 2023", "sales": 2000, "product": "Product A" },
+      { "quarter": "Q1 2023", "sales": 500, "product": "Product B" },
+      { "quarter": "Q2 2023", "sales": 750, "product": "Product B" },
+      { "quarter": "Q3 2023", "sales": 1000, "product": "Product B" },
+      { "quarter": "Q4 2023", "sales": 1250, "product": "Product B" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "nominal",
+      "axis": { "title": "Time" }
+    },
+    "y": {
+      "field": "sales",
+      "type": "quantitative",
+      "axis": { "title": "Sales" }
+    },
+    "color": {
+      "field": "product",
+      "type": "nominal",
+      "legend": { "title": "Product" }
+    },
+    "xOffset": { "field": "product" }
+  }
+}

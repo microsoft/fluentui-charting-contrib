@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "x": "CPU",
+        "y": "Engineering",
+        "value": 57.856110496777475
+      },
+      {
+        "x": "Memory",
+        "y": "Engineering",
+        "value": 44.5636184448649
+      },
+      {
+        "x": "Storage",
+        "y": "Engineering",
+        "value": 29.023426403518158
+      },
+      {
+        "x": "CPU",
+        "y": "Finance",
+        "value": 71.3553673551525
+      },
+      {
+        "x": "Memory",
+        "y": "Finance",
+        "value": 62.27034690502496
+      },
+      {
+        "x": "Storage",
+        "y": "Finance",
+        "value": 100
+      },
+      {
+        "x": "CPU",
+        "y": "HR",
+        "value": 41.46139056843834
+      },
+      {
+        "x": "Memory",
+        "y": "HR",
+        "value": 50.37503732352988
+      },
+      {
+        "x": "Storage",
+        "y": "HR",
+        "value": 60.036272223893526
+      },
+      {
+        "x": "CPU",
+        "y": "Marketing",
+        "value": 100
+      },
+      {
+        "x": "Memory",
+        "y": "Marketing",
+        "value": 85.33822298373245
+      },
+      {
+        "x": "Storage",
+        "y": "Marketing",
+        "value": 54.38690249318359
+      },
+      {
+        "x": "CPU",
+        "y": "R&D",
+        "value": 67.14030971930094
+      },
+      {
+        "x": "Memory",
+        "y": "R&D",
+        "value": 58.198427336395866
+      },
+      {
+        "x": "Storage",
+        "y": "R&D",
+        "value": 71.03474020930149
+      },
+      {
+        "x": "CPU",
+        "y": "Support",
+        "value": 70.02853514052163
+      },
+      {
+        "x": "Memory",
+        "y": "Support",
+        "value": 50.27134467895279
+      },
+      {
+        "x": "Storage",
+        "y": "Support",
+        "value": 37.50096524334286
+      }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "y",
+      "type": "ordinal"
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "blues"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Cloud Resource Usage Heatmap (May 2023 Month)"
+}

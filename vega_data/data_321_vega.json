@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Allocated vs Required Resources by Operation",
+  "description": "Converted from Plotly schema 321 - Grouped bar (simplified from 25 to 4 categories)",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "operation": "Operation A", "quantity": 120, "status": "Allocated" },
+      { "operation": "Operation B", "quantity": 150, "status": "Allocated" },
+      { "operation": "Operation C", "quantity": 100, "status": "Allocated" },
+      { "operation": "Operation D", "quantity": 130, "status": "Allocated" },
+      { "operation": "Operation E", "quantity": 140, "status": "Allocated" },
+      { "operation": "Operation F", "quantity": 110, "status": "Allocated" },
+      { "operation": "Operation G", "quantity": 165, "status": "Allocated" },
+      { "operation": "Operation H", "quantity": 180, "status": "Allocated" },
+      { "operation": "Operation I", "quantity": 140, "status": "Allocated" },
+      { "operation": "Operation J", "quantity": 170, "status": "Allocated" },
+      { "operation": "Operation A", "quantity": 150, "status": "Required" },
+      { "operation": "Operation B", "quantity": 120, "status": "Required" },
+      { "operation": "Operation C", "quantity": 130, "status": "Required" },
+      { "operation": "Operation D", "quantity": 160, "status": "Required" },
+      { "operation": "Operation E", "quantity": 130, "status": "Required" },
+      { "operation": "Operation F", "quantity": 115, "status": "Required" },
+      { "operation": "Operation G", "quantity": 150, "status": "Required" },
+      { "operation": "Operation H", "quantity": 170, "status": "Required" },
+      { "operation": "Operation I", "quantity": 135, "status": "Required" },
+      { "operation": "Operation J", "quantity": 160, "status": "Required" },
+      { "operation": "Operation A", "quantity": 110, "status": "Planned" },
+      { "operation": "Operation B", "quantity": 130, "status": "Planned" },
+      { "operation": "Operation C", "quantity": 120, "status": "Planned" },
+      { "operation": "Operation D", "quantity": 140, "status": "Planned" },
+      { "operation": "Operation E", "quantity": 145, "status": "Planned" },
+      { "operation": "Operation F", "quantity": 125, "status": "Planned" },
+      { "operation": "Operation G", "quantity": 135, "status": "Planned" },
+      { "operation": "Operation H", "quantity": 150, "status": "Planned" },
+      { "operation": "Operation I", "quantity": 130, "status": "Planned" },
+      { "operation": "Operation J", "quantity": 160, "status": "Planned" },
+      { "operation": "Operation A", "quantity": 140, "status": "Completed" },
+      { "operation": "Operation B", "quantity": 150, "status": "Completed" },
+      { "operation": "Operation C", "quantity": 110, "status": "Completed" },
+      { "operation": "Operation D", "quantity": 130, "status": "Completed" },
+      { "operation": "Operation E", "quantity": 165, "status": "Completed" },
+      { "operation": "Operation F", "quantity": 115, "status": "Completed" },
+      { "operation": "Operation G", "quantity": 135, "status": "Completed" },
+      { "operation": "Operation H", "quantity": 175, "status": "Completed" },
+      { "operation": "Operation I", "quantity": 120, "status": "Completed" },
+      { "operation": "Operation J", "quantity": 170, "status": "Completed" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "operation",
+      "type": "ordinal",
+      "axis": { "title": "Operation Type" }
+    },
+    "y": {
+      "field": "quantity",
+      "type": "quantitative",
+      "axis": { "title": "Quantity" }
+    },
+    "xOffset": {
+      "field": "status",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "status",
+      "type": "nominal",
+      "scale": { "range": ["#3182bd", "#cccccc", "#ff6384", "#4bc0c0"] },
+      "legend": { "title": "Status" }
+    },
+    "tooltip": [
+      { "field": "operation", "type": "ordinal", "title": "Operation" },
+      { "field": "status", "type": "nominal", "title": "Status" },
+      { "field": "quantity", "type": "quantitative", "title": "Quantity" }
+    ]
+  }
+}

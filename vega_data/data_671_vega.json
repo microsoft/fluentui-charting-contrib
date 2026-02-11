@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-01",
+        "y": 1200000,
+        "series": "Equity"
+      },
+      {
+        "x": "2024-02",
+        "y": 1220000,
+        "series": "Equity"
+      },
+      {
+        "x": "2024-03",
+        "y": 1250000,
+        "series": "Equity"
+      },
+      {
+        "x": "2024-01",
+        "y": 750000,
+        "series": "Bond"
+      },
+      {
+        "x": "2024-02",
+        "y": 760000,
+        "series": "Bond"
+      },
+      {
+        "x": "2024-03",
+        "y": 770000,
+        "series": "Bond"
+      },
+      {
+        "x": "2024-01",
+        "y": 500000,
+        "series": "Real Estate"
+      },
+      {
+        "x": "2024-02",
+        "y": 520000,
+        "series": "Real Estate"
+      },
+      {
+        "x": "2024-03",
+        "y": 540000,
+        "series": "Real Estate"
+      }
+    ]
+  },
+  "title": "Portfolio Market Value by Asset Type Over Time",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Market Value ($)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Market Value ($)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Heatmap of Healthcare Spending and Patient Satisfaction",
+  "description": "Converted from Plotly schema 198 - Heatmap",
+  "data": {
+    "values": [
+      { "hospital": "Hospital A", "parameter": "Healthcare Spending (USD)", "value": 2000000 },
+      { "hospital": "Hospital B", "parameter": "Healthcare Spending (USD)", "value": 1500000 },
+      { "hospital": "Hospital C", "parameter": "Healthcare Spending (USD)", "value": 1750000 },
+      { "hospital": "Hospital D", "parameter": "Healthcare Spending (USD)", "value": 1000000 },
+      { "hospital": "Hospital E", "parameter": "Healthcare Spending (USD)", "value": 2200000 },
+      { "hospital": "Hospital F", "parameter": "Healthcare Spending (USD)", "value": 1300000 },
+      { "hospital": "Hospital G", "parameter": "Healthcare Spending (USD)", "value": 1800000 },
+      { "hospital": "Hospital H", "parameter": "Healthcare Spending (USD)", "value": 1100000 },
+      { "hospital": "Hospital I", "parameter": "Healthcare Spending (USD)", "value": 2450000 },
+      { "hospital": "Hospital J", "parameter": "Healthcare Spending (USD)", "value": 1600000 },
+      { "hospital": "Hospital A", "parameter": "Patient Satisfaction Score", "value": 85 },
+      { "hospital": "Hospital B", "parameter": "Patient Satisfaction Score", "value": 75 },
+      { "hospital": "Hospital C", "parameter": "Patient Satisfaction Score", "value": 80 },
+      { "hospital": "Hospital D", "parameter": "Patient Satisfaction Score", "value": 70 },
+      { "hospital": "Hospital E", "parameter": "Patient Satisfaction Score", "value": 90 },
+      { "hospital": "Hospital F", "parameter": "Patient Satisfaction Score", "value": 78 },
+      { "hospital": "Hospital G", "parameter": "Patient Satisfaction Score", "value": 85 },
+      { "hospital": "Hospital H", "parameter": "Patient Satisfaction Score", "value": 72 },
+      { "hospital": "Hospital I", "parameter": "Patient Satisfaction Score", "value": 95 },
+      { "hospital": "Hospital J", "parameter": "Patient Satisfaction Score", "value": 82 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "hospital",
+      "type": "nominal",
+      "axis": { "title": "Hospital" }
+    },
+    "y": {
+      "field": "parameter",
+      "type": "nominal",
+      "axis": { "title": "Parameters" }
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Value" }
+    }
+  }
+}

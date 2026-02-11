@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Dr. Alice Smith",
+        "y": 6,
+        "series": "Mathematics"
+      },
+      {
+        "x": "Dr. Eva Patel",
+        "y": 3,
+        "series": "Mathematics"
+      },
+      {
+        "x": "Dr. Bob Jones",
+        "y": 4,
+        "series": "Physics"
+      },
+      {
+        "x": "Dr. Frank Wu",
+        "y": 6,
+        "series": "Physics"
+      },
+      {
+        "x": "Dr. Carol Lee",
+        "y": 5,
+        "series": "Chemistry"
+      },
+      {
+        "x": "Dr. Grace Chen",
+        "y": 5,
+        "series": "Chemistry"
+      },
+      {
+        "x": "Dr. David Kim",
+        "y": 7,
+        "series": "Biology"
+      },
+      {
+        "x": "Dr. Henry Brown",
+        "y": 6,
+        "series": "Biology"
+      },
+      {
+        "x": "Dr. Alice Smith",
+        "y": 5,
+        "series": "Workload Target"
+      },
+      {
+        "x": "Dr. Bob Jones",
+        "y": 5,
+        "series": "Workload Target"
+      },
+      {
+        "x": "Dr. Carol Lee",
+        "y": 5,
+        "series": "Workload Target"
+      },
+      {
+        "x": "Dr. David Kim",
+        "y": 6,
+        "series": "Workload Target"
+      },
+      {
+        "x": "Dr. Eva Patel",
+        "y": 5,
+        "series": "Workload Target"
+      },
+      {
+        "x": "Dr. Frank Wu",
+        "y": 5,
+        "series": "Workload Target"
+      },
+      {
+        "x": "Dr. Grace Chen",
+        "y": 5,
+        "series": "Workload Target"
+      },
+      {
+        "x": "Dr. Henry Brown",
+        "y": 6,
+        "series": "Workload Target"
+      }
+    ]
+  },
+  "title": "Faculty Workload Comparison: Courses Taught vs. Target",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Faculty Member"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Courses Taught (Semester)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Faculty Member"
+      },
+      {
+        "field": "y",
+        "title": "Courses Taught (Semester)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

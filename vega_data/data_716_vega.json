@@ -1,0 +1,112 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": "$1.0M-$1.5M"
+      },
+      {
+        "value": "$1.0M-$1.5M"
+      },
+      {
+        "value": "$1.0M-$1.5M"
+      },
+      {
+        "value": "$1.0M-$1.5M"
+      },
+      {
+        "value": "$1.0M-$1.5M"
+      },
+      {
+        "value": "$1.5M-$2.0M"
+      },
+      {
+        "value": "$1.5M-$2.0M"
+      },
+      {
+        "value": "$1.5M-$2.0M"
+      },
+      {
+        "value": "$1.5M-$2.0M"
+      },
+      {
+        "value": "$1.5M-$2.0M"
+      },
+      {
+        "value": "$2.0M-$2.5M"
+      },
+      {
+        "value": "$2.0M-$2.5M"
+      },
+      {
+        "value": "$2.0M-$2.5M"
+      },
+      {
+        "value": "$2.0M-$2.5M"
+      },
+      {
+        "value": "$2.0M-$2.5M"
+      },
+      {
+        "value": "$2.5M-$3.0M"
+      },
+      {
+        "value": "$2.5M-$3.0M"
+      },
+      {
+        "value": "$2.5M-$3.0M"
+      },
+      {
+        "value": "$2.5M-$3.0M"
+      },
+      {
+        "value": "$2.5M-$3.0M"
+      },
+      {
+        "value": "$3.0M-$3.5M"
+      },
+      {
+        "value": "$3.0M-$3.5M"
+      },
+      {
+        "value": "$3.0M-$3.5M"
+      },
+      {
+        "value": "$3.0M-$3.5M"
+      },
+      {
+        "value": "$3.0M-$3.5M"
+      },
+      {
+        "value": "$3.5M-$4.0M"
+      },
+      {
+        "value": "$3.5M-$4.0M"
+      },
+      {
+        "value": "$3.5M-$4.0M"
+      },
+      {
+        "value": "$3.5M-$4.0M"
+      },
+      {
+        "value": "$3.5M-$4.0M"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Healthcare Spending vs Patient Satisfaction"
+}

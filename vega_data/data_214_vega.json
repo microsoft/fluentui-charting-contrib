@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Purpose of Visit Distribution",
+  "description": "Converted from Plotly schema 214 - Pie chart",
+  "data": {
+    "values": [
+      { "purpose": "Leisure", "value": 35 },
+      { "purpose": "Business", "value": 40 },
+      { "purpose": "Other", "value": 25 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "purpose",
+      "type": "nominal",
+      "legend": { "title": "Purpose" }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Hardcover",
+        "y": 85,
+        "series": "2024"
+      },
+      {
+        "x": "Paperback",
+        "y": 130,
+        "series": "2024"
+      },
+      {
+        "x": "E‑book",
+        "y": 160,
+        "series": "2024"
+      },
+      {
+        "x": "Audiobook",
+        "y": 70,
+        "series": "2024"
+      },
+      {
+        "x": "Hardcover",
+        "y": 90,
+        "series": "2025"
+      },
+      {
+        "x": "Paperback",
+        "y": 140,
+        "series": "2025"
+      },
+      {
+        "x": "E‑book",
+        "y": 180,
+        "series": "2025"
+      },
+      {
+        "x": "Audiobook",
+        "y": 75,
+        "series": "2025"
+      }
+    ]
+  },
+  "title": "Book Sales by Format (2024 vs 2025)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Format"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sales"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Format"
+      },
+      {
+        "field": "y",
+        "title": "Sales"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

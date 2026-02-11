@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Occupancy Rates: Actual vs Forecasted",
+  "description": "Converted from Plotly schema 217 - Multi-series line chart",
+  "data": {
+    "values": [
+      { "month": "2023-01", "rate": 70, "type": "Actual" },
+      { "month": "2023-02", "rate": 75, "type": "Actual" },
+      { "month": "2023-03", "rate": 65, "type": "Actual" },
+      { "month": "2023-04", "rate": 80, "type": "Actual" },
+      { "month": "2023-05", "rate": 85, "type": "Actual" },
+      { "month": "2023-06", "rate": 90, "type": "Actual" },
+      { "month": "2023-07", "rate": 95, "type": "Actual" },
+      { "month": "2023-08", "rate": 85, "type": "Actual" },
+      { "month": "2023-09", "rate": 75, "type": "Actual" },
+      { "month": "2023-10", "rate": 80, "type": "Actual" },
+      { "month": "2023-11", "rate": 78, "type": "Actual" },
+      { "month": "2023-12", "rate": 88, "type": "Actual" },
+      { "month": "2024-01", "rate": 72, "type": "Forecasted" },
+      { "month": "2024-02", "rate": 78, "type": "Forecasted" },
+      { "month": "2024-03", "rate": 67, "type": "Forecasted" },
+      { "month": "2024-04", "rate": 82, "type": "Forecasted" },
+      { "month": "2024-05", "rate": 88, "type": "Forecasted" },
+      { "month": "2024-06", "rate": 92, "type": "Forecasted" },
+      { "month": "2024-07", "rate": 97, "type": "Forecasted" },
+      { "month": "2024-08", "rate": 87, "type": "Forecasted" },
+      { "month": "2024-09", "rate": 78, "type": "Forecasted" },
+      { "month": "2024-10", "rate": 82, "type": "Forecasted" },
+      { "month": "2024-11", "rate": 80, "type": "Forecasted" },
+      { "month": "2024-12", "rate": 90, "type": "Forecasted" }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "axis": { "title": "Month-Year" }
+    },
+    "y": {
+      "field": "rate",
+      "type": "quantitative",
+      "axis": { "title": "Occupancy Rate (%)" }
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Type" }
+    },
+    "strokeDash": {
+      "field": "type",
+      "type": "nominal"
+    }
+  }
+}

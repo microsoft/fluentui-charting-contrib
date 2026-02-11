@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Effect of Treatment Method on Recovery",
+  "description": "Converted from Plotly schema 87 - Scatter plot",
+  "data": {
+    "values": [
+      { "treatment": "Treatment X1", "recovery": 90 },
+      { "treatment": "Treatment X2", "recovery": 85 },
+      { "treatment": "Treatment Y1", "recovery": 88 },
+      { "treatment": "Treatment Y2", "recovery": 82 }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "treatment",
+      "type": "nominal",
+      "axis": { "title": "Treatment Method" }
+    },
+    "y": {
+      "field": "recovery",
+      "type": "quantitative",
+      "axis": { "title": "Recovery Rate (%)" }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Frequency of Client Interactions by Month",
+  "description": "Converted from Plotly schema 137 - Bar chart",
+  "data": {
+    "values": [
+      { "month": "January", "interactions": 20 },
+      { "month": "February", "interactions": 25 },
+      { "month": "March", "interactions": 18 },
+      { "month": "April", "interactions": 22 },
+      { "month": "May", "interactions": 30 },
+      { "month": "June", "interactions": 35 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "axis": { "title": "Month" },
+      "sort": ["January", "February", "March", "April", "May", "June"]
+    },
+    "y": {
+      "field": "interactions",
+      "type": "quantitative",
+      "axis": { "title": "Number of Interactions" }
+    }
+  }
+}

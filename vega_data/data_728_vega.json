@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": "2024-01"
+      },
+      {
+        "value": "2024-02"
+      },
+      {
+        "value": "2024-03"
+      },
+      {
+        "value": "2024-04"
+      },
+      {
+        "value": "2024-05"
+      },
+      {
+        "value": "2024-06"
+      },
+      {
+        "value": "2024-07"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Monthly Maintenance Completions by Ship Type and Region"
+}

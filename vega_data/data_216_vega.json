@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Guest Nationality Distribution",
+  "description": "Converted from Plotly schema 216 - Bubble chart",
+  "data": {
+    "values": [
+      { "country": "USA", "guests": 500, "size": 50 },
+      { "country": "UK", "guests": 300, "size": 30 },
+      { "country": "Germany", "guests": 200, "size": 20 },
+      { "country": "France", "guests": 250, "size": 25 },
+      { "country": "Japan", "guests": 150, "size": 15 }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "country",
+      "type": "nominal",
+      "axis": { "title": "Country" }
+    },
+    "y": {
+      "field": "guests",
+      "type": "quantitative",
+      "axis": { "title": "Number of Guests" }
+    },
+    "size": {
+      "field": "size",
+      "type": "quantitative",
+      "legend": { "title": "Size" }
+    }
+  }
+}

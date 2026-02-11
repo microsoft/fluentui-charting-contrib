@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Projected Maintenance Needs Over Time",
+  "description": "Converted from Plotly schema 307 - Multi-series line (simplified from 25 to 4 series)",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "2023-01", "needs": 15, "type": "Projected Needs" },
+      { "month": "2023-02", "needs": 12, "type": "Projected Needs" },
+      { "month": "2023-03", "needs": 20, "type": "Projected Needs" },
+      { "month": "2023-04", "needs": 22, "type": "Projected Needs" },
+      { "month": "2023-05", "needs": 18, "type": "Projected Needs" },
+      { "month": "2023-06", "needs": 25, "type": "Projected Needs" },
+      { "month": "2023-07", "needs": 17, "type": "Projected Needs" },
+      { "month": "2023-08", "needs": 19, "type": "Projected Needs" },
+      { "month": "2023-09", "needs": 21, "type": "Projected Needs" },
+      { "month": "2023-10", "needs": 23, "type": "Projected Needs" },
+      { "month": "2023-01", "needs": 14, "type": "Current Needs" },
+      { "month": "2023-02", "needs": 13, "type": "Current Needs" },
+      { "month": "2023-03", "needs": 21, "type": "Current Needs" },
+      { "month": "2023-04", "needs": 20, "type": "Current Needs" },
+      { "month": "2023-05", "needs": 17, "type": "Current Needs" },
+      { "month": "2023-06", "needs": 26, "type": "Current Needs" },
+      { "month": "2023-07", "needs": 18, "type": "Current Needs" },
+      { "month": "2023-08", "needs": 20, "type": "Current Needs" },
+      { "month": "2023-09", "needs": 22, "type": "Current Needs" },
+      { "month": "2023-10", "needs": 24, "type": "Current Needs" },
+      { "month": "2023-01", "needs": 12, "type": "High Estimate" },
+      { "month": "2023-02", "needs": 15, "type": "High Estimate" },
+      { "month": "2023-03", "needs": 18, "type": "High Estimate" },
+      { "month": "2023-04", "needs": 20, "type": "High Estimate" },
+      { "month": "2023-05", "needs": 21, "type": "High Estimate" },
+      { "month": "2023-06", "needs": 28, "type": "High Estimate" },
+      { "month": "2023-07", "needs": 17, "type": "High Estimate" },
+      { "month": "2023-08", "needs": 23, "type": "High Estimate" },
+      { "month": "2023-09", "needs": 18, "type": "High Estimate" },
+      { "month": "2023-10", "needs": 21, "type": "High Estimate" },
+      { "month": "2023-01", "needs": 11, "type": "Low Estimate" },
+      { "month": "2023-02", "needs": 16, "type": "Low Estimate" },
+      { "month": "2023-03", "needs": 17, "type": "Low Estimate" },
+      { "month": "2023-04", "needs": 19, "type": "Low Estimate" },
+      { "month": "2023-05", "needs": 20, "type": "Low Estimate" },
+      { "month": "2023-06", "needs": 29, "type": "Low Estimate" },
+      { "month": "2023-07", "needs": 18, "type": "Low Estimate" },
+      { "month": "2023-08", "needs": 20, "type": "Low Estimate" },
+      { "month": "2023-09", "needs": 17, "type": "Low Estimate" },
+      { "month": "2023-10", "needs": 22, "type": "Low Estimate" }
+    ]
+  },
+  "mark": { "type": "line", "point": true },
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "axis": { "title": "Month" }
+    },
+    "y": {
+      "field": "needs",
+      "type": "quantitative",
+      "axis": { "title": "Maintenance Needs (in hours)" }
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "scale": { "range": ["blue", "green", "orange", "brown"] },
+      "legend": { "title": "Type" }
+    }
+  }
+}

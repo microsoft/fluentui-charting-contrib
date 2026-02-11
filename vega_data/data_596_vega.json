@@ -1,0 +1,1002 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 549,
+        "series": "East, Hatchback"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 610,
+        "series": "East, Hatchback"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 517,
+        "series": "East, Hatchback"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 508,
+        "series": "East, Hatchback"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 557,
+        "series": "East, Hatchback"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 586,
+        "series": "East, Hatchback"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 538,
+        "series": "East, Hatchback"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 634,
+        "series": "East, Hatchback"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 544,
+        "series": "East, Hatchback"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 525,
+        "series": "East, Hatchback"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 680,
+        "series": "East, Hatchback"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 548,
+        "series": "East, Hatchback"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 580,
+        "series": "East, SUV"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 681,
+        "series": "East, SUV"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 641,
+        "series": "East, SUV"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 600,
+        "series": "East, SUV"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 692,
+        "series": "East, SUV"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 666,
+        "series": "East, SUV"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 568,
+        "series": "East, SUV"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 673,
+        "series": "East, SUV"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 532,
+        "series": "East, SUV"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 559,
+        "series": "East, SUV"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 576,
+        "series": "East, SUV"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 554,
+        "series": "East, SUV"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 1072,
+        "series": "East, Sedan"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 1142,
+        "series": "East, Sedan"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 1179,
+        "series": "East, Sedan"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 1157,
+        "series": "East, Sedan"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 1030,
+        "series": "East, Sedan"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 1168,
+        "series": "East, Sedan"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 1144,
+        "series": "East, Sedan"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 1073,
+        "series": "East, Sedan"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 1157,
+        "series": "East, Sedan"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 1053,
+        "series": "East, Sedan"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 1160,
+        "series": "East, Sedan"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 1151,
+        "series": "East, Sedan"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 868,
+        "series": "East, Truck"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 821,
+        "series": "East, Truck"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 815,
+        "series": "East, Truck"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 916,
+        "series": "East, Truck"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 793,
+        "series": "East, Truck"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 794,
+        "series": "East, Truck"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 885,
+        "series": "East, Truck"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 898,
+        "series": "East, Truck"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 804,
+        "series": "East, Truck"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 903,
+        "series": "East, Truck"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 831,
+        "series": "East, Truck"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 863,
+        "series": "East, Truck"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 933,
+        "series": "North, Hatchback"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 950,
+        "series": "North, Hatchback"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 1028,
+        "series": "North, Hatchback"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 880,
+        "series": "North, Hatchback"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 998,
+        "series": "North, Hatchback"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 998,
+        "series": "North, Hatchback"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 993,
+        "series": "North, Hatchback"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 1018,
+        "series": "North, Hatchback"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 883,
+        "series": "North, Hatchback"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 860,
+        "series": "North, Hatchback"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 978,
+        "series": "North, Hatchback"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 883,
+        "series": "North, Hatchback"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 945,
+        "series": "North, SUV"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 993,
+        "series": "North, SUV"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 1080,
+        "series": "North, SUV"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 994,
+        "series": "North, SUV"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 987,
+        "series": "North, SUV"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 1071,
+        "series": "North, SUV"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 931,
+        "series": "North, SUV"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 983,
+        "series": "North, SUV"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 978,
+        "series": "North, SUV"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 915,
+        "series": "North, SUV"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 1054,
+        "series": "North, SUV"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 1021,
+        "series": "North, SUV"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 1151,
+        "series": "North, Sedan"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 1221,
+        "series": "North, Sedan"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 1171,
+        "series": "North, Sedan"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 1207,
+        "series": "North, Sedan"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 1113,
+        "series": "North, Sedan"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 1125,
+        "series": "North, Sedan"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 1140,
+        "series": "North, Sedan"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 1191,
+        "series": "North, Sedan"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 1174,
+        "series": "North, Sedan"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 1192,
+        "series": "North, Sedan"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 1244,
+        "series": "North, Sedan"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 1162,
+        "series": "North, Sedan"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 1114,
+        "series": "North, Truck"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 1126,
+        "series": "North, Truck"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 1077,
+        "series": "North, Truck"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 991,
+        "series": "North, Truck"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 997,
+        "series": "North, Truck"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 1091,
+        "series": "North, Truck"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 1091,
+        "series": "North, Truck"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 1127,
+        "series": "North, Truck"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 1016,
+        "series": "North, Truck"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 1096,
+        "series": "North, Truck"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 1001,
+        "series": "North, Truck"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 980,
+        "series": "North, Truck"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 594,
+        "series": "South, Hatchback"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 598,
+        "series": "South, Hatchback"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 567,
+        "series": "South, Hatchback"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 545,
+        "series": "South, Hatchback"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 610,
+        "series": "South, Hatchback"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 615,
+        "series": "South, Hatchback"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 490,
+        "series": "South, Hatchback"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 608,
+        "series": "South, Hatchback"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 584,
+        "series": "South, Hatchback"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 552,
+        "series": "South, Hatchback"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 515,
+        "series": "South, Hatchback"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 516,
+        "series": "South, Hatchback"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 932,
+        "series": "South, SUV"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 941,
+        "series": "South, SUV"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 978,
+        "series": "South, SUV"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 992,
+        "series": "South, SUV"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 949,
+        "series": "South, SUV"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 903,
+        "series": "South, SUV"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 990,
+        "series": "South, SUV"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 971,
+        "series": "South, SUV"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 1020,
+        "series": "South, SUV"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 934,
+        "series": "South, SUV"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 918,
+        "series": "South, SUV"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 856,
+        "series": "South, SUV"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 887,
+        "series": "South, Sedan"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 860,
+        "series": "South, Sedan"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 797,
+        "series": "South, Sedan"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 786,
+        "series": "South, Sedan"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 875,
+        "series": "South, Sedan"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 756,
+        "series": "South, Sedan"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 820,
+        "series": "South, Sedan"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 924,
+        "series": "South, Sedan"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 812,
+        "series": "South, Sedan"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 790,
+        "series": "South, Sedan"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 857,
+        "series": "South, Sedan"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 874,
+        "series": "South, Sedan"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 1170,
+        "series": "South, Truck"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 1164,
+        "series": "South, Truck"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 1096,
+        "series": "South, Truck"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 1095,
+        "series": "South, Truck"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 1001,
+        "series": "South, Truck"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 1114,
+        "series": "South, Truck"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 1179,
+        "series": "South, Truck"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 1037,
+        "series": "South, Truck"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 1163,
+        "series": "South, Truck"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 1049,
+        "series": "South, Truck"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 1094,
+        "series": "South, Truck"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 1132,
+        "series": "South, Truck"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 769,
+        "series": "West, Hatchback"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 718,
+        "series": "West, Hatchback"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 679,
+        "series": "West, Hatchback"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 661,
+        "series": "West, Hatchback"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 719,
+        "series": "West, Hatchback"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 800,
+        "series": "West, Hatchback"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 727,
+        "series": "West, Hatchback"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 689,
+        "series": "West, Hatchback"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 666,
+        "series": "West, Hatchback"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 688,
+        "series": "West, Hatchback"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 659,
+        "series": "West, Hatchback"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 814,
+        "series": "West, Hatchback"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 1132,
+        "series": "West, SUV"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 1268,
+        "series": "West, SUV"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 1273,
+        "series": "West, SUV"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 1265,
+        "series": "West, SUV"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 1226,
+        "series": "West, SUV"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 1141,
+        "series": "West, SUV"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 1237,
+        "series": "West, SUV"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 1234,
+        "series": "West, SUV"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 1233,
+        "series": "West, SUV"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 1199,
+        "series": "West, SUV"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 1277,
+        "series": "West, SUV"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 1220,
+        "series": "West, SUV"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 534,
+        "series": "West, Sedan"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 511,
+        "series": "West, Sedan"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 593,
+        "series": "West, Sedan"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 506,
+        "series": "West, Sedan"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 500,
+        "series": "West, Sedan"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 453,
+        "series": "West, Sedan"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 535,
+        "series": "West, Sedan"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 443,
+        "series": "West, Sedan"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 578,
+        "series": "West, Sedan"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 525,
+        "series": "West, Sedan"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 560,
+        "series": "West, Sedan"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 548,
+        "series": "West, Sedan"
+      },
+      {
+        "x": "2023-01-31T00:00:00",
+        "y": 624,
+        "series": "West, Truck"
+      },
+      {
+        "x": "2023-02-28T00:00:00",
+        "y": 660,
+        "series": "West, Truck"
+      },
+      {
+        "x": "2023-03-31T00:00:00",
+        "y": 649,
+        "series": "West, Truck"
+      },
+      {
+        "x": "2023-04-30T00:00:00",
+        "y": 575,
+        "series": "West, Truck"
+      },
+      {
+        "x": "2023-05-31T00:00:00",
+        "y": 656,
+        "series": "West, Truck"
+      },
+      {
+        "x": "2023-06-30T00:00:00",
+        "y": 555,
+        "series": "West, Truck"
+      },
+      {
+        "x": "2023-07-31T00:00:00",
+        "y": 598,
+        "series": "West, Truck"
+      },
+      {
+        "x": "2023-08-31T00:00:00",
+        "y": 534,
+        "series": "West, Truck"
+      },
+      {
+        "x": "2023-09-30T00:00:00",
+        "y": 566,
+        "series": "West, Truck"
+      },
+      {
+        "x": "2023-10-31T00:00:00",
+        "y": 574,
+        "series": "West, Truck"
+      },
+      {
+        "x": "2023-11-30T00:00:00",
+        "y": 563,
+        "series": "West, Truck"
+      },
+      {
+        "x": "2023-12-31T00:00:00",
+        "y": 542,
+        "series": "West, Truck"
+      }
+    ]
+  },
+  "title": "Monthly Automobile Sales by Region and Model (2023)",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Date"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sales Volume"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Date"
+      },
+      {
+        "field": "y",
+        "title": "Sales Volume"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

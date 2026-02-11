@@ -1,0 +1,298 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 60.59970653660494,
+        "theta": "Asset_Class_Diversification_Score",
+        "series": "CUST001"
+      },
+      {
+        "r": 21.23506965774815,
+        "theta": "Volatility_Score",
+        "series": "CUST001"
+      },
+      {
+        "r": 36.71117368334277,
+        "theta": "Leverage_Score",
+        "series": "CUST001"
+      },
+      {
+        "r": 63.41496685457911,
+        "theta": "Liquidity_Score",
+        "series": "CUST001"
+      },
+      {
+        "r": 20.983441136030095,
+        "theta": "Investment_Horizon_Score",
+        "series": "CUST001"
+      },
+      {
+        "r": 92.28928685254539,
+        "theta": "Asset_Class_Diversification_Score",
+        "series": "CUST002"
+      },
+      {
+        "r": 78.19459112971967,
+        "theta": "Volatility_Score",
+        "series": "CUST002"
+      },
+      {
+        "r": 8.36963163912251,
+        "theta": "Leverage_Score",
+        "series": "CUST002"
+      },
+      {
+        "r": 39.378826802801036,
+        "theta": "Liquidity_Score",
+        "series": "CUST002"
+      },
+      {
+        "r": 54.56592191001432,
+        "theta": "Investment_Horizon_Score",
+        "series": "CUST002"
+      },
+      {
+        "r": 80.25966679962728,
+        "theta": "Asset_Class_Diversification_Score",
+        "series": "CUST003"
+      },
+      {
+        "r": 69.94655844802531,
+        "theta": "Volatility_Score",
+        "series": "CUST003"
+      },
+      {
+        "r": 17.52867891211309,
+        "theta": "Leverage_Score",
+        "series": "CUST003"
+      },
+      {
+        "r": 33.57783761419037,
+        "theta": "Liquidity_Score",
+        "series": "CUST003"
+      },
+      {
+        "r": 13.094966900369656,
+        "theta": "Investment_Horizon_Score",
+        "series": "CUST003"
+      },
+      {
+        "r": 72.92621663083702,
+        "theta": "Asset_Class_Diversification_Score",
+        "series": "CUST004"
+      },
+      {
+        "r": 32.74034664069657,
+        "theta": "Volatility_Score",
+        "series": "CUST004"
+      },
+      {
+        "r": 21.9817105976215,
+        "theta": "Leverage_Score",
+        "series": "CUST004"
+      },
+      {
+        "r": 82.18870454893333,
+        "theta": "Liquidity_Score",
+        "series": "CUST004"
+      },
+      {
+        "r": 91.83883618709038,
+        "theta": "Investment_Horizon_Score",
+        "series": "CUST004"
+      },
+      {
+        "r": 48.581025224334006,
+        "theta": "Asset_Class_Diversification_Score",
+        "series": "CUST005"
+      },
+      {
+        "r": 30.909498032426036,
+        "theta": "Volatility_Score",
+        "series": "CUST005"
+      },
+      {
+        "r": 27.364199053022155,
+        "theta": "Leverage_Score",
+        "series": "CUST005"
+      },
+      {
+        "r": 83.10976181910077,
+        "theta": "Liquidity_Score",
+        "series": "CUST005"
+      },
+      {
+        "r": 33.290198344001524,
+        "theta": "Investment_Horizon_Score",
+        "series": "CUST005"
+      },
+      {
+        "r": 48.57969861849114,
+        "theta": "Asset_Class_Diversification_Score",
+        "series": "CUST006"
+      },
+      {
+        "r": 31.00427059120603,
+        "theta": "Volatility_Score",
+        "series": "CUST006"
+      },
+      {
+        "r": 47.110557683580815,
+        "theta": "Leverage_Score",
+        "series": "CUST006"
+      },
+      {
+        "r": 74.46185414640536,
+        "theta": "Liquidity_Score",
+        "series": "CUST006"
+      },
+      {
+        "r": 69.62700559185838,
+        "theta": "Investment_Horizon_Score",
+        "series": "CUST006"
+      },
+      {
+        "r": 43.19459866925097,
+        "theta": "Asset_Class_Diversification_Score",
+        "series": "CUST007"
+      },
+      {
+        "r": 38.254534577572265,
+        "theta": "Volatility_Score",
+        "series": "CUST007"
+      },
+      {
+        "r": 11.980426929501585,
+        "theta": "Leverage_Score",
+        "series": "CUST007"
+      },
+      {
+        "r": 46.753757304535384,
+        "theta": "Liquidity_Score",
+        "series": "CUST007"
+      },
+      {
+        "r": 38.053996848046985,
+        "theta": "Investment_Horizon_Score",
+        "series": "CUST007"
+      },
+      {
+        "r": 87.63968801762144,
+        "theta": "Asset_Class_Diversification_Score",
+        "series": "CUST008"
+      },
+      {
+        "r": 51.48538589793427,
+        "theta": "Volatility_Score",
+        "series": "CUST008"
+      },
+      {
+        "r": 30.854066304816698,
+        "theta": "Leverage_Score",
+        "series": "CUST008"
+      },
+      {
+        "r": 35.37196627035111,
+        "theta": "Liquidity_Score",
+        "series": "CUST008"
+      },
+      {
+        "r": 56.80612190600297,
+        "theta": "Investment_Horizon_Score",
+        "series": "CUST008"
+      },
+      {
+        "r": 73.06132564587648,
+        "theta": "Asset_Class_Diversification_Score",
+        "series": "CUST009"
+      },
+      {
+        "r": 45.916701118526944,
+        "theta": "Volatility_Score",
+        "series": "CUST009"
+      },
+      {
+        "r": 35.54487413172255,
+        "theta": "Leverage_Score",
+        "series": "CUST009"
+      },
+      {
+        "r": 67.63281645816863,
+        "theta": "Liquidity_Score",
+        "series": "CUST009"
+      },
+      {
+        "r": 59.203925140895166,
+        "theta": "Investment_Horizon_Score",
+        "series": "CUST009"
+      },
+      {
+        "r": 78.9439917787825,
+        "theta": "Asset_Class_Diversification_Score",
+        "series": "CUST010"
+      },
+      {
+        "r": 37.47374841188251,
+        "theta": "Volatility_Score",
+        "series": "CUST010"
+      },
+      {
+        "r": 2.7870247631998635,
+        "theta": "Leverage_Score",
+        "series": "CUST010"
+      },
+      {
+        "r": 54.20838715567807,
+        "theta": "Liquidity_Score",
+        "series": "CUST010"
+      },
+      {
+        "r": 26.636900997297435,
+        "theta": "Investment_Horizon_Score",
+        "series": "CUST010"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Customer Investment Risk Profile Analysis"
+}

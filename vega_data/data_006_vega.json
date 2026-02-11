@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Share of Total Annual Sales by Product Category",
+  "description": "Converted from Plotly schema 6 - Pie chart",
+  "data": {
+    "values": [
+      { "category": "Category A", "value": 60000 },
+      { "category": "Category B", "value": 100000 },
+      { "category": "Category C", "value": 80000 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "legend": { "title": "Category" }
+    }
+  }
+}

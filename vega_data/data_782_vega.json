@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Coal",
+        "y": 400,
+        "series": "2023"
+      },
+      {
+        "x": "Nat Gas",
+        "y": 350,
+        "series": "2023"
+      },
+      {
+        "x": "Solar",
+        "y": 200,
+        "series": "2023"
+      },
+      {
+        "x": "Wind",
+        "y": 180,
+        "series": "2023"
+      },
+      {
+        "x": "Hydro",
+        "y": 220,
+        "series": "2023"
+      },
+      {
+        "x": "Coal",
+        "y": 380,
+        "series": "2024"
+      },
+      {
+        "x": "Nat Gas",
+        "y": 340,
+        "series": "2024"
+      },
+      {
+        "x": "Solar",
+        "y": 230,
+        "series": "2024"
+      },
+      {
+        "x": "Wind",
+        "y": 200,
+        "series": "2024"
+      },
+      {
+        "x": "Hydro",
+        "y": 210,
+        "series": "2024"
+      }
+    ]
+  },
+  "title": "Energy Consumption by Source 2023 vs 2024",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Source"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "TWh"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Source"
+      },
+      {
+        "field": "y",
+        "title": "TWh"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Concentration of Different Demographics Across Departments",
+  "description": "Converted from Plotly schema 80 - Heatmap",
+  "data": {
+    "values": [
+      { "demographic": "Women", "department": "Dept A", "count": 5 },
+      { "demographic": "Women", "department": "Dept B", "count": 10 },
+      { "demographic": "Women", "department": "Dept C", "count": 0 },
+      { "demographic": "Men", "department": "Dept A", "count": 10 },
+      { "demographic": "Men", "department": "Dept B", "count": 15 },
+      { "demographic": "Men", "department": "Dept C", "count": 5 },
+      { "demographic": "Nonbinary", "department": "Dept A", "count": 1 },
+      { "demographic": "Nonbinary", "department": "Dept B", "count": 2 },
+      { "demographic": "Nonbinary", "department": "Dept C", "count": 1 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "department",
+      "type": "nominal",
+      "axis": { "title": "Department" }
+    },
+    "y": {
+      "field": "demographic",
+      "type": "nominal",
+      "axis": { "title": "Demographic" }
+    },
+    "color": {
+      "field": "count",
+      "type": "quantitative",
+      "scale": { "scheme": "spectral" },
+      "legend": { "title": "Count" }
+    }
+  }
+}

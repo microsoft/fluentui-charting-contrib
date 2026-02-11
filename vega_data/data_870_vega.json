@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": "Q1"
+      },
+      {
+        "value": "Q1"
+      },
+      {
+        "value": "Q1"
+      },
+      {
+        "value": "Q1"
+      },
+      {
+        "value": "Q1"
+      },
+      {
+        "value": "Q2"
+      },
+      {
+        "value": "Q2"
+      },
+      {
+        "value": "Q2"
+      },
+      {
+        "value": "Q2"
+      },
+      {
+        "value": "Q2"
+      },
+      {
+        "value": "Q3"
+      },
+      {
+        "value": "Q3"
+      },
+      {
+        "value": "Q3"
+      },
+      {
+        "value": "Q3"
+      },
+      {
+        "value": "Q3"
+      },
+      {
+        "value": "Q4"
+      },
+      {
+        "value": "Q4"
+      },
+      {
+        "value": "Q4"
+      },
+      {
+        "value": "Q4"
+      },
+      {
+        "value": "Q4"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Workforce Deployment Across Projects/Quarters"
+}

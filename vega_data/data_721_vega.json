@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": "Engineering"
+      },
+      {
+        "value": "Engineering"
+      },
+      {
+        "value": "Engineering"
+      },
+      {
+        "value": "Finance"
+      },
+      {
+        "value": "Finance"
+      },
+      {
+        "value": "Finance"
+      },
+      {
+        "value": "HR"
+      },
+      {
+        "value": "HR"
+      },
+      {
+        "value": "HR"
+      },
+      {
+        "value": "Marketing"
+      },
+      {
+        "value": "Marketing"
+      },
+      {
+        "value": "Marketing"
+      },
+      {
+        "value": "Operations"
+      },
+      {
+        "value": "Operations"
+      },
+      {
+        "value": "Operations"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Department-wise Cloud Resource Usage Percentage Across Cloud Providers (Monthly Aggregation)"
+}

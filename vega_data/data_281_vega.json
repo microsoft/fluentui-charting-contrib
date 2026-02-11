@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "إحصائيات مراقبة الجودة الشهرية",
+  "description": "Converted from Plotly schema 281 - Multi-series line+markers with Arabic labels",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "يناير", "rate": 98, "company": "شركة A" },
+      { "month": "فبراير", "rate": 95, "company": "شركة A" },
+      { "month": "مارس", "rate": 97, "company": "شركة A" },
+      { "month": "أبريل", "rate": 96, "company": "شركة A" },
+      { "month": "مايو", "rate": 99, "company": "شركة A" },
+      { "month": "يونيو", "rate": 92, "company": "شركة A" },
+      { "month": "يوليو", "rate": 94, "company": "شركة A" },
+      { "month": "أغسطس", "rate": 91, "company": "شركة A" },
+      { "month": "سبتمبر", "rate": 95, "company": "شركة A" },
+      { "month": "أكتوبر", "rate": 93, "company": "شركة A" },
+      { "month": "يناير", "rate": 96, "company": "شركة B" },
+      { "month": "فبراير", "rate": 94, "company": "شركة B" },
+      { "month": "مارس", "rate": 95, "company": "شركة B" },
+      { "month": "أبريل", "rate": 92, "company": "شركة B" },
+      { "month": "مايو", "rate": 97, "company": "شركة B" },
+      { "month": "يونيو", "rate": 91, "company": "شركة B" },
+      { "month": "يوليو", "rate": 89, "company": "شركة B" },
+      { "month": "أغسطس", "rate": 90, "company": "شركة B" },
+      { "month": "سبتمبر", "rate": 93, "company": "شركة B" },
+      { "month": "أكتوبر", "rate": 91, "company": "شركة B" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "sort": ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر"],
+          "axis": { "title": "الشهر" }
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative",
+          "axis": { "title": "نسبة الجودة" }
+        },
+        "color": {
+          "field": "company",
+          "type": "nominal",
+          "scale": { "range": ["blue", "green"] },
+          "legend": { "title": "الشركة" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "month", "type": "ordinal" },
+        "y": { "field": "rate", "type": "quantitative" },
+        "color": { "field": "company", "type": "nominal" }
+      }
+    }
+  ]
+}

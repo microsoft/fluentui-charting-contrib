@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Discoloration",
+        "y": 4,
+        "series": "Series"
+      },
+      {
+        "x": "Misalignment",
+        "y": 4,
+        "series": "Series"
+      },
+      {
+        "x": "Dent",
+        "y": 4,
+        "series": "Series"
+      },
+      {
+        "x": "Scratch",
+        "y": 3,
+        "series": "Series"
+      },
+      {
+        "x": "Discoloration",
+        "y": 26.666666666666668,
+        "series": "Cumulative Percentage"
+      },
+      {
+        "x": "Misalignment",
+        "y": 53.333333333333336,
+        "series": "Cumulative Percentage"
+      },
+      {
+        "x": "Dent",
+        "y": 80,
+        "series": "Cumulative Percentage"
+      },
+      {
+        "x": "Scratch",
+        "y": 100,
+        "series": "Cumulative Percentage"
+      }
+    ]
+  },
+  "title": "Pareto Chart of Defect Types",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "type_of_defect"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "count"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "type_of_defect"
+      },
+      {
+        "field": "y",
+        "title": "count"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

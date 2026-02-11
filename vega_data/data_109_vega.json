@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Construction Project Progress vs Timeline",
+  "description": "Converted from Plotly schema 109 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "project": "Project A", "percentage": 75, "metric": "Progress (%)" },
+      { "project": "Project B", "percentage": 60, "metric": "Progress (%)" },
+      { "project": "Project C", "percentage": 85, "metric": "Progress (%)" },
+      { "project": "Project A", "percentage": 80, "metric": "Timeline (%)" },
+      { "project": "Project B", "percentage": 65, "metric": "Timeline (%)" },
+      { "project": "Project C", "percentage": 90, "metric": "Timeline (%)" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "project",
+      "type": "nominal",
+      "axis": { "title": "Projects" }
+    },
+    "y": {
+      "field": "percentage",
+      "type": "quantitative",
+      "axis": { "title": "Percentage" }
+    },
+    "xOffset": {
+      "field": "metric"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

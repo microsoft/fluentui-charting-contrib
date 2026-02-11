@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-35",
+        "y": 4,
+        "series": "Fleet_A"
+      },
+      {
+        "x": "2023-35",
+        "y": 3,
+        "series": "Fleet_A"
+      },
+      {
+        "x": "2023-37",
+        "y": 7,
+        "series": "Fleet_B"
+      },
+      {
+        "x": "2023-38",
+        "y": 8,
+        "series": "Fleet_B"
+      },
+      {
+        "x": "2023-37",
+        "y": 5,
+        "series": "Fleet_C"
+      }
+    ]
+  },
+  "title": "Projected Maintenance Needs",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "parts replaced"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "week"
+      },
+      {
+        "field": "y",
+        "title": "parts replaced"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

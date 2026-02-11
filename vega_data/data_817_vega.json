@@ -1,0 +1,242 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Combat",
+        "y": 534,
+        "series": "Ammunition, allocated quantity"
+      },
+      {
+        "x": "Logistics",
+        "y": 723,
+        "series": "Ammunition, allocated quantity"
+      },
+      {
+        "x": "Reconnaissance",
+        "y": 487,
+        "series": "Ammunition, allocated quantity"
+      },
+      {
+        "x": "Training",
+        "y": 468,
+        "series": "Ammunition, allocated quantity"
+      },
+      {
+        "x": "Combat",
+        "y": 601,
+        "series": "Ammunition, required quantity"
+      },
+      {
+        "x": "Logistics",
+        "y": 816,
+        "series": "Ammunition, required quantity"
+      },
+      {
+        "x": "Reconnaissance",
+        "y": 624,
+        "series": "Ammunition, required quantity"
+      },
+      {
+        "x": "Training",
+        "y": 542,
+        "series": "Ammunition, required quantity"
+      },
+      {
+        "x": "Combat",
+        "y": 585,
+        "series": "Drones, allocated quantity"
+      },
+      {
+        "x": "Logistics",
+        "y": 555,
+        "series": "Drones, allocated quantity"
+      },
+      {
+        "x": "Reconnaissance",
+        "y": 358,
+        "series": "Drones, allocated quantity"
+      },
+      {
+        "x": "Training",
+        "y": 626,
+        "series": "Drones, allocated quantity"
+      },
+      {
+        "x": "Combat",
+        "y": 714,
+        "series": "Drones, required quantity"
+      },
+      {
+        "x": "Logistics",
+        "y": 631,
+        "series": "Drones, required quantity"
+      },
+      {
+        "x": "Reconnaissance",
+        "y": 467,
+        "series": "Drones, required quantity"
+      },
+      {
+        "x": "Training",
+        "y": 710,
+        "series": "Drones, required quantity"
+      },
+      {
+        "x": "Combat",
+        "y": 662,
+        "series": "Medical Kits, allocated quantity"
+      },
+      {
+        "x": "Logistics",
+        "y": 466,
+        "series": "Medical Kits, allocated quantity"
+      },
+      {
+        "x": "Reconnaissance",
+        "y": 608,
+        "series": "Medical Kits, allocated quantity"
+      },
+      {
+        "x": "Training",
+        "y": 566,
+        "series": "Medical Kits, allocated quantity"
+      },
+      {
+        "x": "Combat",
+        "y": 801,
+        "series": "Medical Kits, required quantity"
+      },
+      {
+        "x": "Logistics",
+        "y": 535,
+        "series": "Medical Kits, required quantity"
+      },
+      {
+        "x": "Reconnaissance",
+        "y": 715,
+        "series": "Medical Kits, required quantity"
+      },
+      {
+        "x": "Training",
+        "y": 735,
+        "series": "Medical Kits, required quantity"
+      },
+      {
+        "x": "Combat",
+        "y": 702,
+        "series": "Personnel, allocated quantity"
+      },
+      {
+        "x": "Logistics",
+        "y": 695,
+        "series": "Personnel, allocated quantity"
+      },
+      {
+        "x": "Reconnaissance",
+        "y": 559,
+        "series": "Personnel, allocated quantity"
+      },
+      {
+        "x": "Training",
+        "y": 680,
+        "series": "Personnel, allocated quantity"
+      },
+      {
+        "x": "Combat",
+        "y": 805,
+        "series": "Personnel, required quantity"
+      },
+      {
+        "x": "Logistics",
+        "y": 845,
+        "series": "Personnel, required quantity"
+      },
+      {
+        "x": "Reconnaissance",
+        "y": 692,
+        "series": "Personnel, required quantity"
+      },
+      {
+        "x": "Training",
+        "y": 765,
+        "series": "Personnel, required quantity"
+      },
+      {
+        "x": "Combat",
+        "y": 562,
+        "series": "Vehicles, allocated quantity"
+      },
+      {
+        "x": "Logistics",
+        "y": 662,
+        "series": "Vehicles, allocated quantity"
+      },
+      {
+        "x": "Reconnaissance",
+        "y": 604,
+        "series": "Vehicles, allocated quantity"
+      },
+      {
+        "x": "Training",
+        "y": 584,
+        "series": "Vehicles, allocated quantity"
+      },
+      {
+        "x": "Combat",
+        "y": 612,
+        "series": "Vehicles, required quantity"
+      },
+      {
+        "x": "Logistics",
+        "y": 672,
+        "series": "Vehicles, required quantity"
+      },
+      {
+        "x": "Reconnaissance",
+        "y": 689,
+        "series": "Vehicles, required quantity"
+      },
+      {
+        "x": "Training",
+        "y": 717,
+        "series": "Vehicles, required quantity"
+      }
+    ]
+  },
+  "title": "Allocated vs Required Resources by Operation Type",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "operation type"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "quantity"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "operation type"
+      },
+      {
+        "field": "y",
+        "title": "quantity"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

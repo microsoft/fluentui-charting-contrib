@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2022",
+        "y": 33.76,
+        "series": "Series"
+      },
+      {
+        "x": "2021",
+        "y": 39.31,
+        "series": "Series"
+      },
+      {
+        "x": "2020",
+        "y": 31.97,
+        "series": "Series"
+      },
+      {
+        "x": "2019",
+        "y": 38.04,
+        "series": "Series"
+      },
+      {
+        "x": "2018",
+        "y": 37.17,
+        "series": "Series"
+      },
+      {
+        "x": "2017",
+        "y": 37.57,
+        "series": "Series"
+      },
+      {
+        "x": "2016",
+        "y": 27.89,
+        "series": "Series"
+      },
+      {
+        "x": "2015",
+        "y": 25.8,
+        "series": "Series"
+      },
+      {
+        "x": "2014",
+        "y": 26.86,
+        "series": "Series"
+      },
+      {
+        "x": "2013",
+        "y": 29.19,
+        "series": "Series"
+      },
+      {
+        "x": "2012",
+        "y": 29.31,
+        "series": "Series"
+      },
+      {
+        "x": "2011",
+        "y": 29.67,
+        "series": "Series"
+      },
+      {
+        "x": "2010",
+        "y": 29.08,
+        "series": "Series"
+      },
+      {
+        "x": "2009",
+        "y": 28.52,
+        "series": "Series"
+      },
+      {
+        "x": "2008",
+        "y": 26.18,
+        "series": "Series"
+      },
+      {
+        "x": "2007",
+        "y": 15.68,
+        "series": "Series"
+      },
+      {
+        "x": "2006",
+        "y": 19.3,
+        "series": "Series"
+      },
+      {
+        "x": "2005",
+        "y": 18.09,
+        "series": "Series"
+      },
+      {
+        "x": "2004",
+        "y": 16.8,
+        "series": "Series"
+      },
+      {
+        "x": "2003",
+        "y": 13.69,
+        "series": "Series"
+      },
+      {
+        "x": "2002",
+        "y": 10.79,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Operating Margin over the Years",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Operating Margin (%)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Operating Margin (%)"
+      }
+    ]
+  }
+}

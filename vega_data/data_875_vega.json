@@ -1,0 +1,198 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 10.892244336963433,
+        "theta": "Speed Variance",
+        "series": "D-101"
+      },
+      {
+        "r": 4,
+        "theta": "Harsh Braking Events",
+        "series": "D-101"
+      },
+      {
+        "r": 10,
+        "theta": "Sudden Acceleration Events",
+        "series": "D-101"
+      },
+      {
+        "r": 43.722334150662576,
+        "theta": "Nighttime Driving (%)",
+        "series": "D-101"
+      },
+      {
+        "r": 47,
+        "theta": "Trip Count",
+        "series": "D-101"
+      },
+      {
+        "r": 10.892244336963433,
+        "theta": "Speed Variance",
+        "series": "D-101"
+      },
+      {
+        "r": 6.664392481342321,
+        "theta": "Speed Variance",
+        "series": "D-102"
+      },
+      {
+        "r": 5,
+        "theta": "Harsh Braking Events",
+        "series": "D-102"
+      },
+      {
+        "r": 1,
+        "theta": "Sudden Acceleration Events",
+        "series": "D-102"
+      },
+      {
+        "r": 26.410862418605433,
+        "theta": "Nighttime Driving (%)",
+        "series": "D-102"
+      },
+      {
+        "r": 28,
+        "theta": "Trip Count",
+        "series": "D-102"
+      },
+      {
+        "r": 6.664392481342321,
+        "theta": "Speed Variance",
+        "series": "D-102"
+      },
+      {
+        "r": 15.462418529841031,
+        "theta": "Speed Variance",
+        "series": "D-103"
+      },
+      {
+        "r": 12,
+        "theta": "Harsh Braking Events",
+        "series": "D-103"
+      },
+      {
+        "r": 2,
+        "theta": "Sudden Acceleration Events",
+        "series": "D-103"
+      },
+      {
+        "r": 21.262352474789225,
+        "theta": "Nighttime Driving (%)",
+        "series": "D-103"
+      },
+      {
+        "r": 52,
+        "theta": "Trip Count",
+        "series": "D-103"
+      },
+      {
+        "r": 15.462418529841031,
+        "theta": "Speed Variance",
+        "series": "D-103"
+      },
+      {
+        "r": 9.44766221747215,
+        "theta": "Speed Variance",
+        "series": "D-104"
+      },
+      {
+        "r": 9,
+        "theta": "Harsh Braking Events",
+        "series": "D-104"
+      },
+      {
+        "r": 6,
+        "theta": "Sudden Acceleration Events",
+        "series": "D-104"
+      },
+      {
+        "r": 19.36386582382536,
+        "theta": "Nighttime Driving (%)",
+        "series": "D-104"
+      },
+      {
+        "r": 60,
+        "theta": "Trip Count",
+        "series": "D-104"
+      },
+      {
+        "r": 9.44766221747215,
+        "theta": "Speed Variance",
+        "series": "D-104"
+      },
+      {
+        "r": 11.404207043607254,
+        "theta": "Speed Variance",
+        "series": "D-105"
+      },
+      {
+        "r": 5,
+        "theta": "Harsh Braking Events",
+        "series": "D-105"
+      },
+      {
+        "r": 10,
+        "theta": "Sudden Acceleration Events",
+        "series": "D-105"
+      },
+      {
+        "r": 26.068999007315888,
+        "theta": "Nighttime Driving (%)",
+        "series": "D-105"
+      },
+      {
+        "r": 32,
+        "theta": "Trip Count",
+        "series": "D-105"
+      },
+      {
+        "r": 11.404207043607254,
+        "theta": "Speed Variance",
+        "series": "D-105"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Driving Behavior Profiling for Insurance Risk Assessment"
+}

@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-01",
+        "y": -1.68,
+        "series": "Commodities"
+      },
+      {
+        "x": "2023-02",
+        "y": 7.163333333333334,
+        "series": "Commodities"
+      },
+      {
+        "x": "2023-03",
+        "y": 3.6933333333333334,
+        "series": "Commodities"
+      },
+      {
+        "x": "2023-04",
+        "y": 3.75,
+        "series": "Commodities"
+      },
+      {
+        "x": "2023-05",
+        "y": 2.683333333333333,
+        "series": "Commodities"
+      },
+      {
+        "x": "2023-06",
+        "y": 5.263333333333333,
+        "series": "Commodities"
+      },
+      {
+        "x": "2023-01",
+        "y": 2.5900000000000003,
+        "series": "Equity"
+      },
+      {
+        "x": "2023-02",
+        "y": 4.5,
+        "series": "Equity"
+      },
+      {
+        "x": "2023-03",
+        "y": 7.68,
+        "series": "Equity"
+      },
+      {
+        "x": "2023-04",
+        "y": 6.109999999999999,
+        "series": "Equity"
+      },
+      {
+        "x": "2023-05",
+        "y": -1.486666666666667,
+        "series": "Equity"
+      },
+      {
+        "x": "2023-06",
+        "y": 4.196666666666666,
+        "series": "Equity"
+      },
+      {
+        "x": "2023-01",
+        "y": 4.183333333333333,
+        "series": "Fixed Income"
+      },
+      {
+        "x": "2023-02",
+        "y": -1.67,
+        "series": "Fixed Income"
+      },
+      {
+        "x": "2023-03",
+        "y": 1.1766666666666667,
+        "series": "Fixed Income"
+      },
+      {
+        "x": "2023-04",
+        "y": -1.64,
+        "series": "Fixed Income"
+      },
+      {
+        "x": "2023-05",
+        "y": 6.890000000000001,
+        "series": "Fixed Income"
+      },
+      {
+        "x": "2023-06",
+        "y": 2.44,
+        "series": "Fixed Income"
+      },
+      {
+        "x": "2023-01",
+        "y": 5.083333333333333,
+        "series": "Real Estate"
+      },
+      {
+        "x": "2023-02",
+        "y": -1.1466666666666667,
+        "series": "Real Estate"
+      },
+      {
+        "x": "2023-03",
+        "y": -0.5,
+        "series": "Real Estate"
+      },
+      {
+        "x": "2023-04",
+        "y": 7.2700000000000005,
+        "series": "Real Estate"
+      },
+      {
+        "x": "2023-05",
+        "y": 5.076666666666667,
+        "series": "Real Estate"
+      },
+      {
+        "x": "2023-06",
+        "y": 4.34,
+        "series": "Real Estate"
+      }
+    ]
+  },
+  "title": "Average Monthly Return by Asset Type",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Average Return (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Average Return (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

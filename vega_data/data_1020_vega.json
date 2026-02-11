@@ -1,0 +1,172 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 5,
+        "theta": "a",
+        "series": "angular categories"
+      },
+      {
+        "r": 4,
+        "theta": "b",
+        "series": "angular categories"
+      },
+      {
+        "r": 2,
+        "theta": "c",
+        "series": "angular categories"
+      },
+      {
+        "r": 4,
+        "theta": "d",
+        "series": "angular categories"
+      },
+      {
+        "r": 5,
+        "theta": "a",
+        "series": "angular categories"
+      },
+      {
+        "r": "a",
+        "theta": 1,
+        "series": "radial categories"
+      },
+      {
+        "r": "b",
+        "theta": 4,
+        "series": "radial categories"
+      },
+      {
+        "r": "c",
+        "theta": 2,
+        "series": "radial categories"
+      },
+      {
+        "r": "d",
+        "theta": 1.5,
+        "series": "radial categories"
+      },
+      {
+        "r": "b",
+        "theta": 1.5,
+        "series": "radial categories"
+      },
+      {
+        "r": "f",
+        "theta": 6,
+        "series": "radial categories"
+      },
+      {
+        "r": "a",
+        "theta": 5,
+        "series": "radial categories"
+      },
+      {
+        "r": 5,
+        "theta": "a",
+        "series": "angular categories (w/ categoryarray)"
+      },
+      {
+        "r": 4,
+        "theta": "b",
+        "series": "angular categories (w/ categoryarray)"
+      },
+      {
+        "r": 2,
+        "theta": "c",
+        "series": "angular categories (w/ categoryarray)"
+      },
+      {
+        "r": 4,
+        "theta": "d",
+        "series": "angular categories (w/ categoryarray)"
+      },
+      {
+        "r": 5,
+        "theta": "a",
+        "series": "angular categories (w/ categoryarray)"
+      },
+      {
+        "r": "a",
+        "theta": 45,
+        "series": "radial categories (w/ category descending)"
+      },
+      {
+        "r": "b",
+        "theta": 90,
+        "series": "radial categories (w/ category descending)"
+      },
+      {
+        "r": "c",
+        "theta": 180,
+        "series": "radial categories (w/ category descending)"
+      },
+      {
+        "r": "d",
+        "theta": 200,
+        "series": "radial categories (w/ category descending)"
+      },
+      {
+        "r": "b",
+        "theta": 300,
+        "series": "radial categories (w/ category descending)"
+      },
+      {
+        "r": "f",
+        "theta": 15,
+        "series": "radial categories (w/ category descending)"
+      },
+      {
+        "r": "a",
+        "theta": 20,
+        "series": "radial categories (w/ category descending)"
+      },
+      {
+        "r": "a",
+        "theta": 45,
+        "series": "radial categories (w/ category descending)"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

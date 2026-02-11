@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Follow-Up Visit Rates by Age Group",
+  "description": "Converted from Plotly schema 207 - Line+markers chart",
+  "data": {
+    "values": [
+      { "ageGroup": "18-30", "rate": 0.7 },
+      { "ageGroup": "31-45", "rate": 0.65 },
+      { "ageGroup": "46-60", "rate": 0.6 },
+      { "ageGroup": "61+", "rate": 0.55 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "ageGroup",
+          "type": "ordinal",
+          "axis": { "title": "Age Group" },
+          "sort": ["18-30", "31-45", "46-60", "61+"]
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative",
+          "axis": { "title": "Follow-Up Visit Rate (%)" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "size": 100 },
+      "encoding": {
+        "x": {
+          "field": "ageGroup",
+          "type": "ordinal",
+          "sort": ["18-30", "31-45", "46-60", "61+"]
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

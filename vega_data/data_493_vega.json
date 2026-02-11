@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 16,
+        "y": 85,
+        "series": "Series"
+      },
+      {
+        "x": 15.5,
+        "y": 87,
+        "series": "Series"
+      },
+      {
+        "x": 15,
+        "y": 88,
+        "series": "Series"
+      },
+      {
+        "x": 14.8,
+        "y": 89,
+        "series": "Series"
+      },
+      {
+        "x": 14.8,
+        "y": 88.89913544668575,
+        "series": "Series"
+      },
+      {
+        "x": 15,
+        "y": 88.27089337175781,
+        "series": "Series"
+      },
+      {
+        "x": 15.5,
+        "y": 86.70028818443792,
+        "series": "Series"
+      },
+      {
+        "x": 16,
+        "y": 85.12968299711804,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Correlation between Student-to-Teacher Ratio and Graduation Rate",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Student-to-Teacher Ratio"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Graduation Rate (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Student-to-Teacher Ratio"
+      },
+      {
+        "field": "y",
+        "title": "Graduation Rate (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

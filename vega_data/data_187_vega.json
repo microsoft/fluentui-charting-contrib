@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Citizen Engagement and Concerns by Policy Area",
+  "description": "Converted from Plotly schema 187 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "policy": "Healthcare", "count": 1500, "type": "Engaged Citizens" },
+      { "policy": "Education", "count": 1300, "type": "Engaged Citizens" },
+      { "policy": "Infrastructure", "count": 900, "type": "Engaged Citizens" },
+      { "policy": "Environment", "count": 800, "type": "Engaged Citizens" },
+      { "policy": "Economy", "count": 1200, "type": "Engaged Citizens" },
+      { "policy": "Healthcare", "count": 300, "type": "Concerns Raised" },
+      { "policy": "Education", "count": 200, "type": "Concerns Raised" },
+      { "policy": "Infrastructure", "count": 150, "type": "Concerns Raised" },
+      { "policy": "Environment", "count": 100, "type": "Concerns Raised" },
+      { "policy": "Economy", "count": 180, "type": "Concerns Raised" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "policy",
+      "type": "nominal",
+      "axis": { "title": "Policy Area" }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": { "title": "Number of Citizens" }
+    },
+    "xOffset": {
+      "field": "type"
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Category" }
+    }
+  }
+}

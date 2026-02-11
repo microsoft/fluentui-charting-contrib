@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Resource Utilization Summary",
+  "description": "Converted from Plotly schema 305 - Multiple pie charts simplified to single pie",
+  "width": 350,
+  "height": 350,
+  "data": {
+    "values": [
+      { "status": "Underutilized", "value": 20 },
+      { "status": "Optimally Utilized", "value": 50 },
+      { "status": "Overutilized", "value": 30 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative",
+      "stack": true
+    },
+    "color": {
+      "field": "status",
+      "type": "nominal",
+      "scale": { "range": ["#ff7f0e", "#2ca02c", "#d62728"] },
+      "legend": { "title": "Status" }
+    },
+    "tooltip": [
+      { "field": "status", "type": "nominal", "title": "Status" },
+      { "field": "value", "type": "quantitative", "title": "Percentage" }
+    ]
+  }
+}

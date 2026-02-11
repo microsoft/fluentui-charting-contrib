@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "category": "Direct",
+        "value": 156000
+      },
+      {
+        "category": "Online Travel Agent",
+        "value": 232000
+      },
+      {
+        "category": "Corporate",
+        "value": 94000
+      },
+      {
+        "category": "Travel Agent",
+        "value": 62000
+      },
+      {
+        "category": "Group",
+        "value": 86000
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 45
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Monthly Revenue Distribution by Booking Channel"
+}

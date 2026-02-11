@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Departmental Contribution to Inefficiencies",
+  "description": "Converted from Plotly schema 180 - Pie chart",
+  "data": {
+    "values": [
+      { "department": "Finance", "contribution": 34 },
+      { "department": "Risk", "contribution": 26 },
+      { "department": "Compliance", "contribution": 18 },
+      { "department": "Operations", "contribution": 22 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "contribution",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "department",
+      "type": "nominal",
+      "legend": { "title": "Department" }
+    }
+  }
+}

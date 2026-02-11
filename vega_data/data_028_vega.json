@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Annual Temperature Variation",
+  "description": "Converted from Plotly schema 28 - Area chart with range",
+  "data": {
+    "values": [
+      { "date": "2023-01-01", "temp": 30, "type": "High Temp" },
+      { "date": "2023-01-02", "temp": 32, "type": "High Temp" },
+      { "date": "2023-01-03", "temp": 31, "type": "High Temp" },
+      { "date": "2023-01-04", "temp": 30, "type": "High Temp" },
+      { "date": "2023-01-05", "temp": 29, "type": "High Temp" },
+      { "date": "2023-01-06", "temp": 31, "type": "High Temp" },
+      { "date": "2023-01-07", "temp": 35, "type": "High Temp" },
+      { "date": "2023-01-08", "temp": 36, "type": "High Temp" },
+      { "date": "2023-01-09", "temp": 34, "type": "High Temp" },
+      { "date": "2023-01-10", "temp": 33, "type": "High Temp" },
+      { "date": "2023-01-01", "temp": 15, "type": "Low Temp" },
+      { "date": "2023-01-02", "temp": 14, "type": "Low Temp" },
+      { "date": "2023-01-03", "temp": 16, "type": "Low Temp" },
+      { "date": "2023-01-04", "temp": 17, "type": "Low Temp" },
+      { "date": "2023-01-05", "temp": 18, "type": "Low Temp" },
+      { "date": "2023-01-06", "temp": 20, "type": "Low Temp" },
+      { "date": "2023-01-07", "temp": 21, "type": "Low Temp" },
+      { "date": "2023-01-08", "temp": 22, "type": "Low Temp" },
+      { "date": "2023-01-09", "temp": 19, "type": "Low Temp" },
+      { "date": "2023-01-10", "temp": 17, "type": "Low Temp" }
+    ]
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": { "title": "Date", "format": "%b %d" }
+    },
+    "y": {
+      "field": "temp",
+      "type": "quantitative",
+      "axis": { "title": "Temperature (C)" }
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Temperature" }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Retail Banking",
+        "y": 2500000,
+        "series": "Series"
+      },
+      {
+        "x": "Corporate Banking",
+        "y": 4200000,
+        "series": "Series"
+      },
+      {
+        "x": "Wealth Management",
+        "y": 1800000,
+        "series": "Series"
+      },
+      {
+        "x": "SME Banking",
+        "y": 3100000,
+        "series": "Series"
+      },
+      {
+        "x": "Private Banking",
+        "y": 950000,
+        "series": "Series"
+      },
+      {
+        "x": "Digital-Only",
+        "y": 1300000,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Quarterly Revenue by Customer Segment with Churn Rate Annotations",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Customer Segment"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Quarterly Revenue (USD)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Customer Segment"
+      },
+      {
+        "field": "y",
+        "title": "Quarterly Revenue (USD)"
+      }
+    ]
+  }
+}

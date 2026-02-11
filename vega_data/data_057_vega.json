@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Current Market Share Distribution",
+  "description": "Converted from Plotly schema 57 - Donut chart",
+  "data": {
+    "values": [
+      { "company": "Company A", "share": 40 },
+      { "company": "Company B", "share": 25 },
+      { "company": "Company C", "share": 20 },
+      { "company": "Company D", "share": 15 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "share",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "company",
+      "type": "nominal",
+      "legend": { "title": "Company" }
+    }
+  }
+}

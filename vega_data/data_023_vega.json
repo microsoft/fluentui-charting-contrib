@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Share of Total Sales Attributed to Top Products",
+  "description": "Converted from Plotly schema 23 - Pie chart",
+  "data": {
+    "values": [
+      { "product": "Product A", "sales": 450 },
+      { "product": "Product B", "sales": 250 },
+      { "product": "Product C", "sales": 150 },
+      { "product": "Product D", "sales": 100 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "sales",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "product",
+      "type": "nominal",
+      "legend": { "title": "Product" }
+    }
+  }
+}

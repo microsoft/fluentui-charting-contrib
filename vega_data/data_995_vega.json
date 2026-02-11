@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Mathematics",
+        "y": 96,
+        "series": "Series"
+      },
+      {
+        "x": "Physics",
+        "y": 107.1,
+        "series": "Series"
+      },
+      {
+        "x": "Chemistry",
+        "y": 94.9,
+        "series": "Series"
+      },
+      {
+        "x": "Biology",
+        "y": 104.9,
+        "series": "Series"
+      },
+      {
+        "x": "Computer Science",
+        "y": 108.3,
+        "series": "Series"
+      },
+      {
+        "x": "English",
+        "y": 97.1,
+        "series": "Series"
+      },
+      {
+        "x": "History",
+        "y": 96.9,
+        "series": "Series"
+      },
+      {
+        "x": "Economics",
+        "y": 105.4,
+        "series": "Series"
+      },
+      {
+        "x": "Psychology",
+        "y": 105.9,
+        "series": "Series"
+      },
+      {
+        "x": "Sociology",
+        "y": 93.9,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Annual Departmental Budget Utilization (%)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Department"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Utilization (%)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Department"
+      },
+      {
+        "field": "y",
+        "title": "Utilization (%)"
+      }
+    ]
+  }
+}

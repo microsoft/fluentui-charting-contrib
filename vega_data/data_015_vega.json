@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Composition of Traffic Sources Over a Typical Week",
+  "description": "Converted from Plotly schema 15 - Pie chart",
+  "data": {
+    "values": [
+      { "source": "Organic", "visits": 900 },
+      { "source": "Direct", "visits": 350 },
+      { "source": "Referral", "visits": 250 },
+      { "source": "Social", "visits": 200 }
+    ]
+  },
+  "mark": { "type": "arc" },
+  "encoding": {
+    "theta": {
+      "field": "visits",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "source",
+      "type": "nominal",
+      "legend": { "title": "Source" }
+    }
+  }
+}

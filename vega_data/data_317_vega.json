@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Histogram of Daily Defect Rates",
+  "description": "Converted from Plotly schema 317 - Grouped bar histogram (simplified from 25 to 4 batches)",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "date": "2023-10-01", "rate": 300, "batch": "Defect Rate Batch 1" },
+      { "date": "2023-10-02", "rate": 450, "batch": "Defect Rate Batch 1" },
+      { "date": "2023-10-03", "rate": 500, "batch": "Defect Rate Batch 1" },
+      { "date": "2023-10-04", "rate": 400, "batch": "Defect Rate Batch 1" },
+      { "date": "2023-10-05", "rate": 600, "batch": "Defect Rate Batch 1" },
+      { "date": "2023-10-06", "rate": 700, "batch": "Defect Rate Batch 1" },
+      { "date": "2023-10-07", "rate": 550, "batch": "Defect Rate Batch 1" },
+      { "date": "2023-10-08", "rate": 520, "batch": "Defect Rate Batch 1" },
+      { "date": "2023-10-09", "rate": 480, "batch": "Defect Rate Batch 1" },
+      { "date": "2023-10-10", "rate": 510, "batch": "Defect Rate Batch 1" },
+      { "date": "2023-10-01", "rate": 250, "batch": "Defect Rate Batch 2" },
+      { "date": "2023-10-02", "rate": 420, "batch": "Defect Rate Batch 2" },
+      { "date": "2023-10-03", "rate": 480, "batch": "Defect Rate Batch 2" },
+      { "date": "2023-10-04", "rate": 460, "batch": "Defect Rate Batch 2" },
+      { "date": "2023-10-05", "rate": 620, "batch": "Defect Rate Batch 2" },
+      { "date": "2023-10-06", "rate": 680, "batch": "Defect Rate Batch 2" },
+      { "date": "2023-10-07", "rate": 530, "batch": "Defect Rate Batch 2" },
+      { "date": "2023-10-08", "rate": 540, "batch": "Defect Rate Batch 2" },
+      { "date": "2023-10-09", "rate": 490, "batch": "Defect Rate Batch 2" },
+      { "date": "2023-10-10", "rate": 500, "batch": "Defect Rate Batch 2" },
+      { "date": "2023-10-01", "rate": 270, "batch": "Defect Rate Batch 3" },
+      { "date": "2023-10-02", "rate": 430, "batch": "Defect Rate Batch 3" },
+      { "date": "2023-10-03", "rate": 490, "batch": "Defect Rate Batch 3" },
+      { "date": "2023-10-04", "rate": 470, "batch": "Defect Rate Batch 3" },
+      { "date": "2023-10-05", "rate": 610, "batch": "Defect Rate Batch 3" },
+      { "date": "2023-10-06", "rate": 690, "batch": "Defect Rate Batch 3" },
+      { "date": "2023-10-07", "rate": 540, "batch": "Defect Rate Batch 3" },
+      { "date": "2023-10-08", "rate": 550, "batch": "Defect Rate Batch 3" },
+      { "date": "2023-10-09", "rate": 500, "batch": "Defect Rate Batch 3" },
+      { "date": "2023-10-10", "rate": 510, "batch": "Defect Rate Batch 3" },
+      { "date": "2023-10-01", "rate": 260, "batch": "Defect Rate Batch 4" },
+      { "date": "2023-10-02", "rate": 410, "batch": "Defect Rate Batch 4" },
+      { "date": "2023-10-03", "rate": 470, "batch": "Defect Rate Batch 4" },
+      { "date": "2023-10-04", "rate": 450, "batch": "Defect Rate Batch 4" },
+      { "date": "2023-10-05", "rate": 600, "batch": "Defect Rate Batch 4" },
+      { "date": "2023-10-06", "rate": 670, "batch": "Defect Rate Batch 4" },
+      { "date": "2023-10-07", "rate": 520, "batch": "Defect Rate Batch 4" },
+      { "date": "2023-10-08", "rate": 530, "batch": "Defect Rate Batch 4" },
+      { "date": "2023-10-09", "rate": 490, "batch": "Defect Rate Batch 4" },
+      { "date": "2023-10-10", "rate": 460, "batch": "Defect Rate Batch 4" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "ordinal",
+      "axis": { "title": "Date" }
+    },
+    "y": {
+      "field": "rate",
+      "type": "quantitative",
+      "axis": { "title": "Defect Rate" }
+    },
+    "xOffset": {
+      "field": "batch",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "batch",
+      "type": "nominal",
+      "scale": { "range": ["#db4052", "#3780bf", "#32ab60", "#800080"] },
+      "legend": { "title": "Batch" }
+    },
+    "tooltip": [
+      { "field": "date", "type": "ordinal", "title": "Date" },
+      { "field": "batch", "type": "nominal", "title": "Batch" },
+      { "field": "rate", "type": "quantitative", "title": "Defect Rate" }
+    ]
+  }
+}

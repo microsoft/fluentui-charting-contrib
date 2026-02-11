@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2012,
+        "y": 1252011245,
+        "series": "Series"
+      },
+      {
+        "x": 2013,
+        "y": 1114475470,
+        "series": "Series"
+      },
+      {
+        "x": 2014,
+        "y": 542717919,
+        "series": "Series"
+      },
+      {
+        "x": 2015,
+        "y": 530680751,
+        "series": "Series"
+      },
+      {
+        "x": 2016,
+        "y": 356149968,
+        "series": "Series"
+      },
+      {
+        "x": 2017,
+        "y": 414659792,
+        "series": "Series"
+      },
+      {
+        "x": 2018,
+        "y": 414659792,
+        "series": "Series"
+      },
+      {
+        "x": 2019,
+        "y": 542717919,
+        "series": "Series"
+      },
+      {
+        "x": 2020,
+        "y": 697022891,
+        "series": "Series"
+      },
+      {
+        "x": 2021,
+        "y": 697022891,
+        "series": "Series"
+      },
+      {
+        "x": 2022,
+        "y": 697022891,
+        "series": "Series"
+      },
+      {
+        "x": 2023,
+        "y": 697022891,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Annual Production of Small Cigars (2012-2023)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Small Cigars Production"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Small Cigars Production"
+      }
+    ]
+  }
+}

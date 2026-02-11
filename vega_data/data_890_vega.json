@@ -1,0 +1,228 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 18,
+        "theta": "Build Duration",
+        "series": "Backend API"
+      },
+      {
+        "r": 5,
+        "theta": "Deployment Frequency",
+        "series": "Backend API"
+      },
+      {
+        "r": 5,
+        "theta": "Failed Build Rate",
+        "series": "Backend API"
+      },
+      {
+        "r": 1,
+        "theta": "Rollback Rate",
+        "series": "Backend API"
+      },
+      {
+        "r": 92,
+        "theta": "Code Coverage",
+        "series": "Backend API"
+      },
+      {
+        "r": 32,
+        "theta": "Mean Time To Recovery",
+        "series": "Backend API"
+      },
+      {
+        "r": 7,
+        "theta": "Build Duration",
+        "series": "Frontend Web"
+      },
+      {
+        "r": 9,
+        "theta": "Deployment Frequency",
+        "series": "Frontend Web"
+      },
+      {
+        "r": 2,
+        "theta": "Failed Build Rate",
+        "series": "Frontend Web"
+      },
+      {
+        "r": 0.5,
+        "theta": "Rollback Rate",
+        "series": "Frontend Web"
+      },
+      {
+        "r": 89,
+        "theta": "Code Coverage",
+        "series": "Frontend Web"
+      },
+      {
+        "r": 18,
+        "theta": "Mean Time To Recovery",
+        "series": "Frontend Web"
+      },
+      {
+        "r": 15,
+        "theta": "Build Duration",
+        "series": "Mobile App"
+      },
+      {
+        "r": 6,
+        "theta": "Deployment Frequency",
+        "series": "Mobile App"
+      },
+      {
+        "r": 6,
+        "theta": "Failed Build Rate",
+        "series": "Mobile App"
+      },
+      {
+        "r": 2,
+        "theta": "Rollback Rate",
+        "series": "Mobile App"
+      },
+      {
+        "r": 83,
+        "theta": "Code Coverage",
+        "series": "Mobile App"
+      },
+      {
+        "r": 22,
+        "theta": "Mean Time To Recovery",
+        "series": "Mobile App"
+      },
+      {
+        "r": 23,
+        "theta": "Build Duration",
+        "series": "Data Pipeline"
+      },
+      {
+        "r": 4,
+        "theta": "Deployment Frequency",
+        "series": "Data Pipeline"
+      },
+      {
+        "r": 9,
+        "theta": "Failed Build Rate",
+        "series": "Data Pipeline"
+      },
+      {
+        "r": 3,
+        "theta": "Rollback Rate",
+        "series": "Data Pipeline"
+      },
+      {
+        "r": 77,
+        "theta": "Code Coverage",
+        "series": "Data Pipeline"
+      },
+      {
+        "r": 41,
+        "theta": "Mean Time To Recovery",
+        "series": "Data Pipeline"
+      },
+      {
+        "r": 12,
+        "theta": "Build Duration",
+        "series": "Infrastructure"
+      },
+      {
+        "r": 2,
+        "theta": "Deployment Frequency",
+        "series": "Infrastructure"
+      },
+      {
+        "r": 1,
+        "theta": "Failed Build Rate",
+        "series": "Infrastructure"
+      },
+      {
+        "r": 0.8,
+        "theta": "Rollback Rate",
+        "series": "Infrastructure"
+      },
+      {
+        "r": 94,
+        "theta": "Code Coverage",
+        "series": "Infrastructure"
+      },
+      {
+        "r": 15,
+        "theta": "Mean Time To Recovery",
+        "series": "Infrastructure"
+      },
+      {
+        "r": 20,
+        "theta": "Build Duration",
+        "series": "Integration"
+      },
+      {
+        "r": 7,
+        "theta": "Deployment Frequency",
+        "series": "Integration"
+      },
+      {
+        "r": 4,
+        "theta": "Failed Build Rate",
+        "series": "Integration"
+      },
+      {
+        "r": 1.1,
+        "theta": "Rollback Rate",
+        "series": "Integration"
+      },
+      {
+        "r": 87,
+        "theta": "Code Coverage",
+        "series": "Integration"
+      },
+      {
+        "r": 28,
+        "theta": "Mean Time To Recovery",
+        "series": "Integration"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "DevOps Pipeline Performance Snapshot"
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Intro to Psychology",
+        "y": 120,
+        "series": "Over Capacity"
+      },
+      {
+        "x": "Computer Science I",
+        "y": 130,
+        "series": "Over Capacity"
+      },
+      {
+        "x": "Chemistry 101",
+        "y": 105,
+        "series": "Over Capacity"
+      },
+      {
+        "x": "Calculus I",
+        "y": 95,
+        "series": "Within Capacity"
+      },
+      {
+        "x": "World History",
+        "y": 80,
+        "series": "Within Capacity"
+      },
+      {
+        "x": "Biology 101",
+        "y": 110,
+        "series": "Within Capacity"
+      },
+      {
+        "x": "English Literature",
+        "y": 70,
+        "series": "Within Capacity"
+      },
+      {
+        "x": "Statistics",
+        "y": 90,
+        "series": "Within Capacity"
+      }
+    ]
+  },
+  "title": "Course Enrollment Trends with Capacity Annotations (Term Level)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Course"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Enrollment"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Course"
+      },
+      {
+        "field": "y",
+        "title": "Enrollment"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

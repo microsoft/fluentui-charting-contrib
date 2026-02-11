@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Customer Age Groups by Gender",
+  "description": "Converted from Plotly schema 116 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "ageGroup": "18-24", "customers": 50, "gender": "Male" },
+      { "ageGroup": "25-34", "customers": 100, "gender": "Male" },
+      { "ageGroup": "35-44", "customers": 75, "gender": "Male" },
+      { "ageGroup": "45-54", "customers": 60, "gender": "Male" },
+      { "ageGroup": "55-64", "customers": 20, "gender": "Male" },
+      { "ageGroup": "65+", "customers": 10, "gender": "Male" },
+      { "ageGroup": "18-24", "customers": 45, "gender": "Female" },
+      { "ageGroup": "25-34", "customers": 80, "gender": "Female" },
+      { "ageGroup": "35-44", "customers": 70, "gender": "Female" },
+      { "ageGroup": "45-54", "customers": 65, "gender": "Female" },
+      { "ageGroup": "55-64", "customers": 40, "gender": "Female" },
+      { "ageGroup": "65+", "customers": 15, "gender": "Female" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "ageGroup",
+      "type": "ordinal",
+      "axis": { "title": "Age Group" },
+      "sort": ["18-24", "25-34", "35-44", "45-54", "55-64", "65+"]
+    },
+    "y": {
+      "field": "customers",
+      "type": "quantitative",
+      "axis": { "title": "Number of Customers" }
+    },
+    "xOffset": {
+      "field": "gender"
+    },
+    "color": {
+      "field": "gender",
+      "type": "nominal",
+      "legend": { "title": "Gender" }
+    }
+  }
+}

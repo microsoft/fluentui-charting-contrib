@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-01",
+        "y": 374,
+        "series": "Cardiology"
+      },
+      {
+        "x": "2024-02",
+        "y": 353,
+        "series": "Cardiology"
+      },
+      {
+        "x": "2024-03",
+        "y": 367,
+        "series": "Cardiology"
+      },
+      {
+        "x": "2024-04",
+        "y": 366,
+        "series": "Cardiology"
+      },
+      {
+        "x": "2024-01",
+        "y": 357,
+        "series": "Emergency"
+      },
+      {
+        "x": "2024-02",
+        "y": 358,
+        "series": "Emergency"
+      },
+      {
+        "x": "2024-03",
+        "y": 349,
+        "series": "Emergency"
+      },
+      {
+        "x": "2024-04",
+        "y": 365,
+        "series": "Emergency"
+      },
+      {
+        "x": "2024-01",
+        "y": 343,
+        "series": "Oncology"
+      },
+      {
+        "x": "2024-02",
+        "y": 339,
+        "series": "Oncology"
+      },
+      {
+        "x": "2024-03",
+        "y": 343,
+        "series": "Oncology"
+      },
+      {
+        "x": "2024-04",
+        "y": 344,
+        "series": "Oncology"
+      },
+      {
+        "x": "2024-01",
+        "y": 356,
+        "series": "Pediatrics"
+      },
+      {
+        "x": "2024-02",
+        "y": 357,
+        "series": "Pediatrics"
+      },
+      {
+        "x": "2024-03",
+        "y": 339,
+        "series": "Pediatrics"
+      },
+      {
+        "x": "2024-04",
+        "y": 366,
+        "series": "Pediatrics"
+      },
+      {
+        "x": "2024-01",
+        "y": 363,
+        "series": "Surgery"
+      },
+      {
+        "x": "2024-02",
+        "y": 353,
+        "series": "Surgery"
+      },
+      {
+        "x": "2024-03",
+        "y": 317,
+        "series": "Surgery"
+      },
+      {
+        "x": "2024-04",
+        "y": 348,
+        "series": "Surgery"
+      }
+    ]
+  },
+  "title": "Monthly Total Patients Handled by Department",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Patients Handled"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Patients Handled"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

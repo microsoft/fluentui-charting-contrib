@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Customer Feedback Trend",
+  "description": "Converted from Plotly schema 108 - Line chart with markers",
+  "data": {
+    "values": [
+      { "month": "Jan", "count": 150 },
+      { "month": "Feb", "count": 160 },
+      { "month": "Mar", "count": 170 },
+      { "month": "Apr", "count": 180 },
+      { "month": "May", "count": 175 },
+      { "month": "Jun", "count": 165 },
+      { "month": "Jul", "count": 155 },
+      { "month": "Aug", "count": 160 },
+      { "month": "Sep", "count": 170 },
+      { "month": "Oct", "count": 180 },
+      { "month": "Nov", "count": 185 },
+      { "month": "Dec", "count": 190 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "axis": { "title": "Month" },
+      "sort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": { "title": "Feedback Count" }
+    }
+  }
+}

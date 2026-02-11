@@ -1,0 +1,167 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 11.2,
+        "y": 550,
+        "series": "Series"
+      },
+      {
+        "x": 11.4,
+        "y": 557,
+        "series": "Series"
+      },
+      {
+        "x": 11.6,
+        "y": 564,
+        "series": "Series"
+      },
+      {
+        "x": 11.799999999999999,
+        "y": 571,
+        "series": "Series"
+      },
+      {
+        "x": 12,
+        "y": 578,
+        "series": "Series"
+      },
+      {
+        "x": 12.9,
+        "y": 585,
+        "series": "Series"
+      },
+      {
+        "x": 13.100000000000001,
+        "y": 592,
+        "series": "Series"
+      },
+      {
+        "x": 13.3,
+        "y": 599,
+        "series": "Series"
+      },
+      {
+        "x": 13.5,
+        "y": 606,
+        "series": "Series"
+      },
+      {
+        "x": 13.700000000000001,
+        "y": 613,
+        "series": "Series"
+      },
+      {
+        "x": 14.6,
+        "y": 580,
+        "series": "Series"
+      },
+      {
+        "x": 14.8,
+        "y": 587,
+        "series": "Series"
+      },
+      {
+        "x": 15,
+        "y": 594,
+        "series": "Series"
+      },
+      {
+        "x": 15.2,
+        "y": 601,
+        "series": "Series"
+      },
+      {
+        "x": 15.4,
+        "y": 608,
+        "series": "Series"
+      },
+      {
+        "x": 16.3,
+        "y": 615,
+        "series": "Series"
+      },
+      {
+        "x": 16.5,
+        "y": 622,
+        "series": "Series"
+      },
+      {
+        "x": 16.7,
+        "y": 629,
+        "series": "Series"
+      },
+      {
+        "x": 16.9,
+        "y": 636,
+        "series": "Series"
+      },
+      {
+        "x": 17.099999999999998,
+        "y": 643,
+        "series": "Series"
+      },
+      {
+        "x": 18,
+        "y": 610,
+        "series": "Series"
+      },
+      {
+        "x": 18.2,
+        "y": 617,
+        "series": "Series"
+      },
+      {
+        "x": 18.4,
+        "y": 624,
+        "series": "Series"
+      },
+      {
+        "x": 18.599999999999998,
+        "y": 631,
+        "series": "Series"
+      },
+      {
+        "x": 18.799999999999997,
+        "y": 638,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Student-Teacher Ratio vs Test Score by District",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Student-Teacher Ratio"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Standardized Test Score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Student-Teacher Ratio"
+      },
+      {
+        "field": "y",
+        "title": "Standardized Test Score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

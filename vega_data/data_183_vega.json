@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Peak Travel Times and Bottlenecks",
+  "description": "Converted from Plotly schema 183 - Heatmap",
+  "data": {
+    "values": [
+      { "time": "6 AM", "route": "Route A", "value": 8 },
+      { "time": "12 PM", "route": "Route A", "value": 6 },
+      { "time": "6 PM", "route": "Route A", "value": 3 },
+      { "time": "6 AM", "route": "Route B", "value": 9 },
+      { "time": "12 PM", "route": "Route B", "value": 7 },
+      { "time": "6 PM", "route": "Route B", "value": 4 },
+      { "time": "6 AM", "route": "Route C", "value": 10 },
+      { "time": "12 PM", "route": "Route C", "value": 8 },
+      { "time": "6 PM", "route": "Route C", "value": 5 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "time",
+      "type": "ordinal",
+      "axis": { "title": "Time of Day" },
+      "sort": ["6 AM", "12 PM", "6 PM"]
+    },
+    "y": {
+      "field": "route",
+      "type": "nominal",
+      "axis": { "title": "Routes" }
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" },
+      "legend": { "title": "Traffic Level" }
+    }
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-01-31T00:00:00.000000000",
+        "y": 138,
+        "series": "AlphaTech"
+      },
+      {
+        "x": "2024-02-29T00:00:00.000000000",
+        "y": 146,
+        "series": "AlphaTech"
+      },
+      {
+        "x": "2024-03-31T00:00:00.000000000",
+        "y": 140,
+        "series": "AlphaTech"
+      },
+      {
+        "x": "2024-04-30T00:00:00.000000000",
+        "y": 162,
+        "series": "AlphaTech"
+      },
+      {
+        "x": "2024-05-31T00:00:00.000000000",
+        "y": 149,
+        "series": "AlphaTech"
+      },
+      {
+        "x": "2024-06-30T00:00:00.000000000",
+        "y": 149,
+        "series": "AlphaTech"
+      },
+      {
+        "x": "2024-07-31T00:00:00.000000000",
+        "y": 167,
+        "series": "AlphaTech"
+      },
+      {
+        "x": "2024-08-31T00:00:00.000000000",
+        "y": 165,
+        "series": "AlphaTech"
+      },
+      {
+        "x": "2024-09-30T00:00:00.000000000",
+        "y": 167,
+        "series": "AlphaTech"
+      },
+      {
+        "x": "2024-10-31T00:00:00.000000000",
+        "y": 157,
+        "series": "AlphaTech"
+      },
+      {
+        "x": "2024-11-30T00:00:00.000000000",
+        "y": 147,
+        "series": "AlphaTech"
+      },
+      {
+        "x": "2024-12-31T00:00:00.000000000",
+        "y": 150,
+        "series": "AlphaTech"
+      },
+      {
+        "x": "2024-01-31T00:00:00.000000000",
+        "y": 135,
+        "series": "BravoCorp"
+      },
+      {
+        "x": "2024-02-29T00:00:00.000000000",
+        "y": 154,
+        "series": "BravoCorp"
+      },
+      {
+        "x": "2024-03-31T00:00:00.000000000",
+        "y": 157,
+        "series": "BravoCorp"
+      },
+      {
+        "x": "2024-04-30T00:00:00.000000000",
+        "y": 139,
+        "series": "BravoCorp"
+      },
+      {
+        "x": "2024-05-31T00:00:00.000000000",
+        "y": 140,
+        "series": "BravoCorp"
+      },
+      {
+        "x": "2024-06-30T00:00:00.000000000",
+        "y": 121,
+        "series": "BravoCorp"
+      },
+      {
+        "x": "2024-07-31T00:00:00.000000000",
+        "y": 124,
+        "series": "BravoCorp"
+      },
+      {
+        "x": "2024-08-31T00:00:00.000000000",
+        "y": 147,
+        "series": "BravoCorp"
+      },
+      {
+        "x": "2024-09-30T00:00:00.000000000",
+        "y": 156,
+        "series": "BravoCorp"
+      },
+      {
+        "x": "2024-10-31T00:00:00.000000000",
+        "y": 173,
+        "series": "BravoCorp"
+      },
+      {
+        "x": "2024-11-30T00:00:00.000000000",
+        "y": 154,
+        "series": "BravoCorp"
+      },
+      {
+        "x": "2024-12-31T00:00:00.000000000",
+        "y": 154,
+        "series": "BravoCorp"
+      },
+      {
+        "x": "2024-01-31T00:00:00.000000000",
+        "y": 132,
+        "series": "CharlieSystems"
+      },
+      {
+        "x": "2024-02-29T00:00:00.000000000",
+        "y": 123,
+        "series": "CharlieSystems"
+      },
+      {
+        "x": "2024-03-31T00:00:00.000000000",
+        "y": 124,
+        "series": "CharlieSystems"
+      },
+      {
+        "x": "2024-04-30T00:00:00.000000000",
+        "y": 147,
+        "series": "CharlieSystems"
+      },
+      {
+        "x": "2024-05-31T00:00:00.000000000",
+        "y": 151,
+        "series": "CharlieSystems"
+      },
+      {
+        "x": "2024-06-30T00:00:00.000000000",
+        "y": 179,
+        "series": "CharlieSystems"
+      },
+      {
+        "x": "2024-07-31T00:00:00.000000000",
+        "y": 185,
+        "series": "CharlieSystems"
+      },
+      {
+        "x": "2024-08-31T00:00:00.000000000",
+        "y": 206,
+        "series": "CharlieSystems"
+      },
+      {
+        "x": "2024-09-30T00:00:00.000000000",
+        "y": 213,
+        "series": "CharlieSystems"
+      },
+      {
+        "x": "2024-10-31T00:00:00.000000000",
+        "y": 208,
+        "series": "CharlieSystems"
+      },
+      {
+        "x": "2024-11-30T00:00:00.000000000",
+        "y": 202,
+        "series": "CharlieSystems"
+      },
+      {
+        "x": "2024-12-31T00:00:00.000000000",
+        "y": 228,
+        "series": "CharlieSystems"
+      }
+    ]
+  },
+  "title": "Inventory Levels by Supplier Over Time",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Date"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Stock Level"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Date"
+      },
+      {
+        "field": "y",
+        "title": "Stock Level"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

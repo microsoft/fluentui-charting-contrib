@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Weekly Traffic Metrics",
+  "description": "Converted from Plotly schema 14 - Bar chart",
+  "data": {
+    "values": [
+      { "week": "2023-01-01", "visits": 500 },
+      { "week": "2023-01-08", "visits": 1000 },
+      { "week": "2023-01-15", "visits": 1200 },
+      { "week": "2023-01-22", "visits": 1500 },
+      { "week": "2023-01-29", "visits": 2000 },
+      { "week": "2023-02-05", "visits": 2400 },
+      { "week": "2023-02-12", "visits": 3000 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "week",
+      "type": "temporal",
+      "axis": { "title": "Week", "format": "%b %d" }
+    },
+    "y": {
+      "field": "visits",
+      "type": "quantitative",
+      "axis": { "title": "Number of Visits" }
+    }
+  }
+}

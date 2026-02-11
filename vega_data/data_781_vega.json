@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "A",
+        "y": 80,
+        "series": "Dose 1"
+      },
+      {
+        "x": "B",
+        "y": 72,
+        "series": "Dose 1"
+      },
+      {
+        "x": "C",
+        "y": 87,
+        "series": "Dose 1"
+      },
+      {
+        "x": "D",
+        "y": 60,
+        "series": "Dose 1"
+      },
+      {
+        "x": "E",
+        "y": 95,
+        "series": "Dose 1"
+      },
+      {
+        "x": "A",
+        "y": 75,
+        "series": "Dose 2"
+      },
+      {
+        "x": "B",
+        "y": 68,
+        "series": "Dose 2"
+      },
+      {
+        "x": "C",
+        "y": 82,
+        "series": "Dose 2"
+      },
+      {
+        "x": "D",
+        "y": 55,
+        "series": "Dose 2"
+      },
+      {
+        "x": "E",
+        "y": 90,
+        "series": "Dose 2"
+      }
+    ]
+  },
+  "title": "Vaccination Coverage by Dose (%)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Country"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Rate"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Country"
+      },
+      {
+        "field": "y",
+        "title": "Rate"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

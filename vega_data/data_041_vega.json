@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Returns of Various Investments",
+  "description": "Converted from Plotly schema 41 - Bar chart",
+  "data": {
+    "values": [
+      { "investment": "Stock A", "returns": 10 },
+      { "investment": "Bond B", "returns": 5 },
+      { "investment": "Real Estate C", "returns": 7 },
+      { "investment": "Cash D", "returns": 2 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "investment",
+      "type": "nominal",
+      "axis": { "title": "Investments" }
+    },
+    "y": {
+      "field": "returns",
+      "type": "quantitative",
+      "axis": { "title": "Returns (%)" }
+    }
+  }
+}

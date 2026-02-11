@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Factory Downtime Comparison",
+  "description": "Converted from Plotly schema 240 - Simple bar chart",
+  "data": {
+    "values": [
+      { "factory": "Factory A", "downtime": 15 },
+      { "factory": "Factory B", "downtime": 20 },
+      { "factory": "Factory C", "downtime": 10 },
+      { "factory": "Factory D", "downtime": 25 }
+    ]
+  },
+  "mark": { "type": "bar", "color": "orange" },
+  "encoding": {
+    "x": {
+      "field": "factory",
+      "type": "ordinal",
+      "axis": { "title": "Factory Location" }
+    },
+    "y": {
+      "field": "downtime",
+      "type": "quantitative",
+      "axis": { "title": "Downtime (Hours)" }
+    }
+  }
+}

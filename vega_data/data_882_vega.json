@@ -1,0 +1,197 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 85,
+        "theta": "DDoS Exposure Score",
+        "series": "Prod"
+      },
+      {
+        "r": 70,
+        "theta": "Phishing Exposure Score",
+        "series": "Prod"
+      },
+      {
+        "r": 80,
+        "theta": "Malware Exposure Score",
+        "series": "Prod"
+      },
+      {
+        "r": 60,
+        "theta": "Insider Threat Score",
+        "series": "Prod"
+      },
+      {
+        "r": 90,
+        "theta": "SQL Injection Risk",
+        "series": "Prod"
+      },
+      {
+        "r": 75,
+        "theta": "Data Breach Risk",
+        "series": "Prod"
+      },
+      {
+        "r": 65,
+        "theta": "DDoS Exposure Score",
+        "series": "Staging"
+      },
+      {
+        "r": 40,
+        "theta": "Phishing Exposure Score",
+        "series": "Staging"
+      },
+      {
+        "r": 60,
+        "theta": "Malware Exposure Score",
+        "series": "Staging"
+      },
+      {
+        "r": 30,
+        "theta": "Insider Threat Score",
+        "series": "Staging"
+      },
+      {
+        "r": 70,
+        "theta": "SQL Injection Risk",
+        "series": "Staging"
+      },
+      {
+        "r": 55,
+        "theta": "Data Breach Risk",
+        "series": "Staging"
+      },
+      {
+        "r": 40,
+        "theta": "DDoS Exposure Score",
+        "series": "Dev"
+      },
+      {
+        "r": 35,
+        "theta": "Phishing Exposure Score",
+        "series": "Dev"
+      },
+      {
+        "r": 50,
+        "theta": "Malware Exposure Score",
+        "series": "Dev"
+      },
+      {
+        "r": 25,
+        "theta": "Insider Threat Score",
+        "series": "Dev"
+      },
+      {
+        "r": 45,
+        "theta": "SQL Injection Risk",
+        "series": "Dev"
+      },
+      {
+        "r": 30,
+        "theta": "Data Breach Risk",
+        "series": "Dev"
+      },
+      {
+        "r": 30,
+        "theta": "DDoS Exposure Score",
+        "series": "Test"
+      },
+      {
+        "r": 25,
+        "theta": "Phishing Exposure Score",
+        "series": "Test"
+      },
+      {
+        "r": 30,
+        "theta": "Malware Exposure Score",
+        "series": "Test"
+      },
+      {
+        "r": 10,
+        "theta": "Insider Threat Score",
+        "series": "Test"
+      },
+      {
+        "r": 35,
+        "theta": "SQL Injection Risk",
+        "series": "Test"
+      },
+      {
+        "r": 20,
+        "theta": "Data Breach Risk",
+        "series": "Test"
+      },
+      {
+        "r": 35,
+        "theta": "DDoS Exposure Score",
+        "series": "UAT"
+      },
+      {
+        "r": 20,
+        "theta": "Phishing Exposure Score",
+        "series": "UAT"
+      },
+      {
+        "r": 25,
+        "theta": "Malware Exposure Score",
+        "series": "UAT"
+      },
+      {
+        "r": 15,
+        "theta": "Insider Threat Score",
+        "series": "UAT"
+      },
+      {
+        "r": 50,
+        "theta": "SQL Injection Risk",
+        "series": "UAT"
+      },
+      {
+        "r": 40,
+        "theta": "Data Breach Risk",
+        "series": "UAT"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

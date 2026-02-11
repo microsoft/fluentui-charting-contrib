@@ -1,0 +1,161 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 1972,
+        "y": 13177000,
+        "series": "Australia Population"
+      },
+      {
+        "x": 1977,
+        "y": 14074100,
+        "series": "Australia Population"
+      },
+      {
+        "x": 1982,
+        "y": 15184200,
+        "series": "Australia Population"
+      },
+      {
+        "x": 1987,
+        "y": 16257249,
+        "series": "Australia Population"
+      },
+      {
+        "x": 1992,
+        "y": 17481977,
+        "series": "Australia Population"
+      },
+      {
+        "x": 1997,
+        "y": 18565243,
+        "series": "Australia Population"
+      },
+      {
+        "x": 2002,
+        "y": 19546792,
+        "series": "Australia Population"
+      },
+      {
+        "x": 2007,
+        "y": 20434176,
+        "series": "Australia Population"
+      },
+      {
+        "x": 1972,
+        "y": 2929100,
+        "series": "New Zealand Population"
+      },
+      {
+        "x": 1977,
+        "y": 3164900,
+        "series": "New Zealand Population"
+      },
+      {
+        "x": 1982,
+        "y": 3210650,
+        "series": "New Zealand Population"
+      },
+      {
+        "x": 1987,
+        "y": 3317166,
+        "series": "New Zealand Population"
+      },
+      {
+        "x": 1992,
+        "y": 3437674,
+        "series": "New Zealand Population"
+      },
+      {
+        "x": 1997,
+        "y": 3676187,
+        "series": "New Zealand Population"
+      },
+      {
+        "x": 2002,
+        "y": 3908037,
+        "series": "New Zealand Population"
+      },
+      {
+        "x": 2007,
+        "y": 4115771,
+        "series": "New Zealand Population"
+      },
+      {
+        "x": 1972,
+        "y": 16788.62948,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 1977,
+        "y": 18334.19751,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 1982,
+        "y": 19477.00928,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 1987,
+        "y": 21888.88903,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 1992,
+        "y": 23424.76683,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 1997,
+        "y": 26997.93657,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 2002,
+        "y": 30687.75473,
+        "series": "Australia GDP per Capita"
+      },
+      {
+        "x": 2007,
+        "y": 34435.367439999995,
+        "series": "Australia GDP per Capita"
+      }
+    ]
+  },
+  "title": "Grouped Bar with Secondary Y-axis Line",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Population"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Population"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly ADR and RevPAR Trends",
+  "description": "Converted from Plotly schema 211 - Multi-series line+markers chart",
+  "data": {
+    "values": [
+      { "month": "2023-01", "revenue": 120, "metric": "ADR" },
+      { "month": "2023-02", "revenue": 150, "metric": "ADR" },
+      { "month": "2023-03", "revenue": 180, "metric": "ADR" },
+      { "month": "2023-04", "revenue": 130, "metric": "ADR" },
+      { "month": "2023-05", "revenue": 160, "metric": "ADR" },
+      { "month": "2023-06", "revenue": 190, "metric": "ADR" },
+      { "month": "2023-07", "revenue": 200, "metric": "ADR" },
+      { "month": "2023-08", "revenue": 175, "metric": "ADR" },
+      { "month": "2023-09", "revenue": 160, "metric": "ADR" },
+      { "month": "2023-10", "revenue": 180, "metric": "ADR" },
+      { "month": "2023-01", "revenue": 90, "metric": "RevPAR" },
+      { "month": "2023-02", "revenue": 110, "metric": "RevPAR" },
+      { "month": "2023-03", "revenue": 140, "metric": "RevPAR" },
+      { "month": "2023-04", "revenue": 100, "metric": "RevPAR" },
+      { "month": "2023-05", "revenue": 130, "metric": "RevPAR" },
+      { "month": "2023-06", "revenue": 160, "metric": "RevPAR" },
+      { "month": "2023-07", "revenue": 170, "metric": "RevPAR" },
+      { "month": "2023-08", "revenue": 150, "metric": "RevPAR" },
+      { "month": "2023-09", "revenue": 145, "metric": "RevPAR" },
+      { "month": "2023-10", "revenue": 160, "metric": "RevPAR" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal",
+          "axis": { "title": "Month" }
+        },
+        "y": {
+          "field": "revenue",
+          "type": "quantitative",
+          "axis": { "title": "Revenue (USD)" }
+        },
+        "color": {
+          "field": "metric",
+          "type": "nominal",
+          "legend": { "title": "Metric" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "revenue",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "metric",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

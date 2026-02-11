@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Student Demographics by Region",
+  "description": "Converted from Plotly schema 102 - Donut chart",
+  "data": {
+    "values": [
+      { "region": "Urban", "percentage": 40 },
+      { "region": "Suburban", "percentage": 35 },
+      { "region": "Rural", "percentage": 25 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "percentage",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "legend": { "title": "Region" }
+    }
+  }
+}

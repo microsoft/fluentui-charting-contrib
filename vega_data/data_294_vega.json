@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monitoraggio delle Prestazioni della Fabbrica",
+  "description": "Converted from Plotly schema 294 - Multi-series line+markers with Italian labels",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "Gennaio", "efficiency": 90, "line": "Linee di Produzione 1" },
+      { "month": "Febbraio", "efficiency": 95, "line": "Linee di Produzione 1" },
+      { "month": "Marzo", "efficiency": 93, "line": "Linee di Produzione 1" },
+      { "month": "Aprile", "efficiency": 97, "line": "Linee di Produzione 1" },
+      { "month": "Maggio", "efficiency": 96, "line": "Linee di Produzione 1" },
+      { "month": "Giugno", "efficiency": 94, "line": "Linee di Produzione 1" },
+      { "month": "Luglio", "efficiency": 92, "line": "Linee di Produzione 1" },
+      { "month": "Agosto", "efficiency": 91, "line": "Linee di Produzione 1" },
+      { "month": "Settembre", "efficiency": 95, "line": "Linee di Produzione 1" },
+      { "month": "Ottobre", "efficiency": 97, "line": "Linee di Produzione 1" },
+      { "month": "Novembre", "efficiency": 98, "line": "Linee di Produzione 1" },
+      { "month": "Dicembre", "efficiency": 99, "line": "Linee di Produzione 1" },
+      { "month": "Gennaio", "efficiency": 85, "line": "Linee di Produzione 2" },
+      { "month": "Febbraio", "efficiency": 88, "line": "Linee di Produzione 2" },
+      { "month": "Marzo", "efficiency": 87, "line": "Linee di Produzione 2" },
+      { "month": "Aprile", "efficiency": 90, "line": "Linee di Produzione 2" },
+      { "month": "Maggio", "efficiency": 91, "line": "Linee di Produzione 2" },
+      { "month": "Giugno", "efficiency": 89, "line": "Linee di Produzione 2" },
+      { "month": "Luglio", "efficiency": 86, "line": "Linee di Produzione 2" },
+      { "month": "Agosto", "efficiency": 87, "line": "Linee di Produzione 2" },
+      { "month": "Settembre", "efficiency": 88, "line": "Linee di Produzione 2" },
+      { "month": "Ottobre", "efficiency": 90, "line": "Linee di Produzione 2" },
+      { "month": "Novembre", "efficiency": 92, "line": "Linee di Produzione 2" },
+      { "month": "Dicembre", "efficiency": 93, "line": "Linee di Produzione 2" },
+      { "month": "Gennaio", "efficiency": 80, "line": "Linee di Produzione 3" },
+      { "month": "Febbraio", "efficiency": 82, "line": "Linee di Produzione 3" },
+      { "month": "Marzo", "efficiency": 84, "line": "Linee di Produzione 3" },
+      { "month": "Aprile", "efficiency": 85, "line": "Linee di Produzione 3" },
+      { "month": "Maggio", "efficiency": 87, "line": "Linee di Produzione 3" },
+      { "month": "Giugno", "efficiency": 84, "line": "Linee di Produzione 3" },
+      { "month": "Luglio", "efficiency": 82, "line": "Linee di Produzione 3" },
+      { "month": "Agosto", "efficiency": 83, "line": "Linee di Produzione 3" },
+      { "month": "Settembre", "efficiency": 84, "line": "Linee di Produzione 3" },
+      { "month": "Ottobre", "efficiency": 86, "line": "Linee di Produzione 3" },
+      { "month": "Novembre", "efficiency": 88, "line": "Linee di Produzione 3" },
+      { "month": "Dicembre", "efficiency": 90, "line": "Linee di Produzione 3" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "sort": ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
+          "axis": { "title": "Mese" }
+        },
+        "y": {
+          "field": "efficiency",
+          "type": "quantitative",
+          "axis": { "title": "Efficienza (%)" }
+        },
+        "color": {
+          "field": "line",
+          "type": "nominal",
+          "scale": { "range": ["blue", "green", "red"] },
+          "legend": { "title": "Linee di Produzione" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "month", "type": "ordinal" },
+        "y": { "field": "efficiency", "type": "quantitative" },
+        "color": { "field": "line", "type": "nominal" }
+      }
+    }
+  ]
+}

@@ -78,6 +78,8 @@ jobs:
                 npx playwright install
                 npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --config playwright-storybook-v9.config.ts || true
               continue-on-error: true
+              env:
+                GITHUB_WORKFLOW: "[Charts V9] Storybook Test coverage"
 
             - name: Zip Playwright report
               shell: pwsh 

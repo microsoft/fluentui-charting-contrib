@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Construction Project Monthly Over/Under Spend by Phase",
+  "data": {
+    "values": [
+      {"month": "Jan", "spend": 140, "phase": "Planning"},
+      {"month": "Jan", "spend": 145, "phase": "Foundation"},
+      {"month": "Jan", "spend": -95, "phase": "Structure"},
+      {"month": "Jan", "spend": -35, "phase": "Finishing"},
+      {"month": "Feb", "spend": -134, "phase": "Planning"},
+      {"month": "Feb", "spend": -76, "phase": "Foundation"},
+      {"month": "Feb", "spend": -13, "phase": "Structure"},
+      {"month": "Feb", "spend": 144, "phase": "Finishing"},
+      {"month": "Mar", "spend": 100, "phase": "Planning"},
+      {"month": "Mar", "spend": 34, "phase": "Foundation"},
+      {"month": "Mar", "spend": -4, "phase": "Structure"},
+      {"month": "Mar", "spend": -121, "phase": "Finishing"},
+      {"month": "Apr", "spend": 19, "phase": "Planning"},
+      {"month": "Apr", "spend": 108, "phase": "Foundation"},
+      {"month": "Apr", "spend": 154, "phase": "Structure"},
+      {"month": "Apr", "spend": 130, "phase": "Finishing"},
+      {"month": "May", "spend": 59, "phase": "Planning"},
+      {"month": "May", "spend": 229, "phase": "Foundation"},
+      {"month": "May", "spend": 141, "phase": "Structure"},
+      {"month": "May", "spend": 124, "phase": "Finishing"},
+      {"month": "Jun", "spend": 40, "phase": "Planning"},
+      {"month": "Jun", "spend": -25, "phase": "Foundation"},
+      {"month": "Jun", "spend": -57, "phase": "Structure"},
+      {"month": "Jun", "spend": -126, "phase": "Finishing"}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "title": "Month",
+      "sort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "spend",
+      "type": "quantitative",
+      "title": "Cost Over/Under (k$)",
+      "stack": true
+    },
+    "color": {
+      "field": "phase",
+      "type": "nominal",
+      "title": "Phase",
+      "scale": {
+        "domain": ["Planning", "Foundation", "Structure", "Finishing"],
+        "range": ["#80bad8", "#0d3f76", "#053061", "#124883"]
+      }
+    },
+    "tooltip": [
+      {"field": "month", "type": "ordinal", "title": "Month"},
+      {"field": "phase", "type": "nominal", "title": "Phase"},
+      {"field": "spend", "type": "quantitative", "title": "Over/Under (k$)"}
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "background": "white"
+  }
+}

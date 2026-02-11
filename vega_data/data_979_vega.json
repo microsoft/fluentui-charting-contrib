@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Low",
+        "y": 1200,
+        "series": "Low"
+      },
+      {
+        "x": "Medium",
+        "y": 850,
+        "series": "Medium"
+      },
+      {
+        "x": "High",
+        "y": 450,
+        "series": "High"
+      }
+    ]
+  },
+  "title": "Monthly Customer Count by Usage Tier<br><sup>Energy & Utilities: Cost Formula per Tier</sup>",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Usage Tier"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Number of Customers"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Usage Tier"
+      },
+      {
+        "field": "y",
+        "title": "Number of Customers"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

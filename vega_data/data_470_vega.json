@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 45,
+        "y": 0.8,
+        "series": "E1"
+      },
+      {
+        "x": 50,
+        "y": 0.75,
+        "series": "E1"
+      },
+      {
+        "x": 40,
+        "y": 0.85,
+        "series": "E1"
+      },
+      {
+        "x": 60,
+        "y": 0.9,
+        "series": "E2"
+      },
+      {
+        "x": 55,
+        "y": 0.85,
+        "series": "E2"
+      },
+      {
+        "x": 65,
+        "y": 0.88,
+        "series": "E2"
+      },
+      {
+        "x": 30,
+        "y": 0.95,
+        "series": "E3"
+      },
+      {
+        "x": 35,
+        "y": 0.92,
+        "series": "E3"
+      },
+      {
+        "x": 45,
+        "y": 0.97,
+        "series": "E3"
+      }
+    ]
+  },
+  "title": "Exercise Performance: Completion Time vs Success Rate",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "completion time"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "success rate"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "completion time"
+      },
+      {
+        "field": "y",
+        "title": "success rate"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

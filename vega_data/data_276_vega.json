@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Top-Performing Models (Q1 2023)",
+  "description": "Converted from Plotly schema 276 - Pie chart (representative sample from multiple quarters)",
+  "width": 350,
+  "height": 350,
+  "data": {
+    "values": [
+      { "model": "Model A", "sales": 4000 },
+      { "model": "Model B", "sales": 2500 },
+      { "model": "Model C", "sales": 3500 },
+      { "model": "Model D", "sales": 3000 },
+      { "model": "Model E", "sales": 2700 },
+      { "model": "Model F", "sales": 2200 },
+      { "model": "Model G", "sales": 3900 },
+      { "model": "Model H", "sales": 4100 },
+      { "model": "Model I", "sales": 2000 },
+      { "model": "Model J", "sales": 3800 }
+    ]
+  },
+  "mark": {
+    "type": "arc"
+  },
+  "encoding": {
+    "theta": {
+      "field": "sales",
+      "type": "quantitative",
+      "stack": true
+    },
+    "color": {
+      "field": "model",
+      "type": "nominal",
+      "legend": { "title": "Model" }
+    },
+    "tooltip": [
+      { "field": "model", "type": "nominal", "title": "Model" },
+      { "field": "sales", "type": "quantitative", "title": "Sales" }
+    ]
+  }
+}

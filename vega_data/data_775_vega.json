@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "IT",
+        "y": 180,
+        "series": "Remote"
+      },
+      {
+        "x": "Healthcare",
+        "y": 90,
+        "series": "Remote"
+      },
+      {
+        "x": "Finance",
+        "y": 60,
+        "series": "Remote"
+      },
+      {
+        "x": "Education",
+        "y": 80,
+        "series": "Remote"
+      },
+      {
+        "x": "Manufacturing",
+        "y": 70,
+        "series": "Remote"
+      },
+      {
+        "x": "IT",
+        "y": 140,
+        "series": "On‑site"
+      },
+      {
+        "x": "Healthcare",
+        "y": 190,
+        "series": "On‑site"
+      },
+      {
+        "x": "Finance",
+        "y": 90,
+        "series": "On‑site"
+      },
+      {
+        "x": "Education",
+        "y": 120,
+        "series": "On‑site"
+      },
+      {
+        "x": "Manufacturing",
+        "y": 110,
+        "series": "On‑site"
+      }
+    ]
+  },
+  "title": "Job Openings: Remote vs On‑site",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Industry"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Openings"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Industry"
+      },
+      {
+        "field": "y",
+        "title": "Openings"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

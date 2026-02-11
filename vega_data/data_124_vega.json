@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Emission Levels vs Compliance Standards",
+  "description": "Converted from Plotly schema 124 - Bar and line chart",
+  "data": {
+    "values": [
+      { "type": "CO2", "value": 1200, "metric": "Emission Levels (tons)" },
+      { "type": "NOx", "value": 300, "metric": "Emission Levels (tons)" },
+      { "type": "SOx", "value": 150, "metric": "Emission Levels (tons)" },
+      { "type": "PM2.5", "value": 80, "metric": "Emission Levels (tons)" },
+      { "type": "CO2", "value": 2000, "metric": "Compliance Standards (tons)" },
+      { "type": "NOx", "value": 1000, "metric": "Compliance Standards (tons)" },
+      { "type": "SOx", "value": 500, "metric": "Compliance Standards (tons)" },
+      { "type": "PM2.5", "value": 300, "metric": "Compliance Standards (tons)" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "type",
+      "type": "nominal",
+      "axis": { "title": "Emission Type" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Levels (tons)" }
+    },
+    "xOffset": {
+      "field": "metric"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

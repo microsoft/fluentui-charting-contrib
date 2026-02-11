@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": "$10M - $13M"
+      },
+      {
+        "value": "$10M - $13M"
+      },
+      {
+        "value": "$10M - $13M"
+      },
+      {
+        "value": "$10M - $13M"
+      },
+      {
+        "value": "$10M - $13M"
+      },
+      {
+        "value": "$13M - $16M"
+      },
+      {
+        "value": "$13M - $16M"
+      },
+      {
+        "value": "$13M - $16M"
+      },
+      {
+        "value": "$13M - $16M"
+      },
+      {
+        "value": "$13M - $16M"
+      },
+      {
+        "value": "$16M - $19M"
+      },
+      {
+        "value": "$16M - $19M"
+      },
+      {
+        "value": "$16M - $19M"
+      },
+      {
+        "value": "$16M - $19M"
+      },
+      {
+        "value": "$16M - $19M"
+      },
+      {
+        "value": "$19M - $22M"
+      },
+      {
+        "value": "$19M - $22M"
+      },
+      {
+        "value": "$19M - $22M"
+      },
+      {
+        "value": "$19M - $22M"
+      },
+      {
+        "value": "$19M - $22M"
+      },
+      {
+        "value": "$22M - $25M"
+      },
+      {
+        "value": "$22M - $25M"
+      },
+      {
+        "value": "$22M - $25M"
+      },
+      {
+        "value": "$22M - $25M"
+      },
+      {
+        "value": "$22M - $25M"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Healthcare Spending vs Patient Satisfaction: Hospital Distribution"
+}

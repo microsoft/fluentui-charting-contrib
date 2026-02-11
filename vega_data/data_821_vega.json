@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2025-04-13",
+        "y": 89.6,
+        "series": "High Risk"
+      },
+      {
+        "x": "2025-04-20",
+        "y": 95.3,
+        "series": "High Risk"
+      },
+      {
+        "x": "2025-04-27",
+        "y": 86.8,
+        "series": "High Risk"
+      },
+      {
+        "x": "2025-05-04",
+        "y": 85.5,
+        "series": "High Risk"
+      },
+      {
+        "x": "2025-05-11",
+        "y": 88.9,
+        "series": "High Risk"
+      },
+      {
+        "x": "2025-05-18",
+        "y": 89.7,
+        "series": "High Risk"
+      },
+      {
+        "x": "2025-05-25",
+        "y": 93.2,
+        "series": "High Risk"
+      },
+      {
+        "x": "2025-06-01",
+        "y": 99.5,
+        "series": "High Risk"
+      },
+      {
+        "x": "2025-04-13",
+        "y": 66.58,
+        "series": "Low Risk"
+      },
+      {
+        "x": "2025-04-20",
+        "y": 63.620000000000005,
+        "series": "Low Risk"
+      },
+      {
+        "x": "2025-04-27",
+        "y": 64.88,
+        "series": "Low Risk"
+      },
+      {
+        "x": "2025-05-04",
+        "y": 65.7,
+        "series": "Low Risk"
+      },
+      {
+        "x": "2025-05-11",
+        "y": 64.68,
+        "series": "Low Risk"
+      },
+      {
+        "x": "2025-05-18",
+        "y": 67.17999999999999,
+        "series": "Low Risk"
+      },
+      {
+        "x": "2025-05-25",
+        "y": 63.21999999999999,
+        "series": "Low Risk"
+      },
+      {
+        "x": "2025-06-01",
+        "y": 65.46000000000001,
+        "series": "Low Risk"
+      },
+      {
+        "x": "2025-04-13",
+        "y": 78,
+        "series": "Medium Risk"
+      },
+      {
+        "x": "2025-04-20",
+        "y": 79.2,
+        "series": "Medium Risk"
+      },
+      {
+        "x": "2025-04-27",
+        "y": 77.03333333333335,
+        "series": "Medium Risk"
+      },
+      {
+        "x": "2025-05-04",
+        "y": 78.86666666666666,
+        "series": "Medium Risk"
+      },
+      {
+        "x": "2025-05-11",
+        "y": 77.86666666666666,
+        "series": "Medium Risk"
+      },
+      {
+        "x": "2025-05-18",
+        "y": 75.96666666666667,
+        "series": "Medium Risk"
+      },
+      {
+        "x": "2025-05-25",
+        "y": 75.76666666666667,
+        "series": "Medium Risk"
+      },
+      {
+        "x": "2025-06-01",
+        "y": 79.83333333333333,
+        "series": "Medium Risk"
+      }
+    ]
+  },
+  "title": "Average Operational Temperature per Week by Maintenance Risk",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Operational Temperature"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Week"
+      },
+      {
+        "field": "y",
+        "title": "Operational Temperature"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

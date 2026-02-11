@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Alternative",
+        "y": 3.4966666666666666,
+        "series": "Alternative"
+      },
+      {
+        "x": "Commodities",
+        "y": 0.17,
+        "series": "Commodities"
+      },
+      {
+        "x": "Equity",
+        "y": 0.8433333333333332,
+        "series": "Equity"
+      },
+      {
+        "x": "Fixed Income",
+        "y": 0.48333333333333334,
+        "series": "Fixed Income"
+      },
+      {
+        "x": "Real Estate",
+        "y": 6.890000000000001,
+        "series": "Real Estate"
+      }
+    ]
+  },
+  "title": "Average Return % by Asset Type - May 2023",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Asset Type"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Average Return (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Asset Type"
+      },
+      {
+        "field": "y",
+        "title": "Average Return (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

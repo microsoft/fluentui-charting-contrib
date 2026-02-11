@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Citizen Satisfaction Over Time",
+  "description": "Converted from Plotly schema 84 - Multi-series line chart with markers",
+  "data": {
+    "values": [
+      { "year": "2020", "satisfaction": 75, "category": "Citizen Satisfaction for Healthcare" },
+      { "year": "2021", "satisfaction": 73, "category": "Citizen Satisfaction for Healthcare" },
+      { "year": "2022", "satisfaction": 78, "category": "Citizen Satisfaction for Healthcare" },
+      { "year": "2023", "satisfaction": 82, "category": "Citizen Satisfaction for Healthcare" },
+      { "year": "2020", "satisfaction": 68, "category": "Citizen Satisfaction for Education" },
+      { "year": "2021", "satisfaction": 70, "category": "Citizen Satisfaction for Education" },
+      { "year": "2022", "satisfaction": 74, "category": "Citizen Satisfaction for Education" },
+      { "year": "2023", "satisfaction": 76, "category": "Citizen Satisfaction for Education" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "axis": { "title": "Year" }
+    },
+    "y": {
+      "field": "satisfaction",
+      "type": "quantitative",
+      "axis": { "title": "Satisfaction Rate (%)" }
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "legend": { "title": "Category" }
+    }
+  }
+}

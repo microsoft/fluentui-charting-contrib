@@ -1,0 +1,762 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-01",
+        "y": 98,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-02",
+        "y": 83.9,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-03",
+        "y": 78.4,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-04",
+        "y": 60.8,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-05",
+        "y": 97.5,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-06",
+        "y": 67.3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-07",
+        "y": 60.3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-08",
+        "y": 84.5,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-09",
+        "y": 99,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-10",
+        "y": 91.4,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-11",
+        "y": 83.7,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-12",
+        "y": 87.2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-01",
+        "y": 1.4,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-02",
+        "y": 7.2,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-03",
+        "y": 7.2,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-04",
+        "y": 38,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-05",
+        "y": 0,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-06",
+        "y": 9.9,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-07",
+        "y": 0.9,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-08",
+        "y": 2.2,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-09",
+        "y": 0.2,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-10",
+        "y": 1.7,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-11",
+        "y": 0.8,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-12",
+        "y": 5.8,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-01",
+        "y": 0.5,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-02",
+        "y": 8.9,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-03",
+        "y": 14.4,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-04",
+        "y": 1.2,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-05",
+        "y": 2.5,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-06",
+        "y": 22.7,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-07",
+        "y": 38.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-08",
+        "y": 13.4,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-09",
+        "y": 0.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-10",
+        "y": 6.9,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-11",
+        "y": 15.5,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-12",
+        "y": 7,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-01",
+        "y": 98,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-02",
+        "y": 75.4,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-03",
+        "y": 87.4,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-04",
+        "y": 79.8,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-05",
+        "y": 75.6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-06",
+        "y": 72.5,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-07",
+        "y": 82.7,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-08",
+        "y": 91,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-09",
+        "y": 97.1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-10",
+        "y": 67.8,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-11",
+        "y": 75.5,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-12",
+        "y": 83.5,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-01",
+        "y": 2,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-02",
+        "y": 0.4,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-03",
+        "y": 5.6,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-04",
+        "y": 0.7,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-05",
+        "y": 4.4,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-06",
+        "y": 14.3,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-07",
+        "y": 0.5,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-08",
+        "y": 8.5,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-09",
+        "y": 2.1,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-10",
+        "y": 1.5,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-11",
+        "y": 6.6,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-12",
+        "y": 16,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-01",
+        "y": 0.1,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-02",
+        "y": 24.2,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-03",
+        "y": 7.1,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-04",
+        "y": 19.5,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-05",
+        "y": 19.9,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-06",
+        "y": 13.2,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-07",
+        "y": 16.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-08",
+        "y": 0.5,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-09",
+        "y": 0.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-10",
+        "y": 30.7,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-11",
+        "y": 17.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-12",
+        "y": 0.6,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-01",
+        "y": 81.7,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-02",
+        "y": 63,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-03",
+        "y": 67.9,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-04",
+        "y": 68,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-05",
+        "y": 90.9,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-06",
+        "y": 64.6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-07",
+        "y": 73.2,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-08",
+        "y": 73,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-09",
+        "y": 95.5,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-10",
+        "y": 98.9,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-11",
+        "y": 82.5,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-12",
+        "y": 80.9,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-01",
+        "y": 2.6,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-02",
+        "y": 36.5,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-03",
+        "y": 0.2,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-04",
+        "y": 22.8,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-05",
+        "y": 0.7,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-06",
+        "y": 30.5,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-07",
+        "y": 1.7,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-08",
+        "y": 19.7,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-09",
+        "y": 2.1,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-10",
+        "y": 1,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-11",
+        "y": 13.5,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-12",
+        "y": 8.2,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-01",
+        "y": 15.7,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-02",
+        "y": 0.5,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-03",
+        "y": 31.9,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-04",
+        "y": 9.3,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-05",
+        "y": 8.5,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-06",
+        "y": 4.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-07",
+        "y": 25.1,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-08",
+        "y": 7.3,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-09",
+        "y": 2.4,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-10",
+        "y": 0.2,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-11",
+        "y": 4,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-12",
+        "y": 10.9,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-01",
+        "y": 77.6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-02",
+        "y": 72.6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-03",
+        "y": 65.6,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-04",
+        "y": 68.1,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-05",
+        "y": 87.8,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-06",
+        "y": 92.3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-07",
+        "y": 78.3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-08",
+        "y": 95.7,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-09",
+        "y": 64.9,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-10",
+        "y": 64.4,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-11",
+        "y": 60,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-12",
+        "y": 60.3,
+        "series": "Completed"
+      },
+      {
+        "x": "2024-01",
+        "y": 4.5,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-02",
+        "y": 13.9,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-03",
+        "y": 20.8,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-04",
+        "y": 30.1,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-05",
+        "y": 10.7,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-06",
+        "y": 4.9,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-07",
+        "y": 4.7,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-08",
+        "y": 2.3,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-09",
+        "y": 12.5,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-10",
+        "y": 8.1,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-11",
+        "y": 14.1,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-12",
+        "y": 20.3,
+        "series": "In Progress"
+      },
+      {
+        "x": "2024-01",
+        "y": 17.9,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-02",
+        "y": 13.5,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-03",
+        "y": 13.6,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-04",
+        "y": 1.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-05",
+        "y": 1.5,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-06",
+        "y": 2.8,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-07",
+        "y": 17,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-08",
+        "y": 2,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-09",
+        "y": 22.6,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-10",
+        "y": 27.5,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-11",
+        "y": 25.9,
+        "series": "Not Started"
+      },
+      {
+        "x": "2024-12",
+        "y": 19.4,
+        "series": "Not Started"
+      }
+    ]
+  },
+  "title": "Fleet Maintenance Status in North Atlantic (by Ship Type, Weekly)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Percent of Ships"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Week"
+      },
+      {
+        "field": "y",
+        "title": "Percent of Ships"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

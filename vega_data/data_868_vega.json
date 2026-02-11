@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-W01",
+        "y": 6.720000000000001,
+        "series": "Series"
+      },
+      {
+        "x": "2024-W02",
+        "y": 7.6,
+        "series": "Series"
+      },
+      {
+        "x": "2024-W03",
+        "y": 6.82,
+        "series": "Series"
+      },
+      {
+        "x": "2024-W04",
+        "y": 7.08,
+        "series": "Series"
+      },
+      {
+        "x": "2024-W05",
+        "y": 6.32,
+        "series": "Series"
+      },
+      {
+        "x": "2024-W06",
+        "y": 7.959999999999999,
+        "series": "Series"
+      },
+      {
+        "x": "2024-W07",
+        "y": 7.24,
+        "series": "Series"
+      },
+      {
+        "x": "2024-W08",
+        "y": 5.459999999999999,
+        "series": "Series"
+      },
+      {
+        "x": "2024-W09",
+        "y": 7.159999999999999,
+        "series": "Series"
+      },
+      {
+        "x": "2024-W10",
+        "y": 5.9799999999999995,
+        "series": "Series"
+      },
+      {
+        "x": "2024-W11",
+        "y": 7.720000000000001,
+        "series": "Series"
+      },
+      {
+        "x": "2024-W12",
+        "y": 7.419999999999999,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Average Reorder Time by Week",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Reorder Time"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Week"
+      },
+      {
+        "field": "y",
+        "title": "Reorder Time"
+      }
+    ]
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 200,
+        "y": 180,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": 205,
+        "y": 185,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": 210,
+        "y": 190,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": 215,
+        "y": 195,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": 220,
+        "y": 200,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": 225,
+        "y": 205,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": 230,
+        "y": 210,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": 235,
+        "y": 215,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": 240,
+        "y": 220,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": 245,
+        "y": 225,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": 250,
+        "y": 230,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": 255,
+        "y": 235,
+        "series": "Carbon Dioxide"
+      },
+      {
+        "x": 150,
+        "y": 160,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": 155,
+        "y": 165,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": 160,
+        "y": 170,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": 165,
+        "y": 175,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": 170,
+        "y": 180,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": 175,
+        "y": 185,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": 180,
+        "y": 190,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": 185,
+        "y": 195,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": 190,
+        "y": 200,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": 195,
+        "y": 205,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": 200,
+        "y": 210,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": 205,
+        "y": 215,
+        "series": "Nitrogen Oxides"
+      },
+      {
+        "x": 180,
+        "y": 190,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": 185,
+        "y": 195,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": 190,
+        "y": 200,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": 195,
+        "y": 205,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": 200,
+        "y": 210,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": 205,
+        "y": 215,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": 210,
+        "y": 220,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": 215,
+        "y": 225,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": 220,
+        "y": 230,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": 225,
+        "y": 235,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": 230,
+        "y": 240,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": 235,
+        "y": 245,
+        "series": "Sulfur Dioxide"
+      },
+      {
+        "x": 220,
+        "y": 210,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": 225,
+        "y": 215,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": 230,
+        "y": 220,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": 235,
+        "y": 225,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": 240,
+        "y": 230,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": 245,
+        "y": 235,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": 250,
+        "y": 240,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": 255,
+        "y": 245,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": 260,
+        "y": 250,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": 265,
+        "y": 255,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": 270,
+        "y": 260,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": 275,
+        "y": 265,
+        "series": "Carbon Monoxide"
+      },
+      {
+        "x": 70,
+        "y": 60,
+        "series": "Lead"
+      },
+      {
+        "x": 75,
+        "y": 65,
+        "series": "Lead"
+      },
+      {
+        "x": 80,
+        "y": 70,
+        "series": "Lead"
+      },
+      {
+        "x": 85,
+        "y": 75,
+        "series": "Lead"
+      },
+      {
+        "x": 90,
+        "y": 80,
+        "series": "Lead"
+      },
+      {
+        "x": 95,
+        "y": 85,
+        "series": "Lead"
+      },
+      {
+        "x": 100,
+        "y": 90,
+        "series": "Lead"
+      },
+      {
+        "x": 105,
+        "y": 95,
+        "series": "Lead"
+      },
+      {
+        "x": 110,
+        "y": 100,
+        "series": "Lead"
+      },
+      {
+        "x": 115,
+        "y": 105,
+        "series": "Lead"
+      },
+      {
+        "x": 120,
+        "y": 110,
+        "series": "Lead"
+      },
+      {
+        "x": 125,
+        "y": 115,
+        "series": "Lead"
+      }
+    ]
+  },
+  "title": "Emission Levels vs Compliance Standards",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Emission Levels"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Compliance Standards"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Emission Levels"
+      },
+      {
+        "field": "y",
+        "title": "Compliance Standards"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

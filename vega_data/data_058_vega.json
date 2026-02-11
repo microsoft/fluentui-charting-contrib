@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Companies Ranked by Market Share",
+  "description": "Converted from Plotly schema 58 - Horizontal bar chart",
+  "data": {
+    "values": [
+      { "company": "Company A", "share": 40 },
+      { "company": "Company B", "share": 25 },
+      { "company": "Company C", "share": 20 },
+      { "company": "Company D", "share": 15 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "share",
+      "type": "quantitative",
+      "axis": { "title": "Market Share (%)" }
+    },
+    "y": {
+      "field": "company",
+      "type": "nominal",
+      "axis": { "title": "Companies" }
+    }
+  }
+}

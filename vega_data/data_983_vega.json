@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Steel",
+        "y": 139,
+        "series": "Steel"
+      },
+      {
+        "x": "Aluminum",
+        "y": 647,
+        "series": "Aluminum"
+      },
+      {
+        "x": "Copper",
+        "y": 226,
+        "series": "Copper"
+      },
+      {
+        "x": "Plastic",
+        "y": 631,
+        "series": "Plastic"
+      },
+      {
+        "x": "Rubber",
+        "y": 334,
+        "series": "Rubber"
+      },
+      {
+        "x": "Glass",
+        "y": 178,
+        "series": "Glass"
+      },
+      {
+        "x": "Textile",
+        "y": 150,
+        "series": "Textile"
+      },
+      {
+        "x": "Wood",
+        "y": 350,
+        "series": "Wood"
+      },
+      {
+        "x": "Ceramic",
+        "y": 460,
+        "series": "Ceramic"
+      },
+      {
+        "x": "Composite",
+        "y": 548,
+        "series": "Composite"
+      }
+    ]
+  },
+  "title": "Inventory Levels by Material Type",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Material Type"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Inventory Level (units)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Material Type"
+      },
+      {
+        "field": "y",
+        "title": "Inventory Level (units)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

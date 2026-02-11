@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Supplier 1",
+        "y": 150,
+        "series": "Series"
+      },
+      {
+        "x": "Supplier 2",
+        "y": 85,
+        "series": "Series"
+      },
+      {
+        "x": "Supplier 3",
+        "y": 200,
+        "series": "Series"
+      },
+      {
+        "x": "Supplier 4",
+        "y": 120,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Inventory Levels by Supplier",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Supplier Name"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Inventory Levels"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Supplier Name"
+      },
+      {
+        "field": "y",
+        "title": "Inventory Levels"
+      }
+    ]
+  }
+}

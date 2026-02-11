@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Weekly Issue Resolution and Feature Request Completion Times",
+  "description": "Converted from Plotly schema 273 - Grouped bar chart",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "week": "Week 1", "hours": 30, "type": "Issue Resolution" },
+      { "week": "Week 2", "hours": 25, "type": "Issue Resolution" },
+      { "week": "Week 3", "hours": 20, "type": "Issue Resolution" },
+      { "week": "Week 4", "hours": 15, "type": "Issue Resolution" },
+      { "week": "Week 5", "hours": 10, "type": "Issue Resolution" },
+      { "week": "Week 6", "hours": 8, "type": "Issue Resolution" },
+      { "week": "Week 7", "hours": 7, "type": "Issue Resolution" },
+      { "week": "Week 8", "hours": 6, "type": "Issue Resolution" },
+      { "week": "Week 9", "hours": 5, "type": "Issue Resolution" },
+      { "week": "Week 10", "hours": 4, "type": "Issue Resolution" },
+      { "week": "Week 1", "hours": 40, "type": "Feature Request" },
+      { "week": "Week 2", "hours": 35, "type": "Feature Request" },
+      { "week": "Week 3", "hours": 30, "type": "Feature Request" },
+      { "week": "Week 4", "hours": 25, "type": "Feature Request" },
+      { "week": "Week 5", "hours": 20, "type": "Feature Request" },
+      { "week": "Week 6", "hours": 18, "type": "Feature Request" },
+      { "week": "Week 7", "hours": 17, "type": "Feature Request" },
+      { "week": "Week 8", "hours": 16, "type": "Feature Request" },
+      { "week": "Week 9", "hours": 15, "type": "Feature Request" },
+      { "week": "Week 10", "hours": 14, "type": "Feature Request" },
+      { "week": "Week 1", "hours": 50, "type": "Bug Fix" },
+      { "week": "Week 2", "hours": 45, "type": "Bug Fix" },
+      { "week": "Week 3", "hours": 42, "type": "Bug Fix" },
+      { "week": "Week 4", "hours": 40, "type": "Bug Fix" },
+      { "week": "Week 5", "hours": 38, "type": "Bug Fix" },
+      { "week": "Week 6", "hours": 35, "type": "Bug Fix" },
+      { "week": "Week 7", "hours": 33, "type": "Bug Fix" },
+      { "week": "Week 8", "hours": 30, "type": "Bug Fix" },
+      { "week": "Week 9", "hours": 28, "type": "Bug Fix" },
+      { "week": "Week 10", "hours": 25, "type": "Bug Fix" },
+      { "week": "Week 1", "hours": 20, "type": "Client Feedback" },
+      { "week": "Week 2", "hours": 18, "type": "Client Feedback" },
+      { "week": "Week 3", "hours": 16, "type": "Client Feedback" },
+      { "week": "Week 4", "hours": 14, "type": "Client Feedback" },
+      { "week": "Week 5", "hours": 12, "type": "Client Feedback" },
+      { "week": "Week 6", "hours": 10, "type": "Client Feedback" },
+      { "week": "Week 7", "hours": 8, "type": "Client Feedback" },
+      { "week": "Week 8", "hours": 6, "type": "Client Feedback" },
+      { "week": "Week 9", "hours": 5, "type": "Client Feedback" },
+      { "week": "Week 10", "hours": 4, "type": "Client Feedback" },
+      { "week": "Week 1", "hours": 60, "type": "System Upgrade" },
+      { "week": "Week 2", "hours": 55, "type": "System Upgrade" },
+      { "week": "Week 3", "hours": 50, "type": "System Upgrade" },
+      { "week": "Week 4", "hours": 45, "type": "System Upgrade" },
+      { "week": "Week 5", "hours": 40, "type": "System Upgrade" },
+      { "week": "Week 6", "hours": 35, "type": "System Upgrade" },
+      { "week": "Week 7", "hours": 30, "type": "System Upgrade" },
+      { "week": "Week 8", "hours": 25, "type": "System Upgrade" },
+      { "week": "Week 9", "hours": 20, "type": "System Upgrade" },
+      { "week": "Week 10", "hours": 15, "type": "System Upgrade" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "week",
+      "type": "ordinal",
+      "axis": { "title": "Weeks" }
+    },
+    "y": {
+      "field": "hours",
+      "type": "quantitative",
+      "axis": { "title": "Time (hours)" }
+    },
+    "xOffset": {
+      "field": "type",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Task Type" }
+    },
+    "tooltip": [
+      { "field": "week", "type": "ordinal", "title": "Week" },
+      { "field": "type", "type": "nominal", "title": "Task" },
+      { "field": "hours", "type": "quantitative", "title": "Hours" }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "East",
+        "y": 1010,
+        "series": "Truck"
+      },
+      {
+        "x": "North",
+        "y": 1355,
+        "series": "Sedan"
+      },
+      {
+        "x": "South",
+        "y": 1770,
+        "series": "SUV"
+      },
+      {
+        "x": "West",
+        "y": 735,
+        "series": "Coupe"
+      }
+    ]
+  },
+  "title": "Total Sales Volume by Region and Model",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Region"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sales Volume"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Region"
+      },
+      {
+        "field": "y",
+        "title": "Sales Volume"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

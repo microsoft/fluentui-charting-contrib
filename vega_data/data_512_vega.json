@@ -1,0 +1,192 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 15,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-02T00:00:00.000000000",
+        "y": 16,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-03T00:00:00.000000000",
+        "y": 17,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-04T00:00:00.000000000",
+        "y": 18,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-05T00:00:00.000000000",
+        "y": 19,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-06T00:00:00.000000000",
+        "y": 15,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-07T00:00:00.000000000",
+        "y": 16,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-08T00:00:00.000000000",
+        "y": 17,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-09T00:00:00.000000000",
+        "y": 18,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-10T00:00:00.000000000",
+        "y": 19,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-11T00:00:00.000000000",
+        "y": 15,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-12T00:00:00.000000000",
+        "y": 16,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-13T00:00:00.000000000",
+        "y": 17,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-14T00:00:00.000000000",
+        "y": 18,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-15T00:00:00.000000000",
+        "y": 19,
+        "series": "check_in_time"
+      },
+      {
+        "x": "2023-09-01T00:00:00.000000000",
+        "y": 11,
+        "series": "check_out_time"
+      },
+      {
+        "x": "2023-09-02T00:00:00.000000000",
+        "y": 12,
+        "series": "check_out_time"
+      },
+      {
+        "x": "2023-09-03T00:00:00.000000000",
+        "y": 13,
+        "series": "check_out_time"
+      },
+      {
+        "x": "2023-09-04T00:00:00.000000000",
+        "y": 14,
+        "series": "check_out_time"
+      },
+      {
+        "x": "2023-09-05T00:00:00.000000000",
+        "y": 11,
+        "series": "check_out_time"
+      },
+      {
+        "x": "2023-09-06T00:00:00.000000000",
+        "y": 12,
+        "series": "check_out_time"
+      },
+      {
+        "x": "2023-09-07T00:00:00.000000000",
+        "y": 13,
+        "series": "check_out_time"
+      },
+      {
+        "x": "2023-09-08T00:00:00.000000000",
+        "y": 14,
+        "series": "check_out_time"
+      },
+      {
+        "x": "2023-09-09T00:00:00.000000000",
+        "y": 11,
+        "series": "check_out_time"
+      },
+      {
+        "x": "2023-09-10T00:00:00.000000000",
+        "y": 12,
+        "series": "check_out_time"
+      },
+      {
+        "x": "2023-09-11T00:00:00.000000000",
+        "y": 13,
+        "series": "check_out_time"
+      },
+      {
+        "x": "2023-09-12T00:00:00.000000000",
+        "y": 14,
+        "series": "check_out_time"
+      },
+      {
+        "x": "2023-09-13T00:00:00.000000000",
+        "y": 11,
+        "series": "check_out_time"
+      },
+      {
+        "x": "2023-09-14T00:00:00.000000000",
+        "y": 12,
+        "series": "check_out_time"
+      },
+      {
+        "x": "2023-09-15T00:00:00.000000000",
+        "y": 13,
+        "series": "check_out_time"
+      }
+    ]
+  },
+  "title": "Average Check-In and Check-Out Times",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "timestamp"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "timestamp"
+      },
+      {
+        "field": "y",
+        "title": "value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

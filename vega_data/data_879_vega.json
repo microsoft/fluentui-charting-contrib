@@ -1,0 +1,223 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 90.6,
+        "theta": "Delivery Timeliness %",
+        "series": "Supplier A"
+      },
+      {
+        "r": 3.53,
+        "theta": "Defect Rate %",
+        "series": "Supplier A"
+      },
+      {
+        "r": 20.55,
+        "theta": "Unit Cost ($)",
+        "series": "Supplier A"
+      },
+      {
+        "r": 91.4,
+        "theta": "Spec Compliance %",
+        "series": "Supplier A"
+      },
+      {
+        "r": 8.4,
+        "theta": "Responsiveness Score",
+        "series": "Supplier A"
+      },
+      {
+        "r": 99.3,
+        "theta": "Delivery Timeliness %",
+        "series": "Supplier B"
+      },
+      {
+        "r": 2.6,
+        "theta": "Defect Rate %",
+        "series": "Supplier B"
+      },
+      {
+        "r": 20.57,
+        "theta": "Unit Cost ($)",
+        "series": "Supplier B"
+      },
+      {
+        "r": 92.9,
+        "theta": "Spec Compliance %",
+        "series": "Supplier B"
+      },
+      {
+        "r": 6.2,
+        "theta": "Responsiveness Score",
+        "series": "Supplier B"
+      },
+      {
+        "r": 96,
+        "theta": "Delivery Timeliness %",
+        "series": "Supplier C"
+      },
+      {
+        "r": 2.98,
+        "theta": "Defect Rate %",
+        "series": "Supplier C"
+      },
+      {
+        "r": 22.26,
+        "theta": "Unit Cost ($)",
+        "series": "Supplier C"
+      },
+      {
+        "r": 93.7,
+        "theta": "Spec Compliance %",
+        "series": "Supplier C"
+      },
+      {
+        "r": 8.4,
+        "theta": "Responsiveness Score",
+        "series": "Supplier C"
+      },
+      {
+        "r": 94,
+        "theta": "Delivery Timeliness %",
+        "series": "Supplier D"
+      },
+      {
+        "r": 0.57,
+        "theta": "Defect Rate %",
+        "series": "Supplier D"
+      },
+      {
+        "r": 25.35,
+        "theta": "Unit Cost ($)",
+        "series": "Supplier D"
+      },
+      {
+        "r": 94.6,
+        "theta": "Spec Compliance %",
+        "series": "Supplier D"
+      },
+      {
+        "r": 6.7,
+        "theta": "Responsiveness Score",
+        "series": "Supplier D"
+      },
+      {
+        "r": 87.3,
+        "theta": "Delivery Timeliness %",
+        "series": "Supplier E"
+      },
+      {
+        "r": 3.89,
+        "theta": "Defect Rate %",
+        "series": "Supplier E"
+      },
+      {
+        "r": 24.05,
+        "theta": "Unit Cost ($)",
+        "series": "Supplier E"
+      },
+      {
+        "r": 97.9,
+        "theta": "Spec Compliance %",
+        "series": "Supplier E"
+      },
+      {
+        "r": 6.3,
+        "theta": "Responsiveness Score",
+        "series": "Supplier E"
+      },
+      {
+        "r": 87.3,
+        "theta": "Delivery Timeliness %",
+        "series": "Supplier F"
+      },
+      {
+        "r": 3.41,
+        "theta": "Defect Rate %",
+        "series": "Supplier F"
+      },
+      {
+        "r": 22.08,
+        "theta": "Unit Cost ($)",
+        "series": "Supplier F"
+      },
+      {
+        "r": 92,
+        "theta": "Spec Compliance %",
+        "series": "Supplier F"
+      },
+      {
+        "r": 9.8,
+        "theta": "Responsiveness Score",
+        "series": "Supplier F"
+      },
+      {
+        "r": 85.9,
+        "theta": "Delivery Timeliness %",
+        "series": "Supplier G"
+      },
+      {
+        "r": 1.24,
+        "theta": "Defect Rate %",
+        "series": "Supplier G"
+      },
+      {
+        "r": 26.57,
+        "theta": "Unit Cost ($)",
+        "series": "Supplier G"
+      },
+      {
+        "r": 95.1,
+        "theta": "Spec Compliance %",
+        "series": "Supplier G"
+      },
+      {
+        "r": 9.9,
+        "theta": "Responsiveness Score",
+        "series": "Supplier G"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Supplier Compliance & Quality Scorecard"
+}

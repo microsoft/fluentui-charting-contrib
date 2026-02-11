@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": -10.69
+      },
+      {
+        "value": -4.2
+      },
+      {
+        "value": 14.75
+      },
+      {
+        "value": -20.49
+      },
+      {
+        "value": -5.25
+      },
+      {
+        "value": -0.29
+      },
+      {
+        "value": 3.62
+      },
+      {
+        "value": -9.76
+      },
+      {
+        "value": -20.7
+      },
+      {
+        "value": 0.61
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "bin": true,
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Project Cost Variance Distribution by Phase"
+}

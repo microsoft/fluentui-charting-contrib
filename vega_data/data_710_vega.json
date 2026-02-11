@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": "Convertible"
+      },
+      {
+        "value": "Hatchback"
+      },
+      {
+        "value": "SUV"
+      },
+      {
+        "value": "Sedan"
+      },
+      {
+        "value": "Truck"
+      },
+      {
+        "value": "Convertible"
+      },
+      {
+        "value": "Hatchback"
+      },
+      {
+        "value": "SUV"
+      },
+      {
+        "value": "Sedan"
+      },
+      {
+        "value": "Truck"
+      },
+      {
+        "value": "Convertible"
+      },
+      {
+        "value": "Hatchback"
+      },
+      {
+        "value": "SUV"
+      },
+      {
+        "value": "Sedan"
+      },
+      {
+        "value": "Truck"
+      },
+      {
+        "value": "Convertible"
+      },
+      {
+        "value": "Hatchback"
+      },
+      {
+        "value": "SUV"
+      },
+      {
+        "value": "Sedan"
+      },
+      {
+        "value": "Truck"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Automobile Sales Volume by Region and Model (2023)"
+}

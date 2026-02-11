@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Daily Energy Consumption per Machine",
+  "description": "Converted from Plotly schema 247 - Multi-series line+markers chart",
+  "data": {
+    "values": [
+      { "date": "2023-10-01", "consumption": 120, "machine": "Machine 1" },
+      { "date": "2023-10-02", "consumption": 150, "machine": "Machine 1" },
+      { "date": "2023-10-03", "consumption": 90, "machine": "Machine 1" },
+      { "date": "2023-10-04", "consumption": 130, "machine": "Machine 1" },
+      { "date": "2023-10-05", "consumption": 160, "machine": "Machine 1" },
+      { "date": "2023-10-01", "consumption": 100, "machine": "Machine 2" },
+      { "date": "2023-10-02", "consumption": 130, "machine": "Machine 2" },
+      { "date": "2023-10-03", "consumption": 85, "machine": "Machine 2" },
+      { "date": "2023-10-04", "consumption": 120, "machine": "Machine 2" },
+      { "date": "2023-10-05", "consumption": 140, "machine": "Machine 2" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": { "title": "Date" }
+        },
+        "y": {
+          "field": "consumption",
+          "type": "quantitative",
+          "axis": { "title": "Energy Consumption (kWh)" }
+        },
+        "color": {
+          "field": "machine",
+          "type": "nominal",
+          "legend": { "title": "Machine" }
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": { "field": "date", "type": "temporal" },
+        "y": { "field": "consumption", "type": "quantitative" },
+        "color": { "field": "machine", "type": "nominal" }
+      }
+    }
+  ]
+}

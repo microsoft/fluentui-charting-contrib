@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023-W1",
+        "y": 12,
+        "series": "Series"
+      },
+      {
+        "x": "2023-W2",
+        "y": 15,
+        "series": "Series"
+      },
+      {
+        "x": "2023-W3",
+        "y": 10,
+        "series": "Series"
+      },
+      {
+        "x": "2023-W4",
+        "y": 8,
+        "series": "Series"
+      },
+      {
+        "x": "2023-W5",
+        "y": 16,
+        "series": "Series"
+      },
+      {
+        "x": "2023-W6",
+        "y": 11,
+        "series": "Series"
+      },
+      {
+        "x": "2023-W7",
+        "y": 13,
+        "series": "Series"
+      },
+      {
+        "x": "2023-W8",
+        "y": 9,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Feature Request Completion Times Over Weeks",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "feature_request_completion_times"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "week"
+      },
+      {
+        "field": "y",
+        "title": "feature_request_completion_times"
+      }
+    ]
+  }
+}

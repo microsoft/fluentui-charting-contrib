@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan",
+        "y": 450000,
+        "series": "Budgeted Cost, Foundation"
+      },
+      {
+        "x": "Feb",
+        "y": 470000,
+        "series": "Budgeted Cost, Foundation"
+      },
+      {
+        "x": "Mar",
+        "y": 480000,
+        "series": "Budgeted Cost, Foundation"
+      },
+      {
+        "x": "Jan",
+        "y": 600000,
+        "series": "Budgeted Cost, Structure"
+      },
+      {
+        "x": "Feb",
+        "y": 630000,
+        "series": "Budgeted Cost, Structure"
+      },
+      {
+        "x": "Mar",
+        "y": 650000,
+        "series": "Budgeted Cost, Structure"
+      },
+      {
+        "x": "Jan",
+        "y": 250000,
+        "series": "Budgeted Cost, Finishing"
+      },
+      {
+        "x": "Feb",
+        "y": 260000,
+        "series": "Budgeted Cost, Finishing"
+      },
+      {
+        "x": "Mar",
+        "y": 270000,
+        "series": "Budgeted Cost, Finishing"
+      },
+      {
+        "x": "Jan",
+        "y": 470000,
+        "series": "Actual Cost, Foundation"
+      },
+      {
+        "x": "Feb",
+        "y": 490000,
+        "series": "Actual Cost, Foundation"
+      },
+      {
+        "x": "Mar",
+        "y": 500000,
+        "series": "Actual Cost, Foundation"
+      },
+      {
+        "x": "Jan",
+        "y": 620000,
+        "series": "Actual Cost, Structure"
+      },
+      {
+        "x": "Feb",
+        "y": 615000,
+        "series": "Actual Cost, Structure"
+      },
+      {
+        "x": "Mar",
+        "y": 665000,
+        "series": "Actual Cost, Structure"
+      },
+      {
+        "x": "Jan",
+        "y": 238000,
+        "series": "Actual Cost, Finishing"
+      },
+      {
+        "x": "Feb",
+        "y": 255000,
+        "series": "Actual Cost, Finishing"
+      },
+      {
+        "x": "Mar",
+        "y": 268000,
+        "series": "Actual Cost, Finishing"
+      }
+    ]
+  },
+  "title": "Construction Cost Management: Budgeted vs Actual by Phase (Monthly)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Cost (USD)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Cost (USD)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

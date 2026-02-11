@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "従業員の生産性指標",
+  "description": "Converted from Plotly schema 302 - Grouped bar chart with Japanese labels",
+  "width": 400,
+  "height": 300,
+  "data": {
+    "values": [
+      { "employee": "John", "score": 85, "metric": "Tasks Completed" },
+      { "employee": "Mika", "score": 90, "metric": "Tasks Completed" },
+      { "employee": "Sara", "score": 75, "metric": "Tasks Completed" },
+      { "employee": "Taro", "score": 80, "metric": "Tasks Completed" },
+      { "employee": "Hana", "score": 95, "metric": "Tasks Completed" },
+      { "employee": "John", "score": 70, "metric": "Efficiency Score" },
+      { "employee": "Mika", "score": 80, "metric": "Efficiency Score" },
+      { "employee": "Sara", "score": 60, "metric": "Efficiency Score" },
+      { "employee": "Taro", "score": 65, "metric": "Efficiency Score" },
+      { "employee": "Hana", "score": 85, "metric": "Efficiency Score" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "employee",
+      "type": "ordinal",
+      "axis": { "title": "従業員" }
+    },
+    "y": {
+      "field": "score",
+      "type": "quantitative",
+      "axis": { "title": "メトリックスコア" }
+    },
+    "xOffset": {
+      "field": "metric",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "scale": { "range": ["green", "blue"] },
+      "legend": { "title": "指標" }
+    }
+  }
+}

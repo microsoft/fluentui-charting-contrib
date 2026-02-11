@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Staff Efficiency and Patient Throughput by Department",
+  "description": "Converted from Plotly schema 199 - Grouped bar chart",
+  "data": {
+    "values": [
+      { "department": "Emergency", "value": 90, "metric": "Staff Efficiency (Patients/Staff)" },
+      { "department": "Surgery", "value": 75, "metric": "Staff Efficiency (Patients/Staff)" },
+      { "department": "Pediatrics", "value": 85, "metric": "Staff Efficiency (Patients/Staff)" },
+      { "department": "Oncology", "value": 70, "metric": "Staff Efficiency (Patients/Staff)" },
+      { "department": "Maternity", "value": 80, "metric": "Staff Efficiency (Patients/Staff)" },
+      { "department": "Emergency", "value": 120, "metric": "Patient Throughput (Admissions)" },
+      { "department": "Surgery", "value": 95, "metric": "Patient Throughput (Admissions)" },
+      { "department": "Pediatrics", "value": 100, "metric": "Patient Throughput (Admissions)" },
+      { "department": "Oncology", "value": 80, "metric": "Patient Throughput (Admissions)" },
+      { "department": "Maternity", "value": 105, "metric": "Patient Throughput (Admissions)" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "department",
+      "type": "nominal",
+      "axis": { "title": "Department" }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": { "title": "Count" }
+    },
+    "xOffset": {
+      "field": "metric"
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": { "title": "Metric" }
+    }
+  }
+}

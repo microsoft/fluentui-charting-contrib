@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "x": "Metric A",
+        "y": "Level 1",
+        "value": 6
+      },
+      {
+        "x": "Metric B",
+        "y": "Level 1",
+        "value": 5
+      },
+      {
+        "x": "Metric C",
+        "y": "Level 1",
+        "value": 5
+      },
+      {
+        "x": "Metric D",
+        "y": "Level 1",
+        "value": 6
+      },
+      {
+        "x": "Metric E",
+        "y": "Level 1",
+        "value": 1
+      },
+      {
+        "x": "Metric A",
+        "y": "Level 2",
+        "value": 3
+      },
+      {
+        "x": "Metric B",
+        "y": "Level 2",
+        "value": 4
+      },
+      {
+        "x": "Metric C",
+        "y": "Level 2",
+        "value": 4
+      },
+      {
+        "x": "Metric D",
+        "y": "Level 2",
+        "value": 3
+      },
+      {
+        "x": "Metric E",
+        "y": "Level 2",
+        "value": 9
+      },
+      {
+        "x": "Metric A",
+        "y": "Level 3",
+        "value": 1
+      },
+      {
+        "x": "Metric B",
+        "y": "Level 3",
+        "value": 0
+      },
+      {
+        "x": "Metric C",
+        "y": "Level 3",
+        "value": 0
+      },
+      {
+        "x": "Metric D",
+        "y": "Level 3",
+        "value": 0
+      },
+      {
+        "x": "Metric E",
+        "y": "Level 3",
+        "value": 0
+      },
+      {
+        "x": "Metric A",
+        "y": "Level 4",
+        "value": 1
+      },
+      {
+        "x": "Metric B",
+        "y": "Level 4",
+        "value": 2
+      },
+      {
+        "x": "Metric C",
+        "y": "Level 4",
+        "value": 2
+      },
+      {
+        "x": "Metric D",
+        "y": "Level 4",
+        "value": 2
+      },
+      {
+        "x": "Metric E",
+        "y": "Level 4",
+        "value": 1
+      }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "y",
+      "type": "ordinal"
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "blues"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Heatmap of Category Frequencies with Percentages"
+}

@@ -1,0 +1,292 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2018,
+        "y": 9,
+        "series": "North"
+      },
+      {
+        "x": 2019,
+        "y": 7.9,
+        "series": "North"
+      },
+      {
+        "x": 2020,
+        "y": 6.8,
+        "series": "North"
+      },
+      {
+        "x": 2021,
+        "y": 5.699999999999999,
+        "series": "North"
+      },
+      {
+        "x": 2022,
+        "y": 4.6,
+        "series": "North"
+      },
+      {
+        "x": 2018,
+        "y": 8.99999999999909,
+        "series": "North"
+      },
+      {
+        "x": 2019,
+        "y": 7.899999999999636,
+        "series": "North"
+      },
+      {
+        "x": 2020,
+        "y": 6.799999999999727,
+        "series": "North"
+      },
+      {
+        "x": 2021,
+        "y": 5.699999999999818,
+        "series": "North"
+      },
+      {
+        "x": 2022,
+        "y": 4.599999999999909,
+        "series": "North"
+      },
+      {
+        "x": 2018,
+        "y": 10.32,
+        "series": "East"
+      },
+      {
+        "x": 2019,
+        "y": 9.22,
+        "series": "East"
+      },
+      {
+        "x": 2020,
+        "y": 8.12,
+        "series": "East"
+      },
+      {
+        "x": 2021,
+        "y": 7.02,
+        "series": "East"
+      },
+      {
+        "x": 2022,
+        "y": 5.92,
+        "series": "East"
+      },
+      {
+        "x": 2018,
+        "y": 10.319999999999709,
+        "series": "East"
+      },
+      {
+        "x": 2019,
+        "y": 9.220000000000255,
+        "series": "East"
+      },
+      {
+        "x": 2020,
+        "y": 8.120000000000346,
+        "series": "East"
+      },
+      {
+        "x": 2021,
+        "y": 7.020000000000437,
+        "series": "East"
+      },
+      {
+        "x": 2022,
+        "y": 5.9200000000005275,
+        "series": "East"
+      },
+      {
+        "x": 2018,
+        "y": 11,
+        "series": "South"
+      },
+      {
+        "x": 2019,
+        "y": 9.9,
+        "series": "South"
+      },
+      {
+        "x": 2020,
+        "y": 8.8,
+        "series": "South"
+      },
+      {
+        "x": 2021,
+        "y": 7.699999999999999,
+        "series": "South"
+      },
+      {
+        "x": 2022,
+        "y": 6.6,
+        "series": "South"
+      },
+      {
+        "x": 2018,
+        "y": 10.99999999999909,
+        "series": "South"
+      },
+      {
+        "x": 2019,
+        "y": 9.899999999999636,
+        "series": "South"
+      },
+      {
+        "x": 2020,
+        "y": 8.799999999999727,
+        "series": "South"
+      },
+      {
+        "x": 2021,
+        "y": 7.699999999999818,
+        "series": "South"
+      },
+      {
+        "x": 2022,
+        "y": 6.599999999999909,
+        "series": "South"
+      },
+      {
+        "x": 2018,
+        "y": 12.32,
+        "series": "West"
+      },
+      {
+        "x": 2019,
+        "y": 11.22,
+        "series": "West"
+      },
+      {
+        "x": 2020,
+        "y": 10.120000000000001,
+        "series": "West"
+      },
+      {
+        "x": 2021,
+        "y": 9.02,
+        "series": "West"
+      },
+      {
+        "x": 2022,
+        "y": 7.92,
+        "series": "West"
+      },
+      {
+        "x": 2018,
+        "y": 12.319999999999709,
+        "series": "West"
+      },
+      {
+        "x": 2019,
+        "y": 11.220000000000255,
+        "series": "West"
+      },
+      {
+        "x": 2020,
+        "y": 10.120000000000346,
+        "series": "West"
+      },
+      {
+        "x": 2021,
+        "y": 9.020000000000437,
+        "series": "West"
+      },
+      {
+        "x": 2022,
+        "y": 7.9200000000005275,
+        "series": "West"
+      },
+      {
+        "x": 2018,
+        "y": 13,
+        "series": "Central"
+      },
+      {
+        "x": 2019,
+        "y": 11.9,
+        "series": "Central"
+      },
+      {
+        "x": 2020,
+        "y": 10.8,
+        "series": "Central"
+      },
+      {
+        "x": 2021,
+        "y": 9.7,
+        "series": "Central"
+      },
+      {
+        "x": 2022,
+        "y": 8.6,
+        "series": "Central"
+      },
+      {
+        "x": 2018,
+        "y": 12.999999999999545,
+        "series": "Central"
+      },
+      {
+        "x": 2019,
+        "y": 11.900000000000091,
+        "series": "Central"
+      },
+      {
+        "x": 2020,
+        "y": 10.800000000000182,
+        "series": "Central"
+      },
+      {
+        "x": 2021,
+        "y": 9.700000000000273,
+        "series": "Central"
+      },
+      {
+        "x": 2022,
+        "y": 8.600000000000364,
+        "series": "Central"
+      }
+    ]
+  },
+  "title": "Dropout Rate Trend by District (2018-2022)",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Dropout Rate (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Dropout Rate (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

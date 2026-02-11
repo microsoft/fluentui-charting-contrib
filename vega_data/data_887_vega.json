@@ -1,0 +1,123 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 80.7722444486252,
+        "theta": "Auditory",
+        "series": "Mathematics"
+      },
+      {
+        "r": 82.07999770251382,
+        "theta": "Kinesthetic",
+        "series": "Mathematics"
+      },
+      {
+        "r": 79.54351600049496,
+        "theta": "Read/Write",
+        "series": "Mathematics"
+      },
+      {
+        "r": 81.73974297147491,
+        "theta": "Visual",
+        "series": "Mathematics"
+      },
+      {
+        "r": 80.7722444486252,
+        "theta": "Auditory",
+        "series": "Mathematics"
+      },
+      {
+        "r": 78.7555033054744,
+        "theta": "Auditory",
+        "series": "Science"
+      },
+      {
+        "r": 82.7120151740272,
+        "theta": "Kinesthetic",
+        "series": "Science"
+      },
+      {
+        "r": 82.5235667517082,
+        "theta": "Read/Write",
+        "series": "Science"
+      },
+      {
+        "r": 83.31536445758809,
+        "theta": "Visual",
+        "series": "Science"
+      },
+      {
+        "r": 78.7555033054744,
+        "theta": "Auditory",
+        "series": "Science"
+      },
+      {
+        "r": 79.10007044563943,
+        "theta": "Auditory",
+        "series": "Literature"
+      },
+      {
+        "r": 82.44018400529013,
+        "theta": "Kinesthetic",
+        "series": "Literature"
+      },
+      {
+        "r": 82.32924332730269,
+        "theta": "Read/Write",
+        "series": "Literature"
+      },
+      {
+        "r": 82.2657996440875,
+        "theta": "Visual",
+        "series": "Literature"
+      },
+      {
+        "r": 79.10007044563943,
+        "theta": "Auditory",
+        "series": "Literature"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Learning Styles Influence on Assessment Outcomes"
+}

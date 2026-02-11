@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2022",
+        "y": 2.58,
+        "series": "Series"
+      },
+      {
+        "x": "2021",
+        "y": 4.7,
+        "series": "Series"
+      },
+      {
+        "x": "2020",
+        "y": 3.44,
+        "series": "Series"
+      },
+      {
+        "x": "2019",
+        "y": 0.89,
+        "series": "Series"
+      },
+      {
+        "x": "2018",
+        "y": 0.86,
+        "series": "Series"
+      },
+      {
+        "x": "2017",
+        "y": 2.46,
+        "series": "Series"
+      },
+      {
+        "x": "2016",
+        "y": 1.22,
+        "series": "Series"
+      },
+      {
+        "x": "2015",
+        "y": 7.68,
+        "series": "Series"
+      },
+      {
+        "x": "2014",
+        "y": 2.07,
+        "series": "Series"
+      },
+      {
+        "x": "2013",
+        "y": 2.79,
+        "series": "Series"
+      },
+      {
+        "x": "2012",
+        "y": 2.33,
+        "series": "Series"
+      },
+      {
+        "x": "2011",
+        "y": 2.33,
+        "series": "Series"
+      },
+      {
+        "x": "2010",
+        "y": 2.38,
+        "series": "Series"
+      },
+      {
+        "x": "2009",
+        "y": 1.79,
+        "series": "Series"
+      },
+      {
+        "x": "2008",
+        "y": 2.06,
+        "series": "Series"
+      },
+      {
+        "x": "2007",
+        "y": 1.98,
+        "series": "Series"
+      },
+      {
+        "x": "2006",
+        "y": 2.13,
+        "series": "Series"
+      },
+      {
+        "x": "2005",
+        "y": 4.26,
+        "series": "Series"
+      },
+      {
+        "x": "2004",
+        "y": 1.37,
+        "series": "Series"
+      },
+      {
+        "x": "2003",
+        "y": 0.49,
+        "series": "Series"
+      },
+      {
+        "x": "2002",
+        "y": 0.33,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Cash on Hand over the Years",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Cash on Hand ($B)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Year"
+      },
+      {
+        "field": "y",
+        "title": "Cash on Hand ($B)"
+      }
+    ]
+  }
+}

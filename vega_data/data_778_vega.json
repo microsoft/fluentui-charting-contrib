@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "E1",
+        "y": 8000,
+        "series": "Actual"
+      },
+      {
+        "x": "E2",
+        "y": 12000,
+        "series": "Actual"
+      },
+      {
+        "x": "E3",
+        "y": 9000,
+        "series": "Actual"
+      },
+      {
+        "x": "E4",
+        "y": 7000,
+        "series": "Actual"
+      },
+      {
+        "x": "E5",
+        "y": 11000,
+        "series": "Actual"
+      },
+      {
+        "x": "E6",
+        "y": 10000,
+        "series": "Actual"
+      },
+      {
+        "x": "E7",
+        "y": 13000,
+        "series": "Actual"
+      },
+      {
+        "x": "E8",
+        "y": 9500,
+        "series": "Actual"
+      },
+      {
+        "x": "E9",
+        "y": 10500,
+        "series": "Actual"
+      },
+      {
+        "x": "E10",
+        "y": 11500,
+        "series": "Actual"
+      },
+      {
+        "x": "E1",
+        "y": 10000,
+        "series": "Goal"
+      },
+      {
+        "x": "E2",
+        "y": 10000,
+        "series": "Goal"
+      },
+      {
+        "x": "E3",
+        "y": 10000,
+        "series": "Goal"
+      },
+      {
+        "x": "E4",
+        "y": 10000,
+        "series": "Goal"
+      },
+      {
+        "x": "E5",
+        "y": 10000,
+        "series": "Goal"
+      },
+      {
+        "x": "E6",
+        "y": 10000,
+        "series": "Goal"
+      },
+      {
+        "x": "E7",
+        "y": 10000,
+        "series": "Goal"
+      },
+      {
+        "x": "E8",
+        "y": 10000,
+        "series": "Goal"
+      },
+      {
+        "x": "E9",
+        "y": 10000,
+        "series": "Goal"
+      },
+      {
+        "x": "E10",
+        "y": 10000,
+        "series": "Goal"
+      }
+    ]
+  },
+  "title": "Daily Steps: Actual vs Goal",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Employee"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Steps"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Employee"
+      },
+      {
+        "field": "y",
+        "title": "Steps"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "予知保全: 温度、振動、圧力の変動",
+  "description": "Converted from Plotly schema 298 - Multi-series line+markers with Japanese labels",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "2023-01", "value": 78, "metric": "Temperature (°C)" },
+      { "month": "2023-02", "value": 82, "metric": "Temperature (°C)" },
+      { "month": "2023-03", "value": 79, "metric": "Temperature (°C)" },
+      { "month": "2023-04", "value": 76, "metric": "Temperature (°C)" },
+      { "month": "2023-05", "value": 80, "metric": "Temperature (°C)" },
+      { "month": "2023-06", "value": 77, "metric": "Temperature (°C)" },
+      { "month": "2023-07", "value": 85, "metric": "Temperature (°C)" },
+      { "month": "2023-08", "value": 83, "metric": "Temperature (°C)" },
+      { "month": "2023-09", "value": 81, "metric": "Temperature (°C)" },
+      { "month": "2023-10", "value": 88, "metric": "Temperature (°C)" },
+      { "month": "2023-01", "value": 24, "metric": "Vibration (mm/s)" },
+      { "month": "2023-02", "value": 26, "metric": "Vibration (mm/s)" },
+      { "month": "2023-03", "value": 25, "metric": "Vibration (mm/s)" },
+      { "month": "2023-04", "value": 23, "metric": "Vibration (mm/s)" },
+      { "month": "2023-05", "value": 26, "metric": "Vibration (mm/s)" },
+      { "month": "2023-06", "value": 27, "metric": "Vibration (mm/s)" },
+      { "month": "2023-07", "value": 29, "metric": "Vibration (mm/s)" },
+      { "month": "2023-08", "value": 28, "metric": "Vibration (mm/s)" },
+      { "month": "2023-09", "value": 27, "metric": "Vibration (mm/s)" },
+      { "month": "2023-10", "value": 30, "metric": "Vibration (mm/s)" },
+      { "month": "2023-01", "value": 95, "metric": "Pressure (bar)" },
+      { "month": "2023-02", "value": 98, "metric": "Pressure (bar)" },
+      { "month": "2023-03", "value": 96, "metric": "Pressure (bar)" },
+      { "month": "2023-04", "value": 97, "metric": "Pressure (bar)" },
+      { "month": "2023-05", "value": 99, "metric": "Pressure (bar)" },
+      { "month": "2023-06", "value": 96, "metric": "Pressure (bar)" },
+      { "month": "2023-07", "value": 100, "metric": "Pressure (bar)" },
+      { "month": "2023-08", "value": 98, "metric": "Pressure (bar)" },
+      { "month": "2023-09", "value": 97, "metric": "Pressure (bar)" },
+      { "month": "2023-10", "value": 101, "metric": "Pressure (bar)" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "axis": { "title": "月" }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": { "title": "測定値" }
+        },
+        "color": {
+          "field": "metric",
+          "type": "nominal",
+          "scale": { "range": ["red", "blue", "green"] },
+          "legend": { "title": "指標" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "month", "type": "ordinal" },
+        "y": { "field": "value", "type": "quantitative" },
+        "color": { "field": "metric", "type": "nominal" }
+      }
+    }
+  ]
+}

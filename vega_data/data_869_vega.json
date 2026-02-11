@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-05-01",
+        "y": 3.1689999999999996,
+        "series": "Series"
+      },
+      {
+        "x": "2024-05-02",
+        "y": 2.445,
+        "series": "Series"
+      },
+      {
+        "x": "2024-05-03",
+        "y": 3.116,
+        "series": "Series"
+      },
+      {
+        "x": "2024-05-04",
+        "y": 2.413,
+        "series": "Series"
+      },
+      {
+        "x": "2024-05-05",
+        "y": 2.633,
+        "series": "Series"
+      },
+      {
+        "x": "2024-05-06",
+        "y": 3.1069999999999998,
+        "series": "Series"
+      },
+      {
+        "x": "2024-05-07",
+        "y": 3.3600000000000003,
+        "series": "Series"
+      },
+      {
+        "x": "2024-05-08",
+        "y": 3.023,
+        "series": "Series"
+      },
+      {
+        "x": "2024-05-09",
+        "y": 3.105,
+        "series": "Series"
+      },
+      {
+        "x": "2024-05-10",
+        "y": 1.754,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Average Daily Anomaly Score (Risk Index)",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "date_str"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "anomaly_score"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "date_str"
+      },
+      {
+        "field": "y",
+        "title": "anomaly_score"
+      }
+    ]
+  }
+}

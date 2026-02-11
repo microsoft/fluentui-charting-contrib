@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Recon",
+        "y": 150,
+        "series": "High"
+      },
+      {
+        "x": "Attack",
+        "y": 200,
+        "series": "High"
+      },
+      {
+        "x": "Recon",
+        "y": 180,
+        "series": "High"
+      },
+      {
+        "x": "Attack",
+        "y": 250,
+        "series": "High"
+      },
+      {
+        "x": "Defense",
+        "y": 300,
+        "series": "Medium"
+      },
+      {
+        "x": "Defense",
+        "y": 350,
+        "series": "Medium"
+      },
+      {
+        "x": "Defense",
+        "y": 250,
+        "series": "Medium"
+      },
+      {
+        "x": "Defense",
+        "y": 360,
+        "series": "Medium"
+      },
+      {
+        "x": "Patrol",
+        "y": 120,
+        "series": "Low"
+      },
+      {
+        "x": "Patrol",
+        "y": 100,
+        "series": "Low"
+      }
+    ]
+  },
+  "title": "Allocation vs Required Comparison by Operation Type and Priority Level",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "operation type"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "operation type"
+      },
+      {
+        "field": "y",
+        "title": "value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

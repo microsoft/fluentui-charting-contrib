@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Number of Telemedicine Consultations by Region",
+  "description": "Converted from Plotly schema 205 - Bar chart",
+  "data": {
+    "values": [
+      { "region": "Region A", "consultations": 5000 },
+      { "region": "Region B", "consultations": 3000 },
+      { "region": "Region C", "consultations": 7000 },
+      { "region": "Region D", "consultations": 1500 },
+      { "region": "Region E", "consultations": 4000 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "region",
+      "type": "nominal",
+      "axis": { "title": "Regions" }
+    },
+    "y": {
+      "field": "consultations",
+      "type": "quantitative",
+      "axis": { "title": "Number of Consultations" }
+    }
+  }
+}

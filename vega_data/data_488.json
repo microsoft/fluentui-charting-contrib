@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Project Timelines",
+  "data": {
+    "values": [
+      {"task": "Project A", "start": "2023-01-01", "end": "2023-07-01"},
+      {"task": "Project B", "start": "2023-02-01", "end": "2023-05-30"},
+      {"task": "Project C", "start": "2023-03-01", "end": "2023-08-30"},
+      {"task": "Project D", "start": "2023-04-01", "end": "2023-09-30"}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "y": {"field": "task", "type": "nominal", "title": "Task"},
+    "x": {"field": "start", "type": "temporal", "title": "Date"},
+    "x2": {"field": "end"}
+  }
+}

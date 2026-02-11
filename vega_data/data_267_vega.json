@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Resource Allocation by Mission Priority",
+  "description": "Converted from Plotly schema 267 - Multi-series line+markers chart",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "values": [
+      { "priority": "Low", "value": 100, "category": "Allocated" },
+      { "priority": "Medium", "value": 250, "category": "Allocated" },
+      { "priority": "High", "value": 150, "category": "Allocated" },
+      { "priority": "Very High", "value": 300, "category": "Allocated" },
+      { "priority": "Critical", "value": 200, "category": "Allocated" },
+      { "priority": "Low", "value": 150, "category": "Required" },
+      { "priority": "Medium", "value": 200, "category": "Required" },
+      { "priority": "High", "value": 180, "category": "Required" },
+      { "priority": "Very High", "value": 250, "category": "Required" },
+      { "priority": "Critical", "value": 230, "category": "Required" },
+      { "priority": "Low", "value": 80, "category": "Planned" },
+      { "priority": "Medium", "value": 220, "category": "Planned" },
+      { "priority": "High", "value": 130, "category": "Planned" },
+      { "priority": "Very High", "value": 280, "category": "Planned" },
+      { "priority": "Critical", "value": 180, "category": "Planned" },
+      { "priority": "Low", "value": 110, "category": "Usage" },
+      { "priority": "Medium", "value": 240, "category": "Usage" },
+      { "priority": "High", "value": 160, "category": "Usage" },
+      { "priority": "Very High", "value": 290, "category": "Usage" },
+      { "priority": "Critical", "value": 210, "category": "Usage" },
+      { "priority": "Low", "value": 75, "category": "Savings" },
+      { "priority": "Medium", "value": 210, "category": "Savings" },
+      { "priority": "High", "value": 120, "category": "Savings" },
+      { "priority": "Very High", "value": 250, "category": "Savings" },
+      { "priority": "Critical", "value": 160, "category": "Savings" },
+      { "priority": "Low", "value": 130, "category": "Total" },
+      { "priority": "Medium", "value": 255, "category": "Total" },
+      { "priority": "High", "value": 160, "category": "Total" },
+      { "priority": "Very High", "value": 300, "category": "Total" },
+      { "priority": "Critical", "value": 210, "category": "Total" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": { "type": "line" },
+      "encoding": {
+        "x": {
+          "field": "priority",
+          "type": "ordinal",
+          "sort": ["Low", "Medium", "High", "Very High", "Critical"],
+          "axis": { "title": "Mission Priority Level" }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": { "title": "Quantity" }
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "legend": { "title": "Category" }
+        }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true },
+      "encoding": {
+        "x": { "field": "priority", "type": "ordinal" },
+        "y": { "field": "value", "type": "quantitative" },
+        "color": { "field": "category", "type": "nominal" }
+      }
+    }
+  ]
+}

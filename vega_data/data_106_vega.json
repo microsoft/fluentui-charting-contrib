@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Overall Guest Satisfaction by Location",
+  "description": "Converted from Plotly schema 106 - Bar chart",
+  "data": {
+    "values": [
+      { "location": "Location A", "score": 80 },
+      { "location": "Location B", "score": 85 },
+      { "location": "Location C", "score": 75 },
+      { "location": "Location D", "score": 90 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "location",
+      "type": "nominal",
+      "axis": { "title": "Location" }
+    },
+    "y": {
+      "field": "score",
+      "type": "quantitative",
+      "axis": { "title": "Satisfaction Score" }
+    }
+  }
+}

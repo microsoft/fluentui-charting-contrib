@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": 72.45071229516849
+      },
+      {
+        "value": 69.86298151329098
+      },
+      {
+        "value": 78.73103176553111
+      },
+      {
+        "value": 47.043694049925456
+      },
+      {
+        "value": 74.3850102164751
+      },
+      {
+        "value": 36.79531117321166
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "bin": true,
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Cloud Resource Usage Distribution by Department (Arctic Dark Theme)"
+}

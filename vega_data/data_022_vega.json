@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Product Popularity in Aisle",
+  "description": "Converted from Plotly schema 22 - Horizontal bar chart",
+  "data": {
+    "values": [
+      { "product": "Product E", "sales": 500 },
+      { "product": "Product D", "sales": 400 },
+      { "product": "Product C", "sales": 300 },
+      { "product": "Product B", "sales": 200 },
+      { "product": "Product A", "sales": 100 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "sales",
+      "type": "quantitative",
+      "axis": { "title": "Sales" }
+    },
+    "y": {
+      "field": "product",
+      "type": "nominal",
+      "axis": { "title": "Products" },
+      "sort": "-x"
+    }
+  }
+}

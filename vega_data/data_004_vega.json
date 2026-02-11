@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Ranking Categories Based on Sales for July",
+  "description": "Converted from Plotly schema 4 - Horizontal bar chart",
+  "data": {
+    "values": [
+      { "category": "Category C", "sales": 6000 },
+      { "category": "Category B", "sales": 5000 },
+      { "category": "Category A", "sales": 4000 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "sales",
+      "type": "quantitative",
+      "axis": { "title": "Sales" }
+    },
+    "y": {
+      "field": "category",
+      "type": "nominal",
+      "axis": { "title": "Categories" },
+      "sort": "-x"
+    }
+  }
+}

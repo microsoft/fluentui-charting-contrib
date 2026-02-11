@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Week 1",
+        "y": 150,
+        "series": "EQ001"
+      },
+      {
+        "x": "Week 2",
+        "y": 300,
+        "series": "EQ001"
+      },
+      {
+        "x": "Week 3",
+        "y": 450,
+        "series": "EQ001"
+      },
+      {
+        "x": "Week 4",
+        "y": 600,
+        "series": "EQ001"
+      },
+      {
+        "x": "Week 1",
+        "y": 120,
+        "series": "EQ002"
+      },
+      {
+        "x": "Week 2",
+        "y": 250,
+        "series": "EQ002"
+      },
+      {
+        "x": "Week 3",
+        "y": 370,
+        "series": "EQ002"
+      },
+      {
+        "x": "Week 4",
+        "y": 500,
+        "series": "EQ002"
+      }
+    ]
+  },
+  "title": "Hours of Operation Over Weeks",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "week"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "hours_of_operation"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "week"
+      },
+      {
+        "field": "y",
+        "title": "hours_of_operation"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Incident Frequency by Site",
+  "description": "Converted from Plotly schema 130 - Stacked bar chart",
+  "data": {
+    "values": [
+      { "site": "Site A", "incidents": 10, "type": "Injuries" },
+      { "site": "Site B", "incidents": 5, "type": "Injuries" },
+      { "site": "Site C", "incidents": 7, "type": "Injuries" },
+      { "site": "Site D", "incidents": 3, "type": "Injuries" },
+      { "site": "Site A", "incidents": 20, "type": "Near Misses" },
+      { "site": "Site B", "incidents": 12, "type": "Near Misses" },
+      { "site": "Site C", "incidents": 15, "type": "Near Misses" },
+      { "site": "Site D", "incidents": 8, "type": "Near Misses" },
+      { "site": "Site A", "incidents": 5, "type": "Property Damage" },
+      { "site": "Site B", "incidents": 3, "type": "Property Damage" },
+      { "site": "Site C", "incidents": 4, "type": "Property Damage" },
+      { "site": "Site D", "incidents": 2, "type": "Property Damage" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "site",
+      "type": "nominal",
+      "axis": { "title": "Construction Site" }
+    },
+    "y": {
+      "field": "incidents",
+      "type": "quantitative",
+      "axis": { "title": "Number of Incidents" },
+      "stack": true
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "legend": { "title": "Incident Type" }
+    }
+  }
+}

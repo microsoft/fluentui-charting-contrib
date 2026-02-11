@@ -1,0 +1,1002 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan 2023",
+        "y": 352,
+        "series": "North America - Sedan"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 685,
+        "series": "North America - Sedan"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 1110,
+        "series": "North America - Sedan"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 520,
+        "series": "North America - Sedan"
+      },
+      {
+        "x": "May 2023",
+        "y": 356,
+        "series": "North America - Sedan"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 321,
+        "series": "North America - Sedan"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 950,
+        "series": "North America - Sedan"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 270,
+        "series": "North America - Sedan"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 864,
+        "series": "North America - Sedan"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 371,
+        "series": "North America - Sedan"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 716,
+        "series": "North America - Sedan"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 464,
+        "series": "North America - Sedan"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 580,
+        "series": "North America - SUV"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 708,
+        "series": "North America - SUV"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 337,
+        "series": "North America - SUV"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 622,
+        "series": "North America - SUV"
+      },
+      {
+        "x": "May 2023",
+        "y": 349,
+        "series": "North America - SUV"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 1121,
+        "series": "North America - SUV"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 913,
+        "series": "North America - SUV"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 380,
+        "series": "North America - SUV"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 911,
+        "series": "North America - SUV"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 558,
+        "series": "North America - SUV"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 1019,
+        "series": "North America - SUV"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 593,
+        "series": "North America - SUV"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 741,
+        "series": "North America - Truck"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 663,
+        "series": "North America - Truck"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 1055,
+        "series": "North America - Truck"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 635,
+        "series": "North America - Truck"
+      },
+      {
+        "x": "May 2023",
+        "y": 441,
+        "series": "North America - Truck"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 1205,
+        "series": "North America - Truck"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 526,
+        "series": "North America - Truck"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 410,
+        "series": "North America - Truck"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 709,
+        "series": "North America - Truck"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 563,
+        "series": "North America - Truck"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 271,
+        "series": "North America - Truck"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 502,
+        "series": "North America - Truck"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 997,
+        "series": "North America - Coupe"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 1106,
+        "series": "North America - Coupe"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 810,
+        "series": "North America - Coupe"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 724,
+        "series": "North America - Coupe"
+      },
+      {
+        "x": "May 2023",
+        "y": 308,
+        "series": "North America - Coupe"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 760,
+        "series": "North America - Coupe"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 931,
+        "series": "North America - Coupe"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 725,
+        "series": "North America - Coupe"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 949,
+        "series": "North America - Coupe"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 1225,
+        "series": "North America - Coupe"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 1032,
+        "series": "North America - Coupe"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 439,
+        "series": "North America - Coupe"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 1207,
+        "series": "Europe - Sedan"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 936,
+        "series": "Europe - Sedan"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 1207,
+        "series": "Europe - Sedan"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 812,
+        "series": "Europe - Sedan"
+      },
+      {
+        "x": "May 2023",
+        "y": 1125,
+        "series": "Europe - Sedan"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 816,
+        "series": "Europe - Sedan"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 493,
+        "series": "Europe - Sedan"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 1081,
+        "series": "Europe - Sedan"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 754,
+        "series": "Europe - Sedan"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 380,
+        "series": "Europe - Sedan"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 734,
+        "series": "Europe - Sedan"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 1068,
+        "series": "Europe - Sedan"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 896,
+        "series": "Europe - SUV"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 270,
+        "series": "Europe - SUV"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 1090,
+        "series": "Europe - SUV"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 416,
+        "series": "Europe - SUV"
+      },
+      {
+        "x": "May 2023",
+        "y": 523,
+        "series": "Europe - SUV"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 637,
+        "series": "Europe - SUV"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 850,
+        "series": "Europe - SUV"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 565,
+        "series": "Europe - SUV"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 263,
+        "series": "Europe - SUV"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 491,
+        "series": "Europe - SUV"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 1026,
+        "series": "Europe - SUV"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 595,
+        "series": "Europe - SUV"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 814,
+        "series": "Europe - Truck"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 1147,
+        "series": "Europe - Truck"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 589,
+        "series": "Europe - Truck"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 341,
+        "series": "Europe - Truck"
+      },
+      {
+        "x": "May 2023",
+        "y": 616,
+        "series": "Europe - Truck"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 1205,
+        "series": "Europe - Truck"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 704,
+        "series": "Europe - Truck"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 677,
+        "series": "Europe - Truck"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 758,
+        "series": "Europe - Truck"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 1025,
+        "series": "Europe - Truck"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 1192,
+        "series": "Europe - Truck"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 284,
+        "series": "Europe - Truck"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 455,
+        "series": "Europe - Coupe"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 330,
+        "series": "Europe - Coupe"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 1181,
+        "series": "Europe - Coupe"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 811,
+        "series": "Europe - Coupe"
+      },
+      {
+        "x": "May 2023",
+        "y": 1121,
+        "series": "Europe - Coupe"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 637,
+        "series": "Europe - Coupe"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 251,
+        "series": "Europe - Coupe"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 639,
+        "series": "Europe - Coupe"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 815,
+        "series": "Europe - Coupe"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 355,
+        "series": "Europe - Coupe"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 1021,
+        "series": "Europe - Coupe"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 1071,
+        "series": "Europe - Coupe"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 726,
+        "series": "Asia - Sedan"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 952,
+        "series": "Asia - Sedan"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 651,
+        "series": "Asia - Sedan"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 979,
+        "series": "Asia - Sedan"
+      },
+      {
+        "x": "May 2023",
+        "y": 805,
+        "series": "Asia - Sedan"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 411,
+        "series": "Asia - Sedan"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 451,
+        "series": "Asia - Sedan"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 1207,
+        "series": "Asia - Sedan"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 1245,
+        "series": "Asia - Sedan"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 519,
+        "series": "Asia - Sedan"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 1112,
+        "series": "Asia - Sedan"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 1065,
+        "series": "Asia - Sedan"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 520,
+        "series": "Asia - SUV"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 705,
+        "series": "Asia - SUV"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 711,
+        "series": "Asia - SUV"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 976,
+        "series": "Asia - SUV"
+      },
+      {
+        "x": "May 2023",
+        "y": 501,
+        "series": "Asia - SUV"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 951,
+        "series": "Asia - SUV"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 545,
+        "series": "Asia - SUV"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 974,
+        "series": "Asia - SUV"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 969,
+        "series": "Asia - SUV"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 998,
+        "series": "Asia - SUV"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 587,
+        "series": "Asia - SUV"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 1128,
+        "series": "Asia - SUV"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 302,
+        "series": "Asia - Truck"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 1041,
+        "series": "Asia - Truck"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 1171,
+        "series": "Asia - Truck"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 466,
+        "series": "Asia - Truck"
+      },
+      {
+        "x": "May 2023",
+        "y": 1013,
+        "series": "Asia - Truck"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 437,
+        "series": "Asia - Truck"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 629,
+        "series": "Asia - Truck"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 742,
+        "series": "Asia - Truck"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 290,
+        "series": "Asia - Truck"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 406,
+        "series": "Asia - Truck"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 264,
+        "series": "Asia - Truck"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 1062,
+        "series": "Asia - Truck"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 314,
+        "series": "Asia - Coupe"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 1106,
+        "series": "Asia - Coupe"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 1088,
+        "series": "Asia - Coupe"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 770,
+        "series": "Asia - Coupe"
+      },
+      {
+        "x": "May 2023",
+        "y": 593,
+        "series": "Asia - Coupe"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 378,
+        "series": "Asia - Coupe"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 897,
+        "series": "Asia - Coupe"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 721,
+        "series": "Asia - Coupe"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 312,
+        "series": "Asia - Coupe"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 388,
+        "series": "Asia - Coupe"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 748,
+        "series": "Asia - Coupe"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 842,
+        "series": "Asia - Coupe"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 641,
+        "series": "South America - Sedan"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 924,
+        "series": "South America - Sedan"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 668,
+        "series": "South America - Sedan"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 538,
+        "series": "South America - Sedan"
+      },
+      {
+        "x": "May 2023",
+        "y": 628,
+        "series": "South America - Sedan"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 1022,
+        "series": "South America - Sedan"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 739,
+        "series": "South America - Sedan"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 480,
+        "series": "South America - Sedan"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 290,
+        "series": "South America - Sedan"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 277,
+        "series": "South America - Sedan"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 384,
+        "series": "South America - Sedan"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 450,
+        "series": "South America - Sedan"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 1089,
+        "series": "South America - SUV"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 1029,
+        "series": "South America - SUV"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 1179,
+        "series": "South America - SUV"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 282,
+        "series": "South America - SUV"
+      },
+      {
+        "x": "May 2023",
+        "y": 297,
+        "series": "South America - SUV"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 752,
+        "series": "South America - SUV"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 656,
+        "series": "South America - SUV"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 823,
+        "series": "South America - SUV"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 977,
+        "series": "South America - SUV"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 1054,
+        "series": "South America - SUV"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 348,
+        "series": "South America - SUV"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 933,
+        "series": "South America - SUV"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 1121,
+        "series": "South America - Truck"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 975,
+        "series": "South America - Truck"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 1236,
+        "series": "South America - Truck"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 796,
+        "series": "South America - Truck"
+      },
+      {
+        "x": "May 2023",
+        "y": 1210,
+        "series": "South America - Truck"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 988,
+        "series": "South America - Truck"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 862,
+        "series": "South America - Truck"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 1192,
+        "series": "South America - Truck"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 711,
+        "series": "South America - Truck"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 892,
+        "series": "South America - Truck"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 1018,
+        "series": "South America - Truck"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 254,
+        "series": "South America - Truck"
+      },
+      {
+        "x": "Jan 2023",
+        "y": 467,
+        "series": "South America - Coupe"
+      },
+      {
+        "x": "Feb 2023",
+        "y": 752,
+        "series": "South America - Coupe"
+      },
+      {
+        "x": "Mar 2023",
+        "y": 1016,
+        "series": "South America - Coupe"
+      },
+      {
+        "x": "Apr 2023",
+        "y": 647,
+        "series": "South America - Coupe"
+      },
+      {
+        "x": "May 2023",
+        "y": 1120,
+        "series": "South America - Coupe"
+      },
+      {
+        "x": "Jun 2023",
+        "y": 1044,
+        "series": "South America - Coupe"
+      },
+      {
+        "x": "Jul 2023",
+        "y": 642,
+        "series": "South America - Coupe"
+      },
+      {
+        "x": "Aug 2023",
+        "y": 456,
+        "series": "South America - Coupe"
+      },
+      {
+        "x": "Sep 2023",
+        "y": 264,
+        "series": "South America - Coupe"
+      },
+      {
+        "x": "Oct 2023",
+        "y": 1107,
+        "series": "South America - Coupe"
+      },
+      {
+        "x": "Nov 2023",
+        "y": 803,
+        "series": "South America - Coupe"
+      },
+      {
+        "x": "Dec 2023",
+        "y": 1141,
+        "series": "South America - Coupe"
+      }
+    ]
+  },
+  "title": "Automobile Sales Performance Analysis<br><sup>Segmented by Region and Model (Monthly)</sup>",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sales Volume"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Sales Volume"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

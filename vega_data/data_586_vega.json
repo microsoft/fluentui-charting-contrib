@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "category": "Overheating",
+        "value": 32
+      },
+      {
+        "category": "Excessive Use (Hours)",
+        "value": 25
+      },
+      {
+        "category": "Delayed Maintenance",
+        "value": 22
+      },
+      {
+        "category": "Wear & Tear",
+        "value": 15
+      },
+      {
+        "category": "Other",
+        "value": 6
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 45
+  },
+  "encoding": {
+    "theta": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "title": "Category"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Predicted Causes of Equipment Failure (Manufacturing Predictive Maintenance)"
+}

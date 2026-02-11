@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Government Budget Allocation by Department",
+  "description": "Converted from Plotly schema 82 - Donut chart",
+  "data": {
+    "values": [
+      { "department": "Healthcare", "budget": 30 },
+      { "department": "Education", "budget": 20 },
+      { "department": "Defense", "budget": 15 },
+      { "department": "Infrastructure", "budget": 10 },
+      { "department": "Welfare", "budget": 15 },
+      { "department": "Administration", "budget": 10 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 50 },
+  "encoding": {
+    "theta": {
+      "field": "budget",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "department",
+      "type": "nominal",
+      "legend": { "title": "Department" }
+    }
+  }
+}

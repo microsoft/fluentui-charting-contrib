@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 1952,
+        "y": 14785584,
+        "series": "Series"
+      },
+      {
+        "x": 1957,
+        "y": 17010154,
+        "series": "Series"
+      },
+      {
+        "x": 1962,
+        "y": 18985849,
+        "series": "Series"
+      },
+      {
+        "x": 1967,
+        "y": 20819767,
+        "series": "Series"
+      },
+      {
+        "x": 1972,
+        "y": 22284500,
+        "series": "Series"
+      },
+      {
+        "x": 1977,
+        "y": 23796400,
+        "series": "Series"
+      },
+      {
+        "x": 1982,
+        "y": 25201900,
+        "series": "Series"
+      },
+      {
+        "x": 1987,
+        "y": 26549700,
+        "series": "Series"
+      },
+      {
+        "x": 1992,
+        "y": 28523502,
+        "series": "Series"
+      },
+      {
+        "x": 1997,
+        "y": 30305843,
+        "series": "Series"
+      },
+      {
+        "x": 2002,
+        "y": 31902268,
+        "series": "Series"
+      },
+      {
+        "x": 2007,
+        "y": 33390141,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Population of Canada",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "pop"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "year"
+      },
+      {
+        "field": "y",
+        "title": "pop"
+      }
+    ]
+  }
+}

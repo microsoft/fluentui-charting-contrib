@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Malware",
+        "y": 90,
+        "series": "High"
+      },
+      {
+        "x": "DDoS",
+        "y": 85,
+        "series": "High"
+      },
+      {
+        "x": "Ransomware",
+        "y": 70,
+        "series": "High"
+      },
+      {
+        "x": "Phishing",
+        "y": 80,
+        "series": "Medium"
+      },
+      {
+        "x": "Phishing",
+        "y": 60,
+        "series": "Medium"
+      },
+      {
+        "x": "Ransomware",
+        "y": 80,
+        "series": "Medium"
+      },
+      {
+        "x": "Malware",
+        "y": 75,
+        "series": "Low"
+      },
+      {
+        "x": "DDoS",
+        "y": 95,
+        "series": "Low"
+      }
+    ]
+  },
+  "title": "Impact Score by Threat Type and Complexity",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "threat type"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "impact score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "threat type"
+      },
+      {
+        "field": "y",
+        "title": "impact score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

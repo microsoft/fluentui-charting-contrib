@@ -1,0 +1,1092 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 60.220884684944096,
+        "y": 65.81624719476207,
+        "series": "Traditional"
+      },
+      {
+        "x": 64.63476238100519,
+        "y": 67.63995878910262,
+        "series": "Traditional"
+      },
+      {
+        "x": 67.9486272613669,
+        "y": 73.94250978148497,
+        "series": "Traditional"
+      },
+      {
+        "x": 81.70784332632994,
+        "y": 82.55946276150861,
+        "series": "Traditional"
+      },
+      {
+        "x": 82.45108790277985,
+        "y": 77.12267607840795,
+        "series": "Traditional"
+      },
+      {
+        "x": 88.5297914889198,
+        "y": 77.67535976727385,
+        "series": "Traditional"
+      },
+      {
+        "x": 90.4314019446759,
+        "y": 77.39821936292176,
+        "series": "Traditional"
+      },
+      {
+        "x": 62.54233401144094,
+        "y": 64.03247563916975,
+        "series": "Project-based"
+      },
+      {
+        "x": 62.96178606936361,
+        "y": 76.06039345065746,
+        "series": "Project-based"
+      },
+      {
+        "x": 62.98202574719083,
+        "y": 81.20122225398475,
+        "series": "Project-based"
+      },
+      {
+        "x": 74.33862914177091,
+        "y": 77.47480085589544,
+        "series": "Project-based"
+      },
+      {
+        "x": 85.50229885420853,
+        "y": 76.10851137444273,
+        "series": "Project-based"
+      },
+      {
+        "x": 89.18424713352256,
+        "y": 86.04015718752694,
+        "series": "Project-based"
+      },
+      {
+        "x": 92.61845713819336,
+        "y": 85.8391770915232,
+        "series": "Project-based"
+      },
+      {
+        "x": 94.52413703502374,
+        "y": 90.80054329842824,
+        "series": "Project-based"
+      },
+      {
+        "x": 64.78376983753206,
+        "y": 72.66443483963776,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 65.63696899899051,
+        "y": 73.82222039982713,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 71.23738038749524,
+        "y": 77.56406283199689,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 72.4392928686265,
+        "y": 70.8823977485456,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 73.00733288106989,
+        "y": 82.87309348977792,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 73.23592099410597,
+        "y": 77.03085859782146,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 78.88859700647797,
+        "y": 73.53693775589913,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 84.93192507310232,
+        "y": 80.38906174114072,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 88.27429375390469,
+        "y": 89.09210028995489,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 89.1602867216395,
+        "y": 81.66236567060967,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 90.85081386743784,
+        "y": 70.60698600252968,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 90.8897907718663,
+        "y": 82.35396311511695,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 92.08787923016159,
+        "y": 86.01211013288858,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 95.48850970305307,
+        "y": 80.60717019419559,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 99.47547746402068,
+        "y": 88.64173132858348,
+        "series": "STEM-focused"
+      },
+      {
+        "x": 62.54233401144094,
+        "y": 73.95050586145855,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 63.08439846946777,
+        "y": 73.87717851891831,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 63.6264629274946,
+        "y": 73.81524863884368,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 64.16852738552143,
+        "y": 73.76471622123465,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 64.71059184354826,
+        "y": 73.72558126609123,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 65.25265630157507,
+        "y": 73.69784377341341,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 65.7947207596019,
+        "y": 73.68150374320119,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 66.33678521762873,
+        "y": 73.67656117545457,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 66.87884967565556,
+        "y": 73.68301607017355,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 67.42091413368239,
+        "y": 73.70086842735815,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 67.96297859170922,
+        "y": 73.73011824700835,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 68.50504304973605,
+        "y": 73.77076552912413,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 69.04710750776287,
+        "y": 73.82281027370554,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 69.58917196578969,
+        "y": 73.88625248075253,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 70.13123642381652,
+        "y": 73.96109215026515,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 70.67330088184335,
+        "y": 74.04732928224335,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 71.21536533987017,
+        "y": 74.14496387668716,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 71.757429797897,
+        "y": 74.25399593359658,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 72.29949425592383,
+        "y": 74.37442545297161,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 72.84155871395066,
+        "y": 74.50625243481223,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 73.38362317197749,
+        "y": 74.64947687911845,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 73.92568763000432,
+        "y": 74.80409878589029,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 74.46775208803113,
+        "y": 74.97011815512772,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 75.00981654605796,
+        "y": 75.14753498683075,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 75.55188100408479,
+        "y": 75.3363492809994,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 76.09394546211162,
+        "y": 75.53656103763363,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 76.63600992013845,
+        "y": 75.74817025673349,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 77.17807437816528,
+        "y": 75.97117693829894,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 77.7201388361921,
+        "y": 76.20558108232999,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 78.26220329421893,
+        "y": 76.45138268882664,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 78.80426775224575,
+        "y": 76.7085817577889,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 79.34633221027258,
+        "y": 76.97717828921677,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 79.88839666829941,
+        "y": 77.25717228311024,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 80.43046112632624,
+        "y": 77.5485637394693,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 80.97252558435306,
+        "y": 77.85135265829398,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 81.5145900423799,
+        "y": 78.16553903958426,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 82.05665450040672,
+        "y": 78.49112288334014,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 82.59871895843355,
+        "y": 78.82810418956161,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 83.14078341646038,
+        "y": 79.17648295824871,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 83.68284787448721,
+        "y": 79.53625918940139,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 84.22491233251402,
+        "y": 79.90743288301967,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 84.76697679054085,
+        "y": 80.29000403910356,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 85.30904124856768,
+        "y": 80.68397265765307,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 85.85110570659451,
+        "y": 81.08933873866818,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 86.39317016462134,
+        "y": 81.50610228214887,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 86.93523462264817,
+        "y": 81.93426328809518,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 87.47729908067498,
+        "y": 82.3738217565071,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 88.01936353870181,
+        "y": 82.82477768738461,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 88.56142799672864,
+        "y": 83.28713108072773,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 89.10349245475547,
+        "y": 83.76088193653645,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 89.6455569127823,
+        "y": 84.24603025481078,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 90.18762137080913,
+        "y": 84.74257603555071,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 90.72968582883595,
+        "y": 85.25051927875624,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 91.27175028686278,
+        "y": 85.76985998442738,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 91.81381474488961,
+        "y": 86.30059815256412,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 92.35587920291644,
+        "y": 86.84273378316647,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 92.89794366094327,
+        "y": 87.3962668762344,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 93.44000811897008,
+        "y": 87.96119743176796,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 93.98207257699691,
+        "y": 88.5375254497671,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 94.52413703502374,
+        "y": 89.12525093023186,
+        "series": "Project-based Smoothed"
+      },
+      {
+        "x": 60.220884684944096,
+        "y": 64.59071692348968,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 60.732927350363276,
+        "y": 65.27866818139455,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 61.244970015782464,
+        "y": 65.95031609453065,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 61.757012681201644,
+        "y": 66.60566066289789,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 62.26905534662083,
+        "y": 67.24470188649636,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 62.78109801204001,
+        "y": 67.86743976532603,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 63.29314067745919,
+        "y": 68.47387429938689,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 63.80518334287838,
+        "y": 69.06400548867902,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 64.31722600829757,
+        "y": 69.63783333320228,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 64.82926867371674,
+        "y": 70.19535783295674,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 65.34131133913593,
+        "y": 70.73657898794244,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 65.85335400455511,
+        "y": 71.2614967981593,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 66.36539666997429,
+        "y": 71.77011126360739,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 66.87743933539348,
+        "y": 72.26242238428665,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 67.38948200081266,
+        "y": 72.73843016019714,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 67.90152466623184,
+        "y": 73.19813459133883,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 68.41356733165102,
+        "y": 73.64153567771169,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 68.92560999707021,
+        "y": 74.06863341931577,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 69.4376526624894,
+        "y": 74.47942781615112,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 69.94969532790857,
+        "y": 74.87391886821757,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 70.46173799332776,
+        "y": 75.25210657551526,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 70.97378065874695,
+        "y": 75.61399093804417,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 71.48582332416612,
+        "y": 75.95957195580422,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 71.9978659895853,
+        "y": 76.28884962879553,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 72.5099086550045,
+        "y": 76.60182395701801,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 73.02195132042367,
+        "y": 76.89849494047169,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 73.53399398584286,
+        "y": 77.1788625791566,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 74.04603665126204,
+        "y": 77.44292687307274,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 74.55807931668122,
+        "y": 77.69068782222001,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 75.0701219821004,
+        "y": 77.92214542659852,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 75.58216464751959,
+        "y": 78.1372996862082,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 76.09420731293878,
+        "y": 78.3361506010491,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 76.60624997835795,
+        "y": 78.5186981711212,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 77.11829264377714,
+        "y": 78.6849423964245,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 77.63033530919633,
+        "y": 78.834883276959,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 78.1423779746155,
+        "y": 78.96852081272468,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 78.65442064003469,
+        "y": 79.08585500372163,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 79.16646330545387,
+        "y": 79.18688584994973,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 79.67850597087306,
+        "y": 79.27161335140903,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 80.19054863629223,
+        "y": 79.34003750809953,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 80.70259130171142,
+        "y": 79.39215832002122,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 81.2146339671306,
+        "y": 79.42797578717415,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 81.72667663254978,
+        "y": 79.44748990955824,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 82.23871929796897,
+        "y": 79.45070068717357,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 82.75076196338816,
+        "y": 79.43760812002006,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 83.26280462880733,
+        "y": 79.40821220809781,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 83.77484729422652,
+        "y": 79.36251295140673,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 84.2868899596457,
+        "y": 79.30051034994682,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 84.79893262506488,
+        "y": 79.22220440371814,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 85.31097529048407,
+        "y": 79.12759511272066,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 85.82301795590325,
+        "y": 79.01668247695437,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 86.33506062132244,
+        "y": 78.88946649641929,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 86.84710328674161,
+        "y": 78.7459471711154,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 87.3591459521608,
+        "y": 78.58612450104272,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 87.87118861757997,
+        "y": 78.40999848620123,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 88.38323128299916,
+        "y": 78.217569126591,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 88.89527394841835,
+        "y": 78.00883642221191,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 89.40731661383754,
+        "y": 77.78380037306403,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 89.91935927925671,
+        "y": 77.54246097914736,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 90.4314019446759,
+        "y": 77.28481824046187,
+        "series": "Traditional Smoothed"
+      },
+      {
+        "x": 64.78376983753206,
+        "y": 74.02145270706154,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 65.37176488204882,
+        "y": 74.15027536502653,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 65.95975992656558,
+        "y": 74.28145389791145,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 66.54775497108233,
+        "y": 74.4149883057163,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 67.13575001559909,
+        "y": 74.5508785884411,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 67.72374506011585,
+        "y": 74.68912474608582,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 68.3117401046326,
+        "y": 74.82972677865048,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 68.89973514914936,
+        "y": 74.97268468613508,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 69.48773019366611,
+        "y": 75.1179984685396,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 70.07572523818287,
+        "y": 75.26566812586405,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 70.66372028269963,
+        "y": 75.41569365810845,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 71.25171532721639,
+        "y": 75.56807506527278,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 71.83971037173313,
+        "y": 75.72281234735705,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 72.42770541624989,
+        "y": 75.87990550436123,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 73.01570046076665,
+        "y": 76.03935453628537,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 73.60369550528341,
+        "y": 76.20115944312943,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 74.19169054980017,
+        "y": 76.36532022489342,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 74.77968559431692,
+        "y": 76.53183688157736,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 75.36768063883368,
+        "y": 76.70070941318122,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 75.95567568335044,
+        "y": 76.87193781970502,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 76.5436707278672,
+        "y": 77.04552210114875,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 77.13166577238394,
+        "y": 77.22146225751241,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 77.7196608169007,
+        "y": 77.39975828879602,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 78.30765586141746,
+        "y": 77.58041019499956,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 78.89565090593422,
+        "y": 77.76341797612302,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 79.48364595045098,
+        "y": 77.94878163216643,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 80.07164099496772,
+        "y": 78.13650116312975,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 80.65963603948448,
+        "y": 78.32657656901303,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 81.24763108400124,
+        "y": 78.51900784981623,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 81.835626128518,
+        "y": 78.71379500553937,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 82.42362117303475,
+        "y": 78.91093803618244,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 83.0116162175515,
+        "y": 79.11043694174545,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 83.59961126206827,
+        "y": 79.31229172222838,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 84.18760630658502,
+        "y": 79.51650237763126,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 84.77560135110178,
+        "y": 79.72306890795406,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 85.36359639561853,
+        "y": 79.9319913131968,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 85.95159144013529,
+        "y": 80.14326959335948,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 86.53958648465205,
+        "y": 80.35690374844208,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 87.12758152916881,
+        "y": 80.57289377844462,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 87.71557657368555,
+        "y": 80.7912396833671,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 88.30357161820231,
+        "y": 81.01194146320951,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 88.89156666271907,
+        "y": 81.23499911797185,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 89.47956170723583,
+        "y": 81.46041264765414,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 90.06755675175259,
+        "y": 81.68818205225634,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 90.65555179626935,
+        "y": 81.9183073317785,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 91.2435468407861,
+        "y": 82.15078848622056,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 91.83154188530285,
+        "y": 82.38562551558257,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 92.41953692981961,
+        "y": 82.62281841986453,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 93.00753197433636,
+        "y": 82.86236719906641,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 93.59552701885312,
+        "y": 83.10427185318822,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 94.18352206336988,
+        "y": 83.34853238222998,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 94.77151710788664,
+        "y": 83.59514878619166,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 95.3595121524034,
+        "y": 83.84412106507327,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 95.94750719692016,
+        "y": 84.09544921887482,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 96.5355022414369,
+        "y": 84.3491332475963,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 97.12349728595366,
+        "y": 84.60517315123772,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 97.71149233047042,
+        "y": 84.86356892979907,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 98.29948737498717,
+        "y": 85.12432058328035,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 98.88748241950393,
+        "y": 85.38742811168157,
+        "series": "STEM-focused Smoothed"
+      },
+      {
+        "x": 99.47547746402068,
+        "y": 85.65289151500272,
+        "series": "STEM-focused Smoothed"
+      }
+    ]
+  },
+  "title": "Relationship Between Teacher Qualification and Test Scores",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Teacher Qualification Score"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Average Student Test Score"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Teacher Qualification Score"
+      },
+      {
+        "field": "y",
+        "title": "Average Student Test Score"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

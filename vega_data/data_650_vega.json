@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "North",
+        "y": 320,
+        "series": "Sedan"
+      },
+      {
+        "x": "South",
+        "y": 400,
+        "series": "Sedan"
+      },
+      {
+        "x": "East",
+        "y": 370,
+        "series": "Sedan"
+      },
+      {
+        "x": "West",
+        "y": 390,
+        "series": "Sedan"
+      },
+      {
+        "x": "North",
+        "y": 410,
+        "series": "SUV"
+      },
+      {
+        "x": "South",
+        "y": 480,
+        "series": "SUV"
+      },
+      {
+        "x": "East",
+        "y": 430,
+        "series": "SUV"
+      },
+      {
+        "x": "West",
+        "y": 500,
+        "series": "SUV"
+      },
+      {
+        "x": "North",
+        "y": 260,
+        "series": "Hatchback"
+      },
+      {
+        "x": "South",
+        "y": 320,
+        "series": "Hatchback"
+      },
+      {
+        "x": "East",
+        "y": 290,
+        "series": "Hatchback"
+      },
+      {
+        "x": "West",
+        "y": 305,
+        "series": "Hatchback"
+      },
+      {
+        "x": "North",
+        "y": 230,
+        "series": "Pickup"
+      },
+      {
+        "x": "South",
+        "y": 300,
+        "series": "Pickup"
+      },
+      {
+        "x": "East",
+        "y": 270,
+        "series": "Pickup"
+      },
+      {
+        "x": "West",
+        "y": 325,
+        "series": "Pickup"
+      }
+    ]
+  },
+  "title": "Automobile Sales Performance: Sales Volume by Model and Region (Jan-Apr 2024)",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Region"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sales Volume"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Region"
+      },
+      {
+        "field": "y",
+        "title": "Sales Volume"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

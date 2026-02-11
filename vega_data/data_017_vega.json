@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Weekly Traffic Heatmap",
+  "description": "Converted from Plotly schema 17 - Heatmap",
+  "data": {
+    "values": [
+      { "day": "Monday", "hour": "00:00", "value": 20 },
+      { "day": "Tuesday", "hour": "00:00", "value": 30 },
+      { "day": "Wednesday", "hour": "00:00", "value": 40 },
+      { "day": "Thursday", "hour": "00:00", "value": 50 },
+      { "day": "Friday", "hour": "00:00", "value": 30 },
+      { "day": "Saturday", "hour": "00:00", "value": 20 },
+      { "day": "Sunday", "hour": "00:00", "value": 10 },
+      { "day": "Monday", "hour": "06:00", "value": 20 },
+      { "day": "Tuesday", "hour": "06:00", "value": 30 },
+      { "day": "Wednesday", "hour": "06:00", "value": 40 },
+      { "day": "Thursday", "hour": "06:00", "value": 50 },
+      { "day": "Friday", "hour": "06:00", "value": 30 },
+      { "day": "Saturday", "hour": "06:00", "value": 20 },
+      { "day": "Sunday", "hour": "06:00", "value": 10 },
+      { "day": "Monday", "hour": "12:00", "value": 20 },
+      { "day": "Tuesday", "hour": "12:00", "value": 30 },
+      { "day": "Wednesday", "hour": "12:00", "value": 40 },
+      { "day": "Thursday", "hour": "12:00", "value": 50 },
+      { "day": "Friday", "hour": "12:00", "value": 30 },
+      { "day": "Saturday", "hour": "12:00", "value": 20 },
+      { "day": "Sunday", "hour": "12:00", "value": 10 },
+      { "day": "Monday", "hour": "18:00", "value": 20 },
+      { "day": "Tuesday", "hour": "18:00", "value": 30 },
+      { "day": "Wednesday", "hour": "18:00", "value": 40 },
+      { "day": "Thursday", "hour": "18:00", "value": 50 },
+      { "day": "Friday", "hour": "18:00", "value": 30 },
+      { "day": "Saturday", "hour": "18:00", "value": 20 },
+      { "day": "Sunday", "hour": "18:00", "value": 10 }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "day",
+      "type": "ordinal",
+      "axis": { "title": "Day of the Week" },
+      "sort": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    },
+    "y": {
+      "field": "hour",
+      "type": "ordinal",
+      "axis": { "title": "Time of Day" }
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "legend": { "title": "Traffic" }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": 0.0766929250250291
+      },
+      {
+        "value": 0.08144699258871015
+      },
+      {
+        "value": 0.07369387241310296
+      },
+      {
+        "value": 0.09166583885337044
+      },
+      {
+        "value": 0.017229287463715725
+      },
+      {
+        "value": 0.08476381457914682
+      },
+      {
+        "value": 0.006323774979490793
+      },
+      {
+        "value": 0.0363484393235747
+      },
+      {
+        "value": 0.038075367834767816
+      },
+      {
+        "value": 0.039560971887434175
+      },
+      {
+        "value": 0.0035343488803486257
+      },
+      {
+        "value": 0.012228760006397678
+      },
+      {
+        "value": 0.08731374478886061
+      },
+      {
+        "value": 0.09700683319340787
+      },
+      {
+        "value": 0.0631358704141515
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "bin": true,
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Histogram of Defect Rates"
+}

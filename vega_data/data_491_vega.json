@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2019,
+        "y": 85,
+        "series": "graduation_rate"
+      },
+      {
+        "x": 2020,
+        "y": 87,
+        "series": "graduation_rate"
+      },
+      {
+        "x": 2021,
+        "y": 88,
+        "series": "graduation_rate"
+      },
+      {
+        "x": 2022,
+        "y": 89,
+        "series": "graduation_rate"
+      },
+      {
+        "x": 2019,
+        "y": 75,
+        "series": "test_scores"
+      },
+      {
+        "x": 2020,
+        "y": 76,
+        "series": "test_scores"
+      },
+      {
+        "x": 2021,
+        "y": 78,
+        "series": "test_scores"
+      },
+      {
+        "x": 2022,
+        "y": 77,
+        "series": "test_scores"
+      },
+      {
+        "x": 2019,
+        "y": 5,
+        "series": "dropout_rate"
+      },
+      {
+        "x": 2020,
+        "y": 4.5,
+        "series": "dropout_rate"
+      },
+      {
+        "x": 2021,
+        "y": 4,
+        "series": "dropout_rate"
+      },
+      {
+        "x": 2022,
+        "y": 3.8,
+        "series": "dropout_rate"
+      }
+    ]
+  },
+  "title": "Annual Trends in Graduation Rate, Test Scores, and Dropout Rate",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Percentage"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "year"
+      },
+      {
+        "field": "y",
+        "title": "Percentage"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

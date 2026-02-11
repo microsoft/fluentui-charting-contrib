@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Occupancy Rates: Regional Comparison",
+  "description": "Converted from Plotly schema 258 - Multi-series line chart",
+  "data": {
+    "values": [
+      { "month": "2023-01", "rate": 70, "region": "North America" },
+      { "month": "2023-02", "rate": 75, "region": "North America" },
+      { "month": "2023-03", "rate": 65, "region": "North America" },
+      { "month": "2023-04", "rate": 80, "region": "North America" },
+      { "month": "2023-05", "rate": 85, "region": "North America" },
+      { "month": "2023-01", "rate": 72, "region": "Europe" },
+      { "month": "2023-02", "rate": 78, "region": "Europe" },
+      { "month": "2023-03", "rate": 67, "region": "Europe" },
+      { "month": "2023-04", "rate": 82, "region": "Europe" },
+      { "month": "2023-05", "rate": 88, "region": "Europe" },
+      { "month": "2023-01", "rate": 65, "region": "South America" },
+      { "month": "2023-02", "rate": 70, "region": "South America" },
+      { "month": "2023-03", "rate": 60, "region": "South America" },
+      { "month": "2023-04", "rate": 75, "region": "South America" },
+      { "month": "2023-05", "rate": 80, "region": "South America" },
+      { "month": "2023-01", "rate": 68, "region": "Asia" },
+      { "month": "2023-02", "rate": 73, "region": "Asia" },
+      { "month": "2023-03", "rate": 63, "region": "Asia" },
+      { "month": "2023-04", "rate": 78, "region": "Asia" },
+      { "month": "2023-05", "rate": 83, "region": "Asia" },
+      { "month": "2023-01", "rate": 75, "region": "Africa" },
+      { "month": "2023-02", "rate": 80, "region": "Africa" },
+      { "month": "2023-03", "rate": 70, "region": "Africa" },
+      { "month": "2023-04", "rate": 85, "region": "Africa" },
+      { "month": "2023-05", "rate": 90, "region": "Africa" },
+      { "month": "2023-01", "rate": 71, "region": "Australia" },
+      { "month": "2023-02", "rate": 76, "region": "Australia" },
+      { "month": "2023-03", "rate": 66, "region": "Australia" },
+      { "month": "2023-04", "rate": 81, "region": "Australia" },
+      { "month": "2023-05", "rate": 86, "region": "Australia" }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "temporal",
+      "axis": { "title": "Month-Year" }
+    },
+    "y": {
+      "field": "rate",
+      "type": "quantitative",
+      "axis": { "title": "Occupancy Rate (%)" }
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "scale": {
+        "domain": ["North America", "Europe", "South America", "Asia", "Africa", "Australia"],
+        "range": ["blue", "green", "red", "orange", "purple", "brown"]
+      },
+      "legend": { "title": "Region" }
+    }
+  }
+}

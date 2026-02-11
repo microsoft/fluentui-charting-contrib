@@ -1,0 +1,183 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2025-09-07",
+        "y": 0.4560439560439561,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-08",
+        "y": 0.4580152671755725,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-09",
+        "y": 0.6976744186046512,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-10",
+        "y": 0.6914893617021276,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-11",
+        "y": 0.4946236559139785,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-12",
+        "y": 0.543046357615894,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-13",
+        "y": 0.6857142857142857,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-14",
+        "y": 0.31999999999999995,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-15",
+        "y": 0.6098901098901099,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-16",
+        "y": 0.6666666666666667,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-17",
+        "y": 0.45783132530120485,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-18",
+        "y": 0.551948051948052,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-19",
+        "y": 0.3116883116883117,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-20",
+        "y": 0.5149700598802396,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-21",
+        "y": 0.3571428571428571,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-22",
+        "y": 0.4301675977653632,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-23",
+        "y": 0.5245901639344263,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-24",
+        "y": 0.6990291262135923,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-25",
+        "y": 0.3292682926829268,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-26",
+        "y": 0.4752475247524752,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-27",
+        "y": 0.553030303030303,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-28",
+        "y": 0.7037037037037037,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-29",
+        "y": 0.6107784431137724,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-09-30",
+        "y": 0.6042780748663101,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-10-01",
+        "y": 0.4311926605504587,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-10-02",
+        "y": 0.46153846153846156,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-10-03",
+        "y": 0.37037037037037035,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-10-04",
+        "y": 0.6363636363636364,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-10-05",
+        "y": 0.5467625899280575,
+        "series": "Drop-off Rate"
+      },
+      {
+        "x": "2025-10-06",
+        "y": 0.63,
+        "series": "Drop-off Rate"
+      }
+    ]
+  },
+  "title": "Daily Sales Funnel Drop-off Rate",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Date"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Drop-off Rate"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Date"
+      },
+      {
+        "field": "y",
+        "title": "Drop-off Rate"
+      }
+    ]
+  }
+}

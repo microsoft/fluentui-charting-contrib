@@ -1,0 +1,282 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-01",
+        "y": 20,
+        "series": "Incidents - Malware"
+      },
+      {
+        "x": "2024-02",
+        "y": 13,
+        "series": "Incidents - Malware"
+      },
+      {
+        "x": "2024-03",
+        "y": 14,
+        "series": "Incidents - Malware"
+      },
+      {
+        "x": "2024-04",
+        "y": 22,
+        "series": "Incidents - Malware"
+      },
+      {
+        "x": "2024-01",
+        "y": 5,
+        "series": "Incidents - Phishing"
+      },
+      {
+        "x": "2024-02",
+        "y": 17,
+        "series": "Incidents - Phishing"
+      },
+      {
+        "x": "2024-03",
+        "y": 19,
+        "series": "Incidents - Phishing"
+      },
+      {
+        "x": "2024-04",
+        "y": 6,
+        "series": "Incidents - Phishing"
+      },
+      {
+        "x": "2024-01",
+        "y": 17,
+        "series": "Incidents - DDoS"
+      },
+      {
+        "x": "2024-02",
+        "y": 15,
+        "series": "Incidents - DDoS"
+      },
+      {
+        "x": "2024-03",
+        "y": 15,
+        "series": "Incidents - DDoS"
+      },
+      {
+        "x": "2024-04",
+        "y": 15,
+        "series": "Incidents - DDoS"
+      },
+      {
+        "x": "2024-01",
+        "y": 11,
+        "series": "Incidents - Insider"
+      },
+      {
+        "x": "2024-02",
+        "y": 8,
+        "series": "Incidents - Insider"
+      },
+      {
+        "x": "2024-03",
+        "y": 10,
+        "series": "Incidents - Insider"
+      },
+      {
+        "x": "2024-04",
+        "y": 13,
+        "series": "Incidents - Insider"
+      },
+      {
+        "x": "2024-01",
+        "y": 11,
+        "series": "Incidents - Zero-Day"
+      },
+      {
+        "x": "2024-02",
+        "y": 9,
+        "series": "Incidents - Zero-Day"
+      },
+      {
+        "x": "2024-03",
+        "y": 8,
+        "series": "Incidents - Zero-Day"
+      },
+      {
+        "x": "2024-04",
+        "y": 11,
+        "series": "Incidents - Zero-Day"
+      },
+      {
+        "x": "2024-01",
+        "y": 10,
+        "series": "Incidents - APT"
+      },
+      {
+        "x": "2024-02",
+        "y": 12,
+        "series": "Incidents - APT"
+      },
+      {
+        "x": "2024-03",
+        "y": 13,
+        "series": "Incidents - APT"
+      },
+      {
+        "x": "2024-04",
+        "y": 6,
+        "series": "Incidents - APT"
+      },
+      {
+        "x": "2024-01",
+        "y": 9.3,
+        "series": "Avg Response Time - Malware"
+      },
+      {
+        "x": "2024-02",
+        "y": 9.23076923076923,
+        "series": "Avg Response Time - Malware"
+      },
+      {
+        "x": "2024-03",
+        "y": 8.785714285714286,
+        "series": "Avg Response Time - Malware"
+      },
+      {
+        "x": "2024-04",
+        "y": 8.318181818181818,
+        "series": "Avg Response Time - Malware"
+      },
+      {
+        "x": "2024-01",
+        "y": 9,
+        "series": "Avg Response Time - Phishing"
+      },
+      {
+        "x": "2024-02",
+        "y": 7.705882352941177,
+        "series": "Avg Response Time - Phishing"
+      },
+      {
+        "x": "2024-03",
+        "y": 7.526315789473684,
+        "series": "Avg Response Time - Phishing"
+      },
+      {
+        "x": "2024-04",
+        "y": 7.333333333333333,
+        "series": "Avg Response Time - Phishing"
+      },
+      {
+        "x": "2024-01",
+        "y": 9.058823529411764,
+        "series": "Avg Response Time - DDoS"
+      },
+      {
+        "x": "2024-02",
+        "y": 8.266666666666667,
+        "series": "Avg Response Time - DDoS"
+      },
+      {
+        "x": "2024-03",
+        "y": 9.466666666666667,
+        "series": "Avg Response Time - DDoS"
+      },
+      {
+        "x": "2024-04",
+        "y": 9.666666666666666,
+        "series": "Avg Response Time - DDoS"
+      },
+      {
+        "x": "2024-01",
+        "y": 10.272727272727273,
+        "series": "Avg Response Time - Insider"
+      },
+      {
+        "x": "2024-02",
+        "y": 6.75,
+        "series": "Avg Response Time - Insider"
+      },
+      {
+        "x": "2024-03",
+        "y": 7.6,
+        "series": "Avg Response Time - Insider"
+      },
+      {
+        "x": "2024-04",
+        "y": 7.384615384615385,
+        "series": "Avg Response Time - Insider"
+      },
+      {
+        "x": "2024-01",
+        "y": 6.909090909090909,
+        "series": "Avg Response Time - Zero-Day"
+      },
+      {
+        "x": "2024-02",
+        "y": 9.222222222222221,
+        "series": "Avg Response Time - Zero-Day"
+      },
+      {
+        "x": "2024-03",
+        "y": 10.125,
+        "series": "Avg Response Time - Zero-Day"
+      },
+      {
+        "x": "2024-04",
+        "y": 10,
+        "series": "Avg Response Time - Zero-Day"
+      },
+      {
+        "x": "2024-01",
+        "y": 7.7,
+        "series": "Avg Response Time - APT"
+      },
+      {
+        "x": "2024-02",
+        "y": 9.166666666666666,
+        "series": "Avg Response Time - APT"
+      },
+      {
+        "x": "2024-03",
+        "y": 8.384615384615385,
+        "series": "Avg Response Time - APT"
+      },
+      {
+        "x": "2024-04",
+        "y": 8.833333333333334,
+        "series": "Avg Response Time - APT"
+      }
+    ]
+  },
+  "title": "Monthly Incident Counts by Threat Type and Average Response Time",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Incident Count"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Incident Count"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

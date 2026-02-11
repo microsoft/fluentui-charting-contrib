@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 1200,
+        "y": 100,
+        "series": "Series"
+      },
+      {
+        "x": 1180,
+        "y": 95,
+        "series": "Series"
+      },
+      {
+        "x": 1150,
+        "y": 90,
+        "series": "Series"
+      },
+      {
+        "x": 1100,
+        "y": 85,
+        "series": "Series"
+      },
+      {
+        "x": 1050,
+        "y": 80,
+        "series": "Series"
+      },
+      {
+        "x": 1040,
+        "y": 75,
+        "series": "Series"
+      },
+      {
+        "x": 1020,
+        "y": 70,
+        "series": "Series"
+      },
+      {
+        "x": 1000,
+        "y": 65,
+        "series": "Series"
+      },
+      {
+        "x": 980,
+        "y": 60,
+        "series": "Series"
+      },
+      {
+        "x": 970,
+        "y": 55,
+        "series": "Series"
+      },
+      {
+        "x": 950,
+        "y": 50,
+        "series": "Series"
+      },
+      {
+        "x": 930,
+        "y": 45,
+        "series": "Series"
+      },
+      {
+        "x": 910,
+        "y": 40,
+        "series": "Series"
+      },
+      {
+        "x": 900,
+        "y": 35,
+        "series": "Series"
+      },
+      {
+        "x": 880,
+        "y": 30,
+        "series": "Series"
+      },
+      {
+        "x": 860,
+        "y": 25,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Energy Consumption vs Water Usage",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Energy Consumption (MWh)"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Water Usage (1000 m^3)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Energy Consumption (MWh)"
+      },
+      {
+        "field": "y",
+        "title": "Water Usage (1000 m^3)"
+      }
+    ]
+  }
+}

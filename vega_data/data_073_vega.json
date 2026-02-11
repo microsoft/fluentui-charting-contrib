@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Growth in Employee Counts Across Different Demographics Over Time",
+  "description": "Converted from Plotly schema 73 - Multi-series area chart",
+  "data": {
+    "values": [
+      { "year": "2018", "count": 50, "demographic": "Women" },
+      { "year": "2019", "count": 60, "demographic": "Women" },
+      { "year": "2020", "count": 70, "demographic": "Women" },
+      { "year": "2021", "count": 90, "demographic": "Women" },
+      { "year": "2022", "count": 110, "demographic": "Women" },
+      { "year": "2018", "count": 40, "demographic": "Men" },
+      { "year": "2019", "count": 50, "demographic": "Men" },
+      { "year": "2020", "count": 60, "demographic": "Men" },
+      { "year": "2021", "count": 80, "demographic": "Men" },
+      { "year": "2022", "count": 100, "demographic": "Men" },
+      { "year": "2018", "count": 10, "demographic": "Nonbinary" },
+      { "year": "2019", "count": 15, "demographic": "Nonbinary" },
+      { "year": "2020", "count": 20, "demographic": "Nonbinary" },
+      { "year": "2021", "count": 25, "demographic": "Nonbinary" },
+      { "year": "2022", "count": 30, "demographic": "Nonbinary" }
+    ]
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "axis": { "title": "Year" }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": { "title": "Employee Count" }
+    },
+    "color": {
+      "field": "demographic",
+      "type": "nominal",
+      "legend": { "title": "Demographic" }
+    }
+  }
+}

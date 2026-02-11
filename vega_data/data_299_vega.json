@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "月別エネルギー消費量分析",
+  "description": "Converted from Plotly schema 299 - Grouped bar chart with Japanese labels",
+  "width": 600,
+  "height": 350,
+  "data": {
+    "values": [
+      { "month": "January", "consumption": 300, "sector": "住宅" },
+      { "month": "February", "consumption": 250, "sector": "住宅" },
+      { "month": "March", "consumption": 280, "sector": "住宅" },
+      { "month": "April", "consumption": 450, "sector": "住宅" },
+      { "month": "May", "consumption": 500, "sector": "住宅" },
+      { "month": "June", "consumption": 650, "sector": "住宅" },
+      { "month": "July", "consumption": 700, "sector": "住宅" },
+      { "month": "August", "consumption": 730, "sector": "住宅" },
+      { "month": "September", "consumption": 600, "sector": "住宅" },
+      { "month": "October", "consumption": 490, "sector": "住宅" },
+      { "month": "November", "consumption": 450, "sector": "住宅" },
+      { "month": "December", "consumption": 310, "sector": "住宅" },
+      { "month": "January", "consumption": 500, "sector": "商業" },
+      { "month": "February", "consumption": 450, "sector": "商業" },
+      { "month": "March", "consumption": 480, "sector": "商業" },
+      { "month": "April", "consumption": 600, "sector": "商業" },
+      { "month": "May", "consumption": 650, "sector": "商業" },
+      { "month": "June", "consumption": 700, "sector": "商業" },
+      { "month": "July", "consumption": 750, "sector": "商業" },
+      { "month": "August", "consumption": 770, "sector": "商業" },
+      { "month": "September", "consumption": 700, "sector": "商業" },
+      { "month": "October", "consumption": 650, "sector": "商業" },
+      { "month": "November", "consumption": 600, "sector": "商業" },
+      { "month": "December", "consumption": 550, "sector": "商業" },
+      { "month": "January", "consumption": 800, "sector": "産業" },
+      { "month": "February", "consumption": 700, "sector": "産業" },
+      { "month": "March", "consumption": 750, "sector": "産業" },
+      { "month": "April", "consumption": 850, "sector": "産業" },
+      { "month": "May", "consumption": 900, "sector": "産業" },
+      { "month": "June", "consumption": 1000, "sector": "産業" },
+      { "month": "July", "consumption": 1100, "sector": "産業" },
+      { "month": "August", "consumption": 1150, "sector": "産業" },
+      { "month": "September", "consumption": 1000, "sector": "産業" },
+      { "month": "October", "consumption": 950, "sector": "産業" },
+      { "month": "November", "consumption": 850, "sector": "産業" },
+      { "month": "December", "consumption": 800, "sector": "産業" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "sort": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      "axis": { "title": "月" }
+    },
+    "y": {
+      "field": "consumption",
+      "type": "quantitative",
+      "axis": { "title": "エネルギー消費量 (kWh)" }
+    },
+    "xOffset": {
+      "field": "sector",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "sector",
+      "type": "nominal",
+      "scale": { "range": ["green", "blue", "red"] },
+      "legend": { "title": "セクター" }
+    }
+  }
+}

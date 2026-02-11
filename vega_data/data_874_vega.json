@@ -1,0 +1,198 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 85,
+        "theta": "Equipment Availability Score",
+        "series": "National Disaster Management Authority"
+      },
+      {
+        "r": 88,
+        "theta": "Training Level Score",
+        "series": "National Disaster Management Authority"
+      },
+      {
+        "r": 4,
+        "theta": "Average Response Time (hrs)",
+        "series": "National Disaster Management Authority"
+      },
+      {
+        "r": 120,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "National Disaster Management Authority"
+      },
+      {
+        "r": 4.5,
+        "theta": "Readiness Rating",
+        "series": "National Disaster Management Authority"
+      },
+      {
+        "r": 85,
+        "theta": "Equipment Availability Score",
+        "series": "National Disaster Management Authority"
+      },
+      {
+        "r": 70,
+        "theta": "Equipment Availability Score",
+        "series": "Urban Emergency Services"
+      },
+      {
+        "r": 75,
+        "theta": "Training Level Score",
+        "series": "Urban Emergency Services"
+      },
+      {
+        "r": 2.5,
+        "theta": "Average Response Time (hrs)",
+        "series": "Urban Emergency Services"
+      },
+      {
+        "r": 80,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "Urban Emergency Services"
+      },
+      {
+        "r": 3.9,
+        "theta": "Readiness Rating",
+        "series": "Urban Emergency Services"
+      },
+      {
+        "r": 70,
+        "theta": "Equipment Availability Score",
+        "series": "Urban Emergency Services"
+      },
+      {
+        "r": 60,
+        "theta": "Equipment Availability Score",
+        "series": "Health & Clinical Agency"
+      },
+      {
+        "r": 65,
+        "theta": "Training Level Score",
+        "series": "Health & Clinical Agency"
+      },
+      {
+        "r": 1,
+        "theta": "Average Response Time (hrs)",
+        "series": "Health & Clinical Agency"
+      },
+      {
+        "r": 60,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "Health & Clinical Agency"
+      },
+      {
+        "r": 3.2,
+        "theta": "Readiness Rating",
+        "series": "Health & Clinical Agency"
+      },
+      {
+        "r": 60,
+        "theta": "Equipment Availability Score",
+        "series": "Health & Clinical Agency"
+      },
+      {
+        "r": 78,
+        "theta": "Equipment Availability Score",
+        "series": "Civil Defense Department"
+      },
+      {
+        "r": 80,
+        "theta": "Training Level Score",
+        "series": "Civil Defense Department"
+      },
+      {
+        "r": 3.2,
+        "theta": "Average Response Time (hrs)",
+        "series": "Civil Defense Department"
+      },
+      {
+        "r": 90,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "Civil Defense Department"
+      },
+      {
+        "r": 4.1,
+        "theta": "Readiness Rating",
+        "series": "Civil Defense Department"
+      },
+      {
+        "r": 78,
+        "theta": "Equipment Availability Score",
+        "series": "Civil Defense Department"
+      },
+      {
+        "r": 92,
+        "theta": "Equipment Availability Score",
+        "series": "Rapid Response Force"
+      },
+      {
+        "r": 90,
+        "theta": "Training Level Score",
+        "series": "Rapid Response Force"
+      },
+      {
+        "r": 4.3,
+        "theta": "Average Response Time (hrs)",
+        "series": "Rapid Response Force"
+      },
+      {
+        "r": 150,
+        "theta": "Annual Budget Allocated (in million $)",
+        "series": "Rapid Response Force"
+      },
+      {
+        "r": 4.8,
+        "theta": "Readiness Rating",
+        "series": "Rapid Response Force"
+      },
+      {
+        "r": 92,
+        "theta": "Equipment Availability Score",
+        "series": "Rapid Response Force"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Disaster Response Readiness Analysis (Flood Scenario)"
+}

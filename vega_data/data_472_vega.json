@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "E1",
+        "y": 45,
+        "series": "Unit1"
+      },
+      {
+        "x": "E2",
+        "y": 60,
+        "series": "Unit1"
+      },
+      {
+        "x": "E3",
+        "y": 30,
+        "series": "Unit1"
+      },
+      {
+        "x": "E1",
+        "y": 50,
+        "series": "Unit2"
+      },
+      {
+        "x": "E2",
+        "y": 55,
+        "series": "Unit2"
+      },
+      {
+        "x": "E3",
+        "y": 35,
+        "series": "Unit2"
+      },
+      {
+        "x": "E1",
+        "y": 40,
+        "series": "Unit3"
+      },
+      {
+        "x": "E2",
+        "y": 65,
+        "series": "Unit3"
+      },
+      {
+        "x": "E3",
+        "y": 45,
+        "series": "Unit3"
+      }
+    ]
+  },
+  "title": "Completion Time Trends Across Exercises",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "exercise type"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "completion time"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "exercise type"
+      },
+      {
+        "field": "y",
+        "title": "completion time"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

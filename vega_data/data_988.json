@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Growth Rate Analysis",
+  "data": {
+    "values": [
+      {"x": -20, "y": 5},
+      {"x": -10, "y": 8},
+      {"x": 0, "y": 12},
+      {"x": 10, "y": 15},
+      {"x": 20, "y": 18},
+      {"x": 28, "y": 22}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "line"}
+    },
+    {
+      "mark": {"type": "point", "filled": true}
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Days from Start",
+      "scale": {"domain": [-20, 40]}
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Growth %"
+    }
+  }
+}

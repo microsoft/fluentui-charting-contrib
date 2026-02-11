@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": 2.9
+      },
+      {
+        "value": 8.3
+      },
+      {
+        "value": 2.45
+      },
+      {
+        "value": -0.64
+      },
+      {
+        "value": 2.87
+      },
+      {
+        "value": 11.47
+      },
+      {
+        "value": -8.28
+      },
+      {
+        "value": 2.64
+      },
+      {
+        "value": 6.82
+      },
+      {
+        "value": 1.5
+      },
+      {
+        "value": 7.57
+      },
+      {
+        "value": 0.85
+      },
+      {
+        "value": 5.94
+      },
+      {
+        "value": -1
+      },
+      {
+        "value": 3.98
+      },
+      {
+        "value": 2.07
+      },
+      {
+        "value": 12.53
+      },
+      {
+        "value": 11.07
+      },
+      {
+        "value": 11.9
+      },
+      {
+        "value": -0.06
+      },
+      {
+        "value": 10.05
+      },
+      {
+        "value": 14.5
+      },
+      {
+        "value": 2.02
+      },
+      {
+        "value": 12.59
+      },
+      {
+        "value": 3.42
+      },
+      {
+        "value": 12.62
+      },
+      {
+        "value": 3.37
+      },
+      {
+        "value": -0.16
+      },
+      {
+        "value": 7.34
+      },
+      {
+        "value": 1.99
+      },
+      {
+        "value": 6.76
+      },
+      {
+        "value": 16.66
+      },
+      {
+        "value": 8.71
+      },
+      {
+        "value": 3.65
+      },
+      {
+        "value": 1.43
+      },
+      {
+        "value": 7.6
+      },
+      {
+        "value": 1.43
+      },
+      {
+        "value": -1.08
+      },
+      {
+        "value": 0.82
+      },
+      {
+        "value": 7.97
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "bin": true,
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Distribution of Portfolio Return % by Asset Type"
+}

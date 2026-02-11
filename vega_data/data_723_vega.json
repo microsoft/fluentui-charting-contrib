@@ -1,0 +1,287 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "x": "2024-06-01",
+        "y": "Factory A",
+        "value": 39.6
+      },
+      {
+        "x": "2024-06-02",
+        "y": "Factory A",
+        "value": 40.34
+      },
+      {
+        "x": "2024-06-03",
+        "y": "Factory A",
+        "value": 68.06
+      },
+      {
+        "x": "2024-06-04",
+        "y": "Factory A",
+        "value": 54.24
+      },
+      {
+        "x": "2024-06-05",
+        "y": "Factory A",
+        "value": 46.51
+      },
+      {
+        "x": "2024-06-06",
+        "y": "Factory A",
+        "value": 62.07
+      },
+      {
+        "x": "2024-06-07",
+        "y": "Factory A",
+        "value": 58.1
+      },
+      {
+        "x": "2024-06-01",
+        "y": "Factory B",
+        "value": 64.3
+      },
+      {
+        "x": "2024-06-02",
+        "y": "Factory B",
+        "value": 53.47
+      },
+      {
+        "x": "2024-06-03",
+        "y": "Factory B",
+        "value": 67.11
+      },
+      {
+        "x": "2024-06-04",
+        "y": "Factory B",
+        "value": 71.34
+      },
+      {
+        "x": "2024-06-05",
+        "y": "Factory B",
+        "value": 39.61
+      },
+      {
+        "x": "2024-06-06",
+        "y": "Factory B",
+        "value": 52.15
+      },
+      {
+        "x": "2024-06-07",
+        "y": "Factory B",
+        "value": 61.6
+      },
+      {
+        "x": "2024-06-01",
+        "y": "Factory C",
+        "value": 52.76
+      },
+      {
+        "x": "2024-06-02",
+        "y": "Factory C",
+        "value": 35.55
+      },
+      {
+        "x": "2024-06-03",
+        "y": "Factory C",
+        "value": 59.73
+      },
+      {
+        "x": "2024-06-04",
+        "y": "Factory C",
+        "value": 42.28
+      },
+      {
+        "x": "2024-06-05",
+        "y": "Factory C",
+        "value": 53.02
+      },
+      {
+        "x": "2024-06-06",
+        "y": "Factory C",
+        "value": 47.8
+      },
+      {
+        "x": "2024-06-07",
+        "y": "Factory C",
+        "value": 65.76
+      },
+      {
+        "x": "2024-06-01",
+        "y": "Factory D",
+        "value": 47.47
+      },
+      {
+        "x": "2024-06-02",
+        "y": "Factory D",
+        "value": 39.59
+      },
+      {
+        "x": "2024-06-03",
+        "y": "Factory D",
+        "value": 46.43
+      },
+      {
+        "x": "2024-06-04",
+        "y": "Factory D",
+        "value": 42.86
+      },
+      {
+        "x": "2024-06-05",
+        "y": "Factory D",
+        "value": 58.32
+      },
+      {
+        "x": "2024-06-06",
+        "y": "Factory D",
+        "value": 70.28
+      },
+      {
+        "x": "2024-06-07",
+        "y": "Factory D",
+        "value": 53.23
+      },
+      {
+        "x": "2024-06-01",
+        "y": "Factory E",
+        "value": 63.96
+      },
+      {
+        "x": "2024-06-02",
+        "y": "Factory E",
+        "value": 40.43
+      },
+      {
+        "x": "2024-06-03",
+        "y": "Factory E",
+        "value": 45.26
+      },
+      {
+        "x": "2024-06-04",
+        "y": "Factory E",
+        "value": 41.67
+      },
+      {
+        "x": "2024-06-05",
+        "y": "Factory E",
+        "value": 64.61
+      },
+      {
+        "x": "2024-06-06",
+        "y": "Factory E",
+        "value": 54.6
+      },
+      {
+        "x": "2024-06-07",
+        "y": "Factory E",
+        "value": 57.54
+      },
+      {
+        "x": "2024-06-01",
+        "y": "Factory F",
+        "value": 53.54
+      },
+      {
+        "x": "2024-06-02",
+        "y": "Factory F",
+        "value": 65.59
+      },
+      {
+        "x": "2024-06-03",
+        "y": "Factory F",
+        "value": 52.3
+      },
+      {
+        "x": "2024-06-04",
+        "y": "Factory F",
+        "value": 65.86
+      },
+      {
+        "x": "2024-06-05",
+        "y": "Factory F",
+        "value": 50.47
+      },
+      {
+        "x": "2024-06-06",
+        "y": "Factory F",
+        "value": 54.93
+      },
+      {
+        "x": "2024-06-07",
+        "y": "Factory F",
+        "value": 68.57
+      },
+      {
+        "x": "2024-06-01",
+        "y": "Factory G",
+        "value": 42.82
+      },
+      {
+        "x": "2024-06-02",
+        "y": "Factory G",
+        "value": 56.65
+      },
+      {
+        "x": "2024-06-03",
+        "y": "Factory G",
+        "value": 63.89
+      },
+      {
+        "x": "2024-06-04",
+        "y": "Factory G",
+        "value": 53.73
+      },
+      {
+        "x": "2024-06-05",
+        "y": "Factory G",
+        "value": 58.64
+      },
+      {
+        "x": "2024-06-06",
+        "y": "Factory G",
+        "value": 57.77
+      },
+      {
+        "x": "2024-06-07",
+        "y": "Factory G",
+        "value": 60.73
+      }
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "y",
+      "type": "ordinal"
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "blues"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "value",
+        "title": "Value"
+      }
+    ]
+  },
+  "title": "Factory Efficiency Heatmap (Daily Performance)"
+}

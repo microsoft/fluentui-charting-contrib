@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Monthly Variance Percentage",
+  "description": "Converted from Plotly schema 128 - Line chart with markers",
+  "data": {
+    "values": [
+      { "month": "Jan", "variance": -5 },
+      { "month": "Feb", "variance": 10 },
+      { "month": "Mar", "variance": -2 },
+      { "month": "Apr", "variance": 8 },
+      { "month": "May", "variance": 3 },
+      { "month": "Jun", "variance": 15 },
+      { "month": "Jul", "variance": -4 },
+      { "month": "Aug", "variance": 9 },
+      { "month": "Sep", "variance": -7 },
+      { "month": "Oct", "variance": 2 },
+      { "month": "Nov", "variance": 11 },
+      { "month": "Dec", "variance": -1 }
+    ]
+  },
+  "layer": [
+    {
+      "mark": "line"
+    },
+    {
+      "mark": "point"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "ordinal",
+      "axis": { "title": "Month" },
+      "sort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    },
+    "y": {
+      "field": "variance",
+      "type": "quantitative",
+      "axis": { "title": "Variance (%)" }
+    }
+  }
+}

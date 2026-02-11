@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "City Medical Center",
+        "y": 18500000,
+        "series": "Series"
+      },
+      {
+        "x": "Urban General Hospital",
+        "y": 22300000,
+        "series": "Series"
+      },
+      {
+        "x": "Metro Health Clinic",
+        "y": 14200000,
+        "series": "Series"
+      },
+      {
+        "x": "Central Healthcare",
+        "y": 20750000,
+        "series": "Series"
+      },
+      {
+        "x": "Greenway Hospital",
+        "y": 19500000,
+        "series": "Series"
+      },
+      {
+        "x": "Sunrise Medical",
+        "y": 17050000,
+        "series": "Series"
+      },
+      {
+        "x": "Downtown Hospital",
+        "y": 21500000,
+        "series": "Series"
+      },
+      {
+        "x": "Riverfront Medical",
+        "y": 16100000,
+        "series": "Series"
+      },
+      {
+        "x": "Northside Care",
+        "y": 18900000,
+        "series": "Series"
+      },
+      {
+        "x": "West End Hospital",
+        "y": 20000000,
+        "series": "Series"
+      }
+    ]
+  },
+  "title": "Healthcare Spending vs Patient Satisfaction across Facilities",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Hospital"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Healthcare Spending (USD)"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Hospital"
+      },
+      {
+        "field": "y",
+        "title": "Healthcare Spending (USD)"
+      }
+    ]
+  }
+}

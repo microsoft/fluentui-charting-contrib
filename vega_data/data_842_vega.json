@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 0,
+        "y": "low",
+        "series": "Metadata1"
+      },
+      {
+        "x": 20,
+        "y": "medium",
+        "series": "Metadata1"
+      },
+      {
+        "x": 40,
+        "y": "high",
+        "series": "Metadata1"
+      },
+      {
+        "x": 0,
+        "y": "high",
+        "series": "Metadata2"
+      },
+      {
+        "x": 20,
+        "y": "low",
+        "series": "Metadata2"
+      },
+      {
+        "x": 0,
+        "y": "low",
+        "series": "Supported Builds"
+      },
+      {
+        "x": 20,
+        "y": "medium",
+        "series": "Supported Builds"
+      },
+      {
+        "x": 40,
+        "y": "high",
+        "series": "Supported Builds"
+      },
+      {
+        "x": 0,
+        "y": "medium",
+        "series": "Recommended Builds"
+      },
+      {
+        "x": 40,
+        "y": "low",
+        "series": "Recommended Builds"
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "X"
+      },
+      {
+        "field": "y",
+        "title": "Y"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

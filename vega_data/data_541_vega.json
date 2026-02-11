@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 1500,
+        "y": 75,
+        "series": "E001"
+      },
+      {
+        "x": 1200,
+        "y": 80,
+        "series": "E002"
+      },
+      {
+        "x": 1300,
+        "y": 78,
+        "series": "E003"
+      },
+      {
+        "x": 1400,
+        "y": 85,
+        "series": "E004"
+      },
+      {
+        "x": 1100,
+        "y": 77,
+        "series": "E005"
+      }
+    ]
+  },
+  "title": "Operational Temperature vs Hours of Operation",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "hours_of_operation"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "operational_temperature"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "hours_of_operation"
+      },
+      {
+        "field": "y",
+        "title": "operational_temperature"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

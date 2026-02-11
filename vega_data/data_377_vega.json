@@ -1,0 +1,372 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": 2002,
+        "y": 25268405,
+        "series": "Afghanistan"
+      },
+      {
+        "x": 2007,
+        "y": 31889923,
+        "series": "Afghanistan"
+      },
+      {
+        "x": 2002,
+        "y": 656397,
+        "series": "Bahrain"
+      },
+      {
+        "x": 2007,
+        "y": 708573,
+        "series": "Bahrain"
+      },
+      {
+        "x": 2002,
+        "y": 135656790,
+        "series": "Bangladesh"
+      },
+      {
+        "x": 2007,
+        "y": 150448339,
+        "series": "Bangladesh"
+      },
+      {
+        "x": 2002,
+        "y": 12926707,
+        "series": "Cambodia"
+      },
+      {
+        "x": 2007,
+        "y": 14131858,
+        "series": "Cambodia"
+      },
+      {
+        "x": 2002,
+        "y": 1280400000,
+        "series": "China"
+      },
+      {
+        "x": 2007,
+        "y": 1318683096,
+        "series": "China"
+      },
+      {
+        "x": 2002,
+        "y": 6762476,
+        "series": "Hong Kong, China"
+      },
+      {
+        "x": 2007,
+        "y": 6980412,
+        "series": "Hong Kong, China"
+      },
+      {
+        "x": 2002,
+        "y": 1034172547,
+        "series": "India"
+      },
+      {
+        "x": 2007,
+        "y": 1110396331,
+        "series": "India"
+      },
+      {
+        "x": 2002,
+        "y": 211060000,
+        "series": "Indonesia"
+      },
+      {
+        "x": 2007,
+        "y": 223547000,
+        "series": "Indonesia"
+      },
+      {
+        "x": 2002,
+        "y": 66907826,
+        "series": "Iran"
+      },
+      {
+        "x": 2007,
+        "y": 69453570,
+        "series": "Iran"
+      },
+      {
+        "x": 2002,
+        "y": 24001816,
+        "series": "Iraq"
+      },
+      {
+        "x": 2007,
+        "y": 27499638,
+        "series": "Iraq"
+      },
+      {
+        "x": 2002,
+        "y": 6029529,
+        "series": "Israel"
+      },
+      {
+        "x": 2007,
+        "y": 6426679,
+        "series": "Israel"
+      },
+      {
+        "x": 2002,
+        "y": 127065841,
+        "series": "Japan"
+      },
+      {
+        "x": 2007,
+        "y": 127467972,
+        "series": "Japan"
+      },
+      {
+        "x": 2002,
+        "y": 5307470,
+        "series": "Jordan"
+      },
+      {
+        "x": 2007,
+        "y": 6053193,
+        "series": "Jordan"
+      },
+      {
+        "x": 2002,
+        "y": 22215365,
+        "series": "Korea, Dem. Rep."
+      },
+      {
+        "x": 2007,
+        "y": 23301725,
+        "series": "Korea, Dem. Rep."
+      },
+      {
+        "x": 2002,
+        "y": 47969150,
+        "series": "Korea, Rep."
+      },
+      {
+        "x": 2007,
+        "y": 49044790,
+        "series": "Korea, Rep."
+      },
+      {
+        "x": 2002,
+        "y": 2111561,
+        "series": "Kuwait"
+      },
+      {
+        "x": 2007,
+        "y": 2505559,
+        "series": "Kuwait"
+      },
+      {
+        "x": 2002,
+        "y": 3677780,
+        "series": "Lebanon"
+      },
+      {
+        "x": 2007,
+        "y": 3921278,
+        "series": "Lebanon"
+      },
+      {
+        "x": 2002,
+        "y": 22662365,
+        "series": "Malaysia"
+      },
+      {
+        "x": 2007,
+        "y": 24821286,
+        "series": "Malaysia"
+      },
+      {
+        "x": 2002,
+        "y": 2674234,
+        "series": "Mongolia"
+      },
+      {
+        "x": 2007,
+        "y": 2874127,
+        "series": "Mongolia"
+      },
+      {
+        "x": 2002,
+        "y": 45598081,
+        "series": "Myanmar"
+      },
+      {
+        "x": 2007,
+        "y": 47761980,
+        "series": "Myanmar"
+      },
+      {
+        "x": 2002,
+        "y": 25873917,
+        "series": "Nepal"
+      },
+      {
+        "x": 2007,
+        "y": 28901790,
+        "series": "Nepal"
+      },
+      {
+        "x": 2002,
+        "y": 2713462,
+        "series": "Oman"
+      },
+      {
+        "x": 2007,
+        "y": 3204897,
+        "series": "Oman"
+      },
+      {
+        "x": 2002,
+        "y": 153403524,
+        "series": "Pakistan"
+      },
+      {
+        "x": 2007,
+        "y": 169270617,
+        "series": "Pakistan"
+      },
+      {
+        "x": 2002,
+        "y": 82995088,
+        "series": "Philippines"
+      },
+      {
+        "x": 2007,
+        "y": 91077287,
+        "series": "Philippines"
+      },
+      {
+        "x": 2002,
+        "y": 24501530,
+        "series": "Saudi Arabia"
+      },
+      {
+        "x": 2007,
+        "y": 27601038,
+        "series": "Saudi Arabia"
+      },
+      {
+        "x": 2002,
+        "y": 4197776,
+        "series": "Singapore"
+      },
+      {
+        "x": 2007,
+        "y": 4553009,
+        "series": "Singapore"
+      },
+      {
+        "x": 2002,
+        "y": 19576783,
+        "series": "Sri Lanka"
+      },
+      {
+        "x": 2007,
+        "y": 20378239,
+        "series": "Sri Lanka"
+      },
+      {
+        "x": 2002,
+        "y": 17155814,
+        "series": "Syria"
+      },
+      {
+        "x": 2007,
+        "y": 19314747,
+        "series": "Syria"
+      },
+      {
+        "x": 2002,
+        "y": 22454239,
+        "series": "Taiwan"
+      },
+      {
+        "x": 2007,
+        "y": 23174294,
+        "series": "Taiwan"
+      },
+      {
+        "x": 2002,
+        "y": 62806748,
+        "series": "Thailand"
+      },
+      {
+        "x": 2007,
+        "y": 65068149,
+        "series": "Thailand"
+      },
+      {
+        "x": 2002,
+        "y": 80908147,
+        "series": "Vietnam"
+      },
+      {
+        "x": 2007,
+        "y": 85262356,
+        "series": "Vietnam"
+      },
+      {
+        "x": 2002,
+        "y": 3389578,
+        "series": "West Bank and Gaza"
+      },
+      {
+        "x": 2007,
+        "y": 4018332,
+        "series": "West Bank and Gaza"
+      },
+      {
+        "x": 2002,
+        "y": 18701257,
+        "series": "Yemen, Rep."
+      },
+      {
+        "x": 2007,
+        "y": 22211743,
+        "series": "Yemen, Rep."
+      }
+    ]
+  },
+  "title": "Custom Color Area Chart",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "year"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "pop"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "year"
+      },
+      {
+        "field": "y",
+        "title": "pop"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

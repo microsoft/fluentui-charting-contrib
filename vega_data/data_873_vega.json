@@ -1,0 +1,188 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "values": [
+      {
+        "r": 85,
+        "theta": "Cloud Computing Competency",
+        "series": "Alpha"
+      },
+      {
+        "r": 78,
+        "theta": "Data Engineering Competency",
+        "series": "Alpha"
+      },
+      {
+        "r": 88,
+        "theta": "Security Proficiency",
+        "series": "Alpha"
+      },
+      {
+        "r": 81,
+        "theta": "DevOps Practices",
+        "series": "Alpha"
+      },
+      {
+        "r": 76,
+        "theta": "Agility Score",
+        "series": "Alpha"
+      },
+      {
+        "r": 90,
+        "theta": "Programming Expertise",
+        "series": "Alpha"
+      },
+      {
+        "r": 85,
+        "theta": "Cloud Computing Competency",
+        "series": "Alpha"
+      },
+      {
+        "r": 68,
+        "theta": "Cloud Computing Competency",
+        "series": "Beta"
+      },
+      {
+        "r": 85,
+        "theta": "Data Engineering Competency",
+        "series": "Beta"
+      },
+      {
+        "r": 73,
+        "theta": "Security Proficiency",
+        "series": "Beta"
+      },
+      {
+        "r": 77,
+        "theta": "DevOps Practices",
+        "series": "Beta"
+      },
+      {
+        "r": 83,
+        "theta": "Agility Score",
+        "series": "Beta"
+      },
+      {
+        "r": 79,
+        "theta": "Programming Expertise",
+        "series": "Beta"
+      },
+      {
+        "r": 68,
+        "theta": "Cloud Computing Competency",
+        "series": "Beta"
+      },
+      {
+        "r": 73,
+        "theta": "Cloud Computing Competency",
+        "series": "Gamma"
+      },
+      {
+        "r": 72,
+        "theta": "Data Engineering Competency",
+        "series": "Gamma"
+      },
+      {
+        "r": 70,
+        "theta": "Security Proficiency",
+        "series": "Gamma"
+      },
+      {
+        "r": 74,
+        "theta": "DevOps Practices",
+        "series": "Gamma"
+      },
+      {
+        "r": 80,
+        "theta": "Agility Score",
+        "series": "Gamma"
+      },
+      {
+        "r": 69,
+        "theta": "Programming Expertise",
+        "series": "Gamma"
+      },
+      {
+        "r": 73,
+        "theta": "Cloud Computing Competency",
+        "series": "Gamma"
+      },
+      {
+        "r": 90,
+        "theta": "Cloud Computing Competency",
+        "series": "Delta"
+      },
+      {
+        "r": 88,
+        "theta": "Data Engineering Competency",
+        "series": "Delta"
+      },
+      {
+        "r": 85,
+        "theta": "Security Proficiency",
+        "series": "Delta"
+      },
+      {
+        "r": 92,
+        "theta": "DevOps Practices",
+        "series": "Delta"
+      },
+      {
+        "r": 79,
+        "theta": "Agility Score",
+        "series": "Delta"
+      },
+      {
+        "r": 87,
+        "theta": "Programming Expertise",
+        "series": "Delta"
+      },
+      {
+        "r": 90,
+        "theta": "Cloud Computing Competency",
+        "series": "Delta"
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 0
+  },
+  "encoding": {
+    "theta": {
+      "field": "theta",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          360
+        ]
+      }
+    },
+    "radius": {
+      "field": "r",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "theta",
+        "title": "Angle"
+      },
+      {
+        "field": "r",
+        "title": "Radius"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  },
+  "title": "Tech Skill Competency Across IT Teams"
+}

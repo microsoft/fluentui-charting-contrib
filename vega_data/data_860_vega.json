@@ -1,0 +1,362 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2023Q1",
+        "y": 9267,
+        "series": "North | Sedan"
+      },
+      {
+        "x": "2023Q2",
+        "y": 9396,
+        "series": "North | Sedan"
+      },
+      {
+        "x": "2023Q3",
+        "y": 9839,
+        "series": "North | Sedan"
+      },
+      {
+        "x": "2023Q4",
+        "y": 9096,
+        "series": "North | Sedan"
+      },
+      {
+        "x": "2023Q1",
+        "y": 9427,
+        "series": "North | SUV"
+      },
+      {
+        "x": "2023Q2",
+        "y": 9948,
+        "series": "North | SUV"
+      },
+      {
+        "x": "2023Q3",
+        "y": 9566,
+        "series": "North | SUV"
+      },
+      {
+        "x": "2023Q4",
+        "y": 10371,
+        "series": "North | SUV"
+      },
+      {
+        "x": "2023Q1",
+        "y": 11491,
+        "series": "North | Hatchback"
+      },
+      {
+        "x": "2023Q2",
+        "y": 10725,
+        "series": "North | Hatchback"
+      },
+      {
+        "x": "2023Q3",
+        "y": 9987,
+        "series": "North | Hatchback"
+      },
+      {
+        "x": "2023Q4",
+        "y": 11944,
+        "series": "North | Hatchback"
+      },
+      {
+        "x": "2023Q1",
+        "y": 12798,
+        "series": "North | Convertible"
+      },
+      {
+        "x": "2023Q2",
+        "y": 12535,
+        "series": "North | Convertible"
+      },
+      {
+        "x": "2023Q3",
+        "y": 12605,
+        "series": "North | Convertible"
+      },
+      {
+        "x": "2023Q4",
+        "y": 13592,
+        "series": "North | Convertible"
+      },
+      {
+        "x": "2023Q1",
+        "y": 10706,
+        "series": "South | Sedan"
+      },
+      {
+        "x": "2023Q2",
+        "y": 12384,
+        "series": "South | Sedan"
+      },
+      {
+        "x": "2023Q3",
+        "y": 10867,
+        "series": "South | Sedan"
+      },
+      {
+        "x": "2023Q4",
+        "y": 9723,
+        "series": "South | Sedan"
+      },
+      {
+        "x": "2023Q1",
+        "y": 11982,
+        "series": "South | SUV"
+      },
+      {
+        "x": "2023Q2",
+        "y": 10670,
+        "series": "South | SUV"
+      },
+      {
+        "x": "2023Q3",
+        "y": 11247,
+        "series": "South | SUV"
+      },
+      {
+        "x": "2023Q4",
+        "y": 12779,
+        "series": "South | SUV"
+      },
+      {
+        "x": "2023Q1",
+        "y": 12651,
+        "series": "South | Hatchback"
+      },
+      {
+        "x": "2023Q2",
+        "y": 12816,
+        "series": "South | Hatchback"
+      },
+      {
+        "x": "2023Q3",
+        "y": 12745,
+        "series": "South | Hatchback"
+      },
+      {
+        "x": "2023Q4",
+        "y": 12820,
+        "series": "South | Hatchback"
+      },
+      {
+        "x": "2023Q1",
+        "y": 13869,
+        "series": "South | Convertible"
+      },
+      {
+        "x": "2023Q2",
+        "y": 13582,
+        "series": "South | Convertible"
+      },
+      {
+        "x": "2023Q3",
+        "y": 14593,
+        "series": "South | Convertible"
+      },
+      {
+        "x": "2023Q4",
+        "y": 14025,
+        "series": "South | Convertible"
+      },
+      {
+        "x": "2023Q1",
+        "y": 13257,
+        "series": "East | Sedan"
+      },
+      {
+        "x": "2023Q2",
+        "y": 12933,
+        "series": "East | Sedan"
+      },
+      {
+        "x": "2023Q3",
+        "y": 12410,
+        "series": "East | Sedan"
+      },
+      {
+        "x": "2023Q4",
+        "y": 12475,
+        "series": "East | Sedan"
+      },
+      {
+        "x": "2023Q1",
+        "y": 13294,
+        "series": "East | SUV"
+      },
+      {
+        "x": "2023Q2",
+        "y": 13594,
+        "series": "East | SUV"
+      },
+      {
+        "x": "2023Q3",
+        "y": 12755,
+        "series": "East | SUV"
+      },
+      {
+        "x": "2023Q4",
+        "y": 14190,
+        "series": "East | SUV"
+      },
+      {
+        "x": "2023Q1",
+        "y": 16263,
+        "series": "East | Hatchback"
+      },
+      {
+        "x": "2023Q2",
+        "y": 14052,
+        "series": "East | Hatchback"
+      },
+      {
+        "x": "2023Q3",
+        "y": 14505,
+        "series": "East | Hatchback"
+      },
+      {
+        "x": "2023Q4",
+        "y": 14459,
+        "series": "East | Hatchback"
+      },
+      {
+        "x": "2023Q1",
+        "y": 16209,
+        "series": "East | Convertible"
+      },
+      {
+        "x": "2023Q2",
+        "y": 14248,
+        "series": "East | Convertible"
+      },
+      {
+        "x": "2023Q3",
+        "y": 14857,
+        "series": "East | Convertible"
+      },
+      {
+        "x": "2023Q4",
+        "y": 15157,
+        "series": "East | Convertible"
+      },
+      {
+        "x": "2023Q1",
+        "y": 14026,
+        "series": "West | Sedan"
+      },
+      {
+        "x": "2023Q2",
+        "y": 13350,
+        "series": "West | Sedan"
+      },
+      {
+        "x": "2023Q3",
+        "y": 14302,
+        "series": "West | Sedan"
+      },
+      {
+        "x": "2023Q4",
+        "y": 12199,
+        "series": "West | Sedan"
+      },
+      {
+        "x": "2023Q1",
+        "y": 15452,
+        "series": "West | SUV"
+      },
+      {
+        "x": "2023Q2",
+        "y": 16222,
+        "series": "West | SUV"
+      },
+      {
+        "x": "2023Q3",
+        "y": 15404,
+        "series": "West | SUV"
+      },
+      {
+        "x": "2023Q4",
+        "y": 13480,
+        "series": "West | SUV"
+      },
+      {
+        "x": "2023Q1",
+        "y": 15243,
+        "series": "West | Hatchback"
+      },
+      {
+        "x": "2023Q2",
+        "y": 17288,
+        "series": "West | Hatchback"
+      },
+      {
+        "x": "2023Q3",
+        "y": 16331,
+        "series": "West | Hatchback"
+      },
+      {
+        "x": "2023Q4",
+        "y": 15137,
+        "series": "West | Hatchback"
+      },
+      {
+        "x": "2023Q1",
+        "y": 18689,
+        "series": "West | Convertible"
+      },
+      {
+        "x": "2023Q2",
+        "y": 18016,
+        "series": "West | Convertible"
+      },
+      {
+        "x": "2023Q3",
+        "y": 17941,
+        "series": "West | Convertible"
+      },
+      {
+        "x": "2023Q4",
+        "y": 17038,
+        "series": "West | Convertible"
+      }
+    ]
+  },
+  "title": "Automobile Sales Performance Analysis<br><sup>Quarterly sales by region & model with advanced color and pattern mapping</sup>",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "title": "Quarter"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Sales Volume"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Quarter"
+      },
+      {
+        "field": "y",
+        "title": "Sales Volume"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

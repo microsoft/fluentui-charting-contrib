@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "2024-01",
+        "y": 40000,
+        "series": "Material_Cost"
+      },
+      {
+        "x": "2024-02",
+        "y": 70000,
+        "series": "Material_Cost"
+      },
+      {
+        "x": "2024-03",
+        "y": 100000,
+        "series": "Material_Cost"
+      },
+      {
+        "x": "2024-04",
+        "y": 120000,
+        "series": "Material_Cost"
+      },
+      {
+        "x": "2024-05",
+        "y": 80000,
+        "series": "Material_Cost"
+      },
+      {
+        "x": "2024-01",
+        "y": 50000,
+        "series": "Labor_Cost"
+      },
+      {
+        "x": "2024-02",
+        "y": 65000,
+        "series": "Labor_Cost"
+      },
+      {
+        "x": "2024-03",
+        "y": 90000,
+        "series": "Labor_Cost"
+      },
+      {
+        "x": "2024-04",
+        "y": 120000,
+        "series": "Labor_Cost"
+      },
+      {
+        "x": "2024-05",
+        "y": 60000,
+        "series": "Labor_Cost"
+      },
+      {
+        "x": "2024-01",
+        "y": 25000,
+        "series": "Other_Cost"
+      },
+      {
+        "x": "2024-02",
+        "y": 55000,
+        "series": "Other_Cost"
+      },
+      {
+        "x": "2024-03",
+        "y": 55000,
+        "series": "Other_Cost"
+      },
+      {
+        "x": "2024-04",
+        "y": 80000,
+        "series": "Other_Cost"
+      },
+      {
+        "x": "2024-05",
+        "y": 70000,
+        "series": "Other_Cost"
+      }
+    ]
+  },
+  "title": "Construction Cost Management: Monthly Breakdown of Project Spending",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "temporal",
+      "title": "Month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Cost Value (USD)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Month"
+      },
+      {
+        "field": "y",
+        "title": "Cost Value (USD)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

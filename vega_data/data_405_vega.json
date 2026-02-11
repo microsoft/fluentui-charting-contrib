@@ -1,0 +1,755 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "value": 1.01
+      },
+      {
+        "value": 1.66
+      },
+      {
+        "value": 3.5
+      },
+      {
+        "value": 3.31
+      },
+      {
+        "value": 3.61
+      },
+      {
+        "value": 4.71
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 3.12
+      },
+      {
+        "value": 1.96
+      },
+      {
+        "value": 3.23
+      },
+      {
+        "value": 1.71
+      },
+      {
+        "value": 5
+      },
+      {
+        "value": 1.57
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 3.02
+      },
+      {
+        "value": 3.92
+      },
+      {
+        "value": 1.67
+      },
+      {
+        "value": 3.71
+      },
+      {
+        "value": 3.5
+      },
+      {
+        "value": 3.35
+      },
+      {
+        "value": 4.08
+      },
+      {
+        "value": 2.75
+      },
+      {
+        "value": 2.23
+      },
+      {
+        "value": 7.58
+      },
+      {
+        "value": 3.18
+      },
+      {
+        "value": 2.34
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 4.3
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 1.45
+      },
+      {
+        "value": 2.5
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 2.45
+      },
+      {
+        "value": 3.27
+      },
+      {
+        "value": 3.6
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 3.07
+      },
+      {
+        "value": 2.31
+      },
+      {
+        "value": 5
+      },
+      {
+        "value": 2.24
+      },
+      {
+        "value": 2.54
+      },
+      {
+        "value": 3.06
+      },
+      {
+        "value": 1.32
+      },
+      {
+        "value": 5.6
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 5
+      },
+      {
+        "value": 6
+      },
+      {
+        "value": 2.05
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 2.5
+      },
+      {
+        "value": 2.6
+      },
+      {
+        "value": 5.2
+      },
+      {
+        "value": 1.56
+      },
+      {
+        "value": 4.34
+      },
+      {
+        "value": 3.51
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 1.5
+      },
+      {
+        "value": 1.76
+      },
+      {
+        "value": 6.73
+      },
+      {
+        "value": 3.21
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 1.98
+      },
+      {
+        "value": 3.76
+      },
+      {
+        "value": 2.64
+      },
+      {
+        "value": 3.15
+      },
+      {
+        "value": 2.47
+      },
+      {
+        "value": 1
+      },
+      {
+        "value": 2.01
+      },
+      {
+        "value": 2.09
+      },
+      {
+        "value": 1.97
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 3.14
+      },
+      {
+        "value": 5
+      },
+      {
+        "value": 2.2
+      },
+      {
+        "value": 1.25
+      },
+      {
+        "value": 3.08
+      },
+      {
+        "value": 4
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 2.71
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 3.4
+      },
+      {
+        "value": 1.83
+      },
+      {
+        "value": 5
+      },
+      {
+        "value": 2.03
+      },
+      {
+        "value": 5.17
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 4
+      },
+      {
+        "value": 5.85
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 3.5
+      },
+      {
+        "value": 1
+      },
+      {
+        "value": 4.3
+      },
+      {
+        "value": 3.25
+      },
+      {
+        "value": 4.73
+      },
+      {
+        "value": 4
+      },
+      {
+        "value": 1.5
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 1.5
+      },
+      {
+        "value": 2.5
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 2.5
+      },
+      {
+        "value": 3.48
+      },
+      {
+        "value": 4.08
+      },
+      {
+        "value": 1.64
+      },
+      {
+        "value": 4.06
+      },
+      {
+        "value": 4.29
+      },
+      {
+        "value": 3.76
+      },
+      {
+        "value": 4
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 1
+      },
+      {
+        "value": 4
+      },
+      {
+        "value": 2.55
+      },
+      {
+        "value": 4
+      },
+      {
+        "value": 3.5
+      },
+      {
+        "value": 5.07
+      },
+      {
+        "value": 1.5
+      },
+      {
+        "value": 1.8
+      },
+      {
+        "value": 2.92
+      },
+      {
+        "value": 2.31
+      },
+      {
+        "value": 1.68
+      },
+      {
+        "value": 2.5
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2.52
+      },
+      {
+        "value": 4.2
+      },
+      {
+        "value": 1.48
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2.18
+      },
+      {
+        "value": 1.5
+      },
+      {
+        "value": 2.83
+      },
+      {
+        "value": 1.5
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 3.25
+      },
+      {
+        "value": 1.25
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2.75
+      },
+      {
+        "value": 3.5
+      },
+      {
+        "value": 6.7
+      },
+      {
+        "value": 5
+      },
+      {
+        "value": 5
+      },
+      {
+        "value": 2.3
+      },
+      {
+        "value": 1.5
+      },
+      {
+        "value": 1.36
+      },
+      {
+        "value": 1.63
+      },
+      {
+        "value": 1.73
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2.5
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2.74
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 5.14
+      },
+      {
+        "value": 5
+      },
+      {
+        "value": 3.75
+      },
+      {
+        "value": 2.61
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 3.5
+      },
+      {
+        "value": 2.5
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 3.48
+      },
+      {
+        "value": 2.24
+      },
+      {
+        "value": 4.5
+      },
+      {
+        "value": 1.61
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 10
+      },
+      {
+        "value": 3.16
+      },
+      {
+        "value": 5.15
+      },
+      {
+        "value": 3.18
+      },
+      {
+        "value": 4
+      },
+      {
+        "value": 3.11
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 4
+      },
+      {
+        "value": 3.55
+      },
+      {
+        "value": 3.68
+      },
+      {
+        "value": 5.65
+      },
+      {
+        "value": 3.5
+      },
+      {
+        "value": 6.5
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 5
+      },
+      {
+        "value": 3.5
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 3.5
+      },
+      {
+        "value": 4
+      },
+      {
+        "value": 1.5
+      },
+      {
+        "value": 4.19
+      },
+      {
+        "value": 2.56
+      },
+      {
+        "value": 2.02
+      },
+      {
+        "value": 4
+      },
+      {
+        "value": 1.44
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 5
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 4
+      },
+      {
+        "value": 2.01
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2.5
+      },
+      {
+        "value": 4
+      },
+      {
+        "value": 3.23
+      },
+      {
+        "value": 3.41
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 2.03
+      },
+      {
+        "value": 2.23
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 5.16
+      },
+      {
+        "value": 9
+      },
+      {
+        "value": 2.5
+      },
+      {
+        "value": 6.5
+      },
+      {
+        "value": 1.1
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 1.5
+      },
+      {
+        "value": 1.44
+      },
+      {
+        "value": 3.09
+      },
+      {
+        "value": 2.2
+      },
+      {
+        "value": 3.48
+      },
+      {
+        "value": 1.92
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 1.58
+      },
+      {
+        "value": 2.5
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 2.72
+      },
+      {
+        "value": 2.88
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 3.39
+      },
+      {
+        "value": 1.47
+      },
+      {
+        "value": 3
+      },
+      {
+        "value": 1.25
+      },
+      {
+        "value": 1
+      },
+      {
+        "value": 1.17
+      },
+      {
+        "value": 4.67
+      },
+      {
+        "value": 5.92
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 2
+      },
+      {
+        "value": 1.75
+      },
+      {
+        "value": 3
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "value",
+      "bin": true,
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Count"
+    }
+  },
+  "title": "Cumulative Histogram"
+}

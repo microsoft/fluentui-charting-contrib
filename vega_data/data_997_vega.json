@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "All Students",
+        "y": 85,
+        "series": "All Students"
+      },
+      {
+        "x": "Female",
+        "y": 88,
+        "series": "Female"
+      },
+      {
+        "x": "Male",
+        "y": 82,
+        "series": "Male"
+      },
+      {
+        "x": "Hispanic",
+        "y": 78,
+        "series": "Hispanic"
+      },
+      {
+        "x": "Black",
+        "y": 75,
+        "series": "Black"
+      },
+      {
+        "x": "White",
+        "y": 90,
+        "series": "White"
+      },
+      {
+        "x": "Asian",
+        "y": 93,
+        "series": "Asian"
+      },
+      {
+        "x": "Low Income",
+        "y": 70,
+        "series": "Low Income"
+      },
+      {
+        "x": "Special Education",
+        "y": 65,
+        "series": "Special Education"
+      }
+    ]
+  },
+  "title": "Graduation Rates by Demographic Group with Policy Impact Annotations",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "Demographic Group"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "Graduation Rate (%)"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "Demographic Group"
+      },
+      {
+        "field": "y",
+        "title": "Graduation Rate (%)"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}

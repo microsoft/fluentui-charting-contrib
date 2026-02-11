@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "x": "Jan",
+        "y": 3,
+        "series": "material_cost_escalation"
+      },
+      {
+        "x": "Feb",
+        "y": 7,
+        "series": "material_cost_escalation"
+      },
+      {
+        "x": "Mar",
+        "y": 5,
+        "series": "material_cost_escalation"
+      },
+      {
+        "x": "Apr",
+        "y": 6,
+        "series": "material_cost_escalation"
+      },
+      {
+        "x": "May",
+        "y": 4,
+        "series": "material_cost_escalation"
+      },
+      {
+        "x": "Jan",
+        "y": 2,
+        "series": "labor_cost_variations"
+      },
+      {
+        "x": "Feb",
+        "y": 4,
+        "series": "labor_cost_variations"
+      },
+      {
+        "x": "Mar",
+        "y": 3,
+        "series": "labor_cost_variations"
+      },
+      {
+        "x": "Apr",
+        "y": 1,
+        "series": "labor_cost_variations"
+      },
+      {
+        "x": "May",
+        "y": 5,
+        "series": "labor_cost_variations"
+      }
+    ]
+  },
+  "title": "Monthly Material Cost Escalation and Labor Cost Variations",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "nominal",
+      "title": "month"
+    },
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "title": "value"
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Series"
+    },
+    "tooltip": [
+      {
+        "field": "x",
+        "title": "month"
+      },
+      {
+        "field": "y",
+        "title": "value"
+      },
+      {
+        "field": "series",
+        "title": "Series"
+      }
+    ]
+  }
+}
