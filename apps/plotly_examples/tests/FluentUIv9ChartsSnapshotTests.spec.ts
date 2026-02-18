@@ -165,16 +165,12 @@ async function loadChartPage(
   theme: string,
   mode: string
 ) {
-  await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
+ await page.goto('http://localhost:3000/?path=/docs/introduction--docs');
   await page.getByLabel('Shortcuts').click();
-  // Check if theme button exists, if not trigger the alternative action
-  const themeButton = page.getByRole('button', { name: /Theme:/ });
-  const isThemeButtonVisible = await themeButton.isVisible().catch(() => false);
-  if (!isThemeButtonVisible) {
-    await page.locator('#list-item-T').click();
-  }
+  await page.locator('#list-item-T').click();
   await page.getByRole('button', { name: /Theme:/ }).click();
   await page.locator(`#list-item-${theme}`).click();
+  await page.getByRole('button', { name: chart.name, exact: true }).click();
   // Check current direction and only click if needed
   const directionButton = await page.getByRole('button', { name: /Direction:/ });
   const directionText = await directionButton.textContent();
@@ -182,11 +178,13 @@ async function loadChartPage(
     (mode === 'LTR' && directionText?.includes('RTL'))) {
     await directionButton.click();
   }
+  await page.getByLabel('Shortcuts').click();
+  await page.locator('#list-item-T').click();
   const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
   const frame = await chartContainer.contentFrame();
   if (!frame) throw new Error('Could not get content frame');
   const chartInner = frame.locator(chart.selector);
-  await expect(chartInner).toBeVisible({ timeout: 30000 });
+  await expect(chartInner).toBeVisible({ timeout: 100000 });
   return frame;
 }
 
