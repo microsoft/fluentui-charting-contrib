@@ -6,104 +6,32 @@
     "values": [
       {
         "x": "Downtown Manhattan",
-        "y": {
-          "cuisine_type": "Italian Fine Dining",
-          "seating_capacity": "120 seats",
-          "average_review_score": "4.7/5 stars",
-          "peak_hours": "7PM-9PM weekdays, 6PM-10PM weekends",
-          "customer_demographics": "Business professionals, tourists",
-          "additional_info": {
-            "head_chef": "Marco Rossi",
-            "avg_meal_price": "$85",
-            "staff_count": "28",
-            "delivery_available": "Yes"
-          }
-        },
+        "staff_count": 28,
         "series": "Series"
       },
       {
         "x": "Beverly Hills",
-        "y": {
-          "cuisine_type": "French Bistro",
-          "seating_capacity": "80 seats",
-          "average_review_score": "4.9/5 stars",
-          "peak_hours": "8PM-10PM daily",
-          "customer_demographics": "High-income families, celebrities",
-          "additional_info": {
-            "head_chef": "Jean-Pierre Dubois",
-            "avg_meal_price": "$120",
-            "staff_count": "22",
-            "delivery_available": "No"
-          }
-        },
+        "staff_count": 22,
         "series": "Series"
       },
       {
         "x": "Austin Food District",
-        "y": {
-          "cuisine_type": "BBQ & Southern Comfort",
-          "seating_capacity": "150 seats",
-          "average_review_score": "4.4/5 stars",
-          "peak_hours": "12PM-2PM, 6PM-8PM",
-          "customer_demographics": "Young professionals, families",
-          "additional_info": {
-            "head_chef": "Billy Thompson",
-            "avg_meal_price": "$35",
-            "staff_count": "18",
-            "delivery_available": "Yes"
-          }
-        },
+        "staff_count": 18,
         "series": "Series"
       },
       {
         "x": "Chicago Loop",
-        "y": {
-          "cuisine_type": "Modern American",
-          "seating_capacity": "100 seats",
-          "average_review_score": "4.6/5 stars",
-          "peak_hours": "7PM-9PM weekdays, 6PM-9PM weekends",
-          "customer_demographics": "Business travelers, local professionals",
-          "additional_info": {
-            "head_chef": "Sarah Mitchell",
-            "avg_meal_price": "$65",
-            "staff_count": "24",
-            "delivery_available": "Yes"
-          }
-        },
+        "staff_count": 24,
         "series": "Series"
       },
       {
         "x": "Miami Beach",
-        "y": {
-          "cuisine_type": "Seafood & Latin Fusion",
-          "seating_capacity": "90 seats",
-          "average_review_score": "4.8/5 stars",
-          "peak_hours": "8PM-11PM daily",
-          "customer_demographics": "Tourists, nightlife crowd",
-          "additional_info": {
-            "head_chef": "Carlos Mendez",
-            "avg_meal_price": "$75",
-            "staff_count": "26",
-            "delivery_available": "No"
-          }
-        },
+        "staff_count": 26,
         "series": "Series"
       },
       {
         "x": "Seattle Pike Place",
-        "y": {
-          "cuisine_type": "Farm-to-Table Pacific Northwest",
-          "seating_capacity": "70 seats",
-          "average_review_score": "4.5/5 stars",
-          "peak_hours": "6PM-8PM weekdays, 5PM-9PM weekends",
-          "customer_demographics": "Eco-conscious diners, tech workers",
-          "additional_info": {
-            "head_chef": "Emma Johnson",
-            "avg_meal_price": "$55",
-            "staff_count": "16",
-            "delivery_available": "Yes"
-          }
-        },
+        "staff_count": 16,
         "series": "Series"
       }
     ]
@@ -117,9 +45,9 @@
       "title": "Restaurant Location"
     },
     "y": {
-      "field": "y",
+      "field": "staff_count",
       "type": "quantitative",
-      "title": "Restaurant Metadata (Hierarchical)"
+      "title": "Staff Count"
     },
     "tooltip": [
       {
@@ -127,8 +55,8 @@
         "title": "Restaurant Location"
       },
       {
-        "field": "y",
-        "title": "Restaurant Metadata (Hierarchical)"
+        "field": "staff_count",
+        "title": "Staff Count"
       }
     ]
   }
