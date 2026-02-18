@@ -6,104 +6,32 @@
     "values": [
       {
         "x": "Central Valley",
-        "y": {
-          "soil_composition": "Loamy clay, pH 6.8, rich in nitrogen",
-          "irrigation_methods": "Drip irrigation with smart sensors",
-          "planting_dates": "March 15-30, 2024",
-          "weather_conditions": "Optimal rainfall, mild temperature",
-          "harvesting_equipment": "John Deere X9 1100 combine harvester",
-          "additional_info": {
-            "crop_type": "Wheat",
-            "field_size_hectares": "520",
-            "fertilizer_type": "Organic compost blend",
-            "pest_control": "Integrated pest management"
-          }
-        },
+        "field_size": 520,
         "series": "Series"
       },
       {
         "x": "Great Plains",
-        "y": {
-          "soil_composition": "Sandy loam, pH 7.2, moderate fertility",
-          "irrigation_methods": "Center pivot irrigation system",
-          "planting_dates": "April 1-15, 2024",
-          "weather_conditions": "Below average rainfall, hot summer",
-          "harvesting_equipment": "Case IH Axial-Flow 9250",
-          "additional_info": {
-            "crop_type": "Corn",
-            "field_size_hectares": "780",
-            "fertilizer_type": "Synthetic NPK 18-12-8",
-            "pest_control": "Chemical pesticides"
-          }
-        },
+        "field_size": 780,
         "series": "Series"
       },
       {
         "x": "Mississippi Delta",
-        "y": {
-          "soil_composition": "Alluvial clay, pH 6.5, high organic matter",
-          "irrigation_methods": "Flood irrigation traditional method",
-          "planting_dates": "May 10-25, 2024",
-          "weather_conditions": "Excessive rainfall, humid climate",
-          "harvesting_equipment": "New Holland CR10.90 combine",
-          "additional_info": {
-            "crop_type": "Rice",
-            "field_size_hectares": "340",
-            "fertilizer_type": "Urea and phosphate blend",
-            "pest_control": "Biological control agents"
-          }
-        },
+        "field_size": 340,
         "series": "Series"
       },
       {
         "x": "Pacific Northwest",
-        "y": {
-          "soil_composition": "Volcanic ash, pH 6.0, well-drained",
-          "irrigation_methods": "Micro-sprinkler precision watering",
-          "planting_dates": "February 20-March 5, 2024",
-          "weather_conditions": "Late frost damage, cool spring",
-          "harvesting_equipment": "Claas Lexion 8900 Terra Trac",
-          "additional_info": {
-            "crop_type": "Barley",
-            "field_size_hectares": "450",
-            "fertilizer_type": "Slow-release granular",
-            "pest_control": "Crop rotation strategy"
-          }
-        },
+        "field_size": 450,
         "series": "Series"
       },
       {
         "x": "Southeast",
-        "y": {
-          "soil_composition": "Red clay, pH 5.8, iron-rich substrate",
-          "irrigation_methods": "Subsurface drip irrigation",
-          "planting_dates": "June 5-20, 2024",
-          "weather_conditions": "Ideal temperature, adequate moisture",
-          "harvesting_equipment": "Massey Ferguson IDEAL 9T",
-          "additional_info": {
-            "crop_type": "Soybeans",
-            "field_size_hectares": "620",
-            "fertilizer_type": "Organic fish emulsion",
-            "pest_control": "Companion planting method"
-          }
-        },
+        "field_size": 620,
         "series": "Series"
       },
       {
         "x": "Southwest Desert",
-        "y": {
-          "soil_composition": "Sandy desert soil, pH 7.8, low organic content",
-          "irrigation_methods": "Advanced hydroponic greenhouse system",
-          "planting_dates": "January 10-25, 2024",
-          "weather_conditions": "Controlled environment, optimal conditions",
-          "harvesting_equipment": "Automated robotic harvesting system",
-          "additional_info": {
-            "crop_type": "Tomatoes",
-            "field_size_hectares": "85",
-            "fertilizer_type": "Liquid nutrient solution",
-            "pest_control": "UV sterilization system"
-          }
-        },
+        "field_size": 85,
         "series": "Series"
       }
     ]
@@ -117,9 +45,9 @@
       "title": "Farming Region"
     },
     "y": {
-      "field": "y",
+      "field": "field_size",
       "type": "quantitative",
-      "title": "Agricultural Metadata (Hierarchical)"
+      "title": "Field Size (hectares)"
     },
     "tooltip": [
       {
@@ -127,8 +55,8 @@
         "title": "Farming Region"
       },
       {
-        "field": "y",
-        "title": "Agricultural Metadata (Hierarchical)"
+        "field": "field_size",
+        "title": "Field Size (hectares)"
       }
     ]
   }

@@ -20,7 +20,8 @@
     "y": {
       "field": "avgScore",
       "type": "quantitative",
-      "axis": { "title": "Average Score", "scale": { "domain": [60, 90] } }
+      "scale": { "domain": [60, 90] },
+      "axis": { "title": "Average Score" }
     },
     "color": { "field": "subject", "type": "nominal", "legend": { "title": "Subject" } }
   },

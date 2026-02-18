@@ -6,104 +6,32 @@
     "values": [
       {
         "x": "New York",
-        "y": {
-          "property_size": "2,500 sq ft",
-          "occupancy_rate": "95%",
-          "maintenance_costs": "$15,000/year",
-          "tenant_info": "Tech startup, 3-year lease",
-          "zoning_details": "Commercial mixed-use",
-          "additional_info": {
-            "floors": "3",
-            "parking_spaces": "8",
-            "year_built": "2018",
-            "energy_rating": "A+"
-          }
-        },
+        "occupancy_rate": 95,
         "series": "Series"
       },
       {
         "x": "Austin",
-        "y": {
-          "property_size": "1,800 sq ft",
-          "occupancy_rate": "88%",
-          "maintenance_costs": "$8,500/year",
-          "tenant_info": "Marketing agency, 2-year lease",
-          "zoning_details": "Office district",
-          "additional_info": {
-            "floors": "2",
-            "parking_spaces": "12",
-            "year_built": "2019",
-            "energy_rating": "B+"
-          }
-        },
+        "occupancy_rate": 88,
         "series": "Series"
       },
       {
         "x": "Miami",
-        "y": {
-          "property_size": "3,200 sq ft",
-          "occupancy_rate": "78%",
-          "maintenance_costs": "$22,000/year",
-          "tenant_info": "Law firm, month-to-month",
-          "zoning_details": "Downtown business district",
-          "additional_info": {
-            "floors": "4",
-            "parking_spaces": "6",
-            "year_built": "2015",
-            "energy_rating": "B"
-          }
-        },
+        "occupancy_rate": 78,
         "series": "Series"
       },
       {
         "x": "Seattle",
-        "y": {
-          "property_size": "2,100 sq ft",
-          "occupancy_rate": "92%",
-          "maintenance_costs": "$12,000/year",
-          "tenant_info": "Software company, 5-year lease",
-          "zoning_details": "Tech corridor",
-          "additional_info": {
-            "floors": "2",
-            "parking_spaces": "10",
-            "year_built": "2020",
-            "energy_rating": "A"
-          }
-        },
+        "occupancy_rate": 92,
         "series": "Series"
       },
       {
         "x": "Denver",
-        "y": {
-          "property_size": "1,600 sq ft",
-          "occupancy_rate": "85%",
-          "maintenance_costs": "$9,200/year",
-          "tenant_info": "Co-working space, 4-year lease",
-          "zoning_details": "Mixed residential/commercial",
-          "additional_info": {
-            "floors": "1",
-            "parking_spaces": "15",
-            "year_built": "2017",
-            "energy_rating": "B+"
-          }
-        },
+        "occupancy_rate": 85,
         "series": "Series"
       },
       {
         "x": "Phoenix",
-        "y": {
-          "property_size": "2,800 sq ft",
-          "occupancy_rate": "90%",
-          "maintenance_costs": "$7,800/year",
-          "tenant_info": "Healthcare clinic, 6-year lease",
-          "zoning_details": "Medical district",
-          "additional_info": {
-            "floors": "1",
-            "parking_spaces": "20",
-            "year_built": "2016",
-            "energy_rating": "A-"
-          }
-        },
+        "occupancy_rate": 90,
         "series": "Series"
       }
     ]
@@ -117,9 +45,9 @@
       "title": "City Location"
     },
     "y": {
-      "field": "y",
+      "field": "occupancy_rate",
       "type": "quantitative",
-      "title": "Property Metadata (Hierarchical)"
+      "title": "Occupancy Rate (%)"
     },
     "tooltip": [
       {
@@ -127,8 +55,8 @@
         "title": "City Location"
       },
       {
-        "field": "y",
-        "title": "Property Metadata (Hierarchical)"
+        "field": "occupancy_rate",
+        "title": "Occupancy Rate (%)"
       }
     ]
   }

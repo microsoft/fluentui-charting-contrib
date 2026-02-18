@@ -6,82 +6,27 @@
     "values": [
       {
         "x": "Computer Science",
-        "y": {
-          "principal_investigator": "Dr. Sarah Johnson",
-          "grant_sources": "NSF, Google, Microsoft",
-          "project_duration": "3 years",
-          "research_areas": "AI/ML, Cybersecurity",
-          "collaboration_notes": "Partnership with MIT",
-          "additional_info": {
-            "phd_students": "15",
-            "publications": "23",
-            "patent_applications": "5"
-          }
-        },
+        "publications": 23,
         "series": "Series"
       },
       {
         "x": "Biology",
-        "y": {
-          "principal_investigator": "Dr. Michael Chen",
-          "grant_sources": "NIH, Pfizer Foundation",
-          "project_duration": "5 years",
-          "research_areas": "Cancer Research, Genomics",
-          "collaboration_notes": "Joint study with Johns Hopkins",
-          "additional_info": {
-            "phd_students": "12",
-            "publications": "18",
-            "patent_applications": "3"
-          }
-        },
+        "publications": 18,
         "series": "Series"
       },
       {
         "x": "Engineering",
-        "y": {
-          "principal_investigator": "Dr. Lisa Rodriguez",
-          "grant_sources": "DOE, Tesla, General Electric",
-          "project_duration": "4 years",
-          "research_areas": "Renewable Energy, Robotics",
-          "collaboration_notes": "Industry partnership program",
-          "additional_info": {
-            "phd_students": "20",
-            "publications": "31",
-            "patent_applications": "8"
-          }
-        },
+        "publications": 31,
         "series": "Series"
       },
       {
         "x": "Psychology",
-        "y": {
-          "principal_investigator": "Dr. James Wilson",
-          "grant_sources": "APA, NIMH, Private Donors",
-          "project_duration": "2 years",
-          "research_areas": "Cognitive Behavior, Mental Health",
-          "collaboration_notes": "Cross-cultural studies with Oxford",
-          "additional_info": {
-            "phd_students": "8",
-            "publications": "14",
-            "patent_applications": "1"
-          }
-        },
+        "publications": 14,
         "series": "Series"
       },
       {
         "x": "Chemistry",
-        "y": {
-          "principal_investigator": "Dr. Anna Petrov",
-          "grant_sources": "NSF, DuPont, BASF",
-          "project_duration": "3 years",
-          "research_areas": "Material Science, Green Chemistry",
-          "collaboration_notes": "European consortium member",
-          "additional_info": {
-            "phd_students": "11",
-            "publications": "19",
-            "patent_applications": "4"
-          }
-        },
+        "publications": 19,
         "series": "Series"
       }
     ]
@@ -95,9 +40,9 @@
       "title": "Academic Department"
     },
     "y": {
-      "field": "y",
+      "field": "publications",
       "type": "quantitative",
-      "title": "Research Metadata (Hierarchical)"
+      "title": "Publications"
     },
     "tooltip": [
       {
@@ -105,8 +50,8 @@
         "title": "Academic Department"
       },
       {
-        "field": "y",
-        "title": "Research Metadata (Hierarchical)"
+        "field": "publications",
+        "title": "Publications"
       }
     ]
   }

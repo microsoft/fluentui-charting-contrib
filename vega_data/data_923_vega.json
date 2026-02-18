@@ -6,53 +6,17 @@
     "values": [
       {
         "x": "Electronics",
-        "y": {
-          "profit_margin": "25%",
-          "region": "North America",
-          "manager": "Alice",
-          "quarter": "Q1",
-          "notes": "Strong online sales",
-          "sale_percent": 120,
-          "target_percent": 100,
-          "additional_info": {
-            "supplier": "TechCorp",
-            "delivery_time_days": "60"
-          }
-        },
+        "sale_percent": 120,
         "series": "Series"
       },
       {
         "x": "Furniture",
-        "y": {
-          "profit_margin": "18%",
-          "region": "Europe",
-          "manager": "Bob",
-          "quarter": "Q1",
-          "notes": "Supply chain delays",
-          "sale_percent": 85,
-          "target_percent": 90,
-          "additional_info": {
-            "delivery_time_days": "30",
-            "supplier": "FurniWorld"
-          }
-        },
+        "sale_percent": 85,
         "series": "Series"
       },
       {
         "x": "Clothing",
-        "y": {
-          "profit_margin": "30%",
-          "region": "Asia",
-          "manager": "Charlie",
-          "quarter": "Q1",
-          "notes": "Seasonal promotions",
-          "sale_percent": 95,
-          "target_percent": 90,
-          "additional_info": {
-            "delivery_time_days": "10",
-            "supplier": "EcoFashion"
-          }
-        },
+        "sale_percent": 95,
         "series": "Series"
       }
     ]
@@ -66,9 +30,9 @@
       "title": "Product Category"
     },
     "y": {
-      "field": "y",
+      "field": "sale_percent",
       "type": "quantitative",
-      "title": "Metadata (Hierarchical)"
+      "title": "Sales vs Target (%)"
     },
     "tooltip": [
       {
@@ -76,8 +40,8 @@
         "title": "Product Category"
       },
       {
-        "field": "y",
-        "title": "Metadata (Hierarchical)"
+        "field": "sale_percent",
+        "title": "Sales vs Target (%)"
       }
     ]
   }
