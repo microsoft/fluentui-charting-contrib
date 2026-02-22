@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Classroom Attendance",
+  "description": "Student attendance rates across weeks",
+  "data": {
+    "values": [
+      {"student": "Aria", "week": "Week 1", "attendance": 100},
+      {"student": "Aria", "week": "Week 2", "attendance": 80},
+      {"student": "Aria", "week": "Week 3", "attendance": 100},
+      {"student": "Aria", "week": "Week 4", "attendance": 60},
+      {"student": "Ben", "week": "Week 1", "attendance": 80},
+      {"student": "Ben", "week": "Week 2", "attendance": 100},
+      {"student": "Ben", "week": "Week 3", "attendance": 100},
+      {"student": "Ben", "week": "Week 4", "attendance": 100},
+      {"student": "Chloe", "week": "Week 1", "attendance": 60},
+      {"student": "Chloe", "week": "Week 2", "attendance": 40},
+      {"student": "Chloe", "week": "Week 3", "attendance": 80},
+      {"student": "Chloe", "week": "Week 4", "attendance": 80},
+      {"student": "Diego", "week": "Week 1", "attendance": 100},
+      {"student": "Diego", "week": "Week 2", "attendance": 100},
+      {"student": "Diego", "week": "Week 3", "attendance": 80},
+      {"student": "Diego", "week": "Week 4", "attendance": 100},
+      {"student": "Elena", "week": "Week 1", "attendance": 40},
+      {"student": "Elena", "week": "Week 2", "attendance": 60},
+      {"student": "Elena", "week": "Week 3", "attendance": 60},
+      {"student": "Elena", "week": "Week 4", "attendance": 80}
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {"field": "week", "type": "ordinal", "title": "Week"},
+    "y": {"field": "student", "type": "nominal", "title": "Student"},
+    "color": {"field": "attendance", "type": "quantitative", "title": "Attendance (%)", "scale": {"scheme": "viridis"}}
+  },
+  "width": 300,
+  "height": 250
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Sprint Velocity",
+  "description": "Story points completed per sprint",
+  "data": {
+    "values": [
+      {"sprint": "Sprint 21", "points": 34},
+      {"sprint": "Sprint 22", "points": 42},
+      {"sprint": "Sprint 23", "points": 38},
+      {"sprint": "Sprint 24", "points": 45},
+      {"sprint": "Sprint 25", "points": 41},
+      {"sprint": "Sprint 26", "points": 48}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "sprint", "type": "ordinal", "title": "Sprint"},
+    "y": {"field": "points", "type": "quantitative", "title": "Story Points Completed"},
+    "color": {"value": "#4C78A8"}
+  },
+  "width": 400,
+  "height": 300
+}

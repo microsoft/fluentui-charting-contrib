@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Price vs Rating",
+  "description": "Product price compared against customer rating",
+  "data": {
+    "values": [
+      {"product": "Widget A", "price": 29.99, "rating": 4.5},
+      {"product": "Widget B", "price": 49.99, "rating": 4.2},
+      {"product": "Widget C", "price": 15.99, "rating": 3.8},
+      {"product": "Gadget X", "price": 89.99, "rating": 4.7},
+      {"product": "Gadget Y", "price": 59.99, "rating": 3.9},
+      {"product": "Gadget Z", "price": 34.99, "rating": 4.1},
+      {"product": "Tool M", "price": 12.99, "rating": 3.5},
+      {"product": "Tool N", "price": 74.99, "rating": 4.8},
+      {"product": "Tool O", "price": 44.99, "rating": 4.3},
+      {"product": "Tool P", "price": 99.99, "rating": 4.6}
+    ]
+  },
+  "mark": {"type": "point", "size": 80, "filled": true},
+  "encoding": {
+    "x": {"field": "price", "type": "quantitative", "title": "Price ($)"},
+    "y": {"field": "rating", "type": "quantitative", "title": "Customer Rating", "scale": {"domain": [3, 5]}},
+    "tooltip": [
+      {"field": "product", "type": "nominal"},
+      {"field": "price", "type": "quantitative"},
+      {"field": "rating", "type": "quantitative"}
+    ]
+  },
+  "width": 400,
+  "height": 300
+}

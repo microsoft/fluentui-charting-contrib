@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Budget Allocation",
+  "description": "Annual budget allocation by department",
+  "data": {
+    "values": [
+      {"department": "Engineering", "budget": 2400000},
+      {"department": "Marketing", "budget": 1100000},
+      {"department": "Sales", "budget": 950000},
+      {"department": "Operations", "budget": 780000},
+      {"department": "HR", "budget": 420000}
+    ]
+  },
+  "mark": {"type": "arc", "innerRadius": 60},
+  "encoding": {
+    "theta": {"field": "budget", "type": "quantitative"},
+    "color": {"field": "department", "type": "nominal", "title": "Department"}
+  },
+  "width": 300,
+  "height": 300
+}

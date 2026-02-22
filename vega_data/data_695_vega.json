@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Skill Matrix",
+  "description": "Team skill proficiency levels across domains",
+  "data": {
+    "values": [
+      {"person": "Emma", "skill": "JavaScript", "level": 5},
+      {"person": "Emma", "skill": "Python", "level": 3},
+      {"person": "Emma", "skill": "SQL", "level": 4},
+      {"person": "Emma", "skill": "DevOps", "level": 2},
+      {"person": "Frank", "skill": "JavaScript", "level": 4},
+      {"person": "Frank", "skill": "Python", "level": 5},
+      {"person": "Frank", "skill": "SQL", "level": 3},
+      {"person": "Frank", "skill": "DevOps", "level": 4},
+      {"person": "Grace", "skill": "JavaScript", "level": 3},
+      {"person": "Grace", "skill": "Python", "level": 2},
+      {"person": "Grace", "skill": "SQL", "level": 5},
+      {"person": "Grace", "skill": "DevOps", "level": 3},
+      {"person": "Hank", "skill": "JavaScript", "level": 2},
+      {"person": "Hank", "skill": "Python", "level": 4},
+      {"person": "Hank", "skill": "SQL", "level": 2},
+      {"person": "Hank", "skill": "DevOps", "level": 5},
+      {"person": "Ivy", "skill": "JavaScript", "level": 4},
+      {"person": "Ivy", "skill": "Python", "level": 4},
+      {"person": "Ivy", "skill": "SQL", "level": 4},
+      {"person": "Ivy", "skill": "DevOps", "level": 3}
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {"field": "skill", "type": "nominal", "title": "Skill"},
+    "y": {"field": "person", "type": "nominal", "title": "Team Member"},
+    "color": {"field": "level", "type": "quantitative", "title": "Proficiency (1-5)", "scale": {"scheme": "greens"}}
+  },
+  "width": 300,
+  "height": 250
+}

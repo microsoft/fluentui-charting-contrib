@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Country GDP Ranking",
+  "description": "Top 8 countries by GDP in trillions USD",
+  "data": {
+    "values": [
+      {"country": "United States", "gdp": 25.5},
+      {"country": "China", "gdp": 18.3},
+      {"country": "Japan", "gdp": 4.2},
+      {"country": "Germany", "gdp": 4.1},
+      {"country": "India", "gdp": 3.7},
+      {"country": "United Kingdom", "gdp": 3.1},
+      {"country": "France", "gdp": 2.8},
+      {"country": "Canada", "gdp": 2.1}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "y": {"field": "country", "type": "nominal", "title": "Country", "sort": "-x"},
+    "x": {"field": "gdp", "type": "quantitative", "title": "GDP (Trillion USD)"},
+    "color": {"field": "country", "type": "nominal", "legend": null}
+  },
+  "width": 400,
+  "height": 300
+}

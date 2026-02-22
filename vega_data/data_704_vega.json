@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Height vs Weight",
+  "description": "Scatter plot of height versus weight colored by gender",
+  "data": {
+    "values": [
+      {"height": 162, "weight": 55, "gender": "Female"},
+      {"height": 168, "weight": 62, "gender": "Female"},
+      {"height": 155, "weight": 50, "gender": "Female"},
+      {"height": 170, "weight": 65, "gender": "Female"},
+      {"height": 158, "weight": 53, "gender": "Female"},
+      {"height": 175, "weight": 58, "gender": "Female"},
+      {"height": 178, "weight": 80, "gender": "Male"},
+      {"height": 185, "weight": 88, "gender": "Male"},
+      {"height": 172, "weight": 75, "gender": "Male"},
+      {"height": 190, "weight": 95, "gender": "Male"},
+      {"height": 168, "weight": 70, "gender": "Male"},
+      {"height": 182, "weight": 82, "gender": "Male"}
+    ]
+  },
+  "mark": {"type": "point", "size": 80, "filled": true},
+  "encoding": {
+    "x": {"field": "height", "type": "quantitative", "title": "Height (cm)"},
+    "y": {"field": "weight", "type": "quantitative", "title": "Weight (kg)"},
+    "color": {"field": "gender", "type": "nominal", "title": "Gender"},
+    "tooltip": [
+      {"field": "height", "type": "quantitative"},
+      {"field": "weight", "type": "quantitative"},
+      {"field": "gender", "type": "nominal"}
+    ]
+  },
+  "width": 400,
+  "height": 300
+}

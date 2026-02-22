@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Market Segment Distribution",
+  "description": "Revenue share by market segment",
+  "data": {
+    "values": [
+      {"segment": "Enterprise", "revenue": 5800},
+      {"segment": "Mid-Market", "revenue": 3200},
+      {"segment": "SMB", "revenue": 2100},
+      {"segment": "Startup", "revenue": 1400},
+      {"segment": "Government", "revenue": 980}
+    ]
+  },
+  "mark": {"type": "arc"},
+  "encoding": {
+    "theta": {"field": "revenue", "type": "quantitative"},
+    "color": {"field": "segment", "type": "nominal", "title": "Market Segment"}
+  },
+  "width": 300,
+  "height": 300
+}

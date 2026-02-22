@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Warehouse Inventory Levels",
+  "description": "Current inventory levels across warehouse categories",
+  "data": {
+    "values": [
+      {"category": "Electronics", "units": 4520},
+      {"category": "Clothing", "units": 8730},
+      {"category": "Furniture", "units": 2150},
+      {"category": "Food & Beverage", "units": 6340},
+      {"category": "Automotive", "units": 3280}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "category", "type": "nominal", "title": "Category"},
+    "y": {"field": "units", "type": "quantitative", "title": "Units in Stock"},
+    "color": {"field": "category", "type": "nominal", "legend": null}
+  },
+  "width": 400,
+  "height": 300
+}

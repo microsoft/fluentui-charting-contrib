@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Ticket Status Distribution",
+  "description": "Distribution of support tickets by status",
+  "data": {
+    "values": [
+      {"status": "Open", "count": 87},
+      {"status": "In Progress", "count": 134},
+      {"status": "Resolved", "count": 256},
+      {"status": "Closed", "count": 412}
+    ]
+  },
+  "mark": {"type": "arc", "innerRadius": 50},
+  "encoding": {
+    "theta": {"field": "count", "type": "quantitative"},
+    "color": {"field": "status", "type": "nominal", "title": "Status"}
+  },
+  "width": 300,
+  "height": 300
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Campaign Results by Channel",
+  "description": "Stacked bar of marketing campaign metrics by channel",
+  "data": {
+    "values": [
+      {"channel": "Email", "metric": "Impressions", "value": 45000},
+      {"channel": "Email", "metric": "Clicks", "value": 8200},
+      {"channel": "Email", "metric": "Conversions", "value": 1250},
+      {"channel": "Email", "metric": "Revenue", "value": 3800},
+      {"channel": "Social Media", "metric": "Impressions", "value": 120000},
+      {"channel": "Social Media", "metric": "Clicks", "value": 15400},
+      {"channel": "Social Media", "metric": "Conversions", "value": 2100},
+      {"channel": "Social Media", "metric": "Revenue", "value": 5600},
+      {"channel": "Search Ads", "metric": "Impressions", "value": 78000},
+      {"channel": "Search Ads", "metric": "Clicks", "value": 22300},
+      {"channel": "Search Ads", "metric": "Conversions", "value": 4500},
+      {"channel": "Search Ads", "metric": "Revenue", "value": 12200}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "channel", "type": "nominal", "title": "Channel"},
+    "y": {"field": "value", "type": "quantitative", "title": "Value", "stack": "zero"},
+    "color": {"field": "metric", "type": "nominal", "title": "Metric"}
+  },
+  "width": 400,
+  "height": 300
+}

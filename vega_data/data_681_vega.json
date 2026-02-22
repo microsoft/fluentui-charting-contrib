@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Daily Active Users Trend",
+  "description": "Daily active users over the past week",
+  "data": {
+    "values": [
+      {"date": "2025-03-10", "users": 12400},
+      {"date": "2025-03-11", "users": 13100},
+      {"date": "2025-03-12", "users": 14800},
+      {"date": "2025-03-13", "users": 13900},
+      {"date": "2025-03-14", "users": 15200},
+      {"date": "2025-03-15", "users": 9800},
+      {"date": "2025-03-16", "users": 8600}
+    ]
+  },
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": "Date"},
+    "y": {"field": "users", "type": "quantitative", "title": "Daily Active Users"}
+  },
+  "width": 400,
+  "height": 300
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Multi-Region Latency",
+  "description": "API response latency across three regions over time",
+  "data": {
+    "values": [
+      {"time": "09:00", "region": "US-East", "latency": 45},
+      {"time": "10:00", "region": "US-East", "latency": 52},
+      {"time": "11:00", "region": "US-East", "latency": 48},
+      {"time": "12:00", "region": "US-East", "latency": 61},
+      {"time": "13:00", "region": "US-East", "latency": 55},
+      {"time": "09:00", "region": "EU-West", "latency": 78},
+      {"time": "10:00", "region": "EU-West", "latency": 82},
+      {"time": "11:00", "region": "EU-West", "latency": 75},
+      {"time": "12:00", "region": "EU-West", "latency": 89},
+      {"time": "13:00", "region": "EU-West", "latency": 84},
+      {"time": "09:00", "region": "AP-South", "latency": 120},
+      {"time": "10:00", "region": "AP-South", "latency": 135},
+      {"time": "11:00", "region": "AP-South", "latency": 128},
+      {"time": "12:00", "region": "AP-South", "latency": 142},
+      {"time": "13:00", "region": "AP-South", "latency": 138}
+    ]
+  },
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "x": {"field": "time", "type": "ordinal", "title": "Time of Day"},
+    "y": {"field": "latency", "type": "quantitative", "title": "Latency (ms)"},
+    "color": {"field": "region", "type": "nominal", "title": "Region"}
+  },
+  "width": 400,
+  "height": 300
+}

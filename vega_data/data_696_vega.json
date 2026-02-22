@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Issue Backlog by Sprint and Type",
+  "description": "Stacked bar showing issue types across sprints",
+  "data": {
+    "values": [
+      {"sprint": "Sprint 10", "type": "Bug", "count": 14},
+      {"sprint": "Sprint 10", "type": "Feature", "count": 8},
+      {"sprint": "Sprint 10", "type": "Tech Debt", "count": 5},
+      {"sprint": "Sprint 11", "type": "Bug", "count": 11},
+      {"sprint": "Sprint 11", "type": "Feature", "count": 12},
+      {"sprint": "Sprint 11", "type": "Tech Debt", "count": 7},
+      {"sprint": "Sprint 12", "type": "Bug", "count": 8},
+      {"sprint": "Sprint 12", "type": "Feature", "count": 15},
+      {"sprint": "Sprint 12", "type": "Tech Debt", "count": 4},
+      {"sprint": "Sprint 13", "type": "Bug", "count": 6},
+      {"sprint": "Sprint 13", "type": "Feature", "count": 10},
+      {"sprint": "Sprint 13", "type": "Tech Debt", "count": 9}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "sprint", "type": "ordinal", "title": "Sprint"},
+    "y": {"field": "count", "type": "quantitative", "title": "Issue Count", "stack": "zero"},
+    "color": {"field": "type", "type": "nominal", "title": "Issue Type"}
+  },
+  "width": 400,
+  "height": 300
+}

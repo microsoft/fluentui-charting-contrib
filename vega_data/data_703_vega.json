@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Time Spent by Activity",
+  "description": "Distribution of work hours across activity types",
+  "data": {
+    "values": [
+      {"activity": "Coding", "hours": 18},
+      {"activity": "Meetings", "hours": 10},
+      {"activity": "Code Review", "hours": 6},
+      {"activity": "Documentation", "hours": 4}
+    ]
+  },
+  "mark": {"type": "arc", "innerRadius": 45},
+  "encoding": {
+    "theta": {"field": "hours", "type": "quantitative"},
+    "color": {"field": "activity", "type": "nominal", "title": "Activity"}
+  },
+  "width": 300,
+  "height": 300
+}
