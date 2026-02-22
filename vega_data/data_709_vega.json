@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Before vs After Training Scores",
+  "description": "Grouped bar chart comparing test scores before and after training",
+  "data": {
+    "values": [
+      {"test": "Communication", "condition": "Before", "score": 62},
+      {"test": "Communication", "condition": "After", "score": 81},
+      {"test": "Problem Solving", "condition": "Before", "score": 55},
+      {"test": "Problem Solving", "condition": "After", "score": 74},
+      {"test": "Leadership", "condition": "Before", "score": 48},
+      {"test": "Leadership", "condition": "After", "score": 69},
+      {"test": "Technical Skills", "condition": "Before", "score": 71},
+      {"test": "Technical Skills", "condition": "After", "score": 88}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "test", "type": "nominal", "title": "Test Area"},
+    "y": {"field": "score", "type": "quantitative", "title": "Score (0-100)"},
+    "xOffset": {"field": "condition", "type": "nominal"},
+    "color": {"field": "condition", "type": "nominal", "title": "Condition"}
+  },
+  "width": 400,
+  "height": 300
+}

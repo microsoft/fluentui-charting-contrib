@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Disk Space Usage",
+  "description": "Server disk space usage over time with area and line overlay",
+  "data": {
+    "values": [
+      {"date": "2025-01-01", "usedTB": 12.3},
+      {"date": "2025-02-01", "usedTB": 13.8},
+      {"date": "2025-03-01", "usedTB": 15.1},
+      {"date": "2025-04-01", "usedTB": 16.7},
+      {"date": "2025-05-01", "usedTB": 18.2},
+      {"date": "2025-06-01", "usedTB": 19.9},
+      {"date": "2025-07-01", "usedTB": 22.4}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "area", "opacity": 0.4, "color": "#e45756"}
+    },
+    {
+      "mark": {"type": "line", "color": "#e45756", "strokeWidth": 2}
+    }
+  ],
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": "Month"},
+    "y": {"field": "usedTB", "type": "quantitative", "title": "Disk Usage (TB)"}
+  },
+  "width": 400,
+  "height": 300
+}

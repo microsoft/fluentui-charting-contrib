@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Language Proficiency Scores",
+  "description": "Average proficiency scores across programming languages",
+  "data": {
+    "values": [
+      {"language": "TypeScript", "score": 87},
+      {"language": "Python", "score": 82},
+      {"language": "Go", "score": 68},
+      {"language": "Rust", "score": 54},
+      {"language": "Java", "score": 75}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "y": {"field": "language", "type": "nominal", "title": "Language", "sort": "-x"},
+    "x": {"field": "score", "type": "quantitative", "title": "Proficiency Score (0-100)"},
+    "color": {"field": "language", "type": "nominal", "legend": null}
+  },
+  "width": 400,
+  "height": 220
+}

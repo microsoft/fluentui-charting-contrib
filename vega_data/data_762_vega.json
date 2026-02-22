@@ -1,0 +1,1 @@
+{"$schema":"https://vega.github.io/schema/vega-lite/v5.json","title":"Waste Composition","mark":{"type":"arc","innerRadius":45},"data":{"values":[{"type":"Organic","pct":35},{"type":"Plastic","pct":25},{"type":"Paper","pct":20},{"type":"Metal","pct":12},{"type":"Glass","pct":8}]},"encoding":{"theta":{"field":"pct","type":"quantitative"},"color":{"field":"type","type":"nominal"}}}

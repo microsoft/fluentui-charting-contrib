@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Food Group Intake",
+  "description": "Daily caloric intake distribution by food group",
+  "data": {
+    "values": [
+      {"group": "Grains", "calories": 620},
+      {"group": "Vegetables", "calories": 280},
+      {"group": "Fruits", "calories": 210},
+      {"group": "Protein", "calories": 450},
+      {"group": "Dairy", "calories": 340},
+      {"group": "Fats & Oils", "calories": 310}
+    ]
+  },
+  "mark": {"type": "arc"},
+  "encoding": {
+    "theta": {"field": "calories", "type": "quantitative"},
+    "color": {"field": "group", "type": "nominal", "title": "Food Group"}
+  },
+  "width": 300,
+  "height": 300
+}

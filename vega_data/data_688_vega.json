@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Device Type Distribution",
+  "description": "User sessions by device type",
+  "data": {
+    "values": [
+      {"device": "Desktop", "sessions": 4850},
+      {"device": "Mobile", "sessions": 6230},
+      {"device": "Tablet", "sessions": 1420},
+      {"device": "Smart TV", "sessions": 580}
+    ]
+  },
+  "mark": {"type": "arc"},
+  "encoding": {
+    "theta": {"field": "sessions", "type": "quantitative"},
+    "color": {"field": "device", "type": "nominal", "title": "Device Type"}
+  },
+  "width": 300,
+  "height": 300
+}

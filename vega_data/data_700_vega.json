@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Defect Density by Module",
+  "description": "Number of defects per thousand lines of code by module",
+  "data": {
+    "values": [
+      {"module": "Authentication", "defects": 3.2},
+      {"module": "Payment", "defects": 5.8},
+      {"module": "Dashboard", "defects": 2.1},
+      {"module": "Notifications", "defects": 4.5},
+      {"module": "Reporting", "defects": 1.9}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "module", "type": "nominal", "title": "Module"},
+    "y": {"field": "defects", "type": "quantitative", "title": "Defects per KLOC"},
+    "color": {"field": "module", "type": "nominal", "legend": null}
+  },
+  "width": 400,
+  "height": 300
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Page Load Time Trend",
+  "description": "Average page load time measured daily",
+  "data": {
+    "values": [
+      {"date": "2025-05-01", "loadTime": 2.8},
+      {"date": "2025-05-02", "loadTime": 3.1},
+      {"date": "2025-05-03", "loadTime": 2.5},
+      {"date": "2025-05-04", "loadTime": 2.9},
+      {"date": "2025-05-05", "loadTime": 2.2},
+      {"date": "2025-05-06", "loadTime": 1.9},
+      {"date": "2025-05-07", "loadTime": 1.7},
+      {"date": "2025-05-08", "loadTime": 1.6}
+    ]
+  },
+  "mark": {"type": "line", "point": true, "strokeWidth": 2},
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": "Date"},
+    "y": {"field": "loadTime", "type": "quantitative", "title": "Load Time (seconds)", "scale": {"zero": false}}
+  },
+  "width": 400,
+  "height": 300
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "A/B Test Conversion Rates",
+  "description": "Conversion rates for control and variant groups over 6 weeks",
+  "data": {
+    "values": [
+      {"week": "Week 1", "group": "Control", "rate": 3.2},
+      {"week": "Week 2", "group": "Control", "rate": 3.4},
+      {"week": "Week 3", "group": "Control", "rate": 3.1},
+      {"week": "Week 4", "group": "Control", "rate": 3.5},
+      {"week": "Week 5", "group": "Control", "rate": 3.3},
+      {"week": "Week 6", "group": "Control", "rate": 3.4},
+      {"week": "Week 1", "group": "Variant", "rate": 3.1},
+      {"week": "Week 2", "group": "Variant", "rate": 3.8},
+      {"week": "Week 3", "group": "Variant", "rate": 4.2},
+      {"week": "Week 4", "group": "Variant", "rate": 4.5},
+      {"week": "Week 5", "group": "Variant", "rate": 4.7},
+      {"week": "Week 6", "group": "Variant", "rate": 5.1}
+    ]
+  },
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "x": {"field": "week", "type": "ordinal", "title": "Week"},
+    "y": {"field": "rate", "type": "quantitative", "title": "Conversion Rate (%)"},
+    "color": {"field": "group", "type": "nominal", "title": "Test Group"}
+  },
+  "width": 400,
+  "height": 300
+}

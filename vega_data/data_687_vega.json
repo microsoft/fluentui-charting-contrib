@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Customer Wait Times",
+  "description": "Average customer wait times by service type",
+  "data": {
+    "values": [
+      {"service": "Phone Support", "minutes": 12.5},
+      {"service": "Live Chat", "minutes": 3.2},
+      {"service": "Email", "minutes": 45.0},
+      {"service": "In-Person", "minutes": 22.8},
+      {"service": "Social Media", "minutes": 8.7},
+      {"service": "Self-Service Portal", "minutes": 1.5}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "y": {"field": "service", "type": "nominal", "title": "Service Type", "sort": "-x"},
+    "x": {"field": "minutes", "type": "quantitative", "title": "Average Wait Time (minutes)"},
+    "color": {"field": "service", "type": "nominal", "legend": null}
+  },
+  "width": 400,
+  "height": 250
+}

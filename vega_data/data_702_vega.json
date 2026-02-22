@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Email Volume",
+  "description": "Monthly email volume sent by the organization",
+  "data": {
+    "values": [
+      {"month": "2025-01-01", "emails": 145000},
+      {"month": "2025-02-01", "emails": 132000},
+      {"month": "2025-03-01", "emails": 168000},
+      {"month": "2025-04-01", "emails": 157000},
+      {"month": "2025-05-01", "emails": 184000},
+      {"month": "2025-06-01", "emails": 172000}
+    ]
+  },
+  "mark": {"type": "area", "color": "#e7862f", "opacity": 0.7},
+  "encoding": {
+    "x": {"field": "month", "type": "temporal", "title": "Month"},
+    "y": {"field": "emails", "type": "quantitative", "title": "Emails Sent"}
+  },
+  "width": 400,
+  "height": 300
+}

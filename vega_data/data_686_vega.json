@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Revenue by Product and Region",
+  "description": "Stacked bar chart showing revenue breakdown by product across regions",
+  "data": {
+    "values": [
+      {"region": "North America", "product": "Software", "revenue": 4200},
+      {"region": "North America", "product": "Hardware", "revenue": 3100},
+      {"region": "North America", "product": "Services", "revenue": 1800},
+      {"region": "Europe", "product": "Software", "revenue": 3500},
+      {"region": "Europe", "product": "Hardware", "revenue": 2200},
+      {"region": "Europe", "product": "Services", "revenue": 2600},
+      {"region": "Asia Pacific", "product": "Software", "revenue": 2800},
+      {"region": "Asia Pacific", "product": "Hardware", "revenue": 4100},
+      {"region": "Asia Pacific", "product": "Services", "revenue": 1500}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "region", "type": "nominal", "title": "Region"},
+    "y": {"field": "revenue", "type": "quantitative", "title": "Revenue ($K)", "stack": "zero"},
+    "color": {"field": "product", "type": "nominal", "title": "Product Line"}
+  },
+  "width": 400,
+  "height": 300
+}

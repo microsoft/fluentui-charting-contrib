@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Team Availability Grid",
+  "description": "Heatmap showing team member availability across weekdays",
+  "data": {
+    "values": [
+      {"person": "Alice", "day": "Monday", "hours": 8},
+      {"person": "Alice", "day": "Tuesday", "hours": 6},
+      {"person": "Alice", "day": "Wednesday", "hours": 8},
+      {"person": "Alice", "day": "Thursday", "hours": 4},
+      {"person": "Alice", "day": "Friday", "hours": 8},
+      {"person": "Bob", "day": "Monday", "hours": 4},
+      {"person": "Bob", "day": "Tuesday", "hours": 8},
+      {"person": "Bob", "day": "Wednesday", "hours": 8},
+      {"person": "Bob", "day": "Thursday", "hours": 8},
+      {"person": "Bob", "day": "Friday", "hours": 6},
+      {"person": "Carol", "day": "Monday", "hours": 8},
+      {"person": "Carol", "day": "Tuesday", "hours": 8},
+      {"person": "Carol", "day": "Wednesday", "hours": 0},
+      {"person": "Carol", "day": "Thursday", "hours": 8},
+      {"person": "Carol", "day": "Friday", "hours": 8},
+      {"person": "Dan", "day": "Monday", "hours": 6},
+      {"person": "Dan", "day": "Tuesday", "hours": 6},
+      {"person": "Dan", "day": "Wednesday", "hours": 6},
+      {"person": "Dan", "day": "Thursday", "hours": 6},
+      {"person": "Dan", "day": "Friday", "hours": 4}
+    ]
+  },
+  "mark": "rect",
+  "encoding": {
+    "x": {"field": "day", "type": "ordinal", "title": "Day of Week", "sort": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]},
+    "y": {"field": "person", "type": "nominal", "title": "Team Member"},
+    "color": {"field": "hours", "type": "quantitative", "title": "Hours Available", "scale": {"scheme": "blues"}}
+  },
+  "width": 350,
+  "height": 200
+}

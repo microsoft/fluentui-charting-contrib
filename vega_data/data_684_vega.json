@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Effort vs Impact Analysis",
+  "description": "Prioritization matrix plotting effort against impact for initiatives",
+  "data": {
+    "values": [
+      {"initiative": "Redesign Homepage", "effort": 8, "impact": 9, "category": "High Priority"},
+      {"initiative": "Add Dark Mode", "effort": 5, "impact": 7, "category": "High Priority"},
+      {"initiative": "Fix Login Bug", "effort": 2, "impact": 8, "category": "Quick Win"},
+      {"initiative": "Update Docs", "effort": 3, "impact": 4, "category": "Quick Win"},
+      {"initiative": "New Analytics", "effort": 9, "impact": 6, "category": "Strategic"},
+      {"initiative": "API Refactor", "effort": 7, "impact": 5, "category": "Strategic"},
+      {"initiative": "Logo Refresh", "effort": 4, "impact": 2, "category": "Low Priority"},
+      {"initiative": "Office Move", "effort": 6, "impact": 3, "category": "Low Priority"}
+    ]
+  },
+  "mark": {"type": "point", "size": 100, "filled": true},
+  "encoding": {
+    "x": {"field": "effort", "type": "quantitative", "title": "Effort (1-10)", "scale": {"domain": [0, 10]}},
+    "y": {"field": "impact", "type": "quantitative", "title": "Impact (1-10)", "scale": {"domain": [0, 10]}},
+    "color": {"field": "category", "type": "nominal", "title": "Category"},
+    "tooltip": [
+      {"field": "initiative", "type": "nominal"},
+      {"field": "effort", "type": "quantitative"},
+      {"field": "impact", "type": "quantitative"}
+    ]
+  },
+  "width": 400,
+  "height": 300
+}
