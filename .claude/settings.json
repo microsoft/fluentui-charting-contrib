@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fetch:*)",
+      "Bash(git merge:*)",
+      "Bash(yarn install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm view:*)",
+      "Bash(yarn link:*)",
+      "Bash(yarn unlink:*)",
+      "Bash(npm start)"
+    ]
+  }
+}
