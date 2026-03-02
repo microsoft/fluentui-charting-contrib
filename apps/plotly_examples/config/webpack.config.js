@@ -319,6 +319,9 @@ module.exports = function (webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
+        // Force a single React instance when using yarn link
+        react: path.resolve(paths.appNodeModules, 'react'),
+        'react-dom': path.resolve(paths.appNodeModules, 'react-dom'),
       },
       plugins: [
         // Prevents users from importing files from outside of src/ (or node_modules/).
@@ -333,6 +336,7 @@ module.exports = function (webpackEnv) {
           babelRuntimeEntry,
           babelRuntimeEntryHelpers,
           babelRuntimeRegenerator,
+          paths.vegaData,
         ]),
       ],
       fallback: {
