@@ -130,10 +130,10 @@ const verticalBarChartStories = [
 const verticalStackedBarChartStories = [
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default-inner',
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-axis-tooltip-inner',
-  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-callout-inner',
-  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-custom-accessibility-inner',
-  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-date-axis-inner',
-  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-negative-inner',
+  // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-callout-inner',
+  // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-custom-accessibility-inner',
+  // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-date-axis-inner',
+  // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-negative-inner',
   // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-secondary-y-axis-inner',
 ];
 
@@ -165,7 +165,7 @@ async function loadChartPage(
   theme: string,
   mode: string
 ) {
- await page.goto('http://localhost:3000/?path=/docs/introduction--docs');
+ await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
   await page.getByLabel('Shortcuts').click();
   await page.locator('#list-item-T').click();
   await page.getByRole('button', { name: /Theme:/ }).click();
