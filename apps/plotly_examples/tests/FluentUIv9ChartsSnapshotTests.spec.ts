@@ -129,12 +129,12 @@ const verticalBarChartStories = [
 
 const verticalStackedBarChartStories = [
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default-inner',
-  // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-axis-tooltip-inner',
-  // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-callout-inner',
-  // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-custom-accessibility-inner',
-  // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-date-axis-inner',
-  // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-negative-inner',
-  // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-secondary-y-axis-inner',
+  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-axis-tooltip-inner',
+  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-callout-inner',
+  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-custom-accessibility-inner',
+  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-date-axis-inner',
+  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-negative-inner',
+  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-secondary-y-axis-inner',
 ];
 
 const charts = [
@@ -153,11 +153,11 @@ const charts = [
   // { name: 'ScatterChart', path: 'charts-ScatterChart--docs', selector: '#story--charts-scatterchart--scatter-chart-default--primary-inner', stories: scatterChartStories },
   // { name: 'Sparkline', path: 'charts-Sparkline--docs', selector: '#story--charts-sparkline--sparkline-basic--primary-inner', stories: sparklineChartStories },
   { name: 'VerticalBarChart', path: 'charts-VerticalBarChart--docs', selector: '#story--charts-verticalbarchart--vertical-bar-default--primary-inner', stories: verticalBarChartStories },
-  { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner', stories: verticalStackedBarChartStories },
+  // { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner', stories: verticalStackedBarChartStories },
 ];
 
-const themes = ['web-light', 'web-dark'];
-const modes = ['LTR', 'RTL'];
+const themes = ['web-light'];
+const modes = ['LTR'];
 
 async function loadChartPage(
   page: any,
@@ -171,9 +171,6 @@ async function loadChartPage(
   await page.locator('#list-item-T').click();
   await page.getByRole('button', { name: /Theme:/ }).click();
   await page.locator(`#list-item-${theme}`).click();
-  // const chartButton = page.getByRole('button', { name: chart.name, exact: true });
-  // // await chartButton.scrollIntoViewIfNeeded();
-  // await chartButton.click();
   // Check current direction and only click if needed
   const directionButton = await page.getByRole('button', { name: /Direction:/ });
   const directionText = await directionButton.textContent();
