@@ -171,7 +171,7 @@ async function loadChartPage(
   
   // Wait for shortcuts dropdown to be visible
   await page.waitForSelector('#list-item-T', { state: 'visible', timeout: 10000 });
-  await page.waitForTimeout(500);
+  //await page.waitForTimeout(500);
   
   // Click #list-item-T directly via JavaScript to bypass viewport checks
   await page.evaluate(() => {
@@ -182,11 +182,11 @@ async function loadChartPage(
       throw new Error('Element #list-item-T not found');
     }
   });    
-  await page.getByRole('button', { name: /Theme:/ }).click();
+  //await page.getByRole('button', { name: /Theme:/ }).click();
   
   // Wait for theme dropdown to be visible
   await page.waitForSelector(`#list-item-${theme}`, { state: 'visible', timeout: 10000 });
-  await page.waitForTimeout(300);
+ // await page.waitForTimeout(300);
   
   // Click theme item directly via JavaScript to bypass viewport checks
   await page.evaluate((themeValue) => {
