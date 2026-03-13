@@ -185,8 +185,8 @@ async function loadChartPage(
   // await page.getByRole('button', { name: /Theme:/ }).click();
   
   // // Wait for theme dropdown to be visible
-  // await page.waitForSelector(`#list-item-${theme}`, { state: 'visible', timeout: 10000 });
-  // await page.waitForTimeout(300);
+  await page.waitForSelector(`#list-item-${theme}`, { state: 'visible', timeout: 10000 });
+  await page.waitForTimeout(300);
   
   // Click theme item directly via JavaScript to bypass viewport checks
   await page.evaluate((themeValue) => {
