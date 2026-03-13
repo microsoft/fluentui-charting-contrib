@@ -169,36 +169,34 @@ async function loadChartPage(
  await page.evaluate(() => window.scrollTo(0, 0));
   await page.getByLabel('Shortcuts').click();
   
-  // Wait for shortcuts dropdown to be visible and stable
+  // Wait for shortcuts dropdown to be visible
   await page.waitForSelector('#list-item-T', { state: 'visible', timeout: 10000 });
-  await page.waitForTimeout(500); // Additional wait for dropdown to settle
+  await page.waitForTimeout(500);
   
-  // Try multiple approaches to click #list-item-T
-  const listItemT = page.locator('#list-item-T');
-  try {
-    await listItemT.scrollIntoViewIfNeeded();
-    await listItemT.click({ timeout: 5000 });
-  } catch (error) {
-    // Fallback: try with force click
-    console.log('Retrying with force click for #list-item-T');
-    await listItemT.click({ force: true, timeout: 5000 });
-  }    
+  // Click #list-item-T directly via JavaScript to bypass viewport checks
+  await page.evaluate(() => {
+    const element = document.querySelector('#list-item-T') as HTMLElement;
+    if (element) {
+      element.click();
+    } else {
+      throw new Error('Element #list-item-T not found');
+    }
+  });    
   await page.getByRole('button', { name: /Theme:/ }).click();
   
-  // Wait for theme dropdown to be visible and stable
+  // Wait for theme dropdown to be visible
   await page.waitForSelector(`#list-item-${theme}`, { state: 'visible', timeout: 10000 });
-  await page.waitForTimeout(300); // Brief wait for dropdown to settle
+  await page.waitForTimeout(300);
   
-  // Try multiple approaches to click the theme item
-  const themeItem = page.locator(`#list-item-${theme}`);
-  try {
-    await themeItem.scrollIntoViewIfNeeded();
-    await themeItem.click({ timeout: 5000 });
-  } catch (error) {
-    // Fallback: try with force click
-    console.log(`Retrying with force click for #list-item-${theme}`);
-    await themeItem.click({ force: true, timeout: 5000 });
-  }
+  // Click theme item directly via JavaScript to bypass viewport checks
+  await page.evaluate((themeValue) => {
+    const element = document.querySelector(`#list-item-${themeValue}`) as HTMLElement;
+    if (element) {
+      element.click();
+    } else {
+      throw new Error(`Element #list-item-${themeValue} not found`);
+    }
+  }, theme);
   // Check current direction and only click if needed
   const directionButton = await page.getByRole('button', { name: /Direction:/ });
   const directionText = await directionButton.textContent();
