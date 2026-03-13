@@ -152,7 +152,7 @@ const charts = [
   // { name: 'SankeyChart', path: 'charts-SankeyChart--docs', selector: '#story--charts-sankeychart--sankey-chart-basic--primary-inner', stories: sankeyChartStories },
   // { name: 'ScatterChart', path: 'charts-ScatterChart--docs', selector: '#story--charts-scatterchart--scatter-chart-default--primary-inner', stories: scatterChartStories },
   // { name: 'Sparkline', path: 'charts-Sparkline--docs', selector: '#story--charts-sparkline--sparkline-basic--primary-inner', stories: sparklineChartStories },
-  // { name: 'VerticalBarChart', path: 'charts-VerticalBarChart--docs', selector: '#story--charts-verticalbarchart--vertical-bar-default--primary-inner', stories: verticalBarChartStories },
+  { name: 'VerticalBarChart', path: 'charts-VerticalBarChart--docs', selector: '#story--charts-verticalbarchart--vertical-bar-default--primary-inner', stories: verticalBarChartStories },
   { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner', stories: verticalStackedBarChartStories },
 ];
 
@@ -166,7 +166,7 @@ async function loadChartPage(
   mode: string
 ) {
  await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
- await page.evaluate(() => window.scrollTo(0, 0));
+//  await page.evaluate(() => window.scrollTo(0, 0));
   await page.getByLabel('Shortcuts').click();
   
   // Wait for shortcuts dropdown to be visible
