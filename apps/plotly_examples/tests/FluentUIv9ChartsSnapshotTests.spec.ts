@@ -167,7 +167,8 @@ async function loadChartPage(
 ) {
  await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
  await page.evaluate(() => window.scrollTo(0, 0));
-    
+  await page.getByLabel('Shortcuts').click();
+    await page.locator('#list-item-T').click();  
   await page.getByRole('button', { name: /Theme:/ }).click();
   await page.locator(`#list-item-${theme}`).click();
   // Check current direction and only click if needed
