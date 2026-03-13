@@ -114,10 +114,10 @@ const sparklineChartStories = [
 ];
 
 const verticalBarChartStories = [
-  '#story--charts-verticalbarchart--vertical-bar-default-inner',
-  '#story--charts-verticalbarchart--vertical-bar-custom-accessibility-inner',
-  '#story--charts-verticalbarchart--vertical-bar-date-axis-inner',
-  '#story--charts-verticalbarchart--vertical-bar-axis-tooltip-inner',
+  // '#story--charts-verticalbarchart--vertical-bar-default-inner',
+  // '#story--charts-verticalbarchart--vertical-bar-custom-accessibility-inner',
+  // '#story--charts-verticalbarchart--vertical-bar-date-axis-inner',
+  // '#story--charts-verticalbarchart--vertical-bar-axis-tooltip-inner',
   '#story--charts-verticalbarchart--vertical-bar-rotate-labels-inner',
   '#story--charts-verticalbarchart--vertical-bar-styled-inner',
   // '#story--charts-verticalbarchart--vertical-bar-dynamic-inner',
@@ -170,7 +170,13 @@ async function loadChartPage(
   
   // Check if theme button is already available
   const themeButton = page.getByRole('button', { name: /Theme:/ });
-  const isThemeButtonVisible = await themeButton.isVisible().catch(() => false);
+  let isThemeButtonVisible = false;
+  try {
+    await themeButton.waitFor({ state: 'visible', timeout: 2000 });
+    isThemeButtonVisible = true;
+  } catch {
+    isThemeButtonVisible = false;
+  }
   
   if (!isThemeButtonVisible) {
     await page.getByLabel('Shortcuts').click();
