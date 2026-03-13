@@ -168,12 +168,37 @@ async function loadChartPage(
  await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
  await page.evaluate(() => window.scrollTo(0, 0));
   await page.getByLabel('Shortcuts').click();
-  await page.waitForTimeout(1000); // Wait for shortcuts dropdown to fully render
-  // await page.locator('#list-item-T').scrollIntoViewIfNeeded();
-  await page.locator('#list-item-T').click({ force: true }); // Force click if still outside viewport    
+  
+  // Wait for shortcuts dropdown to be visible and stable
+  await page.waitForSelector('#list-item-T', { state: 'visible', timeout: 10000 });
+  await page.waitForTimeout(500); // Additional wait for dropdown to settle
+  
+  // Try multiple approaches to click #list-item-T
+  const listItemT = page.locator('#list-item-T');
+  try {
+    await listItemT.scrollIntoViewIfNeeded();
+    await listItemT.click({ timeout: 5000 });
+  } catch (error) {
+    // Fallback: try with force click
+    console.log('Retrying with force click for #list-item-T');
+    await listItemT.click({ force: true, timeout: 5000 });
+  }    
   await page.getByRole('button', { name: /Theme:/ }).click();
-  // await page.locator(`#list-item-${theme}`).scrollIntoViewIfNeeded();
-  await page.locator(`#list-item-${theme}`).click();
+  
+  // Wait for theme dropdown to be visible and stable
+  await page.waitForSelector(`#list-item-${theme}`, { state: 'visible', timeout: 10000 });
+  await page.waitForTimeout(300); // Brief wait for dropdown to settle
+  
+  // Try multiple approaches to click the theme item
+  const themeItem = page.locator(`#list-item-${theme}`);
+  try {
+    await themeItem.scrollIntoViewIfNeeded();
+    await themeItem.click({ timeout: 5000 });
+  } catch (error) {
+    // Fallback: try with force click
+    console.log(`Retrying with force click for #list-item-${theme}`);
+    await themeItem.click({ force: true, timeout: 5000 });
+  }
   // Check current direction and only click if needed
   const directionButton = await page.getByRole('button', { name: /Direction:/ });
   const directionText = await directionButton.textContent();
