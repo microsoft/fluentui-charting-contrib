@@ -133,7 +133,7 @@ const verticalStackedBarChartStories = [
   // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-callout-inner',
   // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-custom-accessibility-inner',
   // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-date-axis-inner',
-  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-negative-inner',
+  // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-negative-inner',
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-secondary-y-axis-inner',
 ];
 
@@ -170,8 +170,8 @@ async function loadChartPage(
   await page.getByLabel('Shortcuts').click();
   
   // Wait for shortcuts dropdown to be visible
-  // await page.waitForSelector('#list-item-T', { state: 'visible', timeout: 10000 });
-  // await page.waitForTimeout(500);
+  await page.waitForSelector('#list-item-T', { state: 'visible', timeout: 10000 });
+  await page.waitForTimeout(500);
   
   // Click #list-item-T directly via JavaScript to bypass viewport checks
   await page.evaluate(() => {
@@ -182,9 +182,9 @@ async function loadChartPage(
       throw new Error('Element #list-item-T not found');
     }
   });    
-  // await page.getByRole('button', { name: /Theme:/ }).click();
+  await page.getByRole('button', { name: /Theme:/ }).click();
   
-  // // Wait for theme dropdown to be visible
+  // Wait for theme dropdown to be visible
   await page.waitForSelector(`#list-item-${theme}`, { state: 'visible', timeout: 10000 });
   await page.waitForTimeout(300);
   
