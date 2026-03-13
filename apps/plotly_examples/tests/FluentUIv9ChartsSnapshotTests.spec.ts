@@ -114,10 +114,10 @@ const sparklineChartStories = [
 ];
 
 const verticalBarChartStories = [
-  // '#story--charts-verticalbarchart--vertical-bar-default-inner',
-  // '#story--charts-verticalbarchart--vertical-bar-custom-accessibility-inner',
-  // '#story--charts-verticalbarchart--vertical-bar-date-axis-inner',
-  // '#story--charts-verticalbarchart--vertical-bar-axis-tooltip-inner',
+  '#story--charts-verticalbarchart--vertical-bar-default-inner',
+  '#story--charts-verticalbarchart--vertical-bar-custom-accessibility-inner',
+  '#story--charts-verticalbarchart--vertical-bar-date-axis-inner',
+  '#story--charts-verticalbarchart--vertical-bar-axis-tooltip-inner',
   '#story--charts-verticalbarchart--vertical-bar-rotate-labels-inner',
   '#story--charts-verticalbarchart--vertical-bar-styled-inner',
   // '#story--charts-verticalbarchart--vertical-bar-dynamic-inner',
@@ -156,8 +156,8 @@ const charts = [
   { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner', stories: verticalStackedBarChartStories },
 ];
 
-const themes = ['web-light'];
-const modes = ['LTR'];
+const themes = ['web-light', 'web-dark'];
+const modes = ['LTR', 'RTL'];
 
 async function loadChartPage(
   page: any,
@@ -204,8 +204,6 @@ async function loadChartPage(
     (mode === 'LTR' && directionText?.includes('RTL'))) {
     await directionButton.click();
   }
-  // await page.getByLabel('Shortcuts').click();
-  // await page.locator('#list-item-T').click();
   const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
   const frame = await chartContainer.contentFrame();
   if (!frame) throw new Error('Could not get content frame');
