@@ -170,6 +170,7 @@ async function loadChartPage(
   await page.getByLabel('Shortcuts').click();
     await page.locator('#list-item-T').click();  
   await page.getByRole('button', { name: /Theme:/ }).click();
+  await page.locator(`#list-item-${theme}`).scrollIntoViewIfNeeded();
   await page.locator(`#list-item-${theme}`).click();
   // Check current direction and only click if needed
   const directionButton = await page.getByRole('button', { name: /Direction:/ });
