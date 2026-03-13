@@ -167,23 +167,8 @@ async function loadChartPage(
 ) {
  await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
  await page.evaluate(() => window.scrollTo(0, 0));
-  
-  // Check if theme button is already available
-  const themeButton = page.getByRole('button', { name: /Theme:/ });
-  let isThemeButtonVisible = false;
-  try {
-    await themeButton.waitFor({ state: 'visible', timeout: 2000 });
-    isThemeButtonVisible = true;
-  } catch {
-    isThemeButtonVisible = false;
-  }
-  
-  if (!isThemeButtonVisible) {
-    await page.getByLabel('Shortcuts').click();
-    await page.locator('#list-item-T').click();
-  }
-  
-  await themeButton.click();
+    
+  await page.getByRole('button', { name: /Theme:/ }).click();
   await page.locator(`#list-item-${theme}`).click();
   // Check current direction and only click if needed
   const directionButton = await page.getByRole('button', { name: /Direction:/ });
