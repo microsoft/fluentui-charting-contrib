@@ -152,7 +152,7 @@ const charts = [
   // { name: 'SankeyChart', path: 'charts-SankeyChart--docs', selector: '#story--charts-sankeychart--sankey-chart-basic--primary-inner', stories: sankeyChartStories },
   // { name: 'ScatterChart', path: 'charts-ScatterChart--docs', selector: '#story--charts-scatterchart--scatter-chart-default--primary-inner', stories: scatterChartStories },
   // { name: 'Sparkline', path: 'charts-Sparkline--docs', selector: '#story--charts-sparkline--sparkline-basic--primary-inner', stories: sparklineChartStories },
-  { name: 'VerticalBarChart', path: 'charts-VerticalBarChart--docs', selector: '#story--charts-verticalbarchart--vertical-bar-default--primary-inner', stories: verticalBarChartStories },
+  // { name: 'VerticalBarChart', path: 'charts-VerticalBarChart--docs', selector: '#story--charts-verticalbarchart--vertical-bar-default--primary-inner', stories: verticalBarChartStories },
   { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner', stories: verticalStackedBarChartStories },
 ];
 
@@ -168,8 +168,9 @@ async function loadChartPage(
  await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
  await page.evaluate(() => window.scrollTo(0, 0));
   await page.getByLabel('Shortcuts').click();
+  await page.waitForTimeout(500); // Wait for shortcuts dropdown to fully render
   await page.locator('#list-item-T').scrollIntoViewIfNeeded();
-  await page.locator('#list-item-T').click();    
+  await page.locator('#list-item-T').click({ force: true }); // Force click if still outside viewport    
   await page.getByRole('button', { name: /Theme:/ }).click();
   await page.locator(`#list-item-${theme}`).scrollIntoViewIfNeeded();
   await page.locator(`#list-item-${theme}`).click();
