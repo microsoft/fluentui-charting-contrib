@@ -134,7 +134,7 @@ const verticalStackedBarChartStories = [
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-custom-accessibility-inner',
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-date-axis-inner',
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-negative-inner',
-  // '#story--charts-verticalstackedbarchart--vertical-stacked-bar-secondary-y-axis-inner',
+  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-secondary-y-axis-inner',
 ];
 
 const charts = [
@@ -165,12 +165,36 @@ async function loadChartPage(
   theme: string,
   mode: string
 ) {
- await page.goto('http://localhost:3000/?path=/docs/introduction--docs');
+ await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
+//  await page.evaluate(() => window.scrollTo(0, 0));
   await page.getByLabel('Shortcuts').click();
-  await page.locator('#list-item-T').click();
+  
+  // Wait for shortcuts dropdown to be visible
+  await page.waitForSelector('#list-item-T', { state: 'visible', timeout: 10000 });
+  
+  // Click #list-item-T directly via JavaScript to bypass viewport checks
+  await page.evaluate(() => {
+    const element = document.querySelector('#list-item-T') as HTMLElement;
+    if (element) {
+      element.click();
+    } else {
+      throw new Error('Element #list-item-T not found');
+    }
+  });    
   await page.getByRole('button', { name: /Theme:/ }).click();
-  await page.locator(`#list-item-${theme}`).click();
-  await page.getByRole('button', { name: chart.name, exact: true }).click();
+  
+  // Wait for theme dropdown to be visible
+  await page.waitForSelector(`#list-item-${theme}`, { state: 'visible', timeout: 10000 });
+  
+  // Click theme item directly via JavaScript to bypass viewport checks
+  await page.evaluate((themeValue) => {
+    const element = document.querySelector(`#list-item-${themeValue}`) as HTMLElement;
+    if (element) {
+      element.click();
+    } else {
+      throw new Error(`Element #list-item-${themeValue} not found`);
+    }
+  }, theme);
   // Check current direction and only click if needed
   const directionButton = await page.getByRole('button', { name: /Direction:/ });
   const directionText = await directionButton.textContent();
@@ -178,8 +202,6 @@ async function loadChartPage(
     (mode === 'LTR' && directionText?.includes('RTL'))) {
     await directionButton.click();
   }
-  await page.getByLabel('Shortcuts').click();
-  await page.locator('#list-item-T').click();
   const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
   const frame = await chartContainer.contentFrame();
   if (!frame) throw new Error('Could not get content frame');
@@ -187,7 +209,6 @@ async function loadChartPage(
   await expect(chartInner).toBeVisible({ timeout: 100000 });
   return frame;
 }
-
 // Helper to interact with controls and take screenshots
 async function interactWithLegends(frame: any, imgId: string, screenshotName: string) {
   const legendItems = frame.locator(`#${imgId} button[type="button"][role="option"]`);
