@@ -118,7 +118,7 @@ const App: React.FC = () => {
             />
           </div>
           <div style={{ padding: '0 8px' }}>
-            <Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.25.6</Subtitle2>
+            <Body2>@fluentui/react-charting &nbsp;</Body2><Subtitle2>v5.25.8</Subtitle2>
             &nbsp;&nbsp;<Body2>@fluentui/react-charts &nbsp;</Body2><Subtitle2>0.0.0-nightly-20260313-0407.1</Subtitle2>
           </div>
           {isDimensionSlidersEnabled && (
