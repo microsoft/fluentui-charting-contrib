@@ -158,6 +158,7 @@ const charts = [
 
 const themes = ['web-light', 'web-dark'];
 const modes = ['LTR', 'RTL'];
+const URL_LOAD_DELAY_MS = 3000;
 
 async function loadChartPage(
   page: any,
@@ -166,7 +167,7 @@ async function loadChartPage(
   mode: string
 ) {
  await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
-//  await page.evaluate(() => window.scrollTo(0, 0));
+ await page.waitForTimeout(URL_LOAD_DELAY_MS);
   await page.getByLabel('Shortcuts').click();
   
   // Wait for shortcuts dropdown to be visible
@@ -187,7 +188,7 @@ async function loadChartPage(
   await page.waitForSelector(`#list-item-${theme}`, { state: 'visible', timeout: 10000 });
   
   // Click theme item directly via JavaScript to bypass viewport checks
-  await page.evaluate((themeValue) => {
+  await page.evaluate((themeValue: string) => {
     const element = document.querySelector(`#list-item-${themeValue}`) as HTMLElement;
     if (element) {
       element.click();
