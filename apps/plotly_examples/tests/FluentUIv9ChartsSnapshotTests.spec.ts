@@ -167,7 +167,7 @@ async function loadChartPage(
   mode: string
 ) {
  await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
- await page.waitForTimeout(URL_LOAD_DELAY_MS);
+//  await page.waitForTimeout(URL_LOAD_DELAY_MS);
   await page.getByLabel('Shortcuts').click();
   
   // Wait for shortcuts dropdown to be visible
