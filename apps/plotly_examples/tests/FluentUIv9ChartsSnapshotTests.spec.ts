@@ -156,7 +156,7 @@ const charts = [
   { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner', stories: verticalStackedBarChartStories },
 ];
 
-const themes = ['web-light', 'web-dark'];
+const themes = ['Web Light', 'Web Dark'];
 const modes = ['LTR', 'RTL'];
 
 async function loadChartPage(
@@ -165,42 +165,13 @@ async function loadChartPage(
   theme: string,
   mode: string
 ) {
- await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
-//  await page.evaluate(() => window.scrollTo(0, 0));
-  await page.getByLabel('Shortcuts').click();
-  
-  // Wait for shortcuts dropdown to be visible
-  await page.waitForSelector('#list-item-T', { state: 'visible', timeout: 10000 });
-  
-  // Click #list-item-T directly via JavaScript to bypass viewport checks
-  await page.evaluate(() => {
-    const element = document.querySelector('#list-item-T') as HTMLElement;
-    if (element) {
-      element.click();
-    } else {
-      throw new Error('Element #list-item-T not found');
-    }
-  });    
-  await page.getByRole('button', { name: /Theme:/ }).click();
-  
-  // Wait for theme dropdown to be visible
-  await page.waitForSelector(`#list-item-${theme}`, { state: 'visible', timeout: 10000 });
-  
-  // Click theme item directly via JavaScript to bypass viewport checks
-  await page.evaluate((themeValue) => {
-    const element = document.querySelector(`#list-item-${themeValue}`) as HTMLElement;
-    if (element) {
-      element.click();
-    } else {
-      throw new Error(`Element #list-item-${themeValue} not found`);
-    }
-  }, theme);
-  // Check current direction and only click if needed
-  const directionButton = await page.getByRole('button', { name: /Direction:/ });
-  const directionText = await directionButton.textContent();
-  if ((mode === 'RTL' && directionText?.includes('LTR')) ||
-    (mode === 'LTR' && directionText?.includes('RTL'))) {
-    await directionButton.click();
+  await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
+  await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().getByRole('button', { name: 'Theme' }).click();
+  await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().getByText(theme).click();
+
+  // Only check RTL direction if mode is RTL
+  if (mode === 'RTL') {
+    await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().locator('[id^="dir-switch_r_"]').check();
   }
   const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
   const frame = await chartContainer.contentFrame();
