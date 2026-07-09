@@ -165,7 +165,7 @@ async function loadChartPage(
   theme: string,
   mode: string
 ) {
-  await page.goto(`https://fluentuipr.z22.web.core.windows.net/pull/36292/chart-docsite/storybook/index.html?path=/docs/${chart.path}`);
+  await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
   await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().getByRole('button', { name: 'Theme' }).click();
   await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().getByText(theme).click();
 
