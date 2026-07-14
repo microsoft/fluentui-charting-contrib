@@ -35,8 +35,8 @@ jobs:
             - name: Checkout [react-charting]
               uses: actions/checkout@v4
               with:
-                repository: ${{ github.event.inputs.repo || 'microsoft/fluentui'}}
-                ref: ${{ github.event.inputs.branch || 'master'}}
+                repository: ${{ github.event.inputs.repo || 'v-baambati/fluentui'}}
+                ref: ${{ github.event.inputs.branch || 'AccessibilityFix_NonCartecianCharts'}}
                 path: repo1
 
             - name: Display Input Repo and Branch in Summary
