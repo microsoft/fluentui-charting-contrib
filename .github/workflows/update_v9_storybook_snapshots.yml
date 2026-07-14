@@ -48,7 +48,7 @@ jobs:
             - name: Install packages
               run: | 
                 cd ./repo1
-                yarn
+                $env:DOCS_MODE='true'; yarn
 
             - name: Checkout [main] of current repo
               uses: actions/checkout@v4
