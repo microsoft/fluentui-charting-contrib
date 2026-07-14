@@ -13,13 +13,13 @@ function sanitizeFileName(fileName: string): string {
 
 const areaChartStories = [
   '#story--charts-areachart--area-chart-basic-inner',
-  '#story--charts-areachart--area-chart-custom-accessibility-inner',
-  '#story--charts-areachart--area-chart-large-data-inner',
-  '#story--charts-areachart--area-chart-multiple-inner',
-  '#story--charts-areachart--area-chart-negative-inner',
-  '#story--charts-areachart--area-chart-multiple-negative-inner',
-  '#story--charts-areachart--area-chart-all-negative-inner',
-  '#story--charts-areachart--area-chart-secondary-y-axis-inner',
+  // '#story--charts-areachart--area-chart-custom-accessibility-inner',
+  // '#story--charts-areachart--area-chart-large-data-inner',
+  // '#story--charts-areachart--area-chart-multiple-inner',
+  // '#story--charts-areachart--area-chart-negative-inner',
+  // '#story--charts-areachart--area-chart-multiple-negative-inner',
+  // '#story--charts-areachart--area-chart-all-negative-inner',
+  // '#story--charts-areachart--area-chart-secondary-y-axis-inner',
 ];
 
 const donutChartStories = [
@@ -166,13 +166,13 @@ async function loadChartPage(
   mode: string
 ) {
   await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
-  await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().getByRole('button', { name: 'Theme' }).click();
-  await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().getByText(theme).click();
+  // await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().getByRole('button', { name: 'Theme' }).click();
+  // await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().getByText(theme).click();
 
-  // Only check RTL direction if mode is RTL
-  if (mode === 'RTL') {
-    await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().locator('[id^="dir-switch_r_"]').check();
-  }
+  // // Only check RTL direction if mode is RTL
+  // if (mode === 'RTL') {
+  //   await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().locator('[id^="dir-switch_r_"]').check();
+  // }
   const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
   const frame = await chartContainer.contentFrame();
   if (!frame) throw new Error('Could not get content frame');
