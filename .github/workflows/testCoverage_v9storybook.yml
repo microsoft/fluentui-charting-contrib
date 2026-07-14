@@ -60,7 +60,7 @@ jobs:
             - name: Install packages
               run: | 
                 cd ./repo1
-                yarn
+                $env:DOCS_MODE='true'; yarn
 
             - name: Checkout [main] of current repo
               uses: actions/checkout@v4
@@ -79,6 +79,7 @@ jobs:
                 npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --config playwright-storybook-v9.config.ts || true
               continue-on-error: true
               env:
+                DOCS_MODE: 'false'
                 GITHUB_WORKFLOW: "[Charts V9] Storybook Test coverage"
 
             - name: Zip Playwright report
