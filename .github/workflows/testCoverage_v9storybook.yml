@@ -7,11 +7,11 @@ on:
       repo:
         description: "Repo to run the tests on"
         required: true
-        default: "microsoft/fluentui"
+        default: "v-baambati/fluentui"
       branch:
         description: "Branch to run the tests on"
         required: true
-        default: "master"
+        default: "AccessibilityFix_NonCartecianCharts"
 
 permissions:
     contents: write
