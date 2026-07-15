@@ -166,6 +166,11 @@ async function loadChartPage(
   mode: string
 ) {
   await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
+
+  await page.screenshot({
+    path: 'tests/full-page-screenshot.png',
+    fullPage: true,
+  });
   await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().getByRole('button', { name: 'Theme' }).click();
   await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().getByText(theme).click();
 
@@ -264,73 +269,61 @@ async function interactWithSwitches(frame: any, imgId: string, screenshotName: s
   }
 }
 
-// for (const chart of charts) {
-//   for (const mode of modes) {
-//     for (const theme of themes) {
-//       test.describe(`${chart.name} [${theme}] [${mode}]`, () => {
-//         for (const exampleSelector of chart.stories) {
-//           const testCaseName = exampleSelector.split('--').slice(-1)[0].trim().replace(/-inner/g, '');
-//           test(`Legend Action - ${testCaseName}`, async ({ page }) => {
-//             const frame = await loadChartPage(page, chart, theme, mode);
-//             const example = frame.locator(exampleSelector);
-//             await example.scrollIntoViewIfNeeded();
-//             const imgId = await example.getAttribute('id');
-//             const dataName = await example.getAttribute('data-name');
-//             if (imgId) {
-//               const screenshotName = sanitizeFileName(`${dataName || `${chart.name} basic`} [${theme}] [${mode}]`);
-//               await interactWithLegends(frame, imgId, screenshotName);
-//             }
-//           });
+for (const chart of charts) {
+  for (const mode of modes) {
+    for (const theme of themes) {
+      test.describe(`${chart.name} [${theme}] [${mode}]`, () => {
+        for (const exampleSelector of chart.stories) {
+          const testCaseName = exampleSelector.split('--').slice(-1)[0].trim().replace(/-inner/g, '');
+          test(`Legend Action - ${testCaseName}`, async ({ page }) => {
+            const frame = await loadChartPage(page, chart, theme, mode);
+            const example = frame.locator(exampleSelector);
+            await example.scrollIntoViewIfNeeded();
+            const imgId = await example.getAttribute('id');
+            const dataName = await example.getAttribute('data-name');
+            if (imgId) {
+              const screenshotName = sanitizeFileName(`${dataName || `${chart.name} basic`} [${theme}] [${mode}]`);
+              await interactWithLegends(frame, imgId, screenshotName);
+            }
+          });
 
-//           test(`Radio button Action - ${testCaseName}`, async ({ page }) => {
-//             const frame = await loadChartPage(page, chart, theme, mode);
-//             const example = frame.locator(exampleSelector);
-//             await example.scrollIntoViewIfNeeded();
-//             const imgId = await example.getAttribute('id');
-//             const dataName = await example.getAttribute('data-name');
-//             if (imgId) {
-//               const screenshotName = sanitizeFileName(`${dataName || `${chart.name} basic`} [${theme}] [${mode}]`);
-//               await interactWithRadios(frame, imgId, screenshotName);
-//             }
-//           });
+          test(`Radio button Action - ${testCaseName}`, async ({ page }) => {
+            const frame = await loadChartPage(page, chart, theme, mode);
+            const example = frame.locator(exampleSelector);
+            await example.scrollIntoViewIfNeeded();
+            const imgId = await example.getAttribute('id');
+            const dataName = await example.getAttribute('data-name');
+            if (imgId) {
+              const screenshotName = sanitizeFileName(`${dataName || `${chart.name} basic`} [${theme}] [${mode}]`);
+              await interactWithRadios(frame, imgId, screenshotName);
+            }
+          });
 
-//           test(`slider Action - ${testCaseName}`, async ({ page }) => {
-//             const frame = await loadChartPage(page, chart, theme, mode);
-//             const example = frame.locator(exampleSelector);
-//             await example.scrollIntoViewIfNeeded();
-//             const imgId = await example.getAttribute('id');
-//             const dataName = await example.getAttribute('data-name');
-//             if (imgId) {
-//               const screenshotName = sanitizeFileName(`${dataName || `${chart.name} basic`} [${theme}] [${mode}]`);
-//               await interactWithSliders(frame, imgId, screenshotName);
-//             }
-//           });
+          test(`slider Action - ${testCaseName}`, async ({ page }) => {
+            const frame = await loadChartPage(page, chart, theme, mode);
+            const example = frame.locator(exampleSelector);
+            await example.scrollIntoViewIfNeeded();
+            const imgId = await example.getAttribute('id');
+            const dataName = await example.getAttribute('data-name');
+            if (imgId) {
+              const screenshotName = sanitizeFileName(`${dataName || `${chart.name} basic`} [${theme}] [${mode}]`);
+              await interactWithSliders(frame, imgId, screenshotName);
+            }
+          });
 
-//           test(`Switch Action - ${testCaseName}`, async ({ page }) => {
-//             const frame = await loadChartPage(page, chart, theme, mode);
-//             const example = frame.locator(exampleSelector);
-//             await example.scrollIntoViewIfNeeded();
-//             const imgId = await example.getAttribute('id');
-//             const dataName = await example.getAttribute('data-name');
-//             if (imgId) {
-//               const screenshotName = sanitizeFileName(`${dataName || `${chart.name} basic`} [${theme}] [${mode}]`);
-//               await interactWithSwitches(frame, imgId, screenshotName);
-//             }
-//           });
-//         }
-//       });
-//     }
-//   }
-// }
-
-test('Capture full-page screenshot after page load', async ({ page }) => {
-  await page.goto('http://localhost:3000/?path=/docs/charts-areachart--docs', {
-    waitUntil: 'domcontentloaded',
-  });
-
-  await page.waitForLoadState('networkidle');
-  await page.screenshot({
-    path: 'tests/full-page-screenshot.png',
-    fullPage: true,
-  });
-});
+          test(`Switch Action - ${testCaseName}`, async ({ page }) => {
+            const frame = await loadChartPage(page, chart, theme, mode);
+            const example = frame.locator(exampleSelector);
+            await example.scrollIntoViewIfNeeded();
+            const imgId = await example.getAttribute('id');
+            const dataName = await example.getAttribute('data-name');
+            if (imgId) {
+              const screenshotName = sanitizeFileName(`${dataName || `${chart.name} basic`} [${theme}] [${mode}]`);
+              await interactWithSwitches(frame, imgId, screenshotName);
+            }
+          });
+        }
+      });
+    }
+  }
+}
