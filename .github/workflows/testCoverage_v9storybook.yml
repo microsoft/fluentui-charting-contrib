@@ -36,7 +36,7 @@ jobs:
               uses: actions/checkout@v4
               with:
                 repository: ${{ github.event.inputs.repo || 'v-baambati/fluentui'}}
-                ref: ${{ github.event.inputs.branch || 'v9ChartsSnapsIssueFix_July27'}}
+                ref: ${{ github.event.inputs.branch || 'v9ChartsSnapsIssueFix_July27_New'}}
                 path: repo1
 
             - name: Display Input Repo and Branch in Summary
