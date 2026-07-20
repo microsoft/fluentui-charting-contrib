@@ -37,6 +37,7 @@ export default defineConfig({
     // Add navigation and action timeouts for Charts V9 Storybook Test coverage
     navigationTimeout: 30000,
     actionTimeout: 30000,
+    video: 'on',
     
     trace: 'off'
   },

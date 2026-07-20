@@ -106,6 +106,14 @@ jobs:
                 name: playwright-json-report
                 path: contrib_repo/apps/plotly_examples/playwright-report.json
 
+            - name: Upload Playwright videos as artifact
+              if: always()
+              uses: actions/upload-artifact@v4
+              with:
+                name: playwright-videos
+                path: contrib_repo/apps/plotly_examples/test-results/**/*.webm
+                if-no-files-found: warn
+
             - name: Move Playwright JSON report to reports folder for scheduled runs
               if: github.event_name == 'schedule'
               shell: bash

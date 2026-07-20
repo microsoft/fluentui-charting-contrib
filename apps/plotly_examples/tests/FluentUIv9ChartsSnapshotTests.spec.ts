@@ -166,11 +166,6 @@ async function loadChartPage(
   mode: string
 ) {
   await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
-
-  await page.screenshot({
-    path: 'tests/full-page-screenshot.png',
-    fullPage: true,
-  });
   await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().getByRole('button', { name: 'Theme' }).click();
   await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().getByText(theme).click();
 
