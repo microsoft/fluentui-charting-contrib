@@ -60,7 +60,7 @@ jobs:
             - name: Install packages
               run: | 
                 cd ./repo1
-                $env:DOCS_MODE='true'; yarn
+                $env:REACT_CHARTS_STORYBOOK_DOCS = 'true';yarn
 
             - name: Checkout [main] of current repo
               uses: actions/checkout@v4
