@@ -165,15 +165,15 @@ async function loadChartPage(
   theme: string,
   mode: string
 ) {
-  await page.goto(`http://localhost:3000/?path=/docs/${chart.path}`);
-  await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().getByRole('button', { name: 'Theme' }).click();
-  await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().getByText(theme).click();
+  await page.goto(`http://localhost:3000/?path=/docs/charts_${chart.path}`);
+  await page.locator('iframe[title="storybook-ref-charts"]').contentFrame().getByRole('button', { name: 'Theme' }).click();
+  await page.locator('iframe[title="storybook-ref-charts"]').contentFrame().getByText(theme).click();
 
   // Only check RTL direction if mode is RTL
   if (mode === 'RTL') {
-    await page.locator('iframe[title="storybook-preview-iframe"]').contentFrame().locator('[id^="dir-switch_r_"]').check();
+    await page.locator('iframe[title="storybook-ref-charts"]').contentFrame().locator('[id^="dir-switch_r_"]').check();
   }
-  const chartContainer = page.locator('iframe[title="storybook-preview-iframe"]');
+  const chartContainer = page.locator('iframe[title="storybook-ref-charts"]');
   const frame = await chartContainer.contentFrame();
   if (!frame) throw new Error('Could not get content frame');
   const chartInner = frame.locator(chart.selector);
