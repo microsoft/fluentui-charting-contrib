@@ -252,11 +252,7 @@ async function interactWithSwitches(frame: any, imgId: string, screenshotName: s
       // Skip this slider if it's disabled
       continue;
     }
-    if (!(await control.isChecked())) {
-      await control.check();
-    } else {
-      await control.uncheck();
-    }
+    await control.press('Enter');
     const label = await frame.locator(`label[for="${await control.getAttribute('id')}"]`).textContent();
     const labelText = label.split('(')[0].trim();
     const buffer = await frame.locator(`#${imgId}`).screenshot();
