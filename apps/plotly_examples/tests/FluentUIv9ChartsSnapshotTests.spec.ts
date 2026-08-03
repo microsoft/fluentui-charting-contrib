@@ -168,14 +168,14 @@ async function loadChartPage(
   await page.goto(`http://localhost:3000/?path=/docs/charts_${chart.path}`);
 
   // Wait for Storybook to finish rendering so overlays don't intercept clicks
-  await page.waitForTimeout(2000);
+  // await page.waitForTimeout(2000);
 
   await page.locator('iframe[title="storybook-ref-charts"]').contentFrame().getByRole('button', { name: 'Theme' }).press('Enter');
   await page.locator('iframe[title="storybook-ref-charts"]').contentFrame().getByText(theme).press('Enter');
 
   // Only check RTL direction if mode is RTL
   if (mode === 'RTL') {
-    await page.locator('iframe[title="storybook-ref-charts"]').contentFrame().locator('[id^="dir-switch_r_"]').check();
+    await page.locator('iframe[title="storybook-ref-charts"]').contentFrame().locator('[id^="dir-switch_r_"]').press('Enter');
   }
   const chartContainer = page.locator('iframe[title="storybook-ref-charts"]');
   const frame = await chartContainer.contentFrame();
@@ -189,7 +189,7 @@ async function interactWithLegends(frame: any, imgId: string, screenshotName: st
   const legendItems = frame.locator(`#${imgId} button[type="button"][role="option"]`);
   const count = await legendItems.count();
   if (count > 0) {
-    await legendItems.first().click();
+    await legendItems.first().press('Enter');
     const label = await legendItems.first().getAttribute('aria-label');
     const labelText = label ? label.split('(')[0].trim() : 'unknown';
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
@@ -207,7 +207,7 @@ async function interactWithRadios(frame: any, imgId: string, screenshotName: str
       // Skip this slider if it's disabled
       continue;
     }
-    await radios.nth(i).click();
+    await radios.nth(i).press('Enter');
     if (!(await radios.nth(i).isEnabled())) {
       // Skip this slider if it's disabled
       continue;
