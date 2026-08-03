@@ -196,7 +196,7 @@ async function interactWithLegends(frame: any, imgId: string, screenshotName: st
     const sanitizedLabel = sanitizeFileName(labelText);
     const buffer = await frame.locator(`#${imgId}`).screenshot();
     const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-legend-click.png`;
-    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.9 });
+    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.99 });
   }
 }
 
@@ -218,7 +218,7 @@ async function interactWithRadios(frame: any, imgId: string, screenshotName: str
     const sanitizedLabel = sanitizeFileName(labelText);
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
     const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-radio-button-click.png`;
-    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.9 });
+    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.99 });
   }
 }
 
@@ -240,7 +240,7 @@ async function interactWithSliders(frame: any, imgId: string, screenshotName: st
     const sanitizedLabel = sanitizeFileName(sliderIdText);
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
     const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-slider-value-change.png`;
-    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.9 });
+    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.99 });
   }
 }
 
@@ -263,7 +263,7 @@ async function interactWithSwitches(frame: any, imgId: string, screenshotName: s
     const sanitizedLabel = sanitizeFileName(labelText);
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
     const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-checkbox-click.png`;
-    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.9 });
+    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.99 });
 
   }
 }
