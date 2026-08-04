@@ -168,7 +168,7 @@ async function loadChartPage(
   await page.goto(`http://localhost:3000/?path=/docs/charts_${chart.path}`);
 
   const storybookFrame = page.locator('iframe[title="storybook-ref-charts"]').contentFrame();
-  await storybookFrame.getByRole('button', { name: 'Theme' }).click();
+  await storybookFrame.getByRole('button', { name: 'Theme' }).press('Enter');
   await storybookFrame.locator('div[role="menuitemradio"][name="theme"]', { hasText: theme }).click();
 
   // Only check RTL direction if mode is RTL
