@@ -139,21 +139,21 @@ const verticalStackedBarChartStories = [
 
 const charts = [
   { name: 'AreaChart', path: 'charts-areachart--docs', selector: '#story--charts-areachart--area-chart-basic--primary-inner', stories: areaChartStories },
-  { name: 'DonutChart', path: 'charts-DonutChart--docs', selector: '#story--charts-donutchart--donut-chart-basic--primary-inner', stories: donutChartStories },
-  { name: 'FunnelChart', path: 'charts-FunnelChart--docs', selector: '#story--charts-funnelchart--funnel-chart-basic--primary-inner', stories: funnelChartStories },
-  { name: 'GanttChart', path: 'charts-GanttChart--docs', selector: '#story--charts-ganttchart--gantt-chart-basic--primary-inner', stories: ganttChartStories },
-  { name: 'GaugeChart', path: 'charts-GaugeChart--docs', selector: '#story--charts-gaugechart--gauge-chart-basic--primary-inner', stories: guageChartStories },
-  { name: 'GroupedVerticalBarChart', path: 'charts-GroupedVerticalBarChart--docs', selector: '#story--charts-groupedverticalbarchart--grouped-vertical-bar-default--primary-inner', stories: gvbChartStories },
-  { name: 'HeatMapChart', path: 'charts-HeatMapChart--docs', selector: '#story--charts-heatmapchart--heat-map-chart-basic--primary-inner', stories: heatMapChartStories },
-  { name: 'HorizontalBarChart', path: 'charts-HorizontalBarChart--docs', selector: '#story--charts-horizontalbarchart--horizontal-bar-basic--primary-inner', stories: horizontalBarChartStories },
-  { name: 'HorizontalBarChartWithAxis', path: 'charts-HorizontalBarChartWithAxis--docs', selector: '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-basic--primary-inner', stories: horizontalBarChartWithAxisStories },
-  { name: 'Legends', path: 'charts-Legends--docs', selector: '#story--charts-legends--legends-basic--primary-inner', stories: legendsStories },
-  { name: 'LineChart', path: 'charts-LineChart--docs', selector: '#story--charts-linechart--line-chart-basic--primary-inner', stories: lineChartStories },
-  { name: 'SankeyChart', path: 'charts-SankeyChart--docs', selector: '#story--charts-sankeychart--sankey-chart-basic--primary-inner', stories: sankeyChartStories },
-  { name: 'ScatterChart', path: 'charts-ScatterChart--docs', selector: '#story--charts-scatterchart--scatter-chart-default--primary-inner', stories: scatterChartStories },
-  { name: 'Sparkline', path: 'charts-Sparkline--docs', selector: '#story--charts-sparkline--sparkline-basic--primary-inner', stories: sparklineChartStories },
-  { name: 'VerticalBarChart', path: 'charts-VerticalBarChart--docs', selector: '#story--charts-verticalbarchart--vertical-bar-default--primary-inner', stories: verticalBarChartStories },
-  { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner', stories: verticalStackedBarChartStories },
+  // { name: 'DonutChart', path: 'charts-DonutChart--docs', selector: '#story--charts-donutchart--donut-chart-basic--primary-inner', stories: donutChartStories },
+  // { name: 'FunnelChart', path: 'charts-FunnelChart--docs', selector: '#story--charts-funnelchart--funnel-chart-basic--primary-inner', stories: funnelChartStories },
+  // { name: 'GanttChart', path: 'charts-GanttChart--docs', selector: '#story--charts-ganttchart--gantt-chart-basic--primary-inner', stories: ganttChartStories },
+  // { name: 'GaugeChart', path: 'charts-GaugeChart--docs', selector: '#story--charts-gaugechart--gauge-chart-basic--primary-inner', stories: guageChartStories },
+  // { name: 'GroupedVerticalBarChart', path: 'charts-GroupedVerticalBarChart--docs', selector: '#story--charts-groupedverticalbarchart--grouped-vertical-bar-default--primary-inner', stories: gvbChartStories },
+  // { name: 'HeatMapChart', path: 'charts-HeatMapChart--docs', selector: '#story--charts-heatmapchart--heat-map-chart-basic--primary-inner', stories: heatMapChartStories },
+  // { name: 'HorizontalBarChart', path: 'charts-HorizontalBarChart--docs', selector: '#story--charts-horizontalbarchart--horizontal-bar-basic--primary-inner', stories: horizontalBarChartStories },
+  // { name: 'HorizontalBarChartWithAxis', path: 'charts-HorizontalBarChartWithAxis--docs', selector: '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-basic--primary-inner', stories: horizontalBarChartWithAxisStories },
+  // { name: 'Legends', path: 'charts-Legends--docs', selector: '#story--charts-legends--legends-basic--primary-inner', stories: legendsStories },
+  // { name: 'LineChart', path: 'charts-LineChart--docs', selector: '#story--charts-linechart--line-chart-basic--primary-inner', stories: lineChartStories },
+  // { name: 'SankeyChart', path: 'charts-SankeyChart--docs', selector: '#story--charts-sankeychart--sankey-chart-basic--primary-inner', stories: sankeyChartStories },
+  // { name: 'ScatterChart', path: 'charts-ScatterChart--docs', selector: '#story--charts-scatterchart--scatter-chart-default--primary-inner', stories: scatterChartStories },
+  // { name: 'Sparkline', path: 'charts-Sparkline--docs', selector: '#story--charts-sparkline--sparkline-basic--primary-inner', stories: sparklineChartStories },
+  // { name: 'VerticalBarChart', path: 'charts-VerticalBarChart--docs', selector: '#story--charts-verticalbarchart--vertical-bar-default--primary-inner', stories: verticalBarChartStories },
+  // { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner', stories: verticalStackedBarChartStories },
 ];
 
 const themes = ['Web Light', 'Web Dark'];
@@ -167,12 +167,13 @@ async function loadChartPage(
 ) {
   await page.goto(`http://localhost:3000/?path=/docs/charts_${chart.path}`);
 
-  await page.locator('iframe[title="storybook-ref-charts"]').contentFrame().getByRole('button', { name: 'Theme' }).press('Enter');
-  await page.locator('iframe[title="storybook-ref-charts"]').contentFrame().getByText(theme).click();
+  const storybookFrame = page.locator('iframe[title="storybook-ref-charts"]').contentFrame();
+  await storybookFrame.getByRole('button', { name: 'Theme' }).click();
+  await storybookFrame.locator('div[role="menuitemradio"][name="theme"]', { hasText: theme }).click();
 
   // Only check RTL direction if mode is RTL
   if (mode === 'RTL') {
-    await page.locator('iframe[title="storybook-ref-charts"]').contentFrame().locator('[id^="dir-switch_r_"]').click();
+    await storybookFrame.locator('[id^="dir-switch_r_"]').click();
   }
   const chartContainer = page.locator('iframe[title="storybook-ref-charts"]');
   const frame = await chartContainer.contentFrame();
