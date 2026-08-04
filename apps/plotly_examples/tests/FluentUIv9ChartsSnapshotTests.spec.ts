@@ -171,7 +171,7 @@ async function loadChartPage(
   await storybookFrame.getByRole('button', { name: 'Theme' }).press('Enter');
   const item = storybookFrame.getByRole('menuitemradio', { name: theme });
   await expect(item).toBeVisible();
-  await item.click();
+  await item.press('Enter');
 
   // Only check RTL direction if mode is RTL
   if (mode === 'RTL') {
