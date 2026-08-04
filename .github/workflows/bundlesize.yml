@@ -19,14 +19,14 @@ jobs:
   run-monosize:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           repository: ${{github.event.inputs.repo || 'microsoft/fluentui'}}
           ref: ${{github.event.inputs.branch || 'master'}}
           path: repo
           
       
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3.9.1
         with:
           node-version: '20.x'
           cache: yarn
@@ -45,7 +45,7 @@ jobs:
           cd ./../../../
           rm -rf ./repo
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           repository: 'microsoft/fluentui-charting-contrib'
           ref: 'test-coverage-artifacts'
@@ -64,7 +64,7 @@ jobs:
           ls -a
 
       - name: Push bundle-size to branch
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@b863ae1933cb653a53c021fe36dbb774e1fb9403 # v5.2.0
         with:
           repository: contrib-repo
           branch: test-coverage-artifacts
