@@ -167,12 +167,15 @@ async function loadChartPage(
 ) {
   await page.goto(`http://localhost:3000/?path=/docs/charts_${chart.path}`);
 
-  await page.locator('iframe[title="storybook-ref-charts"]').contentFrame().getByRole('button', { name: 'Theme' }).press('Enter');
-  await page.locator('iframe[title="storybook-ref-charts"]').contentFrame().getByText(theme).press('Enter');
+  const storybookFrame = page.locator('iframe[title="storybook-ref-charts"]').contentFrame();
+  await storybookFrame.getByRole('button', { name: 'Theme' }).press('Enter');
+  const item = storybookFrame.getByRole('menuitemradio', { name: theme });
+  await expect(item).toBeVisible();
+  await item.press('Enter');
 
   // Only check RTL direction if mode is RTL
   if (mode === 'RTL') {
-    await page.locator('iframe[title="storybook-ref-charts"]').contentFrame().locator('[id^="dir-switch_r_"]').press('Enter');
+    await storybookFrame.locator('[id^="dir-switch_r_"]').click();
   }
   const chartContainer = page.locator('iframe[title="storybook-ref-charts"]');
   const frame = await chartContainer.contentFrame();
@@ -186,7 +189,7 @@ async function interactWithLegends(frame: any, imgId: string, screenshotName: st
   const legendItems = frame.locator(`#${imgId} button[type="button"][role="option"]`);
   const count = await legendItems.count();
   if (count > 0) {
-    await legendItems.first().press('Enter');
+    await legendItems.first().click();
     const label = await legendItems.first().getAttribute('aria-label');
     const labelText = label ? label.split('(')[0].trim() : 'unknown';
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
@@ -204,11 +207,7 @@ async function interactWithRadios(frame: any, imgId: string, screenshotName: str
       // Skip this slider if it's disabled
       continue;
     }
-    await radios.nth(i).press('Enter');
-    if (!(await radios.nth(i).isEnabled())) {
-      // Skip this slider if it's disabled
-      continue;
-    }
+    await radios.nth(i).check();
     const label = await frame.locator(`label[for="${await radios.nth(i).getAttribute('id')}"]`).textContent();
     const labelText = label.split('(')[0].trim();
     const buffer = await frame.locator(`#${imgId}`).screenshot();
@@ -249,7 +248,7 @@ async function interactWithSwitches(frame: any, imgId: string, screenshotName: s
       // Skip this slider if it's disabled
       continue;
     }
-    await control.press('Enter');
+    await control.click();
     const label = await frame.locator(`label[for="${await control.getAttribute('id')}"]`).textContent();
     const labelText = label.split('(')[0].trim();
     const buffer = await frame.locator(`#${imgId}`).screenshot();
