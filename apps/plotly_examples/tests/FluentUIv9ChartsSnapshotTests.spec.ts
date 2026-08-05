@@ -176,7 +176,7 @@ async function loadChartPage(
   // Only check RTL direction if mode is RTL
   if (mode === 'RTL') {
       const dirSwitch = storybookFrame.getByRole('menuitemradio', { name: 'RTL' });
-      await dirSwitch.press('Enter');
+      await dirSwitch.check({ force: true });
   }
   const chartContainer = page.locator('iframe[title="storybook-ref-charts"]');
   const frame = await chartContainer.contentFrame();
