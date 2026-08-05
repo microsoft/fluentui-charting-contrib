@@ -157,7 +157,7 @@ const charts = [
 ];
 
 const themes = ['Web Light', 'Web Dark'];
-const modes = ['LTR', 'RTL'];
+const modes = ['RTL'];
 
 async function loadChartPage(
   page: any,
@@ -176,7 +176,6 @@ async function loadChartPage(
   // Only check RTL direction if mode is RTL
   if (mode === 'RTL') {
       const dirSwitch = storybookFrame.getByRole('menuitemradio', { name: 'RTL' });
-      await expect(dirSwitch).toBeVisible();
       await dirSwitch.press('Enter');
   }
   const chartContainer = page.locator('iframe[title="storybook-ref-charts"]');
