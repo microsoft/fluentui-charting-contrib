@@ -22,10 +22,10 @@ jobs:
       - name: Enable Git long paths
         run: git config --global core.longpaths true
         
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
       - name: Set up Node.js version
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3.9.1
         with:
           node-version: '22.x'
       
@@ -48,7 +48,7 @@ jobs:
           yarn build
       
       - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: node-app
           path: apps/plotly_examples/build
@@ -68,19 +68,19 @@ jobs:
 
     steps:
       - name: Download artifact from build job
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
           name: node-app
       
       - name: Login to Azure
-        uses: azure/login@v2
+        uses: azure/login@7184910d9eb2b1c5e48f7073824a90609bb9b6d6 # v2.3.1
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B92B0539D2FB4B13B3C2BF3836380051 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_CD6B9D2724174DCDB4E21F2A3B84BA2C }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_A0C748A7FDB947D1892147A405E56AA6 }}
 
       - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v3
+        uses: azure/webapps-deploy@02a81bead70021f5284939794bcec79c271ab383 # v3.0.8
         id: deploy-to-webapp
         with:
           app-name: 'fluentchartseval'

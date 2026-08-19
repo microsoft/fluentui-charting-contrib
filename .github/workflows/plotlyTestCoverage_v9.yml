@@ -33,7 +33,7 @@ jobs:
               run: git config --global core.longpaths true
               
             - name: Checkout [react-charting]
-              uses: actions/checkout@v4
+              uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
               with:
                 repository: ${{ github.event.inputs.repo || 'microsoft/fluentui'}}
                 ref: ${{ github.event.inputs.branch || 'master'}}
@@ -53,7 +53,7 @@ jobs:
               run: ls ./repo1
 
             - name: Set up Node.js
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
               with:
                 node-version: '22.x'
 
@@ -80,19 +80,19 @@ jobs:
               id: pack-chart-v9
 
             - name: Upload chart-utilities.tgz as artifact
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
               with:
                 name: chart-utilities-tgz
                 path: ./repo1/packages/charts/chart-utilities/chart-utilities.tgz
 
             - name: Upload react-charts.tgz as artifact
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
               with:
                 name: react-charts-tgz
                 path: ./repo1/packages/charts/react-charts/library/react-charts.tgz
 
             - name: Checkout [main] of current repo
-              uses: actions/checkout@v4
+              uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
               with:
                 path: contrib_repo
 
@@ -136,13 +136,13 @@ jobs:
                 baseline_report: contrib_repo/apps/plotly_examples/reports/playwright-report-v9.json        
 
             - name: Upload Playwright HTML report as artifact
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
               with: 
                 name: playwright-html-report
                 path: contrib_repo/apps/plotly_examples/playwright-report/
 
             - name: Upload Playwright JSON report as artifact
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
               with: 
                 name: playwright-json-report
                 path: contrib_repo/apps/plotly_examples/playwright-report.json
@@ -165,7 +165,7 @@ jobs:
 
             - name: Commit and push v9 scheduled report
               if: github.event_name == 'schedule'
-              uses: stefanzweifel/git-auto-commit-action@v5
+              uses: stefanzweifel/git-auto-commit-action@b863ae1933cb653a53c021fe36dbb774e1fb9403 # v5.2.0
               with:
                 branch: ${{ steps.branch.outputs.branch }}
                 create_branch: true
