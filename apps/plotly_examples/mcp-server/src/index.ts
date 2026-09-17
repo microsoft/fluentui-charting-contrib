@@ -1,8 +1,9 @@
 import express from "express";
-import { randomUUID } from "node:crypto";
+import { randomBytes, randomUUID, timingSafeEqual } from "node:crypto";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import { isInitializeRequest } from "@modelcontextprotocol/sdk/types.js";
+import { z } from "zod";
 import path from "path";
 import fs from "fs";
 import { fileURLToPath } from 'url';
@@ -144,8 +145,90 @@ declare global {
 let globalChartType: string | undefined;
 
 const PORT = process.env.PORT ? parseInt(process.env.PORT) : 8000;
+const AUTH_TOKEN = randomBytes(32).toString('hex');
+const REST_TOOL_BRIDGE_ENABLED = process.env.ENABLE_REST_TOOL_BRIDGE === 'true';
+const LOOPBACK_HOSTS = new Set(['localhost', '127.0.0.1', '::1']);
+
+function parseConfiguredValues(value: string | undefined): string[] {
+  return value?.split(',').map(entry => entry.trim()).filter(Boolean) || [];
+}
+
+function normalizeHostname(value: string): string | undefined {
+  try {
+    const parsedHost = new URL(`http://${value}`);
+    if (parsedHost.username || parsedHost.password || parsedHost.pathname !== '/' || parsedHost.search || parsedHost.hash) {
+      return undefined;
+    }
+    return parsedHost.hostname.toLowerCase();
+  } catch {
+    return undefined;
+  }
+}
+
+const allowedHosts = new Set([
+  ...LOOPBACK_HOSTS,
+  ...parseConfiguredValues(process.env.MCP_ALLOWED_HOSTS)
+    .map(normalizeHostname)
+    .filter((host): host is string => !!host),
+]);
+
+const allowedOrigins = new Set(
+  parseConfiguredValues(process.env.MCP_ALLOWED_ORIGINS).map(origin => {
+    try {
+      return new URL(origin).origin;
+    } catch {
+      throw new Error(`Invalid origin in MCP_ALLOWED_ORIGINS: ${origin}`);
+    }
+  }),
+);
+
+function isTrustedOrigin(origin: string): boolean {
+  try {
+    const parsedOrigin = new URL(origin);
+    return (parsedOrigin.protocol === 'http:' || parsedOrigin.protocol === 'https:') &&
+      (LOOPBACK_HOSTS.has(parsedOrigin.hostname.toLowerCase()) || allowedOrigins.has(parsedOrigin.origin));
+  } catch {
+    return false;
+  }
+}
+
+function hasValidAuthorization(authorization: string | undefined): boolean {
+  const match = authorization?.match(/^Bearer\s+(.+)$/i);
+  if (!match) return false;
+
+  const suppliedToken = Buffer.from(match[1], 'utf8');
+  const expectedToken = Buffer.from(AUTH_TOKEN, 'utf8');
+  return suppliedToken.length === expectedToken.length && timingSafeEqual(suppliedToken, expectedToken);
+}
 
 const app = express();
+
+app.use((req, res, next) => {
+  const hostname = req.headers.host ? normalizeHostname(req.headers.host) : undefined;
+  if (!hostname || !allowedHosts.has(hostname)) {
+    return res.status(403).json({ error: 'Untrusted Host header' });
+  }
+
+  const origin = req.headers.origin;
+  if (origin && !isTrustedOrigin(origin)) {
+    return res.status(403).json({ error: 'Untrusted Origin header' });
+  }
+
+  if (!hasValidAuthorization(req.headers.authorization)) {
+    res.setHeader('WWW-Authenticate', 'Bearer');
+    return res.status(401).json({ error: 'Unauthorized' });
+  }
+
+  next();
+});
+
+app.use(['/tools', '/test'], (_req, res, next) => {
+  if (!REST_TOOL_BRIDGE_ENABLED) {
+    return res.status(404).json({ error: 'REST tool bridge is disabled' });
+  }
+  next();
+});
+
 app.use(express.json());
 
 // Map to store transports by session ID
@@ -162,11 +245,6 @@ function buildServer() {
   const server = new McpServer({
     name: "plotly-dataset-mcp",
     version: "1.0.0",
-    capabilities: {
-      resources: {},
-      tools: {},
-      sampling: {}, // Enable sampling capability for LLM access
-    },
   });
 
   // MCP tool to generate visualization scenarios using LLM (following generate_plotly_schema.py logic)
@@ -620,10 +698,10 @@ Check server logs for progress.`;
     "generate-visualization-scenarios",
     "Generate detailed visualization scenarios for industries using LLM. First analyzes the chart type to identify optimal use cases, then generates chart-optimized scenarios.json based on user prompt, and finally creates individual industry scenarios tailored to leverage the chart type's strengths.",
     {
-      chartType: { type: "string", description: "Chart type identifier to analyze and generate scenarios for" },
-      prompt: { type: "string", description: "User prompt describing the specific use case or requirements for scenario generation" },
-      userPrompt: { type: "string", description: "Alternative parameter name for user prompt (same as prompt)" },
-      query: { type: "string", description: "Query string that may contain chart type and user requirements" }
+      chartType: z.string().optional().describe("Chart type identifier to analyze and generate scenarios for"),
+      prompt: z.string().optional().describe("User prompt describing the specific use case or requirements for scenario generation"),
+      userPrompt: z.string().optional().describe("Alternative parameter name for user prompt (same as prompt)"),
+      query: z.string().optional().describe("Query string that may contain chart type and user requirements"),
     },
     generateVisualizationScenariosHandler
   );
@@ -886,10 +964,10 @@ The script should be complete and executable, generating both visualization file
     "generate-visualization-codes",
     "Generate comprehensive Python Plotly code for scenarios using all scenario fields (industry, scenario_name, scenario_description, columns, sources, aggregation_level). Creates detailed, executable Python scripts with realistic data generation.",
     {
-      chartType: { type: "string", description: "Chart type identifier" },
-      prompt: { type: "string", description: "User prompt describing the specific use case or requirements for code generation" },
-      userPrompt: { type: "string", description: "Alternative parameter name for user prompt (same as prompt)" },
-      query: { type: "string", description: "Query string that may contain chart type and user requirements" }
+      chartType: z.string().optional().describe("Chart type identifier"),
+      prompt: z.string().optional().describe("User prompt describing the specific use case or requirements for code generation"),
+      userPrompt: z.string().optional().describe("Alternative parameter name for user prompt (same as prompt)"),
+      query: z.string().optional().describe("Query string that may contain chart type and user requirements"),
     },
     generateVisualizationCodesHandler
   );
@@ -1201,26 +1279,11 @@ The script should be complete and executable, generating both visualization file
     "execute-visualization-codes",
     "Execute Python visualization codes with auto-fix capability using MCP sampling for error correction and chart type validation.",
     {
-      chartType: { 
-        type: "string", 
-        description: "Chart type to validate in generated JSON files" 
-      },
-      maxAttempts: { 
-        type: "number", 
-        description: "Maximum number of retry attempts for each file (default: 3)" 
-      },
-      prompt: { 
-        type: "string", 
-        description: "User prompt describing the specific execution requirements or validation criteria" 
-      },
-      userPrompt: { 
-        type: "string", 
-        description: "Alternative parameter name for user prompt (same as prompt)" 
-      },
-      query: { 
-        type: "string", 
-        description: "Query string that may contain chart type and execution requirements" 
-      }
+      chartType: z.string().optional().describe("Chart type to validate in generated JSON files"),
+      maxAttempts: z.number().optional().describe("Maximum number of retry attempts for each file (default: 3)"),
+      prompt: z.string().optional().describe("User prompt describing the specific execution requirements or validation criteria"),
+      userPrompt: z.string().optional().describe("Alternative parameter name for user prompt (same as prompt)"),
+      query: z.string().optional().describe("Query string that may contain chart type and execution requirements"),
     },
     executeVisualizationCodesHandler
   );
@@ -1609,19 +1672,9 @@ print(f"Total figures saved: {figure_count}")
     "execute-python-and-capture-chart",
     "Execute Python code from a string that generates a Plotly chart, convert it to Fluent UI representation, and capture it as an image using Playwright. Returns the chart image as base64 data along with the chart JSON.",
     {
-      pythonCode: { 
-        type: "string", 
-        description: "Python code as a string that creates a Plotly figure. This parameter is required." 
-      },
-      timeout: { 
-        type: "number", 
-        description: "Python execution timeout in milliseconds (default: 30000)" 
-      },
-      outputFormat: { 
-        type: "string", 
-        enum: ["png", "jpeg"],
-        description: "Image output format (default: png)" 
-      }
+      pythonCode: z.string().describe("Python code as a string that creates a Plotly figure. This parameter is required."),
+      timeout: z.number().optional().describe("Python execution timeout in milliseconds (default: 30000)"),
+      outputFormat: z.enum(["png", "jpeg"]).optional().describe("Image output format (default: png)"),
     },
     executePythonAndCaptureChartHandler
   );
@@ -1856,16 +1909,8 @@ app.listen(PORT, () => {
   buildServer();
   
   console.log(`Server listening on port ${PORT}`);
-  console.log(`Available endpoints:`);
-  console.log(`  POST /tools/generate-datasets - Generate Plotly datasets`);
-  console.log(`  POST /tools/invoke-LLM - Invoke LLM via MCP sampling (createMessage API)`);
-  console.log(`  POST /tools/generate-visualization-scenarios - Generate visualization scenarios from JSON`);
-  console.log(`  POST /tools/generate-visualization-codes - Generate Python code for scenarios`);
-  console.log(`  POST /tools/execute-visualization-codes - Execute Python codes with auto-fix`);
-  console.log(`  GET /tools - List available tools`);
-  console.log(`  GET /test/generate-datasets?prompt=<prompt> - Test dataset generation`);
-  console.log(`  GET /test/invoke-llm?prompt=<prompt>&maxTokens=<tokens> - Test LLM invocation`);
-  console.log(`  GET /test/execute-visualization-codes?chartType=<type>&maxAttempts=<num> - Test Python execution with auto-fix`);
+  console.log(`Authentication token for this run: ${AUTH_TOKEN}`);
+  console.log(`REST tool bridge: ${REST_TOOL_BRIDGE_ENABLED ? 'enabled' : 'disabled'}`);
   console.log(`\nMCP LLM Integration:`);
   console.log(`  - Uses server.createMessage() for direct LLM access`);
   console.log(`  - Supports MCP sampling capabilities`);
