@@ -12,7 +12,7 @@ function sanitizeFileName(fileName: string): string {
 
 
 const areaChartStories = [
-  '#story--charts-areachart--area-chart-basic-inner',
+  '#story--charts-areachart--area-chart-basic--primary-inner',
   '#story--charts-areachart--area-chart-custom-accessibility-inner',
   '#story--charts-areachart--area-chart-large-data-inner',
   '#story--charts-areachart--area-chart-multiple-inner',
@@ -23,7 +23,7 @@ const areaChartStories = [
 ];
 
 const donutChartStories = [
-  '#story--charts-donutchart--donut-chart-basic-inner',
+  '#story--charts-donutchart--donut-chart-basic--primary-inner',
   '#story--charts-donutchart--donut-chart-custom-accessibility-inner',
   '#story--charts-donutchart--donut-chart-dynamic-inner',
   '#story--charts-donutchart--donut-chart-custom-callout-inner',
@@ -32,34 +32,34 @@ const donutChartStories = [
 ];
 
 const funnelChartStories = [
-  '#story--charts-funnelchart--funnel-chart-basic-inner',
+  '#story--charts-funnelchart--funnel-chart-basic--primary-inner',
   '#story--charts-funnelchart--funnel-chart-stacked-inner'
 ];
 
 const ganttChartStories = [
-  '#story--charts-ganttchart--gantt-chart-basic-inner',
+  '#story--charts-ganttchart--gantt-chart-basic--primary-inner',
   '#story--charts-ganttchart--gantt-chart-grouped-inner'
 ];
 
 const guageChartStories = [
-  '#story--charts-gaugechart--gauge-chart-basic-inner',
+  '#story--charts-gaugechart--gauge-chart-basic--primary-inner',
   '#story--charts-gaugechart--gauge-chart-single-segment-inner',
   '#story--charts-gaugechart--gauge-chart-responsive-inner'
 ];
 
 const gvbChartStories = [
-  '#story--charts-groupedverticalbarchart--grouped-vertical-bar-default-inner',
+  '#story--charts-groupedverticalbarchart--grouped-vertical-bar-default--primary-inner',
   '#story--charts-groupedverticalbarchart--grouped-vertical-bar-negative-inner',
   '#story--charts-groupedverticalbarchart--grouped-vertical-bar-secondary-y-axis-inner'
 ];
 
 const heatMapChartStories = [
-  '#story--charts-heatmapchart--heat-map-chart-basic-inner',
+  '#story--charts-heatmapchart--heat-map-chart-basic--primary-inner',
   '#story--charts-heatmapchart--heat-map-chart-custom-accessibility-inner'
 ];
 
 const horizontalBarChartStories = [
-  '#story--charts-horizontalbarchart--horizontal-bar-basic-inner',
+  '#story--charts-horizontalbarchart--horizontal-bar-basic--primary-inner',
   '#story--charts-horizontalbarchart--horizontal-bar-absolute-scale-inner',
   '#story--charts-horizontalbarchart--horizontal-bar-benchmark-inner',
   '#story--charts-horizontalbarchart--horizontal-bar-stacked-inner',
@@ -69,13 +69,13 @@ const horizontalBarChartStories = [
 ];
 
 const horizontalBarChartWithAxisStories = [
-  '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-basic-inner',
+  '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-basic--primary-inner',
   '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-string-axis-tooltip-inner',
   // '#story--charts-horizontalbarchartwithaxis--horizontal-bar-with-axis-dynamic-inner'
 ];
 
 const legendsStories = [
-  '#story--charts-legends--legends-basic-inner',
+  '#story--charts-legends--legends-basic--primary-inner',
   '#story--charts-legends--legends-overflow-inner',
   '#story--charts-legends--legends-styled-inner',
   '#story--charts-legends--legends-wrap-lines-inner',
@@ -83,7 +83,7 @@ const legendsStories = [
 ];
 
 const lineChartStories = [
-  '#story--charts-linechart--line-chart-basic-inner',
+  '#story--charts-linechart--line-chart-basic--primary-inner',
   '#story--charts-linechart--line-chart-custom-accessibility-inner',
   '#story--charts-linechart--line-chart-multiple-inner',
   '#story--charts-linechart--line-chart-styled-inner',
@@ -97,24 +97,24 @@ const lineChartStories = [
 ];
 
 const sankeyChartStories = [
-  '#story--charts-sankeychart--sankey-chart-basic-inner',
+  '#story--charts-sankeychart--sankey-chart-basic--primary-inner',
   '#story--charts-sankeychart--sankey-chart-inbox-inner',
   '#story--charts-sankeychart--sankey-chart-rebalance-inner',
   '#story--charts-sankeychart--sankey-chart-responsive-inner'
 ];
 
 const scatterChartStories = [
-  '#story--charts-scatterchart--scatter-chart-default-inner',
+  '#story--charts-scatterchart--scatter-chart-default--primary-inner',
   '#story--charts-scatterchart--scatter-chart-date-inner',
   '#story--charts-scatterchart--scatter-chart-string-inner',
 ];
 
 const sparklineChartStories = [
-  '#story--charts-sparkline--sparkline-basic--primary-inner'
+  '#story--charts-sparkline--sparkline-basic--primary--primary-inner'
 ];
 
 const verticalBarChartStories = [
-  '#story--charts-verticalbarchart--vertical-bar-default-inner',
+  '#story--charts-verticalbarchart--vertical-bar-default--primary-inner',
   '#story--charts-verticalbarchart--vertical-bar-custom-accessibility-inner',
   '#story--charts-verticalbarchart--vertical-bar-date-axis-inner',
   '#story--charts-verticalbarchart--vertical-bar-axis-tooltip-inner',
@@ -128,7 +128,7 @@ const verticalBarChartStories = [
 ];
 
 const verticalStackedBarChartStories = [
-  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default-inner',
+  '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner',
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-axis-tooltip-inner',
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-callout-inner',
   '#story--charts-verticalstackedbarchart--vertical-stacked-bar-custom-accessibility-inner',
