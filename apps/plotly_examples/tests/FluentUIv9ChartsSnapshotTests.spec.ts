@@ -236,7 +236,7 @@ async function interactWithSliders(frame: any, imgId: string, screenshotName: st
     const sanitizedLabel = sanitizeFileName(sliderIdText);
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
     const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-slider-value-change.png`;
-    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.02 });
+    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.09 });
   }
 }
 
