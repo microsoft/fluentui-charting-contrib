@@ -110,7 +110,7 @@ const scatterChartStories = [
 ];
 
 const sparklineChartStories = [
-  '#story--charts-sparkline--sparkline-basic--primary--primary-inner'
+  '#story--charts-sparkline--sparkline-basic--primary-inner'
 ];
 
 const verticalBarChartStories = [
