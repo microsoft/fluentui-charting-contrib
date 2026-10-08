@@ -194,9 +194,8 @@ async function interactWithLegends(frame: any, imgId: string, screenshotName: st
     const labelText = label ? label.split('(')[0].trim() : 'unknown';
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
     const sanitizedLabel = sanitizeFileName(labelText);
-    const buffer = await frame.locator(`#${imgId}`).screenshot();
     const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-legend-click.png`;
-    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.9 });
+    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot(snapshotFilename, { maxDiffPixelRatio: 0.02 });
   }
 }
 
@@ -210,11 +209,10 @@ async function interactWithRadios(frame: any, imgId: string, screenshotName: str
     await radios.nth(i).check();
     const label = await frame.locator(`label[for="${await radios.nth(i).getAttribute('id')}"]`).textContent();
     const labelText = label.split('(')[0].trim();
-    const buffer = await frame.locator(`#${imgId}`).screenshot();
     const sanitizedLabel = sanitizeFileName(labelText);
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
     const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-radio-button-click.png`;
-    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.9 });
+    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot(snapshotFilename, { maxDiffPixelRatio: 0.02 });
   }
 }
 
@@ -232,11 +230,10 @@ async function interactWithSliders(frame: any, imgId: string, screenshotName: st
     // Try to get the label associated with the slider by its id
     const sliderId = await slider.getAttribute('id');
     const sliderIdText = sliderId.split('(')[0].trim();
-    const buffer = await frame.locator(`#${imgId}`).screenshot();
     const sanitizedLabel = sanitizeFileName(sliderIdText);
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
     const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-slider-value-change.png`;
-    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.9 });
+    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot(snapshotFilename, { maxDiffPixelRatio: 0.02 });
   }
 }
 
@@ -251,11 +248,10 @@ async function interactWithSwitches(frame: any, imgId: string, screenshotName: s
     await control.click();
     const label = await frame.locator(`label[for="${await control.getAttribute('id')}"]`).textContent();
     const labelText = label.split('(')[0].trim();
-    const buffer = await frame.locator(`#${imgId}`).screenshot();
     const sanitizedLabel = sanitizeFileName(labelText);
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
     const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-checkbox-click.png`;
-    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.9 });
+    await expect(frame.locator(`#${imgId}`)).toHaveScreenshot(snapshotFilename, { maxDiffPixelRatio: 0.02 });
 
   }
 }
