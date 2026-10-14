@@ -56,7 +56,7 @@ jobs:
         echo "CURRENT_BRANCH=$(git branch --show-current)" >> $GITHUB_ENV
       
     - name: "Send Notification regarding changes"
-      uses: hunghg255/action-notifications@master
+      uses: hunghg255/action-notifications@894db3cd6f36df54782882ec35daf3880dfeb5bd # v1.0.16
       if: steps.auto-commit-action.outputs.changes_detected == 'true'
       with:
         discord_webhook: ${{ secrets.DISCORD_WEBHOOK }}
