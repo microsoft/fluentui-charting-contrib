@@ -62,15 +62,28 @@ jobs:
                 cd ./repo1
                 yarn
 
+            - name: Build Storybook playground addon
+              run: |
+                cd ./repo1
+                yarn nx run react-storybook-addon-playground:build
+
             - name: Checkout [main] of current repo
               uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
               with:
                 path: contrib_repo
 
-            - name: Install packages
+            - name: Install contrib packages
+              shell: pwsh
               run: |
                 cd contrib_repo/apps/plotly_examples
-                yarn
+                yarn --frozen-lockfile --network-timeout 600000
+                if ($LASTEXITCODE -ne 0) {
+                  Write-Warning "Yarn install failed. Clearing the cache and retrying once."
+                  yarn cache clean
+                  if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+                  yarn --frozen-lockfile --network-timeout 600000
+                  if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+                }
 
             - name: Run Playwright test script (with webServer)
               run: |
