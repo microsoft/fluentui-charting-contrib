@@ -50,6 +50,11 @@ jobs:
                 cd ./repo1
                 yarn
 
+            - name: Build Storybook playground addon
+              run: |
+                cd ./repo1
+                yarn nx run react-storybook-addon-playground:build
+
             - name: Checkout [main] of current repo
               uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
               with:
