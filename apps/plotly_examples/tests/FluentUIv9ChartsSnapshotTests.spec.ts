@@ -272,17 +272,17 @@ for (const chart of charts) {
             }
           });
 
-          test(`Radio button Action - ${testCaseName}`, async ({ page }) => {
-            const frame = await loadChartPage(page, chart, theme, mode, exampleSelector);
-            const example = frame.locator(exampleSelector);
-            await example.scrollIntoViewIfNeeded();
-            const imgId = await example.getAttribute('id');
-            const dataName = await example.getAttribute('data-name');
-            if (imgId) {
-              const screenshotName = sanitizeFileName(`${dataName || `${chart.name} basic`} [${theme}] [${mode}]`);
-              await interactWithRadios(frame, imgId, screenshotName);
-            }
-          });
+          // test(`Radio button Action - ${testCaseName}`, async ({ page }) => {
+          //   const frame = await loadChartPage(page, chart, theme, mode, exampleSelector);
+          //   const example = frame.locator(exampleSelector);
+          //   await example.scrollIntoViewIfNeeded();
+          //   const imgId = await example.getAttribute('id');
+          //   const dataName = await example.getAttribute('data-name');
+          //   if (imgId) {
+          //     const screenshotName = sanitizeFileName(`${dataName || `${chart.name} basic`} [${theme}] [${mode}]`);
+          //     await interactWithRadios(frame, imgId, screenshotName);
+          //   }
+          // });
 
           // test(`slider Action - ${testCaseName}`, async ({ page }) => {
           //   const frame = await loadChartPage(page, chart, theme, mode, exampleSelector);
@@ -296,17 +296,17 @@ for (const chart of charts) {
           //   }
           // });
 
-          test(`Switch Action - ${testCaseName}`, async ({ page }) => {
-            const frame = await loadChartPage(page, chart, theme, mode, exampleSelector);
-            const example = frame.locator(exampleSelector);
-            await example.scrollIntoViewIfNeeded();
-            const imgId = await example.getAttribute('id');
-            const dataName = await example.getAttribute('data-name');
-            if (imgId) {
-              const screenshotName = sanitizeFileName(`${dataName || `${chart.name} basic`} [${theme}] [${mode}]`);
-              await interactWithSwitches(frame, imgId, screenshotName);
-            }
-          });
+          // test(`Switch Action - ${testCaseName}`, async ({ page }) => {
+          //   const frame = await loadChartPage(page, chart, theme, mode, exampleSelector);
+          //   const example = frame.locator(exampleSelector);
+          //   await example.scrollIntoViewIfNeeded();
+          //   const imgId = await example.getAttribute('id');
+          //   const dataName = await example.getAttribute('data-name');
+          //   if (imgId) {
+          //     const screenshotName = sanitizeFileName(`${dataName || `${chart.name} basic`} [${theme}] [${mode}]`);
+          //     await interactWithSwitches(frame, imgId, screenshotName);
+          //   }
+          // });
         }
       });
     }

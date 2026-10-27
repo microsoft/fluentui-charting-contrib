@@ -79,15 +79,6 @@ jobs:
                 npx playwright install
                 npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --config playwright-storybook-v9.config.ts --update-snapshots || true
 
-            - name: Upload Playwright failure report
-              if: failure()
-              uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
-              with:
-                name: v9-storybook-snapshot-failure
-                path: |
-                  contrib_repo/apps/plotly_examples/playwright-report/
-                  contrib_repo/apps/plotly_examples/test-results/
-
             - name: Create branch with timestamp
               if: github.event_name == 'workflow_dispatch' || steps.skip_check.outputs.skip_job != 'true'
               id: branch
