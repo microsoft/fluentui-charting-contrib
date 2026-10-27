@@ -44,6 +44,23 @@ plotly_examples
 
 The application displays charts based on the data defined in `src/data/parsed_data.json`. The `DeclarativeChart` component in `src/components/DeclarativeChart.tsx` processes this data and renders it using the Fluent UI Charting library.
 
+## V9 Storybook snapshots
+
+Run `npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --config playwright-storybook-v9.config.ts`
+from this directory. The configuration expects a Fluent UI checkout at
+`../../../repo1` and starts its v9 public-docsite Storybook.
+
+Each test waits for the selected example to render before querying its controls.
+Captures use Playwright's stable screenshot assertion with animations disabled,
+keeping the existing snapshot names and 2% pixel-difference tolerance.
+Failed runs retain traces and page screenshots. The snapshot-update workflow
+uploads failure reports and does not commit snapshots if any test fails.
+
+Run the standalone capture regression tests without a Storybook checkout using
+`npx playwright test tests/storybookSnapshot.spec.ts --config playwright.config.ts`.
+They cover lazy iframe rendering, empty stories, HTML-only legends, and chart
+animations that initially render a blank frame.
+
 ## Developing with local version of react-charting package
 1. Navigate to the local setup of `fluentui\packages\charts\react-charting`
 2. Run `yarn link`
