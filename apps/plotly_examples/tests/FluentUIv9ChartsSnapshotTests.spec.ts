@@ -1,5 +1,5 @@
 import { test, expect, FrameLocator, Page } from '@playwright/test';
-import { expectStoryScreenshot, waitForStoryReady } from './storybookSnapshot';
+import { expectStoryScreenshot, performStorybookAction, waitForStorybookReady } from './storybookSnapshot';
 
 // Function to sanitize file names for Windows compatibility
 function sanitizeFileName(fileName: string): string {
@@ -170,24 +170,30 @@ async function loadChartPage(
   await page.goto(`http://localhost:3000/?path=/docs/charts_${chart.path}`);
 
   const storybookFrame = page.locator('iframe[title="storybook-ref-charts"]').contentFrame();
+  const example = storybookFrame.locator(exampleSelector);
+  await waitForStorybookReady(page, example);
   await storybookFrame.getByRole('button', { name: 'Theme' }).press('Enter');
   const item = storybookFrame.getByRole('menuitemradio', { name: theme });
   await expect(item).toBeVisible();
   await item.press('Enter');
+  await expect(item).toBeHidden();
+  await waitForStorybookReady(page, example);
 
   // Only check RTL direction if mode is RTL
   if (mode === 'RTL') {
-    await storybookFrame.locator('[id^="dir-switch_r_"]').click();
+    await performStorybookAction(example, () => storybookFrame.locator('[id^="dir-switch_r_"]').click());
   }
-  await waitForStoryReady(storybookFrame.locator(exampleSelector));
+  await waitForStorybookReady(page, example);
   return storybookFrame;
 }
 // Helper to interact with controls and take screenshots
 async function interactWithLegends(frame: FrameLocator, imgId: string, screenshotName: string) {
+  const example = frame.locator(`#${imgId}`);
+  await waitForStorybookReady(example.page(), example);
   const legendItems = frame.locator(`#${imgId} button[type="button"][role="option"]`);
   const count = await legendItems.count();
   if (count > 0) {
-    await legendItems.first().click();
+    await performStorybookAction(example, () => legendItems.first().click());
     const label = await legendItems.first().getAttribute('aria-label');
     const labelText = label ? label.split('(')[0].trim() : 'unknown';
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
@@ -198,13 +204,15 @@ async function interactWithLegends(frame: FrameLocator, imgId: string, screensho
 }
 
 async function interactWithRadios(frame: FrameLocator, imgId: string, screenshotName: string) {
+  const example = frame.locator(`#${imgId}`);
+  await waitForStorybookReady(example.page(), example);
   const radios = frame.locator(`#${imgId} input[type="radio"]`);
   for (let i = 0, count = await radios.count(); i < count; i++) {
     if (!(await radios.nth(i).isEnabled())) {
       // Skip this slider if it's disabled
       continue;
     }
-    await radios.nth(i).check();
+    await performStorybookAction(example, () => radios.nth(i).check());
     const label = await frame.locator(`label[for="${await radios.nth(i).getAttribute('id')}"]`).innerText();
     const labelText = label.split('(')[0].trim();
     const sanitizedLabel = sanitizeFileName(labelText);
@@ -215,6 +223,8 @@ async function interactWithRadios(frame: FrameLocator, imgId: string, screenshot
 }
 
 async function interactWithSliders(frame: FrameLocator, imgId: string, screenshotName: string) {
+  const example = frame.locator(`#${imgId}`);
+  await waitForStorybookReady(example.page(), example);
   const sliders = frame.locator(`#${imgId} input[type="range"]`);
   for (let i = 0, count = await sliders.count(); i < count; i++) {
     const slider = sliders.nth(i);
@@ -224,7 +234,7 @@ async function interactWithSliders(frame: FrameLocator, imgId: string, screensho
     const min = Number(await slider.getAttribute('min')) || 0;
     const max = Number(await slider.getAttribute('max')) || 100;
     const middle = Math.round((min + max) / 2);
-    await slider.fill(middle.toString());
+    await performStorybookAction(example, () => slider.fill(middle.toString()));
     // Try to get the label associated with the slider by its id
     const sliderId = await slider.evaluate(element => element.id);
     const sliderIdText = sliderId.split('(')[0].trim();
@@ -236,6 +246,8 @@ async function interactWithSliders(frame: FrameLocator, imgId: string, screensho
 }
 
 async function interactWithSwitches(frame: FrameLocator, imgId: string, screenshotName: string) {
+  const example = frame.locator(`#${imgId}`);
+  await waitForStorybookReady(example.page(), example);
   const switches = frame.locator(`#${imgId} input[type="checkbox"], #${imgId} input[type="switch"]`);
   for (let i = 0, count = await switches.count(); i < count; i++) {
     const control = switches.nth(i);
@@ -243,7 +255,7 @@ async function interactWithSwitches(frame: FrameLocator, imgId: string, screensh
       // Skip this slider if it's disabled
       continue;
     }
-    await control.click();
+    await performStorybookAction(example, () => control.click());
     const label = await frame.locator(`label[for="${await control.getAttribute('id')}"]`).innerText();
     const labelText = label.split('(')[0].trim();
     const sanitizedLabel = sanitizeFileName(labelText);

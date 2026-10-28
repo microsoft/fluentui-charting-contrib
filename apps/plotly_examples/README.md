@@ -51,6 +51,12 @@ from this directory. The configuration expects a Fluent UI checkout at
 `../../../repo1` and starts its v9 public-docsite Storybook.
 
 Each test waits for the selected example to render before querying its controls.
+Before theme and direction interactions, it also waits for the parent Storybook
+manager's loading wrapper around `#preview-loader` to disappear. The wrapper can
+block pointer events even if the spinner itself is hidden. Readiness is checked
+before and after each legend, radio, slider, or switch interaction and before
+capturing screenshots, since loading can restart after page setup. Loading waits
+time out after 30 seconds; they do not force clicks through the overlay.
 Captures use Playwright's stable screenshot assertion with animations disabled,
 keeping the existing snapshot names and 2% pixel-difference tolerance.
 Failed runs retain traces and page screenshots. The snapshot-update workflow
@@ -58,8 +64,10 @@ uploads failure reports and does not commit snapshots if any test fails.
 
 Run the standalone capture regression tests without a Storybook checkout using
 `npx playwright test tests/storybookSnapshot.spec.ts --config playwright.config.ts`.
-They cover lazy iframe rendering, empty stories, HTML-only legends, and chart
-animations that initially render a blank frame.
+They cover parent-manager loading overlays (including hidden spinners and
+overlays appearing after setup or interactions), lazy iframe rendering, empty
+stories, HTML-only legends, and chart animations that initially render a blank
+frame.
 
 ## Developing with local version of react-charting package
 1. Navigate to the local setup of `fluentui\packages\charts\react-charting`
