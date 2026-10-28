@@ -26,7 +26,10 @@ export async function waitForStoryReady(example: Locator) {
 }
 
 export async function expectStoryScreenshot(example: Locator, snapshotFilename: string) {
-  await waitForStorybookReady(example.page(), example);
+  const page = example.page();
+  await waitForStorybookReady(page, example);
+  await page.waitForTimeout(1000);
+  await waitForStorybookReady(page, example);
   await expect(example).toHaveScreenshot(snapshotFilename, {
     animations: 'disabled',
     maxDiffPixelRatio: 0.02,

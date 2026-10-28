@@ -59,6 +59,9 @@ capturing screenshots, since loading can restart after page setup. Loading waits
 time out after 30 seconds; they do not force clicks through the overlay.
 Captures use Playwright's stable screenshot assertion with animations disabled,
 keeping the existing snapshot names and 2% pixel-difference tolerance.
+Each capture includes a one-second settling delay after readiness, followed by
+another readiness check in case loading restarted during the delay. This adds
+at least one second per screenshot to the test runtime.
 Failed runs retain traces and page screenshots. The snapshot-update workflow
 uploads failure reports and does not commit snapshots if any test fails.
 

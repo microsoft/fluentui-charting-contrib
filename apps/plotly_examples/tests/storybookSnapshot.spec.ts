@@ -170,7 +170,9 @@ test('captures the finished chart rather than its blank animation frame', async 
 
   await expect(frame.locator('svg')).toHaveCSS('opacity', '0');
   await showLoadingOverlay(page);
+  const captureStartedAt = performance.now();
   await expectStoryScreenshot(frame.locator('#story'), 'finished-chart.png');
+  expect(performance.now() - captureStartedAt).toBeGreaterThanOrEqual(1000);
   await expect(page.locator('#loading-overlay')).toBeHidden();
   await expect(frame.locator('svg')).toHaveCSS('opacity', '1');
 });
