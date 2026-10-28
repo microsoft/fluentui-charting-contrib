@@ -1,5 +1,74 @@
 import { test, expect, Page } from '@playwright/test';
-import { expectStoryScreenshot, performStorybookAction, waitForStorybookReady, waitForStoryReady } from './storybookSnapshot';
+import { expectStoryScreenshot, openStorybookPreview, performStorybookAction, waitForStorybookReady, waitForStoryReady } from './storybookSnapshot';
+
+for (const source of [
+  '/charts/iframe.html?id=stale&viewMode=story&version=10.6.0&globals=locale:en;storybook_fluentui-react-addon_theme:teams-dark',
+  'http://charts.test/charts/iframe.html?id=stale&viewMode=story&version=10.6.0&globals=locale:en;storybook_fluentui-react-addon_dir:rtl',
+]) {
+  for (const [theme, mode] of [
+    ['Web Light', 'LTR'], ['Web Light', 'RTL'], ['Web Dark', 'LTR'], ['Web Dark', 'RTL'],
+  ] as const) {
+    test(`opens ${theme} ${mode} despite a permanently stuck manager: ${source}`, async ({ page }) => {
+      await page.route('**/*', async route => {
+        const url = new URL(route.request().url());
+        if (url.pathname === '/manager') {
+          await route.fulfill({
+            contentType: 'text/html',
+            body: `
+              <iframe title="storybook-ref-charts" src="${source}" style="width: 806px; height: 600px; border: 0"></iframe>
+              <div style="position: fixed; inset: 0; background: white; z-index: 9999">
+                <div id="preview-loader" role="progressbar">Loading forever</div>
+              </div>
+            `,
+          });
+        } else {
+          const globals = url.searchParams.get('globals') ?? '';
+          const selectedTheme = globals.includes('storybook_fluentui-react-addon_theme:web-dark') ? 'Web Dark' : 'Web Light';
+          const rtl = globals.includes('storybook_fluentui-react-addon_dir:rtl');
+          await route.fulfill({
+            contentType: 'text/html',
+            body: `
+              <html dir="${rtl ? 'rtl' : 'ltr'}" data-theme="${selectedTheme}">
+                <button>${selectedTheme}</button>
+                <input id="dir-switch_r_test_" type="checkbox" role="switch" ${rtl ? 'checked' : ''}>
+                <div id="story--charts-ganttchart--gantt-chart-grouped-inner">
+                  <button type="button" role="option" aria-selected="false"
+                    onclick="this.setAttribute('aria-selected', 'true')">Complete</button>
+                </div>
+              </html>
+            `,
+          });
+        }
+      });
+      await page.goto('http://storybook.test/manager');
+      await expect(page.locator('#preview-loader')).toBeVisible();
+
+      await openStorybookPreview(page, 'charts-GanttChart--docs', theme, mode);
+
+      const previewUrl = new URL(page.url());
+      expect(previewUrl.origin).toBe(new URL(source, 'http://storybook.test').origin);
+      expect(previewUrl.pathname).toBe('/charts/iframe.html');
+      expect(previewUrl.searchParams.get('id')).toBe('charts-ganttchart--docs');
+      expect(previewUrl.searchParams.get('viewMode')).toBe('docs');
+      expect(previewUrl.searchParams.get('version')).toBe('10.6.0');
+      expect(previewUrl.searchParams.get('globals')).toBe(
+        `locale:en;storybook_fluentui-react-addon_theme:${theme === 'Web Dark' ? 'web-dark' : 'web-light'};storybook_fluentui-react-addon_dir:${mode.toLowerCase()}`
+      );
+      expect(page.viewportSize()).toEqual({ width: 806, height: 600 });
+      await expect(page.locator('iframe')).toHaveCount(0);
+      await expect(page.locator('#preview-loader')).toHaveCount(0);
+
+      const example = page.locator('#story--charts-ganttchart--gantt-chart-grouped-inner');
+      await waitForStorybookReady(page, example);
+      await expect(page.getByRole('button', { name: theme, exact: true })).toBeVisible();
+      await expect(page.getByRole('switch')).toBeChecked({ checked: mode === 'RTL' });
+      await expect(page.locator('html')).toHaveAttribute('data-theme', theme);
+      await expect(example).toHaveCSS('direction', mode.toLowerCase());
+      await performStorybookAction(example, () => example.getByRole('option').click());
+      await expect(example.getByRole('option')).toHaveAttribute('aria-selected', 'true');
+    });
+  }
+}
 
 async function showLoadingOverlay(page: Page) {
   await page.evaluate(() => {

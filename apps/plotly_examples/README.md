@@ -50,24 +50,37 @@ Run `npx playwright test tests/FluentUIv9ChartsSnapshotTests.spec.ts --config pl
 from this directory. The configuration expects a Fluent UI checkout at
 `../../../repo1` and starts its v9 public-docsite Storybook.
 
+Each test reads the charts reference iframe's URL from the manager, then opens
+that `iframe.html` URL directly in docs mode. This avoids a stuck manager loading
+overlay without removing it, forcing clicks through it, or depending on the
+manager/preview initialization handshake. The configured preview origin and URL
+parameters are preserved, and the browser viewport matches the original iframe
+dimensions to preserve responsive chart layouts.
+
+The same docs examples render on the standalone preview. Theme and direction are
+initialized using the Fluent addon globals in the preview URL, preserving other
+globals. This is important because the toolbar's change events normally require
+the manager to relay global updates. Tests verify the selected theme label, the
+direction switch state, and the example's computed CSS direction before
+interacting with charts.
+
 Each test waits for the selected example to render before querying its controls.
-Before theme and direction interactions, it also waits for the parent Storybook
-manager's loading wrapper around `#preview-loader` to disappear. The wrapper can
-block pointer events even if the spinner itself is hidden. Readiness is checked
-before and after each legend, radio, slider, or switch interaction and before
-capturing screenshots, since loading can restart after page setup. Loading waits
-time out after 30 seconds; they do not force clicks through the overlay.
+Readiness is checked before and after each legend,
+radio, slider, or switch interaction and before capturing screenshots. Any
+loading wrapper in the page being tested must still disappear; waits time out
+after 30 seconds rather than hiding or bypassing genuine preview loading failures.
 Captures use Playwright's stable screenshot assertion with animations disabled,
 keeping the existing snapshot names and 2% pixel-difference tolerance.
 Each capture includes a one-second settling delay after readiness, followed by
 another readiness check in case loading restarted during the delay. This adds
 at least one second per screenshot to the test runtime.
-Failed runs retain traces and page screenshots. The snapshot-update workflow
+Failed runs retain page screenshots. The snapshot-update workflow
 uploads failure reports and does not commit snapshots if any test fails.
 
 Run the standalone capture regression tests without a Storybook checkout using
 `npx playwright test tests/storybookSnapshot.spec.ts --config playwright.config.ts`.
-They cover parent-manager loading overlays (including hidden spinners and
+They cover direct-preview navigation with a permanently stuck manager, viewport
+and URL preservation, parent-manager loading overlays (including hidden spinners and
 overlays appearing after setup or interactions), lazy iframe rendering, empty
 stories, HTML-only legends, and chart animations that initially render a blank
 frame.

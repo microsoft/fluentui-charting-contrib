@@ -1,5 +1,5 @@
-import { test, expect, FrameLocator, Page } from '@playwright/test';
-import { expectStoryScreenshot, performStorybookAction, waitForStorybookReady } from './storybookSnapshot';
+import { test, expect, Page } from '@playwright/test';
+import { expectStoryScreenshot, openStorybookPreview, performStorybookAction, waitForStorybookReady } from './storybookSnapshot';
 
 // Function to sanitize file names for Windows compatibility
 function sanitizeFileName(fileName: string): string {
@@ -157,37 +157,28 @@ const charts = [
   { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner', stories: verticalStackedBarChartStories },
 ];
 
-const themes = ['Web Light', 'Web Dark'];
-const modes = ['LTR', 'RTL'];
+const themes = ['Web Light', 'Web Dark'] as const;
+const modes = ['LTR', 'RTL'] as const;
 
 async function loadChartPage(
   page: Page,
   chart: { name: string; path: string; selector: string },
-  theme: string,
-  mode: string,
+  theme: 'Web Light' | 'Web Dark',
+  mode: 'LTR' | 'RTL',
   exampleSelector = chart.selector
 ) {
-  await page.goto(`http://localhost:3000/?path=/docs/charts_${chart.path}`);
+  await page.goto(`http://localhost:3000/?path=/docs/charts_${chart.path}`, { waitUntil: 'domcontentloaded' });
+  await openStorybookPreview(page, chart.path, theme, mode);
 
-  const storybookFrame = page.locator('iframe[title="storybook-ref-charts"]').contentFrame();
-  const example = storybookFrame.locator(exampleSelector);
+  const example = page.locator(exampleSelector);
   await waitForStorybookReady(page, example);
-  await storybookFrame.getByRole('button', { name: 'Theme' }).press('Enter');
-  const item = storybookFrame.getByRole('menuitemradio', { name: theme });
-  await expect(item).toBeVisible();
-  await item.press('Enter');
-  await expect(item).toBeHidden();
-  await waitForStorybookReady(page, example);
-
-  // Only check RTL direction if mode is RTL
-  if (mode === 'RTL') {
-    await performStorybookAction(example, () => storybookFrame.locator('[id^="dir-switch_r_"]').click());
-  }
-  await waitForStorybookReady(page, example);
-  return storybookFrame;
+  await expect(page.getByRole('button', { name: theme, exact: true })).toBeVisible();
+  await expect(page.locator('[id^="dir-switch_r_"]')).toBeChecked({ checked: mode === 'RTL' });
+  await expect(example).toHaveCSS('direction', mode.toLowerCase());
+  return page;
 }
 // Helper to interact with controls and take screenshots
-async function interactWithLegends(frame: FrameLocator, imgId: string, screenshotName: string) {
+async function interactWithLegends(frame: Page, imgId: string, screenshotName: string) {
   const example = frame.locator(`#${imgId}`);
   await waitForStorybookReady(example.page(), example);
   const legendItems = frame.locator(`#${imgId} button[type="button"][role="option"]`);
@@ -203,7 +194,7 @@ async function interactWithLegends(frame: FrameLocator, imgId: string, screensho
   }
 }
 
-async function interactWithRadios(frame: FrameLocator, imgId: string, screenshotName: string) {
+async function interactWithRadios(frame: Page, imgId: string, screenshotName: string) {
   const example = frame.locator(`#${imgId}`);
   await waitForStorybookReady(example.page(), example);
   const radios = frame.locator(`#${imgId} input[type="radio"]`);
@@ -222,7 +213,7 @@ async function interactWithRadios(frame: FrameLocator, imgId: string, screenshot
   }
 }
 
-async function interactWithSliders(frame: FrameLocator, imgId: string, screenshotName: string) {
+async function interactWithSliders(frame: Page, imgId: string, screenshotName: string) {
   const example = frame.locator(`#${imgId}`);
   await waitForStorybookReady(example.page(), example);
   const sliders = frame.locator(`#${imgId} input[type="range"]`);
@@ -245,7 +236,7 @@ async function interactWithSliders(frame: FrameLocator, imgId: string, screensho
   }
 }
 
-async function interactWithSwitches(frame: FrameLocator, imgId: string, screenshotName: string) {
+async function interactWithSwitches(frame: Page, imgId: string, screenshotName: string) {
   const example = frame.locator(`#${imgId}`);
   await waitForStorybookReady(example.page(), example);
   const switches = frame.locator(`#${imgId} input[type="checkbox"], #${imgId} input[type="switch"]`);

@@ -1,4 +1,36 @@
-import { expect, Locator, Page } from '@playwright/test';
+import { expect } from '@playwright/test';
+import type { Locator, Page } from '@playwright/test';
+
+export async function openStorybookPreview(
+  page: Page,
+  storyId: string,
+  theme: 'Web Light' | 'Web Dark',
+  mode: 'LTR' | 'RTL'
+) {
+  const iframe = page.locator('iframe[title="storybook-ref-charts"]');
+  await expect(iframe).toBeVisible({ timeout: 30000 });
+  await expect(iframe).toHaveAttribute('src', /\/iframe\.html(?:[?#]|$)/, { timeout: 30000 });
+  const source = await iframe.getAttribute('src');
+  if (!source) {
+    throw new Error('The charts Storybook iframe has no preview URL');
+  }
+  const previewUrl = new URL(source, page.url());
+  previewUrl.searchParams.set('id', storyId.toLowerCase());
+  previewUrl.searchParams.set('viewMode', 'docs');
+  const themeKey = 'storybook_fluentui-react-addon_theme';
+  const directionKey = 'storybook_fluentui-react-addon_dir';
+  const globals = (previewUrl.searchParams.get('globals')?.split(';') ?? [])
+    .filter(value => value && !value.startsWith(`${themeKey}:`) && !value.startsWith(`${directionKey}:`));
+  globals.push(`${themeKey}:${theme === 'Web Dark' ? 'web-dark' : 'web-light'}`);
+  globals.push(`${directionKey}:${mode.toLowerCase()}`);
+  previewUrl.searchParams.set('globals', globals.join(';'));
+  const viewport = await iframe.evaluate(element => ({
+    width: element.clientWidth,
+    height: element.clientHeight,
+  }));
+  await page.setViewportSize(viewport);
+  await page.goto(previewUrl.href, { waitUntil: 'domcontentloaded' });
+}
 
 export async function waitForStorybookReady(page: Page, example: Locator) {
   // The wrapper blocks pointer events even if its spinner is hidden.
