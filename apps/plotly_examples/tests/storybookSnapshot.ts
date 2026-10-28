@@ -57,6 +57,13 @@ export async function waitForStoryReady(example: Locator) {
   ).toBe(true);
 }
 
+export async function expectStoryDirection(example: Locator, mode: 'LTR' | 'RTL') {
+  const direction = mode.toLowerCase();
+  const provider = example.locator('.fui-FluentProvider').first();
+  await expect(provider, `Expected the chart provider to have dir="${direction}"`).toHaveAttribute('dir', direction);
+  await expect(provider, `Expected the chart provider to render in ${direction}`).toHaveCSS('direction', direction);
+}
+
 export async function expectStoryScreenshot(example: Locator, snapshotFilename: string) {
   const page = example.page();
   await waitForStorybookReady(page, example);

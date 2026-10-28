@@ -1,5 +1,5 @@
 import { test, expect, Page } from '@playwright/test';
-import { expectStoryScreenshot, openStorybookPreview, performStorybookAction, waitForStorybookReady, waitForStoryReady } from './storybookSnapshot';
+import { expectStoryDirection, expectStoryScreenshot, openStorybookPreview, performStorybookAction, waitForStorybookReady, waitForStoryReady } from './storybookSnapshot';
 
 for (const source of [
   '/charts/iframe.html?id=stale&viewMode=story&version=10.6.0&globals=locale:en;storybook_fluentui-react-addon_theme:teams-dark',
@@ -28,12 +28,14 @@ for (const source of [
           await route.fulfill({
             contentType: 'text/html',
             body: `
-              <html dir="${rtl ? 'rtl' : 'ltr'}" data-theme="${selectedTheme}">
+              <html dir="ltr" data-theme="${selectedTheme}">
                 <button>${selectedTheme}</button>
                 <input id="dir-switch_r_test_" type="checkbox" role="switch" ${rtl ? 'checked' : ''}>
                 <div id="story--charts-ganttchart--gantt-chart-grouped-inner">
-                  <button type="button" role="option" aria-selected="false"
-                    onclick="this.setAttribute('aria-selected', 'true')">Complete</button>
+                  <div class="fui-FluentProvider" dir="${rtl ? 'rtl' : 'ltr'}">
+                    <button type="button" role="option" aria-selected="false"
+                      onclick="this.setAttribute('aria-selected', 'true')">Complete</button>
+                  </div>
                 </div>
               </html>
             `,
@@ -63,12 +65,60 @@ for (const source of [
       await expect(page.getByRole('button', { name: theme, exact: true })).toBeVisible();
       await expect(page.getByRole('switch')).toBeChecked({ checked: mode === 'RTL' });
       await expect(page.locator('html')).toHaveAttribute('data-theme', theme);
-      await expect(example).toHaveCSS('direction', mode.toLowerCase());
+      await expect(example).toHaveCSS('direction', 'ltr');
+      await expectStoryDirection(example, mode);
       await performStorybookAction(example, () => example.getByRole('option').click());
       await expect(example.getByRole('option')).toHaveAttribute('aria-selected', 'true');
     });
   }
 }
+
+for (const mode of ['LTR', 'RTL'] as const) {
+  test(`validates the ${mode} chart provider inside LTR docs chrome`, async ({ page }) => {
+    await page.setContent(`
+      <div id="story" dir="ltr">
+        <div class="fui-FluentProvider" dir="${mode.toLowerCase()}"><svg></svg></div>
+      </div>
+    `);
+    const example = page.locator('#story');
+    await expect(example).toHaveCSS('direction', 'ltr');
+    await expectStoryDirection(example, mode);
+  });
+}
+
+test('waits for the chart provider direction to update', async ({ page }) => {
+  await page.setContent(`
+    <div id="story" dir="ltr">
+      <div class="fui-FluentProvider" dir="ltr"><svg></svg></div>
+    </div>
+  `);
+  await page.locator('.fui-FluentProvider').evaluate(element => {
+    setTimeout(() => element.setAttribute('dir', 'rtl'), 200);
+  });
+  await expectStoryDirection(page.locator('#story'), 'RTL');
+});
+
+test('rejects an RTL request when the chart provider is still LTR', async ({ page }) => {
+  await page.setContent(`
+    <input role="switch" type="checkbox" checked>
+    <div id="story"><div class="fui-FluentProvider" dir="ltr"><svg></svg></div></div>
+  `);
+  await expect(page.getByRole('switch')).toBeChecked();
+  await expect(expectStoryDirection(page.locator('#story'), 'RTL')).rejects.toThrow(
+    'Expected the chart provider to have dir="rtl"'
+  );
+});
+
+test('rejects an RTL provider whose rendered CSS direction is LTR', async ({ page }) => {
+  await page.setContent(`
+    <div id="story">
+      <div class="fui-FluentProvider" dir="rtl" style="direction: ltr"><svg></svg></div>
+    </div>
+  `);
+  await expect(expectStoryDirection(page.locator('#story'), 'RTL')).rejects.toThrow(
+    'Expected the chart provider to render in rtl'
+  );
+});
 
 async function showLoadingOverlay(page: Page) {
   await page.evaluate(() => {

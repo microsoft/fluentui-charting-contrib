@@ -1,5 +1,5 @@
 import { test, expect, Page } from '@playwright/test';
-import { expectStoryScreenshot, openStorybookPreview, performStorybookAction, waitForStorybookReady } from './storybookSnapshot';
+import { expectStoryDirection, expectStoryScreenshot, openStorybookPreview, performStorybookAction, waitForStorybookReady } from './storybookSnapshot';
 
 // Function to sanitize file names for Windows compatibility
 function sanitizeFileName(fileName: string): string {
@@ -174,7 +174,7 @@ async function loadChartPage(
   await waitForStorybookReady(page, example);
   await expect(page.getByRole('button', { name: theme, exact: true })).toBeVisible();
   await expect(page.locator('[id^="dir-switch_r_"]')).toBeChecked({ checked: mode === 'RTL' });
-  await expect(example).toHaveCSS('direction', mode.toLowerCase());
+  await expectStoryDirection(example, mode);
   return page;
 }
 // Helper to interact with controls and take screenshots

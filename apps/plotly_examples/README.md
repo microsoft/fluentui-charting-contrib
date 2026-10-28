@@ -61,8 +61,9 @@ The same docs examples render on the standalone preview. Theme and direction are
 initialized using the Fluent addon globals in the preview URL, preserving other
 globals. This is important because the toolbar's change events normally require
 the manager to relay global updates. Tests verify the selected theme label, the
-direction switch state, and the example's computed CSS direction before
-interacting with charts.
+direction switch state, and the chart's FluentProvider `dir` attribute and
+computed CSS direction before interacting with charts. The outer Storybook story
+wrapper can remain LTR even when the provider and chart inside it are RTL.
 
 Each test waits for the selected example to render before querying its controls.
 Readiness is checked before and after each legend,
@@ -80,7 +81,8 @@ uploads failure reports and does not commit snapshots if any test fails.
 Run the standalone capture regression tests without a Storybook checkout using
 `npx playwright test tests/storybookSnapshot.spec.ts --config playwright.config.ts`.
 They cover direct-preview navigation with a permanently stuck manager, viewport
-and URL preservation, parent-manager loading overlays (including hidden spinners and
+and URL preservation, chart-provider direction inside LTR docs chrome, rejection
+of incorrectly rendered RTL charts, parent-manager loading overlays (including hidden spinners and
 overlays appearing after setup or interactions), lazy iframe rendering, empty
 stories, HTML-only legends, and chart animations that initially render a blank
 frame.
