@@ -159,7 +159,7 @@ jobs:
             - name: "Run monosize on react-charting"
               run: |
                 cd repo1/packages/charts/react-charting
-                yarn monosize measure
+                yarn run -T monosize measure
 
             - name: Upload monosize JSON report as artifact
               uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2

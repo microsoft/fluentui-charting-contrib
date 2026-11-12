@@ -40,7 +40,7 @@ jobs:
       - name: "Run monosize on react-charting"
         run: |
           cd repo/packages/charts/react-charting
-          yarn monosize measure
+          yarn run -T monosize measure
           mv -f ./dist/bundle-size/monosize.json ./../../../
           cd ./../../../
           rm -rf ./repo
