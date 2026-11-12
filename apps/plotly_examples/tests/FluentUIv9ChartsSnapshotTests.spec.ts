@@ -1,4 +1,5 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, Page } from '@playwright/test';
+import { expectStoryDirection, expectStoryScreenshot, openStorybookPreview, performStorybookAction, waitForStorybookReady } from './storybookSnapshot';
 
 // Function to sanitize file names for Windows compatibility
 function sanitizeFileName(fileName: string): string {
@@ -156,69 +157,65 @@ const charts = [
   { name: 'VerticalStackedBarChart', path: 'charts-VerticalStackedBarChart--docs', selector: '#story--charts-verticalstackedbarchart--vertical-stacked-bar-default--primary-inner', stories: verticalStackedBarChartStories },
 ];
 
-const themes = ['Web Light', 'Web Dark'];
-const modes = ['LTR', 'RTL'];
+const themes = ['Web Light', 'Web Dark'] as const;
+const modes = ['LTR', 'RTL'] as const;
 
 async function loadChartPage(
-  page: any,
+  page: Page,
   chart: { name: string; path: string; selector: string },
-  theme: string,
-  mode: string
+  theme: 'Web Light' | 'Web Dark',
+  mode: 'LTR' | 'RTL',
+  exampleSelector = chart.selector
 ) {
-  await page.goto(`http://localhost:3000/?path=/docs/charts_${chart.path}`);
+  await page.goto(`http://localhost:3000/?path=/docs/charts_${chart.path}`, { waitUntil: 'domcontentloaded' });
+  await openStorybookPreview(page, chart.path, theme, mode);
 
-  const storybookFrame = page.locator('iframe[title="storybook-ref-charts"]').contentFrame();
-  await storybookFrame.getByRole('button', { name: 'Theme' }).press('Enter');
-  const item = storybookFrame.getByRole('menuitemradio', { name: theme });
-  await expect(item).toBeVisible();
-  await item.press('Enter');
-
-  // Only check RTL direction if mode is RTL
-  if (mode === 'RTL') {
-    await storybookFrame.locator('[id^="dir-switch_r_"]').click();
-  }
-  const chartContainer = page.locator('iframe[title="storybook-ref-charts"]');
-  const frame = await chartContainer.contentFrame();
-  if (!frame) throw new Error('Could not get content frame');
-  const chartInner = frame.locator(chart.selector);
-  await expect(chartInner).toBeVisible({ timeout: 100000 });
-  return frame;
+  const example = page.locator(exampleSelector);
+  await waitForStorybookReady(page, example);
+  await expect(page.getByRole('button', { name: theme, exact: true })).toBeVisible();
+  await expect(page.locator('[id^="dir-switch_r_"]')).toBeChecked({ checked: mode === 'RTL' });
+  await expectStoryDirection(example, mode);
+  return page;
 }
 // Helper to interact with controls and take screenshots
-async function interactWithLegends(frame: any, imgId: string, screenshotName: string) {
+async function interactWithLegends(frame: Page, imgId: string, screenshotName: string) {
+  const example = frame.locator(`#${imgId}`);
+  await waitForStorybookReady(example.page(), example);
   const legendItems = frame.locator(`#${imgId} button[type="button"][role="option"]`);
   const count = await legendItems.count();
   if (count > 0) {
-    await legendItems.first().click();
+    await performStorybookAction(example, () => legendItems.first().click());
     const label = await legendItems.first().getAttribute('aria-label');
     const labelText = label ? label.split('(')[0].trim() : 'unknown';
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
     const sanitizedLabel = sanitizeFileName(labelText);
-    const buffer = await frame.locator(`#${imgId}`).screenshot();
     const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-legend-click.png`;
-    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.02 });
+    await expectStoryScreenshot(frame.locator(`#${imgId}`), snapshotFilename);
   }
 }
 
-async function interactWithRadios(frame: any, imgId: string, screenshotName: string) {
+async function interactWithRadios(frame: Page, imgId: string, screenshotName: string) {
+  const example = frame.locator(`#${imgId}`);
+  await waitForStorybookReady(example.page(), example);
   const radios = frame.locator(`#${imgId} input[type="radio"]`);
   for (let i = 0, count = await radios.count(); i < count; i++) {
     if (!(await radios.nth(i).isEnabled())) {
       // Skip this slider if it's disabled
       continue;
     }
-    await radios.nth(i).check();
-    const label = await frame.locator(`label[for="${await radios.nth(i).getAttribute('id')}"]`).textContent();
+    await performStorybookAction(example, () => radios.nth(i).check());
+    const label = await frame.locator(`label[for="${await radios.nth(i).getAttribute('id')}"]`).innerText();
     const labelText = label.split('(')[0].trim();
-    const buffer = await frame.locator(`#${imgId}`).screenshot();
     const sanitizedLabel = sanitizeFileName(labelText);
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
     const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-radio-button-click.png`;
-    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.02 });
+    await expectStoryScreenshot(frame.locator(`#${imgId}`), snapshotFilename);
   }
 }
 
-async function interactWithSliders(frame: any, imgId: string, screenshotName: string) {
+async function interactWithSliders(frame: Page, imgId: string, screenshotName: string) {
+  const example = frame.locator(`#${imgId}`);
+  await waitForStorybookReady(example.page(), example);
   const sliders = frame.locator(`#${imgId} input[type="range"]`);
   for (let i = 0, count = await sliders.count(); i < count; i++) {
     const slider = sliders.nth(i);
@@ -228,19 +225,20 @@ async function interactWithSliders(frame: any, imgId: string, screenshotName: st
     const min = Number(await slider.getAttribute('min')) || 0;
     const max = Number(await slider.getAttribute('max')) || 100;
     const middle = Math.round((min + max) / 2);
-    await slider.fill(middle.toString());
+    await performStorybookAction(example, () => slider.fill(middle.toString()));
     // Try to get the label associated with the slider by its id
-    const sliderId = await slider.getAttribute('id');
+    const sliderId = await slider.evaluate(element => element.id);
     const sliderIdText = sliderId.split('(')[0].trim();
-    const buffer = await frame.locator(`#${imgId}`).screenshot();
     const sanitizedLabel = sanitizeFileName(sliderIdText);
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
     const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-slider-value-change.png`;
-    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.02 });
+    await expectStoryScreenshot(frame.locator(`#${imgId}`), snapshotFilename);
   }
 }
 
-async function interactWithSwitches(frame: any, imgId: string, screenshotName: string) {
+async function interactWithSwitches(frame: Page, imgId: string, screenshotName: string) {
+  const example = frame.locator(`#${imgId}`);
+  await waitForStorybookReady(example.page(), example);
   const switches = frame.locator(`#${imgId} input[type="checkbox"], #${imgId} input[type="switch"]`);
   for (let i = 0, count = await switches.count(); i < count; i++) {
     const control = switches.nth(i);
@@ -248,14 +246,13 @@ async function interactWithSwitches(frame: any, imgId: string, screenshotName: s
       // Skip this slider if it's disabled
       continue;
     }
-    await control.click();
-    const label = await frame.locator(`label[for="${await control.getAttribute('id')}"]`).textContent();
+    await performStorybookAction(example, () => control.click());
+    const label = await frame.locator(`label[for="${await control.getAttribute('id')}"]`).innerText();
     const labelText = label.split('(')[0].trim();
-    const buffer = await frame.locator(`#${imgId}`).screenshot();
     const sanitizedLabel = sanitizeFileName(labelText);
     const sanitizedScreenshotName = sanitizeFileName(screenshotName);
     const snapshotFilename = `${sanitizedScreenshotName}-${sanitizedLabel}-checkbox-click.png`;
-    expect(buffer).toMatchSnapshot(snapshotFilename, { maxDiffPixelRatio: 0.02 });
+    await expectStoryScreenshot(frame.locator(`#${imgId}`), snapshotFilename);
 
   }
 }
@@ -267,7 +264,7 @@ for (const chart of charts) {
         for (const exampleSelector of chart.stories) {
           const testCaseName = exampleSelector.split('--').slice(-1)[0].trim().replace(/-inner/g, '');
           test(`Legend Action - ${testCaseName}`, async ({ page }) => {
-            const frame = await loadChartPage(page, chart, theme, mode);
+            const frame = await loadChartPage(page, chart, theme, mode, exampleSelector);
             const example = frame.locator(exampleSelector);
             await example.scrollIntoViewIfNeeded();
             const imgId = await example.getAttribute('id');
@@ -279,7 +276,7 @@ for (const chart of charts) {
           });
 
           test(`Radio button Action - ${testCaseName}`, async ({ page }) => {
-            const frame = await loadChartPage(page, chart, theme, mode);
+            const frame = await loadChartPage(page, chart, theme, mode, exampleSelector);
             const example = frame.locator(exampleSelector);
             await example.scrollIntoViewIfNeeded();
             const imgId = await example.getAttribute('id');
@@ -291,7 +288,7 @@ for (const chart of charts) {
           });
 
           test(`slider Action - ${testCaseName}`, async ({ page }) => {
-            const frame = await loadChartPage(page, chart, theme, mode);
+            const frame = await loadChartPage(page, chart, theme, mode, exampleSelector);
             const example = frame.locator(exampleSelector);
             await example.scrollIntoViewIfNeeded();
             const imgId = await example.getAttribute('id');
@@ -303,7 +300,7 @@ for (const chart of charts) {
           });
 
           test(`Switch Action - ${testCaseName}`, async ({ page }) => {
-            const frame = await loadChartPage(page, chart, theme, mode);
+            const frame = await loadChartPage(page, chart, theme, mode, exampleSelector);
             const example = frame.locator(exampleSelector);
             await example.scrollIntoViewIfNeeded();
             const imgId = await example.getAttribute('id');
