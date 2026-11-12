@@ -78,7 +78,9 @@ jobs:
         run: |
           git fetch origin
           if git show-ref --verify --quiet "refs/remotes/origin/$BRANCH"; then
-            git merge --no-edit "origin/$BRANCH"
+            git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              merge --no-edit "origin/$BRANCH"
           fi
 
       - name: Update package.json with latest version
