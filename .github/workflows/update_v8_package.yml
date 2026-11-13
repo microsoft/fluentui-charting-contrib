@@ -64,6 +64,25 @@ jobs:
           fi
         shell: bash
 
+      - name: Create branch name with updated package version
+        if: steps.check_update.outputs.up_to_date == 'false'
+        id: branch
+        run: |
+          BRANCH="update-react-charting-${{ steps.get_latest_version.outputs.version }}"
+          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+      - name: Merge existing update branch
+        if: steps.check_update.outputs.up_to_date == 'false'
+        env:
+          BRANCH: ${{ steps.branch.outputs.branch }}
+        run: |
+          git fetch origin
+          if git show-ref --verify --quiet "refs/remotes/origin/$BRANCH"; then
+            git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              merge --no-edit "origin/$BRANCH"
+          fi
+
       - name: Update package.json with latest version
         if: steps.check_update.outputs.up_to_date == 'false'
         run: |
@@ -92,13 +111,6 @@ jobs:
         run: |
           cd apps/plotly_examples
           yarn build
-
-      - name: Create branch name with updated package version
-        if: steps.check_update.outputs.up_to_date == 'false'
-        id: branch
-        run: |
-          BRANCH="update-react-charting-${{ steps.get_latest_version.outputs.version }}"
-          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
 
       - name: Commit changes to repo
         id: auto-commit-action
