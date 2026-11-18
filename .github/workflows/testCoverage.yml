@@ -32,6 +32,11 @@ jobs:
       macos_artifact_name: ${{ steps.macos.outputs.COVERAGE_FILENAME_MACOS }}
 
     steps:
+      # Configure Git before checkout materializes the long snapshot paths on Windows.
+      - name: Enable Git long paths on Windows
+        if: runner.os == 'Windows'
+        run: git config --global core.longpaths true
+
       - name: Checkout [master]
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
