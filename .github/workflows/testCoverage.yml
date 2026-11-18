@@ -22,6 +22,7 @@ permissions:
 jobs:
   run_tests:
     strategy:
+      fail-fast: false
       matrix:
         os: [windows-latest, macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
@@ -58,8 +59,17 @@ jobs:
         with:
           node-version: '22.x'
 
-      - name: Install packages
-        run: yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/charts/react-charting
+      - name: Install coverage helper dependencies
+        working-directory: tools/UnitTestApp
+        run: yarn install --frozen-lockfile
+
+      - name: Enable the Fluent UI package manager
+        working-directory: repo1
+        run: corepack enable
+
+      - name: Install Fluent UI workspace dependencies
+        working-directory: repo1
+        run: yarn install --immutable
 
       - name: Change function visibility from private to public
         id: setup
