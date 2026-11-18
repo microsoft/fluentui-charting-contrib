@@ -100,8 +100,8 @@ jobs:
           TZ: UTC
         run: |
           yarn run -T jest --ci --coverage --coverageDirectory "coverage/${{ matrix.os }}" \
-            --coverageReporters=html --coverageReporters=text --reporters=default \
-            --json --outputFile=charting-test-results.json | tee coverageReport.txt
+            --coverageReporters=html --coverageReporters=text --coverageReporters=json-summary \
+            --reporters=default | tee coverageReport.txt
           test -s "coverage/${{ matrix.os }}/index.html"
           grep -q '^All files[[:space:]]*|' coverageReport.txt
 
