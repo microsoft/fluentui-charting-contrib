@@ -22,16 +22,17 @@ permissions:
 jobs:
   run_tests:
     strategy:
+      fail-fast: false
       matrix:
         os: [windows-latest, macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
-    outputs:
-      test_coverage: ${{ steps.run_tests.outputs }}
-      ubuntu_artifact_name: ${{ steps.ubuntu.outputs.COVERAGE_FILENAME_UBUNTU }}
-      windows_artifact_name: ${{ steps.windows.outputs.COVERAGE_FILENAME_WINDOWS }}
-      macos_artifact_name: ${{ steps.macos.outputs.COVERAGE_FILENAME_MACOS }}
 
     steps:
+      # Configure Git before checkout materializes the long snapshot paths on Windows.
+      - name: Enable Git long paths on Windows
+        if: runner.os == 'Windows'
+        run: git config --global core.longpaths true
+
       - name: Checkout [master]
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
@@ -53,8 +54,17 @@ jobs:
         with:
           node-version: '22.x'
 
-      - name: Install packages
-        run: yarn --cwd ./tools/UnitTestApp && yarn --cwd ./repo1 && yarn --cwd ./repo1/packages/charts/react-charting
+      - name: Install coverage helper dependencies
+        working-directory: tools/UnitTestApp
+        run: yarn install --frozen-lockfile
+
+      - name: Enable the Fluent UI package manager
+        working-directory: repo1
+        run: corepack enable
+
+      - name: Install Fluent UI workspace dependencies
+        working-directory: repo1
+        run: yarn install --immutable
 
       - name: Change function visibility from private to public
         id: setup
@@ -86,13 +96,8 @@ jobs:
         run: cd ./repo1/packages/charts/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
         continue-on-error: true
 
-      - name: Generate coverage file name in windows
-        id: windows
-        if: matrix.os == 'windows-latest'
-        run: |
-          $NOW=& Get-Date -format yyyy-MM-dd
-          echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$NOW" >> $env:GITHUB_ENV
       - name: Generate coverage file name
+        shell: bash
         run: |
           echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
       - name: Save coverage folder
