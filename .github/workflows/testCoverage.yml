@@ -13,11 +13,8 @@ on:
         required: true
         default: "master"
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: read
 
 jobs:
   run_tests:
@@ -35,6 +32,8 @@ jobs:
 
       - name: Checkout [master]
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
 
       - name: Checkout [react-charting]
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
@@ -42,6 +41,7 @@ jobs:
           repository: ${{ github.event.inputs.repo || 'microsoft/fluentui' }}
           ref: ${{ github.event.inputs.branch || 'master' }}
           path: repo1
+          persist-credentials: false
 
       - name: Show current directory
         run: echo "$PWD" && ls
@@ -73,28 +73,37 @@ jobs:
           osType: ${{ matrix.os }}
 
       - name: Build
+        working-directory: repo1
+        run: yarn nx run react-charting:build
+
+      - name: Enable charting unit tests
+        working-directory: repo1/packages/charts/react-charting
+        shell: bash
         run: |
-          cd ./repo1/packages/charts/react-charting
-          yarn nx run react-charting:build
-      - name: Run the tests in windows
-        if: matrix.os == 'windows-latest'
-        run: cd ./repo1/packages/charts/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
-        continue-on-error: true
+          node -e "const fs = require('node:fs'); const file = 'config/tests.js'; const config = fs.readFileSync(file, 'utf8'); if (!config.includes(\"'PROD'\")) throw new Error('Expected PROD charting test mode'); fs.writeFileSync(file, config.replace(\"'PROD'\", \"'TEST'\"));"
 
-      - name: Run a single test in windows
-        if: matrix.os == 'windows-latest'
-        run: cd ./repo1/packages/charts/react-charting && powershell -Command "(Get-Content -Path ./config/tests.js) -replace 'PROD', 'TEST' | Set-Content -Path ./config/tests.js" && yarn jest ./src/components/VerticalBarChart --coverage --coverageDirectory ./coverage/${{matrix.os}}_VerticalBarChart --verbose --coverageReporters=html
-        continue-on-error: true
+      # The upstream just-scripts test task does not forward coverage directory or reporter options.
+      - name: Run charting tests with coverage
+        working-directory: repo1/packages/charts/react-charting
+        shell: bash
+        env:
+          TZ: UTC
+        run: |
+          yarn run -T jest --ci --coverage --coverageDirectory "coverage/${{ matrix.os }}" \
+            --coverageReporters=html --coverageReporters=text | tee coverageReport.txt
+          test -s "coverage/${{ matrix.os }}/index.html"
+          grep -q '^All files[[:space:]]*|' coverageReport.txt
 
-      - name: Run the tests in macos
-        if: matrix.os == 'macos-latest'
-        run: cd ./repo1/packages/charts/react-charting && sed -i '' 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
-        continue-on-error: true
-
-      - name: Run the tests in ubuntu
-        if: matrix.os == 'ubuntu-latest'
-        run: cd ./repo1/packages/charts/react-charting && sed -i 's/PROD/TEST/g' ./config/tests.js && yarn jest --coverage --coverageDirectory ./coverage/${{matrix.os}} --verbose --coverageReporters=html --coverageReporters=text > coverageReport.txt
-        continue-on-error: true
+      - name: Run VerticalBarChart tests with coverage on Windows
+        if: runner.os == 'Windows'
+        working-directory: repo1/packages/charts/react-charting
+        shell: bash
+        env:
+          TZ: UTC
+        run: |
+          yarn run -T jest --ci ./src/components/VerticalBarChart --coverage \
+            --coverageDirectory "coverage/${{ matrix.os }}_VerticalBarChart" --coverageReporters=html
+          test -s "coverage/${{ matrix.os }}_VerticalBarChart/index.html"
 
       - name: Generate coverage file name
         shell: bash
@@ -105,12 +114,14 @@ jobs:
         with:
           name: ${{matrix.os}}
           path: ./repo1/packages/charts/react-charting/coverage/${{matrix.os}}
+          if-no-files-found: error
 
       - name: Save coverage file
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: ${{env.COVERAGE_FILENAME}}_report
           path: ./repo1/packages/charts/react-charting/coverageReport.txt
+          if-no-files-found: error
 
       - name: Save coverage folder for a single test
         if: matrix.os == 'windows-latest'
@@ -118,22 +129,7 @@ jobs:
         with:
           name: coverage_VBC
           path: ./repo1/packages/charts/react-charting/coverage/${{matrix.os}}_VerticalBarChart
-
-      - name: Extract the coverage summary table
-        if: matrix.os != 'windows-latest'
-        run: |
-          cd ./repo1/packages/charts/react-charting
-          file_contents=$(cat coverageReport.txt)
-          table=$(echo "$file_contents" | awk '/----/,/^$/' | sed '1d;$d')
-          echo "$table"
-      - name: Extract the coverage summary table in windows
-        if: matrix.os == 'windows-latest'
-        run: |
-          cd ./repo1/packages/charts/react-charting
-          $fileContents = Get-Content -Raw -Path "coverageReport.txt"
-          $tableRegex = "(?ms)----.*?^$"
-          $table = [regex]::Match($fileContents, $tableRegex)
-          echo "$table"
+          if-no-files-found: error
   push_artifacts_to_repo:
     needs: run_tests
     runs-on: "ubuntu-latest"
@@ -146,14 +142,12 @@ jobs:
         with:
           name: "ubuntu-latest"
           path: "./coverage/ubuntu-latest"
-        continue-on-error: true
 
       - name: Download all artifacts to publish together
         uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
           name: "macos-latest"
           path: "./coverage/macos-latest"
-        continue-on-error: true
 
       - name: Download all artifacts to publish together
         uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
@@ -179,70 +173,56 @@ jobs:
           echo "<!DOCTYPE html><html><head><title>Contributor Readiness</title></head><body><h1>View contributor guides and full test coverage reports</h1><ul><li><a href="https://uifabric.visualstudio.com/iss/_wiki/wikis/iss.wiki/280/Charting-Concepts">Contributor guides</a></li><li><a href="./windows-latest/index.html">Coverage for Windows</a></li><li><a href="./ubuntu-latest/index.html">Coverage for Ubuntu</a></li><li><a href="./macos-latest/index.html">Coverage for MacOS</a></li><li><a href="./coverage_VBC/index.html">Coverage for Vertical bar chart - Windows</a></li></ul></body></html>" >> index.html
         shell: bash
 
-      - name: Setup Pages
-        uses: actions/configure-pages@1f0c5cde4bc74cd7e1254d0cb4de8d49e9068c7d # v4.0.0
+      - name: Generate coverage JSON summaries
+        working-directory: coverage
+        shell: bash
+        run: |
+          for os in ubuntu macos windows; do
+            reports=(coverageFiles/test_coverage_"$os"-*_report/coverageReport.txt)
+            test "${#reports[@]}" = 1 && test -s "${reports[0]}" || exit 1
+            percentage=$(awk -F'|' '/^All files[[:space:]]*\|/ { gsub(/[[:space:]]/, "", $2); print $2; exit }' "${reports[0]}")
+            if [[ ! "$percentage" =~ ^[0-9]+([.][0-9]+)?$ ]]; then
+              echo "Missing statement coverage percentage for $os" >&2
+              exit 1
+            fi
+            jq -n --arg percentage "$percentage" '{statementCoverage: $percentage}' > "${os}Coverage.json"
+          done
+          cp ubuntuCoverage.json testCoverage.json
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
           path: "./coverage"
 
-      - name: Directory disp
-        run: ls -a
-
-      - name: Checkout [test-coverage-artifacts]
+      - name: Checkout publication repository
+        if: github.ref == 'refs/heads/main'
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           path: repo
-          ref: test-coverage-artifacts
 
-      - name: Rename all txt reports to md and remove unnecessary lines
-        run: |
-          cd ./coverage
-          for f in $(find ./ -name '*.txt'); do
-            sed -i '/PASS/d' "$f"
-            sed -i '/FAIL/d' "$f"
-            sed -i '/yarn/d' "$f"
-            sed -i '/jest/d' "$f"
-            sed -i '1d' "$f"
-            statementCoveragePercent=$(echo $(awk '/All files/ {print}' $f) | awk -F'|' '{print $2}')
-            statementCoveragePercentTrimmed=$(echo "$statementCoveragePercent" | awk '{$1=$1; print}')
-            dir_path=$(dirname "$f")
-            file_name=$(basename "$f")
-            statementCovJson=$(jq -n \
-                --arg k1 "$statementCoveragePercentTrimmed" \
-                '{"statementCoverage": $k1}'
-            )
-            echo "$statementCovJson" > testCoverage.json
-            if [[ $f == *macos* ]]; then
-                echo "$statementCovJson" > macosCoverage.json
-            elif [[ $f == *windows* ]]; then
-                echo "$statementCovJson" > windowsCoverage.json
-            elif [[ $f == *ubuntu* ]]; then
-                echo "$statementCovJson" > ubuntuCoverage.json
-            fi
-          done
-          
+      - name: Publish coverage reports to the artifact branch
+        if: github.ref == 'refs/heads/main'
+        working-directory: repo
         shell: bash
+        run: |
+          branch=test-coverage-artifacts
+          existing=$(git ls-remote --heads origin "refs/heads/$branch")
+          if [[ -n "$existing" ]]; then
+            git fetch --depth=1 origin "refs/heads/$branch"
+            git switch --detach FETCH_HEAD
+          else
+            git switch --orphan "$branch"
+          fi
 
-      - name: Move coverage JSONs to root
-        run: | 
-          mv -f ./repo/.github ./
-          mv -f ./repo/bundle-size ./
-          cd repo
-          rm -rf ./*
-          cd ..
-          mv -f ./.github ./repo/
-          mv -f ./bundle-size ./repo/
-          mv -f ./coverage/* ./repo/
-          cd repo
-          ls
-        continue-on-error: true
-        
-      - uses: stefanzweifel/git-auto-commit-action@b863ae1933cb653a53c021fe36dbb774e1fb9403 # v5.2.0
-        with:
-          repository: repo
-          branch: test-coverage-artifacts
+          rm -rf ubuntu-latest macos-latest windows-latest coverage_VBC coverageFiles
+          cp -R ../coverage/. .
+          git add -A -- ubuntu-latest macos-latest windows-latest coverage_VBC coverageFiles \
+            index.html ubuntuCoverage.json macosCoverage.json windowsCoverage.json testCoverage.json
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+              commit -m 'Update charting test coverage reports'
+            git push origin "HEAD:refs/heads/$branch"
+          fi
 
   #build_and_deploy_job:
    # needs: push_artifacts_to_repo
