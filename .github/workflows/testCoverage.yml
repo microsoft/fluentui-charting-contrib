@@ -36,12 +36,12 @@ jobs:
         run: git config --global core.longpaths true
 
       - name: Checkout [master]
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
 
       - name: Checkout [react-charting]
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: ${{ github.event.inputs.repo || 'microsoft/fluentui' }}
           ref: ${{ github.event.inputs.branch || 'master' }}
@@ -55,7 +55,7 @@ jobs:
         run: ls ./repo1
 
       - name: Set up Node.js
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: '22.x'
 
@@ -121,7 +121,7 @@ jobs:
 
       - name: Save coverage diagnostics on failure
         if: ${{ !cancelled() && (steps.charting_coverage.outcome == 'failure' || steps.vertical_bar_coverage.outcome == 'failure') }}
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: coverage-diagnostics-${{ matrix.os }}
           path: |
@@ -136,14 +136,14 @@ jobs:
         run: |
           echo "COVERAGE_FILENAME=test_coverage_${{ matrix.os }}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
       - name: Save coverage folder
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: ${{matrix.os}}
           path: ./repo1/packages/charts/react-charting/coverage/${{matrix.os}}
           if-no-files-found: error
 
       - name: Save coverage file
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: ${{env.COVERAGE_FILENAME}}_report
           path: ./repo1/packages/charts/react-charting/coverageReport.txt
@@ -151,7 +151,7 @@ jobs:
 
       - name: Save coverage folder for a single test
         if: matrix.os == 'windows-latest'
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: coverage_VBC
           path: ./repo1/packages/charts/react-charting/coverage/${{matrix.os}}_VerticalBarChart
@@ -164,31 +164,31 @@ jobs:
 
     steps:
       - name: Download all artifacts to publish together
-        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
           name: "ubuntu-latest"
           path: "./coverage/ubuntu-latest"
 
       - name: Download all artifacts to publish together
-        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
           name: "macos-latest"
           path: "./coverage/macos-latest"
 
       - name: Download all artifacts to publish together
-        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
           name: "windows-latest"
           path: "./coverage/windows-latest"
 
       - name: Download all artifacts to publish together
-        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
           name: "coverage_VBC"
           path: "./coverage/coverage_VBC"
 
       - name: Download all artifacts to publish together
-        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
           pattern: test_coverage_*
           path: "./coverage/coverageFiles"
@@ -216,13 +216,13 @@ jobs:
           cp ubuntuCoverage.json testCoverage.json
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: "./coverage"
 
       - name: Checkout publication repository
         if: github.ref == 'refs/heads/main' && !inputs.include-legacy-tests
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           path: repo
 
