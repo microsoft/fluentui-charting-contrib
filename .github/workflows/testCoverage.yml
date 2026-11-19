@@ -12,6 +12,10 @@ on:
         description: "Branch to run the tests on"
         required: true
         default: "master"
+      include-legacy-tests:
+        description: "Run legacy private-method tests for diagnostics without publishing"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -23,6 +27,7 @@ jobs:
       matrix:
         os: [windows-latest, macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
 
     steps:
       # Configure Git before checkout materializes the long snapshot paths on Windows.
@@ -55,6 +60,7 @@ jobs:
           node-version: '22.x'
 
       - name: Install coverage helper dependencies
+        if: inputs.include-legacy-tests
         working-directory: tools/UnitTestApp
         run: yarn install --frozen-lockfile
 
@@ -66,17 +72,19 @@ jobs:
         working-directory: repo1
         run: yarn install --immutable
 
-      - name: Change function visibility from private to public
-        id: setup
-        uses: ./tools/UnitTestApp/ChangeFunctionVisibility
-        with:
-          osType: ${{ matrix.os }}
-
       - name: Build
         working-directory: repo1
         run: yarn nx run react-charting:build
 
-      - name: Enable charting unit tests
+      - name: Change function visibility from private to public
+        if: inputs.include-legacy-tests
+        uses: ./tools/UnitTestApp/ChangeFunctionVisibility
+        with:
+          osType: ${{ matrix.os }}
+
+      # Scheduled coverage uses the unmodified upstream Jest configuration and default test mode.
+      - name: Enable legacy charting unit tests
+        if: inputs.include-legacy-tests
         working-directory: repo1/packages/charts/react-charting
         shell: bash
         run: |
@@ -84,26 +92,44 @@ jobs:
 
       # The upstream just-scripts test task does not forward coverage directory or reporter options.
       - name: Run charting tests with coverage
+        id: charting_coverage
         working-directory: repo1/packages/charts/react-charting
         shell: bash
+        timeout-minutes: 12
         env:
           TZ: UTC
         run: |
           yarn run -T jest --ci --coverage --coverageDirectory "coverage/${{ matrix.os }}" \
-            --coverageReporters=html --coverageReporters=text | tee coverageReport.txt
+            --coverageReporters=html --coverageReporters=text --coverageReporters=json-summary \
+            --reporters=default | tee coverageReport.txt
           test -s "coverage/${{ matrix.os }}/index.html"
           grep -q '^All files[[:space:]]*|' coverageReport.txt
 
       - name: Run VerticalBarChart tests with coverage on Windows
         if: runner.os == 'Windows'
+        id: vertical_bar_coverage
         working-directory: repo1/packages/charts/react-charting
         shell: bash
+        timeout-minutes: 5
         env:
           TZ: UTC
         run: |
           yarn run -T jest --ci ./src/components/VerticalBarChart --coverage \
-            --coverageDirectory "coverage/${{ matrix.os }}_VerticalBarChart" --coverageReporters=html
+            --coverageDirectory "coverage/${{ matrix.os }}_VerticalBarChart" --coverageReporters=html \
+            --reporters=default --json --outputFile=vertical-bar-test-results.json
           test -s "coverage/${{ matrix.os }}_VerticalBarChart/index.html"
+
+      - name: Save coverage diagnostics on failure
+        if: ${{ !cancelled() && (steps.charting_coverage.outcome == 'failure' || steps.vertical_bar_coverage.outcome == 'failure') }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: coverage-diagnostics-${{ matrix.os }}
+          path: |
+            repo1/packages/charts/react-charting/coverageReport.txt
+            repo1/packages/charts/react-charting/*-test-results.json
+            repo1/packages/charts/react-charting/coverage/
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Generate coverage file name
         shell: bash
@@ -195,13 +221,13 @@ jobs:
           path: "./coverage"
 
       - name: Checkout publication repository
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' && !inputs.include-legacy-tests
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           path: repo
 
       - name: Publish coverage reports to the artifact branch
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' && !inputs.include-legacy-tests
         working-directory: repo
         shell: bash
         run: |
